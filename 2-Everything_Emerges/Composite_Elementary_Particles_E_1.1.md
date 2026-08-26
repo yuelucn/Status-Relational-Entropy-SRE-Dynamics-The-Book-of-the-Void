@@ -51,31 +51,31 @@ The observed “relational distance” between two causal nodes at the macroscop
 
 Let $X_{0}(t)$ and $X_{1}(t)$ denote discrete complex response streams output by dynamical evolution of two underlying internal causal‑loops. Within the generalised spectral domain, local statistical smoothing over an iterative window yields the 2×2 local complex cross‑spectral Hermitian operator $\boldsymbol{M}$:
 
-\[
+$$
 M=\begin{pmatrix}
 E\left[\left|X_{0}\right|^{2}\right] & E\left[X_{0} X_{1}^{*}\right] \\
 E\left[X_{1} X_{0}^{*}\right] & E\left[\left|X_{1}\right|^{2}\right]
 \end{pmatrix}
-\]
+$$
 
 The modulus of the non‑linear cross‑coherence term $\rho=|E[X_{0} X_{1}^{*}]| \in[0,1]$ serves as a characterisation quantity directly quantifying logical correlation density between two causal chains. Emergent macroscopic distance $D$ is not propagated from an external background; it is derived strictly from Shannon mutual‑information encoded within the local Hermitian‑matrix representation. Define shared status‑relational entropy between two loops as $I=-\ln (1-\rho^{2})$. Emergent geometric distance is inversely proportional to this shared logical density:
 
-\[
+$$
 D \propto \frac{1}{I}=\frac{1}{-\ln \left(1-\rho^{2}\right)}
-\]
+$$
 
 - When $\rho \to 0$, mutual‑information vanishes ($I\to0$), emergent distance $D\to\infty$. The two causal chains behave as fully decoupled, independent, infinitely separated particles.
 - When underlying dissipation‑compensation duality dynamics drive causal‑loops toward phase‑coherence saturation — represented at the characterisation level by $\rho\to1$ — mutual‑information saturates toward $I\to\infty$ and forces emergent distance $D\to0$. Two causal‑loops spatially overlap completely. Physical “approach” or “contact” of particles is an emergent manifestation of relational‑metric‑space collapse following underlying causal‑network phase‑coherence saturation; $\rho$ is merely a spectral indicator for this physical process.
 
 Using single‑pass first‑order closed‑form algebra, raw eigenvalue spacing $\Delta\lambda$ and local condition number $\kappa$ are extracted; both quantities are spectral characterisers of underlying dynamical behaviour:
 
-\[
+$$
 \Delta \lambda=\sqrt{\mathrm{Tr}(M)^{2}-4 \det(M)}
-\]
+$$
 
-\[
+$$
 \kappa=\frac{\mathrm{Tr}(M)+\Delta \lambda}{\max \big(\mathrm{Tr}(M)-\Delta \lambda,\ \varepsilon\big)}
-\]
+$$
 
 > $\varepsilon=10^{-7}$<sup>\*</sup>
 >
@@ -98,9 +98,9 @@ Defining space as a relational emergent construct implies composite‑particle f
 
 Total cumulative loop‑steps and path‑depth of the composite entity transitions from linear summation toward high‑order graph‑ensemble mapping, exhibiting qualitative scaling bifurcation:
 
-\[
+$$
 \mathrm{Total\ Causal\ Paths} =\int_{0}^{\infty} \kappa(s) \cdot f(\text{Secondary Feedback Path Generations}) \cdot e^{-s} \,\mathrm{d}s
-\]
+$$
 
 > Note: This equation evaluates topological scaling‑bifurcation using spectral‑representational quantities; it is not a numerically‑fitted expression. Driven by condition‑number‑spike high‑frequency step‑correction near the cutoff boundary, the discrete causal‑graph undergoes structural phase‑transition with exponential complexity growth. It provides a self‑consistent, non‑fitted mathematical account for step‑wise non‑linear rest‑mass amplification observed upon sub‑loop binding.
 
@@ -120,9 +120,9 @@ Built upon SRE underlying dissipation‑compensation‑duality dynamics, this mo
 2. **Current limitations (quantitative level)**
 > ⚠️ At present this model **cannot derive real‑world gluon‑sea mass‑amplification factors, absolute hadron‑mass values, nor precise baryon‑spectral mass‑splitting quantitative results**.
 - The total‑causal‑paths integral shown above
-\[
+$$
 \mathrm{Total\ Causal\ Paths} =\int_{0}^{\infty} \kappa(s) \cdot f(\text{Secondary Feedback Path Generations}) \cdot e^{-s} \,\mathrm{d}s
-\]
+$$
 is a **qualitative formal expression characterising topological scaling bifurcation**, not a complete quantitative formula ready for direct GeV‑scale numerical evaluation.
 - The 2×2 simplified cross‑spectral Hermitian operator represents a two‑loop toy‑model only. Real hadron‑systems are complex networks with huge numbers of coupled degrees‑of‑freedom; this model performs degree‑of‑freedom reduction. The homomorphic mapping preserves structural evolutionary logic, yet a complete quantitative conversion bridge between SRE topological quantities and QCD / lattice‑QCD observables has not yet been established.
 - Neither $\kappa(s)$ nor the secondary‑feedback‑path‑generation function $f(\cdot)$ have been fully analytically determined from SRE‑v1.6 axioms. Calibration constants required for matching against experimental / lattice‑QCD datasets are absent. Therefore mass‑amplification factors for real‑world protons, neutrons and other hadrons cannot be output presently.

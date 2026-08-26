@@ -54,18 +54,18 @@ Baik‑Ben Arous‑Péché（BBP）谱秩相变描述系统在二维全息投影
 ### 2.2 拓扑耗散张量与补偿算子（勘误补正核心）
 > 废弃原始手稿2.3节以$|z_i-z_j|$作为距离基底的表达式；距离完全建立在耗散‑补偿对偶之上，严格匹配SRE v1.6“距离为拓扑残差相干退化程度、耗散补偿记账”的本体。
 定义**拓扑耗散张量$\hat{\mathcal{D}}_{ij}$**，刻画量子证据事件$(i,j)$之间固有的信息损失算子，受观测者测量熵边界$\sigma_z$约束：
-\[
+$$
 \hat{\mathcal{D}}_{ij}=\ln\left(1+\frac{\sigma_{z,i}\cdot \sigma_{z,j}}{\epsilon_\mathrm{mach}}\right)
-\]
+$$
 $\epsilon_\mathrm{mach}$为机器浮点精度下限。
 定义动态拓扑补偿算子$\hat{\mathcal{C}}_\mathrm{compensation}(\alpha_{0,\mathrm{dynamic}})$，代表网络为抵消信息耗散、维持矩阵数值稳定性而调度的路由算力：
-\[
+$$
 \hat{\mathcal{C}}=\alpha_{0,\mathrm{dynamic}}^{-1}\cdot \sin^2\left(\pi \alpha_{0,\mathrm{dynamic}}\cdot \hat{\mathcal{D}}_{ij}\right)
-\]
+$$
 **宏观度规距离平方**直接定义为耗散张量与补偿算子的迹内积：
-\[
+$$
 R_{ij}^{2}\equiv \mathrm{Tr}\big(\hat{\mathcal{D}}_{ij}\cdot \hat{\mathcal{C}}_\mathrm{compensation}(\alpha_{0,\mathrm{dynamic}})\big)\cdot \exp\left(-\gamma \cdot \mu_\mathrm{loss}\right)
-\]
+$$
 - $\gamma=0.0585$：网络握手延迟系数，解析来源于贝肯斯坦信息平滑边界代价$1/(2\pi e)$；
 - $\mu_\mathrm{loss}$：局部平均信息损失权重。
 
@@ -73,30 +73,30 @@ R_{ij}^{2}\equiv \mathrm{Tr}\big(\hat{\mathcal{D}}_{ij}\cdot \hat{\mathcal{C}}_\
 
 ### 2.3 拓扑刚度权重与重子质心红移
 拓扑刚度权重$\mathcal{W}_{ij}$表征关系流形内部的宏观质量等效，完全由观测光谱测量熵导出：
-\[
+$$
 \mathcal{W}_{ij}=\sqrt{\mathcal{C}_i\cdot \mathcal{C}_j}=
 \left[\Big(1+\ln\big(1+\max(\sigma_{z,i},\epsilon_\mathrm{mach})\big)\Big)
 \cdot
 \Big(1+\ln\big(1+\max(\sigma_{z,j},\epsilon_\mathrm{mach})\big)\Big)\right]^{-1/2}
-\]
+$$
 局部子图切片$V_\mathrm{slice}$包含$N$个事件，定义引力加权的**重子质心红移$\mu$**：
-\[
+$$
 \mu=\frac{\sum_{i=1}^{N}\mathcal{C}_i\cdot z_i}{\sum_{i=1}^{N}\mathcal{C}_i}
-\]
+$$
 高阶环路修正扰动场耦合于质心红移：
-\[
+$$
 \xi(z)\equiv\xi(\mu)=0.08\cdot \exp(0.15\cdot \mu)
-\]
+$$
 
 ### 2.4 谱共振导出动态压缩系数$\boldsymbol{\alpha_{0,\mathrm{dynamic}}}$
 $\alpha_{0,\mathrm{dynamic}}$不再是外生输入参数，由双中心化网络矩阵傅里叶谱共振解析得到。当信息数据包穿越局部滑动因果视界宽度$\Delta z=z_\mathrm{max}-z_\mathrm{min}$，矩阵稳定性条件要求手性正弦波匹配第一共振谷，避免数值耗散。
-\[
+$$
 \alpha_{0,\mathrm{dynamic}}=\frac{\theta_\mathrm{conformal}}{\Delta z+\epsilon_\mathrm{mach}}
-\]
+$$
 其中共形几何指数$\theta_\mathrm{conformal}\approx0.82798$，来自复双曲莫比乌斯流形最大填充分数的辛本征值积分：
-\[
+$$
 \theta_\mathrm{conformal}=\frac{1}{\pi}\int_{0}^{1}\frac{\ln(1+x^2)}{x}\mathrm{d}x+\frac{1}{2e}\approx 0.82798
-\]
+$$
 在SDSS局部滑动数据窗口$\Delta z\approx0.03925$，可得$\alpha_{0,\mathrm{dynamic}}=21.09\pm0.34$。证明压缩极限是数据切片几何带来的纯数学后效，而非人为调参。
 
 ## 3 可变有效光速（VSL）与共形规范协变（对齐SRE v1.6光速涌现机制）
@@ -104,9 +104,9 @@ SRE公理体系（v1.6）指出：光速$c$是**涌现因果传播上界**；高
 
 ### 3.1 信息传播的有效光速
 有效光速$c_\mathrm{eff}$定义为节点邻接矩阵上数据包最大路由带宽上限。原初宇宙网络链路密度极高，手性微缠绕带来拓扑阻抗，传输延迟增加：
-\[
+$$
 c_\mathrm{eff}(\mu)=c_0\cdot\Phi_\mathrm{net}(\mu)=c_0\cdot\left[1-\kappa\ln\left(1+\frac{\rho_\mathrm{info}}{\rho_\mathrm{critical}}\right)\right]
-\]
+$$
 - $c_0$：稀疏近场基准速度；
 - $\rho_\mathrm{info}$：局部关系链路信息密度；
 - 拓扑耦合指数$\kappa=\dfrac{1}{\ln2\cdot\pi^2}\approx 0.1462$，来自莫比乌斯交叉节点的拓扑互补割集阻抗。
@@ -115,58 +115,58 @@ c_\mathrm{eff}(\mu)=c_0\cdot\Phi_\mathrm{net}(\mu)=c_0\cdot\left[1-\kappa\ln\lef
 
 ### 3.2 共形标度因子与局域洛伦兹不变
 为保证规范协变性，链路密度改变同时改写涌现度规张量$g_{\mu\nu}$与有效传播速率：
-\[
+$$
 \tilde{g}_{\mu\nu}=\Omega^2(\alpha_{0,\mathrm{dynamic}})\,g_{\mu\nu},\qquad
 \tilde{c}_\mathrm{eff}=\Omega(\alpha_{0,\mathrm{dynamic}})\,c_\mathrm{eff}
-\]
+$$
 关系模空间中共形标量场的线积分：
-\[
+$$
 I(z)=-\frac{\gamma}{4}\int_{z_\mathrm{min}}^{z_\mathrm{max}}\alpha_{0,\mathrm{dynamic}}(z)\,\mathrm{d}z
-\]
+$$
 代入$\alpha_{0,\mathrm{dynamic}}$解析表达式得到共形乘子：
-\[
+$$
 \Omega(\alpha_{0,\mathrm{dynamic}})=\exp(I(z))=\left(\frac{\Delta z}{\theta_\mathrm{conformal}}\right)^{-\gamma/4}
-\]
+$$
 时空间隔得到严格代数抵消，局域线元保持不变：
-\[
+$$
 \mathrm{d}s^2=\tilde{g}_{\mu\nu}\mathrm{d}x^\mu\mathrm{d}x^\nu
 =g_{00}c_0^2\mathrm{d}t^2+\Omega^2 g_{ij}\mathrm{d}x^i\mathrm{d}x^j
-\]
+$$
 因此尽管$c_\mathrm{eff}$随宇宙演化改变，**局域观测者测得光速恒等于$c_0$，满足洛伦兹不变**，与SRE公理体系（v1.6）定性结论严格一致。
 
 ## 4 随机矩阵理论与BBP谱秩相变：2D全息区 ↔4D解锁时空区
 时空有效渲染维度由稳定关联矩阵$B_\mathrm{stabilized}$的本征谱决定。有效秩等于越过Tracy‑Widom统计体边界的本征值数目：
-\[
+$$
 \mathrm{Rank}(z)=\sum\Big(\mathrm{eigvals}(B_\mathrm{stabilized})>\epsilon_\mathrm{adaptive}\Big)
-\]
+$$
 自适应阈值：
-\[
+$$
 \epsilon_\mathrm{adaptive}=\epsilon_\mathrm{mach}\cdot\frac{\ln\left(1+\|B_\mathrm{stabilized}\|_1/N\right)}{2.5}\cdot1.2
-\]
+$$
 $N$代表过去光锥内部普朗克事件计数器；在数值管线中对应光谱切片内有效样本行数。
 
 维度涨落场$\Psi_\mathrm{fluct}(z)$服从修正拓扑金兹堡‑朗道方程，描述BBP谱相变，边界条件取普朗克尺度：
-\[
+$$
 \frac{\partial^2 \Psi_\mathrm{fluct}}{\partial z^2}+\beta(z)\Psi_\mathrm{fluct}-\eta\Psi_\mathrm{fluct}^3=0
-\]
-\[
+$$
+$$
 \Psi_\mathrm{fluct}(z^*)=0,\quad
 \left.\frac{\partial \Psi_\mathrm{fluct}}{\partial z}\right|_{z\to\infty}=\sqrt{\frac{\beta_0}{\eta}}
-\]
+$$
 
 微观层面维度在普朗克频率$10^{43}\,\mathrm{Hz}$快速振荡；天文仪器宏观积分时间$\Delta t\gg \tau_P$，环境诱导退相干抹平快速振荡，观测得到平滑的维度包络期望值：
-\[
+$$
 \langle \mathrm{Rank}(z)\rangle=\int_{0}^{\Delta t}\Psi_\mathrm{fluct}(t)\mathrm{d}t
-\]
+$$
 
 > BBP‑谱秩相变划分两个相：
 1. **晚期宇宙 $z<z^*$，$\mathrm{Rank}=2$（二维全息投影区）**：网络保持单手性莫比乌斯拓扑；补偿算子坍缩为单一路由层。
 2. **原初致密宇宙 $z\ge z^*$，$\mathrm{Rank}=4$（四维解锁时空区）**：BBP谱相变触发；单手性拓扑分裂为双向手性双层网络；补偿算子分裂为**时间层补偿、空间层补偿两条独立本征支**：
-\[
+$$
 \mathrm{Tr}(\hat{\mathcal{C}}_\mathrm{time})
 =\mathrm{Tr}(\hat{\mathcal{C}}_\mathrm{space})
 =\alpha_{0,\mathrm{dynamic}}^{-1}\cdot\sin^2\big(\pi\alpha_{0,\mathrm{dynamic}}\hat{\mathcal{D}}_{ij}\big)
-\]
+$$
 
 > $z^*$为仿真得到的统计相变红移；$z_\mathrm{crit}=4.1605$为v6.1版本历史理论参考值。对应SRE v1.6：本征值越过阈值等价于因果交互满足耗散‑补偿预算，从待实例状态进入物理渲染层。
 
@@ -175,26 +175,26 @@ $N$代表过去光锥内部普朗克事件计数器；在数值管线中对应�
 
 ## 5 因果涌现引力：作为耗散梯度的热力学效应
 引力不是基础场，是局部信息耗散梯度带来的统计热力学后效。物质凝聚抬升局部耗散张量，网络生成向内补偿流平衡矩阵。SRE宇宙引力框架（ v6.2‑rev）抛弃预设黎曼背景，引力加速度由关系度量的对数梯度导出，依赖网络当前秩态：
-\[
+$$
 a_\mathrm{SRE}(r,z)=
 \begin{cases}
 -\dfrac{\alpha_\mathrm{scale}\cdot \mathcal{W}_{ij}}{r}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4} & \mathrm{Rank}=2,\ z<z^* \\[8pt]
 -\dfrac{2\cdot\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}}{r^2}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4}+\Gamma_\mathrm{chiral}(r)
 & \mathrm{Rank}=4,\ z\ge z^*
 \end{cases}
-\]
+$$
 手性引力修正项来自亏格‑1流形狄拉克算子环路修正：
-\[
+$$
 \Gamma_\mathrm{chiral}(r)=\xi(z)\cdot\frac{\sin\left(\pi\alpha_{0,\mathrm{dynamic}}\cdot 2\mu\right)}{r^2\cdot\ln(r/\ell_P)}
-\]
+$$
 $\ell_P$为CODATA普朗克长度，即SRE v1.6定义的涌现本体紫外边界。
 - $\mathrm{Rank}=2$全息区：引力表现长程对数势$1/r$；
 - $\mathrm{Rank}=4$解锁区：回归平方反比律$(1/r)^2$；有效引力常数$G_\mathrm{eff}$在模型允许区间平滑振荡。
 
 **重子冷却增强因子（解释JWST早期大质量星系）**
-\[
+$$
 Cooling\_Boost=\left(\frac{G_\mathrm{eff}}{G_0}\right)^2
-\]
+$$
 在原初致密宇宙$z\ge z^*$区间，重子分子冷却速率获得提升；不改变宇宙热力学年龄，但放大爱丁顿吸积极限，允许气体在极短宇宙时标内坍缩为超大质量星系。
 
 ![图2](./figures/sre_galaxy_mass_crisis.png)
@@ -204,20 +204,20 @@ Cooling\_Boost=\left(\frac{G_\mathrm{eff}}{G_0}\right)^2
 光子作为高频信息数据包，在因果网络中路由，经过大质量因果中心、碰撞参数$b$时，宏观偏折角由补偿通道数目决定。
 1. **$z<z^*,\ \mathrm{Rank}=2$，二维全息简并透镜**
 仅单通道（时间延迟补偿）生效：
-\[
+$$
 \theta_\mathrm{macro}^{(2D)}=\frac{2\cdot \mathcal{W}_{ij}}{b}
-\]
+$$
 2. **$z\ge z^*$，四维解锁透镜**
 BBP谱秩相变打开双向双层网络；**时间层、空间层两条补偿流并行，线性叠加**：
-\[
+$$
 \theta_\mathrm{macro}^{(4D)}=\theta_\mathrm{time}+\theta_\mathrm{space}
 =\frac{2\cdot \mathcal{W}_{ij}}{b}+\frac{2\cdot \mathcal{W}_{ij}}{b}
 =\frac{4\cdot \mathcal{W}_{ij}}{b}\cdot\big[1+\Lambda_\mathrm{twist}(b)\big]
-\]
+$$
 手性扭曲修正项，给出可观测的各向异性偏振印记，可供JWST、罗马望远镜检验：
-\[
+$$
 \Lambda_\mathrm{twist}(b)=\frac{\xi(z)}{b}\cdot\cos^2\left(\frac{\pi\alpha_{0,\mathrm{dynamic}}b}{\ell_P}\right)
-\]
+$$
 $\Lambda_\mathrm{twist}(b)$被严格约束在$\pm0.1500$区间。
 
 > 关键结论：偏转系数2→4阶跃是网络从单通道补偿切换到双通道并行补偿的必然结果；不需要底层连续黎曼几何，即可复现广义相对论经典解析极限；阶跃发生位置由统计仿真相变红移$z^*$决定。

@@ -163,62 +163,62 @@ SRE本体图像：
 
 ## A1 惯性拓扑表达
 闭环子图维持原有组态，无外部扰动 $\mathcal{G}_\mathrm{drive}=0$：
-\[
+$$
 \langle \frac{\partial \mathcal{M}_\mathrm{topo}}{\partial \Delta S}\rangle = 0
-\]
+$$
 外部驱动存在时，组态重排消耗的拓扑补偿开销正比于拓扑复杂度：
-\[
+$$
 \mathcal{Cost}_\mathrm{comp} \propto \mathcal{M}_\mathrm{topo}\cdot \mathcal{R}
-\]
+$$
 $\mathcal{M}_\mathrm{topo}$越大，改变组态所需要的拓扑补偿开销越大，对应惯性越大。
 
 ## A2 力‑质量‑加速度（$F\propto ma$）拓扑演化关系
 外部因果耦合扰动带来拓扑驱动项，统计平均下：
-\[
+$$
 \langle \mathcal{G}_\mathrm{drive} \rangle \propto \mathcal{M}_\mathrm{topo}\cdot \mathcal{R}
-\]
+$$
 $\mathcal{R}$ 是每演化步组态重排速率，对应加速度的拓扑代理；
 将拓扑代理量向经典渲染层做可观测量映射：
-\[
+$$
 F \longleftrightarrow \langle\mathcal{G}_\mathrm{drive}\rangle,\quad
 m \longleftrightarrow \mathcal{M}_\mathrm{topo},\quad
 a \longleftrightarrow \mathcal{R}
-\]
+$$
 得到涌现趋势：
-\[
+$$
 \boldsymbol{F} \propto m \boldsymbol{a}
-\]
+$$
 
 > 说明：是**比例趋势对应**，没有直接给出严格等号常数；比例常数来自网络全局拓扑刚性，需要全局谱输入。
 
 ## A3 胡克定律拓扑演化推导
 $\mathcal{D}_\mathrm{geo,0}$：平衡状态下子图之间拓扑测地线步数；
 $\Delta \mathcal{D}_\mathrm{geo}$：拓扑测地线偏移量（位移拓扑代理）：
-\[
+$$
 \Delta \mathcal{D}_\mathrm{geo}= \mathcal{D}_\mathrm{geo}-\mathcal{D}_\mathrm{geo,0}
-\]
+$$
 中介因果链路产生的拓扑回复补偿梯度：
-\[
+$$
 \langle \mathcal{G}_\mathrm{restore}\rangle = -\mathcal{K}_\mathrm{topo}\cdot \Delta \mathcal{D}_\mathrm{geo}
-\]
+$$
 向经典可观测量映射：
-\[
+$$
 F \longleftrightarrow \langle\mathcal{G}_\mathrm{restore}\rangle,\quad
 k \longleftrightarrow \mathcal{K}_\mathrm{topo},\quad
 x \longleftrightarrow \Delta \mathcal{D}_\mathrm{geo}
-\]
+$$
 小偏移，中介链路没有发生断裂重连，涌现：
-\[
+$$
 \boldsymbol{F}=-k\boldsymbol{x}
-\]
+$$
 
 > 失效判据拓扑条件：当$|\Delta \mathcal{D}_\mathrm{geo}|$超过中介链路容许拓扑阈值，中介因果链路发生断裂重连，$\mathcal{K}_\mathrm{topo}$不再维持常数，胡克定律拓扑关系被破坏。
 
 ## A4 守恒律拓扑形式
 全局因果网络总拓扑补偿开销 $\mathcal{U}_\mathrm{total}$守恒：
-\[
+$$
 \frac{\mathrm{d}\langle \mathcal{U}_\mathrm{total}\rangle}{\mathrm{d}\Delta S}=0
-\]
+$$
 信息传播通量（动量拓扑代理）全局闭环：子系统之间只发生通量重分布，总通量不变。
 
 ## 参考文献

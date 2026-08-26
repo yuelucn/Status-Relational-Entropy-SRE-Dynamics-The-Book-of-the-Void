@@ -65,20 +65,20 @@ The causal‑information‑network provides a cosmological realisation for the S
 > Discard the v6.1‑draft practice of building distances from $|z_i‑z_j|$. Distances are entirely founded on dissipation‑compensation duality, complying with SRE‑v1.6 ontology: distance quantifies the degree of topological‑residual coherent‑degradation as a book‑keeping consequence of dissipation‑compensation accounting.
 
 Define the **topological‑dissipation tensor $\hat{\mathcal{D}}_{ij}$**, which characterises intrinsic information‑loss operators for quantum‑evidence events $(i,j)$, constrained by observational measurement‑entropy bounds $\sigma_z$:
-\[
+$$
 \hat{\mathcal{D}}_{ij}=\ln\left(1+\frac{\sigma_{z,i}\cdot \sigma_{z,j}}{\epsilon_\mathrm{mach}}\right)
-\]
+$$
 $\epsilon_\mathrm{mach}$ denotes machine floating‑point epsilon.
 
 Define the dynamical topological‑compensation‑operator $\hat{\mathcal{C}}_\mathrm{compensation}(\alpha_{0,\mathrm{dynamic}})$, representing routing‑computational overhead invoked by the network to counteract information‑dissipation and maintain numerical‑matrix stability:
-\[
+$$
 \hat{\mathcal{C}}=\alpha_{0,\mathrm{dynamic}}^{-1}\cdot \sin^2\left(\pi \alpha_{0,\mathrm{dynamic}}\cdot \hat{\mathcal{D}}_{ij}\right)
-\]
+$$
 
 The macroscopic squared‑metric distance is directly defined as the trace inner‑product of dissipation‑tensor and compensation‑operator:
-\[
+$$
 R_{ij}^{2}\equiv \mathrm{Tr}\big(\hat{\mathcal{D}}_{ij}\cdot \hat{\mathcal{C}}_\mathrm{compensation}(\alpha_{0,\mathrm{dynamic}})\big)\cdot \exp\left(-\gamma \cdot \mu_\mathrm{loss}\right)
-\]
+$$
 - $\gamma=0.0585$: network handshake‑latency coefficient, analytically derived from Bekenstein information‑smoothing‑bound cost $1/(2\pi e)$.
 - $\mu_\mathrm{loss}$: local‑mean information‑loss weight.
 
@@ -86,33 +86,33 @@ R_{ij}^{2}\equiv \mathrm{Tr}\big(\hat{\mathcal{D}}_{ij}\cdot \hat{\mathcal{C}}_\
 
 ### 2.3 Topological‑Stiffness Weights and Baryonic‑Centroid Redshift
 Topological‑stiffness weight $\mathcal{W}_{ij}$ encodes macroscopic mass‑equivalences within the relational manifold, derived purely from spectroscopic observational measurement‑entropy:
-\[
+$$
 \mathcal{W}_{ij}=\sqrt{\mathcal{C}_i\cdot \mathcal{C}_j}=
 \left[\Big(1+\ln\big(1+\max(\sigma_{z,i},\epsilon_\mathrm{mach})\big)\Big)
 \cdot
 \Big(1+\ln\big(1+\max(\sigma_{z,j},\epsilon_\mathrm{mach})\big)\Big)\right]^{-1/2}
-\]
+$$
 
 Given a local slice‑subgraph $V_\mathrm{slice}$ containing $N$ events, define the gravitationally‑weighted **baryonic‑centroid redshift $\mu$**:
-\[
+$$
 \mu=\frac{\sum_{i=1}^{N}\mathcal{C}_i\cdot z_i}{\sum_{i=1}^{N}\mathcal{C}_i}
-\]
+$$
 
 Higher‑order loop‑perturbation fields couple to the centroid redshift:
-\[
+$$
 \xi(z)\equiv\xi(\mu)=0.08\cdot \exp(0.15\cdot \mu)
-\]
+$$
 
 ### 2.4 Spectral‑Resonance derivation of dynamical compression coefficient $\boldsymbol{\alpha_{0,\mathrm{dynamic}}}$
 $\alpha_{0,\mathrm{dynamic}}$ is no longer an exogenous input parameter. It is analytically obtained from Fourier‑spectral resonance of the double‑centred network‑matrix within each sliding observational causal‑horizon of width $\Delta z=z_\mathrm{max}-z_\mathrm{min}$. Matrix‑stability conditions enforce matching of chiral‑sine modes to the first resonance valley to avoid numerical dissipation:
-\[
+$$
 \alpha_{0,\mathrm{dynamic}}=\frac{\theta_\mathrm{conformal}}{\Delta z+\epsilon_\mathrm{mach}}
-\]
+$$
 
 Where the conformal‑geometric index $\theta_\mathrm{conformal}\approx0.82798$ comes from辛‑eigenvalue integration for maximum‑packing fractions on complex‑hyperbolic Möbius manifolds:
-\[
+$$
 \theta_\mathrm{conformal}=\frac{1}{\pi}\int_{0}^{1}\frac{\ln(1+x^2)}{x}\mathrm{d}x+\frac{1}{2e}\approx 0.82798
-\]
+$$
 
 For SDSS sliding‑window slices with $\Delta z\approx0.03925$, we obtain $\alpha_{0,\mathrm{dynamic}}=21.09\pm0.34$. This demonstrates compression‑limits emerge purely as mathematical consequences of slice‑geometry rather than manual tuning.
 
@@ -121,9 +121,9 @@ SRE‑v1.6 axioms state that the speed‑of‑light $c$ is an **emergent causal�
 
 ### 3.1 Information‑propagation emergent effective‑speed‑of‑light
 $c_\mathrm{eff}(\mu)$ is defined as the maximum packet‑routing bandwidth upper‑bound on the adjacency network. In the dense primordial universe high topological‑winding creates impedance and increases transmission latency:
-\[
+$$
 c_\mathrm{eff}(\mu)=c_0\cdot\Phi_\mathrm{net}(\mu)=c_0\cdot\left[1-\kappa\ln\left(1+\frac{\rho_\mathrm{info}}{\rho_\mathrm{critical}}\right)\right]
-\]
+$$
 - $c_0$: sparse‑near‑field baseline propagation‑speed.
 - $\rho_\mathrm{info}$: local relational‑link information‑density.
 - Topological‑coupling index $\kappa=\dfrac{1}{\ln2\cdot\pi^2}\approx 0.1462$, originating from topological‑complementary‑cut‑set impedances of Möbius cross‑nodes.
@@ -132,64 +132,64 @@ c_\mathrm{eff}(\mu)=c_0\cdot\Phi_\mathrm{net}(\mu)=c_0\cdot\left[1-\kappa\ln\lef
 
 ### 3.2 Conformal‑scaling factor and local Lorentz‑invariance
 To guarantee gauge‑covariance, changes in link‑density simultaneously rescale the emergent metric tensor $g_{\mu\nu}$ and effective propagation‑speed:
-\[
+$$
 \tilde{g}_{\mu\nu}=\Omega^2(\alpha_{0,\mathrm{dynamic}})\,g_{\mu\nu},\qquad
 \tilde{c}_\mathrm{eff}=\Omega(\alpha_{0,\mathrm{dynamic}})\,c_\mathrm{eff}
-\]
+$$
 
 The line‑integral of the conformal‑scalar‑field over relational‑moduli‑space:
-\[
+$$
 I(z)=-\frac{\gamma}{4}\int_{z_\mathrm{min}}^{z_\mathrm{max}}\alpha_{0,\mathrm{dynamic}}(z)\,\mathrm{d}z
-\]
+$$
 
 Substituting the analytic expression for $\alpha_{0,\mathrm{dynamic}}$ yields the conformal multiplier:
-\[
+$$
 \Omega(\alpha_{0,\mathrm{dynamic}})=\exp(I(z))=\left(\frac{\Delta z}{\theta_\mathrm{conformal}}\right)^{-\gamma/4}
-\]
+$$
 
 Algebraic cancellation preserves the local line‑element:
-\[
+$$
 \mathrm{d}s^2=\tilde{g}_{\mu\nu}\mathrm{d}x^\mu\mathrm{d}x^\nu
 =g_{00}c_0^2\mathrm{d}t^2+\Omega^2 g_{ij}\mathrm{d}x^i\mathrm{d}x^j
-\]
+$$
 
 Therefore, even as $c_\mathrm{eff}$ evolves cosmologically, **locally‑measured observer light‑speed remains $c_0$, satisfying Lorentz‑invariance**, consistent with qualitative SRE‑v1.6 predictions.
 
 ## 4 Random‑Matrix‑Theory and BBP Spectral‑Rank Phase‑Transition: 2D‑Holographic ↔ 4D‑Unlocked‑Spacetime
 Effective rendered‑spacetime dimensionality is determined by the eigenvalue‑spectrum of the stabilised association matrix $B_\mathrm{stabilized}$. Effective rank counts eigenvalues exceeding the Tracy‑Widom statistical‑bulk boundary:
-\[
+$$
 \mathrm{Rank}(z)=\sum\Big(\mathrm{eigvals}(B_\mathrm{stabilized})>\epsilon_\mathrm{adaptive}\Big)
-\]
+$$
 
 Adaptive threshold:
-\[
+$$
 \epsilon_\mathrm{adaptive}=\epsilon_\mathrm{mach}\cdot\frac{\ln\left(1+\|B_\mathrm{stabilized}\|_1/N\right)}{2.5}\cdot1.2
-\]
+$$
 
 $N$ counts Planck‑event counters inside the past‑light‑cone; within numerical pipelines it corresponds to valid‑sample rows of spectroscopic slices.
 
 The dimensional‑fluctuation‑field $\Psi_\mathrm{fluct}(z)$ obeys a modified topological Ginzburg‑Landau equation describing the BBP spectral‑rank phase‑transition, with Planck‑scale boundary‑conditions:
-\[
+$$
 \frac{\partial^2 \Psi_\mathrm{fluct}}{\partial z^2}+\beta(z)\Psi_\mathrm{fluct}-\eta\Psi_\mathrm{fluct}^3=0
-\]
-\[
+$$
+$$
 \Psi_\mathrm{fluct}(z^*)=0,\quad
 \left.\frac{\partial \Psi_\mathrm{fluct}}{\partial z}\right|_{z\to\infty}=\sqrt{\frac{\beta_0}{\eta}}
-\]
+$$
 
 Microscopically dimensionality oscillates at Planck‑frequency $10^{43}\,\mathrm{Hz}$. Astronomical observing‑instruments have integration‑times $\Delta t\gg \tau_P$; environmentally‑induced decoherence washes out fast oscillations and observers detect the smooth expectation‑value envelope:
-\[
+$$
 \langle \mathrm{Rank}(z)\rangle=\int_{0}^{\Delta t}\Psi_\mathrm{fluct}(t)\,\mathrm{d}t
-\]
+$$
 
 > Two distinct phases separated by the statistically‑simulated transition redshift $z^*$:
 1. **Late‑time universe $z<z^*$, $\mathrm{Rank}=2$ (2D‑holographic‑projection phase)**: the network remains in single‑handed Möbius topology; compensation‑operator collapses onto a single routing‑layer.
 2. **Primordial dense universe $z\ge z^*$, $\mathrm{Rank}=4$ (4D‑unlocked‑spacetime phase)**: BBP spectral‑rank phase‑transition triggers; single‑handed Möbius topology splits into bidirectional‑chiral two‑layer network. The compensation‑operator separates into two independent eigen‑branches: time‑layer compensation and space‑layer compensation:
-\[
+$$
 \mathrm{Tr}(\hat{\mathcal{C}}_\mathrm{time})
 =\mathrm{Tr}(\hat{\mathcal{C}}_\mathrm{space})
 =\alpha_{0,\mathrm{dynamic}}^{-1}\cdot\sin^2\big(\pi\alpha_{0,\mathrm{dynamic}}\hat{\mathcal{D}}_{ij}\big)
-\]
+$$
 
 > $z^*$ denotes the simulated statistical transition‑redshift; $z_\mathrm{crit}=4.1605$ is the historical‑theoretical reference value from v6.1. In SRE‑v1.6 language: eigenvalues crossing the threshold mean causal‑interactions satisfy dissipation‑compensation budgets and transition from uninstantiated state into physical‑rendering‑layer.
 
@@ -198,28 +198,28 @@ Microscopically dimensionality oscillates at Planck‑frequency $10^{43}\,\mathr
 
 ## 5 Causally‑Emergent Gravity: Thermodynamic Effect of Dissipation‑Gradients
 Gravity is not a fundamental‑field but a statistical‑thermodynamic consequence of local information‑dissipation‑gradients. Matter condensation elevates the local dissipation‑tensor, and the network generates inward compensation‑flows for matrix equilibrium. Discarding pre‑supposed Riemannian backgrounds, SRE‑v6.2‑rev obtains gravitational‑acceleration from logarithmic‑gradients of relational‑metrics conditional upon the current network rank‑state:
-\[
+$$
 a_\mathrm{SRE}(r,z)=
 \begin{cases}
 -\dfrac{\alpha_\mathrm{scale}\cdot \mathcal{W}_{ij}}{r}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4} & \mathrm{Rank}=2,\ z<z^* \\[8pt]
 -\dfrac{2\cdot\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}}{r^2}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4}+\Gamma_\mathrm{chiral}(r)
 & \mathrm{Rank}=4,\ z\ge z^*
 \end{cases}
-\]
+$$
 
 Chiral‑gravitational‑correction originates from genus‑1 manifold Dirac‑operator loop‑corrections:
-\[
+$$
 \Gamma_\mathrm{chiral}(r)=\xi(z)\cdot\frac{\sin\left(\pi\alpha_{0,\mathrm{dynamic}}\cdot 2\mu\right)}{r^2\cdot\ln(r/\ell_P)}
-\]
+$$
 $\ell_P$ is the CODATA Planck‑length, the emergent‑ontology ultraviolet‑threshold defined in SRE‑v1.6.
 
 - $\mathrm{Rank}=2$ holographic‑phase: gravity manifests long‑range logarithmic‑potential $\propto 1/r$.
 - $\mathrm{Rank}=4$ unlocked‑phase: recovers inverse‑square‑law $(1/r)^2$ behaviour; $G_\mathrm{eff}$ undergoes smooth oscillations within model‑allowed bounds.
 
 **Baryonic‑cooling‑boost factor (explanation for JWST early‑massive‑galaxy puzzle)**
-\[
+$$
 Cooling\_Boost=\left(\frac{G_\mathrm{eff}}{G_0}\right)^2
-\]
+$$
 
 Within the primordial dense‑universe interval $z\ge z^*$, baryonic‑molecular cooling‑rates receive enhancements. Without altering cosmic thermal ages, the Eddington‑accretion‑limit is amplified, allowing gas to collapse into super‑massive galaxies over short cosmic timescales.
 
@@ -231,22 +231,22 @@ Photons propagate as high‑frequency information‑packets across the causal‑
 
 1. **$z<z^*,\ \mathrm{Rank}=2$, two‑dimensional holographic‑degenerate lensing**
 Only the time‑delay compensation‑channel is active:
-\[
+$$
 \theta_\mathrm{macro}^{(2D)}=\frac{2\cdot \mathcal{W}_{ij}}{b}
-\]
+$$
 
 2. **$z\ge z^*$, four‑dimensional unlocked‑lensing**
 The BBP spectral‑rank phase‑transition opens bidirectional‑two‑layer networks; time‑layer and space‑layer compensation‑flows operate in‑parallel and add linearly:
-\[
+$$
 \theta_\mathrm{macro}^{(4D)}=\theta_\mathrm{time}+\theta_\mathrm{space}
 =\frac{2\cdot \mathcal{W}_{ij}}{b}+\frac{2\cdot \mathcal{W}_{ij}}{b}
 =\frac{4\cdot \mathcal{W}_{ij}}{b}\cdot\big[1+\Lambda_\mathrm{twist}(b)\big]
-\]
+$$
 
 Chiral‑twist correction produces observable anisotropic polarisation imprints testable by JWST and Roman‑Space‑Telescope:
-\[
+$$
 \Lambda_\mathrm{twist}(b)=\frac{\xi(z)}{b}\cdot\cos^2\left(\frac{\pi\alpha_{0,\mathrm{dynamic}}b}{\ell_P}\right)
-\]
+$$
 $\Lambda_\mathrm{twist}(b)$ is strictly bounded within $\pm0.1500$.
 
 > Key conclusion: the factor‑2‑to‑4 deflection‑jump is a necessary consequence of switching from single‑channel to parallel dual‑channel compensation. It reproduces classical General‑Relativity analytical limits without postulating underlying continuous Riemannian geometry; the jump‑location follows the statistically‑simulated transition redshift $z^*$.
