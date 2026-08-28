@@ -1,16 +1,16 @@
-# 第3号算子终配数理推导规范 
+﻿# 算子-3：终配数理推导规范 
 
 作者: 岳路  
 版本: 1.1  
 
-> 【资源与可用性声明】 本框架基于状态‑关系熵（SRE）动力学构建。 全部理论资料归档于 Zenodo 开源数据仓库。**本文档套件包括系统论文、应用开发、科学假说、算子1‑6完整代数推导及仿真代码完全开源**；算子7、8、9、10属于后续闭源商业核心模块，不在本文档套件范围内。
+> 【资源与可用性声明】 本框架基于状态-关系熵（SRE）动力学构建。 全部理论资料归档于 Zenodo 开源数据仓库。**本文档套件包括系统论文、应用开发、科学假说、算子1-6完整代数推导及仿真代码完全开源**；算子7、8、9、10属于后续闭源商业核心模块，不在本文档套件范围内。
 >
 >此外可访问支持AI辅助查阅的腾讯智能文档空间（PC、微信移动端均可访问）。
 >
-> 截至2026‑08‑14，受谷歌服务使用条款约束，作者不再维护、更新谷歌Gemini Notebook内的SRE文档库，该链接仅作历史存档，请勿作为正式引用来源：
+> 截至2026-08-14，受谷歌服务使用条款约束，作者不再维护、更新谷歌Gemini Notebook内的SRE文档库，该链接仅作历史存档，请勿作为正式引用来源：
 >
 >- 谷歌Gemini Notebook（历史存档，不再更新）：
-[https://notebooklm.google.com/notebook/ef52bf5a‑f6d0‑4a2a‑aed4‑b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a%E2%80%91f6d0%E2%80%914a2a%E2%80%91aed4%E2%80%91b25d6520ab2c)
+[https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a%E2%80%91f6d0%E2%80%914a2a%E2%80%91aed4%E2%80%91b25d6520ab2c)
 >- 腾讯智能文档：
 [https://docs.qq.com/space/DUkRjYUtNWFdyV253](https://docs.qq.com/space/DUkRjYUtNWFdyV253)
 >
@@ -236,3 +236,4 @@ $$\mathcal{T}_{\text{morphic}}: \langle \mathcal{M}_{\text{spin}}, \ \lambda_2(n
 * **内生变动光速与时间膨胀的代数交通拥堵机制：** 光速不变性及强引力场下的“时间膨胀”，在本体系中被完美降维退化为**局域有向通道离散穿透率 $c_e$ 的对数拥堵阻尼**：
   $$c_e^{(s)} = \alpha_n \cdot \frac{1}{\ln(1 + W_e)}$$
   当信息流跨越高质能密度区时，拓扑重叠核权重 $W_e$ 呈指数级膨胀，局域离散穿透率 $c_e$ 发生对数级自适应收缩。跨越同样测地线拓扑深度所需的脉冲步数成本被迫暴涨，实现物理自洽性的极致跨越。
+
