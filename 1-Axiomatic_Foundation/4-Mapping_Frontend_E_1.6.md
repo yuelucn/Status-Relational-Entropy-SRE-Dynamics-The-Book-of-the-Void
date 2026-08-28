@@ -1,4 +1,4 @@
-# Status‑Relational Entropy (SRE) Dynamics: Mapping Prerequisites
+# Mapping Prerequisites
 **Author:** Yue Lu
 **Version:** 1.6 (Revised for Multi‑Scale Homomorphic Mapping)
 

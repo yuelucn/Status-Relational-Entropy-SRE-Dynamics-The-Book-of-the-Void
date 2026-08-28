@@ -1,4 +1,4 @@
-# Status‑Relational Entropy (SRE) Dynamics: Reciprocal Measurement and the Mapping Origin of $c$
+# Reciprocal Measurement and the Mapping Origin of $c$
 **Author:** Yue Lu
 **Version:** 1.6.0 (Revised: Dissipation‑Compensation and Möbius‑Residue Alignment)
 

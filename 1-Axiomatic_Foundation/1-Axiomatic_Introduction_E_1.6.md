@@ -1,5 +1,3 @@
-# Status‑Relational Entropy (SRE) Dynamics:
-
 # A Foundational Framework for Information‑Physical Interconversion
 
 **Author:** Yue Lu 

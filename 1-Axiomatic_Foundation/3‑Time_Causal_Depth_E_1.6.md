@@ -1,5 +1,4 @@
-# Status‑Relational Entropy (SRE) Dynamics:
-## Methodological Revision on Causal Depth and Spatial Indexing
+# Methodological Revision on Causal Depth and Spatial Indexing
 **Author:** Yue Lu
 **Version:** 1.6.0 (Dissipation‑Compensation and Möbius‑Residue Aligned Edition)
 
