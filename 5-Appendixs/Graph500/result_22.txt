@@ -1,0 +1,45 @@
+SCALE:                          22
+edgefactor:                     16
+NBFS:                           10
+graph_generation:               5.872
+num_mpi_processes:              1
+num_omp_threads:                8
+construction_time:              22.909
+num_vertices:                   4194304
+num_edges:                      67108864
+nnz:                            138408220
+sre_min_time:                   5.295
+sre_firstquartile_time:         5.486
+sre_median_time:                5.518
+sre_thirdquartile_time:         5.552
+sre_max_time:                   5.802
+sre_mean_time:                  5.5361
+sre_stddev_time:                0.142835
+min_nedge:                      138408220
+firstquartile_nedge:            138408220
+median_nedge:                   138408220
+thirdquartile_nedge:            138408220
+max_nedge:                      138408220
+mean_nedge:                     138408220
+stddev_nedge:                   0
+sre_min_TEPS:                   2.38553e+07
+sre_firstquartile_TEPS:         2.49294e+07
+sre_median_TEPS:                2.5083e+07
+sre_thirdquartile_TEPS:         2.52294e+07
+sre_max_TEPS:                   2.61394e+07
+sre_harmonic_mean_TEPS:     !   2.5001e+07
+sre_harmonic_stddev_TEPS:       215014
+sre_min_per_vertex_us:          1.26243
+sre_median_per_vertex_us:       1.31559
+sre_max_per_vertex_us:          1.3833
+sre_mean_per_vertex_us:         1.31991
+
+# SRE Extended Kernel (non-standard, ignored by official parser)
+# op1_time=0.000000e+00 op2_time=4.729998e-01 op3_time=0.000000e+00
+# op4_time=1.000166e-03 op5_time=0.000000e+00 op6_time=5.017000e+00
+# op7_time=0.000000e+00 op8_time=0.000000e+00 op9_time=0.000000e+00 op10_time=0.000000e+00
+# op4_w_e_trace=0.000000 op4_w_e_frobenius=0.000000
+# op5_c_e_mean=0.000000
+# op6_lambda_2=1.854989e+03 op6_alpha_n=3.195414e+05 op6_residual=1.298520e+04
+# op7_grad_norm=9.518792e+00 op8_delta_Pi=1.217581e-01 op9_trace=40.000000
+# op10_z_eff=1.000000 op10_action_gate=1 op10_p_conduction=1.000000

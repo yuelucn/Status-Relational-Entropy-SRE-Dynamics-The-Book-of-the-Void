@@ -131,4 +131,3 @@ This formally satisfies the strict complexity boundary limits required to ensure
 > **Figure -1**: Numerical verification suite for Operator 6.
 > Subplot 1: Complexity destruction red-line: execution-time comparison. The global synchronous spectral solver (red dashed) exhibits severe $\mathcal{O}(n^3)$ cubic growth as network size $n$ increases. Operator 6 splicing-kernel runtime (green solid) remains weakly growing, verifying the $\mathcal{O}(m_g \cdot k_{\text{rank}})$ sparse-subdomain complexity bound.
 > Subplot 2: Algebraic approximation accuracy baseline for Theorem 6.1. Relative error of Fiedler eigenvalue $\lambda_2(n)$ decays monotonically with rising global node count $n$, confirming the convergence property of the Rayleigh-Ritz splicing projection.
-

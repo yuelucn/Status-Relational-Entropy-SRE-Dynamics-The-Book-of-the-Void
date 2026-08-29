@@ -1,0 +1,45 @@
+SCALE:                          24
+edgefactor:                     16
+NBFS:                           10
+graph_generation:               34.621
+num_mpi_processes:              1
+num_omp_threads:                8
+construction_time:              207.507
+num_vertices:                   16777216
+num_edges:                      268435456
+nnz:                            553642408
+sre_min_time:                   47.994
+sre_firstquartile_time:         49.529
+sre_median_time:                51.4695
+sre_thirdquartile_time:         52.337
+sre_max_time:                   55.574
+sre_mean_time:                  51.5959
+sre_stddev_time:                2.43157
+min_nedge:                      553642408
+firstquartile_nedge:            553642408
+median_nedge:                   553642408
+thirdquartile_nedge:            553642408
+max_nedge:                      553642408
+mean_nedge:                     553642408
+stddev_nedge:                   0
+sre_min_TEPS:                   9.96226e+06
+sre_firstquartile_TEPS:         1.05784e+07
+sre_median_TEPS:                1.07567e+07
+sre_thirdquartile_TEPS:         1.11781e+07
+sre_max_TEPS:                   1.15357e+07
+sre_harmonic_mean_TEPS:     !   1.07304e+07
+sre_harmonic_stddev_TEPS:       168564
+sre_min_per_vertex_us:          2.86067
+sre_median_per_vertex_us:       3.06782
+sre_max_per_vertex_us:          3.31247
+sre_mean_per_vertex_us:         3.07536
+
+# SRE Extended Kernel (non-standard, ignored by official parser)
+# op1_time=0.000000e+00 op2_time=3.462000e+00 op3_time=0.000000e+00
+# op4_time=0.000000e+00 op5_time=0.000000e+00 op6_time=4.887500e+01
+# op7_time=0.000000e+00 op8_time=0.000000e+00 op9_time=0.000000e+00 op10_time=0.000000e+00
+# op4_w_e_trace=0.000000 op4_w_e_frobenius=0.000000
+# op5_c_e_mean=0.000000
+# op6_lambda_2=4.495239e+03 op6_alpha_n=7.396441e+05 op6_residual=2.530197e+04
+# op7_grad_norm=9.518792e+00 op8_delta_Pi=1.217581e-01 op9_trace=40.000000
+# op10_z_eff=1.000000 op10_action_gate=1 op10_p_conduction=1.000000

@@ -21,5 +21,3 @@ This part constitutes **Part III of State‑Relational‑Entropy (SRE) Dynamic
 8. **Operator-6: Rigorous‑Mathematical‑Specification‑Derivation‑and‑Argumentation‑Final‑Draft‑Specification for the Subspace‑Sieve‑and‑Splicing‑Operator ($\mathcal{P}_\mathrm{sieve} \cup \mathcal{O}_\mathrm{splice}$)**: Implements Rayleigh‑Ritz local‑splicing kernels, discards global QR eigen‑decomposition; reduces spectral‑solving complexity from $\mathcal O(n^3)$ down to the sparse‑subdomain upper bound $\mathcal O(m_g \cdot k_\mathrm{rank})$, eliminating full‑network global‑synchronization dead‑locks.
 
 > This suite belongs to the underlying mathematical‑implementation layer and builds upon the Part I axiomatic ontology. Its main focus is **how to translate SRE causal‑network ideas into computable algebraic pipelines**. The open‑source operators define only mathematical specifications. Large‑scale distributed‑simulation engineering implementations plus closed‑source Operators 7‑10 are subjects for subsequent research work. This part likewise **does not answer the ultimate origin of causal differences**.
-
-<div style="page-break-after: always;"></div>
