@@ -1,25 +1,5 @@
 ﻿# A Foundational Reconstruction of Classical Electrodynamics via Discrete Graph Topology and Bidirectional Causality
-**Author**: Yue Lu
 **Version**: v1.1-rev
-
-> **Resource & Availability Statement**: This framework is built upon Status-Relational Entropy (SRE) Dynamics. The complete suite of theoretical materials is archived in the Zenodo open-data repository.
-> **The full package includes system manuscripts, application developments, scientific hypotheses, complete algebraic derivations for operators 1-6, and simulation source code, all open-source**. Operators 7, 8, 9, 10 belong to subsequent closed-source commercial core modules and are not included in this document suite.
->
-> A Tencent Smart-Document workspace supporting AI-assisted review is available for both PC and mobile access.
->
-> As of 2026-08-14, the author no longer maintains or updates the Google Gemini Notebook SRE documentation suite due to Google Terms-of-Service constraints; this link serves purely as historical archive and shall not be used for formal citation:
->
-> - Gemini Notebook (historical archive, no longer updated):
-<https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c>
-> - Tencent Smart-Document workspace:
-<https://docs.qq.com/space/DUkRjYUtNWFdyV253>
->
-> According to the SRE principle, physical foundations originate from information statistics.
-> Reference baseline: SRE-v1.6 Axiom Suite (https://doi.org/10.5281/zenodo.22077475)
-> Historical references:
-> https://doi.org/10.5281/zenodo.19935370
-> https://doi.org/10.5281/zenodo.20344105
-> https://doi.org/10.5281/zenodo.20576606
 
 > Remark: This manuscript adopts a pragmatic hybrid approach combining the SRE ontological picture with classical-engineering frameworks. Underlying topological evolution obeys SRE axioms. Observational-mapping anchors adopt experimentally-measured universal constants as conversion interfaces and are not endogenously derived directly from SRE axioms. Fully endogenous derivation of all cosmic universal constants is a long-term research objective and lies outside the scope of v1.1-rev. The accompanying simulation `sre_simulation.py` is an engineering-oriented demonstration after mapping, not native dimensionless topological evolution at the底层 level.
 
@@ -196,4 +176,3 @@ Classical electromagnetism and circuit-theory emerge as effective theories of di
 3. Literature on graph theory, graph Laplacian, Matrix-Tree Theorem.
 4. Circuit theory, RLC resonance, fundamentals of semiconductor devices.
 5. `sre_simulation.py`: accompanying engineering demonstration simulation code included within open-source suite.
-

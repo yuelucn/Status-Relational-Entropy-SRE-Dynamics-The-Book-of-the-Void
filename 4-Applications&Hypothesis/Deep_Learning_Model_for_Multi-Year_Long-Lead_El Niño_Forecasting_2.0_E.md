@@ -1,5 +1,4 @@
 # Causal Compliance and Global Sea Surface Temperature Anomaly (ENSO‑SSTA) Spatiotemporal Forecasting Audit Report: The 2D Convolutional Dissipative Network Paradigm (Astro‑Cow‑Net)
-**Author**: Yue Lu
 **Version**: 2.0
 **Date**: June 21, 2026
 

@@ -1,16 +1,13 @@
 # Academic Hypothesis: The Sovereign Universe Tree of Life Protocol and Topological Residual Inheritance via State‑Relation Entropy (SRE) Dynamics
-**Author**: Yue Lu
 **Version**: 1.0 (Final Theoretical Consensus: Atemporal Axiomatic Edition, 2026)
 
-> This framework is built upon State‑Relational‑Entropy (SRE) Dynamics
+> Related references:
 > https://doi.org/10.5281/zenodo.19935370
 > — User Guide and Interpretive Companion
 > https://doi.org/10.5281/zenodo.20344105
 > — Unified Interpretation of Microscopic Interactions and Cosmic Forces Based on Causal Chains and Statistical Probability
 > https://doi.org/10.5281/zenodo.20576606
 > — Theory of Hierarchical Dissipative Self‑Organizing Binary Network Dynamics
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 ## Abstract
 Within the framework of State‑Relational‑Entropy (SRE) dynamics, spacetime, mass, and Newton’s gravitational constant $G$ are modelled as macroscopic statistical metrics emerging from the outward expansion of a dimensionless symmetric binary matrix $M_{n}\in\{+1,-1\}^{n\times n}$. Within this ontology, conventional temporal flow possesses no fundamental primitive status. Its physical essence is defined as the discrete step‑count and metabolic overhead consumed by the system to maintain global causal consistency.

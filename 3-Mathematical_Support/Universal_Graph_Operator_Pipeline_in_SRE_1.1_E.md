@@ -1,20 +1,5 @@
 ﻿# Universal Graph-Operator Pipeline Framework White Paper for Status-Relational-Entropy (SRE) Dynamics
-**Author**: Yue Lu
 **Version**: 1.1
-
-> **Resource & Availability Statement**: This framework is built upon Status-Relational Entropy (SRE) Dynamics. The complete suite of theoretical materials is archived in the Zenodo open-data repository.
-> **The full package includes system manuscripts, application developments, scientific hypotheses, complete algebraic derivations for operators 1-6, and simulation source code, all open-source**. Operators 7, 8, 9, 10 belong to subsequent closed-source commercial core modules and are not included in this document suite.
->
-> A Tencent Smart-Document workspace supporting AI-assisted review is available for both PC and mobile access.
->
-> As of 2026-08-14, the author no longer maintains or updates the Google Gemini Notebook SRE documentation suite due to Google Terms-of-Service constraints; this link serves purely as historical archive and shall not be used for formal citation:
->
-> - Gemini Notebook (historical archive, no longer updated):
-<https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c>
-> - Tencent Smart-Document workspace:
-<https://docs.qq.com/space/DUkRjYUtNWFdyV253>
->
-> According to the SRE principle, foundations of classical physics originate from information statistics.
 
 ## Abstract
 This paper presents top-level architectural specifications, closed-form algebraic derivations and multi-morphology numerical validations for the universal graph-operator pipeline under Status-Relational-Entropy (SRE) Dynamics. Following the **No-Background-Metric Principle**, this framework does not pre-assign underlying background coordinate metrics, pre-defined spacetime tensors or artificially constructed geometric manifolds. Under these premises, it is demonstrated that macroscopic three-dimensional continuous spacetime geometry, causal timeline self-consistency and physical conservation laws can emerge as endogenous topological properties of discrete binary self-organizing spin networks over discrete pulse-evolution steps $n \in \mathbb{N}^+$.
@@ -194,4 +179,3 @@ Through final stitching-lock from Operator 9, all algebraic joints of the univ
 
 ## Archival Notice
 This specification has undergone consistency audits for graph-complex Hodge-adjoint structures, symplectic-matrix variational-symmetries and time-delay Lyapunov-functionals. External-interface signatures and global-invariant convergence targets for the full set of ten operators are internally self-consistent. Open-source components are reproducible; closed-source components are published only via black-box interface-declarations.
-

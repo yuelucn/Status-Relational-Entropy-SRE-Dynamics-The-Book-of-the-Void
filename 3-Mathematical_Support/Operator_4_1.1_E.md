@@ -1,17 +1,5 @@
 ﻿# Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator （$\mathcal{M}_{\text{degree}}$） and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional
-**Author**: Yue Lu
 **Version**: 1.1
-> **Resource-Availability Statement** This framework is built upon Status-Relational Entropy (SRE) Dynamics. All theoretical materials are archived in the Zenodo open-access repository. **This manuscript suite, including system papers, application developments, scientific hypotheses, full algebraic derivations for operators 1-6 and simulation code, is fully open-source**. Operators 7, 8, 9, 10 are subsequent closed-source commercial core modules and are not part of this manuscript suite.
->
->Additionally, you may access the Tencent intelligent-document space supporting AI-assisted reading, which is available on both PC and WeChat mobile clients.
->
-> As of 2026-08-14, constrained by Google’s terms-of-service, the author no longer maintains or updates the SRE document library hosted in Google Gemini Notebook. The link below serves only as a historical archive and must not be used as a formal citation source:
->
->- Google Gemini Notebook (historical archive, no further updates): [https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a%E2%80%91f6d0%E2%80%914a2a%E2%80%91aed4%E2%80%91b25d6520ab2c)
->
->- Tencent Intelligent Document Space: [https://docs.qq.com/space/DUkRjYUtNWFdyV253](https://docs.qq.com/space/DUkRjYUtNWFdyV253)
->
->According to the SRE principle, the physical foundation originates from information statistics.
 
 > **Document positioning**: This manuscript constitutes core component of Phase-1 Homogeneous-Metric Operator Suite within Status-Relational-Entropy (SRE) Dynamics. Operator 4 receives intermediate outputs from Operator 1 and Operator 2, and supplies spectral-prior parameters for downstream Operator 5. It belongs to the open-source Operator 1-6 suite; Operators 7-10 are closed-source commercial-core modules and are outside the scope of this document.
 
@@ -185,4 +173,3 @@ Operator 4 ($\mathcal{M}_{\text{degree}}$) achieves smooth homogeneous-metric 
 Following Version 18.0 dependency-topology pipeline order, after mathematical derivations of Operator 4 are fully validated, work proceeds immediately onto the second core component within **Phase 1 Homogeneous-Metric Operator Suite**:
 
 * **Advance to Operator 6 (Subspace-Spectral-Sieve & Splicing Operator $\mathcal{P}_{\text{sieve}} \cup \mathcal{O}_{\text{splice}}$)**: Derive **Rayleigh-Ritz algebraic boundary-splicing kernel**. Adaptive Lanczos low-rank iteration completely abolishes full-network heavy global eigendecomposition, supplying streamed-prior solutions of $\lambda_2(n)$ and $\alpha_n$ for Operator 4, crushing overall computational complexity from $\mathcal{O}(n^3)$ down into sparse-local bound $\mathcal{O}(m_g \cdot k_{\text{rank}})$.
-

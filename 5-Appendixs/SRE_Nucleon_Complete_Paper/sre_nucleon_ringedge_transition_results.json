@@ -1,0 +1,230 @@
+{
+ "A = Y3 x triangle3": {
+  "tag": "A = Y3 x triangle3",
+  "V": 12,
+  "E": 18,
+  "beta1": 7,
+  "|Aut|": 36,
+  "T_closed": 3,
+  "n_ring_vertices": 9,
+  "lam2_closed": 0.9999999999999987,
+  "rho_closed": 5.3027756377319974,
+  "Pi1": 0.1885804846964447,
+  "m_lam2": 2,
+  "n_edge_orbits": 2,
+  "orbit_sizes": [
+   9,
+   9
+  ],
+  "rho_span_all_18": 3.552713678800501e-15,
+  "lam2_readings_all": [
+   0.527166091,
+   1.0
+  ],
+  "n_lam2_readings_ring": 1,
+  "n_T_readings_ring": 1,
+  "ring_open_lam2": [
+   1.0
+  ],
+  "ring_open_T": [
+   2
+  ],
+  "channel_open_lam2": [
+   0.527166091
+  ],
+  "channel_open_T": [
+   3
+  ],
+  "rows": [
+   {
+    "kind": "channel",
+    "orbit_size": 9,
+    "rep_edge": [
+     0,
+     1
+    ],
+    "lam2": 0.5271660910047448,
+    "rho": 5.302775637731996,
+    "d_lam2": -0.4728339089952539,
+    "T_open": 3,
+    "T_closed": 3,
+    "connected": true
+   },
+   {
+    "kind": "ring",
+    "orbit_size": 9,
+    "rep_edge": [
+     1,
+     5
+    ],
+    "lam2": 1.0,
+    "rho": 5.302775637731993,
+    "d_lam2": 1.3322676295501878e-15,
+    "T_open": 2,
+    "T_closed": 3,
+    "connected": true
+   }
+  ]
+ },
+ "B": {
+  "tag": "B",
+  "V": 12,
+  "E": 18,
+  "beta1": 7,
+  "|Aut|": 12,
+  "T_closed": 1,
+  "n_ring_vertices": 3,
+  "lam2_closed": 1.0,
+  "rho_closed": 5.302775637731997,
+  "Pi1": 0.18858048469644498,
+  "m_lam2": 1,
+  "n_edge_orbits": 4,
+  "orbit_sizes": [
+   3,
+   3,
+   6,
+   6
+  ],
+  "rho_span_all_18": 6.217248937900877e-15,
+  "lam2_readings_all": [
+   0.527166091,
+   0.743810251,
+   0.935922569,
+   1.0
+  ],
+  "n_lam2_readings_ring": 1,
+  "n_T_readings_ring": 1,
+  "ring_open_lam2": [
+   1.0
+  ],
+  "ring_open_T": [
+   0
+  ],
+  "channel_open_lam2": [
+   0.527166091,
+   0.743810251,
+   0.935922569
+  ],
+  "channel_open_T": [
+   1
+  ],
+  "rows": [
+   {
+    "kind": "channel",
+    "orbit_size": 6,
+    "rep_edge": [
+     0,
+     1
+    ],
+    "lam2": 0.7438102507946611,
+    "rho": 5.302775637731996,
+    "d_lam2": -0.2561897492053389,
+    "T_open": 1,
+    "T_closed": 1,
+    "connected": true
+   },
+   {
+    "kind": "channel",
+    "orbit_size": 3,
+    "rep_edge": [
+     0,
+     2
+    ],
+    "lam2": 0.5271660910047453,
+    "rho": 5.302775637731995,
+    "d_lam2": -0.4728339089952547,
+    "T_open": 1,
+    "T_closed": 1,
+    "connected": true
+   },
+   {
+    "kind": "channel",
+    "orbit_size": 6,
+    "rep_edge": [
+     1,
+     10
+    ],
+    "lam2": 0.9359225690243671,
+    "rho": 5.302775637731995,
+    "d_lam2": -0.0640774309756329,
+    "T_open": 1,
+    "T_closed": 1,
+    "connected": true
+   },
+   {
+    "kind": "ring",
+    "orbit_size": 3,
+    "rep_edge": [
+     2,
+     5
+    ],
+    "lam2": 1.0000000000000002,
+    "rho": 5.302775637731993,
+    "d_lam2": 2.220446049250313e-16,
+    "T_open": 0,
+    "T_closed": 1,
+    "connected": true
+   }
+  ]
+ },
+ "measured": {
+  "dm_over_mp": 0.0013784193053598278,
+  "kappa": 0.18889306666665726,
+  "mu_ratio": 0.6849793408328577
+ },
+ "pool": {
+  "n": 85,
+  "n_Pi1_in3pct": 4,
+  "n_ring_T_unique": 28,
+  "joint_Pi1_ring_T_unique": 2,
+  "joint_Pi1_T2_ring_T_unique": 1,
+  "joint_Pi1_open_alive": 1,
+  "T_dist": {
+   "0": 22,
+   "1": 17,
+   "2": 23,
+   "3": 11,
+   "4": 9,
+   "5": 2,
+   "6": 1
+  },
+  "near_detail": [
+   {
+    "Pi1": 0.18801131365379034,
+    "T": 0,
+    "n_ring_edges": 0,
+    "n_lam2_readings": 0,
+    "n_T_readings": 0,
+    "T_open_min": null,
+    "all_connected": true
+   },
+   {
+    "Pi1": 0.18858048469644487,
+    "T": 1,
+    "n_ring_edges": 3,
+    "n_lam2_readings": 1,
+    "n_T_readings": 1,
+    "T_open_min": 0,
+    "all_connected": true
+   },
+   {
+    "Pi1": 0.18858048469644492,
+    "T": 3,
+    "n_ring_edges": 9,
+    "n_lam2_readings": 1,
+    "n_T_readings": 1,
+    "T_open_min": 2,
+    "all_connected": true
+   },
+   {
+    "Pi1": 0.19210635414099525,
+    "T": 0,
+    "n_ring_edges": 0,
+    "n_lam2_readings": 0,
+    "n_T_readings": 0,
+    "T_open_min": null,
+    "all_connected": true
+   }
+  ]
+ }
+}

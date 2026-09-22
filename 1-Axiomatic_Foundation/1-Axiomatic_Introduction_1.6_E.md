@@ -1,7 +1,5 @@
 # A Foundational Framework for Information-Physical Interconversion
 
-**Author:** Yue Lu 
-
 **Version:** 1.6 (Axiom-Purified & Quantitatively Mapped Edition)
 
 ## Three Core Principles

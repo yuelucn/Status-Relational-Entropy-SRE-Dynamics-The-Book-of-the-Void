@@ -1,21 +1,8 @@
 # Theory of Hierarchical Dissipative Self-Organizing Binary Network Dynamics
 
-**Author:** Yue Lu
 **Version: 1.1** (MDS methodological caveats and appendix added based on v1.0; all original axioms, equations and theorems preserved; v1.0 archived for historical traceability)
 
 > 
-> **Resource-Availability Statement**
-> This framework is built upon Status-Relational Entropy (SRE) Dynamics. All theoretical materials are archived in the Zenodo open-access repository. **This manuscript suite, including system papers, application developments, scientific hypotheses, full algebraic derivations for operators 1-6 and simulation code, is fully open-source**. Operators 7, 8, 9, 10 are subsequent closed-source commercial core modules and are not part of this manuscript suite.
->
->You may also access the Tencent intelligent-document space supporting AI-assisted reading, available on both PC and WeChat mobile clients.
->
->As of 2026-08-14, constrained by Google’s terms-of-service, the author no longer maintains or updates the SRE document library hosted in Google Gemini Notebook. The link below serves only as a historical archive and must not be used as a formal citation source:
->- Google Gemini Notebook (historical archive, no further updates):
-[https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a%E2%80%91f6d0%E2%80%914a2a%E2%80%91aed4%E2%80%91b25d6520ab2c)
->- Tencent Intelligent Document Space:
-[https://docs.qq.com/space/DUkRjYUtNWFdyV253](https://docs.qq.com/space/DUkRjYUtNWFdyV253)
->
->According to Status-Relational Entropy (SRE) principles, fundamental classical physics originates from information statistics.
 
 ### Framework Positioning Statement
 

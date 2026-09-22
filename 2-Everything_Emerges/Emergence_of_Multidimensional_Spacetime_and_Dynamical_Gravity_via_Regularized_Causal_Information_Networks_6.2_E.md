@@ -1,23 +1,5 @@
 ﻿# Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal-Information Networks
-**Author**: Yue Lu
 **Version**: 6.2-rev (incorporating ontological corrigendum; updated numerical simulation results, distinguishing historical reference value from Bootstrap statistical simulation outputs)
-
-> **Resource & Availability Statement**: This framework is built upon State-Relation Entropy (SRE) dynamics. The complete suite of theoretical materials is archived in the Zenodo open-data repository.
-> **The full package includes system manuscript, application development, scientific hypotheses, complete algebraic derivations for operators 1-6, and simulation source code, all open-source**. Operators 7, 8, 9, 10 belong to subsequent closed-source commercial core modules and are not included in this document suite.
->
-> A Tencent Smart-Document workspace supporting AI-assisted review is available for both PC and mobile access.
->
-> As of 2026-08-14, the author no longer maintains or updates the Google Gemini Notebook SRE documentation suite due to Google Terms-of-Service constraints; this link serves purely as historical archive and shall not be used for formal citation:
->
-> - Gemini Notebook (historical archive, no longer updated):
-<https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c>
-> - Tencent Smart-Document workspace:
-<https://docs.qq.com/space/DUkRjYUtNWFdyV253>
->
-> According to State-Relation Entropy principles, classical physics originates from information statistics.
-> **Associated references**
-> 1. SRE Axiom Suite and User Guide (v1.6): <https://doi.org/10.5281/zenodo.22077475>
-> 2. Hierarchical Dissipative Self-Organising Binary-Network Dynamics (v1.1): <https://doi.org/10.5281/zenodo.22092822>
 
 ## Abstract
 The ΛCDM standard-cosmology framework encounters significant observational tension at high redshift $z>5$. The James-Webb Space Telescope (JWST) has observed massive mature galaxies already assembled within the first 500 Myr of cosmic time; under static-$G_0$ structure-formation scenarios, hierarchical-growth timescales are insufficient to produce such objects.

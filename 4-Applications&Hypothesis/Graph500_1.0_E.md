@@ -1,14 +1,7 @@
 # Performance Evaluation and Workload Recharacterization of SRE Extended Kernel via Graph500 Benchmark
 
-**Author:** Yue Lu
 **Dataset/Report Identifier:** Status-Relational Entropy (SRE) Dynamics Technical Report Series
 **Version:** 1.0
-
-All theoretical materials of this framework are archived in the Zenodo open-source repository. Except for operators 7, 8, 9, and 10, which are closed-source commercial core modules, the full set of system papers, complete algebraic derivations for operators 1–6, and simulation code are fully open. Alternatively, you can access the fully open AI-assisted Google notebook (requires any Google account):
-
-[https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebook.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c)
-
-According to the SRE principle, the physical foundation originates from information statistics.
 
 ---
 
@@ -158,4 +151,3 @@ The current revision delivers major gains via memory layout tuning, inner-loop s
 3. **SIMD Vectorization and Thread Affinity Pinning**: To further reduce residual per-vertex latency overhead, the core inner-loop matrix evaluations within $M_{degree}$ and $M_{latency}$ will be explicitly refactored using AVX2 compiler intrinsics. Furthermore, OpenMP runtime environment variables will bind threads to explicit physical cores (via `OMP_PLACES=cores` and `OMP_PROC_BIND=close`) to minimize hyper-threading context-switching penalties on the i5-8265U architecture.
 
 4. **Multi-Scale Scalability Testing**: Extend benchmarking to SCALE=14, SCALE=16 to validate sustained throughput and latency scaling as vertex and nnz counts grow beyond the current small-scale SCALE=12 validation case.
-

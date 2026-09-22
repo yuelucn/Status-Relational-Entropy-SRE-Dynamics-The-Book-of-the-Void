@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SRE 离散湍流相变实验台</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --line:#e3e6ea; --line2:#eef0f3;
+    --tx:#1f2328; --tx2:#5f6672; --tx3:#8b929e;
+    --blue:#185fa5; --blue-l:#e6f1fb;
+    --red:#c0392b; --green:#3b6d11; --amber:#a86b0a;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--tx);
+    font-family:system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif;
+    font-size:14px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1280px;margin:0 auto;padding:22px 20px 40px}
+  header{margin-bottom:18px}
+  h1{font-size:19px;font-weight:600;margin:0 0 4px;letter-spacing:.2px}
+  .sub{color:var(--tx2);font-size:13px;max-width:820px}
+  .grid{display:grid;grid-template-columns:1fr 372px;gap:16px;align-items:start}
+  @media(max-width:1000px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .card h2{font-size:13px;font-weight:600;margin:0 0 10px;color:var(--tx)}
+  .stage{position:relative;background:#fbfcfd;border:1px solid var(--line);
+    border-radius:12px;overflow:hidden}
+  canvas{display:block;width:100%}
+  #cv3d{height:520px;cursor:grab}
+  #cv3d.drag{cursor:grabbing}
+  .legend{display:flex;gap:16px;padding:8px 12px;border-top:1px solid var(--line2);
+    font-size:12px;color:var(--tx2);background:#fff}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;
+    vertical-align:middle}
+  .ctl{margin-bottom:14px}
+  .ctl label{display:flex;justify-content:space-between;font-size:12px;color:var(--tx2);
+    margin-bottom:6px}
+  .ctl label b{color:var(--tx);font-weight:600;font-variant-numeric:tabular-nums}
+  input[type=range]{width:100%;accent-color:var(--blue);margin:0}
+  .row{display:flex;gap:8px;margin-bottom:10px}
+  button{flex:1;padding:7px 10px;font-size:12.5px;font-family:inherit;color:var(--tx);
+    background:#fff;border:1px solid var(--line);border-radius:8px;cursor:pointer}
+  button:hover{border-color:#c9ced6;background:#fafbfc}
+  button.on{background:var(--blue-l);border-color:#9dc0e8;color:var(--blue)}
+  select{padding:6px 8px;font-size:12.5px;font-family:inherit;border:1px solid var(--line);
+    border-radius:8px;background:#fff;color:var(--tx)}
+  .chk{display:flex;align-items:center;gap:6px;font-size:12.5px;color:var(--tx2);
+    margin:8px 0 0}
+  .metrics{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:14px}
+  .m{background:#fafbfc;border:1px solid var(--line2);border-radius:9px;padding:9px 10px}
+  .m .k{font-size:11px;color:var(--tx3);line-height:1.35;margin-bottom:3px}
+  .m .v{font-size:17px;font-weight:600;font-variant-numeric:tabular-nums;letter-spacing:-.2px}
+  .m .u{font-size:11px;color:var(--tx3);font-weight:400;margin-left:3px}
+  .chart{position:relative;margin-bottom:12px}
+  .chart canvas{height:118px}
+  .ct{font-size:11.5px;color:var(--tx2);margin-bottom:2px}
+  .note{font-size:12px;color:var(--tx2);line-height:1.65}
+  .note b{color:var(--tx);font-weight:600}
+  hr{border:0;border-top:1px solid var(--line2);margin:12px 0}
+  .tag{display:inline-block;font-size:11px;padding:1px 6px;border-radius:5px;
+    background:var(--blue-l);color:var(--blue);margin-right:5px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>SRE 离散湍流相变实验台</h1>
+  <div class="sub">与主论文 <code>main_CN.md</code> v2 配套。把耗散系数 Λ 作为外生控制参数装回算子链，
+    实时观察离散因果网络的结构—耗散过渡。左侧是经典 MDS 三维流形重构（对称部分 S），
+    右侧是序参量与谱斜率。可切换模式 A（外生 Λ）与模式 B（Λ × λ(n)，接入 Theorem 7）。</div>
+</header>
+
+<div class="grid">
+  <div>
+    <div class="stage">
+      <canvas id="cv3d"></canvas>
+      <div class="legend">
+        <span><i class="dot" style="background:#c0392b"></i>相干核（手性活跃）</span>
+        <span><i class="dot" style="background:#7ba05b"></i>耗散壳（相位被抹平）</span>
+        <span style="color:var(--tx3)">拖拽旋转 · 滚轮缩放</span>
+      </div>
+    </div>
+    <div class="card" style="margin-top:12px">
+      <div class="note" id="readout"></div>
+    </div>
+  </div>
+
+  <div>
+    <div class="card" style="margin-bottom:12px">
+      <div class="ctl">
+        <label><span>耗散系数 Λ（对数）</span><b id="lamv">0.0100</b></label>
+        <input type="range" id="lam" min="-4" max="4" step="0.01" value="-2">
+      </div>
+      <div class="ctl" style="margin-bottom:8px">
+        <label><span>等效雷诺数 Re ∝ 1/Λ</span><b id="rev">100</b></label>
+      </div>
+      <div class="row">
+        <select id="msel">
+          <option value="exogenous" selected>模式 A：外生 Λ（Γ = Λ）</option>
+          <option value="adaptive">模式 B：Λ × λ(n)（Theorem 7）</option>
+        </select>
+      </div>
+      <div class="row">
+        <button id="rerun">重新演化</button>
+        <button id="play">自动扫掠</button>
+      </div>
+      <div class="row" style="margin-bottom:0">
+        <select id="nsel">
+          <option value="40">网络规模 N = 40</option>
+          <option value="60" selected>网络规模 N = 60</option>
+          <option value="80">网络规模 N = 80</option>
+        </select>
+        <select id="ssel">
+          <option value="0" selected>种子 0</option>
+          <option value="1">种子 1</option>
+          <option value="2">种子 2</option>
+          <option value="3">种子 3</option>
+        </select>
+      </div>
+      <label class="chk"><input type="checkbox" id="links" checked> 显示因果序骨架连线</label>
+    </div>
+
+    <div class="card" style="margin-bottom:12px">
+      <div class="metrics">
+        <div class="m"><div class="k">结构密度<br>存活 (−1) 手性通道占比</div>
+          <div class="v"><span id="m1">–</span><span class="u"></span></div></div>
+        <div class="m"><div class="k">涡作用量<br>Tr(AᵀA)</div>
+          <div class="v"><span id="m2">–</span></div></div>
+        <div class="m"><div class="k">流形各向异性<br>λ₁ / Σλ（1 = 刚性轴）</div>
+          <div class="v"><span id="m3">–</span></div></div>
+        <div class="m"><div class="k">手性场谱斜率<br>K41 参考 −5/3</div>
+          <div class="v"><span id="m4">–</span></div></div>
+      </div>
+      <div class="chart">
+        <div class="ct">结构密度 — Λ（6 种子统计，竖带为过渡区）</div>
+        <canvas id="c1"></canvas>
+      </div>
+      <div class="chart" style="margin-bottom:0">
+        <div class="ct">谱斜率 — Λ（虚线为 Kolmogorov −5/3）</div>
+        <canvas id="c2"></canvas>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="note">
+        <span class="tag">v2</span>相图曲线为 <b>N=60、5 种子</b> 统计值，由 <code>sre_core.py</code> 生成。
+        拖动过程中显示单次快速结果，<b>松开滑块后自动精算为 5 种子均值</b>（指标卡标签变深即为精算值）。
+        <hr>
+        <b>三点必须说清楚：</b><br>
+        1. 谱斜率取手性场沿因果序的<b>一维</b>功率谱，只是级联的代理指标，不等于三维能谱 E(k)。
+        高 Re 侧稳定在 −1.85 附近，且随 N 增大进一步变陡（N=100 时 −1.93），
+        因此<b>不是</b> Kolmogorov −5/3。它还是<b>实现敏感量</b>：本页用 mulberry32，
+        与 Python 端的 PCG64 在高 Λ 处可差 0.5（种子间 sd 本身已 >1.0），
+        故实时值与离线曲线的偏离属正常涨落；结构密度（差异 <0.001）才是稳健量。<br>
+        2. 这是跨越约 1.5 个数量级的<b>平滑过渡</b>，不是尖锐临界点；
+        过渡区的定量位置随 N 增大而移动，尚未收敛。<br>
+        3. <b>各向异性不作为结论。</b>本页采用经典 MDS（闭式、可复现）：
+        Λ 全程仅 0.34–0.43，略高于各向同性基线 1/3。
+        迭代 SMACOF 会给出相反趋势（0.33→0.46），两种准则（strain vs stress）定性冲突，
+        故"刚性中轴"判为度规重构方法的产物，不予主张。
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script>
+/* v2 authoritative data: N=60, 5 seeds, produced by sre_core.py -> export_v2.py.
+   Columns: Lambda, Re ~ 1/Lambda, structure density, anisotropy, spectral slope.
+   Degenerate rows (structure density < 1e-2, MDS input near-singular) are omitted. */
+const PHASE_A=[
+[0.0001,10000,0.49150,0.43081,-1.8507],
+[0.000316228,3162.28,0.49133,0.42715,-1.8340],
+[0.001,1000,0.49006,0.37533,-1.8473],
+[0.00316228,316.228,0.48644,0.36415,-1.8541],
+[0.01,100,0.47639,0.35874,-1.8240],
+[0.0316228,31.6228,0.44828,0.35527,-1.8336],
+[0.1,10,0.38089,0.35154,-1.5660],
+[0.316228,3.16228,0.26222,0.35099,-0.5561],
+[1,1,0.14350,0.35011,0.2069],
+[3.16228,0.316228,0.06472,0.36183,0.1237],
+[10,0.1,0.02544,0.36001,0.2640],
+[31.6228,0.0316228,0.00789,0.37346,0.3717],
+[100,0.01,0.00261,0.37145,0.4421]
+];
+const PHASE_B=[
+[0.0001,10000,0.49167,0.33333,-1.8556],
+[0.000316228,3162.28,0.49167,0.33333,-1.8556],
+[0.001,1000,0.49161,0.36583,-1.8371],
+[0.00316228,316.228,0.49161,0.36583,-1.8371],
+[0.01,100,0.49144,0.41273,-1.8537],
+[0.0316228,31.6228,0.49100,0.43081,-1.8417],
+[0.1,10,0.48906,0.37522,-1.8888],
+[0.316228,3.16228,0.48333,0.35840,-1.8280],
+[1,1,0.46728,0.36614,-1.8424],
+[3.16228,0.316228,0.41861,0.36283,-1.6720],
+[10,0.1,0.16761,0.35060,-0.4836],
+[31.6228,0.0316228,0.07267,0.35406,-0.0170],
+[100,0.01,0.02694,0.36386,0.1358],
+[316.228,0.00316228,0.00833,0.36210,0.3018],
+[1000,0.001,0.00311,0.37851,0.2663]
+];
+const BAND={exogenous:[0.08,2.5],adaptive:[3,30]};
+
+/* ---------- PRNG (deterministic, independent of Python's stream) ---------- */
+function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296;};}
+
+/* ---------- Operator 1 + Operator 2 ---------- */
+function spectralRadius(M,iters){
+  const n=M.length;
+  if(n===1)return Math.abs(M[0][0]);
+  let v=new Float64Array(n);
+  for(let i=0;i<n;i++)v[i]=Math.sin(i*12.9898+0.7);
+  let nv=0;for(let i=0;i<n;i++)nv+=v[i]*v[i];nv=Math.sqrt(nv)||1;
+  for(let i=0;i<n;i++)v[i]/=nv;
+  let lam=0;
+  for(let t=0;t<iters;t++){
+    const w=new Float64Array(n);
+    for(let i=0;i<n;i++){let s=0;const Mi=M[i];for(let j=0;j<n;j++)s+=Mi[j]*v[j];w[i]=s;}
+    lam=0;for(let i=0;i<n;i++)lam+=v[i]*w[i];
+    let nw=0;for(let i=0;i<n;i++)nw+=w[i]*w[i];nw=Math.sqrt(nw)||1;
+    for(let i=0;i<n;i++)w[i]/=nw;
+    v=w;
+  }
+  return Math.abs(lam);
+}
+
+function runChain(N,lam,seed,mode){
+  const rnd=mulberry32(seed*7919+13);
+  const adaptive=(mode==="adaptive");
+  const beta=1.1;
+  let M=[[1]];
+  for(let n=1;n<N;n++){
+    const s=n+1;
+    const Mn=[];for(let i=0;i<s;i++){Mn.push(new Float64Array(s).fill(1));}
+    for(let i=0;i<n;i++)for(let j=0;j<n;j++)Mn[i][j]=M[i][j];
+    // Theorem 7: gain = Lambda (mode A) or Lambda * lambda(n) (mode B)
+    const gain=adaptive ? lam*(1/beta)*Math.log(1+spectralRadius(M,60))/(n+1) : lam;
+    const vf=n;
+    for(let vm=0;vm<n;vm++){
+      const Ds=(n+1)-(vm+1);
+      let inter=0;
+      for(let k=0;k<n;k++) if(Mn[vf][k]!==1&&Mn[k][vm]!==1) inter+=Mn[vf][k]*Mn[k][vm];
+      const Et=inter+2*Mn[vf][vm];
+      const Eloc=Math.abs(Et);
+      const barrier=Eloc+Math.exp(Et===0?1:Math.sign(Et));
+      const p=1-1/(1+gain*Ds/barrier);
+      const chi=rnd()<p?0:1;
+      if(chi===1){
+        if(vf>vm){Mn[vf][vm]=((vf-vm)%3===0)?-1:1;Mn[vm][vf]=-Mn[vf][vm];}
+      }else{Mn[vf][vm]=1;Mn[vm][vf]=1;}
+    }
+    Mn[vf][vf]=1;
+    M=Mn;
+  }
+  return M;
+}
+
+/* ---------- classical MDS via power iteration + deflation ---------- */
+function mds3(M){
+  const n=M.length;
+  const D2=[];let all=0;
+  for(let i=0;i<n;i++){D2.push(new Float64Array(n));}
+  for(let i=0;i<n;i++)for(let j=0;j<n;j++){
+    const S=0.5*(M[i][j]+M[j][i]);
+    const d=Math.min(4,Math.max(0,2-2*S));
+    D2[i][j]=d;all+=d;
+  }
+  all/=n*n;
+  const rm=new Float64Array(n),cm=new Float64Array(n);
+  for(let i=0;i<n;i++){let s=0;for(let j=0;j<n;j++)s+=D2[i][j];rm[i]=s/n;}
+  for(let j=0;j<n;j++){let s=0;for(let i=0;i<n;i++)s+=D2[i][j];cm[j]=s/n;}
+  const B=[];
+  for(let i=0;i<n;i++){B.push(new Float64Array(n));
+    for(let j=0;j<n;j++)B[i][j]=-0.5*(D2[i][j]-rm[i]-cm[j]+all);}
+
+  const comps=[];let A=B.map(r=>Float64Array.from(r));
+  for(let c=0;c<3;c++){
+    let v=new Float64Array(n);
+    for(let i=0;i<n;i++)v[i]=Math.sin(i*12.9898+c*4.1414)+0.3;
+    let nv=0;for(let i=0;i<n;i++)nv+=v[i]*v[i];nv=Math.sqrt(nv);
+    for(let i=0;i<n;i++)v[i]/=nv;
+    let lam=0;
+    for(let t=0;t<160;t++){
+      const w=new Float64Array(n);
+      for(let i=0;i<n;i++){let s=0;const Ai=A[i];for(let j=0;j<n;j++)s+=Ai[j]*v[j];w[i]=s;}
+      lam=0;for(let i=0;i<n;i++)lam+=v[i]*w[i];
+      let nw=0;for(let i=0;i<n;i++)nw+=w[i]*w[i];nw=Math.sqrt(nw)||1;
+      for(let i=0;i<n;i++)w[i]/=nw;
+      v=w;
+    }
+    comps.push({lam:lam,v:v});
+    for(let i=0;i<n;i++)for(let j=0;j<n;j++)A[i][j]-=lam*v[i]*v[j];
+  }
+  const coords=[];
+  for(let i=0;i<n;i++){
+    const p=[0,0,0];
+    for(let c=0;c<3;c++)p[c]=comps[c].v[i]*Math.sqrt(Math.max(comps[c].lam,0));
+    coords.push(p);
+  }
+  const ev=comps.map(c=>Math.max(c.lam,0));
+  return {coords:coords,ev:ev};
+}
+
+/* ---------- spectral slope of the chiral field ---------- */
+function spectralSlope(M){
+  const n=M.length;
+  const sig=new Float64Array(n);let mu=0;
+  for(let i=0;i<n;i++){let s=0;for(let j=0;j<n;j++)s+=0.5*(M[i][j]-M[j][i]);sig[i]=s;mu+=s;}
+  mu/=n;
+  for(let i=0;i<n;i++)sig[i]-=mu;
+  let sd=0;for(let i=0;i<n;i++)sd+=sig[i]*sig[i];
+  if(Math.sqrt(sd/n)<1e-12)return NaN;
+  const L=Math.floor(n/2),P=[];
+  for(let k=1;k<=L;k++){
+    let re=0,im=0;
+    for(let t=0;t<n;t++){const a=-2*Math.PI*k*t/n;re+=sig[t]*Math.cos(a);im+=sig[t]*Math.sin(a);}
+    P.push(re*re+im*im);
+  }
+  const lo=Math.max(1,Math.floor(L/8)),hi=Math.max(2,Math.floor(L/2));
+  const xs=[],ys=[];
+  for(let k=lo;k<hi;k++){const v=P[k-1];if(v>0){xs.push(Math.log(k));ys.push(Math.log(v));}}
+  if(xs.length<3)return NaN;
+  let mx=0,my=0;for(let i=0;i<xs.length;i++){mx+=xs[i];my+=ys[i];}
+  mx/=xs.length;my/=ys.length;
+  let num=0,den=0;
+  for(let i=0;i<xs.length;i++){num+=(xs[i]-mx)*(ys[i]-my);den+=(xs[i]-mx)*(xs[i]-mx);}
+  return num/den;
+}
+
+/* ---------- state ---------- */
+let N=60,lam=0.01,seed=0,showLinks=true,MODE="exogenous";
+let coords=[],chiral=[],aniso=NaN,slope=NaN,fracNeg=0,spin=0;
+let statFN=null,statSL=null,statAN=null;   // 6-seed refined values, filled on slider release
+let yaw=0.6,pitch=0.35,zoom=1.0,dragging=false,lastX=0,lastY=0;
+let playing=false,playDir=1;
+
+function evolve(){
+  const M=runChain(N,lam,seed,MODE);
+  let neg=0,tot=0,tr=0;
+  chiral=new Array(N).fill(0);
+  for(let i=0;i<N;i++){
+    for(let j=0;j<N;j++){
+      if(M[i][j]<0){neg++;chiral[i]++;}
+      tot++;
+    }
+  }
+  for(let i=0;i<N;i++)for(let j=0;j<N;j++){
+    const a=0.5*(M[i][j]-M[j][i]);tr+=a*a;
+  }
+  fracNeg=neg/tot;spin=tr;
+  for(let i=0;i<N;i++)chiral[i]/=Math.max(1,N-1);
+  const r=mds3(M);
+  coords=r.coords;
+  const s=r.ev.reduce((a,b)=>a+b,0);
+  aniso=s>1e-12?r.ev[0]/s:NaN;
+  slope=spectralSlope(M);
+  const mx=Math.max(...chiral);
+  if(mx>0)for(let i=0;i<N;i++)chiral[i]/=mx;
+  normalizeCoords();
+  statFN=null;statSL=null;statAN=null;
+  updateUI();
+  draw3d();
+}
+
+/* 6-seed refinement: the single-run slope is noisy (seed-to-seed sd ~0.15-0.3),
+   so on slider release we average 6 realisations to get a value comparable with
+   the offline Python curve. */
+function refine(){
+  const a=[],b=[],c=[];
+  for(let s=0;s<5;s++){
+    const M=runChain(N,lam,s,MODE);
+    let neg=0,tot=0;
+    for(let i=0;i<N;i++)for(let j=0;j<N;j++){if(M[i][j]<0)neg++;tot++;}
+    a.push(neg/tot);
+    b.push(spectralSlope(M));
+    const r=mds3(M);const sum=r.ev.reduce((x,y)=>x+y,0);
+    c.push(sum>1e-12?r.ev[0]/sum:NaN);
+  }
+  const mean=v=>v.reduce((x,y)=>x+y,0)/v.length;
+  statFN=mean(a);statSL=mean(b);statAN=mean(c);
+  updateUI();drawCharts();
+}
+
+function normalizeCoords(){
+  let mx=0;
+  for(const p of coords)for(const c of p)mx=Math.max(mx,Math.abs(c));
+  if(mx<1e-9)mx=1;
+  for(const p of coords){p[0]/=mx;p[1]/=mx;p[2]/=mx;}
+}
+
+function fmt(v,d){return isNaN(v)?'–':v.toFixed(d);}
+
+function updateUI(){
+  const fn=statFN===null?fracNeg:statFN;
+  const sl=statSL===null?slope:statSL;
+  const an=statAN===null?aniso:statAN;
+  document.getElementById('m1').textContent=(fn*100).toFixed(1)+'%';
+  document.getElementById('m2').textContent=spin.toFixed(0);
+  document.getElementById('m3').textContent=fmt(an,3);
+  document.getElementById('m4').textContent=fmt(sl,2);
+  const c4=document.getElementById('m4');
+  c4.style.color=(!isNaN(sl)&&sl<-1.4)?'var(--green)':'var(--tx)';
+  const refined=statFN!==null;
+  document.querySelectorAll('.m .k').forEach((e,i)=>{
+    e.style.color=refined?'var(--tx2)':'var(--tx3)';});
+  const re=1/lam;
+  document.getElementById('lamv').textContent=lam.toPrecision(3);
+  document.getElementById('rev').textContent=re>=100?re.toFixed(0):re.toPrecision(3);
+  const ro=document.getElementById('readout');
+  const bd=BAND[MODE];
+  let phase,desc;
+  if(lam<bd[0]){phase='结构相 / 高 Re';
+    desc='抹平速率远落后于生成速率，手性通道几乎全部存活（结构密度饱和于约 0.49），手性场功率谱出现稳定的幂律标度区，斜率约 −1.85。';}
+  else if(lam>bd[1]){phase='耗散相 / 低 Re';
+    desc='局域松弛完全压倒生成，绝大多数通道被 Paradigm B 抹平为乘法单位元 +1，结构密度跌至 0.01 以下，MDS 输入趋于退化。';}
+  else{phase='过渡区';
+    desc='生成与抹平同量级竞争，结构密度与级联斜率同步下滑。这是跨越约 1.5 个数量级的平滑过渡，不是尖锐临界点；其定量位置还随 N 增大而移动，尚未收敛。';}
+  ro.innerHTML='<b>当前相态：'+phase+'</b>　（Λ = '+lam.toPrecision(3)+
+    '，Re ∝ '+document.getElementById('rev').textContent+'）<br>'+desc;
+  drawCharts();
+}
+
+/* ---------- 3D render ---------- */
+const cv=document.getElementById('cv3d'),ctx=cv.getContext('2d');
+const _sz={};
+function fitCanvas(c){
+  const r=c.getBoundingClientRect(),d=window.devicePixelRatio||1;
+  const W=Math.round(r.width*d),H=Math.round(r.height*d);
+  const k=c.id||Math.random();
+  if(!_sz[k]||_sz[k].w!==W||_sz[k].h!==H){c.width=W;c.height=H;_sz[k]={w:W,h:H};}
+  const g=c.getContext('2d');g.setTransform(d,0,0,d,0,0);
+  return {w:r.width,h:r.height,g:g};
+}
+function lerpColor(t){
+  const a=[123,160,91],b=[192,57,43];
+  return 'rgb('+Math.round(a[0]+(b[0]-a[0])*t)+','+Math.round(a[1]+(b[1]-a[1])*t)+','+
+    Math.round(a[2]+(b[2]-a[2])*t)+')';
+}
+function draw3d(){
+  const {w,h,g}=fitCanvas(cv);
+  g.clearRect(0,0,w,h);
+  if(!coords.length)return;
+  const cx=w/2,cy=h/2,sc=Math.min(w,h)*0.36*zoom;
+  const csy=Math.cos(yaw),sny=Math.sin(yaw),csp=Math.cos(pitch),ssp=Math.sin(pitch);
+  const pts=coords.map((p,i)=>{
+    const x1=p[0]*csy-p[2]*sny, z1=p[0]*sny+p[2]*csy;
+    const y2=p[1]*csp-z1*ssp, z2=p[1]*ssp+z1*csp;
+    const f=3.2/(3.2+z2);
+    return {x:cx+x1*f*sc,y:cy-y2*f*sc,z:z2,f:f,i:i};
+  });
+  if(showLinks){
+    g.strokeStyle='rgba(150,158,170,.32)';g.lineWidth=0.7;
+    g.beginPath();
+    for(let i=0;i<pts.length-1;i++){
+      g.moveTo(pts[i].x,pts[i].y);g.lineTo(pts[i+1].x,pts[i+1].y);
+    }
+    g.stroke();
+  }
+  pts.sort((a,b)=>b.z-a.z);
+  for(const p of pts){
+    const r=Math.max(1.6,3.4*p.f);
+    g.beginPath();g.arc(p.x,p.y,r,0,6.2832);
+    g.fillStyle=lerpColor(chiral[p.i]);
+    g.globalAlpha=0.55+0.45*p.f;
+    g.fill();g.globalAlpha=1;
+  }
+}
+
+/* ---------- phase charts ---------- */
+function drawCharts(){
+  const P=MODE==="adaptive"?PHASE_B:PHASE_A;
+  drawChart(document.getElementById('c1'),P,2,[0,0.55],'#185fa5',false);
+  drawChart(document.getElementById('c2'),P,4,[-2.2,0.9],'#a86b0a',true);
+}
+function drawChart(canvas,P,idx,yrange,color,k41){
+  const {w,h,g}=fitCanvas(canvas);
+  g.clearRect(0,0,w,h);
+  const L=30,R=8,T=8,B=16,pw=w-L-R,ph=h-T-B;
+  const x0=-4,x1=4;
+  const X=la=>L+(Math.log10(la)-x0)/(x1-x0)*pw;
+  const Y=v=>T+ph-(v-yrange[0])/(yrange[1]-yrange[0])*ph;
+
+  // measured transition band for the current mode
+  const bd=BAND[MODE];
+  g.fillStyle='rgba(24,95,165,.07)';
+  g.fillRect(X(bd[0]),T,X(bd[1])-X(bd[0]),ph);
+
+  g.strokeStyle='#eceef1';g.lineWidth=1;
+  for(let e=Math.ceil(x0);e<=x1;e++){
+    g.beginPath();g.moveTo(X(Math.pow(10,e)),T);g.lineTo(X(Math.pow(10,e)),T+ph);g.stroke();
+    g.fillStyle='#9aa1ab';g.font='9.5px system-ui';g.textAlign='center';
+    g.fillText('1e'+e,X(Math.pow(10,e)),h-4);
+  }
+  if(k41){
+    g.strokeStyle='#c0392b';g.setLineDash([3,3]);g.lineWidth=1;
+    g.beginPath();g.moveTo(L,Y(-5/3));g.lineTo(L+pw,Y(-5/3));g.stroke();
+    g.setLineDash([]);
+    g.fillStyle='#c0392b';g.font='9.5px system-ui';g.textAlign='left';
+    g.fillText('−5/3',L+3,Y(-5/3)-3);
+  }
+  g.strokeStyle='#185fa5';g.lineWidth=1.6;g.beginPath();
+  P.forEach((r,i)=>{const px=X(r[0]),py=Y(r[idx]);
+    if(i===0)g.moveTo(px,py);else g.lineTo(px,py);});
+  g.stroke();
+
+  const px=X(lam);
+  g.strokeStyle='rgba(31,35,40,.35)';g.lineWidth=1;
+  g.beginPath();g.moveTo(px,T);g.lineTo(px,T+ph);g.stroke();
+  const cur=idx===2?(statFN===null?fracNeg:statFN):(statSL===null?slope:statSL);
+  if(!isNaN(cur)){
+    g.beginPath();g.arc(px,Y(Math.max(yrange[0],Math.min(yrange[1],cur))),3.6,0,6.2832);
+    g.fillStyle='#fff';g.fill();g.strokeStyle=color;g.lineWidth=2;g.stroke();
+  }
+}
+
+/* ---------- controls ---------- */
+const slider=document.getElementById('lam');
+slider.addEventListener('input',()=>{
+  lam=Math.pow(10,parseFloat(slider.value));
+  stopPlay();evolve();
+});
+slider.addEventListener('change',()=>{refine();});
+document.getElementById('rerun').addEventListener('click',()=>{
+  seed=(seed+1)%4;document.getElementById('ssel').value=String(seed);evolve();});
+document.getElementById('ssel').addEventListener('change',e=>{
+  seed=parseInt(e.target.value);evolve();});
+document.getElementById('nsel').addEventListener('change',e=>{
+  N=parseInt(e.target.value);evolve();});
+document.getElementById('msel').addEventListener('change',e=>{
+  MODE=e.target.value;evolve();refine();});
+document.getElementById('links').addEventListener('change',e=>{
+  showLinks=e.target.checked;draw3d();});
+
+function stopPlay(){if(playing){playing=false;document.getElementById('play').classList.remove('on');
+  document.getElementById('play').textContent='自动扫掠';refine();}}
+document.getElementById('play').addEventListener('click',()=>{
+  playing=!playing;
+  const b=document.getElementById('play');
+  b.classList.toggle('on',playing);
+  b.textContent=playing?'停止扫掠':'自动扫掠';
+  if(playing)tick();
+});
+function tick(){
+  if(!playing)return;
+  let v=parseFloat(slider.value)+0.045*playDir;
+  if(v>4){v=4;playDir=-1;}
+  if(v<-4){v=-4;playDir=1;}
+  slider.value=v;lam=Math.pow(10,v);evolve();
+  setTimeout(()=>{if(playing)tick();},70);
+}
+
+cv.addEventListener('mousedown',e=>{dragging=true;lastX=e.clientX;lastY=e.clientY;
+  cv.classList.add('drag');});
+window.addEventListener('mouseup',()=>{dragging=false;cv.classList.remove('drag');});
+window.addEventListener('mousemove',e=>{
+  if(!dragging)return;
+  yaw+=(e.clientX-lastX)*0.008;
+  pitch+=(e.clientY-lastY)*0.008;
+  pitch=Math.max(-1.3,Math.min(1.3,pitch));
+  lastX=e.clientX;lastY=e.clientY;draw3d();
+});
+cv.addEventListener('wheel',e=>{
+  e.preventDefault();
+  zoom=Math.max(0.45,Math.min(3.0,zoom*(e.deltaY>0?0.92:1.08)));
+  draw3d();},{passive:false});
+
+(function spinLoop(){
+  if(!dragging){yaw+=0.0032;draw3d();}
+  requestAnimationFrame(spinLoop);
+})();
+
+window.addEventListener('resize',()=>{draw3d();drawCharts();});
+evolve();
+</script>
+</body>
+</html>

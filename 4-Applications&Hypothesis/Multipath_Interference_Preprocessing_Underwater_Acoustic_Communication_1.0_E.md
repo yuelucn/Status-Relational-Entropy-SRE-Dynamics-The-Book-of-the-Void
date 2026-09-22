@@ -1,13 +1,5 @@
 # Research on Multipath Interference Preprocessing Algorithm for Fjord Underwater Acoustic Communication Based on SRE Topological Operators
-**Author**: Yue Lu
 **Version**: 1.0
-
-> All theoretical materials of this framework are archived in the Zenodo open‑source repository. Except for operators 7, 8, 9, 10 (closed‑source commercial core modules for advanced manifold stitching), the full set of system papers, complete algebraic derivations for operators 1‑6, and open‑source Python simulation wrapper code without Op10 full acceleration are fully open. You may also access the fully open AI‑assisted Google notebook (any Google account required):
-> https://notebook.google.com/notebook/ef52bf5a‑f6d0‑4a2a‑aed4‑b25d6520ab2c
-> Full documentation is also available via Tencent AI Docs:
-> https://docs.qq.com/space/DUkRjYUtNWFdyV253
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 ## Abstract
 Shallow‑fjord underwater acoustic (UWA) channels pose severe challenges including strong multipath reflections, rapidly time‑varying fading, and weak direct‑path signals easily submerged by clutter. Conventional amplitude‑threshold time‑frequency filtering struggles to balance multipath suppression and preservation of faint communication symbols; it also relies on dense pilot symbols for channel estimation and consumes valuable communication bandwidth. Drawing on an overnight measured UWA dataset collected in a Nordic fjord (https://doi.org/10.1109/IEEEDATA.2025.3577998), this paper proposes a UWA time‑frequency preprocessing algorithm driven by the State‑Relational‑Entropy (SRE) ten‑operator topological pipeline. Using graph‑theoretic topological impedance and path‑interference discrimination to separate direct‑path signals from multipath clutter, the algorithm constructs a three‑layer mutually‑exclusive mask to realize differential energy attenuation. Meanwhile, an energy‑complex dual‑path architecture is designed to fully preserve phase information required for OFDM demodulation. It is integrated into a complete post‑processing chain including channel equalization, symbol‑level Maximum Ratio Combining (MRC) diversity, and communication‑prior false‑alarm filtering.

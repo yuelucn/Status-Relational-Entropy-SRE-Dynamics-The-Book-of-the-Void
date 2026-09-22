@@ -1,0 +1,134 @@
+{
+  "electron_calibration": {
+    "n": 60,
+    "Pi1_at_w1": 0.007297458502472131,
+    "alpha": 0.0072973525692838015,
+    "rel_dev_at_w1": 1.4516660298928444e-05,
+    "w_star": 1.0000434704571386,
+    "delta": 4.3470457138594654e-05
+  },
+  "targets": {
+    "dm_over_mp": 0.0013784193053598278,
+    "kappa": 0.18889306666665726,
+    "quark_sum_over_mp": 0.009581442433857171
+  },
+  "criterion_1": [
+    {
+      "V": 8,
+      "beta1": 5,
+      "pct": 0.689209652679914,
+      "dev_pct": -28.068278086761833
+    },
+    {
+      "V": 10,
+      "beta1": 6,
+      "pct": 0.8270515832158966,
+      "dev_pct": -13.681933704114215
+    },
+    {
+      "V": 12,
+      "beta1": 7,
+      "pct": 0.9648935137518794,
+      "dev_pct": 0.704410678533423
+    },
+    {
+      "V": 14,
+      "beta1": 8,
+      "pct": 1.1027354442878623,
+      "dev_pct": 15.09075506118106
+    },
+    {
+      "V": 16,
+      "beta1": 9,
+      "pct": 1.2405773748238451,
+      "dev_pct": 29.4770994438287
+    },
+    {
+      "V": 18,
+      "beta1": 10,
+      "pct": 1.378419305359828,
+      "dev_pct": 43.863443826476335
+    }
+  ],
+  "criterion_2_pool": {
+    "n_graphs": 85,
+    "ratio_min": 0.03131039187711512,
+    "ratio_median": 0.13191055989953954,
+    "ratio_max": 0.2768193893245445
+  },
+  "criterion_2_hit_rate": {
+    "0.00165": 0.0,
+    "0.005": 0.03529411764705882,
+    "0.01": 0.03529411764705882,
+    "0.02": 0.047058823529411764,
+    "0.03": 0.047058823529411764,
+    "0.05": 0.09411764705882353
+  },
+  "y3_closed": {
+    "V": 12,
+    "E": 18,
+    "beta1": 7,
+    "girth": 3,
+    "triangles": 3,
+    "bipartite": false,
+    "diameter": 3,
+    "aut": 36,
+    "orbits": 2,
+    "lambda2_over_rho": 0.1885804846964447
+  },
+  "y3_open": {
+    "V": 12,
+    "E": 17,
+    "beta1": 6,
+    "girth": 3,
+    "triangles": 2,
+    "bipartite": false,
+    "diameter": 3,
+    "aut": 4,
+    "orbits": 6,
+    "lambda2_over_rho": 0.1885804846964447
+  },
+  "y3_closed_dev_pct": 0.16548091241706295,
+  "criterion_3": {
+    "n_after_crit2": 4,
+    "n_after_crit3": 2,
+    "survivors": [
+      {
+        "V": 12,
+        "E": 18,
+        "beta1": 7,
+        "girth": 3,
+        "triangles": 3,
+        "bipartite": false,
+        "diameter": 3,
+        "aut": 36,
+        "orbits": 2,
+        "lambda2_over_rho": 0.18858048469644492,
+        "dev_pct": 0.1654809124169454,
+        "triple_symmetric": true
+      },
+      {
+        "V": 12,
+        "E": 18,
+        "beta1": 7,
+        "girth": 3,
+        "triangles": 1,
+        "bipartite": false,
+        "diameter": 3,
+        "aut": 12,
+        "orbits": 3,
+        "lambda2_over_rho": 0.18858048469644487,
+        "dev_pct": 0.16548091241697477,
+        "triple_symmetric": true
+      }
+    ]
+  },
+  "rarity": {
+    "p_crit23": 0.023529411764705882,
+    "p_joint": 0.004705882352941176
+  },
+  "q3_check": {
+    "cubic8_subgraphs": 0,
+    "contains_Q3": false
+  }
+}

@@ -1,0 +1,16 @@
+SRE v2 end-to-end consistency audit
+
+dataset: data/phase_data_v2.json
+
+Scope: main paper (CN + EN) §6.2/§6.3 and data appendix (CN + EN), 8 tables in total.
+main_CN.md §6.2 mode A : checked 27 values, 0 mismatch
+main_CN.md §6.3 mode B : checked 10 values, 0 mismatch
+main_EN.md §6.2 mode A : checked 27 values, 0 mismatch
+main_EN.md §6.3 mode B : checked 10 values, 0 mismatch
+tables_CN.md mode A    : checked 50 values, 0 mismatch
+tables_CN.md mode B    : checked 51 values, 0 mismatch
+tables_EN.md mode A    : checked 50 values, 0 mismatch
+tables_EN.md mode B    : checked 51 values, 0 mismatch
+
+TOTAL: 276 values checked, 0 mismatches
+RESULT: CONSISTENT

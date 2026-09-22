@@ -1,13 +1,6 @@
 # Status-Relational Entropy-AI: A Differentiable Graph Learning Model Based on Topological Dynamics
 
-**Author:** Yue Lu
 **Version:** 1.0
-
-All theoretical materials of this framework are archived in the Zenodo open-source repository. Except for operators 7, 8, 9, and 10 (closed-source commercial core modules for advanced manifold stitching), the full set of system papers, complete algebraic derivations for operators 1–6, and open-source Python simulation wrapper code without Op10 full acceleration are fully open. Alternatively, you can access the fully open AI-assisted Tencent AI Docs:
-
-https://docs.qq.com/space/DUkRjYUtNWFdyV253
-
-According to the SRE principle, the physical foundation originates from information statistics.
 
 ## Abstract
 

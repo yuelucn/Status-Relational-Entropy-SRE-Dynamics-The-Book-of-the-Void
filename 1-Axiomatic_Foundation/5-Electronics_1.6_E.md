@@ -1,5 +1,4 @@
 # A Unified Theory of Electronic Logical-Structural and Physical Properties Based on the Minimal Instantiable Topological Scale
-**Author:** Yue Lu
 **Version:** v1.6 (Axiom-Homomorphic-Mapping Aligned Revision)
 
 ## Abstract

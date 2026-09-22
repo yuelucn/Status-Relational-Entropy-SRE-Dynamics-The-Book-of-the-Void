@@ -1,12 +1,5 @@
 # Stellar Spin and Galactic Rotation within the SRE‑Framework: Operator‑System combined with the SRE‑v6.0 Dissipation‑Compensation Duality Model
-**Author**: Yue Lu
 **Version**: 1.0
-
-> This framework is built upon Status‑Relational‑Entropy (SRE) Dynamics.
-> All theoretical materials of this framework are archived in the Zenodo open‑source repository. Except for operators 7, 8, 9, 10 (closed‑source commercial core modules), the full set of system papers, complete algebraic derivations for operators 1‑6 and simulation codes are fully open‑source. You may also access the fully‑open AI‑assisted Tencent Docs (available for PC and WeChat mobile). As of August 14 2026, due to Google terms‑of‑service constraints, the author no longer maintains SRE‑series document libraries hosted in Google Gemini notebooks:
-> https://docs.qq.com/space/DUkRjYUtNWFdyV253
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 **Methodological Statement**
 All content in this paper constitutes candidate physical interpretations derived inside the Status‑Relational‑Entropy (SRE) theoretical framework from operator axioms together with the v6.0 dissipation‑compensation duality mechanism. It follows the scientific paradigm of *a‑priori mathematical reasoning + a‑posteriori observational fitting*. Self‑consistency of the model and good observational fit only mean that the phenomenon can be described within this algebraic framework. **This does not assert that the objective universe is ontologically a discrete binary causal network**. Competing theories such as $\Lambda‑\text{CDM}$ and MOND remain possible. All inferences are falsifiable and require validation by astronomical observational data.

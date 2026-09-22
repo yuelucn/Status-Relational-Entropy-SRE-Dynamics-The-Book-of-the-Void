@@ -1,0 +1,74 @@
+{
+  "title": "SRE 电子完整描述 — 统一验证报告",
+  "constants": {
+    "DELTA": 4.347e-05,
+    "ALPHA": 0.0072973525205055605
+  },
+  "checks": [
+    {
+      "id": "C1",
+      "desc": "词汇同一性 {+1,-1}",
+      "pass": true,
+      "detail": "N=300, k=60, M_core vocab in {+1,-1}: True"
+    },
+    {
+      "id": "C2",
+      "desc": "尺度对应 k=n=60",
+      "pass": true,
+      "detail": "k=floor(0.2*N)=60, n_electron=60, equal: True"
+    },
+    {
+      "id": "C3",
+      "desc": "Z2 holonomy 原生性",
+      "pass": true,
+      "detail": "+1 frac=0.5040, -1 frac=0.4960 (期望~0.5 => holonomy 原生)"
+    },
+    {
+      "id": "C4",
+      "desc": "alpha 原生谱量 = 1/137",
+      "pass": true,
+      "detail": "Mobius(60, w=1+delta) gap=7.297e-03, 1/137=7.297e-03, rel_err=6.84e-09"
+    },
+    {
+      "id": "C5",
+      "desc": "P0 唯一性 (5 候选, 仅 Q3)",
+      "pass": true,
+      "detail": "8-vertex cubic graphs: 5 non-iso (expect 5); only Q3 carries electron signature (expect 1): 1"
+    },
+    {
+      "id": "C6",
+      "desc": "P0 构造还原 lift->Q3",
+      "pass": true,
+      "detail": "lift(Q3,16) -> R -> (8,12,5)  expect (8,12,5): True"
+    },
+    {
+      "id": "C7",
+      "desc": "R2 幂等性",
+      "pass": true,
+      "detail": "R_strict^2 == R_strict (idempotent): True"
+    },
+    {
+      "id": "C8",
+      "desc": "R2 深度->本体塌缩",
+      "pass": true,
+      "detail": "L=1(16n)->(8, 12, 5)OK; L=2(32n)->(8, 12, 5)OK; L=3(64n)->(8, 12, 5)OK"
+    },
+    {
+      "id": "C9",
+      "desc": "R3 epsilon 物理定标",
+      "pass": true,
+      "detail": "eps (from saved R3 run) = 0.1832  [physical input, in 0.1-0.3]: True"
+    },
+    {
+      "id": "C10",
+      "desc": "R3 噪声鲁棒收敛",
+      "pass": true,
+      "detail": "rho=0.02:(8, 12, 5)OK; rho=0.05:(8, 12, 5)OK; rho=0.1:(8, 12, 5)OK"
+    }
+  ],
+  "summary": {
+    "passed": 10,
+    "total": 10,
+    "all_pass": true
+  }
+}

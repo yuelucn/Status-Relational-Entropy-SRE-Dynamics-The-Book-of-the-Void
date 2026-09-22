@@ -19,8 +19,11 @@
 ./2-Everything_Emerges/Composite_Elementary_Particles_1.1_C.md
 ./2-Everything_Emerges/Classical_Electrodynamics_1.1_C.md
 ./2-Everything_Emerges/Rigorous_Reconstruction_of_Maxwell_2.1_C.md
-./2-Everything_Emerges/Emergence_Inevitability_and_Algebraic_Computational_Methods_of_Turbulence_1.1_C.md
+./2-Everything_Emerges/Emergence_Inevitability_and_Algebraic_Computational_Methods_of_Turbulence_2.0_C.md
+./2-Everything_Emerges/Oseen_Vortex_Experiment_Repositioning_the_Empirical_Report_2.0_C.md
 ./2-Everything_Emerges/Classical_Mechanics_from_Discrete_Causal‑Information_Networks_1.0_C.md
+./2-Everything_Emerges/SRE_Electron_Complete_Paper_1.0_C.md
+./2-Everything_Emerges/SRE_Nucleon_Complete_Paper_1.3_C.md
 
 #part-3
 ./3-Mathematical_Support/0‑Abstract_Part_3_C.md
@@ -32,6 +35,8 @@
 ./3-Mathematical_Support/Operator_4_1.1_C.md
 ./3-Mathematical_Support/Operator_5_1.1_C.md
 ./3-Mathematical_Support/Operator_6_1.1_C.md
+./3-Mathematical_Support/Operator_11_1.1_C.md
+./3-Mathematical_Support/Operator_12_1.1_C.md
 
 #part-4
 ./4-Applications&Hypothesis/0‑Abstract_Part_4_C.md

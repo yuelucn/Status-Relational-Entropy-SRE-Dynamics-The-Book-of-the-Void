@@ -1,20 +1,7 @@
 ﻿# Operator-6: Sub-space Spectral Sieve & Splicing Operator ($\mathcal{P}_{\text{sieve}} \cup \mathcal{O}_{\text{splice}}$)
 ## Strict Mathematical Specification, Derivation, and Verification (Final Peer-Review Specification)
 
-**Author:** Yue Lu 
 **Version:** 1.1
-
-> **Resource-Availability Statement** This framework is built upon Status-Relational Entropy (SRE) Dynamics. All theoretical materials are archived in the Zenodo open-access repository. **This manuscript suite, including system papers, application developments, scientific hypotheses, full algebraic derivations for operators 1-6 and simulation code, is fully open-source**. Operators 7, 8, 9, 10 are subsequent closed-source commercial core modules and are not part of this manuscript suite.
->
->Additionally, you may access the Tencent intelligent-document space supporting AI-assisted reading, which is available on both PC and WeChat mobile clients.
->
-> As of 2026-08-14, constrained by Google’s terms-of-service, the author no longer maintains or updates the SRE document library hosted in Google Gemini Notebook. The link below serves only as a historical archive and must not be used as a formal citation source:
->
->- Google Gemini Notebook (historical archive, no further updates): [https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a%E2%80%91f6d0%E2%80%914a2a%E2%80%91aed4%E2%80%91b25d6520ab2c)
->
->- Tencent Intelligent Document Space: [https://docs.qq.com/space/DUkRjYUtNWFdyV253](https://docs.qq.com/space/DUkRjYUtNWFdyV253)
->
->According to the SRE principle, the physical foundation originates from information statistics.
 
 According to the pipeline configuration specified in the *SRE Universal Graph Operator Pipeline & Release Roadmap*, **Operator 6** is designated as the **Sub-space Spectral Sieve & Splicing Operator ($\mathcal{P}_{\text{sieve}} \cup \mathcal{O}_{\text{splice}}$)**. Operating as the final convergence component of the **Phase 1: Homogeneous Metric** cluster, this operator continuously streams its computed spectral prior invariants down to the subsequent pipelines of Operator 4 and Operator 5.
 

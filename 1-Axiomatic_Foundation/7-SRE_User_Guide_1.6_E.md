@@ -1,34 +1,19 @@
 # Status-Relational Entropy (SRE) Dynamics: Usage Specification and Theoretical Context
-**Author:** Yue Lu
 **Version:** v1.6 (aligned with complete manuscript suite 1-6)
-
-> **Resource-Availability Statement**
-This framework is built upon Status-Relational Entropy (SRE) Dynamics.
-All theoretical materials are archived in the Zenodo open-access repository. **This manuscript suite, including system papers, application developments, scientific hypotheses, full algebraic derivations for operators 1-6 and simulation code, is fully open-source**. Operators 7, 8, 9, 10 are subsequent closed-source commercial core modules and are not part of this manuscript suite.
-
-You may also access the Tencent intelligent-document space supporting AI-assisted reading, available on both PC and WeChat mobile clients.
-
-> As of 2026-08-14, constrained by Google’s terms-of-service, the author no longer maintains or updates the SRE document library hosted in Google Gemini NotebookLM. The link below serves only as a historical archive and must not be used as a formal citation source:
-- Google Gemini NotebookLM (historical archive, no further updates):
-[https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c)
-- Tencent Intelligent Document Space:
-[https://docs.qq.com/space/DUkRjYUtNWFdyV253](https://docs.qq.com/space/DUkRjYUtNWFdyV253)
-
-According to Status-Relational Entropy (SRE) principles, fundamental classical physics originates from information statistics.
 
 > Version Note: This manual provides usage norms, version-priority rules, application paradigms and theoretical-boundary descriptions for the complete SRE-Dynamics manuscript suite. It is consistent with the v1.6 axioms and all derivative papers.
 
 1. The Zenodo archive collection is sorted by public-release timestamp. It fully preserves the whole evolutionary history of SRE-Dynamics from early conceptual ideas and heuristic sketches up to the achievement of logical closure.
 > Note: Versions v1.5.x and earlier stored in the archive are historical heuristic drafts containing simplified ontological assumptions. **They are intended solely for version-traceability and are not recommended as formal citation sources.**
 
-2. The full v1.6 series manuscripts published after the formal establishment of the axiomatic system (1-Axiomatic_Introduction) possess the highest value for derivation, validation and application.
-> List of formally-citable manuscript suite:
-> 1-Axiomatic_Introduction_E_1.6   Axiomatic Foundation
-> 2-Light_Measurement_E_1.6    Reciprocal Measurement and Mapping Origin of $c$
-> 3-Time_Causal_Depth_E_1.6    Methodological Revision on Causal Depth and Spatial Indexing
-> 4-Mapping_Frontend_E_1.6   Mapping Prerequisites (Multi-Scale Homomorphic Mapping)
-> 5-Electronics_E_1.6     Unified Theory of Electronic Logical-Structural and Physical Properties
-> 6-Safety-Supplementary-Electronics_E_1.6 Magnitude Anchoring of Logical Depth $N$ and Observational-Protocol Safety Masking
+2. The full v1.6 series manuscripts published after the formal establishment of the axiomatic system (*A Foundational Framework for Information-Physical Interconversion*) possess the highest value for derivation, validation and application.
+> List of formally-citable manuscript suite (chapter titles as listed in the book's table of contents; current chapter files in parentheses):
+> 1. *A Foundational Framework for Information-Physical Interconversion* (`1-Axiomatic_Introduction_1.6_E.md`) — Axiomatic Foundation
+> 2. *Reciprocal Measurement and the Mapping Origin of $c$* (`2-Light_Measurement_1.6_E.md`)
+> 3. *Methodological Revision on Causal Depth and Spatial Indexing* (`3-Time_Causal_Depth_1.6_E.md`)
+> 4. *Mapping Prerequisites* (`4-Mapping_Frontend_1.6_E.md`) — Multi-Scale Homomorphic Mapping
+> 5. *A Unified Theory of Electronic Logical-Structural and Physical Properties Based on the Minimal Instantiable Topological Scale* (`5-Electronics_1.6_E.md`)
+> 6. *Magnitude Anchoring of Logical Depth $\boldsymbol{N}$ and Observational-Protocol Safety Masking* (`6-Safety_Supplement_Electronics_1.6_E.md`)
 
 3. When investigating the underlying structure of causal-space and the physical rendering-layer using SRE-Dynamics, one shall prefer the precise mathematico-topological expressions provided in this suite with unified ontological alignment.
 Classical-physics frameworks and the SRE framework can establish mathematical correspondence within their respective valid scales. Depending on the observational scale and computational complexity of a given study, either system may be employed alone or in hybrid combination.

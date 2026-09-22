@@ -1,13 +1,10 @@
 # A Conjecture on Single‑Photon Bidirectional Instantaneous Communication via Möbius Topological Flows Based on SRE Dynamics
-**Author**: Yue Lu
 **Version**: 1.0
 
-> This framework is built upon Status‑Relational Entropy (SRE) Dynamics
+> Related references:
 > https://doi.org/10.5281/zenodo.19935370 — Core Axiomatic Foundation: SRE Dynamics including User Guide
 > https://doi.org/10.5281/zenodo.20301819 — Light Base Formulation
 > https://doi.org/10.5281/zenodo.20351909 — Mathematical Credit & Priors Statement
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 ## Abstract
 Modern quantum‑communication protocols, which mainly employ quantum‑key‑distribution (QKD) derived from entangled states, are fundamentally bounded by the no‑communication theorem and the intrinsic stochasticity of wave‑function collapse. Accordingly, they operate under probabilistic constraints and suffer physical bottlenecks including decoherence and low detection efficiency.

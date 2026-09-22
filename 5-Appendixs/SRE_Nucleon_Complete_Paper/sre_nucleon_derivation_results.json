@@ -1,0 +1,166 @@
+{
+  "C1_isospin_z2_doublet": {
+    "p_flip_multiset": [
+      "d",
+      "d",
+      "u"
+    ],
+    "n_flip_multiset": [
+      "d",
+      "u",
+      "u"
+    ],
+    "p_flip_equals_n": true,
+    "n_flip_equals_p": true,
+    "z2_involution_on_doublet": true,
+    "z2_no_fixed_point": true,
+    "charge_p": 1.0,
+    "charge_n": 0.0,
+    "graph_isomorphic_doublet": true,
+    "all_pass": true
+  },
+  "C2_binding_operator_convergence": {
+    "intra_edges_never_pruned": true,
+    "idempotent": true,
+    "monotone_single_step": true,
+    "inter_survivors": 2,
+    "coherent_composite": true,
+    "connected": true,
+    "unbound_components": 3,
+    "all_pass": true
+  },
+  "C3_uniqueness": {
+    "distance1_charge_pairs_count": 6,
+    "expected_pair_count": 6,
+    "distinct_orbits_up_to_permutation": 1,
+    "one_orbit_up_to_permutation": true,
+    "contains_proton_neutron": true,
+    "all_pass": true
+  },
+  "C4_binding_robustness": {
+    "trials": 500,
+    "rho": 0.1,
+    "eps_margin": 0.15,
+    "survivor_set_mismatches": 0,
+    "robust": true,
+    "all_pass": true
+  },
+  "C5_local_injection_reverse_inference": {
+    "N_electron": 1e+23,
+    "N_proton": 5.446170214890387e+19,
+    "N_neutron": 5.438673442421805e+19,
+    "me_over_mp": 0.0005446170214890388,
+    "depth_ratio_self_consistency": 1836.1526734252586,
+    "mp_over_me": 1836.1526734252586,
+    "self_consistency_rel_err": 0.0,
+    "all_pass": true
+  },
+  "C6_readonly_anchor_registry": {
+    "registry": [
+      {
+        "锚点": "me",
+        "数值_MeV": 0.51099895,
+        "来源": "CODATA 2018",
+        "性质": "注入边界条件",
+        "SRE推导": "否",
+        "备注": "",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "mp",
+        "数值_MeV": 938.27208816,
+        "来源": "CODATA 2018",
+        "性质": "注入边界条件",
+        "SRE推导": "否",
+        "备注": "",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "mn",
+        "数值_MeV": 939.56542052,
+        "来源": "CODATA 2018",
+        "性质": "注入边界条件",
+        "SRE推导": "否",
+        "备注": "",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "mp/me",
+        "数值": 1836.1526734252586,
+        "来源": "导出（mp,me）",
+        "性质": "只读锚点·质量比",
+        "SRE推导": "否",
+        "备注": "与逻辑深度比 N_e/N_p 数字重合（对偶自洽）",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "mn/mp",
+        "数值": 1.0013784193053599,
+        "来源": "导出（mn,mp）",
+        "性质": "只读锚点·质量比",
+        "SRE推导": "否",
+        "备注": "isospin 破缺占比约为 1.4e-3 量级（Z2 双重态近简并的方向性）",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "(mn-mp)/me",
+        "数值": 2.5309882926374354,
+        "来源": "导出（mn,mp,me）",
+        "性质": "只读锚点·质量比",
+        "SRE推导": "否",
+        "备注": "",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "(mn-mp)/mp",
+        "数值": 0.0013784193053598278,
+        "来源": "导出（mn,mp）",
+        "性质": "只读锚点·质量比",
+        "SRE推导": "否",
+        "备注": "量级 1.4e-3：同位旋破缺为 Z2 双重态上的小扰动（结构方向性，非定量）",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "alpha^-1",
+        "数值": 137.035999084,
+        "来源": "CODATA 2018",
+        "性质": "只读锚点·库仑力关联",
+        "SRE推导": "否（电子项目已给谱比同向指示）",
+        "备注": "库仑力为核子内/间相互作用的关键验证线索之一",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "胶子海质量占比",
+        "数值": "~90%（动力学质量，属 QCD 范畴）",
+        "来源": "现代强子物理共识（蹄书复合粒子章已声明不可由此定量）",
+        "性质": "只读锚点",
+        "SRE推导": "否",
+        "备注": "虚空之书明确：绝对强子质量、胶子海因子、重子劈裂不在本框架数值预言范围",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "u 电流质量",
+        "数值": "~2.16 MeV（QCD 范畴）",
+        "来源": "PDG（电流质量，非本框架）",
+        "性质": "只读锚点",
+        "SRE推导": "否",
+        "备注": "SRE 复合图使用价子核相干结构，不冒充电流夸克质量",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      },
+      {
+        "锚点": "d 电流质量",
+        "数值": "~4.67 MeV（QCD 范畴）",
+        "来源": "PDG（电流质量，非本框架）",
+        "性质": "只读锚点",
+        "SRE推导": "否",
+        "备注": "同上",
+        "非推导声明": "本项仅为实测锚点登记，不做 SRE 数值预言，不构成验证。"
+      }
+    ],
+    "all_pass": true
+  },
+  "_summary": {
+    "structure_checks_pass": true,
+    "note": "C1-C5 为模型内部结构化自洽断言；C6 为只读锚点登记，不构成对现实物理的数值预言。"
+  }
+}

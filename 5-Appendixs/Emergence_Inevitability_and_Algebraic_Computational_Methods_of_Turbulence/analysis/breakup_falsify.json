@@ -1,0 +1,52 @@
+{
+ "A_direction": {
+  "sre_sigma_at_Lam1e-3": 0.4900555555555555,
+  "sre_sigma_at_Lam100": 0.0026111111111111114,
+  "sre_monotone_down": true,
+  "real_We_c_at_Oh0.001": 12.000204831596193,
+  "real_We_c_at_Oh10": 526.5137072233399,
+  "real_tail_exponent_highOh": 1.454629391626557,
+  "real_plateau_exponent_lowOh": 0.00012147125947200927
+ },
+ "B_shape": {
+  "sre_upper_plateau": 0.4794907407407407,
+  "sre_lower_plateau": 0.008020202020202018,
+  "sre_width_decades_45to05": 2.1666666666666665,
+  "real_We_range_decades": 1.6422210229757364,
+  "real_width_decades_We12to100": 1.2999999999999998,
+  "real_has_upper_plateau": false,
+  "real_has_lower_plateau": true,
+  "nplateau_sre": 2,
+  "nplateau_real": 1
+ },
+ "C_dimensionality": {
+  "sre_control_dimensions": 1,
+  "real_control_dimensions": 2,
+  "regime_boundaries_on_Oh_slice": 4,
+  "regime_boundaries_We": {
+   "bag": 18.0,
+   "multimode": 45.0,
+   "shear": 100.0,
+   "catastrophic": 350.0
+  },
+  "sre_levels_per_point": 1,
+  "info_discarded_by_projection": "regime class (bag/multimode/shear/catastrophic) cannot be written as a function of a single scalar"
+ },
+ "Lambda_c_ladder": {
+  "sig<0.45": 0.03162277660168379,
+  "sig<0.40": 0.08254041852680181,
+  "sig<0.35": 0.1467799267622069,
+  "sig<0.30": 0.2610157215682536,
+  "sig<0.25": 0.3831186849557285,
+  "sig<0.20": 0.5623413251903491,
+  "sig<0.15": 1.0,
+  "sig<0.10": 2.154434690031882,
+  "sig<0.05": 4.6415888336127775
+ },
+ "verdict": "UNDERDETERMINED / NOT YET TESTABLE (not falsified)",
+ "why_not_falsified": "Lambda is not yet anchored onto (Oh, We); until it is, sigma(Lambda) has no coordinate-invariant shape and the model emits no testable prediction. A single parametric curve can already cover the 1-D boundary We_c(Oh). Correct order: anchor -> predict -> test (leave-one-out).",
+ "falsification_prerequisite": "choose Lambda = g(Oh, We), fit g's coefficients on a subset of experimental points, then measure prediction error on held-out points.",
+ "A_direction_note": "qualifying only (coordinate-invariant directions DO match)",
+ "B_shape_note": "qualifying only (shape is not coordinate-invariant pre-anchor)",
+ "C_dim_note": "qualifying only: limits the 2-D regime PLANE, not the 1-D boundary curve We_c(Oh)"
+}

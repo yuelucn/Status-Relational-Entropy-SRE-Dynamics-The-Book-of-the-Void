@@ -1,14 +1,10 @@
 # TECHNICAL REPORT: INTRINSIC ALGEBRAIC TOPOLOGY OF LIGHT AND THE SRE AXION MATRIX
-**Author**: Yue Lu
 **Version**: 1.0
 
 > Project Reference: https://doi.org/10.5281/zenodo.20482974 — A Conjecture on Single‑Photon Bidirectional Instantaneous Communication via Möbius Topological Flows Based on SRE Dynamics
-> This framework is built upon Status‑Relational Entropy (SRE) Dynamics
 > https://doi.org/10.5281/zenodo.19935370 — User Guide and Interpretive Companion
 > https://doi.org/10.5281/zenodo.20576606 — Theory of Hierarchical Dissipative Self‑Organizing Binary Network Dynamics
 > https://doi.org/10.5281/zenodo.20837960 — Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 ## Abstract
 This module establishes the theoretical formulation and mathematical foundation for a deterministic single‑channel full‑duplex instantaneous‑communication framework free from classical spacetime‑medium constraints. Abandoning the conventional paradigm treating light as an independent material wave‑packet, light within the Status‑Relational‑Entropy (SRE)‑Dynamics 0‑State formulation is defined as a residual topological manifold spontaneously woven by step‑cost differentials between two asynchronously‑evolving boundary nodes.

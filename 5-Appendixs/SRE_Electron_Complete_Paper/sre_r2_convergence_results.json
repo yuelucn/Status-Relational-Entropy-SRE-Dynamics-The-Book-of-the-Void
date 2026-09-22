@@ -1,0 +1,234 @@
+{
+  "Q3_invariants": {
+    "V": 8,
+    "E": 12,
+    "b1": 5,
+    "bipartite": true,
+    "girth": 4,
+    "cubic": true
+  },
+  "Mcore_invariants": {
+    "V": 60,
+    "E": 1770,
+    "b1": 1711,
+    "bipartite": false,
+    "girth": 3
+  },
+  "R_strict_on_Mcore": {
+    "V": 60,
+    "E": 1770,
+    "b1": 1711,
+    "idempotent": true
+  },
+  "R_strict_lift_recovery": {
+    "lift_lvl1": {
+      "lift_V": 16,
+      "lift_E": 48,
+      "lift_b1": 33,
+      "R_V": 8,
+      "R_E": 12,
+      "R_b1": 5,
+      "bipartite": true,
+      "girth": 4,
+      "recovered": true
+    },
+    "lift_lvl2": {
+      "lift_V": 32,
+      "lift_E": 192,
+      "lift_b1": 161,
+      "R_V": 16,
+      "R_E": 48,
+      "R_b1": 33,
+      "bipartite": true,
+      "girth": 4,
+      "recovered": false
+    }
+  },
+  "R_eps_eps_sweep_Mcore": {
+    "0.0": {
+      "final_V": 60,
+      "final_E": 1770,
+      "final_b1": 1711,
+      "bipartite": false,
+      "girth": 3,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 1,
+      "traj_head": [
+        60,
+        60
+      ]
+    },
+    "0.05": {
+      "final_V": 60,
+      "final_E": 1770,
+      "final_b1": 1711,
+      "bipartite": false,
+      "girth": 3,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 1,
+      "traj_head": [
+        60,
+        60
+      ]
+    },
+    "0.1": {
+      "final_V": 60,
+      "final_E": 1770,
+      "final_b1": 1711,
+      "bipartite": false,
+      "girth": 3,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 1,
+      "traj_head": [
+        60,
+        60
+      ]
+    },
+    "0.15": {
+      "final_V": 60,
+      "final_E": 1770,
+      "final_b1": 1711,
+      "bipartite": false,
+      "girth": 3,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 1,
+      "traj_head": [
+        60,
+        60
+      ]
+    },
+    "0.2": {
+      "final_V": 60,
+      "final_E": 1770,
+      "final_b1": 1711,
+      "bipartite": false,
+      "girth": 3,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 1,
+      "traj_head": [
+        60,
+        60
+      ]
+    },
+    "0.25": {
+      "final_V": 60,
+      "final_E": 1770,
+      "final_b1": 1711,
+      "bipartite": false,
+      "girth": 3,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 1,
+      "traj_head": [
+        60,
+        60
+      ]
+    },
+    "0.3": {
+      "final_V": 58,
+      "final_E": 1653,
+      "final_b1": 1596,
+      "bipartite": false,
+      "girth": 3,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 3,
+      "traj_head": [
+        60,
+        59,
+        58,
+        58
+      ]
+    },
+    "0.4": {
+      "final_V": 1,
+      "final_E": 0,
+      "final_b1": 0,
+      "bipartite": true,
+      "girth": 0,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 60,
+      "traj_head": [
+        60,
+        59,
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        52,
+        51,
+        50,
+        49
+      ]
+    },
+    "0.5": {
+      "final_V": 1,
+      "final_E": 0,
+      "final_b1": 0,
+      "bipartite": true,
+      "girth": 0,
+      "cubic": false,
+      "monotone": true,
+      "fixed_point": true,
+      "is_Q3": false,
+      "steps": 60,
+      "traj_head": [
+        60,
+        59,
+        58,
+        57,
+        56,
+        55,
+        54,
+        53,
+        52,
+        51,
+        50,
+        49
+      ]
+    }
+  },
+  "R_eps_lift_recovery": {
+    "eps": 0.0,
+    "final_V": 8,
+    "final_E": 12,
+    "final_b1": 5,
+    "recovered": true,
+    "traj": [
+      16,
+      15,
+      14,
+      13,
+      12,
+      11,
+      10,
+      9,
+      8,
+      8
+    ]
+  }
+}

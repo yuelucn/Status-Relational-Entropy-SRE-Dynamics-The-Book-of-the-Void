@@ -1,0 +1,272 @@
+{
+  "q3_spectrum": {
+    "eigenvalues": [
+      0.0,
+      2.0,
+      2.0,
+      2.0,
+      4.0,
+      4.0,
+      4.0,
+      6.0
+    ],
+    "weight_degeneracy": {
+      "0": 1,
+      "1": 3,
+      "2": 3,
+      "3": 1
+    },
+    "note": "Q3 hypercube symmetry {1,3,3,1}; NOT the 1,3,5,7 source; 2l+1 comes from emergent-3D rotational symmetry (borrowed)"
+  },
+  "q3_occupied_weights": {
+    "0": 1,
+    "1": 3,
+    "2": 3,
+    "3": 1
+  },
+  "pauli_faithfulness": {
+    "n_cells": 16,
+    "faithful": true,
+    "dup_rows_when_double_occ": 1,
+    "interpretation": "Pauli = per-cell uniqueness / faithful cover"
+  },
+  "capacity_arithmetic": {
+    "subshell": {
+      "0": 2,
+      "1": 6,
+      "2": 10,
+      "3": 14,
+      "4": 18,
+      "5": 22,
+      "6": 26
+    },
+    "shell": {
+      "1": 2,
+      "2": 8,
+      "3": 18,
+      "4": 32,
+      "5": 50,
+      "6": 72,
+      "7": 98
+    },
+    "sum_identity_holds": true
+  },
+  "hund_tension_min": {
+    "l1": [
+      {
+        "k": 1,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 1,
+        "n_configs": 6,
+        "n_min": 6,
+        "hund_ok": true
+      },
+      {
+        "k": 2,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 2,
+        "n_configs": 15,
+        "n_min": 12,
+        "hund_ok": true
+      },
+      {
+        "k": 3,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 3,
+        "n_configs": 20,
+        "n_min": 8,
+        "hund_ok": true
+      },
+      {
+        "k": 4,
+        "min_pair_cost": 1,
+        "theory": 1,
+        "max_spin": 2,
+        "n_configs": 15,
+        "n_min": 12,
+        "hund_ok": true
+      },
+      {
+        "k": 5,
+        "min_pair_cost": 2,
+        "theory": 2,
+        "max_spin": 1,
+        "n_configs": 6,
+        "n_min": 6,
+        "hund_ok": true
+      }
+    ],
+    "l2": [
+      {
+        "k": 1,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 1,
+        "n_configs": 10,
+        "n_min": 10,
+        "hund_ok": true
+      },
+      {
+        "k": 2,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 2,
+        "n_configs": 45,
+        "n_min": 40,
+        "hund_ok": true
+      },
+      {
+        "k": 3,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 3,
+        "n_configs": 120,
+        "n_min": 80,
+        "hund_ok": true
+      },
+      {
+        "k": 4,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 4,
+        "n_configs": 210,
+        "n_min": 80,
+        "hund_ok": true
+      },
+      {
+        "k": 5,
+        "min_pair_cost": 0,
+        "theory": 0,
+        "max_spin": 5,
+        "n_configs": 252,
+        "n_min": 32,
+        "hund_ok": true
+      },
+      {
+        "k": 6,
+        "min_pair_cost": 1,
+        "theory": 1,
+        "max_spin": 4,
+        "n_configs": 210,
+        "n_min": 80,
+        "hund_ok": true
+      },
+      {
+        "k": 7,
+        "min_pair_cost": 2,
+        "theory": 2,
+        "max_spin": 3,
+        "n_configs": 120,
+        "n_min": 80,
+        "hund_ok": true
+      },
+      {
+        "k": 8,
+        "min_pair_cost": 3,
+        "theory": 3,
+        "max_spin": 2,
+        "n_configs": 45,
+        "n_min": 40,
+        "hund_ok": true
+      },
+      {
+        "k": 9,
+        "min_pair_cost": 4,
+        "theory": 4,
+        "max_spin": 1,
+        "n_configs": 10,
+        "n_min": 10,
+        "hund_ok": true
+      }
+    ]
+  },
+  "hund_all_ok": true,
+  "aufbau_sequence": [
+    "1s",
+    "2s",
+    "2p",
+    "3s",
+    "3p",
+    "4s",
+    "3d",
+    "4p",
+    "5s",
+    "4d",
+    "5p",
+    "6s",
+    "4f",
+    "5d",
+    "6p",
+    "7s",
+    "5f",
+    "6d",
+    "7p",
+    "5g",
+    "6f",
+    "7d",
+    "6g",
+    "7f",
+    "6h",
+    "7g",
+    "7h",
+    "7i"
+  ],
+  "inert_gas": [
+    {
+      "Z": 2,
+      "config": "1s^2",
+      "status": "full-shell-boundary"
+    },
+    {
+      "Z": 10,
+      "config": "1s^2 2s^2 2p^6",
+      "status": "full-shell-boundary"
+    },
+    {
+      "Z": 18,
+      "config": "1s^2 2s^2 2p^6 3s^2 3p^6",
+      "status": "full-shell-boundary"
+    },
+    {
+      "Z": 36,
+      "config": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6",
+      "status": "full-shell-boundary"
+    },
+    {
+      "Z": 54,
+      "config": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 5p^6",
+      "status": "full-shell-boundary"
+    },
+    {
+      "Z": 86,
+      "config": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6",
+      "status": "full-shell-boundary"
+    },
+    {
+      "Z": 118,
+      "config": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6 5s^2 4d^10 5p^6 6s^2 4f^14 5d^10 6p^6 7s^2 5f^14 6d^10 7p^6",
+      "status": "full-shell-boundary"
+    }
+  ],
+  "example_configs": {
+    "6": "1s^2 2s^2 2p^2",
+    "8": "1s^2 2s^2 2p^4",
+    "19": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^1",
+    "26": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6",
+    "36": "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^6"
+  },
+  "coincidence_60": {
+    "shell_sum": 60,
+    "terms": [
+      2,
+      8,
+      18,
+      32
+    ],
+    "eq_60": true,
+    "note": "co-directional indicator, not proof"
+  }
+}

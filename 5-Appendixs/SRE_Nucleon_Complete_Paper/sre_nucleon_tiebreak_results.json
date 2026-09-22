@@ -1,0 +1,199 @@
+{
+  "candidate_A_Y3": {
+    "V": 12,
+    "E": 18,
+    "beta1": 7,
+    "triangles": 3,
+    "girth": 3,
+    "diameter": 3,
+    "aut": 36,
+    "orbits": 2,
+    "lambda2": 0.9999999999999987,
+    "rho": 5.3027756377319974,
+    "Pi1": 0.1885804846964447,
+    "Pi2_lam2_over_lam4": 0.589197293081332,
+    "Kirchhoff": 57.66666666666666,
+    "Wiener": 135.0,
+    "mean_resistance": 0.8737373737373736,
+    "triangles_over_edges": 0.16666666666666666
+  },
+  "candidate_B": {
+    "V": 12,
+    "E": 18,
+    "beta1": 7,
+    "triangles": 1,
+    "girth": 3,
+    "diameter": 3,
+    "aut": 12,
+    "orbits": 3,
+    "lambda2": 0.9999999999999993,
+    "rho": 5.302775637731996,
+    "Pi1": 0.18858048469644487,
+    "Pi2_lam2_over_lam4": 0.5891972930813321,
+    "Kirchhoff": 54.066666666666684,
+    "Wiener": 129.0,
+    "mean_resistance": 0.8191919191919195,
+    "triangles_over_edges": 0.05555555555555555
+  },
+  "candidate_B_edges": [
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      10,
+      11
+    ]
+  ],
+  "cross_check": {
+    "n_comparisons": 384,
+    "n_hit_2pct": 1,
+    "expected_hit_2pct": 7.68,
+    "top": [
+      {
+        "dev": 0.01472948966408265,
+        "target": "|r_n^2|/r_p^2",
+        "quantity": "triangles_over_edges",
+        "candidate": "A",
+        "value": 0.16666666666666666,
+        "observed": 0.16424738648508205
+      },
+      {
+        "dev": 0.039632476937673924,
+        "target": "m_pi+-/m_p",
+        "quantity": "beta1⁻¹",
+        "candidate": "A",
+        "value": 0.14285714285714285,
+        "observed": 0.14875257589054444
+      },
+      {
+        "dev": 0.039632476937673924,
+        "target": "m_pi+-/m_p",
+        "quantity": "beta1⁻¹",
+        "candidate": "B",
+        "value": 0.14285714285714285,
+        "observed": 0.14875257589054444
+      },
+      {
+        "dev": 0.04302668041615039,
+        "target": "g_A",
+        "quantity": "mean_resistance⁻¹",
+        "candidate": "B",
+        "value": 1.2207151664611586,
+        "observed": 1.2756
+      },
+      {
+        "dev": 0.06743127208191116,
+        "target": "(m_Delta-m_N)/m_p",
+        "quantity": "diameter⁻¹",
+        "candidate": "A",
+        "value": 0.3333333333333333,
+        "observed": 0.31227615496330935
+      },
+      {
+        "dev": 0.06743127208191116,
+        "target": "(m_Delta-m_N)/m_p",
+        "quantity": "diameter⁻¹",
+        "candidate": "B",
+        "value": 0.3333333333333333,
+        "observed": 0.31227615496330935
+      },
+      {
+        "dev": 0.06743127208191116,
+        "target": "(m_Delta-m_N)/m_p",
+        "quantity": "girth⁻¹",
+        "candidate": "A",
+        "value": 0.3333333333333333,
+        "observed": 0.31227615496330935
+      },
+      {
+        "dev": 0.06743127208191116,
+        "target": "(m_Delta-m_N)/m_p",
+        "quantity": "girth⁻¹",
+        "candidate": "B",
+        "value": 0.3333333333333333,
+        "observed": 0.31227615496330935
+      },
+      {
+        "dev": 0.06743127208191116,
+        "target": "(m_Delta-m_N)/m_p",
+        "quantity": "orbits⁻¹",
+        "candidate": "B",
+        "value": 0.3333333333333333,
+        "observed": 0.31227615496330935
+      },
+      {
+        "dev": 0.06743127208191116,
+        "target": "(m_Delta-m_N)/m_p",
+        "quantity": "triangles⁻¹",
+        "candidate": "A",
+        "value": 0.3333333333333333,
+        "observed": 0.31227615496330935
+      }
+    ]
+  }
+}

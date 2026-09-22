@@ -1,13 +1,6 @@
 ﻿# Operator-1: Local Graph Expansion Operator - Full Explanatory Document
 
-Author: Yue Lu
 Version: 1.0
-
-This framework is constructed based on Status-Relational Entropy (SRE) Dynamics.
-All theoretical materials of this framework are archived in the Zenodo open-access repository. Except for the closed-source commercial engineering implementation modules corresponding to Operators 7, 8, 9 and 10, the mathematical-specification papers, algebraic derivations and simulation codes for Operators 1-6 are fully open-source. You may also access the fully open-source Tencent Smart Document with AI-assisted support (accessible via PC and WeChat mobile client). As of August-, 2026, due to Google Terms-of-Service restrictions, the author no longer maintains or updates the SRE-series document library on Google Gemini notebook:
-[Knowledge-Seeking] [https://docs.qq.com/space/DUkRjYUtNWFdyV253?nlc=1&mode=ai_mode](https://docs.qq.com/space/DUkRjYUtNWFdyV253?nlc=1&mode=ai_mode)
-
-According to the Status-Relational Entropy (SRE) principle, the foundations of classical physics originate from information statistics.
 
 Document purpose: supporting notes for papers, writing reference, helping readers rapidly understand $\mathcal{G}_{n \to n+1}$.
 

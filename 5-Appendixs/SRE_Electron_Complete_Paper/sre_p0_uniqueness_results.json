@@ -1,0 +1,110 @@
+{
+  "binary_core": {
+    "N": 300,
+    "k": 60,
+    "vocab_pm1": true
+  },
+  "R_properties": {
+    "order_independent": true,
+    "vocab_pm1_before": true,
+    "vocab_pm1_after": true,
+    "z2_before_pct_plus": 0.504,
+    "z2_after_pct_plus": 0.6212
+  },
+  "ensemble": {
+    "invariants": [
+      [
+        13,
+        78,
+        66,
+        1
+      ],
+      [
+        12,
+        66,
+        55,
+        1
+      ],
+      [
+        14,
+        91,
+        78,
+        1
+      ],
+      [
+        14,
+        91,
+        78,
+        1
+      ],
+      [
+        11,
+        55,
+        45,
+        1
+      ]
+    ]
+  },
+  "constructive_recovery": {
+    "lift_V": 16,
+    "lift_E": 32,
+    "lift_b1": 17,
+    "recovered_V": 8,
+    "recovered_E": 12,
+    "recovered_b1": 5,
+    "is_Q3": true
+  },
+  "uniqueness_enum": {
+    "labeled_count": 19320,
+    "unique_count": 5,
+    "rows": [
+      {
+        "n": 8,
+        "E": 12,
+        "b1": 5,
+        "planar": true,
+        "bipartite": true,
+        "freeZ2": true,
+        "girth": 4
+      },
+      {
+        "n": 8,
+        "E": 12,
+        "b1": 5,
+        "planar": true,
+        "bipartite": false,
+        "freeZ2": true,
+        "girth": 3
+      },
+      {
+        "n": 8,
+        "E": 12,
+        "b1": 5,
+        "planar": true,
+        "bipartite": false,
+        "freeZ2": true,
+        "girth": 3
+      },
+      {
+        "n": 8,
+        "E": 12,
+        "b1": 5,
+        "planar": false,
+        "bipartite": false,
+        "freeZ2": false,
+        "girth": 3
+      },
+      {
+        "n": 8,
+        "E": 12,
+        "b1": 5,
+        "planar": false,
+        "bipartite": false,
+        "freeZ2": true,
+        "girth": 4
+      }
+    ],
+    "winners": 1,
+    "unique_basal_is_Q3": true
+  }
+}

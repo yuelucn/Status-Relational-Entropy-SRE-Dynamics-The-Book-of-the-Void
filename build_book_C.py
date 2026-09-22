@@ -3,6 +3,32 @@ import os
 import re
 import sys
 
+def strip_fenced_code(content: str) -> str:
+    """把 ``` 或 ~~~ 围栏代码块的内容替换为空行。
+
+    章节里经常出现 `# Step 1: ...` 这类脚本注释，若不剔除会被朴素正则
+    误判成 H1，触发"Multiple H1"假警报。围栏行本身一并置空，
+    保证剩余文本的行号与原文件一一对应。
+    """
+    out = []
+    fence_char = None   # 当前围栏字符（` 或 ~）
+    fence_len = 0
+    for line in content.split("\n"):
+        m = re.match(r"^\s*(`{3,}|~{3,})", line)
+        if fence_char is None:
+            if m:
+                fence_char = m.group(1)[0]
+                fence_len = len(m.group(1))
+                out.append("")
+            else:
+                out.append(line)
+        else:
+            if m and m.group(1)[0] == fence_char and len(m.group(1)) >= fence_len:
+                fence_char = None
+            out.append("")
+    return "\n".join(out)
+
+
 def check_markdown_heading_warnings(filepath: str):
     """Scan md, output heading risk warnings, auto‑strip UTF‑8 BOM, do not modify source file"""
     # 二进制读取，内存剥离BOM，不改动磁盘文件
@@ -12,8 +38,9 @@ def check_markdown_heading_warnings(filepath: str):
         raw_bytes = raw_bytes[3:]
     content = raw_bytes.decode("utf-8")
 
+    # 统计 H1 时排除代码围栏内的内容
     h1_pattern = re.compile(r"^#\s+", re.MULTILINE)
-    h1_hits = h1_pattern.findall(content)
+    h1_hits = h1_pattern.findall(strip_fenced_code(content))
     cnt = len(h1_hits)
     warns = []
     if cnt == 0:

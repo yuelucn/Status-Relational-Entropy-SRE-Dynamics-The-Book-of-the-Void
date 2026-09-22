@@ -1,6 +1,4 @@
-# SRE Dynamics Supplementary Note:
-Magnitude Anchoring of Logical Depth $\boldsymbol{N}$ and Observational-Protocol Safety Masking
-**Author:** Yue Lu
+# SRE Dynamics Supplementary Note: Magnitude Anchoring of Logical Depth $\boldsymbol{N}$ and Observational-Protocol Safety Masking
 **Version:** v1.6 (Axiom-Homomorphic-Mapping Aligned Revision)
 
 > Version Note: This supplementary note is aligned with the full SRE v1.6 manuscript suite. $\mathcal{l}_{min}$ denotes the **minimal instantiable topological scale (emergent ontological ultraviolet boundary)** of the rendering layer. The electron is a self-consistent topological closed-loop that emerges in the physical rendering-layer after multi-scale rigid-boundary screening and homomorphic mapping. The safety discussed herein applies to deep internal topological degrees-of-freedom of the closed loop; routine physical manipulation of the electron as a whole object within the rendering layer is not prohibited.

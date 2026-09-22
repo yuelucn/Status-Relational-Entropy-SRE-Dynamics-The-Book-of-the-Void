@@ -1,23 +1,6 @@
 ﻿# Emergence of Classical Mechanics from Discrete Causal-Information Networks: Ontological Mapping and Effective-Theory Limits within Status-Relational-Entropy (SRE) Dynamics
-**Author**: Yue Lu
 **Version**: 1.0
 
-> **Resource & Availability Statement**: This framework is built upon Status-Relational Entropy (SRE) Dynamics. The complete suite of theoretical materials is archived in the Zenodo open-data repository.
-> **The full package includes system manuscript, application development, scientific hypotheses, complete algebraic derivations for operators 1-6, and simulation source code, all open-source**. Operators 7, 8, 9, 10 belong to subsequent closed-source commercial core modules and are not included in this document suite.
->
-> A Tencent Smart-Document workspace supporting AI-assisted review is available for both PC and mobile access.
->
-> As of 2026-08-14, the author no longer maintains or updates the Google Gemini Notebook SRE documentation suite due to Google Terms-of-Service constraints; this link serves purely as historical archive and shall not be used for formal citation:
->
-> - Gemini Notebook (historical archive, no longer updated):
-<https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c>
-> - Tencent Smart-Document workspace:
-<https://docs.qq.com/space/DUkRjYUtNWFdyV253>
->
-> According to the SRE principle, classical physical foundations originate from information statistics.
-
-> Reference baseline: SRE-v1.6 Axiom Suite (https://doi.org/10.5281/zenodo.22077475)
->
 > Note: This is a conceptual-framework paper focusing on establishing ontological correspondences rather than term-by-term rigorous analytical derivation of full textbook mechanics formulae. Three representative physical examples - inertia, force-mass-acceleration relation, and Hooke’s law - illustrate emergent behaviour under coarse-graining, decoherence and topological-phase constraints. Supporting topological-evolution derivations are provided in the appendix. **Appendix derivations are illustrative topological sketches and shall not be treated as rigorous complete mathematical proofs; they serve only for physical intuition**.
 
 ## Abstract
@@ -232,4 +215,3 @@ Information-propagation flux (topological proxy for momentum) satisfies global c
 3. Hoel, E.P. Causal emergence and coarse-graining in complex networks.
 4. Ehrenfest theorem: quantum-classical correspondence principle.
 5. SRE-v6.2-rev: cosmological BBP-RMT spectral-rank-phase-transition simulation with SDSS/eBOSS spectroscopic datasets.
-

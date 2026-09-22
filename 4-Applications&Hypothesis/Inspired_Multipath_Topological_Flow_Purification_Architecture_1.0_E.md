@@ -1,13 +1,10 @@
 # A SRE‑Dynamics Inspired Multipath Topological Flow Purification Architecture and Localized Operator Implementation
-**Author**: Yue Lu
 **Version**: 1.0
 
-> This framework is built upon Status‑Relational Entropy (SRE) Dynamics
+> Related references:
 > https://doi.org/10.5281/zenodo.19935370
 > https://doi.org/10.5281/zenodo.20344105
 > https://doi.org/10.5281/zenodo.20301819
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 ## Abstract
 Based on the conceptual framework of Status‑Relational‑Entropy (SRE) Dynamics, this paper presents a localized, computationally‑efficient multipath topological‑flow purification architecture together with a universal mathematical toolbox. In highly‑distributed networks, conventional global multipath‑cancellation approaches suffer from heavy computational complexity and boundary‑truncation artifacts because they rely on a complete global connectivity matrix. Breaking global prior‑constraints, this framework abstracts the localized multipath‑propagation network into a discrete cross‑spectral operator. By evaluating rank‑variation and eigenspace configurations of a $2\times 2$ local correlation matrix, the method cleanly discriminates single‑path direct causal flows (rank‑1 degeneracy) from chaotic multipath superpositions (full‑rank expansion). Making use of first‑order algebraic closed‑form solutions, it introduces a heuristic topological sieve inspired by the Gaussian Unitary Ensemble (GUE) and Poisson distributions from Random‑Matrix Theory (RMT). Finally, the paper demonstrates the full stream‑execution pipeline, delivering an ultra‑low‑latency solution for modern signal‑ and information‑processing tasks.

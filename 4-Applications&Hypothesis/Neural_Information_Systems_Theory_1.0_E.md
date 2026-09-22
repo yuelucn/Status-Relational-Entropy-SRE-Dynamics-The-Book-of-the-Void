@@ -1,14 +1,11 @@
 # Neural Information‑Systems Theory: First‑Order Thalamic Downsampling Instability and Second‑Order Default‑Mode‑Network Integration Cascading‑Failure Hypothesis
-**Author**: Yue Lu
 **Version**: 1.0
 **Archive Type**: Private Knowledge Base · Exploration of Extreme Dynamics and Neuroinformatics
 **Data‑Source Validation**: OpenNeuro ds004504 (ICA/ASR pre‑processing denoised derivative dataset)
 
 > Two‑Tier Control Architecture: First‑Order Thalamic Downsampling Gateway (TRN); Second‑Order DMN Posterior‑Core Bus (PCC/PCu)
-> This framework is built upon Status‑Relational Entropy (SRE) Dynamics
+> Related references:
 > https://doi.org/10.5281/zenodo.20377424 — Whole‑Brain Parallelism and High‑Dimensional Causal‑Chain Topological‑Spectrum Homomorphic‑Mapping Mechanisms Based on Complex‑Causal‑Network Topology
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 ## I. Core Viewpoints and Two‑Tier Stepped Defensive‑Gating Hypothesis (Core Hypothesis)
 From the cybernetics and digital‑signal‑processing physical framework, this hypothesis defines the brain’s gating mechanism for processing massive real‑world data throughput as a distributed, multi‑tier stepped dynamic‑network system:

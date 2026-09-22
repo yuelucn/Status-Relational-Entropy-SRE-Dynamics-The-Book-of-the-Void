@@ -1,5 +1,4 @@
 # Methodological Revision on Causal Depth and Spatial Indexing
-**Author:** Yue Lu
 **Version:** 1.6.0 (Dissipation-Compensation and Möbius-Residue Aligned Edition)
 
 > Version Note: This version supersedes v1.5.1 (Causal Topology Edition). The earlier heuristic sketch treating Planck-scale quantities as native pixel or atomic clock cycles of the underlying network has been replaced. Reconstructed fully under SRE Axioms v1.6 and the dissipation-compensation duality framework, Planck quantities are defined as **emergent ontological ultraviolet boundaries**, rather than intrinsic granular parameters of causal nodes.

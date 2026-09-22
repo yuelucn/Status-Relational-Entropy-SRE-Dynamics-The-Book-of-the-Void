@@ -1,0 +1,116 @@
+{
+  "fast_neutron_experiment": {
+    "n_nuclides": 18,
+    "spread_thermal_decades": 8.58,
+    "spread_fast_decades": 1.48,
+    "spread_fast_noTh_decades": 0.9,
+    "spread_th_p1p99": 8.39,
+    "spread_fa_p10p90": 0.4
+  },
+  "parity_counterexamples": [
+    "U-232",
+    "Pu-238",
+    "Cm-242"
+  ],
+  "conclusion_parity": "simple N-mod-2 falsified; upgrade to closure-potential/residual-excess criterion",
+  "closure_potential": {
+    "n_targets": 9,
+    "pearson_delta_log_sig": 0.932,
+    "rows": [
+      {
+        "T": "U-233",
+        "Estar": 6.8455,
+        "Bf": 5.5,
+        "Delta": 1.346,
+        "log10sig": 2.73
+      },
+      {
+        "T": "U-235",
+        "Estar": 6.5455,
+        "Bf": 5.67,
+        "Delta": 0.875,
+        "log10sig": 2.77
+      },
+      {
+        "T": "Pu-239",
+        "Estar": 6.5342,
+        "Bf": 6.05,
+        "Delta": 0.484,
+        "log10sig": 2.87
+      },
+      {
+        "T": "U-238",
+        "Estar": 4.8063,
+        "Bf": 6.2,
+        "Delta": -1.394,
+        "log10sig": -4.77
+      },
+      {
+        "T": "Th-232",
+        "Estar": 4.7863,
+        "Bf": 5.8,
+        "Delta": -1.014,
+        "log10sig": -4.27
+      },
+      {
+        "T": "Np-237",
+        "Estar": 5.4882,
+        "Bf": 6.1,
+        "Delta": -0.612,
+        "log10sig": -1.69
+      },
+      {
+        "T": "Pu-240",
+        "Estar": 5.2415,
+        "Bf": 6.1,
+        "Delta": -0.858,
+        "log10sig": -1.44
+      },
+      {
+        "T": "Pu-242",
+        "Estar": 5.0336,
+        "Bf": 5.8,
+        "Delta": -0.766,
+        "log10sig": -2.61
+      },
+      {
+        "T": "Am-241",
+        "Estar": 5.5287,
+        "Bf": 5.9,
+        "Delta": -0.371,
+        "log10sig": 0.49
+      }
+    ]
+  },
+  "B_over_A": {
+    "peak_A": 62,
+    "peak_BA": 8.7945,
+    "fission_model_MeV": [
+      215.0,
+      219.0
+    ],
+    "fission_meas_MeV": 202.5
+  },
+  "chain": [
+    {
+      "nuclide": "U-233",
+      "nu": 2.47,
+      "pstar": 0.4049
+    },
+    {
+      "nuclide": "U-235",
+      "nu": 2.43,
+      "pstar": 0.4115
+    },
+    {
+      "nuclide": "Pu-239",
+      "nu": 2.87,
+      "pstar": 0.3484
+    },
+    {
+      "nuclide": "U-238(快)",
+      "nu": 2.51,
+      "pstar": 0.3984
+    }
+  ]
+}

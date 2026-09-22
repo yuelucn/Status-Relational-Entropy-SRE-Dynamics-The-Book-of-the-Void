@@ -1,13 +1,10 @@
 # Whole‑Brain Parallelism and High‑Dimensional Causal‑Chain Topological‑Spectrum Homomorphic‑Mapping Mechanisms Based on Complex Causal‑Network Topology
-**Author**: Yue Lu
 **Version**: 1.0
 
-> This framework is built upon Status‑Relational Entropy (SRE) Dynamics
+> Related references:
 > https://doi.org/10.5281/zenodo.19935370
 > https://doi.org/10.5281/zenodo.20344105
 > https://doi.org/10.5281/zenodo.20301819
-
-> According to the SRE principle, the physical foundation originates from information statistics.
 
 ## Abstract
 This paper establishes a unified logical architecture spanning systems science and cognitive neuroscience to elucidate the underlying mechanics of whole‑brain neural‑firing networks, informational gating of the Default‑Mode Network (DMN), emergency whole‑brain topological parallelism under extreme stress, high‑dimensional inspiration emergence, non‑local cognitive synchronization, and early‑historical cognitive symbology.

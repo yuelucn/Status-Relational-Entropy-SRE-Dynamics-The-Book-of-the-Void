@@ -1,5 +1,4 @@
 # Mapping Prerequisites
-**Author:** Yue Lu
 **Version:** 1.6 (Revised for Multi-Scale Homomorphic Mapping)
 
 > Version Note: This revision reconstructs the ontological constraints of mapping and no longer presupposes a direct one-to-one projection from the underlying layer to the rendering layer. Drawing on the ontological features of the hierarchical dissipative self-organizing binary-network substrate, it introduces **multi-scale rigid boundaries-homomorphic mapping** as a necessary precondition for valid mapping. Terminology is fully consistent with the SRE Axioms v1.6, Reciprocal-Measurement paper, and Causal-Depth-and-Spatial-Indexing manuscript suite. This document does not address the ultimate origin of causal differences; it characterizes only the intrinsic constraints and feasible pathways for instantiated projection from causal space to the physical rendering layer.

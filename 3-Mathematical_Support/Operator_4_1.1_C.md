@@ -1,20 +1,7 @@
 ﻿# 算子-4：局域拓扑度数统计算子（$\mathcal{M}_{\text{degree}}$）的代数构造与狄利克雷能量正定有界性证明
 
-作者: 岳路  
 版本: 1.1  
 
-> 【资源与可用性声明】 本框架基于状态-关系熵（SRE）动力学构建。 全部理论资料归档于 Zenodo 开源数据仓库。**本文档套件包括系统论文、应用开发、科学假说、算子1-6完整代数推导及仿真代码完全开源**；算子7、8、9、10属于后续闭源商业核心模块，不在本文档套件范围内。
->
->此外可访问支持AI辅助查阅的腾讯智能文档空间（PC、微信移动端均可访问）。
->
-> 截至2026-08-14，受谷歌服务使用条款约束，作者不再维护、更新谷歌Gemini Notebook内的SRE文档库，该链接仅作历史存档，请勿作为正式引用来源：
->
->- 谷歌Gemini Notebook（历史存档，不再更新）：
-[https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a%E2%80%91f6d0%E2%80%914a2a%E2%80%91aed4%E2%80%91b25d6520ab2c)
->- 腾讯智能文档：
-[https://docs.qq.com/space/DUkRjYUtNWFdyV253](https://docs.qq.com/space/DUkRjYUtNWFdyV253)
->
->根据状态‐关系熵（SRE）原理，经典物理基础源自信息统计学。
 ---
 
 ## 摘要 (Abstract)
@@ -139,4 +126,3 @@ $$\mathcal{E}_D(E_s) \ge \lambda_2(n) \cdot \| E_s \|_2^2 > 0$$
 
 按照 Version 18.0 依赖拓扑序流水线，在您判定4号算子的数理推导完全合理后，我们将立刻向 **Phase 1 齐次度量算子组**的第二个核心成员推进：
 *   **攻坚 6号算子（分片谱解算与空间谱拼接算子 $\mathcal{P}_{\text{sieve}} \cup \mathcal{O}_{\text{splice}}$）**：推导 **Rayleigh-Ritz 代数边界拼接核**，用自适应 Lanczos 低秩迭代完全废除全网强同步，为4号算子提供流式的 $\lambda_2(n)$ 与 $\alpha_n$ 先验解算，将计算复杂度从 $\mathcal{O}(n^3)$ 彻底粉碎限制在稀疏局域 $\mathcal{O}(m_g \cdot k_{\text{rank}})$ 内部。
-
