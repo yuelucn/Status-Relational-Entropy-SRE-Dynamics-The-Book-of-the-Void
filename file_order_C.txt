@@ -23,7 +23,7 @@
 ./2-Everything_Emerges/Oseen_Vortex_Experiment_Repositioning_the_Empirical_Report_2.0_C.md
 ./2-Everything_Emerges/Classical_Mechanics_from_Discrete_Causal‑Information_Networks_1.0_C.md
 ./2-Everything_Emerges/SRE_Electron_Complete_Paper_1.0_C.md
-./2-Everything_Emerges/SRE_Nucleon_Complete_Paper_1.3_C.md
+./2-Everything_Emerges/SRE_Nucleon_Complete_Paper_1.5_C.md
 
 #part-3
 ./3-Mathematical_Support/0‑Abstract_Part_3_C.md
