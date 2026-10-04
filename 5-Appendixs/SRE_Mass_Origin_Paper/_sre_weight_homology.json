@@ -1,0 +1,260 @@
+{
+  "A": {
+    "ring_spectra_identical": true,
+    "ring_orbit_count": 1
+  },
+  "B": {
+    "note": "C^1 has two roles: metric (Laplacian) and connection (cohomology class)"
+  },
+  "C": {
+    "ring": {
+      "³H  (p,n,n)": {
+        "ring_ledger": [
+          1,
+          3,
+          3
+        ],
+        "deficit": [
+          2,
+          0,
+          0
+        ],
+        "sigma": [
+          0,
+          0,
+          0
+        ],
+        "period": [
+          0
+        ]
+      },
+      "³He (p,p,n)": {
+        "ring_ledger": [
+          2,
+          3,
+          3
+        ],
+        "deficit": [
+          1,
+          0,
+          0
+        ],
+        "sigma": [
+          1,
+          0,
+          0
+        ],
+        "period": [
+          1
+        ]
+      },
+      "p-p (p,p)  ": {
+        "ring_ledger": [
+          2,
+          2,
+          2
+        ],
+        "deficit": [
+          0,
+          0,
+          0
+        ],
+        "sigma": [
+          0,
+          0,
+          0
+        ],
+        "period": [
+          0
+        ]
+      },
+      "n-n (n,n)  ": {
+        "ring_ledger": [
+          0,
+          2,
+          2
+        ],
+        "deficit": [
+          2,
+          0,
+          0
+        ],
+        "sigma": [
+          0,
+          0,
+          0
+        ],
+        "period": [
+          0
+        ]
+      }
+    },
+    "H1_Z2_ring": 2,
+    "gauge_invariance_verified": true,
+    "3H_class": 0,
+    "3He_class": 1
+  },
+  "D": {
+    "same_class_partitions": [
+      [
+        "j=0 边重",
+        [
+          0.4,
+          0.6,
+          0.6
+        ],
+        "1+2"
+      ],
+      [
+        "j=1 边重",
+        [
+          0.6,
+          0.4,
+          0.6
+        ],
+        "1+2"
+      ],
+      [
+        "j=2 边重",
+        [
+          0.6,
+          0.6,
+          0.4
+        ],
+        "1+2"
+      ]
+    ],
+    "trivial_class_partitions": [
+      [
+        "w=(1,1,1)",
+        "3"
+      ],
+      [
+        "w=(1,1,2)",
+        "1+2"
+      ],
+      [
+        "w=(2,2,1)",
+        "2+1"
+      ]
+    ],
+    "verdict": "class is gauge-invariant => blind to which edge => cannot canonically break symmetry"
+  },
+  "E": {
+    "achievable_partitions": {
+      "3": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "1+2": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "2+1": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ]
+    },
+    "111_reachable": false
+  },
+  "F": {
+    "C₃ 共享环": {
+      "V": 3,
+      "E": 3,
+      "beta1": 1,
+      "H1Z2": 2
+    },
+    "K₄": {
+      "V": 4,
+      "E": 6,
+      "beta1": 3,
+      "H1Z2": 8
+    },
+    "Q₃ = 立方体": {
+      "V": 8,
+      "E": 12,
+      "beta1": 5,
+      "H1Z2": 32
+    },
+    "三棱柱 C₃×K₂": {
+      "V": 6,
+      "E": 9,
+      "beta1": 4,
+      "H1Z2": 16
+    },
+    "Möbius 梯 M₆": {
+      "V": 6,
+      "E": 9,
+      "beta1": 4,
+      "H1Z2": 16
+    },
+    "Y₃ 闭态骨架": {
+      "V": 12,
+      "E": 18,
+      "beta1": 7,
+      "H1Z2": 128
+    },
+    "Y₃ 开态骨架": {
+      "V": 12,
+      "E": 17,
+      "beta1": 6,
+      "H1Z2": 64
+    }
+  },
+  "verdict": [
+    {
+      "question": "(U1) 轨道是算出来的、不可观测",
+      "verdict": "**成立**",
+      "reason": "观测量 = Aut-不变量函数；轨道数是模型侧派生量。用轨道破简并 = 在模型侧加标号。"
+    },
+    {
+      "question": "(U2-A) 休眠率 = H₁ 的一个表示（同调表现形式）",
+      "verdict": "**成立（数学识别精确）**",
+      "reason": "休眠模式 σ ∈ C¹(G;ℤ₂)，类 [σ] ∈ H¹(G;ℤ₂) ≅ Hom(H₁(G),ℤ₂) = 双覆盖 = Z₂ holonomy。"
+    },
+    {
+      "question": "(U2-B) 用同调类**唯一地**破三点对称",
+      "verdict": "**判负（定理级）**",
+      "reason": "类是规范不变量 ⇒ 对「扭转落在哪条边」失明；且类→划分 非良定义。"
+    },
+    {
+      "question": "(U2-C) 账本权重能给出三点两两不等（{1,1,1}）",
+      "verdict": "**判负（结构性）**",
+      "reason": "ℤ₂ 与账本重数皆二值 ⇒ 只能 2+1 或 3 ⇒ 中微子所需 1+1+1 不可达。"
+    }
+  ]
+}

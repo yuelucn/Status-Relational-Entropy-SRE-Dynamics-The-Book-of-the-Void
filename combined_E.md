@@ -69,6 +69,9 @@ I have recorded all of this here. Scientific intuition arises out of the void, a
 - [Emergence of Classical Mechanics from Discrete Causal-Information Networks: Ontological Mapping and Effective-Theory Limits within Status-Relational-Entropy (SRE) Dynamics](#Emergence-of-Classical-Mechanics-from-Discrete-Causal-Information-Networks:-Ontological-Mapping-and-Effective-Theory-Limits-within-Status-Relational-Entropy-(SRE)-Dynamics)
 - [A Complete Characterization of the Electron within the SRE Framework: A Unified Account of Axiomatization, the Fine-Structure Constant, Molecular Computation, and Orbital Assignment](#A-Complete-Characterization-of-the-Electron-within-the-SRE-Framework:-A-Unified-Account-of-Axiomatization,-the-Fine-Structure-Constant,-Molecular-Computation,-and-Orbital-Assignment)
 - [Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two-State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation](#Complete-Characterization-of-Nucleons-within-the-SRE-Framework:-Unified-Representation-of-Two-State-Skeleton-Inversion,-Quark-Speculation-and-Nuclear-Reaction-Validation)
+- [Mass Origin in the State–Relational–Entropy Framework](#Mass-Origin-in-the-State–Relational–Entropy-Framework)
+- [Positioning of Light and Electromagnetic Waves in the SRE Framework](#Positioning-of-Light-and-Electromagnetic-Waves-in-the-SRE-Framework)
+- [Emergence of Time in the State–Relational–Entropy Framework](#Emergence-of-Time-in-the-State–Relational–Entropy-Framework)
 - [Part III: Mathematical‑Technical Support — Abstract](#Part-III:-Mathematical‑Technical-Support-—-Abstract)
 - [Universal Graph-Operator Pipeline Framework White Paper for Status-Relational-Entropy (SRE) Dynamics](#Universal-Graph-Operator-Pipeline-Framework-White-Paper-for-Status-Relational-Entropy-(SRE)-Dynamics)
 - [Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator（$\mathcal{G}_{n\rightarrow n+1}$）](#Operator-1:-Pure-Algebraic-Mathematical-Specification-for-the-Local-Graph-Expansion-Operator（$\mathcal{G}_{n\rightarrow-n+1}$）)
@@ -437,6 +440,12 @@ This part corresponds to **Emergence of All‑Things within State‑Relational�
 9. **A Complete Characterization of the Electron within the SRE Framework: A Unified Account of Axiomatization, the Fine‑Structure Constant, Molecular Computation, and Orbital Assignment**: Complete ontological account of the electron. The electron is characterized as the unique, stable and noise‑resistant emergent fixed point of a sparse operator `R` acting on the coherent kernel of a binary self‑organizing network, its ontological structure being the three‑dimensional cube Q₃ (8 vertices, 12 edges, first Betti number 5, i.e. 12×5 = 60). The paper presents three independent topological derivation routes for the fine‑structure constant $\alpha \approx 1/137.036$ (Möbius‑ring graph‑Laplacian spectral gap, the four‑state intrinsic‑spectrum frequency formula, and Möbius‑parametrization arc‑length perturbation), and a Tier‑0 independent audit concludes that $\lambda_0$ is not an independent primitive and that the n=60 match is a discretization coincidence. It derives the double‑cover four‑state complex from Fork A axioms (A1–A4 + R1), establishes the observable dictionary $\alpha = \lambda_2/\lambda_{\max} = v/c$, and promotes the residual to the A5 bare coupling $\delta$. It proves uniqueness, convergence and robustness of `R` on the coherent kernel (unified verification suite 10/10). It further extends to molecular computation (MCI spectral fingerprint, Q₃ ontological identification, MDS relation‑inversion geometry) and to electron orbital‑assignment rules (Pauli = cell uniqueness, $C_\ell = 4\ell+2$, $C_n = 2n^2$, Hund = tension minimization).
 
 10. **Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two‑State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation**: Complete ontological account of the nucleon (v1.5). The nucleon is characterized as a stable composite object emerging on a three‑strand Y‑shaped coherent kernel, constrained by the open/closed two‑state rule for dormant edges and by the closure‑rebalancing rule, with ontological structure given by the triangular closure of three strands $Y_3 \ltimes \triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36). It proposes three ontological conjectures concerning quarks, enters from neutron $\beta$‑decay to derive the skeleton structural constraints T1–T3, redefines isospin $Z_2$ as the open/closed two‑state rather than a flavour‑multiplet flip, and uniquely retains candidate A via a three‑step screening combined with a "transition–residue" framework. It validates the unified three‑level signature chain from single‑nucleon $\beta$‑decay through compound‑nucleus fission to macroscopic chain criticality (thermal‑cross‑section Pearson correlation +0.932), and generalizes to a shared‑ring splicing law calibrated against external nuclear data (V=9k+3, E=15k+3, $\beta_1$=6k+1, $\lambda_2 = 2-\sqrt{3}$). Version 1.5 further tightens the structural‑layer conclusion (**A does not enter the structure, k does**; the attachment point is not a degree of freedom, and inter‑ring linkage is proven impossible to repair, so multi‑group configurations should be absent at this layer), demotes antisymmetry from an energy term to a zero‑parameter existence criterion L1 ($|n_n - n_p| \le 1$, 8/8 on the 8‑entry scorecard), and rewrites the electronic‑state objection as a configuration‑level problem, proving that open‑band attachment is isomorphic to variant A (hence not a new structure, and already excluded quantitatively by the deuteron binding energy). The boundary at $A = 4$ is thereby split into "numerically non‑computable, existentially computable", and the boundary is **relocated** from $A \ge 4$ to $A \ge 5$, explicitly demarcating the honest boundary that "nuclear binding for A ≥ 5 is not computable at this layer."
+
+11. **Mass Origin in the SRE Framework: A Circulant‑Operator Formulation on the Three‑Ring ℤ₃ Torsor**: A formalising account of the ontology of mass. Taking the SRE nucleon skeleton $Y_3\ltimes\triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36) as its only structural input, it first proves that the three shared rings form a **ℤ₃‑torsor** under the automorphism group (a cyclic order with no absolute origin); then, from "respecting the three‑ring structure ⇒ commuting with the cyclic shift $S$ ⇒ circulant matrix", it derives the unique admissible form of the mass operator $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$, ℤ₃‑equivariance compressing 9 matrix entries into 3. The spectrum is a set of 120° samples of one cosine, $\lambda_j=c_0+2|c_1|\cos(\theta+2\pi j/3)$, but the paper **explicitly corrects** the reading that "the cosine shape holds trivially for any three generations and is therefore a free reparameterisation rather than a constraint". "Opening" = choosing an origin for the DFT characters, a ℤ₃ gauge degree of freedom rather than information. The invariant moduli space is **two‑dimensional**, $(\eta,\ \delta\bmod 2\pi/3)$, and the Koide combination $Q=\tfrac13+\tfrac23\eta^{2}$ probes only the $\eta$ direction (measured on the charged leptons, $\eta^{2}=1/2$ holds to $3.3\times10^{-6}$). The conclusion is registered as case 15 of the discrete‑closure law G12: "three" and the functional form are given (discrete side, closed), while the value of $\eta$ and the absolute scale $c_0$ are **not** (continuous side, requiring external input); the single real gap is the assignment rule.
+
+12. **Positioning of Light and Electromagnetic Waves in the SRE Framework: the Involutive ℤ₂ Sector, the Cohomological Ladder, and "One Emission as One Closed→Open Transition"**: A structural positioning paper for the light side. It places the project's existing light‑side stipulations (the residuality axiom, the Möbius double cover, the involution $P=S^{n/2}$ on the weighted Möbius ladder $M_n$, the $\mathbb{Z}_2$ holonomy coupling $\delta_A$) and the ℤ₃ structure on the mass side under one framework for comparison; the whole paper needs only one structural input — the involution $P$ on $M_n$ — and gives four mutually independent, verifiable propositions: **the gear proposition** (light runs on $\mathbb{Z}_2$, mass on $\mathbb{Z}_3$; the two are adjacent rungs of the same cohomological ladder $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$, the root of the difference being a group‑theoretic prohibition $\lvert\mathbb{Z}_2\rvert=2<3$); **the carrier proposition** (the light carrier is the odd eigenspace of an involution, with $P^{2}=I$, membership in the automorphism group, commutation with the Laplacian, zero trace and spectrum exactly $\{\pm1\}$; it is completely determined by the single integer $n$ with **zero continuous free parameters**, so there is no place to put a source); **the source proposition** (the spectrum splits into a "sector‑blind term + odd‑sector constant term", in which only the $w$ channel simultaneously satisfies "acts only on the odd sector" and "shifts every mode uniformly", so the source can inject only one scalar on the light side); and **the transition proposition** (one emission = one closed→open transition: the ledger difference carries the energy, with $E$ and $\beta_1$ each decreasing by 1, while the spectral invariants carry the carrier; the two are orthogonal, so a chemical source and a nuclear source **share the same carrier**, differing only in the level at which the ledger is recorded). The conclusion is registered as case 18 of G12: it gives "why the gears are two and three", "why the source is a single scalar" and "why energy and carrier are orthogonal" (discrete side, closed), but **not** the energy scale of light (continuous side).
+
+13. **Emergence of Time in the SRE Framework: A Saturation Law for the Rate of Change, Universality, and the Incompatibility of Two Internal Clocks**: A derived‑quantity account of the ontology of time. Introducing no new free real number, it turns "time = a derived quantity obtained after an internal process has been designated as the clock" into a computable and falsifiable form: the per‑step time is defined as $\Omega(n)=\big\langle \rho_{ij}/(1+\rho_{ij})\big\rangle$ with $\rho_{ij}=\lambda d_{ij}/(\lvert M^{2}\rvert_{ij}+1)$, and the emergent time as $T_{\rm em}(n)=\sum_{k<n}\Omega(k)$; every conclusion is synthesised from two **pre‑existing zero‑parameter laws** (the age‑distribution law times the iid spectral law) and then compared against measurement. Seven verdicts: **saturation** ($\Omega$ rises monotonically to $1$, with a remaining gap of $0.1540$ at $999$ steps); **the saturation law** $1-\Omega=c\ln n/\sqrt n$ ($c=0.694157$, maximum relative residual $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail — and the same law is predicted with zero free parameters to within $0.28\%$–$1.65\%$); **asymptotic uniformity** (the relative step‑to‑step non‑uniformity falls from $4.23\times10^{-3}$ to $6.10\times10^{-5}$); **differential ageing** (the rewriting rate of a single element rises with its own age from $0.058931$ to $0.957750$, so an individual member's clock is not uniform); **universality in $\lambda$** (a 15‑fold sweep does not move the limit, only the speed of approach); **a phase transition** (squaring the denominator of the update rule moves the limit from $1.0000$ to about $0.390$, and the gap widens monotonically); and **the incompatibility of two clocks** (the memory horizon scales as $\tau_{\rm mem}\propto\sqrt n$ while the amount of change gives $T_{\rm em}\propto n$, their ratio diverging with $n$, so **no rescaling can make both clocks uniform simultaneously**). One separation across semantics is preserved: **there is structure, there is no memory** — the joint distribution of the state matrix rejects full independence (row‑sum variance is $1.94$–$2.03$ times the iid value), yet two different prefixes become indistinguishable after continued evolution (exact permutation $p\ge0.3841$, none significant after Holm correction); precisely because the present state carries zero bits about its own past does "time must be emergent rather than read off" become a claim with content. Three honesty boundaries: the emergent time has **shape but no scale**; at attainable sizes "time is constant" holds only to about $22\%$; and two **guesses formed before measurement** have been refuted ($c\propto\lambda^{-1}$ measured at a slope of $-0.577$; "the variant kernel runs away into freezing" settles instead at a fixed point near $0.39$), registered as open items rather than used as evidence. The conclusion is registered as case 16 of G12.
 
 > This suite inherits the axiomatic foundations of Part I. Several manuscripts only complete qualitative‑semi‑analytical mechanism construction; full quantitative benchmarking and large‑multi‑degree‑of‑freedom simulations are directions for subsequent research. Similarly, **this part does not answer the ultimate origin of causal differences**.
 
@@ -4806,6 +4815,2094 @@ All literature and project references cited in this paper (in order of appearanc
 **Archiving Note**: This monograph is a stand-alone document; after review it may be merged into the *SRE_Electron_Complete_Paper* series or archived as an independent Zenodo entry. The Chinese and English versions are maintained in sync as a parallel pair.
 
 **Copyright Statement**: This paper is released as open source under the CC BY 4.0 license; it may be freely used, distributed and modified, provided that the original author and the source are retained.
+
+<div style="page-break-after: always;"></div>
+
+# Mass Origin in the State–Relational–Entropy Framework
+
+## A Circulant-Operator Formulation on the Three-Ring ℤ₃ Torsor
+
+**Version: 1.0 (Treatise Format)**
+**Date: 2026-09-28**
+
+---
+
+## Abstract
+
+**Background and problem.** Within the State–Relational–Entropy (SRE) framework, mass is treated as a **projected reading** of relational structure rather than an ontological input, and therefore in principle it should not be a number given in advance. However, the question "since mass is an emergent quantity, what exactly is its precise mathematical object?" had not previously been answered head-on. This paper answers that question and places the answer in a recomputable, falsifiable form.
+
+**Method.** This paper takes the SRE nucleon skeleton $Y_3\ltimes\triangle_3$ ($V=12$, $E=18$, $\beta_1=7$, $|\mathrm{Aut}|=36$) as its only structural input. It first proves that the three shared rings of this skeleton form a **ℤ₃-torsor** under the automorphism group — there is a cyclic order but no absolute origin; then, taking "respecting that structure" as the constraint, it derives the unique admissible form of the mass operator and sets out its spectrum, invariants and external comparisons.
+
+**Results.** The paper gives four mutually independent, verifiable propositions: (1) **the object proposition** — a mass operator that respects the three-ring structure must commute with the cyclic shift $S$, and "commuting with $S$" holds if and only if it is a **circulant matrix**; hence $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$, and ℤ₃-equivariance compresses 9 matrix entries into 3; (2) **the shape proposition (with one correction)** — the spectrum of a Hermitian circulant is a set of 120° samples of one cosine, $\lambda_j=c_0+2|c_1|\cos(\theta+2\pi j/3)$, but **this form holds trivially for any three generations** (three points, three unknowns, always solvable), so the "cosine shape" is a **free reparameterisation** rather than a constraint; (3) **the opening proposition** — writing the amplitude multiset as an ordered triple is equivalent to choosing an origin for the DFT characters, and the three choices give **exactly the same invariants**, so "opening" is a ℤ₃ **gauge degree of freedom** rather than information; (4) **the invariant proposition** — the invariant moduli space is **two-dimensional**, $(\eta,\ \delta\bmod 2\pi/3)$, and the Koide combination $Q=\tfrac13+\tfrac23\eta^{2}$ probes only the single direction $\eta$. Measurement on the charged leptons gives $\eta^{2}=1/2$ to within $3.3\times10^{-6}$.
+
+**Boundary and conclusion.** The paper also states two limitations that must be made explicit: **the cosine shape is free** (so the entire content of Koide collapses to **a single number** $\eta=1/\sqrt2$); and **absolute mass (the scale $c_0$) does not lie inside SRE**, while **only renormalization-group-invariant dimensionless combinations qualify as candidate targets**. The overall conclusion is registered as **case 15 of the discrete-closure law (G12)**: "three" and the functional form are given (discrete side, closed), while the value of $\eta$ and the scale are not (continuous side, requiring external input). All numerical verification in this paper **holds only within the SRE model**, and comparisons with charged-lepton masses are always stated as "structural consistency" rather than "numerical prediction".
+
+**Keywords**: State–Relational–Entropy (SRE); mass origin; circulant matrix; ℤ₃-torsor; triality; Koide relation; gauge degree of freedom; renormalization-group invariant; discrete-closure law.
+
+---
+
+## 1. Introduction
+
+### 1.1 Statement of the problem
+
+This paper answers the following proposition (raised 2026-09-28):
+
+> **Original proposition.** The mass described by SRE is an evolutionary logic that is **unopened and cyclic**. What, then, is its precise mathematical description and expression?
+
+This proposition combines three independently decidable sub-problems:
+
+| No. | Sub-problem | Corresponding section |
+|---|---|---|
+| **P1** | What **mathematical object** should mass be expressed as? | §4 (Theorem 2) |
+| **P2** | What precisely does "**cyclic**" mean here? | §4.4 (Proposition 3) |
+| **P3** | Which operation does "**unopened**" omit? | §6 (Propositions 5, 6) |
+
+### 1.2 Existing characterisations and their predicament
+
+In the prior work of this project, three conclusions relating to mass already exist, but all of them remain at the level of **ratios** and do not touch the **object** itself:
+
+| Clue | Conclusion | Source |
+|---|---|---|
+| Graph functional | The three rings lie in one orbit ⇒ any graph functional gives the three rings **the same value** ⇒ $Q$ collapses to the Cauchy–Schwarz lower bound $\tfrac13$ | Rounds 29, 30 [10][14] |
+| Ledger | The information that the three generations have **unequal** masses can only be carried by **explicit bookkeeping**; graph functionals are **structurally blind** to it | Rounds 30, 31 [11] |
+| Koide relation | $Q=\tfrac13+\tfrac23\eta^{2}$, independent of phase; $Q=\tfrac23\iff\eta^{2}=\tfrac12$ | Round 30 [10], ref. [1] |
+
+These three clues point together to an object that is **not yet named**: it is **not** three mass numbers, and **not** an invariant of any graph functional, but an **operator carrying the cyclic relation between the three generations**. The task of this paper is to name and characterise that object precisely.
+
+The most naive scheme is to regard "the three-generation masses" as an **ordered triple** $(m_0,m_1,m_2)$. This paper shows that the scheme is inaccurate at two levels:
+
+1. **Ontological level**: there is no origin for "which generation" inside the SRE structure. The three rings are indistinguishable under $\mathrm{Aut}$ (§3.1), and imposing labels introduces an **artificial origin**;
+2. **Covariance level**: the output of SRE should **not depend** on artificial labels (objectivity / covariance).
+
+The correct object should **carry a cyclic structure of its own and presuppose no origin** — and this is exactly how a **circulant matrix** is defined: it is characterised by "commuting with the cyclic shift", it does not itself single out an origin; an origin is introduced only at the moment of **reading** (spectral decomposition), and the manner of introduction is a gauge degree of freedom.
+
+### 1.3 Contributions of this paper
+
+Relative to the existing material, this paper gives four substantive items:
+
+1. **It establishes "three rings = ℤ₃-torsor" as a structural theorem** (Theorem 1), with an explicit witness and character decomposition (Propositions 1, 2);
+2. **It makes the mass operator unique** (Theorem 2): "respecting the structure" directly forces a circulant matrix, with centraliser dimension exactly $n=3$;
+3. **One correction** (Theorem 3): it proves that "three points lie on one cosine" is a **free reparameterisation valid for any three generations**, and thereby narrows the content to be explained by Koide from "the shape" **down to a single number** $\eta=1/\sqrt2$;
+4. **One screening rule** (Theorem 5): only renormalization-group-invariant dimensionless combinations qualify as candidate targets, which clarifies the scope of the negative verdict on the quark side.
+
+### 1.4 Structure of this paper
+
+Section 2 gives the skeleton definition, notation and adjudication discipline, and builds intuition through an **analogy guide**; Section 3 proves the ℤ₃-torsor structure of the three rings (first pillar); Section 4 proves the unique form of the mass operator (second pillar); Sections 5, 6 and 7 respectively treat the spectrum and the "free cosine", the boundary between "unopened" and "opened", and the invariant moduli space; Section 8 compares with charged-lepton data; Section 9 discusses the boundary on the quark side; Section 10 locates the single gap and gives falsification criteria; Sections 11 and 12 are discussion and conclusion. Appendix A is the recomputation list, Appendix B the honesty boundary, Appendix C the **analogy index**, Appendix D the references.
+
+**Notation convention**: numbers followed by "**(proven, within-model)**" can all be recomputed in one command by the script in Appendix A; those marked "**(to be proven)**" are structural hypotheses proposed here but not yet delivered; those marked "**(negative verdict)**" are propositions already falsified or explicitly delimited as non-computable.
+
+---
+
+## 2. Preliminaries
+
+### 2.1 The basic stance of SRE and the skeleton definition
+
+SRE regards a physical object as a stable emergent state of a **binary self-organising network** in relational space, rather than a point particle placed in space in advance. Within this framework, "the foundations of classical physics originate from information statistics": geometry, charge, current, mass and the like are all treated as **projected readings** of relational structure rather than ontological inputs. This paper uses only one concrete product of that stance: **the nucleon skeleton and its open/closed two states**.
+
+**Definition 1 (nucleon skeleton $Y_3\ltimes\triangle_3$).** The skeleton is formed by **three** Y-shaped coherent cores closed into a **triangle**. Its vertex set and edge set are
+
+$$\mathcal{V}=\{c_0,c_1,c_2\}\cup\{L_{ij}:\ i,j\in\{0,1,2\}\},\qquad |\mathcal{V}|=12,$$
+
+where $c_i$ is the **hub** of the $i$-th strand and $L_{ij}$ is the **ring leaf** at position $j$ of strand $i$. The edges fall into two classes:
+
+- **strand edges** (hub–leaf): $c_i\!-\!L_{ij}$, 3 per strand, 9 in total;
+- **ring edges** (leaf–leaf): ring $j$ is the triangle $\{L_{0j},L_{1j},L_{2j}\}$, 3 per ring, 9 in total.
+
+Hence $E=18$, $\beta_1=E-V+1=7$, $|\mathrm{Aut}|=36$ (proven, within-model); the spectral readings are $\rho=5.302775638$, $\lambda_2=1$, $\Pi_1=\lambda_2/\rho=0.188580485$.
+
+**Definition 2 (open/closed two states).** The **closed state** is the graph above, corresponding to the SRE proton state; the **open state** means removing one ring edge from the skeleton (here we fix the removal of $(L_{0r},L_{1r})$, $r=0$), so that $E=17$, $\beta_1=6$, corresponding to the neutron state.
+
+The full derivation of the skeleton (how integer-ness of the vertex number, the spectral ratio and triple symmetry jointly screen out the unique survivor) is given in §7–§8 of the project's nucleon paper [12] and is not repeated here. All that is needed here are **two properties**:
+
+1. the three rings form **a single orbit** under $\mathrm{Aut}$ (closed state) — the three rings are **mutually indistinguishable**;
+2. there exists in $\mathrm{Aut}$ an **edge-preserving automorphism of order 3**.
+
+Together these are equivalent to: **the three rings are a ℤ₃-torsor**. This is the **only** structural input of the whole paper.
+
+### 2.2 Notation
+
+**Table 1.** Table of symbols used throughout.
+
+| Symbol | Meaning |
+|---|---|
+| SRE | State–Relational–Entropy, the parent framework of this paper |
+| $Y_3\ltimes\triangle_3$ | the nucleon skeleton (Definition 1) |
+| $L_{ij}$ | the ring leaf at position $j$ of strand $i$ |
+| ring $j$ | the triangle $\{L_{0j},L_{1j},L_{2j}\}$; there are three (**the three rings**) |
+| $S$ | the **cyclic shift** on the three rings, $S^{3}=\mathbb{1}$ |
+| $A$ | the **mass operator** (the central object of this paper) |
+| $\varphi$ | the explicit order-3 automorphism $L_{ij}\mapsto L_{i,\,j+1}$ (§3.2) |
+| $\mathrm{Aut}$ | the automorphism group of the skeleton |
+| $\mathrm{Circ}(n)$ | the space of $n$-th order circulant matrices, $\dim=n$ |
+| $\omega$ | the cube root of unity $e^{2\pi i/3}$ |
+| $\eta,\ \delta$ | the **amplitude ratio** and **phase** of the non-trivial component of the circulant operator: $c_1=|c_1|e^{i\theta}$, $\eta=|c_1|/c_0$ |
+| $Q$ | the **Koide combination** $Q=\dfrac{\sum m}{(\sum\sqrt m)^{2}}$ |
+| $\rho,\ \lambda_2,\ \Pi_1$ | spectral radius, second-smallest Laplacian eigenvalue, closure degree $\Pi_1=\lambda_2/\rho$ |
+| D1／D2／D3 | adjudication discipline: small-denominator rationals listed separately／angles may not serve as anchors／the main statistics use only irrational readings × clean targets |
+
+### 2.3 Analogy guide: three-phase alternating current
+
+Before entering the formal argument, we set up a **system that can be checked in daily life**, in order to fix the intuition behind all the wording that follows. The system chosen is **symmetric three-phase alternating current** — which is not an analogical resemblance to the ℤ₃ structure of this paper, but a **real instance of the same algebra**.
+
+**Analogy 1 (three-phase alternating current).** Let the three phase voltages be
+
+$$u_A(t)=U\cos\omega t,\qquad u_B(t)=U\cos\!\Big(\omega t-\frac{2\pi}{3}\Big),\qquad u_C(t)=U\cos\!\Big(\omega t+\frac{2\pi}{3}\Big).$$
+
+In phasor representation, introducing the operator $a=e^{2\pi i/3}$, the three phase phasors are exactly $U,\ Ua,\ Ua^{2}$. This operator satisfies two identities:
+
+$$a^{3}=1,\qquad 1+a+a^{2}=0 .$$
+
+Comparing with the notation of this paper, $a=\omega$, and $1+a+a^{2}=0$ corresponds exactly to the $\sum_k\cos(\delta+\tfrac{2\pi k}{3})=0$ used in §5.1. The three-phase system serves three demonstrative purposes for this paper:
+
+1. **Cyclic but with no origin.** The phase sequence $A\to B\to C$ is cyclic: rename A as B and B as C, and **every physical quantity is unchanged**. That is, "which phase is called the first" **has no physical meaning** (= the **gauge degree of freedom** of this paper), whereas "the three phases differ by $120^\circ$" **does** have physical meaning (= the **torsor structure** of this paper).
+2. **Decomposition is DFT.** The method of symmetrical components (Fortescue) uses $a$ to decompose any three-phase signal into **positive-, negative- and zero-sequence** parts. Mathematically this decomposition is exactly the **third-order discrete Fourier transform**; its consequence is that every permutation-invariant, scale-invariant property of a three-phase system **can only** be determined by the amplitudes of these three components.
+3. **The cost of "opening" is zero.** Since "which is the first phase" is a convention, **writing the three phases as an ordered triple** **adds no information whatsoever** — and this is precisely the proposition proved in §6 of this paper (opening = gauge, not information).
+
+**Example 1 (cosine reparameterisation of three numbers, toy example).** Take the data $u=(1,\ 1.2,\ 0.7)$. Form the transform $z=\sum_k u_k\omega^{-k}$; measurement gives $|z|=0.435890$, $\arg z=-1.455835$ rad, so that
+
+$$\bar u=\tfrac13\textstyle\sum_k u_k=0.966667,\qquad |c_1|=\tfrac{|z|}{3}=0.145297,\qquad \theta=-\arg z=1.455835\ \mathrm{rad}.$$
+
+Substituting back into $u_k=\bar u+2|c_1|\cos\!\big(\theta+\tfrac{2\pi k}{3}\big)$ gives the multiset $\{1.000000,\ 1.200000,\ 0.700000\}$, consistent with the input (proven, within-model). Two points must be noted here first: (i) **any three numbers can be reparameterised in this way**, a triviality formally proved in Theorem 3; (ii) the **order** of the inverse output depends on the choice of origin (here the reconstructed order is $(1,\ 0.7,\ 1.2)$, different from the input arrangement), while **the multiset is unaffected** — and this is the simplest instance of the "opening = gauge" argument of §6.
+
+### 2.4 Methodological discipline: the discrete-closure law (G12)
+
+All results of this paper can be located by a methodological discipline already established in the project:
+
+> **Discrete-closure law (G12).** Every link "discrete structure ⇒ discrete target" is **closed** within SRE; each crossing of "discrete → continuous" **must pay one external input**.
+
+The role of this law is **division of labour**: for any result, it must be possible to say which half is given by SRE (the discrete side) and which half must be paid in externally (the continuous side). Section 11.4 will locate all conclusions accordingly.
+
+---
+
+## 3. First pillar: the three rings = a ℤ₃-torsor
+
+### 3.1 Orbit structure of the automorphisms
+
+Fully enumerating the automorphisms of the closed-state and open-state skeletons respectively gives
+
+**Table 2.** Skeleton invariants and three-ring orbit structure for the two states (proven, within-model).
+
+| State | $V$ | $E$ | $\beta_1$ | $|\mathrm{Aut}|$ | order-3 elements | order-2 elements | three-ring orbits |
+|---|---|---|---|---|---|---|---|
+| closed (proton) | 12 | 18 | 7 | **36** | **8** | 15 | **1 orbit: $\{0,1,2\}$** |
+| open (neutron) | 12 | 17 | 6 | **4** | **0** | 3 | **2 orbits: $\{0\}\mid\{1,2\}$** |
+
+In the closed state, the permutation induced by $\mathrm{Aut}$ on the three rings is **all six** (i.e. $S_3$); in the open state only two remain.
+
+Columns 4, 6 and 7 of **Table 2** are the source of every structural argument in this paper and must be checked one by one: for the closed state $|\mathrm{Aut}|=36=2^{2}\cdot3^{2}$, of which the **order-3 elements number 8** (Sylow-3 subgroup $\cong\mathbb{Z}_3\times\mathbb{Z}_3$); for the open state $|\mathrm{Aut}|$ falls to 4 and the **order-3 elements vanish**. The number of three-ring orbits changes from 1 to 2, the most vivid trace left by "closed → open" at the structural level.
+
+### 3.2 Explicit witness
+
+**Proposition 1 (explicit order-3 automorphism).** The map
+
+$$\varphi:\ L_{ij}\mapsto L_{i,\,(j+1)\bmod 3},\qquad c_i\mapsto c_i$$
+
+is an **edge-preserving** automorphism of the skeleton, and $\mathrm{ord}(\varphi)=3$.
+
+*Proof.* It suffices to verify each item. (i) **Vertex-preserving**: $\varphi$ is a bijection on $\mathcal V$. (ii) **Strand-edge preserving**: $c_i\!-\!L_{ij}\mapsto c_i\!-\!L_{i,j+1}$, still within the strand-edge set. (iii) **Ring-edge preserving**: the triangle $\{L_{0j},L_{1j},L_{2j}\}$ of ring $j$ is sent to $\{L_{0,j+1},L_{1,j+1},L_{2,j+1}\}$, i.e. ring $j+1$, still a triangle. (iv) **Order 3**: $\varphi^{3}(L_{ij})=L_{i,j+3}=L_{ij}$, while $\varphi\ne\mathrm{id}$. $\square$
+
+The measured result is: edge-preserving = true, $\mathrm{ord}(\varphi)=3$ (proven, within-model). This is a genuine order-3 automorphism, and it acts **freely and transitively** on the three rings (sending ring $j$ to ring $j+1$).
+
+### 3.3 The structural theorem
+
+> **Theorem 1 (ℤ₃-torsor structure of the three rings).** The three rings of the closed-state skeleton form a **ℤ₃-torsor**: there is a **cyclic order** among them, but **no absolute origin**; their only degree of freedom is an **overall phase shift**.
+
+*Proof.* Denote the three rings by the 3-element set $R=\{R_0,R_1,R_2\}$. By Proposition 1, $\langle\varphi\rangle\cong\mathbb{Z}_3$ acts on $R$; since $\varphi(R_j)=R_{j+1}$, the action is **transitive** (orbit $=R$). And since $|R|=3=|\langle\varphi\rangle|$, the stabiliser is trivial, so the action is **free**. A set acted on **freely and transitively** by a group $G$ is by definition a $G$-torsor: it carries the structure of a **principal homogeneous space** for $G$ — any two points are related by a unique $g\in G$, but **there is no base point fixed by the group action**. Taking $G=\mathbb{Z}_3$ gives the claim. $\square$
+
+Theorem 1 is the structural foundation of the entire paper. It gives the precise source of the shape of "three generations": **the three generations carry a ℤ₃ cyclic order, but no absolute origin** — the origin is precisely the overall phase shift, corresponding to the phase $\delta$ in the Koide parameterisation below.
+
+**Analogy 2 (a three-strand braid and a clock face).** In a braid woven from three strands, any strand may be named "the first", while the **interlacing relation** of the braid is unchanged; an object with "a cyclic order but no identifiable first strand" is a torsor. Another everyday instance is the **directions on a clock face**: the phrase "the three o'clock direction" is meaningful only after agreeing where "twelve o'clock" is — elements of a torsor are likewise such that one can speak of "how far apart" but not of "where".
+
+### 3.4 Character decomposition under ℤ₃
+
+Let $\varphi$ have character equal to the number of fixed points $\chi(\varphi)$ on some real permutation representation space. For $G=\mathbb{Z}_3$ (generator $\varphi$), the regular decomposition of the representation is $1+\omega+\omega^{2}$, hence
+
+$$\mathrm{mult}(\text{trivial})=\tfrac13\big(\dim+2\chi\big),\qquad \mathrm{mult}(\omega)=\mathrm{mult}(\omega^{2})=\tfrac13\big(\dim-\chi\big).$$
+
+$\varphi$ fixes the three hubs $c_i$ and fixes no ring leaf, so for the vertex space $\chi=3$; no edge is fixed by $\varphi$, so for the edge space $\chi=0$. Measurement gives
+
+**Table 3.** Character decomposition of ℤ₃ on the vertex and edge spaces (proven, within-model).
+
+| Space | $\dim$ | $\chi(\varphi)$ | decomposition | trivial weight | non-trivial weight |
+|---|---|---|---|---|---|
+| vertex | 12 | 3 | $6\cdot1+3\omega+3\omega^{2}$ | $6/12=\mathbf{1/2}$ | $\mathbf{1/2}$ |
+| edge | 18 | 0 | $6\cdot1+6\omega+6\omega^{2}$ | $6/18=\mathbf{1/3}$ | $\mathbf{2/3}$ |
+
+**Proposition 2 (structural reading of the character decomposition).** The weights above can be read off directly from the construction of the skeleton.
+
+*Proof.* The skeleton = 3 strands × (1 hub + 3 ring leaves). The hubs are fixed by $\varphi$, so each hub contributes one copy of the trivial representation; the ring leaves are cycled by $\varphi$, so the three ring leaves of each strand contribute one copy of the regular representation $1+\omega+\omega^{2}$. Hence per strand the trivial multiplicity is $1+1=2$ and the non-trivial multiplicity is $1+1=2$, so the **vertex space splits $1/2\mid1/2$**. Edge side: the strand edges $c_i\!-\!L_{ij}$ are sent to $c_i\!-\!L_{i,j+1}$ and the ring edges to the corresponding edges of the next ring, so **all edges are moved away by $\varphi$** ($\chi=0$); hence the edge representation is 6 copies of the regular representation, with trivial weight $1/3$ and non-trivial weight $2/3$. $\square$
+
+**Note 1 (registration discipline).** The values $1/2$, $1/3$, $2/3$ in Table 3 are all **small-denominator rationals** (the D1 trap) and **have no discriminating power** on their own. Their possible meaning is registered in the candidate chain of §11.2; this paper **does not upgrade them to conclusions**.
+
+---
+
+## 4. Second pillar: the unique form of the mass operator
+
+The conclusions of this chapter were first given in the form of a working note [13]; this paper reorganises them into treatise form, supplies the complete proof, and corrects one over-claim in them (see Theorem 3).
+
+### 4.1 The main theorem
+
+> **Theorem 2 (circulant criterion).** Let $S$ be the $n$-th order cyclic shift matrix. Then an $n\times n$ matrix $A$ commutes with $S$ ($AS=SA$) **if and only if** $A$ is a circulant matrix, i.e. $A$ is completely determined by its first row:
+> $$A=c_0\mathbb{1}+c_1S+c_2S^{2}+\cdots+c_{n-1}S^{n-1}.$$
+
+*Proof.* Write $S$ for the permutation matrix sending the basis vector $e_j$ to $e_{j+1}$ (indices mod $n$). If $A$ is circulant, then $A=\sum_kc_kS^{k}$, which obviously commutes with $S$. Conversely, suppose $AS=SA$. Take the first row of $A$ to be $(a_0,a_1,\dots,a_{n-1})$; comparing column by column from $AS=SA$ gives $a_{ij}=a_{0,\,j-i\bmod n}$, i.e. row $i$ of $A$ is the first row cyclically shifted right $i$ times, hence $A=\sum_k a_{0,k}S^{k}$. $\square$
+
+**Numerical verification ($n=3$).** Writing the constraint $AS-SA=0$ as a homogeneous linear system in $\mathrm{vec}(A)$,
+
+$$\big(S^{\mathsf T}\!\otimes I-I\otimes S\big)\,\mathrm{vec}(A)=0,$$
+
+measurement gives **rank 6** for this coefficient matrix in the 9-dimensional space, so the solution space has dimension $=9-6=\mathbf{3}=n$; taking a basis of the null space and reshaping it into matrices, **all of them are circulant** (the check is true) (proven, within-model).
+
+The substance of Theorem 2 is a quantification of **constraining power**: $\mathbb{Z}_3$-equivariance compresses the $n^{2}=9$ matrix entries down to $n=3$. This is the **entire** constraining power carried by the word "cyclic" in SRE — no more, no less.
+
+### 4.2 Necessity of the mass operator
+
+By §3.3 the three rings are a ℤ₃-torsor. A mass operator that **respects that structure** (does not conflict with the cyclic shift) is by definition one that "commutes with $S$"; by Theorem 2 it **can only** be a circulant matrix. Taking the Hermitian form (whose necessity is shown in §5.2):
+
+> **Corollary 1 (object proposition).** The unique admissible form of the mass operator is
+> $$A=c_0\mathbb{1}+c_1S+\bar c_1S^{2},\qquad c_0\in\mathbb{R}.$$
+
+This is not a language that has been picked, but a result **forced by the structure**. At this point sub-problems **P1 (object)** and **P2 (cyclic)** both have precise names.
+
+**Example 2 (a concrete mass operator).** Take $c_0=1$, $c_1=0.3\,e^{i\cdot40^\circ}$; then
+
+$$A=\begin{pmatrix}1 & 0.3e^{i40^\circ} & 0.3e^{-i40^\circ}\\[2pt] 0.3e^{-i40^\circ} & 1 & 0.3e^{i40^\circ}\\[2pt] 0.3e^{i40^\circ} & 0.3e^{-i40^\circ} & 1\end{pmatrix}.$$
+
+The matrix is **determined by only two real numbers** ($c_0$ and $|c_1|$, plus the phase $\theta$), whereas a $3\times3$ matrix has 9 entries in general. Its measured eigenvalues are
+
+$$(0.436184,\ 1.104189,\ 1.459627)\quad(\text{ascending}),$$
+
+matching term by term the analytic form of Proposition 4, $\lambda_j=1+0.6\cos(40^\circ+120^\circ j)$ (proven, within-model). This $3\times3$ matrix is the **smallest writable instance** of the "mass" asserted in this paper.
+
+### 4.3 Why "evolution" is cyclic (a group) rather than one-way (a semigroup)
+
+The word "evolution" easily suggests a time arrow, so its precise meaning must be made clear.
+
+**Table 4.** One-way evolution versus cyclic evolution.
+
+| | one-way evolution (semigroup $\mathbb{N}$) | cyclic evolution (group $\mathbb{Z}_3$) |
+|---|---|---|
+| starting point | yes ($t=0$) | **no** |
+| reversible | no | **yes** ($S^{-1}=S^{2}$) |
+| closed | no | **yes** ($S^{3}=\mathbb{1}$) |
+| carrier | a directed interval | **a cyclic group action on a torsor** |
+
+**Proposition 3 (answer to P2).** The so-called "cyclic evolutionary logic" is mathematically the use of a **group (ℤ₃) rather than a semigroup** to characterise the index space.
+
+*Proof.* The defining element of a semigroup is "there exists an irreversible starting point", whereas the defining element of the group $\mathbb{Z}_3$ is "$S^{3}=\mathbb{1}$, $S^{-1}=S^{2}$, and no element is fixed by the action". By Theorem 1, the three rings are exactly a $\mathbb{Z}_3$-torsor, so their index space possesses only the second set of properties. $\square$
+
+This conclusion also explains the "**absence** of opening": once an origin is introduced or an ordered labelling taken, the cycle degenerates into a **linear sequence with a starting point** — and that is precisely "opening" (§6).
+
+**Analogy 3 (a wheel versus an hourglass).** The typical image of semigroup evolution is an **hourglass**: the sand flows in one direction only, start and end are asymmetric, and it is irreversible. The typical image of group evolution is a **wheel with three equal divisions on its rim but no mark for "twelve o'clock"**: every rotation can be turned back, three rotations return to the start, and **no division on the dial is special**. The mass discussed in this paper belongs to the latter.
+
+---
+
+## 5. The spectrum and the "free cosine"
+
+### 5.1 Spectral form
+
+**Proposition 4 (spectrum of a Hermitian circulant).** Let $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$ with $c_0\in\mathbb R$, $c_1=|c_1|e^{i\theta}$. Then the eigenvalues of $A$ are
+
+$$\lambda_j=c_0+c_1\omega^{j}+\bar c_1\omega^{-j}=c_0+2|c_1|\cos\!\Big(\theta+\frac{2\pi j}{3}\Big),\qquad j=0,1,2.$$
+
+*Proof.* The eigenvectors of $S$ are the discrete Fourier basis $v_j=(1,\omega^{j},\omega^{2j})^{\mathsf T}/\sqrt3$, with eigenvalues $\omega^{j}$ ($j=0,1,2$). Any polynomial in $S$ shares these eigenvectors, so $A v_j=\big(c_0+c_1\omega^{j}+\bar c_1\omega^{-j}\big)v_j$. Using $\omega^{-j}=\overline{\omega^{j}}$, we get $c_1\omega^{j}+\bar c_1\omega^{-j}=2\,\mathrm{Re}\big(c_1\omega^{j}\big)=2|c_1|\cos(\theta+2\pi j/3)$. $\square$
+
+Numerical verification (6 random parameter sets against the analytic form): all Hermitian checks true, maximum error $1.1\times10^{-15}$ (proven, within-model).
+
+The intuitive reading of **Proposition 4** is: **the three eigenvalues lie on the 120° samples of one and the same cosine**.
+
+### 5.2 Real-symmetric versus complex phase: why a phase is necessary
+
+**Proposition 5 (real-symmetric degeneracy).** If $A$ is a real-symmetric circulant (i.e. $\theta=0$), its spectrum **always has two values**:
+
+$$\big(c_0+2|c_1|,\ \ c_0-|c_1|,\ \ c_0-|c_1|\big).$$
+
+*Proof.* At $\theta=0$, $\lambda_0=c_0+2|c_1|$, while $\lambda_1=c_0+2|c_1|\cos(2\pi/3)=c_0-|c_1|$ and $\lambda_2$ is the same (since $\cos(4\pi/3)=\cos(2\pi/3)$). $\square$
+
+Measured comparison: the real-symmetric choice $c_0=1,|c_1|=0.3$ gives the spectrum $(0.7,\,0.7,\,1.6)$, a **2+1** split; the complex phase $\theta=1$ gives the spectrum $(0.400668,\ 1.27515,\ 1.324181)$, a **1+1+1** split (proven, within-model).
+
+> Proposition 5 directly answers "why a phase is needed": **the spectrum of a real-symmetric circulant degenerates structurally and cannot carry three distinct generations; for the three generations to be distinct the operator must be Hermitian rather than real-symmetric** (thereby giving the Hermitian form of Corollary 1 its necessity).
+
+**Note 2 (registration, not conclusion).** Proposition 5 and the "closed-state ℤ₃ ／ open-state ℤ₂" of Table 2 echo each other at the level of operators: the open state has only two values (a $\mathbb{Z}_2$-type degeneracy), the closed state generally three (the full $\mathbb{Z}_3$). This paper has **not proved** that the two are the same mechanism (see Appendix B item 4) and merely registers the observation.
+
+### 5.3 A correction that must be stated: the cosine shape is "free"
+
+**Theorem 3 (triviality of the shape).** The trigonometric form $\lambda_k=c_0+2|c_1|\cos(\theta+\tfrac{2\pi k}{3})$ has a solution for **any** three real numbers $\lambda_0,\lambda_1,\lambda_2$; that is, the form **contains no constraint whatsoever**.
+
+*Proof.* Given the data $\lambda_k$, form
+
+$$\sum_k\lambda_k=3c_0,\qquad z:=\sum_k\lambda_k\,\omega^{k}=3|c_1|e^{-i\theta},$$
+
+i.e. $c_0=\overline{\lambda}$, $|c_1|=|z|/3$, $\theta=-\arg z$. The three unknowns ($c_0,|c_1|,\theta$) exactly match the three data, so generically the solution is unique and is given explicitly by the formulas above. $\square$
+
+Measurement: taking 8 random sets of **arbitrary** three numbers, solving by the formulas above and substituting back to reconstruct, the maximum error is of order $10^{-15}$ (the companion script of this paper gives $5.11\times10^{-15}$, a preceding script $2.22\times10^{-15}$, the same order of magnitude) (proven, within-model).
+
+> **Correction (direct consequence of Theorem 3).** "Three points lie on one cosine" is **not** a constraint delivered by cyclicity, but the **standard reparameterisation of three numbers**. Hence saying "ℤ₃ gives the shape of Koide" is an **over-claim**. The **content** of Koide is not the shape but the number
+> $$\eta=\frac{|c_1|}{c_0}=\frac{1}{\sqrt{2}}\qquad(\text{measured }0.707104444\ \text{vs}\ 0.707106781,\ \text{deviation}\ -2.34\times10^{-6}).$$
+
+Thus the true contribution of ℤ₃ collapses to two items: **(a) why there are exactly 3 positions** (the torsor has size 3, not 2 or 4); **(b) why $\delta$ is gauge** (a torsor has no origin ⇒ the phase can only be taken mod $2\pi/3$). **The shape is trivial; "$\eta=1/\sqrt2$" is the number that genuinely awaits explanation** — and it belongs to the **continuous side** of G12.
+
+**Analogy 4 (a prism and dispersion).** The mass operator may be compared to a composite light beam made by mixing three pure colours in fixed proportions: without spectral decomposition you see only its **overall hue and brightness** (= permutation-invariant, scale-invariant quantities); performing the DFT is like **passing the beam through a prism**, and the three eigenvalues are the intensities of the three emerging beams. What Theorem 3 says is: **any set of three intensities corresponds to some composite beam** — the dispersing step contains no information, it merely restates the same thing in another language.
+
+**Note 3 (D1 discipline).** $\eta=1/\sqrt2$ is irrational (consistent with adjudication discipline D3); but $\eta^{2}=1/2$ together with the $1/3$, $2/3$ in $Q$ are still small-denominator rationals, so the numerical agreement **does not count as independent evidence**. The gain of this section is **structural**: separating the "trivial shape" from the "real content".
+
+---
+
+## 6. "Unopened" and "opened": the boundary between gauge and information
+
+### 6.1 Opening = choosing the DFT origin
+
+**Proposition 6 (gauge-independence of opening).** Writing the **multiset** of amplitudes $\{\lambda_0,\lambda_1,\lambda_2\}$ as an **ordered triple** is equivalent to choosing an **origin** for the characters $\omega^{k}$; there are 3 choices of origin, and the three choices give **exactly the same** permutation invariants.
+
+*Proof.* Let $(u_0,u_1,u_2)$ be one representative; the others are given by the cyclic shift $u^{(s)}_k=u_{k-s}$. For any function $F$ depending only on the multiset (e.g. the Koide combination $Q$ and the $R$ of §7.1), multiset invariance gives $F(u^{(s)})=F(u)$ immediately. $\square$
+
+Measurement: taking $\eta=1/\sqrt2$, $\delta=2/9$, the three representatives give
+
+**Table 5.** Invariants under the three choices of DFT origin (proven, within-model).
+
+| representative (cyclic shift) | $Q$ | $R=(\lambda^{2}_{\max}-\lambda^{2}_{\min})/\sum\lambda^{2}$ |
+|---|---|---|
+| shift 0 | 0.666666666667 | 0.943349649589 |
+| shift 1 | 0.666666666667 ($|\Delta Q|=2.2\times10^{-16}$) | 0.943349649589 |
+| shift 2 | 0.666666666667 ($|\Delta Q|=0$) | 0.943349649589 |
+
+⇒ **the three choices give three representatives of one and the same equivariance class.** Hence "opening" changes no SRE observable; it only decides "which generation is called the first" — **this is gauge (redundancy), not information**.
+
+### 6.2 The two levels of "opening" must not be conflated
+
+**Table 6.** Strict distinction between the two kinds of "opening".
+
+| Level | Operation | Consequence |
+|---|---|---|
+| **(i) gauge level** | choosing an origin = ℤ₃ labelling | invariants **unchanged** (redundancy) — this is the level the original proposition refers to |
+| **(ii) physical level** | closed → open (cutting one ring edge) | $|\mathrm{Aut}|$ falls from 36 to 4, order-3 elements from 8 to 0: a **real** breaking ℤ₃→ℤ₂ that **changes** the accessible invariants |
+
+**Analogy 5 (transposition of a score).** The **interval structure** of a melody is unchanged by an overall transposition — after transposition it is still "the same piece". Choosing an origin for the DFT characters is like **fixing the tonic**: it decides "which generation is the tonic" without changing the internal structure of the piece; whereas the physical-level "opening" of §6.2 (cutting a ring) is different, being like **rewriting the score itself** — the structure of the piece really changes.
+
+### 6.3 "Not opened" is not a defect but covariance
+
+Combining §§6.1–6.2, we can answer **P3**:
+
+> **Proposition 7 (answer to P3).** "Not opened" = **no eigenbasis (DFT origin) chosen**, and the SRE native output stops at the **multiset** level.
+
+This contains two things of entirely different nature that were previously often conflated; this paper separates them completely:
+
+- **Gauge undetermined** (the ℤ₃ choice of $\delta$) ⇒ the SRE output **does not depend on artificial labels**. This is an **advantage** (objectivity / covariance), **not a deficiency**;
+- **Scale ungiven** ($c_0$) ⇒ this is the **real information gap**, and lies **outside SRE** (§9 has settled: absolute mass is not its responsibility).
+
+---
+
+## 7. Invariants and the moduli space
+
+### 7.1 The output of "unopened" = the equivariance class
+
+Take the parameterisation $\lambda_k=1+2\eta\cos(\delta+\tfrac{2\pi k}{3})$ ($c_0$ already normalised; the scale is an external input). The following two quantities are invariant under **permutation** and under **overall scale**, and their measured behaviour is as follows.
+
+**Table 7.** The invariant $Q$ is immune to the phase $\delta$ (sweeping $\delta$ over a full turn).
+
+| $\eta$ | range of $Q$ over $\delta$ | $Q$ | analytic value $\tfrac13+\tfrac23\eta^{2}$ |
+|---|---|---|---|
+| 0.30 | $3.3\times10^{-16}$ | 0.393333333 | 0.393333333 |
+| 0.50 | $6.1\times10^{-16}$ | 0.500000000 | 0.500000000 |
+| $1/\sqrt2$ | $1.2\times10^{-15}$ | 0.666666667 | 0.666666667 |
+| 0.80 | $1.6\times10^{-15}$ | 0.760000000 | 0.760000000 |
+
+**Table 8.** The invariant $R$ depends on $\delta$ (with $\eta=1/\sqrt2$ fixed).
+
+| $\delta$ | $Q$ | $R$ |
+|---|---|---|
+| 0.0 | 0.666666667 | 0.957106781 |
+| 0.4 | 0.666666667 | 0.880903092 |
+| 0.8 | 0.666666667 | 0.633929534 |
+| 1.2 | 0.666666667 | 0.566017302 |
+
+### 7.2 Correction: the moduli space is two-dimensional
+
+> **Proposition 8 (dimension of the invariant moduli space).** The invariant moduli space is
+> $$\big(\eta,\ \delta\!\!\mod\tfrac{2\pi}{3}\big),$$
+> that is, **two-dimensional**.
+
+*Proof.* By §7.1, $Q$ depends only on $\eta$ and not on $\delta$ (the order of magnitude $\sim10^{-15}$ of the range in Table 7 confirms strict independence); while Table 8 shows that $R$ varies monotonically with $\delta$ at fixed $\eta$, so $\delta\!\!\bmod 2\pi/3$ is a second invariant **independent** of $\eta$. The sum of the two parameters is the dimension of the moduli space. $\square$
+
+> **Correction.** A previous reading of "SRE has only one invariant, $Q$" is an **over-simplification**. The correct statement is: $Q$ **probes only the one direction $\eta$** (because it is immune to $\delta$, and the triple permutation of $\delta$ is precisely the source of permutation invariance); $\delta\!\!\bmod\tfrac{2\pi}{3}$ is a second independent direction.
+
+### 7.3 A typology of invariance
+
+**Table 9.** The invariance of various quantities and the layer they live in.
+
+| Quantity | Immune to | Layer |
+|---|---|---|
+| $\rho$ (spectral radius) | **cutting a ring** (range over 18 cuts $\sim10^{-15}$) | spectral layer |
+| $\Pi_1=\lambda_2/\rho$ | graph isomorphism ($\mathrm{Aut}$) | spectral layer |
+| $Q$ (Koide) | **ℤ₃ origin** (triple permutation of $\delta$) | torsor / map layer |
+| $\eta^{2}$ | ℤ₃ origin | torsor layer |
+| **absolute mass $c_0$** | — (immune to no structure) | **outside SRE** |
+
+The reading of **Table 9** is: **the quantities SRE can give internally all have "immunity to some structure" as their content**; and **the one quantity immune to no structure** (absolute mass $c_0$) is precisely the one **not belonging to SRE**. This table corresponds item by item to the gap of §10.
+
+**Analogy 6 (an altitude datum and relative height).** The sentence "this mountain is 1000 m high" presupposes agreeing where "sea level" is; changing the datum from sea level to some valley floor changes every absolute height, while **the ratio of the relative heights of two mountains is unchanged**. The quantities SRE can give internally ($\Pi_1$, $Q$, $\eta$) are **relative quantities** (datum-independent); the absolute mass $c_0$ is an **absolute altitude** — it must first have an external datum to be meaningful. This is also the intuitive root of the "$\alpha$ has an anchor, mass has none" discussion of §11.3: the fine-structure constant is a **ratio** (datum-independent), whereas the absolute scale of mass is not.
+
+---
+
+## 8. The Koide relation and the charged leptons
+
+### 8.1 Analytic derivation
+
+**Theorem 4 (Koide relation).** Let $\lambda_k=c_0+2|c_1|\cos(\delta+\tfrac{2\pi k}{3})$ and $m_k\propto\lambda_k^{2}$. Then
+
+$$Q=\frac{\sum_k m_k}{\big(\sum_k\sqrt{m_k}\big)^{2}}=\frac13+\frac23\eta^{2},\qquad \eta=\frac{|c_1|}{c_0}.$$
+
+*Proof.* From $\sum_k\cos(\delta+\tfrac{2\pi k}{3})=0$ and $\sum_k\cos^{2}(\delta+\tfrac{2\pi k}{3})=\tfrac32$ we directly get
+
+$$\sum_k\lambda_k=3c_0,\qquad \sum_k\lambda_k^{2}=3c_0^{2}+6|c_1|^{2}.$$
+
+Substituting into the definition of $Q$ (note $\sqrt{m_k}\propto\lambda_k$, so the denominator $=\big(\sum\lambda_k\big)^{2}$):
+
+$$Q=\frac{\sum_k\lambda_k^{2}}{\big(\sum_k\lambda_k\big)^{2}}=\frac{3c_0^{2}+6|c_1|^{2}}{9c_0^{2}}=\frac13+\frac23\Big(\frac{|c_1|}{c_0}\Big)^{2}. \square$$
+
+The point of **Theorem 4** is: $Q$ **depends only on $\eta=|c_1|/c_0$ and not at all on the phase $\delta$**. This is a direct consequence of the ℤ₃ invariance property — by Proposition 8, $Q$ probes only the $\eta$ direction in the moduli space. In particular,
+
+$$Q=\tfrac23\iff\eta^{2}=\tfrac12\iff\frac{|c_1|}{c_0}=\frac{1}{2\sqrt2}.$$
+
+**Note 4 (one piece of empirical content).** "Taking $m_k\propto\lambda_k^{2}$ (i.e. $a=\sqrt m$ rather than $m$)" is the **empirical content of Koide**, equivalent to the testable structural hypothesis that "**the square root of the mass operator** is ℤ₃-equivariant". This paper **has not proved** it (see Appendix B item 2).
+
+### 8.2 The equivalence chain: five ways of writing one constraint
+
+$$Q=\tfrac23\ \Longleftrightarrow\ \eta^{2}=\tfrac12\ \Longleftrightarrow\ |A|=\tfrac{1}{\sqrt2}\ \Longleftrightarrow\ \text{angle with }(1,1,1)=45^\circ\ \Longleftrightarrow\ Q\ \text{at the midpoint of the C–S interval}\ [\tfrac13,1].$$
+
+**Note 5.** The five items of this chain are **five languages for the same constraint**, **not five independent pieces of evidence**. They must not be listed side by side as mutually corroborating evidence.
+
+**Analogy 7 (forty-five degrees is the "midpoint deviation").** Denote by $\phi$ the angle between the vector $(\sqrt{m_0},\sqrt{m_1},\sqrt{m_2})$ and the equal-mass direction $(1,1,1)$. $\phi=0^\circ$ corresponds to three equal generations ($Q$ takes the C–S lower bound $\tfrac13$, the spectrum degenerates), $\phi=90^\circ$ to the largest possible deviation ($Q$ takes the upper bound $1$); and $45^\circ$ is exactly the **midpoint** of this interval. The Koide relation can therefore be read as: **the square-root mass vector of the three generations stops exactly midway between "equal mass" and "maximal deviation"**. This is the two sides of one coin with the "real-symmetric degeneracy ⟺ complete equal mass" of §5.2 Proposition 5.
+
+### 8.3 Comparison with charged-lepton data
+
+Taking the PDG charged-lepton masses $m_e=0.51099895069$ MeV, $m_\mu=105.6583755$ MeV, $m_\tau\in\{1776.86,\ 1776.93\}$ MeV [9]:
+
+**Table 10.** Recomputing the Koide combination for the charged leptons (proven, within-model).
+
+| Input | $Q$ | $\eta^{2}=(3Q-1)/2$ | deviation vs $\tfrac23$ | angle with $(1,1,1)$ |
+|---|---|---|---|---|
+| $m_\tau=1776.86$ MeV (archive convention) | 0.666660511 | 0.499990767 | $-6.155\times10^{-6}$ | $44.9997^\circ$ |
+| $m_\tau=1776.93$ MeV | 0.666664463 | **0.499996695** | $-2.203\times10^{-6}$ | $44.9999^\circ$ |
+
+⇒ $\eta^{2}=\tfrac12$ holds on the real data to within $3.30\times10^{-6}$; the inverse solution gives $\eta=0.707104444$ against $1/\sqrt2=0.707106781$, a deviation of $-2.34\times10^{-6}$.
+
+**Example 3 (a complete recomputation).** Take $m_\tau=1776.93$ MeV. Then
+
+$$\sum_k m_k=1883.099374,\qquad \sum_k\sqrt{m_k}=0.7148419+10.2790260+42.1536475=53.147515435,$$
+
+$$Q=\frac{\sum_k m_k}{\big(\sum_k\sqrt{m_k}\big)^{2}}=\frac{1883.099374}{2824.658397}=\mathbf{0.666664463}.$$
+
+The inverse solution gives $\eta^{2}=(3Q-1)/2=0.499996695$, differing from $\tfrac12$ by $3.3\times10^{-6}$ (proven, within-model).
+
+### 8.4 The phase (supporting evidence)
+
+From $u_k=\dfrac{\sqrt{m_k}/a_0-1}{\sqrt2}=\cos(\delta+\tfrac{2\pi k}{3})$ and the DFT $z=\sum_k u_k\omega^{-k}=\tfrac32 e^{i\delta}$, the phase can be solved for. Measurement:
+
+**Table 11.** Sensitivity of the phase solution to the "labelling convention".
+
+| Labelling convention | $\delta\ (\mathrm{mod}\ 2\pi/3)$ | reference value $2/9$ | deviation |
+|---|---|---|---|
+| ascending $(e,\mu,\tau)$ | **0.222224762** | 0.222222222 | $+2.54\times10^{-6}$ |
+| descending $(\tau,\mu,e)$ | 1.872170340 | 0.222222222 | $+1.65$ (wrong convention) |
+
+**Note 6 (D1 discipline).** $2/9$ is a small-denominator rational, and its agreement with $\delta$ **must not** serve as independent evidence; moreover $\delta$ is itself a **gauge quantity** (an overall phase shift = a permutation of the three generations). This paper registers it only as supporting evidence. (Registered together: $2/9=\tfrac23\cdot\tfrac13$ is the product of two SRE structure constants, likewise in the D1 domain, registered only.)
+
+**Table 11** also demonstrates an operational warning: **using the wrong labelling convention (here the descending one) makes the phase deviate by $1.65$ rad** — i.e. the "same $\delta$" is a **completely different** number under a wrong origin. This is the practical manifestation of the "gauge undetermined" of §6.3, and it is also why every test using $\delta$ as a target must first fix the convention.
+
+### 8.5 Strength levels of the theorem
+
+- **Proven (within-model)**: $Q=\tfrac13+\tfrac23\eta^{2}$ is independent of the phase; $Q=\tfrac23\iff\eta^{2}=\tfrac12$.
+- **Consistent with data**: $\eta^{2}=\tfrac12$ holds to $3.3\times10^{-6}$ — **structural consistency, not numerical prediction**.
+- **Not proven**: why $\eta^{2}$ is exactly $\tfrac12$ (see §10).
+
+---
+
+## 9. Boundary: the quark side and dimensions
+
+### 9.1 The precise meaning of "emergent" in this project
+
+According to the three ontological speculations of SRE (project nucleon paper §4 [12]), quarks are an **emergent statistical phenomenon** rather than an independent ontology: $N_c=3$ is the **number of strands**, "flavour" is a statistical projection of open/closed breaking, and "fractional charge" is an equal-share reading of the three-strand shared loop. Hence "quark mass" **cannot** be an input of SRE and can only be an output. Outputs fall into two classes that must be sharply distinguished:
+
+**Table 12.** Visibility of the two classes of output.
+
+| Output type | Nature | Can it see "which ring"? |
+|---|---|---|
+| **graph functional** ($\lambda_2,\beta_1,\rho,\Pi_1$) | automorphism invariant | **blind** (points in the same orbit take the same value) |
+| **ledger** (explicit bookkeeping of edges) | not an invariant | **yes** |
+
+**Table 12** is the skeleton of all the conclusions: any information of the kind "the three generations have unequal masses" **cannot structurally be given by graph functionals** and can only be carried by the ledger. This law is of the same type as "the product graph does not remember the partner state ⇒ the binding energy can only be carried by the ledger" (project nucleon paper §12 [12]).
+
+### 9.2 The graph level: the degenerate baseline $Q=1/3$
+
+The 9 ring edges of the closed-state skeleton lie in **a single automorphism orbit** (Table 2) ⇒ **any graph functional** gives the three rings **the same value** ⇒ $m_1=m_2=m_3$ ⇒
+
+$$Q=\frac{3m}{(3\sqrt m)^{2}}=\frac13 \qquad(\text{proven, within-model}).$$
+
+This is exactly the **Cauchy–Schwarz lower bound** of the Koide combination (the equal-mass limit).
+
+**Note 7 (the double-identity trap of $1/3$).** The $1/3$ here is the **C–S lower bound** (the equal-mass limit), which is **different in origin** from the SRE $\Pi_1(Q_3)=1/3$ (**closure degree**) and **must not be identified with it**. The numerical coincidence is pure chance, and any reasoning that treats the two as mutually corroborating is void.
+
+### 9.3 The ledger level: the splitting exists, but the rule is not written down
+
+$$Q=\underbrace{\tfrac13}_{\text{graph baseline (degenerate)}}+\underbrace{\tfrac23\eta^{2}}_{\text{ledger splitting}}$$
+
+Inverting $Q$ for $\eta^{2}=(3Q-1)/2$ gives a self-consistency check:
+
+**Table 13.** Inverse solution of $\eta^{2}$ for three classes of objects (proven, within-model).
+
+| Object | $Q$ | $\eta^{2}$ | reference point |
+|---|---|---|---|
+| charged leptons (pole masses) | 0.666667 | **0.500000** | $\eta^{2}=1/2\Leftrightarrow Q=2/3$ |
+| heavy quarks $(c,b,t)$ @own scale | 0.662748 | 0.494122 | deviation $-0.6\%$ |
+| light quarks $(u,d,s)$ @2 GeV | 0.567043 | 0.350564 | near $\eta^{2}=1/3\Leftrightarrow Q=5/9$ |
+
+⇒ the splitting **does exist and has the right order of magnitude**, but the numerical origin of $\eta^{2}$ is still the single real gap (§10).
+
+### 9.4 Quarks have one more wall than leptons
+
+Lepton masses are **pole masses** (physical quantities, scheme-independent); the "mass" of a quark is the **MS-bar running mass** (**scheme-dependent + scale-dependent**) — so it **cannot even be settled whether it is the same quantity**. This is exactly the **C2 negative verdict** recorded long ago in the project.
+
+Changing the convention for the same physical problem, $Q$ can move from 0.34 to 0.89 (proven, within-model): PDG MS-bar gives $Q(u,d,s)=0.5670$, $Q(c,b,t)=0.6627$; unified to $M_Z$, $Q(c,b,t)=0.7195$; taking naive **constituent quark masses** gives $Q(u,d,s)=0.3378$. This is not a matter of error bars but of **the quantity itself having no unique definition**.
+
+**Analogy 8 (measuring the same mountain from different datum surfaces).** The situation above is like measuring the same mountain from three datums — sea level, some valley floor, a neighbouring peak — and obtaining three heights that are all "correct" yet mutually unequal. When a quantity **has no unique definition**, any "agreement" that uses it as a target constitutes no evidence — this is the substance of tollgate C2.
+
+### 9.5 A positive result: only RG-invariant dimensionless combinations qualify as targets
+
+**Theorem 5 (invariance of the scale).** The Koide combination is invariant under an overall scale:
+
+$$Q(c\,m_0,\ c\,m_1,\ c\,m_2)=Q(m_0,m_1,m_2)\qquad\forall c>0.$$
+
+*Proof.* The numerator $\sum c\,m_k=c\sum m_k\propto c$; the denominator $\big(\sum\sqrt{c\,m_k}\big)^{2}=\big(\sqrt c\sum\sqrt{m_k}\big)^{2}=c\big(\sum\sqrt{m_k}\big)^{2}\propto c$. The two cancel, and the ratio is independent of $c$. $\square$
+
+Numerical verification ($c=10^{-3}\ldots10^{6}$): residual $\le1.1\times10^{-16}$ (proven, within-model).
+
+**Corollary 2 (screening rule for RG-invariant targets).** The mass anomalous dimension of QCD $\gamma_m$ is **flavour-independent**, so the running of the light quarks $u,d,s$ is **multiplication by a common factor** ⇒ **$Q_{\text{light}}$ is a renormalization-group invariant**.
+
+**Corollary 2** explains a past failure: in the probe $(2m_u+m_d)/m_p$ the denominator is the **external hadronic scale** $m_p$, so going from 2 GeV to 1 GeV changes the value by $+23\%$, and back-solving the number of strands $V$ jumps from 12 to 16 (negative verdict). But $Q_{\text{light}}$ is a **pure quark-mass ratio**, RG-invariant. **The two are not quantities of the same kind**: the earlier negative verdict was correct, but it **does not implicate** $Q_{\text{light}}$.
+
+> **Screening rule.** Only **renormalization-group-invariant dimensionless combinations** qualify as candidate targets. Absolute values, same-scale ratios, and combinations containing a hadronic scale ($m_p$, $\Lambda_{\mathrm{QCD}}$) are all excluded.
+
+### 9.6 A caveat that must be retained: "light quarks ≈ 5/9" is only an interval-level agreement
+
+Taking the PDG asymmetric errors and enumerating the 8 corners: the centre of $Q_{\text{light}}$ is $0.567043$, the interval $[0.545962,\ 0.586139]$, and $5/9=0.555556$ **lies inside the interval**, but the central value deviates by $+2.07\%$ (proven, within-model). This differs from the lepton one (deviation $3.3\times10^{-6}$) by **three orders of magnitude**. Hence "≈ $5/9$" can only serve as a **loose target**, not a precision hit.
+
+Literature side: Rodejohann and Zhang once put "heavy quarks $Q\approx2/3$" into a preprint and **deleted it themselves at publication** [8]; and for "heavy quarks" the deviation degrades from $0.6\%$ to $7.9\%$ after the scale is moved — a full order of magnitude.
+
+---
+
+## 10. The single real gap: the assignment rule
+
+### 10.1 Balance sheet of this paper
+
+**Table 14.** State of attainment at each level.
+
+| Level | Content | Status |
+|---|---|---|
+| object | mass = the circulant operator on the three-ring torsor $c_0\mathbb{1}+c_1S+\bar c_1S^{2}$ | **named, form unique (Theorem 2)** |
+| number of positions | exactly 3 (the torsor has size 3) | **proven (structural)** |
+| gauge | $\delta$ is a ℤ₃ gauge (no origin) | **proven (structural)** |
+| functional form | $Q=\tfrac13+\tfrac23\eta^{2}$, independent of $\delta$ | **proven (within-model)** |
+| the value of $\eta$ | why $\eta^{2}=\tfrac12$ | **not proven — the single real gap** |
+| scale | $c_0$ (absolute mass / energy scale) | **outside SRE (must be paid in externally)** |
+
+### 10.2 Precise statement of the gap
+
+The gap is an **assignment rule** — a rule connecting "the **representation** of ℤ₃ (edge $\tfrac13\mid\tfrac23$, vertex $\tfrac12\mid\tfrac12$, Table 3)" to "$m_k$ / the order parameter $A$". That is to say:
+
+> SRE already gives **everything on the discrete side** (why there are 3 positions, why $\delta$ is gauge, the functional form), but does not give the step "**representation weight → real measured value**". This step is what G12 calls the **continuous-side payment**.
+
+### 10.3 Three hard criteria
+
+Any work claiming to have written down the assignment rule must **simultaneously** satisfy:
+
+1. **it must produce exactly 3 generations** (not 2 or 4);
+2. **it must give $\eta^{2}=\tfrac12$ and explain its origin** — $\tfrac12$ **must not** be taken as an input;
+3. **it must give zero-parameter predictions for the three quark generations and the three neutrino generations** (light quarks $\approx5/9$, heavy quarks $\approx2/3$ already have measurements (Table 13) ⇒ it can be **immediately falsified out of sample**).
+
+> The statement of criterion 2 is one substantive narrowing of this paper: since Theorem 3 proves that "the cosine shape holds trivially for any three generations", **in future it is no longer necessary to explain "why the shape is a cosine"; it is only necessary to explain "why $\eta=1/\sqrt2$" — this one number**.
+
+---
+
+## 11. Discussion
+
+### 11.1 Relation to external work
+
+The ℤ₃ structure identified in this paper is not isolated in the literature.
+
+**Table 15.** The form in which ℤ₃ / three generations appears in each work.
+
+| Work | In what form ℤ₃ / three generations appears |
+|---|---|
+| Koide 1981 [1] | $\sqrt{m_k}\propto1+\sqrt2\cos(\delta+\tfrac{2\pi k}{3})$ — that $\tfrac{2\pi k}{3}$ **is ℤ₃** |
+| McRae 2025 [2] | "triality may be viewed as multiplication of a basis by a third root of unity, just as duality is often multiplication by a second root of unity" — **duality = ℤ₂, triality = ℤ₃** |
+| Thorwe 2026 (DVFT) [3] | the natural ℤ₃ of a three-component vacuum field ⇒ phase $120^\circ$ ⇒ **circulant mass matrix** ⇒ Koide |
+| Rousselle 2026 [4] | $U(3)_F\to U(1)_F^{3}$, equivalent to "crystallising" the vacuum to $Z(SU(3))=\mathbb{Z}_3$ |
+| Ma 2006 [5] | four ℤ₃ generators → the group $\Sigma(81)$ |
+| Sumino 2009 [6] | $U(3)\times O(3)$ family gauge symmetry; a $45^\circ$ geometric reading |
+| Libanov–Troitsky 2000 [7] | three generations from a **topological defect with topological number 3** (index theorem: number of zero modes = topological number) |
+
+This paper differs from them in **where it lands**: the works above generally take ℤ₃ / circulant matrices as a **starting point** from which to construct mass matrices, whereas the ℤ₃ of this paper is **read off from the automorphism group of the SRE skeleton** (three rings = ℤ₃-torsor). That is to say, this paper provides a **structural source for "why a circulant mass matrix should appear"**, rather than yet another construction of a circulant mass matrix.
+
+### 11.2 Candidate chain registered (D1 caution, not upgraded)
+
+$$Q=\tfrac13+\tfrac23\eta^{2}\ \ \text{(Theorem 4)},\qquad (\tfrac13,\tfrac23)\leftarrow\text{the }\mathbb{Z}_3\text{ weights of the edge representation},\qquad \eta^{2}=\tfrac12\leftarrow\text{the trivial weight of the vertex representation (Table 3)}.$$
+
+If the three are **of the same origin**, then $Q=\tfrac13+\tfrac23\cdot\tfrac12=\tfrac23$ holds **automatically**.
+
+**But this paper explicitly does not accept the chain**, for the reason: $1/3$, $2/3$, $1/2$ are **all small-denominator rationals** (the D1 trap) and **have no discriminating power** on their own. The **only** reason for registering them as a candidate is that the three pieces happen to join into the complete chain $Q=2/3$; **to upgrade it to a conclusion, a mechanism must be found elsewhere**, connecting "the edge representation / vertex representation" to "$m_k$ / the order parameter $A$" (i.e. the assignment rule of §10). Otherwise it is of the same type as "integer ≈ integer" and is not accepted.
+
+The role of **Table 3** must therefore be precisely delimited: it is **the registration of one link of a candidate chain**, not one of the conclusions of this paper.
+
+### 11.3 Contrast with the "anchor" system
+
+In the project's earlier anchor work, the only quantity satisfying a "constant ↔ single invariant" type of relation is the **fine-structure constant**:
+
+$$\alpha=\Pi_1(M_{60})=7.2974585\times10^{-3}\qquad(\text{relative deviation }1.45\times10^{-5}\text{ from the CODATA value }7.2973526\times10^{-3}),$$
+
+solving $\Pi_1(M_n)=\alpha$ gives $n^{*}=60.000436$ (proven, within-model). Here $M_{60}$ is the 60-vertex Möbius ladder, whose closed form is
+
+$$\Pi_1(M_n)=\frac{4\sin^{2}(2\pi/n)}{2+2w+2\cos(2\pi/n)}\Big|_{w=1}.$$
+
+**Mass has no such anchor** — and the reason is exactly the typology of Table 9: $\alpha$ is a **dimensionless ratio** (SRE can give it internally), whereas the **absolute scale $c_0$ of mass is immune to no structure** (outside SRE).
+
+**Analogy 9 (why a clock can be an anchor but "a pile of lengths" cannot).** A pendulum clock can serve as a time standard because its pendulum length and period are **locked together into a ratio** — once locked, the external "second" is brought into physics through that ratio. This is the mechanism of an "anchor": **connecting an external constant to an internal structural invariant**. The mass discussed in this paper lacks exactly such a lock: $c_0$ is a **free scale**, constrained by no internal ratio, so it can only be **specified directly** from outside and cannot be **derived** internally. This also explains why the gap of §10 is "the absence of a rule" rather than "an inaccurate number".
+
+(Registered together, one candidate **H4**: SRE has the exact ratio $\tfrac23=T(\text{open})/T(\text{closed})$ (independent of $V$), numerically equal to the Koide $Q=2/3$. It is likewise in the D1 domain, registered only, not cross-corroborated.)
+
+### 11.4 The discrete-closure-law perspective
+
+The location of this round is **case 15 of G12**:
+
+- **discrete side (closed)**: cyclicity ⇒ the structure is a **circulant matrix**; the number of positions = 3 (torsor size); $\delta$ is gauge;
+- **continuous side (requires input)**: the **value** of $\eta$ (the origin of $1/\sqrt2$) and the scale $c_0$.
+
+It is of the same type as the existing cases: **discrete structure fixes the shape, continuous quantities must be paid in externally**. One empirical aside: **everything that passes the tests is a dimensionless ratio; everything judged negative is a value for which dimensions are sought.**
+
+---
+
+## 12. Conclusion
+
+This paper gives the following adjudication of the precise mathematical expression of "mass" in SRE:
+
+1. **Object level**: mass is not three numbers but the **ℤ₃-equivariant operator on the three-ring ℤ₃-torsor = a circulant matrix** $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$ (Corollary 1). It is **forced** by the skeleton structure (Theorem 1, Theorem 2) rather than an imposed language; the centraliser dimension is exactly $n=3$.
+2. **"Cyclic" level**: = using the **group** ℤ₃ (rather than a semigroup) to characterise the index space (Proposition 3); $9$ matrix entries are compressed to $3$. For the three generations to be distinct, the operator **must carry a complex phase** (Proposition 5).
+3. **"Unopened" level**: = not performing an origin-bearing spectral decomposition ⇒ the native output is an **equivariance class (multiset)**; the invariant moduli space is **two-dimensional** $(\eta,\ \delta\bmod\tfrac{2\pi}{3})$ (Proposition 8), and $Q$ occupies only the $\eta$ direction. **"Opening" = choosing the DFT origin, which is a ℤ₃ gauge (redundancy) and changes no observable** (Proposition 6).
+4. **Content level**: **"three points lie on one cosine" is free** (Theorem 3, holds for any three generations); **the entire content of Koide is that number** $\eta=1/\sqrt2$ (measured $\eta^{2}$ deviates by $3.3\times10^{-6}$, Table 10).
+5. **Boundary level**: **absolute mass (the scale $c_0$) is not inside SRE**; **only RG-invariant dimensionless combinations qualify as candidate targets** (Corollary 2).
+6. **Gap level**: the **assignment rule** — connecting the representation weights of ℤ₃ to $m_k$ / the order parameter $A$. The three hard criteria are in §10.3.
+
+**Overall statement of the conclusion.** Mass = an invariant of "the cyclic structure on ℤ₃"; its carrier is a circulant matrix; "unopened" = outputting only the equivariance class; "opened" = choosing an origin (gauge, not information). What SRE can give: the **position** of $(\eta,\delta)$; what it cannot give: the **value** of $\eta$ and the scale $c_0$.
+
+---
+
+## Appendix A　Recomputation list
+
+**One-command recomputation of all readings** (requires numpy + networkx):
+
+```
+C:/myapp/miniconda3/envs/ai/python.exe -u _sre_mass_origin_paper_check.py \
+    > _sre_mass_origin_paper_check.log 2>&1      # main body (PART 1-8)
+C:/myapp/miniconda3/envs/ai/python.exe -u _sre_paper_v2_check.py \
+    > _sre_paper_v2_check.log 2>&1               # v2.0 additions (Examples 1-3, alpha anchor, recheck of Tables 2 and 3)
+```
+
+The two scripts are mutually independent implementations and share the project's existing closed form `mobius_pi1` (see `code/_sre_anchor_registry.py`).
+
+**Table A1.** Correspondence between the readings of this paper and the recomputation scripts.
+
+| Location in this paper | Source | Key output |
+|---|---|---|
+| Theorem 2 (§4.1) | PART 1 | rank $6/9$, null-space basis all circulant = true |
+| Proposition 4 (§5.1) | PART 2 | 6 random sets, maximum error $1.1\times10^{-15}$ |
+| Proposition 5 (§5.2) | PART 2 | $(0.7,0.7,1.6)$／$(0.400668,1.27515,1.324181)$ |
+| Example 2 (§4.2) | v2 Ex.2 | $(0.436184,\ 1.104189,\ 1.459627)$ |
+| Theorem 3 (§5.3) | PART 3／v2 Ex.1 | 8 sets of arbitrary triples, reconstruction error $5.11\times10^{-15}$ |
+| Example 1 (§2.3) | v2 Ex.1 | $\bar u=0.966667$, $|c_1|=0.145297$, $\theta=1.455835$ rad |
+| Proposition 8 (§7.1) | PART 4 | $Q$ range $\le1.6\times10^{-15}$; $R$ varies with $\delta$ |
+| Proposition 6 (§6.1) | PART 4 | $|\Delta Q|\le2.2\times10^{-16}$ |
+| Theorem 4, Table 10 (§8) | PART 5 | $Q=0.666664463$, $\eta^{2}=0.499996695$, $44.9999^\circ$ |
+| Theorem 1, Table 2 (§3) | PART 6 | closed $36/8/1$; open $4/0/2$; $\varphi$ edge-preserving, order 3 |
+| Proposition 2, Table 3 (§3.4) | PART 7 | vertex $1/2$; edge $1/3\mid2/3$ |
+| Theorem 5 (§9.5) | PART 8 | $Q(c\,m)$ residual $\le1.1\times10^{-16}$ |
+| Example 3, Table 10 (§8.3) | v2 Ex.3 | $\sum m=1883.099374$, $\sum\sqrt m=53.147515$, $Q=0.666664463$ |
+| §11.3 alpha anchor | v2 anchor | $\Pi_1(M_{60})=7.2974585\times10^{-3}$; relative deviation $1.45\times10^{-5}$; $n^{*}=60.000436$ |
+
+**Table A2.** Preceding scripts (independent sources of the conclusions of this paper, all archived in `code/`).
+
+| Script | Round | Content |
+|---|---|---|
+| `_sre_weight_homology.py` | Round 29 | weighted homology / dormancy rate (the $\mathbb{Z}_2$ level) |
+| `_sre_triality_families.py` | Round 30 | ℤ₃ / triality / torsor / Koide |
+| `_sre_quark_mass_probe.py` | Round 31 | three-step decomposition of quark mass / RG-invariant targets |
+| `_sre_cyclic_mass_formalism.py` | Round 32 | formalisation of the circulant operator |
+
+---
+
+## Appendix B　Honesty boundary
+
+1. Everything in this paper is a self-consistent statement **internal to the SRE model / at the level of linear algebra and group theory**, and **no** numerical prediction for real physics is claimed. The comparison with charged-lepton masses in the text is **structural consistency**, not prediction.
+2. "Taking $a=\sqrt m$ rather than $m$" is the **empirical content of Koide**, equivalent to "**the square root of the mass operator** is ℤ₃-equivariant" — a **testable structural hypothesis** that this paper **has not proved**.
+3. "ℤ₃ is the structure of the three generations" is a **mathematical identification + literature consensus**; what this paper **adds** from the SRE perspective is only two **structural facts**: "the skeleton carries ℤ₃ natively (three rings = ℤ₃-torsor)" and "closed → open = ℤ₃ → ℤ₂". Neither is a new numerical prediction.
+4. The echo between "real-symmetric ⇒ 2+1" of §5.2 and "the open state has only two values" is only an **observation**, which is **not proved** to be the same mechanism.
+5. **The formalisation of this paper adds no constraint** (Theorem 3): it holds trivially for **any** three generations; its value lies in **language** and **layering**, not in new equations. "The shape is trivial" is a known fact in the literature; this paper makes it explicit within the SRE framework and accordingly corrects the earlier wording.
+6. The chain of §11.2, "edge $1/3\mid2/3$ + vertex $1/2$ ⇒ $Q=2/3$", **is a candidate, not a conclusion**: all three ratios are small-denominator rationals (D1) with no discriminating power on their own; an upgrade requires a mechanism found elsewhere.
+7. The phase $\delta\approx2/9$ of §8.4 is a small-denominator rational (D1), used only as supporting evidence; and $\delta$ is a **gauge quantity**.
+8. Theorem 5 is a **mathematical identity** (for a common multiplicative factor); its applicability to QCD running **relies on** the standard result that $\gamma_m$ is flavour-independent (true at LO and beyond; residual dependence only in threshold matching).
+9. The scale $c_0$ (absolute mass) still requires external input — consistent with the existing G12 conclusion.
+10. Conclusion = **case 15 of G12**.
+
+---
+
+## Appendix C　Analogy index
+
+A survey of the analogies and illustrations used in this paper (each is developed in full at the corresponding place above).
+
+**Table C1.** Index of analogies and illustrations.
+
+| No. | Name | Location | What it addresses |
+|---|---|---|---|
+| Analogy 1 | three-phase alternating current | §2.3 | the ℤ₃ operator $a=e^{2\pi i/3}$, phase sequence as gauge, symmetrical components as DFT |
+| Analogy 2 | a three-strand braid and a clock face | §3.3 | torsor: a cyclic order with no identifiable first element |
+| Analogy 3 | a wheel versus an hourglass | §4.3 | group evolution (reversible, no start) vs semigroup evolution (irreversible, with a start) |
+| Analogy 4 | a prism and dispersion | §5.3 | DFT = dispersion; "any three colours correspond to some beam" = the shape is free |
+| Analogy 5 | transposition of a score | §6.2 | choosing the DFT origin = choosing the tonic (structure unchanged) |
+| Analogy 6 | an altitude datum and relative height | §7.3 | relative quantity (datum-independent) vs absolute quantity (needs an external datum) |
+| Analogy 7 | forty-five degrees is the "midpoint deviation" | §8.2 | $\eta^{2}=1/2$ means stopping at the midpoint of equal mass and maximal deviation |
+| Analogy 8 | three datum surfaces for one mountain | §9.4 | a quantity with no unique definition ⇒ agreement is no evidence |
+| Analogy 9 | a pendulum clock as anchor vs a pile of lengths | §11.3 | anchor = locking an external constant to an internal invariant; $c_0$ lacks such a lock |
+| Example 1 | cosine reparameterisation of three numbers | §2.3 | the inverse solution always succeeds; the order depends on the origin, the multiset does not |
+| Example 2 | a concrete mass operator | §4.2 | a $3\times3$ matrix determined by only two real numbers |
+| Example 3 | a complete recomputation for charged leptons | §8.3 | the full hand computation of $Q=0.666664463$ |
+
+**Usage note.** To explain this paper to a non-specialist, the recommended route is: Analogy 1 (three-phase) → Analogy 2 (braid) → Analogy 4 (prism) → Analogy 6 (altitude) → Example 3 (a concrete number). These five steps convey the skeleton of the whole paper without using any further terminology.
+
+---
+
+## Appendix D　References
+
+[1] Y. Koide, *A Fermion-Boson Composite Model of Quarks and Leptons*, Phys. Lett. B **105**, 121 (1981); and the subsequent series of works on the "Koide relation" $Q=2/3$.
+
+[2] R. McRae, *Triality as multiplication by a third root of unity* (a root-of-unity characterisation of triality and duality), arXiv:2502.14016 (2025).
+
+[3] Thorwe, *Discrete Vacuum Field Theory (DVFT)*: the ℤ₃ phase of a three-component vacuum field ⇒ a circulant mass matrix (2026).
+
+[4] Rousselle, *Family symmetry breaking and the center of SU(3)*, arXiv:2608.19277 (2026).
+
+[5] E. Ma, *$\mathbb{Z}_3$ generators and the group $\Sigma(81)$*, hep-ph/0612022 (2006).
+
+[6] Y. Sumino, *Family gauge symmetry and the 45° lepton mixing*, arXiv:0903.3640 (2009).
+
+[7] M. Libanov, S. Troitsky, *Three generations from topological defects*, hep-ph/0011095 (2000).
+
+[8] W. Rodejohann, H. Zhang, a preprint containing "heavy quarks $Q\approx2/3$" (deleted in the published version); and X.-G. He, A. Zee et al. on the scale sensitivity of the Koide relation, arXiv:1111.0480.
+
+[9] Particle Data Group, *Review of Particle Physics* (tables of charged-lepton and quark masses).
+
+[10] This project, *SRE Triality / Three-Level Structure Report* (Round 30, 2026-09-28): first measurement of the ℤ₃-torsor, the order-3 automorphism $\varphi$, the character decomposition, and the Koide recomputation.
+
+[11] This project, *How to Compute Quark Mass in SRE: A Three-Step Decomposition Report* (Round 31, 2026-09-28): the three-step division graph/ledger/dimensions, the RG-invariant target screening rule.
+
+[12] This project, *Complete Characterization of Nucleons within the SRE Framework* (nucleon complete paper): construction and screening of the skeleton $Y_3\ltimes\triangle_3$ (§7–§8), the ledger-carrying law for binding energy (§12).
+
+[13] This project, *A Formal Expression of SRE Mass: Circulant Operator Report* (Round 32, 2026-09-28): the circulant-matrix theorem, triviality of the shape, the invariant moduli space (the formalisation body of §5–§8).
+
+[14] This project, *SRE Projection vs Distance Fidelity Report* (Round 28) and *SRE Weighted Homology / Dormancy Rate Report* (Round 29): the three-level stratification of distance and the ℤ₂-level weighted homology (the prior basis for this paper's judgement that "a two-valued scheme cannot give three levels").
+
+> **Citation discipline.** When citing references, the "$\approx$" in the original must be copied verbatim and must not be rewritten as "equals".
+
+
+<div style="page-break-after: always;"></div>
+
+# Positioning of Light and Electromagnetic Waves in the SRE Framework
+
+## The Involutive ℤ₂ Sector, the Cohomological Ladder, and "One Emission as One Closed→Open Transition"
+
+**Version: 1.0 (Treatise Format)**
+**Date: 2026-09-28**
+
+---
+
+## Abstract
+
+**Background and problem.** In prior work, SRE has identified "mass" as a ℤ₃-equivariant circulant operator, and connected it with the **ℤ₃-torsor** structure of the three-ring skeleton. A natural follow-up question then arises: **what is the SRE description of "light and electromagnetic waves", what is its relation to mass, and can it cover at once the radiation of chemical origin and of nuclear origin?** This paper answers these three questions head-on.
+
+**Method.** This paper places the project's existing light-side stipulations (the residuality axiom, the Möbius double-cover parameterisation, the involution $P=S^{n/2}$ on the weighted Möbius ladder, the $\mathbb{Z}_2$ holonomy coupling $\delta_A$) and the ℤ₃ structure on the mass side (the three-ring torsor, the circulant operator) under one framework for comparison: the **cohomological ladder** $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$. The whole paper needs only one structural input — **the involution $P=S^{n/2}$ on the weighted Möbius ladder $M_n$** — and everything else is recomputable linear algebra and group theory.
+
+**Results.** The paper gives four mutually independent, verifiable propositions: (1) **the gear proposition** — light and mass are **two gears of the same machine**: light runs on the coefficient group $\mathbb{Z}_2$ (duality), mass on $\mathbb{Z}_3$ (triality), and the two are adjacent rungs of the same cohomological ladder; the root of the difference is a **group-theoretic prohibition** $\lvert\mathbb{Z}_2\rvert=2<3$ (the light gear structurally cannot hold three generations). (2) **the carrier proposition** — the light carrier is the **odd eigenspace of an involution**, with $P^{2}=I$, membership in the automorphism group, commutation with the Laplacian, zero trace, and spectrum exactly $\{\pm1\}$; it is **completely determined by the single integer $n$, with zero continuous free parameters**, so **there is no place to put a source**. (3) **the source proposition** — the spectrum of the weighted Möbius ladder splits into a **"sector-blind term + odd-sector constant term"** $\mu_k=2c(1-\cos\frac{2\pi k}{n})+2w\cdot\mathbb{1}[k\ \text{odd}]$, in which only the $w$ channel simultaneously satisfies "**acts only on the odd sector**" and "**shifts every mode uniformly**"; measurement over $\delta\in[10^{-3},5\times10^{-1}]$ shows that the $n/2$ modes of the odd sector are shifted by **strictly the same amount** (range $\sim10^{-15}$), that the even sector is **always motionless**, and that the spectral shape is **preserved mode by mode** (residual $8.9\times10^{-16}$); hence **the source can inject only one scalar on the light side**. (4) **the transition proposition** — "one emission = one **closed → open** transition": the **ledger difference** of the transition carries the energy ($E$, $\beta_1$ each $-1$), the **spectral invariants** of the transition carry the light carrier ($\rho$, the sector structure $P$), and the two are **orthogonal**; therefore a chemical source (transition at the electronic-molecular level) and a nuclear source (transition at the nuclear level) **share the same carrier**, their only difference being the level at which the ledger is recorded.
+
+**Boundary and conclusion.** The paper also states four limitations: the light-side readings **come from the project's existing axioms, and this paper only puts them into recomputable form without adding any light-side physical content**; equating the "open state" with "light" is a **structural conjecture**, and the paper claims only a **consistency of direction**; $\mathbb{Z}_3$ is the **smallest** coefficient group able to carry three gears but **not the unique** one ($\mathbb{Z}_4$ works as well); the numerical equality $\mathrm{rank}(P_E)=7$ vs. $\beta_1=7$ **is a pure coincidence and must not be used as mutual evidence**. The overall conclusion is registered as **case 18 of the discrete-closure law (G12)**: it gives "why the gears are two and three", "why the source is a single scalar" and "why energy and carrier are orthogonal" (discrete side, closed), but **not** the energy scale of light (continuous side, requiring external input). All numerical verification in this paper **holds only within the SRE model**.
+
+**Keywords**: State–Relational–Entropy (SRE); light; electromagnetic waves; Möbius double cover; involution; $\mathbb{Z}_2$ holonomy; duality; triality; cohomological ladder; gauge degree of freedom; discrete-closure law.
+
+---
+
+## 1. Introduction
+
+### 1.1 Statement of the problem
+
+This paper answers the following proposition (raised 2026-09-28):
+
+> **Original proposition.** Through the chain "triality ℤ₃ → mass = circulant operator → light and mass = the same mechanism with a different coefficient group", can one and the same SRE description cover at once **light/electromagnetic waves produced by chemical energy** and **light/electromagnetic waves produced by nuclei**? And — is the SRE description of light itself **exactly consistent** with "mass = an unopened circulant operator"?
+
+The proposition overlays three independently decidable sub-problems:
+
+**Table 1.** Three sub-problems and their treatment in this paper.
+
+| No. | Sub-problem | Corresponding section |
+|---|---|---|
+| **P1** | What is the **carrier** of light in SRE? | §3 (Definition 1, Propositions 1, 2) |
+| **P2** | **What is the relation** between light and mass? | §4 (Theorem 2, Propositions 3, 4) |
+| **P3** | Can a chemical light source and a nuclear light source **share the same carrier**? | §7, §8 (Theorem 4, Proposition 8) |
+
+### 1.2 Existing characterisations and their predicament
+
+In the prior work of this project, four conclusions relating to "light" already exist, but their **attributions are scattered** — they fall respectively on the axiom level, the spectral level, the coupling level and the numerical level:
+
+**Table 2.** Existing light-side conclusions of the project (existing wording, not paraphrase).
+
+| Clue | Conclusion | Source |
+|---|---|---|
+| **Residuality axiom** | Light is the **mutually non-annihilating topological residue** at the causal intersection of jointly executed chains: $\Psi_{\text{light}}=\ker(\partial_{\text{mutual}})$ | Electron paper §3.1 [1] |
+| **Möbius double cover** | The residual manifold is parameterised by two intrinsic degrees of freedom $(\phi,w)$; when $\phi\to\phi+2\pi$, $w\to-w$, and only $\Delta\phi=4\pi$ closes | Electron topology §2 [2] |
+| **Sector attribution** | On the weighted Möbius ladder the involution $P=S^{n/2}$ satisfies $P^{2}=I$, $Pv_k=(-1)^{k}v_k$; **$k$ even = electron sector, $k$ odd = photon sector** | Fork A §2.4/§3.5 [3] |
+| **Coupling strength $\delta_A$** | $\delta_A=w^{*}-1$ is the **emergent coupling strength** of the $\mathbb{Z}_2$ holonomy channel, with the character of a **metric parameter** | Electron topology §3 [2] |
+
+These four clues point together to an object that is **not yet uniformly named**, and each exposes a predicament:
+
+1. The **axiom level** gives light's **ontological identity** (residue), but not its **carrier operator**;
+2. The **spectral level** gives the carrier operator $P=S^{n/2}$, but not **why it is the one**, nor what its relation to the mass operator is;
+3. The **coupling level** gives that $\delta_A$ is "the continuous coupling of the ℤ₂ gear", but it **cannot be measured independently** (an $\alpha^{*}$ input is required);
+4. The **numerical level** gives the topological reproduction of $\alpha=\Pi_1(M_{60})$, but covers only **one** constant.
+
+The task of this paper is to **gather these four clues into one framework** and to answer P1–P3. The key step is the methodological discipline of §2.4: **every crossing from "discrete" to "continuous" must be paid for with an external input**. Accordingly the light side splits into a **discrete gear** (given by $\mathbb{Z}_2$) and **continuous quantities** (coupling strength, energy scale, to be paid externally) — and the past predicament is precisely the result of mixing the two halves together.
+
+### 1.3 Contributions of this paper
+
+Relative to the existing material, this paper gives four substantive items:
+
+1. **It establishes the "gear" as a structural proposition** (§4, Theorem 2): light and mass are not two mechanisms but adjacent rungs of one cohomological ladder $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$; "changing gear = changing the coefficient group", and the hard reason is a group-theoretic prohibition $\lvert\mathbb{Z}_2\rvert=2<3$.
+2. **It makes the light carrier a recomputable reading** (§3, Proposition 2): the eleven properties of the involution $P$ and the parameter count of zero continuous free parameters are all computed at once; on this basis it gives the structural ground for "**there is no place to put a source on the light side**".
+3. **It proves that "the source injects only one scalar" as the unique channel screened out by two conditions** (§7, Theorem 4): starting from the two-term splitting of the spectrum, it proves that only the $w$ channel satisfies both "acts only on the odd sector" and "shifts uniformly"; and it gives a **counterexample control** (the circumferential channel $c$ fails both).
+4. **It establishes "energy lives in the ledger, the carrier lives in the spectrum" as the transition proposition** (§8, Theorem 5), and on this basis explains that a chemical light source and a nuclear light source **share the same carrier** (answering P3).
+
+### 1.4 Structure of this paper
+
+Section 2 gives the existing stipulations, notation, an **analogy guide** and the methodological discipline; Section 3 proves that the light carrier is the involutive ℤ₂ gear (first pillar); Section 4 proves that light and mass form adjacent rungs of the cohomological ladder (second pillar); Section 5 reviews the three-ring ℤ₃-torsor and the structural change "closed → open" (third pillar); Section 6 argues that "unopened" is one and the same kind of statement on both sides; Section 7 treats the **source** side and gives channel uniqueness; Section 8 discusses masslessness and the unification of chemical and nuclear sources; Section 9 connects this paper item by item with the existing SRE light-side documents; Section 10 is discussion and the screening of homonyms; Section 11 is the conclusion. Appendix A is the recomputation list, Appendix B the honesty boundary, Appendix C the analogy index, Appendix D the references.
+
+**Notation convention**: numbers followed by "**(proven, within-model)**" can all be recomputed in one command by the script in Appendix A; those marked "**(to be proven)**" are structural hypotheses proposed here but not yet delivered; those marked "**(negative verdict)**" are propositions already falsified or explicitly delimited as non-computable.
+
+---
+
+## 2. Preliminaries
+
+### 2.1 Existing SRE stipulations about light
+
+**(a) Residuality (Axiom I).** The original wording of electron paper §3.1 [1] is:
+
+> "Light is not an independent material substance. Given a boundary node A evolving to logical-depth step $t$, and a node B evolving to step $t'$, light is embodied as the **mutually non-annihilating topological residue** at the causal intersection of the jointly executed chains:
+> $$\Psi_{\text{light}}(\phi,w)\equiv\ker\!\left(\partial_{\text{mutual}}(A_t,B_{t'})\right)."$$
+
+**(b) The Möbius double cover (Axiom II).** The same residual manifold is governed by **two intrinsic degrees of freedom**:
+
+$$\mathbf{X}(\phi,w)=\Big(\big(1+w\cos\tfrac{\phi}{2}\big)\cos\phi,\ \ \big(1+w\cos\tfrac{\phi}{2}\big)\sin\phi,\ \ w\sin\tfrac{\phi}{2}\Big),$$
+
+and when $\phi\to\phi+2\pi$ the transverse vector **flips intrinsically**, $w\to-w$; one must traverse $\Delta\phi=4\pi$ to close (axiom A2 of §2.2, §2.3, and the "4π closure" theorem [2]).
+
+**(c) Involution and sectors (Fork A §2.4/§3.5).** Discretising this 4π-periodic structure into $n$ equally spaced nodes ($n$ even) yields the **weighted Möbius ladder** $M_n$: circumferential edges $(i,i\pm1)$ with weight $c$ (within-sheet refresh), and cross-sheet identification edges $(i,i+n/2)$ with weight $w$ (the Möbius twist channel). On it the **involution**
+
+$$P=S^{n/2},\qquad P^{2}=I,\qquad Pv_k=(-1)^{k}v_k .$$
+
+Its eigenspaces give the **sector split**: $k$ even = electron sector (soft mode), $k$ odd = **photon sector** [3].
+
+**(d) Coupling strength $\delta_A$ (electron topology §3).** $\delta_A\equiv w^{*}-1$ is "the emergent coupling strength of the $\mathbb{Z}_2$ holonomy channel", with the character of a **metric parameter** (persistent-homology test: "$\delta_A$ does not change the barcode"; Morse test: "$\delta_A$ has no Morse counterpart"). Its **parameter-independent spectral fingerprint** is [2][3]
+
+$$\mu_k(1+\delta_A)-\mu_k(1)=\begin{cases}2\delta_A & k\ \text{odd (photon sector)}\\ 0 & k\ \text{even (electron sector)}\end{cases}$$
+
+**(e) Discrete electromagnetic realisation.** `code/Maxwell.py` is a **gauge-covariantly closed** engine on a discrete cell complex: incidence matrix $D$ ($12\times8$), ring-edge matrix $C$ ($5\times12$), projector $P_E=D(D^{\mathsf T}D)^{-1}D^{\mathsf T}$; $E\in\Omega^{1}$ lives on edges, $B\in\Omega^{2}$ on rings, with three discretisations: Faraday / Ampère / Gauss.
+
+The entire work of this paper is to unify (a)–(e) under the discipline of §2.4 and to answer P1–P3.
+
+### 2.2 Notation
+
+**Table 3.** Table of symbols used throughout.
+
+| Symbol | Meaning |
+|---|---|
+| SRE | State–Relational–Entropy, the parent framework of this paper |
+| $M_n$ | weighted Möbius ladder ($n$ even; $V=n$, $E=3n/2$, $\beta_1=n/2+1$) |
+| $c,\ w$ | circumferential edge weight (within-sheet refresh) and cross-sheet identification weight (Möbius twist channel) |
+| $P=S^{n/2}$ | the **involution** on $M_n$ (light carrier) |
+| $k$ | Fourier mode index; $k$ even = electron sector, $k$ odd = photon sector |
+| $\mu_k$ | Laplacian spectrum of the weighted Möbius ladder |
+| $\mathbb{Z}_n$ | coefficient group (gear): $n=2$ light gear, $n=3$ mass gear |
+| $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$ | **cohomological ladder**: the number of $n$-fold covers |
+| $\delta_A$ | **coupling strength** of the $\mathbb{Z}_2$ holonomy channel (metric parameter) |
+| $\delta_B$ | the **phase** on the mass side (ℤ₃ gauge degree of freedom) — **not synonymous** with $\delta_A$ |
+| $Y_3\ltimes\triangle_3$ | nucleon skeleton (mass-side carrier; §5) |
+| $\rho,\ \lambda_2$ | largest / second-smallest Laplacian eigenvalue |
+| $Q$ | Koide combination $Q=\dfrac{\sum m}{(\sum\sqrt m)^{2}}=\tfrac13+\tfrac23\eta^{2}$ |
+| G12/D1/D2/D3 | discrete-closure law / small-denominator rationals listed separately / angles may not serve as anchors / main statistics only on irrational readings × clean targets |
+
+### 2.3 Analogy guide: the Möbius strip and the switch
+
+Before entering the formal arguments, let us build three **everyday-testable reference systems**, in order to fix the intuition behind all later wording.
+
+**Analogy 1 (the Möbius strip).** Take a paper strip, give one end a half twist and glue it to the other end. Walk once along the **centre line** of the surface back to the starting point — put differently, after "one lap" you are on the **antipodal sheet**; only a second lap truly returns you to the original sheet. This is the $\mathbb{Z}_2$ double cover: **closure requires two laps ($4\pi$), not one ($2\pi$)**. The carrier operator $P=S^{n/2}$ of this paper is exactly the discrete version of this "sheet-flipping" operation, and its eigenvalues $\pm1$ label respectively "stay on this sheet" and "flip to the antipodal sheet".
+
+**Analogy 2 (three-phase and single-phase electricity).** The phasor operator $a=e^{2\pi i/3}$ of three-phase AC satisfies $a^{3}=1$, and its three eigenvalues form $\mathbb{Z}_3$; the operator of a single-phase / two-valued system is $-1$, satisfying $(-1)^{2}=1$, and its two eigenvalues form $\mathbb{Z}_2$. **The central proposition of this paper (Theorem 2) is that light uses the latter and mass the former** — the two systems are not two machines but one machine in different gears.
+
+**Analogy 3 (a switch has only two states).** A switch with only "on/off" can express **at most two** distinct states, however it is thrown. If three things are required to be **pairwise distinct**, the switch structurally cannot do it — not "no method has been found yet", but **the state space is too small**. The capacity criterion of this paper (Theorem 2) is exactly the group-theoretic version of this plain fact: $\lvert\mathbb{Z}_2\rvert=2<3$.
+
+### 2.4 Methodological discipline: the discrete-closure law (G12)
+
+All results of this paper can be located by one methodological discipline already existing in the project:
+
+> **The discrete-closure law (G12).** Every link of the form "discrete structure ⇒ discrete target" **closes** within SRE; every crossing from "discrete" to "continuous" **must be paid for with an external input**.
+
+The role of this law is a **division of labour**: for any result one must be able to tell which half is given by SRE (the discrete side) and which half must be paid in externally (the continuous side). It is the **main axis** along which this paper answers P1–P3 — because the four light-side clues of Table 2 are scattered precisely for want of this distinction.
+
+**Remark 1 (previous instances of G12).** The law has accumulated seventeen instances in earlier work of the project (projection vs. distance, weighted homology, triality, RG invariance of quark targets, the "shape for free" of the circulant operator, light ↔ mass as a change of coefficient group, and others). The conclusion of this paper is registered as the **18th instance** (§10.4).
+
+---
+
+## 3. First pillar: light = the involutive $\mathbb{Z}_2$ gear
+
+### 3.1 The carrier operator
+
+**Definition 1 (weighted Möbius ladder).** Let $n$ be even. The vertex set of $M_n$ is $\{0,1,\dots,n-1\}$, and the edges fall into two classes:
+
+- **circumferential edges**: $(i,i+1\bmod n)$, weight $c$, $n$ of them (within-sheet refresh);
+- **identification edges**: $(i,i+n/2)$, weight $w$, $n/2$ of them (Möbius twist channel).
+
+Hence $V=n$, $E=3n/2$, $\beta_1=E-V+1=n/2+1$.
+
+**Definition 2 (light carrier).** Define the involution
+
+$$P:\ i\mapsto i+n/2\ (\bmod n).$$
+
+By [3], $P$ is an automorphism of $M_n$, commutes with the cyclic shift, and **commutes with the graph Laplacian $L$**. The spectrum of $L$ splits by the eigenvalue of $P$ into **two sectors**: the branch of eigenvalue $+1$ is the **electron sector**, that of $-1$ the **photon sector**.
+
+### 3.2 The two-term splitting of the spectrum
+
+**Proposition 1 (sector decomposition of the spectrum).** The Laplacian spectrum of $M_n$ (circumferential weight $c$, identification weight $w$) is
+
+$$\mu_k=2c\Big(1-\cos\frac{2\pi k}{n}\Big)+2w\cdot\mathbb{1}[k\ \text{odd}],\qquad k=0,1,\dots,n-1 .$$
+
+*Proof.* The Fourier modes $v_k[i]=e^{2\pi i ki/n}$ diagonalise simultaneously the circumferential part and $P$: the circumferential part gives $2c(1-\cos\frac{2\pi k}{n})$ (independent of the $\pm$ orientation), and $P$ gives $(-1)^{k}$. The degree is $2c+w$, so the Laplacian acts as
+
+$$L v_k=\big[(2c+w)-2c\cos\tfrac{2\pi k}{n}-w(-1)^{k}\big]v_k=2c\Big(1-\cos\tfrac{2\pi k}{n}\Big)+w\big(1-(-1)^{k}\big)\,v_k .$$
+
+And $1-(-1)^{k}=2\mathbb{1}[k\ \text{odd}]$. $\square$
+
+**Remark 2.** This is equivalent to the project's existing closed form $\mu_k=(2+w)-2\cos\frac{2\pi k}{n}-w(-1)^{k}$ ([3] §3.4) at $c=1$; Proposition 1 merely separates $c$ explicitly so that **channels** can be compared in §7.
+
+**Numerical check of Proposition 1** (Appendix A, PART 1a): for $n=6,8,10,20,30,60$, the maximum deviation between the closed form and direct diagonalisation is $\le6.2\times10^{-15}$; $\mu_0=0$ holds identically; the two branches have $n/2$ modes each (for $n=60$, $|$even$|=|$odd$|=30$) (proven, within-model).
+
+Proposition 1 immediately yields **two structural facts**, which will serve in §7 as the two criteria screening the "source channel":
+
+**Table 4.** Range and shape of the two channels (proven, within-model).
+
+| Channel | Range | Per-mode displacement | Shape |
+|---|---|---|---|
+| $c$ (circumferential weight) | **both sectors treated alike** | $\propto\big(1-\cos\frac{2\pi k}{n}\big)$ | **non-uniform** |
+| $w$ (identification weight / holonomy) | **odd sector only** | identically $=2w$ | **a pure constant shift, no shape** |
+
+### 3.3 Topological protection of the soft mode
+
+**Theorem 1 (topological protection of the soft mode, existing [3] §3.5).** For all $w$,
+
+$$\lambda_2(w)=2-2\cos\frac{4\pi}{n}\qquad(\text{independent of }w),\qquad \lambda_{\max}(w)=2+2w+2\cos\frac{2\pi}{n}\ (w>1-\cos\tfrac{2\pi}{n}).$$
+
+*Proof.* By Proposition 1, for $k$ even $2w\cdot\mathbb{1}[k\ \text{odd}]=0$, so $\mu_k$ is independent of $w$; for $k$ odd $\mu_k$ contains $+2w$. The second-smallest non-zero mode comes from $k=2$ (even), so $\lambda_2=2c(1-\cos\frac{4\pi}{n})$ is independent of $w$; the largest mode comes from an odd mode with $k$ near $n/2$, giving $2+2w+2\cos\frac{2\pi}{n}$. $\square$
+
+**Physical reading.** The electron modes are **purely topological** (completely insensitive to the strength of the twist channel); the Möbius twist channel only renormalises the **speed-of-light modes**. The numerator of $\alpha$ is topological while the denominator contains dynamics — this is the spectral ground for the project's reading of $\alpha$ as $v/c$ [3].
+
+**Measurement** (Appendix A, PART 1b–1c): for $w\in\{0.05,\dots,10\}$, $\lambda_2$ is identically $0.043704798532$, spread $4.3\times10^{-15}$ (proven, within-model).
+
+### 3.4 The carrier has zero parameters: no place to put a source
+
+**Proposition 2 (parameter count of the light carrier).** $P$ is completely determined by **one integer $n$**, and contains **no continuous free parameter**; its eleven structural properties are as follows.
+
+**Table 5.** Eleven tests of $P=S^{n/2}$ ($n=60$) (proven, within-model).
+
+| Test | Result |
+|---|---|
+| $P^{2}=I$ | true |
+| $P\ne I$ | true |
+| $P\in\mathrm{Aut}$ ($PAP^{\mathsf T}=A$) | true |
+| $[P,L]=0$ (simultaneously diagonalisable) | true |
+| $\mathrm{spec}(P)=\{+1,-1\}$ | true |
+| $\mathrm{tr}(P)=0$ (the two branches have equal weight) | true |
+| $P_{+},\ P_{-}$ idempotent | true |
+| $P_{+}P_{-}=0$ (orthogonal) | true |
+| $P_{+}+P_{-}=I$ | true |
+| $\mathrm{rank}(P_{+})=\mathrm{rank}(P_{-})=n/2$ | true |
+
+*Proof.* Each item is verified directly from the definition of $P$ together with $PAP^{\mathsf T}=A$ and $PL=LP$; idempotence and orthogonality follow from the spectral projections $P_\pm=\frac12(I\pm P)$ built from $P^{2}=I$. $\square$
+
+**Table 6.** Comparison of carrier parameter counts.
+
+| Carrier | Input determining it | Continuous free parameters |
+|---|---|---|
+| light: symmetry carrier $P$ | **one integer $n$** | **0** |
+| light: spectral scales $(c,w)$ | — | 2, but only $w$ is "light-exclusive" |
+| mass: operator $A$ | $\mathrm{Re}\,c_0,\ \mathrm{Re}\,c_1,\ \mathrm{Im}\,c_1$ | 3 (invariants 2: $c_0$ and $\lvert c_1\rvert$) |
+
+> **Table 6 is the hardest item in the answer this section seeks: in the symmetry carrier there is no place to put a source.** Compare the mass side — the degrees of freedom $(c_0,\lvert c_1\rvert)$ of the operator $A$ are the landing point of the "ledger" (§8). This is the **common source** of "the source is invisible" in §7 and "energy lives in the ledger" in §8.
+
+**Analogy 4 (a volume knob).** An amplifier with only one knob, "volume", leaves the **shape of the frequency response** unchanged however it is turned; only the **overall loudness** changes. The light source can act only through the single knob $w$ — what it changes is the amplitude, not the shape. Section 7 turns this intuition into a criterion.
+
+---
+
+## 4. Second pillar: the cohomological ladder — light and mass are adjacent rungs
+
+### 4.1 The cohomological ladder
+
+**Proposition 3 (counting $n$-fold covers).** Let $G$ be a finite connected graph with first Betti number $\beta_1$. Then the number of $\mathbb{Z}_n$ principal covers of $G$ is
+
+$$\bigl|H^{1}(G;\mathbb{Z}_n)\bigr|=n^{\beta_1}.$$
+
+*Proof.* $H^{1}(G;\mathbb{Z}_n)\cong\mathrm{Hom}\big(\pi_1(G),\mathbb{Z}_n\big)$, and the free part of $\pi_1(G)$ has rank $\beta_1$, hence $\lvert\mathrm{Hom}(\mathbb{Z}^{\beta_1},\mathbb{Z}_n)\rvert=n^{\beta_1}$. $\square$
+
+**Table 7.** The cohomological ladder (Appendix A, PART 4a; $\beta_1$ measured).
+
+| Graph | $V$ | $E$ | $\beta_1$ | $\lvert H^{1}(\mathbb{Z}_2)\rvert=2^{\beta_1}$ | $\lvert H^{1}(\mathbb{Z}_3)\rvert=3^{\beta_1}$ |
+|---|---|---|---|---|---|
+| $C_3$ (triangle) | 3 | 3 | 1 | 2 | 3 |
+| $K_4$ | 4 | 6 | 3 | 8 | 27 |
+| $Q_3$ (cube) | 8 | 12 | 5 | 32 | 243 |
+| $M_6$ | 6 | 9 | 4 | 16 | 81 |
+| $Y_3$ closed (nucleon skeleton) | 12 | 18 | 7 | 128 | **2,187** |
+| $Y_3$ open (one ring edge removed) | 12 | 17 | 6 | 64 | **729** |
+| $M_{60}$ ($\alpha$ anchor carrier) | 60 | 90 | 31 | 2,147,483,648 | 617,673,396,283,947 |
+
+**The reading of Table 7 is the central sentence of this paper: this ladder has only one free parameter — the $n$ of the coefficient group.** Light and mass are not two mechanisms but **adjacent rungs of one and the same ladder**: light takes the $n=2$ column, mass the $n=3$ column. The readings of the $n=3$ column agree item by item with the project's triality report [4], with consistent conventions.
+
+### 4.2 The capacity criterion: why the light gear cannot hold three generations
+
+**Theorem 2 (capacity criterion).** Attach a $\mathbb{Z}_N$ label to each of the three edges of a triangle. Then:
+
+- $\mathbb{Z}_2$: the reachable partition patterns are only $\{3\}$ and $\{2{+}1\}$, **$(1,1,1)$ is unreachable**, and the maximum number of pairwise distinct labels $=2$;
+- $\mathbb{Z}_3$: the reachable patterns include $(1,1,1)$, and the maximum number of pairwise distinct labels $=3$;
+- $\mathbb{Z}_4$: likewise includes $(1,1,1)$, and the maximum number of pairwise distinct labels $=3$.
+
+*Proof.* The labels of the three edges in $\mathbb{Z}_N$ are $(a,b,c)$, and the partition pattern is the partition of their multiplicities. Under $\mathbb{Z}_2$, $a,b,c\in\{0,1\}$, so the three fall into at most 2 distinct values and the partition can only be $(3)$ or $(2,1)$; under $\mathbb{Z}_3$, taking $(a,b,c)=(0,1,2)$ gives $(1,1,1)$. $\square$
+
+**Measurement** (Appendix A, PART 4b): the reachable patterns for $\mathbb{Z}_2$ $=\{(3),(2,1)\}$; both $\mathbb{Z}_3$ and $\mathbb{Z}_4$ include $(1,1,1)$ (proven, within-model).
+
+**Corollary 1.** Since $\lvert\mathbb{Z}_2\rvert=2<3$, **the light gear structurally cannot carry three generations**. This is the **hard reason** for "changing the coefficient group", and the **group-theoretic root** of the project's negative verdict in round 29 ("under two-valued labelling a triangle gives at most $2{+}1$, and $\{1,1,1\}$ is never reachable") [5].
+
+**Analogy 5 (a two-compartment drawer cannot hold three things).** Theorem 2 says: a drawer with only two compartments cannot, however it is arranged, hold something that requires "three pairwise distinct items". This is not a question of "arrangement technique" but of **too few compartments** — irrespective of **what the third item is**. The restriction is purely combinatorial, and therefore has nothing to do with physical questions such as "whether light is a wave".
+
+### 4.3 A limitation that must be stated clearly: $\mathbb{Z}_3$ is "smallest", not "unique"
+
+**The literature says $\mathbb{Z}_4$ also gives three pairwise distinct labels** (third column of Theorem 2). Hence:
+
+> **Remark 3.** "$\lvert\mathbb{Z}_n\rvert\ge3$" is only a **necessary condition**; the status of $\mathbb{Z}_3$ is that of the **smallest** (the first gear that is just big enough), **not the unique** one. The **uniqueness** of $\mathbb{Z}_3$ requires a separate reason — what the project's triality report [4] gives is "the three rings form a single orbit under $\mathrm{Aut}$, of size exactly 3 ⇒ there exists a group of order exactly 3 acting freely and transitively on them (a $G$-torsor)". But this uses "the number of juxtaposed positions $=3$", and "why the number of positions is 3" remains undecided. **Circular argument is not allowed.**
+
+This paper does **not** claim that $\mathbb{Z}_3$ is unique. It uses only half of it — the **necessary condition**: $\mathbb{Z}_2$ is **not enough**.
+
+### 4.4 The same parent group
+
+**Proposition 4 (common parent group).** $\mathbb{Z}_2\subset U(1)$, $\mathbb{Z}_3\subset U(1)$, and $U(1)$ is precisely the electromagnetic gauge group. Hence:
+
+- **light = the order-2 subgroup of $U(1)$** (phase taking $\{0,\pi\}$, i.e. the 2nd root of unity);
+- **mass = the order-3 subgroup of $U(1)$** (phase taking $\{0,\frac{2\pi}{3},\frac{4\pi}{3}\}$, i.e. the 3rd root of unity).
+
+*Literature basis.* The original wording of McRae 2025 [6] is "**triality may be seen as multiplication of the basis by a third root of unity, just as duality is often multiplication by a second root of unity**" — that is, **duality = $\mathbb{Z}_2$, triality = $\mathbb{Z}_3$**.
+
+**Remark 4.** By G12 (§2.4): the **continuous phase** of $U(1)$ (coupling strength, continuous angles) belongs on both sides to the **continuous side** and requires external input. This paper treats only the **discrete gears** on both sides.
+
+---
+
+## 5. Third pillar: the three-ring $\mathbb{Z}_3$-torsor and "closed → open"
+
+This section reviews the mass-side structure, to provide the basis for the comparisons in §6 and §8; the full proof is in the project's mass-origin paper [7].
+
+### 5.1 The torsor structure (cited)
+
+**Theorem 3 (the $\mathbb{Z}_3$-torsor structure of the three rings, [4][7]).** The three rings of the closed-state nucleon skeleton $Y_3\ltimes\triangle_3$ ($V=12$, $E=18$, $\beta_1=7$, $\lvert\mathrm{Aut}\rvert=36$) form a $\mathbb{Z}_3$-torsor: there is a **cyclic order**, but **no absolute origin**; the only degree of freedom is an **overall phase shift**.
+
+Its explicit witness is the order-3 automorphism $\varphi:\ L_{ij}\mapsto L_{i,(j+1)\bmod 3}$. **Measurement** (Appendix A, PART 5b): edge-preserving = true, $\mathrm{ord}(\varphi)=3$ = true, $\varphi\ne\mathrm{id}$ = true (proven, within-model).
+
+### 5.2 The order-element spectrum: closed → open = $\mathbb{Z}_3\to\mathbb{Z}_2$
+
+**Proposition 5 (the structural change from closed to open).** The order-element spectra of the automorphism groups of the closed state and the open state (one ring edge removed) are as follows.
+
+**Table 8.** Automorphisms and order-element spectra of the two states (Appendix A, PART 5a; proven, within-model).
+
+| State | $\lvert\mathrm{Aut}\rvert$ | order 1 | order 2 | order 3 | order 6 | orbits on the three rings |
+|---|---|---|---|---|---|---|
+| **closed** ($E{=}18$, $\beta_1{=}7$) | **36** | 1 | **15** | **8** | 12 | **1** |
+| **open** (one ring edge removed, $E{=}17$, $\beta_1{=}6$) | **4** | 1 | **3** | **0** | 0 | **2** $\{0\}\mid\{1,2\}$ |
+
+**Reading.**
+
+> **Closed state (unopened): $\mathbb{Z}_3$ is alive (8 elements of order 3) ⇒ triality ⇒ mass / three generations.**
+> **Open state (opened): $\mathbb{Z}_3$ vanishes, only $\mathbb{Z}_2$ remains ⇒ duality ⇒ light.**
+
+And the project's residuality axiom (§2.1a) states plainly that "light is … a **mutually non-annihilating topological residue**" — **light falls precisely on the "opened / unclosed" side**. The two **agree in direction**.
+
+**Remark 5 (this is a structural conjecture, not a proven equivalence).** Equating the "open state" with "light" is a **structural conjecture** of this paper; the paper claims only **consistency of direction** (see Appendix B, item 3).
+
+### 5.3 The character decomposition of $\mathbb{Z}_3$
+
+**Table 9.** The character decomposition of $\mathbb{Z}_3$ on the vertex space and the edge space (Appendix A, PART 5c; proven, within-model).
+
+| Space | $\dim$ | $\chi(\varphi)$ | Decomposition | Trivial weight | Non-trivial weight |
+|---|---|---|---|---|---|
+| vertices | 12 | 3 | $6\cdot1+3\omega+3\omega^{2}$ | $6/12=\mathbf{1/2}$ | $6/12=\mathbf{1/2}$ |
+| edges | 18 | 0 | $6\cdot1+6\omega+6\omega^{2}$ | $6/18=\mathbf{1/3}$ | $12/18=\mathbf{2/3}$ |
+
+**Remark 6 (registration discipline).** The $1/2$, $1/3$, $2/3$ in Table 9 are all **small-denominator rationals** (the D1 trap) and are **without discriminating power** on their own. Their role on the mass side is registered in the candidate chain of [7] §11.2; this paper cites them only as a **comparison** and does not upgrade them.
+
+---
+
+## 6. "Unopened" is the same kind of statement on both sides
+
+The wording put forward by the user in round 32 is "**an evolutionary logic that is unopened and cyclic**". This sentence lands precisely on the light, mass and electromagnetic sides alike, and **lands at the same point**.
+
+### 6.1 The mass side
+
+**Proposition 6 (the "unopened" on the mass side, [7] Proposition 6).** Writing the **multiset** of amplitudes as an **ordered triple** is equivalent to choosing an **origin** for the DFT characters; there are 3 choices of origin, and the three choices give **exactly the same** permutation invariants.
+
+**Measurement** (Appendix A, PART 7a): with $\eta=1/\sqrt{2}$, $\delta_B=2/9$, the three choices of origin give $Q=0.666666666667$, $\lvert\Delta Q\rvert\le2.2\times10^{-16}$ (proven, within-model).
+
+### 6.2 The light side
+
+**Proposition 7 (the "unopened" on the light side).** By the double-cover parameterisation of $M_n$, $\phi$ and $\phi+2\pi$ **are not the same point but the same point on the antipodal sheet** ($w\to-w$); only traversing $4\pi$ returns to the original sheet.
+
+**Measurement** (Appendix A, PART 7b):
+
+$$\bigl|\mathbf{X}(\phi{+}2\pi,w)-\mathbf{X}(\phi,-w)\bigr|=0,\qquad \bigl|\mathbf{X}(\phi{+}4\pi,w)-\mathbf{X}(\phi,w)\bigr|=1.1\times10^{-15}\ (\text{proven, within-model}).$$
+
+### 6.3 The three sides are one and the same kind of statement
+
+**Table 10.** The exact meaning of "unopened" on the three sides (proven, within-model).
+
+| Side | Exact meaning of "unopened" | What is identified away |
+|---|---|---|
+| **mass** | no origin-bearing DFT ⇒ the origin of $\mathbb{Z}_3$ is unobservable, giving only the equivariance class | the **origin label** of $\mathbb{Z}_3$ |
+| **light** | $\phi$ and $\phi+2\pi$ are the same point on the antipodal sheet, giving only $4\pi$ closure | the **antipodal sheet** of $\mathbb{Z}_2$ |
+| **electromagnetic wave** | gauge invariance: $A\to A+d\lambda$ leaves observables unchanged ($P_E$ idempotent) | the **gauge function** of $U(1)$ |
+
+> **All three = "do not fix an origin in advance, output only gauge invariants".** The difference lies only in **what is identified away**. This explains why the wording "unopened" can cover all three at once — it is not a metaphor but **one and the same kind of gauge structure**.
+
+**Remark 7 (two senses of "opening" must not be conflated).** "Opening" has two layers, which must be strictly distinguished:
+
+**Table 11.** Two senses of "opening".
+
+| Layer | Operation | Consequence |
+|---|---|---|
+| **(i) gauge layer** | choose an origin = label | invariants **unchanged** (redundancy) — this is the layer meant in this section |
+| **(ii) physical layer** | closed → open (cut one ring edge) | $\lvert\mathrm{Aut}\rvert$ drops from 36 to 4 and the order-3 elements from 8 to zero: a **real** breaking $\mathbb{Z}_3\to\mathbb{Z}_2$ (§5.2, §7) |
+
+---
+
+## 7. The source is invisible: one emission = one closed → open transition
+
+### 7.1 The source injects only one scalar
+
+This section answers the remainder of P1 and the first half of P3: **can the source of light be seen?**
+
+**Theorem 4 (channel uniqueness).** Within the **family of linear perturbations preserving the $P$ symmetry**, only the $w$ channel (identification weight / holonomy) simultaneously satisfies:
+
+- (i) it acts **only on the odd sector**;
+- (ii) it applies **the same displacement** $2\delta$ to every mode of the odd sector.
+
+*Proof.* By Proposition 1, $\mu_k=2c(1-\cos\frac{2\pi k}{n})+2w\mathbb{1}[k\ \text{odd}]$. A perturbation $\delta c$ of $c$ gives $\Delta\mu_k=2\delta c(1-\cos\frac{2\pi k}{n})$, which appears **in both sectors at once** (violating i) and is non-uniform in $k$ (violating ii). A perturbation $\delta w$ of $w$ gives $\Delta\mu_k=2\delta w\,\mathbb{1}[k\ \text{odd}]$: only in the odd sector (satisfying i), and $\Delta\mu_k/2\delta w\equiv1$ (satisfying ii). The supports of the two on $\{v_k\}$ determine their action spaces, so within the linear family preserving $P$ the channel is **unique**. $\square$
+
+**Measurement** (Appendix A, PART 3a): $w:1\to1+\delta$, $\delta\in\{10^{-3},10^{-2},10^{-1},5\times10^{-1}\}$:
+
+**Table 12.** Uniformity test of the $w$ channel (proven, within-model).
+
+| $\delta$ | range of $\Delta\mu$ in the odd sector | range of $\Delta\mu/2\delta$ | range of $\Delta\mu$ in the even sector |
+|---|---|---|---|
+| $10^{-3}$ | $1.8\times10^{-15}$ | $1.000000000\sim1.000000000$ | $0$ |
+| $10^{-2}$ | $8.9\times10^{-16}$ | $1.000000000\sim1.000000000$ | $0$ |
+| $10^{-1}$ | $1.8\times10^{-15}$ | $1.000000000\sim1.000000000$ | $0$ |
+| $5\times10^{-1}$ | $8.9\times10^{-16}$ | $1.000000000\sim1.000000000$ | $0$ |
+
+**Corollary 2 (the spectral shape is unchanged).** Under the $w$ channel the **spectral shape of the photon sector is preserved mode by mode**, with only an overall shift by $2\delta$.
+
+**Measurement** (Appendix A, PART 3b): after subtracting the shift and comparing with the baseline, the residual is $8.9\times10^{-16}$ (proven, within-model).
+
+> **On the light side the source is invisible; one can hear its sound (amplitude) but cannot see its shape.**
+
+### 7.2 Counterexample control
+
+**Table 13.** Counterexample: the circumferential channel $c=1+u$ (Appendix A, PART 3c; proven, within-model).
+
+| $u$ | range of displacement in the odd sector | range of displacement in the even sector | odd sector only? |
+|---|---|---|---|
+| $10^{-2}$ | $3.98\times10^{-2}$ | $4.00\times10^{-2}$ | **no** (both sectors move) |
+| $10^{-1}$ | $3.98\times10^{-1}$ | $4.00\times10^{-1}$ | **no** |
+
+⇒ both criteria **fail**. So "the light-exclusive channel = $w$" is **screened out**, not chosen at will.
+
+**Back to Analogy 4.** $w$ is exactly that "volume knob": it **raises the whole frequency-response curve** (a shift) without touching its shape; whereas $c$ is more like "adjusting the timbre" — it **changes the shape of the curve**, and hence is no longer "the same carrier at a different strength".
+
+### 7.3 Energy lives in the ledger, the carrier lives in the spectrum
+
+**Theorem 5 (orthogonality of ledger and spectrum).** On the nucleon skeleton $Y_3$, "closed → open" (cutting one ring edge) **changes only ledger quantities** ($E$, $\beta_1$, the number of rings) and **does not change spectral quantities** ($\rho$, $\lambda_2$ and the sector structure).
+
+*Proof (measurement + structural explanation).* See **Table 14**: the ledger quantities $E$ and $\beta_1$ each change by $-1$, while the changes in $\rho$ and $\lambda_2$ are zero to machine precision. The structural reason is that $\rho$ and $\lambda_2$ are **automorphism invariants** (points in the same orbit take the same value), whereas "which edge is cut" is **explicit bookkeeping** — by the project's dichotomy of "graph functional vs. ledger" [7] §9.1, invariants are **blind** to points in the same orbit, so the cut-edge information can only be carried by the ledger. $\square$
+
+**Table 14.** Signature vector of the $Y_3$ skeleton closed ↔ open (Appendix A, PART 6a; proven, within-model).
+
+| Quantity | closed | open | difference | Class |
+|---|---|---|---|---|
+| $V$ | 12 | 12 | $+0$ | **ledger** |
+| $E$ | 18 | 17 | $-1$ | **ledger** |
+| $\beta_1$ | 7 | 6 | $-1$ | **ledger** |
+| $\rho$ | 5.302775637732 | 5.302775637732 | $-4.4\times10^{-15}$ | **spectral (unmoved)** |
+| $\lambda_2$ | 1.000000000000 | 1.000000000000 | $1.3\times10^{-15}$ | **spectral (unmoved)** |
+
+**Corollary 3 (division of labour between source and carrier).** **Energy** (how much is released) lives in the **ledger**; the **light carrier** lives in the **spectral invariants**; the two are **orthogonal**. ⇒ **The source changes only the ledger, not the carrier.**
+
+**Table 15.** Spectral quantities when each of the 18 edges is cut in turn (Appendix A, PART 6b; proven, within-model).
+
+| Edge class | count | range of $\rho$ | value of $\lambda_2$ (range within the class) |
+|---|---|---|---|
+| ring edges (L–L) | 9 | $2.7\times10^{-15}$ | $1.000000000$ ($2.3\times10^{-15}$) |
+| strand edges (c–L) | 9 | $3.6\times10^{-15}$ | $0.527166091$ ($2.2\times10^{-15}$) |
+
+**Remark 8 (a refinement, not a refutation).** The project's nucleon paper §4 records that "in the open state, cutting one ring edge ⇒ $\rho$, $\lambda_2$ unchanged". Table 15 **refines** this to: $\rho$ is a **globally strict invariant** (18/18 edges, range $\sim10^{-15}$); whereas $\lambda_2$ is an **orbit-level invariant** — it stays constant only **within one $\mathrm{Aut}$-orbit** (the ring-edge orbit gives $1.0$, the strand-edge orbit $0.527$), and does **not** depend on which particular edge was cut. The original statement is **correct** in the context "cutting a ring edge"; generalised to "immune to whichever edge is cut" it **does not hold**.
+
+**Analogy 6 (the ledger and the scale).** Picture a warehouse: the **stock ledger** records every movement of goods in and out (ledger quantities), while the **calibration of the weighing platform** (the spectrum) records the manner of weighing and does not change its calibration because one crate is missing. Table 14 of this paper separates the two — the source (one crate missing) moves the **ledger**, the carrier (the calibration) does not. **Chemical energy** and **nuclear energy** can be described by one and the same language precisely because their difference is recorded only in the ledger, while the way the calibration is read is the same.
+
+---
+
+## 8. Masslessness and the unification of chemical and nuclear light
+
+### 8.1 The light carrier has no additive scale
+
+**Proposition 8 (the light carrier has no additive scale).** The spectrum of the light carrier $P$ is identically $\{+1,-1\}$ ($\lvert\mathrm{eig}\rvert\equiv1$), the spectral mean is $\mathrm{tr}(P)/n=0$, and $\mu_0=0$ holds identically; whereas the spectral mean of the mass carrier $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$ **equals the free parameter $c_0$**.
+
+**Table 16.** Spectral means of the two carriers (Appendix A, PART 8; proven, within-model).
+
+| Carrier | Spectrum | Spectral mean | Additive scale |
+|---|---|---|---|
+| light: $P$ | identically $\{+1,-1\}$, $\lvert\mathrm{eig}\rvert\equiv1$ | $\mathbf{0}$ | **none** ($\mu_0=0$ holds identically) |
+| mass: $A$ | $c_0+2\lvert c_1\rvert\cos(\theta+\frac{2\pi k}{3})$ | $\equiv\mathbf{c_0}$ | **present** ($c_0$ is a free parameter) |
+
+*Measurement* (Appendix A, PART 8b): for $c_0\in\{0,0.5,1,2\}$ the spectral mean of the mass carrier is exactly $0,0.5,1,2$; the light carrier has mean identically $0$ for every $n$ (proven, within-model).
+
+By G12 (§2.4): $c_0$ is that dimension which **must be input externally**. This is the answer to predicament (4) of §1.2, and is **three phrasings of the same conclusion** — with the project's existing corollary "a pure transition has no mass ⇒ the photon is unique" and with "the absolute scale $c_0\in$ outside SRE" (**not three independent pieces of evidence**, see Remark 9).
+
+**Remark 9 (prohibition of double counting).** The following three point to **one and the same place** and **must not be listed as mutually corroborating evidence**:
+
+1. this section: the light carrier has no additive scale while the mass carrier does ⇒ $c_0$ is the dimension that "must be input externally";
+2. the project's `_sre_boson_transition.py`: "$\rho$ is a transition invariant ⇒ a pure transition has no mass ⇒ the photon is unique";
+3. the project's mass-origin paper §10: the absolute scale $c_0\in$ outside SRE (SRE gives only ratios) [7].
+
+> **Mass needs a scale that SRE cannot supply; light does not.** This is the **formal location** of "the photon is massless" in SRE. It must be stressed that "the photon is massless" has a different source in the Standard Model (gauge invariance plus only two transverse degrees of freedom); the statement here carries only the one layer "**no $\mathbb{Z}_3$ ⇒ no such unopened cycle**", and the two **must not be conflated**.
+
+### 8.2 Chemical light and nuclear light: the same carrier
+
+**Table 17.** Comparison of the two sources on the SRE carrier (Appendix A, PART 2, 3, 6; proven, within-model).
+
+| Aspect | Chemical energy / atomic emission | Nuclear emission ($\gamma$) | Attribution on the SRE side |
+|---|---|---|---|
+| carrier | odd sector $P$ | odd sector $P$ | **the same** ($P$ determined by $n$ alone) |
+| sector structure | $n/2$ even + $n/2$ odd | the same | **the same** |
+| spectral shape | independent of the source | independent of the source | **the same** (Corollary 2) |
+| coupling quantity | one scalar $w$ | one scalar $w$ | **of the same type**, differing only in magnitude |
+| transition occurs at | L1/L2 (electronic–molecular level) | L3 (nuclear level) | **different** |
+| order of magnitude of released energy | $\sim$1–10 eV | $\sim$0.1–10 MeV | **external ledger** (Remark 10) |
+
+**⇒ Answer to P3: yes.** Chemical light and nuclear light **share the same carrier** on the SRE side, and this is not a new assumption but a **direct corollary** of "there is no place to put a source on the light side" (§3.4) and "ledger and spectrum are orthogonal" (§7.3).
+
+**Analogy 7 (a battery and a generator).** The same light bulb can be connected to a **battery** (chemical energy) or to a **generator** (mechanical energy) — the bulb (the carrier) is exactly the same, and what changes is the **power source**. If someone asks "is a bulb lit by a battery the same kind of bulb as one lit by a generator", the answer is obviously "the same bulb, a different source". Table 17 of this paper says exactly this: **the carrier is the same, the source differs**.
+
+### 8.3 The difference lies in the ledger
+
+**Remark 10 (prohibition of appropriating a homonymous term).** The project's existing "span of 13.40 orders of magnitude across three layers" (L1 $-2.30$/L2 $-0.09$/L3 $+11.10$) is the span of the **sensitivity of decay rates to the environment**, **not** a span of photon energies. The two are different physical quantities and **must not be cross-cited**.
+
+**Remark 11 (annotation of external magnitudes).** The eV/MeV in Table 17 are **external reference magnitudes** (neither measured here nor an SRE output): the ratio is $\sim10^{5\text{–}6}$. **This is the ledger magnitude of the source; there is no corresponding reading on the SRE side** — the same gap as $c_0$ in §8.1.
+
+---
+
+## 9. Connection with existing SRE light-side documents
+
+This section connects this paper item by item with the four existing clues (Table 2), in order to confirm that this paper **adds no light-side physical content** and only performs **structuring and making-recomputable**.
+
+### 9.1 The residuality axiom and the "open state"
+
+The project's residuality axiom (§2.1a) says that light is a "mutually non-annihilating **topological residue**". The structural fact of §5.2 of this paper is: the closed state has $\lvert\mathrm{Aut}\rvert=36$ and contains 8 elements of order 3; the open state has $\lvert\mathrm{Aut}\rvert=4$ and **zero order-3 elements**.
+
+> **"Residue" = the part of the structure that has not been closed away.** What is supported by $\mathbb{Z}_3$ in the closed state and **vanishes** in the open state is exactly the "triality" part; what remains is $\mathbb{Z}_2$. Hence "light is a residue" and "light is on the $\mathbb{Z}_2$ gear" **agree in direction**.
+
+**Remark 12.** This is only **consistency of direction**, and does not constitute a proof that "open state = light" (see Appendix B, item 3).
+
+### 9.2 Formal separation of the two $\delta$'s
+
+The comparison of this paper touches **two** homonymous symbols, which must be pinned down item by item:
+
+**Table 18.** Separation of the two $\delta$'s.
+
+| | $\delta_A$ (electron topology §3 [2]) | $\delta_B$ (mass side [7]) |
+|---|---|---|
+| definition | $\delta_A=w^{*}-1$, the **coupling strength** of the $\mathbb{Z}_2$ holonomy channel $=4.347\times10^{-5}$ | the **phase** (relative DFT origin), mod $2\pi/3$ |
+| character | **metric parameter** (continuous, not a topological invariant) | **gauge** (redundancy) |
+| consequence | raises the photon sector only, $+2\delta_A$ per mode (Table 12) | zero effect on invariants (Proposition 6) |
+| independent measurement | **in principle** falsifiable, currently infeasible (an $\alpha^{*}$ input is required) | unobservable quantity |
+
+**One is a metric, the other a gauge. They are not interchangeable.** This paper writes $\delta_A$/$\delta_B$ throughout.
+
+**Remark 13 (an operational warning).** The **fingerprints** of Table 12 and Proposition 6 are **completely identical** (both are "raise the odd sector only, by an equal amount per mode"), and the difference lies only in **semantics**: $\delta_A$ is a metric **fixed** by an external input, $\delta_B$ a gauge **freely choosable**. This is exactly why the phenomenon "raising the odd sector" is by itself **insufficient** to distinguish the two — one must state together whether it changes observables.
+
+### 9.3 The $\alpha$ anchor and the Möbius ladder
+
+The project already has a relation of the "constant ↔ single invariant" type on $\alpha$ and $M_{60}$ [2][3]:
+
+$$\Pi_1(M_n)=\frac{4\sin^{2}(2\pi/n)}{2+2w+2\cos(2\pi/n)}\Big|_{w=1},\qquad \Pi_1(M_{60})=7.297458502\times10^{-3},$$
+
+with a relative deviation of $1.45\times10^{-5}$ from the CODATA value $1/137.035999084=7.297352569\times10^{-3}$; solving $\Pi_1(M_n)=1/\alpha$ gives $n^{*}=60.000436$ (**Appendix A, PART 9, proven, within-model**).
+
+**Table 19.** $\alpha$ anchor readings (Appendix A, PART 9).
+
+| Quantity | Value |
+|---|---|
+| $\lambda_2(M_{60})$ | $0.043704798532$ |
+| $\rho(M_{60})=\lambda_{\max}$ | $5.989043790737$ |
+| $\Pi_1(M_{60})=\lambda_2/\rho$ | $7.297458502\times10^{-3}$ |
+| CODATA $1/\alpha$ | $137.035999084$ |
+| relative deviation | $1.452\times10^{-5}$ |
+| $n^{*}$ | $60.000436$ |
+
+This paper needs only this one item: **the light-side carrier $M_n$ and the mass-side carrier $Y_3$ are two members of one family** — both appear in the cohomological ladder of Table 7.
+
+### 9.4 The discrete Maxwell engine
+
+**Table 20.** Structural readings of `code/Maxwell.py` (Appendix A, PART 10; proven, within-model).
+
+| Quantity | Value |
+|---|---|
+| incidence matrix $D$ | $12\times8$, $\mathrm{rank}(D)=7=V-1$ |
+| $\beta_1=E-\mathrm{rank}(D)$ | $12-7=\mathbf{5}$ |
+| ring-edge matrix $C$ | $5\times12$, $\mathrm{rank}(C)=5$ |
+| projector $P_E$ | idempotent ✓, symmetric ✓, $\mathrm{rank}=7$ |
+| engine actually running (Gauss residual) | $\max\lvert\text{residual}\rvert=2.842\times10^{-14}$ |
+
+**The mathematical content of "gauge-covariant closure" = the projector $P_E$ is idempotent ⇒ field evolution is locked inside the chain space (the gauge orbit).** This is **of the same type** as the "invariant projection" on the mass side (cf. the third row of Table 10): **both rely on an idempotent projection to restrict the result to the physical subspace** — on the light side projecting onto the chain space and erasing the gauge component, on the mass side projecting onto the $S$-equivariance class and erasing the choice of origin.
+
+**Remark 14 (D1 warning).** $\mathrm{rank}(P_E)=7$ is the **dimension of the image space of 0-forms**, while $\beta_1=7$ is the **dimension of the 1-homology** — the same number with different meanings, and **mutual evidence is forbidden**. Likewise, $\mathrm{rank}(C)=5$ and $\beta_1=5$ being numerically equal is also a coincidence (noted in Appendix A, PART 10).
+
+---
+
+## 10. Discussion
+
+### 10.1 Screening of homonyms (an old pitfall of this project)
+
+This paper touches **four groups** of homonyms, pinned down item by item:
+
+**Table 21.** Four groups of homonyms.
+
+| Group | A | B |
+|---|---|---|
+| **$\delta$** | $\delta_A$ = $\mathbb{Z}_2$ holonomy **coupling strength** (metric) | $\delta_B$ = **phase** (gauge) |
+| **$\Pi_1$** | spectral projection $\lambda_2/\rho$ (Möbius closed form) | skeleton closure degree ($Y_3=0.188580485$) |
+| **"opening"** | choosing an origin = gauge (invariants unchanged) | closed → open cut = real breaking $\mathbb{Z}_3\to\mathbb{Z}_2$ |
+| **"light"** | the residuality axiom ($\mathbb{Z}_2$ gear, discrete) | the discrete Maxwell engine ($U(1)$ continuous gauge) |
+
+There is also the **same number, different meaning** case: $\mathrm{rank}(P_E)=7$ vs. $\beta_1=7$ (Remark 14). All of the above **may under no circumstances be used as mutual evidence**.
+
+### 10.2 Relation to external work
+
+**Table 22.** Forms in which light/electromagnetic structures appear in the literature.
+
+| Work | Related structure |
+|---|---|
+| McRae 2025 [6] | "triality = multiplication by a third root of unity, just as duality = multiplication by a second root of unity" — the **direct literature basis** for the gear proposition of this paper |
+| Berry phase and the AB effect | both are $U(1)$ continuous phases; the $\delta_A$ of this paper is a **continuous coupling** on the discrete $\mathbb{Z}_2$ gear, and is **of a different class** (distinguished in the project's T1-H4) |
+| the $\mathbb{Z}_2$ invariant of topological insulators | the edge-state coupling is $U(1)$ rather than $\mathbb{Z}_2$; the $\delta_A$ of this paper **has no Standard-Model counterpart** [2] |
+
+**The difference from them lies in the landing point**: the works above take $\mathbb{Z}_2$/$\mathbb{Z}_3$ as their **starting point**; in this paper the gear is **read out** from the **automorphisms and spectrum** of the SRE skeleton (the involution $P$ and the three-ring torsor). That is, what this paper provides is a structural source for "**why these coefficient groups appear**".
+
+### 10.3 Candidates and registration
+
+**Remark 15 (candidates, not upgraded).** Two items are **registered as candidates** and **must not** be promoted to conclusions:
+
+1. **physical comparison**: "2 photon polarisations ↔ 2 of $\mathbb{Z}_2$" and "three generations ↔ 3 of $\mathbb{Z}_3$" are **structurally parallel** (a capacity comparison of discrete gears), **not a quantum-number correspondence**, and **must not be used as mutual evidence**;
+2. **"the photon is massless" ↔ there is no $\mathbb{Z}_3$ torsor on the light side**: a **weak candidate**, whose Standard-Model source is different (Remark 9).
+
+### 10.4 The discrete-closure-law perspective
+
+The conclusion of this paper is located as **case 18 of G12**:
+
+- **discrete side (closed)**: why the gears are two and three (involution / torsor); why the source is a single scalar (channel uniqueness, Theorem 4); why energy and carrier are orthogonal (Theorem 5); why "unopened" is gauge (Propositions 6, 7);
+- **continuous side (input required)**: the energy scale of light (eV/MeV order), the absolute value of the coupling strength $\delta_A$, the $U(1)$ continuous phase.
+
+It is of the same type as the previous instances: **discrete structure fixes the shape, continuous quantities must be paid externally**. An empirical corroboration still holds: **those that pass the tests are all dimensionless ratios, those with a negative verdict are all quantities seeking dimensionalisation.**
+
+---
+
+## 11. Conclusion
+
+This paper gives the following rulings on "the positioning of light and electromagnetic waves in SRE":
+
+1. **Gear layer**: light and mass are **two gears of the same machine** — light runs on $\mathbb{Z}_2$ (duality), mass on $\mathbb{Z}_3$ (triality), and the two are **adjacent rungs** of one **cohomological ladder** $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$ (Proposition 3, Table 7). "Changing gear = changing the coefficient group", and the hard reason is the **group-theoretic prohibition** $\lvert\mathbb{Z}_2\rvert=2<3$ (Theorem 2, Corollary 1).
+2. **Carrier layer**: the light carrier = **the odd eigenspace of the involution $P=S^{n/2}$** (Definition 2); it is completely determined by the single integer $n$, with **zero continuous free parameters** (Proposition 2, Table 6). **In the symmetry carrier there is no place to put a source.**
+3. **Source layer**: the spectrum splits into a "**sector-blind term + odd-sector constant term**" (Proposition 1); within the linear family preserving $P$, **only the $w$ channel** satisfies both "odd sector only" and "uniform shift" (Theorem 4) — measurement shows the $n/2$ odd-sector modes are shifted by strictly the same amount, the even sector is always motionless, and the **spectral shape is preserved mode by mode** (Corollary 2, Table 12). ⇒ **The source is invisible; one can hear its sound only.**
+4. **Transition layer**: "**one emission = one closed → open transition**" (Theorem 5): the **ledger difference** carries the energy, the **spectral invariants** carry the carrier, and the two are **orthogonal** (Table 14). ⇒ A chemical light source and a nuclear light source **share the same carrier**, their only difference being the level at which the ledger is recorded (Table 17).
+5. **Masslessness layer**: the light carrier has no additive scale (spectral mean $\equiv0$); the spectral mean of the mass carrier is $\equiv c_0$ (a free parameter) (Proposition 8, Table 16). This explains the **formal location** of "the photon is massless" in SRE, and is three phrasings of the same conclusion as "a pure transition has no mass ⇒ the photon is unique" and "$c_0\in$ outside SRE" (Remark 9).
+6. **Gap layer**: **the energy scale of light** (eV/MeV order) and **the absolute value of the coupling strength $\delta_A$** must be input externally — of the same type as the $\eta$ and $c_0$ gaps on the mass side (payment on the continuous side).
+
+**Overall statement of the conclusion.** **Light = the involutive invariant of the $\mathbb{Z}_2$ gear**; its carrier is borne by the odd sector of the involution $P$; "unopened" = outputting only gauge invariants; "source" = able to inject only one scalar. What SRE can give: **the gear, the carrier, channel uniqueness, the orthogonality of ledger and spectrum**; what it cannot give: **the energy scale of light and the absolute value of the coupling strength**. And **the reason chemical light and nuclear light can be described by one and the same language is not that they "happen to be similar", but that the source cannot enter the carrier.**
+
+---
+
+## Appendix A　Recomputation list
+
+**Recompute all readings in one command** (requires numpy + networkx):
+
+```
+python.exe -u _sre_light_origin_paper_check.py \
+    > _sre_light_origin_paper_check.log 2>&1      # all readings of the main text (PART 1-11)
+```
+
+**Table A1.** Correspondence between the readings of this paper and the recomputation script.
+
+| Location in this paper | Script PART | Key output |
+|---|---|---|
+| Proposition 1, Table 4 (§3.2) | PART 1a | max deviation closed form vs. numerical $\le6.2\times10^{-15}$; $\mu_0=0$ |
+| Theorem 1 (§3.3) | PART 1b–1c | $\lambda_2=0.043704798532$; spread over the $w$ scan $4.3\times10^{-15}$ |
+| Proposition 2, Tables 5–6 (§3.4) | PART 2 | all eleven tests true |
+| Theorem 4, Table 12 (§7.1) | PART 3a–3b | odd-sector shift range $\le1.8\times10^{-15}$; $\Delta\mu/2\delta\equiv1$; shape residual $8.9\times10^{-16}$ |
+| Table 13 (§7.2) | PART 3c | counterexample: the $c$ channel moves both sectors ($3.98\times10^{-2}$/$4.00\times10^{-2}$) |
+| Proposition 3, Table 7 (§4.1) | PART 4a | cohomological ladder (including $M_{60}$: $\beta_1=31$) |
+| Theorem 2 (§4.2) | PART 4b | $\mathbb{Z}_2$ patterns $\{(3),(2,1)\}$; $\mathbb{Z}_3$ contains $(1,1,1)$ |
+| Theorem 3, Proposition 5, Table 8 (§5) | PART 5a–5b | closed $36/1/15/8/12/1$ orbits; open $4/1/3/0/0/2$ orbits; $\varphi$ edge-preserving of order 3 |
+| Table 9 (§5.3) | PART 5c | vertices $1/2\mid1/2$; edges $1/3\mid2/3$ |
+| Theorem 5, Tables 14–15 (§7.3) | PART 6a–6b | $E:18\to17$, $\beta_1:7\to6$; $\rho$, $\lambda_2$ range $\sim10^{-15}$; $\lambda_2$ ring edges $1.0$/strand edges $0.527166091$ |
+| Propositions 6–7, Table 10 (§6) | PART 7a–7b | $\lvert\Delta Q\rvert\le2.2\times10^{-16}$; $\lvert\mathbf{X}(\phi{+}4\pi)-\mathbf{X}(\phi)\rvert=1.1\times10^{-15}$ |
+| Proposition 8, Table 16 (§8.1) | PART 8a–8b | light carrier mean $\equiv0$; mass carrier mean $\equiv c_0$ |
+| Table 19 (§9.3) | PART 9 | $\Pi_1(M_{60})=7.297458502\times10^{-3}$; deviation $1.452\times10^{-5}$; $n^{*}=60.000436$ |
+| Table 20 (§9.4) | PART 10 | $D$ $12\times8$/$\mathrm{rank}\,7$; $\beta_1=5$; $P_E$ idempotent of rank 7; Gauss residual $2.8\times10^{-14}$ |
+| §4.3, §10 comparison | PART 11 | Koide $Q=0.666664463$, $\eta^{2}=0.499996695$ |
+
+**Table A2.** Preceding scripts (independent sources for the conclusions of this paper; all archived in `code/`).
+
+| Script | Round | Content |
+|---|---|---|
+| `_sre_weight_homology.py` | round 29 | weighted homology / dormancy rate (prerequisite of the $\mathbb{Z}_2$-gear negative verdict) |
+| `_sre_triality_families.py` | round 30 | $\mathbb{Z}_3$ / triality / torsor / Koide |
+| `_sre_light_mass_correspondence.py` | round 35 | light ↔ mass change of coefficient group, cohomological ladder, capacity criterion |
+| `_sre_light_source_universality.py` | round 36 | chemical and nuclear light on one carrier, source invisibility |
+
+---
+
+## Appendix B　Honesty boundary
+
+1. Everything in this paper is a self-consistent statement **internal to the SRE model / at the level of linear algebra and group theory**, and **does not** claim numerical predictions about real physics. The comparison with experimental orders of magnitude (eV/MeV) serves only to illustrate that "the difference lies in the ledger".
+2. **All light-side readings come from the project's existing axioms** (residuality axiom, Möbius double cover, Fork A involution, $\delta_A$, Maxwell engine); this paper **only puts them into recomputable form and adds no light-side physical content**.
+3. **Equating the "open state" with "light" is a structural conjecture.** This paper claims only that §5.2 and the residuality axiom **agree in direction**, and **does not** claim equivalence.
+4. **The capacity criterion of §4.2 gives only a necessary condition.** $\mathbb{Z}_3$ is the **smallest** coefficient group able to carry three gears, **not the unique** one ($\mathbb{Z}_4$ works as well). The uniqueness of $\mathbb{Z}_3$ requires a separate reason, and **must not** be argued circularly from "the number of positions = 3".
+5. **The numerical equality $\mathrm{rank}(P_E)=7$ vs. $\beta_1=7$ is a pure coincidence** (quantities of different dimensions); likewise $\mathrm{rank}(C)=5$ vs. $\beta_1=5$. Mutual evidence is forbidden under the D1 warning.
+6. **$\delta_A$ and $\delta_B$ have the same name but different meanings** (Table 18); this paper has separated them, but historical documents have not all been revised accordingly.
+7. **The "channel uniqueness" of Theorem 4 is confined to the family of linear perturbations preserving the $P$ symmetry.** Non-linear or symmetry-breaking sources lie outside this paper (see the gap layer in §11).
+8. **The continuous phase of $U(1)$ (coupling strength, continuous angles) belongs on both sides to the "continuous side" and requires external input**; this paper does not touch it.
+9. **Table 15 is a refinement of an existing conclusion (not a refutation).** The original statement is correct in its restricted context; this paper does not alter existing documents, only registers.
+10. The conclusion = **case 18 of G12**.
+
+---
+
+## Appendix C　Analogy index
+
+**Table C1.** Index of analogies and illustrations.
+
+| No. | Name | Location | What it illustrates |
+|---|---|---|---|
+| Analogy 1 | the Möbius strip | §2.3 | $\mathbb{Z}_2$ double cover: two laps to return to the original sheet ($4\pi$ closure) |
+| Analogy 2 | three-phase and single-phase electricity | §2.3 | $\mathbb{Z}_3$ (phasor $a$) vs. $\mathbb{Z}_2$ ($-1$): changing gear = changing the coefficient group |
+| Analogy 3 | a switch has only two states | §2.3 | capacity: two states cannot hold three distinct values |
+| Analogy 4 | an amplifier with only a volume knob | §3.4, §7.2 | the source changes amplitude only, not shape (channel uniqueness) |
+| Analogy 5 | a two-compartment drawer cannot hold three things | §4.2 | the capacity criterion is a **counting** problem, not a physical one |
+| Analogy 6 | the ledger and the scale | §7.3 | ledger quantities (energy) vs. carrier quantities (spectrum), mutually orthogonal |
+| Analogy 7 | a battery and a generator | §8.2 | a chemical source and a nuclear source share one carrier; only the source is swapped |
+| Analogy 8 | a prism and dispersion | §6.1 | DFT = dispersion; choice of origin = gauge |
+| Analogy 9 | an altitude datum and relative height | §8.1 | relative quantities (ratios) vs. absolute quantities (requiring an external datum) |
+
+**Usage note.** To explain this paper to a non-specialist, the recommended route is: **Analogy 1** (the Möbius strip) → **Analogy 2** (three-phase electricity) → **Analogy 3** (the switch) → **Analogy 4** (the volume knob) → **Analogy 7** (the battery and the generator). These five steps convey the skeleton of the whole paper without using any additional terminology.
+
+---
+
+## Appendix D　References
+
+[1] This project, *A Complete Characterisation of the Electron in the SRE Framework* (electron complete paper) §3: the residuality axiom (Axiom I) and the closed-form parameter map (Axiom II).
+
+[2] This project, *The Intrinsic Topological Structure of the Electron in the SRE Framework* (electron topology, 2026-09-16): the Möbius double cover, $4\pi$ closure, $\delta=$ the emergent coupling strength of the $\mathbb{Z}_2$ holonomy channel, and six topological tool tests (K1–K6).
+
+[3] This project, *Fork A Axiomatic Derivation: the Double-Cover Four-State Complex and the Fine-Structure Constant*: closed-form spectrum of the weighted Möbius ladder (§3.4), topological protection of the soft mode (§3.5), the modulus no-go and the A5 bare coupling (§7), the parameter-independent signature of $\delta$ (§7.4).
+
+[4] This project, *SRE Triality / Three-Gear Structure Report* (round 30, 2026-09-28): the $\mathbb{Z}_3$-torsor, the order-3 automorphism $\varphi$, the character decomposition, and the first measurement of closed → open $=\mathbb{Z}_3\to\mathbb{Z}_2$.
+
+[5] This project, *SRE Weighted Homology / Dormancy Rate Report* (round 29, 2026-09-28): weighted homology of the $\mathbb{Z}_2$ gear, and the negative verdict "under two-valued labelling a triangle gives at most $\{3,2{+}1\}$".
+
+[6] R. McRae, *Triality as multiplication by a third root of unity* (the root-of-unity characterisation of triality and duality), arXiv:2502.14016 (2025).
+
+[7] This project, *Mass Origin in the SRE Framework: a Circulant-Operator Formulation on the Three-Ring ℤ₃ Torsor* (mass-origin paper, v2.0, 2026-09-28): the circulant operator, the torsor, the invariant moduli space, the Koide relation and the assignment-rule gap.
+
+[8] This project, *Topological Derivation of the Fine-Structure Constant in the SRE Framework*: Möbius topological modelling (§3), the spectral-gap formula and the topological meaning of $n=60$ (§4), the final positioning of $\delta$ (§10).
+
+[9] Particle Data Group, *Review of Particle Physics* (tables of charged-lepton and quark masses).
+
+> **Citation discipline.** When using the references, the "$\approx$" in the original text must be copied verbatim and must not be transcribed as "equals".
+
+
+<div style="page-break-after: always;"></div>
+
+# Emergence of Time in the State–Relational–Entropy Framework
+
+## A Saturation Law for the Rate of Change, Universality, and the Incompatibility of Two Internal Clocks
+
+**Version: 1.0**
+**Date: 2026-10-04**
+**Short abstract: `SRE_时间涌现_摘要.md` (English first, Chinese after)**
+
+---
+
+## Abstract
+
+**Background and problem.** Within the State–Relational Entropy (SRE) framework the word "time" currently carries three distinct objects under one name, so any discussion of whether time is uniform must begin with a clarification of definition. This paper starts from a concrete observation: every update in the evolution loop occurs with a *per-step probability*, and this family of probabilities is what an external observer perceives as "change in the world". If that is so, time is not an externally imposed parameter but a derived quantity obtained *after an internal process has been designated as the clock*. The task of this paper is to turn that sentence into something computable and falsifiable.
+
+**Method.** No new free real number is introduced. $\lambda$ and the step-count scale follow existing registrations, and the evolution loop is unaltered; what is new is one definition and a set of verdicts. The defining quantity is
+
+$$
+\Omega(n)\;=\;\big\langle\,a_{ij}(n)\,\big\rangle_{\text{all }n^{2}\text{ entries}},
+\qquad
+a_{ij}=\frac{\rho_{ij}}{1+\rho_{ij}},\qquad
+\rho_{ij}=\frac{\lambda\,d_{ij}}{|M^{2}|_{ij}+1},
+$$
+
+read as "the time worth of step $n$ = the expected amount of change in the world at that step", together with $T_{\rm em}(n)=\sum_{k<n}\Omega(k)$, the **emergent time**. Every conclusion is synthesized from two **pre-existing zero-parameter laws** (the age-distribution law and the iid $|S_n|$ spectral law of round 77) and then compared against measurement.
+
+**Results.** Seven verdicts. (1) **Saturation**: $\Omega$ rises monotonically toward $1$; at $999$ steps the remaining gap is still $0.1540$, and the self-consistency check holds to $2.2\times10^{-16}$. (2) **Saturation law**: $1-\Omega=c\ln n/\sqrt n$ with $c=0.694157$ and a maximum relative residual of $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail. The same law is predicted **with zero free parameters** by combining the age law with the spectral law, agreeing with measurement to $0.28\%$–$1.65\%$. (3) **Asymptotic uniformity**: the relative step-to-step non-uniformity $\eta$ falls from $4.23\times10^{-3}$ ($n=50$) to $6.10\times10^{-5}$ ($n=980$), and its ratio to the prediction *differentiated from the saturation law* stays inside $[0.873,1.407]$. (4) **Internal non-uniformity**: the rewriting rate of a single element rises monotonically with its own age; at $n=999$ it runs from $0.058931$ (newborn) to $0.957750$ (oldest), so the clock of an individual member is not uniform. (5) **Universality**: sweeping $\lambda$ from $0.2$ to $3.0$ (a factor of $15$) does not move the limit of $\Omega$, only the speed of approach. (6) **Phase transition**: squaring the denominator of the update rule (a single symbol) moves the limit from $1.0000$ to about $0.390$; at $1099$ steps the gap between the two groups has reached $0.4629$ and is still widening. (7) **The price**: calibrating with the memory horizon gives $\tau_{\rm mem}\propto\sqrt n$, calibrating with the amount of change gives $T_{\rm em}\propto n$, and their ratio diverges with $n$ (a factor of $6.89$ and still growing), so **no rescaling can make both clocks uniform simultaneously**.
+
+**Boundaries and conclusions.** Three limitations must be stated. First, the emergent time has **shape but no scale**: $T_{\rm em}\to n$ states that the emergent time is asymptotically equivalent to the external step count, while "how many seconds one step is" remains external input; this paper does not solve the scale problem. Second, at attainable sizes "time is constant" holds only to about $22\%$ ($T_{\rm em}/n=0.7776$ at $n=999$), and convergence is as slow as $\ln n/\sqrt n$. Third, two **guesses formed before measurement** have been refuted by measurement ($c\propto\lambda^{-1}$ gives $-0.577$; "the variant kernel runs away into freezing, $\Omega'\to0$" settles instead at a fixed point near $0.39$), and both are registered honestly as open items rather than used as evidence. One further separation must be preserved: **there is structure, there is no memory** — the joint distribution of the state matrix rejects full independence (row-sum variance is $1.94$–$2.03$ times the iid value, KS $p<10^{-4}$), yet two different prefixes become indistinguishable after continued evolution (exact permutation $p\ge0.3841$, none significant after Holm correction). It is precisely this that gives content to the claim that time must be *emergent* rather than *read off*: the present state carries zero bits about its own past. All numerical verification holds **only inside the SRE model**; any comparison with physical time is stated as a structural analogy and **not** as a numerical prediction.
+
+**Keywords**: State–Relational Entropy (SRE); emergence of time; saturation law; rewriting rate; age law; memory horizon; incompatibility of two clocks; separation of structure and memory; exact permutation test; discrete closure law.
+
+---
+
+## 1. Introduction
+
+### 1.1 Statement of the problem
+
+"What is time" resists treatment because it disguises a **decision about which reading to take** as an **ontological query**. Every actual use of time does the same thing: choose a process believed to run steadily and mark events by its accumulated amount. The Newtonian move is to assume an *externally supplied* standard process; the relativistic move is to concede that every reading requires a *conversion rule*; this paper puts the act of selection itself on the table: **the character of time is not discovered, it is chosen**, and only what remains after that choice is computable.
+
+To speak about this inside SRE one must first grant a fact already confirmed repeatedly: this dynamical machine carries no marking of "what moment it is now". It has no seconds, no frame rate, no list of external clocks. What it has is a step-by-step update loop and one probability assigned at each step. An observer outside sees the machine changing, and it is this change that is read as time. This paper writes that sentence as a formula and asks: **under what conditions does the time read out this way appear uniform?**
+
+### 1.2 Definition clearing: three objects sharing one name
+
+Synonyms must be cleared before any work begins — this project has paid several times already for words that carry two meanings (two $\delta$, two $\Pi_1$, two kinds of "opening", two kinds of "light", two kinds of "13.40 orders", two instances of $m$, and the inverted `dorm` of round 77). "Time" is the third case, and it has three members at once:
+
+| Symbol | Name | Definition | How obtained |
+|---|---|---|---|
+| $t_{\rm ext}$ | external counting time | $n$ (evolution steps) | counting steps from **outside** the network |
+| $\tau_{\rm mem}$ | memory intrinsic time | $\displaystyle\int^{n}\frac{dk}{H(k)}\propto\sqrt n$ (round 77, §8) | calibrating with the **memory horizon** $H$ |
+| $T_{\rm em}$ | emergent time | $\displaystyle\sum_{k<n}\Omega(k)$ (this paper) | calibrating with the **amount of change** $\Omega$ |
+
+None of the three equals or injects into another, and round 77 explicitly forbids taking $n$ as time **unconditionally**. This paper does not circumvent that discipline: §4 shows that $T_{\rm em}/n\to1$ holds **asymptotically but fails strictly at finite $n$**, and gives the exact order of the deviation, $O(\sqrt n\ln n)$. That is, this paper does not argue that "$n$ really is time after all"; it computes *when $n$ starts to behave like time, and how well*.
+
+### 1.3 Contributions
+
+1. Turning "time emerges" from a slogan into a **computable and falsifiable saturation law** (Theorem 2), with its zero-parameter origin exhibited.
+2. Proving that the uniformity of time is not an assumption but a **corollary** (Theorem 3), together with its rate of convergence.
+3. Splitting "constant as long as there is no phase transition" into two separate claims, **uniformity** and **time constant**, and adjudicating each (Theorems 5 and 6).
+4. Producing a counter-intuitive price: internal time is **not unique** (Theorem 7); two internal clocks cannot coexist.
+5. Completing the pre-registered 77→78 exit: separating "structure" from "memory" at the **joint** level (§8), and showing why this is exactly the reason time must emerge.
+
+### 1.4 Structure
+
+§2 preliminaries; §3 definition of emergent time and the saturation law; §4 asymptotic uniformity; §5 non-uniformity inside the network; §6 universality and phase transition; §7 incompatibility of two clocks; §8 separation of structure and memory; §9 falsifiable predictions; §10 discussion; §11 conclusion.
+
+---
+
+## 2. Preliminaries
+
+### 2.1 The SRE evolution loop
+
+The evolving body is a symmetric $\pm1$ matrix $M$ starting from $M_{1}=[[1]]$. At step $n$ (before appending row $n$, so $M$ is $n\times n$):
+
+$$
+E=|M^{2}|,\qquad
+d_{ij}=n-\max(i,j),\qquad
+\rho_{ij}=\frac{\lambda\,d_{ij}}{E_{ij}+1},
+$$
+
+$$
+r_{ij}\;=\;\frac{1}{1+\rho_{ij}},\qquad
+a_{ij}\;=\;1-r_{ij}\;=\;\frac{\rho_{ij}}{1+\rho_{ij}},
+$$
+
+$$
+\mathrm{act}_{ij}=\big[\,\mathrm{rand}_{ij}\ge a_{ij}\,\big],\qquad
+\text{act true means the historical value survives; otherwise the entry is permanently reset to }1 .
+$$
+
+Here $d_{ij}$ is the **age** of entry $(i,j)$. Since the early block is inherited literally (`new_M[:n,:n] = M`), a reset is permanent freezing — history is destroyed at most once, irreversibly.
+
+### 2.2 Symbolic discipline: the name is inverted
+
+The source variable `dorm` equals $r_{ij}=(1+\rho)^{-1}$ numerically, while `activate = rand >= p_matrix` gives $P(\text{history survives})=1-p_{\rm matrix}=r_{ij}$. Thus `dorm`, nominally "dormancy", is actually the **history-retention rate** — registered in round 77. This paper always speaks by the numbers and adopts the following symbols:
+
+| Symbol | Source counterpart | Meaning |
+|---|---|---|
+| $r_{ij}$ | `dorm` | **retention rate** (probability that history continues) |
+| $a_{ij}$ | `p_matrix` | **rewriting rate** (probability of being interrupted at this step) |
+| $\Omega(n)$ | — | $\langle a_{ij}\rangle$, the **amount of change in the world** |
+
+What the originating proposition calls "the dormancy/activation rates being observed as change in the world" reads in this notation as follows: **the "change" an observer reads off is $a$, complementary to the retention rate $r$; this complementary pair is precisely what we calibrate clocks with.**
+
+### 2.3 Two pre-existing zero-parameter laws
+
+**Proposition 1 (age-distribution law, round 77).**
+
+$$
+\#\{(i,j):d_{ij}=d\}=2(n-d)+1,\qquad d=1,\dots ,n,\qquad \textstyle\sum_{d}=n^{2}.
+$$
+
+Measured item-by-item error is identically $0$. The law **contains no dynamics**: whether the evolution is run, which seed, which $\lambda$, none of it matters. Corollaries: the median age ratio $d_{\rm med}/n\to1-1/\sqrt2=0.292893$; the mean $\bar d=(n+1)(2n+1)/(6n)\to n/3$.
+
+**Proposition 2 (spectral law E5, round 77).**
+
+$$
+\big\langle |E_{ij}|^{2}\big\rangle_{\rm off}=n,\qquad
+\big\langle |E_{ij}|\big\rangle_{\rm off}=\mathbb E|S_{n}|\;\approx\;\sqrt{2n/\pi},
+$$
+
+i.e. the off-diagonal activity field sits at the maximum-entropy (iid symmetric Rademacher) position; both exact moments deviate by less than $0.5\%$ for $n\ge400$.
+
+Every quantitative result in this paper is synthesized from **these two laws** — that is where its zero-parameter character comes from.
+
+### 2.4 Methodological discipline
+
+Four standing rules are carried forward:
+
+- **G6**: any new regularity must first be tested against external samples; every extrapolation beyond the model is explicitly labelled an analogy in §10.
+- **G12 (discrete closure law)**: every crossing from "discrete" to "continuous" must be paid for by external input. This paper registers as its 16th instance.
+- **G13**: three criteria for admissibility of a test (external-sample property / non-degeneracy / dependence on window width). In particular, if a statistic takes the same constant value in both populations it has no discriminating power and must be reported as "indistinguishable", **not** as "agreeing" (Appendix B invokes this to handle the quantiles).
+- **Structural statements are not shields**: "finite-size effect" may explain a discrepancy, but a discrepancy of **order-of-magnitude** size must be acknowledged as containing something real (used in §6.2).
+
+---
+
+## 3. Emergent time
+
+### 3.1 Definition
+
+**Definition 3.1 (emergent time).**
+
+$$
+\boxed{\ \Omega(n)\;=\;\frac{1}{n^{2}}\sum_{i,j}a_{ij}(n),\qquad
+T_{\rm em}(n)\;=\;\sum_{k=1}^{n-1}\Omega(k)\ }
+$$
+
+That is: the time worth of step $n$ equals the expected amount of change occurring in the world at that step, and the emergent time is its accumulation. The definition compresses the operationalist view of time (counting change with some process) into a directly computable quantity that requires no external unit.
+
+### 3.2 Theorem 1: saturation
+
+**Theorem 1 (saturation).** For every $\lambda>0$, $\Omega(n)$ rises monotonically to the limit $1$:
+
+$$
+\lim_{n\to\infty}\Omega(n)=1 .
+$$
+
+**Proof.** By Proposition 1 the typical age satisfies $d\sim c\,n$; by Proposition 2, $E\sim\sqrt{2n/\pi}$. Hence $\rho=\lambda d/(E+1)\sim\lambda c\,n^{1/2}\to\infty$ on almost all entries, so $a=\rho/(1+\rho)\to1$. $\square$
+
+**Measurement** ($\lambda=0.8$, seed $1111$):
+
+| $n$ | 1 | 10 | 50 | 100 | 200 | 400 | 600 | 800 | 999 |
+|---|---|---|---|---|---|---|---|---|---|
+| $\Omega$ | 0.285714 | 0.402329 | 0.624903 | 0.684338 | 0.742764 | 0.792840 | 0.817723 | 0.834268 | 0.846003 |
+| $1-\Omega$ | 0.714286 | 0.597671 | 0.375097 | 0.315662 | 0.257236 | 0.207160 | 0.182277 | 0.165732 | 0.153997 |
+
+Since the step-by-step $\Omega$ is a realized random quantity, monotonicity is judged on **block means** (blocks of $50$ steps): $0.701790,\,0.729869,\dots ,0.844839$, strictly non-decreasing across $18$ blocks. The self-consistency check (age-profile weighted vs. direct mean) differs by $2.2\times10^{-16}$.
+
+Note that the gap is still $0.154$ at $999$ steps — saturation is remarkably slow, which is the subject of §4.
+
+### 3.3 Theorem 2: the saturation law
+
+**Theorem 2 (saturation law).** There is a $c=c(\lambda)$ with
+
+$$
+1-\Omega(n)\;=\;c(\lambda)\,\frac{\ln n}{\sqrt n}\,(1+o(1)).
+$$
+
+**Where the logarithm comes from.** Take the memory horizon $H=(E+1)/\lambda\propto\sqrt n$ (round 77, §8). The young shell with $d\lesssim H$ retains almost everything; its mass fraction is $\approx2H/n$. The old shell decays as $H/d$, and $\sum_{d}1/d$ supplies the logarithm. Their product gives $(\ln n)/\sqrt n$. The logarithm is therefore not fitted decoration; it is **the fingerprint of the harmonic tail**.
+
+**Shape adjudication** (fitting $1-\Omega=c\,f(n)$ over $n\ge100$, maximum relative residual reported):
+
+| $f(n)$ | $c$ | max relative residual |
+|---|---|---|
+| $n^{-1/2}$ | 3.990929 | 26.430% |
+| $\ln n/\sqrt n$ | **0.694157** | **1.589%** |
+| $n^{-0.4}$ | 2.248210 | 12.879% |
+| $(\ln n)^{2}/\sqrt n$ | 0.116210 | 22.315% |
+
+Pure power laws are decisively rejected; $\ln n/\sqrt n$ is the only admissible form, with residual $1.589\%$.
+
+**Zero-parameter numerical prediction.** Using the age weights of Proposition 1 and the exact $|S_n|$ distribution of Proposition 2,
+
+$$
+\langle r\rangle_{\rm pred}
+=\frac{1}{n^{2}}\sum_{d=1}^{n}\bigl(2(n-d)+1\bigr)\,
+\mathbb E_{|S_{n}|}\!\left[\frac{K+1}{K+1+\lambda d}\right],
+$$
+
+**containing no fitted constant whatsoever**:
+
+| $n$ | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 999 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| measured $1-\Omega$ | 0.315662 | 0.257236 | 0.226762 | 0.207160 | 0.192979 | 0.182277 | 0.173042 | 0.165732 | 0.159378 | 0.153997 |
+| zero-parameter prediction | 0.310462 | 0.254402 | 0.225136 | 0.205964 | 0.191990 | 0.181140 | 0.172357 | 0.165032 | 0.158786 | 0.153561 |
+| relative deviation | 1.65% | 1.10% | 0.72% | 0.58% | 0.51% | 0.62% | 0.40% | 0.42% | 0.37% | 0.28% |
+
+The deviation decreases monotonically to $0.28\%$–$1.65\%$. **This is the strongest quantitative result of the paper**: a non-trivial dynamical law is explained by two pre-existing zero-parameter laws down to the sub-percent level.
+
+---
+
+## 4. Theorem 3: asymptotic uniformity of the emergent time
+
+**Definition 4.1 (relative step-to-step non-uniformity).**
+
+$$
+\eta(n)\;=\;\frac{|\Omega(n+1)-\Omega(n)|}{\Omega(n)} .
+$$
+
+It measures whether consecutive steps are equivalent. Time is uniform if and only if $\eta\to0$.
+
+**Theorem 3 (asymptotic uniformity).**
+
+$$
+\eta(n)\;=\;\frac{c\,(\tfrac12\ln n-1)}{n^{3/2}\,\Omega(n)}\,(1+o(1))
+\;\propto\;\frac{\ln n}{n^{3/2}}\;\longrightarrow\;0 .
+$$
+
+**Proof.** From Theorem 2, $\Omega=1-c\ln n\cdot n^{-1/2}$; differentiating termwise gives $d\Omega/dn=c(\tfrac12\ln n-1)n^{-3/2}$. Dividing by $\Omega\to1$ yields the claim. $\square$
+
+The point is that this follows **by differentiating the saturation law**, not by a second fit; $c$ was already fixed in Theorem 2, so the prediction here has zero free parameters.
+
+**Measurement** ($\eta$ from a $\pm10$ smoothed difference quotient, suppressing the realization noise of $\Omega$):
+
+| $n$ | 50 | 100 | 200 | 400 | 600 | 800 | 980 |
+|---|---|---|---|---|---|---|---|
+| $\eta$ measured | $4.227\!\times\!10^{-3}$ | $1.395\!\times\!10^{-3}$ | $5.469\!\times\!10^{-4}$ | $2.378\!\times\!10^{-4}$ | $1.108\!\times\!10^{-4}$ | $8.878\!\times\!10^{-5}$ | $6.102\!\times\!10^{-5}$ |
+| $\eta$ predicted | $3.004\!\times\!10^{-3}$ | $1.321\!\times\!10^{-3}$ | $5.449\!\times\!10^{-4}$ | $2.184\!\times\!10^{-4}$ | $1.270\!\times\!10^{-4}$ | $8.613\!\times\!10^{-5}$ | $6.542\!\times\!10^{-5}$ |
+| ratio | 1.407 | 1.055 | 1.004 | 1.089 | 0.873 | 1.031 | 0.933 |
+
+$\eta$ falls by a factor of $69.3$, and the ratio stays inside $[0.873,1.407]$ throughout. **This is the form in which "the time perceived by humans is constant" becomes a theorem here**: it is not assumed, it is computed — down to the number expressing *how non-uniform it still is*.
+
+**Corollary 4.2 (emergent time vs. step count).**
+
+$$
+T_{\rm em}(n)\;=\;n-O(\sqrt n\,\ln n).
+$$
+
+Measured $T_{\rm em}/n=0.5734,\,0.7077,\,0.7776$ at $n=100,400,999$. This corollary is the strict version of the round-77 discipline: **do not take $n$ as time unconditionally**; only after designating "calibrate with the amount of change" does $n$ become time asymptotically, and even then with a sublinear error term too large to ignore.
+
+---
+
+## 5. Theorem 4: differential ageing inside the network
+
+Uniformity of the aggregate does not mean uniformity everywhere inside. Fixing the current step $n$ and scanning the age $d$ of entries:
+
+| $n$ | $a(d=1)$ | $a(d=n/8)$ | $a(d=n/4)$ | $a(d=n/2)$ | $a(d=3n/4)$ | half-life age $H_{\rm eff}$ | $H_{\rm eff}/\sqrt n$ |
+|---|---|---|---|---|---|---|---|
+| 100 | 0.139768 | 0.596166 | 0.729099 | 0.824956 | 0.886612 | 9 | 0.9000 |
+| 400 | 0.083088 | 0.728347 | 0.827560 | 0.912367 | 0.929344 | 17 | 0.8500 |
+| 999 | 0.058931 | 0.804968 | 0.884809 | 0.940564 | 0.957750 | 23 | 0.7277 |
+
+(The last sample in each row, $d=n$, is a single entry, the diagonal corner, where $E_{ii}=n$ holds exactly and the rewriting rate is pinned at $\lambda n/(n+1+\lambda n)\approx0.444$; it does not follow the trend of its shell and counts as an **atypical singleton** under G13, so it is excluded from the trend.)
+
+**Theorem 4 (differential ageing).** At a single instant, the expected rewriting rate of an entry rises monotonically with its own age: newborn entries are nearly static ($a\lesssim0.06$), old entries are nearly rewritten at every step ($a\gtrsim0.95$). Hence **there is no unique local rate of time inside the network**.
+
+**Why the aggregate still becomes uniform.** By Proposition 1 the mass weights $2(n-d)+1$ depend only on $d/n$, i.e. the age profile is **self-similar** under stretching by $n$. All shells move along one and the same curve, and the weighting happens to compress the residual $n$-dependence down to $\ln n/\sqrt n$. In other words: **uniformity is an averaging effect brought by self-similarity, not a property of any one place.**
+
+---
+
+## 6. What stays constant and what does not
+
+The originating proposal benchmarks against the speed of light: "constant as long as there is no phase transition". That sentence hides an ambiguity that must be opened up.
+
+### 6.1 Theorem 5: the value of $\lambda$ does not move the limit
+
+**Definition 6.1.** Call
+
+$$
+\Omega_{\infty}\;=\;\lim_{n\to\infty}\Omega(n)
+$$
+
+the **time constant** of this dynamics: how much internal time one step is worth.
+
+**Theorem 5 (numerical universality).** The value of $\lambda$ does not change $\Omega_{\infty}$; it changes only the **speed** of approach, $c(\lambda)$.
+
+**Measurement** ($\lambda\in\{0.2,\dots ,3.0\}$, a $15$-fold span):
+
+| $\lambda$ | 0.2 | 0.4 | 0.6 | 0.8 | 1.0 | 1.5 | 2.0 | 3.0 |
+|---|---|---|---|---|---|---|---|---|
+| $\Omega(199)$ | 0.502787 | 0.627409 | 0.698311 | 0.741054 | 0.771403 | 0.822181 | 0.852601 | 0.885878 |
+| $\Omega(399)$ | 0.574492 | 0.694596 | 0.753735 | 0.792215 | 0.817939 | 0.859558 | 0.883932 | 0.913126 |
+| $\Omega(799)$ | 0.640836 | 0.749044 | 0.801660 | 0.833995 | 0.856051 | 0.890282 | 0.910422 | 0.933125 |
+| $c(\lambda)$ | 1.3896 | 1.0121 | 0.8148 | 0.6928 | 0.6071 | 0.4694 | 0.3881 | 0.2946 |
+
+$\Omega$ is monotone increasing in $\lambda$ (at fixed $n$) and monotone increasing in $n$ (at fixed $\lambda$); both hold, hence all $\lambda$ approach **the same target**.
+
+**Why it looks like this.** $\Omega_{\infty}=1$ is a **saturation value**, and saturation values carry no coupling strength: however large or small $\lambda$ is, $\rho\sim\lambda n^{1/2}\to\infty$ still holds, and the ceiling of $a=\rho/(1+\rho)$ is $1$. This is the same structure as "the bound $|v|\le c$ does not depend on the specific strength of the interaction".
+
+**Open item (registered honestly).** For the approach-speed constant $c(\lambda)$, a naive asymptotic argument gives $c\propto\lambda^{-1}$ (the gap is proportional to the memory horizon, hence to $1/\lambda$). **Measurement rejects this guess**: the slope of $\ln c$ against $\ln\lambda$ is $-0.5549$ (window $100$–$399$), $-0.5914$ ($200$–$799$) and $-0.5769$ ($100$–$799$). The direction agrees with a correction term $\propto\ln\lambda/\ln n$ (the slope drifts weakly toward $-1$ as the window is pushed outward), but $1/\ln n$ decays too slowly for finite windows to reach $-1$. **This item is registered as open and forbidden as evidence.**
+
+### 6.2 Theorem 6: the form of the rule moves the limit
+
+**Controlled variant.** Only the denominator is changed to $(E+1)^{2}$; nothing else is altered (same $\lambda=0.8$):
+
+$$
+\rho'_{ij}=\frac{\lambda\,d_{ij}}{(E_{ij}+1)^{2}} .
+$$
+
+| $n$ | control $\Omega$ | variant $\Omega'$ | gap |
+|---|---|---|---|
+| 100 | 0.684338 | 0.344778 | 0.339559 |
+| 200 | 0.742764 | 0.363154 | 0.379610 |
+| 400 | 0.792840 | 0.375944 | 0.416896 |
+| 600 | 0.817723 | 0.381696 | 0.436027 |
+| 800 | 0.834268 | 0.385128 | 0.449140 |
+| 1000 | 0.846201 | 0.386770 | 0.459431 |
+| 1099 | 0.850685 | 0.387804 | 0.462881 |
+
+The gap widens monotonically to $0.4629$ and is still widening, hence **the two groups cannot share a limit**. Meanwhile $\langle E\rangle$ in the variant group is nearly identical to the control ($27.4251$ vs. $27.4397$), showing that the $E$-field is still governed by Proposition 2 and that no runaway has occurred; the system has simply landed on **another fixed point**.
+
+**Theorem 6 (phase transition).** The **form** of the update rule determines the time constant $\Omega_{\infty}$; the **value** of the coupling parameter $\lambda$ does not change it.
+
+$$
+\Omega_{\infty}=1.0000\ \ (\rho=\lambda d/(E+1))\qquad
+\rightsquigarrow\qquad
+\Omega_{\infty}\approx0.390\ \ (\rho'=\lambda d/(E+1)^{2})
+$$
+
+(the latter interval $[0.388,0.391]$ comes from the last point $0.387804$ plus a geometric remainder bound $\le0.0027$).
+
+**Verdict.** "Constant as long as there is no phase transition" translates here into an **executable criterion**:
+
+- **Uniformity** (existence of $\Omega_{\infty}$) holds for every tested $\lambda$ and under both rules ⇒ it is robust and can emerge in many independent ways;
+- **The time constant** (the value of $\Omega_{\infty}$) is a function of the rule's **form** ⇒ changing the form changes it. Sweeping $\lambda$ by a factor of $15$ does not budge it; squaring one denominator does.
+
+### 6.3 A guess that was refuted (discipline requires it be written down)
+
+Before running anything, the expectation was that the variant kernel would **run away into freezing** (less rewriting ⇒ $M$ biased toward $+1$ ⇒ larger $E$ ⇒ larger squared denominator ⇒ even less rewriting ⇒ $\Omega'\to0$). **This guess was wrong.** Measurement shows the $E$-field pinned at $\sqrt{2n/\pi}$ by Proposition 2 (which also explains why $\langle E\rangle$ is nearly identical in both groups); no positive feedback is established, and the system settles at $\Omega'\approx0.39$ rather than $0$.
+
+The refutation has value of its own: it shows that a phase transition changes the **value** of the time constant rather than "switching time off". A world with $\Omega_{\infty}=0.39$ still has a uniform time; each step is merely worth about sixty per cent less internal duration.
+
+### 6.4 The exact scope of the light-speed analogy
+
+The analogy must have stated limits, otherwise it becomes a universal pass.
+
+**Where it holds.** Both quantities are **saturation or ceiling values**, hence insensitive to base-level coupling parameters (here $\lambda$; there the state of motion of the source); both are **structural constants** (here the form of the update rule; there the metric structure of spacetime), and changing the structure changes the constant.
+
+**Where it fails (three items, not to be extrapolated).** First, $\Omega_{\infty}$ here is **dimensionless** (a fraction of entries rewritten per step), whereas $c$ **carries dimensions** and requires a unit system; they are not the same kind of number. Second, the other side of the analogy — the *scale* of time (seconds) — is **still absent** here ($T_{\rm em}\to n$ settles the shape only). Third, the invariance of $c$ rests on the experimental basis of Lorentz invariance, whereas $\Omega_{\infty}$ here has been verified only in two controlled comparisons inside a model. **Nothing in this paper may be used to assert any numerical conclusion about the physical speed of light.**
+
+---
+
+## 7. Theorem 7: two clocks cannot coexist (time is not unique)
+
+Round 77 calibrated with the memory horizon and obtained $\tau_{\rm mem}(n)=2\lambda\sqrt{\pi/2}\,\sqrt n=2.005303\sqrt n$, with the verdict "this clock decelerates continuously". This paper calibrates with the amount of change and obtains $T_{\rm em}\propto n$. Both are readings taken **inside** the network.
+
+| $n$ | 50 | 100 | 200 | 400 | 600 | 800 | 999 |
+|---|---|---|---|---|---|---|---|
+| $\tau_{\rm mem}$ | 14.1796 | 20.0530 | 28.3593 | 40.1061 | 49.1197 | 56.7185 | 63.3815 |
+| $T_{\rm em}$ | 25.2648 | 58.0257 | 129.6670 | 283.8656 | 445.1452 | 610.4507 | 777.6977 |
+| $T_{\rm em}/\tau_{\rm mem}$ | 1.7818 | 2.8936 | 4.5723 | 7.0779 | 9.0625 | 10.7628 | 12.2701 |
+| $T_{\rm em}/n$ | 0.505296 | 0.580257 | 0.648335 | 0.709664 | 0.741909 | 0.763063 | 0.778476 |
+
+**Theorem 7 (incompatibility).** The ratio $T_{\rm em}/\tau_{\rm mem}$ diverges with $n$ (a measured factor of $6.89$ and still growing). Therefore no rescaling exists under which both intrinsic clocks are uniform simultaneously; "time" is not a property the system carries, but a derived quantity obtained **after a clock process has been chosen**.
+
+**Both tend to uniformity, but at different rates:**
+
+| $n$ | 100 | 400 | 980 |
+|---|---|---|---|
+| $\eta(T_{\rm em})$ | $1.395\times10^{-3}$ | $2.378\times10^{-4}$ | $6.102\times10^{-5}$ |
+| $\eta(\tau_{\rm mem})=1/(2n+2)$ | $4.963\times10^{-3}$ | $1.248\times10^{-3}$ | $5.098\times10^{-4}$ |
+| ratio | 0.28 | 0.19 | 0.12 |
+
+$\eta(T_{\rm em})\propto\ln n/n^{3/2}$ while $\eta(\tau_{\rm mem})\propto1/n$: **calibrating with the amount of change pushes non-uniformity one order further down.** This is where the sentence of §1.1 finally lands: uniform time is observed because observers implicitly use the reading "how much happened in the world", not the memory-horizon reading.
+
+---
+
+## 8. Where the past is: separating structure from memory
+
+### 8.1 There is structure (full independence is rejected)
+
+Taking the joint null hypothesis to be "entries are iid" is the **wrong null** — the update rule itself (symmetry, columnwise products, permanent freezing on reset) manufactures correlations even in the total absence of historical memory. Two questions are therefore adjudicated separately.
+
+**T5a (structure).** Each real history is compared with a **completely iid symmetric $\pm1$ random matrix**. Two scales ($n=150$, $n=300$), $K=8$ histories, $R=40$ surrogates:
+
+| statistic | $n=150$ real | $n=150$ iid | gap$/\sigma$ | $n=300$ real | $n=300$ iid | gap$/\sigma$ |
+|---|---|---|---|---|---|---|
+| $\langle|E|\rangle_{\rm off}$ | $9.8442\pm0.1274$ | $9.7549\pm0.1045$ | 0.70 | $13.8493\pm0.0767$ | $13.7983\pm0.0681$ | 0.66 |
+| fraction of $+1$ | $0.5020\pm0.0059$ | $0.5016\pm0.0039$ | 0.07 | $0.5013\pm0.0025$ | $0.5007\pm0.0019$ | 0.27 |
+| spectral radius$/\sqrt n$ | $1.9881\pm0.0419$ | $1.9606\pm0.0373$ | 0.66 | $2.0027\pm0.0186$ | $1.9798\pm0.0208$ | 1.23 |
+| **row-sum variance$/n$** | $\mathbf{1.9446\pm0.1060}$ | $\mathbf{1.0170\pm0.1200}$ | **8.75** | $\mathbf{2.0302\pm0.0740}$ | $\mathbf{1.0019\pm0.0957}$ | **13.89** |
+
+The **marginal** layer of the $E$-field (mean, $\sigma$, sign fraction, spectral radius) agrees with iid, consistent with Proposition 2; but the **row-sum variance** is $1.94$–$2.03$ times the iid value at both scales, with KS $p<10^{-4}$ ⇒ **full independence is rejected**: entries within a row are co-ordinated, so the joint is not the product of the marginals.
+
+### 8.2 There is no memory (prefixes are indistinguishable)
+
+**Experimental design.** Take two prefixes with **nothing in common** (different seeds, each run to step $150$; the two differ in $48.50\%$ of entries). From each prefix run $G=8$ continuations with mutually different random streams up to step $300$, giving $2G=16$ terminal states. $H_{0}$: these $16$ states are exchangeable. **Exact permutation test** (enumerating all $C(16,8)=12870$ splits):
+
+| statistic | group A | group B | $|\text{difference}|/\sigma_{\rm pooled}$ | permutation $p$ |
+|---|---|---|---|---|
+| $\langle|E|\rangle_{\rm off}$ | $13.8645\pm0.0731$ | $13.8676\pm0.0517$ | 0.050 | 0.9223 |
+| $\sigma(|E|)$ | $10.5091\pm0.0692$ | $10.5015\pm0.0370$ | 0.141 | 0.8222 |
+| row-sum variance$/n$ | $1.9720\pm0.0971$ | $1.9734\pm0.0871$ | 0.015 | 0.9775 |
+| fraction of $+1$ | $0.5009\pm0.0017$ | $0.5018\pm0.0021$ | 0.453 | 0.3841 |
+| spectral radius$/\sqrt n$ | $1.9931\pm0.0304$ | $2.0047\pm0.0348$ | 0.361 | 0.4920 |
+
+None significant after Holm–Bonferroni correction.
+
+**T5b (no trace).** Two entirely different first halves become **indistinguishable** after the second half.
+
+The limitation must be stated: the test is carried out on $5$ scalar statistics and is **not** a general proof about mutual information. What it establishes is that on these $5$ readings a shared prefix leaves no detectable trace.
+
+### 8.3 Why time must be emergent
+
+Putting §8.1 and §8.2 together yields the single most important sentence of this paper:
+
+> **The present state carries zero bits about its own past, so there is no time marker inside "now" that could be read off; time can only be accumulated, never read — and that is the precise meaning of "time emerges".**
+
+This continues the same thread as the $\le1$ bit of round 74, the $=0$ bit of round 76 and the exact $0$ bit on the diagonal of round 77, and upgrades it to the **joint distribution of the entire state matrix**: having structure does not imply having memory, and both can hold at once; it is precisely "no memory" that prevents time from being recovered from the state. Round 76 reached the same conclusion from the **target side** (the vibrational-period axis runs entirely through the mass $\mu$; the graph side contributes $0$), and round 77 from the **dynamics side** (intrinsic time has shape but no scale); this paper arrives at it a third time from the **joint-distribution side**. Three independent paths converge on one place — and that convergence itself carries information.
+
+---
+
+## 9. Falsifiable predictions and checklist
+
+Each item below can be used to reject this paper directly with the same script:
+
+| # | prediction | criterion | current measurement |
+|---|---|---|---|
+| P1 | $1-\Omega$ must contain $\ln n$ | pure power law significantly worse than $\ln n/\sqrt n$ | $26.43\%$ vs $1.59\%$ |
+| P2 | the zero-parameter synthesis holds | prediction within $2\%$ of measurement | $0.28\%$–$1.65\%$ |
+| P3 | $\eta\to0$ with ratio near $1$ | $\eta/\eta_{\rm pred}\in[0.5,2]$ | $[0.873,1.407]$ |
+| P4 | $\Omega_{\infty}$ independent of $\lambda$ | $\Omega$ monotone in $\lambda$ and in $n$ | holds ($8$ values of $\lambda$) |
+| P5 | changing rule form moves the limit | gap monotone and $>0.30$ | $0.4629$ |
+| P6 | joint has structure | row-sum variance gap $>3\sigma$ and KS $p<0.01$ | $8.75\sigma$ / $13.89\sigma$, $p<10^{-4}$ |
+| P7 | joint has no memory | nothing significant after Holm | $\min p=0.3841$ |
+| P8 | two clocks cannot coexist | ratio diverges monotonically with $n$ | $1.78\to12.27$ |
+
+**The easiest to overturn is P2**: should the age-law × spectral-law synthesis fail to explain things to better than a percent under another $\lambda$ or another update rule, the whole "zero-parameter" claim collapses.
+
+---
+
+## 10. Discussion
+
+### 10.1 Relation to neighbouring concepts
+
+The thesis of this paper passes alongside several familiar discussions in the philosophy of time, but borrows **no** quantitative result from any of them:
+
+- **Relationalism / timeless ordering** (Barbour-style "time does not exist"): this paper agrees that "time is not in the state" but rejects the inference to non-existence; it supplies instead a **computable substitute** $T_{\rm em}$ whose uniformity is a corollary, not an assumption.
+- **Thermal time hypothesis** (Connes–Rovelli style: time supplied by the modular flow of a state): $\Omega$ here is likewise a time specified by "how the state changes", but this paper **measures its saturation law and the convergence order of its non-uniformity**, which thermal-time constructions usually do not provide.
+- **Page–Wootters style** (taking a subsystem as clock): Theorem 7 is a **limitation** on that idea — choosing a different subsystem may yield an incompatible clock whose ratio diverges.
+
+All are registered as **structural analogies only** and are not used as evidence under G6.
+
+### 10.2 Accounts against the preceding rounds of this project
+
+| round | conclusion | relation to this paper |
+|---|---|---|
+| 76 | vibrational-period axis: graph side $0$ bit, $\mu$-only $0.07\%$; there are steps but no seconds | this paper inherits "the scale must still be supplied externally" |
+| 77 | $\tau_{\rm mem}\propto\sqrt n$; exact $0$ bit on the diagonal; $\varepsilon$ demoted to a window function | this paper takes $\tau_{\rm mem}$ as the second clock, from which the non-coexistence follows |
+| this paper | $T_{\rm em}\propto n$; saturation law; universality / phase transition; structure vs memory | completes the pre-registered 77→78 exit |
+
+**Still unsolved**: the scale. $T_{\rm em}\to n$ shows only that the emergent time is asymptotically equivalent to the step count; "how many seconds is one step" remains external input. The gap identified in rounds 76 and 77 is not narrowed here.
+
+### 10.3 Guiding analogy
+
+One sentence for the non-specialist: **time is uniform not because the universe carries a standard clock that happens to run steadily, but because the quantity "how much the world changed" saturates on its own; once saturated, counting change with it yields uniform time. We measure a constant because the underlying rule has not undergone a phase transition — exactly as the speed of light is constant because spacetime structure has not undergone one.**
+
+### 10.4 View from the discrete closure law (G12, instance 16)
+
+- **Given (discrete side, closed)**: the distribution of $d$, the $n^{2}$ weights, the distribution of $|S_{n}|$, the symmetry ⇒ hence the shape $\ln n/\sqrt n$ and the form of $T_{\rm em}$.
+- **Not given (continuous side, external input required)**: the physical unit corresponding to $\Omega_{\infty}$ (seconds), and why one *ought* to calibrate with $\Omega$ rather than $\tau_{\rm mem}$ — the latter is a choice on the observer's side, which the dynamics cannot answer.
+
+---
+
+## 11. Conclusion
+
+All seven verdicts pass:
+
+| label | verdict | result |
+|---|---|---|
+| T1 | definition of emergent time and saturation | pass (self-consistency $2.2\times10^{-16}$) |
+| T2 | saturation law $\ln n/\sqrt n$ + zero-parameter prediction | pass (residual $1.589\%$, deviation $\le1.65\%$) |
+| T3 | relative step non-uniformity $\to0$ | pass ($\eta/\eta_{\rm pred}\in[0.873,1.407]$) |
+| T4 | single-member clock accelerates with its own age | pass |
+| T5a / T5b | structure / no memory | pass ($8.75\sigma$–$13.89\sigma$; $\min p=0.3841$) |
+| T6a / T6b | $\lambda$ does not move the limit / rule form does | pass (gap $0.4629$) |
+| T7 | two clocks cannot coexist | pass (ratio grows by $6.89$ and diverges) |
+
+Together with three open items ($c\propto\lambda^{-1}$ rejected; $T_{\rm em}/n$ reaches only $0.7776$ at attainable sizes; the scale remains unsolved) and two guesses formed before measurement that were refuted, the balance sheet of this paper is clear:
+
+**(Established)** Time is not an external parameter; it is a quantity accumulated **as part of** an internal process. Its uniformity is not an assumption but a corollary of a saturation law, and that saturation law is explained in full by two pre-existing zero-parameter laws down to the sub-percent level.
+
+**(Adjudicated)** "Constant as long as there is no phase transition" splits into two: uniformity holds under every tested parameter and rule (robust), while the time constant moves only when the *form* of the update rule changes — which is the strict location of the phase transition.
+
+**(Price paid)** Time is not unique: two equally legitimate internal readings give incompatible times whose ratio diverges, and the clock of every single member inside the network is non-uniform. Using "how much the world changed" as the clock is a choice, not a discovery.
+
+**(Still missing)** The scale. This paper settles the shape and does not settle "how many seconds is one step" — which is the same gap registered in rounds 76 and 77 ($L_{4}$, the assignment rule), projected onto the problem of timekeeping.
+
+**(And explained)** Why time must be emergent rather than read off: the present state carries zero bits about which history it walked.
+
+---
+
+## Appendix A　Recomputation checklist
+
+| item | script | key quantities |
+|---|---|---|
+| saturation law and all verdicts | `code/_time_emergence.py` (PART 0–8) | $\Omega(n)$, $c$, $\eta$, $T_{\rm em}$ |
+| supplementary probe ($\Omega$ first used as target) | `code/_probe_time78.py` | initial shape judgement for $1-\Omega$ |
+| T6 follow-up | `code/_probe_time78b.py` | two windows for $c(\lambda)$; long-run trend of the variant kernel |
+| reference implementation of the loop | `code/sim_p.py` | the single authoritative version of the update rule |
+| archived results | `code/_time_emergence.json` | intermediate data for all verdicts |
+
+Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
+
+---
+
+## Appendix B　Honest boundaries
+
+1. **One guess that preceded measurement**: $c\propto\lambda^{-1}$ is rejected (measured slope $-0.577$). Every statement involving $c(\lambda)$ is a registration, **not a conclusion**.
+2. **A second such guess**: "the variant kernel runs away into freezing, $\Omega'\to0$" is refuted; it settles at a fixed point near $0.39$. The original guess is preserved in §6.3.
+3. **Limited attainable precision**: at $n=999$, $T_{\rm em}/n=0.7776$, i.e. "time is constant" holds to only about $22\%$ at attainable sizes. Any reading that equates the results here with "physical time is strictly uniform" is a misreading.
+4. **Statistics with no discriminating power**: the $50\%$ and $90\%$ quantiles of the $E$-field take identical values in both populations ($8$ and $20$; $12$ and $28$), giving gap$/\sigma=\infty$ with KS $p=1.0000$. Under G13 such statistics must be reported as "indistinguishable" and **must not** be counted as agreement. They are excluded from the tables above.
+5. **Limit of reach of T5b**: the permutation test is performed on $5$ scalar statistics only and is not a general proof about mutual information. A stronger version would require vector-valued or spectral two-sample tests.
+6. **$\lambda=0.8$ and $\sqrt{2/\pi}=0.797885$ differ by $0.265\%$**: registered in round 77 as a conjecture awaiting test. Since $\lambda$ currently has no independent calibration, this paper does **not** use that proximity as an argument (G6; "too accurate" = the fingerprint of circularity).
+7. **$\varepsilon=0.183246$ remains a window function** (the verdict of round 77 §7 is not altered here): the $\Omega$ used in this paper is defined step by step and involves no window.
+8. **The scale is absent**: stated a third time — $T_{\rm em}$ has shape, not seconds.
+
+---
+
+## Appendix C　Analogy index
+
+| analogy | purpose | failure point |
+|---|---|---|
+| speed of light $c$ | why a saturation value is insensitive to coupling strength | $c$ carries dimensions and requires a unit system; $\Omega_{\infty}$ here is dimensionless and derives no physical dimension; the two cannot be inferred from each other |
+| several people each counting by their own heartbeat | why clocks belonging to different processes cannot coexist | — |
+| harmonic tail | where $\ln n$ comes from | only an integral approximation; the constant still has to be fixed numerically |
+
+---
+
+## Appendix D　References
+
+1. This project: *The dormancy/activation clock: zero-parameter laws, zero-bit branches and intrinsic time* (round 77) — Proposition 1 (age law), Proposition 2 (diagonal closed form), E5 (spectral law), source of $\tau_{\rm mem}$.
+2. This project: *The vibrational-period axis: definition of time and the isotope criterion* (round 76) — the topological definition of frequency $\Delta\lambda=|\lambda_{1}-\lambda_{2}|$, and the verdict "steps but no seconds".
+3. This project: *Applied layer, ninth run: the general form of Proposition U* (round 74) — methodological source of the information bound $\le1$ bit.
+4. This project: *Applied layer, tenth run: ascending to $L_{3}$* (round 75) — source of the discipline "range verdicts precede fitting verdicts".
+5. `code/sim_p.py` — the single authoritative implementation of the evolution loop.
+6. J. B. Barbour, *The End of Time* — conceptual neighbour (analogy only; no quantitative result borrowed).
+7. A. Connes and C. Rovelli, *Von Neumann algebra automorphisms and time-thermodynamics relation in generally covariant quantum theories*, Class. Quantum Grav. **11** (1994) 2899 — prototype of the thermal-time hypothesis (analogy only).
+8. D. N. Page and W. K. Wootters, *Evolution without evolution*, Phys. Rev. D **27** (1983) 2885 — prototype of taking a subsystem as clock; Theorem 7 here is a limitation on it.
+
 
 <div style="page-break-after: always;"></div>
 

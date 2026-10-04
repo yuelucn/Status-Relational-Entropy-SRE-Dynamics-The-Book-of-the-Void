@@ -1,0 +1,25 @@
+{
+  "round": 31,
+  "topic": "quark mass computation in SRE",
+  "Q_lepton_1776_86": 0.6666605114773855,
+  "Q_lepton_1776_93": 0.6666644634145,
+  "Q_light_2GeV": 0.5670428024352764,
+  "Q_light_corner_range": [
+    0.5459615458355239,
+    0.5861390205619278
+  ],
+  "Q_heavy_own_scale": 0.6627483270927806,
+  "Q_heavy_MZ": 0.7195462029845995,
+  "eta2_light": 0.35056420365291463,
+  "targets": {
+    "5/9": 0.5555555555555556,
+    "2/3": 0.6666666666666666,
+    "CS_lower": 0.3333333333333333
+  },
+  "verdicts": {
+    "absolute_quark_mass": "判负（闸门 C2：MS-bar 方案/能标依赖）",
+    "same_scale_quark_ratio": "危险（跑动因子跨阈值不同，Q_heavy 0.4% -> 5.3%）",
+    "QG_invariant_ratio": "可用（Q 对同乘因子严格不变；轻夸克三味同因子跑动）",
+    "eta2_value": "缺失（赋值规则未写出）"
+  }
+}

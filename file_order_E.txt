@@ -24,6 +24,9 @@
 ./2-Everything_Emerges/Classical_Mechanics_from_Discrete_Causal‑Information_Networks_1.0_E.md
 ./2-Everything_Emerges/SRE_Electron_Complete_Paper_1.0_E.md
 ./2-Everything_Emerges/SRE_Nucleon_Complete_Paper_1.5_E.md
+./2-Everything_Emerges/SRE_Mass_Origin_Paper_1.0_E.md
+./2-Everything_Emerges/SRE_Light_Origin_Paper_1.0_E.md
+./2-Everything_Emerges/SRE_Time_Emergence_1.0_E.md
 
 #part-3
 ./3-Mathematical_Support/0‑Abstract_Part_3_E.md
