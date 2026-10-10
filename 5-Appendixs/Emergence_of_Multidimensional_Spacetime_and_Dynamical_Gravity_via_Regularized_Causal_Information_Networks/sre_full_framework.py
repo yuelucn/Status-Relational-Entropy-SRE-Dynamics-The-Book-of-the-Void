@@ -62,7 +62,7 @@ SRE_CONFIG = {
     "THETA_CONFORMAL": 0.82798,
 
     # --- γ_latency for conformal scaling Ω = (Δz/θ)^(-γ/4) ---
-    "GAMMA_LATENCY": 0.05,
+    "GAMMA_LATENCY": 0.0585,
 
     # --- Numerical constants ---
     "HOLOGRAPHIC_DIM_CAP": 4,
