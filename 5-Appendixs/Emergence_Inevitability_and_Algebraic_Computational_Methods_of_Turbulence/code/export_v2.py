@@ -1,17 +1,8 @@
-"""Generate the authoritative v2 dataset: dual-mode Lambda sweep + finite-size check.
-
-Run from anywhere:  python code/export_v2.py
-"""
+"""Generate the authoritative v2 dataset: dual-mode Lambda sweep + finite-size check."""
 import json
 import math
-import os
-import sys
 import numpy as np
-
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import sre_core as core
-
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def sanitize(o):
@@ -56,6 +47,6 @@ for n_steps in (40, 60, 80, 100):
             n_steps, lam, rows[0]["frac_neg"], rows[0]["slope"], rows[0]["anisotropy"]))
 out["finite_size"] = fs
 
-with open(os.path.join(ROOT, "data", "phase_data_v2.json"), "w", encoding="utf-8") as f:
+with open("C:/mywork/wei/phase_data_v2.json", "w", encoding="utf-8") as f:
     json.dump(sanitize(out), f, indent=1, allow_nan=False)
-print("\nwrote data/phase_data_v2.json")
+print("\nwrote phase_data_v2.json")

@@ -1,7 +1,11 @@
 # 基于离散微观因果统计与多维流形重构的湍流涌现必然性及代数计算方法
 
-版本: 2.0（修订版）  
-数值基准：`sre_core.py`　数据集：`phase_data_v2.json`　交互验证：`sim/console_CN.html`
+版本: 3.0（修订版）
+
+
+数值基准：`sre_core.py`　数据集：`phase_data_v2.json`　交互验证：`sim/sre_phase_console.html`
+
+> **v3 说明**：本版基于程序正确性闸门（`reproduce_ns62.py` 复现 §6.2 相图至 $\Delta\le10^{-4}$）与两项前验证（`verify_paper_claims.py`）对 v2 作进一步更正。凡与 v2 冲突之处，以本版为准。
 
 ---
 
@@ -11,15 +15,23 @@
 
 | 编号 | v1 的问题 | 本版处理 |
 | :--- | :--- | :--- |
-| **R1** | §2.2 定义 $P_{\text{active}}=\frac{1}{1+e^{-\Delta S}}$，却在正文中称 $\Lambda\to\infty$ 时 $P_{\text{active}}\to 0$。二者直接矛盾：该式在 $\Lambda\to\infty$ 时给出 $P_{\text{active}}\to 1$ | 改用 $P_{\text{active}}=\frac{1}{1+e^{\Psi}}$，$\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$。见 §3.2 |
+| **R1** | §2.2 定义 $P_{\text{active}}=\frac{1}{1+e^{-\Delta S}}$，却在正文中称 $\Lambda\to\infty$ 时 $P_{\text{active}}\to 0$。二者直接矛盾：该式在 $\Lambda\to\infty$ 时给出 $P_{\text{active}}\to 1$ | 改用 $P_{\text{active}}=\frac{1}{1+e^{\Psi}}$。见 §3.2（其中 $\Psi$ 的表述由 v3 的 R10 进一步更正） |
 | **R2** | 把 $\beta\Lambda\mathbf{D}$ 标注为"失稳项"。但 $\Lambda\propto 1/Re$，$\Lambda$ 大对应低雷诺数层流，故该项实为有序化项 | 更正标注：$\beta\Lambda\mathbf{D}$ 为抹平（有序）项，$\alpha\operatorname{Tr}(A^TA)$ 为生成（失稳）项 |
 | **R3** | 未区分 $M$ 的对称与反对称部分；参考实现 `N-S.py` 甚至强制 $M_{vm,v_f}=-M_{v_f,v_m}$ 使 $M$ 整体反对称，与"$A$ 是 $M$ 的反对称部分"相冲突，且反对称矩阵不能作为 MDS 的 precomputed 度规 | 严格二分：$\mathbf{S}=(M+M^T)/2$ 承担度规与几何，$\mathbf{A}=(M-M^T)/2$ 承担手性。见 §2.2 |
 | **R4** | §5 称已"彻底废除" $M_{n+1}[1{:}n,1{:}n]\equiv M_n$ 这类约束，但参考实现中该约束始终存在 | 澄清：该约束是算子 1 结构方程的**定义性组成部分**，不是外部硬编码；v1 的表述不实。见 §4.1 |
 | **R5** | Theorem 7 用谱半径构造的内生 $\lambda(n)$ 取代了外生 $\Lambda$，使"$\Lambda$ 控制相变"在代码中无对应 | $\Lambda$ 与 $\lambda(n)$ 显式分离，提供两种模式对照。见 §4.3 与 §6.3 |
 | **R6** | 宣称存在"唯一临界点 $\Lambda_c$" | 实测为跨越约 1.5 个数量级的平滑过渡；降级为**过渡区**并给出实测宽度。见 §6.2 |
 | **R7** | 宣称高雷诺数下涌现"一维刚性中轴" | 该结论对度规重构方法敏感（两种 MDS 准则给出相反趋势），不构成稳健结论。见 §6.5 |
-| **R8** | 宣称能谱"严格与 Kolmogorov $k^{-5/3}$ 合拢" | 实测一维代理谱斜率约 $-1.85$，且随 $N$ 增大进一步偏离 $-5/3$。已限定为代理指标。见 §6.6 |
+| **R8** | 宣称能谱"严格与 Kolmogorov $k^{-5/3}$ 合拢" | 实测一维代理谱斜率约 $-1.85$，且随 $N$ 增大进一步偏离 $-5/3$。已限定为代理指标。见 §6.6（其中"随 $N$ 偏离"由 v3 的 R12 更正为大 $N$ 饱和） |
 | **R9** | 未报告度规重构方法的选择与不确定性 | 新增 §6.1 方法学说明与对照实验 |
+
+**v3 新增更正（R10–R12）**
+
+| 编号 | v2 的问题 | 本版处理与依据 |
+| :--- | :--- | :--- |
+| **R10** | §3.2 定义 $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$，对 $\Lambda$ **线性**。但 §4.2 的 Theorem 6 与参考实现给出 $P_{\text{active}}=1/(1+\Gamma\mathcal{D}_s/\mathfrak{B})$，对 $\Gamma(\Lambda)$ 是**对数**（$\Psi=\ln\Gamma+\ln\mathcal{D}_s-\ln\mathfrak{B}$）。二者不可能同时成立；且 $\beta\Lambda\mathbf{D}$ 为矩阵、$\alpha\operatorname{Tr}(A^TA)$ 为标量，类型不匹配 | §3.2 改写为主方程自洽形式。**依据**：§4.2 Theorem 6 与 `sre_core.py` 逐项一致，且由 `verify_dissipation.py` 实测 $C$ 验证到 $\le1.1\%$ 误差。见 §3.2 |
+| **R11** | §6.4 仅陈述"过渡区未收敛、不可外推"，未给出收敛机制 | 补充有限尺寸收敛的解析机制：由 combined_C 耗散主方程导出普适曲线 $C(z)=1-\ln(1+z)/z$，$z\propto\lambda n/E$，得 $\beta_\infty=0$（$\ln z/z$ 慢衰减）。**依据**：`beta_dissipation_theory.py`（13 点 $R^2(\log z)=0.997$）、`verify_dissipation.py`（$\beta_{\text{theo}}=0.420$ vs $\beta_{\text{meas}}=0.460$）。见 §6.4 |
+| **R12** | §6.6 宣称谱斜率"随 $N$ 增大进一步变陡"（由 $N=40\to100$：$-1.767\to-1.932$ 得出） | 大 $N$ 下该趋势**不复存在**：$\Lambda=10^{-3}$ 时斜率先陡后**饱和**（$N=800/1600/3200$ 为 $-1.79/-1.80/-1.78$）；$\Lambda=10^{-2}$ 时**变平**（$N=800\to6400$：$-1.63\to-1.38$）。"变陡"是小 $N$ 有限尺寸假象。见 §6.6 |
 
 ---
 
@@ -68,33 +80,41 @@ $$\mathbf{S} \equiv \frac{M + M^T}{2}, \qquad \mathbf{A} \equiv \frac{M - M^T}{2
 
 假设微观自由度从"相干有序态"向"无序退相干态"转移的概率受控于熵变。根据非平衡态玻尔兹曼-香农统计，微观自由度被无序涨落激活的概率服从逻辑斯蒂分布。
 
-定义**判别量**（抹平项减生成项）：
+定义**判别量** $\Psi$（抹平项减生成项）：其精确形式由 §3.2 的自洽式给出，$\Psi=\ln\Gamma+\ln\mathcal{D}_s-\ln\mathfrak{B}$。其两项的物理含义为（修正 R2，v3 修正 R10）：
 
-$$\Psi \equiv \beta\Lambda\mathbf{D} - \alpha\operatorname{Tr}(A^TA)$$
+1. **抹平（有序）项**：由 $\ln\Gamma$ 承担，$\Gamma$（$\propto\Lambda$）大即局域松弛快，拓扑差异在生成后即被抹除。
+2. **生成（失稳）项**：由 $-\ln\mathfrak{B}$ 承担，局域自旋相干势垒 $\mathfrak{B}$ 越高，拓扑差异再生能力越强。
 
-其中 $\alpha,\beta$ 为无量纲常数，$\mathbf{D}$ 为规范化拓扑距离矩阵。两项的物理含义（修正 R2）：
+> **v3 更正（R10）**：v2 写作 $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$，对 $\Lambda$ 线性且矩阵/标量类型不匹配；本版改为与 §4.2/参考实现一致的对数形式。定性物理图像（抹平项随 $\Lambda$ 增大、生成项随手性增强）不变。
 
-1. **$\beta\Lambda\mathbf{D}$——有序化（抹平）项**：$\Lambda$ 大即局域松弛快，拓扑差异在生成后即被抹除。
-2. **$\alpha\operatorname{Tr}(A^TA)$——失稳（生成）项**：局域自旋相干能越高，拓扑差异再生能力越强。
+### 3.2 激活概率与符号约定（修正 R1，v3 修正 R10）
 
-### 3.2 激活概率与符号约定（修正 R1）
+$$P_{\text{active}} = \frac{1}{1 + e^{\Psi}}$$
 
-$$\boxed{P_{\text{active}} = \frac{1}{1 + e^{\Psi}} = \frac{1}{1 + \exp\!\big(\beta\Lambda\mathbf{D} - \alpha\operatorname{Tr}(A^TA)\big)}}$$
+> **v3 更正（R10）**：v2 将判别量写作 $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$，对 $\Lambda$ 线性。该式与 §4.2 的 Theorem 6 及参考实现不符（后者对 $\Gamma$ 为对数），故本版以自洽形式给出。
 
-检验两端极限，可见其与物理图像一致：
+**自洽的判别量**。由 §4.2 主方程解出存活概率 $P_{\text{active}}=1-p_{\text{prune}}$：
 
-* $\Lambda \to +\infty$（极端低雷诺数）：$\Psi\to+\infty$，$P_{\text{active}}\to 0$，进入确定性层流相。
-* $\Lambda \to 0$（极端高雷诺数）：$\Psi \to -\alpha\operatorname{Tr}(A^TA)\le 0$，$P_{\text{active}}\ge \tfrac12$；当手性能级显著时 $P_{\text{active}}\to 1$，无序涨落全面激活。
+$$P_{\text{active}} = \frac{1}{1 + \Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}, \qquad\text{即}\qquad \Psi = \ln\Gamma + \ln\mathcal{D}_s - \ln\mathfrak{B}$$
 
-> v1 写作 $P_{\text{active}}=1/(1+e^{-\Delta S})$ 并同时宣称 $\Lambda\to\infty$ 时 $P_{\text{active}}\to 0$，二者不可同时成立。本版修正指数符号；临界条件 $\Psi=0$ 给出的 $\Lambda_c$ 表达式与 v1 相同，故 v1 的定性结论不受影响。
+其中 $\mathcal{D}_s$ 为因果拓扑深度，$\mathfrak{B}=\mathcal{E}_{\text{local}}+\exp(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}})$ 为势垒（§4.2），$\Gamma$ 为剪枝增益。$\Psi$ **对 $\Gamma$ 取对数**，而非对 $\Lambda$ 线性——这是与 §4.2/参考实现一致的形式。
+
+极限行为（与物理图像一致）：
+
+* $\Gamma\to+\infty$（极端低雷诺数，$\Lambda$ 大）：$\Psi\to+\infty$，$P_{\text{active}}\to 0$，进入确定性层流相。
+* $\Gamma\to 0$（极端高雷诺数）：$\Psi\to-\infty$，$P_{\text{active}}\to 1$，无序涨落全面激活。
+
+> **说明**：v2 的 $\beta\Lambda\mathbf{D}$ 为矩阵、$\alpha\operatorname{Tr}(A^TA)$ 为标量，二者相减类型不匹配；且 $\Psi$ 对 $\Lambda$ 线性与代码的 $\ln$ 依赖矛盾。本版取对数形式，§4.2 逐项对应 `sre_core.py`，并由实测 $C$（`verify_dissipation.py`，误差 $\le1.1\%$）验证。
 
 ### 3.3 临界条件（修正 R6）
 
-由 $\Psi(\Lambda)=0$ 得形式临界值
+由 $\Psi(\Lambda)=0$（即 $\Gamma\mathcal{D}_s/\mathfrak{B}=1$）得形式临界条件
 
-$$\Lambda_c = \frac{\alpha\operatorname{Tr}(A^TA)}{\beta\mathbf{D}}$$
+$$\Gamma_c = \frac{\mathfrak{B}}{\mathcal{D}_s}$$
 
-由于 $\partial\Psi/\partial\Lambda=\beta\mathbf{D}>0$，$\Psi$ 对 $\Lambda$ 严格单调递增，故 $\Psi=0$ 至多有一个解。**介值定理保证该解存在，但存在性不等于尖锐相变**：§6.2 的实测表明，宏观序参量在 $\Lambda_c$ 附近是平滑演化的，跨越约 1.5 个数量级而非在某点跃变。因此本文将 $\Lambda_c$ 称为**过渡区中心**，不主张其为热力学意义上的临界点。
+在模式 A 下 $\Gamma=\Lambda$，故 $\Lambda_c=\mathfrak{B}/\mathcal{D}_s$；在模式 B 下 $\Gamma=\Lambda\lambda(n)$，临界 $\Lambda$ 相应重标定（见 §6.3）。
+
+由于 $\partial\Psi/\partial\Gamma=1/\Gamma>0$，$\Psi$ 对 $\Gamma$ 严格单调递增，故 $\Psi=0$ 至多有一个解。**介值定理保证该解存在，但存在性不等于尖锐相变**：§6.2 的实测表明，宏观序参量在过渡区附近是平滑演化的，跨越约 1.5 个数量级而非在某点跃变。因此本文将 $\Lambda_c$ 称为**过渡区中心**，不主张其为热力学意义上的临界点。
 
 ---
 
@@ -264,6 +284,26 @@ $$\Lambda \in [\,8\times10^{-2},\ 2.5\,], \qquad \text{即} \quad Re\propto1/\La
 
 > 因此：过渡区的**定量位置具有 $N$ 依赖性**，不可外推到 $N\to\infty$。可稳健主张的仅是"存在单调过渡"这一定性结论。
 
+#### 6.4.1 收敛机制的解析解释（v3 新增，R11）
+
+v2 仅陈述"未收敛"，本版补充其解析来源。由 combined_C《层级耗散自组织二元网络动力学理论》§二的主方程
+
+$$p_{\text{prune}}(d,\mathcal{E}) = 1 - \frac{1}{1+\Gamma\,\dfrac{d}{\mathcal{E}+1}}, \qquad d=n-\max(i,j)$$
+
+在深度 $d\in[0,n]$ 上作连续近似积分，存活概率 $\langle 1-p_{\text{prune}}\rangle$ 化为**普适曲线**
+
+$$C(z) = 1 - \frac{\ln(1+z)}{z}, \qquad z \equiv \frac{\Gamma\,n}{\mathcal{E}+1}$$
+
+幂律指数 $\beta\equiv-\dfrac{d\ln C}{d\ln Re}$ 在 $z\to\infty$ 时满足 $\beta(z)\approx\dfrac{\ln z-1}{z}\to 0$。**即热力学极限下无有限渐近值 $\beta_\infty=0$**，且衰减为 $\ln z/z$，**慢于任何幂律**（故此前 $1/N$、$1/N^2$ 外推均不成立）。
+
+**数值验证**（`beta_dissipation_theory.py`、`verify_dissipation.py`）：
+
+* 用一致协议实测 $C(\lambda,N)$ 反演 $z$，得 $z\propto\lambda^{1.40}N^{0.97}$，13 个数据点 $R^2(\log z)=0.997$；
+* 以最终 $M$ 的实际势垒代入主方程，$C_{\text{theo}}$ 与 $C_{\text{meas}}$ 在 $\Gamma\in[10^{-2},10^{-1}]$ 误差 $\le1.1\%$，$\beta_{\text{theo}}=0.420$ vs $\beta_{\text{meas}}=0.460$；
+* 实测倍增比值 $[800\to1600]/[1600\to3200]=1.135$，与理论预测 $1.131$ 吻合——而 $1/N$ 模型预测 $2.0$，被实测否定。
+
+> **结论（替代 v2 的"不可外推"）**：过渡区的 $N$ 依赖不是偶然的实验短板，而是**耗散主方程的内禀性质**——有限尺寸修正以 $\ln z/z$ 极慢衰减，永无有限极限。这解释了 §6.6 谱斜率在大 $N$ 下的饱和（见下）。
+
 ### 6.5 关于"一维刚性中轴"（修正 R7）
 
 v1 宣称：在高雷诺数下，MDS 重构空间会自发涌现出"高度连通的刚性中轴线"（红色核），被耗散外壳包裹。
@@ -284,12 +324,23 @@ v1 宣称：在高雷诺数下，MDS 重构空间会自发涌现出"高度连通
 * $\Lambda\gtrsim3\times10^{-1}$ 后斜率迅速升至正值，级联消失；
 * 随 $N$ 增大斜率**进一步变陡**：$N=40,60,80,100$ 分别给出 −1.767、−1.847、−1.899、−1.932（$\Lambda=10^{-3}$）。
 
+**v3 更正（R12）：大 $N$ 外推否定了"持续变陡"**。将 $N$ 外推到 $10^3$ 量级（`verify_paper_claims.py`，seeds[0,1]）：
+
+| $N$ | $\Lambda=10^{-3}$ | $\Lambda=10^{-2}$ |
+| ---: | ---: | ---: |
+| 800 | −1.79 | −1.63 |
+| 1600 | −1.80 | −1.67 |
+| 3200 | −1.78 | −1.55 |
+| 6400 | — | **−1.38** |
+
+可见：$\Lambda=10^{-3}$ 时斜率在 $N\ge800$ 后**饱和**（−1.79/−1.80/−1.78，几乎不变），并未继续变陡；$\Lambda=10^{-2}$ 时斜率反而**变平**（$N=800\to6400$ 从 −1.63 升到 −1.38）。**v2 由 $N=40\to100$ 得出的"随 $N$ 单调偏离 −1.667"是小 $N$ 有限尺寸假象**，与 §6.4.1 的 $\ln z/z$ 慢衰减机制定性一致（高阶统计量随 $N$ 趋于平台而非发散）。
+
 **实现依赖性提示**：结构密度是一阶统计量，在不同随机实现的 PRNG 下高度一致
 （Python 的 PCG64 与浏览器端的 mulberry32 在同一 $\Lambda$ 下差异 $<0.001$）。
 但谱斜率是高阶统计量，对具体实现敏感：同一 $\Lambda$ 下两种 PRNG 给出的均值
 在高 $\Lambda$ 处差异可达 0.5，而种子间标准差本身已达 1.0 以上。
 
-> 结论：本框架确实自发产生一个稳定的幂律标度区，这是目前最稳健的实证信号。但它**不是** Kolmogorov $k^{-5/3}$：实测值约 −1.85，且随 $N$ 增大单调偏离 −1.667。此外该谱是沿因果序的一维代理谱，不等于三维能谱 $E(k)$。综合实现依赖性，本文只主张"存在稳定的幂律标度区"这一定性事实及其在高雷诺数侧的近似数值（−1.85），**不主张** slope 的精确值具有跨实现可比性，也**不主张**与 K41 理论达成定量合拢；`protocol_CN.md` 中"严格与 $k^{-5/3}$ 平行合拢"的验收指标应据本节修订。
+> 结论：本框架确实自发产生一个稳定的幂律标度区，这是目前最稳健的实证信号。但它**不是** Kolmogorov $k^{-5/3}$：实测值约 −1.8，在高 $N$ 下**饱和于平台而非持续偏离**。此外该谱是沿因果序的一维代理谱，不等于三维能谱 $E(k)$。综合实现依赖性，本文只主张"存在稳定的幂律标度区，其斜率在大 $N$ 下饱和于约 −1.8"这一定性事实，**不主张** slope 的精确值具有跨实现可比性，也**不主张**与 K41 理论达成定量合拢；`cop.md` 中"严格与 $k^{-5/3}$ 平行合拢"的验收指标应据本节修订。
 
 ---
 
@@ -298,8 +349,9 @@ v1 宣称：在高雷诺数下，MDS 重构空间会自发涌现出"高度连通
 1. **湍流的产生**：是因果控制力（$\Lambda$）相对局域自旋生成能力不足时，微观自由度大面积激活的**非平衡过渡**；实测为宽度约 1.5 个数量级的平滑过渡区，而非尖锐临界点。
 2. **拟序结构的维持**：存活通道受算子 1 的历史只读约束与算子 3 的永久拓扑锚点保护，在代数上构成抵抗 Paradigm B 抹平的不变量。这是结构性论证，已由 §6.2 的单调相图支持。
 3. **与连续力学的兼容**：Chapman-Enskog 展开给出 N-S 的矩结构（§5），但属结构性兼容，$\nu=\zeta\ell^2\Lambda$ 中的 $\zeta$ 尚待标定。
-4. **稳健的实证信号**：高雷诺数侧存在稳定的手性场幂律标度区（斜率约 −1.85），随 $\Lambda$ 增大而崩溃。这是本框架目前最强的可复现结果。
-5. **不予主张的**：尖锐临界点、一维刚性中轴、Kolmogorov $k^{-5/3}$ 定量合拢。三项均因方法学不确定性或实测偏离而降级（R6、R7、R8）。
+4. **有限尺寸收敛**（v3 新增）：过渡区不可外推并非实验短板，而是耗散主方程的内禀性质——修正以 $\ln z/z$ 极慢衰减，$\beta_\infty=0$，无有限渐近值（§6.4.1）。
+5. **稳健的实证信号**：高雷诺数侧存在稳定的手性场幂律标度区，其斜率在大 $N$ 下**饱和于约 −1.8**（非持续变陡），随 $\Lambda$ 增大而崩溃。这是本框架目前最稳健的可复现结果。
+6. **不予主张的**：尖锐临界点、一维刚性中轴、Kolmogorov $k^{-5/3}$ 定量合拢、谱斜率随 $N$ 的单调发散。四项均因方法学不确定性或实测偏离而降级（R6、R7、R8、R12）。
 
 本方法通过显式分离外生控制量 $\Lambda$ 与内生自适应量 $\lambda(n)$、严格二分 $M$ 的对称与反对称分量，并把全部数值实验收敛到单一可复现基准 `sre_core.py`，为从离散信息网络层面研究复杂流体提供了**可被检验**而非仅可被叙述的基础。
 
@@ -311,4 +363,13 @@ v1 宣称：在高雷诺数下，MDS 重构空间会自发涌现出"高度连通
 python sre_core.py            # 参考实现（含全部修正标注）
 python export_v2.py           # 生成 phase_data_v2.json（§6 全部数据）
 python make_tables.py         # 导出 tables.md
+```
+
+**v3 新增验证脚本**：
+
+```bash
+python reproduce_ns62.py          # 程序正确性闸门：复现 §6.2 相图（Δ≤1e-4）
+python verify_paper_claims.py     # R12：大 N 谱斜率；V1：N=800 口径冲突
+python beta_dissipation_theory.py # §6.4.1：耗散主方程 → 普适曲线 C(z)、β∞=0
+python verify_dissipation.py      # §6.4.1：主方程闭环验证（C_theo vs C_meas）
 ```

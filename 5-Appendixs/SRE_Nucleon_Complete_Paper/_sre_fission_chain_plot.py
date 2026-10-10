@@ -1,12 +1,15 @@
 # -*- coding: utf-8 -*-
 """
 SRE 核反应验证 · 配图 2：复合核激发盈余 vs 热截面相关 + 快中子收缩
-生成 sre_fission_chain_corr.png/.svg 与 sre_fission_chain_decades.pdf/.png缩对比
+生成 figures/sre_fission_chain_corr.png/.svg 与 sre_fission_chain_decades.pdf/.png缩对比
 """
+import os
 import numpy as np
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+
+os.makedirs("figures", exist_ok=True)
 
 plt.rcParams["font.family"] = ["sans-serif"]
 plt.rcParams["font.sans-serif"] = ["Microsoft YaHei", "SimHei", "DejaVu Sans"]
@@ -71,6 +74,6 @@ ax[1].text(0.02, -0.7,
 
 fig.suptitle("SRE 核反应验证：闭合度势判据与快中子实验", fontsize=15, fontweight="medium")
 plt.tight_layout(rect=[0, 0, 1, 0.94])
-plt.savefig("sre_fission_chain_corr.png", dpi=150, bbox_inches="tight")
-plt.savefig("sre_fission_chain_corr.svg", bbox_inches="tight")
-print("saved sre_fission_chain_corr.png/.svg")
+plt.savefig("figures/sre_fission_chain_corr.png", dpi=150, bbox_inches="tight")
+plt.savefig("figures/sre_fission_chain_corr.svg", bbox_inches="tight")
+print("saved figures/sre_fission_chain_corr.png/.svg")

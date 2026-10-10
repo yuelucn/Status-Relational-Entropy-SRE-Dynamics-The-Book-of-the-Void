@@ -95,8 +95,11 @@ def tracking_parameter(M_prev, beta=1.1):
 
 # ---------------------------------------------------------------- 演化
 
-def evolve(n_steps, lam=0.01, mode="exogenous", beta=1.1, seed=0):
+def evolve(n_steps, lam=0.01, mode="exogenous", beta=1.1, seed=0, M_init=None):
     """算子 1（块扩张 + 只读继承）× 算子 2（极大熵剪枝）。
+
+    优化版: 内层 for k 循环用 masked dot product 向量化,
+            外层 for vm 用增量更新保持正确串行语义.
 
     返回 (M, history)，history 每步记录 (n, 存活通道数, λ(n))。
     """
@@ -104,12 +107,22 @@ def evolve(n_steps, lam=0.01, mode="exogenous", beta=1.1, seed=0):
         raise ValueError("mode must be 'exogenous' or 'adaptive'")
 
     rng = np.random.default_rng(seed)
-    M = np.array([[1.0]])
-    history = []
 
-    for n in range(1, n_steps):
-        Mn = np.ones((n + 1, n + 1))
-        Mn[:n, :n] = M                       # 算子 1：只读历史子块继承
+    if M_init is not None:
+        M = np.array(M_init, dtype=float).copy()
+        assert M.ndim == 2 and M.shape[0] == M.shape[1], "M_init must be square"
+        K = M.shape[0]
+        assert np.allclose(np.diag(M), 1.0), "M_init diagonal must be 1"
+        assert set(np.unique(M)).issubset({-1.0, 0.0, 1.0}), "M_init values must be in {-1,0,1}"
+        start_n = K
+        history = [(i+1, 0, 1.0) for i in range(K)]
+    else:
+        M = np.array([[1.0]])
+        start_n = 1
+        history = []
+
+    for n in range(start_n, n_steps):
+        vf = n
 
         if mode == "adaptive":
             lam_n = tracking_parameter(M, beta=beta)
@@ -118,34 +131,45 @@ def evolve(n_steps, lam=0.01, mode="exogenous", beta=1.1, seed=0):
             lam_n = 1.0
             gain = lam
 
-        vf = n
+        M_hist = M[:n, :n]
+        row_vf = np.ones(n)
+        alive_mask = np.zeros(n, dtype=bool)  # 追踪哪些 vm 是存活的
         active = 0
 
         for vm in range(n):
-            D_s = (n + 1) - (vm + 1)         # 无量纲因果拓扑深度
+            if vm > 0:
+                row_seg = row_vf[:vm]
+                hist_col = M_hist[:vm, vm]
+                mask = (row_seg != 1.0) & (hist_col != 1.0)
+                inter = float(np.dot(row_seg[mask], hist_col[mask]))
+            else:
+                inter = 0.0
 
-            # 2 步图游走干涉项（Theorem 3 的局域多回路多项式）
-            inter = 0.0
-            for k in range(n):
-                if Mn[vf, k] != 1.0 and Mn[k, vm] != 1.0:
-                    inter += Mn[vf, k] * Mn[k, vm]
-            E_tilde = inter + 2.0 * Mn[vf, vm]
+            E_tilde = inter + 2.0 * row_vf[vm]
             E_local = abs(E_tilde)
-            barrier = E_local + np.exp(np.sign(E_tilde) if E_tilde != 0 else 1.0)
+            sign_E = np.sign(E_tilde) if E_tilde != 0 else 1.0
+            barrier = E_local + np.exp(sign_E)
 
-            # 极大熵剪枝主方程（Theorem 6）
-            p_prune = 1.0 - 1.0 / (1.0 + gain * D_s / barrier)
+            p_prune = 1.0 - 1.0 / (1.0 + gain * (n - vm) / barrier)
 
-            if rng.random() >= p_prune:      # χ = 1：通道存活，注入手性剪切
-                if vf > vm:
-                    Mn[vf, vm] = -1.0 if (vf - vm) % 3 == 0 else 1.0
-                    Mn[vm, vf] = -Mn[vf, vm]
+            if rng.random() >= p_prune:
+                val = -1.0 if (vf - vm) % 3 == 0 else 1.0
+                row_vf[vm] = val
+                alive_mask[vm] = True
                 active += 1
-            else:                            # χ = 0：Paradigm B，强制自旋 +1
-                Mn[vf, vm] = 1.0
-                Mn[vm, vf] = 1.0
+            else:
+                row_vf[vm] = 1.0
+                alive_mask[vm] = False
 
-        Mn[vf, vf] = 1.0                     # Theorem 3：对角锁定
+        # col_vf: 存活时 col = -row (无论 row 是 +1 还是 -1), 剪枝时 col = 1.0
+        col_vf = np.where(alive_mask, -row_vf, 1.0)
+
+        Mn = np.ones((n + 1, n + 1))
+        Mn[:n, :n] = M_hist
+        Mn[vf, :n] = row_vf
+        Mn[:n, vf] = col_vf
+        Mn[vf, vf] = 1.0
+
         history.append((n + 1, active, lam_n))
         M = Mn
 
@@ -228,31 +252,3 @@ def sweep(lams, n_steps=60, mode="exogenous", seeds=(0, 1, 2, 3, 4), beta=1.1):
             row[k + "_sd"] = float(np.nanstd(acc[k]))
         out.append(row)
     return out
-
-
-# ---------------------------------------------------------------- 自测
-
-def _selftest():
-    """最小自测：两种模式在若干 Λ 上的关键观测量，用于确认环境与可复现性。"""
-    print("sre_core self-test  (N=60, 5 seeds)")
-    print("%-10s %10s | %9s %9s | %9s" %
-          ("mode", "Lambda", "frac_neg", "anisotropy", "slope"))
-    for mode in ("exogenous", "adaptive"):
-        for lam in (1e-3, 1e-1, 1.0, 10.0):
-            rows = sweep([lam], n_steps=60, mode=mode, seeds=(0, 1, 2, 3, 4))
-            r = rows[0]
-            print("%-10s %10.4g | %9.4f %9.4f | %+9.3f" % (
-                mode, r["lam"], r["frac_neg"], r["anisotropy"], r["slope"]))
-    M, _ = evolve(60, 0.01, mode="exogenous", seed=0)
-    m = measure(M)
-    print()
-    print("symmetry check: max|M - M^T| = %.3f  (0 would mean M is symmetric)" %
-          m["sym_defect"])
-    print("antisymmetric energy share = %.4f" % m["antisym_share"])
-    print()
-    print("expected: frac_neg decreases monotonically with Lambda in both modes;")
-    print("          slope ~ -1.85 at low Lambda, -> ~0 at high Lambda.")
-
-
-if __name__ == "__main__":
-    _selftest()

@@ -64,7 +64,7 @@ I have recorded all of this here. Scientific intuition arises out of the void, a
 - [A SRE-Dynamics Inspired Topological Paradigm for Composite Elementary Particles and Relational Space Emergence](#A-SRE-Dynamics-Inspired-Topological-Paradigm-for-Composite-Elementary-Particles-and-Relational-Space-Emergence)
 - [A Foundational Reconstruction of Classical Electrodynamics via Discrete Graph Topology and Bidirectional Causality](#A-Foundational-Reconstruction-of-Classical-Electrodynamics-via-Discrete-Graph-Topology-and-Bidirectional-Causality)
 - [Rigorous Reconstruction of Maxwell's Field Equations via Purely Dimensionless Graph Cohomology and Global Evolution Step](#Rigorous-Reconstruction-of-Maxwell's-Field-Equations-via-Purely-Dimensionless-Graph-Cohomology-and-Global-Evolution-Step)
-- [Emergence Inevitability and Algebraic Computational Methods of Turbulence Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction](#Emergence-Inevitability-and-Algebraic-Computational-Methods-of-Turbulence-Based-on-Discrete-Microscopic-Causal-Statistics-and-Multidimensional-Manifold-Reconstruction)
+- [The Necessity of Turbulence Emergence and an Algebraic Computational Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction](#The-Necessity-of-Turbulence-Emergence-and-an-Algebraic-Computational-Method-Based-on-Discrete-Microscopic-Causal-Statistics-and-Multidimensional-Manifold-Reconstruction)
 - [Oseen Vortex Initial-Value Experiment: Repositioning the Empirical Report (v2)](#Oseen-Vortex-Initial-Value-Experiment:-Repositioning-the-Empirical-Report-(v2))
 - [Emergence of Classical Mechanics from Discrete Causal-Information Networks: Ontological Mapping and Effective-Theory Limits within Status-Relational-Entropy (SRE) Dynamics](#Emergence-of-Classical-Mechanics-from-Discrete-Causal-Information-Networks:-Ontological-Mapping-and-Effective-Theory-Limits-within-Status-Relational-Entropy-(SRE)-Dynamics)
 - [A Complete Characterization of the Electron within the SRE Framework: A Unified Account of Axiomatization, the Fine-Structure Constant, Molecular Computation, and Orbital Assignment](#A-Complete-Characterization-of-the-Electron-within-the-SRE-Framework:-A-Unified-Account-of-Axiomatization,-the-Fine-Structure-Constant,-Molecular-Computation,-and-Orbital-Assignment)
@@ -72,6 +72,8 @@ I have recorded all of this here. Scientific intuition arises out of the void, a
 - [Mass Origin in the State–Relational–Entropy Framework](#Mass-Origin-in-the-State–Relational–Entropy-Framework)
 - [Positioning of Light and Electromagnetic Waves in the SRE Framework](#Positioning-of-Light-and-Electromagnetic-Waves-in-the-SRE-Framework)
 - [Emergence of Time in the State–Relational–Entropy Framework](#Emergence-of-Time-in-the-State–Relational–Entropy-Framework)
+- [How Does Time "Grow" Itself?](#How-Does-Time-"Grow"-Itself?)
+- [Emergence of Positive and Negative Electric Charge in the SRE Framework: Magnitude, Sign, and Numerical Verification](#Emergence-of-Positive-and-Negative-Electric-Charge-in-the-SRE-Framework:-Magnitude,-Sign,-and-Numerical-Verification)
 - [Part III: Mathematical‑Technical Support — Abstract](#Part-III:-Mathematical‑Technical-Support-—-Abstract)
 - [Universal Graph-Operator Pipeline Framework White Paper for Status-Relational-Entropy (SRE) Dynamics](#Universal-Graph-Operator-Pipeline-Framework-White-Paper-for-Status-Relational-Entropy-(SRE)-Dynamics)
 - [Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator（$\mathcal{G}_{n\rightarrow n+1}$）](#Operator-1:-Pure-Algebraic-Mathematical-Specification-for-the-Local-Graph-Expansion-Operator（$\mathcal{G}_{n\rightarrow-n+1}$）)
@@ -432,20 +434,25 @@ This part corresponds to **Emergence of All‑Things within State‑Relational�
 
 5. **Rigorous Reconstruction of Maxwell‑Field Equations via Pure‑Dimensionless Graph‑Cohomology and Global‑Evolution Steps**: 0‑State dimensionless ontological‑layer manuscript. Using graph cohomology, elementary charge, Planck’s constant, vacuum characteristic impedance, and the fine‑structure constant are treated as algebraically emergent invariants. It topologically reconstructs the Maxwell‑field equations without importing external empirical physical constants.
 
-6. **Emergence Inevitability and Algebraic‑Computational Methods of Turbulence from Discrete‑Microscopic‑Causal Statistics and Multi‑Dimensional‑Manifold Reconstruction (v2.0 revised)**: Discarding the continuum‑medium assumption, it derives criterion operators from discrete causal‑statistical axioms, proves a series of algebraic theorems, and strictly degenerates to the Navier‑Stokes equations in the continuum limit. Simulations verify that turbulence together with coherent vortex structures are inevitable outcomes of topological phase‑transitions. Version 2 corrects v1's sign contradictions (the activation probability is reformulated as $P_{\text{active}} = 1/(1+e^{\Psi})$; $M$ is strictly split so that its symmetric part $\mathbf S$ carries the metric/geometry and its antisymmetric part $\mathbf A$ carries chirality) and deliberately downgrades three overclaims: the "unique critical point" becomes a **smooth transition band** spanning roughly 1.5 decades; the claim of "agreement with K41" is restricted to a proxy one‑dimensional spectrum measured at about −1.85, deviating further from −5/3 as $N$ grows; and the "rigid central axis" is withdrawn as an artefact of the metric‑reconstruction method. An audit script cross‑checks 8 tables and 276 numerical values across both language versions and the data tables with 0 inconsistencies. SI‑dimensional calibration for fluid systems is reserved for future work.
+6. **Emergence Inevitability and Algebraic‑Computational Methods of Turbulence from Discrete‑Microscopic‑Causal Statistics and Multi‑Dimensional‑Manifold Reconstruction (v3.0 revised)**: Discarding the continuum‑medium assumption, it derives criterion operators from discrete causal‑statistical axioms, proves a series of algebraic theorems, and strictly degenerates to the Navier‑Stokes equations in the continuum limit. Simulations verify that turbulence together with coherent vortex structures are inevitable outcomes of topological phase‑transitions. Version 2 corrects v1's sign contradictions (the activation probability is reformulated as $P_{\text{active}} = 1/(1+e^{\Psi})$; $M$ is strictly split so that its symmetric part $\mathbf S$ carries the metric/geometry and its antisymmetric part $\mathbf A$ carries chirality) and deliberately downgrades three overclaims: the "unique critical point" becomes a **smooth transition band** spanning roughly 1.5 decades; the claim of "agreement with K41" is restricted to a proxy one‑dimensional spectrum measured at about −1.85, deviating further from −5/3 as $N$ grows; and the "rigid central axis" is withdrawn as an artefact of the metric‑reconstruction method. An audit script cross‑checks 8 tables and 276 numerical values across both language versions and the data tables with 0 inconsistencies. SI‑dimensional calibration for fluid systems is reserved for future work. Version 3 further corrects v2 via a program-correctness gate (reproduce_ns62.py reproduces the section 6.2 phase diagram to Delta<=1e-4) and two prior verifications (verify_paper_claims.py): it recasts Psi in logarithmic form and closes the loop with verify_dissipation.py (error <=1.1 percent); it supplements an analytic finite-size convergence mechanism (dissipation master equation -> universal curve C(z), beta_infinity=0, via beta_dissipation_theory.py), and uses large-N extrapolation to refute the persistent-steepening claim.
 7. **Oseen Vortex Initial‑Value Experiment: Repositioning the Empirical Report (v2)**: A repositioning companion to the original report *"Empirical Verification of Oseen Vortex Manifold Emergence and Topological Locking under the SRE‑MDS Discrete Dynamics Paradigm"*. The complete original experimental setup and observed data are retained; only two overclaims are corrected. The order parameter $\Phi(N)\equiv 1.0000$ is in fact a trivial "zero‑pruning" result rather than a demonstration of noise robustness, and is downgraded to an indicator of the zero‑dissipation limit. The residual $8.93\times10^{-1}$ is an **embedding error** — the binary dissimilarities cannot be represented exactly in three‑dimensional Euclidean space — and the "intrinsic non‑Euclidean curvature" reading is deleted. Re‑positioned against the main paper's phase diagram, the experiment's $\Lambda = 0.05$ lies at the **upper edge of the transition band** (structural density ≈ 0.44, spectral slope ≈ −1.83), being neither laminar nor "extremely high Reynolds number". A correct experimental design for testing noise robustness and a list of follow‑up measurements are also provided.
 
 8. **Emergence of Classical Mechanics from Discrete Causal‑Information Networks**: Establishes ontological mappings between SRE‑network observables and Newtonian classical‑mechanics. It states three necessary conditions for the emergence of classical behaviour: large‑sample coarse‑graining, sufficient environmental decoherence, and staying away from topological‑phase‑transition thresholds. Demonstrates emergent behaviour using inertia, $F\propto ma$, and Hooke’s law, and defines their failure boundaries.
 
 9. **A Complete Characterization of the Electron within the SRE Framework: A Unified Account of Axiomatization, the Fine‑Structure Constant, Molecular Computation, and Orbital Assignment**: Complete ontological account of the electron. The electron is characterized as the unique, stable and noise‑resistant emergent fixed point of a sparse operator `R` acting on the coherent kernel of a binary self‑organizing network, its ontological structure being the three‑dimensional cube Q₃ (8 vertices, 12 edges, first Betti number 5, i.e. 12×5 = 60). The paper presents three independent topological derivation routes for the fine‑structure constant $\alpha \approx 1/137.036$ (Möbius‑ring graph‑Laplacian spectral gap, the four‑state intrinsic‑spectrum frequency formula, and Möbius‑parametrization arc‑length perturbation), and a Tier‑0 independent audit concludes that $\lambda_0$ is not an independent primitive and that the n=60 match is a discretization coincidence. It derives the double‑cover four‑state complex from Fork A axioms (A1–A4 + R1), establishes the observable dictionary $\alpha = \lambda_2/\lambda_{\max} = v/c$, and promotes the residual to the A5 bare coupling $\delta$. It proves uniqueness, convergence and robustness of `R` on the coherent kernel (unified verification suite 10/10). It further extends to molecular computation (MCI spectral fingerprint, Q₃ ontological identification, MDS relation‑inversion geometry) and to electron orbital‑assignment rules (Pauli = cell uniqueness, $C_\ell = 4\ell+2$, $C_n = 2n^2$, Hund = tension minimization).
 
-10. **Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two‑State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation**: Complete ontological account of the nucleon (v1.5). The nucleon is characterized as a stable composite object emerging on a three‑strand Y‑shaped coherent kernel, constrained by the open/closed two‑state rule for dormant edges and by the closure‑rebalancing rule, with ontological structure given by the triangular closure of three strands $Y_3 \ltimes \triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36). It proposes three ontological conjectures concerning quarks, enters from neutron $\beta$‑decay to derive the skeleton structural constraints T1–T3, redefines isospin $Z_2$ as the open/closed two‑state rather than a flavour‑multiplet flip, and uniquely retains candidate A via a three‑step screening combined with a "transition–residue" framework. It validates the unified three‑level signature chain from single‑nucleon $\beta$‑decay through compound‑nucleus fission to macroscopic chain criticality (thermal‑cross‑section Pearson correlation +0.932), and generalizes to a shared‑ring splicing law calibrated against external nuclear data (V=9k+3, E=15k+3, $\beta_1$=6k+1, $\lambda_2 = 2-\sqrt{3}$). Version 1.5 further tightens the structural‑layer conclusion (**A does not enter the structure, k does**; the attachment point is not a degree of freedom, and inter‑ring linkage is proven impossible to repair, so multi‑group configurations should be absent at this layer), demotes antisymmetry from an energy term to a zero‑parameter existence criterion L1 ($|n_n - n_p| \le 1$, 8/8 on the 8‑entry scorecard), and rewrites the electronic‑state objection as a configuration‑level problem, proving that open‑band attachment is isomorphic to variant A (hence not a new structure, and already excluded quantitatively by the deuteron binding energy). The boundary at $A = 4$ is thereby split into "numerically non‑computable, existentially computable", and the boundary is **relocated** from $A \ge 4$ to $A \ge 5$, explicitly demarcating the honest boundary that "nuclear binding for A ≥ 5 is not computable at this layer."
+10. **Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two‑State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation**: Complete ontological account of the nucleon (v2.1). The nucleon is characterized as a stable composite object emerging on a three‑strand Y‑shaped coherent kernel, constrained by the open/closed two‑state rule for dormant edges and by the closure‑rebalancing rule, with ontological structure given by the triangular closure of three strands $Y_3 \ltimes \triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36). It proposes three ontological conjectures concerning quarks, enters from neutron $\beta$‑decay to derive the skeleton structural constraints T1–T3, redefines isospin $Z_2$ as the open/closed two‑state rather than a flavour‑multiplet flip, and uniquely retains candidate A via a three‑step screening combined with a "transition–residue" framework. It validates the unified three‑level signature chain from single‑nucleon $\beta$‑decay through compound‑nucleus fission to macroscopic chain criticality (thermal‑cross‑section Pearson correlation +0.932), and generalizes to a shared‑ring splicing law calibrated against external nuclear data (V=9k+3, E=15k+3, $\beta_1$=6k+1, $\lambda_2 = 2-\sqrt{3}$). Version 1.5 further tightens the structural‑layer conclusion (**A does not enter the structure, k does**; the attachment point is not a degree of freedom, and inter‑ring linkage is proven impossible to repair, so multi‑group configurations should be absent at this layer), demotes antisymmetry from an energy term to a zero‑parameter existence criterion L1 ($|n_n - n_p| \le 1$, 8/8 on the 8‑entry scorecard); Version 2.1 further adds a "contextual-limitations" boundary statement and extends the configuration-level test of the electronic-state objection (S1–S4 rerun, S2≅S1) and the disproof of "boson = transition quantum", and rewrites the electronic‑state objection as a configuration‑level problem, proving that open‑band attachment is isomorphic to variant A (hence not a new structure, and already excluded quantitatively by the deuteron binding energy). The boundary at $A = 4$ is thereby split into "numerically non‑computable, existentially computable", and the boundary is **relocated** from $A \ge 4$ to $A \ge 5$, explicitly demarcating the honest boundary that "nuclear binding for A ≥ 5 is not computable at this layer."
 
 11. **Mass Origin in the SRE Framework: A Circulant‑Operator Formulation on the Three‑Ring ℤ₃ Torsor**: A formalising account of the ontology of mass. Taking the SRE nucleon skeleton $Y_3\ltimes\triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36) as its only structural input, it first proves that the three shared rings form a **ℤ₃‑torsor** under the automorphism group (a cyclic order with no absolute origin); then, from "respecting the three‑ring structure ⇒ commuting with the cyclic shift $S$ ⇒ circulant matrix", it derives the unique admissible form of the mass operator $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$, ℤ₃‑equivariance compressing 9 matrix entries into 3. The spectrum is a set of 120° samples of one cosine, $\lambda_j=c_0+2|c_1|\cos(\theta+2\pi j/3)$, but the paper **explicitly corrects** the reading that "the cosine shape holds trivially for any three generations and is therefore a free reparameterisation rather than a constraint". "Opening" = choosing an origin for the DFT characters, a ℤ₃ gauge degree of freedom rather than information. The invariant moduli space is **two‑dimensional**, $(\eta,\ \delta\bmod 2\pi/3)$, and the Koide combination $Q=\tfrac13+\tfrac23\eta^{2}$ probes only the $\eta$ direction (measured on the charged leptons, $\eta^{2}=1/2$ holds to $3.3\times10^{-6}$). The conclusion is registered as case 15 of the discrete‑closure law G12: "three" and the functional form are given (discrete side, closed), while the value of $\eta$ and the absolute scale $c_0$ are **not** (continuous side, requiring external input); the single real gap is the assignment rule.
 
 12. **Positioning of Light and Electromagnetic Waves in the SRE Framework: the Involutive ℤ₂ Sector, the Cohomological Ladder, and "One Emission as One Closed→Open Transition"**: A structural positioning paper for the light side. It places the project's existing light‑side stipulations (the residuality axiom, the Möbius double cover, the involution $P=S^{n/2}$ on the weighted Möbius ladder $M_n$, the $\mathbb{Z}_2$ holonomy coupling $\delta_A$) and the ℤ₃ structure on the mass side under one framework for comparison; the whole paper needs only one structural input — the involution $P$ on $M_n$ — and gives four mutually independent, verifiable propositions: **the gear proposition** (light runs on $\mathbb{Z}_2$, mass on $\mathbb{Z}_3$; the two are adjacent rungs of the same cohomological ladder $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$, the root of the difference being a group‑theoretic prohibition $\lvert\mathbb{Z}_2\rvert=2<3$); **the carrier proposition** (the light carrier is the odd eigenspace of an involution, with $P^{2}=I$, membership in the automorphism group, commutation with the Laplacian, zero trace and spectrum exactly $\{\pm1\}$; it is completely determined by the single integer $n$ with **zero continuous free parameters**, so there is no place to put a source); **the source proposition** (the spectrum splits into a "sector‑blind term + odd‑sector constant term", in which only the $w$ channel simultaneously satisfies "acts only on the odd sector" and "shifts every mode uniformly", so the source can inject only one scalar on the light side); and **the transition proposition** (one emission = one closed→open transition: the ledger difference carries the energy, with $E$ and $\beta_1$ each decreasing by 1, while the spectral invariants carry the carrier; the two are orthogonal, so a chemical source and a nuclear source **share the same carrier**, differing only in the level at which the ledger is recorded). The conclusion is registered as case 18 of G12: it gives "why the gears are two and three", "why the source is a single scalar" and "why energy and carrier are orthogonal" (discrete side, closed), but **not** the energy scale of light (continuous side).
 
 13. **Emergence of Time in the SRE Framework: A Saturation Law for the Rate of Change, Universality, and the Incompatibility of Two Internal Clocks**: A derived‑quantity account of the ontology of time. Introducing no new free real number, it turns "time = a derived quantity obtained after an internal process has been designated as the clock" into a computable and falsifiable form: the per‑step time is defined as $\Omega(n)=\big\langle \rho_{ij}/(1+\rho_{ij})\big\rangle$ with $\rho_{ij}=\lambda d_{ij}/(\lvert M^{2}\rvert_{ij}+1)$, and the emergent time as $T_{\rm em}(n)=\sum_{k<n}\Omega(k)$; every conclusion is synthesised from two **pre‑existing zero‑parameter laws** (the age‑distribution law times the iid spectral law) and then compared against measurement. Seven verdicts: **saturation** ($\Omega$ rises monotonically to $1$, with a remaining gap of $0.1540$ at $999$ steps); **the saturation law** $1-\Omega=c\ln n/\sqrt n$ ($c=0.694157$, maximum relative residual $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail — and the same law is predicted with zero free parameters to within $0.28\%$–$1.65\%$); **asymptotic uniformity** (the relative step‑to‑step non‑uniformity falls from $4.23\times10^{-3}$ to $6.10\times10^{-5}$); **differential ageing** (the rewriting rate of a single element rises with its own age from $0.058931$ to $0.957750$, so an individual member's clock is not uniform); **universality in $\lambda$** (a 15‑fold sweep does not move the limit, only the speed of approach); **a phase transition** (squaring the denominator of the update rule moves the limit from $1.0000$ to about $0.390$, and the gap widens monotonically); and **the incompatibility of two clocks** (the memory horizon scales as $\tau_{\rm mem}\propto\sqrt n$ while the amount of change gives $T_{\rm em}\propto n$, their ratio diverging with $n$, so **no rescaling can make both clocks uniform simultaneously**). One separation across semantics is preserved: **there is structure, there is no memory** — the joint distribution of the state matrix rejects full independence (row‑sum variance is $1.94$–$2.03$ times the iid value), yet two different prefixes become indistinguishable after continued evolution (exact permutation $p\ge0.3841$, none significant after Holm correction); precisely because the present state carries zero bits about its own past does "time must be emergent rather than read off" become a claim with content. Three honesty boundaries: the emergent time has **shape but no scale**; at attainable sizes "time is constant" holds only to about $22\%$; and two **guesses formed before measurement** have been refuted ($c\propto\lambda^{-1}$ measured at a slope of $-0.577$; "the variant kernel runs away into freezing" settles instead at a fixed point near $0.39$), registered as open items rather than used as evidence. The conclusion is registered as case 16 of G12.
+
+
+14. **A Plain-Language Version of the Emergence of Time in the SRE Framework**: A plain-language rewrite of the time-ontology paper Emergence of Time in the SRE Framework, aimed at general science-and-engineering readers. It preserves every core conclusion and datum, replacing project-internal jargon with everyday language and analogies; the seven verdicts (saturation law, universality, incompatibility of two clocks, etc.) and the structure-without-memory semantic separation are retold non-technically, and the three honest boundaries (notably emergent time has shape but no scale) are retained. Reproduction scripts are shared with the technical version (appendix SRE_Time_Emergence).
+
+15. **Emergence of Positive and Negative Electric Charge in the SRE Framework: Magnitude, Sign, and Numerical Verification**: A paper closing the sign gap of charge. SRE expresses charge as the counting of topological knots (magnitude only); this paper rigorously gives Q(K)=sigma(K) middot deg(K) middot e, yielding electron Q=-e, positron Q=+e, proton Q=+e, neutron Q=0, antiproton Q=-e, and explaining the charge-mass decoupling (proton and electron share the same magnitude but differ in mass by about 1836 times). Two numerical tests confirm: the sign channel and the magnitude channel are mutually independent (section 10.1); the electron is forced by skeleton symmetry into the trivial holonomy class while the proton lands in the non-trivial class (section 10.2), giving the electron/proton sign opposition a structural origin.
 
 > This suite inherits the axiomatic foundations of Part I. Several manuscripts only complete qualitative‑semi‑analytical mechanism construction; full quantitative benchmarking and large‑multi‑degree‑of‑freedom simulations are directions for subsequent research. Similarly, **this part does not answer the ultimate origin of causal differences**.
 
@@ -1432,457 +1439,381 @@ This Version 2.1 establishes absolute operational closure for SRE topological 
 
 <div style="page-break-after: always;"></div>
 
-# Emergence Inevitability and Algebraic Computational Methods of Turbulence Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction
-
-**Version: 2.0 (revised)**
-Numerical baseline: `sre_core.py` · Dataset: `phase_data_v2.json` · Interactive check: `sim/console_EN.html`
-
-This document is the English counterpart of `main_CN.md` v2. Section numbering, theorem
-labels (Theorem 3 / 6 / 7) and every numerical claim are kept in one-to-one
-correspondence with the Chinese version. Where the two disagree, the Chinese
-version governs.
-
----
-
-## 0. Revision notes
-
-| ID | Defect in v1 | Treatment here |
-| :--- | :--- | :--- |
-| **R1** | §2.2 defined $P_{\text{active}}=1/(1+e^{-\Delta S})$ yet asserted $P_{\text{active}}\to0$ as $\Lambda\to\infty$. The formula gives the opposite limit. | Replaced by $P_{\text{active}}=1/(1+e^{\Psi})$ with $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$. See §3.2 |
-| **R2** | $\beta\Lambda\mathbf{D}$ was labelled the *destabilising* term, but $\Lambda\propto1/Re$ so large $\Lambda$ means laminar. | Relabelled: $\beta\Lambda\mathbf{D}$ is the smoothing (ordering) term; $\alpha\operatorname{Tr}(A^TA)$ is the generation (destabilising) term |
-| **R3** | No split of $M$ into symmetric and antisymmetric parts. The reference implementation even forced $M_{vm,v_f}=-M_{v_f,v_m}$, making $M$ globally antisymmetric — incompatible with "$A$ is the antisymmetric *part* of $M$", and an antisymmetric matrix is rejected by MDS as a precomputed dissimilarity | Strict bipartition: $\mathbf{S}=(M+M^T)/2$ carries the metric and all geometry; $\mathbf{A}=(M-M^T)/2$ carries chirality. See §2.2 |
-| **R4** | §5 claimed the constraint $M_{n+1}[1{:}n,1{:}n]\equiv M_n$ had been "completely abolished"; it was in fact present throughout | Clarified as a **defining component** of the Operator 1 structural equation, not an external patch. See §4.1 |
-| **R5** | The endogenous spectral-radius parameter $\lambda(n)$ of Theorem 7 displaced the exogenous $\Lambda$, leaving "$\Lambda$ controls the transition" with no counterpart in code | $\Lambda$ and $\lambda(n)$ are explicitly separated; two modes are defined and compared. See §4.3 and §6.3 |
-| **R6** | A "unique critical point $\Lambda_c$" was claimed | Measured as a smooth crossover spanning ~1.5 decades; downgraded to a **transition band** with a stated width. See §6.2 |
-| **R7** | A "1D rigid axis" emerging at high Reynolds number was claimed | Sensitive to the metric-reconstruction criterion (two MDS criteria give opposite trends); not a robust result. See §6.5 |
-| **R8** | "Strict collapse onto Kolmogorov $k^{-5/3}$" was claimed | The measured 1D proxy slope is ≈ −1.85 and drifts further from −5/3 as $N$ grows. Restricted to a proxy indicator. See §6.6 |
-| **R9** | The choice of metric-reconstruction criterion was not reported | New §6.1 with a controlled comparison |
-
----
-
-## 1. Introduction and physical image
-
-The classical Navier-Stokes equations formulate fluids as absolutely continuous
-media. When explaining the mechanism of turbulence, microscopic thermal motion and
-energy fluctuations are amplified by the non-linear advection term, which within the
-continuum readily triggers singularities (blow-up) and divergence. This has long
-been a bottleneck for classical continuum mechanics.
-
-This paper proposes a discrete dynamical paradigm. Rather than treating a fluid as
-pressure and velocity fields over a continuous space, we reconstruct it as a
-statistical information network governed by causal correlations among a large
-number of discrete microscopic states.
-
-* **Space-time is non-prior**: geometry is not a pre-existing stage; the bedrock is
-  a discrete, dimensionless causal network.
-* **Spontaneous macroscopic emergence**: geometry is a macroscopic consequence of
-  the algebraic evolution of correlative distances among microscopic states.
-
-The aim is an axiomatic statement of the paradigm, a proof that it degenerates to
-the N-S equations in the continuum limit, and — critically — **reproducible
-numerical tests of every quantitative claim**. All numbers in §6 are produced by
-`sre_core.py`.
-
----
-
-## 2. Basic objects and dimensional system
-
-### 2.1 Dimensional basis
-
-Three independent bases span the dimensional system: the elementary causal clock
-step $[\tau]$, the ground-state topological distance $[\ell]$, and the elementary
-information action $[H]$.
-
-* **State matrix $M\in\mathbb{R}^{n\times n}$**: binary causal correlation matrix,
-  $M_{ij}\in\{-1,+1\}$, **generally non-symmetric**.
-* **Intrinsic relaxation time $\tau_0$** and **macroscopic characteristic time
-  $T$**, both of dimension $[\tau]$. The dimensionless dissipation coefficient is
-
-$$\Lambda \equiv \frac{\tau_0}{T} \propto \frac{1}{Re}$$
-
-### 2.2 Strict symmetric / antisymmetric bipartition (fixes R3)
-
-$$\mathbf{S} \equiv \frac{M + M^T}{2}, \qquad \mathbf{A} \equiv \frac{M - M^T}{2}$$
-
-* **$\mathbf{S}$ — topological metric part.** Symmetric; it is the sole legitimate
-  input to multidimensional scaling. All geometric reconstruction (manifold
-  coordinates, anisotropy) acts on $\mathbf{S}$ only.
-* **$\mathbf{A}$ — local spin operator.** The antisymmetric shear component; its
-  quadratic form $\operatorname{Tr}(A^TA)=\sum_{i,j}A_{ij}^2$ is the local vortex
-  action flux out of equilibrium.
-
-The relation is exclusive and exhaustive: $M$ non-symmetric $\iff$ $\mathbf{A}\neq0$
-$\iff$ the system carries chirality.
-
-> The v1 implementation forced $M_{vm,v_f}=-M_{v_f,v_m}$, making $M$ globally
-> antisymmetric. Then $\mathbf{A}\equiv M$ and $\mathbf{S}\equiv0$: the phrase
-> "$A$ is the antisymmetric part of $M$" degenerates to an identity, and
-> $\mathbf{S}=0$ means the metric vanishes altogether. The present version keeps
-> $M$ generally non-symmetric. Measured at $N=60$, $\Lambda=10^{-2}$, the
-> antisymmetric share $\operatorname{Tr}(A^TA)/\operatorname{Tr}(M^TM)=0.947$:
-> most correlation energy is indeed carried by the chiral part, yet $\mathbf{S}$
-> remains non-degenerate.
-
----
-
-## 3. Axiomatic derivation of the criterion operator
-
-### 3.1 Maximum-entropy master equation
-
-Define the **discriminant** (smoothing minus generation):
-
-$$\Psi \equiv \beta\Lambda\mathbf{D} - \alpha\operatorname{Tr}(A^TA)$$
-
-with dimensionless constants $\alpha,\beta$ and normalised topological distance
-matrix $\mathbf{D}$ (fixes R2):
-
-1. **$\beta\Lambda\mathbf{D}$ — ordering (smoothing) term.** Large $\Lambda$ means
-   fast local relaxation: differences are erased as soon as they appear.
-2. **$\alpha\operatorname{Tr}(A^TA)$ — destabilising (generation) term.** Higher
-   local spin coherence means a stronger capacity to regenerate differences.
-
-### 3.2 Activation probability and sign convention (fixes R1)
-
-$$\boxed{P_{\text{active}} = \frac{1}{1 + e^{\Psi}} = \frac{1}{1 + \exp\!\big(\beta\Lambda\mathbf{D} - \alpha\operatorname{Tr}(A^TA)\big)}}$$
-
-Limiting behaviour is now consistent with the physics:
-
-* $\Lambda\to+\infty$ (very low $Re$): $\Psi\to+\infty$, $P_{\text{active}}\to0$ —
-  deterministic laminar phase.
-* $\Lambda\to0$ (very high $Re$): $\Psi\to-\alpha\operatorname{Tr}(A^TA)\le0$, so
-  $P_{\text{active}}\ge\tfrac12$, approaching $1$ when the chiral level is
-  significant — fluctuations are fully activated.
-
-> v1 wrote $P_{\text{active}}=1/(1+e^{-\Delta S})$ while asserting
-> $P_{\text{active}}\to0$ as $\Lambda\to\infty$; these cannot both hold. The sign
-> in the exponent is corrected here. The critical condition $\Psi=0$ yields the
-> same $\Lambda_c$ expression as v1, so v1's qualitative conclusions survive.
-
-### 3.3 Critical condition (fixes R6)
-
-$$\Lambda_c = \frac{\alpha\operatorname{Tr}(A^TA)}{\beta\mathbf{D}}$$
-
-Since $\partial\Psi/\partial\Lambda=\beta\mathbf{D}>0$, $\Psi$ is strictly
-increasing in $\Lambda$ and $\Psi=0$ has at most one root. **Existence of the root
-does not imply a sharp transition**: §6.2 shows the macroscopic order parameter
-evolves smoothly across roughly 1.5 decades. $\Lambda_c$ is therefore called the
-**centre of the transition band**, not a thermodynamic critical point.
-
----
-
-## 4. Operator system
-
-Cascade: $M(t+\tau)=\mathcal{O}_3\circ\mathcal{O}_2\circ\mathcal{O}_1\,[M(t)]$.
-
-### 4.1 Operator 1 — boundary expansion $\mathcal{G}_{n\to n+1}$ (clarifies R4)
-
-$$M_{n+1} = \mathcal{G}_{n\to n+1}(M_n) = \begin{pmatrix} M_n & \mathbf{x}_{n+1} \\ \mathbf{x}_{n+1}^T & y_{n+1} \end{pmatrix}, \qquad M_{n+1}[1{:}n,1{:}n] \equiv M_n$$
-
-> **Clarification.** v1 §5 claimed this constraint had been "completely abolished".
-> It was present throughout, and **it should not be abolished**: it is a defining
-> component of the Operator 1 structural equation, encoding read-only history.
-> Without it, $\mathcal{G}_{n\to n+1}$ degenerates into an arbitrary rewriting
-> operator and causal inheritance is undefined. Its axiomatic status is retained
-> here: **history, once realised, cannot be retroactively modified**. The v1 claim
-> of "no artificial hardcoding" should be read as "no empirical fitting
-> coefficients and no phenomenological drag corrections", not "no structural
-> constraints".
-
-**Theorem 3 (diagonal invariant).** On the binary domain $\Phi(x)\in\{-1,1\}$,
-
-$$\Phi\big((M_{n+1}^2)_{n+1,n+1}\big) = \sum_{m=1}^{n}\Phi(x_{n+1,m})^2 + \Phi(y_{n+1})^2 = n + 1$$
-
-### 4.2 Operator 2 — maximum-entropy pruning $\mathcal{M}_\chi\circ\mathcal{E}_{\text{local}}$
-
-Local multi-circuit interference polynomial (2-step walk) between frontier node
-$v_f$ and historical node $v_m$:
-
-$$\tilde{\mathcal{E}}_{\text{local}}(v_f,v_m) = \sum_{v_k\in\mathcal{N}(v_f)\cap\mathcal{N}(v_m)} M(v_f,v_k)M(v_k,v_m) + 2M(v_f,v_m)$$
-
-with $\mathcal{E}_{\text{local}}=|\tilde{\mathcal{E}}_{\text{local}}|$, barrier
-$\mathfrak{B}=\mathcal{E}_{\text{local}}+\exp(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}})$,
-and dimensionless causal depth $\mathcal{D}_s=(n+1)-\sigma(v_m)$.
-
-**Theorem 6 (pruning master equation).**
-
-$$p_{\text{prune}}(v_f,v_m) = 1 - \frac{1}{1 + \Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}$$
-
-where $\Gamma$ is the **pruning gain** (§4.3). Under pruning ($\chi=0$) the
-Elimination-Conduction mechanism (Paradigm B) applies:
-
-$$M_{n+1}(i,j) \leftarrow \chi\cdot M_{n+1}(i,j) + (1-\chi)\cdot 1$$
-
-forcing the spin to the multiplicative identity $+1$, which erases the channel's
-phase contribution from the product feedback loop without severing graph
-connectivity. Surviving channels ($\chi=1$) receive an antisymmetric chiral shear.
-
-### 4.3 The gain $\Gamma$: exogenous $\Lambda$ vs endogenous $\lambda(n)$ (fixes R5)
-
-Theorem 7 removed the circular dependency between operators via the spectral radius
-of the previously realised sub-graph:
-
-$$\lambda(n) = \frac{1}{\beta}\cdot\frac{\ln\!\big(1+\rho(\mathbf{A}_{n-1})\big)}{n+1}$$
-
-By Perron-Frobenius the spectral radius is a unique algebraic invariant, so
-$\lambda(n)$ has a unique real analytic value at each frontier expansion. However,
-v1 let $\lambda(n)$ **fully replace** $\Lambda$, expelling the macroscopic
-dissipation authority from the evolution equation.
-
-Here the two are explicitly separated:
-
-| Mode | Gain $\Gamma$ | Meaning |
-| :--- | :--- | :--- |
-| **A (exogenous)** | $\Gamma = \Lambda$ | $\Lambda$ acts directly as the transition control |
-| **B (adaptive)** | $\Gamma = \Lambda\cdot\lambda(n)$ | Theorem 7 adaptive correction on top of $\Lambda$ |
-
-Both factors are dimensionless, so dimensional consistency is preserved. §6.3
-compares the two empirically.
-
-### 4.4 Operator 3 — pentagonal parity breaking and logical emergence
-
-To break the parity degeneracy of the pure spin-product space, a 5-node
-non-homogeneous array with a fixed inversion anchor is introduced ($n:5\to6$):
-
-$$\mathbf{M}_5 = \begin{pmatrix} 1 & 1 & -1 & 1 & 1 \\ 1 & 1 & -1 & 1 & 1 \\ -1 & -1 & -1 & 1 & 1 \\ 1 & 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 & 1 \end{pmatrix}$$
-
-Nodes 1 and 2 are inputs $A,B$; node 3 is the rigid inversion anchor (self-loop and
-cross edges hard-coded to $-1$); nodes 4 and 5 are inert $+1$ boundary subgraphs.
-With activation mask $\boldsymbol{\chi}=[1,1,1,0,0]^T$,
-
-$$Y_{\text{spin}} = \operatorname{sgn}\!\left(\tfrac12(S_{1,6}+S_{2,6}) - S_{3,6}\right), \qquad \operatorname{sgn}(0)\to+1$$
-
-The four input combinations map through $f(S)=(1-S)/2$ to $\{1,1,1,0\}$ — a standard
-**NAND** gate — completing the Turing-completeness argument. The topological
-difference it creates is permanently locked and resists erasure by Paradigm B.
-
----
-
-## 5. Continuum limit and compatibility with N-S
-
-Let $\tau\to0$, $\ell\to0$, mapping $M_{ij}$ to a multi-point correlation function
-$M(\mathbf{x},\mathbf{y},t)$ and defining macroscopic moments:
-
-$$\rho(\mathbf{x},t)=\int M\,d\mathbf{y}, \qquad \rho\mathbf{u}(\mathbf{x},t)=\int\frac{\mathbf{x}-\mathbf{y}}{\tau}M\,d\mathbf{y}$$
-
-As $\Lambda\to\infty$ with vanishing fluctuations, the transition probability
-degenerates to a Dirac $\delta$ evolution and the algebraic operator becomes a
-continuous master equation:
-
-$$\frac{\partial M}{\partial t} + \nabla_{\mathbf{x}}\cdot\left(\frac{\mathbf{x}-\mathbf{y}}{\tau}M\right) = \mathcal{C}[M]$$
-
-A Chapman-Enskog expansion in $\epsilon=\ell/L$,
-$M=M^{(0)}+\epsilon M^{(1)}+\mathcal{O}(\epsilon^2)$, gives:
-
-1. **First moment** — continuity equation $\partial_t\rho+\nabla\cdot(\rho\mathbf{u})=0$;
-2. **Second moment** — momentum conservation
-   $\int(\mathbf{x}-\mathbf{y})\mathcal{C}[M]d\mathbf{y}=0$ yields the advection
-   term, while $M^{(1)}$ contributes the viscous stress tensor under symmetry
-   breaking. Since $\Lambda\equiv\tau_0/T$, the kinematic viscosity is formally
-   $\nu=\zeta\,\ell^2\Lambda$.
-
-Hence
-
-$$\rho\left(\frac{\partial\mathbf{u}}{\partial t}+(\mathbf{u}\cdot\nabla)\mathbf{u}\right) = -\nabla p + \rho\,\zeta\ell^2\Lambda\,\nabla^2\mathbf{u}$$
-
-which is the standard Navier-Stokes equation.
-
-> **Caveat.** $\zeta$ is an undetermined network geometric constant; it is not
-> derived from first principles here, nor calibrated against direct numerical
-> simulation. This section establishes **structural compatibility** (the discrete
-> master equation carries the N-S moment structure), not quantitative equivalence.
-> $\nu=\zeta\ell^2\Lambda$ is a dimensional-analysis correspondence pending
-> calibration.
-
----
-
-## 6. Empirical verification
-
-All numbers from `sre_core.py`: $N=60$, five seeds (0–4), dataset
-`phase_data_v2.json`.
-
-### 6.1 Method: choice of metric-reconstruction criterion (new, R9)
-
-Dissimilarities are taken from the symmetric part:
-$d_{ij}=\sqrt{\max(0,\,2-2S_{ij})}$. Two criteria exist for recovering 3D
-coordinates. This work adopts **classical MDS (Torgerson)**: eigendecomposition of
-the double-centred Gram matrix $\mathbf{B}=-\tfrac12\mathbf{J}\mathbf{D}^{(2)}\mathbf{J}$,
-retaining the top three eigenvectors.
-
-Rationale: it is a closed-form solution — deterministic, reproducible, and free of
-local minima. That matters here, since avoiding local minima is precisely what this
-paradigm claims over gradient-based approaches.
-
-The two criteria nevertheless give **opposite** anisotropy trends ($N=60$, seed 0):
-
-| $\Lambda$ | classical MDS (strain) | SMACOF (stress, converged) |
-| ---: | ---: | ---: |
-| $10^{-3}$ | 0.3720 | 0.3338 |
-| $10^{-2}$ | 0.3635 | 0.3365 |
-| $10^{-1}$ | 0.3686 | 0.3573 |
-| $1$ | 0.3422 | 0.3682 |
-| $10$ | 0.3546 | 0.4634 |
-
-SMACOF stress is stable after `max_iter=1000` (653.79, no further descent), so the
-discrepancy is **not** under-convergence — it is a different objective function.
-This methodological uncertainty bears directly on §6.5.
-
-### 6.2 Mode A — phase diagram under exogenous $\Lambda$ (fixes R6)
-
-| $\Lambda$ | $Re\propto1/\Lambda$ | structure density | sd | anisotropy | slope | sd |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| $10^{-4}$ | $10^{4}$ | 0.4915 | 0.0001 | 0.4308 | −1.851 | 0.055 |
-| $10^{-3}$ | $10^{3}$ | 0.4901 | 0.0004 | 0.3753 | −1.847 | 0.151 |
-| $10^{-2}$ | $10^{2}$ | 0.4764 | 0.0016 | 0.3587 | −1.824 | 0.326 |
-| $10^{-1}$ | $10$ | 0.3809 | 0.0023 | 0.3515 | −1.566 | 0.250 |
-| $3.16\times10^{-1}$ | $3.16$ | 0.2622 | 0.0026 | 0.3510 | −0.556 | 0.935 |
-| $1$ | $1$ | 0.1435 | 0.0046 | 0.3501 | +0.207 | 1.414 |
-| $3.16$ | $0.32$ | 0.0647 | 0.0026 | 0.3618 | +0.124 | 0.762 |
-| $10$ | $0.1$ | 0.0254 | 0.0024 | 0.3600 | +0.264 | 1.080 |
-| $10^{2}$ | $10^{-2}$ | 0.0026 | 0.0004 | 0.3715 | +0.442 | 0.095 |
-
-Structure density falls monotonically from 0.4915 to 0.0026 in a smooth sigmoid.
-Defining the band by structure density decreasing from 0.40 to 0.08:
-
-$$\Lambda \in [\,8\times10^{-2},\ 2.5\,], \qquad Re\propto1/\Lambda \in [\,0.4,\ 12\,]$$
-
-**The band spans about 1.5 decades.** Seed-to-seed sd stays $\le0.005$ throughout,
-so the smoothness is intrinsic rather than noise.
-
-> The framework does **not** support a sharp critical point. What can be robustly
-> claimed is a monotone, reproducible structure-dissipation crossover roughly 1.5
-> decades wide. For $\Lambda>10^{2}$ structure density drops below $10^{-2}$, the
-> distance matrix becomes nearly null and MDS loses meaning (omitted).
-
-### 6.3 Mode B — consequences of engaging Theorem 7 (fixes R5)
-
-| $\Lambda$ | structure density | slope |
-| ---: | ---: | ---: |
-| $10^{-2}$ | 0.4914 | −1.854 |
-| $1$ | 0.4673 | −1.842 |
-| $3.16$ | 0.4186 | −1.672 |
-| $10$ | 0.1676 | −0.484 |
-| $10^{2}$ | 0.0269 | +0.136 |
-
-The same crossover now occurs at $\Lambda\approx3\sim30$, about **two decades** later
-than in mode A.
-
-Cause: $\lambda(n)$ decays from 0.315 to 0.010 over $n$ (at $N=60$), averaging
-$\sim10^{-2}$, systematically shrinking the effective gain. The decay also means the
-**effective pruning strength decreases with evolution time** — an intrinsic
-temporal non-stationarity (strong pruning early, weak later).
-
-> Engaging Theorem 7 preserves the qualitative structure (monotone crossover and
-> slope plateau both survive) but (i) rescales the effective magnitude of $\Lambda$
-> and (ii) introduces decay-type temporal non-stationarity. Both are the price of
-> decoupling the circular dependency; v1 did not mention them.
-
-### 6.4 Finite-size check
-
-| $N$ | $\Lambda=10^{-3}$ | $\Lambda=10^{-1}$ | $\Lambda=1$ |
-| ---: | ---: | ---: | ---: |
-| 40 | 0.4870 | 0.4020 | 0.1759 |
-| 60 | 0.4901 | 0.3809 | 0.1435 |
-| 80 | 0.4922 | 0.3608 | 0.1212 |
-| 100 | 0.4927 | 0.3452 | 0.1062 |
-
-* **High-$Re$ side ($\Lambda=10^{-3}$) has converged**: 0.487 → 0.493 from
-  $N=40$ to $100$, a change under 1.5%.
-* **Transition band ($\Lambda=10^{-1},1$) has not**: density keeps falling (at
-  $\Lambda=1$, 0.176 → 0.106, a 40% drop).
-
-> The **quantitative position of the band is $N$-dependent** and must not be
-> extrapolated to $N\to\infty$. Only the qualitative claim — a monotone crossover
-> exists — is robust.
-
-### 6.5 On the "1D rigid axis" (fixes R7)
-
-v1 claimed that at high Reynolds number the MDS reconstruction spontaneously
-exhibits a "highly connected rigid centreline" (red core) wrapped by a dissipative
-shell. The present tests do not support this strong claim:
-
-* Under classical MDS, anisotropy $\lambda_1/\sum\lambda$ stays within
-  **0.34–0.43** for $\Lambda\in[10^{-4},10]$; the variation is of the same order as
-  the seed-to-seed sd (up to 0.08 at the extremes), with no drift towards 1. Since
-  $1/3$ is perfect isotropy, the measured values sit only marginally above the
-  isotropic baseline.
-* Anisotropy rises above 0.86 only in the **degenerate, over-damped regime**
-  ($\Lambda\ge10^{2}$, structure density $<10^{-2}$), where the network is almost
-  entirely $+1$, the MDS input is near-singular, and the number carries no physical
-  meaning.
-* Iterative SMACOF gives the opposite trend (0.334 → 0.463 from $\Lambda=10^{-3}$
-  to $10$); see §6.1.
-
-> Under the metrics used here, the "rigid axis" should be regarded as **an artefact
-> of the metric-reconstruction method**, not a robust physical result. Establishing
-> it would require embedding-independent topological indicators (intrinsic dimension
-> estimation, persistent homology). It is no longer listed as a core result.
-
-### 6.6 Spectral slope of the chiral field (fixes R8)
-
-FFT of the chiral field $A$ along causal order; log-log fit over the mid-range:
-
-* For $\Lambda\lesssim3\times10^{-2}$ ($Re\gtrsim30$) the slope is stable at
-  **−1.82 ~ −1.85**, seed sd 0.04–0.33;
-* For $\Lambda\gtrsim3\times10^{-1}$ it rises rapidly toward positive values — the
-  cascade disappears;
-* It **steepens** with $N$: −1.767, −1.847, −1.899, −1.932 at
-  $N=40,60,80,100$ ($\Lambda=10^{-3}$).
-
-**Implementation sensitivity.** Structure density is a first-order statistic and is
-highly consistent across PRNG implementations (Python's PCG64 versus the browser's
-mulberry32 differ by $<0.001$ at the same $\Lambda$). The spectral slope, however, is
-a higher-order statistic and is implementation-sensitive: at the same $\Lambda$ the
-two PRNGs can differ by up to 0.5 at high $\Lambda$, where the seed-to-seed sd
-already exceeds 1.0.
-
-> The framework does generate a stable power-law scaling range — the most robust
-> empirical signal found so far. But it is **not** Kolmogorov $k^{-5/3}$: the
-> measured value is ≈−1.85 and drifts monotonically away from −1.667 as $N$ grows.
-> Moreover this is a 1D proxy spectrum along causal order, not the 3D energy
-> spectrum $E(k)$. Taken together with its implementation sensitivity, only the
-> qualitative fact — a stable power-law scaling range exists — and its approximate
-> high-$Re$ value (−1.85) are claimed; **neither cross-implementation comparability
-> of the exact slope nor quantitative collapse onto K41 is claimed.** The acceptance
-> criterion in `protocol_EN.md` stating "strict parallel collapse with $k^{-5/3}$" should be
-> revised in line with this section.
-
----
-
-## 7. Conclusions
-
-1. **Turbulence generation** is a non-equilibrium crossover triggered when causal
-   control ($\Lambda$) is insufficient relative to local spin generation. Measured
-   as a smooth transition band about 1.5 decades wide, not a sharp critical point.
-2. **Maintenance of coherent structure**: surviving channels are protected by the
-   read-only history constraint of Operator 1 and the permanent topological anchor
-   of Operator 3, forming algebraic invariants resistant to Paradigm B erasure.
-   This structural argument is supported by the monotone phase diagram of §6.2.
-3. **Compatibility with continuum mechanics**: the Chapman-Enskog expansion
-   reproduces the N-S moment structure (§5), but only structurally; $\zeta$ in
-   $\nu=\zeta\ell^2\Lambda$ remains to be calibrated.
-4. **Robust empirical signal**: a stable power-law scaling range of the chiral field
-   on the high-$Re$ side (slope ≈ −1.85) that collapses as $\Lambda$ grows. This is
-   the strongest reproducible result of the framework.
-5. **Not claimed**: a sharp critical point, a 1D rigid axis, or quantitative
-   collapse onto Kolmogorov $k^{-5/3}$. All three are downgraded (R6, R7, R8).
-
-By separating the exogenous control $\Lambda$ from the endogenous adaptive
-$\lambda(n)$, strictly splitting the symmetric and antisymmetric components of $M$,
-and consolidating every numerical experiment into a single reproducible baseline
-(`sre_core.py`), this work offers a foundation for studying complex fluids at the
-level of discrete information networks that is **testable rather than merely
-narratable**.
-
----
-
-## Appendix: reproduction
-
-```bash
-python sre_core.py      # reference implementation (all fix annotations inline)
-python export_v2.py     # generates phase_data_v2.json (all data in §6)
-python make_tables.py   # exports tables.md
+# The Necessity of Turbulence Emergence and an Algebraic Computational Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction
+
+Version: 3.0 (Revised)
+
+
+Numerical benchmark: `sre_core.py`　Dataset: `phase_data_v2.json`　Interactive verification: `sim/sre_phase_console.html`
+
+> **v3 Note**: This version further corrects v2 based on a program-correctness gate (`reproduce_ns62.py` reproduces the §6.2 phase diagram to $\Delta\le10^{-4}$) and two prior verifications (`verify_paper_claims.py`). Wherever this version conflicts with v2, this version prevails.
+
+---
+
+## 0. Revision Notes
+
+This version makes the following corrections relative to v1. Wherever it conflicts with v1, this version prevails; the basis for each correction is given.
+
+| No. | Problem in v1 | Handling in this version |
+| :--- | :--- | :--- |
+| **R1** | §2.2 defines $P_{\text{active}}=\frac{1}{1+e^{-\Delta S}}$, yet the text states that $P_{\text{active}}\to 0$ as $\Lambda\to\infty$. The two directly contradict each other: this expression gives $P_{\text{active}}\to 1$ as $\Lambda\to\infty$ | Changed to $P_{\text{active}}=\frac{1}{1+e^{\Psi}}$. See §3.2 (where the expression for $\Psi$ is further corrected by R10 of v3) |
+| **R2** | $\beta\Lambda\mathbf{D}$ is labeled the "destabilizing term." But $\Lambda\propto 1/Re$, and large $\Lambda$ corresponds to low-Reynolds-number laminar flow, so this term is in fact the ordering term | Corrected labeling: $\beta\Lambda\mathbf{D}$ is the smoothing (ordering) term, $\alpha\operatorname{Tr}(A^TA)$ is the generating (destabilizing) term |
+| **R3** | The symmetric and antisymmetric parts of $M$ are not distinguished; the reference implementation `N-S.py` even enforces $M_{vm,v_f}=-M_{v_f,v_m}$, making $M$ wholly antisymmetric, which conflicts with "$A$ is the antisymmetric part of $M$," and an antisymmetric matrix cannot serve as the precomputed metric for MDS | Strict bisection: $\mathbf{S}=(M+M^T)/2$ carries the metric and geometry, $\mathbf{A}=(M-M^T)/2$ carries the chirality. See §2.2 |
+| **R4** | §5 claims to have "thoroughly abolished" constraints such as $M_{n+1}[1{:}n,1{:}n]\equiv M_n$, but this constraint is always present in the reference implementation | Clarified: this constraint is a **definitional component** of Operator 1's structural equation, not external hard-coding; v1's statement is untrue. See §4.1 |
+| **R5** | Theorem 7 uses an endogenous $\lambda(n)$ built from the spectral radius to replace the exogenous $\Lambda$, leaving "$\Lambda$ controls the phase transition" with no counterpart in the code | $\Lambda$ and $\lambda(n)$ are explicitly separated, and two modes are provided for comparison. See §4.3 and §6.3 |
+| **R6** | Claims a "unique critical point $\Lambda_c$" | Measured to be a smooth transition spanning about 1.5 orders of magnitude; downgraded to a **transition region** with a measured width. See §6.2 |
+| **R7** | Claims that a "one-dimensional rigid central axis" emerges at high Reynolds number | This conclusion is sensitive to the metric reconstruction method (two MDS criteria give opposite trends) and does not constitute a robust conclusion. See §6.5 |
+| **R8** | Claims the energy spectrum "strictly converges to Kolmogorov $k^{-5/3}$" | The measured one-dimensional surrogate spectral slope is about $-1.85$ and, as $N$ increases, further deviates from $-5/3$. It has been restricted to a surrogate indicator. See §6.6 (where "deviation with $N$" is corrected by R12 of v3 to large-$N$ saturation) |
+| **R9** | Does not report the choice and uncertainty of the metric reconstruction method | Added §6.1, a methodological note and a comparison experiment |
+
+**New corrections in v3 (R10–R12)**
+
+| No. | Problem in v2 | Handling and basis in this version |
+| :--- | :--- | :--- |
+| **R10** | §3.2 defines $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$, **linear** in $\Lambda$. But Theorem 6 of §4.2 and the reference implementation give $P_{\text{active}}=1/(1+\Gamma\mathcal{D}_s/\mathfrak{B})$, which is **logarithmic** in $\Gamma(\Lambda)$ ($\Psi=\ln\Gamma+\ln\mathcal{D}_s-\ln\mathfrak{B}$). The two cannot both hold; moreover $\beta\Lambda\mathbf{D}$ is a matrix while $\alpha\operatorname{Tr}(A^TA)$ is a scalar, a type mismatch | §3.2 rewritten into the self-consistent main-equation form. **Basis**: Theorem 6 of §4.2 agrees term-by-term with `sre_core.py`, and is verified to $\le1.1\%$ error against the measured $C$ via `verify_dissipation.py`. See §3.2 |
+| **R11** | §6.4 merely states that "the transition region is not converged and cannot be extrapolated," without giving the convergence mechanism | Added the analytic mechanism of finite-size convergence: the universal curve $C(z)=1-\ln(1+z)/z$, $z\propto\lambda n/E$, derived from the combined_C dissipation main equation, gives $\beta_\infty=0$ ($\ln z/z$ slow decay). **Basis**: `beta_dissipation_theory.py` (13 points, $R^2(\log z)=0.997$), `verify_dissipation.py` ($\beta_{\text{theo}}=0.420$ vs $\beta_{\text{meas}}=0.460$). See §6.4 |
+| **R12** | §6.6 claims the spectral slope "becomes further steeper as $N$ increases" (inferred from $N=40\to100$: $-1.767\to-1.932$) | At large $N$ this trend **no longer exists**: at $\Lambda=10^{-3}$ the slope first steepens and then **saturates** ($N=800/1600/3200$ give $-1.79/-1.80/-1.78$); at $\Lambda=10^{-2}$ it **flattens** ($N=800\to6400$: $-1.63\to-1.38$). The "steepening" is a small-$N$ finite-size artifact. See §6.6 |
+
+---
+
+## 1. Introduction and Physical Picture
+
+The traditional Navier–Stokes equations treat a fluid as an absolutely continuous medium. When explaining the origin of turbulence, microscopic thermal motion and energy fluctuations are amplified by the nonlinear convective term, which in continuous mathematics readily leads to singularity (blow-up) and divergence difficulties—a long-standing bottleneck of classical continuum mechanics.
+
+This paper proposes a discrete dynamical paradigm: rather than treating a fluid as pressure and velocity fields over continuous space, we reconstruct it as an **information-statistical network of causal correlations among a large number of discrete microscopic states**.
+
+* **Space and time are not a priori**: spatial geometry is not a pre-existing stage; the substrate is a discrete, dimensionless network of causal correlations.
+* **The macroscopic emerges spontaneously**: geometric form is the macroscopic result emerging from the algebraic evolutionary correlation distances among microscopic states.
+
+The goal of this paper is to give an axiomatic formulation of this paradigm, to show that it degenerates to the N–S equations in the continuum limit, and to **test each of its quantitative assertions with reproducible numerical experiments**. All numerical values in Section 6 are produced by `sre_core.py` and can be reproduced on a standard scientific computing stack.
+
+---
+
+## 2. Basic Objects and Dimensional System
+
+### 2.1 Dimensional Basis
+
+Let the fundamental dimensions be spanned by three independent bases: the elementary causal clock step $[\tau]$, the ground-state topological geometric distance $[\ell]$, and the minimal quantum of information action $[H]$.
+
+* **State matrix $M\in\mathbb{R}^{n\times n}$**: the microscopic causal correlation matrix, with binary entries $M_{ij}\in\{-1,+1\}$, **generally non-symmetric**.
+* **Intrinsic relaxation time $\tau_0$** and **external macroscopic characteristic time $T$**, both of dimension $[\tau]$. Define the dimensionless dissipation coefficient
+
+$$\Lambda \equiv \frac{\tau_0}{T} \propto \frac{1}{Re}$$
+
+### 2.2 Strict Symmetric / Antisymmetric Bisection (Correction R3)
+
+This is a structural correction of this version relative to v1. The two algebraic components of $M$ play entirely different physical roles:
+
+$$\mathbf{S} \equiv \frac{M + M^T}{2}, \qquad \mathbf{A} \equiv \frac{M - M^T}{2}$$
+
+* **$\mathbf{S}$—the topological metric part.** It is symmetric and can serve as the precomputed dissimilarity source for multidimensional scaling (MDS). All geometric reconstruction (manifold coordinates, anisotropy) acts only on $\mathbf{S}$.
+* **$\mathbf{A}$—the local spin operator.** The antisymmetric shear component; its inner-product quadratic form $\operatorname{Tr}(A^TA)=\sum_{i,j}A_{ij}^2$ corresponds to the flux of local vortex action in the microscopic non-equilibrium state.
+
+The relation between the two is exclusive and complete: $M$ non-symmetric $\iff$ $\mathbf{A}\neq 0$ $\iff$ the system carries chirality.
+
+> **Note**: The reference implementation of v1 enforces $M_{vm,v_f}=-M_{v_f,v_m}$, making $M$ wholly antisymmetric. In that case $\mathbf{A}\equiv M$ and $\mathbf{S}\equiv 0$, so the statement "A is the antisymmetric part of M" degenerates into an identity, and $\mathbf{S}=0$ means the metric vanishes entirely—which contradicts the theoretical intent. This version retains the general non-symmetric structure of $M$. Measurement ($N=60$, $\Lambda=10^{-2}$) gives an antisymmetric energy fraction $\operatorname{Tr}(A^TA)/\operatorname{Tr}(M^TM)=0.947$, i.e., the overwhelming majority of the correlation energy is indeed carried by the chiral part, but $\mathbf{S}$ is non-degenerate and the metric still exists.
+
+---
+
+## 3. Axiomatic Derivation of the Criterion Operator
+
+### 3.1 Maximum-Entropy Master Equation
+
+Suppose the probability of a microscopic degree of freedom transferring from a "coherent ordered state" to a "disordered decoherent state" is governed by the entropy change. According to non-equilibrium Boltzmann–Shannon statistics, the probability that a microscopic degree of freedom is activated by disordered fluctuations follows a logistic distribution.
+
+Define the **discriminant** $\Psi$ (smoothing term minus generating term): its exact form is given by the self-consistent expression of §3.2, $\Psi=\ln\Gamma+\ln\mathcal{D}_s-\ln\mathfrak{B}$. The physical meaning of its two terms is (correction R2, v3 correction R10):
+
+1. **Smoothing (ordering) term**: borne by $\ln\Gamma$; large $\Gamma$ ($\propto\Lambda$) means fast local relaxation, so topological differences are erased as soon as they are generated.
+2. **Generating (destabilizing) term**: borne by $-\ln\mathfrak{B}$; the higher the local spin coherence barrier $\mathfrak{B}$, the stronger the ability to regenerate topological differences.
+
+> **v3 correction (R10)**: v2 wrote $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$, which is linear in $\Lambda$ and has a matrix/scalar type mismatch; this version changes it to the logarithmic form consistent with §4.2/the reference implementation. The qualitative physical picture (the smoothing term grows with $\Lambda$, the generating term grows with chirality) is unchanged.
+
+### 3.2 Activation Probability and Sign Convention (Correction R1, v3 Correction R10)
+
+$$P_{\text{active}} = \frac{1}{1 + e^{\Psi}}$$
+
+> **v3 correction (R10)**: v2 wrote the discriminant as $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$, linear in $\Lambda$. This expression is inconsistent with Theorem 6 of §4.2 and with the reference implementation (the latter is logarithmic in $\Gamma$), so this version gives a self-consistent form.
+
+**The self-consistent discriminant.** Solving the §4.2 master equation for the survival probability $P_{\text{active}}=1-p_{\text{prune}}$:
+
+$$P_{\text{active}} = \frac{1}{1 + \Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}, \qquad\text{i.e.}\qquad \Psi = \ln\Gamma + \ln\mathcal{D}_s - \ln\mathfrak{B}$$
+
+where $\mathcal{D}_s$ is the causal topological depth, $\mathfrak{B}=\mathcal{E}_{\text{local}}+\exp(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}})$ is the barrier (§4.2), and $\Gamma$ is the pruning gain. $\Psi$ is **logarithmic in $\Gamma$**, not linear in $\Lambda$—this is the form consistent with §4.2/the reference implementation.
+
+Limiting behavior (consistent with the physical picture):
+
+* $\Gamma\to+\infty$ (extreme low Reynolds number, large $\Lambda$): $\Psi\to+\infty$, $P_{\text{active}}\to 0$, entering the deterministic laminar phase.
+* $\Gamma\to 0$ (extreme high Reynolds number): $\Psi\to-\infty$, $P_{\text{active}}\to 1$, disordered fluctuations fully activated.
+
+> **Note**: In v2, $\beta\Lambda\mathbf{D}$ is a matrix while $\alpha\operatorname{Tr}(A^TA)$ is a scalar, and subtracting the two is a type mismatch; moreover, $\Psi$ being linear in $\Lambda$ contradicts the code's $\ln$ dependence. This version adopts the logarithmic form, §4.2 corresponds term-by-term to `sre_core.py`, and it is verified against the measured $C$ (`verify_dissipation.py`, error $\le1.1\%$).
+
+### 3.3 Critical Condition (Correction R6)
+
+From $\Psi(\Lambda)=0$ (i.e., $\Gamma\mathcal{D}_s/\mathfrak{B}=1$) we obtain the formal critical condition
+
+$$\Gamma_c = \frac{\mathfrak{B}}{\mathcal{D}_s}$$
+
+In mode A, $\Gamma=\Lambda$, so $\Lambda_c=\mathfrak{B}/\mathcal{D}_s$; in mode B, $\Gamma=\Lambda\lambda(n)$, and the critical $\Lambda$ is rescaled accordingly (see §6.3).
+
+Since $\partial\Psi/\partial\Gamma=1/\Gamma>0$, $\Psi$ is strictly monotonically increasing in $\Gamma$, so $\Psi=0$ has at most one solution. **The intermediate value theorem guarantees that this solution exists, but existence does not imply a sharp phase transition**: the measurements of §6.2 show that the macroscopic order parameter evolves smoothly near the transition region, spanning about 1.5 orders of magnitude rather than jumping at a point. Hence this paper calls $\Lambda_c$ the **center of the transition region** and does not claim it to be a critical point in the thermodynamic sense.
+
+---
+
+## 4. Operator System
+
+The system evolution is composed of a cascade of three operators: $M(t+\tau) = \mathcal{O}_3\circ\mathcal{O}_2\circ\mathcal{O}_1\,[M(t)]$.
+
+### 4.1 Operator 1: Boundary Expansion $\mathcal{G}_{n\to n+1}$ (Clarification R4)
+
+For any realized matrix $M_n$, the expansion operator maps to a block matrix by a single-step increment:
+
+$$M_{n+1} = \mathcal{G}_{n\to n+1}(M_n) = \begin{pmatrix} M_n & \mathbf{x}_{n+1} \\ \mathbf{x}_{n+1}^T & y_{n+1} \end{pmatrix}, \qquad M_{n+1}[1{:}n,1{:}n] \equiv M_n$$
+
+> **Clarification**: v1 §5 claimed that this framework "thoroughly abolished" constraints such as $M_{n+1}[1{:}n,1{:}n]\equiv M_n$. That statement is untrue—this constraint has always been present in the reference implementation, and **it should not be abolished**: it is a definitional component of Operator 1's structural equation, prescribing the algebraic property that the historical sub-block is read-only. Without this constraint, $\mathcal{G}_{n\to n+1}$ would degenerate into an arbitrary rewriting operator, and "causal inheritance" would be meaningless. This paper retains the constraint and makes explicit its axiomatic status: **once realized, history cannot be retroactively modified**. The claim in v1 of "no artificial hard-coding" should be understood as "no empirical fitting coefficients, no phenomenological drag corrections," not as "no structural constraints."
+
+**Theorem 3 (Diagonal Invariance Theorem)**: On the binary domain $\Phi(x)\in\{-1,1\}$,
+
+$$\Phi\big((M_{n+1}^2)_{n+1,n+1}\big) = \sum_{m=1}^{n}\Phi(x_{n+1,m})^2 + \Phi(y_{n+1})^2 = n + 1$$
+
+That is, the diagonal path count of a newly injected node is independent of its specific assignment and is always $n+1$.
+
+### 4.2 Operator 2: Maximum-Entropy Pruning $\mathcal{M}_\chi\circ\mathcal{E}_{\text{local}}$
+
+The local multi-loop interference polynomial between a frontier node $v_f$ and a historical node $v_m$ (a 2-step graph walk):
+
+$$\tilde{\mathcal{E}}_{\text{local}}(v_f,v_m) = \sum_{v_k\in\mathcal{N}(v_f)\cap\mathcal{N}(v_m)} M(v_f,v_k)M(v_k,v_m) + 2M(v_f,v_m)$$
+
+Taking the absolute value and the sign: $\mathcal{E}_{\text{local}}=|\tilde{\mathcal{E}}_{\text{local}}|$, and the barrier $\mathfrak{B} = \mathcal{E}_{\text{local}} + \exp(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}})$. Define the **dimensionless causal topological depth** $\mathcal{D}_s(v_f,v_m)=(n+1)-\sigma(v_m)$.
+
+**Theorem 6 (Maximum-Entropy Pruning Master Equation)**:
+
+$$p_{\text{prune}}(v_f,v_m) = 1 - \frac{1}{1 + \Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}$$
+
+where $\Gamma$ is the **pruning gain** (see §4.3). When pruning occurs ($\chi=0$), **Paradigm B (elimination–conduction)** is executed:
+
+$$M_{n+1}(i,j) \leftarrow \chi\cdot M_{n+1}(i,j) + (1-\chi)\cdot 1$$
+
+That is, the channel spin is forced to the multiplicative identity $+1$, thereby eliminating the channel's phase contribution from the product feedback loop without disconnecting the graph connectivity. Surviving channels ($\chi=1$) instead inject an antisymmetric chiral shear.
+
+### 4.3 Gain $\Gamma$: Exogenous $\Lambda$ and Endogenous $\lambda(n)$ (Correction R5)
+
+To eliminate the cyclic dependence among operators, Theorem 7 of v1 constructed an adaptive tracking parameter from the spectral radius of the previously realized subgraph:
+
+$$\lambda(n) = \frac{1}{\beta}\cdot\frac{\ln\!\big(1+\rho(\mathbf{A}_{n-1})\big)}{n+1}$$
+
+By the Perron–Frobenius theorem, the spectral radius of a real matrix is the unique algebraic invariant that always exists, so $\lambda(n)$ has a unique real analytic solution at each step. However, v1 used $\lambda(n)$ to **completely replace** $\Lambda$, causing the macroscopic dissipation authority to disappear from the evolution equation, so that "$\Lambda$ controls the phase transition" had no counterpart in the code.
+
+This version explicitly distinguishes the two and defines two modes for comparison:
+
+| Mode | Pruning gain $\Gamma$ | Meaning |
+| :--- | :--- | :--- |
+| **A (exogenous)** | $\Gamma = \Lambda$ | $\Lambda$ directly serves as the phase-transition control quantity |
+| **B (adaptive)** | $\Gamma = \Lambda\cdot\lambda(n)$ | Superimposes the state-adaptive correction of Theorem 7 on top of $\Lambda$ |
+
+Both $\lambda(n)$ and $\Lambda$ are dimensionless, so their product does not break dimensional consistency. §6.3 gives a measured comparison of the two modes.
+
+### 4.4 Operator 3: Five-Node Parity Breaking and Logical Emergence
+
+To break the parity degeneracy of the pure spin-product space, a 5-node inhomogeneous array with a fixed inversion anchor is introduced ($n:5\to6$):
+
+$$\mathbf{M}_5 = \begin{pmatrix} 1 & 1 & -1 & 1 & 1 \\ 1 & 1 & -1 & 1 & 1 \\ -1 & -1 & -1 & 1 & 1 \\ 1 & 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 & 1 \end{pmatrix}$$
+
+Nodes 1 and 2 are the input ports $A,B$; node 3 is the rigid inversion anchor (its self-loop and cross-edges are hard-coded to $-1$); nodes 4 and 5 are a $+1$ inert boundary subgraph. Taking the activation mask $\boldsymbol{\chi}=[1,1,1,0,0]^T$, the macro-spin field is
+
+$$Y_{\text{spin}} = \operatorname{sgn}\!\left(\tfrac12(S_{1,6}+S_{2,6}) - S_{3,6}\right), \qquad \operatorname{sgn}(0)\to+1$$
+
+The four input combinations are mapped through the projection $f(S)=(1-S)/2$ to $\{1,1,1,0\}$, matching the truth table of a standard **NAND** gate, thereby providing a proof of the Turing completeness of this algebraic system. The topological differences generated by this operator are permanently locked, forming a rigid core that resists Paradigm B smoothing.
+
+---
+
+## 5. Continuum Limit and Compatibility with the N–S Equations
+
+Let $\tau\to0,\ \ell\to0$ and map $M_{ij}$ to a multi-point correlation function $M(\mathbf{x},\mathbf{y},t)$ on a continuous manifold, defining the macroscopic density and velocity fields as first-order matrix moments:
+
+$$\rho(\mathbf{x},t)=\int M\,d\mathbf{y}, \qquad \rho\mathbf{u}(\mathbf{x},t)=\int\frac{\mathbf{x}-\mathbf{y}}{\tau}M\,d\mathbf{y}$$
+
+When $\Lambda\to\infty$ and the microscopic fluctuations tend to zero, the transition probability degenerates to Dirac $\delta$ evolution, and the algebraic free evolution can be written as a continuous master equation:
+
+$$\frac{\partial M}{\partial t} + \nabla_{\mathbf{x}}\cdot\left(\frac{\mathbf{x}-\mathbf{y}}{\tau}M\right) = \mathcal{C}[M]$$
+
+Performing a Chapman–Enskog expansion in $\epsilon=\ell/L$ (the algebraic equivalent of the Knudsen number), $M=M^{(0)}+\epsilon M^{(1)}+\mathcal{O}(\epsilon^2)$:
+
+1. **The first moment** gives the continuity equation $\partial_t\rho+\nabla\cdot(\rho\mathbf{u})=0$;
+2. **The second moment**, under momentum conservation of the collision operator $\int(\mathbf{x}-\mathbf{y})\mathcal{C}[M]d\mathbf{y}=0$, gives rise to the convective term, and the second-order correction $M^{(1)}$ contributes a viscous stress tensor under symmetry breaking. With $\Lambda\equiv\tau_0/T$, the kinematic viscosity is formally written as $\nu=\zeta\,\ell^2\Lambda$.
+
+Hence
+
+$$\rho\left(\frac{\partial\mathbf{u}}{\partial t}+(\mathbf{u}\cdot\nabla)\mathbf{u}\right) = -\nabla p + \rho\,\zeta\ell^2\Lambda\,\nabla^2\mathbf{u}$$
+
+that is, the standard N–S equations.
+
+> **Qualification**: $\zeta$ is a network geometric constant to be determined; this paper neither derives its value from first principles nor performs a direct numerical simulation comparison. Therefore this section establishes a **structural compatibility** (the discrete algebraic master equation possesses the N–S moment structure in the continuum limit), not a proof of quantitative equivalence. $\nu=\zeta\ell^2\Lambda$ should be regarded as a formal correspondence from dimensional analysis, whose coefficient must be fixed by subsequent calibration.
+
+---
+
+## 6. Numerical Evidence
+
+All numerical values are produced by `sre_core.py` with parameters: $N=60$, 5 random seeds (0–4), dataset `phase_data_v2.json`.
+
+### 6.1 Method: Choice of Metric Reconstruction Criterion (New R9)
+
+The manifold geometry starts from the symmetric part $\mathbf{S}$, taking the dissimilarity $d_{ij}=\sqrt{\max(0,\,2-2S_{ij})}$. There are two common criteria for recovering three-dimensional coordinates from $d_{ij}$, and this work mainly uses **classical MDS (Torgerson)**: eigendecomposition of the double-centered Gram matrix $\mathbf{B}=-\tfrac12\mathbf{J}\mathbf{D}^{(2)}\mathbf{J}$, taking the first three eigenvectors.
+
+Reason for the choice: it is a closed-form solution that is **deterministic, reproducible, and free of local-minimum problems**—this is especially critical for the present framework, because "avoiding iterative entrapment in local minima" is one of the paradigm's claims relative to gradient-based methods.
+
+However, it must be reported that the two criteria give **opposite** anisotropy trends (comparison experiment, $N=60$, seed 0):
+
+| $\Lambda$ | Classical MDS (strain criterion) | SMACOF (stress criterion, converged) |
+| ---: | ---: | ---: |
+| $10^{-3}$ | 0.3720 | 0.3338 |
+| $10^{-2}$ | 0.3635 | 0.3365 |
+| $10^{-1}$ | 0.3686 | 0.3573 |
+| $1$ | 0.3422 | 0.3682 |
+| $10$ | 0.3546 | 0.4634 |
+
+SMACOF's stress has stabilized after `max_iter=1000` (653.79 no longer decreasing), so the difference is **not** insufficient convergence but a difference in objective function. This methodological uncertainty directly affects the conclusions of §6.5.
+
+### 6.2 Mode A: Phase Diagram for Exogenous $\Lambda$ (Correction R6)
+
+| $\Lambda$ | $Re\propto1/\Lambda$ | Structural density | sd | Anisotropy | Spectral slope | sd |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| $10^{-4}$ | $10^{4}$ | 0.4915 | 0.0001 | 0.4308 | −1.851 | 0.055 |
+| $10^{-3}$ | $10^{3}$ | 0.4901 | 0.0004 | 0.3753 | −1.847 | 0.151 |
+| $10^{-2}$ | $10^{2}$ | 0.4764 | 0.0016 | 0.3587 | −1.824 | 0.326 |
+| $10^{-1}$ | $10$ | 0.3809 | 0.0023 | 0.3515 | −1.566 | 0.250 |
+| $3.16\times10^{-1}$ | $3.16$ | 0.2622 | 0.0026 | 0.3510 | −0.556 | 0.935 |
+| $1$ | $1$ | 0.1435 | 0.0046 | 0.3501 | +0.207 | 1.414 |
+| $3.16$ | $0.32$ | 0.0647 | 0.0026 | 0.3618 | +0.124 | 0.762 |
+| $10$ | $0.1$ | 0.0254 | 0.0024 | 0.3600 | +0.264 | 1.080 |
+| $10^{2}$ | $10^{-2}$ | 0.0026 | 0.0004 | 0.3715 | +0.442 | 0.095 |
+
+The structural density (the fraction of surviving chiral channels) decreases monotonically from 0.4915 to 0.0026, in a smooth S-shaped form. Defining the transition region as the structural density falling from 0.40 to 0.08 gives
+
+$$\Lambda \in [\,8\times10^{-2},\ 2.5\,], \qquad \text{i.e.} \quad Re\propto1/\Lambda \in [\,0.4,\ 12\,]$$
+
+**The transition width is about 1.5 orders of magnitude.** The inter-seed standard deviation is $\le 0.005$ throughout, so the smoothness is not due to noise but is an intrinsic property of the system.
+
+> Conclusion: This framework does **not** support the strong claim of a "sharp critical point." What can be robustly asserted is: there exists a monotonic, reproducible structural–dissipation transition region of width about 1.5 orders of magnitude. For $\Lambda>10^2$, the structural density is $<10^{-2}$, the manifold degenerates to a near-zero distance matrix, and MDS values lose meaning (omitted from the table).
+
+### 6.3 Mode B: Consequences of Switching On Theorem 7 (Correction R5)
+
+| $\Lambda$ | Structural density | Spectral slope |
+| ---: | ---: | ---: |
+| $10^{-2}$ | 0.4914 | −1.854 |
+| $1$ | 0.4673 | −1.842 |
+| $3.16$ | 0.4186 | −1.672 |
+| $10$ | 0.1676 | −0.484 |
+| $10^{2}$ | 0.0269 | +0.136 |
+
+Compared with mode A: the same transition occurs at $\Lambda\approx3\sim30$, about **2 orders of magnitude** later than in mode A.
+
+Reason: $\lambda(n)$ decays from 0.315 to 0.010 as $n$ goes to $N=60$, with an average magnitude of about $10^{-2}$, systematically shrinking the effective gain. At the same time, the decay of $\lambda(n)$ means that the **effective pruning strength decreases with evolution time**, i.e., the system has an intrinsic temporal non-stationarity—strong pruning early, weak pruning late.
+
+> Conclusion: Switching on Theorem 7 does not change the qualitative structure of the transition (monotonic transition and spectral slope plateau are both retained), but (i) it rescales the effective magnitude of $\Lambda$ and (ii) it introduces a temporal non-stationarity that decays with $n$. These two are the price paid for decoupling the cyclic dependence, which v1 did not mention.
+
+### 6.4 Finite-Size Test
+
+| $N$ | $\Lambda=10^{-3}$ | $\Lambda=10^{-1}$ | $\Lambda=1$ |
+| ---: | ---: | ---: | ---: |
+| 40 | 0.4870 | 0.4020 | 0.1759 |
+| 60 | 0.4901 | 0.3809 | 0.1435 |
+| 80 | 0.4922 | 0.3608 | 0.1212 |
+| 100 | 0.4927 | 0.3452 | 0.1062 |
+
+* **The high-Reynolds-number side ($\Lambda=10^{-3}$) is converged**: from $N=40\to100$ the structural density changes only from 0.487 to 0.493, a change of $<1.5\%$.
+* **The transition region ($\Lambda=10^{-1},1$) is not converged**: the structural density continues to decrease with $N$ (at $\Lambda=1$, from 0.176 to 0.106, a 40% drop).
+
+> Therefore: the **quantitative location of the transition region is $N$-dependent** and cannot be extrapolated to $N\to\infty$. What can be robustly asserted is only the qualitative conclusion that "a monotonic transition exists."
+
+#### 6.4.1 Analytic Explanation of the Convergence Mechanism (New in v3, R11)
+
+v2 merely stated "not converged"; this version adds its analytic origin. From the master equation in §II of combined_C, *A Hierarchical Dissipation Self-Organization Theory of Binary Network Dynamics*,
+
+$$p_{\text{prune}}(d,\mathcal{E}) = 1 - \frac{1}{1+\Gamma\,\dfrac{d}{\mathcal{E}+1}}, \qquad d=n-\max(i,j)$$
+
+performing a continuum approximation integral over depth $d\in[0,n]$, the survival probability $\langle 1-p_{\text{prune}}\rangle$ becomes the **universal curve**
+
+$$C(z) = 1 - \frac{\ln(1+z)}{z}, \qquad z \equiv \frac{\Gamma\,n}{\mathcal{E}+1}$$
+
+The power-law exponent $\beta\equiv-\dfrac{d\ln C}{d\ln Re}$ satisfies, as $z\to\infty$, $\beta(z)\approx\dfrac{\ln z-1}{z}\to 0$. **That is, in the thermodynamic limit there is no finite asymptotic value, $\beta_\infty=0$**, and the decay is $\ln z/z$, **slower than any power law** (hence neither the $1/N$ nor the $1/N^2$ extrapolations hold).
+
+**Numerical verification** (`beta_dissipation_theory.py`, `verify_dissipation.py`):
+
+* Inverting $z$ from the measured $C(\lambda,N)$ under a consistent protocol gives $z\propto\lambda^{1.40}N^{0.97}$, with $R^2(\log z)=0.997$ over 13 data points;
+* Substituting the actual barrier of the final $M$ into the master equation, $C_{\text{theo}}$ and $C_{\text{meas}}$ differ by $\le1.1\%$ for $\Gamma\in[10^{-2},10^{-1}]$, with $\beta_{\text{theo}}=0.420$ vs $\beta_{\text{meas}}=0.460$;
+* The measured doubling ratio $[800\to1600]/[1600\to3200]=1.135$ agrees with the theoretical prediction $1.131$—whereas the $1/N$ model predicts $2.0$ and is refuted by the measurement.
+
+> **Conclusion (replacing v2's "cannot be extrapolated")**: The $N$-dependence of the transition region is not an incidental experimental shortcoming but an **intrinsic property of the dissipation master equation**—the finite-size correction decays extremely slowly as $\ln z/z$, never reaching a finite limit. This explains the saturation of the §6.6 spectral slope at large $N$ (see below).
+
+### 6.5 On the "One-Dimensional Rigid Central Axis" (Correction R7)
+
+v1 claimed that at high Reynolds number the MDS-reconstructed space spontaneously develops a "highly connected rigid central axis" (red core) wrapped in a dissipative shell.
+
+The test results of this version do not support this strong claim:
+
+* Under classical MDS, the anisotropy $\lambda_1/\sum\lambda$ stays within **0.34–0.43** throughout $\Lambda\in[10^{-4},10]$, a fluctuation magnitude of the same order as the inter-seed standard deviation (up to 0.08 at the extremes), with no convergence trend toward 1. Since $1/3$ corresponds to complete isotropy, the measured values are only slightly above the isotropic baseline.
+* Only in the **extremely dissipative degenerate region** ($\Lambda\ge10^2$, structural density $<10^{-2}$) does the anisotropy rise above 0.86, but at that point the network is almost entirely $+1$, the MDS input is near-singular, and the value is physically meaningless.
+* Iterative SMACOF gives the opposite trend (0.334→0.463 as $\Lambda=10^{-3}\to10$), see §6.1.
+
+> Conclusion: Under the metrics of this paper, the "rigid central axis" should be regarded as an **artifact of the metric reconstruction method**, not a robust physical conclusion. To establish this phenomenon, one would need to re-examine it using intrinsic-dimension estimation, persistent homology, and other topological indicators independent of the embedding criterion. This paper no longer lists it as a core conclusion.
+
+### 6.6 Chiral Field Spectral Slope (Correction R8)
+
+Applying an FFT to the one-dimensional signal of the chiral field $A$ along the causal order, and fitting the mid-section of $\log E$–$\log k$:
+
+* For $\Lambda\lesssim3\times10^{-2}$ ($Re\gtrsim30$), the slope is stable at **−1.82 to −1.85**, with inter-seed standard deviations of 0.04–0.33;
+* For $\Lambda\gtrsim3\times10^{-1}$, the slope rapidly rises to positive values and the cascade disappears;
+* As $N$ increases, the slope **becomes further steeper**: $N=40,60,80,100$ give −1.767, −1.847, −1.899, −1.932 respectively ($\Lambda=10^{-3}$).
+
+**v3 correction (R12): large-$N$ extrapolation refutes "continued steepening."** Extending $N$ to the $10^3$ range (`verify_paper_claims.py`, seeds[0,1]):
+
+| $N$ | $\Lambda=10^{-3}$ | $\Lambda=10^{-2}$ |
+| ---: | ---: | ---: |
+| 800 | −1.79 | −1.63 |
+| 1600 | −1.80 | −1.67 |
+| 3200 | −1.78 | −1.55 |
+| 6400 | — | **−1.38** |
+
+It can be seen that: at $\Lambda=10^{-3}$ the slope **saturates** for $N\ge800$ (−1.79/−1.80/−1.78, nearly unchanged) and does not continue to steepen; at $\Lambda=10^{-2}$ the slope instead **flattens** (from −1.63 to −1.38 as $N=800\to6400$). **The "monotonic deviation from −1.667 with $N$" inferred by v2 from $N=40\to100$ is a small-$N$ finite-size artifact**, qualitatively consistent with the $\ln z/z$ slow-decay mechanism of §6.4.1 (high-order statistics tend to a plateau rather than diverging as $N$ grows).
+
+**Implementation-dependence note**: The structural density is a first-order statistic and is highly consistent across different random implementations of the PRNG
+(the Python PCG64 and the browser-side mulberry32 differ by $<0.001$ at the same $\Lambda$).
+But the spectral slope is a high-order statistic and is sensitive to the specific implementation: at the same $\Lambda$ the means given by the two PRNGs
+can differ by as much as 0.5 at high $\Lambda$, while the inter-seed standard deviation itself already exceeds 1.0.
+
+> Conclusion: This framework does spontaneously produce a stable power-law scaling region, which is currently the most robust empirical signal. But it is **not** Kolmogorov $k^{-5/3}$: the measured value is about −1.8, and at large $N$ it **saturates to a plateau rather than continuing to deviate**. Furthermore, this spectrum is a one-dimensional surrogate spectrum along the causal order, not equal to the three-dimensional energy spectrum $E(k)$. Given the implementation dependence, this paper asserts only the qualitative fact that "there exists a stable power-law scaling region whose slope saturates at about −1.8 at large $N$," and **does not claim** that the precise value of the slope is comparable across implementations, nor that it achieves quantitative convergence with K41 theory; the acceptance criterion in `cop.md` of "strict parallel convergence with $k^{-5/3}$" should be revised according to this section.
+
+---
+
+## 7. Conclusion
+
+1. **The origin of turbulence**: it is a **non-equilibrium transition** in which microscopic degrees of freedom are activated over a large area when the causal control force ($\Lambda$) is insufficient relative to the local spin generating capacity; measured as a smooth transition region of width about 1.5 orders of magnitude, not a sharp critical point.
+2. **Maintenance of coherent structures**: surviving channels are protected by the historical read-only constraint of Operator 1 and the permanent topological anchors of Operator 3, algebraically constituting an invariant that resists Paradigm B smoothing. This is a structural argument, supported by the monotonic phase diagram of §6.2.
+3. **Compatibility with continuum mechanics**: the Chapman–Enskog expansion yields the moment structure of N–S (§5), but this is structural compatibility; $\zeta$ in $\nu=\zeta\ell^2\Lambda$ remains to be calibrated.
+4. **Finite-size convergence** (new in v3): the non-extrapolatability of the transition region is not an experimental shortcoming but an intrinsic property of the dissipation master equation—the correction decays extremely slowly as $\ln z/z$, $\beta_\infty=0$, with no finite asymptotic value (§6.4.1).
+5. **Robust empirical signal**: on the high-Reynolds-number side there exists a stable chiral-field power-law scaling region whose slope **saturates at about −1.8** at large $N$ (rather than continuing to steepen), and which collapses as $\Lambda$ increases. This is currently the most robust reproducible result of this framework.
+6. **Not claimed**: a sharp critical point, a one-dimensional rigid central axis, quantitative convergence with Kolmogorov $k^{-5/3}$, and monotonic divergence of the spectral slope with $N$. All four are downgraded due to methodological uncertainty or measured deviation (R6, R7, R8, R12).
+
+By explicitly separating the exogenous control quantity $\Lambda$ from the endogenous adaptive quantity $\lambda(n)$, strictly bisecting the symmetric and antisymmetric components of $M$, and converging all numerical experiments onto a single reproducible benchmark `sre_core.py`, this method provides a foundation for studying complex fluids from the level of discrete information networks that is **testable rather than merely narratable**.
+
+---
+
+## Appendix: Reproduction
+
+```bash
+python sre_core.py            # reference implementation (with all revision annotations)
+python export_v2.py           # generates phase_data_v2.json (all §6 data)
+python make_tables.py         # exports tables.md
+```
+
+**New verification scripts in v3**:
+
+```bash
+python reproduce_ns62.py          # program-correctness gate: reproduce §6.2 phase diagram (Δ≤1e-4)
+python verify_paper_claims.py     # R12: large-N spectral slope; V1: N=800 protocol conflict
+python beta_dissipation_theory.py # §6.4.1: dissipation master equation → universal curve C(z), β∞=0
+python verify_dissipation.py      # §6.4.1: master-equation closed-loop verification (C_theo vs C_meas)
 ```
-
 
 <div style="page-break-after: always;"></div>
 
@@ -3375,1445 +3306,1775 @@ python _sre_orbital_assignment.py
 
 <div style="page-break-after: always;"></div>
 
-# Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two-State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation
-
-**Version: 1.5 (Integrated Draft)**
-**Date: 2026-09-23**
-
-**Project References (DOI, see Appendix E for in-text citations):**
-
-- https://doi.org/10.5281/zenodo.22077475 — SRE-v1.6 Axiom Suite
-- https://doi.org/10.5281/zenodo.22162514 — SRE-Dynamics Composite Elementary Particles and Relational Space Emergence (Book of Void)
-- https://doi.org/10.5281/zenodo.22119957 — SRE Dynamics: Strict Reconstruction of Maxwell Field Equations Using Pure Dimensionless Graph Cohomology and Global Evolution Steps
-- https://doi.org/10.5281/zenodo.20576606 — Hierarchical Dissipative Self-Organizing Binary Network Dynamics
-- https://doi.org/10.5281/zenodo.22119635 — SRE Electrical Quantity Definitions (Charge/Current/Resistance/Voltage/Power/E=mc²)
-- https://doi.org/10.5281/zenodo.22162514 — Complete Characterization of the Electron within the SRE Framework (Series)
-
-## Abstract
-
-This paper provides a unified and complete characterization of nucleons within the State-Relational Entropy (SRE) dynamic framework: nucleons are stable composite objects emerging from binary self-organizing networks on the tripartite Y-shaped coherent core, constrained by the two-state opening/closing of dormant edges and closure degree rebalancing rules. Their ontological structure is the tripartite Y-shaped triangular closure Y₃⋉△₃ (V=12, E=18, β₁=7, |Aut|=36). The full text unfolds along a reproducible logical chain:
-(1) Establish the general methodology for nucleon derivation: local input → topological solution → inversion, which is homologous to electron derivation;
-(2) Propose three ontological speculations about quarks (quark ≠ Q₃, quark is an emergent statistical phenomenon, nuclear reaction = closure degree rebalancing) as structural priors for subsequent inversion;
-(3) Start from neutron β-decay, derive the structural constraints T1–T3 for the nucleon skeleton, and redefine isospin Z₂ as opening/closing duality, rather than flavor multiset flipping;
-(4) Establish the nucleon inversion simultaneous equation system, and obtain surviving candidates through three-step screening (integer determination of vertex number V=12, spectral ratio determination of topology, triple symmetry determination of solution); then break the tie within the "transition–residue" framework: ρ is proved to be a strict invariant of the transition (the residue, serving as the reference standard of measurement), the dormant edge is taken to be a ring edge, and the criterion of "partial re-equilibration of closure degree" (the open state must still retain closed units) uniquely retains candidate A;
-(5) Verify the two-state opening/closing mechanism of nuclear fission chain reactions: fast neutron cross-sections restore the same order of magnitude, excitation surplus criterion has a Pearson correlation of +0.932 with thermal cross-sections, and three-level signatures are unified (single nucleon β decay → composite nucleus fission → macroscopic chain criticality);
-(6) Derive the theoretical constraints that the additivity failure of ion/metal pairs can be theoretically predicted, and current is a coherent bookkeeping projection rather than continuous electron movement;
-(7) Extend the framework to many-body systems using external nuclear data as a yardstick: the assembly law is determined by two principles ("open–closed complementarity" and "the images of the two bodies must be distinguishable in the shared region", the latter being a non-spatial restatement of the former "closed bodies must not overlap"), yielding the structural linear law of the shared-ring configuration (V=9k+3, E=15k+3, T=2k+1, β₁=6k+1, |Aut|=6·2^k·k!) and the body-count independence of the lowest excitation (λ₂ = 2−√3, multiplicity k−1); a zero-parameter existence scorecard is given and the reading is adjudicated (Reading A adopted: 5/5 matched in the A ≤ 3 sector), and together with the out-of-sample failure of the pricing layer at A=4 and the qualitative failure of the assembly law at A=4, the honesty boundary "**the nuclear boundness for A ≥ 4 is not computable in this layer**" is drawn; it is further shown that this boundary is **not repairable on the side of the numerical binding energy** (the A = 4 isotriplet forms a **single isomorphism class**, so the binding-energy differences cannot be carried by any graph functional, and the additive-profile pricing class is falsified as a whole by an **identity** independent of the shape of the pricing function), and the disposal of the "shadow solution" (variant D) is completed (it is the k=2 member of the shared-ring family, and that name is withdrawn);
-(8) an attempt is made to derive the **antisymmetric coefficient** λ required by that repair from within SRE; the conclusion is that λ can neither be derived nor fixed (its threshold, 29.0596 MeV, exceeds the ⁴He binding energy, and the candidate pool is underdetermined; SRE fixes only the "shape" of λ, not its "value"). The same check, however, yields a positive outcome: demoting antisymmetry from an **energy term** to an **existence criterion** gives a zero-parameter, mirror-symmetric criterion L1 (|n_n − n_p| ≤ 1) that matches the 8-entry scorecard at 8 / 8, so that **the existence question at A = 4 is computable in this layer**; the out-of-sample test (A ≥ 5, 26 entries) shows that L1 does not have the status of a fundamental law (22 / 34 hits, its mismatches being respectively an α closure effect and the absence of an A scaling), so the boundary is **relocated** from A ≥ 4 to A ≥ 5;
-(9) the objection "does the nucleon–nucleon force require the electronic state to be considered as well" is rewritten as a **configuration problem decidable within this layer**, with the following conclusion: its only decidable form is **open-band attachment to the shared region**, and that configuration is **isomorphic** to variant A (hence not a new structure, and already quantitatively excluded by the deuteron binding energy). The diagnosis further shows that **the open band is not an extra energy term but the carrier of principle 1 of the assembly law itself** — it appears as the "shape of the gap" (the presence or absence of the gap decides whether n-p can assemble, the position of the gap decides that n-n is excluded, and the k = 1 singly-claimed edge left after closure decides that the images of the two bodies are distinguishable). This also explains both the fact that the shared ring "always has exactly one k = 1 edge" and the body-count independence of λ₂ = 2−√3. The section additionally corrects a previously erroneous statement ("the neutron gap can only lie in ring 0" — the three rings are in fact a single automorphism orbit, so the statement is a notation rather than a fact, and the correction leaves every existing conclusion intact).
-
-This work does not prove that the SRE axioms are objectively true; all conclusions are self-consistent constructions within the SRE model, and real physical and chemical inferences must be independently verified by external means.
-
-**Keywords**: SRE dynamics; nucleon ontology; two-state opening/closing; topological inversion; β decay; fission chain reaction; quark emergence; closure degree potential; coherent bookkeeping
-
----
-
-## 0. Document Structure and Reading Guide
-
-This paper organizes all nucleon-related documents (v1 topological derivation, inversion v2 skeleton, quark speculation, many-body assembly law and shared ring, dimension collapse test, fission chain verification, theoretical constraints) into a unified representation in the following order:
-
-- Section 1: **Terminology Convention**. Uncommon terms appearing for the first time in the text are marked with [], and their precise definitions are concentrated in this section, presented in plain written language for readers without physical or mathematical background. Each key term is accompanied by a note indicating its "model internal structure/analogy" status to avoid confusion with real physical quantities.
-- Section 2: **SRE Theoretical Basis**: Binary self-organizing networks, sim_p generator and conservation closure, ratio methodology constraints, and the only calibrated projection Π₁.
-- Section 3: **General Methodology for Nucleon Derivation**: Local input → topological solution → inversion, which is homologous to electron derivation, and the interchange principle between SRE and classical physics.
-- Section 4: **Three Quark Speculations (Author's Claim)**, listed separately after the methodology chapter as they **determine what the nucleon skeleton should look like** — they are the "structural priors" for subsequent screening, and the screening results will change if they are altered. They are recorded truthfully to make readers aware: the skeleton in this paper is not "objectively emerged" from the data, but selected within the search space defined by this set of speculations.
-- Section 5: **Entry Choice: Why Start with Neutron β Decay?**, including phenomena to be explained, three ontological readings, and structural constraints T1–T3 derived from β decay.
-- Section 6: **Redefinition of Isospin Z₂ and Breaking Magnitude**, invalidating the C1 assertion in v1, redefining it as opening/closing duality, with a breaking magnitude of 10⁻³ as a structural necessity, compared with the electron side breaking.
-- Section 7: **Nucleon Inversion and Three-Step Screening**, including simultaneous equation system L1–L4, target κ_N, criteria ①②③, rarity estimation, and order explanation (structure first, numerical a posteriori).
-- Section 8: **Surviving Skeleton: Tripartite Y-Shaped Triangular Closure**, including structural definition, topological quantities, structural illustration, methodological lessons (Π₁ cannot distinguish opening/closing states), and screening funnel.
-- Section 9: **Breaking the Parallelism: The Transition–Residue Framework**, including the correction of the "cospectral" statement, the integer closed form of Π₁, ρ as the strict invariant of the transition (the residue), the structural adjudication that the dormant edge is a ring edge, Criterion ④ (transition-reading self-consistency), Criterion ⑤ (partial re-equilibration of closure degree), Criterion ⑥ (quantitative comparison), and the two items explicitly not used as criteria.
-- Section 10: **Dimension Collapse Test: Distance Data as Empirical Base for Topological Inversion**, including scale anchoring, orbital shell law, covalent radius Z_eff, bond order step law, single bond additivity law by family, and channel capacity observation.
-- Section 11: **Nuclear Reaction Validation: Closure Degree Rebalancing from β Decay to Fission Chain**, including fast neutron experiment, parity criterion falsification, excitation surplus Δ criterion, B/A closure degree potential, chain criticality, and three-level signature unification.
-- Section 12: **Many-Body Assembly Law and the Shared Ring: A Validation Attempt Borrowing Nuclear Data**, including the two principles of the assembly law and the adjudication between two-body variants, the shared-ring configuration and its arithmetic rigidity, "the projection erases who is dormant" (n-p ≅ p-p), the structural linear law for three and four bodies and the body-count independence of the lowest mode, the falsification at the shared-ledger pricing layer (including the advance registration of the identity), the zero-parameter existence scorecard and the adjudication of readings, the disposal of the shadow solution (variant D), the two proofs of the non-repairability of that boundary, **the attempt at an antisymmetric coefficient** (λ can neither be derived nor fixed; its demotion yields the zero-parameter criterion L1, on which the boundary is split into the two questions "existence" and "numerical binding energy"), and **the configuration-level localization of the open band** (answering "does the nucleon–nucleon force require the electronic state as well": open-band attachment is shown to be isomorphic to variant A, hence not a new structure, and a positive result is given — the open band is the carrier of principle 1 of the assembly law, appearing as the "shape of the gap" rather than as an "extra energy term"). The accompanying figure is Figure 5.
-- Section 13: **Theoretical Constraints**, including theoretical predictability of the special binding of ions/metals, and current being a coherent bookkeeping projection rather than continuous electron movement.
-- Section 14: **Honesty Boundary Checklist**, including honesty boundaries in each stage of nucleon inversion, fission verification, many-body assembly, dimension collapse, and theoretical constraints.
-- Section 15: **Conclusion**.
-- Appendices A–E provide key numerical tables, consolidated terminology list, code list and complete reproduction, figure list, references and DOI, respectively.
-
----
-
-## 1. Terminology Convention
-
-| Term | Meaning in This Paper | Formal Analogy | Remarks |
-|---|---|---|---|
-| **Binary Self-Organizing Network** | The ontology of SRE: a network with element values constantly ±1 and continuously growing over time; all things are its resident structures | A grid without pre-designed drawings, self-increasing step by step according to local rules | Model internal structure |
-| **Coherent Core** | A structurally stable, repeatedly identifiable dense substructure in the network | A long-existing vortex in a turbulent river | Model internal structure |
-| **Projection (Functional)** | A rule that maps a graph to a number; the graph changes, the number changes | Weighing an object — weight is a "projection" of the object | Model internal structure |
-| **Graph G** | A mathematical object composed of vertices and edges | A subway map (stations = vertices, lines = edges) | Model internal structure |
-| **V, E** | Number of vertices V, number of edges E | Number of stations, number of lines | Model internal structure |
-| **Degree k** | Number of edges connected to each vertex; **k-regular** = all vertices have the same degree | Number of lines connected to each station | Model internal structure |
-| **β₁ (First Betti Number)** | β₁ = E − V + 1, the number of independent closed loops in the graph | Number of mutually incomparable loops in a subway map | Model internal structure |
-| **Laplacian Spectrum** | The set of eigenvalues of a matrix constructed from the adjacency relationship of the graph, denoted as λ₁=0 ≤ λ₂ ≤ … ≤ λ_max=ρ | The natural frequency set of a drum — different shapes have different frequency spectra | Model internal structure |
-| **Π₁ = λ₂/ρ** | The only **calibrated** graph functional used in this paper: spectral gap ratio | The "lowest overtone/highest note" ratio of a drum | Model internal structure, calibrated as α on the electron side |
-| **Automorphism Aut(G)** | A permutation that maps a graph back to itself without changing the connection relationship; \|Aut\| measures the degree of symmetry | How many rotations and flips make a pattern look the same | Model internal structure |
-| **Vertex Orbit** | Groups of vertices that can be interchanged under all symmetry operations | Positions of "same role" in a pattern | Model internal structure |
-| **Dormant Edge** | A channel with χ=0 in SRE: not deleted, degenerated to multiplicative identity 1 — **conductive but not forming a loop** | A branch that is still energized but does not form a loop | Model internal structure |
-| **Closure Degree / Opening and Closing States** | Whether the channels in the skeleton form closed loops; closed state = all closed, open state = one dormant edge not closed | A closed circuit vs a circuit with a break left | Model internal structure |
-| **Graph Functional Calibration** | Using **known solutions" to determine "which functional corresponds to which real measurement" | Calibrating a scale with standard weights | Model internal structure |
-| **Inversion** | Given the value of a functional, invert the structural parameters of the graph | Inferring the material and size of an object from the weighing result | Model internal structure |
-| **Fission Cross-Section σ** | The probability area that a neutron (seed) incident on a nuclide causes fission; varies with energy | The success rate of a key opening a specific type of lock | Model internal structure |
-| **Compound Nucleus** | The temporary state (A+1) formed when a target nucleus absorbs a neutron; fission occurs inside it | The internal state of a lock after the key is in place | Model internal structure |
-| **Neutron Separation Energy S_n** | The energy required to remove the last neutron from a compound nucleus; excitation energy after absorbing a thermal neutron E"=S_n | The "engagement energy" released when the key is in place | Model internal structure |
-| **Fission Barrier B_f** | The energy hill that a compound nucleus must climb to deform to fission | The resistance that the bolt must overcome to retract | Model internal structure |
-| **Excitation Surplus Δ** | Δ = E" − B_f; Δ>0 means low-energy (thermal) neutrons can cross the barrier directly; Δ<0 requires additional kinetic energy from fast neutrons | The difference between engagement energy and bolt resistance | Model internal structure |
-| **Multiplication Constant ν** | Average number of neutrons emitted per fission | Number of spare keys released after one lock opening | Model internal structure |
-| **Critical k_eff** | Ratio of the number of neutrons in each generation relative to the previous generation; ≥1 for self-sustaining chain reaction | Whether spare keys can allow continuous lock opening without interruption | Model internal structure |
-| **Closure Degree Potential** | The "rebalancing hill height" in graph theory terms: whether a complex is worth/able to rearrange to a lower closure degree configuration | The threshold at which a system decides whether to reorganize itself | Model internal structure |
-| **Assembly Law** | The rule that merges several nucleon skeletons into a many-body configuration; determined by two principles: "open–closed complementarity" plus "the images of the two bodies must be distinguishable in the shared region" | Two puzzle pieces are allowed to interlock only at complementary notches, and at the joint one must be able to tell whose missing corner has been filled | Model internal structure |
-| **Shared Ring** | One closed triangular ring **shared** by several nucleons after assembly | One rope loop held jointly by several people | Model internal structure |
-| **Gap / Supply** | At the same shared position, the number of gaps g left by open-state (neutron) nucleons and the number of complete ring edges s offered by closed-state (proton) nucleons | The number of mortises versus tenons on a mortise-and-tenon joint | Model internal structure |
-| **Shared Ledger** | A counting table recording how many bodies "claim" each overlapping edge on the shared ring; it does not change the graph structure | A partnership account that records only shares, not positions | Model internal structure |
-| **Interference Depth** | The depth to which several bodies overlap on the same shared unit; used in this paper as a candidate pricing quantity for binding energy, not yet calibrated | How tightly several performers lock together when playing the same melody | Model internal structure, not calibrated |
-| **Antisymmetric Penalty Term** | An additional term that depends only on the compositional imbalance a = \|n_n − n_p\| and vanishes identically for a ≤ 1, g(a) = λ·max(0, a − 1), used to push highly imbalanced configurations above threshold | A "disequilibrium fine" levied once the two pans of a balance differ by more than one notch | Model internal structure; its coefficient λ cannot be derived from SRE (12.12) |
-| **Criterion L1 (Antisymmetry Criterion)** | A shared-ring assembly is legal (predicted bound) if and only if \|n_n − n_p\| ≤ 1; zero-parameter and naturally n↔p symmetric | Only recipes closest to symmetry are allowed to hold | Model internal structure; 8 / 8 on the A ≤ 4 scorecard, degrading to an empirical approximation for A ≥ 5 (12.12) |
-
----
-
-## 2. SRE Theoretical Basis
-
-### 2.1 Binary Self-Organizing Network and sim_p Generator
-
-The ontology of SRE is the **binary self-organizing network**, whose core evolution algorithm `sim_p` follows the following rules:
-
-1. **Starting Point and Growth**: Initial single-point seed M₁=[1], each step n→n+1 inherits the history of the top-left block read-only, and hangs new rows and columns on the frontier;
-2. **Frustration Energy and Dormancy Probability**: Calculate the 2-step walking frustration energy E_local=|M@M| and topological depth d=n−max(i,j), the dormancy probability p=1−1/(1+λ·d/(E_local+1)), and toss a random symmetric gate χ;
-3. **Dormant Edge Rule**: Dormant edges are not deleted, but degenerated to multiplicative identity 1 — **conductive but not forming a loop**;
-4. **Frontier Propagation**: Non-linear multiplicative propagation of the frontier boundary ∏;
-5. **Corner Net Load Balance Valve**: If the global sum Σ≥0, the new diagonal element is -1, otherwise +1.
-
-This engine **injects new random differences and expands outward** at each step, it is a continuous generator, not a convergence terminal. All things are quasi-resident structures locked by conservation closure rules in this evolutionary flow.
-
-### 2.2 Conservation Closure and Operators 7–10
-
-Operators 1–6 are responsible for network growth and difference injection, operators 7–10 are responsible for **conservation closure**, which is the key to preventing the evolutionary flow from escaping and tearing:
-
-- **Operator 7**: Symplectic duality/Hodge closure, strongly locking ΔΠ≡0 zero-flux escape (Poincaré duality);
-- **Operator 8**: Local lock-free conservation valve, strongly locking Tr≡0+ writing conflict field energy hedging against monotonic convergence;
-- **Operator 9**: Two-order Betti suture, strongly locking Δβ₁≡0, ensuring that the manifold does not tear or dimension split;
-- **Operator 10**: Effective impedance Z_eff pre-exempts bridge edges, ensuring λ₂>0.
-
-### 2.3 Ratio Methodology Constraints and the Only Calibrated Projection Π₁
-
-The derivation of SRE follows the three-step method of **local input → topological solution → inversion**, and the fundamental constraint is that **the theory itself does not carry any absolute units**, only the dimensionless ratios between different physical quantities can be given. Therefore, all legal inputs for SRE derivation must be **measured dimensionless ratios**, and the output is the structural parameters of the graph.
-
-Currently, SRE has only one numerically verified graph-physical projection, from the electron:
-
-$$\Pi_1(G)=\frac{\lambda_2(L_G)}{\rho(L_G)}$$
-
-where L_G is the combinatorial Laplacian of graph G, λ₂ is its smallest non-zero eigenvalue (spectral gap), and ρ is the largest eigenvalue. The calibration result on the electron side is: the Möbius parameterized point cloud of the ontology Q₃ (V=8, E=12, β₁=5, n=60) after calibration, Π₁=α≈1/137.036, with a relative deviation of 1.45×10⁻⁵, and the calibrated string weight w"=1+4.347×10⁻⁵, which matches the δ=4.347×10⁻⁵ reported in the paper to five decimal places.
-
----
-
-## 3. General Methodology for Nucleon Derivation
-
-Nucleon derivation is homologous to electron derivation, following the three-step method of **local input → topological solution → inversion**, with the following core principles:
-
-### 3.1 Definition of Local Input
-
-"Local input" refers to injecting a small number of measured values as **rigid boundary conditions** explicitly into the model, as fixed endpoints for the solution. The injection items in this paper are fixed as (CODATA 2018):
-
-| Injected Quantity | Numerical Value | Remarks |
-|---|---|---|
-| m_e (electron rest mass) | 0.510998950 MeV | Measured injection |
-| m_p (proton rest mass) | 938.27208816 MeV | Measured injection |
-| m_n (neutron rest mass) | 939.56542052 MeV | Measured injection |
-| α⁻¹ (fine structure constant reciprocal) | 137.035999084 | Anchor associated with Coulomb force |
-
-These injection quantities themselves **do not promise to be uniquely derived by SRE axioms**, and any quantity that cannot be injected or determined by the model topology shall not be claimed to have been calculated.
-
-### 3.2 Interchange Principle Between SRE and Classical Physics (Mutual Verification)
-
-One of the core claims of the SRE framework: under the setting of rigid boundary conditions, SRE derivation and classical physics are mutually calibrated. It is manifested as a two-way clue relationship:
-
-- **Classical Quantity → Model**: Measured values such as m_e, m_p, m_n, α⁻¹ are injected as endpoints, and the model recovers self-consistent topological structure conclusions at these endpoints;
-- **Model → Classical Quantity**: Any dimensionless structural quantity that can be determined within the model (spectral ratio, flip count, orbit uniqueness, idempotent convergence) can be used as an independent structural clue for classical quantities.
-
-The two are **mutually verified clues**, rather than one being superior to the other. This is the positional basis for all derivations in this paper.
-
----
-
-## 4. Three Quark Speculations (Author's Claim)
-
-> **This section is the author's ontological speculation, not a conclusion of existing theory, nor a derivation result of this paper.**
-> The reason why this section is listed separately and placed after the methodology chapter is that it **determines what the nucleon skeleton should look like** — it is the "structural prior" for subsequent screening, and the screening results will change if it is altered. It is recorded truthfully to make readers aware: the skeleton in this paper is not "objectively emerged" from the data, but selected within the search space defined by this set of speculations.
-
-### 4.1 Speculation Q1: Quarks Should Not Share the Same Substrate as Electrons
-
-**Claim**: Electrons correspond to Q₃ (three-dimensional hypercube, a self-contained closed topology) in ontology. Quarks (and nucleons) should not be mapped to the same Q₃, nor to "three copies of Q₃".
-
-**Reason**: Electrons and nucleons differ too much in observable behavior — electrons can exist independently, are identical, and long-lived; nucleons are bound in nuclei, have internal structure, and can decay. If they share the same substrate, these differences lack a topological source.
-
-**Adoption in This Paper**: Accepted. The "3×Q₃ composite" construction used in the v1 document is invalidated. This paper searches for nucleon skeletons within the family of "non-self-contained open structures".
-
-### 4.2 Speculation Q2: Quarks Are Very Likely Emergent Statistical Phenomena, Rather Than Independently Existing Ontologies
-
-**Claim**: Since quarks never appear independently in experiments (color confinement), the "observation" of quarks in experiments is very likely to belong to the same category as SRE's understanding of magnetic fields and gravitational fields — **they are statistical results, not relatively independent emergent coherent cores**. In other words: quarks may not exist as ontologies at all, but only as readings.
-
-**Consistency with Established SRE Positions**: This speculation is compatible with the SRE-established "observation = response spectrum of coherent core coupled with environment". From this perspective, magnetic fields, gravitational fields, "parton" readings in deep inelastic scattering, and even quantum entanglement correlations all belong to **the same category of statistical projections**, differing only in the hierarchy and degree of restriction of the coherent core being read.
-
-**Inference in This Paper**: If Q2 holds, the count N_c=3 of "three quarks" in the Standard Model needs to be reinterpreted —
-
-- N_c=3 is not "there are three kinds of quarks", but **the skeleton has three strands**;
-- "Flavor" (uud / udd) is not a component list, but **the statistical projection on the detector after the opening/closing state breaking of the three-strand skeleton**;
-- Fractional charge is not the property of a single body, but **the equally-divided reading when three strands share the same closed loop**.
-
-### 4.3 Speculation Q3: Nuclear Reactions Are Closure Degree Rebalancing
-
-**Claim**: Nuclear fission and fusion, ontologically, are not "recombination of quarks", but **rebalancing of closure degrees between closed complexes** — that is, the redistribution of closed channels, rather than the transportation of components.
-
-**Adoption in This Paper**: Accepted, and as a structural requirement that the nucleon skeleton must satisfy — **the skeleton must be parameterizable by "opening/closing" degree**, and the difference between open and closed states must be small enough to explain the nuclear reaction energy in the MeV range (rather than GeV range).
-
-### 4.4 Summary of Constraints on Search Space from Three Speculations
-
-The **structural priors** used for screening below, derived from Q1–Q3:
-
-| Number | Structural Prior | Source |
-|---|---|---|
-| **S1** | The nucleon skeleton is not Q₃ and its copies, nor the Möbius ladder family | Q1 |
-| **S2** | The skeleton can be decomposed into **three strands** (N_c=3 reinterpreted as strand count) | Q2 inference |
-| **S3** | The skeleton must support "open / closed" two states, and the difference between the two states is minimal | Q3 + β decay phenomenon |
-| **S4** | The skeleton **is not self-contained**: it naturally leaves an unclosed opening structurally | Derived from "nucleons can decay" |
-
----
-
-## 5. Entry Choice: Why Start with Neutron β Decay?
-
-### 5.1 Phenomena to Be Explained
-
-Free neutrons undergo β⁻ decay:
-
-$$n \longrightarrow p + e^- + \bar\nu_e$$
-
-There are three measured facts related to this, which together form hard constraints on the nucleon topology:
-
-| Fact | Numerical Value | Requirements for Topology |
-|---|---|---|
-| Mass difference m_n−m_p | 1.293 MeV, i.e., Δm/m_p=1.3784×10⁻³ | The structural difference between proton and neutron should be **extremely small** |
-| Lifetime difference | Neutron 879.4 s; proton stable (lower limit >10³⁴ a) | The two are **not symmetrically equivalent**, otherwise the lifetimes should not be vastly different |
-| Emitted electron | Completely identical to electrons in atoms | The emitted electron must be able to fall into the attractor of the electron ontology |
-
-The third one is the sharpest: **β decay directly reveals that "nucleons are not closed bodies"** — a self-contained closed topology has no reason to emit an electron completely identical to an electron in an atom. This paper therefore selects β decay as the entry point for inversion.
-
-### 5.2 Three Ontological Readings
-
-**Reading 1: Neutron is not "proton + electron", but the unclosed state of the same skeleton.**
-β⁻ decay is to expel that unclosed channel, and the rest close into a proton. The direction therefore falls on **closure degree**: the closed one is lighter (1.293 MeV lighter) and no longer decays; the unclosed one is heavier, and will sooner or later expel the channel. This reading also explains **why only neutrons decay** — because only neutrons carry that unclosed opening.
-
-**Reading 2: In the language of sim_p, this is the fate bifurcation of "dormant edges".**
-In the SRE binary self-organizing network, dormant channels (χ=0) are not deleted, but degenerated to multiplicative identity 1 — **conductive but not forming a loop**. This is exactly the exact correspondence of "the channel is still there, but not closed". Thus: maintaining identity = neutron still exists; being removed = β decay. The lifetime hierarchy is also solvable: dormancy is the default state, removal is a rare perturbation, so the neutron lifetime (10³ s) is 26 orders of magnitude longer than the strong interaction timescale (10⁻²³ s).
-
-**Reading 3: This is sedimentation at depth order.**
-Electrons are deep and tight residents (high coherence); nucleons are shallow and loose residents. β decay is shallow structure sedimenting into deep structure, with energy paid by the resident depth difference — consistent with the registration in v1 that "mass is inversely proportional to logical depth" (nucleons are about 1836 times shallower, so about 1836 times heavier).
-
-**An Additional Gain**: If electrons are the **only deepest attractor** of the generator, then the identity of electrons (electrons everywhere in the universe are completely indistinguishable) does not need to be guaranteed by "taking out the same electron from somewhere", but "any seed that breaks away from the skeleton falls into the same attractor". The emitted electron in β decay is completely identical to the electron in an atom, and the **mechanism** is thus obtained, rather than an assumption.
-
-### 5.3 Structural Constraints Derived from β Decay
-
-| Number | Constraint | Argument |
-|---|---|---|
-| **T1** | The nucleon skeleton must be **non-self-contained** | Three-strand skeleton has 9 leaf points (odd number), which cannot be paired and closed pairwise, naturally leaving one opening. This is the graph-theoretic root of "nucleons can decay" |
-| **T2** | Protons and neutrons are **not Z₂ images of graph isomorphism**, but two "awake / sleepy" configurations of the same underlying matrix, with their coherent subgraph loop number β₁ differing by 1 | If they are exactly isomorphic, there is no direction for decay and the lifetimes should not be vastly different |
-| **T3** | What is removed only needs to be a **seed**, and it is not required that the skeleton contains a complete electron ontology internally | Electrons are identical attractors, not prefabricated components of nucleons |
-
----
-
-## 6. Redefinition of Isospin Z₂ and Breaking Magnitude
-
-### 6.1 Essence of the Conflict
-
-The C1 assertion in v1 document is:
-
-> **C1**: Isospin Z₂ doublet — fixed-point-free involution, charge p=+1/n=0, proton and neutron graph isomorphism.
-
-Under the speculation that "quarks are very likely emergent statistical phenomena" (Q2), this assertion **not only needs to be patched, but needs to be invalidated**, for the reason that: C1 is built on the flavor multiset flip {uud}↔{udd}, which is equivalent to treating statistical readings as ontological components — which directly conflicts with Q2.
-
-### 6.2 Redefinition of Z₂
-
-| Item | v1 (Invalidated) | This Version v2 |
-|---|---|---|
-| Meaning of Z₂ | Flavor multiset flip {uud}↔{udd} | **Opening / closing (awake / sleepy) duality** of the skeleton, independent of flavor |
-| Two-state relationship | Exact graph isomorphism | **Non-isomorphic**: β₁ differs by 1 |
-| Symmetry | Exact (fixed-point-free involution) | **Naturally broken**, the breaking amount is the closure energy |
-| Correspondence with observation | Flavor = ontological components | Flavor = statistical projection of this breaking on the detector |
-
-After redefinition, a phenomenon that originally required additional assumptions to explain becomes self-evident:
-
-### 6.3 Why Is the Breaking Magnitude 10⁻³: Structural Necessity
-
-Dormant edges in SRE **still conduct** (degenerate to identity 1, rather than zeroing or deleting). Therefore, the difference between open and closed states is **not "whether there is a bond", but "whether there is a loop"". From this:
-
-- The energy difference only comes from "the absence of a loop", not "the absence of a channel";
-- Therefore Δm/m_p∼10⁻³ is **a structural necessity**, not a parameter coincidence.
-
-This also explains two other questions at the same time: **why the mass difference is so small** (only one loop difference), and **why neutrons can still exist for so long** (dormancy is the default state).
-
-### 6.4 Homotypic Comparison with Electron Side Breaking
-
-| System | Breaking Magnitude | Property |
-|---|---|---|
-| Electron (Möbius twist) | w"−1=4.347×10⁻⁵ | Near-symmetric breaking |
-| Nucleon (opening / closing) | Δm/m_p=1.378×10⁻³ | Near-symmetric breaking |
-| Ratio | 31.7 | Same type, different magnitude |
-
-Both belong to **the same type of breaking** (approximate establishment of symmetry + small amount of breaking), only the breaking amplitude on the nucleon side is about 32 times that on the electron side. This homotypicity supports the self-consistency of the redefined Z₂ in this version, but does not constitute independent evidence.
-
----
-
-## 7. Nucleon Inversion and Three-Step Screening
-
-### 7.1 Simultaneous Equation System for Nucleons
-
-Moving the same set of dictionaries to the nucleon layer, let the nucleon skeleton be graph G_N, and its unknown topological parameters be (V,E,k,w), then the equation system is:
-
-| Hierarchy | Equation | Property |
-|---|---|---|
-| **L1 Count Layer** | β₁ = E − V + 1; n = E·β₁; kV = 2E; V≡0 (mod 2) | Integer (Diophantine) equation, the strongest constraint |
-| **L2 Spectral Equation** | Π₁(G_N) = κ_N | Need to identify κ_N corresponding to the measured ratio |
-| **L3 Torsional Near Symmetry** | w_N = 1+δ_N, \|δ_N\|≪1 | **Inherited from the electron assumption, not an independent constraint** |
-| **L4 Mass-Depth Equation** | m_p/m_e = Ψ(G_N)/Ψ(G_e) | Ψ has not been defined, **currently unavailable** |
-
-Degree of freedom accounting: 4 independent unknowns, 3 equations from L1 + 1 equation from L2 = 4 equations, **formally closed**; but since κ_N has not been identified and L3 is not independent, **the actual underdetermination is 1 degree of freedom**.
-
-### 7.2 Proposal of Target Formula (Explicitly Marked as Hypothesis to Be Tested)
-
-This paper proposes the following **candidate** relationship (not yet independently demonstrated):
-
-$$\boxed{\ \frac{m_n-m_p}{m_p}\;=\;\alpha\cdot\Pi_1(G_N)\ }$$
-
-If it holds, its physical meaning is: **the isospin breaking of nucleons has an electromagnetic origin** (α appears explicitly), and Π₁ is a pure topological structure factor.
-
-Substituting the measured values:
-
-$$\kappa_N \;=\;\frac{(m_n-m_p)/m_p}{\alpha}\;=\;\frac{1.378419305\times10^{-3}}{7.297352569\times10^{-3}}\;=\;0.188893067$$
-
-**This identification is a hypothesis, not a conclusion.** The three-step screening below tests "in the family of V=12 cubic graphs, how many graphs have Π₁ near κ_N", and "how rare the screening result is".
-
-### 7.3 Criterion ① Integer Determination of Vertex Number V
-
-For k-regular graphs, kV=2E, β₁=E−V+1. Taking k=3 (cubic graphs), then β₁=V/2+1. Check the match between β₁·Δm/m_p and the measured "flow quark mass ratio" (2m_u+m_d)/m_p=0.9581%:
-
-| V | β₁ | β₁·Δm/m_p | Deviation from 0.9581% |
-|---|---|---|---|
-| 8 | 5 | 0.6892% | −28.07% |
-| 10 | 6 | 0.8271% | −13.68% |
-| **12** | **7** | **0.9649%** | **+0.70%** |
-| 14 | 8 | 1.1027% | +15.09% |
-| 16 | 9 | 1.2406% | +29.48% |
-| 18 | 10 | 1.3784% | +43.86% |
-
-**V=12 (β₁=7) is uniquely selected**, with adjacent deviations above ±14%, and the uncertainty of the flow quark mass ±2% cannot shake this choice.
-
-### 7.4 Criterion ② Spectral Ratio Determination of Topology
-
-Enumerate cubic connected graphs with V=12 (the total number of non-isomorphic graphs at this order is 85, and all 85 are obtained by sampling and deduplication this time), calculate Π₁=λ₂/ρ for each graph:
-
-| Statistic | Value |
-|---|---|
-| Number of samples | 85 |
-| Minimum / median / maximum of Π₁ | 0.0313 / 0.1319 / 0.2768 |
-| Within 0.17% of κ_N | 0 |
-| Within 0.5% | 3 |
-| Within 2% | 4 |
-| Within 3% | 4 |
-
-That is: **the Π₁ landing point itself is already a strong screening (85 → 4)**, because the spectral ratio distribution of this family is concentrated around 0.13, and the target value 0.1889 is outside the upper quartile of the distribution.
-
-### 7.5 Criterion ③ Triple Symmetry Determination of Solution
-
-From the structural prior **S2** (the skeleton can be decomposed into three strands), it is required that the automorphism order of the graph be divisible by 3, i.e., 3∣|Aut(G)|. Take the 4 candidates surviving from Criterion ② and calculate their automorphism orders one by one:
-
-| Π₁ | Deviation from κ_N | \|Aut\| | Vertex Orbit | Number of Triangular Loops | Judgment |
-|---|---|---|---|---|---|
-| 0.188580 | **0.165%** | 36 | 2 | 3 | **Keep** |
-| 0.188580 | **0.165%** | 12 | 3 | 1 | **Keep** |
-| 0.188011 | 0.467% | 2 | 6 | 0 | Reject |
-| 0.192106 | 1.701% | 8 | 3 | 0 | Reject |
-
-**85 → 4 → 2.**
-
-### 7.6 Rarity Estimation
-
-- Joint hit rate of Criterion ②③: 2/85 = 0.0235
-- Multiply by the V bin selection from Criterion ① (5 bins select 1): p ≈ 4.7×10⁻³
-
-The meaning of this number is: **if the nucleon skeleton is randomly drawn from this family of graphs, the probability of satisfying all three criteria is less than 0.5%." But it is not a statistical significance test — because the three criteria are not independent (both Criterion ① and Criterion ② use Δm), and the identification of κ_N itself is a hypothesis.
-
-### 7.7 Order Explanation: Structural Intuition First, Numerical A Posteriori
-
-It is necessary to specially point out the **temporal order** of screening, because it relates to the credibility of the results:
-
-> The candidate with the smallest deviation (|Aut|=36, 3 triangular loops, 2 vertex categories) was hand-constructed by the author based on the structural intuition of "three-strand Y skeleton + odd leaves cannot be paired pairwise" **before seeing any spectral ratio numerical values**; the spectral ratio coincidence (0.165%) is a **post-hoc verification result**, not a fitting target.
-
-If it were obtained by fitting, the "three coincidences hitting simultaneously" would be circular reasoning; but if structure comes first and numerical values come after, this coincidence at least has **non-triviality**.
-
----
-
-## 8. Surviving Skeleton: Tripartite Y-Shaped Triangular Closure
-
-### 8.1 Structural Definition
-
-Let the candidate skeleton be Y₃⋉△₃, constructed as follows:
-
-1. Take 3 **strand centers** c₀,c₁,c₂, not connected to each other;
-2. Take 3 **triangular loops** T₀,T₁,T₂, each loop containing 3 leaf points;
-3. Each strand center is connected to exactly one leaf point of each triangular loop (total 9 spokes, forming a Latin square perfect matching);
-4. 3×3=9 intra-ring edges, 9 spokes, so E=18; V=3+9=12; each vertex has degree 3.
-
-Topological quantities (recalculation result):
-
-| Quantity | Closed State (Proton Candidate) | Open State (Neutron Candidate, one ring edge broken) |
-|---|---|---|
-| V / E | 12 / 18 | 12 / 17 |
-| β₁ (Independent Loop Number) | **7** | **6** |
-| Number of Triangular Loops | 3 | 2 |
-| Girth / Diameter | 3 / 3 | 3 / 3 |
-| \|Aut\| | **36** | 4 |
-| Vertex Orbit | **2** (strand center / leaf point) | 6 |
-| λ₂ / ρ | 0.188580 | 0.188580 |
-
-|Aut|=36=3!×3!, exactly the permutation symmetry order of "3 strand centers × 3 triangular loops"; there are 2 vertex orbit types, i.e., only two roles in the structure — strand center and leaf point. These two highly match the structural prior **S2** (three strands).
-
-**Edge-class attribution of the dormant edge.** The 18 edges split naturally into two automorphism orbits of 9 edges each: **ring edges** (leaf point—leaf point) and **spokes** (strand center—leaf point). By structural adjudication, **the dormant edge is taken to be a ring edge**. The reason: the dormant edge is itself the image of a homomorphic mapping and its logical depth is large — opening a ring edge **changes no spectral quantity at all** (both ρ and λ₂ remain strictly invariant), and alters only the number of closed units (3→2). In other words, dormancy is spectrally invisible; it acts on the ontological level of closed structure. The open-state definition is fixed accordingly and is consistent with Figure 1.
-
-Reading comparison after opening one edge of each class (derivation in Section 9.4):
-
-| Edge Class | λ₂ after opening | ρ after opening | Number of Closed Units T after opening |
-|---|---|---|---|
-| **Ring edge** (dormant edge) | 1.000000 (invariant) | 5.302776 (invariant) | **3 → 2** |
-| Spoke | 1 → 0.527166 | 5.302776 (invariant) | 3 (invariant) |
-
-### 8.2 Structural Illustration
-
-![Nucleon Skeleton Candidate: Tripartite Y-Shaped Triangular Closure](figures/sre_nucleon_skeleton_structure_EN.png)
-
-**Figure 1**: Left is the closed state (proton candidate, all three ring edges closed), right is the open state (neutron candidate, one **ring edge** dormant and not closed, red dashed line). Orange is the strand centers (3), blue is the leaf points on the ring (9), and blue solid lines are closed channels. The only difference between open and closed states is "one fewer closed unit" (number of triangular loops 3→2), which is exactly the structural basis for the breaking magnitude argument in Section 6.3.
-
-### 8.3 An Important Methodological Lesson
-
-The Π₁ values of the open and closed states are **completely identical** (both 0.188580). This indicates that:
-
-> **The functional Π₁ cannot distinguish between proton and neutron.** The opening/closing state should be read by β₁ (independent loop number), the number of closed units T, or the number of dormant edges, not by the spectral gap ratio.
-
-Promoted to a general lesson: **the choice of functional must match the nature of the physical quantity to be distinguished.** A functional that is insensitive to "loop addition/removal" cannot be used to diagnose the phenomenon corresponding to "loop addition/removal". This is a hard constraint for the next step of functional calibration (Section 10).
-
-### 8.4 Screening Funnel
-
-![Nucleon Skeleton Three-Step Screening Funnel](figures/sre_nucleon_skeleton_funnel_EN.png)
-
-**Figure 2**: A total of 85 cubic connected graphs with V=12 (determined by Criterion ①) → 4 remaining when the spectral ratio falls within 3% of the target (Criterion ②) → 2 remaining when satisfying triple symmetry (Criterion ③). Combined rarity p≈4.7×10⁻³.
-
----
-
-## 9. Breaking the Parallelism: The Transition–Residue Framework
-
-### 9.1 A Correction: A and B Are Not Cospectral
-
-An earlier draft described the two candidates as "cospectral and non-isomorphic"; that statement was wrong. The two are **not cospectral**:
-
-| Spectrum (combinatorial Laplacian: value × multiplicity) | Candidate A | Candidate B |
-|---|---|---|
-| Full spectrum | 0¹, **1²**, ((7−√13)/2)², **4⁵**, ((7+√13)/2)² | 0¹, **1¹**, ((7−√13)/2)², **2², 4³, 5¹**, ((7+√13)/2)² |
-| Number of distinct eigenvalues | 5 | 7 |
-| λ₂ = λ₃ ? | Yes (1, 1) | No (1, 1.697224) |
-
-What they share is only three **extreme spectral quantities**: λ₁ = 0, λ₂ = 1, ρ = (7+√13)/2 = 5.302776. And Π₁ = λ₂/ρ happens to be the ratio of two of them — this is the true reason why Π₁ cannot separate A from B: **it is blind to the internal structure of the spectrum**.
-
-The remaining invariants do differ substantially:
-
-| Invariant | Candidate A | Candidate B |
-|---|---|---|
-| V / E / β₁ | 12 / 18 / 7 | 12 / 18 / 7 |
-| λ₂ / ρ / Π₁ | 1.000 / 5.303 / 0.188580 | Same |
-| Number of triangular loops T | **3** | **1** |
-| Vertex orbits | **2** | **3** |
-| \|Aut\| | **36** | **12** |
-| Edge orbits and sizes | **2** (9, 9) | **4** (3, 3, 6, 6) |
-| Kirchhoff index | 57.67 | 54.07 |
-| Wiener index | 135 | 129 |
-| Average resistance distance | 0.8737 | 0.8192 |
-
-### 9.2 A Closed Form: Π₁ Is Determined by Three Integers
-
-$$\Pi_1=\frac{1}{\rho}=\frac{\beta_1-\sqrt{V+1}}{E}=\frac{7-\sqrt{13}}{18}=0.188580485$$
-
-Against the measured κ_N = Δm/m_p ÷ α = 0.188893067, the deviation is 0.165%. That is, the nucleon's Π₁ is **entirely determined by the three integers β₁, V, E**. Both A and B belong to this "√13 subfamily"; the other two graphs inside the Π₁ window are generic (12 distinct eigenvalues) and match only approximately.
-
-### 9.3 The Strict Invariant of the Transition: ρ Is the "Residue"
-
-For each of A and B, all 18 single-edge openings are performed and the range of each spectral quantity recorded:
-
-| Spectral quantity | Range for A (18 removals) | Range for B (18 removals) |
-|---|---|---|
-| **ρ (largest Laplacian eigenvalue)** | **3.6×10⁻¹⁵** | **6.2×10⁻¹⁵** |
-| λ₂ | 0.473 | 0.473 |
-
-ρ is **strictly invariant** under the transition (the difference is at floating-point noise level), whereas λ₂ is strongly mobile. Physical reading: **the part of the spectrum that stays unchanged through the transition is the "residue", and it naturally serves as the reference object of measurement (the denominator of the ratio)**; the numerator is the branch that moves during the transition. This is aligned with the ontological reading that "light is the topological residue between evolutions" — **the standard is the residue, not the object being measured**.
-
-### 9.4 The Dormant Edge Is Taken to Be a Ring Edge (Structural Adjudication)
-
-**Basis (structural adjudication)**: the dormant edge is itself the image of a homomorphic mapping, and its logical depth is large. For this skeleton, the candidate with the greatest depth is the **ring edge** — opening a ring edge leaves every spectral quantity unchanged (both ρ and λ₂ strictly invariant) and alters only the number of closed units. In other words, dormancy is spectrally "invisible"; it acts on the ontological level (closure degree) rather than on the observable spectral level. This is precisely the manifestation of "large logical depth".
-
-The 18 edges of A split naturally into two automorphism orbits of 9 each:
-
-| Edge class | λ₂ after opening | ρ after opening | Closed units T after opening | Laplacian trace |
-|---|---|---|---|---|
-| **Ring edge** (leaf—leaf; the dormant edge) | **1.000000 (invariant)** | 5.302776 (invariant) | **3 → 2** | 36 → 34 |
-| Spoke (center—leaf) | 1 → 0.527166 | 5.302776 (invariant) | 3 (invariant) | 36 → 34 |
-
-The open-state definition is fixed accordingly and is consistent with Section 8.1 and Figure 1: **the neutron state = opening one ring edge**. Here both ρ and λ₂ are unchanged; the only changes are the number of closed units (3→2) and the trace (−2).
-
-### 9.5 Criterion ④ Transition Self-Consistency: Equivalent Channels Must Give Equivalent Readings
-
-A dormant state is not the state of "some particular edge" but the **homomorphic image of an entire edge orbit**: the edge set is quotiented to the orbit set under the automorphism group, and this step is exactly a homomorphism. The transition reading must therefore be unique at the **orbit level**.
-
-- Candidate A: the 9 ring edges form one orbit, and opening any one of them gives (λ₂ = 1.000000, T = 2), a unique reading ✓
-- Candidate B: the 3 ring edges form one orbit, and the reading is likewise unique (λ₂ = 1.000000, T = 0) ✓
-
-**Honest registration**: over the whole pool, "unique ring-edge reading" holds for 28/85; combined with Π₁<3% it leaves **2** graphs (A and B). **Criterion ④ alone is not sufficient to break the tie**, hence it is used jointly with Criterion ⑤.
-
-### 9.6 Criterion ⑤ Partial Re-equilibration of Closure Degree: The Open State Must Still Retain Closed Units
-
-Physical basis (**independent of the "three strands" prior S2**): a nuclear reaction is a **re-equilibration** of closure degree (Section 4.3, conjecture Q3). Re-equilibration means **partial** release, not reducing the closure degree to zero; a neutron is still a bound composite, so its open state must still retain closed units. More importantly, Q3 is independently supported by the fission chain validation of Section 11 (Pearson correlation +0.932 between the closure-degree potential Δ and the thermal cross-section), so using Q3 as a criterion here is not circular.
-
-- Candidate A: T: 3 → 2 (minus one, still retaining 2 closed units) ✓
-- Candidate B: T: 1 → 0 (**reduced to zero**) ✗ — if B were read as the nucleon, a single re-equilibration would erase the entire closure degree, contradicting the very mechanism of "re-equilibration".
-
-Pool statistics (85 graphs, criteria before values):
-
-| Criterion expression | Hits |
-|---|---|
-| Unique ring-edge reading (at the T level) | 28 / 85 |
-| T_closed ≥ 2 and unique ring-edge reading | 11 / 85 |
-| [Π₁ < 3%] ∧ [unique ring-edge reading] | 2 / 85 |
-| **[Π₁ < 3%] ∧ [unique ring-edge reading] ∧ [T_closed ≥ 2]** | **1 / 85 = A** |
-| **[Π₁ < 3%] ∧ [open state T_open ≥ 1]** | **1 / 85 = A** |
-
-Criterion ⑤ requires only that "re-equilibration is partial", and is **unrelated** to Criterion ③ (3‖\|Aut\|); hence it does not suffer from the charge of "same origin", nor does it require choosing a direction within a numerical window.
-
-### 9.7 Criterion ⑥ Quantitative Comparison (Corroboration Only)
-
-Comparison of the closure-degree ratio (open/closed) with the magnetic ratio:
-
-| Candidate | T: closed → open | Ratio | Against \|μ_n/μ_p\| = 0.684979 |
-|---|---|---|---|
-| **A** | 3 → 2 | **2/3 = 0.666667** | deviation **2.67%** |
-| B | 1 → 0 | 0 | no correspondence |
-
-**Honest boundary**: with 36 comparisons and a 5% threshold, the expected accidental hit count is about 1.8, so this item is registered only as a **clue**, not as evidence.
-
-### 9.8 Two Items Explicitly Not Used as Criteria
-
-The following two items were examined and **are not adopted**:
-
-1. **"Some mode releases exactly the integer 1.000000"** — observed as closed state 4.000000 → open state 3.000000, i.e., "exactly one mode releases the integer 1". This arises only from the contingency of the homomorphic mapping and is **not a necessary discrete quantity**; it does not constitute a criterion;
-2. **"The total released amount is always 2"** — removing one edge necessarily decreases the Laplacian trace by 2; this is a trace identity carrying no new information.
-
-Consequently, the per-mode allocation observed in the spoke-class opening (1.000000 / 0.472834 / 0.367343 / 0.159823, with the remaining 8 eigenvalues unchanged) **is not used as a criterion** and is retained only as an explanatory description of the transition mechanism.
-
-### 9.9 Conclusion
-
-**At the structural level: Criterion ⑤ uniquely selects A, and B is excluded; Criterion ④ corroborates.**
-
-**At the measured level: still not independent.** The only quantitative comparison independent of the structural prior (Criterion ⑥, deviation 2.67%) is not strong enough.
-
-The correct statement is therefore: **"Under the condition of partial re-equilibration of closure degree, A is the unique survivor; at the purely measured level it is still not independently determined."** — not "A has been determined by measurement".
-
-It should also be pointed out that, with the dormant edge taken as a ring edge, the transition has **no effect on either λ₂ or ρ**; hence the Π₁ in Δm/m_p = α·Π₁ is a "standard" built from two **invariants**, while the state change itself is carried by the number of closed units T. This reading is consistent with "the residue serves as the reference object of measurement", but it implies that the direct reading "mass difference ↔ level shift" does not apply here, and it has been registered as unresolved item 5 of Section 15.
-
----
-
-## 10. Dimension Collapse Test: Distance Data as Empirical Base for Topological Inversion
-
-To provide a testable "distance ladder" baseline for the structural solution of nucleon topology, a dimension collapse test is performed. This test is the **empirical base** of nucleon derivation: ② bonding rules and ③ skeleton enumeration are the same thing here — **skeleton channel structure ↔ distance ladder**.
-
-### 10.1 Scale Anchoring (Dimensionless Identity)
-
-$$a_0\cdot m_e\cdot c/\hbar = 1/\alpha \approx 137.036$$
-
-Measured verification: the ratio is 1.0000000006, almost exactly 1.
-
-### 10.2 Orbital Shell Law r_n = n²·a0/Z (in a0 units)
-
-| Z | n=1 | n=2 | n=3 | n=4 | Integer Ratio |
-|---|---|---|---|---|---|
-| 1 | 1.000 | 4.000 | 9.000 | 16.000 | 1 : 4 : 9 : 16 |
-| 2 | 0.500 | 2.000 | 4.500 | 8.000 | 1 : 4 : 9 : 16 |
-| 3 | 0.333 | 1.333 | 3.000 | 5.333 | 1 : 4 : 9 : 16 |
-
-### 10.3 Covalent Radius (in a0 units) and Derived Z_eff (Leakage Profile, Main Group Extension)
-
-Z_eff ≈ n²/(r/a0) (n takes the main shell quantum number): increasing gradually along the period for the second/third periods = increasing nuclear leakage.
-
-| Element | Z | r/Å | r/a0 | Derived Z_eff | Main Shell n |
-|---|---|---|---|---|---|
-| Li | 3 | 1.28 | 2.419 | 1.65 | 2 |
-| Be | 4 | 0.96 | 1.814 | 2.20 | 2 |
-| C | 6 | 0.76 | 1.436 | 2.79 | 2 |
-| N | 7 | 0.71 | 1.342 | 2.98 | 2 |
-| O | 8 | 0.66 | 1.247 | 3.21 | 2 |
-| F | 9 | 0.57 | 1.077 | 3.71 | 2 |
-| Na | 11 | 1.66 | 3.137 | 2.87 | 3 |
-| Si | 14 | 1.11 | 2.098 | 4.29 | 3 |
-| Cl | 17 | 1.02 | 1.928 | 4.67 | 3 |
-| K | 19 | 2.03 | 3.836 | 4.17 | 4 |
-| Rb | 37 | 2.20 | 4.157 | 6.01 | 5 |
-
-Z_eff increases monotonically across periods in the same group, such as group 14 C/Si/Ge/Sn: 2.79→4.29→7.06→9.52.
-
-### 10.4 Bond Order Step Law (Contraction Δ for each additional bond, in a0 units)
-
-| Family | Bond Order Series | Δ(1→2) | Δ(2→3) | Remarks |
-|---|---|---|---|---|
-| C–C | single / double / triple | 0.378 | 0.265 |  |
-| C–N | single / double / triple | 0.359 | 0.227 |  |
-| C–O | single / double / triple | 0.378 | 0.189 |  |
-| N–N | single / double / triple | 0.378 | 0.287 |  |
-| Si–Si | single / double / triple | 0.340 | 0.113 | Third period heavy atom triple bond weakened |
-
-Core multiple bond families (excluding O–O, N–O lone pair families, n=11): Δ(1→2)=0.352±0.037 a0 (RMS 0.354), Δ(2→3)=0.232±0.058 a0 (RMS 0.239).
-
-### 10.5 Single Bond Additivity Law d(A–B)≈r_A+r_B (in a0 units, statistical by family)
-
-| Family | n | Mean Value | RMS | Judgment |
-|---|---|---|---|---|
-| Organic C Skeleton Neutral Covalent Family | 11 | +0.6% | 1.5% | Strictly holds |
-| Light Heteroatom/Hydride | 25 | −2.9% | 6.7% | Approximate (electronegativity shift) |
-| Same-Nucleus Second Period (H/O/F) | 5 | +10.0% | 12.5% | Systematically stretched → channel saturation correction |
-| Same-Nucleus Heavy Main Group (Si…I) | 10 | −0.9% | 3.3% | Additivity law regression |
-| Ion/Metal Pairs | 6 | −12.3% | 14.4% | Failure (different ontological interval) |
-
-### 10.6 Bond Order Capacity Observation: Maximum Stable Bond Order for Each Family
-
-- Group 14: C≡C(3), Si≡Si(3), Ge≡Ge(3) — Capacity 3
-- Group 15: N≡N(3), P≡P(3), As≡As(3) — Capacity 3
-- Group 16: O=O(2), S=S(2), Se=Se(2), Te=Te(2) — Capacity 2
-- Group 17: F–F(1), Cl–Cl(1), Br–Br(1), I–I(1) — Capacity 1
-
-The channel capacity is not always 3, but decreases with the group and period; the same-nucleus small atoms in the second period (O, F) often have actual bond orders lower than the capacity upper limit due to lone pair repulsion, which is consistent with the two corrections of "channel saturation + lone pair repulsion" in the bonding rules.
-
----
-
-## 11. Nuclear Reaction Validation: Closure Degree Rebalancing from β Decay to Fission Chain
-
-This paper does not propose a new nuclear structure theory, but **uses existing measurements of fission and chain reactions to verify whether a mechanistic assertion that has been accepted in nucleon derivation can continue to hold on a larger scale**. This assertion is:
-
-> **Nuclear reaction = closure degree rebalancing.** (Chapter 3 of Nucleon Inversion v2, Speculation Q3)
-
-### 11.1 Fast Neutron Experiment: Differences Only Exist in Low-Energy Sedimentation
-
-**Criterion Design (Criterion Precedes Numerical Values).** If the reading of Q3 holds, then:
-
-- **Slow (thermal) neutrons**: can only settle at low energy at "existing unpaired open channels" in the composite skeleton, and have nowhere to land for "fully paired closed" skeletons → the cross-section should span a very wide range;
-- **Fast neutrons**: with enough energy to directly destroy the closure/pairing, bypassing the low-energy sedimentation channel → the cross-section should **restore to the same order of magnitude** for all nuclides.
-
-**Results**:
-
-| Quantity | Numerical Value |
-|---|---|
-| Thermal cross-section dynamic range | **8.58 orders of magnitude** (max 6401 b / min 1.7e-5 b) |
-| Thermal cross-section 1–99 percentile span | 8.39 orders of magnitude |
-| Fast cross-section dynamic range | **1.48 orders of magnitude** (max 2.43 / min 0.080 b) |
-| Fast cross-section (excluding Th-232) | 0.90 orders of magnitude |
-| Fast cross-section 10–90 percentile span | **0.40 orders of magnitude** |
-
-**Interpretation.** Fast neutrons compress the cross-section to the same order of magnitude, and the differences are indeed concentrated at the low-energy/slow neutron sedimentation end. This is consistent with the mechanism that "dormant edges require low-energy removal, and high energy can directly destroy closure", and it is a **10^4-fold structural signature** — not a small numerical coincidence.
-
-### 11.2 An Honest Falsification: Simple Parity Criterion Does Not Hold and Needs to Be Upgraded
-
-A natural "simplest criterion" is: **number of open channels = neutron number N mod 2**, i.e., odd-N nuclei "have one unpaired open channel", even-even nuclei "fully paired closed". This criterion predicts that even-even nuclei should have uniformly minimal thermal cross-sections.
-
-**It is falsified by three counterexamples**:
-
-| Counterexample | N | σ_th (b) | Conflict with "even-even should be closed" |
-|---|---|---|---|
-| U-232 | 140 (even) | **76.5** | High |
-| Pu-238 | 144 (even) | **17.8** | Medium-high |
-| Cm-242 | 146 (even) | **4.67** | Medium |
-
-Within the same even-even category, σ_th ranges from 76.5 b (U-232) to 1.7e-5 b (U-238), spanning **6.7 orders of magnitude**. Parity itself cannot determine whether thermal fission is possible.
-
-### 11.3 Upgrade: Compound Nucleus Excitation Surplus Criterion
-
-The real criterion is the **excitation surplus** of the compound nucleus (A+1):
-
-$$\Delta = E^\ast - B_f = S_n(A+1) - B_f(A+1)$$
-
-where E"=S_n(compound nucleus) is the excitation energy after absorbing a thermal neutron, and B_f is the fission barrier. Δ>0: the excitation energy itself exceeds the rebalancing slope → thermally sedimentable; Δ<0: requires additional kinetic energy from fast neutrons.
-
-**Results (full table of 9 target nuclei)**:
-
-| Target Nucleus | E" (MeV) | B_f (MeV) | Δ (MeV) | log₁₀σ_th | Judgment |
-|---|---|---|---|---|---|
-| U-233 | 6.846 | 5.50 | **+1.35** | 2.73 | Thermally sedimentable |
-| U-235 | 6.545 | 5.67 | **+0.88** | 2.77 | Thermally sedimentable |
-| Pu-239 | 6.534 | 6.05 | **+0.48** | 2.87 | Thermally sedimentable |
-| Am-241 | 5.529 | 5.90 | −0.37 | 0.49 | Requires fast neutrons |
-| Np-237 | 5.488 | 6.10 | −0.61 | −1.69 | Requires fast neutrons |
-| Pu-240 | 5.242 | 6.10 | −0.86 | −1.44 | Requires fast neutrons |
-| Pu-242 | 5.034 | 5.80 | −0.77 | −2.61 | Requires fast neutrons |
-| Th-232 | 4.786 | 5.80 | −1.01 | −4.27 | Requires fast neutrons |
-| U-238 | 4.806 | 6.20 | −1.39 | −4.77 | Requires fast neutrons |
-
-**Pearson(Δ, log₁₀σ_th) = +0.932.**
-
-- The positive and negative of Δ completely separates the two levels of "thermally sedimentable / requires fast neutrons" with a margin of 0.4–1.4 MeV;
-- The three even-even "counterexamples" are all automatically returned to their correct positions using this criterion: the compound nucleus U-233" of U-232 has Δ≈+1.6, the compound nucleus Pu-239" of Pu-238 has Δ≈+0.6, and the compound nucleus Cm-243" of Cm-242 has Δ≈+0.6 — although they are even-even, their excitation surplus is already positive, so they can settle at low energy. **"Even-even" is a common but not sufficient manifestation of "negative surplus"; the parity law is a subset of the closure degree potential.**
-
-### 11.4 B/A Closure Degree Potential: Macroscopic Profile of Fission/Fusion Direction and Net Energy Accounting
-
-B/A (binding energy per nucleon) as the macroscopic profile of "closure degree potential":
-
-- Extremum: **Ni-62 / Fe-56 platform, B/A≈8.79 MeV/n** — maximum closure degree region;
-- α particle (He-4) B/A=7.07: higher saturation at the light nucleus end;
-- U-238 B/A=7.57:falls back at the heavy nucleus end (sparse long-range channels).
-
-Both fission and flow towards the B/A single peak; the direction is determined by the position of the starting point relative to the peak:
-
-| Migration | d(B/A) (MeV/n) | Energy Released | SRE Reading |
-|---|---|---|---|
-| 4He → Fe | +1.72 | Fusion energy release | Flow towards greater closure degree |
-| Fe → U | **−1.22** | Fission energy release | Leave the maximum closure degree region andfalls back |
-
-Estimate the fission energy release of U-235 using the B/A difference: take the average B/A of fragments from the 98/138 region or 95/140 interpolation (≈8.50–8.51 MeV/n):
-
-$$E_f \approx 236 \times (\overline{B/A}_{frag} - B/A_{U^{235}}) \approx 215\text{–}219\ \mathrm{MeV}$$
-
-The measured E_f=202.5 MeV, with a model deviation of **+6~8%** (direction and magnitude correct; residual deviation comes from fragment B/A selection point and mass deduction of secondary neutrons).
-
-### 11.5 Chain Criticality: Multiplication and Coherent Bookkeeping Self-Sustaining Valve
-
-Chain reactions upgrade "whether a single seed can land" to "whether the statistical family of seeds can not be extinguished**:
-
-$$k_{eff} = \nu \cdot p \cdot f \ge 1$$
-
-where ν is the average number of neutrons emitted per fission, p is the probability that each neutron successfully triggers the next generation of fission, and f is the proportion of neutrons that do not leak/are not absorbed.
-
-**Critical sedimentation probability p"=1/(ν·f)** (upper limit when f=1):
-
-| Nuclide | ν | p"=1/ν |
-|---|---|---|
-| U-233 | 2.47 | 0.405 |
-| U-235 | 2.43 | 0.412 |
-| Pu-239 | 2.87 | 0.348 |
-| U-238 (fast) | 2.51 | 0.398 |
-
-Chain self-sustainment requires each seed to settle with a probability >35%, otherwise the multiplication <1 and the reaction extinguishes; p"∈[0.35,0.41] matches the measured values.
-
-### 11.6 Three-Level Signature Unification
-
-| Scale | Event | Signature | Ontology |
-|---|---|---|---|
-| Single Nucleon | β decay | n(open, β₁=6) → p(closed, β₁=7), Δm/m_p=1.4e-3 | Open→closed, expelling seed |
-| Composite Nucleus | Thermal neutron fission | σ_th spans 8.6 orders of magnitude, fast neutrons restore to the same order of magnitude; driven by Δ(S_n−B_f) | Whether the closure degree potential crosses the rebalancing slope |
-| Macroscopic | Chain Criticality | k_eff=ν·p≥1, p"=1/ν≈0.35–0.41 | Statistical family of seeds does not extinguish |
-
-All three share the same mechanism: **dormant open channels that can be sedimented**. β decay, fission cross-section parity law (which is essentially excitation surplus), and chain criticality are three readings of it at three scales.
-
----
-
-## 12. Many-Body Assembly Law and the Shared Ring: A Validation Attempt Borrowing Nuclear Data
-
-This section records an attempt to extend the nucleon skeleton to many-body systems using external nuclear data as a yardstick. The methodological constraints follow Section 3: SRE can only produce dimensionless ratios, so every quantity compared here is dimensionless — Δm_np = m_n − m_p = 1.293332 MeV is taken as the natural closure-degree unit on the nucleon side. Each conclusion states whether it is falsifiable. All numerical values are independently recomputed by the scripts in `code/`.
-
-### 12.1 The Assembly Law: Uniquely Determined by Two Principles
-
-Before nucleon skeletons can be assembled into many-body systems, the assembly rule must be fixed. This paper admits only two principles:
-
-1. **Open–closed complementarity**: two bodies can dock and form a shared unit only when one side carries a dormant gap and the other side offers a complete ring edge at the same position;
-2. **The images of the two bodies must be distinguishable in the shared region**: the shared ring must contain at least one **single-claim edge** (k=1, i.e. an edge claimed by only one body). This clause was originally stated as "closed bodies must not overlap", which carries spatial semantics and conflicts with the ontology of SRE, in which there is no space; it is therefore restated as a purely ledger-theoretic condition. **"Same position" is the natural meaning of "indistinguishable"** — the gap of neutron ring j can be sealed only by a complete ring edge of the partner's **ring j**, not by an arbitrary ring, and this is not an extra assumption.
-
-Five construction variants are enumerated for the two-body (deuteron) case: gap against a ring edge, gap against a spoke, single-point contact, three points identically attached to a ring, and merging onto the same vertex. Only **variant A** (the two ends of the gap are identified with the two ends of one of the proton's ring edges, forming a new ring) satisfies both principles, and it is unique under automorphism (9 constructions merge into one isomorphism class):
-
-| Variant A (two bodies) | Value |
-|---|---|
-| V / E / β₁ | 22 / 35 / 14 |
-| Number of triangular rings T | 6 |
-| Δβ₁ / ΔT | +1 / +1 |
-| λ₂ | 0.238442818 |
-| ρ | 6.681330644 |
-| Π₁ | 0.035687924 |
-
-**Qualitative prediction (successful)**: the rule automatically excludes n-n (both sides carry gaps at the same position) and p-p (neither side carries a gap); **only n-p can form a shared unit** — consistent with the measured fact that the only bound two-body system is the deuteron. The basis is the open/closed asymmetry, i.e. difference itself, and not any additional force.
-
-**Discriminating power of the restated principle 2 (verification)**: replacing "must not overlap" by "there exists a single-claim edge (k=1)" reproduces all the original exclusions: the shared-ring ledger of n-p is (1, 2, 2), containing one single-claim edge with k=1 → legal; in n-n both sides are dormant at the same position, so after coincidence that edge is still missing and the shared region retains only 2 edges (the ring does not close) → illegal; in p-p all three edges are claimed by both bodies (2, 2, 2) with no single-claim edge → the images of the two bodies are indistinguishable → illegal. A further check shows that **the shared-ring products of n-p and p-p are isomorphic to each other** (V=21, E=33, T=5, β₁=13, |Aut|=48, ρ=6.000000, λ₂=2−√3 all identical), so p-p can be excluded only by the ledger, never by any graph invariant.
-
-**Correction of the status of variant D (formerly the "shadow solution")**: the construction in which three points are identically attached to a ring gives V=21, E=33, β₁=13, T=5, |Aut|=48, with a spectrum of strict arithmetic rigidity (see 12.3). Verification shows that this construction is **isomorphic to the k=2 member of the k-body shared-ring family of Section 12.5 and carries the same ledger (1, 2, 2)** — it is therefore the deuteron's own configuration; the name "shadow solution" and the former note that it "violates principle 2" are both withdrawn. Under the restated principle, "the two nucleons occupy the same position" is no longer a ground for exclusion (SRE has no space); what is genuinely excluded is the **p-p type of complete coincidence** (no single-claim edge). Variant A (two-point docking, only one shared edge, Δβ₁=+1) remains a legal configuration but is quantitatively excluded by the deuteron binding energy (see 12.2). The full disposal is given in 12.10.
-
-![Many-body assembly law and the shared ring: assembly, reference-mode invariance, and zero-parameter scorecard](figures/sre_nucleon_manybody_schematic_EN.png)
-
-**Figure 5**: Many-body assembly law and the shared ring. (a) The monomer skeleton is assembled into a k-body shared ring by "merging the same ring (three vertices) into the shared region": thick solid edges are claimed by all bodies (k=A), the dashed red edge is a single-claim edge claimed by protons only (k=#p), blue dots are closed states and red dots open states; (b) the closure potential ρ rises monotonically with the body count, whereas the lowest non-trivial mode λ₂ = 2−√3 is independent of the body count (reference mode; the data are independently recomputed by the companion script from numerical Laplacian spectra, with a maximum deviation of about 10⁻¹⁵); (c) the zero-parameter scorecard of the assembly law (Reading A, see 12.8). The detailed data of panels (b) and (c) are given in 12.5 and 12.8 respectively.
-
-### 12.2 Variant A Is Quantitatively Excluded by the Deuteron
-
-Taking Δm_np as the closure-degree unit, variant A carries a closure-degree increment Δβ₁ = +1, so its zero-parameter prediction for the deuteron binding energy is
-
-$$B_d^{\text{(pred)}}=\Delta\beta_1\cdot\Delta m_{np}=2.5867\ \text{MeV}$$
-
-against the measured B_d = 2.224566 MeV, i.e. **16.3% too high**. The difference 0.362 MeV = 0.28 Δm_np is the "sharing tax" — variant A contains no shared edge at all and therefore cannot carry this term. **Conclusion: a configuration without shared edges cannot serve as the deuteron; the deuteron must be carried by a shared-ring configuration.**
-
-### 12.3 The Shared-Ring Motif: Arithmetic Rigidity of Variant D
-
-| Variant D (three points identically attached to a ring; the k=2 member of Section 12.5, see 12.10) | Value |
-|---|---|
-| V / E / β₁ / T | 21 / 33 / 13 / 5 |
-| \|Aut\| | 48 |
-| Laplacian trace | 66 |
-| Characteristic polynomial | x·(x−1)²(x−2)²(x−4)⁴(x−5)²(x−6)²(x²−4x+1)¹(x²−6x+7)³ |
-| Spectrum (value × multiplicity) | 0¹, 1², 2², 4⁴, 5², 6², (2±√3)¹, (3±√2)³ |
-| ρ | 6.000000 (exact integer, twofold) |
-| λ₂ | 2−√3 = 0.267949 (exact) |
-
-Every factor of the full spectrum has degree at most 2 (**arithmetic rigidity**), in contrast to variant A, which contains an irreducible cubic factor. Rarity check: among random graphs with the same degree sequence (4,4,4,3¹⁸) (2966 samples), the median ρ is 6.057 with range [5.291, 6.639], while **ρ is exactly the integer 6 in 0 samples**, and lies within 6±0.01 in only 4.0%. "Integer ρ" is therefore genuinely anti-probabilistic.
-
-**Orbit structure and "the projection erases history"**: the vertices of D fall into 3 orbits (6 spoke centres, 3 shared-ring vertices, 12 leaves) and the edges into 4 orbits, among which **the 3 edges of the shared ring lie in one and the same orbit** — the graph itself cannot tell which edge was "borrowed". This is a direct graph-level instance of "the homomorphic mapping erases history".
-
-### 12.4 The Projection Erases Who Is Dormant: n-p ≅ p-p
-
-The D-type products of n-p and p-p are compared item by item:
-
-| Quantity | D-type of n-p | D-type of p-p |
-|---|---|---|
-| V / E / β₁ / T / \|Aut\| / trace | 21 / 33 / 13 / 5 / 48 / 66 | identical |
-| Graph isomorphism test | `is_isomorphic = True` | |
-| Shared ledger | 1 own edge + 2 shared edges | 3 shared edges |
-
-**The product graph does not remember whether the partner was a neutron or a proton**: the entire difference lies in the shared ledger, and the ledger is not a graph invariant. This is the structural root of why B_d/Δm_np cannot be an integer, and it shows that the idea "binding energy can be carried by the graph's closure count" must fail. The D-type of n-n is not isomorphic to these (T=4, β₁=12, |Aut|=16, with one extra cubic factor), because both sides are dormant at the same position and the gap remains unsealed after coincidence.
-
-### 12.5 Three and Four Bodies: Structural Linear Law and Body-Count Independence of the Lowest Mode
-
-The configurations in which k bodies share one ring are constructed explicitly and checked quantity by quantity:
-
-| k | System | V | E | T | β₁ | \|Aut\| | ρ |
-|---|---|---|---|---|---|---|---|
-| 2 | deuteron | 21 | 33 | 5 | 13 | 48 | 6.000000 |
-| 3 | ³H / ³He | 30 | 48 | 7 | 19 | 288 | 6.925423 |
-| 4 | ⁴He | 39 | 63 | 9 | 25 | 2304 | 7.909516 |
-
-Closed forms: **V = 9k+3, E = 15k+3, T = 2k+1, β₁ = 6k+1, |Aut| = 6·2^k·k!** (exact for k = 2, 3, 4). The rise of ρ with the body count and the body-count independence of λ₂ are shown in Figure 5(b) (independently recomputed by the figure script from numerical Laplacian spectra).
-
-**³H(a) and ³He(a) are isomorphic** (V=30, E=48, T=7, β₁=19, |Aut|=288, ρ=6.925423, λ₂=2−√3 all identical) — the third occurrence, after the deuteron, of "the projection erases who is dormant".
-
-**The lowest non-trivial mode is independent of the body count**: λ₂ = 2−√3 = 0.267949192431 is exactly the same for k = 2, 3, 4, 5, 6 (relative difference about 10⁻¹⁵), and its degeneracy multiplicity is m(λ₂) = k−1. The mechanism was verified block by block:
-
-- on the lowest mode, the **three vertices of the shared ring have strictly zero amplitude** (about 10⁻¹⁶);
-- the spoke-centre amplitudes of the individual bodies **sum to zero** (for k=2: +0.1877 / −0.1877; for k=3: −0.2167 / +0.1084 / +0.1084);
-- hence inter-body coupling is completely switched off on this mode, and each body oscillates independently according to its own "body minus shared ring" grounded block, whose lowest eigenvalue is exactly 2−√3 (its 9 eigenvalues are {0.26795, 1, 3.26795², 3.73205, 4², 6.73205²});
-- k contributes only one constraint, "the spoke-centre amplitudes sum to zero", so the eigenvalue is independent of k and its multiplicity is exactly k−1.
-
-**Physical reading**: the shared ring = the part of the lowest excitation that **does not move at all**, i.e. a natural reference frame. This is the most concrete realization to date of the ontological reading that "light is the topological residue between evolutions and serves as the reference object of measurement": **the measured component (numerator) varies with the body count, while the reference component (the shared ring) stays strictly fixed.** By contrast, ρ rises monotonically with k (6 / 6.925423 / 7.909516 / 8.908855 / 9.912634) and has no simple quadratic closed form — **for k ≥ 3 the arithmetic rigidity moves from ρ to λ₂**.
-
-### 12.6 Shared-Ledger Pricing: Falsification at the Energy-Level Layer
-
-With the structural layer settled, the remaining question is the quantitative attribution of binding energy. The simplest bookkeeping hypothesis is: **each overlapping edge on the shared ring is priced according to how many bodies claim it (k)**, ψ(k), and the binding energy of a nucleus (in units of Δm_np) is the sum of the three edge prices. The ledgers of the four measured nuclei are:
-
-| Nucleus | Ledger (claim count of each of the three edges) | B / Δm_np |
-|---|---|---|
-| deuteron | (1, 2, 2) | 1.720027 |
-| ³H | (1, 3, 3) | 6.558252 |
-| ³He | (2, 3, 3) | 5.967608 |
-| ⁴He | (2, 4, 4) | 21.878135 |
-
-The four equations determine ψ(1..4) exactly, with zero residual:
-
-| k | ψ(k) / Δm_np | ψ(k) / MeV | relative to ψ(1) |
-|---|---|---|---|
-| 1 | +0.967105 | +1.2508 | 1.0000 |
-| 2 | +0.376461 | +0.4869 | **0.3893** |
-| 3 | +2.795573 | +3.6156 | **2.8907** |
-| 4 | +10.750837 | +13.9044 | **11.1165** |
-
-**The shape is non-monotonic**: double occupation reduces the edge contribution to 38.9% (a tax), while triple and quadruple occupation give 2.89× and 11.12× (strong gain). This is aligned with the qualitative picture "the greater the interference depth, the stronger the binding".
-
-**It must be stated honestly: this layer has no predictive margin.** Four free parameters fitted to four data points give zero residual by necessity, not by achievement; the only valid test is out-of-sample (see 12.7). Moreover, two more parsimonious pricing laws cannot accommodate the measured data (both are calibrated with a single constant from the deuteron):
-
-| Pricing law | ³H | ³He | ⁴He |
-|---|---|---|---|
-| Law A: ψ(k) = k·c (linear in k) | −63.3% | −53.9% | −84.3% |
-| Law B: ψ(k) = c·C(k,2) (pairwise counting) | −21.3% | +0.9% | −48.9% |
-
-In other words, "interference depth" cannot be reduced to a linear or pairwise count in k; Law B's near-hit on ³He is a single-point coincidence and cannot be generalized.
-
-**Backfill: the root of this layer's failure lies not in the shape of ψ but in additivity itself.** (This item is homologous to 12.11(2) and is registered here in advance.) From the three **resonance-unambiguous** measured nuclei (deuteron, ³H, ³He, all with A ≤ 3), subtracting the three equations cancels ψ(3):
-
-> ψ(1) − ψ(2) = B(³H) − B(³He) = +0.590645 Δm_np = **+0.7639 MeV**
-
-This expression involves only the price difference of the first edge and is independent of the shape of ψ. Since the profiles of ⁴H and ⁴He are (1, 4, 4) and (2, 4, 4), differing only in the claim count of the first edge, it immediately gives
-
-> B(⁴H) − B(⁴He) = ψ(1) − ψ(2) = **+0.590645 Δm_np** (an identity)
-
-That is, **however one redefines "the price of each edge on the shared ring", ⁴H is forced to be predicted more tightly bound than ⁴He**. This is precisely the mechanism of the out-of-sample failure in 12.7 — the failure occurs within the very section that introduces ψ, and it cannot be repaired by changing the shape of ψ. Likewise ψ(3) − ψ(2) = +2.419113 Δm_np gives B(⁴Li) − B(⁴He) = +2.419113 Δm_np. Hence the failure in 12.7 is a failure of the **whole class**, not of any particular ψ; the full derivation and consequences of this identity are given in 12.11(2).
-
-**Another equivalent simple bookkeeping** (registered for the record): let the price of an own edge be 1, of a dormant edge d, of a shared edge c, and of a borrowed edge b. Calibrating on the single nucleon, Δm_np = d − 1 gives d = 2; from the deuteron, 6 − 4c − b = 1.720027. Taking "borrowing is free" (b = 0) yields c = 1.07 and a sharing tax 4(c − 1) = 0.28 Δm_np = 0.362 MeV, consistent with the difference in 12.2. This parameterization and ψ(k) are two spellings of the same layer, and neither has an independent predictive margin.
-
-### 12.7 Failure of the A=4 Out-of-Sample Prediction
-
-Once ψ has been fixed by A=2, A=3 and ⁴He, the A=4 isobars constitute a genuine zero-parameter out-of-sample set:
-
-| Nucleus | Ledger | Predicted B | Measured |
-|---|---|---|---|
-| ⁴He | (2, 4, 4) | 28.2957 MeV | bound, 28.2957 MeV (**used for calibration**) |
-| ⁴H | (1, 4, 4) | 29.0596 MeV | **unbound** (above-threshold resonance) |
-| ⁴Li | (3, 4, 4) | 31.4244 MeV | **unbound** (above-threshold resonance) |
-
-The model predicts both to be more strongly bound than ⁴He, whereas both are measured to be **unbound**. A pricing law that depends only on "the distribution of claim counts k over the overlapping edges" is therefore explicitly falsified: **the energy-level layer is not computable in this layer.**
-
-### 12.8 The Assembly-Law Scorecard and Adjudication of Readings
-
-Reducing the two principles of 12.1 to "the number of gaps and the number of supplies at the same position" yields a zero-parameter existence scorecard. Definition: at the same shared position, k nucleon skeletons are aligned; each open-state body (neutron, whose ring edge at that position is dormant) leaves 1 **gap** g, and each closed-state body (proton, whose ring edge at that position is complete) offers 1 **supply** s. **A legal assembly implies binding; an illegal assembly implies non-binding.**
-
-| Nucleus | A | Gap g | Supply s | Measured |
-|---|---|---|---|---|
-| n-p | 2 | 1 | 1 | bound, 2.2246 MeV |
-| n-n | 2 | 2 | 0 | unbound (virtual state) |
-| p-p | 2 | 0 | 2 | unbound (virtual state) |
-| ³H | 3 | 2 | 1 | bound, 8.4820 MeV |
-| ³He | 3 | 1 | 2 | bound, 7.7181 MeV |
-| ⁴He | 4 | 2 | 2 | bound, 28.2957 MeV |
-| ⁴H | 4 | 3 | 1 | unbound (above-threshold resonance) |
-| ⁴Li | 4 | 1 | 3 | unbound (above-threshold resonance) |
-
-Two zero-parameter readings coexist and are mutually incompatible:
-
-- **Reading A**: legal ⟺ 1 ≤ g ≤ 2 and s ≥ 1 (a gap exists, at least one side can seal it, and the number of dormant sides does not exceed 2);
-- **Reading B**: legal ⟺ g = s and g ≥ 1 (gaps and supplies match one-to-one).
-
-| Reading | All 8 entries | A ≤ 3 sector | Mismatches |
-|---|---|---|---|
-| **A (adopted here)** | **7 / 8** | **5 / 5** | ⁴Li (A=4) |
-| A′ (dropping the clause "g ≤ 2") | 6 / 8 | 5 / 5 | ⁴H, ⁴Li (both A=4) |
-| B (one-to-one matching) | 6 / 8 | 3 / 5 | ³H, ³He (both A=3) |
-
-**Adjudication: Reading A is adopted.** There are two reasons: (i) all five entries of the calibratable sector A ≤ 3 (n-p, n-n, p-p, ³H, ³He, all of them measured bound states or sub-threshold virtual states without resonance ambiguity) are matched under Reading A, whereas Reading B already mismatches at ³H, judging the measured bound ³H to be unbound, and is therefore excluded; (ii) the only mismatch of Reading A lies at A = 4, and A = 4 has already been independently delimited as a non-computable interval in 12.7. If the additional clause "g ≤ 2" is dropped, the mismatch set gains only one more entry, ⁴H, still inside the same interval — **so whether that clause is kept does not affect the conclusions of this paper**; the version tabulated above (Reading A) is registered here. The scorecard is displayed in Figure 5(c).
-
-**Later supplement (see 12.12)**: of the two clauses of Reading A (1 ≤ g ≤ 2 and s ≥ 1), "g ≤ 2" caps only the neutron count and not the proton count, and therefore mismatches at ⁴Li. Replacing the two clauses by the mirror-symmetric single criterion **L1: |n_n − n_p| ≤ 1** makes the same 8-entry scorecard match **8 / 8**, with the number of clauses reduced from two to one and no parameter. The registration in this section is therefore revised to a **parallel** one: Reading A (the original form of this section, 7 / 8) and criterion L1 (12.12, 8 / 8); over A ≤ 4, L1 strictly dominates, while over A ≥ 5 both degrade to empirical approximations.
-
-### 12.9 The Adopted Boundary: A ≥ 4 Is Not Computable in This Layer
-
-Combining 12.7 and 12.8:
-
-- **A ≤ 3**: the zero-parameter assembly-law scorecard matches 5 / 5;
-- **A = 4**: two classes of failure appear — the out-of-sample failure of the pricing layer (⁴H and ⁴Li predicted bound, see 12.7) and the qualitative failure of the assembly law (⁴Li predicted bound, see 12.8).
-
-Both classes fall in the same interval and constitute two independent markers of the following boundary:
-
-> **Adopted boundary**: the nuclear boundness for A ≥ 4 (both existence and the numerical value of the binding energy) **is not computable in this layer**.
-
-Explaining that interval requires a new quantity outside the ledger (candidate: interference depth). That candidate is explicitly tested in 12.11, and the conclusion is negative: **this boundary is not a matter of insufficient data but a structural one**.
-
-**Honest registration**: the hit for ⁴He is not a prediction (its binding energy was used to fix ψ(4)); ⁴H and ⁴Li share the same reading and cannot be kept selectively; the "non-binding" of n-n and p-p refers to virtual states rather than forbidden states — the criterion only says that "no bound shared unit is formed".
-
-**Later revision (see 12.12)**: Section 12.12 makes an explicit attempt at the "antisymmetric penalty coefficient" λ; the conclusion is that λ can neither be derived from nor fixed by SRE. The same check, however, yields a zero-parameter **existence criterion** L1 (|n_n − n_p| ≤ 1) that matches the 8-entry scorecard of 12.8 at 8 / 8. The boundary above must therefore be split according to the two questions "existence" and "numerical value of the binding energy": the **numerical value of the binding energy** is not computable for A ≥ 4 (the identity of 12.11(2) is unaffected); **existence** is computable at A = 4 (L1, 8 / 8) but not for A ≥ 5 (the criterion degrades into an empirical approximation). That is, the boundary is **relocated** from A ≥ 4 to A ≥ 5.
-
-### 12.10 Disposal of the Shadow Solution: From "Overlap" to "Distinguishability"
-
-The two pending items raised in 12.1 are settled one by one. All numerical values are independently recomputed by `code/_sre_nucleon_shadow_disposal.py`.
-
-**(1) Variant D is not a shadow solution; it is the deuteron's own configuration.** Constructed as "k bodies sharing the same ring", the n+p common ring (formerly variant D) and the two-body shared ring of Section 12.5 (k=2) yield the same invariants (V=21, E=33, T=5, β₁=13, |Aut|=48, ρ=6.000000, λ₂=2−√3; the deviations of ρ from the integer 6 and of λ₂ from 2−√3 are both at the 10⁻¹⁵ level), with `is_isomorphic = True` and the same shared-ring ledger (1, 2, 2). The name "shadow solution" and the former note "violates principle 2" are therefore withdrawn; the value of retaining D rests on facts rather than on naming — the integer ρ and the body-count-independent λ₂ are genuine anti-probabilistic features (see 12.3 and 12.5).
-
-**(2) The non-spatial restatement of principle 2 has the same discriminating power.** The original statement "closed bodies must not overlap" carries spatial semantics and conflicts with the ontological premise of "no space, no dimension". Restated as a purely ledger-theoretic condition — **the shared ring contains at least one single-claim edge (k=1)** — the verdicts for the three pairings are identical to those of the original statement:
-
-| Pairing | Shared-ring edges | Ledger profile | Single-claim edges (k=1) | Verdict | Measured |
-|---|---|---|---|---|---|
-| n-p | 3 (ring closed) | (1, 2, 2) | 1 | legal | bound |
-| n-n | 2 (ring open) | (2, 2) | 0 | illegal | unbound (virtual) |
-| p-p | 3 (ring closed) | (2, 2, 2) | 0 | illegal | unbound (virtual) |
-
-**(3) The ledger difference between the two sharing modes.** Variant A (the two ends of the neutron's gap identified with the two ends of **one** of the proton's ring edges) has only **one dual-service edge** (that edge closes both rings, yet it appears in the proton's edge set only); the shared-ring configuration has **three** edges claimed by all bodies. The accounting of 12.6 ("each of the three shared-ring edges has its claim count") can therefore describe only the shared-ring configuration; the A-type cannot carry a three-edge profile such as (1, 2, 2). The two routes are not a mutually exclusive structural ambiguity, but a choice under the same body of data: the A-type is quantitatively excluded by the deuteron binding energy (16.3% too high, see 12.2), while the shared-ring type is retained.
-
-### 12.11 Why the A ≥ 4 Boundary Cannot Be Repaired: Two Impossibilities
-
-The boundary of 12.9 was originally based on "two empirical failures". Further checks show that those two failures are not due to insufficient data but can be proven by two impossibilities: **no graph functional can carry the distinction at A = 4, and no additive ledger pricing can repair its sign.** The numbers are independently recomputed by `code/_sre_nucleon_interference.py`.
-
-**(1) Structural impossibility: the A = 4 isotriplet forms a single isomorphism class.** Building ⁴He (2p+2n), ⁴H (1p+3n) and ⁴Li (3p+1n) under the shared-ring rule gives three graphs with identical invariants (V=39, E=63, T=9, β₁=25, |Aut|=2304, ρ=7.909515966, λ₂=2−√3), pairwise isomorphic. Their only difference lies in the ledger: the claim count of the "protons-only" edge on the shared ring is 2 / 1 / 3. **This is the A = 4 extension of the proposition "n-p ≅ p-p" of 12.4**: the product graph does not remember who is dormant, so the binding-energy differences cannot be carried by the graph, nor by any graph functional (ρ, λ₂, T, β₁, |Aut|, the full spectrum).
-
-**(2) Pricing-layer impossibility: the additive-profile pricing class is falsified as a whole.** The pricing law of 12.6 can be written in general form: the i-th edge of the shared ring is priced by its claim count k_i, and the binding energy is the sum over the three edges, i.e. B = ψ(k₁) + ψ(k₂) + ψ(k₃). Since k = (#p, A, A), every nucleus satisfies B(A, #p) = ψ(#p) + 2ψ(A), where ψ is an **arbitrary** function. The three measured nuclei d, ³H and ³He (A ≤ 3, no resonance ambiguity) immediately give an identity:
-
-> ψ(1) − ψ(2) = B(³H) − B(³He) = +0.590645 Δm_np = +0.7639 MeV
-
-Because the profiles of ⁴H and ⁴He differ only in the first edge (1 versus 2),
-
-> B(⁴H) − B(⁴He) = ψ(1) − ψ(2) = **+0.590645 Δm_np** (an identity, independent of the shape of ψ)
-
-Likewise ψ(3) − ψ(2) = +2.419113 Δm_np, giving B(⁴Li) − B(⁴He) = +2.419113 Δm_np. That is: **however one redefines the "interference depth" of a single edge, ⁴H and ⁴Li are forced to be predicted more tightly bound than ⁴He** (22.468780 and 24.297248 Δm_np, i.e. 29.0596 and 31.4244 MeV), whereas both are measured unbound. The sign is locked by the three measured nuclei, independently of the shape of ψ — so this layer cannot be repaired, only overturned.
-
-**(3) A composition-resolved interference depth is likewise insufficient.** Refining "interference depth" to the compositional level, i.e. splitting each edge's claim count into (k_n, k_p), allows one to define the complementary interference C = Σ k_n k_p, the same-type interference S = Σ [C(k_n,2) + C(k_p,2)], the total excess claim count I = Σ (k − 1) and the imbalance a = |n_n − n_p|. Calibrated on the four measured nuclei (d, ³H, ³He, ⁴He), the maximum residual of any linear basis (3 fitted parameters including the constant, only 1 residual degree of freedom) is: (C,S) 10.2%, (C,a) 3.3%, (I,a) 24.6%, (C,I) 10.2%; and extrapolating ⁴H and ⁴Li with the same coefficients, **all signs come out "bound", opposite to measurement**. There is also an independent mismatch in shape: ³H and ³He have the same complementary interference C (both 4), while their same-type interference S is 2 versus 3 and I is 4 versus 5, yet the measured binding energies are 6.558 versus 5.968 Δm_np — **decreasing** with S (or I). If one insists on the qualitative tendency of 12.6 ("the greater the interference, the stronger the binding"), then ³H should be weaker than ³He, contrary to measurement. Hence, if "interference depth" is to carry the pricing, it must be non-additive and non-monotonic, and no derivable form of it exists in the present framework.
-
-**(4) The only feasible repair and its price.** For ⁴H and ⁴Li to be unbound while d, ³H, ³He and ⁴He are unaffected, an additional term T must satisfy T(d) = T(³H) = T(³He) = T(⁴He) = 0 and T(⁴H) = T(⁴Li) ≥ 22.468780 Δm_np (= 29.0596 MeV). The minimal form is a function of the **imbalance** a = |n_n − n_p|: identically zero for a ≤ 1 and sufficiently positive at a = 2 (for example g(a) = λ·max(0, a−1) with λ ≥ 29.0596 MeV). This form needs only 1 free parameter and automatically respects mirror symmetry (⁴H and ⁴Li both have a = 2 and are pushed above threshold together). Its price must be honestly registered:
-
-- λ has no provenance within SRE; it is a **fitted parameter, not a prediction**; this registration will be upgraded in 12.12 to a structural conclusion (λ can neither be derived nor fixed);
-- the form has content only for A = 4. Every A ≥ 5 introduces a new free value ψ(5), ψ(6), … , so the scheme itself has no predictive margin for A ≥ 5, and "restoring computability" cannot be tested there;
-- this item therefore serves only as a **reinforcement of the falsification**: what repair requires is not a better interpolation but a quantity outside the ledger (the imbalance here), and that quantity currently has no falsifiable predictive power. **It should be noted, however, that if that quantity is used only as a binary (existence) requirement, its magnitude is not needed, so λ becomes dispensable and a contentful zero-parameter criterion results — this is the outcome of 12.12.**
-
-**(5) Summary.** A = 4 is the **only** interval in which the scheme possesses genuine zero-parameter out-of-sample character **in the energy layer**: d, ³H and ³He fix ψ(1..3), ⁴He fixes ψ(4), and ⁴H and ⁴Li are true extrapolation points. The boundary falls exactly at the first and only real extrapolation — indicating that its **location** is not accidental and its **nature** is structural (graph-layer indistinguishability + additive-layer identity), rather than a matter of data precision. **What must be distinguished is that this "irreparability" concerns the numerical value of the binding energy; if only existence is asked, that question is not constrained by the additive identity, and 12.12 gives a zero-parameter decision for it, on which the boundary is accordingly revised.**
-
-**Honest registration**: the "single isomorphism class" of (1) refers only to products built under the shared-ring rule; if another assembly rule is used, the conclusion must be re-checked. **(1′) That re-check has now been carried out in this section, and it yields a stronger statement than the measurement itself**: the isomorphism of the three is **not** a coincidence of the assembly rule but is **necessary at the assembly layer** — see below. The identities of (2) falsify the "additive-profile pricing class" only and do not exclude a non-additive pricing; no non-additive form is given here. The imbalance term of (4) is explicitly marked as a fit and must not be used as a prediction.
-
-**(1′) Strengthening and narrowing of the structural-layer conclusion: A does not enter the structure; k does.** Let k denote the **body count** of a shared ring (how many nucleons' rings that ring merges). Using a controlled-variable design, `code/_sre_nucleon_structure_vs_ledger.py` and `code/_sre_nucleon_attachment_sweep.py` measured three comparisons:
-
-- **Same k, change composition (p↔n)** ⇒ the graph is unchanged and the two are isomorphic ((p,p) ~ (p,n) is `True`); the difference lies only in the ledger profile ((2,2,2) versus (2,2,1)). The same holds for the mirror pair ³H ~ ³He (`True`; |Aut| = 288 and ρ = 6.925422918 identical).
-- **Same A, change the distribution of k** ⇒ the graph changes and the two are **non-isomorphic**. Example: at A = 6, k = (3,3) gives V = 60, E = 96, β₁ = 38, ρ = 6.925422918, whereas k = (2,2,2) gives V = 63, E = 99, β₁ = 39, ρ = 6.000000000. **One qualifier must be attached, however**: the current assembly rule uses the group index simultaneously as the ring slot, so **whenever the k distribution contains two or more groups the product graph is invariably a disconnected union of independent components** (`cc` = number of groups, **9/9 measured**; the λ₂ of both examples above is printed as `0.000000000` in the original log, whereas the λ₂ of a connected graph is invariably 2−√3 = 0.267949192, so **λ₂ = 0 is the fingerprint of disconnection**). The "graph changes" in this example is therefore caused **directly by V/E/β₁ adding up over the components of a disconnected union** (the addition law is given in 12.5), **not** by "the k distribution entering a single nucleon structure". **The inter-ring linking mechanism is absent from the assembly rule**, and it is provably **impossible to supply**: connectivity costs at least one inter-ring edge, which necessarily raises E from 96 to 97 and is thus **logically incompatible with the published values above**; more strongly, no mechanism satisfies all four of "degenerates to the current rule for a single group, is connected for multiple groups, does not destroy the λ₂ = 2−√3 of 12.5, introduces no new vertices" (see the unresolved matters of §15 and `code/_sre_nucleon_interring_b2.py`). **This bullet therefore supports only the weak reading "the same A with different k distributions gives different graphs", not the strong reading "the k distribution enters a single nucleon structure"**; by the morphological conclusion of §12.5 (under purely SRE-endogenous conditions the k distribution is invariably single-group), multi-group configurations should not arise in this layer at all.
-- **Same A and same k distribution, change the attachment permutation** ⇒ the graph is **still unchanged**; all six permutations give **a single isomorphism class**. Mechanism: the automorphism group of a **closed** body induces the **full S₃** on the three points of its ring (6 permutations measured; an open body induces only 2). Hence "which point it attaches to" is absorbed by the automorphism, and **the attachment point is not a degree of freedom.**
-
-The isomorphism of §(1) must therefore be **re-read**: ⁴He, ⁴H and ⁴Li at A = 4 share the **same** k distribution (a single ring with k = 4), so their isomorphism is a **direct consequence of the consistency of k**, independent of the attachment point and of the specific value of A. This is stronger than the original statement that "three cases were measured to be isomorphic", and it **no longer depends on whether the assembly rule has been changed**. Conversely, **A itself does not determine the structure**; what determines it is the **distribution of k** (with k ≥ 2 for each group — the "ring" of a k = 1 group has no edge to merge, so an assembly such as k = (5,1) does not exist formally). **What determines the distribution of k** is answered here as follows: **under purely SRE-endogenous conditions the only admissible distribution is the single-group one k = (A,)** (its uniqueness rests on only three anchors at A ≤ 4, of which A = 2 and A = 3 each admit but a single partition and thus have no discriminating power, leaving **exactly one effective discrimination**, so this is a **weak conclusion**); if external priors are admitted (such as the "4" of α-clustering, or an upper bound on k), the distribution is **not uniquely determinable from within SRE** (see the unresolved matters of §15).
-
-**A constitutive condition forced out by this test**: the shared ring **identifies the ring edge (L0r, L1r) of each body as one and the same edge**. Consequently, when both bodies are closed that edge has claim count 2, when one is closed and the other open it has count 1, and **when both are open the edge does not exist**. "Both open" is thus excluded not by an external prohibition but because **the gluing relation fails in the open state** — the same fact as the S₄ measurement of §12.13 (E is smaller than S₁ by exactly 1). Its corollary is that "there is always exactly one k = 1 edge on a shared ring" is equivalent to "**each shared ring carries exactly one open body**", and thus the statement of §12.5 that λ₂ = 2−√3 is independent of the body count acquires an assembly-layer explanation: **that k = 1 edge is a product of open–closed pairing, not a free parameter.**
-
-### 12.12 The Attempt at an Antisymmetric Coefficient: From an Energy Term to an Existence Criterion
-
-Section 12.11(4) registered the only feasible repair of the A ≥ 4 boundary as a "mirror-antisymmetric penalty term outside the ledger", g(a) = λ·max(0, a − 1) with a = |n_n − n_p|, and honestly registered λ as a fitted parameter with no SRE-internal provenance. This section upgrades that registration to a quantitative test; all numerical values are independently recomputed by `code/_sre_nucleon_asymmetry.py`. **The conclusion is that λ can neither be derived from nor fixed by SRE; but the very process of this negative result yields a contentful positive outcome — once the antisymmetry is demoted from an energy term to an existence criterion, the existence question at A = 4 becomes decidable in this layer with zero parameters.**
-
-**(1) The nature of the threshold.** Requiring ⁴H to be unbound requires the penalty to satisfy g(2) ≥ B_ledger(⁴H) = ψ(1) + 2ψ(4) = 22.468780 Δm_np = 29.0596 MeV. Set against the binding energies of the four measured nuclei:
-
-| Quantity | Δm_np | MeV | Relation to threshold |
-|---|---|---|---|
-| B(deuteron) | 1.720027 | 2.2246 | 20.7488 Δm below |
-| B(³H) | 6.558252 | 8.4820 | 15.9105 Δm below |
-| B(³He) | 5.967608 | 7.7181 | 16.5012 Δm below |
-| B(⁴He) | 21.878135 | 28.2957 | **0.590645 Δm below** |
-| **λ threshold = B_ledger(⁴H)** | **22.468780** | **29.0596** | — |
-
-That is, the required penalty **exceeds the binding energy of the α particle itself**. In other words, the "asymmetry cost" for |n_n − n_p| = 2 must be larger than the entire binding energy of ⁴He.
-
-The only ready-made asymmetry mechanism in nuclear physics is the liquid-drop asymmetry energy E_asym = a_sym (N − Z)²/A (a_sym ≈ 22–24 MeV). At A = 4 with |N − Z| = 2 it gives E_asym = a_sym ≤ 24 MeV < 29.06 MeV (still 5.06 MeV, i.e. 17.4%, short even at the upper bound); and at A = 3 it gives a non-zero E_asym(³H) ≈ 7.7 MeV, whereas ³H has already been used for calibration and its ledger term must carry zero penalty. **Hence this ready-made "asymmetry energy" mechanism fails on two counts.**
-
-**(2) λ cannot be derived from SRE.** SRE has only two classes of input available at A = 4:
-
-- **Graph invariants** (ρ, λ₂, T, β₁, |Aut|, the full spectrum): by 12.11(1), the three A = 4 compositions form a single isomorphism class, so all of these take the **same constant** on ⁴He/⁴H/⁴Li. A constant penalty would fall equally on the calibrated ⁴He, so that the four calibration equations would no longer be satisfied by ψ(1..4) — **the calibration itself would be destroyed**. Graph invariants therefore cannot serve as λ.
-- **Ledger functions** (functions of A and #p): any SRE-internal quantity X is a function of (A, #p), so X(a) is of the **same kind** as g(a); "writing λ as an SRE-internal quantity" produces only a renaming, not a new constraint.
-
-Inspection of 16 "natural candidates" (ρ₄, T₄, β₁, |Aut|^(1/3), √(V+1), ρ₄−ρ₂, ψ(4)−ψ(2), B(⁴He), 2B(⁴He), B(⁴He) + B(deuteron), E − V, 1/λ₂ and others): 11 fall below the threshold and 5 above. The threshold (22.4688 Δm_np) falls precisely in the gap between 21.8781 Δm_np (= B(⁴He)) and 23.5982 Δm_np (= B(⁴He) + B(deuteron)) — **the threshold is "satisfied", not "pinned down".**
-
-Formally: the unknown set {ψ(1..4), λ} against 4 equations leaves λ with 1 free parameter; at A = 4 there is therefore **zero testing margin**; at A ≥ 5 every new body number brings in a new free value ψ(A), so the parameter count grows at the same order as the data count and there is **no out-of-sample falsification**. **λ is not a derivable coefficient but an absorbable degree of freedom.**
-
-**(3) Yet SRE does fix the "shape" of λ.** Since the first class is excluded by (2), λ must be composition-dependent and must vanish on the calibration set {a ≤ 1}. Hence what SRE determines is precisely the **shape** of λ — its support (zero for a ≤ 1) and its monotonicity (λ > 0 monotonically lowers the binding energy) — while its **magnitude** is not determined. But the requirement at A = 4 is **binary (existence)**: as long as λ > 0 and acts at a = 2, ⁴H and ⁴Li are pushed above threshold regardless of how large λ is (provided λ ≥ threshold). **Hence the coefficient λ is dispensable for that binary requirement**; it is needed only when a numerical binding energy is required, and at A = 4 no testable number can be produced (see (2)).
-
-**(4) Demotion to an existence criterion: the zero-parameter antisymmetry criterion.** Writing antisymmetry directly as a **legality criterion** rather than an **energy penalty**:
-
-> **Criterion L1 (antisymmetry criterion)**: a shared-ring assembly is legal (predicted bound) ⟺ |n_n − n_p| ≤ 1.
-
-It has zero parameters and is naturally n↔p symmetric. On the 8-entry scorecard of 12.8:
-
-| Nucleus | A | a = \|n_n − n_p\| | Measured | L1 | Reading A |
-|---|---|---|---|---|---|
-| n-p | 2 | 0 | bound | bound √ | bound √ |
-| n-n | 2 | 2 | unbound | unbound √ | unbound √ |
-| p-p | 2 | 2 | unbound | unbound √ | unbound √ |
-| ³H | 3 | 1 | bound | bound √ | bound √ |
-| ³He | 3 | 1 | bound | bound √ | bound √ |
-| ⁴He | 4 | 0 | bound | bound √ | bound √ |
-| ⁴H | 4 | 2 | unbound | unbound √ | unbound √ |
-| ⁴Li | 4 | 2 | unbound | unbound √ | **bound ×** |
-
-**L1 matches 8 / 8; Reading A matches 7 / 8.** Over A ≤ 4, L1 is equivalent to "bound ⟺ |N − Z| takes its minimum at that A" (0 at A = 2, 1 at A = 3, 0 at A = 4). The only mismatch of Reading A (⁴Li) arises precisely because its added clause "g ≤ 2" caps the neutron count but not the proton count; L1 is naturally mirror-symmetric and makes no such distinction.
-
-**(5) The limits of L1: not a fundamental law but a classification rule for the light region.** Using the measured ground-state existence for A ≥ 5 as an out-of-sample set (26 entries, taken from whether each nucleus has a bound ground state; ⁸Be is recorded as unbound, see the honest registration):
-
-| Interval | Entries | L1 hits | Reading A hits |
-|---|---|---|---|
-| A ≤ 4 (scorecard) | 8 | **8 / 8** | 7 / 8 |
-| A = 5 (α + 1 region) | 3 | 1 / 3 | 2 / 3 |
-| A = 6–9 | 11 | 8 / 11 | 4 / 11 |
-| A = 10–14 | 12 | 5 / 12 | 1 / 12 |
-| **Total** | **34** | **22 / 34** | 14 / 34 |
-
-L1 is clearly superior to Reading A (22/34 against 14/34), but both classes of mismatch show that it is not a fundamental law:
-
-- **The A = 5 mismatches are closure effects, not asymmetry effects.** ⁵He and ⁵Li both have a = 1 (the minimum at that A); L1 predicts binding while both are measured unbound. No nucleus is bound at A = 5, so **any criterion depending on composition (A, Z) alone must mismatch at A = 5**; this is homologous to criterion ⑤ of 12.11 (partial rebalancing of closure degree) — the special closure of the α unit is not representable by a composition criterion.
-- **Systematically too strict for A ≥ 8.** The |N − Z| ceiling allowed by measured bound nuclei rises with A (per-A ceilings in this sample: A = 6 → 2, 7 → 1, 8 → 4, 9 → 1, 10 → 2, 11 → 5, 12 → 4, 14 → 6). The fixed threshold |N − Z| ≤ 1 judges the neutron-halo/drip-line nuclei ⁸He, ¹¹Li, ¹²Be and ¹⁴Be unbound, whereas all are measured bound — an inevitable consequence of the liquid-drop (N − Z)²/A picture, since **L1 lacks the A scaling**.
-
-The scaled form (N − Z)²/A ≤ c was also checked: the A = 4 side requires c < 1 (the (N − Z)²/A of ⁴H and ⁴Li equals 1 and must be judged illegal), while the drip-line side requires c ≥ 2.571; **the two constraints are incompatible**. Scanning c ∈ {0.25, 0.5, 0.8, 1, 2, 2.5, 3} gives a best total of 22/34, on a par with L1. The A = 4 side must therefore be carried by the **closure effect**, not by an asymmetry scaling.
-
-**(6) Summary and revision of the boundary.** The net results of this section are:
-
-- **Negative**: the antisymmetric coefficient λ can neither be derived from nor fixed by SRE; it is merely an absorbable degree of freedom. The registration "λ is a fit" of 12.11(4) is thereby upgraded to a structural conclusion.
-- **Positive**: the only contentful form of antisymmetry is the **existence criterion L1** (zero-parameter, mirror-symmetric), which matches the 12.8 scorecard at 8 / 8; hence **the "existence" question at A = 4 is decidable in this layer more precisely than the original registration allowed**.
-- **Revision of the boundary**: the original statement of 12.9, "**the nuclear boundness for A ≥ 4 (both existence and the numerical value of the binding energy) is not computable in this layer**", must be split:
-  - **Numerical value of the binding energy**: not computable for A ≥ 4 (the identity of 12.11(2) is unaffected by this section);
-  - **Existence**: computable at A = 4 via L1 with zero parameters (8 / 8); not computable for A ≥ 5 (the criterion degrades to an empirical approximation).
-
-  The boundary is thus **relocated** from A ≥ 4 to A ≥ 5, and its nature is **relocation rather than removal**.
-
-**Honest registration**: (i) L1 and Reading A are both post-hoc readings, and the superiority of L1 consists only in "more hits with fewer clauses" (zero parameters, a single clause, mirror symmetry); (ii) in the A ≥ 5 out-of-sample set, "bound/unbound" is taken as ground-state existence, and ⁸Be is recorded as unbound because it is α-unstable (only 0.092 MeV), so changing that convention would affect 1 entry; (iii) the exactness of L1 over A ≤ 4 is consistent with the known fact that the light-nucleus region is dominated by α closure, and it cannot be claimed on that basis that L1 is a fundamental law; (iv) this section revises only the **existence** boundary; the impossibility proof of 12.11(2) regarding the numerical binding energy is unaffected.
-
-### 12.13 Does the Nucleon–Nucleon Force Require the Electronic State? — Configuration-Level Localization of the Open Band
-
-**Question.** A natural objection is whether considering the "nucleon–nucleon force" alone is incomplete, and whether the electronic state must be considered as well. This section rewrites that objection as a **configuration problem decidable within this layer**; all numbers are independently recomputed by `code/_sre_nucleon_electron_coupling.py`.
-
-**Semantic delimitation.** SRE contains no "atomic electron cloud" object — the electrons of the mesoscopic layer are reassembled by the electron proper (the Q₃ coherent core) at a higher scale, and their effect does not enter nucleon assembly. Within **this layer**, the only decidable meaning of "electronic state participation" is the **open band**: the neutron state = opening one ring edge (Section 9.4), and that unclosed edge is exactly the "segment awaiting settlement" of the β-decay reading. The question to answer is therefore:
-
-> Does the meeting of the **open bands of two nucleons** in the shared region yield a new structure beyond the shared-ring family?
-
-**(1) Preliminary measurement: the three rings are equivalent, so "the gap lies in ring 0" is a notation, not a fact.** A previous statement had gone unchecked, namely that "the neutron gap can only lie in ring 0, otherwise an isolated vertex is left behind". Measurement refutes that statement: the automorphism group of the closed-state skeleton has order 36, and the corresponding ring edges `(L0j, L1j)` (j = 0,1,2) on the three rings **lie in a single orbit**; opening each ring individually gives V = 12, E = 17, T = 2, β₁ = 6, ρ = 5.302775638, λ₂ = 1.000000000, **all identical**, and none of the three rings produces an isolated vertex. Hence "the gap lies in ring 0" is a **choice of representative** within an equivalence class, not a distinguishable fact. This section accordingly makes all such choices explicit and re-runs them one by one (see (2)), confirming that no conclusion depends on the representative.
-
-**(2) Four two-body constructions, re-run for r = 0, 1, 2.** Let S1 = variant A (the two ends of the open-state gap identified with the two ends of one complete ring edge of the closed state, Section 12.1); S2 = open-band attachment (the two points of strands 0 and 1 on ring r of the open body identified with the same two points on ring r of the closed body, all other vertices retained); S3 = shared ring (the three vertices of ring r of the two bodies merged, i.e. the k = 2 member of Section 12.5); S4 = open-to-open (two gaps mated at the same position). The results are:
-
-| Construction | V | E | T | β₁ | ρ | λ₂ | \|Aut\| |
-|---|---|---|---|---|---|---|---|
-| **S1 = variant A** | 22 | 35 | 6 | 14 | 6.681330644 | 0.238442818 | 16 |
-| **S2 = open-band attachment** | 22 | 35 | 6 | 14 | 6.681330644 | 0.238442818 | 16 |
-| S3 = shared ring (k=2, deuteron) | 21 | 33 | 5 | 13 | **6.000000000** | **2−√3** | 48 |
-| S4 = open-to-open | 22 | 34 | 4 | 13 | 6.236067977 | 0.238442818 | 16 |
-
-All three values of r give a **digit-for-digit identical** table, and S1 ≅ S2 holds for every r.
-
-**(3) Verdict: S2 ≅ S1 — open-band attachment is not a new configuration.** Measurement shows S1 and S2 to be **isomorphic** (all invariants equal term by term, |Aut| = 16 for both). The mechanism: ring r of the open body retains only two edges `(L0r, L2r)` and `(L1r, L2r)`; once `L0r` and `L1r` are identified with the same two points of the closed body, the closed body's ring edge `(L0r, L1r)` closes the gap, while the open body's reverse path simultaneously serves as a second path, so a **new ring forms automatically** with exactly the same β₁ increment as variant A. Having established S2 ≅ S1, the open-band attachment reading is doubly excluded by existing results: at the **structural layer** it is variant A rather than a new configuration; at the **pricing layer** variant A has already been quantitatively excluded by the deuteron binding energy (Section 12.2: were A to hold, B_d would be 2Δm_np = 2.5867 MeV, whereas the measured value is 2.2246 MeV, 16.3% higher).
-
-**(4) Positive result: the open band is already contained in the assembly law, appearing as the "shape of the gap" rather than as an "extra energy term".** The decisive diagnostic lies in the S3 ledger. The claim counts of the three edges of the two-body shared ring are
-
-```
-(S0,S1) k=1 ;  (S0,S2) k=2 ;  (S1,S2) k=2        profile = (1,2,2)
-```
-
-where the edge with k = 1 is **precisely the locus of the open band**: all three edges of ring r of the closed body are present (each +1), the open body retains only two edges (claiming only the latter two), and the gap is closed by a complete edge of the closed body, so `(S0,S1)` is claimed by the closed body alone. Three correspondences follow:
-
-- the **presence or absence** of the gap decides whether n-p can assemble (principle 1);
-- the **position** of the gap decides that n-n is excluded automatically (the identity requirement of principle 1; measured S4 has E = 34, exactly 1 less than S1 — the ring edge that can never be closed);
-- the **k = 1 singly-claimed edge** left after the gap is closed decides that the images of the two bodies are distinguishable (principle 2).
-
-That is, the "electronic component" of the nucleon–nucleon force is **already contained in the assembly law**; it does not appear as an additive correction but as the **shape of the gap**. This also explains a fact that previously had only a phenomenological description: **the shared ring always has exactly one k = 1 edge** (the image of the open band), and this is precisely the structural origin of the statement in Section 12.5 that "the three points of the shared ring have strictly zero amplitude in the lowest excitation mode, so λ₂ = 2−√3 is independent of the body count" — among the three points participating in the identification, exactly one has a connection strength differing from the other two.
-
-**(5) The three A = 4 compositions remain a single isomorphism class.** After the open band is included, the graphs of ⁴He (2s+2s, fully closed), ⁴H (1s+3s) and ⁴Li (3s+1s) are still **pairwise isomorphic** (V = 39, E = 63, T = 9, β₁ = 25, ρ = 7.909515966, λ₂ = 2−√3, |Aut| = 2304, all identical), differing only in the ledger: the shared-ring profiles are (2,4,4), (1,4,4) and (3,4,4) respectively. The conclusion of 12.11(1) is therefore unaffected by this section — **the open band produces no graph-level difference whatever in the shared-ring construction**; it changes only the ledger, and the ledger has already been falsified as a whole by the identity of 12.11(2).
-
-**(6) Conclusion and boundary.** (a) Open-band attachment **does not constitute** the "third kind of SRE input" sought in 12.12, so the non-computability for A ≥ 4 is **not repaired** by this route; (b) it does, however, give a **new formulation of the source of failure**: the additive-profile pricing B = ψ(#p) + 2ψ(A) is falsified as a whole because it compresses the **shape** information of the open band into the count #p — the same conclusion as the identity of 12.11(2), from a different vantage point; (c) this section also **corrects a previously erroneous statement** ("the gap can only lie in ring 0") and shows that the correction leaves every existing conclusion intact.
-
-**Honest registration**: (i) the conclusion of item (1) regarding the single orbit of the three rings applies only to the automorphism group of the **closed-state** skeleton; (ii) the "open band" is an extension of the β-decay reading of this paper (Section 5), and its ontological status is a model-internal construction not independently tested; (iii) all conclusions of this section are internal self-consistency constructions of SRE and do not constitute a derivation of the real nucleon–nucleon force.
-
----
-
-## 13. Theoretical Constraints
-
-### 13.1 Special Binding of Ions/Metals: Theoretically Predictable
-
-The additivity law fails for ion/metal pairs (alkali metal/alkaline earth halides) with a deviation of −12.3% ± 7.6% in the test. **This failure is not an empirical accident, but a theoretical necessity that can be predetermined by the binding mode**:
-
-- **Covalent non-metals**: Electron topology is bound to the **local shared coherent channel** between A–B (two-body local);
-- **Ions/metals**: The binding of electron topology is **lattice-wide** — charge integral transfer or global delocalization, and the channels are not "shared" but "closed/transferred".
-
-The distance of ion pairs contracts below the additivity line ("crossing the additivity line"), which is essentially caused by **channel topology switching**, belonging to a different ontological interval from the covalent interval. This empirical classification can be upgraded to a theoretical predictive criterion: **whenever the electronegativity difference is sufficient to trigger channel closing/transferring, the additivity law should fail**.
-
-### 13.2 Current Is an Emergent Quantity Rather Than Continuous Electron Movement (Important Inference)
-
-Derived directly from the SRE distance ontology, it is a unified inference of nucleon/electron ontology:
-
-- Premise 1: Distance is not an a priori coordinate, but coherent degenerate bookkeeping;
-- Premise 2: Electrons are operator fixed points on coherent cores, not "entities moving along trajectories in space".
-
-Inference: **Macroscopic current cannot be understood as continuous transport of electron particles along wires**. Current is the **projected change of coherent degree bookkeeping of conductor electrons along the macroscopic conduction pathway**, belonging to the statistical emergent layer, along with electric fields, magnetic fields, gravitational fields, quark observations, and quantum entanglement — all are statistical projections of coherent core coupled with environment.
-
-Homologous to 13.1: whether it is covalent sharing, ion transfer, or conduction current, the observable "distance/transfer" phenomena are all **projections of channel topology (establishment/closing/transfer of coherent channels)**, rather than positional movement of entities. The explanation layer is changed, not the numerical layer: macroscopic equations such as Ohm's law remain effective descriptions of the emergent layer and are not affected.
-
----
-
-## 14. Honesty Boundary Checklist
-
-Each of the following weakens the strength of the conclusions of this paper, and is listed item by item for readers to weigh themselves:
-
-### Boundaries Related to Nucleon Inversion
-
-1. **κ_N identification**: $(m_n-m_p)/m_p=\alpha\cdot\Pi_1$ has not been independently demonstrated, it is a candidate hypothesis;
-2. **Hierarchy mixing**: The α of electrons comes from the 60-point Möbius parameterized spectrum, while the nucleon side in this paper uses the bare skeleton spectrum, and the two levels cannot strictly be compared;
-3. **Δm used twice**: Both criterion ① and criterion ② contain Δm, and the two criteria are not independent;
-4. **Criterion depends on prior**: Criterion ③ (triple symmetry) comes from prior S2, if S2 does not hold, the screening result will change accordingly;
-5. **Quark ontology borrowing**: $(2m_u+m_d)/m_p$ is only used as a dimensionless measured ratio, which does not mean admitting the ontological status of quarks;
-6. **Strength of the tie-break**: The Q3 on which Criterion ⑤ (partial re-equilibration of closure degree) rests, although supported by the fission verification of Section 11, is itself still a conjecture proposed in this paper; Criterion ④ alone cannot break the tie over the whole pool (2 graphs satisfy it); Criterion ⑥ shows a 2.67% deviation, which is not strong enough. The correct statement is therefore "A is the unique survivor at the structural level, but not independently at the measured level";
-7. **Dormant edge taken as a ring edge**: The basis is the structural adjudication that "the dormant edge is the image of a homomorphic mapping and its logical depth is large", not an independent derivation from measurement; if a spoke were taken instead, the transition reading would become λ₂: 1 → 0.527166, and the form of every criterion in Section 9 would change accordingly;
-8. **"Mode release" not adopted**: This paper explicitly does not use "some mode releases exactly the integer 1" or "the total released amount is always 2" as criteria (they are respectively a contingency of the homomorphic mapping and a trace identity);
-9. **Does not contain Q₃**: After exhaustive enumeration this skeleton contains no 3-regular 8-vertex subgraph, so β decay can only take the weak "seed sedimentation" reading;
-10. **Mass-depth not closed**: The L4 mass-depth equation is unavailable because Ψ is undefined, and the C5 (N_p≈5.446×10¹⁹) of v1 is still circular self-proving.
-
-### Boundaries Related to Many-Body Assembly and the Shared Ring
-
-1. **Principle dependence of the assembly law**: the two principles (open–closed complementarity, the images of the two bodies must be distinguishable in the shared region) are structural adjudications, not independently derived from measurement; the "same position" clause is the necessary condition that makes n-n automatically excluded — if a gap were allowed to be sealed by **any** ring of the partner, n-n would also have structural solutions (7 isomorphism classes), so the clause cannot be omitted. Principle 2 has been restated in 12.10 as a purely ledger-theoretic condition (the shared ring contains a single-claim edge with k=1); the restated form has the same discriminating power as the original, but both are model-internal constructions that have not been independently tested;
-2. **Withdrawal of the shadow-solution name**: verification shows that the former "variant D" is the k=2 member of the shared-ring family (isomorphic to the deuteron, with the same ledger (1, 2, 2)), so the name "shadow solution" and its note "violates principle 2" are both withdrawn (12.10); its anti-probabilistic features (integer ρ = 6, body-count-independent λ₂ = 2−√3) rest on the numerical facts of 12.3 and 12.5 and do not depend on the naming;
-3. **Reading dependence of the scorecard**: the scorecard conclusion depends on the choice of reading (A / A′ / B). This paper adopts Reading A, which matches 5/5 in the calibratable sector (A ≤ 3); however, the additional clause "gap ≤ 2" is a constituent part of the reading and has not been independently derived. Dropping that clause turns only the ⁴H entry from a hit into a mismatch, still inside the A ≥ 4 interval, so it does not affect the conclusions of this paper. Section 12.12 gives a mirror-symmetric single-clause replacement, criterion L1 (|n_n − n_p| ≤ 1), which matches 8 / 8 over A ≤ 4 with the number of clauses reduced from two to one and no parameter, and which degrades to an empirical approximation for A ≥ 5 just as Reading A does;
-4. **Zero margin of the pricing layer**: ψ(1..4) is fixed by four measured nuclei, so a zero residual is a necessity of parameter counting and is not a prediction; the pricing shape of "interference depth" is only a qualitative description;
-5. **The boundary is split into the two questions "existence" and "numerical binding energy"**: this paper originally adopted the boundary "the nuclear boundness for A ≥ 4 (both existence and the numerical value of the binding energy) is not computable in this layer" (12.9), and registered its two independent markers (the out-of-sample failure of the pricing layer in 12.7 and the qualitative failure of the assembly law in 12.8). Section 12.11 further upgrades the **numerical binding energy** side of this boundary from an "empirical failure" to "structurally non-repairable" by two impossibilities: the A = 4 isotriplet forms a **single isomorphism class**, so any graph functional takes the same value on all three; and the additive-profile pricing class is falsified as a whole by the identity B(⁴H) − B(⁴He) = B(³H) − B(³He) > 0. Section 12.12 attempts to derive from within SRE the antisymmetric coefficient λ required by that repair, and concludes that it can **neither be derived nor fixed** (the threshold, 29.0596 MeV, exceeds the ⁴He binding energy, and λ is an absorbable degree of freedom; SRE fixes only its "shape", not its "value"); the same check, however, yields a positive outcome — the zero-parameter **existence criterion L1** (|n_n − n_p| ≤ 1, 8 / 8 on the 8-entry scorecard). Hence the **existence** side is computable at A = 4 and not for A ≥ 5 (the criterion degrades into an empirical approximation; 22 / 34 on the A ≥ 5 out-of-sample set). The boundary is therefore **relocated** from A ≥ 4 to A ≥ 5, while the non-computability of the **numerical binding energy** is unchanged;
-6. **Dimensionlessness**: every comparison in this section is a comparison of dimensionless model-internal quantities (uniformly in units of Δm_np) and does not constitute a derivation of real nuclear-physics quantities; the nuclear data cited (the boundness and binding energies of ²H, ³H, ³He, ⁴He, ⁴H, ⁴Li) are taken from published evaluations such as AME 2020;
-7. **Scope of the isomorphism-class conclusion (now strengthened, and narrowed after B2)**: the "single isomorphism class" of 12.11 originally held only for the shared-ring assembly rule used in this paper and had to be re-checked; that re-check has now been carried out in 12.11(1′), and the conclusion is that the **isomorphism is necessary at the assembly layer** — the three share the same k distribution (a single ring with k = 4), so it is independent of the attachment point and of the specific value of A. The re-check also establishes that **A does not enter the structure; the distribution of k does** (the same A with a different k distribution gives non-isomorphic graphs, whereas the same k with p↔n swapped or a different attachment point leaves the graph unchanged). **The reading "the same A with a different k distribution ⇒ non-isomorphic" must however carry a qualifier**: under the current assembly rule a multi-group product is invariably a disconnected union, the difference coming from the addition law rather than from "k entering a single structure", and the inter-ring linking mechanism is provably impossible to supply (see 12.11(1′) and unresolved matter 11). **What determines the distribution of k**: under purely SRE-endogenous conditions it is the single-group form k = (A,) (a weak conclusion), and once external priors are admitted it is not uniquely determinable (settled by B1); moreover **multi-ring configurations should be absent from this layer** (settled by B2, see unresolved matter 11);
-8. **Non-additive pricing not explored**: 12.11 falsifies the additive-profile pricing class only and does not exclude a non-additive pricing; no non-additive form is given in this paper;
-9. **Independence of the figure data**: the ρ sequence and the λ₂ invariance in panel (b) of Figure 5, and the scorecard in panel (c), are independently recomputed by the figure script from numerical Laplacian spectra (the maximum deviation of λ₂ from 2−√3 is about 10⁻¹⁵) rather than reusing the tabulated values of the main text; the figure therefore serves as an independent cross-check of the numerical values in the main text;
-10. **Non-derivability of the antisymmetric coefficient**: the conclusion of 12.12 is that λ can neither be derived from nor fixed by SRE. The argument rests on two points: (i) graph invariants are constant over the A = 4 isomorphism class, so using one as λ would break the calibration of the four measured nuclei; (ii) any ledger function X(a) is of the same kind as the penalty term g(a) and produces only a renaming. **The scope of this argument is limited to the input set "ledger (A, #p) plus same-isomorphism-class graph invariants"**; if SRE possesses a third class of input that has not yet been identified (neither a graph invariant nor a ledger function), the matter must be re-examined;
-11. **Status of criterion L1**: L1 (|n_n − n_p| ≤ 1) and Reading A are both post-hoc readings, and the superiority of L1 consists only in "more hits with fewer clauses" (zero parameters, a single clause, mirror symmetry). Its exactness at 8 / 8 over A ≤ 4 is consistent with the known fact that the light-nucleus region is dominated by α closure, and **it cannot be claimed on that basis that L1 is a fundamental law**: the two mismatches at A = 5 are closure effects (no nucleus is bound at A = 5, so any composition-only criterion must mismatch there), while the mismatches for A ≥ 6 arise from the absence of an A scaling (the measured |N − Z| ceiling of bound nuclei rises with A). In the A ≥ 5 out-of-sample set, "bound/unbound" is taken as ground-state existence, and ⁸Be is recorded as unbound because it is α-unstable (only 0.092 MeV); changing that convention would affect 1 entry. The out-of-sample set contains 26 entries, and L1 matches 22 / 34 in total (including the 8 scorecard entries).
-12. **Status of the open-band reading and the equivalence of the three rings**: the check of 12.13 presupposes the reading "the open band = the one ring edge opened in the neutron state"; that reading is an extension of the β-decay reading of this paper (Section 5), and its ontological status is a model-internal construction not independently tested. "Electronic state participation" is delimited within this layer as open-band attachment to the shared region and **involves no mesoscopic-layer electron (atomic/molecular electron cloud)** — the latter is reassembled by the electron proper at a higher scale, and its effect does not enter nucleon assembly. 12.13(1) measures the three rings to lie in a single orbit under the automorphism group of the closed-state skeleton, so "the neutron gap can only lie in ring 0" is a notation rather than a fact; that conclusion applies only to the automorphism group of the closed-state skeleton, and the correction leaves every existing conclusion intact (12.13(2) re-runs r = 0, 1, 2 one by one and confirms this).
-13. **Unusability of the functional Π₂ on the nucleon side (now determined, not merely "uncalibrated")**: the w-independence of the second electron-side w-independent functional Π₂ = λ₂/λ₄ **has a threshold** — an exhaustive scan over even n = 8…120 shows that Π₂ is w-independent **only for n ≥ 24** (where λ₂ is the k = 2 mode and λ₄ the k = 4 mode, both even modes); for n ≤ 22, λ₄ falls on an odd mode and Π₂ depends on w. The electron-side Π₂ therefore holds only under the qualifier "**for n ≥ 24**". On the nucleon side it is **structurally unusable**: the single-group shared-ring k-body skeleton has λ₂ = 2−√3 exactly with **multiplicity m = k−1**, and the next distinct eigenvalue is invariably 1, so **for k ≥ 4, λ₄ falls inside the degenerate block and Π₂ ≡ 1.0** (identity, no information), while **for k = 2, 3, λ₄ = 1 so Π₂ = 2−√3** (a mere re-reading of λ₂, with no independent information). This degeneracy mechanism has the same origin as 12.5 (the three-point zero amplitude of the shared ring together with the zero sum of each body), **so Π₂ cannot be used for nucleon inversion**.
-14. **Homology of the cross-layer parameterization (the "shape" transfers, the "value" does not)**: the electron-side and nucleon-side spectra belong to the same one-parameter family "2 − 2cos(mθ)": on the electron side θ_e = 2π/n (the discretization angle), while on the nucleon side solving λ₂ = 2−√3 for the angle gives cos θ_N = √3/2, i.e. **θ_N = π/6**. Alignment of the two sides requires 2·(2π/n) = π/6, whose **unique positive-integer solution is n = 24**; at that example the electron-side Π₂ exactly equals the nucleon-side λ₂ (both 2−√3). **Note**: n = 60 (the primary electron-side object of this paper) **does not** satisfy that alignment, and n = 24 does not constitute a general family "n = 6m". Hence the parameterization **"shape" of the two layers (the family structure and the even-mode protection principle) transfers**, whereas the **"value" does not** (the electron Π₁ depends on w, Π₂ has the n ≥ 24 threshold, and on the nucleon side Π₂ carries no information with no adjustable n). This is the fourth instance of the recurring regularity of this paper — "**SRE fixes only the 'shape', not the 'value'**" (the other three being λ in 12.12, w(k) in 12.11, and the B1 conclusion on the k distribution);
-
-### Boundaries Related to Fission Verification
-
-1. **Structural verification rather than numerical prediction**: All observables have already been published; SRE only provides a unified graph-theoretic reading and does not derive new numbers from first principles;
-2. **Aligned with nuclear physics**: The Δ criterion agrees with the established nuclear-physics statement of neutron separation energy versus fission barrier; SRE only performs a translation of language;
-3. **Fast cross-section error**: The fast cross-sections are nominal values, and the definition of the energy point implies ±30% uncertainty; the conclusion that "the same order of magnitude is restored" is robust;
-4. **Correlation is not causation**: The Pearson value of 0.932 refers to 9 target nuclei, and although Δ and σ_th come from mutually independent nuclear data, the significant correlation is not a proof of causation;
-5. **Fission net energy deviation**: The model deviation is +6~8%, with the direction and magnitude correct; the precise value depends on the choice of the fragment B/A sampling point;
-6. **Chain criticality uncorrected**: p" is the upper limit for f=1; a real reactor requires leakage and absorption corrections.
-
-### Boundaries Related to Dimension Collapse and Theoretical Constraints
-
-1. **Dimension collapse as empirical indication**: All tests merely organize real empirical data into dimensionless relational numbers and verify that they approximately obey additivity/step/integer-ratio structures; this is an aligned indication of the SRE ontology "distance = coherent bookkeeping", and no numerical value is derived from SRE;
-2. **Bond length fluctuation**: Bond lengths are empirical representative values; the same bond fluctuates by ±0.01–0.03 Å in different environments, which is noise at the decimal-place level relative to a0, and should not be over-interpreted bond by bond;
-3. **Covalent radius calibration dependence**: The covalent radii adopt the Cordero 2008 calibration; switching to the Pyykkö system would shift individual residuals by about 1–3%, but the family structure and the conclusions remain stable;
-4. **Theoretical constraint inferences**: The special binding of ions/metals and the current-emergence inference are both logical consequences of model self-consistency; they change no measurable numerical value, only replacing the traditional explanatory layer.
-
----
-
-## 15. Conclusions
-
-This paper completes the full characterization of nucleons within the SRE framework; its core conclusions and logical chain are as follows:
-
-### Core Conclusion
-
-Nucleons are not point particles pre-placed in space, but **stable composite objects that emerge from the binary self-organizing network on the tripartite Y-shaped coherent core, constrained by the two-state opening/closing of dormant edges and the closure degree rebalancing rules**; their ontological structure is **the tripartite Y-shaped triangular closure Y₃⋉△₃** (V=12, E=18, β₁=7, |Aut|=36). This conclusion is reached from the clue of neutron β decay and obtained through three-step screening (integer determination of the vertex number V=12, spectral ratio determination of topology, triple symmetry determination of the solution), with a combined rarity of approximately 4.7×10⁻³.
-
-### Key Logical Chain
-
-1. **Methodological homology**: Nucleon derivation follows the same "local input → topological solution → inversion" route as electron derivation; SRE can only give dimensionless ratios, and absolute quantities require local input from classical physics;
-2. **Quark ontology reinterpretation**: Quarks should not share the Q₃ substrate with electrons, but are emergent statistical phenomena; N_c=3 in the Standard Model is in fact the number of skeleton strands, and flavor is the statistical projection of opening/closing breaking;
-3. **Two-state opening/closing mechanism**: Neutron = open state (β₁=6), proton = closed state (β₁=7); β decay is the removal/maintenance bifurcation of a dormant edge, and a breaking magnitude of 10⁻³ is a structural necessity;
-4. **Fission chain verification**: The mechanism "nuclear reaction = closure degree rebalancing" holds equally at the compound-nucleus and macroscopic scales; fast-neutron cross-sections restore the same order of magnitude, the excitation surplus criterion has a Pearson correlation of +0.932 with the thermal cross-sections, and the three-level signatures are unified (single-nucleon β decay → compound-nucleus fission → macroscopic chain criticality);
-5. **Theoretical constraints**: The additivity failure of ion/metal pairs is theoretically predictable (channel topology switching), and current is a coherent bookkeeping projection rather than continuous electron movement (distance is not an a priori coordinate);
-6. **Many-body assembly law and the shared ring**: the assembly law is determined by two principles ("open–closed complementarity" and "the images of the two bodies must be distinguishable in the shared region"), and the formation of the n-p shared unit follows automatically from the open/closed asymmetry; the lowest excitation of the shared-ring configuration is strictly independent of the body count (λ₂ = 2−√3, multiplicity k−1), and the shared ring is precisely the part of the lowest excitation that does not move at all, serving as a natural reference frame; the zero-parameter existence scorecard matches 5/5 in the A ≤ 3 sector; **the numerical value of the binding energy** is delimited as a non-computable interval for A ≥ 4, and 12.11 shows that this boundary is structural: the A = 4 isotriplet forms a single isomorphism class (no graph functional can distinguish them), and the additive-profile pricing class is falsified as a whole by an identity. The former "shadow solution" (variant D) is verified to be the k=2 member of the shared-ring family, and that name has been withdrawn (12.10).
-7. **Non-derivability of the antisymmetric coefficient and the existence criterion L1**: 12.12 attempts to derive from within SRE the antisymmetric coefficient λ required to repair A ≥ 4, and concludes that **λ can neither be derived nor fixed** (the required threshold, 29.0596 MeV, exceeds the ⁴He binding energy; the SRE-internal candidate pool is underdetermined; SRE fixes only the "shape" of λ — its support and monotonicity — and not its "value"). The same check, however, reveals that the only contentful form of antisymmetry is an **existence criterion** rather than an energy term — the zero-parameter, mirror-symmetric **L1: |n_n − n_p| ≤ 1** matches the 8-entry scorecard of 12.8 at **8 / 8** (Reading A: 7 / 8). The boundary of this paper is accordingly split into two questions: the **numerical value of the binding energy** is not computable for A ≥ 4 (locked by the identity of 12.11(2)); **existence** is computable at A = 4 and not for A ≥ 5 (L1 gives 22 / 34 on the A ≥ 5 out-of-sample set, its mismatches arising from the α closure effect and from the absence of an A scaling). The boundary is **relocated** from A ≥ 4 to A ≥ 5.
-8. **Containment of the open band (configuration-level localization of the electronic state)**: 12.13 rewrites "does the nucleon–nucleon force require the electronic state as well" as a configuration problem decidable in this layer, and concludes that its only decidable form — **open-band attachment to the shared region** — is **isomorphic** to variant A (hence not a new structure, and already quantitatively excluded by the deuteron binding energy) and **does not constitute** the "third class of SRE input" sought in 12.12. The diagnosis does yield a positive result: **the open band is the carrier of principle 1 of the assembly law**, appearing as the "shape of the gap" — the presence or absence of the gap decides whether n-p can assemble, the position of the gap decides that n-n is excluded automatically, and the **k = 1 singly-claimed edge** left after closure decides that the images of the two bodies are distinguishable (principle 2). This simultaneously yields an explanation for a fact previously described only phenomenologically: **the shared ring always has exactly one k = 1 edge** (the image of the open band), and this is precisely the structural origin of the statement in 12.5 that "the three points of the shared ring have zero amplitude in the lowest excitation mode, so λ₂ = 2−√3 is independent of the body count". The section also corrects a previously untested statement ("the neutron gap can only lie in ring 0" — the three rings are in fact a single automorphism orbit), a correction that leaves every existing conclusion intact.
-
-### Unresolved Matters and Next Steps
-
-1. **Independence of the tie-break**: Candidate B has been excluded by Criterion ⑤ (the open state must still retain closed units), and A is the unique survivor at the structural level; however, this criterion rests on Q3 (closure-degree re-equilibration), a conjecture of this paper, and a measured criterion independent of the structural prior is still lacking (Criterion ⑥ shows a 2.67% deviation, not strong enough);
-2. **Π₂ is unusable for nucleon inversion (now determined, not merely "uncalibrated")**: the electron-side w-independence of the second w-independent functional Π₂ = λ₂/λ₄ **has a threshold** — an exhaustive scan over even n = 8…120 shows that Π₂ is w-independent **only for n ≥ 24**, where λ₂ and λ₄ are both even modes (for n ≤ 22, λ₄ falls on an odd mode and Π₂ depends on w). The electron-side Π₂ should therefore be stated as holding "**for n ≥ 24**", and the original phrase "the second w-independent functional" requires that qualifier. On the nucleon side it is **structurally unusable**: the single-group shared-ring k-body has λ₂ = 2−√3 exactly with **multiplicity m = k−1** and the next distinct eigenvalue invariably 1, so for k ≥ 4, λ₄ lies inside the degenerate block giving **Π₂ ≡ 1.0** (identity), while for k = 2, 3, λ₄ = 1 giving Π₂ = 2−√3 (a mere re-reading of λ₂). The mechanism has the same origin as 12.5. **This item therefore moves from "uncalibrated" to determined: the issue is not "calibration data are still missing" but "the functional carries no independent information on the nucleon side".** (`code/_sre_nucleon_pi2_calibration.py`)
-3. **Skeleton-spectrum parameterization (homology point located, but only the "shape" transfers)**: the spectra of the two layers belong to the same one-parameter family "2 − 2cos(mθ)" — the electron side has θ_e = 2π/n (given by the discretization number n), while on the nucleon side solving λ₂ = 2−√3 for the angle gives cos θ_N = √3/2, i.e. **θ_N = π/6**. Alignment of the two sides requires 2·(2π/n) = π/6, whose unique positive-integer solution is **n = 24**; at that example the electron-side Π₂ exactly equals the nucleon-side λ₂ (both 2−√3). **It must be stated honestly, however**, that n = 60 (the primary electron-side object of this paper) does not satisfy that alignment, and that n = 24 does not constitute a general family "n = 6m". Hence the parameterization **"shape" of the two layers (the family structure and the even-mode protection principle) transfers**, whereas the **"value" does not** (the electron Π₁ depends on w, Π₂ has the n ≥ 24 threshold, and on the nucleon side Π₂ carries no information with no adjustable n). **This item therefore moves from "unresolved" to "partly settled": the homology point is located (positive), but no cross-layer mapping exists (negative); together with λ in 12.12, w(k) in 12.11 and the B1 conclusion on the k distribution, it forms the fourth instance of "SRE fixes only the 'shape', not the 'value'".**
-4. **The k distribution and inter-ring linking (both settled)**: the role of the k distribution is located by 12.11(1′) and B1 — under purely SRE-endogenous conditions the only admissible form is the single-group k = (A,) (a weak conclusion: the anchor pool has only 2 entries and there is exactly one effective discrimination); once external priors are admitted the distribution is not uniquely determinable from within SRE. The inter-ring linking mechanism has been shown by B2 to be **impossible to supply**: under the current assembly rule a multi-group product is invariably a disconnected union (cc = number of groups, 9/9), whose (V, E, β₁) is **logically incompatible** with the published values (connectivity costs at least one inter-ring edge, forcing E from 96 to 97); and no mechanism satisfies all four of "degenerates to the current rule for a single group, is connected for multiple groups, does not destroy 12.5, introduces no new vertices" (since §12.5 requires the shared ring to form a closed unit, which measurably excludes "connectivity" — an exhaustive scan of all minimal connection schemes finds no λ₂ returning to 2−√3). **Joint conclusion: multi-ring configurations should be absent from this layer, and the multi-group constructions for A ≥ 5 should be abandoned.** This impossibility theorem **does not depend on B1**, resting only on §12.5 and the addition law, and therefore stands independently. (`code/_sre_nucleon_interring_b2.py`, `code/_sre_nucleon_kdist_rule.py`)
-5. **Graph-theoreticization of the Δ criterion**: Upgrade the compound-nucleus excitation surplus Δ=S_n−B_f from a phenomenological criterion to a derived quantity of the Y₃⋉△₃ skeleton;
-6. **Residue–release correspondence not quantified**: Section 9.3 has established ρ as the strict invariant of the transition (the residue), but how "residue (denominator) × mobile branch (numerator)" corresponds quantitatively to "light as the reference object of measurement" still lacks an explicit mapping;
-7. **Computability for A ≥ 4 (settled)**: 12.11 has shown that the boundary is non-repairable both at the structural layer (isotriplet as a single isomorphism class) and at the additive pricing layer (identity), and has given the only feasible repair — a mirror-antisymmetric term g(a) = λ·max(0, a − 1) with a = |n_n − n_p| — together with its price: 1 fitted parameter and no predictive margin for A ≥ 5. 12.12 further proves that the coefficient of that repair, **λ, can neither be derived from nor fixed by SRE** (the question "can λ be derived within SRE?", previously listed as pending, is thereby answered negatively: λ is an absorbable degree of freedom, and SRE fixes only its "shape"); at the same time, 12.12 settles the **existence** question at A = 4 with the zero-parameter criterion L1 (|n_n − n_p| ≤ 1), giving 8 / 8. This item therefore moves from "partly settled" to **settled**: the numerical binding energy is not computable for A ≥ 4, while existence is computable at A = 4 and not for A ≥ 5. **12.13 has eliminated one of the candidate routes**: reading "electronic state participation" as open-band attachment to the shared region yields a configuration isomorphic to variant A, so it **does not constitute** the "third class of SRE input" sought in item (i) below; the same check, however, yields a positive result — the open band is itself the carrier of principle 1 of the assembly law. **Two matters remain unresolved**: (i) whether a third class of SRE input exists that is neither a graph invariant nor a ledger function and is **not equivalent to a variant-A docking**, which would let the existence criterion L1 shed its status as a post-hoc reading and would explain its mismatches at A ≥ 5; (ii) whether A ≥ 5 can be used to fix ψ(A ≥ 5) unilaterally through other observables (e.g. the neutron separation energy sequence), thereby restoring **binding-energy** out-of-sample testability in that interval. The disposition of the "shadow solution (variant D)" left over from the tie-break adjudication has been completed in 12.10 and is no longer listed as unresolved; the presentational hazard that "the equivalence of the three rings was untested" has been explicitly registered and corrected in 12.13(1).
-
-All conclusions are strictly confined to self-consistent constructions within the SRE model; real physical inferences must be independently verified by external means.
-
----
-
-## Appendix A: Key Numerical Tables
-
-### A.1 Core Physical Constants (CODATA 2018)
-
-| Quantity | Value | Unit |
-|---|---|---|
-| m_e | 0.510998950 | MeV/c² |
-| m_p | 938.27208816 | MeV/c² |
-| m_n | 939.56542052 | MeV/c² |
-| α⁻¹ | 137.035999084 | Dimensionless |
-| a0 | 0.529177210903 | Å |
-
-### A.2 Key Numerical Values for Nucleon Inversion
-
-| Quantity | Value |
-|---|---|
-| Δm/m_p=(m_n−m_p)/m_p | 1.378419305×10⁻³ |
-| κ_N=(m_n−m_p)/m_p/α | 0.188893067 |
-| Electron calibration w" | 1+4.347×10⁻⁵ |
-| Skeleton Π₁(closed) | 0.188580 |
-| Deviation | 0.165% |
-| Combined rarity | 4.7×10⁻³ |
-
-### A.3 Key Numerical Values for Fission Verification
-
-| Quantity | Value |
-|---|---|
-| Thermal cross-section dynamic range | 8.58 orders of magnitude |
-| Fast cross-section dynamic range | 1.48 orders of magnitude |
-| Pearson(Δ, log₁₀σ_th) | +0.932 |
-| U-235 fission model energy | 215–219 MeV |
-| U-235 fission measured energy | 202.5 MeV |
-| Chain criticality p"(U-235) | 0.412 |
-
-### A.4 Key Numerical Values for Dimension Collapse
-
-| Quantity | Value |
-|---|---|
-| Organic C skeleton RMS residual | 1.5% |
-| Light heteroatom RMS residual | 6.7% |
-| Same-nucleus H/O/F stretching | +10.0% ~ +19.7% |
-| Same-nucleus heavy main group RMS residual | 3.3% |
-| Ion pair RMS residual | 14.4% |
-| Core Δ(1→2) | 0.352±0.037 a0 |
-| Core Δ(2→3) | 0.232±0.058 a0 |
-
-### A.5 Key Numerical Values for the Many-Body Assembly Law and the Shared Ring
-
-| Quantity | Value |
-|---|---|
-| Variant A (two bodies, no shared edge) | V=22, E=35, β₁=14, T=6; λ₂=0.238442818; ρ=6.681330644 |
-| Variant D (two bodies, shared ring) | V=21, E=33, β₁=13, T=5, \|Aut\|=48; ρ=6.000000; λ₂=2−√3 |
-| Deuteron prediction of variant A | 2.5867 MeV (measured 2.224566 MeV, 16.3% too high) |
-| Sharing tax (own vs shared) | 0.28 Δm_np = 0.362 MeV |
-| Three/four-body linear law | V=9k+3, E=15k+3, T=2k+1, β₁=6k+1, \|Aut\|=6·2^k·k! |
-| Lowest non-trivial mode | λ₂ = 2−√3 = 0.267949192431 (exact for k=2..6), multiplicity k−1 |
-| ρ sequence (k=2..6) | 6.000000 / 6.925423 / 7.909516 / 8.908855 / 9.912634 |
-| ψ(k) (in units of Δm_np) | +0.967105 / +0.376461 / +2.795573 / +10.750837 |
-| Scorecard (Reading A) | 7/8 overall; 5/5 in the A ≤ 3 sector; only mismatch ⁴Li |
-| A=4 out-of-sample predictions | ⁴H 29.0596 MeV, ⁴Li 31.4244 MeV (both measured unbound) |
-| Rarity of ρ among random graphs | 0 out of 2966 samples have ρ exactly the integer 6 |
-| Identity (additive-profile pricing class) | B(⁴H) − B(⁴He) = ψ(1) − ψ(2) = B(³H) − B(³He) = +0.590645 Δm_np = +0.7639 MeV |
-| Same identity (⁴Li side) | ψ(3) − ψ(2) = +2.419113 Δm_np = +3.1287 MeV |
-| A=4 isomorphism class | ⁴He / ⁴H / ⁴Li all V=39, E=63, T=9, β₁=25, \|Aut\|=2304, ρ=7.909515966, λ₂=2−√3 |
-| Residuals of composition-resolved interference linear bases | (C,S) 10.2%, (C,a) 3.3%, (I,a) 24.6%, (C,I) 10.2%; extrapolated signs for ⁴H/⁴Li all wrong |
-| Minimal repair term | imbalance term λ·max(0, a−1), a = \|n_n − n_p\|, λ ≥ 29.0596 MeV (fitted parameter, not a prediction) |
-| Dual-service edges of variant A | 1 (the shared-ring configuration has 3) |
-| Recomputed ρ of shared-ring configurations (k=2..6) | 6.000000 / 6.925423 / 7.909516 / 8.908855 / 9.912634; λ₂ identically 2−√3 (deviation ca. 10⁻¹⁵) |
-| Shared-ring products of n-p and p-p | Isomorphic (V=21, E=33, T=5, β₁=13, \|Aut\|=48, ρ=6, λ₂=2−√3 all identical) |
-| Threshold for the antisymmetric coefficient λ | λ ≥ B_ledger(⁴H) = 22.468780 Δm_np = 29.0596 MeV (**exceeding** B(⁴He) = 21.878135 Δm_np = 28.2957 MeV) |
-| Comparison with the empirical asymmetry energy | a_sym ≤ 24 MeV < 29.0596 MeV (5.06 MeV, i.e. 17.4%, short); the mechanism also gives a non-zero 7.7 MeV at A=3, conflicting with the ³H calibration |
-| Statistics of the λ candidate pool (16 natural candidates) | 11 below the threshold, 5 above; the threshold falls in the gap between 21.878135 (B(⁴He)) and 23.598162 Δm_np (B(⁴He)+B(deuteron)) |
-| Criterion L1 (antisymmetry criterion) | \|n_n − n_p\| ≤ 1; **8 / 8** on the 8-entry scorecard (Reading A 7 / 8) |
-| Per-interval hits of L1 (scorecard + A≥5 out-of-sample, 34 entries) | A ≤ 4: 8/8; A = 5: 1/3; A = 6–9: 8/11; A = 10–14: 5/12; **total 22 / 34** (Reading A 14 / 34) |
-| Mismatch diagnosis for L1 | The mismatches at A = 5 (⁵He, ⁵Li) are an α closure effect (no bound nucleus at A = 5); the mismatches for A ≥ 8 arise from the absence of an A scaling |
-| Scan over (N−Z)²/A ≤ c | The two-end constraints are incompatible (A = 4 requires c < 1, drip-line nuclei require c ≥ 2.571); over c ∈ {0.25…3} the best total is 22 / 34 |
-
----
-
-## Appendix B: Consolidated Terminology List
-
-This appendix consolidates all term definitions used in this paper, sorted alphabetically:
-
-| Term | Definition |
-|---|---|
-| **Binary Self-Organizing Network** | The ontology of SRE: a network whose elements are always ±1 and which grows continuously in time; all things are its resident structures |
-| **β₁ (First Betti Number)** | β₁ = E − V + 1, the number of independent closed loops in the graph |
-| **Closure Degree Potential** | In graph-theoretic language, the "rebalancing hill height": whether a complex is worth/able to rearrange to a lower closure degree configuration |
-| **Compound Nucleus** | The temporary state (A+1) formed when a target nucleus absorbs a neutron; fission occurs inside it |
-| **Covalent Radius** | The radius of an atom in a covalent bond, normalized by a0 into a dimensionless relational number |
-| **Assembly Law** | The rule that merges several nucleon skeletons into a many-body configuration; determined by two principles: open–closed complementarity plus the images of the two bodies must be distinguishable in the shared region |
-| **Gap** | At the same shared position, the number of gaps g left by open-state (neutron) nucleons |
-| **Supply** | At the same shared position, the number of complete ring edges s offered by closed-state (proton) nucleons |
-| **Shared Ring** | One closed triangular ring shared by several nucleons after assembly |
-| **Shared Ledger** | A counting table recording how many bodies "claim" each overlapping edge on the shared ring; it does not change the graph structure |
-| **Interference Depth** | The depth to which several bodies overlap on the same shared unit; a candidate pricing quantity for binding energy, not yet calibrated |
-| **Dimension Collapse** | Organizing real empirical bond length data into dimensionless relational numbers in units of a0, and verifying additivity/step/integer-ratio structures |
-| **Excitation Surplus Δ** | Δ = E" − B_f; Δ>0 means a low-energy (thermal) neutron can cross the fission barrier |
-| **Fission Cross-Section σ** | The probability area that a neutron (seed) incident on a nuclide triggers fission; varies with energy |
-| **Fission Barrier B_f** | The energy hill a compound nucleus must climb in order to deform into fission |
-| **Dormant Edge** | A channel with χ=0 in SRE: it is not deleted but degenerates to the multiplicative identity 1 — conductive but not forming a loop |
-| **Laplacian Spectrum** | The set of eigenvalues of a matrix built from the graph's adjacency relations, written λ₁=0 ≤ λ₂ ≤ … ≤ λ_max=ρ |
-| **Neutron Separation Energy S_n** | The energy required to remove the last neutron from a compound nucleus; the excitation energy after thermal-neutron absorption is E"=S_n |
-| **Π₁ = λ₂/ρ** | Graph functional: the ratio of the smallest non-zero eigenvalue to the largest, calibrated as α on the electron side |
-| **Projection (Functional)** | A rule that maps a graph to a number; the graph changes, the number changes |
-| **Multiplication Constant ν** | The average number of neutrons emitted per fission |
-| **Critical k_eff** | The ratio of the neutron count in each generation to that of the previous generation; ≥1 gives a self-sustaining chain |
-| **Graph G** | A mathematical object composed of vertices and edges |
-| **V, E** | Number of vertices V, number of edges E |
-| **Degree k** | The number of edges incident to each vertex; k-regular = all vertices have the same degree |
-| **Automorphism Aut(G)** | A permutation that maps a graph onto itself without changing the connectivity relations; \|Aut\| measures the degree of symmetry |
-| **Vertex Orbit** | A grouping of vertices that can be interchanged under all symmetry operations |
-| **Inversion** | Given the value of a functional, solving inversely for the structural parameters of the graph |
-| **sim_p Generator** | The core evolution algorithm of the binary self-organizing network, injecting random differences and expanding outward at every step |
-| **Antisymmetric Penalty Term** | An additional term depending only on the compositional imbalance a = \|n_n − n_p\| and vanishing identically for a ≤ 1, g(a) = λ·max(0, a − 1); its coefficient λ cannot be derived from SRE (12.12) |
-| **Criterion L1 (Antisymmetry Criterion)** | A shared-ring assembly is legal (predicted bound) if and only if \|n_n − n_p\| ≤ 1; zero-parameter and naturally n↔p symmetric |
-
----
-
-## Appendix C: Code List and Complete Reproduction
-
-All reproducible scripts of this paper are archived in the `code/` directory; the only dependencies are Python 3 + NumPy + NetworkX (no torch dependency). The running command is `python -u <script.py > log 2>&1`.
-
-### C.1 Nucleon Inversion Related
-
-| Script | Function |
-|---|---|
-| `_sre_nucleon_skeleton_inversion.py` | Main nucleon inversion recalculation: electron calibration, criteria ①②③, rarity, Q₃ check |
-| `_sre_nucleon_tiebreak_scan.py` | Non-spectral invariant comparison and cross-check of the parallel candidates |
-| `_sre_nucleon_tiebreak_v2.py` | Tie-break v2: degeneracy structure of the spectra, first statement of Criterion ④ |
-| `_sre_nucleon_orbit_reading_check.py` | Uniqueness of per-orbit readings and closed-form search for the λ₂ drop |
-| `_sre_nucleon_release_rarity.py` | Pool rarity statistics of the transition release amounts |
-| `_sre_nucleon_transition_residue.py` | Transition release and topological residue test (invariance of ρ) |
-| `_sre_nucleon_ringedge_transition.py` | Ring-edge transition analysis: ring-edge vs spoke readings, criteria ④⑤⑥, and full-pool rarity |
-| `_sre_nucleon_skeleton_plot.py` | Generation of the skeleton structure schematic and the screening funnel figure |
-| `sre_nucleon_skeleton_inversion_results.json` | Main nucleon inversion result data |
-| `sre_nucleon_tiebreak_results.json` | Parallel candidate comparison data |
-| `sre_nucleon_ringedge_transition_results.json` | Ring-edge transition analysis data |
-
-### C.2 Many-Body Assembly Law and Shared Ring Related
-
-| Script | Function |
-|---|---|
-| `_sre_nuclear_data_survey.py` | Survey of usable nuclear data: screening of dimensionless candidate quantities, false-positive cleanup, and structural findings |
-| `_sre_nucleon_dimer_rule.py` | Two-body assembly law: enumeration of five variants and screening by the two principles |
-| `_sre_nucleon_dimer_spectra.py` | Spectra and invariant comparison of the two-body variants (A, D) |
-| `_sre_dimer_full_enum.py` | Full enumeration of two-body constructions and verification of the mapping direction |
-| `_sre_nucleon_sharedring.py` | Structure and full spectrum of the shared-ring configuration (variant D) |
-| `_sre_sharedring_check.py` | Automorphism orbit check of the shared-ring motif |
-| `_sre_sharedring_motif.py` | Comparison of the D-type products of n-n / p-p and arithmetic rigidity |
-| `_sre_nucleon_trimer.py` | Construction of the k-body shared-ring configuration and verification of the structural linear law |
-| `_sre_nucleon_trimer_price.py` | Structural law and pricing inversion (an alternative parameterization) |
-| `_sre_nucleon_trimer_mode.py` | Variation of the lowest non-trivial mode with the body count k, and its zero-amplitude support |
-| `_sre_nucleon_ledger_price.py` | Shared-ledger pricing: inversion of ψ(k), A=4 out-of-sample, and the existence scorecard |
-| `_sre_nucleon_ledger_laws.py` | Pricing-law tests: deviations of the linear and pairwise-counting laws, A=4 out-of-sample |
-| `_sre_nucleon_manybody_verdict.py` | Closure of the assembly-law scorecard: sector statistics of the three readings and the adopted boundary |
-| `_sre_nucleon_shadow_disposal.py` | Shadow-solution disposal: isomorphism check between D and the k=2 member, discriminating power of the non-spatial restatement of principle 2, ledger difference between variant A and the shared ring, and the A=4 single isomorphism class |
-| `_sre_nucleon_interference.py` | Interference-depth test: identity proving the non-repairability of the additive-profile pricing class, residuals of composition-resolved interference linear bases, the A=4 isomorphism class, and the minimal repair term with its price |
-| `_sre_nucleon_manybody_plot.py` / `_sre_nucleon_manybody_plot_EN.py` | Figure 5 of Section 12: assembly schematic, ρ and λ₂ versus body count, zero-parameter scorecard; the spectral quantities in panel (b) are recomputed numerically inside the script |
-| `_sre_nucleon_asymmetry.py` | The attempt at an antisymmetric coefficient: the nature of the λ threshold and its comparison with the empirical asymmetry energy, a 16-candidate selection check within SRE, the "shape vs value" separation argument for λ, the zero-parameter criterion L1 on the 8-entry scorecard and on the A ≥ 5 out-of-sample set (26 entries), and the (N−Z)²/A ≤ c scan |
-| `_sre_nucleon_electron_coupling.py` | The configuration-level test of Section 12.13: measurement of the automorphism orbit of the three rings, re-running of the four two-body constructions (S1 variant A / S2 open-band attachment / S3 shared ring / S4 open-to-open) for r = 0,1,2, the verdict S2 ≅ S1 and its mechanism, the diagnosis that the k=1 edge in the S3 ledger is the locus of the open band, and the isomorphism re-check of the three A = 4 compositions |
-| `_sre_nucleon_structure_vs_ledger.py` | Strengthening and narrowing of the structural-layer conclusion: a controlled-variable measurement of three contrasts ("same k, changed composition / same A, changed k distribution / same A and k, changed attachment point"), establishing that "A does not enter the structure, k does" and that "the attachment point is not a degree of freedom" |
-| `_sre_nucleon_attachment_sweep.py` | Full enumeration of attachment-point permutations: measurement of the permutations induced on the three ring vertices by the automorphism groups of the closed/open bodies (all of S₃ for the closed body, only 2 for the open body), supporting "the attachment point is absorbed by the automorphism" |
-| `_sre_nucleon_interring_b2.py` | The second criterion for the non-repairability of inter-ring linkage: exhaustive verification that no minimal-connectivity scheme returns λ₂ to 2−√3; establishes the impossibility theorem that "multi-group products are always disconnected unions (cc = number of groups)" |
-| `_sre_nucleon_kdist_rule.py` | Localization of the k distribution: statistics on the anchor pool and the number of effective discriminations for uniqueness under purely SRE-endogenous conditions (single group k = (A,)), and the argument that the distribution cannot be uniquely determined when external priors are admitted |
-| `_sre_nucleon_pi2_calibration.py` | Usability verdict on the Π₂ functional: exhaustive measurement of the w-independence threshold on the electron side (n ≥ 24), and proof of the structural unusability on the nucleon side ("λ₄ falls in a degenerate block ⇒ Π₂ ≡ 1.0") |
-
-### C.3 Fission Chain Verification Related
-
-| Script | Function |
-|---|---|
-| `_sre_fission_chain_validation.py` | Recalculation of the fast-neutron experiment, parity counterexamples, excitation surplus criterion, B/A closure potential and chain criticality |
-| `_sre_fission_chain_plot.py` | Generation of the excitation surplus scatter plot and the dynamic range comparison figure |
-| `sre_fission_chain_validation_results.json` | Fission verification result data |
-
-### C.4 Dimension Collapse Test Related
-
-| Script | Function |
-|---|---|
-| `_sre_dimension_collapse.py` | Basic dimension collapse test with five checks |
-| `_sre_dimension_collapse_ext.py` | Extended dimension collapse test (full bond length library) |
-| `sre_dimension_collapse_summary_ext.json` | Statistical data of the extended dimension collapse test |
-
-### C.5 Nucleon v1 Legacy Scripts
-
-| Script | Function |
-|---|---|
-| `_sre_nucleon_derivation.py` | Nucleon topological derivation v1 (3×Q₃ construction, superseded by v2) |
-| `sre_nucleon_derivation_results.json` | v1 result data |
-
----
-
-## Appendix D: Figure List
-
-All figures of this paper are archived in the `figures/` directory, ordered as they appear in the text:
-
-| Figure | File Name | Content |
-|---|---|---|
-| Figure 1 | `sre_nucleon_skeleton_structure_EN.png/.svg` | Nucleon skeleton candidate: tripartite Y triangular closure (closed-state proton and open-state neutron) |
-| Figure 2 | `sre_nucleon_skeleton_funnel_EN.png/.svg` | Nucleon skeleton three-step screening funnel (85→4→2) |
-| Figure 3 | `sre_fission_chain_corr.png/.svg` | Nuclear reaction verification: excitation surplus vs thermal cross-section scatter plot, and fast/thermal cross-section dynamic range comparison |
-| Figure 4 | `sre_nucleon_derivation.png/.svg` | Nucleon topological derivation v1 schematic (abandoned 3×Q₃ construction, historical reference only) |
-| Figure 5 | `sre_nucleon_manybody_schematic_EN.png/.svg` | Many-body assembly law and the shared ring: (a) monomer → two bodies → four bodies sharing one ring (with single-claim edge annotations); (b) closure potential ρ rising with body count and the body-count independence of λ₂ = 2−√3; (c) zero-parameter scorecard of the assembly law (Reading A, 8 entries) |
-
----
-
-## Appendix E: References and DOI
-
-All literature and project references cited in this paper (in order of appearance):
-
-1. SRE-v1.6 Axiom Suite, DOI 10.5281/zenodo.22077475
-2. SRE-Dynamics: Composite Elementary Particles and Relational Space Emergence (Book of the Void), DOI 10.5281/zenodo.22162514
-3. SRE Dynamics: Rigorous Reconstruction of Maxwell Field Equations Using Purely Dimensionless Graph Cohomology and Global Evolution Steps, DOI 10.5281/zenodo.22119957
-4. Hierarchical Dissipative Self-Organizing Binary Network Dynamics, DOI 10.5281/zenodo.20576606
-5. SRE Electrical Quantity Definitions (Charge/Current/Resistance/Voltage/Power/E=mc²), DOI 10.5281/zenodo.22119635
-6. Complete Characterization of the Electron within the SRE Framework (Series), DOI 10.5281/zenodo.22162514
-7. CODATA 2018 Fundamental Constants, https://codata.org
-8. PDG Quark Mass Table, https://pdg.lbl.gov
-9. JEFF-3.3 / ENDF/B-VIII Fission Cross-Section Database, https://www.oecd-nea.org/dbdata/jeff/
-10. RIPL-3 Fission Barrier Database, https://www-nds.iaea.org/ripl-3/
-11. AME 2020 Atomic Mass Evaluation, https://www-nds.iaea.org/amdc/
-
----
-
-**Archiving Note**: This monograph is a stand-alone document; after review it may be merged into the *SRE_Electron_Complete_Paper* series or archived as an independent Zenodo entry. The Chinese and English versions are maintained in sync as a parallel pair.
-
+# Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two-State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation
+
+**Version: 2.1 (Integrated Draft)**
+**Date: 2026-10-09**
+
+> [Resource and Availability Statement] This framework is built based on State-Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open data repository. **This document suite includes system papers, application development, scientific hypotheses, operators 1-6,11,12 complete algebraic derivations and simulation code fully open source**; operators 7, 8, 9, 10,13-18 belong to subsequent closed-source commercial core modules,
+> and are not included in this document suite.
+>
+> Additionally, you can access the Tencent Intelligent Document Space supporting AI-assisted consultation (available on PC and WeChat mobile terminals).
+>
+> As of 2026-09-21, restricted by Google Terms of Service, the author no longer maintains or updates the SRE document library in Google Gemini Notebook. This link is for historical archive only and should not be used as an official citation source:
+>
+> - Google Gemini Notebook (Historical Archive, No Longer Updated): [https://notebooklm.google.com/notebook/ef52bf5a-f6d0-4a2a-aed4-b25d6520ab2c](https://notebooklm.google.com/notebook/ef52bf5a%E2%80%91f6d0%E2%80%914a2a%E2%80%91aed4%E2%80%91b25d6520ab2c)
+> - Tencent Intelligent Document: [https://docs.qq.com/space/DUkRjYUtNWFdyV253](https://docs.qq.com/space/DUkRjYUtNWFdyV253)
+>
+> According to the principles of State-Relational Entropy (SRE), classical physical foundations originate from information statistics.
+
+**Project References (DOI, see Appendix E for in-text citations):**
+
+- https://doi.org/10.5281/zenodo.22077475 — SRE-v1.6 Axiom Suite
+- https://doi.org/10.5281/zenodo.22162514 — SRE-Dynamics Composite Elementary Particles and Relational Space Emergence (Book of Void)
+- https://doi.org/10.5281/zenodo.22119957 — SRE Dynamics: Strict Reconstruction of Maxwell Field Equations Using Pure Dimensionless Graph Cohomology and Global Evolution Steps
+- https://doi.org/10.5281/zenodo.20576606 — Hierarchical Dissipative Self-Organizing Binary Network Dynamics
+- https://doi.org/10.5281/zenodo.22119635 — SRE Electrical Quantity Definitions (Charge/Current/Resistance/Voltage/Power/E=mc²)
+- https://doi.org/10.5281/zenodo.22162514 — Complete Characterization of the Electron within the SRE Framework (Series)
+
+---
+
+> **Core Conclusion**: In the SRE (State-Relational Entropy) theoretical framework, nucleons are not point particles pre-placed in space, but **stable composite objects emerging from binary self-organizing networks on the tripartite Y-shaped coherent core, constrained by the two-state opening/closing of dormant edges and closure degree rebalancing rules**. Their ontological structure is **the tripartite Y-shaped triangular closure Y₃⋉△₃** (12 vertices, 18 edges, first Betti number 7, automorphism group order 36).
+>
+> This conclusion starts from the clue of neutron β-decay, and is obtained through three-step screening: integer determination of vertex number V=12, spectral ratio determination of topology, and triple symmetry determination of solution, with a combined rarity of approximately 4.7×10⁻³. It is verified through fission chain reactions, and the two-state opening/closing mechanism of nuclear reactions also holds at the composite nucleus and macroscopic scales. The nucleon ontology can be extended to derive the fission cross-section parity law, closure degree potential criterion and chain criticality, and deduce that the additivity failure of ion/metal pairs can be theoretically predicted, and current is a coherent bookkeeping projection rather than continuous electron movement.
+>
+> In a further validation that borrows external nuclear data, the skeleton yields a zero-parameter many-body assembly law and shared-ring configuration: the lowest excitation on the shared ring is strictly independent of the body count (λ₂ = 2−√3, multiplicity k−1); and it yields a zero-parameter mirror-symmetric existence criterion **L1: |n_n − n_p| ≤ 1** (8 / 8 on the 8-entry scorecard). Accordingly, "nuclear boundness" must be split into two questions: **the numerical value of the binding energy** is explicitly delimited as a non-computable interval for A ≥ 4 (the out-of-sample prediction of the pricing layer fails, and that failure is **locked for the whole class and is irrepairable**, by an identity independent of the shape of the pricing function); **existence** is computable at A = 4 via L1 with zero parameters, but not for A ≥ 5 (the criterion degrades) — that is, the boundary is **relocated** from A ≥ 4 to A ≥ 5.
+>
+> **Contextual Limitations (Must Read First)**: The above-mentioned "nucleon", "Y₃⋉△₃", "two-state opening/closing", "closure degree potential" and other objects, as well as concepts such as logical depth, Z₂ winding phase, dormant edge, first Betti number mentioned later, are all heuristic simulation **model internal structures, analogies and counts**, and are not directly measurable physical quantities in the real world. All proofs and numerical verifications in this paper only hold within the SRE model, representing the self-consistency of the model, **and do not automatically equate to real physical facts**. Real physical and chemical phenomena must be independently verified by external means (DFT, molecular dynamics, experimental observations) for model inferences.
+
+---
+
+## Abstract
+
+This paper provides a unified and complete characterization of nucleons within the State-Relational Entropy (SRE) dynamic framework: nucleons are stable composite objects emerging from binary self-organizing networks on the tripartite Y-shaped coherent core, constrained by the two-state opening/closing of dormant edges and closure degree rebalancing rules. Their ontological structure is the tripartite Y-shaped triangular closure Y₃⋉△₃ (V=12, E=18, β₁=7, |Aut|=36). The full text unfolds along a reproducible logical chain:
+(1) Establish the general methodology for nucleon derivation: local input → topological solution → inversion, which is homologous to electron derivation;
+(2) Propose three ontological speculations about quarks (quark ≠ Q₃, quark is an emergent statistical phenomenon, nuclear reaction = closure degree rebalancing) as structural priors for subsequent inversion;
+(3) Start from neutron β-decay, derive the structural constraints T1–T3 for the nucleon skeleton, and redefine isospin Z₂ as opening/closing duality, rather than flavor multiset flipping;
+(4) Establish the nucleon inversion simultaneous equation system, and obtain surviving candidates through three-step screening (integer determination of vertex number V=12, spectral ratio determination of topology, triple symmetry determination of solution); then break the tie within the "transition–residue" framework: ρ is proved to be a strict invariant of the transition (the residue, serving as the reference standard of measurement), the dormant edge is taken to be a ring edge, and the criterion of "partial re-equilibration of closure degree" (the open state must still retain closed units) uniquely retains candidate A;
+(5) Verify the two-state opening/closing mechanism of nuclear fission chain reactions: fast neutron cross-sections restore the same order of magnitude, excitation surplus criterion has a Pearson correlation of +0.932 with thermal cross-sections, and three-level signatures are unified (single nucleon β decay → composite nucleus fission → macroscopic chain criticality);
+(6) Derive the theoretical constraints that the additivity failure of ion/metal pairs can be theoretically predicted, and current is a coherent bookkeeping projection rather than continuous electron movement;
+(7) Extend the framework to many-body systems using external nuclear data as a yardstick: the assembly law is determined by two principles ("open–closed complementarity" and "the images of the two bodies must be distinguishable in the shared region", the latter being a non-spatial restatement of the former "closed bodies must not overlap"), yielding the structural linear law of the shared-ring configuration (V=9k+3, E=15k+3, T=2k+1, β₁=6k+1, |Aut|=6·2^k·k!) and the body-count independence of the lowest excitation (λ₂ = 2−√3, multiplicity k−1); a zero-parameter existence scorecard is given and the reading is adjudicated (Reading A adopted: 5/5 matched in the A ≤ 3 sector), and together with the out-of-sample failure of the pricing layer at A=4 and the qualitative failure of the assembly law at A=4, the honesty boundary "**the nuclear boundness for A ≥ 4 is not computable in this layer**" is drawn; it is further shown that this boundary is **not repairable on the side of the numerical binding energy** (the A = 4 isotriplet forms a **single isomorphism class**, so the binding-energy differences cannot be carried by any graph functional, and the additive-profile pricing class is falsified as a whole by an **identity** independent of the shape of the pricing function), and the disposal of the "shadow solution" (variant D) is completed (it is the k=2 member of the shared-ring family, and that name is withdrawn);
+(8) an attempt is made to derive the **antisymmetric coefficient** λ required by that repair from within SRE; the conclusion is that λ can neither be derived nor fixed (its threshold, 29.0596 MeV, exceeds the ⁴He binding energy, and the candidate pool is underdetermined; SRE fixes only the "shape" of λ, not its "value"). The same check, however, yields a positive outcome: demoting antisymmetry from an **energy term** to an **existence criterion** gives a zero-parameter, mirror-symmetric criterion L1 (|n_n − n_p| ≤ 1) that matches the 8-entry scorecard at 8 / 8, so that **the existence question at A = 4 is computable in this layer**; the out-of-sample test (A ≥ 5, 26 entries) shows that L1 does not have the status of a fundamental law (22 / 34 hits, its mismatches being respectively an α closure effect and the absence of an A scaling), so the boundary is **relocated** from A ≥ 4 to A ≥ 5;
+(9) the objection "does the nucleon–nucleon force require the electronic state to be considered as well" is rewritten as a **configuration problem decidable within this layer**, with the following conclusion: its only decidable form is **open-band attachment to the shared region**, and that configuration is **isomorphic** to variant A (hence not a new structure, and already quantitatively excluded by the deuteron binding energy). The diagnosis further shows that **the open band is not an extra energy term but the carrier of principle 1 of the assembly law itself** — it appears as the "shape of the gap" (the presence or absence of the gap decides whether n-p can assemble, the position of the gap decides that n-n is excluded, and the k = 1 singly-claimed edge left after closure decides that the images of the two bodies are distinguishable). This also explains both the fact that the shared ring "always has exactly one k = 1 edge" and the body-count independence of λ₂ = 2−√3. The section additionally corrects a previously erroneous statement ("the neutron gap can only lie in ring 0" — the three rings are in fact a single automorphism orbit, so the statement is a notation rather than a fact, and the correction leaves every existing conclusion intact).
+
+(10) two of the easiest-to-register branches of the "downward extension" screening are turned into executable criteria and executed: **the neutrino as the k = 1 singly-claimed edge on the shared ring** is **judged negative** — the automorphism group is **vertex-transitive** on the three shared-ring points (orbit count measured to be 1) ⇒ every graph functional takes the same value on the three-generation candidates ⇒ the spectrum is strictly degenerate; the 3×3 local operators always have only 2 distinct eigenvalues ⇒ the spectrum degenerates to two levels; and the ledger route (the claim triple always (#closed, k, k)) has only 1 degree of freedom. The two routes each strike a barrier already established in this project (the vertex-transitivity of 12.4, the identity of 12.11(2)); none of the 96 zero-parameter candidates is an effective hit. At the same time the **"exponential-decay-law gap" registered in Section 10 is filled**: the axioms "dormancy as the default state + removal as a rare, independent, stationary perturbation" **derive** $T_{1/2}=\ln2/p$ and memorylessness (MC verification passes; the power law is excluded); but the strong reading of its two-factor decomposition $p=p_{\rm graph}\cdot p_{\rm env}$ is **falsified by measurement** — the zero-parameter prediction obtained from the species-cancellation law, "the stripping enhancement factor is independent of the nuclide", fails by **≥ 6.79 orders of magnitude** between ¹⁸⁷Re and ¹⁶³Dy (same mode, nearly equal Q), and because $p_{\rm graph}$ has already cancelled exactly, this **cannot be repaired by the graph factor**. The three pending items ①②④ thus merge into one and the same missing piece: "SRE fixes only the shape, not the value".
+(11) The above merge is turned into a **pre-registered, falsifiable** test: the **L4 mass-depth equation** of Section 7.1, $m_p/m_e = \Psi(G_N)/\Psi(G_e)$ (with $\Psi$ never defined), is built into a criterion and executed. The test admits as $\Psi$ candidates a zero-parameter monomial class (integer powers of products of standard invariants, exponent $|a| \leq A$, support at most three invariants), takes one **design target** ($m_p/m_e$) and two **out-of-sample targets** ($m_d/m_p$, $m_n/m_p$), and uses a decision tolerance $\varepsilon = 1\%$ (deliberately wider than the framework's demonstrated 0.165%). The verdict is **negative**, on three mutually independent grounds: (i) **reach bound** - with the electron basal body $Q_3$ as the electron graph, the full-support bound for $|a| \leq 2$ is only **511.06**, short of the target 1836.15 by **0.555 orders of magnitude** (distribution-free, and independent of the support size); (ii) **no single lock** - the best $\Psi$ differs from target to target, and the joint hit is **0** for $|a| \in \{1,2,3\}$ under both the 1% and the 3% window (i.e. the L4 requirement that "two graphs share one lock" is directly refuted); (iii) **hidden degree of freedom** - the electron-layer representative (basal body $Q_3$ vs the $\alpha$ carrier $M_{60}$) is not fixed by the framework, and the reach verdict flips between the two configurations, so "which graph represents the electron" is itself a free parameter (C3 violated). **Positive residue**: the same $\Pi_1$ machinery holds for the **difference ratio** of two states within a layer ($\alpha \cdot \Pi_1(\mathrm{Y_3})$ against $(m_n - m_p)/m_p$: -0.164%) but fails for **inter-layer overall mass ratios** ($\Pi_1(\mathrm{Y_3})/\alpha = 25.84$, short of 1836.15 by 1.85 orders of magnitude) => **the cross-layer lock governs the difference within a layer, but not the overall scale of a layer**. This work does not prove that the SRE axioms are objectively true; all conclusions are self-consistent constructions within the SRE model, and real physical and chemical inferences must be independently verified by external means.
+
+(12) all the above conclusions are **converged into a single twist of observational perspective**: what this framework genuinely separates is not "whether some physical quantity is computed accurately", but **the boundary between a dimension-free SRE world and the three-dimensional world**. That boundary is given by a three-layer decomposition — **L0 the topological layer** (the graph; it yields only integer invariants, and neither ratios nor angles), **L1 the ratio layer** (dimensionless ratios, the intrinsic representation compatible with SRE; the "shape" of H₂O here is the ternary ratio $(1,1,t)$, $t = 2\sin(\theta/2)$), and **L2 the geometric layer** (angles and coordinates, purely the output of a map). Each layer crossing costs one external input: L0 → L1 pays **the metric D** (including non-bonded association), and L1 → L2 pays **the map** (Euclideanity / curvature / scale). This yields two **theorem-level** criteria (independent of any numerical coincidence): (a) **angle ∉ functions(graph)** — the same graph $P_3$ with two admissible metrics gives 180.0000° and 73.7398°, while every graph invariant is identical term by term; (b) **same ratio, different map ⇒ different angle** — the same ratio $t_0 = 1.581140$ gives 104.4776° in the Euclidean case, and on the sphere ($R=1$) gives 104.57° → 145.10° as the absolute scale varies, while in the hyperbolic case it gives 104.39° → 86.67°; and a curved space **has no similarity** (the angle also depends on the absolute scale) ⇒ **geometry is a property of the map, not of the graph**. On this basis the negative verdicts of the preceding chapters receive a unified explanation: **every quantity SRE has passed so far is a dimensionless ratio** ($\Pi_1$, $\lambda_2/\rho$, $\Pi_1(Q_k) = 1/k$, $\lambda_2 = 2-\sqrt3$, orbit counts, $|\mathrm{Aut}|$ ratios), **while every negative verdict occurs exactly when a dimensionful value is required to be assigned to some structure** (L4 assigning mass, the absolute value of $\alpha$). In support of this, a **validation-qualification audit** is also completed: all 17 validations are classified by the epistemological type of their comparison target (independent experimental out-of-sample E = 9 | inversion / scheme-dependent quantity R = 2 | construction / circularity / back-substitution C = 4 | pure mathematics M = 2), and the result is that **the C and R classes fall 100% within the "geometry / shape" branch**, whereas the E class lies entirely within the spectral / numerical branch and is **a string of negative verdicts** ⇒ the "validation" of the geometry-shape branch degenerates into constructive self-consistency (measured against the three newly established qualification criteria, that branch currently has **0 qualified entries**), while the spectral / numerical branch is meaningful precisely because it uses independent experimental values; the repair direction is a purely topological D plus $n \geq 4$ plus comparing angles directly. The net conclusion of this paper is thus: **the strength of the framework lies in "fixing the shape" (laws, order, layering and dimensionless ratios), and its boundary lies in "fixing the value" (dimensionful real numbers); and the seam between "shape" and "value" must first pass through the explicit, nameable, declarable toll of "the map".**
+
+**Keywords**: SRE dynamics; nucleon ontology; two-state opening/closing; topological inversion; β decay; fission chain reaction; quark emergence; closure degree potential; coherent bookkeeping
+
+---
+
+## 0. Document Structure and Reading Guide
+
+This paper organizes all nucleon-related documents (v1 topological derivation, inversion v2 skeleton, quark speculation, many-body assembly law and shared ring, dimension collapse test, fission chain verification, theoretical constraints) into a unified representation in the following order:
+
+- Section 1: **Terminology Convention**. Uncommon terms appearing for the first time in the text are marked with [], and their precise definitions are concentrated in this section, presented in plain written language for readers without physical or mathematical background. Each key term is accompanied by a note indicating its "model internal structure/analogy" status to avoid confusion with real physical quantities.
+- Section 2: **SRE Theoretical Basis**: Binary self-organizing networks, sim_p generator and conservation closure, ratio methodology constraints, and the only calibrated projection Π₁.
+- Section 3: **General Methodology for Nucleon Derivation**: Local input → topological solution → inversion, which is homologous to electron derivation, and the interchange principle between SRE and classical physics.
+- Section 4: **Three Quark Speculations (Author's Claim)**, listed separately after the methodology chapter as they **determine what the nucleon skeleton should look like** — they are the "structural priors" for subsequent screening, and the screening results will change if they are altered. They are recorded truthfully to make readers aware: the skeleton in this paper is not "objectively emerged" from the data, but selected within the search space defined by this set of speculations.
+- Section 5: **Entry Choice: Why Start with Neutron β Decay?**, including phenomena to be explained, three ontological readings, and structural constraints T1–T3 derived from β decay.
+- Section 6: **Redefinition of Isospin Z₂ and Breaking Magnitude**, invalidating the C1 assertion in v1, redefining it as opening/closing duality, with a breaking magnitude of 10⁻³ as a structural necessity, compared with the electron side breaking.
+- Section 7: **Nucleon Inversion and Three-Step Screening**, including simultaneous equation system L1–L4, target κ_N, criteria ①②③, rarity estimation, and order explanation (structure first, numerical a posteriori).
+- Section 8: **Surviving Skeleton: Tripartite Y-Shaped Triangular Closure**, including structural definition, topological quantities, structural illustration, methodological lessons (Π₁ cannot distinguish opening/closing states), and screening funnel.
+- Section 9: **Breaking the Parallelism: The Transition–Residue Framework**, including the correction of the "cospectral" statement, the integer closed form of Π₁, ρ as the strict invariant of the transition (the residue), the structural adjudication that the dormant edge is a ring edge, Criterion ④ (transition-reading self-consistency), Criterion ⑤ (partial re-equilibration of closure degree), Criterion ⑥ (quantitative comparison), and the two items explicitly not used as criteria.
+- Section 10: **Dimension Collapse Test: Distance Data as Empirical Base for Topological Inversion**, including scale anchoring, orbital shell law, covalent radius Z_eff, bond order step law, single bond additivity law by family, and channel capacity observation.
+- Section 11: **Nuclear Reaction Validation: Closure Degree Rebalancing from β Decay to Fission Chain**, including fast neutron experiment, parity criterion falsification, excitation surplus Δ criterion, B/A closure degree potential, chain criticality, and three-level signature unification.
+- Section 12: **Many-Body Assembly Law and the Shared Ring: A Validation Attempt Borrowing Nuclear Data**, including the two principles of the assembly law and the adjudication between two-body variants, the shared-ring configuration and its arithmetic rigidity, "the projection erases who is dormant" (n-p ≅ p-p), the structural linear law for three and four bodies and the body-count independence of the lowest mode, the falsification at the shared-ledger pricing layer (including the advance registration of the identity), the zero-parameter existence scorecard and the adjudication of readings, the disposal of the shadow solution (variant D), the two proofs of the non-repairability of that boundary, **the attempt at an antisymmetric coefficient** (λ can neither be derived nor fixed; its demotion yields the zero-parameter criterion L1, on which the boundary is split into the two questions "existence" and "numerical binding energy"), and **the configuration-level localization of the open band** (answering "does the nucleon–nucleon force require the electronic state as well": open-band attachment is shown to be isomorphic to variant A, hence not a new structure, and a positive result is given — the open band is the carrier of principle 1 of the assembly law, appearing as the "shape of the gap" rather than as an "extra energy term"), and **the criterion construction for, and negative verdict on, the neutrino as the k = 1 singly-claimed edge** (the graph route blocked by the vertex-transitivity of the ring points, the ledger route blocked by counting; none of the 96 zero-parameter candidates is an effective hit), and **the criterion construction for, and negative verdict on, the mass-depth assignment rule (L4)** (a pre-registered three-target test: with the electron basal body the reach bound is short by 0.555 orders of magnitude, the best $\Psi$ differs from target to target, the joint hit is 0, and the unfixed electron-layer representative constitutes a hidden degree of freedom). The accompanying figure is Figure 5.
+- Section 13: **Theoretical Constraints**, including theoretical predictability of the special binding of ions/metals, current being a coherent bookkeeping projection rather than continuous electron movement, and the **axiomatic derivation of the exponential decay law** ($T_{1/2}=\ln2/p$ and memorylessness, MC-verified) together with the **falsification of the strong reading of its two-factor decomposition** (the zero-parameter prediction "the stripping enhancement factor is independent of the nuclide", obtained from the species-cancellation law, is refuted by measurement).
+- Section 14: **Observational Perspective: the Boundary between the Dimension-Free SRE World and the Three-Dimensional World**, including the three-layer decomposition (L0 topological / L1 ratio / L2 geometric), the two tolls (the metric D and the map) and the theorem-level formalization of "fixing the shape but not the value", the two "ratio vs geometry" theorems, what is measurable on the experimental side, the unified statement of the discrete-closure law (ten examples), the three validation-qualification criteria and the 0 qualified entries of the "geometry-shape" branch, and the boundary statement given by the three-layer structure. See Figure 6.
+- Section 15: **Honesty Boundary Checklist**, including the honesty boundaries of each stage: nucleon inversion, fission verification, many-body assembly, dimension collapse, theoretical constraints, and the observational perspective.
+- Section 16: **Conclusion**.
+- Appendices A–E provide key numerical tables, consolidated terminology list, code list and complete reproduction, figure list, references and DOI, respectively.
+
+---
+
+## 1. Terminology Convention
+
+| Term | Meaning in This Paper | Formal Analogy | Remarks |
+|---|---|---|---|
+| **Binary Self-Organizing Network** | The ontology of SRE: a network with element values constantly ±1 and continuously growing over time; all things are its resident structures | A grid without pre-designed drawings, self-increasing step by step according to local rules | Model internal structure |
+| **Coherent Core** | A structurally stable, repeatedly identifiable dense substructure in the network | A long-existing vortex in a turbulent river | Model internal structure |
+| **Projection (Functional)** | A rule that maps a graph to a number; the graph changes, the number changes | Weighing an object — weight is a "projection" of the object | Model internal structure |
+| **Graph G** | A mathematical object composed of vertices and edges | A subway map (stations = vertices, lines = edges) | Model internal structure |
+| **V, E** | Number of vertices V, number of edges E | Number of stations, number of lines | Model internal structure |
+| **Degree k** | Number of edges connected to each vertex; **k-regular** = all vertices have the same degree | Number of lines connected to each station | Model internal structure |
+| **β₁ (First Betti Number)** | β₁ = E − V + 1, the number of independent closed loops in the graph | Number of mutually incomparable loops in a subway map | Model internal structure |
+| **Laplacian Spectrum** | The set of eigenvalues of a matrix constructed from the adjacency relationship of the graph, denoted as λ₁=0 ≤ λ₂ ≤ … ≤ λ_max=ρ | The natural frequency set of a drum — different shapes have different frequency spectra | Model internal structure |
+| **Π₁ = λ₂/ρ** | The only **calibrated** graph functional used in this paper: spectral gap ratio | The "lowest overtone/highest note" ratio of a drum | Model internal structure, calibrated as α on the electron side |
+| **Automorphism Aut(G)** | A permutation that maps a graph back to itself without changing the connection relationship; \|Aut\| measures the degree of symmetry | How many rotations and flips make a pattern look the same | Model internal structure |
+| **Vertex Orbit** | Groups of vertices that can be interchanged under all symmetry operations | Positions of "same role" in a pattern | Model internal structure |
+| **Dormant Edge** | A channel with χ=0 in SRE: not deleted, degenerated to multiplicative identity 1 — **conductive but not forming a loop** | A branch that is still energized but does not form a loop | Model internal structure |
+| **Closure Degree / Opening and Closing States** | Whether the channels in the skeleton form closed loops; closed state = all closed, open state = one dormant edge not closed | A closed circuit vs a circuit with a break left | Model internal structure |
+| **Graph Functional Calibration** | Using **known solutions" to determine "which functional corresponds to which real measurement" | Calibrating a scale with standard weights | Model internal structure |
+| **Inversion** | Given the value of a functional, invert the structural parameters of the graph | Inferring the material and size of an object from the weighing result | Model internal structure |
+| **Fission Cross-Section σ** | The probability area that a neutron (seed) incident on a nuclide causes fission; varies with energy | The success rate of a key opening a specific type of lock | Model internal structure |
+| **Compound Nucleus** | The temporary state (A+1) formed when a target nucleus absorbs a neutron; fission occurs inside it | The internal state of a lock after the key is in place | Model internal structure |
+| **Neutron Separation Energy S_n** | The energy required to remove the last neutron from a compound nucleus; excitation energy after absorbing a thermal neutron E"=S_n | The "engagement energy" released when the key is in place | Model internal structure |
+| **Fission Barrier B_f** | The energy hill that a compound nucleus must climb to deform to fission | The resistance that the bolt must overcome to retract | Model internal structure |
+| **Excitation Surplus Δ** | Δ = E" − B_f; Δ>0 means low-energy (thermal) neutrons can cross the barrier directly; Δ<0 requires additional kinetic energy from fast neutrons | The difference between engagement energy and bolt resistance | Model internal structure |
+| **Multiplication Constant ν** | Average number of neutrons emitted per fission | Number of spare keys released after one lock opening | Model internal structure |
+| **Critical k_eff** | Ratio of the number of neutrons in each generation relative to the previous generation; ≥1 for self-sustaining chain reaction | Whether spare keys can allow continuous lock opening without interruption | Model internal structure |
+| **Closure Degree Potential** | The "rebalancing hill height" in graph theory terms: whether a complex is worth/able to rearrange to a lower closure degree configuration | The threshold at which a system decides whether to reorganize itself | Model internal structure |
+| **Assembly Law** | The rule that merges several nucleon skeletons into a many-body configuration; determined by two principles: "open–closed complementarity" plus "the images of the two bodies must be distinguishable in the shared region" | Two puzzle pieces are allowed to interlock only at complementary notches, and at the joint one must be able to tell whose missing corner has been filled | Model internal structure |
+| **Shared Ring** | One closed triangular ring **shared** by several nucleons after assembly | One rope loop held jointly by several people | Model internal structure |
+| **Gap / Supply** | At the same shared position, the number of gaps g left by open-state (neutron) nucleons and the number of complete ring edges s offered by closed-state (proton) nucleons | The number of mortises versus tenons on a mortise-and-tenon joint | Model internal structure |
+| **Shared Ledger** | A counting table recording how many bodies "claim" each overlapping edge on the shared ring; it does not change the graph structure | A partnership account that records only shares, not positions | Model internal structure |
+| **Interference Depth** | The depth to which several bodies overlap on the same shared unit; used in this paper as a candidate pricing quantity for binding energy, not yet calibrated | How tightly several performers lock together when playing the same melody | Model internal structure, not calibrated |
+| **Antisymmetric Penalty Term** | An additional term that depends only on the compositional imbalance a = \|n_n − n_p\| and vanishes identically for a ≤ 1, g(a) = λ·max(0, a − 1), used to push highly imbalanced configurations above threshold | A "disequilibrium fine" levied once the two pans of a balance differ by more than one notch | Model internal structure; its coefficient λ cannot be derived from SRE (12.12) |
+| **Criterion L1 (Antisymmetry Criterion)** | A shared-ring assembly is legal (predicted bound) if and only if \|n_n − n_p\| ≤ 1; zero-parameter and naturally n↔p symmetric | Only recipes closest to symmetry are allowed to hold | Model internal structure; 8 / 8 on the A ≤ 4 scorecard, degrading to an empirical approximation for A ≥ 5 (12.12) |
+
+---
+
+## 2. SRE Theoretical Basis
+
+### 2.1 Binary Self-Organizing Network and sim_p Generator
+
+The ontology of SRE is the **binary self-organizing network**, whose core evolution algorithm `sim_p` follows the following rules:
+
+1. **Starting Point and Growth**: Initial single-point seed M₁=[1], each step n→n+1 inherits the history of the top-left block read-only, and hangs new rows and columns on the frontier;
+2. **Frustration Energy and Dormancy Probability**: Calculate the 2-step walking frustration energy E_local=|M@M| and topological depth d=n−max(i,j), the dormancy probability p=1−1/(1+λ·d/(E_local+1)), and toss a random symmetric gate χ;
+3. **Dormant Edge Rule**: Dormant edges are not deleted, but degenerated to multiplicative identity 1 — **conductive but not forming a loop**;
+4. **Frontier Propagation**: Non-linear multiplicative propagation of the frontier boundary ∏;
+5. **Corner Net Load Balance Valve**: If the global sum Σ≥0, the new diagonal element is -1, otherwise +1.
+
+This engine **injects new random differences and expands outward** at each step, it is a continuous generator, not a convergence terminal. All things are quasi-resident structures locked by conservation closure rules in this evolutionary flow.
+
+### 2.2 Conservation Closure and Operators 7–10
+
+Operators 1–6 are responsible for network growth and difference injection, operators 7–10 are responsible for **conservation closure**, which is the key to preventing the evolutionary flow from escaping and tearing:
+
+- **Operator 7**: Symplectic duality/Hodge closure, strongly locking ΔΠ≡0 zero-flux escape (Poincaré duality);
+- **Operator 8**: Local lock-free conservation valve, strongly locking Tr≡0+ writing conflict field energy hedging against monotonic convergence;
+- **Operator 9**: Two-order Betti suture, strongly locking Δβ₁≡0, ensuring that the manifold does not tear or dimension split;
+- **Operator 10**: Effective impedance Z_eff pre-exempts bridge edges, ensuring λ₂>0.
+
+### 2.3 Ratio Methodology Constraints and the Only Calibrated Projection Π₁
+
+The derivation of SRE follows the three-step method of **local input → topological solution → inversion**, and the fundamental constraint is that **the theory itself does not carry any absolute units**, only the dimensionless ratios between different physical quantities can be given. Therefore, all legal inputs for SRE derivation must be **measured dimensionless ratios**, and the output is the structural parameters of the graph.
+
+Currently, SRE has only one numerically verified graph-physical projection, from the electron:
+
+$$\Pi_1(G)=\frac{\lambda_2(L_G)}{\rho(L_G)}$$
+
+where L_G is the combinatorial Laplacian of graph G, λ₂ is its smallest non-zero eigenvalue (spectral gap), and ρ is the largest eigenvalue. The calibration result on the electron side is: the Möbius parameterized point cloud of the ontology Q₃ (V=8, E=12, β₁=5, n=60) after calibration, Π₁=α≈1/137.036, with a relative deviation of 1.45×10⁻⁵, and the calibrated string weight w"=1+4.347×10⁻⁵, which matches the δ=4.347×10⁻⁵ reported in the paper to five decimal places.
+
+---
+
+## 3. General Methodology for Nucleon Derivation
+
+Nucleon derivation is homologous to electron derivation, following the three-step method of **local input → topological solution → inversion**, with the following core principles:
+
+### 3.1 Definition of Local Input
+
+"Local input" refers to injecting a small number of measured values as **rigid boundary conditions** explicitly into the model, as fixed endpoints for the solution. The injection items in this paper are fixed as (CODATA 2018):
+
+| Injected Quantity | Numerical Value | Remarks |
+|---|---|---|
+| m_e (electron rest mass) | 0.510998950 MeV | Measured injection |
+| m_p (proton rest mass) | 938.27208816 MeV | Measured injection |
+| m_n (neutron rest mass) | 939.56542052 MeV | Measured injection |
+| α⁻¹ (fine structure constant reciprocal) | 137.035999084 | Anchor associated with Coulomb force |
+
+These injection quantities themselves **do not promise to be uniquely derived by SRE axioms**, and any quantity that cannot be injected or determined by the model topology shall not be claimed to have been calculated.
+
+### 3.2 Interchange Principle Between SRE and Classical Physics (Mutual Verification)
+
+One of the core claims of the SRE framework: under the setting of rigid boundary conditions, SRE derivation and classical physics are mutually calibrated. It is manifested as a two-way clue relationship:
+
+- **Classical Quantity → Model**: Measured values such as m_e, m_p, m_n, α⁻¹ are injected as endpoints, and the model recovers self-consistent topological structure conclusions at these endpoints;
+- **Model → Classical Quantity**: Any dimensionless structural quantity that can be determined within the model (spectral ratio, flip count, orbit uniqueness, idempotent convergence) can be used as an independent structural clue for classical quantities.
+
+The two are **mutually verified clues**, rather than one being superior to the other. This is the positional basis for all derivations in this paper.
+
+---
+
+## 4. Three Quark Speculations (Author's Claim)
+
+> **This section is the author's ontological speculation, not a conclusion of existing theory, nor a derivation result of this paper.**
+> The reason why this section is listed separately and placed after the methodology chapter is that it **determines what the nucleon skeleton should look like** — it is the "structural prior" for subsequent screening, and the screening results will change if it is altered. It is recorded truthfully to make readers aware: the skeleton in this paper is not "objectively emerged" from the data, but selected within the search space defined by this set of speculations.
+
+### 4.1 Speculation Q1: Quarks Should Not Share the Same Substrate as Electrons
+
+**Claim**: Electrons correspond to Q₃ (three-dimensional hypercube, a self-contained closed topology) in ontology. Quarks (and nucleons) should not be mapped to the same Q₃, nor to "three copies of Q₃".
+
+**Reason**: Electrons and nucleons differ too much in observable behavior — electrons can exist independently, are identical, and long-lived; nucleons are bound in nuclei, have internal structure, and can decay. If they share the same substrate, these differences lack a topological source.
+
+**Adoption in This Paper**: Accepted. The "3×Q₃ composite" construction used in the v1 document is invalidated. This paper searches for nucleon skeletons within the family of "non-self-contained open structures".
+
+### 4.2 Speculation Q2: Quarks Are Very Likely Emergent Statistical Phenomena, Rather Than Independently Existing Ontologies
+
+**Claim**: Since quarks never appear independently in experiments (color confinement), the "observation" of quarks in experiments is very likely to belong to the same category as SRE's understanding of magnetic fields and gravitational fields — **they are statistical results, not relatively independent emergent coherent cores**. In other words: quarks may not exist as ontologies at all, but only as readings.
+
+**Consistency with Established SRE Positions**: This speculation is compatible with the SRE-established "observation = response spectrum of coherent core coupled with environment". From this perspective, magnetic fields, gravitational fields, "parton" readings in deep inelastic scattering, and even quantum entanglement correlations all belong to **the same category of statistical projections**, differing only in the hierarchy and degree of restriction of the coherent core being read.
+
+**Inference in This Paper**: If Q2 holds, the count N_c=3 of "three quarks" in the Standard Model needs to be reinterpreted —
+
+- N_c=3 is not "there are three kinds of quarks", but **the skeleton has three strands**;
+- "Flavor" (uud / udd) is not a component list, but **the statistical projection on the detector after the opening/closing state breaking of the three-strand skeleton**;
+- Fractional charge is not the property of a single body, but **the equally-divided reading when three strands share the same closed loop**.
+
+### 4.3 Speculation Q3: Nuclear Reactions Are Closure Degree Rebalancing
+
+**Claim**: Nuclear fission and fusion, ontologically, are not "recombination of quarks", but **rebalancing of closure degrees between closed complexes** — that is, the redistribution of closed channels, rather than the transportation of components.
+
+**Adoption in This Paper**: Accepted, and as a structural requirement that the nucleon skeleton must satisfy — **the skeleton must be parameterizable by "opening/closing" degree**, and the difference between open and closed states must be small enough to explain the nuclear reaction energy in the MeV range (rather than GeV range).
+
+### 4.4 Summary of Constraints on Search Space from Three Speculations
+
+The **structural priors** used for screening below, derived from Q1–Q3:
+
+| Number | Structural Prior | Source |
+|---|---|---|
+| **S1** | The nucleon skeleton is not Q₃ and its copies, nor the Möbius ladder family | Q1 |
+| **S2** | The skeleton can be decomposed into **three strands** (N_c=3 reinterpreted as strand count) | Q2 inference |
+| **S3** | The skeleton must support "open / closed" two states, and the difference between the two states is minimal | Q3 + β decay phenomenon |
+| **S4** | The skeleton **is not self-contained**: it naturally leaves an unclosed opening structurally | Derived from "nucleons can decay" |
+
+---
+
+## 5. Entry Choice: Why Start with Neutron β Decay?
+
+### 5.1 Phenomena to Be Explained
+
+Free neutrons undergo β⁻ decay:
+
+$$n \longrightarrow p + e^- + \bar\nu_e$$
+
+There are three measured facts related to this, which together form hard constraints on the nucleon topology:
+
+| Fact | Numerical Value | Requirements for Topology |
+|---|---|---|
+| Mass difference m_n−m_p | 1.293 MeV, i.e., Δm/m_p=1.3784×10⁻³ | The structural difference between proton and neutron should be **extremely small** |
+| Lifetime difference | Neutron 879.4 s; proton stable (lower limit >10³⁴ a) | The two are **not symmetrically equivalent**, otherwise the lifetimes should not be vastly different |
+| Emitted electron | Completely identical to electrons in atoms | The emitted electron must be able to fall into the attractor of the electron ontology |
+
+The third one is the sharpest: **β decay directly reveals that "nucleons are not closed bodies"** — a self-contained closed topology has no reason to emit an electron completely identical to an electron in an atom. This paper therefore selects β decay as the entry point for inversion.
+
+### 5.2 Three Ontological Readings
+
+**Reading 1: Neutron is not "proton + electron", but the unclosed state of the same skeleton.**
+β⁻ decay is to expel that unclosed channel, and the rest close into a proton. The direction therefore falls on **closure degree**: the closed one is lighter (1.293 MeV lighter) and no longer decays; the unclosed one is heavier, and will sooner or later expel the channel. This reading also explains **why only neutrons decay** — because only neutrons carry that unclosed opening.
+
+**Reading 2: In the language of sim_p, this is the fate bifurcation of "dormant edges".**
+In the SRE binary self-organizing network, dormant channels (χ=0) are not deleted, but degenerated to multiplicative identity 1 — **conductive but not forming a loop**. This is exactly the exact correspondence of "the channel is still there, but not closed". Thus: maintaining identity = neutron still exists; being removed = β decay. The lifetime hierarchy is also solvable: dormancy is the default state, removal is a rare perturbation, so the neutron lifetime (10³ s) is 26 orders of magnitude longer than the strong interaction timescale (10⁻²³ s).
+
+**Reading 3: This is sedimentation at depth order.**
+Electrons are deep and tight residents (high coherence); nucleons are shallow and loose residents. β decay is shallow structure sedimenting into deep structure, with energy paid by the resident depth difference — consistent with the registration in v1 that "mass is inversely proportional to logical depth" (nucleons are about 1836 times shallower, so about 1836 times heavier).
+
+**An Additional Gain**: If electrons are the **only deepest attractor** of the generator, then the identity of electrons (electrons everywhere in the universe are completely indistinguishable) does not need to be guaranteed by "taking out the same electron from somewhere", but "any seed that breaks away from the skeleton falls into the same attractor". The emitted electron in β decay is completely identical to the electron in an atom, and the **mechanism** is thus obtained, rather than an assumption.
+
+### 5.3 Structural Constraints Derived from β Decay
+
+| Number | Constraint | Argument |
+|---|---|---|
+| **T1** | The nucleon skeleton must be **non-self-contained** | Three-strand skeleton has 9 leaf points (odd number), which cannot be paired and closed pairwise, naturally leaving one opening. This is the graph-theoretic root of "nucleons can decay" |
+| **T2** | Protons and neutrons are **not Z₂ images of graph isomorphism**, but two "awake / sleepy" configurations of the same underlying matrix, with their coherent subgraph loop number β₁ differing by 1 | If they are exactly isomorphic, there is no direction for decay and the lifetimes should not be vastly different |
+| **T3** | What is removed only needs to be a **seed**, and it is not required that the skeleton contains a complete electron ontology internally | Electrons are identical attractors, not prefabricated components of nucleons |
+
+---
+
+## 6. Redefinition of Isospin Z₂ and Breaking Magnitude
+
+### 6.1 Essence of the Conflict
+
+The C1 assertion in v1 document is:
+
+> **C1**: Isospin Z₂ doublet — fixed-point-free involution, charge p=+1/n=0, proton and neutron graph isomorphism.
+
+Under the speculation that "quarks are very likely emergent statistical phenomena" (Q2), this assertion **not only needs to be patched, but needs to be invalidated**, for the reason that: C1 is built on the flavor multiset flip {uud}↔{udd}, which is equivalent to treating statistical readings as ontological components — which directly conflicts with Q2.
+
+### 6.2 Redefinition of Z₂
+
+| Item | v1 (Invalidated) | This Version v2 |
+|---|---|---|
+| Meaning of Z₂ | Flavor multiset flip {uud}↔{udd} | **Opening / closing (awake / sleepy) duality** of the skeleton, independent of flavor |
+| Two-state relationship | Exact graph isomorphism | **Non-isomorphic**: β₁ differs by 1 |
+| Symmetry | Exact (fixed-point-free involution) | **Naturally broken**, the breaking amount is the closure energy |
+| Correspondence with observation | Flavor = ontological components | Flavor = statistical projection of this breaking on the detector |
+
+After redefinition, a phenomenon that originally required additional assumptions to explain becomes self-evident:
+
+### 6.3 Why Is the Breaking Magnitude 10⁻³: Structural Necessity
+
+Dormant edges in SRE **still conduct** (degenerate to identity 1, rather than zeroing or deleting). Therefore, the difference between open and closed states is **not "whether there is a bond", but "whether there is a loop"". From this:
+
+- The energy difference only comes from "the absence of a loop", not "the absence of a channel";
+- Therefore Δm/m_p∼10⁻³ is **a structural necessity**, not a parameter coincidence.
+
+This also explains two other questions at the same time: **why the mass difference is so small** (only one loop difference), and **why neutrons can still exist for so long** (dormancy is the default state).
+
+### 6.4 Homotypic Comparison with Electron Side Breaking
+
+| System | Breaking Magnitude | Property |
+|---|---|---|
+| Electron (Möbius twist) | w"−1=4.347×10⁻⁵ | Near-symmetric breaking |
+| Nucleon (opening / closing) | Δm/m_p=1.378×10⁻³ | Near-symmetric breaking |
+| Ratio | 31.7 | Same type, different magnitude |
+
+Both belong to **the same type of breaking** (approximate establishment of symmetry + small amount of breaking), only the breaking amplitude on the nucleon side is about 32 times that on the electron side. This homotypicity supports the self-consistency of the redefined Z₂ in this version, but does not constitute independent evidence.
+
+### 6.5 Connection with the Charge-Emergence Paper: Isospin Z₂ ≡ Charge-Magnitude Z₂ (v1.6 revision)
+
+The paper *Emergence of Positive and Negative Electric Charge in the SRE Framework: Magnitude, Sign, and Numerical Verification* gives the charge functional $Q=\sigma\cdot\deg\cdot e$ (with $\deg=\beta_1\bmod 2$). Its §13 attaches $\deg$ to the charge **magnitude** and registers a divergence with this section (which had stated "the opening/closing isospin Z₂ is independent of charge"), pending the author's ruling. The ruling is now given as follows (see Proposition 6.1 of *Topological Derivation of the Nucleon Charges from the Charge-Emergence Functional $Q=\sigma\cdot\deg\cdot e$*):
+
+- The "opening/closing" two states of this section are precisely the skeleton carrier of $\deg=\beta_1\bmod 2$: the closed state $(12,18,7)\Rightarrow\beta_1=7\Rightarrow\deg=1\Rightarrow$ charged; the open state $(12,17,6)\Rightarrow\beta_1=6\Rightarrow\deg=0\Rightarrow$ neutral.
+- Therefore "isospin Z₂" and "charge-magnitude Z₂" **are two readings of the same Z₂**: the open/closed difference ≡ a difference of one independent cycle ≡ parity flip ≡ charged/neutral. The two do not conflict; rather, this section's isospin Z₂ is **reinterpreted as** the charge-magnitude Z₂.
+- The breaking magnitude $10^{-3}$ of §6.3 (from "the absence of a cycle") shares the same origin as the charge magnitude $\deg$ — the breaking falls in the **mass layer** (dynamics), not in the **charge-magnitude layer** (topology).
+- Conclusion: the original statement of this section, "isospin Z₂ is independent of charge," must be upgraded to "isospin Z₂ ≡ charge-magnitude Z₂"; the charge-emergence paper's "Reading A" thereby becomes the **natural upgrade** of this section, and the divergence is closed.
+
+> Note: The absolute sign still belongs to the A0 convention of the charge-emergence paper (the structural opposition relative to the electron is fixed, but absolute positive/negative cannot be derived from SRE). The carrier and relative structure on the sign side have been closed by §4 of *Topological Derivation of the Nucleon Charges from the Charge-Emergence Functional $Q=\sigma\cdot\deg\cdot e$*.
+
+---
+
+## 7. Nucleon Inversion and Three-Step Screening
+
+### 7.1 Simultaneous Equation System for Nucleons
+
+Moving the same set of dictionaries to the nucleon layer, let the nucleon skeleton be graph G_N, and its unknown topological parameters be (V,E,k,w), then the equation system is:
+
+| Hierarchy | Equation | Property |
+|---|---|---|
+| **L1 Count Layer** | β₁ = E − V + 1; n = E·β₁; kV = 2E; V≡0 (mod 2) | Integer (Diophantine) equation, the strongest constraint |
+| **L2 Spectral Equation** | Π₁(G_N) = κ_N | Need to identify κ_N corresponding to the measured ratio |
+| **L3 Torsional Near Symmetry** | w_N = 1+δ_N, \|δ_N\|≪1 | **Inherited from the electron assumption, not an independent constraint** |
+| **L4 Mass-Depth Equation** | m_p/m_e = Ψ(G_N)/Ψ(G_e) | Ψ has not been defined, **currently unavailable** |
+
+Degree of freedom accounting: 4 independent unknowns, 3 equations from L1 + 1 equation from L2 = 4 equations, **formally closed**; but since κ_N has not been identified and L3 is not independent, **the actual underdetermination is 1 degree of freedom**.
+
+### 7.2 Proposal of Target Formula (Explicitly Marked as Hypothesis to Be Tested)
+
+This paper proposes the following **candidate** relationship (not yet independently demonstrated):
+
+$$\boxed{\ \frac{m_n-m_p}{m_p}\;=\;\alpha\cdot\Pi_1(G_N)\ }$$
+
+If it holds, its physical meaning is: **the isospin breaking of nucleons has an electromagnetic origin** (α appears explicitly), and Π₁ is a pure topological structure factor.
+
+Substituting the measured values:
+
+$$\kappa_N \;=\;\frac{(m_n-m_p)/m_p}{\alpha}\;=\;\frac{1.378419305\times10^{-3}}{7.297352569\times10^{-3}}\;=\;0.188893067$$
+
+**This identification is a hypothesis, not a conclusion.** The three-step screening below tests "in the family of V=12 cubic graphs, how many graphs have Π₁ near κ_N", and "how rare the screening result is".
+
+### 7.3 Criterion ① Integer Determination of Vertex Number V
+
+For k-regular graphs, kV=2E, β₁=E−V+1. Taking k=3 (cubic graphs), then β₁=V/2+1. Check the match between β₁·Δm/m_p and the measured "flow quark mass ratio" (2m_u+m_d)/m_p=0.9581%:
+
+| V | β₁ | β₁·Δm/m_p | Deviation from 0.9581% |
+|---|---|---|---|
+| 8 | 5 | 0.6892% | −28.07% |
+| 10 | 6 | 0.8271% | −13.68% |
+| **12** | **7** | **0.9649%** | **+0.70%** |
+| 14 | 8 | 1.1027% | +15.09% |
+| 16 | 9 | 1.2406% | +29.48% |
+| 18 | 10 | 1.3784% | +43.86% |
+
+**V=12 (β₁=7) is uniquely selected**, with adjacent deviations above ±14%, and the uncertainty of the flow quark mass ±2% cannot shake this choice.
+
+> **Qualifier (added in v1.6).** The anchor $(2m_u+m_d)/m_p$ used above is an **MS-bar scheme quantity** (it depends on the renormalization scale) and is not even listed among the declared injections of §3.1. Measurement (`code/_sre_anchor_registry.py`) shows that moving the scale from 2 GeV to 1 GeV changes that ratio by about **+23%**, far beyond the bin-switching threshold of the table (±6.5–7.9%), and **measurably moves the V selected by Criterion ① from 12 to 16** (3 GeV → V=10, 1.5 GeV → V=14, 1 GeV → V=16). The correct statement is therefore "**under the 2 GeV MS-bar convention**, Criterion ① is compatible with V=12", and not "Criterion ① determines V=12". The final fixation of V must be made jointly with the integer equations of L1 (see the new item 11 of the nucleon-inversion boundaries in Section 15).
+
+### 7.4 Criterion ② Spectral Ratio Determination of Topology
+
+Enumerate cubic connected graphs with V=12 (the total number of non-isomorphic graphs at this order is 85, and all 85 are obtained by sampling and deduplication this time), calculate Π₁=λ₂/ρ for each graph:
+
+| Statistic | Value |
+|---|---|
+| Number of samples | 85 |
+| Minimum / median / maximum of Π₁ | 0.0313 / 0.1319 / 0.2768 |
+| Within 0.17% of κ_N | 0 |
+| Within 0.5% | 3 |
+| Within 2% | 4 |
+| Within 3% | 4 |
+
+That is: **the Π₁ landing point itself is already a strong screening (85 → 4)**, because the spectral ratio distribution of this family is concentrated around 0.13, and the target value 0.1889 is outside the upper quartile of the distribution.
+
+### 7.5 Criterion ③ Triple Symmetry Determination of Solution
+
+From the structural prior **S2** (the skeleton can be decomposed into three strands), it is required that the automorphism order of the graph be divisible by 3, i.e., 3∣|Aut(G)|. Take the 4 candidates surviving from Criterion ② and calculate their automorphism orders one by one:
+
+| Π₁ | Deviation from κ_N | \|Aut\| | Vertex Orbit | Number of Triangular Loops | Judgment |
+|---|---|---|---|---|---|
+| 0.188580 | **0.165%** | 36 | 2 | 3 | **Keep** |
+| 0.188580 | **0.165%** | 12 | 3 | 1 | **Keep** |
+| 0.188011 | 0.467% | 2 | 6 | 0 | Reject |
+| 0.192106 | 1.701% | 8 | 3 | 0 | Reject |
+
+**85 → 4 → 2.**
+
+### 7.6 Rarity Estimation
+
+- Joint hit rate of Criterion ②③: 2/85 = 0.0235
+- Multiply by the V bin selection from Criterion ① (5 bins select 1): p ≈ 4.7×10⁻³
+
+The meaning of this number is: **if the nucleon skeleton is randomly drawn from this family of graphs, the probability of satisfying all three criteria is less than 0.5%." But it is not a statistical significance test — because the three criteria are not independent (both Criterion ① and Criterion ② use Δm), and the identification of κ_N itself is a hypothesis.
+
+> **Qualifier (added in v1.6; narrowed and withdrawn in v1.7).** The "5 bins select 1" factor above presumes V=12 to be the only admissible bin. In v1.6 it was accordingly registered that "V=12 is not unique": κ_N = 0.188893 lies inside the families of **V = 8, 10, 12 and 14 simultaneously** (only the V=16 family falls short, its Π₁ upper bound being 0.1780 < κ_N), and after Criteria ②③ are applied **both V=10 and V=12 retain survivors**. **v1.7 withdraws that qualifier**, the reason being that the window of Criterion ② was **not self-consistent** (`code/_sre_anchor_second.py`, PART B): Criterion ② originally took |Π₁ − κ_N|/κ_N < 3%, whereas the agreement reached by the α-lock itself is only **0.1655%** — κ_N is computed from two high-precision measured numbers (Δm_np/m_p and α, with measurement errors ~10⁻⁹), so **every residual deviation is a theoretical-agreement error**; a 3% window is 18 times wider than the agreement already in hand, which amounts to voluntarily discarding the discriminating power. Tightening the window to the order of the anchor's own precision gives the following measurement (each cell = "Π₁ hits / of which survivors with 3‖\|Aut\|"):
+
+| ε (window) | V=8 (5/5 full) | V=10 (19/19 full) | V=12 (85/85 full) | V=14 (140/509 sampled) | V=16 (70/4060 sampled) |
+|---|---|---|---|---|---|
+| 0.2% | 0 / 0 | 0 / 0 | **2 / 2** | 1 / 0 | 0 / 0 |
+| 0.5% | 0 / 0 | 0 / 0 | **3 / 2** | 1 / 0 | 0 / 0 |
+| 1.0% | 0 / 0 | 0 / 0 | **3 / 2** | 1 / 0 | 0 / 0 |
+| 3.0% | 0 / 0 | 2 / 1 | **4 / 2** | 3 / 0 | 0 / 0 |
+
+⇒ **For ε ≤ 1% together with Criterion ③, only the V=12 bin retains survivors**. V=8/10 are **full sets**, so their zeros are exact; V=14/16 are sampled, so all that can be said is "zero among 140/70 samples", equivalent to p ≲ 0.71% / 1.43% (for V=12 the hit rate is p = 3/85 = 3.5%), hence **LR ≥ 1.7 (against V=14) and ≥ 0.83 (against V=16, weak)** — "V=12 is unique" is therefore **strong evidence but not a proof**. Accordingly, "settling on V=12" no longer rests on Criterion ①: **once the window is tied to the anchor's precision, Criteria ②③ by themselves narrow V from {8,10,12,14} to {12}**. The sole premise of that narrowing is the agreement "κ_N ≈ Π₁(Y₃) to within 0.165%" itself.
+
+> **Correction (v1.7 final, self-check of 2026-09-24).** The v1.7 draft stated that "that survivor is, on individual identification, precisely the Y₃ skeleton itself". **This does not hold and is hereby corrected.** After **exhaustively** enumerating all 85 isomorphism classes of connected cubic graphs on 12 vertices by a 2-switch closure BFS (`code/_enum_cubic12.py`; 85 matches the known count, and the 85 isomorphism classes correspond to **85 distinct Laplacian spectra**, i.e. that bin has **no cospectral pair**), the **complete** list of hits within ε ≤ 1% is three graphs:
+
+| # | Π₁ | deviation from κ_N | \|Aut\| | T | Y₃ skeleton? |
+|---|---|---|---|---|---|
+| 0 | 0.188580484696 | 0.1655% | 36 | 3 | **yes** |
+| 27 | 0.188011313654 | 0.4668% | 2 | 0 | no (3∤2, excluded by Criterion ③) |
+| 81 | 0.188580484696 | 0.1655% | 12 | 1 | no (12 = 3×4, Criterion ③ **fails to** exclude it) |
+
+⇒ Criterion ③ (3‖\|Aut\|) is **not unique** within the V=12 bin: Y₃ and #81 are both survivors. **The root cause is that Π₁ is a ratio quantity** — #81 has exactly the same Π₁ as Y₃ (both (7−√13)/18), so **tightening ε arbitrarily cannot separate them** (even at ε = 0.2% there are still 2 survivors); this has nothing to do with "identical Laplacian spectra" (#81 and Y₃ are not cospectral) — the ratio λ₂/λ_max simply coincides. Therefore **no criterion that reads only Π₁ can ever pin down the graph**, and a non-spectral criterion must be superimposed. Adding **T ≥ 2** (the same-type criterion as Criterion ⑤ in §4, "the open state must retain a closed unit") reduces the survivors within V=12 to **1, and it is precisely the Y₃ skeleton** (T=3, \|Aut\|=36, ρ=5.302775638, λ₂=1.000000000).
+
+> **Engineering correction.** The graph pool used in the v1.7 draft was sampled by a random generator (V=12 yielded **84/85**, missing Y₃ itself by chance), so the "2 hits / 1 survivor" of PART B was **an artefact of the omission**; the main script `code/_sre_anchor_second.py` now **explicitly includes Y₃** and rebuilds the full pool (85/85). The numbers in the table above are the rerun results of this round.
+
+**The decomposition of p changes accordingly**: the former "5 bins select 1" factor is now carried by the sharpened Criteria ②③, whose likelihood ratio is only a **lower bound** (LR ≥ 1.7, limited by the V=14/16 sampling); hence p ≈ (2/85)/LR ≈ **1.4×10⁻² to 2.8×10⁻²**, about 3–6 times looser than the previous estimate of 4.7×10⁻³; if V=14/16 are later enumerated exhaustively and still yield zero, p returns to the 4.7×10⁻³ order.
+
+### 7.7 Order Explanation: Structural Intuition First, Numerical A Posteriori
+
+It is necessary to specially point out the **temporal order** of screening, because it relates to the credibility of the results:
+
+> The candidate with the smallest deviation (|Aut|=36, 3 triangular loops, 2 vertex categories) was hand-constructed by the author based on the structural intuition of "three-strand Y skeleton + odd leaves cannot be paired pairwise" **before seeing any spectral ratio numerical values**; the spectral ratio coincidence (0.165%) is a **post-hoc verification result**, not a fitting target.
+
+If it were obtained by fitting, the "three coincidences hitting simultaneously" would be circular reasoning; but if structure comes first and numerical values come after, this coincidence at least has **non-triviality**.
+
+---
+
+## 8. Surviving Skeleton: Tripartite Y-Shaped Triangular Closure
+
+### 8.1 Structural Definition
+
+Let the candidate skeleton be Y₃⋉△₃, constructed as follows:
+
+1. Take 3 **strand centers** c₀,c₁,c₂, not connected to each other;
+2. Take 3 **triangular loops** T₀,T₁,T₂, each loop containing 3 leaf points;
+3. Each strand center is connected to exactly one leaf point of each triangular loop (total 9 spokes, forming a Latin square perfect matching);
+4. 3×3=9 intra-ring edges, 9 spokes, so E=18; V=3+9=12; each vertex has degree 3.
+
+Topological quantities (recalculation result):
+
+| Quantity | Closed State (Proton Candidate) | Open State (Neutron Candidate, one ring edge broken) |
+|---|---|---|
+| V / E | 12 / 18 | 12 / 17 |
+| β₁ (Independent Loop Number) | **7** | **6** |
+| Number of Triangular Loops | 3 | 2 |
+| Girth / Diameter | 3 / 3 | 3 / 3 |
+| \|Aut\| | **36** | 4 |
+| Vertex Orbit | **2** (strand center / leaf point) | 6 |
+| λ₂ / ρ | 0.188580 | 0.188580 |
+
+|Aut|=36=3!×3!, exactly the permutation symmetry order of "3 strand centers × 3 triangular loops"; there are 2 vertex orbit types, i.e., only two roles in the structure — strand center and leaf point. These two highly match the structural prior **S2** (three strands).
+
+**Edge-class attribution of the dormant edge.** The 18 edges split naturally into two automorphism orbits of 9 edges each: **ring edges** (leaf point—leaf point) and **spokes** (strand center—leaf point). By structural adjudication, **the dormant edge is taken to be a ring edge**. The reason: the dormant edge is itself the image of a homomorphic mapping and its logical depth is large — opening a ring edge **changes no spectral quantity at all** (both ρ and λ₂ remain strictly invariant), and alters only the number of closed units (3→2). In other words, dormancy is spectrally invisible; it acts on the ontological level of closed structure. The open-state definition is fixed accordingly and is consistent with Figure 1.
+
+Reading comparison after opening one edge of each class (derivation in Section 9.4):
+
+| Edge Class | λ₂ after opening | ρ after opening | Number of Closed Units T after opening |
+|---|---|---|---|
+| **Ring edge** (dormant edge) | 1.000000 (invariant) | 5.302776 (invariant) | **3 → 2** |
+| Spoke | 1 → 0.527166 | 5.302776 (invariant) | 3 (invariant) |
+
+### 8.2 Structural Illustration
+
+![Nucleon Skeleton Candidate: Tripartite Y-Shaped Triangular Closure](figures/sre_nucleon_skeleton_structure_EN.png)
+
+**Figure 1**: Left is the closed state (proton candidate, all three ring edges closed), right is the open state (neutron candidate, one **ring edge** dormant and not closed, red dashed line). Orange is the strand centers (3), blue is the leaf points on the ring (9), and blue solid lines are closed channels. The only difference between open and closed states is "one fewer closed unit" (number of triangular loops 3→2), which is exactly the structural basis for the breaking magnitude argument in Section 6.3.
+
+### 8.3 An Important Methodological Lesson
+
+The Π₁ values of the open and closed states are **completely identical** (both 0.188580). This indicates that:
+
+> **The functional Π₁ cannot distinguish between proton and neutron.** The opening/closing state should be read by β₁ (independent loop number), the number of closed units T, or the number of dormant edges, not by the spectral gap ratio.
+
+Promoted to a general lesson: **the choice of functional must match the nature of the physical quantity to be distinguished.** A functional that is insensitive to "loop addition/removal" cannot be used to diagnose the phenomenon corresponding to "loop addition/removal". This is a hard constraint for the next step of functional calibration (Section 10).
+
+### 8.4 Screening Funnel
+
+![Nucleon Skeleton Three-Step Screening Funnel](figures/sre_nucleon_skeleton_funnel_EN.png)
+
+**Figure 2**: A total of 85 cubic connected graphs with V=12 (determined by Criterion ①) → 4 remaining when the spectral ratio falls within 3% of the target (Criterion ②) → 2 remaining when satisfying triple symmetry (Criterion ③). Combined rarity p≈4.7×10⁻³.
+
+---
+
+## 9. Breaking the Parallelism: The Transition–Residue Framework
+
+### 9.1 A Correction: A and B Are Not Cospectral
+
+An earlier draft described the two candidates as "cospectral and non-isomorphic"; that statement was wrong. The two are **not cospectral**:
+
+| Spectrum (combinatorial Laplacian: value × multiplicity) | Candidate A | Candidate B |
+|---|---|---|
+| Full spectrum | 0¹, **1²**, ((7−√13)/2)², **4⁵**, ((7+√13)/2)² | 0¹, **1¹**, ((7−√13)/2)², **2², 4³, 5¹**, ((7+√13)/2)² |
+| Number of distinct eigenvalues | 5 | 7 |
+| λ₂ = λ₃ ? | Yes (1, 1) | No (1, 1.697224) |
+
+What they share is only three **extreme spectral quantities**: λ₁ = 0, λ₂ = 1, ρ = (7+√13)/2 = 5.302776. And Π₁ = λ₂/ρ happens to be the ratio of two of them — this is the true reason why Π₁ cannot separate A from B: **it is blind to the internal structure of the spectrum**.
+
+The remaining invariants do differ substantially:
+
+| Invariant | Candidate A | Candidate B |
+|---|---|---|
+| V / E / β₁ | 12 / 18 / 7 | 12 / 18 / 7 |
+| λ₂ / ρ / Π₁ | 1.000 / 5.303 / 0.188580 | Same |
+| Number of triangular loops T | **3** | **1** |
+| Vertex orbits | **2** | **3** |
+| \|Aut\| | **36** | **12** |
+| Edge orbits and sizes | **2** (9, 9) | **4** (3, 3, 6, 6) |
+| Kirchhoff index | 57.67 | 54.07 |
+| Wiener index | 135 | 129 |
+| Average resistance distance | 0.8737 | 0.8192 |
+
+### 9.2 A Closed Form: Π₁ Is Determined by Three Integers
+
+$$\Pi_1=\frac{1}{\rho}=\frac{\beta_1-\sqrt{V+1}}{E}=\frac{7-\sqrt{13}}{18}=0.188580485$$
+
+Against the measured κ_N = Δm/m_p ÷ α = 0.188893067, the deviation is 0.165%. That is, the nucleon's Π₁ is **entirely determined by the three integers β₁, V, E**. Both A and B belong to this "√13 subfamily"; the other two graphs inside the Π₁ window are generic (12 distinct eigenvalues) and match only approximately.
+
+### 9.3 The Strict Invariant of the Transition: ρ Is the "Residue"
+
+For each of A and B, all 18 single-edge openings are performed and the range of each spectral quantity recorded:
+
+| Spectral quantity | Range for A (18 removals) | Range for B (18 removals) |
+|---|---|---|
+| **ρ (largest Laplacian eigenvalue)** | **3.6×10⁻¹⁵** | **6.2×10⁻¹⁵** |
+| λ₂ | 0.473 | 0.473 |
+
+ρ is **strictly invariant** under the transition (the difference is at floating-point noise level), whereas λ₂ is strongly mobile. Physical reading: **the part of the spectrum that stays unchanged through the transition is the "residue", and it naturally serves as the reference object of measurement (the denominator of the ratio)**; the numerator is the branch that moves during the transition. This is aligned with the ontological reading that "light is the topological residue between evolutions" — **the standard is the residue, not the object being measured**.
+
+### 9.4 The Dormant Edge Is Taken to Be a Ring Edge (Structural Adjudication)
+
+**Basis (structural adjudication)**: the dormant edge is itself the image of a homomorphic mapping, and its logical depth is large. For this skeleton, the candidate with the greatest depth is the **ring edge** — opening a ring edge leaves every spectral quantity unchanged (both ρ and λ₂ strictly invariant) and alters only the number of closed units. In other words, dormancy is spectrally "invisible"; it acts on the ontological level (closure degree) rather than on the observable spectral level. This is precisely the manifestation of "large logical depth".
+
+The 18 edges of A split naturally into two automorphism orbits of 9 each:
+
+| Edge class | λ₂ after opening | ρ after opening | Closed units T after opening | Laplacian trace |
+|---|---|---|---|---|
+| **Ring edge** (leaf—leaf; the dormant edge) | **1.000000 (invariant)** | 5.302776 (invariant) | **3 → 2** | 36 → 34 |
+| Spoke (center—leaf) | 1 → 0.527166 | 5.302776 (invariant) | 3 (invariant) | 36 → 34 |
+
+The open-state definition is fixed accordingly and is consistent with Section 8.1 and Figure 1: **the neutron state = opening one ring edge**. Here both ρ and λ₂ are unchanged; the only changes are the number of closed units (3→2) and the trace (−2).
+
+### 9.5 Criterion ④ Transition Self-Consistency: Equivalent Channels Must Give Equivalent Readings
+
+A dormant state is not the state of "some particular edge" but the **homomorphic image of an entire edge orbit**: the edge set is quotiented to the orbit set under the automorphism group, and this step is exactly a homomorphism. The transition reading must therefore be unique at the **orbit level**.
+
+- Candidate A: the 9 ring edges form one orbit, and opening any one of them gives (λ₂ = 1.000000, T = 2), a unique reading ✓
+- Candidate B: the 3 ring edges form one orbit, and the reading is likewise unique (λ₂ = 1.000000, T = 0) ✓
+
+**Honest registration**: over the whole pool, "unique ring-edge reading" holds for 28/85; combined with Π₁<3% it leaves **2** graphs (A and B). **Criterion ④ alone is not sufficient to break the tie**, hence it is used jointly with Criterion ⑤.
+
+### 9.6 Criterion ⑤ Partial Re-equilibration of Closure Degree: The Open State Must Still Retain Closed Units
+
+Physical basis (**independent of the "three strands" prior S2**): a nuclear reaction is a **re-equilibration** of closure degree (Section 4.3, conjecture Q3). Re-equilibration means **partial** release, not reducing the closure degree to zero; a neutron is still a bound composite, so its open state must still retain closed units. More importantly, Q3 is independently supported by the fission chain validation of Section 11 (Pearson correlation +0.932 between the closure-degree potential Δ and the thermal cross-section), so using Q3 as a criterion here is not circular.
+
+- Candidate A: T: 3 → 2 (minus one, still retaining 2 closed units) ✓
+- Candidate B: T: 1 → 0 (**reduced to zero**) ✗ — if B were read as the nucleon, a single re-equilibration would erase the entire closure degree, contradicting the very mechanism of "re-equilibration".
+
+Pool statistics (85 graphs, criteria before values):
+
+| Criterion expression | Hits |
+|---|---|
+| Unique ring-edge reading (at the T level) | 28 / 85 |
+| T_closed ≥ 2 and unique ring-edge reading | 11 / 85 |
+| [Π₁ < 3%] ∧ [unique ring-edge reading] | 2 / 85 |
+| **[Π₁ < 3%] ∧ [unique ring-edge reading] ∧ [T_closed ≥ 2]** | **1 / 85 = A** |
+| **[Π₁ < 3%] ∧ [open state T_open ≥ 1]** | **1 / 85 = A** |
+
+Criterion ⑤ requires only that "re-equilibration is partial", and is **unrelated** to Criterion ③ (3‖\|Aut\|); hence it does not suffer from the charge of "same origin", nor does it require choosing a direction within a numerical window.
+
+### 9.7 Criterion ⑥ Quantitative Comparison (Corroboration Only)
+
+Comparison of the closure-degree ratio (open/closed) with the magnetic ratio:
+
+| Candidate | T: closed → open | Ratio | Against \|μ_n/μ_p\| = 0.684979 |
+|---|---|---|---|
+| **A** | 3 → 2 | **2/3 = 0.666667** | deviation **2.67%** |
+| B | 1 → 0 | 0 | no correspondence |
+
+**Honest boundary**: with 36 comparisons and a 5% threshold, the expected accidental hit count is about 1.8, so this item is registered only as a **clue**, not as evidence.
+
+### 9.8 Two Items Explicitly Not Used as Criteria
+
+The following two items were examined and **are not adopted**:
+
+1. **"Some mode releases exactly the integer 1.000000"** — observed as closed state 4.000000 → open state 3.000000, i.e., "exactly one mode releases the integer 1". This arises only from the contingency of the homomorphic mapping and is **not a necessary discrete quantity**; it does not constitute a criterion;
+2. **"The total released amount is always 2"** — removing one edge necessarily decreases the Laplacian trace by 2; this is a trace identity carrying no new information.
+
+Consequently, the per-mode allocation observed in the spoke-class opening (1.000000 / 0.472834 / 0.367343 / 0.159823, with the remaining 8 eigenvalues unchanged) **is not used as a criterion** and is retained only as an explanatory description of the transition mechanism.
+
+### 9.9 Conclusion
+
+**At the structural level: Criterion ⑤ uniquely selects A, and B is excluded; Criterion ④ corroborates.**
+
+**At the measured level: still not independent.** The only quantitative comparison independent of the structural prior (Criterion ⑥, deviation 2.67%) is not strong enough.
+
+The correct statement is therefore: **"Under the condition of partial re-equilibration of closure degree, A is the unique survivor; at the purely measured level it is still not independently determined."** — not "A has been determined by measurement".
+
+It should also be pointed out that, with the dormant edge taken as a ring edge, the transition has **no effect on either λ₂ or ρ**; hence the Π₁ in Δm/m_p = α·Π₁ is a "standard" built from two **invariants**, while the state change itself is carried by the number of closed units T. This reading is consistent with "the residue serves as the reference object of measurement", but it implies that the direct reading "mass difference ↔ level shift" does not apply here, and it has been registered as unresolved item 5 of Section 16.
+
+---
+
+## 10. Dimension Collapse Test: Distance Data as Empirical Base for Topological Inversion
+
+To provide a testable "distance ladder" baseline for the structural solution of nucleon topology, a dimension collapse test is performed. This test is the **empirical base** of nucleon derivation: ② bonding rules and ③ skeleton enumeration are the same thing here — **skeleton channel structure ↔ distance ladder**.
+
+### 10.1 Scale Anchoring (Dimensionless Identity)
+
+$$a_0\cdot m_e\cdot c/\hbar = 1/\alpha \approx 137.036$$
+
+Measured verification: the ratio is 1.0000000006, almost exactly 1.
+
+### 10.2 Orbital Shell Law r_n = n²·a0/Z (in a0 units)
+
+| Z | n=1 | n=2 | n=3 | n=4 | Integer Ratio |
+|---|---|---|---|---|---|
+| 1 | 1.000 | 4.000 | 9.000 | 16.000 | 1 : 4 : 9 : 16 |
+| 2 | 0.500 | 2.000 | 4.500 | 8.000 | 1 : 4 : 9 : 16 |
+| 3 | 0.333 | 1.333 | 3.000 | 5.333 | 1 : 4 : 9 : 16 |
+
+### 10.3 Covalent Radius (in a0 units) and Derived Z_eff (Leakage Profile, Main Group Extension)
+
+Z_eff ≈ n²/(r/a0) (n takes the main shell quantum number): increasing gradually along the period for the second/third periods = increasing nuclear leakage.
+
+| Element | Z | r/Å | r/a0 | Derived Z_eff | Main Shell n |
+|---|---|---|---|---|---|
+| Li | 3 | 1.28 | 2.419 | 1.65 | 2 |
+| Be | 4 | 0.96 | 1.814 | 2.20 | 2 |
+| C | 6 | 0.76 | 1.436 | 2.79 | 2 |
+| N | 7 | 0.71 | 1.342 | 2.98 | 2 |
+| O | 8 | 0.66 | 1.247 | 3.21 | 2 |
+| F | 9 | 0.57 | 1.077 | 3.71 | 2 |
+| Na | 11 | 1.66 | 3.137 | 2.87 | 3 |
+| Si | 14 | 1.11 | 2.098 | 4.29 | 3 |
+| Cl | 17 | 1.02 | 1.928 | 4.67 | 3 |
+| K | 19 | 2.03 | 3.836 | 4.17 | 4 |
+| Rb | 37 | 2.20 | 4.157 | 6.01 | 5 |
+
+Z_eff increases monotonically across periods in the same group, such as group 14 C/Si/Ge/Sn: 2.79→4.29→7.06→9.52.
+
+### 10.4 Bond Order Step Law (Contraction Δ for each additional bond, in a0 units)
+
+| Family | Bond Order Series | Δ(1→2) | Δ(2→3) | Remarks |
+|---|---|---|---|---|
+| C–C | single / double / triple | 0.378 | 0.265 |  |
+| C–N | single / double / triple | 0.359 | 0.227 |  |
+| C–O | single / double / triple | 0.378 | 0.189 |  |
+| N–N | single / double / triple | 0.378 | 0.287 |  |
+| Si–Si | single / double / triple | 0.340 | 0.113 | Third period heavy atom triple bond weakened |
+
+Core multiple bond families (excluding O–O, N–O lone pair families, n=11): Δ(1→2)=0.352±0.037 a0 (RMS 0.354), Δ(2→3)=0.232±0.058 a0 (RMS 0.239).
+
+### 10.5 Single Bond Additivity Law d(A–B)≈r_A+r_B (in a0 units, statistical by family)
+
+| Family | n | Mean Value | RMS | Judgment |
+|---|---|---|---|---|
+| Organic C Skeleton Neutral Covalent Family | 11 | +0.6% | 1.5% | Strictly holds |
+| Light Heteroatom/Hydride | 25 | −2.9% | 6.7% | Approximate (electronegativity shift) |
+| Same-Nucleus Second Period (H/O/F) | 5 | +10.0% | 12.5% | Systematically stretched → channel saturation correction |
+| Same-Nucleus Heavy Main Group (Si…I) | 10 | −0.9% | 3.3% | Additivity law regression |
+| Ion/Metal Pairs | 6 | −12.3% | 14.4% | Failure (different ontological interval) |
+
+### 10.6 Bond Order Capacity Observation: Maximum Stable Bond Order for Each Family
+
+- Group 14: C≡C(3), Si≡Si(3), Ge≡Ge(3) — Capacity 3
+- Group 15: N≡N(3), P≡P(3), As≡As(3) — Capacity 3
+- Group 16: O=O(2), S=S(2), Se=Se(2), Te=Te(2) — Capacity 2
+- Group 17: F–F(1), Cl–Cl(1), Br–Br(1), I–I(1) — Capacity 1
+
+The channel capacity is not always 3, but decreases with the group and period; the same-nucleus small atoms in the second period (O, F) often have actual bond orders lower than the capacity upper limit due to lone pair repulsion, which is consistent with the two corrections of "channel saturation + lone pair repulsion" in the bonding rules.
+
+---
+
+## 11. Nuclear Reaction Validation: Closure Degree Rebalancing from β Decay to Fission Chain
+
+This paper does not propose a new nuclear structure theory, but **uses existing measurements of fission and chain reactions to verify whether a mechanistic assertion that has been accepted in nucleon derivation can continue to hold on a larger scale**. This assertion is:
+
+> **Nuclear reaction = closure degree rebalancing.** (Chapter 3 of Nucleon Inversion v2, Speculation Q3)
+
+### 11.1 Fast Neutron Experiment: Differences Only Exist in Low-Energy Sedimentation
+
+**Criterion Design (Criterion Precedes Numerical Values).** If the reading of Q3 holds, then:
+
+- **Slow (thermal) neutrons**: can only settle at low energy at "existing unpaired open channels" in the composite skeleton, and have nowhere to land for "fully paired closed" skeletons → the cross-section should span a very wide range;
+- **Fast neutrons**: with enough energy to directly destroy the closure/pairing, bypassing the low-energy sedimentation channel → the cross-section should **restore to the same order of magnitude** for all nuclides.
+
+**Results**:
+
+| Quantity | Numerical Value |
+|---|---|
+| Thermal cross-section dynamic range | **8.58 orders of magnitude** (max 6401 b / min 1.7e-5 b) |
+| Thermal cross-section 1–99 percentile span | 8.39 orders of magnitude |
+| Fast cross-section dynamic range | **1.48 orders of magnitude** (max 2.43 / min 0.080 b) |
+| Fast cross-section (excluding Th-232) | 0.90 orders of magnitude |
+| Fast cross-section 10–90 percentile span | **0.40 orders of magnitude** |
+
+**Interpretation.** Fast neutrons compress the cross-section to the same order of magnitude, and the differences are indeed concentrated at the low-energy/slow neutron sedimentation end. This is consistent with the mechanism that "dormant edges require low-energy removal, and high energy can directly destroy closure", and it is a **10^4-fold structural signature** — not a small numerical coincidence.
+
+### 11.2 An Honest Falsification: Simple Parity Criterion Does Not Hold and Needs to Be Upgraded
+
+A natural "simplest criterion" is: **number of open channels = neutron number N mod 2**, i.e., odd-N nuclei "have one unpaired open channel", even-even nuclei "fully paired closed". This criterion predicts that even-even nuclei should have uniformly minimal thermal cross-sections.
+
+**It is falsified by three counterexamples**:
+
+| Counterexample | N | σ_th (b) | Conflict with "even-even should be closed" |
+|---|---|---|---|
+| U-232 | 140 (even) | **76.5** | High |
+| Pu-238 | 144 (even) | **17.8** | Medium-high |
+| Cm-242 | 146 (even) | **4.67** | Medium |
+
+Within the same even-even category, σ_th ranges from 76.5 b (U-232) to 1.7e-5 b (U-238), spanning **6.7 orders of magnitude**. Parity itself cannot determine whether thermal fission is possible.
+
+### 11.3 Upgrade: Compound Nucleus Excitation Surplus Criterion
+
+The real criterion is the **excitation surplus** of the compound nucleus (A+1):
+
+$$\Delta = E^\ast - B_f = S_n(A+1) - B_f(A+1)$$
+
+where E"=S_n(compound nucleus) is the excitation energy after absorbing a thermal neutron, and B_f is the fission barrier. Δ>0: the excitation energy itself exceeds the rebalancing slope → thermally sedimentable; Δ<0: requires additional kinetic energy from fast neutrons.
+
+**Results (full table of 9 target nuclei)**:
+
+| Target Nucleus | E" (MeV) | B_f (MeV) | Δ (MeV) | log₁₀σ_th | Judgment |
+|---|---|---|---|---|---|
+| U-233 | 6.846 | 5.50 | **+1.35** | 2.73 | Thermally sedimentable |
+| U-235 | 6.545 | 5.67 | **+0.88** | 2.77 | Thermally sedimentable |
+| Pu-239 | 6.534 | 6.05 | **+0.48** | 2.87 | Thermally sedimentable |
+| Am-241 | 5.529 | 5.90 | −0.37 | 0.49 | Requires fast neutrons |
+| Np-237 | 5.488 | 6.10 | −0.61 | −1.69 | Requires fast neutrons |
+| Pu-240 | 5.242 | 6.10 | −0.86 | −1.44 | Requires fast neutrons |
+| Pu-242 | 5.034 | 5.80 | −0.77 | −2.61 | Requires fast neutrons |
+| Th-232 | 4.786 | 5.80 | −1.01 | −4.27 | Requires fast neutrons |
+| U-238 | 4.806 | 6.20 | −1.39 | −4.77 | Requires fast neutrons |
+
+**Pearson(Δ, log₁₀σ_th) = +0.932.**
+
+- The positive and negative of Δ completely separates the two levels of "thermally sedimentable / requires fast neutrons" with a margin of 0.4–1.4 MeV;
+- The three even-even "counterexamples" are all automatically returned to their correct positions using this criterion: the compound nucleus U-233" of U-232 has Δ≈+1.6, the compound nucleus Pu-239" of Pu-238 has Δ≈+0.6, and the compound nucleus Cm-243" of Cm-242 has Δ≈+0.6 — although they are even-even, their excitation surplus is already positive, so they can settle at low energy. **"Even-even" is a common but not sufficient manifestation of "negative surplus"; the parity law is a subset of the closure degree potential.**
+
+### 11.4 B/A Closure Degree Potential: Macroscopic Profile of Fission/Fusion Direction and Net Energy Accounting
+
+B/A (binding energy per nucleon) as the macroscopic profile of "closure degree potential":
+
+- Extremum: **Ni-62 / Fe-56 platform, B/A≈8.79 MeV/n** — maximum closure degree region;
+- α particle (He-4) B/A=7.07: higher saturation at the light nucleus end;
+- U-238 B/A=7.57:falls back at the heavy nucleus end (sparse long-range channels).
+
+Both fission and flow towards the B/A single peak; the direction is determined by the position of the starting point relative to the peak:
+
+| Migration | d(B/A) (MeV/n) | Energy Released | SRE Reading |
+|---|---|---|---|
+| 4He → Fe | +1.72 | Fusion energy release | Flow towards greater closure degree |
+| Fe → U | **−1.22** | Fission energy release | Leave the maximum closure degree region andfalls back |
+
+Estimate the fission energy release of U-235 using the B/A difference: take the average B/A of fragments from the 98/138 region or 95/140 interpolation (≈8.50–8.51 MeV/n):
+
+$$E_f \approx 236 \times (\overline{B/A}_{frag} - B/A_{U^{235}}) \approx 215\text{–}219\ \mathrm{MeV}$$
+
+The measured E_f=202.5 MeV, with a model deviation of **+6~8%** (direction and magnitude correct; residual deviation comes from fragment B/A selection point and mass deduction of secondary neutrons).
+
+### 11.5 Chain Criticality: Multiplication and Coherent Bookkeeping Self-Sustaining Valve
+
+Chain reactions upgrade "whether a single seed can land" to "whether the statistical family of seeds can not be extinguished**:
+
+$$k_{eff} = \nu \cdot p \cdot f \ge 1$$
+
+where ν is the average number of neutrons emitted per fission, p is the probability that each neutron successfully triggers the next generation of fission, and f is the proportion of neutrons that do not leak/are not absorbed.
+
+**Critical sedimentation probability p"=1/(ν·f)** (upper limit when f=1):
+
+| Nuclide | ν | p"=1/ν |
+|---|---|---|
+| U-233 | 2.47 | 0.405 |
+| U-235 | 2.43 | 0.412 |
+| Pu-239 | 2.87 | 0.348 |
+| U-238 (fast) | 2.51 | 0.398 |
+
+Chain self-sustainment requires each seed to settle with a probability >35%, otherwise the multiplication <1 and the reaction extinguishes; p"∈[0.35,0.41] matches the measured values.
+
+### 11.6 Three-Level Signature Unification
+
+| Scale | Event | Signature | Ontology |
+|---|---|---|---|
+| Single Nucleon | β decay | n(open, β₁=6) → p(closed, β₁=7), Δm/m_p=1.4e-3 | Open→closed, expelling seed |
+| Composite Nucleus | Thermal neutron fission | σ_th spans 8.6 orders of magnitude, fast neutrons restore to the same order of magnitude; driven by Δ(S_n−B_f) | Whether the closure degree potential crosses the rebalancing slope |
+| Macroscopic | Chain Criticality | k_eff=ν·p≥1, p"=1/ν≈0.35–0.41 | Statistical family of seeds does not extinguish |
+
+All three share the same mechanism: **dormant open channels that can be sedimented**. β decay, fission cross-section parity law (which is essentially excitation surplus), and chain criticality are three readings of it at three scales.
+
+---
+
+## 12. Many-Body Assembly Law and the Shared Ring: A Validation Attempt Borrowing Nuclear Data
+
+This section records an attempt to extend the nucleon skeleton to many-body systems using external nuclear data as a yardstick. The methodological constraints follow Section 3: SRE can only produce dimensionless ratios, so every quantity compared here is dimensionless — Δm_np = m_n − m_p = 1.293332 MeV is taken as the natural closure-degree unit on the nucleon side. Each conclusion states whether it is falsifiable. All numerical values are independently recomputed by the scripts in `code/`.
+
+### 12.1 The Assembly Law: Uniquely Determined by Two Principles
+
+Before nucleon skeletons can be assembled into many-body systems, the assembly rule must be fixed. This paper admits only two principles:
+
+1. **Open–closed complementarity**: two bodies can dock and form a shared unit only when one side carries a dormant gap and the other side offers a complete ring edge at the same position;
+2. **The images of the two bodies must be distinguishable in the shared region**: the shared ring must contain at least one **single-claim edge** (k=1, i.e. an edge claimed by only one body). This clause was originally stated as "closed bodies must not overlap", which carries spatial semantics and conflicts with the ontology of SRE, in which there is no space; it is therefore restated as a purely ledger-theoretic condition. **"Same position" is the natural meaning of "indistinguishable"** — the gap of neutron ring j can be sealed only by a complete ring edge of the partner's **ring j**, not by an arbitrary ring, and this is not an extra assumption.
+
+Five construction variants are enumerated for the two-body (deuteron) case: gap against a ring edge, gap against a spoke, single-point contact, three points identically attached to a ring, and merging onto the same vertex. Only **variant A** (the two ends of the gap are identified with the two ends of one of the proton's ring edges, forming a new ring) satisfies both principles, and it is unique under automorphism (9 constructions merge into one isomorphism class):
+
+| Variant A (two bodies) | Value |
+|---|---|
+| V / E / β₁ | 22 / 35 / 14 |
+| Number of triangular rings T | 6 |
+| Δβ₁ / ΔT | +1 / +1 |
+| λ₂ | 0.238442818 |
+| ρ | 6.681330644 |
+| Π₁ | 0.035687924 |
+
+**Qualitative prediction (successful)**: the rule automatically excludes n-n (both sides carry gaps at the same position) and p-p (neither side carries a gap); **only n-p can form a shared unit** — consistent with the measured fact that the only bound two-body system is the deuteron. The basis is the open/closed asymmetry, i.e. difference itself, and not any additional force.
+
+**Discriminating power of the restated principle 2 (verification)**: replacing "must not overlap" by "there exists a single-claim edge (k=1)" reproduces all the original exclusions: the shared-ring ledger of n-p is (1, 2, 2), containing one single-claim edge with k=1 → legal; in n-n both sides are dormant at the same position, so after coincidence that edge is still missing and the shared region retains only 2 edges (the ring does not close) → illegal; in p-p all three edges are claimed by both bodies (2, 2, 2) with no single-claim edge → the images of the two bodies are indistinguishable → illegal. A further check shows that **the shared-ring products of n-p and p-p are isomorphic to each other** (V=21, E=33, T=5, β₁=13, |Aut|=48, ρ=6.000000, λ₂=2−√3 all identical), so p-p can be excluded only by the ledger, never by any graph invariant.
+
+**Correction of the status of variant D (formerly the "shadow solution")**: the construction in which three points are identically attached to a ring gives V=21, E=33, β₁=13, T=5, |Aut|=48, with a spectrum of strict arithmetic rigidity (see 12.3). Verification shows that this construction is **isomorphic to the k=2 member of the k-body shared-ring family of Section 12.5 and carries the same ledger (1, 2, 2)** — it is therefore the deuteron's own configuration; the name "shadow solution" and the former note that it "violates principle 2" are both withdrawn. Under the restated principle, "the two nucleons occupy the same position" is no longer a ground for exclusion (SRE has no space); what is genuinely excluded is the **p-p type of complete coincidence** (no single-claim edge). Variant A (two-point docking, only one shared edge, Δβ₁=+1) remains a legal configuration but is quantitatively excluded by the deuteron binding energy (see 12.2). The full disposal is given in 12.10.
+
+![Many-body assembly law and the shared ring: assembly, reference-mode invariance, and zero-parameter scorecard](figures/sre_nucleon_manybody_schematic_EN.png)
+
+**Figure 5**: Many-body assembly law and the shared ring. (a) The monomer skeleton is assembled into a k-body shared ring by "merging the same ring (three vertices) into the shared region": thick solid edges are claimed by all bodies (k=A), the dashed red edge is a single-claim edge claimed by protons only (k=#p), blue dots are closed states and red dots open states; (b) the closure potential ρ rises monotonically with the body count, whereas the lowest non-trivial mode λ₂ = 2−√3 is independent of the body count (reference mode; the data are independently recomputed by the companion script from numerical Laplacian spectra, with a maximum deviation of about 10⁻¹⁵); (c) the zero-parameter scorecard of the assembly law (Reading A, see 12.8). The detailed data of panels (b) and (c) are given in 12.5 and 12.8 respectively.
+
+### 12.2 Variant A Is Quantitatively Excluded by the Deuteron
+
+Taking Δm_np as the closure-degree unit, variant A carries a closure-degree increment Δβ₁ = +1, so its zero-parameter prediction for the deuteron binding energy is
+
+$$B_d^{\text{(pred)}}=\Delta\beta_1\cdot\Delta m_{np}=2.5867\ \text{MeV}$$
+
+against the measured B_d = 2.224566 MeV, i.e. **16.3% too high**. The difference 0.362 MeV = 0.28 Δm_np is the "sharing tax" — variant A contains no shared edge at all and therefore cannot carry this term. **Conclusion: a configuration without shared edges cannot serve as the deuteron; the deuteron must be carried by a shared-ring configuration.**
+
+### 12.3 The Shared-Ring Motif: Arithmetic Rigidity of Variant D
+
+| Variant D (three points identically attached to a ring; the k=2 member of Section 12.5, see 12.10) | Value |
+|---|---|
+| V / E / β₁ / T | 21 / 33 / 13 / 5 |
+| \|Aut\| | 48 |
+| Laplacian trace | 66 |
+| Characteristic polynomial | x·(x−1)²(x−2)²(x−4)⁴(x−5)²(x−6)²(x²−4x+1)¹(x²−6x+7)³ |
+| Spectrum (value × multiplicity) | 0¹, 1², 2², 4⁴, 5², 6², (2±√3)¹, (3±√2)³ |
+| ρ | 6.000000 (exact integer, twofold) |
+| λ₂ | 2−√3 = 0.267949 (exact) |
+
+Every factor of the full spectrum has degree at most 2 (**arithmetic rigidity**), in contrast to variant A, which contains an irreducible cubic factor. Rarity check: among random graphs with the same degree sequence (4,4,4,3¹⁸) (2966 samples), the median ρ is 6.057 with range [5.291, 6.639], while **ρ is exactly the integer 6 in 0 samples**, and lies within 6±0.01 in only 4.0%. "Integer ρ" is therefore genuinely anti-probabilistic.
+
+**Orbit structure and "the projection erases history"**: the vertices of D fall into 3 orbits (6 spoke centres, 3 shared-ring vertices, 12 leaves) and the edges into 4 orbits, among which **the 3 edges of the shared ring lie in one and the same orbit** — the graph itself cannot tell which edge was "borrowed". This is a direct graph-level instance of "the homomorphic mapping erases history".
+
+### 12.4 The Projection Erases Who Is Dormant: n-p ≅ p-p
+
+The D-type products of n-p and p-p are compared item by item:
+
+| Quantity | D-type of n-p | D-type of p-p |
+|---|---|---|
+| V / E / β₁ / T / \|Aut\| / trace | 21 / 33 / 13 / 5 / 48 / 66 | identical |
+| Graph isomorphism test | `is_isomorphic = True` | |
+| Shared ledger | 1 own edge + 2 shared edges | 3 shared edges |
+
+**The product graph does not remember whether the partner was a neutron or a proton**: the entire difference lies in the shared ledger, and the ledger is not a graph invariant. This is the structural root of why B_d/Δm_np cannot be an integer, and it shows that the idea "binding energy can be carried by the graph's closure count" must fail. The D-type of n-n is not isomorphic to these (T=4, β₁=12, |Aut|=16, with one extra cubic factor), because both sides are dormant at the same position and the gap remains unsealed after coincidence.
+
+### 12.5 Three and Four Bodies: Structural Linear Law and Body-Count Independence of the Lowest Mode
+
+The configurations in which k bodies share one ring are constructed explicitly and checked quantity by quantity:
+
+| k | System | V | E | T | β₁ | \|Aut\| | ρ |
+|---|---|---|---|---|---|---|---|
+| 2 | deuteron | 21 | 33 | 5 | 13 | 48 | 6.000000 |
+| 3 | ³H / ³He | 30 | 48 | 7 | 19 | 288 | 6.925423 |
+| 4 | ⁴He | 39 | 63 | 9 | 25 | 2304 | 7.909516 |
+
+Closed forms: **V = 9k+3, E = 15k+3, T = 2k+1, β₁ = 6k+1, |Aut| = 6·2^k·k!** (exact for k = 2, 3, 4). The rise of ρ with the body count and the body-count independence of λ₂ are shown in Figure 5(b) (independently recomputed by the figure script from numerical Laplacian spectra).
+
+**³H(a) and ³He(a) are isomorphic** (V=30, E=48, T=7, β₁=19, |Aut|=288, ρ=6.925423, λ₂=2−√3 all identical) — the third occurrence, after the deuteron, of "the projection erases who is dormant".
+
+**The lowest non-trivial mode is independent of the body count**: λ₂ = 2−√3 = 0.267949192431 is exactly the same for k = 2, 3, 4, 5, 6 (relative difference about 10⁻¹⁵), and its degeneracy multiplicity is m(λ₂) = k−1. The mechanism was verified block by block:
+
+- on the lowest mode, the **three vertices of the shared ring have strictly zero amplitude** (about 10⁻¹⁶);
+- the spoke-centre amplitudes of the individual bodies **sum to zero** (for k=2: +0.1877 / −0.1877; for k=3: −0.2167 / +0.1084 / +0.1084);
+- hence inter-body coupling is completely switched off on this mode, and each body oscillates independently according to its own "body minus shared ring" grounded block, whose lowest eigenvalue is exactly 2−√3 (its 9 eigenvalues are {0.26795, 1, 3.26795², 3.73205, 4², 6.73205²});
+- k contributes only one constraint, "the spoke-centre amplitudes sum to zero", so the eigenvalue is independent of k and its multiplicity is exactly k−1.
+
+**Physical reading**: the shared ring = the part of the lowest excitation that **does not move at all**, i.e. a natural reference frame. This is the most concrete realization to date of the ontological reading that "light is the topological residue between evolutions and serves as the reference object of measurement": **the measured component (numerator) varies with the body count, while the reference component (the shared ring) stays strictly fixed.** By contrast, ρ rises monotonically with k (6 / 6.925423 / 7.909516 / 8.908855 / 9.912634) and has no simple quadratic closed form — **for k ≥ 3 the arithmetic rigidity moves from ρ to λ₂**.
+
+### 12.6 Shared-Ledger Pricing: Falsification at the Energy-Level Layer
+
+With the structural layer settled, the remaining question is the quantitative attribution of binding energy. The simplest bookkeeping hypothesis is: **each overlapping edge on the shared ring is priced according to how many bodies claim it (k)**, ψ(k), and the binding energy of a nucleus (in units of Δm_np) is the sum of the three edge prices. The ledgers of the four measured nuclei are:
+
+| Nucleus | Ledger (claim count of each of the three edges) | B / Δm_np |
+|---|---|---|
+| deuteron | (1, 2, 2) | 1.720027 |
+| ³H | (1, 3, 3) | 6.558252 |
+| ³He | (2, 3, 3) | 5.967608 |
+| ⁴He | (2, 4, 4) | 21.878135 |
+
+The four equations determine ψ(1..4) exactly, with zero residual:
+
+| k | ψ(k) / Δm_np | ψ(k) / MeV | relative to ψ(1) |
+|---|---|---|---|
+| 1 | +0.967105 | +1.2508 | 1.0000 |
+| 2 | +0.376461 | +0.4869 | **0.3893** |
+| 3 | +2.795573 | +3.6156 | **2.8907** |
+| 4 | +10.750837 | +13.9044 | **11.1165** |
+
+**The shape is non-monotonic**: double occupation reduces the edge contribution to 38.9% (a tax), while triple and quadruple occupation give 2.89× and 11.12× (strong gain). This is aligned with the qualitative picture "the greater the interference depth, the stronger the binding".
+
+**It must be stated honestly: this layer has no predictive margin.** Four free parameters fitted to four data points give zero residual by necessity, not by achievement; the only valid test is out-of-sample (see 12.7). Moreover, two more parsimonious pricing laws cannot accommodate the measured data (both are calibrated with a single constant from the deuteron):
+
+| Pricing law | ³H | ³He | ⁴He |
+|---|---|---|---|
+| Law A: ψ(k) = k·c (linear in k) | −63.3% | −53.9% | −84.3% |
+| Law B: ψ(k) = c·C(k,2) (pairwise counting) | −21.3% | +0.9% | −48.9% |
+
+In other words, "interference depth" cannot be reduced to a linear or pairwise count in k; Law B's near-hit on ³He is a single-point coincidence and cannot be generalized.
+
+**Backfill: the root of this layer's failure lies not in the shape of ψ but in additivity itself.** (This item is homologous to 12.11(2) and is registered here in advance.) From the three **resonance-unambiguous** measured nuclei (deuteron, ³H, ³He, all with A ≤ 3), subtracting the three equations cancels ψ(3):
+
+> ψ(1) − ψ(2) = B(³H) − B(³He) = +0.590645 Δm_np = **+0.7639 MeV**
+
+This expression involves only the price difference of the first edge and is independent of the shape of ψ. Since the profiles of ⁴H and ⁴He are (1, 4, 4) and (2, 4, 4), differing only in the claim count of the first edge, it immediately gives
+
+> B(⁴H) − B(⁴He) = ψ(1) − ψ(2) = **+0.590645 Δm_np** (an identity)
+
+That is, **however one redefines "the price of each edge on the shared ring", ⁴H is forced to be predicted more tightly bound than ⁴He**. This is precisely the mechanism of the out-of-sample failure in 12.7 — the failure occurs within the very section that introduces ψ, and it cannot be repaired by changing the shape of ψ. Likewise ψ(3) − ψ(2) = +2.419113 Δm_np gives B(⁴Li) − B(⁴He) = +2.419113 Δm_np. Hence the failure in 12.7 is a failure of the **whole class**, not of any particular ψ; the full derivation and consequences of this identity are given in 12.11(2).
+
+**Another equivalent simple bookkeeping** (registered for the record): let the price of an own edge be 1, of a dormant edge d, of a shared edge c, and of a borrowed edge b. Calibrating on the single nucleon, Δm_np = d − 1 gives d = 2; from the deuteron, 6 − 4c − b = 1.720027. Taking "borrowing is free" (b = 0) yields c = 1.07 and a sharing tax 4(c − 1) = 0.28 Δm_np = 0.362 MeV, consistent with the difference in 12.2. This parameterization and ψ(k) are two spellings of the same layer, and neither has an independent predictive margin.
+
+### 12.7 Failure of the A=4 Out-of-Sample Prediction
+
+Once ψ has been fixed by A=2, A=3 and ⁴He, the A=4 isobars constitute a genuine zero-parameter out-of-sample set:
+
+| Nucleus | Ledger | Predicted B | Measured |
+|---|---|---|---|
+| ⁴He | (2, 4, 4) | 28.2957 MeV | bound, 28.2957 MeV (**used for calibration**) |
+| ⁴H | (1, 4, 4) | 29.0596 MeV | **unbound** (above-threshold resonance) |
+| ⁴Li | (3, 4, 4) | 31.4244 MeV | **unbound** (above-threshold resonance) |
+
+The model predicts both to be more strongly bound than ⁴He, whereas both are measured to be **unbound**. A pricing law that depends only on "the distribution of claim counts k over the overlapping edges" is therefore explicitly falsified: **the energy-level layer is not computable in this layer.**
+
+### 12.8 The Assembly-Law Scorecard and Adjudication of Readings
+
+Reducing the two principles of 12.1 to "the number of gaps and the number of supplies at the same position" yields a zero-parameter existence scorecard. Definition: at the same shared position, k nucleon skeletons are aligned; each open-state body (neutron, whose ring edge at that position is dormant) leaves 1 **gap** g, and each closed-state body (proton, whose ring edge at that position is complete) offers 1 **supply** s. **A legal assembly implies binding; an illegal assembly implies non-binding.**
+
+| Nucleus | A | Gap g | Supply s | Measured |
+|---|---|---|---|---|
+| n-p | 2 | 1 | 1 | bound, 2.2246 MeV |
+| n-n | 2 | 2 | 0 | unbound (virtual state) |
+| p-p | 2 | 0 | 2 | unbound (virtual state) |
+| ³H | 3 | 2 | 1 | bound, 8.4820 MeV |
+| ³He | 3 | 1 | 2 | bound, 7.7181 MeV |
+| ⁴He | 4 | 2 | 2 | bound, 28.2957 MeV |
+| ⁴H | 4 | 3 | 1 | unbound (above-threshold resonance) |
+| ⁴Li | 4 | 1 | 3 | unbound (above-threshold resonance) |
+
+Two zero-parameter readings coexist and are mutually incompatible:
+
+- **Reading A**: legal ⟺ 1 ≤ g ≤ 2 and s ≥ 1 (a gap exists, at least one side can seal it, and the number of dormant sides does not exceed 2);
+- **Reading B**: legal ⟺ g = s and g ≥ 1 (gaps and supplies match one-to-one).
+
+| Reading | All 8 entries | A ≤ 3 sector | Mismatches |
+|---|---|---|---|
+| **A (adopted here)** | **7 / 8** | **5 / 5** | ⁴Li (A=4) |
+| A′ (dropping the clause "g ≤ 2") | 6 / 8 | 5 / 5 | ⁴H, ⁴Li (both A=4) |
+| B (one-to-one matching) | 6 / 8 | 3 / 5 | ³H, ³He (both A=3) |
+
+**Adjudication: Reading A is adopted.** There are two reasons: (i) all five entries of the calibratable sector A ≤ 3 (n-p, n-n, p-p, ³H, ³He, all of them measured bound states or sub-threshold virtual states without resonance ambiguity) are matched under Reading A, whereas Reading B already mismatches at ³H, judging the measured bound ³H to be unbound, and is therefore excluded; (ii) the only mismatch of Reading A lies at A = 4, and A = 4 has already been independently delimited as a non-computable interval in 12.7. If the additional clause "g ≤ 2" is dropped, the mismatch set gains only one more entry, ⁴H, still inside the same interval — **so whether that clause is kept does not affect the conclusions of this paper**; the version tabulated above (Reading A) is registered here. The scorecard is displayed in Figure 5(c).
+
+**Later supplement (see 12.12)**: of the two clauses of Reading A (1 ≤ g ≤ 2 and s ≥ 1), "g ≤ 2" caps only the neutron count and not the proton count, and therefore mismatches at ⁴Li. Replacing the two clauses by the mirror-symmetric single criterion **L1: |n_n − n_p| ≤ 1** makes the same 8-entry scorecard match **8 / 8**, with the number of clauses reduced from two to one and no parameter. The registration in this section is therefore revised to a **parallel** one: Reading A (the original form of this section, 7 / 8) and criterion L1 (12.12, 8 / 8); over A ≤ 4, L1 strictly dominates, while over A ≥ 5 both degrade to empirical approximations.
+
+### 12.9 The Adopted Boundary: A ≥ 4 Is Not Computable in This Layer
+
+Combining 12.7 and 12.8:
+
+- **A ≤ 3**: the zero-parameter assembly-law scorecard matches 5 / 5;
+- **A = 4**: two classes of failure appear — the out-of-sample failure of the pricing layer (⁴H and ⁴Li predicted bound, see 12.7) and the qualitative failure of the assembly law (⁴Li predicted bound, see 12.8).
+
+Both classes fall in the same interval and constitute two independent markers of the following boundary:
+
+> **Adopted boundary**: the nuclear boundness for A ≥ 4 (both existence and the numerical value of the binding energy) **is not computable in this layer**.
+
+Explaining that interval requires a new quantity outside the ledger (candidate: interference depth). That candidate is explicitly tested in 12.11, and the conclusion is negative: **this boundary is not a matter of insufficient data but a structural one**.
+
+**Honest registration**: the hit for ⁴He is not a prediction (its binding energy was used to fix ψ(4)); ⁴H and ⁴Li share the same reading and cannot be kept selectively; the "non-binding" of n-n and p-p refers to virtual states rather than forbidden states — the criterion only says that "no bound shared unit is formed".
+
+**Later revision (see 12.12)**: Section 12.12 makes an explicit attempt at the "antisymmetric penalty coefficient" λ; the conclusion is that λ can neither be derived from nor fixed by SRE. The same check, however, yields a zero-parameter **existence criterion** L1 (|n_n − n_p| ≤ 1) that matches the 8-entry scorecard of 12.8 at 8 / 8. The boundary above must therefore be split according to the two questions "existence" and "numerical value of the binding energy": the **numerical value of the binding energy** is not computable for A ≥ 4 (the identity of 12.11(2) is unaffected); **existence** is computable at A = 4 (L1, 8 / 8) but not for A ≥ 5 (the criterion degrades into an empirical approximation). That is, the boundary is **relocated** from A ≥ 4 to A ≥ 5.
+
+### 12.10 Disposal of the Shadow Solution: From "Overlap" to "Distinguishability"
+
+The two pending items raised in 12.1 are settled one by one. All numerical values are independently recomputed by `code/_sre_nucleon_shadow_disposal.py`.
+
+**(1) Variant D is not a shadow solution; it is the deuteron's own configuration.** Constructed as "k bodies sharing the same ring", the n+p common ring (formerly variant D) and the two-body shared ring of Section 12.5 (k=2) yield the same invariants (V=21, E=33, T=5, β₁=13, |Aut|=48, ρ=6.000000, λ₂=2−√3; the deviations of ρ from the integer 6 and of λ₂ from 2−√3 are both at the 10⁻¹⁵ level), with `is_isomorphic = True` and the same shared-ring ledger (1, 2, 2). The name "shadow solution" and the former note "violates principle 2" are therefore withdrawn; the value of retaining D rests on facts rather than on naming — the integer ρ and the body-count-independent λ₂ are genuine anti-probabilistic features (see 12.3 and 12.5).
+
+**(2) The non-spatial restatement of principle 2 has the same discriminating power.** The original statement "closed bodies must not overlap" carries spatial semantics and conflicts with the ontological premise of "no space, no dimension". Restated as a purely ledger-theoretic condition — **the shared ring contains at least one single-claim edge (k=1)** — the verdicts for the three pairings are identical to those of the original statement:
+
+| Pairing | Shared-ring edges | Ledger profile | Single-claim edges (k=1) | Verdict | Measured |
+|---|---|---|---|---|---|
+| n-p | 3 (ring closed) | (1, 2, 2) | 1 | legal | bound |
+| n-n | 2 (ring open) | (2, 2) | 0 | illegal | unbound (virtual) |
+| p-p | 3 (ring closed) | (2, 2, 2) | 0 | illegal | unbound (virtual) |
+
+**(3) The ledger difference between the two sharing modes.** Variant A (the two ends of the neutron's gap identified with the two ends of **one** of the proton's ring edges) has only **one dual-service edge** (that edge closes both rings, yet it appears in the proton's edge set only); the shared-ring configuration has **three** edges claimed by all bodies. The accounting of 12.6 ("each of the three shared-ring edges has its claim count") can therefore describe only the shared-ring configuration; the A-type cannot carry a three-edge profile such as (1, 2, 2). The two routes are not a mutually exclusive structural ambiguity, but a choice under the same body of data: the A-type is quantitatively excluded by the deuteron binding energy (16.3% too high, see 12.2), while the shared-ring type is retained.
+
+### 12.11 Why the A ≥ 4 Boundary Cannot Be Repaired: Two Impossibilities
+
+The boundary of 12.9 was originally based on "two empirical failures". Further checks show that those two failures are not due to insufficient data but can be proven by two impossibilities: **no graph functional can carry the distinction at A = 4, and no additive ledger pricing can repair its sign.** The numbers are independently recomputed by `code/_sre_nucleon_interference.py`.
+
+**(1) Structural impossibility: the A = 4 isotriplet forms a single isomorphism class.** Building ⁴He (2p+2n), ⁴H (1p+3n) and ⁴Li (3p+1n) under the shared-ring rule gives three graphs with identical invariants (V=39, E=63, T=9, β₁=25, |Aut|=2304, ρ=7.909515966, λ₂=2−√3), pairwise isomorphic. Their only difference lies in the ledger: the claim count of the "protons-only" edge on the shared ring is 2 / 1 / 3. **This is the A = 4 extension of the proposition "n-p ≅ p-p" of 12.4**: the product graph does not remember who is dormant, so the binding-energy differences cannot be carried by the graph, nor by any graph functional (ρ, λ₂, T, β₁, |Aut|, the full spectrum).
+
+**(2) Pricing-layer impossibility: the additive-profile pricing class is falsified as a whole.** The pricing law of 12.6 can be written in general form: the i-th edge of the shared ring is priced by its claim count k_i, and the binding energy is the sum over the three edges, i.e. B = ψ(k₁) + ψ(k₂) + ψ(k₃). Since k = (#p, A, A), every nucleus satisfies B(A, #p) = ψ(#p) + 2ψ(A), where ψ is an **arbitrary** function. The three measured nuclei d, ³H and ³He (A ≤ 3, no resonance ambiguity) immediately give an identity:
+
+> ψ(1) − ψ(2) = B(³H) − B(³He) = +0.590645 Δm_np = +0.7639 MeV
+
+Because the profiles of ⁴H and ⁴He differ only in the first edge (1 versus 2),
+
+> B(⁴H) − B(⁴He) = ψ(1) − ψ(2) = **+0.590645 Δm_np** (an identity, independent of the shape of ψ)
+
+Likewise ψ(3) − ψ(2) = +2.419113 Δm_np, giving B(⁴Li) − B(⁴He) = +2.419113 Δm_np. That is: **however one redefines the "interference depth" of a single edge, ⁴H and ⁴Li are forced to be predicted more tightly bound than ⁴He** (22.468780 and 24.297248 Δm_np, i.e. 29.0596 and 31.4244 MeV), whereas both are measured unbound. The sign is locked by the three measured nuclei, independently of the shape of ψ — so this layer cannot be repaired, only overturned.
+
+**(3) A composition-resolved interference depth is likewise insufficient.** Refining "interference depth" to the compositional level, i.e. splitting each edge's claim count into (k_n, k_p), allows one to define the complementary interference C = Σ k_n k_p, the same-type interference S = Σ [C(k_n,2) + C(k_p,2)], the total excess claim count I = Σ (k − 1) and the imbalance a = |n_n − n_p|. Calibrated on the four measured nuclei (d, ³H, ³He, ⁴He), the maximum residual of any linear basis (3 fitted parameters including the constant, only 1 residual degree of freedom) is: (C,S) 10.2%, (C,a) 3.3%, (I,a) 24.6%, (C,I) 10.2%; and extrapolating ⁴H and ⁴Li with the same coefficients, **all signs come out "bound", opposite to measurement**. There is also an independent mismatch in shape: ³H and ³He have the same complementary interference C (both 4), while their same-type interference S is 2 versus 3 and I is 4 versus 5, yet the measured binding energies are 6.558 versus 5.968 Δm_np — **decreasing** with S (or I). If one insists on the qualitative tendency of 12.6 ("the greater the interference, the stronger the binding"), then ³H should be weaker than ³He, contrary to measurement. Hence, if "interference depth" is to carry the pricing, it must be non-additive and non-monotonic, and no derivable form of it exists in the present framework.
+
+**(4) The only feasible repair and its price.** For ⁴H and ⁴Li to be unbound while d, ³H, ³He and ⁴He are unaffected, an additional term T must satisfy T(d) = T(³H) = T(³He) = T(⁴He) = 0 and T(⁴H) = T(⁴Li) ≥ 22.468780 Δm_np (= 29.0596 MeV). The minimal form is a function of the **imbalance** a = |n_n − n_p|: identically zero for a ≤ 1 and sufficiently positive at a = 2 (for example g(a) = λ·max(0, a−1) with λ ≥ 29.0596 MeV). This form needs only 1 free parameter and automatically respects mirror symmetry (⁴H and ⁴Li both have a = 2 and are pushed above threshold together). Its price must be honestly registered:
+
+- λ has no provenance within SRE; it is a **fitted parameter, not a prediction**; this registration will be upgraded in 12.12 to a structural conclusion (λ can neither be derived nor fixed);
+- the form has content only for A = 4. Every A ≥ 5 introduces a new free value ψ(5), ψ(6), … , so the scheme itself has no predictive margin for A ≥ 5, and "restoring computability" cannot be tested there;
+- this item therefore serves only as a **reinforcement of the falsification**: what repair requires is not a better interpolation but a quantity outside the ledger (the imbalance here), and that quantity currently has no falsifiable predictive power. **It should be noted, however, that if that quantity is used only as a binary (existence) requirement, its magnitude is not needed, so λ becomes dispensable and a contentful zero-parameter criterion results — this is the outcome of 12.12.**
+
+**(5) Summary.** A = 4 is the **only** interval in which the scheme possesses genuine zero-parameter out-of-sample character **in the energy layer**: d, ³H and ³He fix ψ(1..3), ⁴He fixes ψ(4), and ⁴H and ⁴Li are true extrapolation points. The boundary falls exactly at the first and only real extrapolation — indicating that its **location** is not accidental and its **nature** is structural (graph-layer indistinguishability + additive-layer identity), rather than a matter of data precision. **What must be distinguished is that this "irreparability" concerns the numerical value of the binding energy; if only existence is asked, that question is not constrained by the additive identity, and 12.12 gives a zero-parameter decision for it, on which the boundary is accordingly revised.**
+
+**Honest registration**: the "single isomorphism class" of (1) refers only to products built under the shared-ring rule; if another assembly rule is used, the conclusion must be re-checked. **(1′) That re-check has now been carried out in this section, and it yields a stronger statement than the measurement itself**: the isomorphism of the three is **not** a coincidence of the assembly rule but is **necessary at the assembly layer** — see below. The identities of (2) falsify the "additive-profile pricing class" only and do not exclude a non-additive pricing; no non-additive form is given here. The imbalance term of (4) is explicitly marked as a fit and must not be used as a prediction.
+
+**(1′) Strengthening and narrowing of the structural-layer conclusion: A does not enter the structure; k does.** Let k denote the **body count** of a shared ring (how many nucleons' rings that ring merges). Using a controlled-variable design, `code/_sre_nucleon_structure_vs_ledger.py` and `code/_sre_nucleon_attachment_sweep.py` measured three comparisons:
+
+- **Same k, change composition (p↔n)** ⇒ the graph is unchanged and the two are isomorphic ((p,p) ~ (p,n) is `True`); the difference lies only in the ledger profile ((2,2,2) versus (2,2,1)). The same holds for the mirror pair ³H ~ ³He (`True`; |Aut| = 288 and ρ = 6.925422918 identical).
+- **Same A, change the distribution of k** ⇒ the graph changes and the two are **non-isomorphic**. Example: at A = 6, k = (3,3) gives V = 60, E = 96, β₁ = 38, ρ = 6.925422918, whereas k = (2,2,2) gives V = 63, E = 99, β₁ = 39, ρ = 6.000000000. **One qualifier must be attached, however**: the current assembly rule uses the group index simultaneously as the ring slot, so **whenever the k distribution contains two or more groups the product graph is invariably a disconnected union of independent components** (`cc` = number of groups, **9/9 measured**; the λ₂ of both examples above is printed as `0.000000000` in the original log, whereas the λ₂ of a connected graph is invariably 2−√3 = 0.267949192, so **λ₂ = 0 is the fingerprint of disconnection**). The "graph changes" in this example is therefore caused **directly by V/E/β₁ adding up over the components of a disconnected union** (the addition law is given in 12.5), **not** by "the k distribution entering a single nucleon structure". **The inter-ring linking mechanism is absent from the assembly rule**, and it is provably **impossible to supply**: connectivity costs at least one inter-ring edge, which necessarily raises E from 96 to 97 and is thus **logically incompatible with the published values above**; more strongly, no mechanism satisfies all four of "degenerates to the current rule for a single group, is connected for multiple groups, does not destroy the λ₂ = 2−√3 of 12.5, introduces no new vertices" (see the unresolved matters of §15 and `code/_sre_nucleon_interring_b2.py`). **This bullet therefore supports only the weak reading "the same A with different k distributions gives different graphs", not the strong reading "the k distribution enters a single nucleon structure"**; by the morphological conclusion of §12.5 (under purely SRE-endogenous conditions the k distribution is invariably single-group), multi-group configurations should not arise in this layer at all.
+- **Same A and same k distribution, change the attachment permutation** ⇒ the graph is **still unchanged**; all six permutations give **a single isomorphism class**. Mechanism: the automorphism group of a **closed** body induces the **full S₃** on the three points of its ring (6 permutations measured; an open body induces only 2). Hence "which point it attaches to" is absorbed by the automorphism, and **the attachment point is not a degree of freedom.**
+
+The isomorphism of §(1) must therefore be **re-read**: ⁴He, ⁴H and ⁴Li at A = 4 share the **same** k distribution (a single ring with k = 4), so their isomorphism is a **direct consequence of the consistency of k**, independent of the attachment point and of the specific value of A. This is stronger than the original statement that "three cases were measured to be isomorphic", and it **no longer depends on whether the assembly rule has been changed**. Conversely, **A itself does not determine the structure**; what determines it is the **distribution of k** (with k ≥ 2 for each group — the "ring" of a k = 1 group has no edge to merge, so an assembly such as k = (5,1) does not exist formally). **What determines the distribution of k** is answered here as follows: **under purely SRE-endogenous conditions the only admissible distribution is the single-group one k = (A,)** (its uniqueness rests on only three anchors at A ≤ 4, of which A = 2 and A = 3 each admit but a single partition and thus have no discriminating power, leaving **exactly one effective discrimination**, so this is a **weak conclusion**); if external priors are admitted (such as the "4" of α-clustering, or an upper bound on k), the distribution is **not uniquely determinable from within SRE** (see the unresolved matters of §15).
+
+**A constitutive condition forced out by this test**: the shared ring **identifies the ring edge (L0r, L1r) of each body as one and the same edge**. Consequently, when both bodies are closed that edge has claim count 2, when one is closed and the other open it has count 1, and **when both are open the edge does not exist**. "Both open" is thus excluded not by an external prohibition but because **the gluing relation fails in the open state** — the same fact as the S₄ measurement of §12.13 (E is smaller than S₁ by exactly 1). Its corollary is that "there is always exactly one k = 1 edge on a shared ring" is equivalent to "**each shared ring carries exactly one open body**", and thus the statement of §12.5 that λ₂ = 2−√3 is independent of the body count acquires an assembly-layer explanation: **that k = 1 edge is a product of open–closed pairing, not a free parameter.**
+
+### 12.12 The Attempt at an Antisymmetric Coefficient: From an Energy Term to an Existence Criterion
+
+Section 12.11(4) registered the only feasible repair of the A ≥ 4 boundary as a "mirror-antisymmetric penalty term outside the ledger", g(a) = λ·max(0, a − 1) with a = |n_n − n_p|, and honestly registered λ as a fitted parameter with no SRE-internal provenance. This section upgrades that registration to a quantitative test; all numerical values are independently recomputed by `code/_sre_nucleon_asymmetry.py`. **The conclusion is that λ can neither be derived from nor fixed by SRE; but the very process of this negative result yields a contentful positive outcome — once the antisymmetry is demoted from an energy term to an existence criterion, the existence question at A = 4 becomes decidable in this layer with zero parameters.**
+
+**(1) The nature of the threshold.** Requiring ⁴H to be unbound requires the penalty to satisfy g(2) ≥ B_ledger(⁴H) = ψ(1) + 2ψ(4) = 22.468780 Δm_np = 29.0596 MeV. Set against the binding energies of the four measured nuclei:
+
+| Quantity | Δm_np | MeV | Relation to threshold |
+|---|---|---|---|
+| B(deuteron) | 1.720027 | 2.2246 | 20.7488 Δm below |
+| B(³H) | 6.558252 | 8.4820 | 15.9105 Δm below |
+| B(³He) | 5.967608 | 7.7181 | 16.5012 Δm below |
+| B(⁴He) | 21.878135 | 28.2957 | **0.590645 Δm below** |
+| **λ threshold = B_ledger(⁴H)** | **22.468780** | **29.0596** | — |
+
+That is, the required penalty **exceeds the binding energy of the α particle itself**. In other words, the "asymmetry cost" for |n_n − n_p| = 2 must be larger than the entire binding energy of ⁴He.
+
+The only ready-made asymmetry mechanism in nuclear physics is the liquid-drop asymmetry energy E_asym = a_sym (N − Z)²/A (a_sym ≈ 22–24 MeV). At A = 4 with |N − Z| = 2 it gives E_asym = a_sym ≤ 24 MeV < 29.06 MeV (still 5.06 MeV, i.e. 17.4%, short even at the upper bound); and at A = 3 it gives a non-zero E_asym(³H) ≈ 7.7 MeV, whereas ³H has already been used for calibration and its ledger term must carry zero penalty. **Hence this ready-made "asymmetry energy" mechanism fails on two counts.**
+
+**(2) λ cannot be derived from SRE.** SRE has only two classes of input available at A = 4:
+
+- **Graph invariants** (ρ, λ₂, T, β₁, |Aut|, the full spectrum): by 12.11(1), the three A = 4 compositions form a single isomorphism class, so all of these take the **same constant** on ⁴He/⁴H/⁴Li. A constant penalty would fall equally on the calibrated ⁴He, so that the four calibration equations would no longer be satisfied by ψ(1..4) — **the calibration itself would be destroyed**. Graph invariants therefore cannot serve as λ.
+- **Ledger functions** (functions of A and #p): any SRE-internal quantity X is a function of (A, #p), so X(a) is of the **same kind** as g(a); "writing λ as an SRE-internal quantity" produces only a renaming, not a new constraint.
+
+Inspection of 16 "natural candidates" (ρ₄, T₄, β₁, |Aut|^(1/3), √(V+1), ρ₄−ρ₂, ψ(4)−ψ(2), B(⁴He), 2B(⁴He), B(⁴He) + B(deuteron), E − V, 1/λ₂ and others): 11 fall below the threshold and 5 above. The threshold (22.4688 Δm_np) falls precisely in the gap between 21.8781 Δm_np (= B(⁴He)) and 23.5982 Δm_np (= B(⁴He) + B(deuteron)) — **the threshold is "satisfied", not "pinned down".**
+
+Formally: the unknown set {ψ(1..4), λ} against 4 equations leaves λ with 1 free parameter; at A = 4 there is therefore **zero testing margin**; at A ≥ 5 every new body number brings in a new free value ψ(A), so the parameter count grows at the same order as the data count and there is **no out-of-sample falsification**. **λ is not a derivable coefficient but an absorbable degree of freedom.**
+
+**(3) Yet SRE does fix the "shape" of λ.** Since the first class is excluded by (2), λ must be composition-dependent and must vanish on the calibration set {a ≤ 1}. Hence what SRE determines is precisely the **shape** of λ — its support (zero for a ≤ 1) and its monotonicity (λ > 0 monotonically lowers the binding energy) — while its **magnitude** is not determined. But the requirement at A = 4 is **binary (existence)**: as long as λ > 0 and acts at a = 2, ⁴H and ⁴Li are pushed above threshold regardless of how large λ is (provided λ ≥ threshold). **Hence the coefficient λ is dispensable for that binary requirement**; it is needed only when a numerical binding energy is required, and at A = 4 no testable number can be produced (see (2)).
+
+**(4) Demotion to an existence criterion: the zero-parameter antisymmetry criterion.** Writing antisymmetry directly as a **legality criterion** rather than an **energy penalty**:
+
+> **Criterion L1 (antisymmetry criterion)**: a shared-ring assembly is legal (predicted bound) ⟺ |n_n − n_p| ≤ 1.
+
+It has zero parameters and is naturally n↔p symmetric. On the 8-entry scorecard of 12.8:
+
+| Nucleus | A | a = \|n_n − n_p\| | Measured | L1 | Reading A |
+|---|---|---|---|---|---|
+| n-p | 2 | 0 | bound | bound √ | bound √ |
+| n-n | 2 | 2 | unbound | unbound √ | unbound √ |
+| p-p | 2 | 2 | unbound | unbound √ | unbound √ |
+| ³H | 3 | 1 | bound | bound √ | bound √ |
+| ³He | 3 | 1 | bound | bound √ | bound √ |
+| ⁴He | 4 | 0 | bound | bound √ | bound √ |
+| ⁴H | 4 | 2 | unbound | unbound √ | unbound √ |
+| ⁴Li | 4 | 2 | unbound | unbound √ | **bound ×** |
+
+**L1 matches 8 / 8; Reading A matches 7 / 8.** Over A ≤ 4, L1 is equivalent to "bound ⟺ |N − Z| takes its minimum at that A" (0 at A = 2, 1 at A = 3, 0 at A = 4). The only mismatch of Reading A (⁴Li) arises precisely because its added clause "g ≤ 2" caps the neutron count but not the proton count; L1 is naturally mirror-symmetric and makes no such distinction.
+
+**(5) The limits of L1: not a fundamental law but a classification rule for the light region.** Using the measured ground-state existence for A ≥ 5 as an out-of-sample set (26 entries, taken from whether each nucleus has a bound ground state; ⁸Be is recorded as unbound, see the honest registration):
+
+| Interval | Entries | L1 hits | Reading A hits |
+|---|---|---|---|
+| A ≤ 4 (scorecard) | 8 | **8 / 8** | 7 / 8 |
+| A = 5 (α + 1 region) | 3 | 1 / 3 | 2 / 3 |
+| A = 6–9 | 11 | 8 / 11 | 4 / 11 |
+| A = 10–14 | 12 | 5 / 12 | 1 / 12 |
+| **Total** | **34** | **22 / 34** | 14 / 34 |
+
+L1 is clearly superior to Reading A (22/34 against 14/34), but both classes of mismatch show that it is not a fundamental law:
+
+- **The A = 5 mismatches are closure effects, not asymmetry effects.** ⁵He and ⁵Li both have a = 1 (the minimum at that A); L1 predicts binding while both are measured unbound. No nucleus is bound at A = 5, so **any criterion depending on composition (A, Z) alone must mismatch at A = 5**; this is homologous to criterion ⑤ of 12.11 (partial rebalancing of closure degree) — the special closure of the α unit is not representable by a composition criterion.
+- **Systematically too strict for A ≥ 8.** The |N − Z| ceiling allowed by measured bound nuclei rises with A (per-A ceilings in this sample: A = 6 → 2, 7 → 1, 8 → 4, 9 → 1, 10 → 2, 11 → 5, 12 → 4, 14 → 6). The fixed threshold |N − Z| ≤ 1 judges the neutron-halo/drip-line nuclei ⁸He, ¹¹Li, ¹²Be and ¹⁴Be unbound, whereas all are measured bound — an inevitable consequence of the liquid-drop (N − Z)²/A picture, since **L1 lacks the A scaling**.
+
+The scaled form (N − Z)²/A ≤ c was also checked: the A = 4 side requires c < 1 (the (N − Z)²/A of ⁴H and ⁴Li equals 1 and must be judged illegal), while the drip-line side requires c ≥ 2.571; **the two constraints are incompatible**. Scanning c ∈ {0.25, 0.5, 0.8, 1, 2, 2.5, 3} gives a best total of 22/34, on a par with L1. The A = 4 side must therefore be carried by the **closure effect**, not by an asymmetry scaling.
+
+**(6) Summary and revision of the boundary.** The net results of this section are:
+
+- **Negative**: the antisymmetric coefficient λ can neither be derived from nor fixed by SRE; it is merely an absorbable degree of freedom. The registration "λ is a fit" of 12.11(4) is thereby upgraded to a structural conclusion.
+- **Positive**: the only contentful form of antisymmetry is the **existence criterion L1** (zero-parameter, mirror-symmetric), which matches the 12.8 scorecard at 8 / 8; hence **the "existence" question at A = 4 is decidable in this layer more precisely than the original registration allowed**.
+- **Revision of the boundary**: the original statement of 12.9, "**the nuclear boundness for A ≥ 4 (both existence and the numerical value of the binding energy) is not computable in this layer**", must be split:
+  - **Numerical value of the binding energy**: not computable for A ≥ 4 (the identity of 12.11(2) is unaffected by this section);
+  - **Existence**: computable at A = 4 via L1 with zero parameters (8 / 8); not computable for A ≥ 5 (the criterion degrades to an empirical approximation).
+
+  The boundary is thus **relocated** from A ≥ 4 to A ≥ 5, and its nature is **relocation rather than removal**.
+
+**Honest registration**: (i) L1 and Reading A are both post-hoc readings, and the superiority of L1 consists only in "more hits with fewer clauses" (zero parameters, a single clause, mirror symmetry); (ii) in the A ≥ 5 out-of-sample set, "bound/unbound" is taken as ground-state existence, and ⁸Be is recorded as unbound because it is α-unstable (only 0.092 MeV), so changing that convention would affect 1 entry; (iii) the exactness of L1 over A ≤ 4 is consistent with the known fact that the light-nucleus region is dominated by α closure, and it cannot be claimed on that basis that L1 is a fundamental law; (iv) this section revises only the **existence** boundary; the impossibility proof of 12.11(2) regarding the numerical binding energy is unaffected.
+
+### 12.13 Does the Nucleon–Nucleon Force Require the Electronic State? — Configuration-Level Localization of the Open Band
+
+**Question.** A natural objection is whether considering the "nucleon–nucleon force" alone is incomplete, and whether the electronic state must be considered as well. This section rewrites that objection as a **configuration problem decidable within this layer**; all numbers are independently recomputed by `code/_sre_nucleon_electron_coupling.py`.
+
+**Semantic delimitation.** SRE contains no "atomic electron cloud" object — the electrons of the mesoscopic layer are reassembled by the electron proper (the Q₃ coherent core) at a higher scale, and their effect does not enter nucleon assembly. Within **this layer**, the only decidable meaning of "electronic state participation" is the **open band**: the neutron state = opening one ring edge (Section 9.4), and that unclosed edge is exactly the "segment awaiting settlement" of the β-decay reading. The question to answer is therefore:
+
+> Does the meeting of the **open bands of two nucleons** in the shared region yield a new structure beyond the shared-ring family?
+
+**(1) Preliminary measurement: the three rings are equivalent, so "the gap lies in ring 0" is a notation, not a fact.** A previous statement had gone unchecked, namely that "the neutron gap can only lie in ring 0, otherwise an isolated vertex is left behind". Measurement refutes that statement: the automorphism group of the closed-state skeleton has order 36, and the corresponding ring edges `(L0j, L1j)` (j = 0,1,2) on the three rings **lie in a single orbit**; opening each ring individually gives V = 12, E = 17, T = 2, β₁ = 6, ρ = 5.302775638, λ₂ = 1.000000000, **all identical**, and none of the three rings produces an isolated vertex. Hence "the gap lies in ring 0" is a **choice of representative** within an equivalence class, not a distinguishable fact. This section accordingly makes all such choices explicit and re-runs them one by one (see (2)), confirming that no conclusion depends on the representative.
+
+**(2) Four two-body constructions, re-run for r = 0, 1, 2.** Let S1 = variant A (the two ends of the open-state gap identified with the two ends of one complete ring edge of the closed state, Section 12.1); S2 = open-band attachment (the two points of strands 0 and 1 on ring r of the open body identified with the same two points on ring r of the closed body, all other vertices retained); S3 = shared ring (the three vertices of ring r of the two bodies merged, i.e. the k = 2 member of Section 12.5); S4 = open-to-open (two gaps mated at the same position). The results are:
+
+| Construction | V | E | T | β₁ | ρ | λ₂ | \|Aut\| |
+|---|---|---|---|---|---|---|---|
+| **S1 = variant A** | 22 | 35 | 6 | 14 | 6.681330644 | 0.238442818 | 16 |
+| **S2 = open-band attachment** | 22 | 35 | 6 | 14 | 6.681330644 | 0.238442818 | 16 |
+| S3 = shared ring (k=2, deuteron) | 21 | 33 | 5 | 13 | **6.000000000** | **2−√3** | 48 |
+| S4 = open-to-open | 22 | 34 | 4 | 13 | 6.236067977 | 0.238442818 | 16 |
+
+All three values of r give a **digit-for-digit identical** table, and S1 ≅ S2 holds for every r.
+
+**(3) Verdict: S2 ≅ S1 — open-band attachment is not a new configuration.** Measurement shows S1 and S2 to be **isomorphic** (all invariants equal term by term, |Aut| = 16 for both). The mechanism: ring r of the open body retains only two edges `(L0r, L2r)` and `(L1r, L2r)`; once `L0r` and `L1r` are identified with the same two points of the closed body, the closed body's ring edge `(L0r, L1r)` closes the gap, while the open body's reverse path simultaneously serves as a second path, so a **new ring forms automatically** with exactly the same β₁ increment as variant A. Having established S2 ≅ S1, the open-band attachment reading is doubly excluded by existing results: at the **structural layer** it is variant A rather than a new configuration; at the **pricing layer** variant A has already been quantitatively excluded by the deuteron binding energy (Section 12.2: were A to hold, B_d would be 2Δm_np = 2.5867 MeV, whereas the measured value is 2.2246 MeV, 16.3% higher).
+
+**(4) Positive result: the open band is already contained in the assembly law, appearing as the "shape of the gap" rather than as an "extra energy term".** The decisive diagnostic lies in the S3 ledger. The claim counts of the three edges of the two-body shared ring are
+
+```
+(S0,S1) k=1 ;  (S0,S2) k=2 ;  (S1,S2) k=2        profile = (1,2,2)
+```
+
+where the edge with k = 1 is **precisely the locus of the open band**: all three edges of ring r of the closed body are present (each +1), the open body retains only two edges (claiming only the latter two), and the gap is closed by a complete edge of the closed body, so `(S0,S1)` is claimed by the closed body alone. Three correspondences follow:
+
+- the **presence or absence** of the gap decides whether n-p can assemble (principle 1);
+- the **position** of the gap decides that n-n is excluded automatically (the identity requirement of principle 1; measured S4 has E = 34, exactly 1 less than S1 — the ring edge that can never be closed);
+- the **k = 1 singly-claimed edge** left after the gap is closed decides that the images of the two bodies are distinguishable (principle 2).
+
+That is, the "electronic component" of the nucleon–nucleon force is **already contained in the assembly law**; it does not appear as an additive correction but as the **shape of the gap**. This also explains a fact that previously had only a phenomenological description: **the shared ring always has exactly one k = 1 edge** (the image of the open band), and this is precisely the structural origin of the statement in Section 12.5 that "the three points of the shared ring have strictly zero amplitude in the lowest excitation mode, so λ₂ = 2−√3 is independent of the body count" — among the three points participating in the identification, exactly one has a connection strength differing from the other two.
+
+**(5) The three A = 4 compositions remain a single isomorphism class.** After the open band is included, the graphs of ⁴He (2s+2s, fully closed), ⁴H (1s+3s) and ⁴Li (3s+1s) are still **pairwise isomorphic** (V = 39, E = 63, T = 9, β₁ = 25, ρ = 7.909515966, λ₂ = 2−√3, |Aut| = 2304, all identical), differing only in the ledger: the shared-ring profiles are (2,4,4), (1,4,4) and (3,4,4) respectively. The conclusion of 12.11(1) is therefore unaffected by this section — **the open band produces no graph-level difference whatever in the shared-ring construction**; it changes only the ledger, and the ledger has already been falsified as a whole by the identity of 12.11(2).
+
+**(6) Conclusion and boundary.** (a) Open-band attachment **does not constitute** the "third kind of SRE input" sought in 12.12, so the non-computability for A ≥ 4 is **not repaired** by this route; (b) it does, however, give a **new formulation of the source of failure**: the additive-profile pricing B = ψ(#p) + 2ψ(A) is falsified as a whole because it compresses the **shape** information of the open band into the count #p — the same conclusion as the identity of 12.11(2), from a different vantage point; (c) this section also **corrects a previously erroneous statement** ("the gap can only lie in ring 0") and shows that the correction leaves every existing conclusion intact.
+
+**Honest registration**: (i) the conclusion of item (1) regarding the single orbit of the three rings applies only to the automorphism group of the **closed-state** skeleton; (ii) the "open band" is an extension of the β-decay reading of this paper (Section 5), and its ontological status is a model-internal construction not independently tested; (iii) all conclusions of this section are internal self-consistency constructions of SRE and do not constitute a derivation of the real nucleon–nucleon force.
+
+### 12.14 Can the Neutrino Be Read as the k = 1 Singly-Claimed Edge? — Criterion Construction and Negative Verdict
+
+**Origin.** The "downward extension" screening of Section 12.8 registered "neutrino = the k = 1 singly-claimed edge on the shared ring (Section 12.13(4))" as the easiest entry to register, with the first criterion: the ratio $\Delta m^2_{21}/\Delta m^2_{31}\approx 0.0307$ must be a **zero-parameter** function of some invariant of that edge. This section turns that criterion into an executable form and executes it; all numbers are independently recomputed by `code/_sre_neutrino_k1.py`.
+
+**(1) Gates and the spectroscopic requirement.** The target is $R=\Delta m^2_{21}/\Delta m^2_{31}=0.030697$ (PDG 2024 global fit, relative uncertainty ±3.2%, so the window is taken as $\varepsilon=3\%$, tying the window to the precision used as per G4). Of the three gates, C1 (dimensionless) and C2 (no dependence on renormalization scheme or scale) pass; **C3 is the only gate** (there is only one independent dimensionless target). A more substantive constraint comes from spectroscopy: neutrino oscillations require **3 non-degenerate mass eigenstates ⇒ 2 independent non-zero gaps**; any candidate structure must supply them.
+
+**(2) The ledger route: the claim triple always has 2 distinct values.** The shared-ring claim triples of six assemblies are computed directly (the ring edges are (S0,S1), (S1,S2), (S2,S0)):
+
+| Assembly | Claim triple | #closed | Distinct values | Independent gaps |
+|---|---|---|---|---|
+| Two-body 1p+1n (= variant D / deuteron) | (1, 2, 2) | 1 | 2 | 1 |
+| Four-body 2p+2n (⁴He) | (2, 4, 4) | 2 | 2 | 1 |
+| Four-body 1p+3n (⁴H) | (1, 4, 4) | 1 | 2 | 1 |
+| Four-body 3p+1n (⁴Li) | (3, 4, 4) | 3 | 2 | 1 |
+| Three-body 2p+1n | (2, 3, 3) | 2 | 2 | 1 |
+| Three-body 1p+2n | (1, 3, 3) | 1 | 2 | 1 |
+
+⇒ the claim triple is **always of the form (#closed, k, k)** (k = body count), with **always 2 distinct values** ⇒ at most 1 degree of freedom. Note that this is exactly the ledger profile (#p, A, A) of Section 12.11 — **the claim numbers are the ledger** — so the failure of this route is **of the same origin** as the failure of the A ≥ 4 pricing layer.
+
+**(3) The graph route: all three-generation candidates are degenerate.** Both natural "three-generation" readings are blocked by symmetry:
+
+- **Three-ring reading** (taking the skeleton's three rings r = 0,1,2 as the three generations): exhaustive pairwise verification (`nx.is_isomorphic`) shows that the assemblies with the open state on any ring are **pairwise isomorphic** (true for both the two-body and the four-body case, 3/3 pairs all True), with invariants identical item by item (two-body: V21 E33 T5 β₁13 ρ=6.000000000 λ₂=2−√3) ⇒ the three generations are **strictly degenerate** ⇒ Δm² = 0.
+- **Three-ring-point reading** (taking the local structure on the three shared-ring vertices {S0,S1,S2} as the three generations): the eigenvalues of two classes of 3×3 operators — the response sub-block $G_3=(L^{+})[S_0,S_1,S_2]$ and the Kron reduction $L_{\rm eff}=L_{rr}-L_{ro}L_{oo}^{-1}L_{or}$ — **always have only 2 distinct values** (multiplicity pattern 2+1), for all six assemblies (two-body: [0.238095238, 0.238095238, 0.448979592] and [0, 4.2, 4.2]) ⇒ the spectrum degenerates to **two levels**, and **one of the two Δm² is identically zero**. This is not a "shortage of gaps" but an **extinction**.
+
+**(4) Mechanism (the key structural result of this round): the graph cannot distinguish the k = 1 edge.** The **number of orbits of the automorphism group on the three ring points is measured to be 1** (for the two-body case with |Aut| = 48 the image distribution of S0 over S0:S1:S2 is 16:16:16; for the four-body case with |Aut| = 2304 it is 768:768:768) ⇒ the graph is **vertex-transitive** on the three ring points. Mechanism: the assembly graph is the **union** of the bodies' edge sets, and it does not record **claim multiplicity** (the same origin as "the product graph does not remember the partner state" in Section 12.4). ⇒ **the k = 1 edge exists only in the ledger, not in the graph.** Correspondingly, any ring-invariant symmetric 3×3 operator must be of the form $a\cdot I+b\cdot J$ ⇒ its spectrum is always 2+1 degenerate.
+
+This item also **corrects a presupposition of the first draft of this section** (which assumed that the two ends S0, S1 of the k = 1 edge formed an orbit of their own with S2 separate, i.e. 2 orbits); the measurement gives 1 orbit, and after correcting this and re-running, the **direction of the negative verdict is unchanged but stronger** (from "2 orbits" to "vertex-transitivity").
+
+**(5) The zero-parameter candidate pool: no effective hit.** Sixteen classes of zero-parameter readings (spectral ratios, ledger ratios, effective-resistance ratios, gap ratios and Δm²-type ratios of the 3×3 operators) are constructed on the six assemblies, giving **96 numbers** in total, each compared with R:
+
+| Check | Result |
+|---|---|
+| Hits at $\varepsilon=3\%$ | **1**: `1/E = 1/33 = 0.030303` (deviation 1.28%, E being the edge count of the deuteron assembly) |
+| Hits at $\varepsilon=1\%$ | **0** |
+| MC null hypothesis A (randomized target, 2×10⁴ draws) | probability that a random target is hit by any candidate, $p_A$ = **0.166** ⇒ expected hits 0.17 (observed 1) |
+| MC null hypothesis B (200 random graphs with the same degree sequence) | hit rate of random graphs **0.385** ＞ 0.010 for the SRE assemblies |
+
+⇒ the sole hit has no mechanistic connection with neutrinos, and the hit rate of the SRE assemblies is **lower** than that of random graphs ⇒ **no structural signal** (a direct application of the lesson of Section 12.8: cross-hits must first pass a whole-set hit-rate check).
+
+**(6) Conclusion and boundary.** **④ is judged negative (the criterion has been constructed and executed).** The k = 1 singly-claimed edge is indistinguishable at the **graph** level (vertex-transitivity ⇒ degeneracy) and has only 1 degree of freedom at the **ledger** level (always 2 values); this matches neither the **symmetry** nor the **count** required by the neutrino's "2 independent non-zero gaps + 3 non-degenerate states", and of the 96 zero-parameter candidates none is an effective hit. The two natural routes each strike one **already-established barrier** of this project: the graph route strikes the vertex-transitivity of Sections 12.4/12.13, and the ledger route strikes the identity of Section 12.11(2) — this is the cleanest conclusion of this section.
+
+**Honest registration**: (i) the negative verdict is **conditional**: it holds under the reading "k = 1 edge = the neutrino proper" together with "the three ring points (or their Kron reduction) are the mass operator"; other readings (weighted spokes, a non-additive ledger) would violate C3 (free parameters ≥ number of targets) and hence be unfalsifiable, and must not be used to press ahead (the same treatment as Section 12.9 gives CKM). (ii) The negative verdict **does not depend** on any numerical coincidence: the blocking comes from **isomorphism/orbit determinations** and is therefore **distribution-free**, holding even if the window is made arbitrarily wide. (iii) The repair required by ④ is a **zero-parameter rule that breaks the vertex-transitivity of the ring points**, which must simultaneously supply "the third non-degenerate level" and "the ratio of the two gaps = 0.0307"; this is **the same single missing piece** as ① "generation → (n,w)" and ② "discrete class → continuous angle" (SRE lacks the assignment rule "**integer invariant → real measured value**" = the L4 lock of Section 3) ⇒ the three pending tasks merge into **four**.
+
+---
+
+### 12.15 The Mass-Depth Assignment Rule (L4): Criterion Construction and Negative Verdict - Turning the Merge of the Four Downward Branches into a Single Test
+
+**Origin.** The downward screening of Section 12.8, the four negative verdicts of Sections 12.9-12.14, and the species-dimension gap exposed in 13.3 all point repeatedly to one and the same missing piece: SRE lacks an assignment rule from "integer invariant -> real measured value". Its formal position in the project is the **L4 mass-depth equation** of Section 7.1, $m_p/m_e = \Psi(G_N)/\Psi(G_e)$ - in which $\Psi$ has never been defined; Section 3 further requires it to satisfy **homogeneity** (the two layers share one and the same $\Psi$, i.e. "two graphs share one lock"). This section turns L4 into a **pre-registered, falsifiable** test and executes it; all numbers are independently recomputed by `code/_sre_l4_assignment.py`.
+
+**(1) Pre-registered criterion (fixed before any number is produced; no adding items, changing the window or swapping targets afterwards).** (i) The set of primitive invariants (layer-agnostic, ten): $V, E, T, \beta_1, |\mathrm{Aut}|, \rho_A$ (adjacency spectral radius), $\lambda_2(L)$, $\rho_L$ (largest Laplacian eigenvalue, i.e. the project's usual $\rho$), $\tau$ (number of spanning trees), $\mathrm{En}$ (graph energy). (ii) The functional class $\Psi$: monomials $\prod_i p_i^{a_i}$ with exponents $|a_i| \leq A$ and support $\leq 3$; main analysis $A = 2$, robustness scan $A = 1, 2, 3$. (iii) Both electron-layer representatives are admitted: configuration A takes $G_e = Q_3$ (the electron basal body, P2), configuration B takes $G_e = M_{60}$ (the $\alpha$ carrier). (iv) Three targets: $T_1$ (the design target, i.e. L4 itself) $m_p/m_e = 1836.15267343$; $T_2$ (out-of-sample) $m_d/m_p = 1.999007745$; $T_3$ (out-of-sample) $m_n/m_p = 1.0013784193$. (v) Decision tolerance $\varepsilon = 1\%$ - **deliberately wider than the precision the framework has already demonstrated (0.165% on the nucleon layer)**, so that the negative verdict cannot be blamed on the window. (vi) Success condition: there exists **one** $\Psi$ with zero free parameters that brings **all three** targets within $\varepsilon$. (vii) Null hypothesis: replace each of the four graphs by a uniform connected random graph with the same $(V, E)$.
+
+**(2) Graphs and invariants: the construction passes all 12 cross-checks.** The four graphs are built under the project's existing conventions ($\mathrm{Y_3}$ closed/open states, the two-body shared-ring k = 2 deuteron assembly, and the electron graph). All cross-checks agree: $\rho_L(\mathrm{Y_3}) = (7+\sqrt{13})/2 = 5.302775638$; after opening one ring edge, $\lambda_2$ and $\rho_L$ are **completely unchanged**; the deuteron assembly has $\lambda_2 = 2-\sqrt3$, $\rho_L = 6$ and $|\mathrm{Aut}| = 48$. Hence the negative verdict of this section comes from the test itself, not from a construction or convention error.
+
+**(3) The decisive check: the reach bound (distribution-free).** For any $\Psi$ we have $\Psi(G_N)/\Psi(G_e) = \exp(\sum_i a_i \log r_i)$ with $r_i = p_i(G_N)/p_i(G_e)$, so the largest ratio attainable within the pool has the **closed-form upper bound** $\exp(A \sum_{i} |\log r_i|)$ taken over the largest terms. Measured:
+
+| Config | $A$ | reach (support <= 3) | reach (**full support**) | < 1836.15 ? |
+|---|---|---|---|---|
+| A ($G_e = Q_3$) | 1 | 4.80 | 22.61 | yes (excluded) |
+| A | 2 | 23.07 | **511.06** | **yes (excluded)** |
+| A | 3 | 110.78 | 1.155x10^4 | no |
+| B ($G_e = M_{60}$) | 2 | 3.272x10^5 | 3.749x10^9 | no |
+
+With the **electron basal body $Q_3$** as $G_e$, the **full-support** bound for $|a| \leq 2$ is only **511.06**, i.e. **short of the target 1836.15 by 0.555 orders of magnitude** (23.07 for support <= 3, short by 1.90 orders) => **no** $\Psi$ in the pool can produce $m_p/m_e$. This conclusion is **independent of the distribution and of the support size** (hence immune to the objection that the support limit was taken too small) and needs no Monte Carlo. Only by relaxing the exponent range to $|a| \leq 3$ does the ceiling (1.155x10^4) clear the target.
+
+**(4) The direct refutation of "sharing one lock".** Configuration B's reach is unconstrained, so it enters the full-pool test:
+
+| $A$ | pool size | $T_1$ hits (1%) | $T_2$ hits (1%) | $T_3$ hits (1%) | **joint hits (1%)** | joint hits (3%) |
+|---|---|---|---|---|---|---|
+| 1 | 576 | 0 | 7 | 46 | **0** | 0 |
+| 2 | 4064 | 1 | 18 | 191 | **0** | 0 |
+| 3 | 13152 | 4 | 36 | 494 | **0** | 0 |
+
+More substantive still: **the best $\Psi$ differs from target to target** - $T_1$ is attained by `lam2L^2 rhoL^2 energy^-1` (deviation 0.1775%), $T_2$ by `E^1 b1^2 energy^-2` (0.0884%), and $T_3$ by `E^-2 rhoA^2 energy^1` (0.0015%). => **There is no single lock governing all three**, which is precisely the **direct negative form** of the L4 requirement that "two graphs share one lock". Moreover **the joint hit is 0 for $A = 1, 2, 3$ and for both the 1% and the 3% window** => the negative does not stem from a narrow exponent range.
+
+**(5) The performance of the project's only calibrated functional, Pi1.** $\Pi_1 = \lambda_2/\rho_L$ is itself in the pool (exponent vector (1, -1)). Its prediction for $m_p/m_e$ is **0.5657** (configuration A) and **25.84** (configuration B), deviating from 1836.15 by 99.97% and 98.59% respectively, **both short by 1.85 orders of magnitude**. Note that in configuration B this ratio equals exactly $\Pi_1(\mathrm{Y_3})/\alpha$ - the quotient of the two members of the project's most successful cross-layer chain (see unresolved item 8 of Section 16). => **The project's best lock, used in its native form, still falls short of the target by 1.85 orders of magnitude.**
+
+**(6) Null hypothesis and positive residue.** The MC null (407 valid trials, uniform connected random graphs with the same $(V, E)$): hits per trial by target are $T_1$ 0.40, $T_2$ 21.46, $T_3$ 94.91, and joint 0/407 => the single-target hit count of the real configuration is **of the same order as for random graphs**, i.e. no above-null signal (the slightly high $T_3$ is explained by the fact that a real graph pair (closed/open states) is more similar than a random pair, so $\Psi$ ratios sit closer to 1; and $T_3$ is itself a **weak target** - any $\Psi$ nearly invariant across the open/closed transition gives exactly 1, and 1 already lies within 0.14%).
+
+**Positive residue (control).** The same $\Pi_1$ machinery holds on the **difference ratio of two states within a layer** - $\alpha \cdot \Pi_1(\mathrm{Y_3}) = 1.376158\times10^{-3}$ against the measured $(m_n - m_p)/m_p = 1.378419\times10^{-3}$, a deviation of **-0.164%** (with $\alpha = \Pi_1(M_{60})$ deviating from the measured $\alpha$ by $1.45\times10^{-5}$). => **the cross-layer lock governs the difference within a layer, but not the overall scale of a layer** - this is the concrete form of "SRE fixes the shape, not the value" for **inter-layer mass ratios**, and it explains why both $\lambda$ in 12.12 and w(k) in 12.11 fix only the "shape".
+
+**(7) Verdict and three independent grounds.** **L4 is judged negative (the criterion has been built and executed)**:
+
+- **(i) reach bound (configuration A, $|a| \leq 2$, distribution-free)**: the full-support bound 511.06 < 1836.15 => no $\Psi$ in the pool can work;
+- **(ii) no single lock**: the best $\Psi$ differs from target to target, and the joint hit is 0 for $|a| \in \{1, 2, 3\}$ and for both the 1% and the 3% windows;
+- **(iii) hidden degree of freedom**: the electron-layer representative (basal body $Q_3$ vs carrier $M_{60}$) is not fixed by the framework, and the reach verdict **flips** between the two configurations (A excluded, B not) => "which graph represents the electron" is itself a free parameter => **even if a hit appeared, it would be neither zero-parameter nor falsifiable (C3 violated)**.
+
+**(8) Boundaries.** (a) **Class scope**: the monomial class is only the general class of "integer powers of products of standard invariants"; it excludes additive, trigonometric and combinatorial $\Psi$. The negative verdict is confined to this class. (b) **Exponent range**: the $|a| \leq 2$ reach exclusion is hard; for $|a| = 3$ the ceiling clears the target, and there the verdict rests only on (ii) and (iii) (listed separately). (c) **The $|\mathrm{Aut}|$ gap**: for $V > 22$ it is not computable under the same rule, so configuration B's pool excludes $|\mathrm{Aut}|$. (d) **Nature of the out-of-sample targets**: $T_2$ and $T_3$ use only nucleon-layer graphs, so their layer-crossing mechanism differs from that of $T_1$ and they are independent measurements; but $T_3$ ($m_n/m_p$) is a weak target and should carry less weight than $T_1$ and $T_2$. (e) **Net contribution of this negative verdict**: it turns the merge of the "four downward branches" (the lemmas numbered (1), (2) and (4) plus the species dimension of $p_{\rm env}$) into a **single executed test**, and shows that the missing piece **cannot be supplied by switching to a larger zero-parameter pool** - what is missing is three mutually independent locks. (f) **The dual scope of the reach bound (added in v2.0; two independent corrections)**: the reach bound on which route (i) rests is **related both to the pool size and to the representative**, and therefore **cannot be promoted to a law**. First, the **pool-size correction** (`code/_sre_l4_pool_extend.py`): expanding the original invariants from 10 to 29 raises the full-support reach from 511.06 to 8.65×10⁶, i.e. the validity of (i) **depends on how the pool is truncated**; moreover the survival reading for support ≤ 3 (91.209%) agrees digit for digit with the grid measurement (95.0326%), and the 5% quantiles of the MC null are 0.1995% / 0.1822% (both below the multiple-comparison level of the random graphs). Second, the **representative correction** (`code/_sre_collapse_in_nucleon.py`): taking the electron representative along the folding tower ($K_4 / Q_3 / Q_4 / Q_5 / M_{60}$, with the pool defined term by term as in this section), only **$Q_3$ is blocked by reach (511.1)**, while the reach of the remaining configurations is 3.8×10⁵–3.7×10⁹ ($\gg 1836.15$) ⇒ **$Q_3$ is precisely the worst point in this family**. The correct statement of route (i) is therefore "**for the representative $Q_3$, within $|a| \leq 2$**, blocked by reach", **not a universal law**; this **does not affect the negative verdict of this section**, because even if the reach obstacle is removed entirely (switching to the unfolded $K_4/Q_4/Q_5/M_{60}$), **the joint hit is still 0 and the best same-lock deviation is still ≥ 19.84%**, so the negative verdict is independently carried by routes (ii) and (iii). A further set of exact laws on the folding tower is registered here as well (for reference in Section 14): $|\mathrm{Aut}(Q_k)| = 2^k \cdot k!$, the number of distinct Laplacian values is always $k+1$ (which, against the $\approx V$ of random graphs, is "log V level"), $\Pi_1(Q_k) = 1/k$ exactly, and both operators $\mathrm{D}$ and BDC **preserve vertex-transitivity** (0 counterexamples over a battery of 21 graphs) ⇒ **the number of Aut orbits of a tower member is always 1**.
+
+---
+
+## 13. Theoretical Constraints
+
+### 13.1 Special Binding of Ions/Metals: Theoretically Predictable
+
+The additivity law fails for ion/metal pairs (alkali metal/alkaline earth halides) with a deviation of −12.3% ± 7.6% in the test. **This failure is not an empirical accident, but a theoretical necessity that can be predetermined by the binding mode**:
+
+- **Covalent non-metals**: Electron topology is bound to the **local shared coherent channel** between A–B (two-body local);
+- **Ions/metals**: The binding of electron topology is **lattice-wide** — charge integral transfer or global delocalization, and the channels are not "shared" but "closed/transferred".
+
+The distance of ion pairs contracts below the additivity line ("crossing the additivity line"), which is essentially caused by **channel topology switching**, belonging to a different ontological interval from the covalent interval. This empirical classification can be upgraded to a theoretical predictive criterion: **whenever the electronegativity difference is sufficient to trigger channel closing/transferring, the additivity law should fail**.
+
+### 13.2 Current Is an Emergent Quantity Rather Than Continuous Electron Movement (Important Inference)
+
+Derived directly from the SRE distance ontology, it is a unified inference of nucleon/electron ontology:
+
+- Premise 1: Distance is not an a priori coordinate, but coherent degenerate bookkeeping;
+- Premise 2: Electrons are operator fixed points on coherent cores, not "entities moving along trajectories in space".
+
+Inference: **Macroscopic current cannot be understood as continuous transport of electron particles along wires**. Current is the **projected change of coherent degree bookkeeping of conductor electrons along the macroscopic conduction pathway**, belonging to the statistical emergent layer, along with electric fields, magnetic fields, gravitational fields, quark observations, and quantum entanglement — all are statistical projections of coherent core coupled with environment.
+
+Homologous to 13.1: whether it is covalent sharing, ion transfer, or conduction current, the observable "distance/transfer" phenomena are all **projections of channel topology (establishment/closing/transfer of coherent channels)**, rather than positional movement of entities. The explanation layer is changed, not the numerical layer: macroscopic equations such as Ohm's law remain effective descriptions of the emergent layer and are not affected.
+
+### 13.3 The Exponential Decay Law: Derived from the SRE Axioms, and a Test of Its Two-Factor Decomposition
+
+**Origin.** Internal registration shows that "half-life / exponential / memoryless" has **zero hits** throughout the document suite: although this framework repeatedly uses the reading "the open band = the segment awaiting settlement", it never wrote down the form of the decay law. This section fills that gap (**derivation**, not fitting) and tests the two-factor decomposition that follows. All numbers are recomputed by `code/_sre_decay_law.py`.
+
+**(1) Derivation (three steps, using only the axioms of Sections 5.2 and 9.4).** Axiom S1 (dormancy is the default state): the three ring edges of a nucleon are dormant by default, and β decay = one of them being removed. Axiom S2 (removal is a rare perturbation): the probability that a given dormant edge is removed per unit time is $p\ll 1$, and it is independent of the other edges and of that edge's own history (independent + stationary). The waiting time of a single dormant edge therefore follows a **geometric distribution**, whose continuum limit is the **exponential**:
+
+$$P(T>t)=(1-p)^{t/\Delta t}\to e^{-pt},\qquad T_{1/2}=\frac{\ln 2}{p},\qquad \tau=\frac1p,\qquad T_{1/2}=\tau\ln 2,$$
+
+and equivalently satisfies **memorylessness** $P(T>t+s\mid T>t)=e^{-ps}$. Point of consistency with SRE itself: SRE's graph **does not record history** (12.4 "the product graph does not remember the partner state"; 12.13(1) "the gap lying in ring 0 is notation rather than fact") ⇒ the state is memoryless ⇒ the waiting time is memoryless ⇒ exponential. This step is registered as **homological support**, not a strict derivation — a graph not recording the "partner state" is not the same as not recording the "instant".
+
+**(2) Monte-Carlo verification and exclusion of the power law.** With $p=0.05$ and $4\times10^5$ samples: (i) the maximum deviation of the survival curve from $e^{-pt}$ is **1.03×10⁻³** (241 grid points); (ii) the half-life identity: empirical median 13.859835 against $\ln2/p=13.862944$, a relative deviation of **0.0224%**; (iii) memorylessness: conditional probability 0.223705 against $e^{-ps_0}=0.223130$. Power law excluded: a log-log linear fit to the survival curve gives slope −1.5995 and $R^2=0.781$, whereas the exponential fit gives $R^2=$ **0.999999**; more importantly, the power-law criterion of "constant slope" is falsified — the piecewise slope drifts from **−0.570** over the first third to **−5.013** over the last third ($|\Delta|=4.443$).
+
+**(3) Structural factor: the number of dormant edges.** If a body has $N$ equivalent dormant edges, the rate of "any one being removed" is $Np$ ⇒ **$T_{1/2}\propto 1/N$** (zero-parameter; MC verification for $N=1,2,3,6$ agrees to better than 0.4%). A single (free) body has 3 dormant ring edges ($N=3$); in the shared-ring assembly only **1 k = 1 edge** remains (12.13(4)) ⇒ $N=1$. If $N$ were the only graph factor, then a "neutron inside a nucleus" should be 3 times slower than a "free neutron" — registered as **pending, not adjudicated here** (the effective in-medium neutron lifetime is a model-dependent derived quantity, beyond this layer).
+
+**(4) Two-factor decomposition: the only non-trivial content = the species-cancellation law.** Writing $p$ as $p=p_{\rm graph}\cdot p_{\rm env}$ is itself an identity; its only non-trivial content is "which factor carries what". This yields a **zero-parameter** species-cancellation law — for the same nuclide in environments I and II,
+
+$$T_{1/2}(\mathrm{I})/T_{1/2}(\mathrm{II})=p_{\rm env}(\mathrm{II})/p_{\rm env}(\mathrm{I})\qquad(p_{\rm graph}\ \text{cancels exactly}),$$
+
+so the "stripping enhancement factor" $E\equiv T_{1/2}(\text{neutral})/T_{1/2}(\text{bare})=p_{\rm env}(\text{bare})/p_{\rm env}(\text{neutral})$. **If $p_{\rm env}$ depends only on the electron environment** (SRE has no energy ontology ⇒ $p_{\rm env}$ carries no nuclear-level-structure information), **then $E$ must be independent of the nuclide** — a prediction that requires no fitting and can be falsified in one sentence.
+
+**(5) Test: the prediction is falsified.** Three L3 (inner electrons fully removed) β⁻ nuclides (all published measured values; no fitting in this section):
+
+| Nuclide | Q/keV | T½ (neutral) | T½ (bare) | E | log₁₀E |
+|---|---|---|---|---|---|
+| ¹⁸⁷Re | 2.467 | 4.16×10¹⁰ a | 32.9 a | 1.264×10⁹ | +9.10 |
+| ¹⁶³Dy | 2.560 | stable (>10¹⁵ a) | 47 d | ≥7.771×10¹⁵ | ≥+15.89 |
+| ²⁴¹Pu | 20.800 | 14.3 a | 4.2 d | 1.244×10³ | +3.09 |
+
+- ¹⁸⁷Re vs ¹⁶³Dy: **same mode (bound-state β⁻), nearly the same Q (2.467 and 2.560 keV)**, yet E differs by **≥ 6.79 orders of magnitude** ⇒ "E varies only with the graph / is independent of Q" is falsified;
+- ¹⁸⁷Re vs ²⁴¹Pu: same mode (β⁻), E differs by **6.01 orders of magnitude** ⇒ "E is independent of the decay mode" is falsified;
+- **the failure cannot be repaired by the graph factor**: in the expression for E, $p_{\rm graph}$ has already cancelled exactly, so the species dependence of E can only be attributed to **$p_{\rm env}$ itself** ⇒ **$p_{\rm env}$ is not a "pure environment quantity"**; it must contain species-specific atomic/electronic-configuration information, whereas the $p_{\rm env}$ on the SRE side is merely a scalar (the "s-electron reachability at the nuclear site" of the three layers of Section 10).
+
+**(6) Positive residue: the model can fix the "ordering", not the "value".** Ordered by "the margin between Q and the final-state electronic-configuration threshold", E decreases monotonically: ¹⁶³Dy (below threshold ⇒ decay forbidden) → ¹⁸⁷Re (just above threshold ⇒ tiny phase space) → ²⁴¹Pu (far above threshold ⇒ ample phase space), holding **3/3** (with ¹⁶³Dy a lower bound). Note however that **this monotonicity does not hold with respect to Q itself** (Re and Dy have almost the same Q yet differ by ≥ 6.8 orders of magnitude, see (5)), and the ordering variable itself contains atomic electronic configuration, which the SRE side does not have ⇒ this section treats it only as **qualitative support**, not a quantitative conclusion.
+
+**(7) Recheck and refinement.** Recomputing the three-layer medians registered in Section 10 from half-life ratios (log₁₀ of the relative fraction): L3 = +9.10, L2 = −2.09, L1 = −4.30, equivalent to **+11.10 / −0.09 / −2.30** in percentage terms, **agreeing digit for digit** with the registered +11 / −0.09 / −2.3; the span L3 − L1 = **13.40 orders of magnitude** (registered ~13). One **refinement**: the value 10¹⁴ % previously registered for ¹⁶³Dy was a conservative estimate; the **lower bound** computed directly from the half-life ratio is ≈8×10¹⁷ % (an underestimate of about 3.9 orders of magnitude); this refinement does not change the L3 median (which is set by ¹⁸⁷Re), so the conclusions of Section 10 are unaffected.
+
+**(8) Verdict and boundary.** **Positive result**: the exponential decay law has been **derived** from the SRE axioms (closing the gap registered in Section 10), and the derivation **does not require** SRE to supply the numerical value of $p$ — it gives only the form of the law ($T_{1/2}=\ln2/p$, necessarily exponential rather than a power law), in agreement with nuclear-physics observation. **Negative result**: the strong reading of the two-factor decomposition ($p_{\rm env}$ = a pure environment quantity) is falsified by measurement, and cannot be repaired by the graph factor.
+
+**Honest registration**: (i) **data-reliability grading**: ¹⁸⁷Re (Bosch et al. 1996) and ¹⁶³Dy (Jung et al. 1992) are primary literature; ²⁴¹Pu is a secondary review and not independently verified — **the decisive pair uses Re vs Dy**, so the conclusion does not depend on ²⁴¹Pu. (ii) **Layer boundary**: the L3 data are all heavy nuclei (A = 163/187/241), whose SRE graphs are **unavailable** in this layer (A ≥ 5 not computable, Section 12.11) ⇒ this section is a **decomposition test at the phenomenological layer**, **not** a numerical derivation internal to SRE; this must be registered separately from the derivation of (1). (iii) **Refinement of the reading of Section 10 (new in this section)**: the control parameter of the layering is refined from "the reachability of the s electron at the nuclear site" to "**the relative sensitivity of the s-electron density at the nuclear site to the environment**" — the latter contains both an **environment term** and a **species term** (⁷Be has only 4 electrons ⇒ its innermost shell is its outermost, so its species term is the largest); the layering itself (L3 ≫ L2 ≫ L1, span 13.40 orders of magnitude) is unaffected. (iv) **Attribution**: the gap in the negative result (the species-specific dimension of $p_{\rm env}$) is of the same type as the other four in this project — "SRE fixes only the 'form' (law, order, layering), not the 'value'" — this is the **sixth occurrence** of that regularity, and it may deserve promotion to theorem level. (v) This section gives the "exponential law" as a **structural inference** for the first time, but its premise S2 (independent + stationary) is a model axiom that has not been independently tested.
+
+---
+
+## 14. Observational Perspective: the Boundary between the Dimension-Free SRE World and the Three-Dimensional World
+
+**Origin.** All the checks of the preceding thirteen chapters, whether positive or negative, finally land on one and the same position: "SRE fixes only the **shape** (laws, order, layering), not the **value**". This section adds no new physical test; instead it **raises this recurring experience into an explicit clarification of observational perspective**: it **writes out, layer by layer,** the boundary between the "dimension-free SRE world" and the "three-dimensional world", and gives two theorem-level supports. All numerical values are quoted from the recomputation scripts archived with this paper; this section itself introduces no new fitting parameter.
+
+**(1) The three-layer decomposition: topology / ratio / geometry.** For any object generated by SRE (taking the "shape" of a water molecule as the example), its description splits into three layers, each with a part that is **provided for free** and a part that **must be paid for**:
+
+| Layer | Object | Provided free by SRE | Input that must be paid |
+|---|---|---|---|
+| **L0 topological layer** | graph $G=(V,E)$ | integer invariants: degree sequence, Laplacian / adjacency spectrum, number of automorphism orbits | — |
+| **L1 ratio layer** | dimensionless ratios, e.g. $(1,1,t)$ | the **form** of the ratio | **the metric D** (which fixes its **value**) |
+| **L2 geometric layer** | angles, coordinates | none | **the map** (Euclideanity / curvature / scale) |
+
+- **The L0 realization**: the pure bond topology of a water molecule is simply $P_3$ (O bonded to two H). The measured intrinsic quantities are: degree sequence $(2,1,1)$, Laplacian spectrum $(0,1,3)$, adjacency spectrum $(-\sqrt2,\,0,\,\sqrt2)$, and **2** automorphism orbits; adding one H···H edge gives $K_3$, with degrees $(2,2,2)$, Laplacian spectrum $(0,3,3)$, and orbit count 1. **In this layer everything is an integer or an integer ratio, with neither ratios nor angles.** The root cause is that a graph-theoretic object **carries no metric** — length, distance and angle all belong to metric structure and must be assigned from outside. Taking the Laplacian of $P_3$, for instance, $\lambda_2 = 1$ and $\rho = 3$ are both integers, and their ratio $1/3$ is a ratio, but **no ratio is a length or an angle**.
+- **The L1 realization**: the ternary ratio. Three atoms give three pairwise distances, which upon normalization read $(1,\,1,\,t)$, where $t = r(\mathrm{H\cdots H})/r(\mathrm{O\!-\!H}) = 2\sin(\theta/2)$. **This is the formal landing point of the reading "what is exhibited should be a ternary ratio"**: it is dimensionless and independent of any coordinate or ambient space, and is therefore compatible with the output type of SRE. Note in particular that $t$ is independent of $r$ (an identity of the isosceles triangle), so that "adding a non-bonded term" and "the angle is 104.5°" are **informationally equivalent** at n = 3 — it is not a prediction but a **rewriting** of the angle into a distance (of the same type as "zero residual = no predictive margin" in 12.6).
+- **The L2 realization**: the angle. $\theta = \arccos(1 - t^2/2)$, the **mapped output** of L1.
+
+⇒ **The native products of SRE stop at L1.** The three-layer structure is exactly where the boundary between the "dimension-free SRE world" and the "three-dimensional world" lies: the boundary is not in some formula, but at the **two tolls**.
+
+**(2) The two tolls: the theorem-level formalization of "fixing the shape but not the value".** The honest registration of 13.3(8) once recorded "fixes only the shape, not the value" as its **sixth occurrence, to be considered for promotion to theorem level**; this section splits it, by mechanism, into **two** distinct tolls:
+
+- **L0 → L1: pay the metric D.** When only the bond topology is supplied, H₂O is inverted to **collinear** (the H–O–H path length equals exactly the sum of the two O–H segments, so the triangle degenerates, $180.0000°$); the Fe₄S₄ cubic cage is distorted in the same way ($r = 0.946$). What has been proved is **D ⇒ geometry** ($r = 0.95$–$1.00$); what has **not** been proved is  topology ⇒ D. ⇒ **D is an input, not a product.** Moreover this can be made into a **necessity proof** (the non-circular part): the two H's are equivalent ⇒ any symmetric bond weighting can only give $180.0000°$; adding electron leaf nodes is likewise ineffective (the sub-metric is unchanged term by term, and the minimum eigenvalue of the metric Gram matrix of the four-point graph is $= -0.25 < 0$, hence non-Euclidean) ⇒ **there must exist a direct H···H non-bonded relation**. This is the **falsifiable structural prediction** given by this paper.
+- **L1 → L2: pay the map.** This is given by the two theorems of (3): geometry is not a function of L1 alone, but of L1 **together with the map**.
+
+⇒ This gives a unified explanation of the negative verdicts of the preceding chapters: **every quantity SRE has passed so far is a dimensionless ratio** ($\Pi_1$, $\lambda_2/\rho$, $\Pi_1(Q_k) = 1/k$, $\lambda_2 = 2-\sqrt3$, the number of Aut orbits, $|\mathrm{Aut}|$ ratios), **while every negative verdict occurs exactly when a dimensionful value is required to be assigned to some structure** (L4 assigning mass, the absolute value of $\alpha$, the species dimension of $p_{\rm env}$ in 13.3). "Ratio vs value" and "ratio vs geometry" are **two cross-sections of one and the same seam**.
+
+**(3) The two theorems: geometry is a property of the map, not of the graph.** Both are **theorem-level** (constructive, distribution-free), so they are **immune to the "numerical coincidence / multiple comparisons" objection** (compare the criterion discipline set out in 7.6 and 12.6).
+
+**Theorem 1 (angle ∉ functions(graph)).** Take **the same graph** $P_3$ and assign two admissible metrics $D(t)$: $d(\mathrm{H_1},\mathrm{O}) = d(\mathrm{O},\mathrm{H_2}) = 1$, $d(\mathrm{H_1},\mathrm{H_2}) = t$. Measured: $t = 2.0 \Rightarrow 180.0000°$; $t = 1.5811 \Rightarrow 104.4775°$; $t = 1.2 \Rightarrow 73.7398°$. The degree sequence, Laplacian spectrum, adjacency spectrum and orbit count are **identical term by term** across the three. ⇒ angle $= f(D)$, so the angle is **not** a graph invariant.
+
+**Theorem 2 (same ratio, different map ⇒ different angle).** Fix **the very same** ternary ratio $t_0 = 2\sin(104.4776°/2) = 1.581140$ and place it into three constant-curvature maps, scanning the **absolute scale** $s$ (in units of the bond length, with curvature radius set to 1):
+
+| Map | Apex angle $\theta$ | Remark |
+|---|---|---|
+| Euclidean $K = 0$ | **104.4776°** | constant for any scale $s$ (= similarity) |
+| Spherical $K > 0$ | 104.57° → **145.10°** | common window $s \in [0.1,\,1.6]$; degenerate for $s \gtrsim 1.8$ ($\lvert\cos\rvert > 1$) |
+| Hyperbolic $K < 0$ | 104.39° → **86.67°** | same window; monotonically decreasing with scale |
+
+Here both the spherical and the hyperbolic rows are scanned over **the same scale window** $s \in [0.1,\,1.6]$ ($s$ in units of the bond length, curvature radius set to 1), while the Euclidean row is constant for any $s$.
+
+⇒ The same ratio gives an apex angle in the interval about $[86.7°,\,145.1°]$; $104.4776°$ is merely the member that is "flat". **A curved space has no similarity** (the angle also depends on the absolute scale), so the one-to-one correspondence "ratio → angle" is **itself a property of Euclidean similarity**. ⇒ **Geometry is a property of the map, not of the graph** — this is exactly the theorem form of "only the map has geometric relations".
+
+**(4) The experimental side: only three things are measurable.** Corroborating the above layering is a fact on the experimental side. In real measurement **no instrument ever reads out a "bond angle" or an "orbital" directly**: microwave / infrared / visible / ultraviolet spectroscopy gives only **spectral line frequencies (= energy differences)**; Zeeman / Stark give only **degeneracy multiplicities and splittings**; X-ray / electron diffraction, liquid microjets and COLTRIMS give **electron density distributions**.
+
+The water "104.5°" is inverted from exactly this: rotational spectrum → rotational constants $A,B,C$ → $I = K/(A,B,C)$ → **the model step** (rigid rotor + rotation-vibration / anharmonic corrections + isotopic substitution) → $(r,\theta)$. This step is not a direct read: doing a rigid-rotor inversion directly from Herzberg's $A_0,B_0$ gives $(0.9561\ \mathrm{\AA},\,105.1232°)$, differing from the equilibrium geometry $(0.9578\ \mathrm{\AA},\,104.4776°)$ by $\Delta\theta = 0.6456°$ — **this difference is the magnitude of the "model input"**. The "angle" of the same molecule is also not unique under different averaging conventions: $103.9°$ ($r_e$ 1D anharmonic approximation), $104.478°$ (equilibrium $r_e$, Hoy & Bunker 1979), $104.50°$ (ground-state average $\langle r\rangle$), $105.12°$ (rigid-rotor inversion of $A_0,B_0$). ⇒ **"104°" is an inversion quantity carrying a ±0.5° convention dependence, not a directly read number.** Two easily misused points must also be registered together: first, a project script once used a ternary triple $(0.9584,\,1.51383,\,104.474)$ that **mixes averaging conventions** ($0.9584\ \mathrm{\AA}$ is of $r_e$ magnitude while $1.51383\ \mathrm{\AA}$ is of $r_0$ magnitude), whose closed angle is only $104.3279°$, differing from the stated value by $0.146°$, and which **must not be called "self-consistent"**; the consistent triple is $(0.9578,\,1.5144,\,104.4776)$. Second, the equilibrium angle happens to satisfy $\cos\theta_e = -0.250001$ (exact to $10^{-6}$), so the normalized $t \approx \sqrt{2.5}$ — this is a **constructive coincidence**, of the same kind as "$\Pi_1(Q_k) = 1/k$ on the tower is about $1/137$ at $k = 137$", and **must not be used as evidence**.
+
+By the same token, **a single orbital is unobservable** (invariant under unitary / gauge transformations): the gauge-invariant density on the graph side (the diagonal entries $P_{ii}$ of the projection) is constant along each Aut orbit, so the shape resolution is exactly the **number of orbits**; and the calibrated graph of this project has orbit count 1 ⇒ uniform density, zero shape information ⇒ the **strong sense (zero-parameter emergence) of the electron orbital fails while the weak sense (Aut orbits) holds**. In addition, the $2\ell+1$ degeneracy ladder is, upon examination, **not any natural graph ladder** (none of 12 candidates matches), so that "the ladder is not intrinsic while ratios are".
+
+**(5) The other side of the boundary: how the three-dimensional world is entered.** The preceding subsection explained **how** "three dimensions" is **paid in**; the other half is from which end three dimensions is **selected**. This project measures (`code/_sre_dimension_selection.py`) that three mutually independent stability predicates **point simultaneously to $d = 3$ with zero parameters**:
+
+- **Finite resistance**: the leading term of the lattice voltage field is $r^{2-d}$ (term by term identical to Poisson's Green function $r^{2-n}$ of Tegmark 1997); a random walk is recurrent for $d \le 2$ (resistance diverges with $N$) and transient for $d \ge 3$ (convergent) ⇒ pins $d \ge 3$;
+- **Bound-state threshold**: $G(0,0)$ diverges for $d \le 2$ (any weak attraction already gives a bound state) and converges for $d \ge 3$ ($g_c > 0$) ⇒ pins $d \ge 3$;
+- **Stable circular orbit**: $V_{\rm eff} = -A\,g_d(r) + L^2/2r^2$ gives a stable circular orbit only for $d = 3$ ($d = 2$ has no circular orbit, $d = 4$ has no finite $r^*$, $d \ge 5$ is unstable) ⇒ pins $d = 3$.
+
+⇒ $\{d \ge 3\} \cap \{d \ge 3\} \cap \{d = 3\} = \{3\}$, with **zero free parameters**; the fourth fence (atomic stability, $d \le 3$: Ehrenfest 1917, Tangherlini 1963) pinches from the other end. **But the logical boundary must be registered at the same time**: "selected by mathematics" ≠ "derived from the SRE axioms" — all three criteria are stability requirements (predicates), and **the predicates themselves are still inputs**, while SRE has no intrinsic dimension (`ndim = 3` is passed in from outside). The net effect is that **the type of the input has changed** (from "a numerical value" down to "a predicate"), not that the input disappears. Of the same type, the Coulomb force is **derivable in shape, not in value**: the Green function of the graph Laplacian ($L^+$, a purely topological quantity) gives the leading term $r^{2-d}$, and the measurement gives $d = 1 \to r$, $d = 2 \to \ln r$, $d = 3 \to 1/r$ ($R^2 > 0.9999$) ⇒ **$1/r$ is selected by $d = 3$**; but the coupling constant $\alpha$ is still an external input (the only successful external anchor $\Pi_1(M_{60})$ deviates from CODATA by $1.45 \times 10^{-5}$), and the project graphs are not three-dimensional lattices ⇒ **they do not of themselves carry $1/r$**.
+
+**(6) The discrete-closure law: a unified statement over ten examples.** All the above phenomena converge into one statable regularity (denoted G12, an $n = 3$ induction, **awaiting independent falsification**): **the closed theorem targets all lie on the discrete side, and the unclosed targets all lie on the continuous side; every crossing from "discrete" to "continuous" must pay one external input.** Its types and the manner of payment are as follows:
+
+| # | Target | Side | Form of payment |
+|---|---|---|---|
+| 1 | P0 uniqueness ($19320 \to 5$ classes) | discrete (closed) | enumeration |
+| 2 | R2 convergence (integer decrease) | discrete (closed) | — |
+| 3 | Criterion L1 ($\lvert n_n - n_p\rvert \le 1$) | discrete (closed, $A \le 4$) | — |
+| 4–5 | Electron orbital (two senses: mesoscopic nuclear eigenmode / Aut orbit) | split within one chapter | nominal definition vs zero-parameter emergence |
+| 6 | Coulomb + ladder (shape derivable, value not) | crossing | shape: $r^{2-d}$; value: $\alpha$ pays $\delta$ (modulus no-go); degeneracy requires an **ensemble** (measure lacking) |
+| 7 | $d = 3$ itself | crossing | pays **a zero-parameter predicate** (the cheapest) |
+| 8 | Origin of $Q_3$ ($Q_3 = \mathrm{D}^2(K_2) = \mathrm{BDC}(K_4)$) | crossing | seed = one edge + one predicate |
+| 9 | The folding tower | discrete (fully closed) but with zero continuous content | **to obtain a value one must leave the tower** ($M_{60}$ leaves the tower and only then gives $\alpha$) |
+| 10 | $H_2O$ ratio vs geometry | crossing | pay $D$; then pay **the map** (curvature / scale) |
+
+**(7) The three validation-qualification criteria and the diagnosis of the "geometry-shape" branch.** Once the perspective is layered, one can audit **the prior validations themselves** (`code/_sre_validation_metric_audit.py`, 17 entries in all). The three qualification criteria are:
+
+1. **Out-of-sample character**: the comparison target must be an **independent experimental quantity**, and **must not have been used to construct the graph or its parameters** (any distance D weighted by real bond lengths is circular and does not count);
+2. **Non-degeneracy**: the quantity under test must have a **nonzero predictive margin** (not an identity rewrite, not a back-substitution, not a low-degree constructive reconstruction);
+3. **Window binding**: the tolerance must be of the same order as the demonstrated precision (G4).
+
+Audit result: classified by the epistemological type of the comparison target, **independent experimental out-of-sample E = 9 | inversion / scheme-dependent quantity R = 2 | construction / circularity / back-substitution C = 4 | pure mathematics M = 2**, and **the C and R classes fall 100% within the "geometry / shape" branch**, while the E class lies entirely within the spectral / numerical branch and is **a string of negative verdicts**. Two concrete blockings:
+
+- At $n = 3$, the headline indicator of the MDS document, "emergent geometry vs real", has a **Pearson magnitude that is always 1** (a purely topological distance set is always $(1,1,2)$ and a real distance set is always $(r,r,x)$, both being $(a,a,b)$-shaped 3-vectors), and its entire information content is **a single bit**, "whether it is $> 60°$" — the measurement gives $+1.000000$ for both $\theta = 180°$ and $104.4776°$, so **the indicator is blind to the bond angle**;
+- **The "inversion fidelity $r$" of classical (Torgerson) MDS is always 1 for any Euclidean D** (it is the very definition of the algorithm's convergence), and random 3D point sets with $n = 4/6/10/20$ together with the degenerate $(1,1,2)$ all give $1.000000$; and for $n \le 3$ the point count is so small that the triangle inequality alone fixes the distances, so **the inversion fidelity for $n \le 3$ is a constructive reconstruction and must not be taken as emergence evidence**.
+
+⇒ That branch "appears to hold" precisely because it uses constructed quantities, whereas the spectral / numerical branch uses real experimental values and therefore yields a string of negative verdicts. **Re-filtered by the three criteria, the "geometry-shape" branch currently has 0 qualified entries**; the repair direction is: a purely topological D plus $n \ge 4$ plus **comparing angles / bond lengths directly** (rather than comparing the Pearson correlation of whole distance sets).
+
+**(8) The boundary statement and the net consequence.** Combining (1)–(7), the boundary of this framework can be written in one sentence:
+
+> **The dimension-free world of SRE provides the "shape" (integer invariants and their dimensionless ratios); the "value" and the "geometry" of the three-dimensional world must be bought with two external inputs — the metric D and the map (Euclideanity / curvature / scale). Every negative verdict of the framework can be located at one of these two tolls, rather than in the insufficient precision of some formula.**
+
+On this basis, the relations among the preceding chapters can be restated: Chapters 7–9 (skeleton inversion) and 12.1–12.5 (assembly law and shared ring) are **exact results on the L0 side** (integers, spectra, ratios), whose strength depends on no continuous input; the negative verdicts of 12.6–12.15 and 13.3 all fall at **the L1 → L2 toll** (requiring a dimensionful value); the dimension collapse test of Chapter 10 and the fission verification of Chapter 11 belong to the **phenomenological layer**, whose role is to organize real empirical data into dimensionless relational numbers of L1 form, not to derive numerical values from the axioms; the "open band" of 12.13 and the $\lambda$ of 12.12 correspond respectively to the two sides "shape fixable" and "value unfixable", so that their conclusion forms (localizable vs non-derivable) are not coincidences but a necessity of the same layering law.
+
+**Honesty boundary**: (i) the "three layers" of this section are **a division of representational layers**, not three different physical entities; their value depends on whether a recomputable three-layer reading can be given for any new object. (ii) Theorems 1 and 2 are **mathematical facts** (graph invariants and constant-curvature trigonometry); this section only places them back into the context of "SRE and the world"; they do **not** claim that the SRE axioms are true. (iii) The induction of the "ten examples" (G12) still rests on a small sample, several of which are internal splits within a single chapter (examples 4–5), so its **theorem status awaits independent falsification**. (iv) The **counts** of the audit (E/R/C/M) depend on the classification scheme; the classification table is archived with the paper for re-examination. (v) The external literature cited in subsection (5) for the $d = 3$ conclusion (Ehrenfest 1917; Tangherlini 1963; Tegmark 1997) is **external basis**, not a computation of this section.
+
+---
+
+## 15. Honesty Boundary Checklist
+
+Each of the following weakens the strength of the conclusions of this paper, and is listed item by item for readers to weigh themselves:
+
+### Boundaries Related to Nucleon Inversion
+
+1. **κ_N identification**: $(m_n-m_p)/m_p=\alpha\cdot\Pi_1$ has not been independently demonstrated, it is a candidate hypothesis;
+2. **Hierarchy mixing**: The α of electrons comes from the 60-point Möbius parameterized spectrum, while the nucleon side in this paper uses the bare skeleton spectrum, and the two levels cannot strictly be compared;
+3. **Δm used twice**: Both criterion ① and criterion ② contain Δm, and the two criteria are not independent;
+4. **Criterion depends on prior**: Criterion ③ (triple symmetry) comes from prior S2, if S2 does not hold, the screening result will change accordingly;
+5. **Quark ontology borrowing**: $(2m_u+m_d)/m_p$ is only used as a dimensionless measured ratio, which does not mean admitting the ontological status of quarks;
+6. **Strength of the tie-break**: The Q3 on which Criterion ⑤ (partial re-equilibration of closure degree) rests, although supported by the fission verification of Section 11, is itself still a conjecture proposed in this paper; Criterion ④ alone cannot break the tie over the whole pool (2 graphs satisfy it); Criterion ⑥ shows a 2.67% deviation, which is not strong enough. The correct statement is therefore "A is the unique survivor at the structural level, but not independently at the measured level";
+7. **Dormant edge taken as a ring edge**: The basis is the structural adjudication that "the dormant edge is the image of a homomorphic mapping and its logical depth is large", not an independent derivation from measurement; if a spoke were taken instead, the transition reading would become λ₂: 1 → 0.527166, and the form of every criterion in Section 9 would change accordingly;
+8. **"Mode release" not adopted**: This paper explicitly does not use "some mode releases exactly the integer 1" or "the total released amount is always 2" as criteria (they are respectively a contingency of the homomorphic mapping and a trace identity);
+9. **Does not contain Q₃**: After exhaustive enumeration this skeleton contains no 3-regular 8-vertex subgraph, so β decay can only take the weak "seed sedimentation" reading;
+10. **Mass-depth not closed, and its zero-parameter assignment rule now judged negative (upgraded in v1.9)**: the L4 mass-depth equation $m_p/m_e = \Psi(G_N)/\Psi(G_e)$ is unavailable because $\Psi$ is undefined, and the C5 (N_p≈5.446×10¹⁹) of v1 is still circular self-proving. Section 12.15 of v1.9 builds that gap into a **pre-registered, falsifiable** test and executes it, with a **negative** verdict on three mutually independent grounds: (i) **reach bound (distribution-free)** - with the electron basal body $Q_3$ as the electron graph, the monomial-pool bound for $|a| \leq 2$ (any support) is only **511.06**, **short of the target 1836.15 by 0.555 orders of magnitude** (23.07 for support <= 3, short by 1.90 orders); (ii) **"sharing one lock" directly refuted** - with $M_{60}$ as the electron graph the reach is unconstrained, but the best $\Psi$ differs from target to target ($m_p/m_e$, $m_d/m_p$, $m_n/m_p$), and the joint hit is **0** for $|a| \in \{1,2,3\}$ under both the 1% and the 3% window; (iii) **hidden degree of freedom** - the electron-layer representative (basal body $Q_3$ vs carrier $M_{60}$) is not fixed by the framework and the verdict flips between the two configurations => "which graph represents the electron" is itself a free parameter => **C3 violated**, so even a hit would not be falsifiable. **Positive residue**: the same $\Pi_1$ machinery holds on the difference ratio of two states within a layer ($\alpha \cdot \Pi_1(\mathrm{Y_3})$ against $(m_n - m_p)/m_p$: -0.164%) but fails for inter-layer overall mass ratios ($\Pi_1(\mathrm{Y_3})/\alpha = 25.84$, short of 1836.15 by 1.85 orders of magnitude) => the cross-layer lock governs the difference within a layer but not the overall scale of a layer. **Boundaries**: the verdict is confined to the $\Psi$ class of "integer powers of products of standard invariants" (the $|a| \leq 2$ reach exclusion is hard; for $|a| = 3$ the ceiling clears the target and the verdict rests only on (ii) and (iii)); for $V > 22$, $|\mathrm{Aut}|$ is not computable, so configuration B's pool excludes it. (`code/_sre_l4_assignment.py`)
+11. **Scheme dependence of the Criterion ① anchor (added in v1.6; finalized in v1.7)**: the anchor $(2m_u+m_d)/m_p$ used by Criterion ① is an MS-bar scheme quantity, and it is not even listed in the declared injection list of §3.1. Its measured scale sensitivity (about +23% from 2 GeV to 1 GeV) far exceeds the bin-switching threshold and **suffices to change the selected V** (2 GeV → V=12, 1.5 GeV → V=14, 1 GeV → V=16); moreover κ_N measurably does **not** land uniquely in the V=12 family (V=8/10/12/14 all contain κ_N), and after Criteria ②③ are applied V=10 also retains a survivor — **but that item is partly withdrawn in v1.7**: it holds under the wide window ε = 3%; once the window is tightened to the order of the α-lock's own precision (ε ≤ 1%) **only the V=12 bin retains a survivor** (see the v1.7 table in 7.6). **The final position is therefore: Criteria ②③ by themselves determine V (from {8,10,12,14} down to {12}, exact for V ≤ 12 and an LR ≥ 1.7 lower bound for V ≥ 14) and determine the topology (within the family, 85 → 4 → 2 at ε = 3%; 85 → 3 → 2 at ε ≤ 1%, and after a further T ≥ 2 filter the Y₃ skeleton is **uniquely** pinned down within the bin — see the correction in 7.6), and they do so with no dependence on any scheme quantity whatsoever; Criterion ① is downgraded to a corroborating remark, namely "under the 2 GeV MS-bar convention it is compatible with V=12", and no longer carries the calibration duty.** This item does **not** affect the many-body conclusions from Chapter 12 onwards, nor the spectral facts of the skeleton itself — the 0.165% agreement of Π₁ = 0.188580 with κ_N is a purely topological fact, independent of the anchor chosen. **The price must be stated honestly**: the "5 bins select 1" factor in the v1.6 rarity estimate p ≈ 4.7×10⁻³ is now carried by the likelihood-ratio lower bound of the sharpened Criteria ②③, so p loosens to about 1.4×10⁻² to 2.8×10⁻² (see 7.6). (`code/_sre_anchor_registry.py`, `code/_sre_anchor_second.py`)
+
+### Boundaries Related to Many-Body Assembly and the Shared Ring
+
+1. **Principle dependence of the assembly law**: the two principles (open–closed complementarity, the images of the two bodies must be distinguishable in the shared region) are structural adjudications, not independently derived from measurement; the "same position" clause is the necessary condition that makes n-n automatically excluded — if a gap were allowed to be sealed by **any** ring of the partner, n-n would also have structural solutions (7 isomorphism classes), so the clause cannot be omitted. Principle 2 has been restated in 12.10 as a purely ledger-theoretic condition (the shared ring contains a single-claim edge with k=1); the restated form has the same discriminating power as the original, but both are model-internal constructions that have not been independently tested;
+2. **Withdrawal of the shadow-solution name**: verification shows that the former "variant D" is the k=2 member of the shared-ring family (isomorphic to the deuteron, with the same ledger (1, 2, 2)), so the name "shadow solution" and its note "violates principle 2" are both withdrawn (12.10); its anti-probabilistic features (integer ρ = 6, body-count-independent λ₂ = 2−√3) rest on the numerical facts of 12.3 and 12.5 and do not depend on the naming;
+3. **Reading dependence of the scorecard**: the scorecard conclusion depends on the choice of reading (A / A′ / B). This paper adopts Reading A, which matches 5/5 in the calibratable sector (A ≤ 3); however, the additional clause "gap ≤ 2" is a constituent part of the reading and has not been independently derived. Dropping that clause turns only the ⁴H entry from a hit into a mismatch, still inside the A ≥ 4 interval, so it does not affect the conclusions of this paper. Section 12.12 gives a mirror-symmetric single-clause replacement, criterion L1 (|n_n − n_p| ≤ 1), which matches 8 / 8 over A ≤ 4 with the number of clauses reduced from two to one and no parameter, and which degrades to an empirical approximation for A ≥ 5 just as Reading A does;
+4. **Zero margin of the pricing layer**: ψ(1..4) is fixed by four measured nuclei, so a zero residual is a necessity of parameter counting and is not a prediction; the pricing shape of "interference depth" is only a qualitative description;
+5. **The boundary is split into the two questions "existence" and "numerical binding energy"**: this paper originally adopted the boundary "the nuclear boundness for A ≥ 4 (both existence and the numerical value of the binding energy) is not computable in this layer" (12.9), and registered its two independent markers (the out-of-sample failure of the pricing layer in 12.7 and the qualitative failure of the assembly law in 12.8). Section 12.11 further upgrades the **numerical binding energy** side of this boundary from an "empirical failure" to "structurally non-repairable" by two impossibilities: the A = 4 isotriplet forms a **single isomorphism class**, so any graph functional takes the same value on all three; and the additive-profile pricing class is falsified as a whole by the identity B(⁴H) − B(⁴He) = B(³H) − B(³He) > 0. Section 12.12 attempts to derive from within SRE the antisymmetric coefficient λ required by that repair, and concludes that it can **neither be derived nor fixed** (the threshold, 29.0596 MeV, exceeds the ⁴He binding energy, and λ is an absorbable degree of freedom; SRE fixes only its "shape", not its "value"); the same check, however, yields a positive outcome — the zero-parameter **existence criterion L1** (|n_n − n_p| ≤ 1, 8 / 8 on the 8-entry scorecard). Hence the **existence** side is computable at A = 4 and not for A ≥ 5 (the criterion degrades into an empirical approximation; 22 / 34 on the A ≥ 5 out-of-sample set). The boundary is therefore **relocated** from A ≥ 4 to A ≥ 5, while the non-computability of the **numerical binding energy** is unchanged;
+6. **Dimensionlessness**: every comparison in this section is a comparison of dimensionless model-internal quantities (uniformly in units of Δm_np) and does not constitute a derivation of real nuclear-physics quantities; the nuclear data cited (the boundness and binding energies of ²H, ³H, ³He, ⁴He, ⁴H, ⁴Li) are taken from published evaluations such as AME 2020;
+7. **Scope of the isomorphism-class conclusion (now strengthened, and narrowed after B2)**: the "single isomorphism class" of 12.11 originally held only for the shared-ring assembly rule used in this paper and had to be re-checked; that re-check has now been carried out in 12.11(1′), and the conclusion is that the **isomorphism is necessary at the assembly layer** — the three share the same k distribution (a single ring with k = 4), so it is independent of the attachment point and of the specific value of A. The re-check also establishes that **A does not enter the structure; the distribution of k does** (the same A with a different k distribution gives non-isomorphic graphs, whereas the same k with p↔n swapped or a different attachment point leaves the graph unchanged). **The reading "the same A with a different k distribution ⇒ non-isomorphic" must however carry a qualifier**: under the current assembly rule a multi-group product is invariably a disconnected union, the difference coming from the addition law rather than from "k entering a single structure", and the inter-ring linking mechanism is provably impossible to supply (see 12.11(1′) and unresolved matter 11). **What determines the distribution of k**: under purely SRE-endogenous conditions it is the single-group form k = (A,) (a weak conclusion), and once external priors are admitted it is not uniquely determinable (settled by B1); moreover **multi-ring configurations should be absent from this layer** (settled by B2, see unresolved matter 11);
+8. **Non-additive pricing not explored**: 12.11 falsifies the additive-profile pricing class only and does not exclude a non-additive pricing; no non-additive form is given in this paper;
+9. **Independence of the figure data**: the ρ sequence and the λ₂ invariance in panel (b) of Figure 5, and the scorecard in panel (c), are independently recomputed by the figure script from numerical Laplacian spectra (the maximum deviation of λ₂ from 2−√3 is about 10⁻¹⁵) rather than reusing the tabulated values of the main text; the figure therefore serves as an independent cross-check of the numerical values in the main text;
+10. **Non-derivability of the antisymmetric coefficient**: the conclusion of 12.12 is that λ can neither be derived from nor fixed by SRE. The argument rests on two points: (i) graph invariants are constant over the A = 4 isomorphism class, so using one as λ would break the calibration of the four measured nuclei; (ii) any ledger function X(a) is of the same kind as the penalty term g(a) and produces only a renaming. **The scope of this argument is limited to the input set "ledger (A, #p) plus same-isomorphism-class graph invariants"**; if SRE possesses a third class of input that has not yet been identified (neither a graph invariant nor a ledger function), the matter must be re-examined;
+11. **Status of criterion L1**: L1 (|n_n − n_p| ≤ 1) and Reading A are both post-hoc readings, and the superiority of L1 consists only in "more hits with fewer clauses" (zero parameters, a single clause, mirror symmetry). Its exactness at 8 / 8 over A ≤ 4 is consistent with the known fact that the light-nucleus region is dominated by α closure, and **it cannot be claimed on that basis that L1 is a fundamental law**: the two mismatches at A = 5 are closure effects (no nucleus is bound at A = 5, so any composition-only criterion must mismatch there), while the mismatches for A ≥ 6 arise from the absence of an A scaling (the measured |N − Z| ceiling of bound nuclei rises with A). In the A ≥ 5 out-of-sample set, "bound/unbound" is taken as ground-state existence, and ⁸Be is recorded as unbound because it is α-unstable (only 0.092 MeV); changing that convention would affect 1 entry. The out-of-sample set contains 26 entries, and L1 matches 22 / 34 in total (including the 8 scorecard entries).
+12. **Status of the open-band reading and the equivalence of the three rings**: the check of 12.13 presupposes the reading "the open band = the one ring edge opened in the neutron state"; that reading is an extension of the β-decay reading of this paper (Section 5), and its ontological status is a model-internal construction not independently tested. "Electronic state participation" is delimited within this layer as open-band attachment to the shared region and **involves no mesoscopic-layer electron (atomic/molecular electron cloud)** — the latter is reassembled by the electron proper at a higher scale, and its effect does not enter nucleon assembly. 12.13(1) measures the three rings to lie in a single orbit under the automorphism group of the closed-state skeleton, so "the neutron gap can only lie in ring 0" is a notation rather than a fact; that conclusion applies only to the automorphism group of the closed-state skeleton, and the correction leaves every existing conclusion intact (12.13(2) re-runs r = 0, 1, 2 one by one and confirms this).
+13. **Unusability of the functional Π₂ on the nucleon side (now determined, not merely "uncalibrated")**: the w-independence of the second electron-side w-independent functional Π₂ = λ₂/λ₄ **has a threshold** — an exhaustive scan over even n = 8…120 shows that Π₂ is w-independent **only for n ≥ 24** (where λ₂ is the k = 2 mode and λ₄ the k = 4 mode, both even modes); for n ≤ 22, λ₄ falls on an odd mode and Π₂ depends on w. The electron-side Π₂ therefore holds only under the qualifier "**for n ≥ 24**". On the nucleon side it is **structurally unusable**: the single-group shared-ring k-body skeleton has λ₂ = 2−√3 exactly with **multiplicity m = k−1**, and the next distinct eigenvalue is invariably 1, so **for k ≥ 4, λ₄ falls inside the degenerate block and Π₂ ≡ 1.0** (identity, no information), while **for k = 2, 3, λ₄ = 1 so Π₂ = 2−√3** (a mere re-reading of λ₂, with no independent information). This degeneracy mechanism has the same origin as 12.5 (the three-point zero amplitude of the shared ring together with the zero sum of each body), **so Π₂ cannot be used for nucleon inversion**.
+14. **Homology of the cross-layer parameterization (the "shape" transfers, the "value" does not)**: the electron-side and nucleon-side spectra belong to the same one-parameter family "2 − 2cos(mθ)": on the electron side θ_e = 2π/n (the discretization angle), while on the nucleon side solving λ₂ = 2−√3 for the angle gives cos θ_N = √3/2, i.e. **θ_N = π/6**. Alignment of the two sides requires 2·(2π/n) = π/6, whose **unique positive-integer solution is n = 24**; at that example the electron-side Π₂ exactly equals the nucleon-side λ₂ (both 2−√3). **Note**: n = 60 (the primary electron-side object of this paper) **does not** satisfy that alignment, and n = 24 does not constitute a general family "n = 6m". Hence the parameterization **"shape" of the two layers (the family structure and the even-mode protection principle) transfers**, whereas the **"value" does not** (the electron Π₁ depends on w, Π₂ has the n ≥ 24 threshold, and on the nucleon side Π₂ carries no information with no adjustable n). This is the fourth instance of the recurring regularity of this paper — "**SRE fixes only the 'shape', not the 'value'**" (the other three being λ in 12.12, w(k) in 12.11, and the B1 conclusion on the k distribution);15. **Reading the neutrino as the k = 1 singly-claimed edge is judged negative (added in v1.8)**: 12.14 turns the registration "neutrino = the k = 1 singly-claimed edge on the shared ring" into an executable criterion and then judges it negative. The blocking is **distribution-free** and rests on no numerical coincidence: (i) the graph route — the **number of orbits of the automorphism group on the three shared-ring points is measured to be 1** (vertex-transitivity), so every graph functional takes the same value on the three-generation candidates ⇒ the spectrum is strictly degenerate ⇒ Δm² = 0; the 3×3 local operators ($G_3$ and $L_{\rm eff}$) of all six assemblies have eigenvalues with **always only 2 distinct values** (multiplicity 2+1) ⇒ the spectrum degenerates to two levels, and one of the two Δm² is identically zero; (ii) the ledger route — the claim triple is always (#closed, k, k), with **always 2 distinct values** ⇒ only 1 degree of freedom. Neutrino oscillations, however, require 3 non-degenerate states / 2 independent non-zero gaps. Of 96 zero-parameter candidate numbers, only 1 falls inside the $\varepsilon=3\%$ window (`1/E = 1/33`, deviation 1.28%), which is below the MC null expectation ($p_A$ = 0.166) and **below** the hit rate of random graphs with the same degree sequence (0.385). Hence this reading **cannot carry the neutrino mass spectrum**. Boundary: the negative verdict is **conditional** (confined to the reading above); other readings (weighted spokes, a non-additive ledger) would violate C3 (free parameters ≥ number of targets) and become unfalsifiable, and must not be used to press ahead. One further item must be registered: **a presupposition of the first draft of that section has been overturned by measurement** (it assumed that the two ends S0, S1 of the k = 1 edge formed an orbit of their own with S2 separate ⇒ 2 orbits; the measurement gives 1 orbit, i.e. vertex-transitivity), and the direction of the negative verdict is unchanged but stronger. (`code/_sre_neutrino_k1.py`)
+
+### Boundaries Related to Fission Verification
+
+1. **Structural verification rather than numerical prediction**: All observables have already been published; SRE only provides a unified graph-theoretic reading and does not derive new numbers from first principles;
+2. **Aligned with nuclear physics**: The Δ criterion agrees with the established nuclear-physics statement of neutron separation energy versus fission barrier; SRE only performs a translation of language;
+3. **Fast cross-section error**: The fast cross-sections are nominal values, and the definition of the energy point implies ±30% uncertainty; the conclusion that "the same order of magnitude is restored" is robust;
+4. **Correlation is not causation**: The Pearson value of 0.932 refers to 9 target nuclei, and although Δ and σ_th come from mutually independent nuclear data, the significant correlation is not a proof of causation;
+5. **Fission net energy deviation**: The model deviation is +6~8%, with the direction and magnitude correct; the precise value depends on the choice of the fragment B/A sampling point;
+6. **Chain criticality uncorrected**: p" is the upper limit for f=1; a real reactor requires leakage and absorption corrections.
+
+### Boundaries Related to Dimension Collapse and Theoretical Constraints
+
+1. **Dimension collapse as empirical indication**: All tests merely organize real empirical data into dimensionless relational numbers and verify that they approximately obey additivity/step/integer-ratio structures; this is an aligned indication of the SRE ontology "distance = coherent bookkeeping", and no numerical value is derived from SRE;
+2. **Bond length fluctuation**: Bond lengths are empirical representative values; the same bond fluctuates by ±0.01–0.03 Å in different environments, which is noise at the decimal-place level relative to a0, and should not be over-interpreted bond by bond;
+3. **Covalent radius calibration dependence**: The covalent radii adopt the Cordero 2008 calibration; switching to the Pyykkö system would shift individual residuals by about 1–3%, but the family structure and the conclusions remain stable;
+4. **Theoretical constraint inferences**: The special binding of ions/metals and the current-emergence inference are both logical consequences of model self-consistency; they change no measurable numerical value, only replacing the traditional explanatory layer.5. **The exponential decay law has been derived, but the strong reading of its two-factor decomposition is judged negative (added in v1.8)**: 13.3 uses the axioms of Sections 5.2 / 9.4 (dormancy as the default state + removal as a rare, independent, stationary perturbation) to **derive** the exponential law $T_{1/2}=\ln2/p$ and memorylessness (MC verification: survival-curve deviation 1.03×10⁻³, half-life-identity deviation 0.0224%, memorylessness deviation 5.7×10⁻⁴; the power law is excluded — the log-log piecewise slope drifts from −0.570 to −5.013, with $R^2$ 0.781 against 0.999999), thereby closing the "exponential-law gap" registered in Section 10. However, the **species-cancellation law** that follows from $p=p_{\rm graph}\cdot p_{\rm env}$ (for the same nuclide across environments, $p_{\rm graph}$ cancels exactly) yields the zero-parameter prediction "the stripping enhancement factor E is independent of the nuclide", which is **falsified by measurement**: ¹⁸⁷Re and ¹⁶³Dy share the mode (bound-state β⁻) and have nearly the same Q (2.467 and 2.560 keV), yet their E differ by **≥ 6.79 orders of magnitude**, and ¹⁸⁷Re and ²⁴¹Pu share the mode yet differ by 6.01 orders of magnitude. Since $p_{\rm graph}$ has already cancelled exactly in that ratio, **the failure cannot be repaired by the graph factor** ⇒ $p_{\rm env}$ must contain species-specific atomic/electronic-configuration information, whereas the SRE side has only a scalar. Boundary: (i) data-reliability grading — ¹⁸⁷Re (Bosch 1996) and ¹⁶³Dy (Jung 1992) are primary literature while ²⁴¹Pu is a secondary review, and **the decisive pair does not include ²⁴¹Pu**; (ii) the L3 data are all heavy nuclei (A ≥ 163) whose SRE graphs are unavailable in this layer ⇒ this section is a **decomposition test at the phenomenological layer**, not a numerical derivation internal to SRE; (iii) the section refines the reading of Section 10 in one respect — the control parameter is refined from "the reachability of the s electron at the nuclear site" to "**the relative sensitivity of the s-electron density at the nuclear site to the environment**" (an environment term plus a species term), while the three-layer stratification itself (span 13.40 orders of magnitude) is unaffected. (`code/_sre_decay_law.py`)
+
+### Boundaries Related to the Observational Perspective and Validation Qualification (added in v2.0)
+
+1. **The "three layers" are a division of representational layers, not physical entities**: Section 14 divides the description into L0 topological / L1 ratio / L2 geometric, and states that "the native products of SRE stop at L1". This is a statement about **representation and input**, not about entities; its testable form is "give a recomputable three-layer reading for any new object", a per-object checklist of that kind not yet being provided in this paper.
+2. **Status of the two theorems**: angle ∉ functions(graph) (Theorem 1) and "same ratio, different map ⇒ different angle" (Theorem 2) are **mathematical facts** (graph invariants and constant-curvature trigonometry); this round only places them back into the context of "SRE and the world". **They do not claim that the SRE axioms are true**, nor do they constitute independent physical evidence about the three-dimensional world. The numerical values of Theorem 2 (spherical 104.57° → 145.10°, hyperbolic 104.39° → 86.67°, over the same scale window $s \in [0.1,\,1.6]$) depend on the curvature radius chosen (set to 1 in all cases); changing the radius changes only the specific values, not the qualitative conclusion that "the same ratio gives an interval".
+3. **The "predominantly ratios" claim is an internal empirical statistic of this project, not a theorem**: Section 14(2) states that "every quantity passed is a dimensionless ratio, and every negative verdict occurs when a dimensionful value is required". That claim is computed from this project's own entries (see the E/R/C/M counts of Section 14(7)), its **sample being this paper itself**, and it may be rewritten by subsequent entries.
+4. **The discrete-closure law (G12) is an induction, not a proof**: among its "ten examples", examples 4–5 are internal splits within a single chapter, and examples 6–9 are mostly repeated occurrences of a single-parameter form of payment, so the law is **only a unified statement of the existing entries** and does not constitute an impossibility theorem; its counterexample form would be "some continuous target closed without external input".
+5. **Scope of the three validation-qualification criteria**: the three criteria (out-of-sample character / non-degeneracy / window binding) target "fidelity / loyalty / correlation-coefficient" type indicators, not exhaustive enumeration or purely mathematical entries, so the M class (P0, R2) is not bound by them; whether the entries classified as R (e.g. the Criterion ① anchor) should be downgraded to C depends on whether a scheme-independent substitute can later be given, and this round reaches no conclusion on that.
+6. **MDS inversion fidelity must not be taken as emergence evidence for $n \le 3$ (added in v2.0; a long-standing outstanding item)**: the objective function of classical (Torgerson) MDS is $\min \lVert D - \mathrm{dist}(X)\rVert$, so for any **Euclidean** D its "inversion fidelity $r$" is always 1; and for $n \le 3$ the degrees of freedom of the points are so few that the triangle inequality alone fixes the distances (the water "$r = 1.000$" of the MDS document is of this kind). ⇒ **any use of an $n \le 3$ inversion fidelity as "emergence" evidence is disregarded in this paper**; the indicator carries information only when D is non-Euclidean (there it measures "embeddability", not geometric correctness). The repair direction is a purely topological D plus $n \ge 4$ plus comparing angles / bond lengths directly.
+7. **The convention dependence of the water "104°" and two corrections (added in v2.0)**: the two points registered in Section 14(4) must be carried along whenever it is cited — (a) the triple $(0.9584,\,1.51383,\,104.474)$ once used by a project script **mixes averaging conventions** (the first is of $r_e$ magnitude, the middle of $r_0$ magnitude), its closed angle being only $104.3279°$ (a difference of $0.146°$ from the stated value), and it should not be marked "self-consistent"; the consistent triple is $(0.9578,\,1.5144,\,104.4776)$. (b) The equilibrium angle happens to satisfy $\cos\theta_e = -0.250001$ ($10^{-6}$ level), so the normalized $t \approx \sqrt{2.5}$; the $t = 1.5811$ in the project is a **back-substitution plus coincidence** and must not be taken as evidence that "the graph predicts the water angle" (of the same kind as "$\Pi_1(Q_k) = 1/k$ on the tower is about $1/137$ at $k = 137$").
+8. **Boundary of $Q_3$ and the folding tower (supplementary registration in v2.0)**: the exact laws on the tower registered in paragraph 12.15(f) ($\lvert\mathrm{Aut}(Q_k)\rvert = 2^k k!$, distinct Laplacian values $= k+1$, $\Pi_1(Q_k) = 1/k$) **hold only for members of the folding tower**, and those members **have orbit count always 1** (both $\mathrm{D}$ and BDC preserve vertex-transitivity) ⇒ the shape resolution within the tower is zero, and no "shape" discussion may be based on tower-internal readings. One **misuse-prevention trap** is registered as well: $\Pi_1(Q_k) = 1/k$ is about $1/137$ at $k = 137$ (the numerical value of the classical $\alpha$); this is a **constructive coincidence** arising from bipartiteness plus the covering, and $Q_{137}$ has $2^{137}$ vertices and is physically unusable, so **it must not be taken as evidence**.
+
+---
+
+## 16. Conclusions
+
+This paper completes the full characterization of nucleons within the SRE framework; its core conclusions and logical chain are as follows:
+
+### Core Conclusion
+
+Nucleons are not point particles pre-placed in space, but **stable composite objects that emerge from the binary self-organizing network on the tripartite Y-shaped coherent core, constrained by the two-state opening/closing of dormant edges and the closure degree rebalancing rules**; their ontological structure is **the tripartite Y-shaped triangular closure Y₃⋉△₃** (V=12, E=18, β₁=7, |Aut|=36). This conclusion is reached from the clue of neutron β decay and obtained through three-step screening (integer determination of the vertex number V=12, spectral ratio determination of topology, triple symmetry determination of the solution), with a combined rarity of approximately 4.7×10⁻³.
+
+### Key Logical Chain
+
+1. **Methodological homology**: Nucleon derivation follows the same "local input → topological solution → inversion" route as electron derivation; SRE can only give dimensionless ratios, and absolute quantities require local input from classical physics;
+2. **Quark ontology reinterpretation**: Quarks should not share the Q₃ substrate with electrons, but are emergent statistical phenomena; N_c=3 in the Standard Model is in fact the number of skeleton strands, and flavor is the statistical projection of opening/closing breaking;
+3. **Two-state opening/closing mechanism**: Neutron = open state (β₁=6), proton = closed state (β₁=7); β decay is the removal/maintenance bifurcation of a dormant edge, and a breaking magnitude of 10⁻³ is a structural necessity;
+4. **Fission chain verification**: The mechanism "nuclear reaction = closure degree rebalancing" holds equally at the compound-nucleus and macroscopic scales; fast-neutron cross-sections restore the same order of magnitude, the excitation surplus criterion has a Pearson correlation of +0.932 with the thermal cross-sections, and the three-level signatures are unified (single-nucleon β decay → compound-nucleus fission → macroscopic chain criticality);
+5. **Theoretical constraints**: The additivity failure of ion/metal pairs is theoretically predictable (channel topology switching), and current is a coherent bookkeeping projection rather than continuous electron movement (distance is not an a priori coordinate);
+6. **Many-body assembly law and the shared ring**: the assembly law is determined by two principles ("open–closed complementarity" and "the images of the two bodies must be distinguishable in the shared region"), and the formation of the n-p shared unit follows automatically from the open/closed asymmetry; the lowest excitation of the shared-ring configuration is strictly independent of the body count (λ₂ = 2−√3, multiplicity k−1), and the shared ring is precisely the part of the lowest excitation that does not move at all, serving as a natural reference frame; the zero-parameter existence scorecard matches 5/5 in the A ≤ 3 sector; **the numerical value of the binding energy** is delimited as a non-computable interval for A ≥ 4, and 12.11 shows that this boundary is structural: the A = 4 isotriplet forms a single isomorphism class (no graph functional can distinguish them), and the additive-profile pricing class is falsified as a whole by an identity. The former "shadow solution" (variant D) is verified to be the k=2 member of the shared-ring family, and that name has been withdrawn (12.10).
+7. **Non-derivability of the antisymmetric coefficient and the existence criterion L1**: 12.12 attempts to derive from within SRE the antisymmetric coefficient λ required to repair A ≥ 4, and concludes that **λ can neither be derived nor fixed** (the required threshold, 29.0596 MeV, exceeds the ⁴He binding energy; the SRE-internal candidate pool is underdetermined; SRE fixes only the "shape" of λ — its support and monotonicity — and not its "value"). The same check, however, reveals that the only contentful form of antisymmetry is an **existence criterion** rather than an energy term — the zero-parameter, mirror-symmetric **L1: |n_n − n_p| ≤ 1** matches the 8-entry scorecard of 12.8 at **8 / 8** (Reading A: 7 / 8). The boundary of this paper is accordingly split into two questions: the **numerical value of the binding energy** is not computable for A ≥ 4 (locked by the identity of 12.11(2)); **existence** is computable at A = 4 and not for A ≥ 5 (L1 gives 22 / 34 on the A ≥ 5 out-of-sample set, its mismatches arising from the α closure effect and from the absence of an A scaling). The boundary is **relocated** from A ≥ 4 to A ≥ 5.
+8. **Containment of the open band (configuration-level localization of the electronic state)**: 12.13 rewrites "does the nucleon–nucleon force require the electronic state as well" as a configuration problem decidable in this layer, and concludes that its only decidable form — **open-band attachment to the shared region** — is **isomorphic** to variant A (hence not a new structure, and already quantitatively excluded by the deuteron binding energy) and **does not constitute** the "third class of SRE input" sought in 12.12. The diagnosis does yield a positive result: **the open band is the carrier of principle 1 of the assembly law**, appearing as the "shape of the gap" — the presence or absence of the gap decides whether n-p can assemble, the position of the gap decides that n-n is excluded automatically, and the **k = 1 singly-claimed edge** left after closure decides that the images of the two bodies are distinguishable (principle 2). This simultaneously yields an explanation for a fact previously described only phenomenologically: **the shared ring always has exactly one k = 1 edge** (the image of the open band), and this is precisely the structural origin of the statement in 12.5 that "the three points of the shared ring have zero amplitude in the lowest excitation mode, so λ₂ = 2−√3 is independent of the body count". The section also corrects a previously untested statement ("the neutron gap can only lie in ring 0" — the three rings are in fact a single automorphism orbit), a correction that leaves every existing conclusion intact.9. **The exponential law and the cessation of the downward branches (both new in v1.8)**: 13.3 **derives** the exponential decay law and memorylessness from the axioms of Sections 5.2 / 9.4, closing the gap registered in Section 10, and shows that the law requires no numerical value of $p$ from SRE — only its form; at the same time its two-factor decomposition $p=p_{\rm graph}\cdot p_{\rm env}$ yields a **zero-parameter species-cancellation law** (for the same nuclide across environments, $p_{\rm graph}$ cancels exactly), whose consequent prediction "the stripping enhancement factor is independent of the nuclide" is **falsified by measurement** (¹⁸⁷Re vs ¹⁶³Dy, same mode and nearly equal Q, differ by ≥ 6.79 orders of magnitude) and, precisely because $p_{\rm graph}$ has already cancelled, **cannot be repaired by the graph factor** — so $p_{\rm env}$ must contain species-specific atomic structure, which the SRE side does not supply. In parallel, 12.14 turns the registration "neutrino = the k = 1 singly-claimed edge on the shared ring" into an executable criterion and judges it **negative**, with a **distribution-free** blocking: the automorphism group is vertex-transitive on the three shared-ring points (orbit count measured to be 1) so every graph functional is constant on the three-generation candidates, the 3×3 local operators have only 2 distinct eigenvalues (spectrum reduced to two levels), and the ledger route has only 1 degree of freedom — against a requirement of 3 non-degenerate states and 2 independent non-zero gaps. The downward branches ① (lepton family) ② (CKM) and ④ (neutrino) thus all point to **one and the same missing piece**: the assignment rule "**integer invariant → real measured value**", i.e. the formalization of the L4 lock.
+
+10. **Criterion construction for, and negative verdict on, the L4 assignment rule (added in v1.9)**: Section 12.15 builds the missing piece to which the merge of the "four downward branches" points (the assignment rule "integer invariant -> real measured value", i.e. the L4 equation of Section 7.1) into a **pre-registered, falsifiable** test and executes it. With a zero-parameter monomial class as the $\Psi$ candidates, one design target ($m_p/m_e$) and two out-of-sample targets ($m_d/m_p$, $m_n/m_p$), and a decision tolerance of 1% (deliberately wider than the framework's demonstrated precision of 0.165%), the verdict is **negative** on three mutually independent grounds: (i) **reach bound (distribution-free)** - with the electron basal body $Q_3$ as the electron graph, the full-support bound for $|a| \leq 2$ is only 511.06, short of the target 1836.15 by 0.555 orders of magnitude (23.07 for support <= 3), so no $\Psi$ in the pool can produce $m_p/m_e$; (ii) **"two graphs share one lock" directly refuted** - with $M_{60}$ as the electron graph the reach is unconstrained, but the best $\Psi$ differs from target to target (`lam2L^2 rhoL^2 energy^-1` / `E^1 b1^2 energy^-2` / `E^-2 rhoA^2 energy^1`), and the joint hit is 0 for $|a| \in \{1,2,3\}$ under both the 1% and 3% windows; (iii) **hidden degree of freedom (C3 violated)** - the electron-layer representative (basal body $Q_3$ vs the $\alpha$ carrier $M_{60}$) is not fixed by the framework, and the reach verdict flips between the two configurations, so "which graph represents the electron" is itself a free parameter => even an apparent hit would be non-falsifiable. The MC null (407 trials on random graphs with the same $(V,E)$) shows that the real configuration's single-target hit counts are of the same order as for random graphs ($T_1$ 1 against 0.40 per trial, $T_2$ 18 against 21.46, $T_3$ 191 against 94.91), i.e. no above-null signal. **Positive residue**: the same $\Pi_1$ machinery holds on the difference ratio of two states within a layer ($\alpha \cdot \Pi_1(\mathrm{Y_3})$ against $(m_n - m_p)/m_p$: -0.164%) but fails for inter-layer overall mass ratios ($\Pi_1(\mathrm{Y_3})/\alpha = 25.84$, short of 1836.15 by 1.85 orders of magnitude) => the cross-layer lock governs the difference within a layer but not the overall scale of a layer. **The net contribution of this round is therefore**: the merge of four pending items is turned into a single executed test, and the missing piece is shown **not to be suppliable by switching to a larger zero-parameter pool**.
+
+11. **The twist of observational perspective: the boundary between the dimension-free SRE world and the three-dimensional world (added in v2.0)**: the positive and negative verdicts of the preceding chapters are converged in Section 14 into a single explicit division of perspective — the description splits into **three layers**: **L0 topological** (the graph; it yields only integer invariants, with neither ratios nor angles), **L1 ratio** (dimensionless ratios, the intrinsic representation compatible with SRE), and **L2 geometric** (angles and coordinates, purely the output of a map); the two external inputs across the layers are respectively **the metric D** and **the map** (Euclideanity / curvature / scale). This yields two **theorem-level** conclusions: (a) **angle ∉ functions(graph)** — the same graph $P_3$ with two admissible metrics gives $180.0000°$ and $73.7398°$, while every graph invariant is identical term by term; (b) **same ratio, different map ⇒ different angle** — the same ratio $t_0 = 1.581140$ gives $104.4776°$ in the Euclidean case, on the sphere ($R = 1$) gives $104.57° \to 145.10°$ as the scale varies, and in the hyperbolic case gives $104.39° \to 86.67°$ (over the same window $s \in [0.1,\,1.6]$), and a curved space has no similarity ⇒ **geometry is a property of the map, not of the graph**. In support of this, a 17-entry **validation-qualification audit** shows that **the C and R classes fall 100% within the "geometry / shape" branch** (which has 0 qualified entries), whereas the E class lies entirely within the spectral / numerical branch and yields a string of negative verdicts. **Net consequence**: the strength of the framework lies in "fixing the shape" (laws, order, layering and dimensionless ratios), and its boundary lies in "fixing the value" (dimensionful real numbers); the seam between the two is exactly the nameable toll of "the map"; every prior negative verdict of this paper falls at one of the two tolls, rather than in the insufficient precision of some formula.
+
+### Unresolved Matters and Next Steps
+
+1. **Independence of the tie-break**: Candidate B has been excluded by Criterion ⑤ (the open state must still retain closed units), and A is the unique survivor at the structural level; however, this criterion rests on Q3 (closure-degree re-equilibration), a conjecture of this paper, and a measured criterion independent of the structural prior is still lacking (Criterion ⑥ shows a 2.67% deviation, not strong enough);
+2. **Π₂ is unusable for nucleon inversion (now determined, not merely "uncalibrated")**: the electron-side w-independence of the second w-independent functional Π₂ = λ₂/λ₄ **has a threshold** — an exhaustive scan over even n = 8…120 shows that Π₂ is w-independent **only for n ≥ 24**, where λ₂ and λ₄ are both even modes (for n ≤ 22, λ₄ falls on an odd mode and Π₂ depends on w). The electron-side Π₂ should therefore be stated as holding "**for n ≥ 24**", and the original phrase "the second w-independent functional" requires that qualifier. On the nucleon side it is **structurally unusable**: the single-group shared-ring k-body has λ₂ = 2−√3 exactly with **multiplicity m = k−1** and the next distinct eigenvalue invariably 1, so for k ≥ 4, λ₄ lies inside the degenerate block giving **Π₂ ≡ 1.0** (identity), while for k = 2, 3, λ₄ = 1 giving Π₂ = 2−√3 (a mere re-reading of λ₂). The mechanism has the same origin as 12.5. **This item therefore moves from "uncalibrated" to determined: the issue is not "calibration data are still missing" but "the functional carries no independent information on the nucleon side".** (`code/_sre_nucleon_pi2_calibration.py`)
+3. **Skeleton-spectrum parameterization (homology point located, but only the "shape" transfers)**: the spectra of the two layers belong to the same one-parameter family "2 − 2cos(mθ)" — the electron side has θ_e = 2π/n (given by the discretization number n), while on the nucleon side solving λ₂ = 2−√3 for the angle gives cos θ_N = √3/2, i.e. **θ_N = π/6**. Alignment of the two sides requires 2·(2π/n) = π/6, whose unique positive-integer solution is **n = 24**; at that example the electron-side Π₂ exactly equals the nucleon-side λ₂ (both 2−√3). **It must be stated honestly, however**, that n = 60 (the primary electron-side object of this paper) does not satisfy that alignment, and that n = 24 does not constitute a general family "n = 6m". Hence the parameterization **"shape" of the two layers (the family structure and the even-mode protection principle) transfers**, whereas the **"value" does not** (the electron Π₁ depends on w, Π₂ has the n ≥ 24 threshold, and on the nucleon side Π₂ carries no information with no adjustable n). **This item therefore moves from "unresolved" to "partly settled": the homology point is located (positive), but no cross-layer mapping exists (negative); together with λ in 12.12, w(k) in 12.11 and the B1 conclusion on the k distribution, it forms the fourth instance of "SRE fixes only the 'shape', not the 'value'".**
+4. **The k distribution and inter-ring linking (both settled)**: the role of the k distribution is located by 12.11(1′) and B1 — under purely SRE-endogenous conditions the only admissible form is the single-group k = (A,) (a weak conclusion: the anchor pool has only 2 entries and there is exactly one effective discrimination); once external priors are admitted the distribution is not uniquely determinable from within SRE. The inter-ring linking mechanism has been shown by B2 to be **impossible to supply**: under the current assembly rule a multi-group product is invariably a disconnected union (cc = number of groups, 9/9), whose (V, E, β₁) is **logically incompatible** with the published values (connectivity costs at least one inter-ring edge, forcing E from 96 to 97); and no mechanism satisfies all four of "degenerates to the current rule for a single group, is connected for multiple groups, does not destroy 12.5, introduces no new vertices" (since §12.5 requires the shared ring to form a closed unit, which measurably excludes "connectivity" — an exhaustive scan of all minimal connection schemes finds no λ₂ returning to 2−√3). **Joint conclusion: multi-ring configurations should be absent from this layer, and the multi-group constructions for A ≥ 5 should be abandoned.** This impossibility theorem **does not depend on B1**, resting only on §12.5 and the addition law, and therefore stands independently. (`code/_sre_nucleon_interring_b2.py`, `code/_sre_nucleon_kdist_rule.py`)
+5. **Graph-theoreticization of the Δ criterion**: Upgrade the compound-nucleus excitation surplus Δ=S_n−B_f from a phenomenological criterion to a derived quantity of the Y₃⋉△₃ skeleton;
+6. **Residue–release correspondence not quantified**: Section 9.3 has established ρ as the strict invariant of the transition (the residue), but how "residue (denominator) × mobile branch (numerator)" corresponds quantitatively to "light as the reference object of measurement" still lacks an explicit mapping;
+7. **Computability for A ≥ 4 (settled)**: 12.11 has shown that the boundary is non-repairable both at the structural layer (isotriplet as a single isomorphism class) and at the additive pricing layer (identity), and has given the only feasible repair — a mirror-antisymmetric term g(a) = λ·max(0, a − 1) with a = |n_n − n_p| — together with its price: 1 fitted parameter and no predictive margin for A ≥ 5. 12.12 further proves that the coefficient of that repair, **λ, can neither be derived from nor fixed by SRE** (the question "can λ be derived within SRE?", previously listed as pending, is thereby answered negatively: λ is an absorbable degree of freedom, and SRE fixes only its "shape"); at the same time, 12.12 settles the **existence** question at A = 4 with the zero-parameter criterion L1 (|n_n − n_p| ≤ 1), giving 8 / 8. This item therefore moves from "partly settled" to **settled**: the numerical binding energy is not computable for A ≥ 4, while existence is computable at A = 4 and not for A ≥ 5. **12.13 has eliminated one of the candidate routes**: reading "electronic state participation" as open-band attachment to the shared region yields a configuration isomorphic to variant A, so it **does not constitute** the "third class of SRE input" sought in item (i) below; the same check, however, yields a positive result — the open band is itself the carrier of principle 1 of the assembly law. **Two matters remain unresolved**: (i) whether a third class of SRE input exists that is neither a graph invariant nor a ledger function and is **not equivalent to a variant-A docking**, which would let the existence criterion L1 shed its status as a post-hoc reading and would explain its mismatches at A ≥ 5; (ii) whether A ≥ 5 can be used to fix ψ(A ≥ 5) unilaterally through other observables (e.g. the neutron separation energy sequence), thereby restoring **binding-energy** out-of-sample testability in that interval. The disposition of the "shadow solution (variant D)" left over from the tie-break adjudication has been completed in 12.10 and is no longer listed as unresolved; the presentational hazard that "the equivalence of the three rings was untested" has been explicitly registered and corrected in 12.13(1).
+8. **External anchor (added in v1.6; continued in v1.7, including the negative verdict on the second anchor)**: SRE outputs only ratios, so absolute values require an external anchor; the homogeneity theorem of Op13–18 further requires that L4 "share one lock across two graphs". This round has **located and empirically verified** that lock: only **α** acts on both layers simultaneously, and the two relations side by side form exactly a closed loop — on the electron layer $\alpha = 1\cdot\Pi_1(M_{60})$ (α as the **output**, deviation 1.45×10⁻⁵); on the nucleon layer $(m_n-m_p)/m_p = \alpha\cdot\Pi_1(\mathrm{Y_3})$ (α as the **input**). This yields a **zero-parameter reverse prediction**: given α and the Y₃ skeleton (**with no nucleon data whatever**), the predicted $\Delta m_{np}/m_p = 1.376138\times10^{-3}$, against a measured $1.378419\times10^{-3}$, a relative deviation of **−0.165%** (a Δm_np difference of −0.0021 MeV) — the cleanest cross-layer chain in this project to date. It is simultaneously determined that α fixes only the "**shape**" (spectral-ratio landing point and gauge); **V is not fixed by α** but by Criteria ②③ once the window is tied to the α-lock's precision (v1.7, see 7.6). As to the **second anchor** (added in v1.7; a negative verdict): after screening the candidate set against the four criteria C1/C2/C3/A1, **only the μ family survives** (μ_n/μ_p, μ_p, μ_d, μ(³H), μ(³He), μ(⁶Li)), whose common structural feature is that "a magnetic moment can only come from a current loop" ⇒ the corresponding graph quantity can only be β₁. Three rounds of testing follow. ① **Statistical**: the whole-set hit-rate check (624 comparisons plus Monte-Carlo null hypotheses) gives the strongest V-sharp single-point hit $\beta_1(o)/\beta_1(c)\big|_{V=12} = 6/7 = 0.857143$ against $\mu_d/\mu_N = 0.857438$ (deviation 0.034%), but the p-value swings between 0.04 and 0.2 with the number of effectively independent targets, so it is only **marginal**. ② **Structural (decisive)**: the graphs of $^3$H and $^3$He are **isomorphic** (same edge set, different ledger only), so **every** graph functional predicts $|\mu(^3\mathrm{H})|/|\mu(^3\mathrm{He})| = 1$, whereas the measured value is 1.4001 (deviation 28.6%) — **the μ family cannot be carried by graph functionals; it can only be a ledger functional** (exactly the same conclusion as 9.2, "the product graph does not remember the partner state"). ③ **Family law**: the ledger functionals {#p, A, #n, ψ(#p)+2ψ(A), …} are put through a zero-parameter ratio test on 10 structure pairs, and **none passes**. By-product (a positive result): the sign side does carry content — "sign(μ) flips with the parity of #p" holds 5/5 for A ≤ 4, but external falsification on 16 real nuclei downgrades it to a **trend (14/16 = 87.5%) rather than a zero-parameter law** (counterexamples ¹³C, ¹⁵N). **Conclusion: the second anchor has not been found, and it has been proved that it cannot exist at the level of graph functionals; if it exists at all it must live in the ledger layer, and must pass a family-law test.** (`code/_sre_anchor_registry.py`, `code/_sre_anchor_second.py`)
+9. **Closure of the four downward branches (added in v1.8)**: all four branches registered in Section 12.8 now have conclusions — ① the lepton family is **pending** (a zero-parameter "generation → (n,w)" rule is required; not done); ② the Latin square → CKM is **judged negative** (12.9; a zero-parameter "discrete class → continuous angle" rule is required); ③ the boson-as-transition-quantum **numerical route is judged negative while the conceptual redirection is retained** (12.10; the positive by-product "the photon is unique" is registered); ④ the neutrino as the k = 1 singly-claimed edge is **judged negative** (12.14; the graph route is blocked by vertex-transitivity and the ledger route by counting). The pending items of ①②④ **merge into one and the same missing piece** — SRE lacks the assignment rule "**integer invariant → real measured value**" (the formalization of the L4 lock of Section 3). One further item is **closed**: the "exponential-decay-law gap" registered in Section 10 has been filled by the axiomatic derivation of 13.3 (a positive result), while the strong reading of the same section ($p_{\rm env}$ = a pure environment quantity) is falsified by measurement (a negative result), and its gap (the species-specific dimension of $p_{\rm env}$) likewise falls under that one missing piece. **The net conclusion of this round is therefore: two "distribution-free" blockings are added to the project's boundary list (the vertex-transitivity of 12.14 and the falsification by the species-cancellation law of 13.3), and four pending items are collapsed into one.**
+
+10. **The L4 assignment rule (added in v1.9; settled this round)**: the "four downward branches" obtained from the top-down screening of Section 12.8, together with the species dimension of $p_{\rm env}$ exposed in 13.3, had all been merged into a single missing piece - the assignment rule "integer invariant -> real measured value" (= the L4 equation of Section 7.1). Section 12.15 has now turned that merge into a **pre-registered, falsifiable test** and judged it negative, on three mutually independent grounds (reach bound / no single lock / hidden degree of freedom); see 12.15(7) and item 10 of the Key Logical Chain in Section 16. **This changes the shape of this item**: it is no longer "not yet attempted" but has been **tested and found not suppliable by enlarging the zero-parameter pool**. Only two open forms remain: (i) whether a **non-multiplicative** $\Psi$ (containing additive, trigonometric or combinatorial terms, or a spectrum-dependent asymmetric function) can satisfy all three targets at once - the negative verdict on the monomial class in this section does not cover such a class; and (ii) whether there exists a **prior-fixed** rule selecting the electron-layer representative (a non-arbitrary choice between the basal body $Q_3$ and the carrier $M_{60}$), which would remove the hidden degree of freedom referred to in (iii) and restore the zero-parameter status of the criterion. Until (ii) is resolved, even a hit within (i) would be non-falsifiable (C3 violated) and must not be used to advance the programme.
+
+11. **A per-object checklist for the three-layer structure and the repair of the "geometry-shape" branch (added in v2.0)**: the three-layer decomposition of Section 14 is currently illustrated by the water molecule and a number of existing entries, and no general checklist for "giving a recomputable three-layer reading for any new object" has yet been provided; at the same time the repair direction indicated by the audit of that section (a purely topological D plus $n \ge 4$ plus **comparing angles / bond lengths directly**) has not yet been executed ⇒ this item is the immediate next step after the perspective has been established, and also the minimal action that would move the "geometry-shape" branch from 0 qualified entries toward qualification.
+
+All conclusions are strictly confined to self-consistent constructions within the SRE model; real physical inferences must be independently verified by external means.
+
+---
+
+## Appendix A: Key Numerical Tables
+
+### A.1 Core Physical Constants (CODATA 2018)
+
+| Quantity | Value | Unit |
+|---|---|---|
+| m_e | 0.510998950 | MeV/c² |
+| m_p | 938.27208816 | MeV/c² |
+| m_n | 939.56542052 | MeV/c² |
+| α⁻¹ | 137.035999084 | Dimensionless |
+| a0 | 0.529177210903 | Å |
+
+### A.2 Key Numerical Values for Nucleon Inversion
+
+| Quantity | Value |
+|---|---|
+| Δm/m_p=(m_n−m_p)/m_p | 1.378419305×10⁻³ |
+| κ_N=(m_n−m_p)/m_p/α | 0.188893067 |
+| Electron calibration w" | 1+4.347×10⁻⁵ |
+| Skeleton Π₁(closed) | 0.188580 |
+| Deviation | 0.165% |
+| Combined rarity | 4.7×10⁻³ |
+
+### A.3 Key Numerical Values for Fission Verification
+
+| Quantity | Value |
+|---|---|
+| Thermal cross-section dynamic range | 8.58 orders of magnitude |
+| Fast cross-section dynamic range | 1.48 orders of magnitude |
+| Pearson(Δ, log₁₀σ_th) | +0.932 |
+| U-235 fission model energy | 215–219 MeV |
+| U-235 fission measured energy | 202.5 MeV |
+| Chain criticality p"(U-235) | 0.412 |
+
+### A.4 Key Numerical Values for Dimension Collapse
+
+| Quantity | Value |
+|---|---|
+| Organic C skeleton RMS residual | 1.5% |
+| Light heteroatom RMS residual | 6.7% |
+| Same-nucleus H/O/F stretching | +10.0% ~ +19.7% |
+| Same-nucleus heavy main group RMS residual | 3.3% |
+| Ion pair RMS residual | 14.4% |
+| Core Δ(1→2) | 0.352±0.037 a0 |
+| Core Δ(2→3) | 0.232±0.058 a0 |
+
+### A.5 Key Numerical Values for the Many-Body Assembly Law and the Shared Ring
+
+| Quantity | Value |
+|---|---|
+| Variant A (two bodies, no shared edge) | V=22, E=35, β₁=14, T=6; λ₂=0.238442818; ρ=6.681330644 |
+| Variant D (two bodies, shared ring) | V=21, E=33, β₁=13, T=5, \|Aut\|=48; ρ=6.000000; λ₂=2−√3 |
+| Deuteron prediction of variant A | 2.5867 MeV (measured 2.224566 MeV, 16.3% too high) |
+| Sharing tax (own vs shared) | 0.28 Δm_np = 0.362 MeV |
+| Three/four-body linear law | V=9k+3, E=15k+3, T=2k+1, β₁=6k+1, \|Aut\|=6·2^k·k! |
+| Lowest non-trivial mode | λ₂ = 2−√3 = 0.267949192431 (exact for k=2..6), multiplicity k−1 |
+| ρ sequence (k=2..6) | 6.000000 / 6.925423 / 7.909516 / 8.908855 / 9.912634 |
+| ψ(k) (in units of Δm_np) | +0.967105 / +0.376461 / +2.795573 / +10.750837 |
+| Scorecard (Reading A) | 7/8 overall; 5/5 in the A ≤ 3 sector; only mismatch ⁴Li |
+| A=4 out-of-sample predictions | ⁴H 29.0596 MeV, ⁴Li 31.4244 MeV (both measured unbound) |
+| Rarity of ρ among random graphs | 0 out of 2966 samples have ρ exactly the integer 6 |
+| Identity (additive-profile pricing class) | B(⁴H) − B(⁴He) = ψ(1) − ψ(2) = B(³H) − B(³He) = +0.590645 Δm_np = +0.7639 MeV |
+| Same identity (⁴Li side) | ψ(3) − ψ(2) = +2.419113 Δm_np = +3.1287 MeV |
+| A=4 isomorphism class | ⁴He / ⁴H / ⁴Li all V=39, E=63, T=9, β₁=25, \|Aut\|=2304, ρ=7.909515966, λ₂=2−√3 |
+| Residuals of composition-resolved interference linear bases | (C,S) 10.2%, (C,a) 3.3%, (I,a) 24.6%, (C,I) 10.2%; extrapolated signs for ⁴H/⁴Li all wrong |
+| Minimal repair term | imbalance term λ·max(0, a−1), a = \|n_n − n_p\|, λ ≥ 29.0596 MeV (fitted parameter, not a prediction) |
+| Dual-service edges of variant A | 1 (the shared-ring configuration has 3) |
+| Recomputed ρ of shared-ring configurations (k=2..6) | 6.000000 / 6.925423 / 7.909516 / 8.908855 / 9.912634; λ₂ identically 2−√3 (deviation ca. 10⁻¹⁵) |
+| Shared-ring products of n-p and p-p | Isomorphic (V=21, E=33, T=5, β₁=13, \|Aut\|=48, ρ=6, λ₂=2−√3 all identical) |
+| Threshold for the antisymmetric coefficient λ | λ ≥ B_ledger(⁴H) = 22.468780 Δm_np = 29.0596 MeV (**exceeding** B(⁴He) = 21.878135 Δm_np = 28.2957 MeV) |
+| Comparison with the empirical asymmetry energy | a_sym ≤ 24 MeV < 29.0596 MeV (5.06 MeV, i.e. 17.4%, short); the mechanism also gives a non-zero 7.7 MeV at A=3, conflicting with the ³H calibration |
+| Statistics of the λ candidate pool (16 natural candidates) | 11 below the threshold, 5 above; the threshold falls in the gap between 21.878135 (B(⁴He)) and 23.598162 Δm_np (B(⁴He)+B(deuteron)) |
+| Criterion L1 (antisymmetry criterion) | \|n_n − n_p\| ≤ 1; **8 / 8** on the 8-entry scorecard (Reading A 7 / 8) |
+| Per-interval hits of L1 (scorecard + A≥5 out-of-sample, 34 entries) | A ≤ 4: 8/8; A = 5: 1/3; A = 6–9: 8/11; A = 10–14: 5/12; **total 22 / 34** (Reading A 14 / 34) |
+| Mismatch diagnosis for L1 | The mismatches at A = 5 (⁵He, ⁵Li) are an α closure effect (no bound nucleus at A = 5); the mismatches for A ≥ 8 arise from the absence of an A scaling |
+| Scan over (N−Z)²/A ≤ c | The two-end constraints are incompatible (A = 4 requires c < 1, drip-line nuclei require c ≥ 2.571); over c ∈ {0.25…3} the best total is 22 / 34 |
+
+---
+
+## Appendix B: Consolidated Terminology List
+
+This appendix consolidates all term definitions used in this paper, sorted alphabetically:
+
+| Term | Definition |
+|---|---|
+| **Binary Self-Organizing Network** | The ontology of SRE: a network whose elements are always ±1 and which grows continuously in time; all things are its resident structures |
+| **β₁ (First Betti Number)** | β₁ = E − V + 1, the number of independent closed loops in the graph |
+| **Closure Degree Potential** | In graph-theoretic language, the "rebalancing hill height": whether a complex is worth/able to rearrange to a lower closure degree configuration |
+| **Compound Nucleus** | The temporary state (A+1) formed when a target nucleus absorbs a neutron; fission occurs inside it |
+| **Covalent Radius** | The radius of an atom in a covalent bond, normalized by a0 into a dimensionless relational number |
+| **Assembly Law** | The rule that merges several nucleon skeletons into a many-body configuration; determined by two principles: open–closed complementarity plus the images of the two bodies must be distinguishable in the shared region |
+| **Gap** | At the same shared position, the number of gaps g left by open-state (neutron) nucleons |
+| **Supply** | At the same shared position, the number of complete ring edges s offered by closed-state (proton) nucleons |
+| **Shared Ring** | One closed triangular ring shared by several nucleons after assembly |
+| **Shared Ledger** | A counting table recording how many bodies "claim" each overlapping edge on the shared ring; it does not change the graph structure |
+| **Interference Depth** | The depth to which several bodies overlap on the same shared unit; a candidate pricing quantity for binding energy, not yet calibrated |
+| **Dimension Collapse** | Organizing real empirical bond length data into dimensionless relational numbers in units of a0, and verifying additivity/step/integer-ratio structures |
+| **Excitation Surplus Δ** | Δ = E" − B_f; Δ>0 means a low-energy (thermal) neutron can cross the fission barrier |
+| **Fission Cross-Section σ** | The probability area that a neutron (seed) incident on a nuclide triggers fission; varies with energy |
+| **Fission Barrier B_f** | The energy hill a compound nucleus must climb in order to deform into fission |
+| **Dormant Edge** | A channel with χ=0 in SRE: it is not deleted but degenerates to the multiplicative identity 1 — conductive but not forming a loop |
+| **Laplacian Spectrum** | The set of eigenvalues of a matrix built from the graph's adjacency relations, written λ₁=0 ≤ λ₂ ≤ … ≤ λ_max=ρ |
+| **Neutron Separation Energy S_n** | The energy required to remove the last neutron from a compound nucleus; the excitation energy after thermal-neutron absorption is E"=S_n |
+| **Π₁ = λ₂/ρ** | Graph functional: the ratio of the smallest non-zero eigenvalue to the largest, calibrated as α on the electron side |
+| **Projection (Functional)** | A rule that maps a graph to a number; the graph changes, the number changes |
+| **Multiplication Constant ν** | The average number of neutrons emitted per fission |
+| **Critical k_eff** | The ratio of the neutron count in each generation to that of the previous generation; ≥1 gives a self-sustaining chain |
+| **Graph G** | A mathematical object composed of vertices and edges |
+| **V, E** | Number of vertices V, number of edges E |
+| **Degree k** | The number of edges incident to each vertex; k-regular = all vertices have the same degree |
+| **Automorphism Aut(G)** | A permutation that maps a graph onto itself without changing the connectivity relations; \|Aut\| measures the degree of symmetry |
+| **Vertex Orbit** | A grouping of vertices that can be interchanged under all symmetry operations |
+| **Inversion** | Given the value of a functional, solving inversely for the structural parameters of the graph |
+| **sim_p Generator** | The core evolution algorithm of the binary self-organizing network, injecting random differences and expanding outward at every step |
+| **Antisymmetric Penalty Term** | An additional term depending only on the compositional imbalance a = \|n_n − n_p\| and vanishing identically for a ≤ 1, g(a) = λ·max(0, a − 1); its coefficient λ cannot be derived from SRE (12.12) |
+| **Criterion L1 (Antisymmetry Criterion)** | A shared-ring assembly is legal (predicted bound) if and only if \|n_n − n_p\| ≤ 1; zero-parameter and naturally n↔p symmetric |
+
+---
+
+## Appendix C: Code List and Complete Reproduction
+
+All reproducible scripts of this paper are archived in the `code/` directory; the only dependencies are Python 3 + NumPy + NetworkX (no torch dependency). The running command is `python -u <script.py > log 2>&1`.
+
+### C.1 Nucleon Inversion Related
+
+| Script | Function |
+|---|---|
+| `_sre_nucleon_skeleton_inversion.py` | Main nucleon inversion recalculation: electron calibration, criteria ①②③, rarity, Q₃ check |
+| `_sre_nucleon_tiebreak_scan.py` | Non-spectral invariant comparison and cross-check of the parallel candidates |
+| `_sre_nucleon_tiebreak_v2.py` | Tie-break v2: degeneracy structure of the spectra, first statement of Criterion ④ |
+| `_sre_nucleon_orbit_reading_check.py` | Uniqueness of per-orbit readings and closed-form search for the λ₂ drop |
+| `_sre_nucleon_release_rarity.py` | Pool rarity statistics of the transition release amounts |
+| `_sre_nucleon_transition_residue.py` | Transition release and topological residue test (invariance of ρ) |
+| `_sre_nucleon_ringedge_transition.py` | Ring-edge transition analysis: ring-edge vs spoke readings, criteria ④⑤⑥, and full-pool rarity |
+| `_sre_nucleon_skeleton_plot.py` | Generation of the skeleton structure schematic and the screening funnel figure |
+| `sre_nucleon_skeleton_inversion_results.json` | Main nucleon inversion result data |
+| `sre_nucleon_tiebreak_results.json` | Parallel candidate comparison data |
+| `sre_nucleon_ringedge_transition_results.json` | Ring-edge transition analysis data |
+
+### C.2 Many-Body Assembly Law and Shared Ring Related
+
+| Script | Function |
+|---|---|
+| `_sre_nuclear_data_survey.py` | Survey of usable nuclear data: screening of dimensionless candidate quantities, false-positive cleanup, and structural findings |
+| `_sre_nucleon_dimer_rule.py` | Two-body assembly law: enumeration of five variants and screening by the two principles |
+| `_sre_nucleon_dimer_spectra.py` | Spectra and invariant comparison of the two-body variants (A, D) |
+| `_sre_dimer_full_enum.py` | Full enumeration of two-body constructions and verification of the mapping direction |
+| `_sre_nucleon_sharedring.py` | Structure and full spectrum of the shared-ring configuration (variant D) |
+| `_sre_sharedring_check.py` | Automorphism orbit check of the shared-ring motif |
+| `_sre_sharedring_motif.py` | Comparison of the D-type products of n-n / p-p and arithmetic rigidity |
+| `_sre_nucleon_trimer.py` | Construction of the k-body shared-ring configuration and verification of the structural linear law |
+| `_sre_nucleon_trimer_price.py` | Structural law and pricing inversion (an alternative parameterization) |
+| `_sre_nucleon_trimer_mode.py` | Variation of the lowest non-trivial mode with the body count k, and its zero-amplitude support |
+| `_sre_nucleon_ledger_price.py` | Shared-ledger pricing: inversion of ψ(k), A=4 out-of-sample, and the existence scorecard |
+| `_sre_nucleon_ledger_laws.py` | Pricing-law tests: deviations of the linear and pairwise-counting laws, A=4 out-of-sample |
+| `_sre_nucleon_manybody_verdict.py` | Closure of the assembly-law scorecard: sector statistics of the three readings and the adopted boundary |
+| `_sre_nucleon_shadow_disposal.py` | Shadow-solution disposal: isomorphism check between D and the k=2 member, discriminating power of the non-spatial restatement of principle 2, ledger difference between variant A and the shared ring, and the A=4 single isomorphism class |
+| `_sre_nucleon_interference.py` | Interference-depth test: identity proving the non-repairability of the additive-profile pricing class, residuals of composition-resolved interference linear bases, the A=4 isomorphism class, and the minimal repair term with its price |
+| `_sre_nucleon_manybody_plot.py` / `_sre_nucleon_manybody_plot_EN.py` | Figure 5 of Section 12: assembly schematic, ρ and λ₂ versus body count, zero-parameter scorecard; the spectral quantities in panel (b) are recomputed numerically inside the script |
+| `_sre_nucleon_asymmetry.py` | The attempt at an antisymmetric coefficient: the nature of the λ threshold and its comparison with the empirical asymmetry energy, a 16-candidate selection check within SRE, the "shape vs value" separation argument for λ, the zero-parameter criterion L1 on the 8-entry scorecard and on the A ≥ 5 out-of-sample set (26 entries), and the (N−Z)²/A ≤ c scan |
+| `_sre_nucleon_electron_coupling.py` | The configuration-level test of Section 12.13: measurement of the automorphism orbit of the three rings, re-running of the four two-body constructions (S1 variant A / S2 open-band attachment / S3 shared ring / S4 open-to-open) for r = 0,1,2, the verdict S2 ≅ S1 and its mechanism, the diagnosis that the k=1 edge in the S3 ledger is the locus of the open band, and the isomorphism re-check of the three A = 4 compositions |
+| `_sre_nucleon_latin_ckm.py` | First cut of recommendation ②: the "mixing-table" test of the Latin-square perfect matching — bijectivity of the Latin square, parameter counting (C3), the assembly-level isomorphism-class scan (closed+closed 1 class / closed+open 1 class / **open+open 2 classes**), and the zero-parameter local-response mismatch matrix compared with the CKM; the conclusion is that "zero parameters and continuous angles cannot be had together" |
+| `_sre_boson_transition.py` | Recommendation ③: the test of "boson = transition quantum" — falsifying "W/Z are the two states of one skeleton", the **whole-set hit-rate check** of intra-family transition ratios (expected 5.45 versus measured 6, no structural signal), m_H/m_W falling outside the range; the positive by-product being "a pure transition is massless ⇒ the photon is unique" |
+| `_sre_anchor_registry.py` | External-anchor registry: empirical demonstration of the two-layer double role of α (zero-parameter reverse prediction of Δm_np/m_p to −0.165%), the scale sensitivity of the Criterion ① anchor (an MS-bar quantity; changing the scale changes V), the non-uniqueness of the V=12 family for κ_N, and the four-criterion registry table of anchors |
+| `_sre_anchor_second.py` | Search for the second anchor plus the self-consistency of the Criterion ② window: **tolerance sharpening** (for ε ≤ 1% together with Criterion ③ only the V=12 bin retains survivors; exact for V=8/10/12 full sets, and LR ≥ 1.7/0.83 lower bounds for V=14/16), **within-bin individual identification** (all 3 hits at ε ≤ 1%, 2 survivors under Criterion ③ ⇒ Criterion ③ alone cannot single out Y₃; only after adding T ≥ 2 does it become unique = the Y₃ skeleton), the **V-sharp / V-blind likelihood-ratio criterion** (the spectral reading of α has LR only 1.7–3.3), the **three rounds of testing of the μ family** (whole-set hit-rate check plus two Monte-Carlo null hypotheses; the structural blocking by ³H ≅ ³He; the family-law test of ledger functionals, 0 passing), and the external falsification of the sign trend (14/16, counterexamples ¹³C, ¹⁵N) |
+| `_sre_neutrino_k1.py` | Section 12.14: criterion construction for the neutrino as the k = 1 singly-claimed edge — gate check C1/C2/C3, direct measurement of the claim triples of six assemblies (always (#closed, k, k), 2 distinct values), exhaustive pairwise verification of the equivalence of the three rings, measurement of the 2+1 multiplicity of the 3×3 local operators ($G_3$ / $L_{\rm eff}$), measurement of the automorphism **orbit count = 1** (vertex-transitivity) on the three ring points, hit testing of 96 zero-parameter candidates and two MC null hypotheses (randomized target $p_A$ = 0.166; random graphs with the same degree sequence, hit rate 0.385) |
+| `_sre_decay_law.py` | Section 13.3: axiomatic derivation and MC verification of the exponential decay law (survival-curve deviation 1.03×10⁻³, half-life-identity deviation 0.0224%, memorylessness deviation 5.7×10⁻⁴), exclusion of the power law (log-log piecewise slope −0.570 → −5.013), verification of $T_{1/2}\propto 1/N$, the **species-cancellation law** of the two-factor decomposition and the test of the stripping enhancement factor E (Re vs Dy, same mode and nearly equal Q, differing by ≥ 6.79 orders of magnitude), recomputation of the three-layer medians (+11.10 / −0.09 / −2.30, span 13.40) and refinement of the ¹⁶³Dy lower bound |
+| `_sre_nucleon_ec_env_test.py` | The empirical basis of the three-layer stratification of Section 10 (added to this list in this round): single-parameter stratification by "s-electron reachability at the nuclear site" (L3 bound-state / L2 EC-IC / L1 neutral β⁻-α) and verification of strict monotonicity; it also registers the correction of the two hand-filled errors of v1 |
+| `_sre_l4_assignment.py` | Section 12.15: the **pre-registered criterion** and negative verdict for the L4 mass-depth assignment rule ($m_p/m_e = \Psi(G_N)/\Psi(G_e)$) - ten layer-agnostic primitive invariants, a zero-parameter monomial pool (exponent $|a| \leq A$, support <= 3), two configurations (electron basal body $Q_3$ / $\alpha$ carrier $M_{60}$), and three targets (one design plus two out-of-sample); the **closed-form reach bound** ($\exp(A\sum |\log r_i|)$): configuration A has a full-support bound of 511.06 for $|a| \leq 2$, below 1836.15 (short by 0.555 orders of magnitude) => a distribution-free decisive exclusion; configuration B's pool sizes 576/4064/13152 ($A=1,2,3$) with the **joint hit over the three targets identically 0** (likewise at the 1% and 3% windows) and different best $\Psi$ per target; the prediction of $\Pi_1$ itself (0.5657 / 25.84, short by 1.85 orders of magnitude); the MC null over 407 random graphs with the same $(V,E)$ ($T_1$ 0.40, $T_2$ 21.46, $T_3$ 94.91 per trial); and the positive-residue control ($\alpha\cdot\Pi_1(\mathrm{Y_3})$ against $(m_n - m_p)/m_p$: -0.164%) |
+| `_enum_cubic12.py` | **Completeness verification** for V=12: a 2-switch closure BFS exhaustively enumerates **all 85 isomorphism classes** of connected cubic graphs on 12 vertices (matching the known count) and establishes that in this bin the **85 isomorphism classes correspond to 85 distinct Laplacian spectra (no cospectral pair)** ⇒ the "spectral-signature deduplication" of the main script is lossless in that bin; it also yields the 3 hits at ε ≤ 1% and the conclusion that adding T ≥ 2 points uniquely to Y₃ |
+
+### C.3 Fission Chain Verification Related
+
+| Script | Function |
+|---|---|
+| `_sre_fission_chain_validation.py` | Recalculation of the fast-neutron experiment, parity counterexamples, excitation surplus criterion, B/A closure potential and chain criticality |
+| `_sre_fission_chain_plot.py` | Generation of the excitation surplus scatter plot and the dynamic range comparison figure |
+| `sre_fission_chain_validation_results.json` | Fission verification result data |
+
+### C.4 Dimension Collapse Test Related
+
+| Script | Function |
+|---|---|
+| `_sre_dimension_collapse.py` | Basic dimension collapse test with five checks |
+| `_sre_dimension_collapse_ext.py` | Extended dimension collapse test (full bond length library) |
+| `sre_dimension_collapse_summary_ext.json` | Statistical data of the extended dimension collapse test |
+
+### C.5 Nucleon v1 Legacy Scripts
+
+| Script | Function |
+|---|---|
+| `_sre_nucleon_derivation.py` | Nucleon topological derivation v1 (3×Q₃ construction, superseded by v2) |
+| `sre_nucleon_derivation_results.json` | v1 result data |
+
+### C.6 Observational Perspective and Validation Qualification Related (Section 14)
+
+| Script | Function |
+|---|---|
+| `_sre_q3_provenance.py` | Example 8 of 14.6: provenance of Q₃ — reproducible P0 enumeration (19320 → 5 classes), the equivalent construction $Q_3 = \mathrm{BDC}(K_4) = \mathrm{D}^2(K_2)$, the planarity cutoff of the doubling tower (planar ⟺ $k \le 3$), $\mathrm{lift}(Q_3) = \mathrm{D}(Q_3) = Q_4$ (16/32/17), and $\Pi_1(Q_3) = 1/3$ generated from the $K_4$ spectrum |
+| `_sre_collapse_in_nucleon.py` | Example 9 of 14.6 and 12.15(f): consequences of folding (collapse) entering the nucleon computation — $\mathrm{D}$ and BDC preserve vertex-transitivity (0 counterexamples over a battery of 21 graphs), BDC spectrum = base graph ± two copies, the exact laws on the tower ($\lvert\mathrm{Aut}(Q_k)\rvert = 2^k k!$, distinct L values $= k+1$, $\Pi_1(Q_k) = 1/k$), and a cross-layer scan over seven configurations (joint hit all 0, best same-lock ≥ 19.84%) |
+| `_sre_dimension_selection.py` | 14.5: the zero-parameter predicate selection of $d = 3$ — J1 power-law model selection of the lattice voltage field $r^{2-d}$ ($d = 1 \to -1.000$, $2 \to \log$, $3 \to +1.100$, $4 \to +1.900$), J2 finite resistance ($d \ge 3$ convergent), J3 bound-state threshold ($d \ge 3$ finite), J4 stable circular orbit ($d = 3$ only), intersection = $\{3\}$ |
+| `_sre_coulomb_collapse.py` | 14.5: the shape/value trichotomy of the Coulomb force — leading term of the graph Laplacian Green function $r^{2-d}$ ($d = 1 \to r$, $2 \to \ln r$, $3 \to 1/r$, $R^2 > 0.9999$), $\alpha$ still an external input, $\Pi_1(M_{60})$ deviating by $1.45 \times 10^{-5}$ |
+| `_sre_h2o_degeneracy.py` | 14.1–14.2: degeneracy determination for the water molecule at $n = 3$ — any symmetric bond weighting must give $180.0000°$, the bijection $\theta \leftrightarrow t$ (zero predictive margin), inversion fidelity $r$ always 1 at $n = 3$, ineffectiveness of adding electron leaf nodes (minimum eigenvalue of the metric Gram matrix of the four-point graph $= -0.25$) |
+| `_sre_h2o_geometry_provenance.py` | 14.4 and boundary 7 of Section 15: re-examination of the acquisition chain of the water "104°" — rotational spectrum → $A,B,C$ → $I = K/(A,B,C)$ → model step → $(r,\theta)$; four averaging conventions (103.9 / 104.478 / 104.50 / 105.12), rigid-rotor inversion $\Delta\theta = 0.6456°$, mixed triple giving $104.3279°$ (difference $0.146°$), $\cos\theta_e = -0.250001$ |
+| `_sre_h2o_ratio_vs_geometry.py` | 14.1 and 14.3: recomputation of the three-layer decomposition and the two theorems — $P_3$ (degrees $(2,1,1)$, L spectrum $(0,1,3)$, orbit count 2), Theorem 1 (same graph, two metrics → 180.0000° / 73.7398°), Theorem 2 (apex-angle interval of the same ratio $t_0 = 1.581140$ under Euclidean / spherical / hyperbolic maps) |
+| `_sre_validation_metric_audit.py` | 14.7: validation-qualification audit — 17 entries classified by epistemological type (E = 9 | R = 2 | C = 4 | M = 2), the $n = 3$ distance-set Pearson magnitude always 1, classical MDS inversion fidelity always 1 for any Euclidean D, and the three qualification criteria |
+| `_sre_orbital_emergence_test.py` / `_sre_orbital_measurement_test.py` | 14.4: the two senses of the electron orbital and the experimental side — $2\ell+1$ is not any natural graph ladder (none of 12 candidates matches), a single orbital is unobservable (the gauge-invariant density is constant along each Aut orbit), resolution = number of orbits, calibrated graph orbit count = 1 ⇒ zero shape |
+| `_sre_l4_pool_extend.py` | Section 14 and 12.15(f): the pool-size correction to the reach scope — expanding the invariants from 10 to 29 raises the full-support reach from 511.06 to 8.65×10⁶; the support ≤ 3 survival 91.209% agrees with the grid measurement 95.0326%; MC null 5% quantiles 0.1995% / 0.1822% |
+| `_h2o_degeneracy.json` / `_h2o_geometry_provenance.json` / `_h2o_ratio_vs_geometry.json` / `_validation_metric_audit.json` / `_l4_pool_extend.json` / `_dimension_selection.json` / `_q3_provenance.json` / `_collapse_in_nucleon.json` | Result data of the above scripts (the same-named `.log` of each script is archived together) |
+
+---
+
+## Appendix D: Figure List
+
+All figures of this paper are archived in the `figures/` directory, ordered as they appear in the text:
+
+| Figure | File Name | Content |
+|---|---|---|
+| Figure 1 | `sre_nucleon_skeleton_structure_EN.png/.svg` | Nucleon skeleton candidate: tripartite Y triangular closure (closed-state proton and open-state neutron) |
+| Figure 2 | `sre_nucleon_skeleton_funnel_EN.png/.svg` | Nucleon skeleton three-step screening funnel (85→4→2) |
+| Figure 3 | `sre_fission_chain_corr.png/.svg` | Nuclear reaction verification: excitation surplus vs thermal cross-section scatter plot, and fast/thermal cross-section dynamic range comparison |
+| Figure 4 | `sre_nucleon_derivation.png/.svg` | Nucleon topological derivation v1 schematic (abandoned 3×Q₃ construction, historical reference only) |
+| Figure 5 | `sre_nucleon_manybody_schematic_EN.png/.svg` | Many-body assembly law and the shared ring: (a) monomer → two bodies → four bodies sharing one ring (with single-claim edge annotations); (b) closure potential ρ rising with body count and the body-count independence of λ₂ = 2−√3; (c) zero-parameter scorecard of the assembly law (Reading A, 8 entries) |
+| Figure 6 | `sre_observation_layers_EN.png/.svg` | Observational perspective: the boundary between the dimension-free SRE world and the three-dimensional world — (a) the three-layer decomposition (L0 topological → L1 ratio → L2 geometric) and the two tolls (the metric D, the map); (b) empirical demonstration of Theorem 2: the apex-angle interval of the same ratio $t_0$ under Euclidean / spherical / hyperbolic maps |
+| Figure 6 (Chinese version) | `sre_observation_layers.png/.svg` | Chinese counterpart of Figure 6 (same plotting core, only the language labels switched) |
+
+---
+
+## Appendix E: References and DOI
+
+All literature and project references cited in this paper (in order of appearance):
+
+1. SRE-v1.6 Axiom Suite, DOI 10.5281/zenodo.22077475
+2. SRE-Dynamics: Composite Elementary Particles and Relational Space Emergence (Book of the Void), DOI 10.5281/zenodo.22162514
+3. SRE Dynamics: Rigorous Reconstruction of Maxwell Field Equations Using Purely Dimensionless Graph Cohomology and Global Evolution Steps, DOI 10.5281/zenodo.22119957
+4. Hierarchical Dissipative Self-Organizing Binary Network Dynamics, DOI 10.5281/zenodo.20576606
+5. SRE Electrical Quantity Definitions (Charge/Current/Resistance/Voltage/Power/E=mc²), DOI 10.5281/zenodo.22119635
+6. Complete Characterization of the Electron within the SRE Framework (Series), DOI 10.5281/zenodo.22162514
+7. CODATA 2018 Fundamental Constants, https://codata.org
+8. PDG Quark Mass Table, https://pdg.lbl.gov
+9. JEFF-3.3 / ENDF/B-VIII Fission Cross-Section Database, https://www.oecd-nea.org/dbdata/jeff/
+10. RIPL-3 Fission Barrier Database, https://www-nds.iaea.org/ripl-3/
+11. AME 2020 Atomic Mass Evaluation, https://www-nds.iaea.org/amdc/
+
+---
+
+**Archiving Note**: This monograph is a stand-alone document; after review it may be merged into the *SRE_Electron_Complete_Paper* series or archived as an independent Zenodo entry. The Chinese and English versions are maintained in sync as a parallel pair.
+
 **Copyright Statement**: This paper is released as open source under the CC BY 4.0 license; it may be freely used, distributed and modified, provided that the original author and the source are retained.
 
 <div style="page-break-after: always;"></div>
@@ -6902,6 +7163,706 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 6. J. B. Barbour, *The End of Time* — conceptual neighbour (analogy only; no quantitative result borrowed).
 7. A. Connes and C. Rovelli, *Von Neumann algebra automorphisms and time-thermodynamics relation in generally covariant quantum theories*, Class. Quantum Grav. **11** (1994) 2899 — prototype of the thermal-time hypothesis (analogy only).
 8. D. N. Page and W. K. Wootters, *Evolution without evolution*, Phys. Rev. D **27** (1983) 2885 — prototype of taking a subsystem as clock; Theorem 7 here is a limitation on it.
+
+
+<div style="page-break-after: always;"></div>
+
+# How Does Time "Grow" Itself?
+## ——A Plain-Language Account Based on the Status–Relational–Entropy (SRE) Framework
+
+**Emergence of Time in the Status–Relational–Entropy Framework — A Plain-Language Version**
+
+Version: 1.0 (plain-language rewrite)
+Original technical version dated: 2026-10-04
+
+> **Note**: This article is a **plain-language rewrite** of *The Emergence of Time in the SRE Framework*, aimed at readers with a general university science-and-engineering background (a little calculus and probability is enough). The technical version keeps all formulas, numbers, and reproducible scripts; this version replaces most of its project-internal jargon with everyday language and analogies, while preserving every core conclusion and every data table.
+
+### Resources and Reproducibility
+This framework is built on an information-dynamics model called "Status–Relational–Entropy (SRE)". All theoretical material and simulation code are archived openly on Zenodo; the scripts used in this article are listed at the end and can be re-run with one command.
+
+---
+
+## Abstract (in plain words)
+
+When we normally say "time," we are secretly mixing up three different meanings. This article uses a model called SRE to make the business of "time" clear: in this model, the world is a digital network that keeps rewriting itself; rather than asking "what time is it now," it is better to ask "how much did this network change at each step." Add up that "amount of change," and you get a kind of **emergent time**.
+
+We prove seven things:
+
+1. The world's rate of change slowly "saturates" toward nearly 100% — the older the world, the more nearly every step changes something.
+2. How far it still is from saturation follows a clear curve: the gap ≈ c·(ln n)/√n. And this curve can be predicted, **without any fitting**, directly from two even simpler laws, with an error under 2%.
+3. As a result, time *looks* uniform — this is a **consequence**, not an assumption.
+4. But the interior of the network is not uniform: newborn cells barely move, old cells move at almost every step, so every little cell has its own "clock."
+5. No matter whether you speed the model up or slow it down (parameter λ spanning 15×), the final "time constant" stays the same; but the moment you change the "shape" of the rule (squaring the denominator), it jumps to another value.
+6. The model contains two kinds of clocks that are both legitimate, yet their speed ratio keeps widening forever and never lines up — **time is not a built-in property of the world; it is a product of the choice of what you use to keep time.**
+7. The most crucial point: the current state carries *zero bits* of information about which path it "took in the past." In other words, time cannot be *read out* from the present state; it can only be *accumulated* step by step — and that is exactly what "time emerges" means.
+
+**Honest boundary**: We have only solved the "shape" of time (its form), not "how many seconds one step equals" (its scale). Every comparison in this article to real physical time is only a **structural analogy**, not a numerical prediction.
+
+---
+
+## 1. Time Is Not Discovered — It Is "Chosen"
+
+### 1.1 Three things that are all called "time"
+
+Everywhere time is actually used, the same thing is really happening: **first pick a process you believe runs steadily, then use its accumulated amount to label events.** Newton's approach was to assume an external standard clock by default; relativity admits that each reading needs a conversion rule. This article puts that "clock-picking" action out in the open:
+
+> **The nature of time is not discovered; it is selected.** Only after selection does the rest become computable.
+
+In the SRE model, the word "time" had previously mixed up three different meanings, which must be separated first, or the discussion is meaningless:
+
+| Symbol | Name | How obtained | Meaning |
+|---|---|---|---|
+| t_ext | External counting time | Stand outside the network and count "how many steps" n have passed | Pure step count |
+| τ_mem | Memory intrinsic time | Calibrate the clock by "how far memory can reach," ≈ 2.005·√n | Time by memory depth |
+| T_em | Emergent time | Calibrate the clock by "how much the world changed," ≈ n | Time by accumulated change |
+
+The three are not equal to one another. The point of this article is to prove: T_em / n approaches 1, but **is strictly not equal to 1 at any finite number of steps** — that is, we are not defending "n is time," but computing "from when does n start to look like time, and to what degree."
+
+### 1.2 What this article does
+
+It turns "time emerges" from a slogan into a specific law that is **both computable and falsifiable by experiment**, and answers: under what conditions does the time read this way behave uniformly?
+
+---
+
+## 2. What This "World Model" Looks Like
+
+SRE's evolving body is a symmetric digital network (a matrix) whose entries take only +1 or −1. It starts from the smallest 1×1 grid; at each step it grows one row and one column, eventually becoming n×n.
+
+What happens at each step? For every little cell (i,j) in the grid:
+
+- It has an **age d**: how many steps have passed since it was last modified.
+- There is a corresponding **activity E** (a measure of the current "busyness" of the whole network, roughly proportional to √n).
+- From these we compute a **rewrite probability a**: `a = (λ·d)/(E+1) divided by (1 + itself)`. The older it is and the busier the network, the more likely it is to be rewritten.
+- Throw a random number once: if the random number is larger than a, the cell is **permanently reset to +1** (its history is erased once, and cannot be recovered); otherwise it keeps its old value.
+
+Intuition: this is a machine whose "memory ages." Old cells are easily overwritten; new cells are temporarily safe.
+
+To keep things clear, we unify two names (the model source code once mistakenly called the retention rate the "dormancy rate"; here we correct it to match the actual numbers):
+
+- **Retention rate r**: the probability that this cell "preserves its history" at this step.
+- **Rewrite rate a**: the probability that this cell "gets changed" at this step (a and r are complementary, a + r = 1).
+
+**The "world change" that the observer reads is exactly a.** This article uses a to keep time.
+
+---
+
+## 3. Emergent Time: Keeping Time by "How Much the World Changed"
+
+Let Ω(n) be, at step n, the **average fraction of cells in the whole network that got rewritten**. Then adding up Ω at every step gives the **emergent time** T_em:
+
+> **How much "time" step n is worth = the expected amount of change that happened in the world at that step; emergent time = the accumulation of those amounts of change.**
+
+This definition compresses the operationalist view of time — "use some process to count change" — into a quantity that can be computed directly, and needs no external units (it does not depend on "seconds").
+
+---
+
+## 4. Conclusion 1: The Rate of Change "Saturates" (Theorem 1)
+
+**Theorem 1**: No matter how fast or slow you set the model (parameter λ > 0), Ω(n) rises monotonically and eventually tends toward 1 (that is, 100% of cells change at every step).
+
+**Intuition**: As the world ages, most cells are "ancient," with large age d, so the rewrite probability a approaches 1. The saturation value 1 does not depend on any specific parameter — just as no matter how hard you push, an object's speed limit does not depend on how hard you push.
+
+Measured (λ=0.8):
+
+| n | 1 | 10 | 50 | 100 | 200 | 400 | 600 | 800 | 999 |
+|---|---|---|---|---|---|---|---|---|---|
+| Ω (rate of change) | 0.286 | 0.402 | 0.625 | 0.684 | 0.743 | 0.793 | 0.818 | 0.834 | 0.846 |
+| 1−Ω (gap) | 0.714 | 0.598 | 0.375 | 0.316 | 0.257 | 0.207 | 0.182 | 0.166 | 0.154 |
+
+Note: even at 999 steps, the gap is still 0.154 — saturation is remarkably slow. The next section explains what shape this gap takes.
+
+---
+
+## 5. Conclusion 2: The Saturation Law — Why the Gap Is ln n / √n (Theorem 2)
+
+**Theorem 2**: There exists a parameter-dependent constant c such that
+
+> **Gap 1 − Ω(n) ≈ c · (ln n) / √n**
+
+**Why does ln appear?** Split the grid into layers by age: the young layer (age smaller than the memory depth) is almost entirely preserved, occupying roughly 2·(memory depth)/n of the total; the old layer decays as "memory depth / age," and summing 1/age from 1 to n gives ln n. Multiplying the two gives (ln n)/√n. So ln n is not a decorative afterthought — it is the fingerprint of a "harmonic tail."
+
+**Shape judgment** (fit for n≥100, reporting the maximum relative error):
+
+| Candidate curve | Fit constant c | Max relative error |
+|---|---|---|
+| Pure power law n^(−1/2) | 3.99 | **26.4%** (clearly fails) |
+| **ln n / √n** | **0.694** | **1.59%** (the only one that passes) |
+| n^(−0.4) | 2.25 | 12.9% |
+| (ln n)² / √n | 0.116 | 22.3% |
+
+The pure power law is explicitly eliminated; ln n / √n is the only qualified candidate.
+
+**The prettiest result — the zero-parameter prediction**: The model already contains two simple laws (① the age distribution is fixed as 2(n−d)+1; ② the fluctuation amplitude of activity ≈ √(2n/π)). Plugging these two directly into the calculation of Ω, **with no fitted constants at all**, yields:
+
+| n | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 | 999 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| Measured 1−Ω | 0.3157 | 0.2572 | 0.2268 | 0.2072 | 0.1930 | 0.1823 | 0.1730 | 0.1657 | 0.1594 | 0.1540 |
+| Predicted 1−Ω | 0.3105 | 0.2544 | 0.2251 | 0.2060 | 0.1920 | 0.1811 | 0.1724 | 0.1650 | 0.1588 | 0.1536 |
+| Relative deviation | 1.65% | 1.10% | 0.72% | 0.58% | 0.51% | 0.62% | 0.40% | 0.42% | 0.37% | 0.28% |
+
+The deviation drops all the way to 0.28%–1.65%. **This is the strongest quantitative result in the whole article**: a non-trivial dynamical law, fully explained down to the sub-percent level by two more fundamental laws, with not a single parameter tuned along the way.
+
+---
+
+## 6. Conclusion 3: Why Time Looks Uniform (Theorem 3)
+
+Define the "relative step non-uniformity" η: how much the rate of change differs between adjacent steps, divided by the current rate of change. Time is uniform if and only if η → 0.
+
+**Theorem 3**: Directly differentiating the saturation law (not a separate fit) gives
+
+> **η(n) ∝ (ln n) / n^(3/2) → 0**
+
+That is, as the number of steps grows, the difference in "amount changed" between one step and the next becomes smaller and smaller — time tends toward uniformity. This conclusion is a **computed consequence**, and it even gives the specific number for "how non-uniform it is."
+
+Measured (η uses a ±10-step smoothed difference quotient):
+
+| n | 50 | 100 | 200 | 400 | 600 | 800 | 980 |
+|---|---|---|---|---|---|---|---|
+| η measured | 4.23×10⁻³ | 1.40×10⁻³ | 5.47×10⁻⁴ | 2.38×10⁻⁴ | 1.11×10⁻⁴ | 8.88×10⁻⁵ | 6.10×10⁻⁵ |
+| η predicted | 3.00×10⁻³ | 1.32×10⁻³ | 5.45×10⁻⁴ | 2.18×10⁻⁴ | 1.27×10⁻⁴ | 8.61×10⁻⁵ | 6.54×10⁻⁵ |
+| Ratio | 1.41 | 1.06 | 1.00 | 1.09 | 0.87 | 1.03 | 0.93 |
+
+η has dropped by a factor of 69, and the measured-to-predicted ratio stays within 0.87–1.41 throughout. **This is the theorem-form, in this article, of the everyday statement "human perception of time is constant"**: it is not assumed, it is derived.
+
+**Corollary**: Emergent time T_em ≈ n − O(√n·ln n). The measured T_em/n at n=100, 400, 999 is 0.573, 0.708, 0.778 respectively. In other words: only **after you explicitly choose "keep time by how much the world changes"** does the step count n asymptotically equal time, and the error is a "sublinear tail" too large to ignore. **Do not treat the step count as time unconditionally.**
+
+---
+
+## 7. Conclusion 4: But the Inside Is Not Uniform (Theorem 4)
+
+A trend toward uniformity overall does not mean every place inside moves at the same speed. Fix the current step n and scan the cells' age d:
+
+| n | newborn a(d=1) | a(d=n/8) | a(d=n/4) | a(d=n/2) | a(d=3n/4) |
+|---|---|---|---|---|---|
+| 100 | 0.140 | 0.596 | 0.729 | 0.825 | 0.887 |
+| 400 | 0.083 | 0.728 | 0.828 | 0.912 | 0.929 |
+| 999 | 0.059 | 0.805 | 0.885 | 0.941 | 0.958 |
+
+**Theorem 4**: At the same instant, a cell's rewrite rate rises monotonically with its own age — newborn cells are nearly still (a under 0.06), old cells are rewritten at almost every step (a over 0.95). So **there is no single local flow speed inside the network**: every cell has its own clock.
+
+**Why does the whole still tend toward uniformity?** Because the mass weight of the age distribution depends only on the ratio "age / total steps," which is **self-similar** when you zoom in (the shape stays the same under scale change). The various age layers rise and fall along the same curve, and the weighted average happens to compress the n-dependence down to ln n/√n. In other words: **uniformity is an averaging effect brought by self-similarity, not a property of every location** — just like a pot of boiling water has a uniform temperature overall, yet every water molecule is jittering around.
+
+---
+
+## 8. Conclusions 5 and 6: What Is Constant, What Is Not
+
+The author's benchmark is the famous line about the speed of light: "as long as no phase transition occurs, it is a constant." Hidden in that line is an ambiguity that must be split apart.
+
+### 8.1 The time constant does not depend on the "speed" parameter (Theorem 5)
+
+Define the "time constant" Ω_∞ = the Ω at the limit; it represents "how much internal time one step amounts to."
+
+**Theorem 5**: The value of the parameter λ (which controls the overall speed of rewriting) does not change Ω_∞; it only changes the **approach speed**.
+
+Measured (λ swept from 0.2 to 3.0, a 15× span):
+
+| λ | 0.2 | 0.4 | 0.6 | 0.8 | 1.0 | 1.5 | 2.0 | 3.0 |
+|---|---|---|---|---|---|---|---|---|
+| Ω(199) | 0.503 | 0.627 | 0.698 | 0.741 | 0.771 | 0.822 | 0.853 | 0.886 |
+| Ω(399) | 0.574 | 0.695 | 0.754 | 0.792 | 0.818 | 0.860 | 0.884 | 0.913 |
+| Ω(799) | 0.641 | 0.749 | 0.802 | 0.834 | 0.856 | 0.890 | 0.910 | 0.933 |
+
+Ω rises monotonically with both λ and n ⇒ all λ are approaching the **same target 1**.
+
+**Why?** Ω_∞=1 is a saturation value. A saturation value carries no coupling strength: no matter how large or small λ is, the upper bound of the rewrite probability is 1. This has the same structure as "the speed-of-light limit does not depend on how the light source moves."
+
+> **Honest note**: Regarding the approach speed c(λ), we originally guessed c ∝ 1/λ, but measurement overturned this guess (the slope is about −0.577, and because the window is too short it never reaches −1). This item is recorded as an open problem and is not treated as a conclusion.
+
+### 8.2 But the time constant depends on the "shape of the rule" (Theorem 6, phase transition)
+
+Just square the denominator of the update rule (same λ=0.8), changing nothing else:
+
+| n | Control Ω | Variant Ω′ | Difference |
+|---|---|---|---|
+| 100 | 0.684 | 0.345 | 0.340 |
+| 200 | 0.743 | 0.363 | 0.380 |
+| 400 | 0.793 | 0.376 | 0.417 |
+| 800 | 0.834 | 0.385 | 0.449 |
+| 1099 | 0.851 | 0.388 | 0.463 |
+
+The difference widens monotonically to 0.463 and is still growing ⇒ the two groups **cannot share the same limit**. Meanwhile, the variant group's activity E is almost identical to the control (27.43 vs 27.44), showing nothing ran out of control; it simply landed on **another fixed point** (the value the system finally settles on) Ω_∞≈0.39.
+
+**Theorem 6 (phase transition)**: The **shape** of the update rule determines the time constant; the numerical value of the **parameter λ** that controls speed cannot change it.
+
+> **Verdict**: "constant as long as no phase transition" is translated, in this article, into an executable criterion —
+> - **Uniformity** (existence of the limit) holds under all tested parameters and both rules ⇒ robust;
+> - the **time constant** (the numerical limit) is a function of the rule's **shape** ⇒ change the shape and you change it. Sweeping λ 15× could not move it; squaring one denominator symbol moved it.
+
+**A guess that was overturned (written truthfully)**: We had thought the variant core would make the system "freeze out of control" (the less it changes → the more the network skews → the larger the denominator → the less it changes → Ω′→0). Wrong. Measurement shows activity is pinned at √(2n/π) by the basic law, the positive feedback never builds up, and the system stops at 0.39 instead of 0. This shows a "phase transition" changes the **numerical value** of the time constant, not "turning time off" — a world with Ω_∞=0.39 still has uniform time, only the internal duration per step is shortened by about 60%.
+
+### 8.3 The boundary of the speed-of-light analogy
+
+Where the analogy holds: both are "saturation values / upper-bound values," both are insensitive to specific coupling values; both are "structural constants" (here the rule's shape, there the space-time metric) — change the structure and you change the constant.
+
+Where the analogy fails (cannot be extrapolated):
+1. The Ω_∞ here is a **dimensionless ratio**, whereas the speed of light c **has dimensions** and needs a unit system; they are not the same kind of number.
+2. The other side of the analogy, "the scale of time (seconds)," is **still absent** in this article (T_em → n only solved the shape).
+3. The constancy of light speed has experimental backing; the Ω_∞ here is verified only on two groups of comparisons inside the model. **Do not use this article's results to assert any numerical conclusion about the physical speed of light.**
+
+---
+
+## 9. Conclusion 7: Time Is Not Unique — Two Clocks Cannot Coexist (Theorem 7)
+
+Earlier, calibrating by "memory depth" gave τ_mem ≈ 2.005·√n (this is a continuously decelerating clock); this article, calibrating by "world change," gives T_em ≈ n. Both are *internal* readings of the network.
+
+| n | 50 | 100 | 200 | 400 | 600 | 800 | 999 |
+|---|---|---|---|---|---|---|---|
+| τ_mem (memory clock) | 14.2 | 20.1 | 28.4 | 40.1 | 49.1 | 56.7 | 63.4 |
+| T_em (change clock) | 25.3 | 58.0 | 129.7 | 283.9 | 445.1 | 610.5 | 777.7 |
+| T_em / τ_mem | 1.78 | 2.89 | 4.57 | 7.08 | 9.06 | 10.76 | 12.27 |
+
+**Theorem 7**: The ratio T_em / τ_mem diverges with n (measured growth of 6.89× and still going). Therefore **there is no rescaling that can make both intrinsic clocks uniform at once**.
+
+Intuition: This is like two people each counting by their own heartbeat — as long as their heart rates differ, they will never agree on "how much time passed." The conclusion: **"time" is not a built-in property of the system; it is a derived quantity that appears after you choose a clock-calibration process.**
+
+Supplement: both are tending toward uniformity, but at different rates. Calibrating by "world change" compresses non-uniformity to a lower order — this exactly explains why we observe uniform time: because the observer defaults to the reading "how much happened in the world," not the memory-depth route.
+
+---
+
+## 10. Where Did the Past Go: Structure, but No Memory
+
+This is the most important section of the whole article.
+
+### 10.1 There is structure (rejecting "completely random")
+
+Treating "the world is purely random" as a null hypothesis is **wrong** — because the update rule itself (symmetry, per-column product, reset means freeze) creates correlations even with no historical memory at all. So the verdict must be done in two steps.
+
+Measured: compare the real history against "purely random symmetric ±1 matrices," doing statistics at two scales, n=150 and n=300. Most indicators (mean, positive/negative sign ratio, spectral radius — a quantity measuring the network's scale) fall on the random line; **only the "row-sum variance" is about 1.94–2.03× the random value at both scales, with statistical significance (KS test, a test for whether two datasets share a distribution) p < 10⁻⁴**. This shows: cells within the same row are coordinated, and the joint distribution is not the product of the marginals — **the world has structure**.
+
+### 10.2 But there is no memory (prefix indistinguishable)
+
+Experiment: take two histories with **nothing in common** (different random seeds, run to step 150, with 48.5% of cells differing), then continue each for another 150 steps, obtaining 16 final states. Question: can these 16 final states still tell which prefix they came from?
+
+Using an exact permutation test (enumerating all 12870 groupings): across 5 scalar statistics, the smallest p-value for the difference between the two groups is still 0.384 (and remains non-significant after multiple-testing correction). That is: **the two different first-half histories become indistinguishable after the second half** — no detectable trace is left behind.
+
+> Limitation: this test is completed only on 5 statistics, not a global proof of "mutual information." But it is enough to show: on these 5 readings, sharing the same past leaves no trace.
+
+### 10.3 Why time must be "emergent"
+
+Combining the two points above gives the single most important sentence of the whole article:
+
+> **The current state carries zero bits of information about its own past; therefore the "now" contains no readable time marker. Time can only be accumulated, not read — and that is the exact meaning of "time emerges."**
+
+Put another way: if you only look at the world's present appearance, you cannot read out "how long it has lived" or "which path it took." Time is not a clockface engraved on the state; it is something you accumulate by counting, step by step, "how much it changed."
+
+---
+
+## 11. Eight Falsifiable Predictions
+
+Each of the following can be used, with the same script, to directly overturn this article:
+
+| # | Prediction | Criterion | Current measurement |
+|---|---|---|---|
+| P1 | Gap must contain ln n | Pure power law error significantly worse than ln n/√n | 26.4% vs 1.59% |
+| P2 | Zero-parameter synthesis holds | Prediction vs measurement difference < 2% | 0.28%–1.65% |
+| P3 | η→0 and ratio≈1 | η/η_predicted ∈ [0.5, 2] | [0.87, 1.41] |
+| P4 | Ω_∞ independent of λ | Ω monotonic in both λ and n | holds (8 λ values) |
+| P5 | Change rule shape moves the limit | Difference monotonic and > 0.30 | 0.463 |
+| P6 | Joint has structure | Row-sum variance gap > 3σ and p<0.01 | 8.75σ / 13.89σ, p<10⁻⁴ |
+| P7 | Joint no memory | Non-significant after correction | smallest p=0.384 |
+| P8 | Two clocks cannot coexist | Ratio monotonically diverges with n | 1.78 → 12.27 |
+
+**The easiest to topple is P2**: the moment you switch to another λ or another rule and the synthesis of those two basic laws no longer explains down to the percent level, the entire "zero-parameter" claim collapses.
+
+---
+
+## 12. Discussion: Neighborhoods of Historical Views of Time
+
+This article's claims pass alongside several well-known discussions in the philosophy of time, but **do not** cite their quantitative results — only structural analogies:
+- **Relationism / "time does not exist" (Barbour-style)**: This article agrees that "time is not in the state," but disagrees with concluding "it does not exist" — this article offers a computable substitute, and its uniformity is a consequence, not an assumption.
+- **Thermal-time hypothesis (Connes–Rovelli style)**: The Ω here is also a time given by "how the state changes," but this article measures its saturation law and the convergence order of its non-uniformity — content the thermal-time construction usually does not write down.
+- **Page–Wootters style (using a subsystem as a clock)**: Theorem 7 here is a **limitation** on it — switching to another subsystem may yield an incompatible clock, and the ratio will diverge.
+
+---
+
+## 13. Conclusion
+
+All seven verdicts pass:
+
+| Number | Verdict | Result |
+|---|---|---|
+| T1 | Emergent-time definition and saturation | Pass (self-consistent 2.2×10⁻¹⁶) |
+| T2 | Saturation law ln n/√n + zero-parameter prediction | Pass (residual 1.59%, prediction deviation ≤1.65%) |
+| T3 | Relative step non-uniformity → 0 | Pass (η/η_predicted ∈ [0.87,1.41]) |
+| T4 | Single-member clock accelerates with its own age | Pass |
+| T5a/T5b | Has structure / no memory | Pass (8.75σ–13.89σ; smallest p=0.384) |
+| T6a/T6b | λ does not move the limit / rule shape moves the limit | Pass (difference 0.463) |
+| T7 | Two clocks cannot coexist | Pass (ratio grows 6.89× and diverges) |
+
+**Established**: Time is not an external parameter, but an accumulated quantity nested inside internal processes. Its uniformity is not an assumption but a consequence of the saturation law; and that saturation law can be fully explained down to the sub-percent level by two more fundamental laws.
+
+**Judged**: "constant as long as no phase transition" splits into two sentences — uniformity holds under all tested parameters and rules (robust), while the time constant only moves when the update-rule shape is changed (and that is the strict location of a phase transition).
+
+**The price paid**: Time is not unique. Two equally legitimate internal readings give incompatible times (the ratio diverges), and no member's clock inside the network runs uniformly. Calibrating by "how much the world changed" is a choice, not a discovery.
+
+**Still missing**: Scale. This article solved the shape, not "how many seconds one step is" — this is the same thing as the only genuine gap registered in the project's early research (the assignment rule), projected onto the time-keeping problem.
+
+**Also explained**: why time must be emergent rather than read — the current state carries zero bits about which history it traversed.
+
+---
+
+## 14. Honesty Statement (Boundaries for the Reader)
+
+1. All numbers in this article are produced inside the SRE model (λ=0.8, seed=1111, except the multi-history contrast experiments), and the scripts and logs are archived with the article for one-command reproduction.
+2. **Any comparison to real physical time is only a structural analogy, not a numerical prediction.**
+3. Content labeled "analogy," "guess," or "open item" in the text must not be quoted as a conclusion.
+4. **Reachable precision is limited**: at n=999, T_em/n=0.778, meaning "time is constant" has only about 22% precision at reachable scales. Equating this article's results directly with "physical time is strictly uniform" is a misreading.
+5. **Scale is absent**: T_em has only a shape, no seconds.
+
+---
+
+## Appendix: Reproducibility Checklist (technical, kept for verification)
+
+| Item | Script | Key quantity |
+|---|---|---|
+| Saturation law and all verdicts | `code/_time_emergence.py` (PART 0–8) | Ω(n), c, η, T_em |
+| Supplementary probes | `code/_probe_time78.py` | initial judgment of 1−Ω shape |
+| T6 investigation | `code/_probe_time78b.py` | c(λ), variant-core long-range trend |
+| Evolution loop baseline | `code/sim_p.py` | authoritative update rule |
+| Result dump | `code/_time_emergence.json` | all intermediate data |
+
+Reproduce: `python code/_time_emergence.py` (about 2 minutes, EXIT=0).
+
+
+<div style="page-break-after: always;"></div>
+
+# Emergence of Positive and Negative Electric Charge in the SRE Framework: Magnitude, Sign, and Numerical Verification
+
+
+Version: 1.0
+
+
+> **Companion scripts**: `_sigma_deg_independence.py`, `_se_assignment_test.py` (both reuse the official skeleton `y3()` from §8 of *A Complete Characterization of the Nucleon in the SRE Framework*).
+
+**Cited articles from *The Book of the Void***: https://zenodo.org/records/23137136
+- *State-Relation Entropy (SRE) Dynamics: User Manual and Theoretical Background*
+- *A Unified Theory of the Electronic Logical Structure and Physical Properties Based on an Instantiable Minimal Topological Scale*
+- *A Fundamental Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality*
+- *A Rigorous Reconstruction of Maxwell's Field Equations Based on Pure Dimensionless Graph Cohomology and Global Evolution Steps*
+- *The SRE Dynamical Topological Paradigm for Composite Elementary Particles and the Emergence of Relational Space*
+- *A Complete Characterization of the Electron in the SRE Framework*
+- *The Origin of Mass in the SRE System: A Cyclic Operator Formulation on the Three-Ring ℤ₃ Torsor*
+- *The Positioning of Light and Electromagnetic Waves in the SRE System*
+- *A Complete Characterization of the Nucleon in the SRE Framework* v2.1
+
+---
+
+## Abstract
+
+SRE dynamics expresses electric charge as "the counting of topological knots" (*…Fundamental Reconstruction of Classical Electrodynamics*). Counting is naturally non-negative and yields only the **magnitude**, not the **sign**. This paper closes that gap and rigorously gives:
+
+$$Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\qquad \deg(K)=\beta_1(K)\bmod 2,\qquad \sigma(K)\in H^1(G;\mathbb{Z}_2).$$
+
+Namely: **charge magnitude = the parity of the number of independent loops**; **charge sign = the ℤ₂ winding phase (holonomy)**. Thereby we obtain in closed form the electron $Q=-e$, the positron $Q=+e$, the proton $Q=+e$, the neutron $Q=0$, and the antiproton $Q=-e$, and we explain "the proton and the electron have the same charge magnitude while their masses differ by about a factor of 1836" (charge–mass decoupling). Two numerical tests confirm: **the sign channel and the magnitude channel are mutually independent** (§10.1); **the electron is forced by skeletal symmetry into the trivial holonomy class, while the proton falls into the non-trivial class** (§10.2), so that the opposite signs of the electron and the proton acquire a structural origin.
+
+**Keywords:** State-Relation Entropy (SRE); electric charge emergence; topological knot; charge magnitude; charge sign; ℤ₂ holonomy (winding phase); Betti-number parity; Möbius closed loop; charge conjugation; charge–mass decoupling; graph homology; gauge convention.
+
+---
+
+## 1. Problem Statement and the Gap
+
+### 1.1 Existing Formulation in the Original Works
+
+- **Charge = counting of topological knots**: *A Fundamental Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality* expresses the charge $Q$ as the count of specific nonlinear topological knots (node sets) in a graph, where electric current is the refresh frequency of knots crossing topological cut-sets.
+- **Elementary charge $e\equiv1$**: *A Rigorous Reconstruction of Maxwell's Field Equations Based on Pure Dimensionless Graph Cohomology and Global Evolution Steps* formalizes $e$ as the unitary discrete increment $\Delta N=1$ of an isolated 0-chain under a single global evolution step $\Delta S=1$.
+- **The electron's unit charge = outward topological bias**: *A Unified Theory of the Electronic Logical Structure and Physical Properties Based on an Instantiable Minimal Topological Scale* models the electron as a self-consistent Möbius closed loop, whose unit charge is the constant topological logical bias that this closed loop exerts outward.
+
+### 1.2 Three Gaps
+
+1. **Counting (non-negative) cannot carry a sign** — the original works give only the magnitude.
+2. **Composite polarity-synthesis rules are missing** — one must give the charge generation for the proton and the neutron.
+3. **The sign reference is not anchored** — "which orientation counts as positive" is undefined.
+
+This paper uses only the SRE's own constructions (binary polarity, $\mathbb{F}_2$ group isomorphism, Möbius double cover, cut-set counting, μ-homology) as building materials, closing these gaps in sequence.
+
+---
+
+## 2. Preparatory Theory
+
+### 2.1 Binary Self-Organizing Network
+
+The underlying ontology is a strictly binary network: the instantaneous state is described by a real symmetric configuration matrix $\mathbf{M}_n$, whose entries are restricted to the spin-polarity set $\{+1,-1\}$; there exists no intermediate state with value 0 (Axiom I of *A Complete Characterization of the Electron in the SRE Framework*).
+
+### 2.2 Polarity Multiplication Group and Isomorphism with $\mathbb{F}_2$
+
+**Lemma 2.1 (Polarity–Boolean Isomorphism)** The map $\varphi:\{+1,-1\}\to\mathbb{F}_2$, $\varphi(S)\equiv\frac{1-S}{2}$ ($-1\mapsto1,\ +1\mapsto0$), is a group isomorphism $(\{+1,-1\},\cdot)\cong(\mathbb{F}_2,\oplus)$.
+
+**Proof** See Appendix A. $\square$
+
+**Corollary 2.2** "Multiplying polarities" and "adding modulo 2" are in strict one-to-one correspondence — the algebraic cornerstone for composing and merging polarities later on.
+
+### 2.3 Möbius Closed Loop and holonomy
+
+An electron-type closed loop possesses a Möbius double-layer phase structure: it requires completing $2N$ mutual measurements at the $\ell_{\min}$ scale before it returns to the initial state; $N$ times alone is insufficient (*A Unified Theory of the Electronic Logical Structure and Physical Properties Based on an Instantiable Minimal Topological Scale* §II). Its **overall holonomy is $-1$** (orientation reversal). This holonomy is a **topological invariant**: it depends only on the overall winding manner of the closed loop and is rigidly invariant under any internal deformation.
+
+### 2.4 Graph Chain Complex, Cut-Set, and Homology
+
+On the dimension-free state-relation graph: the chain complex $C_0,C_1,C_2$ and the boundary operator $\partial$; a **cut-set** $\Sigma$ is a set of 1-chains that separates the graph; charge, per *…Fundamental Reconstruction of Classical Electrodynamics*, is precisely "the count of knots crossing the cut-set."
+
+---
+
+## 3. Basic Definitions
+
+**D1 (Closed-loop knot $K$)** A self-consistent Möbius topological closed loop, internally containing $\beta_1(K)$ independent causal cycles.
+
+**D2 (Internal path count $N$, mass channel)** $N(K)\approx$ the cumulative number of closed-loop steps, with $m(K)\propto N(K)\cdot\ell_{\min}$ (*A Unified Theory of the Electronic Logical Structure and Physical Properties Based on an Instantiable Minimal Topological Scale* §III.1).
+
+**D3 (Edge polarity)** The polarity of each edge $e$ is $s_e\equiv\operatorname{sign}\mathbf{M}_{ij}\in\{+1,-1\}$.
+
+**D4 (Boundary holonomy $\sigma$, sign channel)**
+$$\sigma(K)\equiv\prod_{e\in\partial K}s_e\in\{+1,-1\},$$
+i.e., the product of the polarities of all edges on the closed loop (*A Complete Characterization of the Electron in the SRE Framework* §1.2, "ℤ₂ winding phase").
+
+**D5 (Magnitude $\deg$, parity channel)**
+$$\deg(K)\equiv\big(E-V+c\big)\bmod 2=\beta_1(K)\bmod 2,\qquad \beta_1=E-V+c.$$
+Namely, **the parity of the number of independent loops (the first Betti number)**.
+
+---
+
+## 4. Axioms
+
+**A1 (Charge functional)**
+$$\boxed{\ Q(K)=\sigma(K)\cdot\deg(K)\cdot e\ },\qquad Q\in\mathbb{Z}e.$$
+
+**A2 (Composite boundary recomputation law)** When $n$ knots merge into a composite knot $K_{\mathrm{comp}}$ due to phase-coherence saturation ($\rho\to1,\ D\to0$; *The SRE Dynamical Topological Paradigm for Composite Elementary Particles and the Emergence of Relational Space* §2), its charge is recomputed from the **new boundary**: $\sigma_{\mathrm{comp}}=\prod_i\sigma_i$ (by Lemma 2.1, i.e., $\mathbb{F}_2$ addition modulo 2), $\deg_{\mathrm{comp}}=\beta_1(K_{\mathrm{comp}})\bmod2$.
+
+**A3 (Additivity under separation)** For mutually independent knots: $Q_{\mathrm{tot}}=\sum_i Q(K_i)$. This is the precondition for macroscopic electric neutrality.
+
+**A0 (Sign reference anchor)** Prescribe that **the holonomy class to which the electron belongs** is "negative" (a gauge convention; see §8).
+
+---
+
+## 5. Magnitude Channel: $\deg=\beta_1\bmod 2$
+
+### 5.1 Official Skeleton Inputs
+
+- **Electron ontology $Q_3$**: $(V,E,\beta_1)=(8,12,5)$ (*A Complete Characterization of the Electron in the SRE Framework* §6).
+- **Nucleon skeleton $Y_3\ltimes\triangle_3$** (*A Complete Characterization of the Nucleon in the SRE Framework* §8): closed state (proton) $(12,18,7)$, open state (neutron, with one loop-edge removed) $(12,17,6)$.
+- **Many-body assembly law** (same work, §12): $V=9k+3,\ E=15k+3,\ \beta_1=6k+1$.
+
+### 5.2 Closed Form
+
+$$\boxed{\ \deg(K)\equiv\beta_1(K)\bmod 2\ }$$
+
+### 5.3 Mechanism: the "Pairing Criterion" for Independent Loops
+
+A knot is "neutralizable" if and only if its independent loops can be **paired and closed so as to cancel**, and pairing requires $\beta_1$ to be even. When $\beta_1$ is odd there is exactly one independent loop that **cannot be paired**, which bears the net winding number → net charge $\pm e$. This is consistent with two statements in the original works: "charge = cut-set counting" (what is counted is the loops that cannot be symmetrically cancelled); "polarity cancellation → neutral" (the precondition for pairwise cancellation is that loops can be paired).
+
+Taking the parity (rather than $\beta_1$ itself) is necessary: a single charged knot always has $|Q|=e$ (a proton is not $7e$); the magnitude information of $\beta_1$ enters the **mass/internal-path** channel. This is the manifestation of **charge–mass decoupling** at the level of graph invariants.
+
+### 5.4 Composite: Sum over Bodies
+
+The many-body scaffold $\beta_1=6k+1$ is always odd and **cannot** be subjected to this criterion (otherwise it would misjudge "every composite is charged"). The composite charge is summed over **bodies** according to **A3**: each closed-state (proton) body contributes $\pm e$, each open-state (neutron) body contributes $0$ — consistent with "nuclear charge $Z$ = number of protons."
+
+---
+
+## 6. Sign Channel: $\sigma=$ ℤ₂ holonomy
+
+### 6.1 Carrier: the ℤ₂ Winding Phase Native to the Theory
+
+*A Complete Characterization of the Electron in the SRE Framework* §1.2 defines the "ℤ₂ winding phase": the product of the edge polarities along a closed loop equals $\pm1$; taking $-1$ means that one flip is experienced in going around once. Generalized to an arbitrary closed chain $\gamma$: $\sigma(\gamma)=\prod_{e\in\gamma}s_e$.
+
+### 6.2 Group Structure
+
+After mapping through $\varphi$ to $\mathbb{Z}_2$ values, $\sigma(\gamma)$ becomes a linear functional on $\gamma$; the collection of all such forms
+$$H^1(G;\mathbb{Z}_2)=\operatorname{Hom}\big(H_1(G;\mathbb{Z}_2),\mathbb{Z}_2\big),\qquad |H^1|=2^{\beta_1}.$$
+This agrees with the "homology ladder" $|H^1(G;\mathbb{Z}_n)|=n^{\beta_1}$ of *The Positioning of Light and Electromagnetic Waves in the SRE System* (with $n=2$).
+
+### 6.3 Why Charge Falls on the ℤ₂ Rung
+
+*The Positioning of Light and Electromagnetic Waves in the SRE System* **Theorem 2**: **light/electromagnetism take the ℤ₂ rung, mass takes the ℤ₃ rung** (two adjacent levels of the same homology ladder), and $\delta_A$ is "the emergent coupling strength of the ℤ₂ holonomy channel." Charge is the source of electromagnetic coupling, hence **the sign of charge naturally belongs to the ℤ₂ rung** — $\sigma$ lands on a channel already named by the theory.
+
+---
+
+## 7. Charge Conjugation $\mathcal{C}$ = holonomy Reversal
+
+**Definition** $\mathcal{C}:\sigma\mapsto-\sigma$ (the unique non-trivial automorphism of $\{+1,-1\}$).
+
+**Proposition 7.1** $\mathcal{C}$ sends $\sigma\to-\sigma$, whereas $\deg=\beta_1\bmod2$ is unchanged.
+
+**Proof** $\{+1,-1\}$ is a group of order two; its unique non-trivial automorphism is negation, which sends every holonomy class to its opposite class; $\deg$ depends only on the graph, not on the edge assignment. $\square$
+
+**Physical reading**: **charge conjugation = holonomy reversal**: $e^-\leftrightarrow e^+,\ p\leftrightarrow\bar p$.
+
+---
+
+## 8. Sign Anchor A0: Convention and Physical Content
+
+### 8.1 Absolute Naming Is a Gauge Convention
+
+Physics (including classical electromagnetism) determines only the **relative sign** (like signs repel / opposite signs attract); labeling some object as positive or negative is a gauge choice. The theory supplies the ℤ₂ quantum number; the absolute naming needs an anchor:
+
+> **A0 (Convention)** Prescribe that **the holonomy class to which the electron belongs** is "negative."
+
+### 8.2 Physical Content (Not Convention) — Already Numerically Confirmed in §10.2
+
+| Relation | Theoretical content | Observation |
+|---|---|---|
+| electron vs positron | $\sigma$ opposite ($\mathcal{C}$) | opposite signs |
+| proton vs antiproton | $\sigma$ opposite ($\mathcal{C}$) | opposite signs |
+| electron vs proton | **holonomy classes opposite** (§10.2) | opposite signs |
+| charged vs neutral | $\deg$ 1 vs 0 ($\beta_1$ odd vs even) | present / absent |
+
+**The structural origin of "electron and proton have opposite signs" (already numerically confirmed)**:
+
+- **The electron $Q_3$ is forced into the trivial class**: the cube is **edge-transitive** (its 12 edges lie in the same orbit under $\lvert\mathrm{Aut}\rvert=48$) ⇒ a symmetric-respecting $s_e$ assignment must be uniform; and because the cube is **bipartite** (all loop lengths even) ⇒ every loop's holonomy $=(+1)^{\text{even}}=+1$ ⇒ trivial class, and the non-trivial class is **unreachable**.
+- **The proton $Y_3\ltimes\triangle_3$ admits the non-trivial class**: it contains a **triangle** (non-bipartite) plus **two edge orbits** (loop-edge / spoke, 9 each) ⇒ taking $s(\text{loop-edge})=-1$ yields on the triangle a holonomy $=(-1)^3=-1$ ⇒ the non-trivial class is reachable.
+
+Namely: **electron in the trivial class (assigned negative) ↔ proton in the non-trivial class (assigned positive)**, uniquely determined by the skeleton automorphism structure.
+
+---
+
+## 9. Full Table (after anchoring A0)
+
+| Particle | skeleton | $\beta_1$ | $\deg$ | holonomy class $\sigma$ | $Q$ |
+|---|---|---|---|---|---|
+| electron $e^-$ | $Q_3$ (edge-transitive + bipartite) | 5 | 1 | **trivial class** (A0 anchors −) | $-e$ |
+| positron $e^+$ | $Q_3$, after $\mathcal{C}$ | 5 | 1 | non-trivial class (+) | $+e$ |
+| proton $p$ | $Y_3\ltimes\triangle_3$ closed state | 7 | 1 | **non-trivial class** (+) | $+e$ |
+| neutron $n$ | $Y_3\ltimes\triangle_3$ open state | 6 | 0 | (magnitude 0, sign meaningless) | $0$ |
+| antiproton $\bar p$ | closed state, after $\mathcal{C}$ | 7 | 1 | trivial class (−) | $-e$ |
+
+**Consistency**: $\mathcal{C}$ flips $\sigma$ row by row while keeping $\deg$ fixed ⇒ all particle/antiparticle pairs hold.
+
+---
+
+## 10. Numerical Verification
+
+### 10.1 $\sigma$ and $\deg$ Are Mutually Independent (`_sigma_deg_independence.py`)
+
+| object | V | E | $\beta_1$ (three algorithms agree) | $\deg$ | $\lvert H^1\rvert=2^{\beta_1}$ | $\sigma$ reachable |
+|---|---|---|---|---|---|---|
+| electron $Q_3$ | 8 | 12 | 5 | 1 | 32 | $\{+1,-1\}$ |
+| proton closed state | 12 | 18 | 7 | 1 | 128 | $\{+1,-1\}$ |
+| neutron open state | 12 | 17 | 6 | 0 | 64 | $\{+1,-1\}$ |
+
+$\beta_1$ is cross-checked by three algorithms — $E-V+c$, real correlation rank, and $\mathbb{Z}_2$ correlation rank — all in agreement. **Verdict [SUCCESS]**: $(\deg,\sigma)$ spans a $1\times2^{\beta_1}$ product space — the magnitude channel is **1 bit**, the sign channel is **$\beta_1$ bit**, and they are independent; **there is no lock-in of the form $\sigma=(-1)^{\beta_1}$**.
+
+### 10.2 The Holonomy Classes of Electron and Proton Are Opposite (`_se_assignment_test.py`)
+
+Enumerate the edge-polarity assignments $s_e$ that **respect the automorphism group**, and find their $H^1(G;\mathbb{Z}_2)$ class:
+
+| skeleton | $\lvert\mathrm{Aut}\rvert$ | edge orbits | bipartite | symmetric class: trivial | symmetric class: non-trivial |
+|---|---|---|---|---|---|
+| electron $Q_3$ | 48 | 1 (12 edges, same orbit) | True | reachable | **unreachable (forced trivial)** |
+| proton closed state | 36 | 2 (9+9) | False | reachable | **reachable** |
+| neutron open state | 4 | 7 | False | reachable | reachable |
+
+**Verdict [SUCCESS]**: electron trivial class, proton non-trivial class — **opposite (OPPOSITE)**. Note: without the symmetry constraint both graphs contain non-trivial classes (electron $31/32$, proton $127/128$) — the difference comes from **symmetry admissibility**, not from $H^1$ capacity. **This upgrades F2 from a "structural side-by-side reading" to a "numerical confirmation."**
+
+---
+
+## 11. Conservation, Neutrality, $\delta_A$
+
+- **Charge conservation**: $\sigma\in H^1(G;\mathbb{Z}_2)$ is additive as a $\mathbb{Z}_2$ functional under subgraph assembly; together with A3, the total charge is conserved.
+- **Macroscopic electric neutrality**: the angular-element negative-feedback rule drives $\sum\sigma_i\deg_i\to0$ (the distribution of positive/negative holonomy classes is symmetrized).
+- **Interface with $\delta_A$**: the $\delta_A=w^*-1=4.347\times10^{-5}$ of §2 of *The Positioning of Light and Electromagnetic Waves in the SRE System* is the **continuous coupling strength** of the ℤ₂ holonomy channel; the $\sigma$ of this paper is the **discrete rung** ($\pm1$) of that channel. Division of labor: **the discrete rung provides the sign and the quantization, the continuous coupling provides the coupling strength.**
+
+---
+
+## 12. Falsifiability Criteria
+
+- **F1 ($\mathcal{C}$ theorem)** Particle and antiparticle have opposite $\sigma$ and identical $\deg$ ⇒ strictly opposite charge signs and equal magnitude. If an antiparticle pair of equal magnitude but not opposite sign is found, this is falsified.
+- **F2 (opposite sign between different species) — confirmed in §10.2** The electron and the proton fall into opposite holonomy classes. If, within a larger skeleton family, a skeletal structure forces the two into the same class (same sign), this is falsified.
+- **F3 (channel independence) — confirmed in §10.1** The capacity $2^{\beta_1}$ of the $\sigma$ channel is independent of the 1 bit of $\deg$. If $\sigma$ is found to be uniquely determined by $\beta_1$, this is falsified.
+- **F4 (neutral = even $\beta_1$)** Neutral ⇔ $\beta_1$ even. If a case with even $\beta_1$ yet charged (or vice versa) is found, and it cannot be decomposed into co-located multiple knots, this is falsified.
+
+---
+
+## 13. Honest Boundaries
+
+1. **Absolute sign is a convention.** What this paper closes is "the carrier and the relative structure of the sign," not the absolute naming (which is physically undeducible and of the same origin as the charge-conjugation convention).
+2. **The "opposite class" relies on an explicit assumption.** The conclusion of §10.2 relies on "the physical $s_e$ assignment respects the skeleton automorphism group $\mathrm{Aut}$"; without this assumption, both graphs admit non-trivial classes, and the sign assignment falls back to physical input. This assumption is a discussable modeling choice.
+3. **No fractional charge is produced.** This model gives integer $Q\in\mathbb{Z}e$ and cannot reproduce the quark's $\pm2/3,\pm1/3$. This is an ontology-difference hypothesis: SRE views fractional charge as "the averaged reading when three strands share one and the same closed loop" (*A Complete Characterization of the Nucleon in the SRE Framework* §4.2, conjecture Q2, not yet independently tested).
+4. **Divergence from the nucleon paper v1.5 — CLOSED by §14.** That paper's §6 defines the open/closed two states as isospin structure **independent of charge**; this paper connects $\deg=\beta_1\bmod2$ to the charge magnitude (reading A). As proven in §14 (Proposition 6.1), the two Z₂'s are the *same* Z₂: open/closed ≡ one fewer independent loop ≡ parity flip ≡ charged/neutral. The isospin Z₂ is thus reinterpreted as the charge-magnitude Z₂; no conflict remains.
+5. **Extracting the closed form has reached the mechanism level; quantitative benchmarking is left for later.** This is consistent with the quantitative lacuna left by *The SRE Dynamical Topological Paradigm for Composite Elementary Particles and the Emergence of Relational Space*.
+
+---
+
+## 14. Topological Derivation of the Nucleon Charges (Magnitude and Sign)
+
+§9 gives the nucleon charge table by assertion and numerical check; this section supplies the **topological derivation** on the official nucleon skeleton $Y_3\rtimes\triangle_3$ (nucleon paper v1.5) using the functional $Q=\sigma\cdot\deg\cdot e$ established above. The full treatment — all measured invariants, the multi-body extension, and the honesty boundaries — is the companion document *Topological Derivation of the Nucleon Charges from the Charge-Emergence Functional* (`SRE_Nucleon_Charge_Derivation_E.md`).
+
+### 14.1 Skeleton inputs
+
+- **Proton** = **closed** $Y_3\rtimes\triangle_3$: $(V,E,\beta_1)=(12,18,7)$, non-bipartite, 2 edge orbits (9 ring + 9 spokes).
+- **Neutron** = **open** $Y_3\rtimes\triangle_3$: one ring edge removed, $(12,17,6)$, still connected, 7 edge orbits.
+- (Electron $Q_3$: $(8,12,5)$, bipartite, 1 edge orbit — from §9.)
+
+### 14.2 Magnitude from $\beta_1$ parity
+
+**Proposition.** $\deg=\beta_1\bmod 2$ is fixed solely by open/closed connectivity:
+$$\deg(p)=7\bmod 2=1,\qquad \deg(n)=6\bmod 2=0.$$
+The neutron has one fewer independent loop than the proton ⇒ parity flips ⇒ neutral. This is exactly the magnitude-side counterpart of nucleon-paper §6.3's "the $10^{-3}$ breaking comes from a missing loop".
+
+### 14.3 Sign from holonomy class
+
+- **Electron forced trivial** (§10.2): $Q_3$ is edge-transitive ($|\mathrm{Aut}|=48$) and bipartite ⇒ every Aut-respecting polarity assignment gives holonomy $+1$ ⇒ only the trivial class is reachable (measured: 1 class).
+- **Proton allows non-trivial** (§10.2): the closed state contains a triangle (odd cycle) and has 2 edge orbits ⇒ choosing the ring-edge orbit $s=-1$ makes the triangle holonomy $-1$ ⇒ the non-trivial class is reachable (measured: 2 classes).
+- With A0 (electron's class = "negative"), the electron/proton structural opposition fixes proton sign $=+$, electron sign $=-$ (§8.2).
+
+### 14.4 Charge table and charge conjugation
+
+| Particle | $\beta_1$ | $\deg$ | $\sigma$ | $Q$ |
+|---|---|---|---|---|
+| proton $p$ | 7 | 1 | non-trivial $(+)$ | $+e$ |
+| neutron $n$ | 6 | 0 | moot | $0$ |
+| antiproton $\bar p$ | 7 | 1 | trivial $(-)$ | $-e$ |
+
+$\mathcal C:\sigma\mapsto-\sigma$ flips particle/antiparticle pairs; the neutron ($\deg=0$) is $\mathcal C$-invariant.
+
+### 14.5 Closing the §13 divergence: isospin Z₂ ≡ charge-magnitude Z₂
+
+Nucleon paper v1.5 §6 marks open/closed as an isospin Z₂ "independent of charge"; §13 (item 4) here attached $\deg=\beta_1\bmod 2$ to charge magnitude. **Ruling (Proposition 6.1):** they are the same Z₂ — open/closed ≡ one fewer loop ≡ parity flip ≡ charged/neutral. The isospin Z₂ is thus reinterpreted as the charge-magnitude Z₂; the mass breaking ($10^{-3}$) lives in the dynamical layer, not the topological charge layer. No conflict; the §13 divergence is closed.
+
+### 14.6 Multi-body: A3 body-sum gives nuclear charge $Z\cdot e$
+
+The multi-body scaffold $V=9k+3,\ E=15k+3,\ \beta_1=6k+1$ is **always odd** ($k\ge1$), so the single-knot criterion "neutral ⇔ $\beta_1$ even" cannot be applied to the whole scaffold. By A3, sum over nucleon **bodies**:
+$$Q_{\rm nucleus}=\sum_{\text{proton bodies}}(+e)+\sum_{\text{neutron bodies}}(0)=Z\cdot e,$$
+with $Z$ = number of proton bodies. Neutron bodies ($\deg=0$) contribute nothing — exactly "neutrons are uncharged". A re-computable script verification is provided in `SRE-charge-emergence/_nucleon_multibody_charge.py`.
+
+---
+
+## Appendix A: Complete Proof of the $\mathbb{F}_2$ Isomorphism
+
+Let $S\in\{+1,-1\}$, $B=\varphi(S)=(1-S)/2$.
+
+1. Bijection: $-1\mapsto1$, $+1\mapsto0$.
+2. Homomorphism: $\varphi(S_1S_2)=\dfrac{1-S_1S_2}{2}$, and
+$$\varphi(S_1)\oplus\varphi(S_2)=\frac{1-S_1}{2}+\frac{1-S_2}{2}-2\cdot\frac{1-S_1}{2}\cdot\frac{1-S_2}{2}=\frac{1-S_1S_2}{2}.$$
+3. Inverse map: $\varphi^{-1}(B)=1-2B$. Hence $\varphi$ is a group isomorphism. $\square$
+
+## Appendix B: Notation Table
+
+| symbol | meaning | channel |
+|---|---|---|
+| $K$ | closed-loop knot | — |
+| $\beta_1=E-V+c$ | first Betti number (number of independent loops) | magnitude |
+| $\deg=\beta_1\bmod2$ | charge magnitude (0/1) | magnitude (1 bit) |
+| $s_e=\operatorname{sign}\mathbf{M}_{ij}$ | edge polarity $\pm1$ | sign |
+| $\sigma=\prod_{e\in\partial K}s_e$ | boundary holonomy $\in\{\pm1\}$ | sign ($H^1$, $\beta_1$ bit) |
+| $Q=\sigma\cdot\deg\cdot e$ | charge functional | boundary (ℤ₂ × parity) |
+| $\mathcal{C}:\sigma\mapsto-\sigma$ | charge conjugation | — |
+| $N$ | internal path count | mass $m\propto N\ell_{\min}$ |
+
+## Appendix C: Mapping Table to the Chapters of *The Book of the Void*
+
+| point of this draft | corresponding chapter (article name + section) |
+|---|---|
+| charge = cut-set counting | *A Fundamental Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality* |
+| elementary charge $e\equiv1$ | *A Rigorous Reconstruction of Maxwell's Field Equations Based on Pure Dimensionless Graph Cohomology and Global Evolution Steps* |
+| electron unit charge = outward topological bias; Möbius 2N | *A Unified Theory of the Electronic Logical Structure and Physical Properties Based on an Instantiable Minimal Topological Scale* §II, §III |
+| ℤ₂ winding phase; $Q_3$ ontology; Axiom I (binary constraint) | *A Complete Characterization of the Electron in the SRE Framework* §1.2, §6 |
+| three-strand Y skeleton; open/closed two states; assembly law; $N_c=3$=number of strands | *A Complete Characterization of the Nucleon in the SRE Framework* v2.1 §6, §8, §12, §4.2 |
+| light/electromagnetism take ℤ₂, mass takes ℤ₃; homology ladder; δ_A | *The Positioning of Light and Electromagnetic Waves in the SRE System* Theorem 2, §2 |
+| three-ring ℤ₃ torsor (cyclic structure of the three generations) | *The Origin of Mass in the SRE System: A Cyclic Operator Formulation on the Three-Ring ℤ₃ Torsor* |
+| double closed-loop composite particle (mass amplification) | *The SRE Dynamical Topological Paradigm for Composite Elementary Particles and the Emergence of Relational Space* §2 |
+
+---
+
+**One-sentence conclusion**:
+$$\sigma\in H^1(G;\mathbb{Z}_2),\quad \deg=\beta_1\bmod 2,\quad Q=\sigma\cdot\deg\cdot e.$$
+In the SRE framework, **positive and negative charges are the synthesis of two independent invariants on the boundary of one and the same topological knot — the ℤ₂ holonomy gives the sign, and the parity of $\beta_1$ gives the magnitude**; the electron is forced by skeletal symmetry into the trivial class, the proton falls into the non-trivial class (opposite), charged versus neutral is decided by the parity of $\beta_1$, and particle/antiparticle reverse sign through $\mathcal{C}$. Two numerical tests confirm that the sign and the magnitude are independent, and that the electron and proton classes are opposite.
 
 
 <div style="page-break-after: always;"></div>
