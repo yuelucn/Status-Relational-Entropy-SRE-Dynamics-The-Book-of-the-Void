@@ -1,7 +1,7 @@
-﻿# Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator （$\mathcal{M}_{\text{degree}}$） and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional
+# Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator （$\mathcal{M}_{\text{degree}}$） and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional
 **Version**: 1.1
 
-> **Document positioning**: This manuscript constitutes core component of Phase-1 Homogeneous-Metric Operator Suite within Status-Relational-Entropy (SRE) Dynamics. Operator 4 receives intermediate outputs from Operator 1 and Operator 2, and supplies spectral-prior parameters for downstream Operator 5. It belongs to the open-source Operator 1-6 suite; Operators 7-10 are closed-source commercial-core modules and are outside the scope of this document.
+> **Document positioning**: This manuscript constitutes core component of Phase-1 Homogeneous-Metric Operator Suite within Status-Relational-Entropy (SRE) Dynamics. Operator 4 receives intermediate outputs from Operator 1 and Operator 2, and supplies spectral-prior parameters for downstream Operator 5. All Operators 1-19 are now released open-source with complete derivations and reference implementations.
 
 ## Abstract
 This paper rigorously derives and constructs algebraically the **Local-Topology Degree-Statistic Operator ($\mathcal{M}_{\text{degree}}$, Operator 4)**, a core member of the Phase 1 homogeneous-metric operator suite under Status-Relational-Entropy (SRE) Dynamics. Targeting discontinuous step-noise induced by distributed-actor local-horizon fragmentation and local zero-degree vacuum singularities, this operator builds analytic homogeneous smoothing measures by fusing the 2-Step Graph-Walk Kernel and spectral-bound regularisation terms.

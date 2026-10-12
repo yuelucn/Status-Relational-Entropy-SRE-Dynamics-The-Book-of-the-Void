@@ -1,0 +1,58 @@
+SCALE:                          24
+edgefactor:                     16
+NBFS:                           3
+graph_generation:               3.66
+num_mpi_processes:              1
+num_omp_threads:                32
+construction_time:              13.521
+num_vertices:                   16777216
+num_edges:                      268435456
+nnz:                            553642408
+sre_min_time:                   5.918
+sre_firstquartile_time:         5.918
+sre_median_time:                6.029
+sre_thirdquartile_time:         6.816
+sre_max_time:                   6.816
+sre_mean_time:                  6.25433
+sre_stddev_time:                0.489574
+min_nedge:                      553642408
+firstquartile_nedge:            553642408
+median_nedge:                   553642408
+thirdquartile_nedge:            553642408
+max_nedge:                      553642408
+mean_nedge:                     553642408
+stddev_nedge:                   0
+sre_min_TEPS:                   8.12269e+07
+sre_firstquartile_TEPS:         8.12269e+07
+sre_median_TEPS:                9.18299e+07
+sre_thirdquartile_TEPS:         9.35523e+07
+sre_max_TEPS:                   9.35523e+07
+sre_harmonic_mean_TEPS:     !   8.85214e+07
+sre_harmonic_stddev_TEPS:       4.89971e+06
+sre_min_per_vertex_us:          0.35274
+sre_median_per_vertex_us:       0.359356
+sre_max_per_vertex_us:          0.406265
+sre_mean_per_vertex_us:         0.372787
+
+# SRE Extended Kernel (non-standard, ignored by official parser)
+# op1_time=0.000000e+00 op2_time=9.900000e-01 op3_time=0.000000e+00
+# op4_time=0.000000e+00 op5_time=0.000000e+00 op6_time=4.920000e+00
+# op7_time=0.000000e+00 op8_time=0.000000e+00 op9_time=0.000000e+00 op10_time=0.000000e+00
+# op11_time=0.000000e+00 op12_time=7.999897e-03 op13_time=0.000000e+00 op14_time=0.000000e+00
+# op15_time=0.000000e+00 op16_time=0.000000e+00 op17_time=0.000000e+00 op18_time=0.000000e+00 op19_time=0.000000e+00
+# op4_w_e_trace=0.000000 op4_w_e_frobenius=0.000000
+# op5_c_e_mean=0.000000
+# op6_lambda_2=4.495239e+03 op6_alpha_n=7.396441e+05 op6_residual=2.530197e+04
+# op7_grad_norm=9.518792e+00 op8_delta_Pi=1.217581e-01 op9_trace=40.000000
+# op10_z_eff=1.000000 op10_action_gate=1 op10_p_conduction=1.000000
+# op11_lambda_2_q=0.000000e+00 op11_alpha_q=0.000000e+00 op11_kappa_q=1.000000e+30
+# op11_q_dispersion=4.837513e-01 op11_max_spin_coupling=0.000000e+00
+# op12_n_loops=0 op12_mobius_ratio=9.316104e-01
+# op13_K=6 op13_tau_0=1.000000 op13_tau_2=0.032787
+# op14_grad_norm=6.436235e-01 op14_harm_norm=5.433332e-01 op14_curl_norm=5.550773e-01
+# op15_dM_norm=1.757249e-03 op15_quad=1.564697e-01 op15_trust=1.000000
+# op16_feas_before=-2.509716e-02 op16_feas_after=-1.000000e-09 op16_t_star=0.096872
+# op17_verdict=0 op17_eps=4.190291e-01
+# op18_h_norm=4.490479e+00 op18_d_hom=0.000000e+00 op18_budget=1.229838e+00
+# op19_V=128 op19_E=0 op19_c=128 op19_beta1=0 op19_deg=0
+# op19_bipartite=1 op19_sigma_trivial=1 op19_sigma_canonical=1.0 op19_Q_model=0.0 op19_channel_type=0

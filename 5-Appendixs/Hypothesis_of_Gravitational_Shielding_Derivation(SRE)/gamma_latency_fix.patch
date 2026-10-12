@@ -1,0 +1,11 @@
+--- a/5-Appendixs/Emergence_of_Multidimensional_Spacetime_and_Dynamical_Gravity_via_Regularized_Causal_Information_Networks/sre_full_framework.py
++++ b/5-Appendixs/Emergence_of_Multidimensional_Spacetime_and_Dynamical_Gravity_via_Regularized_Causal_Information_Networks/sre_full_framework.py
+@@ -62,7 +62,7 @@
+     "THETA_CONFORMAL": 0.82798,
+ 
+     # --- γ_latency for conformal scaling Ω = (Δz/θ)^(-γ/4) ---
+-    "GAMMA_LATENCY": 0.05,
++    "GAMMA_LATENCY": 0.0585,
+ 
+     # --- Numerical constants ---
+     "HOLOGRAPHIC_DIM_CAP": 4,

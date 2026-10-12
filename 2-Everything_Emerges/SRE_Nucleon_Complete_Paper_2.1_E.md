@@ -3,8 +3,7 @@
 **Version: 2.1 (Integrated Draft)**
 **Date: 2026-10-09**
 
-> [Resource and Availability Statement] This framework is built based on State-Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open data repository. **This document suite includes system papers, application development, scientific hypotheses, operators 1-6,11,12 complete algebraic derivations and simulation code fully open source**; operators 7, 8, 9, 10,13-18 belong to subsequent closed-source commercial core modules,
-> and are not included in this document suite.
+> [Resource and Availability Statement] This framework is built based on State-Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open data repository. **This document suite includes system papers, application development, scientific hypotheses, and the complete algebraic derivations and simulation code for all operators 1-19, fully open source**.
 >
 > Additionally, you can access the Tencent Intelligent Document Space supporting AI-assisted consultation (available on PC and WeChat mobile terminals).
 >

@@ -1,8 +1,8 @@
-﻿# Emergence of Classical Mechanics from Discrete Causal-Information Networks: Ontological Mapping and Effective-Theory Limits within Status-Relational-Entropy (SRE) Dynamics
+# Emergence of Classical Mechanics from Discrete Causal-Information Networks: Ontological Mapping and Effective-Theory Limits within Status-Relational-Entropy (SRE) Dynamics
 **Version**: 1.0
 
 > **Resource & Availability Statement**: This framework is built upon Status-Relational Entropy (SRE) Dynamics. The complete suite of theoretical materials is archived in the Zenodo open-data repository.
-> **The full package includes system manuscript, application development, scientific hypotheses, complete algebraic derivations for operators 1-6, and simulation source code, all open-source**. Operators 7, 8, 9, 10 belong to subsequent closed-source commercial core modules and are not included in this document suite.
+> **The full package includes system manuscript, application development, scientific hypotheses, and complete algebraic derivations for all operators 1-19, with simulation source code, all open-source**.
 >
 > A Tencent Smart-Document workspace supporting AI-assisted review is available for both PC and mobile access.
 >
