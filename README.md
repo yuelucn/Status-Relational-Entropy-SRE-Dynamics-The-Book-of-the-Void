@@ -75,3 +75,32 @@ All theoretical materials are archived in **Zenodo open‑access repository**, s
 ## ✍️ Citation 引用格式
 If you refer to this work in your research, please cite:
 Yue Lu. Status‑Relational‑Entropy Dynamics (SRE‑Dynamics): The Book of the Void. SRE‑v1.6 Axiom Suite. Zenodo, 2026. (https://doi.org/10.5281/zenodo.23314531) (https://doi.org/10.5281/zenodo.22077475)
+
+## 📜 Licensing / 许可声明
+
+This repository applies **two separate licenses to different contents**:
+
+1. **Manuscripts, book text, theoretical prose (all Markdown book chapters, preface, theoretical descriptions)**
+> Licensed under **Creative Commons Attribution 4.0 International (CC‑BY‑4.0)**.
+> Full license text: see `LICENSE‑CC‑BY‑4.0`.
+> https://creativecommons.org/licenses/by/4.0/
+> Consistent with the Zenodo archive SRE‑v1.6 Axiom Suite.
+
+2. **Source code, simulation scripts, implementation of Operators 1‑19 (program files)**
+> Licensed under **MIT License**.
+> Full license text: see `LICENSE‑MIT`.
+
+> For mixed files containing both prose text and embedded code snippets:
+> Quotation / reuse of textual content follows CC‑BY‑4.0.
+> Re‑use, execution and modification of code snippets follows MIT License.
+
+---
+
+### 许可（中文）
+本仓库不同内容采用两套独立许可协议：
+1. **书稿文稿、理论正文（所有Markdown书稿章节、作者序、理论描述文本）**：采用 **CC‑BY‑4.0（知识共享署名4.0国际）**，详见根目录`LICENSE‑CC‑BY‑4.0`，与Zenodo归档SRE‑v1.6公理套件许可保持一致。
+2. **源代码、仿真脚本、算子1‑19实现程序文件**：采用 **MIT开源协议**，详见根目录`LICENSE‑MIT`。
+
+> 对于同时包含文字正文与内嵌代码片段的混合文件：
+> 文本内容的引用、复用遵守 CC‑BY‑4.0；
+> 代码片段的运行、复制、二次修改遵守 MIT License。
