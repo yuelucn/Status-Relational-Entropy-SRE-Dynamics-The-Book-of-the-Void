@@ -1,6 +1,6 @@
 # Status‑Relational‑Entropy Dynamics (SRE‑Dynamics): The Book of the Void
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22077475.svg)](https://doi.org/10.5281/zenodo.22077475)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23314531.svg)](https://doi.org/10.5281/zenodo.23314531)
 
 > An information‑ontology complete physical‑theory system. Spacetime, matter and forces emerge from iterative growth of dimension‑free binary self‑organising networks.
 > 一套以信息作为本体的完整物理理论体系：时空、物质与力场由无维度二元自组织网络迭代生长涌现。
