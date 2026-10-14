@@ -74,7 +74,7 @@ All theoretical materials are archived in **Zenodo open‑access repository**, s
 
 ## ✍️ Citation 引用格式
 If you refer to this work in your research, please cite:
-Yue Lu. Status‑Relational‑Entropy Dynamics (SRE‑Dynamics): The Book of the Void. SRE‑v1.6 Axiom Suite. Zenodo, 2026. (https://doi.org/10.5281/zenodo.23314531) (https://doi.org/10.5281/zenodo.22077475)
+Yue Lu. Status‑Relational‑Entropy Dynamics (SRE‑Dynamics): The Book of the Void. SRE‑v1.6 Axiom Suite. Zenodo, 2026. (https://doi.org/10.5281/zenodo.23355582) (https://doi.org/10.5281/zenodo.22077475)
 
 ## 📜 Licensing / 许可声明
 
