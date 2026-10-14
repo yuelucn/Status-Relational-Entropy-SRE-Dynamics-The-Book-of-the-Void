@@ -4,17 +4,17 @@ NBFS:                           3
 graph_generation:               0.00399995
 num_mpi_processes:              1
 num_omp_threads:                32
-construction_time:              0.00100017
+construction_time:              0
 num_vertices:                   4096
 num_edges:                      65536
 nnz:                            134752
-sre_min_time:                   0.073
-sre_firstquartile_time:         0.073
-sre_median_time:                0.0749998
-sre_thirdquartile_time:         0.0770001
-sre_max_time:                   0.0770001
-sre_mean_time:                  0.075
-sre_stddev_time:                0.00200009
+sre_min_time:                   0.0740001
+sre_firstquartile_time:         0.0740001
+sre_median_time:                0.0769999
+sre_thirdquartile_time:         0.079
+sre_max_time:                   0.079
+sre_mean_time:                  0.0766667
+sre_stddev_time:                0.00251654
 min_nedge:                      134752
 firstquartile_nedge:            134752
 median_nedge:                   134752
@@ -22,29 +22,29 @@ thirdquartile_nedge:            134752
 max_nedge:                      134752
 mean_nedge:                     134752
 stddev_nedge:                   0
-sre_min_TEPS:                   1.75002e+06
-sre_firstquartile_TEPS:         1.75002e+06
-sre_median_TEPS:                1.7967e+06
-sre_thirdquartile_TEPS:         1.84592e+06
-sre_max_TEPS:                   1.84592e+06
-sre_harmonic_mean_TEPS:     !   1.79669e+06
-sre_harmonic_stddev_TEPS:       33880.4
-sre_min_per_vertex_us:          17.8223
-sre_median_per_vertex_us:       18.3105
-sre_max_per_vertex_us:          18.7989
-sre_mean_per_vertex_us:         18.3105
+sre_min_TEPS:                   1.70572e+06
+sre_firstquartile_TEPS:         1.70572e+06
+sre_median_TEPS:                1.75003e+06
+sre_thirdquartile_TEPS:         1.82097e+06
+sre_max_TEPS:                   1.82097e+06
+sre_harmonic_mean_TEPS:     !   1.75763e+06
+sre_harmonic_stddev_TEPS:       40795.4
+sre_min_per_vertex_us:          18.0664
+sre_median_per_vertex_us:       18.7988
+sre_max_per_vertex_us:          19.2871
+sre_mean_per_vertex_us:         18.7174
 
 # SRE Extended Kernel (non-standard, ignored by official parser)
 # op1_time=0.000000e+00 op2_time=0.000000e+00 op3_time=0.000000e+00
-# op4_time=3.499985e-02 op5_time=3.200006e-02 op6_time=0.000000e+00
-# op7_time=0.000000e+00 op8_time=0.000000e+00 op9_time=0.000000e+00 op10_time=0.000000e+00
-# op11_time=2.000093e-03 op12_time=5.999804e-03 op13_time=0.000000e+00 op14_time=0.000000e+00
+# op4_time=3.399992e-02 op5_time=3.299999e-02 op6_time=9.999275e-04
+# op7_time=0.000000e+00 op8_time=0.000000e+00 op9_time=0.000000e+00 op10_time=1.000166e-03
+# op11_time=9.999275e-04 op12_time=6.999969e-03 op13_time=0.000000e+00 op14_time=0.000000e+00
 # op15_time=0.000000e+00 op16_time=0.000000e+00 op17_time=0.000000e+00 op18_time=0.000000e+00 op19_time=0.000000e+00
 # op4_w_e_trace=1445035.119426 op4_w_e_frobenius=752099.733720
 # op5_c_e_mean=0.706096
 # op6_lambda_2=1.053802e+02 op6_alpha_n=4.768980e+03 op6_residual=4.784861e+02
 # op7_grad_norm=9.518792e+00 op8_delta_Pi=1.217581e-01 op9_trace=40.000000
-# op10_z_eff=1.000000 op10_action_gate=1 op10_p_conduction=1.000000
+# op10_z_eff=0.307666 op10_action_gate=0 op10_p_conduction=0.791364
 # op11_lambda_2_q=0.000000e+00 op11_alpha_q=1.334923e+01 op11_kappa_q=1.000000e+30
 # op11_q_dispersion=4.183695e-01 op11_max_spin_coupling=9.849569e-01
 # op12_n_loops=18 op12_mobius_ratio=8.984427e-01

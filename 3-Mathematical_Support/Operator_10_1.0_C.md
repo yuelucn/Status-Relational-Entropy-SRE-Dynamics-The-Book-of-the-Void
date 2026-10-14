@@ -23,7 +23,7 @@
 ### 1.2 内源有效拓扑阻抗张量 $\mathbf{Z}_{\text{eff}}$ 的显式数理定义
 算子 10 拒绝使用定性的定性割分类。对于任意两个可能通过前沿新边相互连接的顶点 $u, v \in V_n$，我们定义其**内源有效拓扑阻抗张量（Effective Topological Impedance Tensor）$\mathbf{Z}_{\text{eff}}(u,v)$** 为：
 $$\mathbf{Z}_{\text{eff}}(u,v) \equiv \left( \mathbf{e}_u - \mathbf{e}_v \right)^T \cdot \mathbf{L}_n^{+} \cdot \left( \mathbf{e}_u - \mathbf{e}_v \right)$$
-其中 $\mathbf{e}_u, \mathbf{e}_v$ 是标准的欧几里得标准基底单位列向量。该标量测度纯粹利用图的代数结构特征，精确量化了节点 $u$ 与 $v$ 之间的全局因果拓扑紧密度（Topological Connectedness Relative Distance），当且仅当 $u, v$ 处于绝对完全不连通的不同孤立分区时，阻抗值发散至理论无限大。
+其中 $\mathbf{e}_u, \mathbf{e}_v$ 是标准的欧几里得标准基底单位列向量。该标量测度纯粹利用图的代数结构特征，精确量化了节点 $u$ 与 $v$ 之间的全局因果拓扑紧密度（Topological Connectedness Relative Distance），当且仅当 $u, v$ 处于绝对完全不连通的不同孤立分区时，阻抗值发散至理论无限大。在算子 10 的实际裁决场景中，$u$ 与 $v_f$ 为待闭合前沿候选边的两端点（相邻顶点），此时单位权电网络的有效电阻满足 $0 \le \mathbf{Z}_{\text{eff}}(u, v_f) \le 1$：不存在并联迂回路径的桥接边恰达上限 $\mathbf{Z}_{\text{eff}} \equiv 1$（即定理 3.1）。生产实现据此将 $\mathbf{Z}_{\text{eff}}$ 夹紧至 $[0,1]$ 区间，并在外部同调预判给出桥接标志时直接置 $\mathbf{Z}_{\text{eff}} = 1$，与定理 3.1 的解析结论逐字对齐。
 
 ### 1.3 桥接边的非同模退化特征与拓扑连通示性标量 $\tau(G')$
 在离散图论中，一条边若被强行归零（剪枝休眠 $\chi=0$）会导致图的零阶贝蒂数 $\beta_0$（连通分量数）自发发生非同模突变膨胀（即触发图骨折断开），这条边被称为**桥接边（Bridge Edge）**。
@@ -37,14 +37,14 @@ $$\tau(G') \equiv 0$$
 ### 2.1 抢占式同调批次剪枝算子 $\mathcal{O}_{\text{gate\_batch}}$ 的显式矩阵构筑方程
 设当前前沿注入顶点为 $v_f$，其对应的待求解前沿随机自旋掩码向量为 $\boldsymbol{\chi} \in \{0, 1\}^{|\mathcal{N}(v_f)|}$。算子 10 显式声明的批次抢占式剪枝算子方程被严格规范为如下逻辑分块分段代数结构形式：
 $$\mathcal{O}_{\text{gate\_batch}}(\boldsymbol{\chi}_e) \equiv \begin{cases} 1, & \text{if } \mathbf{Z}_{\text{eff}}(u, v_f) \cdot \mathbf{M}_n(u, u) \ge \omega_{\text{th}} \quad (\text{同调抢占硬拦截}) \\ \text{Bernoulli}(p_{\text{cochain}}(e)), & \text{otherwise} \quad (\text{上同调随机柔性剪枝}) \end{cases}$$
-其中 $\omega_{\text{th}} > 0$ 为硬性图骨折拓扑阻抗临界阈值，$e = (u, v_f) \in \mathcal{N}(v_f)$ 为当前待裁决的前沿通道。
+其中 $\omega_{\text{th}} > 0$ 为硬性图骨折拓扑阻抗临界阈值（生产规范取 $\omega_{\text{th}} = 1.0 - \delta_{\text{flt}}$，见 3.2 节），$e = (u, v_f) \in \mathcal{N}(v_f)$ 为当前待裁决的前沿通道；自旋常数按 3.1 节对角归一化约定取 $\mathbf{M}_n(u,u) = 1$，故生产实现中该判据简化为 $\mathbf{Z}_{\text{eff}}(u, v_f) \ge \omega_{\text{th}}$。
 
 该方程通过判定内源阻抗张量是否逼近奇异发散极限，对可能触发流形局部解绑的通道执行强制上电导通（$\boldsymbol{\chi}_e \leftarrow 1$），从而在微观源头上截断了异步 Actor 产生非同模畸变的机会。
 
 ### 2.2 伴随上链随机门概率 $p_{\text{cochain}}(e)$ 的受控修正方程
-对于未触发硬性拦截的其余常规前沿通道，算子 10 拒绝使用均匀随机采样。其驱动的 Bernoulli 试验发生概率 $p_{\text{cochain}}(e)$ 受到内源拓扑阻抗不变量与前置步全局谱半径先验 $\alpha_n$ 的联合非线性控制修正：
-$$p_{\text{cochain}}(e) \equiv 1 - \frac{1}{1 + \exp\left( - \beta \cdot \left[ \frac{\alpha_n \cdot \mathbf{Z}_{\text{eff}}(u, v_f)}{1 - \mathbf{Z}_{\text{eff}}(u, v_f) + \delta_{\text{flt}}} \right] \right)}$$
-其中 $\beta > 0$ 为统计力学逆温度常数，$\delta_{\text{flt}} = 10^{-16}$ 为硬件级防发散微调分量。
+对于未触发硬性拦截的其余常规前沿通道，算子 10 拒绝使用均匀随机采样。其驱动的 Bernoulli 导通试验发生概率 $p_{\text{cochain}}(e)$ 受到内源拓扑阻抗不变量的联合非线性控制修正：
+$$p_{\text{cochain}}(e) \equiv \frac{1}{1 + \exp\left( - \beta \cdot \left[ \frac{\kappa \cdot \mathbf{Z}_{\text{eff}}(u, v_f)}{\max\left(1 - \mathbf{Z}_{\text{eff}}(u, v_f),\ \delta_{\text{flt}}\right)} \right] \right)}$$
+其中 $\beta = 2.0$ 为统计力学逆温度生产常数，$\kappa = 1.5$ 为阻抗增益尺度常数（生产实现中以固定常数 $\kappa$ 取代对谱半径先验 $\alpha_n$ 的运行时耦合，以保证 $\mathcal{O}(1)$ 局域决策门的完全无外部依赖性），$\delta_{\text{flt}} = 10^{-16}$ 为硬件级防发散微调分量（分母采用 $\max$ 下限截断形式执行除零防护）。
 
 在该修正算式下，当两个节点之间的局部拓扑阻抗增大（代表全局相干路径稀疏、系统逼近临界割裂周界）时，剪枝落入休眠状态的概率自发、非线性地滑向 0（即导通概率 $p \to 1$）。这成功实现了将宏观全局连通性控制信息，无缝、前向解耦地灌注进本地微观随机分布式决策门中。
 ## 3. 内源有效拓扑阻抗张量豁免定理与图灵完备性保全的严密数理证明 (Rigorous Proof of Homological Exemption)

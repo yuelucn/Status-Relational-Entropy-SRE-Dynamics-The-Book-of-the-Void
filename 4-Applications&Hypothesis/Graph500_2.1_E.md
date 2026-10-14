@@ -2,12 +2,19 @@
 
 
 
-Version: 2.0
+Version: 2.1
 
->
->
+[Resource & Availability Statement] This framework is built on State‑Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open data repository. **This document suite includes the systems paper, application development, scientific hypotheses, the complete algebraic derivations of Operators 1‑19, and the simulation code, all fully open source.**
 
-> This article is based on measured data from the Graph500 v2.1 standard benchmark (SCALE 12 / 20 / 24), and systematically introduces the capabilities, performance, comparison with traditional graph algorithms, and overall application prospects of the full SRE (State-Relation Entropy) suite of 19 operators.
+> The author's GitHub repository is accessible at:
+>
+> https://github.com/yuelucn/Status-Relational-Entropy-SRE-Dynamics-The-Book-of-the-Void
+>
+> A Tencent intelligent document space (with AI-assisted search) is accessible at (available on both PC and WeChat mobile):
+>
+> https://docs.qq.com/space/DUkRjYUtNWFdyV253
+>
+> According to the State‑Relational Entropy (SRE) principle, the foundations of classical physics derive from information statistics.
 
 ---
 
@@ -95,30 +102,31 @@ This is the core innovation of SRE — a spectral-shape equation solver that doe
 
 ## 3. Graph500 Benchmark Results
 
-Test environment: GCC 15.1.0 + OpenMP 8 threads, Graph500 official Kronecker generator, edge_factor=16, NBFS=3.
+Test environment: GCC 15.1.0 + OpenMP 32 threads, Graph500 official Kronecker generator, edge_factor=16, NBFS=3.
 
 ### 3.1 Official Ranking Metric (TEPS)
 
 | SCALE | Vertices N | Edges | harmonic_mean_TEPS `!` | Per-vertex Time |
 |-------|------------|-------|------------------------|-----------------|
-| 12 | 4,096 | 65,536 | **1.80 × 10⁶** | 18.31 μs |
-| 20 | 1,048,576 | 16,777,216 | **1.32 × 10⁸** | 0.250 μs |
-| 24 | 16,777,216 | 268,435,456 | **8.85 × 10⁷** | 0.373 μs |
+| 12 | 4,096 | 65,536 | **1.76 × 10⁶** | 18.72 μs |
+| 20 | 1,048,576 | 16,777,216 | **8.51 × 10⁷** | 0.388 μs |
+| 24 | 16,777,216 | 268,435,456 | **5.45 × 10⁷** | 0.605 μs |
 
-`!` denotes the Graph500 official primary ranking metric (harmonic mean of TEPS). SCALE 20 reaches the peak of 1.32×10⁸ TEPS.
+`!` denotes the Graph500 official primary ranking metric (harmonic mean of TEPS). SCALE 20 reaches the peak of 8.51×10⁷ TEPS.
 
 ### 3.2 Time Distribution of the 19 Operators (median, seconds)
 
 | Operator | SCALE 12 | SCALE 20 | SCALE 24 | Scaling Behavior |
 |----------|----------|----------|----------|------------------|
-| Op2 Random Walk | 0.000 | 0.062 | 0.990 | O(E) linear growth |
-| Op4 Metric Weights | 0.035 | 0.003* | 0.000* | Dense W_e exceeds memory at large scale |
-| Op5 Latency Calibration | 0.032 | 0.000* | 0.000* | Depends on Op4 |
-| Op6 Spectral Splicing | 0.000 | 0.175 | 4.920 | Lanczos iteration, large-scale bottleneck |
-| Op11 Spin-Charge | 0.002 | 0.000 | 0.000 | Fixed 128-vertex subgraph |
-| Op12 Closed-Loop Audit | 0.006 | 0.007 | 0.008 | Fixed 128-vertex subgraph |
+| Op2 Random Walk | 0.000 | 0.066 | 1.029 | O(E) linear growth |
+| Op4 Metric Weights | 0.034 | 0.004* | 0.000* | Dense W_e exceeds memory at large scale |
+| Op5 Latency Calibration | 0.033 | 0.000* | 0.000* | Depends on Op4 |
+| Op6 Spectral Splicing | 0.001 | 0.189 | 5.264 | Lanczos iteration, large-scale bottleneck |
+| Op10 Firewall | 0.001 | 0.143 | 3.516 | PCG-computed z_eff, one of the large-scale bottlenecks |
+| Op11 Spin-Charge | 0.001 | 0.001 | 0.002 | Fixed 128-vertex subgraph |
+| Op12 Closed-Loop Audit | 0.007 | 0.006 | 0.006 | Fixed 128-vertex subgraph |
 | Op13–Op18 Spectral Solver | <0.001 | <0.001 | <0.001 | Fixed small-dimensional chain complex |
-| Op19 Z₂ Channel | 0.000 | 0.001 | 0.000 | Fixed 128-vertex subgraph |
+| Op19 Z₂ Channel | 0.000 | 0.000 | 0.000 | Fixed 128-vertex subgraph |
 
 \* At SCALE 20+, the dense W_e matrix (N²×8B) exceeds available memory; Op4/Op5 dense outputs are automatically skipped.
 
@@ -162,10 +170,10 @@ The outputs of all three scales pass `parse_graph500.py` validation: all 22 requ
 
 | Algorithm | Typical Complexity | SCALE 24 Time | Notes |
 |-----------|--------------------|---------------|-------|
-| BFS (Graph500 benchmark) | O(V+E) | Included in 6.25s total | TEPS = 8.85×10⁷ |
+| BFS (Graph500 benchmark) | O(V+E) | Included in 10.15s total | TEPS = 5.45×10⁷ |
 | SST (Single-Source Shortest Path) | O(E + V log V) | — | Graph500 second benchmark |
 | PageRank | O(E·iter) | — | Power iteration |
-| **SRE Op6 Lanczos** | O(V·iter) | **4.92s** | Matrix-free, only matrix-vector products needed |
+| **SRE Op6 Lanczos** | O(V·iter) | **5.26s** | Matrix-free, only matrix-vector products needed |
 | **SRE Op13 Chebyshev** | O(K·V²) | **<1ms** (fixed small dim) | Three-term recurrence, no eigendecomposition |
 | **SRE Op14 Hodge** | O(m³) pseudoinverse | **<1ms** (fixed small dim) | Runs only on small-dimensional chain complex |
 
@@ -173,7 +181,7 @@ The outputs of all three scales pass `parse_graph500.py` validation: all 22 requ
 
 1. **Rich physical semantics**: Each operator corresponds to a well-defined physical quantity (spectral gap, electronegativity, Möbius phase, homology group), and outputs are directly interpretable
 2. **Efficient spectral-shape solving**: Op13 replaces full spectral decomposition with Chebyshev moments; Op14–Op18 run on a fixed small-dimensional chain complex, with total overhead < 1ms at all scales
-3. **Good scalability**: Op2/Op6 are O(E)/O(V) sparse operations; SCALE 24 (16M vertices) still completes within 6.25s
+3. **Good scalability**: Op2/Op6 are O(E)/O(V) sparse operations; SCALE 24 (16M vertices) still completes within 10.15s
 4. **Format compatibility**: 100% compatible with Graph500 v2.1 output format, directly integrable into the official ranking system
 5. **Memory protection**: Op4/Op5 dense paths have automatic out-of-memory detection, safely degrading at large scales
 
@@ -181,7 +189,7 @@ The outputs of all three scales pass `parse_graph500.py` validation: all 22 requ
 
 1. **Op4/Op5 dense path**: W_e is an N×N dense matrix; when N > 4.6K it exceeds memory, so trace/frobenius cannot be output at large scales
 2. **Op11/12/19 subgraph strategy**: Currently runs on a fixed 128-vertex subgraph; at large scales the subgraph may be disconnected (λ₂_q=0), losing full-graph topological information
-3. **Op6 large-scale bottleneck**: Lanczos takes 4.92s at SCALE 24, accounting for 79% of total time; further optimization possible (e.g., polynomial preconditioning)
+3. **Op6 large-scale bottleneck**: Lanczos takes 5.26s at SCALE 24, accounting for 52% of total time; further optimization possible (e.g., polynomial preconditioning)
 4. **Op19 reachability analysis**: Depends on networkx automorphism enumeration; skipped when V > 22, so a complete channel_type cannot be given
 5. **Non-traversal operators**: SRE does not directly optimize BFS/SSSP TEPS, but rather provides semantic enhancement on top of them
 
@@ -236,7 +244,7 @@ In practice, SRE can be built on top of GraphBLAS (Op4 uses SpGEMM, Op6 uses SpM
 ## 6. Conclusion
 
 1. **All 19 operators pass the Graph500 standard test** — no crashes, no anomalies at SCALE 12/20/24, output format 100% compliant
-2. **Peak TEPS 1.32×10⁸** (SCALE 20), per-vertex time as low as 0.25 μs, with industrial-grade scalability
+2. **Peak TEPS 8.51×10⁷** (SCALE 20), per-vertex time as low as 0.388 μs, with industrial-grade scalability
 3. **Core innovation lies in the spectral-shape layer (Op13–Op18)**: Chebyshev moments + Hodge decomposition achieve O(K·N²) spectral-shape equation solving, instead of the traditional O(N³) eigendecomposition
 4. **Electronic layer + charge-channel layer (Op11/12/19)** provide physical semantics unavailable in traditional graph algorithms: electronegativity modulation, Möbius phase, Z₂ topological charge
 5. **Overall positioning**: SRE is the "physical-semantic layer" of graph computing — downward it reuses GraphBLAS sparse algebra, upward it supports physical-property reasoning in domains such as molecules, networks, and knowledge graphs

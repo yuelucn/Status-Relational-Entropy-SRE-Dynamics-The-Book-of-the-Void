@@ -1,6 +1,7 @@
 # sre_commercial_core.py
 import numpy as np
 from scipy.linalg import eigh
+from scipy.special import expit
 from typing import Tuple
 
 class SRECommercialCoreSuite:
@@ -126,9 +127,11 @@ class SRECommercialCoreSuite:
         else:
             action_gate = 0  # 落入柔性上同调随机裁剪域
             numerator = 1.5 * z_eff
-            denominator = 1.0 - z_eff + self.delta_flt
-            exponent = np.clip(- 2.0 * (numerator / denominator), -500, 500)
-            p_conduction = 1.0 - (1.0 / (1.0 + np.exp(exponent)))
+            # 用 max(..., self.delta_flt) 进行最小值截断防除零
+            denominator = max(1.0 - z_eff, self.delta_flt)
+            exponent_raw = 2.0 * (numerator / denominator)
+            exponent = np.clip(exponent_raw, -500, 500)
+            p_conduction = float(expit(exponent))
             chi_val = int(np.random.binomial(1, p_conduction))
             
         return z_eff, action_gate, p_conduction

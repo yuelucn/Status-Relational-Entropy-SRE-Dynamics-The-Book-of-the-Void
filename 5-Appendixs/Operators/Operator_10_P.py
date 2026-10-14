@@ -55,18 +55,18 @@ class SRE_Operator10_Preemptive_Pruning_Engine:
         z_eff_val = self.L_plus[u, u] + self.L_plus[v, v] - 2.0 * self.L_plus[u, v]
         return np.clip(z_eff_val, 0.0, 1.0) # 约束在概率和物理合理边界内
 
-    def compute_flexible_bernoulli_probability(self, z_eff, alpha_n=1.5, beta=2.0):
+    def compute_flexible_bernoulli_probability(self, z_eff, kappa=1.5, beta=2.0):
         r"""
         根据 Section 2.2 伴随上链随机门概率 p_cochain(e) 的受控修正方程计算 Bernoulli 导通概率
         """
-        # 概率修正算式：1 - 1 / (1 + exp(-beta * (alpha_n * Z_eff) / (1 - Z_eff + delta_flt)))
-        numerator = alpha_n * z_eff
-        denominator = 1.0 - z_eff + self.delta_flt
-        exponent = - beta * (numerator / denominator)
-        
+        # 概率修正算式：1 / (1 + exp(-beta * (kappa * Z_eff) / max(1 - Z_eff, delta_flt)))
+        numerator = kappa * z_eff
+        denominator = max(1.0 - z_eff, self.delta_flt)
+        exponent = beta * (numerator / denominator)
+
         # 规避溢出
         exponent = np.clip(exponent, -500, 500)
-        p_conduction = 1.0 - (1.0 / (1.0 + np.exp(exponent)))
+        p_conduction = 1.0 / (1.0 + np.exp(-exponent))
         return p_conduction
     def verify_theorem_3_1_preemptive_exemption(self, u, v_f, is_bridge=False):
         """

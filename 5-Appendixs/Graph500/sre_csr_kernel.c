@@ -928,6 +928,113 @@ sre_status_t sre_op10_firewall_scalar(double L_uu, double L_vv, double L_uv,
 }
 
 /* ============================================================================
+ * Op10: 有效拓扑阻抗 — CSR 预条件共轭梯度 (PCG) 实际计算
+ * 求解 L x = e_u - e_v (Jacobi 预条件), 返回 z_eff = clip(x[u] - x[v], 0, 1)
+ * 数学恒等: z_eff = (e_u - e_v)^T L^+ (e_u - e_v)  (Operator_10_C.md §1.2)
+ * ============================================================================ */
+sre_status_t sre_op10_z_eff_csr(const int* row_ptr, const int* col_idx,
+                                const double* values, int n,
+                                int u, int v, int max_iters, double tol,
+                                double* z_eff) {
+    double *x = NULL, *r = NULL, *z = NULL, *p = NULL, *Ap = NULL, *diag = NULL;
+    int i, it, use_omp;
+    size_t nbytes;
+    double bnorm, rho, rho_new, alpha, beta, pAp, rr, xu_v;
+    if (!row_ptr || !col_idx || !values || !z_eff) return SRE_ERR_INVALID_ARG;
+    if (n <= 0 || u < 0 || v < 0 || u >= n || v >= n) return SRE_ERR_INVALID_ARG;
+    if (u == v) { *z_eff = 0.0; return SRE_OK; }
+
+    nbytes = (size_t)n * sizeof(double);
+    x = (double*)malloc(nbytes);
+    r = (double*)malloc(nbytes);
+    z = (double*)malloc(nbytes);
+    p = (double*)malloc(nbytes);
+    Ap = (double*)malloc(nbytes);
+    diag = (double*)malloc(nbytes);
+    if (!x || !r || !z || !p || !Ap || !diag) {
+        free(x); free(r); free(z); free(p); free(Ap); free(diag);
+        return SRE_ERR_INTERNAL;
+    }
+
+    /* 大规模时启用 OpenMP 并行 (与基准其余算子一致) */
+    {
+        int nthreads = 1;
+        #pragma omp parallel
+        #pragma omp master
+        nthreads = omp_get_num_threads();
+        use_omp = (n >= 8192 && nthreads > 1) ? 1 : 0;
+    }
+
+    /* Jacobi 预条件子 (对角), 初值 x=0, r=b=e_u-e_v */
+    #pragma omp parallel for schedule(static) if (use_omp)
+    for (i = 0; i < n; ++i) {
+        double d = 0.0;
+        int j;
+        for (j = row_ptr[i]; j < row_ptr[i + 1]; ++j)
+            if (col_idx[j] == i) { d = values[j]; break; }
+        diag[i] = (d > 1e-300) ? d : 1.0;   /* 孤立顶点保护 */
+        x[i] = 0.0;
+        r[i] = 0.0;
+    }
+    r[u] = 1.0;
+    r[v] = -1.0;
+    bnorm = sqrt(2.0);
+
+    /* 初始 z = M^{-1} r, p = z, rho = r·z */
+    rho = 0.0;
+    #pragma omp parallel for reduction(+:rho) schedule(static) if (use_omp)
+    for (i = 0; i < n; ++i) {
+        z[i] = r[i] / diag[i];
+        rho += r[i] * z[i];
+        p[i] = z[i];
+    }
+
+    for (it = 0; it < max_iters; ++it) {
+        rr = 0.0;
+        /* Ap = L * p (CSR SpMV) */
+        #pragma omp parallel for schedule(static) if (use_omp)
+        for (i = 0; i < n; ++i) {
+            double s = 0.0;
+            int j1 = row_ptr[i + 1], j;
+            for (j = row_ptr[i]; j < j1; ++j) s += values[j] * p[col_idx[j]];
+            Ap[i] = s;
+        }
+        pAp = 0.0;
+        #pragma omp parallel for reduction(+:pAp) schedule(static) if (use_omp)
+        for (i = 0; i < n; ++i) pAp += p[i] * Ap[i];
+        if (pAp <= 0.0) break;              /* 数值退化保护 */
+        alpha = rho / pAp;
+        rr = 0.0;
+        #pragma omp parallel for reduction(+:rr) schedule(static) if (use_omp)
+        for (i = 0; i < n; ++i) {
+            x[i] += alpha * p[i];
+            r[i] -= alpha * Ap[i];
+            rr += r[i] * r[i];
+        }
+        if (sqrt(rr) <= tol * bnorm) break; /* 收敛 */
+        rho_new = 0.0;
+        #pragma omp parallel for reduction(+:rho_new) schedule(static) if (use_omp)
+        for (i = 0; i < n; ++i) {
+            z[i] = r[i] / diag[i];
+            rho_new += r[i] * z[i];
+        }
+        beta = rho_new / rho;
+        rho = rho_new;
+        #pragma omp parallel for schedule(static) if (use_omp)
+        for (i = 0; i < n; ++i) p[i] = z[i] + beta * p[i];
+    }
+
+    /* z_eff = (e_u - e_v)^T x, 夹紧至 [0,1] (相邻候选顶点有效电阻上界, 定理 3.1) */
+    xu_v = x[u] - x[v];
+    if (xu_v < 0.0) xu_v = 0.0;
+    if (xu_v > 1.0) xu_v = 1.0;
+    *z_eff = xu_v;
+
+    free(x); free(r); free(z); free(p); free(Ap); free(diag);
+    return SRE_OK;
+}
+
+/* ============================================================================
  * 辅助: 稠密矩阵运算 (row-major)
  * ============================================================================ */
 static void sre_dense_mul(const double* A, const double* B, int n,
@@ -2008,17 +2115,39 @@ sre_status_t sre_run_full_pipeline(
     /* ---------------- Op10: 防火墙 ---------------- */
     t0 = omp_get_wtime();
     if (n >= 2) {
-        double L_uu = sre_csr_value(row_ptr, col_idx, values, 0, 0);
-        double L_vv = sre_csr_value(row_ptr, col_idx, values, 1, 1);
-        double L_uv = sre_csr_value(row_ptr, col_idx, values, 0, 1);
-        int is_bridge = (L_uv != 0.0) ? 1 : 0;
-        double omega_th = 0.5;
+        int u10 = 0, v10 = 1;
+        double L_uv01 = sre_csr_value(row_ptr, col_idx, values, u10, v10);
+        int is_bridge = (L_uv01 != 0.0) ? 1 : 0;  /* demo 简化: 以边存在性近似同调桥接预判 */
+        double omega_th = 1.0 - 1e-16;            /* 规范值 ω_th = 1 - δ_flt */
         double z_eff = 0.0;
         int action_gate = 0;
         double p_cond = 0.0;
-        sre_op10_firewall_scalar(L_uu, L_vv, L_uv, is_bridge, omega_th,
-                                 -500.0, 500.0, 1e-12,
-                                 &z_eff, &action_gate, &p_cond);
+        /* 实际计算 Z_eff = (e_u - e_v)^T L^+ (e_u - e_v): PCG 求解 L x = e_u - e_v */
+        st = sre_op10_z_eff_csr(row_ptr, col_idx, values, n, u10, v10,
+                                500, 1e-6, &z_eff);
+        if (st != SRE_OK) {
+            /* 分配失败回退: 局部 3 标量代理 */
+            double L_uu = sre_csr_value(row_ptr, col_idx, values, u10, u10);
+            double L_vv = sre_csr_value(row_ptr, col_idx, values, v10, v10);
+            sre_op10_firewall_scalar(L_uu, L_vv, L_uv01, 0, omega_th,
+                                     -500.0, 500.0, 1e-16,
+                                     &z_eff, &action_gate, &p_cond);
+        } else {
+            /* 两阶段判定: 同调桥接预判或高阻抗触发硬拦截, 否则柔性 Bernoulli 门 */
+            if (is_bridge || z_eff >= omega_th) {
+                action_gate = 1;
+                p_cond = 1.0;
+            } else {
+                double denom = 1.0 - z_eff;
+                double exponent;
+                if (denom < 1e-16) denom = 1e-16;
+                exponent = 2.0 * (1.5 * z_eff / denom);
+                if (exponent > 500.0) exponent = 500.0;
+                if (exponent < -500.0) exponent = -500.0;
+                p_cond = 1.0 / (1.0 + exp(-exponent));
+                action_gate = 0;
+            }
+        }
         result->op10_z_eff = z_eff;
         result->op10_action_gate = action_gate;
         result->op10_p_conduction = p_cond;

@@ -1,20 +1,20 @@
 SCALE:                          20
 edgefactor:                     16
 NBFS:                           3
-graph_generation:               0.19
+graph_generation:               0.26
 num_mpi_processes:              1
 num_omp_threads:                32
-construction_time:              0.359
+construction_time:              0.357
 num_vertices:                   1048576
 num_edges:                      16777216
 nnz:                            34600692
-sre_min_time:                   0.249
-sre_firstquartile_time:         0.249
-sre_median_time:                0.252
-sre_thirdquartile_time:         0.287
-sre_max_time:                   0.287
-sre_mean_time:                  0.262667
-sre_stddev_time:                0.0211265
+sre_min_time:                   0.39
+sre_firstquartile_time:         0.39
+sre_median_time:                0.41
+sre_thirdquartile_time:         0.42
+sre_max_time:                   0.42
+sre_mean_time:                  0.406667
+sre_stddev_time:                0.0152751
 min_nedge:                      34600692
 firstquartile_nedge:            34600692
 median_nedge:                   34600692
@@ -22,29 +22,29 @@ thirdquartile_nedge:            34600692
 max_nedge:                      34600692
 mean_nedge:                     34600692
 stddev_nedge:                   0
-sre_min_TEPS:                   1.2056e+08
-sre_firstquartile_TEPS:         1.2056e+08
-sre_median_TEPS:                1.37304e+08
-sre_thirdquartile_TEPS:         1.38959e+08
-sre_max_TEPS:                   1.38959e+08
-sre_harmonic_mean_TEPS:     !   1.31729e+08
-sre_harmonic_stddev_TEPS:       7.49183e+06
-sre_min_per_vertex_us:          0.237465
-sre_median_per_vertex_us:       0.240326
-sre_max_per_vertex_us:          0.273704
-sre_mean_per_vertex_us:         0.250498
+sre_min_TEPS:                   8.23826e+07
+sre_firstquartile_TEPS:         8.23826e+07
+sre_median_TEPS:                8.4392e+07
+sre_thirdquartile_TEPS:         8.87197e+07
+sre_max_TEPS:                   8.87197e+07
+sre_harmonic_mean_TEPS:     !   8.50837e+07
+sre_harmonic_stddev_TEPS:       2.25984e+06
+sre_min_per_vertex_us:          0.371933
+sre_median_per_vertex_us:       0.391006
+sre_max_per_vertex_us:          0.400543
+sre_mean_per_vertex_us:         0.387827
 
 # SRE Extended Kernel (non-standard, ignored by official parser)
-# op1_time=0.000000e+00 op2_time=6.200004e-02 op3_time=0.000000e+00
-# op4_time=3.000021e-03 op5_time=0.000000e+00 op6_time=1.750000e-01
-# op7_time=9.999275e-04 op8_time=0.000000e+00 op9_time=0.000000e+00 op10_time=0.000000e+00
-# op11_time=0.000000e+00 op12_time=7.000208e-03 op13_time=0.000000e+00 op14_time=0.000000e+00
-# op15_time=0.000000e+00 op16_time=0.000000e+00 op17_time=0.000000e+00 op18_time=0.000000e+00 op19_time=9.999275e-04
+# op1_time=0.000000e+00 op2_time=6.599998e-02 op3_time=0.000000e+00
+# op4_time=3.999949e-03 op5_time=0.000000e+00 op6_time=1.890001e-01
+# op7_time=0.000000e+00 op8_time=0.000000e+00 op9_time=0.000000e+00 op10_time=1.429999e-01
+# op11_time=9.999275e-04 op12_time=6.000042e-03 op13_time=0.000000e+00 op14_time=0.000000e+00
+# op15_time=0.000000e+00 op16_time=0.000000e+00 op17_time=0.000000e+00 op18_time=0.000000e+00 op19_time=0.000000e+00
 # op4_w_e_trace=0.000000 op4_w_e_frobenius=0.000000
 # op5_c_e_mean=0.000000
 # op6_lambda_2=8.664035e+02 op6_alpha_n=1.380294e+05 op6_residual=3.898812e+03
 # op7_grad_norm=9.518792e+00 op8_delta_Pi=1.217581e-01 op9_trace=40.000000
-# op10_z_eff=1.000000 op10_action_gate=1 op10_p_conduction=1.000000
+# op10_z_eff=0.337120 op10_action_gate=0 op10_p_conduction=0.821377
 # op11_lambda_2_q=0.000000e+00 op11_alpha_q=0.000000e+00 op11_kappa_q=1.000000e+30
 # op11_q_dispersion=4.804137e-01 op11_max_spin_coupling=0.000000e+00
 # op12_n_loops=0 op12_mobius_ratio=9.316104e-01

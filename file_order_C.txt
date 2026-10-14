@@ -60,7 +60,7 @@
 ./4-Applications&Hypothesis/Deep_Learning_Model_for_Multi-Year_Long-Lead_El Niño_Forecasting_2.0_C.md
 ./4-Applications&Hypothesis/Periodic_Table_Data_Experiment_3.0_C.md
 ./4-Applications&Hypothesis/SRE-AI_1.0_C.md
-./4-Applications&Hypothesis/Graph500_2.0_C.md
+./4-Applications&Hypothesis/Graph500_2.1_C.md
 ./4-Applications&Hypothesis/Neural_Information_Systems_Theory_1.0_C.md
 ./4-Applications&Hypothesis/Whole-Brain_Parallelism_and_High-Dimensional_Causal-Chain_Topological_1.0_C.md
 ./4-Applications&Hypothesis/Hypothesis_of_Gravitational_Shielding_Derivation(SRE)_1.0_C.md

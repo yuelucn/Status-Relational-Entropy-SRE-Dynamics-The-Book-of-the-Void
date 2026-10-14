@@ -232,6 +232,12 @@ sre_status_t sre_op10_firewall_scalar(double L_uu, double L_vv, double L_uv,
                                       double* z_eff, int* action_gate,
                                       double* p_conduction);
 
+/* Op10: 有效拓扑阻抗 — CSR PCG 实际计算 z_eff = (e_u-e_v)^T L^+ (e_u-e_v) */
+sre_status_t sre_op10_z_eff_csr(const int* row_ptr, const int* col_idx,
+                                const double* values, int n,
+                                int u, int v, int max_iters, double tol,
+                                double* z_eff);
+
 /* ---- Op11: 自旋-电荷邻接 ---- */
 /* A_q = A_s * (1 + rho * |tanh(chi_i - chi_j)|), L_q, lambda_2_q, alpha_q, kappa_q */
 sre_status_t sre_op11_spin_charge(const double* A_s, const double* chi, int n,
