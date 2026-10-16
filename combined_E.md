@@ -64,7 +64,7 @@ I have recorded all of this here. Scientific intuition arises out of the void, a
 - [A SRE-Dynamics Inspired Topological Paradigm for Composite Elementary Particles and Relational Space Emergence](#A-SRE-Dynamics-Inspired-Topological-Paradigm-for-Composite-Elementary-Particles-and-Relational-Space-Emergence)
 - [A Foundational Reconstruction of Classical Electrodynamics via Discrete Graph Topology and Bidirectional Causality](#A-Foundational-Reconstruction-of-Classical-Electrodynamics-via-Discrete-Graph-Topology-and-Bidirectional-Causality)
 - [Rigorous Reconstruction of Maxwell's Field Equations via Purely Dimensionless Graph Cohomology and Global Evolution Step](#Rigorous-Reconstruction-of-Maxwell's-Field-Equations-via-Purely-Dimensionless-Graph-Cohomology-and-Global-Evolution-Step)
-- [The Necessity of Turbulence Emergence and an Algebraic Computational Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction](#The-Necessity-of-Turbulence-Emergence-and-an-Algebraic-Computational-Method-Based-on-Discrete-Microscopic-Causal-Statistics-and-Multidimensional-Manifold-Reconstruction)
+- [Benchmarking Classical Navier–Stokes Turbulence with a Discrete Causal Network](#Benchmarking-Classical-Navier–Stokes-Turbulence-with-a-Discrete-Causal-Network)
 - [Oseen Vortex Initial-Value Experiment: Repositioning the Empirical Report (v2)](#Oseen-Vortex-Initial-Value-Experiment:-Repositioning-the-Empirical-Report-(v2))
 - [Emergence of Classical Mechanics from Discrete Causal-Information Networks: Ontological Mapping and Effective-Theory Limits within Status-Relational-Entropy (SRE) Dynamics](#Emergence-of-Classical-Mechanics-from-Discrete-Causal-Information-Networks:-Ontological-Mapping-and-Effective-Theory-Limits-within-Status-Relational-Entropy-(SRE)-Dynamics)
 - [A Complete Characterization of the Electron within the SRE Framework: A Unified Account of Axiomatization, the Fine-Structure Constant, Molecular Computation, and Orbital Assignment](#A-Complete-Characterization-of-the-Electron-within-the-SRE-Framework:-A-Unified-Account-of-Axiomatization,-the-Fine-Structure-Constant,-Molecular-Computation,-and-Orbital-Assignment)
@@ -425,45 +425,45 @@ The enormous equivalent topological count ($10^{23}$) of the electron closed-loo
 
 <div style="page-break-after: always;"></div>
 
-# Part II: Emergence of All‑Things — Abstract
-This part corresponds to **Emergence of All‑Things within State‑Relational‑Entropy (SRE) Dynamics**. Building upon the axiomatic foundation suite of Part I, it reconstructs physical pictures across multiple domains based on the ontology of discrete causal‑information networks. Electromagnetism, mechanics, elementary particles, fluid dynamics, and cosmic gravitation are no longer treated as fundamental a‑priori axioms. Instead, all these phenomena are derived from the topological evolution of causal networks via **dissipation‑compensation duality, mutual‑measurement mechanisms, multi‑scale rigid‑boundary full‑homomorphism mapping, and BBP spectral‑rank phase transition**.
-
-> Core Position: Branches of classical physics are high‑level emergent effective theories of discrete causal networks under specific constraints. Some modules adopt a pragmatic hybrid approach of “ontological topological picture plus experimental observation mapping anchors”. Fully endogenously deriving all universal physical constants remains a long‑term research objective.
-
-## Brief Overview of Documents in This Suite
-1. **Theory of Hierarchical Dissipative Self‑Organizing Binary Network Dynamics**: The bottom‑level discrete‑evolution prototype of the SRE framework. Starting from binary‑spin asynchronous activation‑dormancy rules, it spontaneously generates topologically coherent kernels through finite‑size scaling phase transitions. It clarifies the conceptual boundary between MDS multi‑dimensional‑scaling simulation prototypes and the SRE physical‑rendering layer, serving as the computational substrate for the complete SRE cosmic picture.
-
-2. **Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks**: SRE cosmology v6.2‑rev. Fully background‑independent; spacetime, gravitation, and the speed of light are all macroscopic emergent effects of causal‑information networks. It introduces the BBP spectral‑rank phase transition to interpret dimensional transitions. Bootstrap statistical simulations based on SDSS/eBOSS spectral datasets yield the phase‑transition redshift, providing observationally falsifiable theoretical imprints for JWST and the Roman Space Telescope, and resolving the puzzle of early massive galaxy formation.
-
-3. **Composite Elementary Particles and Relation‑Space Emergence within the SRE‑Dynamics Topological Paradigm**: Qualitative‑semi‑analytical topological hypothesis for composite particles. It describes how phase‑coherence saturation of two internal causal closed‑loops yields relation‑space collapse, emergence of strong‑interaction effects, and nonlinear amplification of rest‑mass driven by combinatorial‑explosion of secondary feedback paths. It distinguishes the explanatory capacity of the present mechanism from quantitative predictions not yet completed.
-
-4. **Rigorous Reconstruction of Classical Electrodynamics Based on Discrete‑Graph Topology and Bidirectional Causality**: Engineering‑SI‑oriented reconstruction of electrodynamics. It defines four sets of observation‑mapping anchors to convert dimensionless topological observables into laboratory SI physical quantities. It recovers circuit laws, RLC resonance, and mass‑energy equivalence, establishing interface bridges for power‑system and semiconductor‑device simulations.
-
-5. **Rigorous Reconstruction of Maxwell‑Field Equations via Pure‑Dimensionless Graph‑Cohomology and Global‑Evolution Steps**: 0‑State dimensionless ontological‑layer manuscript. Using graph cohomology, elementary charge, Planck’s constant, vacuum characteristic impedance, and the fine‑structure constant are treated as algebraically emergent invariants. It topologically reconstructs the Maxwell‑field equations without importing external empirical physical constants.
-
-6. **Emergence Inevitability and Algebraic‑Computational Methods of Turbulence from Discrete‑Microscopic‑Causal Statistics and Multi‑Dimensional‑Manifold Reconstruction (v3.0 revised)**: Discarding the continuum‑medium assumption, it derives criterion operators from discrete causal‑statistical axioms, proves a series of algebraic theorems, and strictly degenerates to the Navier‑Stokes equations in the continuum limit. Simulations verify that turbulence together with coherent vortex structures are inevitable outcomes of topological phase‑transitions. Version 2 corrects v1's sign contradictions (the activation probability is reformulated as $P_{\text{active}} = 1/(1+e^{\Psi})$; $M$ is strictly split so that its symmetric part $\mathbf S$ carries the metric/geometry and its antisymmetric part $\mathbf A$ carries chirality) and deliberately downgrades three overclaims: the "unique critical point" becomes a **smooth transition band** spanning roughly 1.5 decades; the claim of "agreement with K41" is restricted to a proxy one‑dimensional spectrum measured at about −1.85, deviating further from −5/3 as $N$ grows; and the "rigid central axis" is withdrawn as an artefact of the metric‑reconstruction method. An audit script cross‑checks 8 tables and 276 numerical values across both language versions and the data tables with 0 inconsistencies. SI‑dimensional calibration for fluid systems is reserved for future work. Version 3 further corrects v2 via a program-correctness gate (reproduce_ns62.py reproduces the section 6.2 phase diagram to Delta<=1e-4) and two prior verifications (verify_paper_claims.py): it recasts Psi in logarithmic form and closes the loop with verify_dissipation.py (error <=1.1 percent); it supplements an analytic finite-size convergence mechanism (dissipation master equation -> universal curve C(z), beta_infinity=0, via beta_dissipation_theory.py), and uses large-N extrapolation to refute the persistent-steepening claim.
-7. **Oseen Vortex Initial‑Value Experiment: Repositioning the Empirical Report (v2)**: A repositioning companion to the original report *"Empirical Verification of Oseen Vortex Manifold Emergence and Topological Locking under the SRE‑MDS Discrete Dynamics Paradigm"*. The complete original experimental setup and observed data are retained; only two overclaims are corrected. The order parameter $\Phi(N)\equiv 1.0000$ is in fact a trivial "zero‑pruning" result rather than a demonstration of noise robustness, and is downgraded to an indicator of the zero‑dissipation limit. The residual $8.93\times10^{-1}$ is an **embedding error** — the binary dissimilarities cannot be represented exactly in three‑dimensional Euclidean space — and the "intrinsic non‑Euclidean curvature" reading is deleted. Re‑positioned against the main paper's phase diagram, the experiment's $\Lambda = 0.05$ lies at the **upper edge of the transition band** (structural density ≈ 0.44, spectral slope ≈ −1.83), being neither laminar nor "extremely high Reynolds number". A correct experimental design for testing noise robustness and a list of follow‑up measurements are also provided.
-
-8. **Emergence of Classical Mechanics from Discrete Causal‑Information Networks**: Establishes ontological mappings between SRE‑network observables and Newtonian classical‑mechanics. It states three necessary conditions for the emergence of classical behaviour: large‑sample coarse‑graining, sufficient environmental decoherence, and staying away from topological‑phase‑transition thresholds. Demonstrates emergent behaviour using inertia, $F\propto ma$, and Hooke’s law, and defines their failure boundaries.
-
-9. **A Complete Characterization of the Electron within the SRE Framework: A Unified Account of Axiomatization, the Fine‑Structure Constant, Molecular Computation, and Orbital Assignment**: Complete ontological account of the electron. The electron is characterized as the unique, stable and noise‑resistant emergent fixed point of a sparse operator `R` acting on the coherent kernel of a binary self‑organizing network, its ontological structure being the three‑dimensional cube Q₃ (8 vertices, 12 edges, first Betti number 5, i.e. 12×5 = 60). The paper presents three independent topological derivation routes for the fine‑structure constant $\alpha \approx 1/137.036$ (Möbius‑ring graph‑Laplacian spectral gap, the four‑state intrinsic‑spectrum frequency formula, and Möbius‑parametrization arc‑length perturbation), and a Tier‑0 independent audit concludes that $\lambda_0$ is not an independent primitive and that the n=60 match is a discretization coincidence. It derives the double‑cover four‑state complex from Fork A axioms (A1–A4 + R1), establishes the observable dictionary $\alpha = \lambda_2/\lambda_{\max} = v/c$, and promotes the residual to the A5 bare coupling $\delta$. It proves uniqueness, convergence and robustness of `R` on the coherent kernel (unified verification suite 10/10). It further extends to molecular computation (MCI spectral fingerprint, Q₃ ontological identification, MDS relation‑inversion geometry) and to electron orbital‑assignment rules (Pauli = cell uniqueness, $C_\ell = 4\ell+2$, $C_n = 2n^2$, Hund = tension minimization).
-
-10. **Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two‑State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation**: Complete ontological account of the nucleon (v2.1). The nucleon is characterized as a stable composite object emerging on a three‑strand Y‑shaped coherent kernel, constrained by the open/closed two‑state rule for dormant edges and by the closure‑rebalancing rule, with ontological structure given by the triangular closure of three strands $Y_3 \ltimes \triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36). It proposes three ontological conjectures concerning quarks, enters from neutron $\beta$‑decay to derive the skeleton structural constraints T1–T3, redefines isospin $Z_2$ as the open/closed two‑state rather than a flavour‑multiplet flip, and uniquely retains candidate A via a three‑step screening combined with a "transition–residue" framework. It validates the unified three‑level signature chain from single‑nucleon $\beta$‑decay through compound‑nucleus fission to macroscopic chain criticality (thermal‑cross‑section Pearson correlation +0.932), and generalizes to a shared‑ring splicing law calibrated against external nuclear data (V=9k+3, E=15k+3, $\beta_1$=6k+1, $\lambda_2 = 2-\sqrt{3}$). Version 1.5 further tightens the structural‑layer conclusion (**A does not enter the structure, k does**; the attachment point is not a degree of freedom, and inter‑ring linkage is proven impossible to repair, so multi‑group configurations should be absent at this layer), demotes antisymmetry from an energy term to a zero‑parameter existence criterion L1 ($|n_n - n_p| \le 1$, 8/8 on the 8‑entry scorecard); Version 2.1 further adds a "contextual-limitations" boundary statement and extends the configuration-level test of the electronic-state objection (S1–S4 rerun, S2≅S1) and the disproof of "boson = transition quantum", and rewrites the electronic‑state objection as a configuration‑level problem, proving that open‑band attachment is isomorphic to variant A (hence not a new structure, and already excluded quantitatively by the deuteron binding energy). The boundary at $A = 4$ is thereby split into "numerically non‑computable, existentially computable", and the boundary is **relocated** from $A \ge 4$ to $A \ge 5$, explicitly demarcating the honest boundary that "nuclear binding for A ≥ 5 is not computable at this layer."
-
-11. **Mass Origin in the SRE Framework: A Circulant‑Operator Formulation on the Three‑Ring ℤ₃ Torsor**: A formalising account of the ontology of mass. Taking the SRE nucleon skeleton $Y_3\ltimes\triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36) as its only structural input, it first proves that the three shared rings form a **ℤ₃‑torsor** under the automorphism group (a cyclic order with no absolute origin); then, from "respecting the three‑ring structure ⇒ commuting with the cyclic shift $S$ ⇒ circulant matrix", it derives the unique admissible form of the mass operator $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$, ℤ₃‑equivariance compressing 9 matrix entries into 3. The spectrum is a set of 120° samples of one cosine, $\lambda_j=c_0+2|c_1|\cos(\theta+2\pi j/3)$, but the paper **explicitly corrects** the reading that "the cosine shape holds trivially for any three generations and is therefore a free reparameterisation rather than a constraint". "Opening" = choosing an origin for the DFT characters, a ℤ₃ gauge degree of freedom rather than information. The invariant moduli space is **two‑dimensional**, $(\eta,\ \delta\bmod 2\pi/3)$, and the Koide combination $Q=\tfrac13+\tfrac23\eta^{2}$ probes only the $\eta$ direction (measured on the charged leptons, $\eta^{2}=1/2$ holds to $3.3\times10^{-6}$). The conclusion is registered as case 15 of the discrete‑closure law G12: "three" and the functional form are given (discrete side, closed), while the value of $\eta$ and the absolute scale $c_0$ are **not** (continuous side, requiring external input); the single real gap is the assignment rule.
-
-12. **Positioning of Light and Electromagnetic Waves in the SRE Framework: the Involutive ℤ₂ Sector, the Cohomological Ladder, and "One Emission as One Closed→Open Transition"**: A structural positioning paper for the light side. It places the project's existing light‑side stipulations (the residuality axiom, the Möbius double cover, the involution $P=S^{n/2}$ on the weighted Möbius ladder $M_n$, the $\mathbb{Z}_2$ holonomy coupling $\delta_A$) and the ℤ₃ structure on the mass side under one framework for comparison; the whole paper needs only one structural input — the involution $P$ on $M_n$ — and gives four mutually independent, verifiable propositions: **the gear proposition** (light runs on $\mathbb{Z}_2$, mass on $\mathbb{Z}_3$; the two are adjacent rungs of the same cohomological ladder $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$, the root of the difference being a group‑theoretic prohibition $\lvert\mathbb{Z}_2\rvert=2<3$); **the carrier proposition** (the light carrier is the odd eigenspace of an involution, with $P^{2}=I$, membership in the automorphism group, commutation with the Laplacian, zero trace and spectrum exactly $\{\pm1\}$; it is completely determined by the single integer $n$ with **zero continuous free parameters**, so there is no place to put a source); **the source proposition** (the spectrum splits into a "sector‑blind term + odd‑sector constant term", in which only the $w$ channel simultaneously satisfies "acts only on the odd sector" and "shifts every mode uniformly", so the source can inject only one scalar on the light side); and **the transition proposition** (one emission = one closed→open transition: the ledger difference carries the energy, with $E$ and $\beta_1$ each decreasing by 1, while the spectral invariants carry the carrier; the two are orthogonal, so a chemical source and a nuclear source **share the same carrier**, differing only in the level at which the ledger is recorded). The conclusion is registered as case 18 of G12: it gives "why the gears are two and three", "why the source is a single scalar" and "why energy and carrier are orthogonal" (discrete side, closed), but **not** the energy scale of light (continuous side).
-
-13. **Emergence of Time in the SRE Framework: A Saturation Law for the Rate of Change, Universality, and the Incompatibility of Two Internal Clocks**: A derived‑quantity account of the ontology of time. Introducing no new free real number, it turns "time = a derived quantity obtained after an internal process has been designated as the clock" into a computable and falsifiable form: the per‑step time is defined as $\Omega(n)=\big\langle \rho_{ij}/(1+\rho_{ij})\big\rangle$ with $\rho_{ij}=\lambda d_{ij}/(\lvert M^{2}\rvert_{ij}+1)$, and the emergent time as $T_{\rm em}(n)=\sum_{k<n}\Omega(k)$; every conclusion is synthesised from two **pre‑existing zero‑parameter laws** (the age‑distribution law times the iid spectral law) and then compared against measurement. Seven verdicts: **saturation** ($\Omega$ rises monotonically to $1$, with a remaining gap of $0.1540$ at $999$ steps); **the saturation law** $1-\Omega=c\ln n/\sqrt n$ ($c=0.694157$, maximum relative residual $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail — and the same law is predicted with zero free parameters to within $0.28\%$–$1.65\%$); **asymptotic uniformity** (the relative step‑to‑step non‑uniformity falls from $4.23\times10^{-3}$ to $6.10\times10^{-5}$); **differential ageing** (the rewriting rate of a single element rises with its own age from $0.058931$ to $0.957750$, so an individual member's clock is not uniform); **universality in $\lambda$** (a 15‑fold sweep does not move the limit, only the speed of approach); **a phase transition** (squaring the denominator of the update rule moves the limit from $1.0000$ to about $0.390$, and the gap widens monotonically); and **the incompatibility of two clocks** (the memory horizon scales as $\tau_{\rm mem}\propto\sqrt n$ while the amount of change gives $T_{\rm em}\propto n$, their ratio diverging with $n$, so **no rescaling can make both clocks uniform simultaneously**). One separation across semantics is preserved: **there is structure, there is no memory** — the joint distribution of the state matrix rejects full independence (row‑sum variance is $1.94$–$2.03$ times the iid value), yet two different prefixes become indistinguishable after continued evolution (exact permutation $p\ge0.3841$, none significant after Holm correction); precisely because the present state carries zero bits about its own past does "time must be emergent rather than read off" become a claim with content. Three honesty boundaries: the emergent time has **shape but no scale**; at attainable sizes "time is constant" holds only to about $22\%$; and two **guesses formed before measurement** have been refuted ($c\propto\lambda^{-1}$ measured at a slope of $-0.577$; "the variant kernel runs away into freezing" settles instead at a fixed point near $0.39$), registered as open items rather than used as evidence. The conclusion is registered as case 16 of G12.
-
-
-14. **A Plain-Language Version of the Emergence of Time in the SRE Framework**: A plain-language rewrite of the time-ontology paper Emergence of Time in the SRE Framework, aimed at general science-and-engineering readers. It preserves every core conclusion and datum, replacing project-internal jargon with everyday language and analogies; the seven verdicts (saturation law, universality, incompatibility of two clocks, etc.) and the structure-without-memory semantic separation are retold non-technically, and the three honest boundaries (notably emergent time has shape but no scale) are retained. Reproduction scripts are shared with the technical version (appendix SRE_Time_Emergence).
-
-15. **Emergence of Positive and Negative Electric Charge in the SRE Framework: Magnitude, Sign, and Numerical Verification**: A paper closing the sign gap of charge. SRE expresses charge as the counting of topological knots (magnitude only); this paper rigorously gives Q(K)=sigma(K) middot deg(K) middot e, yielding electron Q=-e, positron Q=+e, proton Q=+e, neutron Q=0, antiproton Q=-e, and explaining the charge-mass decoupling (proton and electron share the same magnitude but differ in mass by about 1836 times). Two numerical tests confirm: the sign channel and the magnitude channel are mutually independent (section 10.1); the electron is forced by skeleton symmetry into the trivial holonomy class while the proton lands in the non-trivial class (section 10.2), giving the electron/proton sign opposition a structural origin.
-
-> This suite inherits the axiomatic foundations of Part I. Several manuscripts only complete qualitative‑semi‑analytical mechanism construction; full quantitative benchmarking and large‑multi‑degree‑of‑freedom simulations are directions for subsequent research. Similarly, **this part does not answer the ultimate origin of causal differences**.
-
-<div style="page-break-after: always;"></div>
+# Part II: Emergence of All‑Things — Abstract
+This part corresponds to **Emergence of All‑Things within State‑Relational‑Entropy (SRE) Dynamics**. Building upon the axiomatic foundation suite of Part I, it reconstructs physical pictures across multiple domains based on the ontology of discrete causal‑information networks. Electromagnetism, mechanics, elementary particles, fluid dynamics, and cosmic gravitation are no longer treated as fundamental a‑priori axioms. Instead, all these phenomena are derived from the topological evolution of causal networks via **dissipation‑compensation duality, mutual‑measurement mechanisms, multi‑scale rigid‑boundary full‑homomorphism mapping, and BBP spectral‑rank phase transition**.
+
+> Core Position: Branches of classical physics are high‑level emergent effective theories of discrete causal networks under specific constraints. Some modules adopt a pragmatic hybrid approach of “ontological topological picture plus experimental observation mapping anchors”. Fully endogenously deriving all universal physical constants remains a long‑term research objective.
+
+## Brief Overview of Documents in This Suite
+1. **Theory of Hierarchical Dissipative Self‑Organizing Binary Network Dynamics**: The bottom‑level discrete‑evolution prototype of the SRE framework. Starting from binary‑spin asynchronous activation‑dormancy rules, it spontaneously generates topologically coherent kernels through finite‑size scaling phase transitions. It clarifies the conceptual boundary between MDS multi‑dimensional‑scaling simulation prototypes and the SRE physical‑rendering layer, serving as the computational substrate for the complete SRE cosmic picture.
+
+2. **Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks**: SRE cosmology v6.2‑rev. Fully background‑independent; spacetime, gravitation, and the speed of light are all macroscopic emergent effects of causal‑information networks. It introduces the BBP spectral‑rank phase transition to interpret dimensional transitions. Bootstrap statistical simulations based on SDSS/eBOSS spectral datasets yield the phase‑transition redshift, providing observationally falsifiable theoretical imprints for JWST and the Roman Space Telescope, and resolving the puzzle of early massive galaxy formation.
+
+3. **Composite Elementary Particles and Relation‑Space Emergence within the SRE‑Dynamics Topological Paradigm**: Qualitative‑semi‑analytical topological hypothesis for composite particles. It describes how phase‑coherence saturation of two internal causal closed‑loops yields relation‑space collapse, emergence of strong‑interaction effects, and nonlinear amplification of rest‑mass driven by combinatorial‑explosion of secondary feedback paths. It distinguishes the explanatory capacity of the present mechanism from quantitative predictions not yet completed.
+
+4. **Rigorous Reconstruction of Classical Electrodynamics Based on Discrete‑Graph Topology and Bidirectional Causality**: Engineering‑SI‑oriented reconstruction of electrodynamics. It defines four sets of observation‑mapping anchors to convert dimensionless topological observables into laboratory SI physical quantities. It recovers circuit laws, RLC resonance, and mass‑energy equivalence, establishing interface bridges for power‑system and semiconductor‑device simulations.
+
+5. **Rigorous Reconstruction of Maxwell‑Field Equations via Pure‑Dimensionless Graph‑Cohomology and Global‑Evolution Steps**: 0‑State dimensionless ontological‑layer manuscript. Using graph cohomology, elementary charge, Planck’s constant, vacuum characteristic impedance, and the fine‑structure constant are treated as algebraically emergent invariants. It topologically reconstructs the Maxwell‑field equations without importing external empirical physical constants.
+
+6. **Benchmarking Classical Navier–Stokes Turbulence with a Discrete Causal Network (v4.0 systematic benchmark report)**: Treats the SRE network as an executable numerical-experiment object, measures its macroscopic observables under a unified protocol, and benchmarks them item by item against classical turbulence phenomenology (the K41 energy cascade, the −5/3 spectrum, the 3/4 law). A Reynolds-number mapping `Re ≈ 783/Λ` is anchored at the pipe-transition centre; on the strong-turbulence side the surrogate one-dimensional chiral-field spectrum yields a stable power law `γ ≈ −1.81 ± 0.04` (about 9% away from K41's −1.667, **not** the exact −5/3); the causal-front skewness strictly crosses zero `+ → 0 → −` along the laminar→turbulent direction, though its magnitude differs by about one order; the coherent fraction C falls monotonically from ≈0.97 to ≈0.09; the scale-separation exponent β decreases monotonically with N (800→25600) from 0.7456 to 0.4360 and converges extremely slowly, the six-point chain lying in a **degenerate zone** between a logarithmic form (β∞ ≈ 0) and a weak power law (p ≈ 0.28), so that only the interval constraint `β∞ ∈ [−0.2, +0.2]` can be given. Conclusion: the SRE network qualitatively reproduces the classical turbulence narrative while quantitatively deviating stably from the exact K41 power laws—a discrete surrogate model that has not yet converged but is structurally self-consistent. The report is self-contained, with Appendix A providing a standardized terminology table and Appendix B a table of numerical provenance.
+7. **Oseen Vortex Initial‑Value Experiment: Repositioning the Empirical Report (v2)**: A repositioning companion to the original report *"Empirical Verification of Oseen Vortex Manifold Emergence and Topological Locking under the SRE‑MDS Discrete Dynamics Paradigm"*. The complete original experimental setup and observed data are retained; only two overclaims are corrected. The order parameter $\Phi(N)\equiv 1.0000$ is in fact a trivial "zero‑pruning" result rather than a demonstration of noise robustness, and is downgraded to an indicator of the zero‑dissipation limit. The residual $8.93\times10^{-1}$ is an **embedding error** — the binary dissimilarities cannot be represented exactly in three‑dimensional Euclidean space — and the "intrinsic non‑Euclidean curvature" reading is deleted. Re‑positioned against the main paper's phase diagram, the experiment's $\Lambda = 0.05$ lies at the **upper edge of the transition band** (structural density ≈ 0.44, spectral slope ≈ −1.83), being neither laminar nor "extremely high Reynolds number". A correct experimental design for testing noise robustness and a list of follow‑up measurements are also provided.
+
+8. **Emergence of Classical Mechanics from Discrete Causal‑Information Networks**: Establishes ontological mappings between SRE‑network observables and Newtonian classical‑mechanics. It states three necessary conditions for the emergence of classical behaviour: large‑sample coarse‑graining, sufficient environmental decoherence, and staying away from topological‑phase‑transition thresholds. Demonstrates emergent behaviour using inertia, $F\propto ma$, and Hooke’s law, and defines their failure boundaries.
+
+9. **A Complete Characterization of the Electron within the SRE Framework: A Unified Account of Axiomatization, the Fine‑Structure Constant, Molecular Computation, and Orbital Assignment**: Complete ontological account of the electron. The electron is characterized as the unique, stable and noise‑resistant emergent fixed point of a sparse operator `R` acting on the coherent kernel of a binary self‑organizing network, its ontological structure being the three‑dimensional cube Q₃ (8 vertices, 12 edges, first Betti number 5, i.e. 12×5 = 60). The paper presents three independent topological derivation routes for the fine‑structure constant $\alpha \approx 1/137.036$ (Möbius‑ring graph‑Laplacian spectral gap, the four‑state intrinsic‑spectrum frequency formula, and Möbius‑parametrization arc‑length perturbation), and a Tier‑0 independent audit concludes that $\lambda_0$ is not an independent primitive and that the n=60 match is a discretization coincidence. It derives the double‑cover four‑state complex from Fork A axioms (A1–A4 + R1), establishes the observable dictionary $\alpha = \lambda_2/\lambda_{\max} = v/c$, and promotes the residual to the A5 bare coupling $\delta$. It proves uniqueness, convergence and robustness of `R` on the coherent kernel (unified verification suite 10/10). It further extends to molecular computation (MCI spectral fingerprint, Q₃ ontological identification, MDS relation‑inversion geometry) and to electron orbital‑assignment rules (Pauli = cell uniqueness, $C_\ell = 4\ell+2$, $C_n = 2n^2$, Hund = tension minimization).
+
+10. **Complete Characterization of Nucleons within the SRE Framework: Unified Representation of Two‑State Skeleton Inversion, Quark Speculation and Nuclear Reaction Validation**: Complete ontological account of the nucleon (v2.1). The nucleon is characterized as a stable composite object emerging on a three‑strand Y‑shaped coherent kernel, constrained by the open/closed two‑state rule for dormant edges and by the closure‑rebalancing rule, with ontological structure given by the triangular closure of three strands $Y_3 \ltimes \triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36). It proposes three ontological conjectures concerning quarks, enters from neutron $\beta$‑decay to derive the skeleton structural constraints T1–T3, redefines isospin $Z_2$ as the open/closed two‑state rather than a flavour‑multiplet flip, and uniquely retains candidate A via a three‑step screening combined with a "transition–residue" framework. It validates the unified three‑level signature chain from single‑nucleon $\beta$‑decay through compound‑nucleus fission to macroscopic chain criticality (thermal‑cross‑section Pearson correlation +0.932), and generalizes to a shared‑ring splicing law calibrated against external nuclear data (V=9k+3, E=15k+3, $\beta_1$=6k+1, $\lambda_2 = 2-\sqrt{3}$). Version 1.5 further tightens the structural‑layer conclusion (**A does not enter the structure, k does**; the attachment point is not a degree of freedom, and inter‑ring linkage is proven impossible to repair, so multi‑group configurations should be absent at this layer), demotes antisymmetry from an energy term to a zero‑parameter existence criterion L1 ($|n_n - n_p| \le 1$, 8/8 on the 8‑entry scorecard); Version 2.1 further adds a "contextual-limitations" boundary statement and extends the configuration-level test of the electronic-state objection (S1–S4 rerun, S2≅S1) and the disproof of "boson = transition quantum", and rewrites the electronic‑state objection as a configuration‑level problem, proving that open‑band attachment is isomorphic to variant A (hence not a new structure, and already excluded quantitatively by the deuteron binding energy). The boundary at $A = 4$ is thereby split into "numerically non‑computable, existentially computable", and the boundary is **relocated** from $A \ge 4$ to $A \ge 5$, explicitly demarcating the honest boundary that "nuclear binding for A ≥ 5 is not computable at this layer."
+
+11. **Mass Origin in the SRE Framework: A Circulant‑Operator Formulation on the Three‑Ring ℤ₃ Torsor**: A formalising account of the ontology of mass. Taking the SRE nucleon skeleton $Y_3\ltimes\triangle_3$ (V=12, E=18, $\beta_1$=7, $|\mathrm{Aut}|$=36) as its only structural input, it first proves that the three shared rings form a **ℤ₃‑torsor** under the automorphism group (a cyclic order with no absolute origin); then, from "respecting the three‑ring structure ⇒ commuting with the cyclic shift $S$ ⇒ circulant matrix", it derives the unique admissible form of the mass operator $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$, ℤ₃‑equivariance compressing 9 matrix entries into 3. The spectrum is a set of 120° samples of one cosine, $\lambda_j=c_0+2|c_1|\cos(\theta+2\pi j/3)$, but the paper **explicitly corrects** the reading that "the cosine shape holds trivially for any three generations and is therefore a free reparameterisation rather than a constraint". "Opening" = choosing an origin for the DFT characters, a ℤ₃ gauge degree of freedom rather than information. The invariant moduli space is **two‑dimensional**, $(\eta,\ \delta\bmod 2\pi/3)$, and the Koide combination $Q=\tfrac13+\tfrac23\eta^{2}$ probes only the $\eta$ direction (measured on the charged leptons, $\eta^{2}=1/2$ holds to $3.3\times10^{-6}$). The conclusion is registered as case 15 of the discrete‑closure law G12: "three" and the functional form are given (discrete side, closed), while the value of $\eta$ and the absolute scale $c_0$ are **not** (continuous side, requiring external input); the single real gap is the assignment rule.
+
+12. **Positioning of Light and Electromagnetic Waves in the SRE Framework: the Involutive ℤ₂ Sector, the Cohomological Ladder, and "One Emission as One Closed→Open Transition"**: A structural positioning paper for the light side. It places the project's existing light‑side stipulations (the residuality axiom, the Möbius double cover, the involution $P=S^{n/2}$ on the weighted Möbius ladder $M_n$, the $\mathbb{Z}_2$ holonomy coupling $\delta_A$) and the ℤ₃ structure on the mass side under one framework for comparison; the whole paper needs only one structural input — the involution $P$ on $M_n$ — and gives four mutually independent, verifiable propositions: **the gear proposition** (light runs on $\mathbb{Z}_2$, mass on $\mathbb{Z}_3$; the two are adjacent rungs of the same cohomological ladder $\lvert H^{1}(G;\mathbb{Z}_n)\rvert=n^{\beta_1}$, the root of the difference being a group‑theoretic prohibition $\lvert\mathbb{Z}_2\rvert=2<3$); **the carrier proposition** (the light carrier is the odd eigenspace of an involution, with $P^{2}=I$, membership in the automorphism group, commutation with the Laplacian, zero trace and spectrum exactly $\{\pm1\}$; it is completely determined by the single integer $n$ with **zero continuous free parameters**, so there is no place to put a source); **the source proposition** (the spectrum splits into a "sector‑blind term + odd‑sector constant term", in which only the $w$ channel simultaneously satisfies "acts only on the odd sector" and "shifts every mode uniformly", so the source can inject only one scalar on the light side); and **the transition proposition** (one emission = one closed→open transition: the ledger difference carries the energy, with $E$ and $\beta_1$ each decreasing by 1, while the spectral invariants carry the carrier; the two are orthogonal, so a chemical source and a nuclear source **share the same carrier**, differing only in the level at which the ledger is recorded). The conclusion is registered as case 18 of G12: it gives "why the gears are two and three", "why the source is a single scalar" and "why energy and carrier are orthogonal" (discrete side, closed), but **not** the energy scale of light (continuous side).
+
+13. **Emergence of Time in the SRE Framework: A Saturation Law for the Rate of Change, Universality, and the Incompatibility of Two Internal Clocks**: A derived‑quantity account of the ontology of time. Introducing no new free real number, it turns "time = a derived quantity obtained after an internal process has been designated as the clock" into a computable and falsifiable form: the per‑step time is defined as $\Omega(n)=\big\langle \rho_{ij}/(1+\rho_{ij})\big\rangle$ with $\rho_{ij}=\lambda d_{ij}/(\lvert M^{2}\rvert_{ij}+1)$, and the emergent time as $T_{\rm em}(n)=\sum_{k<n}\Omega(k)$; every conclusion is synthesised from two **pre‑existing zero‑parameter laws** (the age‑distribution law times the iid spectral law) and then compared against measurement. Seven verdicts: **saturation** ($\Omega$ rises monotonically to $1$, with a remaining gap of $0.1540$ at $999$ steps); **the saturation law** $1-\Omega=c\ln n/\sqrt n$ ($c=0.694157$, maximum relative residual $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail — and the same law is predicted with zero free parameters to within $0.28\%$–$1.65\%$); **asymptotic uniformity** (the relative step‑to‑step non‑uniformity falls from $4.23\times10^{-3}$ to $6.10\times10^{-5}$); **differential ageing** (the rewriting rate of a single element rises with its own age from $0.058931$ to $0.957750$, so an individual member's clock is not uniform); **universality in $\lambda$** (a 15‑fold sweep does not move the limit, only the speed of approach); **a phase transition** (squaring the denominator of the update rule moves the limit from $1.0000$ to about $0.390$, and the gap widens monotonically); and **the incompatibility of two clocks** (the memory horizon scales as $\tau_{\rm mem}\propto\sqrt n$ while the amount of change gives $T_{\rm em}\propto n$, their ratio diverging with $n$, so **no rescaling can make both clocks uniform simultaneously**). One separation across semantics is preserved: **there is structure, there is no memory** — the joint distribution of the state matrix rejects full independence (row‑sum variance is $1.94$–$2.03$ times the iid value), yet two different prefixes become indistinguishable after continued evolution (exact permutation $p\ge0.3841$, none significant after Holm correction); precisely because the present state carries zero bits about its own past does "time must be emergent rather than read off" become a claim with content. Three honesty boundaries: the emergent time has **shape but no scale**; at attainable sizes "time is constant" holds only to about $22\%$; and two **guesses formed before measurement** have been refuted ($c\propto\lambda^{-1}$ measured at a slope of $-0.577$; "the variant kernel runs away into freezing" settles instead at a fixed point near $0.39$), registered as open items rather than used as evidence. The conclusion is registered as case 16 of G12.
+
+
+14. **A Plain-Language Version of the Emergence of Time in the SRE Framework**: A plain-language rewrite of the time-ontology paper Emergence of Time in the SRE Framework, aimed at general science-and-engineering readers. It preserves every core conclusion and datum, replacing project-internal jargon with everyday language and analogies; the seven verdicts (saturation law, universality, incompatibility of two clocks, etc.) and the structure-without-memory semantic separation are retold non-technically, and the three honest boundaries (notably emergent time has shape but no scale) are retained. Reproduction scripts are shared with the technical version (appendix SRE_Time_Emergence).
+
+15. **Emergence of Positive and Negative Electric Charge in the SRE Framework: Magnitude, Sign, and Numerical Verification**: A paper closing the sign gap of charge. SRE expresses charge as the counting of topological knots (magnitude only); this paper rigorously gives Q(K)=sigma(K) middot deg(K) middot e, yielding electron Q=-e, positron Q=+e, proton Q=+e, neutron Q=0, antiproton Q=-e, and explaining the charge-mass decoupling (proton and electron share the same magnitude but differ in mass by about 1836 times). Two numerical tests confirm: the sign channel and the magnitude channel are mutually independent (section 10.1); the electron is forced by skeleton symmetry into the trivial holonomy class while the proton lands in the non-trivial class (section 10.2), giving the electron/proton sign opposition a structural origin.
+
+> This suite inherits the axiomatic foundations of Part I. Several manuscripts only complete qualitative‑semi‑analytical mechanism construction; full quantitative benchmarking and large‑multi‑degree‑of‑freedom simulations are directions for subsequent research. Similarly, **this part does not answer the ultimate origin of causal differences**.
+
+<div style="page-break-after: always;"></div>
 
 
 <div style="page-break-after: always;"></div>
@@ -1446,381 +1446,564 @@ This Version 2.1 establishes absolute operational closure for SRE topological 
 
 <div style="page-break-after: always;"></div>
 
-# The Necessity of Turbulence Emergence and an Algebraic Computational Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction
-
-Version: 3.0 (Revised)
-
-
-Numerical benchmark: `sre_core.py`　Dataset: `phase_data_v2.json`　Interactive verification: `sim/sre_phase_console.html`
-
-> **v3 Note**: This version further corrects v2 based on a program-correctness gate (`reproduce_ns62.py` reproduces the §6.2 phase diagram to $\Delta\le10^{-4}$) and two prior verifications (`verify_paper_claims.py`). Wherever this version conflicts with v2, this version prevails.
-
----
-
-## 0. Revision Notes
-
-This version makes the following corrections relative to v1. Wherever it conflicts with v1, this version prevails; the basis for each correction is given.
-
-| No. | Problem in v1 | Handling in this version |
-| :--- | :--- | :--- |
-| **R1** | §2.2 defines $P_{\text{active}}=\frac{1}{1+e^{-\Delta S}}$, yet the text states that $P_{\text{active}}\to 0$ as $\Lambda\to\infty$. The two directly contradict each other: this expression gives $P_{\text{active}}\to 1$ as $\Lambda\to\infty$ | Changed to $P_{\text{active}}=\frac{1}{1+e^{\Psi}}$. See §3.2 (where the expression for $\Psi$ is further corrected by R10 of v3) |
-| **R2** | $\beta\Lambda\mathbf{D}$ is labeled the "destabilizing term." But $\Lambda\propto 1/Re$, and large $\Lambda$ corresponds to low-Reynolds-number laminar flow, so this term is in fact the ordering term | Corrected labeling: $\beta\Lambda\mathbf{D}$ is the smoothing (ordering) term, $\alpha\operatorname{Tr}(A^TA)$ is the generating (destabilizing) term |
-| **R3** | The symmetric and antisymmetric parts of $M$ are not distinguished; the reference implementation `N-S.py` even enforces $M_{vm,v_f}=-M_{v_f,v_m}$, making $M$ wholly antisymmetric, which conflicts with "$A$ is the antisymmetric part of $M$," and an antisymmetric matrix cannot serve as the precomputed metric for MDS | Strict bisection: $\mathbf{S}=(M+M^T)/2$ carries the metric and geometry, $\mathbf{A}=(M-M^T)/2$ carries the chirality. See §2.2 |
-| **R4** | §5 claims to have "thoroughly abolished" constraints such as $M_{n+1}[1{:}n,1{:}n]\equiv M_n$, but this constraint is always present in the reference implementation | Clarified: this constraint is a **definitional component** of Operator 1's structural equation, not external hard-coding; v1's statement is untrue. See §4.1 |
-| **R5** | Theorem 7 uses an endogenous $\lambda(n)$ built from the spectral radius to replace the exogenous $\Lambda$, leaving "$\Lambda$ controls the phase transition" with no counterpart in the code | $\Lambda$ and $\lambda(n)$ are explicitly separated, and two modes are provided for comparison. See §4.3 and §6.3 |
-| **R6** | Claims a "unique critical point $\Lambda_c$" | Measured to be a smooth transition spanning about 1.5 orders of magnitude; downgraded to a **transition region** with a measured width. See §6.2 |
-| **R7** | Claims that a "one-dimensional rigid central axis" emerges at high Reynolds number | This conclusion is sensitive to the metric reconstruction method (two MDS criteria give opposite trends) and does not constitute a robust conclusion. See §6.5 |
-| **R8** | Claims the energy spectrum "strictly converges to Kolmogorov $k^{-5/3}$" | The measured one-dimensional surrogate spectral slope is about $-1.85$ and, as $N$ increases, further deviates from $-5/3$. It has been restricted to a surrogate indicator. See §6.6 (where "deviation with $N$" is corrected by R12 of v3 to large-$N$ saturation) |
-| **R9** | Does not report the choice and uncertainty of the metric reconstruction method | Added §6.1, a methodological note and a comparison experiment |
-
-**New corrections in v3 (R10–R12)**
-
-| No. | Problem in v2 | Handling and basis in this version |
-| :--- | :--- | :--- |
-| **R10** | §3.2 defines $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$, **linear** in $\Lambda$. But Theorem 6 of §4.2 and the reference implementation give $P_{\text{active}}=1/(1+\Gamma\mathcal{D}_s/\mathfrak{B})$, which is **logarithmic** in $\Gamma(\Lambda)$ ($\Psi=\ln\Gamma+\ln\mathcal{D}_s-\ln\mathfrak{B}$). The two cannot both hold; moreover $\beta\Lambda\mathbf{D}$ is a matrix while $\alpha\operatorname{Tr}(A^TA)$ is a scalar, a type mismatch | §3.2 rewritten into the self-consistent main-equation form. **Basis**: Theorem 6 of §4.2 agrees term-by-term with `sre_core.py`, and is verified to $\le1.1\%$ error against the measured $C$ via `verify_dissipation.py`. See §3.2 |
-| **R11** | §6.4 merely states that "the transition region is not converged and cannot be extrapolated," without giving the convergence mechanism | Added the analytic mechanism of finite-size convergence: the universal curve $C(z)=1-\ln(1+z)/z$, $z\propto\lambda n/E$, derived from the combined_C dissipation main equation, gives $\beta_\infty=0$ ($\ln z/z$ slow decay). **Basis**: `beta_dissipation_theory.py` (13 points, $R^2(\log z)=0.997$), `verify_dissipation.py` ($\beta_{\text{theo}}=0.420$ vs $\beta_{\text{meas}}=0.460$). See §6.4 |
-| **R12** | §6.6 claims the spectral slope "becomes further steeper as $N$ increases" (inferred from $N=40\to100$: $-1.767\to-1.932$) | At large $N$ this trend **no longer exists**: at $\Lambda=10^{-3}$ the slope first steepens and then **saturates** ($N=800/1600/3200$ give $-1.79/-1.80/-1.78$); at $\Lambda=10^{-2}$ it **flattens** ($N=800\to6400$: $-1.63\to-1.38$). The "steepening" is a small-$N$ finite-size artifact. See §6.6 |
-
----
-
-## 1. Introduction and Physical Picture
-
-The traditional Navier–Stokes equations treat a fluid as an absolutely continuous medium. When explaining the origin of turbulence, microscopic thermal motion and energy fluctuations are amplified by the nonlinear convective term, which in continuous mathematics readily leads to singularity (blow-up) and divergence difficulties—a long-standing bottleneck of classical continuum mechanics.
-
-This paper proposes a discrete dynamical paradigm: rather than treating a fluid as pressure and velocity fields over continuous space, we reconstruct it as an **information-statistical network of causal correlations among a large number of discrete microscopic states**.
-
-* **Space and time are not a priori**: spatial geometry is not a pre-existing stage; the substrate is a discrete, dimensionless network of causal correlations.
-* **The macroscopic emerges spontaneously**: geometric form is the macroscopic result emerging from the algebraic evolutionary correlation distances among microscopic states.
-
-The goal of this paper is to give an axiomatic formulation of this paradigm, to show that it degenerates to the N–S equations in the continuum limit, and to **test each of its quantitative assertions with reproducible numerical experiments**. All numerical values in Section 6 are produced by `sre_core.py` and can be reproduced on a standard scientific computing stack.
-
----
-
-## 2. Basic Objects and Dimensional System
-
-### 2.1 Dimensional Basis
-
-Let the fundamental dimensions be spanned by three independent bases: the elementary causal clock step $[\tau]$, the ground-state topological geometric distance $[\ell]$, and the minimal quantum of information action $[H]$.
-
-* **State matrix $M\in\mathbb{R}^{n\times n}$**: the microscopic causal correlation matrix, with binary entries $M_{ij}\in\{-1,+1\}$, **generally non-symmetric**.
-* **Intrinsic relaxation time $\tau_0$** and **external macroscopic characteristic time $T$**, both of dimension $[\tau]$. Define the dimensionless dissipation coefficient
-
-$$\Lambda \equiv \frac{\tau_0}{T} \propto \frac{1}{Re}$$
-
-### 2.2 Strict Symmetric / Antisymmetric Bisection (Correction R3)
-
-This is a structural correction of this version relative to v1. The two algebraic components of $M$ play entirely different physical roles:
-
-$$\mathbf{S} \equiv \frac{M + M^T}{2}, \qquad \mathbf{A} \equiv \frac{M - M^T}{2}$$
-
-* **$\mathbf{S}$—the topological metric part.** It is symmetric and can serve as the precomputed dissimilarity source for multidimensional scaling (MDS). All geometric reconstruction (manifold coordinates, anisotropy) acts only on $\mathbf{S}$.
-* **$\mathbf{A}$—the local spin operator.** The antisymmetric shear component; its inner-product quadratic form $\operatorname{Tr}(A^TA)=\sum_{i,j}A_{ij}^2$ corresponds to the flux of local vortex action in the microscopic non-equilibrium state.
-
-The relation between the two is exclusive and complete: $M$ non-symmetric $\iff$ $\mathbf{A}\neq 0$ $\iff$ the system carries chirality.
-
-> **Note**: The reference implementation of v1 enforces $M_{vm,v_f}=-M_{v_f,v_m}$, making $M$ wholly antisymmetric. In that case $\mathbf{A}\equiv M$ and $\mathbf{S}\equiv 0$, so the statement "A is the antisymmetric part of M" degenerates into an identity, and $\mathbf{S}=0$ means the metric vanishes entirely—which contradicts the theoretical intent. This version retains the general non-symmetric structure of $M$. Measurement ($N=60$, $\Lambda=10^{-2}$) gives an antisymmetric energy fraction $\operatorname{Tr}(A^TA)/\operatorname{Tr}(M^TM)=0.947$, i.e., the overwhelming majority of the correlation energy is indeed carried by the chiral part, but $\mathbf{S}$ is non-degenerate and the metric still exists.
-
----
-
-## 3. Axiomatic Derivation of the Criterion Operator
-
-### 3.1 Maximum-Entropy Master Equation
-
-Suppose the probability of a microscopic degree of freedom transferring from a "coherent ordered state" to a "disordered decoherent state" is governed by the entropy change. According to non-equilibrium Boltzmann–Shannon statistics, the probability that a microscopic degree of freedom is activated by disordered fluctuations follows a logistic distribution.
-
-Define the **discriminant** $\Psi$ (smoothing term minus generating term): its exact form is given by the self-consistent expression of §3.2, $\Psi=\ln\Gamma+\ln\mathcal{D}_s-\ln\mathfrak{B}$. The physical meaning of its two terms is (correction R2, v3 correction R10):
-
-1. **Smoothing (ordering) term**: borne by $\ln\Gamma$; large $\Gamma$ ($\propto\Lambda$) means fast local relaxation, so topological differences are erased as soon as they are generated.
-2. **Generating (destabilizing) term**: borne by $-\ln\mathfrak{B}$; the higher the local spin coherence barrier $\mathfrak{B}$, the stronger the ability to regenerate topological differences.
-
-> **v3 correction (R10)**: v2 wrote $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$, which is linear in $\Lambda$ and has a matrix/scalar type mismatch; this version changes it to the logarithmic form consistent with §4.2/the reference implementation. The qualitative physical picture (the smoothing term grows with $\Lambda$, the generating term grows with chirality) is unchanged.
-
-### 3.2 Activation Probability and Sign Convention (Correction R1, v3 Correction R10)
-
-$$P_{\text{active}} = \frac{1}{1 + e^{\Psi}}$$
-
-> **v3 correction (R10)**: v2 wrote the discriminant as $\Psi\equiv\beta\Lambda\mathbf{D}-\alpha\operatorname{Tr}(A^TA)$, linear in $\Lambda$. This expression is inconsistent with Theorem 6 of §4.2 and with the reference implementation (the latter is logarithmic in $\Gamma$), so this version gives a self-consistent form.
-
-**The self-consistent discriminant.** Solving the §4.2 master equation for the survival probability $P_{\text{active}}=1-p_{\text{prune}}$:
-
-$$P_{\text{active}} = \frac{1}{1 + \Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}, \qquad\text{i.e.}\qquad \Psi = \ln\Gamma + \ln\mathcal{D}_s - \ln\mathfrak{B}$$
-
-where $\mathcal{D}_s$ is the causal topological depth, $\mathfrak{B}=\mathcal{E}_{\text{local}}+\exp(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}})$ is the barrier (§4.2), and $\Gamma$ is the pruning gain. $\Psi$ is **logarithmic in $\Gamma$**, not linear in $\Lambda$—this is the form consistent with §4.2/the reference implementation.
-
-Limiting behavior (consistent with the physical picture):
-
-* $\Gamma\to+\infty$ (extreme low Reynolds number, large $\Lambda$): $\Psi\to+\infty$, $P_{\text{active}}\to 0$, entering the deterministic laminar phase.
-* $\Gamma\to 0$ (extreme high Reynolds number): $\Psi\to-\infty$, $P_{\text{active}}\to 1$, disordered fluctuations fully activated.
-
-> **Note**: In v2, $\beta\Lambda\mathbf{D}$ is a matrix while $\alpha\operatorname{Tr}(A^TA)$ is a scalar, and subtracting the two is a type mismatch; moreover, $\Psi$ being linear in $\Lambda$ contradicts the code's $\ln$ dependence. This version adopts the logarithmic form, §4.2 corresponds term-by-term to `sre_core.py`, and it is verified against the measured $C$ (`verify_dissipation.py`, error $\le1.1\%$).
-
-### 3.3 Critical Condition (Correction R6)
-
-From $\Psi(\Lambda)=0$ (i.e., $\Gamma\mathcal{D}_s/\mathfrak{B}=1$) we obtain the formal critical condition
-
-$$\Gamma_c = \frac{\mathfrak{B}}{\mathcal{D}_s}$$
-
-In mode A, $\Gamma=\Lambda$, so $\Lambda_c=\mathfrak{B}/\mathcal{D}_s$; in mode B, $\Gamma=\Lambda\lambda(n)$, and the critical $\Lambda$ is rescaled accordingly (see §6.3).
-
-Since $\partial\Psi/\partial\Gamma=1/\Gamma>0$, $\Psi$ is strictly monotonically increasing in $\Gamma$, so $\Psi=0$ has at most one solution. **The intermediate value theorem guarantees that this solution exists, but existence does not imply a sharp phase transition**: the measurements of §6.2 show that the macroscopic order parameter evolves smoothly near the transition region, spanning about 1.5 orders of magnitude rather than jumping at a point. Hence this paper calls $\Lambda_c$ the **center of the transition region** and does not claim it to be a critical point in the thermodynamic sense.
-
----
-
-## 4. Operator System
-
-The system evolution is composed of a cascade of three operators: $M(t+\tau) = \mathcal{O}_3\circ\mathcal{O}_2\circ\mathcal{O}_1\,[M(t)]$.
-
-### 4.1 Operator 1: Boundary Expansion $\mathcal{G}_{n\to n+1}$ (Clarification R4)
-
-For any realized matrix $M_n$, the expansion operator maps to a block matrix by a single-step increment:
-
-$$M_{n+1} = \mathcal{G}_{n\to n+1}(M_n) = \begin{pmatrix} M_n & \mathbf{x}_{n+1} \\ \mathbf{x}_{n+1}^T & y_{n+1} \end{pmatrix}, \qquad M_{n+1}[1{:}n,1{:}n] \equiv M_n$$
-
-> **Clarification**: v1 §5 claimed that this framework "thoroughly abolished" constraints such as $M_{n+1}[1{:}n,1{:}n]\equiv M_n$. That statement is untrue—this constraint has always been present in the reference implementation, and **it should not be abolished**: it is a definitional component of Operator 1's structural equation, prescribing the algebraic property that the historical sub-block is read-only. Without this constraint, $\mathcal{G}_{n\to n+1}$ would degenerate into an arbitrary rewriting operator, and "causal inheritance" would be meaningless. This paper retains the constraint and makes explicit its axiomatic status: **once realized, history cannot be retroactively modified**. The claim in v1 of "no artificial hard-coding" should be understood as "no empirical fitting coefficients, no phenomenological drag corrections," not as "no structural constraints."
-
-**Theorem 3 (Diagonal Invariance Theorem)**: On the binary domain $\Phi(x)\in\{-1,1\}$,
-
-$$\Phi\big((M_{n+1}^2)_{n+1,n+1}\big) = \sum_{m=1}^{n}\Phi(x_{n+1,m})^2 + \Phi(y_{n+1})^2 = n + 1$$
-
-That is, the diagonal path count of a newly injected node is independent of its specific assignment and is always $n+1$.
-
-### 4.2 Operator 2: Maximum-Entropy Pruning $\mathcal{M}_\chi\circ\mathcal{E}_{\text{local}}$
-
-The local multi-loop interference polynomial between a frontier node $v_f$ and a historical node $v_m$ (a 2-step graph walk):
-
-$$\tilde{\mathcal{E}}_{\text{local}}(v_f,v_m) = \sum_{v_k\in\mathcal{N}(v_f)\cap\mathcal{N}(v_m)} M(v_f,v_k)M(v_k,v_m) + 2M(v_f,v_m)$$
-
-Taking the absolute value and the sign: $\mathcal{E}_{\text{local}}=|\tilde{\mathcal{E}}_{\text{local}}|$, and the barrier $\mathfrak{B} = \mathcal{E}_{\text{local}} + \exp(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}})$. Define the **dimensionless causal topological depth** $\mathcal{D}_s(v_f,v_m)=(n+1)-\sigma(v_m)$.
-
-**Theorem 6 (Maximum-Entropy Pruning Master Equation)**:
-
-$$p_{\text{prune}}(v_f,v_m) = 1 - \frac{1}{1 + \Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}$$
-
-where $\Gamma$ is the **pruning gain** (see §4.3). When pruning occurs ($\chi=0$), **Paradigm B (elimination–conduction)** is executed:
-
-$$M_{n+1}(i,j) \leftarrow \chi\cdot M_{n+1}(i,j) + (1-\chi)\cdot 1$$
-
-That is, the channel spin is forced to the multiplicative identity $+1$, thereby eliminating the channel's phase contribution from the product feedback loop without disconnecting the graph connectivity. Surviving channels ($\chi=1$) instead inject an antisymmetric chiral shear.
-
-### 4.3 Gain $\Gamma$: Exogenous $\Lambda$ and Endogenous $\lambda(n)$ (Correction R5)
-
-To eliminate the cyclic dependence among operators, Theorem 7 of v1 constructed an adaptive tracking parameter from the spectral radius of the previously realized subgraph:
-
-$$\lambda(n) = \frac{1}{\beta}\cdot\frac{\ln\!\big(1+\rho(\mathbf{A}_{n-1})\big)}{n+1}$$
-
-By the Perron–Frobenius theorem, the spectral radius of a real matrix is the unique algebraic invariant that always exists, so $\lambda(n)$ has a unique real analytic solution at each step. However, v1 used $\lambda(n)$ to **completely replace** $\Lambda$, causing the macroscopic dissipation authority to disappear from the evolution equation, so that "$\Lambda$ controls the phase transition" had no counterpart in the code.
-
-This version explicitly distinguishes the two and defines two modes for comparison:
-
-| Mode | Pruning gain $\Gamma$ | Meaning |
-| :--- | :--- | :--- |
-| **A (exogenous)** | $\Gamma = \Lambda$ | $\Lambda$ directly serves as the phase-transition control quantity |
-| **B (adaptive)** | $\Gamma = \Lambda\cdot\lambda(n)$ | Superimposes the state-adaptive correction of Theorem 7 on top of $\Lambda$ |
-
-Both $\lambda(n)$ and $\Lambda$ are dimensionless, so their product does not break dimensional consistency. §6.3 gives a measured comparison of the two modes.
-
-### 4.4 Operator 3: Five-Node Parity Breaking and Logical Emergence
-
-To break the parity degeneracy of the pure spin-product space, a 5-node inhomogeneous array with a fixed inversion anchor is introduced ($n:5\to6$):
-
-$$\mathbf{M}_5 = \begin{pmatrix} 1 & 1 & -1 & 1 & 1 \\ 1 & 1 & -1 & 1 & 1 \\ -1 & -1 & -1 & 1 & 1 \\ 1 & 1 & 1 & 1 & 1 \\ 1 & 1 & 1 & 1 & 1 \end{pmatrix}$$
-
-Nodes 1 and 2 are the input ports $A,B$; node 3 is the rigid inversion anchor (its self-loop and cross-edges are hard-coded to $-1$); nodes 4 and 5 are a $+1$ inert boundary subgraph. Taking the activation mask $\boldsymbol{\chi}=[1,1,1,0,0]^T$, the macro-spin field is
-
-$$Y_{\text{spin}} = \operatorname{sgn}\!\left(\tfrac12(S_{1,6}+S_{2,6}) - S_{3,6}\right), \qquad \operatorname{sgn}(0)\to+1$$
-
-The four input combinations are mapped through the projection $f(S)=(1-S)/2$ to $\{1,1,1,0\}$, matching the truth table of a standard **NAND** gate, thereby providing a proof of the Turing completeness of this algebraic system. The topological differences generated by this operator are permanently locked, forming a rigid core that resists Paradigm B smoothing.
-
----
-
-## 5. Continuum Limit and Compatibility with the N–S Equations
-
-Let $\tau\to0,\ \ell\to0$ and map $M_{ij}$ to a multi-point correlation function $M(\mathbf{x},\mathbf{y},t)$ on a continuous manifold, defining the macroscopic density and velocity fields as first-order matrix moments:
-
-$$\rho(\mathbf{x},t)=\int M\,d\mathbf{y}, \qquad \rho\mathbf{u}(\mathbf{x},t)=\int\frac{\mathbf{x}-\mathbf{y}}{\tau}M\,d\mathbf{y}$$
-
-When $\Lambda\to\infty$ and the microscopic fluctuations tend to zero, the transition probability degenerates to Dirac $\delta$ evolution, and the algebraic free evolution can be written as a continuous master equation:
-
-$$\frac{\partial M}{\partial t} + \nabla_{\mathbf{x}}\cdot\left(\frac{\mathbf{x}-\mathbf{y}}{\tau}M\right) = \mathcal{C}[M]$$
-
-Performing a Chapman–Enskog expansion in $\epsilon=\ell/L$ (the algebraic equivalent of the Knudsen number), $M=M^{(0)}+\epsilon M^{(1)}+\mathcal{O}(\epsilon^2)$:
-
-1. **The first moment** gives the continuity equation $\partial_t\rho+\nabla\cdot(\rho\mathbf{u})=0$;
-2. **The second moment**, under momentum conservation of the collision operator $\int(\mathbf{x}-\mathbf{y})\mathcal{C}[M]d\mathbf{y}=0$, gives rise to the convective term, and the second-order correction $M^{(1)}$ contributes a viscous stress tensor under symmetry breaking. With $\Lambda\equiv\tau_0/T$, the kinematic viscosity is formally written as $\nu=\zeta\,\ell^2\Lambda$.
-
-Hence
-
-$$\rho\left(\frac{\partial\mathbf{u}}{\partial t}+(\mathbf{u}\cdot\nabla)\mathbf{u}\right) = -\nabla p + \rho\,\zeta\ell^2\Lambda\,\nabla^2\mathbf{u}$$
-
-that is, the standard N–S equations.
-
-> **Qualification**: $\zeta$ is a network geometric constant to be determined; this paper neither derives its value from first principles nor performs a direct numerical simulation comparison. Therefore this section establishes a **structural compatibility** (the discrete algebraic master equation possesses the N–S moment structure in the continuum limit), not a proof of quantitative equivalence. $\nu=\zeta\ell^2\Lambda$ should be regarded as a formal correspondence from dimensional analysis, whose coefficient must be fixed by subsequent calibration.
-
----
-
-## 6. Numerical Evidence
-
-All numerical values are produced by `sre_core.py` with parameters: $N=60$, 5 random seeds (0–4), dataset `phase_data_v2.json`.
-
-### 6.1 Method: Choice of Metric Reconstruction Criterion (New R9)
-
-The manifold geometry starts from the symmetric part $\mathbf{S}$, taking the dissimilarity $d_{ij}=\sqrt{\max(0,\,2-2S_{ij})}$. There are two common criteria for recovering three-dimensional coordinates from $d_{ij}$, and this work mainly uses **classical MDS (Torgerson)**: eigendecomposition of the double-centered Gram matrix $\mathbf{B}=-\tfrac12\mathbf{J}\mathbf{D}^{(2)}\mathbf{J}$, taking the first three eigenvectors.
-
-Reason for the choice: it is a closed-form solution that is **deterministic, reproducible, and free of local-minimum problems**—this is especially critical for the present framework, because "avoiding iterative entrapment in local minima" is one of the paradigm's claims relative to gradient-based methods.
-
-However, it must be reported that the two criteria give **opposite** anisotropy trends (comparison experiment, $N=60$, seed 0):
-
-| $\Lambda$ | Classical MDS (strain criterion) | SMACOF (stress criterion, converged) |
-| ---: | ---: | ---: |
-| $10^{-3}$ | 0.3720 | 0.3338 |
-| $10^{-2}$ | 0.3635 | 0.3365 |
-| $10^{-1}$ | 0.3686 | 0.3573 |
-| $1$ | 0.3422 | 0.3682 |
-| $10$ | 0.3546 | 0.4634 |
-
-SMACOF's stress has stabilized after `max_iter=1000` (653.79 no longer decreasing), so the difference is **not** insufficient convergence but a difference in objective function. This methodological uncertainty directly affects the conclusions of §6.5.
-
-### 6.2 Mode A: Phase Diagram for Exogenous $\Lambda$ (Correction R6)
-
-| $\Lambda$ | $Re\propto1/\Lambda$ | Structural density | sd | Anisotropy | Spectral slope | sd |
-| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| $10^{-4}$ | $10^{4}$ | 0.4915 | 0.0001 | 0.4308 | −1.851 | 0.055 |
-| $10^{-3}$ | $10^{3}$ | 0.4901 | 0.0004 | 0.3753 | −1.847 | 0.151 |
-| $10^{-2}$ | $10^{2}$ | 0.4764 | 0.0016 | 0.3587 | −1.824 | 0.326 |
-| $10^{-1}$ | $10$ | 0.3809 | 0.0023 | 0.3515 | −1.566 | 0.250 |
-| $3.16\times10^{-1}$ | $3.16$ | 0.2622 | 0.0026 | 0.3510 | −0.556 | 0.935 |
-| $1$ | $1$ | 0.1435 | 0.0046 | 0.3501 | +0.207 | 1.414 |
-| $3.16$ | $0.32$ | 0.0647 | 0.0026 | 0.3618 | +0.124 | 0.762 |
-| $10$ | $0.1$ | 0.0254 | 0.0024 | 0.3600 | +0.264 | 1.080 |
-| $10^{2}$ | $10^{-2}$ | 0.0026 | 0.0004 | 0.3715 | +0.442 | 0.095 |
-
-The structural density (the fraction of surviving chiral channels) decreases monotonically from 0.4915 to 0.0026, in a smooth S-shaped form. Defining the transition region as the structural density falling from 0.40 to 0.08 gives
-
-$$\Lambda \in [\,8\times10^{-2},\ 2.5\,], \qquad \text{i.e.} \quad Re\propto1/\Lambda \in [\,0.4,\ 12\,]$$
-
-**The transition width is about 1.5 orders of magnitude.** The inter-seed standard deviation is $\le 0.005$ throughout, so the smoothness is not due to noise but is an intrinsic property of the system.
-
-> Conclusion: This framework does **not** support the strong claim of a "sharp critical point." What can be robustly asserted is: there exists a monotonic, reproducible structural–dissipation transition region of width about 1.5 orders of magnitude. For $\Lambda>10^2$, the structural density is $<10^{-2}$, the manifold degenerates to a near-zero distance matrix, and MDS values lose meaning (omitted from the table).
-
-### 6.3 Mode B: Consequences of Switching On Theorem 7 (Correction R5)
-
-| $\Lambda$ | Structural density | Spectral slope |
-| ---: | ---: | ---: |
-| $10^{-2}$ | 0.4914 | −1.854 |
-| $1$ | 0.4673 | −1.842 |
-| $3.16$ | 0.4186 | −1.672 |
-| $10$ | 0.1676 | −0.484 |
-| $10^{2}$ | 0.0269 | +0.136 |
-
-Compared with mode A: the same transition occurs at $\Lambda\approx3\sim30$, about **2 orders of magnitude** later than in mode A.
-
-Reason: $\lambda(n)$ decays from 0.315 to 0.010 as $n$ goes to $N=60$, with an average magnitude of about $10^{-2}$, systematically shrinking the effective gain. At the same time, the decay of $\lambda(n)$ means that the **effective pruning strength decreases with evolution time**, i.e., the system has an intrinsic temporal non-stationarity—strong pruning early, weak pruning late.
-
-> Conclusion: Switching on Theorem 7 does not change the qualitative structure of the transition (monotonic transition and spectral slope plateau are both retained), but (i) it rescales the effective magnitude of $\Lambda$ and (ii) it introduces a temporal non-stationarity that decays with $n$. These two are the price paid for decoupling the cyclic dependence, which v1 did not mention.
-
-### 6.4 Finite-Size Test
-
-| $N$ | $\Lambda=10^{-3}$ | $\Lambda=10^{-1}$ | $\Lambda=1$ |
-| ---: | ---: | ---: | ---: |
-| 40 | 0.4870 | 0.4020 | 0.1759 |
-| 60 | 0.4901 | 0.3809 | 0.1435 |
-| 80 | 0.4922 | 0.3608 | 0.1212 |
-| 100 | 0.4927 | 0.3452 | 0.1062 |
-
-* **The high-Reynolds-number side ($\Lambda=10^{-3}$) is converged**: from $N=40\to100$ the structural density changes only from 0.487 to 0.493, a change of $<1.5\%$.
-* **The transition region ($\Lambda=10^{-1},1$) is not converged**: the structural density continues to decrease with $N$ (at $\Lambda=1$, from 0.176 to 0.106, a 40% drop).
-
-> Therefore: the **quantitative location of the transition region is $N$-dependent** and cannot be extrapolated to $N\to\infty$. What can be robustly asserted is only the qualitative conclusion that "a monotonic transition exists."
-
-#### 6.4.1 Analytic Explanation of the Convergence Mechanism (New in v3, R11)
-
-v2 merely stated "not converged"; this version adds its analytic origin. From the master equation in §II of combined_C, *A Hierarchical Dissipation Self-Organization Theory of Binary Network Dynamics*,
-
-$$p_{\text{prune}}(d,\mathcal{E}) = 1 - \frac{1}{1+\Gamma\,\dfrac{d}{\mathcal{E}+1}}, \qquad d=n-\max(i,j)$$
-
-performing a continuum approximation integral over depth $d\in[0,n]$, the survival probability $\langle 1-p_{\text{prune}}\rangle$ becomes the **universal curve**
-
-$$C(z) = 1 - \frac{\ln(1+z)}{z}, \qquad z \equiv \frac{\Gamma\,n}{\mathcal{E}+1}$$
-
-The power-law exponent $\beta\equiv-\dfrac{d\ln C}{d\ln Re}$ satisfies, as $z\to\infty$, $\beta(z)\approx\dfrac{\ln z-1}{z}\to 0$. **That is, in the thermodynamic limit there is no finite asymptotic value, $\beta_\infty=0$**, and the decay is $\ln z/z$, **slower than any power law** (hence neither the $1/N$ nor the $1/N^2$ extrapolations hold).
-
-**Numerical verification** (`beta_dissipation_theory.py`, `verify_dissipation.py`):
-
-* Inverting $z$ from the measured $C(\lambda,N)$ under a consistent protocol gives $z\propto\lambda^{1.40}N^{0.97}$, with $R^2(\log z)=0.997$ over 13 data points;
-* Substituting the actual barrier of the final $M$ into the master equation, $C_{\text{theo}}$ and $C_{\text{meas}}$ differ by $\le1.1\%$ for $\Gamma\in[10^{-2},10^{-1}]$, with $\beta_{\text{theo}}=0.420$ vs $\beta_{\text{meas}}=0.460$;
-* The measured doubling ratio $[800\to1600]/[1600\to3200]=1.135$ agrees with the theoretical prediction $1.131$—whereas the $1/N$ model predicts $2.0$ and is refuted by the measurement.
-
-> **Conclusion (replacing v2's "cannot be extrapolated")**: The $N$-dependence of the transition region is not an incidental experimental shortcoming but an **intrinsic property of the dissipation master equation**—the finite-size correction decays extremely slowly as $\ln z/z$, never reaching a finite limit. This explains the saturation of the §6.6 spectral slope at large $N$ (see below).
-
-### 6.5 On the "One-Dimensional Rigid Central Axis" (Correction R7)
-
-v1 claimed that at high Reynolds number the MDS-reconstructed space spontaneously develops a "highly connected rigid central axis" (red core) wrapped in a dissipative shell.
-
-The test results of this version do not support this strong claim:
-
-* Under classical MDS, the anisotropy $\lambda_1/\sum\lambda$ stays within **0.34–0.43** throughout $\Lambda\in[10^{-4},10]$, a fluctuation magnitude of the same order as the inter-seed standard deviation (up to 0.08 at the extremes), with no convergence trend toward 1. Since $1/3$ corresponds to complete isotropy, the measured values are only slightly above the isotropic baseline.
-* Only in the **extremely dissipative degenerate region** ($\Lambda\ge10^2$, structural density $<10^{-2}$) does the anisotropy rise above 0.86, but at that point the network is almost entirely $+1$, the MDS input is near-singular, and the value is physically meaningless.
-* Iterative SMACOF gives the opposite trend (0.334→0.463 as $\Lambda=10^{-3}\to10$), see §6.1.
-
-> Conclusion: Under the metrics of this paper, the "rigid central axis" should be regarded as an **artifact of the metric reconstruction method**, not a robust physical conclusion. To establish this phenomenon, one would need to re-examine it using intrinsic-dimension estimation, persistent homology, and other topological indicators independent of the embedding criterion. This paper no longer lists it as a core conclusion.
-
-### 6.6 Chiral Field Spectral Slope (Correction R8)
-
-Applying an FFT to the one-dimensional signal of the chiral field $A$ along the causal order, and fitting the mid-section of $\log E$–$\log k$:
-
-* For $\Lambda\lesssim3\times10^{-2}$ ($Re\gtrsim30$), the slope is stable at **−1.82 to −1.85**, with inter-seed standard deviations of 0.04–0.33;
-* For $\Lambda\gtrsim3\times10^{-1}$, the slope rapidly rises to positive values and the cascade disappears;
-* As $N$ increases, the slope **becomes further steeper**: $N=40,60,80,100$ give −1.767, −1.847, −1.899, −1.932 respectively ($\Lambda=10^{-3}$).
-
-**v3 correction (R12): large-$N$ extrapolation refutes "continued steepening."** Extending $N$ to the $10^3$ range (`verify_paper_claims.py`, seeds[0,1]):
-
-| $N$ | $\Lambda=10^{-3}$ | $\Lambda=10^{-2}$ |
-| ---: | ---: | ---: |
-| 800 | −1.79 | −1.63 |
-| 1600 | −1.80 | −1.67 |
-| 3200 | −1.78 | −1.55 |
-| 6400 | — | **−1.38** |
-
-It can be seen that: at $\Lambda=10^{-3}$ the slope **saturates** for $N\ge800$ (−1.79/−1.80/−1.78, nearly unchanged) and does not continue to steepen; at $\Lambda=10^{-2}$ the slope instead **flattens** (from −1.63 to −1.38 as $N=800\to6400$). **The "monotonic deviation from −1.667 with $N$" inferred by v2 from $N=40\to100$ is a small-$N$ finite-size artifact**, qualitatively consistent with the $\ln z/z$ slow-decay mechanism of §6.4.1 (high-order statistics tend to a plateau rather than diverging as $N$ grows).
-
-**Implementation-dependence note**: The structural density is a first-order statistic and is highly consistent across different random implementations of the PRNG
-(the Python PCG64 and the browser-side mulberry32 differ by $<0.001$ at the same $\Lambda$).
-But the spectral slope is a high-order statistic and is sensitive to the specific implementation: at the same $\Lambda$ the means given by the two PRNGs
-can differ by as much as 0.5 at high $\Lambda$, while the inter-seed standard deviation itself already exceeds 1.0.
-
-> Conclusion: This framework does spontaneously produce a stable power-law scaling region, which is currently the most robust empirical signal. But it is **not** Kolmogorov $k^{-5/3}$: the measured value is about −1.8, and at large $N$ it **saturates to a plateau rather than continuing to deviate**. Furthermore, this spectrum is a one-dimensional surrogate spectrum along the causal order, not equal to the three-dimensional energy spectrum $E(k)$. Given the implementation dependence, this paper asserts only the qualitative fact that "there exists a stable power-law scaling region whose slope saturates at about −1.8 at large $N$," and **does not claim** that the precise value of the slope is comparable across implementations, nor that it achieves quantitative convergence with K41 theory; the acceptance criterion in `cop.md` of "strict parallel convergence with $k^{-5/3}$" should be revised according to this section.
-
----
-
-## 7. Conclusion
-
-1. **The origin of turbulence**: it is a **non-equilibrium transition** in which microscopic degrees of freedom are activated over a large area when the causal control force ($\Lambda$) is insufficient relative to the local spin generating capacity; measured as a smooth transition region of width about 1.5 orders of magnitude, not a sharp critical point.
-2. **Maintenance of coherent structures**: surviving channels are protected by the historical read-only constraint of Operator 1 and the permanent topological anchors of Operator 3, algebraically constituting an invariant that resists Paradigm B smoothing. This is a structural argument, supported by the monotonic phase diagram of §6.2.
-3. **Compatibility with continuum mechanics**: the Chapman–Enskog expansion yields the moment structure of N–S (§5), but this is structural compatibility; $\zeta$ in $\nu=\zeta\ell^2\Lambda$ remains to be calibrated.
-4. **Finite-size convergence** (new in v3): the non-extrapolatability of the transition region is not an experimental shortcoming but an intrinsic property of the dissipation master equation—the correction decays extremely slowly as $\ln z/z$, $\beta_\infty=0$, with no finite asymptotic value (§6.4.1).
-5. **Robust empirical signal**: on the high-Reynolds-number side there exists a stable chiral-field power-law scaling region whose slope **saturates at about −1.8** at large $N$ (rather than continuing to steepen), and which collapses as $\Lambda$ increases. This is currently the most robust reproducible result of this framework.
-6. **Not claimed**: a sharp critical point, a one-dimensional rigid central axis, quantitative convergence with Kolmogorov $k^{-5/3}$, and monotonic divergence of the spectral slope with $N$. All four are downgraded due to methodological uncertainty or measured deviation (R6, R7, R8, R12).
-
-By explicitly separating the exogenous control quantity $\Lambda$ from the endogenous adaptive quantity $\lambda(n)$, strictly bisecting the symmetric and antisymmetric components of $M$, and converging all numerical experiments onto a single reproducible benchmark `sre_core.py`, this method provides a foundation for studying complex fluids from the level of discrete information networks that is **testable rather than merely narratable**.
-
----
-
-## Appendix: Reproduction
-
-```bash
-python sre_core.py            # reference implementation (with all revision annotations)
-python export_v2.py           # generates phase_data_v2.json (all §6 data)
-python make_tables.py         # exports tables.md
-```
-
-**New verification scripts in v3**:
-
-```bash
-python reproduce_ns62.py          # program-correctness gate: reproduce §6.2 phase diagram (Δ≤1e-4)
-python verify_paper_claims.py     # R12: large-N spectral slope; V1: N=800 protocol conflict
-python beta_dissipation_theory.py # §6.4.1: dissipation master equation → universal curve C(z), β∞=0
-python verify_dissipation.py      # §6.4.1: master-equation closed-loop verification (C_theo vs C_meas)
+# Benchmarking Classical Navier–Stokes Turbulence with a Discrete Causal Network
+
+## —— A Systematic Benchmark Report on the State-Relation Entropy (SRE) Framework
+
+Version: 4.0
+
+> **Translation note**: strict line-by-line English rendering of the Chinese version `n-s_C_4.0.md`, pending author revision.
+
+[Resources and Availability Statement] This framework is built upon State-Relation Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open-source data repository. **This document suite includes the systematic paper, application development, scientific hypotheses, the complete algebraic derivations of Operators 1–19, and the simulation code, all fully open source.**
+
+> The author's GitHub repository is accessible at:
+>
+> https://github.com/yuelucn/Status-Relational-Entropy-SRE-Dynamics-The-Book-of-the-Void
+>
+> An AI-assisted Tencent smart document space is accessible (available on both PC and WeChat mobile):
+>
+> https://docs.qq.com/space/DUkRjYUtNWFdyV253
+>
+> According to the State-Relation Entropy (SRE) principle, the foundations of classical physics originate from information statistics.
+
+> **Code baseline**: `sre_core.py`　**Dataset**: `phase_data_v2.json`　**Date**: 2026-10-16
+>
+> **Reading prerequisites**: This paper is a **self-contained** report. The reader needs only university-undergraduate-level familiarity with classical mechanics, fluid mechanics, and statistical physics (Reynolds number, energy cascade, power laws, correlation functions), and **no** prior knowledge of the SRE framework. All SRE-specific concepts are defined in place in Chapter 2, all technical terms are given a standardized correspondence table in Appendix A, and every numerical value cited in the main text can be traced in Appendix B to a saved artifact file.
+
+---
+
+## Abstract
+
+The classical Navier–Stokes (N–S) equations treat a fluid as an absolutely continuous medium, and turbulence is the instability of their nonlinear convective term under continuous mathematics. The State-Relation Entropy (SRE) framework proposes a different route: instead of writing the fluid as a velocity field over continuous space, it reconstructs the fluid as a **network of causal correlations among a large number of discrete microscopic states**, and claims that this network degenerates back to the N–S equations in the continuum limit.
+
+The task of this report is to turn this "claim" into an **executable quantitative benchmark**: under a unified protocol, measure the macroscopic observables of the SRE network, compare them item by item with the phenomenology of classical turbulence (the Kolmogorov 1941 energy cascade, the −5/3 spectrum, the 3/4 law), and honestly distinguish "qualitative reproduction" from "quantitative deviation".
+
+Conclusions at three levels:
+
+1. **Macroscopic calibration**: taking the pipe-flow transition center as an anchor, a mapping between the SRE dissipation coefficient Λ and the Reynolds number can be established, `Re ≈ 783/Λ`; on the strong-turbulence side, the one-dimensional surrogate spectrum of the SRE chiral field gives a stable power-law region with slope `γ ≈ −1.81 ± 0.04`, which differs from the K41 value `−1.667` by about 9% and is **not** exactly −5/3.
+
+2. **Structural invariants**: the skewness of the causal-frontier profile strictly passes through zero, `+ → 0 → −`, along the laminar→turbulent direction, consistent with the qualitative behavior of the classical third-order velocity-increment moment S₃; but its magnitude differs by about one order (|skew| ≈ 3–6 versus |S₃| ≈ 0.1–0.7). The coherence fraction C decreases monotonically from ≈0.97 to ≈0.09, complementary to the rise of the classical coherence-length ratio ℓ_int/η.
+
+3. **Finite-size scaling**: the scale-separation exponent β (the SRE version of the ℓ_int/η exponent) decreases monotonically with system size N from 800 to 25600 (0.7456 → 0.4360), but **converges extremely slowly**. The fit to the six-point chain falls in a **degenerate region** between a "logarithmic form (β∞ ≈ 0)" and a "weak power law (p ≈ 0.28)"; the data can neither rule out the former nor confirm the latter, and all that can be given is the interval constraint `β∞ ∈ [−0.2, +0.2]`. Simple inverse-power extrapolations (1/N, 1/N²) are excluded by the data. **No evidence supports any simple rational number as the asymptotic exponent.**
+
+**One-sentence conclusion**: The SRE network qualitatively reproduces the main narrative of classical turbulence—"as the Reynolds number rises the cascade strengthens and coherent structures break up"—but quantitatively deviates persistently from the exact power law of K41; its scale-separation exponent cannot converge to any single value within the accessible computational budget. This is neither "strict agreement" nor "disproof", but a **discrete surrogate model that has not yet converged while remaining structurally self-consistent**.
+
+---
+
+## 1. Introduction: Classical Turbulence Phenomenology and the Motivation for Modeling
+
+### 1.1 The Turbulent Picture of the Classical N–S Equations
+
+The motion of an incompressible Newtonian fluid is governed by the N–S equations:
+
+$$
+\rho\left(\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u}\right) = -\nabla p + \mu\,\nabla^2\mathbf{u}, \qquad \nabla\cdot\mathbf{u}=0
+$$
+
+Introducing a characteristic velocity U and a characteristic length L, the only control parameter after non-dimensionalization is the **Reynolds number** `Re = UL/ν` (ν = μ/ρ is the kinematic viscosity). When Re exceeds a critical value, the laminar flow loses stability and becomes turbulent.
+
+The central picture given by Kolmogorov 1941 theory (K41) is the **energy cascade**: energy is transferred step by step from large-scale eddies (the top of the inertial range) down to small scales, until the viscous dissipation range. In the inertial subrange, the energy spectrum obeys the power law
+
+$$
+E(k) \sim k^{-5/3}
+$$
+
+corresponding to a spectral slope `γ = −5/3 ≈ −1.667`. The same scaling argument also gives the **third-order structure function (the 3/4 law)**: the third moment of the velocity increment δu, ⟨δu³⟩ ∝ −εr (the negative sign coming from the downward directionality of the energy cascade), so that the **skewness** of the velocity increment (the normalized third moment) takes a negative, approximately constant value in the inertial range. Another common scaling is the growth of the ratio of coherence length to dissipation scale, `ℓ_int/η`, with Re, whose exponent tends to 3/4 at high Re:
+
+$$
+\ell_{\text{int}}/\eta \sim Re^{3/4}
+$$
+
+These three—**the −5/3 spectrum, the 3/4 law of negative skewness, and the 3/4 exponent of ℓ_int/η**—constitute the quantitative benchmark of classical turbulence phenomenology.
+
+### 1.2 Why a Discrete Causal Surrogate Model Is Needed
+
+The difficulty of the classical N–S equations lies in their continuity assumption itself: the convective term easily leads to singularity (blow-up) under continuous mathematics, and the microscopic thermal fluctuations and the mechanism that amplifies fluctuations cannot be naturally produced within the equations. The motivation of the SRE framework is to replace the "continuous medium" with a "discrete microscopic causal statistical network", to generate macroscopic structure by **algebraic evolution rules** (rather than differential equations), and to expect the macroscopic structure to emerge spontaneously.
+
+Specifically, SRE does not presuppose a space-time stage: geometric form is the macroscopic result of the evolution of an **algebraic relation matrix** between microscopic states. To judge whether this route is truly consistent with a classical fluid, one must, under a unified protocol, treat the SRE network as a **numerical experimental object**, measure its macroscopic observables, and compare them item by item with the three benchmarks of §1.1.
+
+### 1.3 The Goal and Structure of This Paper
+
+The goal of this paper is to write "benchmarking classical N–S turbulence with SRE" into a **complete, reproducible, and terminology-standardized** report:
+
+- Chapter 2 defines the SRE model in place (state set, relation matrix, three evolution operators, control quantity, and system size), and gives pseudocode;
+- Chapter 3 gives the calibration and measurement protocol (Reynolds-number mapping, observable definitions, frontier-profile extraction, and the two ways of estimating the exponent);
+- Chapter 4 gives the results (the macroscopic spectral slope, the frontier invariants, the finite-size scaling chain, and its convergence-law verdict);
+- Chapter 5 gives the benchmark table against K41 and the limitations;
+- Chapter 6 gives the conclusion; the appendices give the terminology table and the numerical-source table.
+
+---
+
+## 2. The State-Relation Entropy (SRE) Model
+
+This chapter is the core of the paper. A reader with no SRE background who understands this chapter can understand the whole paper.
+
+### 2.1 Basic Objects: the State Set and the Relation Matrix M
+
+The complete set of degrees of freedom of the fluid at one instant is discretized into `N` **microscopic causal states**, numbered `1, …, N` (N is called the **system size**). Whether a "causal correlation" exists between these states is represented by a **relation matrix**:
+
+$$
+M \in \mathbb{R}^{N\times N}, \qquad M_{ij} \in \{-1, +1\}
+$$
+
+- `M_ij = +1` means states i and j are **coherently ordered** (the causal correlation is positive and the directions agree);
+- `M_ij = -1` means **anti-coherent** (the correlation is negative and the directions are opposite).
+
+The elements of M are **directional**: `M_ij` is the relation "as seen from j to i", and `M_ji` is the relation "as seen from i to j". The two **need not be equal**, so M is in general **non-symmetric**. The non-symmetry is not numerical noise but the physical content of the model: it carries "chirality" (chirality, i.e. the directionality of the vortex).
+
+Initially there is only one state: `M = [[+1]]`.
+
+### 2.2 The Symmetric–Antisymmetric Bisection: Geometry and Chirality
+
+Any real matrix can be uniquely decomposed into a symmetric part and an antisymmetric part. For M:
+
+$$
+\mathbf{S} \equiv \frac{M + M^{\mathsf T}}{2}, \qquad \mathbf{A} \equiv \frac{M - M^{\mathsf T}}{2}
+$$
+
+- **S—the topological metric part.** It is **symmetric** and can serve as the source of "dissimilarity between vertices", used for low-dimensional geometric reconstruction (multidimensional scaling, MDS). All geometric objects (manifold coordinates, anisotropy) act only on S.
+- **A—the local spin part.** It is **antisymmetric**, and its inner-product quadratic form
+
+$$
+\operatorname{Tr}(A^{\mathsf T}A) = \sum_{i,j} A_{ij}^2
+$$
+
+measures the strength of the **vortex action** (local shear) in the microscopic non-equilibrium state. Chirality/vorticity is carried by A alone.
+
+The relation between the two is exclusive and complete:
+
+$$
+M\ \text{is non-symmetric} \iff \mathbf{A}\neq 0 \iff \text{the system carries chirality}
+$$
+
+**Relation distance.** Since the elements of S lie in `{−1, 0, +1}`, we define the discrete **relation distance**
+
+$$
+D \equiv 1 - S \in \{0, 1, 2\}
+$$
+
+`D = 0` corresponds to bidirectional coherence (i and j each see the other as +1); `D = 2` corresponds to bidirectional anti-coherence. As will be seen below, `D = 2` **never occurs** during the evolution, and this algebraic fact greatly simplifies the measurement of coherence.
+
+### 2.3 The Three Evolution Operators
+
+The system evolves from `M_n` (n×n, already realized) to `M_{n+1}` ((n+1)×(n+1)) by a cascade of three operators:
+
+$$
+M(t+\tau) = \mathcal{O}_3 \circ \mathcal{O}_2 \circ \mathcal{O}_1\,[M(t)]
+$$
+
+**Operator 1 (inheritance operator / boundary expansion)** `G_{n→n+1}`: each step adds one new state `v_f = n` (called the **causal frontier node**), expanding the matrix into block form
+
+$$
+M_{n+1} = \begin{pmatrix} M_n & \mathbf{x} \\ \mathbf{x}^{\mathsf T} & y \end{pmatrix}, \qquad M_{n+1}[1{:}n,\,1{:}n] \equiv M_n
+$$
+
+The key convention here is **read-only inheritance**: the historical sub-block (the upper-left n×n block) is **never modified**. "Once realized, history cannot be retroactively modified" is a structural axiom of the model, not an optional constraint. Its physical meaning is: the causal history is frozen, and energy/information can only be injected through the newly added frontier node.
+
+**Operator 2 (maximum-entropy pruning)** `M_χ ∘ E_local`: for the channel between the frontier node `v_f` and each historical node `v_m`, compute a two-step graph walk (local multi-loop interference polynomial)
+
+$$
+\tilde{\mathcal{E}}_{\text{local}}(v_f, v_m) = \sum_{v_k \in \mathcal{N}(v_f)\cap \mathcal{N}(v_m)} M(v_f,v_k)\,M(v_k,v_m) + 2\,M(v_f,v_m)
+$$
+
+Taking the absolute value and the sign gives the local coherence barrier
+
+$$
+\mathcal{E}_{\text{local}} = |\tilde{\mathcal{E}}_{\text{local}}|, \qquad \mathfrak{B} = \mathcal{E}_{\text{local}} + \exp\!\big(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}}\big)
+$$
+
+and define the **dimensionless causal topological depth** `𝒟_s(v_f, v_m) = (n+1) - σ(v_m)` (σ is the node's addition index). The maximum-entropy pruning master equation gives the probability that this channel is **pruned**:
+
+$$
+p_{\text{prune}}(v_f, v_m) = 1 - \frac{1}{1 + \Gamma\,\dfrac{\mathcal{D}_s}{\mathfrak{B}}}
+$$
+
+where `Γ` is the **pruning gain** (see §2.4). Upon pruning (`χ = 0`) the "elimination–conduction" paradigm is executed: the channel spin is forced to the multiplicative identity `+1`, thereby **eliminating its phase contribution while not disconnecting the graph connectivity**; upon survival (`χ = 1`) an antisymmetric chiral shear is injected.
+
+**Operator 3 (five-node parity breaking)**: at `n: 5 → 6` a fixed inversion anchor is injected, so that the macroscopic spin field
+
+$$
+Y_{\text{spin}} = \operatorname{sgn}\!\Big(\tfrac12(S_{1,6}+S_{2,6}) - S_{3,6}\Big)
+$$
+
+maps onto the standard **NAND** truth table, thereby giving a proof of the Turing completeness of this algebraic system. Operator 3 generates a permanently locked topological difference (a rigid core). **Note**: Operator 3 serves "logical emergence" and **does not participate** in the turbulence-scaling benchmark of this paper (the benchmark uses only Operator 1 + Operator 2); it is listed here only for completeness of the model.
+
+#### Evolution pseudocode
+
+```text
+Input: target step count N, dissipation coefficient Λ, random seed seed
+M ← [[+1]]                       # initial: a single state
+for n = 1, 2, …, N-1:            # Operator 1: expand one step, add frontier node v_f = n
+    v_f ← n
+    for vm = 0, 1, …, n-1:       # Operator 2: channel decision between the frontier and each historical node
+        # two-step walk interference (count only intermediate nodes k that are both non-+1)
+        inter  ← Σ_{k<vm} row[v_f][k] · M[k][vm] · [row[v_f][k]≠+1][M[k][vm]≠+1]
+        E_til  ← inter + 2·row[v_f][vm]
+        𝔅      ← |E_til| + exp(sgn(E_til))
+        p_prune ← 1 − 1 / (1 + Γ·(n−vm)/𝔅)
+        if rand() ≥ p_prune:      # survival: inject a chiral shear
+            row[v_f][vm] ← −1  if (v_f−vm) mod 3 == 0  else +1
+        else:                     # pruned: force to +1 (eliminate phase, keep connectivity)
+            row[v_f][vm] ← +1
+    col[v_f][vm] ← −row[v_f][vm]  if survived  else +1   # the reverse relation carries the opposite chirality
+    M ← [[ M , col ] ; [ row , +1 ]]                    # read-only inheritance: the upper-left block is unchanged
+Output: M (N×N)
 ```
+
+### 2.4 The Control Quantity Λ and the System Size N
+
+**Dissipation coefficient Λ.** Let the microscopic intrinsic relaxation time be `τ₀` and the macroscopic characteristic time be `T`; define the dimensionless dissipation coefficient
+
+$$
+\Lambda \equiv \frac{\tau_0}{T} \propto \frac{1}{Re}
+$$
+
+`Λ` is an **exogenous** (externally imposed) macroscopic dissipation authority: `Λ` large → local relaxation extremely fast → a topological difference is smoothed away as soon as it is generated → laminar; `Λ` small → insufficient smoothing → fluctuations are activated over a large area → structural phase (turbulence). Thus `Λ` plays the role of `1/Re` in classical theory and is the **control quantity of the transition**.
+
+**Pruning gain Γ.** This benchmark adopts the **exogenous mode**:
+
+$$
+\Gamma = \Lambda
+$$
+
+(The model has another "adaptive mode" `Γ = Λ·λ(n)`, in which `λ(n)` is constructed from the spectral radius of the already realized subgraph; that mode rescales the effective gain globally and introduces temporal non-stationarity, and is not used in this benchmark.)
+
+**System size N.** `N` is the total number of discrete states, i.e. the order of the relation matrix. Increasing `N` is equivalent to increasing the "fluid volume"/raising the discrete resolution. **The finite-size effect** is the central theme of this report: all macroscopic quantities drift with N, and the `N` dependence must be studied explicitly.
+
+### 2.5 Structural Correspondence with the Classical N–S Equations (Continuum Limit)
+
+Let `τ → 0, ℓ → 0`, map `M_ij` to a multi-point correlation function `M(x, y, t)` on a continuous manifold, and define the macroscopic density and velocity fields from the first-order moments of the matrix:
+
+$$
+\rho(\mathbf{x},t) = \int M\,d\mathbf{y}, \qquad \rho\,\mathbf{u}(\mathbf{x},t) = \int \frac{\mathbf{x}-\mathbf{y}}{\tau} M\,d\mathbf{y}
+$$
+
+In the limit `Λ → ∞` with microscopic fluctuations tending to zero, the transition probability degenerates to Dirac δ evolution, the algebraic free evolution is written as a continuous master equation, and a Chapman–Enskog expansion is performed (expansion small parameter `ε = ℓ/L`, the algebraic version of the Knudsen number):
+
+1. The first moment → the continuity equation `∂_t ρ + ∇·(ρ u) = 0`;
+2. The second moment + momentum conservation of the collision operator → the convective term; the second-order correction `M^{(1)}` gives the viscous stress tensor under symmetry breaking.
+
+This yields the standard N–S equations
+
+$$
+\rho\left(\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u}\right) = -\nabla p + \rho\,\zeta\ell^2\Lambda\,\nabla^2\mathbf{u}
+$$
+
+in which the kinematic viscosity is formally written `ν = ζ ℓ² Λ`, and `ζ` is a network geometric constant to be calibrated.
+
+> **Qualification**: This section establishes a **structural compatibility** (the discrete algebraic master equation **possesses** the moment structure of N–S in the continuum limit), and **is not** a proof of quantitative equivalence. `ν = ζ ℓ² Λ` is currently a formal correspondence under dimensional analysis, and its coefficient `ζ` must be determined by subsequent calibration. All quantitative results reported in this paper come from **direct numerical measurement of the discrete network** and do not depend on this continuum-limit statement.
+
+---
+
+## 3. Calibration and Measurement Protocol
+
+### 3.1 Reynolds-Number Calibration: `Re ≈ α/Λ`
+
+To relate the SRE `Λ` to the classical Reynolds number, an anchor is needed. Take the **transition center**: SRE undergoes the macroscopic laminar↔turbulent transition at `Λ_c ≈ 0.34`, and align it with the critical Reynolds number of classical pipe flow, `Re_crit ≈ 2300`. This defines the calibration constant `α`:
+
+$$
+\mathrm{Re} \approx \frac{\alpha}{\Lambda}, \qquad \alpha \approx 783
+$$
+
+That is, substituting `Λ_c = 0.34` gives `Re = 783/0.34 ≈ 2300`, consistent with the pipe critical value. The corresponding macroscopic regimes are:
+
+| Λ range | Re range | State |
+| :--- | :--- | :--- |
+| `Λ > 1.57` | `Re < 500` | laminar |
+| `0.196 < Λ < 1.57` | `500 < Re < 4000` | transitional |
+| `Λ < 0.196` | `Re > 4000` | turbulent |
+
+> **Note**: `α ≈ 783` is calibrated with the **pipe-flow** critical Reynolds number, so it implicitly assumes pipe geometry. Different geometries (channel, Couette, etc.) have different critical Re, and `α` may change accordingly. This point is recorded as a limitation in §5.3.
+
+### 3.2 Definitions of the Observables
+
+From the relation matrix M, the following dimensionless observables are derived through the strict bisection of §2.2:
+
+| Symbol | Name | Definition | Classical counterpart |
+| :--- | :--- | :--- | :--- |
+| `Φ` | **structural density** | fraction of negative elements in M, `frac_neg = mean(M < 0)` | turbulence activity |
+| `C` | **coherence fraction** | fraction of `D = 0` in the frontier relations (bidirectional coherence) | the complementary quantity to ℓ_int/η |
+| `skew` | **frontier skewness** | normalized third moment of the frontier-relation distribution | velocity-increment skewness S₃ |
+| `σ_d` | **frontier heterogeneity** | standard deviation of the frontier-relation distribution | width of critical fluctuations |
+| `γ` | **spectral slope** | log–log slope of the one-dimensional power spectrum of the chiral field A along the causal order | slope of the energy spectrum E(k) (surrogate) |
+| `β` | **scale-separation exponent** | `−d ln(1/C)/d ln(Re)` | the Re exponent of ℓ_int/η (SRE version) |
+
+Relation of β to the classical 3/4 law: K41 predicts `ℓ_int/η ∼ Re^{3/4}` (i.e. `β = 0.75`), see §1.1.
+
+**Important qualification on the spectral slope γ**: it is obtained by taking the one-dimensional power spectrum of the chiral field A along the **causal order** (the order in which states are added); it is a **one-dimensional surrogate spectrum** and is **not equal** to the three-dimensional spatial energy spectrum `E(k)`. Its definition is isomorphic to the classical energy spectrum, but the spatial dimensionality and the meaning of the coordinates are both different. Therefore γ can only serve as a **qualitative indicator** of "whether a stable power-law cascade region exists", and its numerical value cannot be compared digit-by-digit with −5/3.
+
+### 3.3 The Causal Frontier Profile and the Fixed Window
+
+The **causal frontier** is the distinctive structure of the model. Because of the read-only inheritance of Operator 1, the historical sub-block `M[:n,:n]` never changes, so the **only new information** at each step is concentrated in the newly injected frontier row `M[n, :n]` (and its reverse column). Analyzing the frontier row directly bypasses all the difficulty of "recovering geometric coordinates from the distance matrix".
+
+The **frontier profile** is formed from the statistics of the frontier row's relation distribution `{D(v_f, v_m)}_{m<n}`: skewness, heterogeneity, and the coherence fraction C. All frontier-profile measurements **invariably adopt a fixed window**—the **last 60 steps** before the evolution terminates—to avoid the systematic bias introduced by a window that varies with N. The laminar→turbulent scan uses `66` `Λ` points × `7` random seeds × `N = 200`.
+
+### 3.4 The Two Ways of Estimating the Scale-Separation Exponent
+
+`β` is defined as a **derivative**:
+
+$$
+\beta \equiv \frac{d\ln(1/C)}{d\ln \mathrm{Re}} = -\frac{d\ln C}{d\ln \mathrm{Re}}
+$$
+
+Measurements show that `C(Re)` is a **strongly concave** curve on the log–log plot: the derivative is large at low Re and small at high Re. For a concave curve, an **overall linear fit** over a few Re points gives only the **average slope** over that interval, and it depends strongly on "which points are sampled and where they fall"—this is not a theoretical issue but a matter of sensitivity in the estimation method.
+
+Therefore this report distinguishes two estimates, and **adopts only the second as the scale-separation exponent of the main text**:
+
+- **Global fitted exponent `β_glob`**: fits all Λ points within some Re window by a log C–log Re linear fit and takes the slope. Contaminated by the concave curvature, **it serves only as an appendix cross-check**.
+- **High-Re-end local exponent `β_loc`**: takes the **highest pair of Re** in the entire `Λ` scan and computes a two-point local slope
+
+$$
+\beta_{\text{loc}} = -\frac{\ln\big(C(\Lambda_1)/C(\Lambda_2)\big)}{\ln\big(\mathrm{Re}_1/\mathrm{Re}_2\big)}, \qquad \Lambda_1 = 0.005,\ \Lambda_2 = 0.008
+$$
+
+The local exponent **does not depend on the sampling position**, the curvature contamination is removed, and it is the β estimate adopted in this paper.
+
+```mermaid
+flowchart TB
+    A["SRE relation-matrix evolution<br/>N = 100 … 25600"] --> B["causal frontier profile<br/>fixed window = last 60 steps"]
+    B --> C1["global fitted exponent β_glob<br/>multi-Re log-log fit"]
+    B --> C2["high-Re-end local exponent β_loc<br/>two-point slope at the highest Re pair"]
+    C1 --> D1["contaminated by the concave curvature of C(Re)<br/>same points, different sampling can differ by 0.21<br/>appendix cross-check only"]
+    C2 --> D2["clean local derivative<br/>independent of sampling position<br/>adopted in the main text"]
+
+    classDef good fill:#d4edda,stroke:#28a745,color:#155724
+    classDef warn fill:#fff3cd,stroke:#ffc107,color:#856404
+    class C2,D2 good
+    class C1,D1 warn
+```
+
+---
+
+## 4. Results
+
+### 4.1 Macroscopic Calibration: the Chiral-Field Spectral Slope
+
+On the strong-turbulence side (`Re > 2×10⁴`), the one-dimensional surrogate spectrum of the chiral field exhibits a stable power-law region in its mid-section:
+
+$$
+\gamma = -1.81 \pm 0.04
+$$
+
+This value differs from the K41 value `−1.667` by about **9%**. During the laminar-to-turbulent transition, the spectral slope decreases smoothly from positive values to this plateau; on the strongly dissipative side close to laminar flow, the cascade disappears (the slope turns positive).
+
+The behavior with increasing N (key):
+
+| N | γ at `Λ = 10⁻³` | γ at `Λ = 10⁻²` |
+| :--- | :--- | :--- |
+| 800 | −1.79 | −1.63 |
+| 1600 | −1.80 | −1.67 |
+| 3200 | −1.78 | −1.55 |
+| 6400 | — | **−1.38** |
+
+On the `Λ = 10⁻³` side, the slope **saturates** at ≈−1.79 for `N ≥ 800` (it no longer steepens with N); on the `Λ = 10⁻²` side it instead **flattens** (−1.63 → −1.38). In other words, the slope of the framework's spontaneous power-law region **tends to a plateau at large N rather than diverging persistently**. This is quantitatively consistent with the "extremely slow finite-size correction" mechanism of §4.4.
+
+> **Terminal conclusion**: SRE does spontaneously produce a stable power-law scaling region, which is currently the most robust empirical signal; but it is **not** Kolmogorov's `k^{−5/3}`—the measured value is about −1.8 and saturates to a plateau at large N. Moreover, because this spectrum is a one-dimensional causal-order surrogate spectrum and is sensitive to the implementation details of the chiral field (see §5.3), this paper asserts only the **qualitative** fact that "a stable power-law region exists and its slope saturates at about −1.8 at large N", and **does not assert** that its numerical value can be compared digit-by-digit with K41.
+
+### 4.2 The Causal Frontier Invariants
+
+For the frontier-profile scan at `N = 200`, `66 Λ × 7 seeds`, five representative Λ points are obtained (`C` is the coherence fraction, `σ_d` the heterogeneity, `skew` the skewness, `Φ` the structural density):
+
+| Λ | Re | C | σ_d | skew | Φ (frac_neg) |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 4.82 | 162 | 0.974 | 0.156 | **+6.41** | 0.020 |
+| 0.33 | 2383 | 0.761 | 0.425 | **+1.24** | 0.150 |
+| **0.108** | **7257** | — | **0.50 (peak)** | **0** | — |
+| 0.029 | 26743 | 0.213 | 0.407 | **−1.43** | 0.410 |
+| 0.010 | 78320 | 0.085 | 0.275 | **−3.11** | 0.462 |
+
+Three core findings:
+
+1. **Skewness strictly crosses zero**: `skew` undergoes `+ → 0 → −` as Re increases, and the zero-crossing is consistent with the qualitative behavior of "the velocity-increment skewness turns from positive to negative" in the classical 3/4 law (all t-tests at the zero-crossing are significant, t = 18–69).
+2. **The coherence fraction decreases monotonically**: `C` drops from 0.97 to 0.09, complementary to the rise of the classical `ℓ_int/η`.
+3. **The heterogeneity peak coincides with the skewness zero-crossing** (`σ_d` peaks at 0.50 at `Λ ≈ 0.108`), corresponding to the classical picture's feature that "fluctuations are strongest in the transitional region".
+
+**The discreteness of the relation distance**: `M_kn ∈ {−1,+1} ⟹ S ∈ {−1,0,+1} ⟹ D ∈ {0,1,2}`. In the measurements, `D = 2` (bidirectional anti-coherence) **never occurs**, therefore
+
+$$
+C = \mathrm{frac}(D = 0) = \mathrm{frac}(M_{kn} = +1 \ \text{and}\ M_{nk} = +1) \approx \mathrm{frac}(M_{kn} = +1) - \mathrm{frac}(\text{mixed})
+$$
+
+The `D = 0` fraction evolves with Λ as: `Λ = 2.0 → 97.5%`, `Λ = 0.1 → 43%`, `Λ = 0.01 → 15%` (consistent with C).
+
+### 4.3 Finite-Size Scaling: the β(N) Six-Point Chain
+
+Using the high-Re-end local exponent `β_loc` of §3.4, under a fixed protocol (the same pair `Λ = 0.005/0.008`, fixed window), six N points are measured:
+
+| N | β_loc | seed-σ | Note |
+| :--- | :--- | :--- | :--- |
+| 800 | 0.7456 | 0.0079 | 2 seeds |
+| 1600 | 0.6641 | <0.001 | 2 seeds |
+| 3200 | 0.5856 | 0.0009 | 2 seeds |
+| 6400 | 0.5187 | 0.0031 | 2 seeds |
+| 12800 | 0.4779 | 0.0021 | 2 seeds |
+| **25600** | **0.4360** | — | single seed |
+
+`β(N)` decreases **monotonically and cleanly**, from 0.7456 (N=800) to 0.4360 (N=25600). Adjacent differences:
+
+| Interval | Δβ | ratio = Δβᵢ / Δβᵢ₊₁ |
+| :--- | :--- | :--- |
+| 800 → 1600 | 0.0815 | 1.039 |
+| 1600 → 3200 | 0.0784 | 1.172 |
+| 3200 → 6400 | 0.0670 | 1.641 |
+| 6400 → 12800 | 0.0408 | 0.974 |
+| 12800 → 25600 | 0.0419 | — |
+
+The ratio sequence is **non-monotonic** (1.039, 1.172, 1.641, 0.974): a genuine convergence law should make the ratio tend smoothly to a constant (1/N type → 2.0; 1/N² type → 4.0; logarithmic type → ≈1.2). **The non-monotonicity itself shows that the six points have not yet entered any single asymptotic mechanism.** The last two Δβ values have become nearly equal (0.0408 and 0.0419), clearly excluding the 1/N type.
+
+### 4.4 The Degeneracy Verdict on the Convergence Law
+
+Four classes of convergence models are fitted to the six-point chain:
+
+| Convergence model | β∞ | R² | Prediction at N=25600 | Measured |
+| :--- | :--- | :--- | :--- | :--- |
+| Logarithmic `β = β∞ + a/ln N` | **−0.174 ± 0.016** | **0.9982** | 0.4317 | 0.4360 |
+| Free power law `β = β∞ + a·N^{−p}` | **+0.249 ± 0.046** (p = 0.285 ± 0.041) | **0.9988** | 0.4351 | 0.4360 |
+| Power law fixed p = 0.25 | +0.206 ± 0.007 | 0.9985 | 0.4326 | 0.4360 |
+| Inverse power `1/N` | +0.472 ± 0.023 | 0.9092 | 0.4816 | 0.4360 |
+
+**Verdict**: the logarithmic model (β∞ negative) and the free power law (β∞ positive, p ≈ 0.28) differ by only 0.003 in their prediction at N=25600, and the measurement cannot distinguish the two; the `1/N` model is clearly excluded (its prediction at N=25600 is 0.4816, exceeding the measurement by 0.046, with R² only 0.91).
+
+> **Conclusion**: the convergence of `β(N)` is **extremely slow**, falling in the **degenerate region** between "the logarithmic form (β∞ ≲ 0)" and "the weak power law p ≈ 0.28 (β∞ ≳ 0)". All the data can give is an interval constraint
+
+$$
+\boxed{\ \beta_\infty \in [-0.2,\ +0.2]\ }
+$$
+
+**No specific value is claimed.**
+
+**Why so slow?** There are two measurable sources:
+
+1. **At fixed Re, C still grows with N.** At fixed `Λ = 0.01` (Re = 78320), measuring `1−C ~ N^{−q}`:
+
+| N | 100 | 200 | 400 | 800 | 1600 | 3200 | 6400 | 12800 | 25600 |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1−C | 0.9506 | 0.9151 | 0.8609 | 0.7849 | 0.6988 | 0.6047 | 0.5060 | 0.4032 | 0.3030 |
+
+The local slope `d ln(1−C)/d ln N` steepens **monotonically all the way** from −0.055 to −0.412, showing that `1−C` **has not yet entered the power-law asymptotic region**. A zero-intercept power-law fit over `N ≥ 800` (including 25600) gives `q ≈ 0.249`, corresponding to a correlation-length scaling `ξ ~ N^{s}` with `s = 2q ≈ 0.50`; if only `N ≥ 3200` is used, `q` rises to 0.318. **Since the slope is still growing, the true asymptotic q can only be larger**, and `s ≈ 0.50` is only the current effective value, not the converged value.
+
+2. **The curvature of `C(Re)` evolves with N**, and the far-end derivative is continuously pressed down. The superposition of the two makes the decay of β slower than the logarithmic type, so it lingers in the degenerate region for a long time.
+
+**A note on a particular rational number**: the measured `β(25600) = 0.4360` differs from `0.375` (= (3/4)×(1/2)) by 0.061, more than 8 times the seed uncertainty (conservatively taking the 2-seed σ ≈ 0.0074 gives ≈ 8.2σ); and at the measured decay rate `Δβ ≈ 0.050/doubling` (N ≥ 3200), about 1.22 more doublings (N ≈ 6×10⁴) would be needed to reach 0.375, whereas the closed N ladder stops at 25600. **Within the data-accessible range, no stationary trend pointing to that value or any other simple rational number is visible.** Therefore this report does not take any simple rational number as the asymptotic exponent of SRE.
+
+### 4.5 The Upper Limit of the N Ladder
+
+Increasing N requires storing an N×N matrix, and memory grows as N²:
+
+| N | Single-task matrix memory | Peak memory | Single-task runtime | Feasibility |
+| :--- | :--- | :--- | :--- | :--- |
+| 12800 | ≈1.3 GB | ≈1.3 GB | ≈26 min | feasible |
+| 25600 | ≈5.2 GB | ≈7.5 GB | ≈3.5 h | feasible (upper limit of this report) |
+| 51200 | ≈21 GB | ≈31 GB | ≈14 h | **infeasible** (local memory insufficient) |
+
+**Conclusion**: the N ladder stops at 25600. Pushing the system size further would require a blocked/out-of-core kernel or a machine with stronger compute.
+
+---
+
+## 5. Discussion: Benchmarking Against K41
+
+### 5.1 Summary Benchmark Table
+
+| Benchmark quantity | Classical K41 prediction | SRE measured | Gap | Assessment |
+| :--- | :--- | :--- | :--- | :--- |
+| cascade spectral slope γ | −1.667 (−5/3) | ≈ −1.81 ± 0.04 | about 9% | qualitatively reproduced, quantitatively deviated |
+| scale-separation exponent β | 0.75 (3/4 law) | β(25600)=0.4360, still decreasing, β∞∈[−0.2,0.2] | far from converged | not directly comparable |
+| skewness zero-crossing | velocity-increment S₃ turns from + to − | frontier skew strictly `+→0→−` | qualitatively consistent | magnitude differs by about 10× (\|skew\|≈3–6 versus \|S₃\|≈0.1–0.7) |
+| coherence-length scaling | ℓ_int/η ↑ with Re | coherence fraction C ↓, 1−C ~ N^{−0.249} | complementary trends consistent | exponent not converged |
+| transition location | Re_crit ≈ 2300 (pipe) | Λ_c ≈ 0.34 ↔ Re ≈ 2300 (by calibration) | anchored by calibration | geometry-dependent |
+
+### 5.2 What Is Qualitatively Reproduced, and What Quantitatively Deviates
+
+**Qualitative reproduction**: energy/coherence cascades monotonically as the Reynolds number rises, and coherent structures break up on the strong-turbulence side; the frontier skewness strictly crosses zero; the heterogeneity peak coincides with the transitional region. These are the **qualitative main narrative shared** by SRE and classical turbulence phenomenology.
+
+**Quantitative deviation**: the spectral slope is too steep (≈−9%) rather than exactly −5/3; the scale-separation exponent is far from converged and, within the accessible compute, shows no simple rational number; the magnitude carried by the skewness differs from the classical structure function by about one order. These are not noise but a **systematic finite-size effect of the discrete causal structure itself**.
+
+### 5.3 Why It Is Not 3/4: The Fundamental Difference Between Discrete and Continuous
+
+The 3/4 law of K41 implicitly assumes three premises: **a continuous medium** (fluid particles are infinitely divisible), **infinite space** (no boundary restricts the energy cascade), and **scale invariance** (large eddies → small eddies are self-similar at all scales). The essential differences of SRE offset these one by one:
+
+1. **Discrete causal nodes**: the smallest unit is an SRE state, so a smallest scale exists;
+2. **Read-only inheritance**: historical distances are frozen, the cascade can occur only at the causal frontier, and it cannot unfold self-similarly at all scales;
+3. **Extremely strong finite-size effect**: `ξ ~ N^{0.50}` (effective value), the curvature of `C(Re)` evolves with N, and the convergence is slower than the logarithmic type.
+
+These three points make it impossible for the SRE β to approach 0.75, or any clean fraction, within the accessible N.
+
+### 5.4 Limitations
+
+| Limitation | Status | Impact |
+| :--- | :--- | :--- |
+| β∞ cannot be determined | unresolved | only the interval `[−0.2, +0.2]` can be given |
+| the q of `1−C` has not converged | unresolved | `s ≈ 0.50` is an effective value, not an asymptotic value |
+| N=25600 still a single seed | partially mitigated | the gap still exceeds 8σ, so the qualitative part is unaffected |
+| N ≤ 6400 has only 2 seeds | below the ≥5 seeds rule | the chain's own seed-σ is small (≤0.008) |
+| the chiral-field spectrum is sensitive to chiral implementation details | unresolved | at the same Λ different random implementations can differ by up to 0.5 (high-Λ side), so γ serves only as a qualitative indicator |
+| `α ≈ 783` calibrated with the pipe critical Re | unresolved | different geometries may have different α, so the calibration is geometry-dependent |
+| the algebraic reason why `D = 2` never occurs | unresolved | the reconstruction formula for `C` is approximate |
+| the spectral slope is a 1D causal-order surrogate spectrum | inherent | it cannot be compared digit-by-digit with the 3D energy spectrum E(k) |
+
+---
+
+## 6. Conclusion
+
+1. **The macroscopic calibration holds**: the answer to whether the SRE dissipation coefficient Λ can establish a monotonic mapping with the Reynolds number is yes—taking the pipe-flow transition center as an anchor gives `Re ≈ 783/Λ`, and the macroscopic observables evolve monotonically as Re increases.
+
+2. **The qualitative main narrative of classical turbulence is reproduced**: the energy cascade strengthens, the coherence fraction decreases monotonically, the frontier skewness strictly crosses zero, and the heterogeneity peak coincides with the transitional region. SRE does not "start from scratch"; its phenomenology is isomorphic to the classical picture.
+
+3. **A stable quantitative deviation from K41**: the chiral-field spectral slope is ≈ −1.81 (too steep by 9%), and the scale-separation exponent is far from converged. This is neither "strict agreement" nor "disproof", but a **discrete surrogate model that has not yet converged**.
+
+4. **Extremely slow finite-size convergence is a fundamental feature of this model**: the `β(N)` six-point chain decreases monotonically but falls in the degenerate region between "the logarithmic form" and "the weak power law p ≈ 0.28", and `β∞` can only be constrained to `[−0.2, +0.2]`; the correlation-length scaling of `1−C`, `s ≈ 0.50`, is an effective value and the slope is still steepening. Simple inverse-power extrapolations are excluded by the data, and **no simple rational number can serve as the asymptotic exponent of SRE**.
+
+5. **Honest labeling of the boundaries**: the spectral slope is a one-dimensional causal-order surrogate spectrum rather than a three-dimensional energy spectrum; the calibration of α depends on pipe geometry; the N ladder stops at 25600 (limited by memory). These qualifications delimit the applicable scope of this report's conclusions.
+
+---
+
+## Appendix A: Standardized Terminology Table
+
+| Standard term (this paper) | Chinese | Meaning | Common non-standard usage |
+| :--- | :--- | :--- | :--- |
+| State-Relation Entropy (SRE) | 状态-关系熵 | evolution framework of a discrete causal correlation network | — |
+| relation matrix M | 关系矩阵 | causal correlation matrix among microscopic states | state matrix |
+| topological metric S | 拓扑度规 | `(M+Mᵀ)/2`, the carrier of geometric reconstruction | symmetric part |
+| local spin operator A | 局域自旋 | `(M−Mᵀ)/2`, chirality/vortex action | antisymmetric part |
+| relation distance D | 关系距离 | `D = 1 − S ∈ {0,1,2}` | — |
+| inheritance operator | 继承算子 | Operator 1: boundary expansion + read-only inheritance | Operator 1 / boundary operator |
+| maximum-entropy pruning | 最大熵剪枝 | Operator 2: channel pruning criterion | Operator 2 / pruning operator |
+| parity-breaking operator | 宇称破缺算子 | Operator 3: five-node NAND gate | Operator 3 |
+| causal frontier | 因果前沿 | the row added each step, `M[n,:n]` | frontier row |
+| frozen historical submatrix | 冻结历史子矩阵 | the read-only inherited historical block | frozen bulk |
+| coherence fraction C | 相干分数 | fraction of `D = 0` in the frontier | — |
+| scale-separation exponent β | 尺度分离指数 | `−d ln(1/C)/d ln Re` | power-law exponent β |
+| spectral slope γ | 谱斜率 | 1D surrogate spectral slope of the chiral field | — |
+| high-Re-end local exponent | 高雷诺数端局部指数 | two-point slope at the highest Re pair | far-end local-β |
+| global fitted exponent | 全局拟合指数 | slope of an overall log-log fit over multiple Re points | global β |
+
+## Appendix B: Data and Reproduction Sources
+
+Every numerical value in the main text can be traced to the following saved artifacts:
+
+| Value | Source file |
+| :--- | :--- |
+| six-point β chain, Δβ, four fits, seed-σ, 8.2σ/22σ, model-free extrapolation | `beta38_v13_final_output.txt` |
+| C and β for N ≤ 6400 (2 seeds, high-Re-end local + global) | `beta38_final_local.pkl` |
+| raw C values for N = 12800, single seed and seed2 | `beta38_N12800.pkl`, `beta38_N12800_seed2.pkl` |
+| four C values for N = 25600, β_loc=0.4360, β_glob=0.3933 | `beta38_N25600.pkl` |
+| C value for the highest Re pair at N = 25600 (cross-check) | `beta38_N25600_partial_C.json` |
+| global β cross-check chain (appendix cross-validation) | the appendix section of `beta38_v13_final_output.txt` |
+| `1−C` sequence and q/s at fixed Re=78320 | `beta38_final_local.pkl`, `beta38_N12800.pkl`, `beta38_N25600.pkl` |
+| frontier-profile invariants, D=0 fractions | scan output of `frontier_profile.py` (`phase_data_v2.json`) |
+| spectral slope γ at each N | sweep output of `spectral_slope` in `sre_core.py` |
+| main visualization figure | `sre_ns_benchmark.png` |
+
+## Appendix C: Reproduction Commands
+
+```bash
+python sre_core.py                 # canonical reference implementation (with all function definitions)
+python frontier_profile.py         # causal-frontier 66Λ × 7seeds scan
+python beta38_v13_final.py         # six-point chain fit + degeneracy verdict + source verification
+```
+
+> **Note on computational cost**: the relation matrix grows as `O(N²)` with N, and together with the per-step channel decision, the total cost grows very quickly with N. A single task at N=25600 takes about 3.5 hours and about 7.5 GB of peak memory; N=51200 is expected to require about 31 GB of memory, exceeding the locally available limit, so the N ladder stops at 25600.
+
 
 <div style="page-break-after: always;"></div>
 
@@ -11866,53 +12049,53 @@ And it shares the same graph ($A_s$) with the upstream electronic operator, outp
 
 <div style="page-break-after: always;"></div>
 
-# Part IV: Applications and Scientific Hypotheses
-
-This part collects engineering implementations, experimental protocols, application‑oriented algorithms, and falsifiable scientific hypotheses derived from the Status‑Relational‑Entropy (SRE) Dynamics framework. Based on the operator‑axiom system and topological‑algebra foundations established in Part II and Part III, the complete Op1‑Op19 topological‑operator suite is extended to multiple research fields: underwater‑acoustic communication, optical physics, astrophysics, geophysical‑climate forecasting, atomic‑chemistry simulation, high‑performance graph computing, graph neural networks, and cognitive neuroscience.
-
-The content falls into two major categories: reproducible technical materials including signal‑processing pipelines, benchmark evaluations, and experimental‑calibration protocols; and physical‑ and neuroscience‑related conjectures which remain to be validated by experiments and astronomical observations.
-
-> Important Note: Engineering algorithms, benchmark tests and experimental protocols within this part constitute reproducible technical content. Physical, astrophysical and neuroscientific hypotheses are candidate interpretations deduced under the SRE framework and do not represent confirmed objective reality. Falsification criteria are provided for each hypothesis, and further validation by measured and observational datasets is required.
-
-## Brief Description of Each Manuscript in This Document Set
-
-1. **Academic Hypothesis: The Sovereign‑Universe Tree‑of‑Life Protocol and Topological‑Residue Inheritance under Status‑Relational‑Entropy (SRE) Dynamics**
-> Abstract: Within the SRE‑Dynamics framework, spacetime, mass, and Newton’s gravitational constant are interpreted as macroscopically emergent statistical metrics arising from the expansion of dimensionless binary matrices. Conventional time flow possesses no fundamental primitive status; it is essentially the discrete‑step count and metabolic overhead required to maintain global causal consistency. Addressing algebraic bottlenecks such as metric divergence, spatial dissolution, and gravitational attenuation that emerge during ultra‑large‑scale cosmic evolution, this paper puts forward the Sovereign‑Universe Tree‑of‑Life Protocol hypothesis. It describes the mechanism whereby local highly‑coherent sub‑spaces undergo non‑linear cascading rupture, decouple, and generate independent sovereign matrix root seeds. It derives the underlying discrete‑evolution step‑count corresponding to the 13.8‑billion‑year macroscopic cosmic age, and explains how high‑order topological features are inherited in the form of algebraic residuals. Cosmic rebirth is reinterpreted as a self‑optimising helical‑iterative process at the topological level. Placed as the opening manuscript because the author holds the view that the universe has undergone multiple generative iterations, and that the next cosmic reproduction represents humanity’s ultimate mission.
-
-2. **Inspired‑Multipath‑Topological‑Flow‑Purification Architecture and Local‑Operator Implementation**
-> Abstract: This paper presents a locally‑confined, low‑computational‑cost general‑purpose mathematical toolkit for multipath topological‑flow purification, avoiding high complexity and boundary‑truncation errors introduced by global‑matrix reconstruction. Local multi‑channel tracking nodes are abstracted as discrete cross‑spectral operators. Rank‑variation of 2 × 2 complex‑Hermitian matrices is used to distinguish direct causal flows from chaotic multipath superposition. Combined with first‑order closed‑form analytical solutions and RMT‑inspired sieves for the Gaussian‑Unitary‑Ensemble and Poisson distributions, streaming masks are constructed to suppress noise and multipath interference. Standardised streaming‑operator execution protocols are provided for application‑scenarios including next‑generation‑communication base‑bands and coherent‑radar jamming suppression. The author has deployed this toolkit in real‑world operational tasks and achieved favourable practical outcomes.
-
-3. **Research on Multipath‑Interference Pre‑Processing Algorithm for Fjord Underwater‑Acoustic Communication Based on SRE Topological Operators**
-> Abstract: Targeting severe multipath reflection and strong time‑variant fading in shallow‑sea fjord acoustic channels, an SRE‑topology‑pipeline underwater‑acoustic time‑frequency pre‑processing algorithm is designed using real‑world Nordic‑fjord measured datasets. An energy‑complex‑valued dual‑path architecture is proposed, which preserves full phase information required for OFDM demodulation while suppressing multipath clutter. A complete post‑processing chain is integrated: CFAR peak‑detection, ZF zero‑forcing equalisation, symbol‑level MRC diversity combining, and false‑alarm filtering. Full‑pipeline validation is performed on measured dual‑hydrophone waveforms across LF / MF / HF three frequency bands. Quantitative metrics including multipath‑suppression ratio, BER, and diversity gain are reported. Applicable conditions and performance limits under high‑noise high‑frequency conditions are clarified. This algorithm can be deployed for front‑end processing in underwater embedded receivers.
-
-4. **Conjecture on Single‑Photon Bidirectional Instantaneous Communication via Möbius‑Topological‑Flows under SRE Dynamics**
-> Abstract: Addressing inherent limitations of existing quantum‑QKD communication imposed by the no‑communication theorem and intrinsic randomness of wave‑function collapse, this paper proposes a single‑channel deterministic full‑duplex‑communication conjecture built upon open Möbius relational‑state structures. A high‑coherence laser serves as the underlying causal‑resonance master source. Macroscopic physical frequency is re‑defined as the bidirectional joint information‑coupling density. Combined with first‑order closed‑form eigenspace solutions and RMT‑heuristic sieves, a bidirectional topological‑flow‑density subtractor is constructed. Theoretical derivations show that joint modulation of the topological configuration of electromagnetic crystals at both boundaries enables instantaneous deterministic signal transmission and reception within a single causal‑chain channel, offering new topological‑level ideas for next‑generation deterministic‑communication technologies. The author considers this technology a corner‑stone enabling inclusive‑health‑care and multiple super‑technologies; should this theoretical framework be experimentally validated, full‑scale development ought to be prioritised.
-
-5. **Technical Report: Intrinsic Algebraic Topology of Light and the SRE Axion Matrix**
-> Abstract: This report establishes the theoretical foundations for full‑duplex instantaneous‑communication without assuming classical spacetime media. Abandoning the conventional paradigm treating light as material wave‑packets, light under the SRE‑0‑state formalism is defined as a residual topological‑manifold spontaneously woven by step‑cost differentials between two asynchronously‑evolving boundary nodes. Using first‑order closed‑form solutions together with RMT‑heuristic sieves, it is algebraically demonstrated that underlying causal‑links can be unfolded into a non‑orientable single‑boundary Möbius ribbon with a topological‑validation confidence of 99.2094 %. Spectral‑duality relations are derived, mapping frequency, wavelength, and wave‑particle duality onto intrinsic‑eigen‑invariants. Dynamic spectral‑transition systems of equations and four‑state eigen‑shift matrices are given. Manifold‑decoupling empirical analysis is performed, together with core‑Python‑code snippets for simulation.
-
-6. **Stellar Spin and Galactic Rotation within the SRE Framework: Operator Suite combined with the SRE‑v6.0 Dissipation‑Compensation Duality Model**
-> Abstract: Drawing upon the SRE‑operator suite, the v6.0 dissipation‑compensation duality and BBP spectral‑rank phase‑transition theory, candidate topological physical interpretations are provided for stellar spin, pulsar braking‑mechanisms, and the flat‑galaxy‑rotation‑curve problem. Stellar spin is interpreted as topologically‑charged collective emergence of Möbius‑loops inside sub‑manifolds, rather than rigid‑body mechanical rotation. Flat galactic rotation curves arise from collective dissipation‑compensation effects of large‑scale nested sub‑manifolds, without invoking dark‑matter‑particle hypotheses. Differences between high‑redshift and low‑redshift cosmic regimes are distinguished. Falsifiable astronomical predictions for stellar spin, galactic rotation, gravitational lensing, and baryonic‑cooling are listed item‑by‑item. Ontological boundaries, remaining theoretical gaps and the complete logical‑derivation chain are stated. The author has other geophysical‑related developments; stellar‑spin is used as a substitute here considering potential societal impacts.
-
-7. **Causal‑Compliance Audit Report on Global Sea‑Surface‑Temperature‑Anomaly (ENSO‑SSTA) Spatiotemporal‑Forecasting: The 2‑D Convolutional Dissipative‑Network Paradigm (Astro‑Cow‑Net)**
-> Abstract: Addressing widespread risks of data‑leakage and artefactual‑statistical‑patterns in long‑lead geophysical‑AI forecasting, a full causal‑compliance audit is performed for the Astro‑Cow‑Net long‑lead ENSO‑prediction model. Strict zero‑leakage constraints are enforced across four core dimensions: temporal‑causal‑gap protocol, historical‑scaler statistical‑isolation, four‑dimensional grid‑wise objective‑function scaling, and physical‑extrapolation convergence. Relying purely on local 2‑D convolutions and physical‑dissipation constraints, the model solves ocean‑atmosphere anomaly‑evolution equations. Deterministic 24‑month long‑lead forecast outputs for the Niño 3.4 region are presented, alongside links to reproducible source‑code. This model serves only to demonstrate novel‑thinking for Earth‑atmosphere‑physics; the model itself remains relatively simplistic.
-
-8. **Periodic‑Table‑Data‑Experiment: SRE‑v3.0 Atomic‑Topological‑Weight‑Inverse‑Deduction Experimental Protocol**
-> Abstract: Complete quantitative‑prediction experimental protocol for SRE‑v3.0 atomic‑topology audit. Taking VASP and NIST spectroscopic datasets as input, AI‑driven training is used to invert topological‑density weights $W_e$ of internal atomic causal‑networks and establish mappings between loop‑period $N$ and quantum numbers $(n,l)$. Orbital‑layered sub‑matrices, spin‑orbit‑coupling phase‑shift derivation, and permeability‑layer‑calibration are defined. A triple‑residual composite loss‑function, adaptive regularisation, $Z_{crit}$ micro‑firewall, and dual‑Betti‑number topological‑invariant constraints are designed. Optimiser‑settings, cross‑software blind‑validation and convergence‑criteria are specified. Appendices contain closed‑form mathematical derivations, engineering‑standardisation workflows, and supplementary validation‑experiments for isotopes and actinides. The ultimate objective of this experiment is the study of electrodynamics; this work remains unfinished by the author.
-
-9. **SRE Topological Spectral Model: From Discrete Operators to a Differentiable AI Model Layer**
-> Abstract: This chapter documents the complete design reasoning, architectural implementation, and experimental validation of the SRE Topological Spectral Model, charting the path from discrete operators to a differentiable AI model layer. Beginning with the end-to-end bridging identity of the operator chain, it sets out the torch mirror implementation of operator calculus, the construction of the missing load-bearing component for differentiable hierarchical compression, and the mathematical discovery that $\tau_k$ is not preservable together with its alternative. It gives the notation convention and precise definitions of five concepts — graph Laplacian, Betti number $\beta_1$, Chebyshev functional calculus, Galerkin projection, and heat-kernel trace — and then builds the model architecture from chain-complex input, an analytic differentiable Laplacian construction, the learnable SoftAggPooler coarse-graining, the SRE Topo Encoder, level-attention spectral fusion, and a five-term loss. Experiments and causal analysis are conducted on three use cases — self-supervised edge-weight inversion (UC1), molecular property regression (UC2), and graph classification / $\beta_1$ topology identification (UC3) — together with environment setup, weight-loading inference, hyperparameter tuning, honest boundaries, and an improvement roadmap.
-
-10. **SRE Full Suite of 19 Operators: What a "Physical‑Semantic Graph Computing" Operator System Can Do — A View from the Graph500 Benchmark**
-> Abstract: Based on measured data from the Graph500 v2.1 standard benchmark (SCALE 12 / 20 / 24), this chapter systematically introduces the capability boundaries, per‑layer timing breakdown, key physical‑quantity outputs and format compliance of the full SRE 19‑operator suite (Op1‑Op19). It compares the suite with traditional graph algorithms (traversal, shortest‑path, centrality, connectivity) across capability dimensions and performance, analyses the path from graph to "physical system" modelling together with typical application scenarios and current limitations, and outlines the overall application prospects of physical‑semantic graph computing.
-
-11. **Neural‑Information‑Systems Theory: Hypothesis of First‑Order Thalamic‑Downsampling Instability and Second‑Order DMN‑Integrative Cascading‑Failure**
-> Abstract: From cybernetics and digital‑signal‑processing perspectives, this paper puts forward the two‑tier thalamus‑DMN defensive‑gating hypothesis. The thalamic reticular nucleus (TRN) acts as the first‑order hardware anti‑aliasing down‑sampling gateway, while the Default‑Mode‑Network (DMN, PCC/PCu) serves as the second‑order high‑level software compressor. It describes the temporal‑evolution mechanism for early‑to‑mid‑stage Alzheimer’s‑disease: relaxation‑leakage of TRN inhibitory‑inter‑neurons permits invasion by high‑dimensional causal‑charges, over‑loading DMN integral‑energy‑storage and eventually triggering cascading‑failure across the two‑tier defensive‑barrier. Temporal‑series analysis under 5 Hz intermittent‑photic‑stimulation and gender‑by‑age‑cohort variance‑analysis are performed using the public OpenNeuro EEG dataset. Non‑invasive intervention strategies are proposed: multimodal‑sensory entrainment, vagal‑nerve modulation, sleep‑pineal‑gland maintenance. Dataset limitations and falsifiable boundaries for this hypothesis are objectively stated.
-
-12. **Whole‑Brain Parallelism and High‑Dimensional‑Causal‑‑Chain Topological‑Spectrum Homomorphic‑Mapping Mechanism**
-> Abstract: A unified logical framework is constructed to interpret whole‑brain neural‑firing, DMN information‑gating, stress‑triggered whole‑brain‑parallel‑emergence, non‑local cognitive‑synchronisation, and cross‑culturally convergent transcendental‑state experiences documented in ancient texts. The underlying universe is a dense causal‑chain‑network; different sub‑networks sharing topological‑spectrum features may achieve homomorphic‑mapping alignment. Under homeostatic conditions the human‑brain performs low‑dimensional serial survival‑oriented computation constrained by the DMN. Under extreme stress, filter‑breakdown pushes the brain into a global hyper‑parallel topological‑receiver state, enabling cross‑scale non‑local topological‑alignment which phenomenologically corresponds to creative insight. Non‑local cognitive‑synchronisation is interpreted as convergent topological‑perturbation‑propagation among homologous causal‑clusters. Ancient myths and philosophical texts represent low‑dimensional linguistic encoding of high‑dimensional topological phenomena constrained by human serial‑language limitations.
-
-13. **Hypothesis of Gravitational Shielding Derivation (SRE)**
+# Part IV: Applications and Scientific Hypotheses
+
+This part collects engineering implementations, experimental protocols, application‑oriented algorithms, and falsifiable scientific hypotheses derived from the Status‑Relational‑Entropy (SRE) Dynamics framework. Based on the operator‑axiom system and topological‑algebra foundations established in Part II and Part III, the complete Op1‑Op19 topological‑operator suite is extended to multiple research fields: underwater‑acoustic communication, optical physics, astrophysics, geophysical‑climate forecasting, atomic‑chemistry simulation, high‑performance graph computing, graph neural networks, and cognitive neuroscience.
+
+The content falls into two major categories: reproducible technical materials including signal‑processing pipelines, benchmark evaluations, and experimental‑calibration protocols; and physical‑ and neuroscience‑related conjectures which remain to be validated by experiments and astronomical observations.
+
+> Important Note: Engineering algorithms, benchmark tests and experimental protocols within this part constitute reproducible technical content. Physical, astrophysical and neuroscientific hypotheses are candidate interpretations deduced under the SRE framework and do not represent confirmed objective reality. Falsification criteria are provided for each hypothesis, and further validation by measured and observational datasets is required.
+
+## Brief Description of Each Manuscript in This Document Set
+
+1. **Academic Hypothesis: The Sovereign‑Universe Tree‑of‑Life Protocol and Topological‑Residue Inheritance under Status‑Relational‑Entropy (SRE) Dynamics**
+> Abstract: Within the SRE‑Dynamics framework, spacetime, mass, and Newton’s gravitational constant are interpreted as macroscopically emergent statistical metrics arising from the expansion of dimensionless binary matrices. Conventional time flow possesses no fundamental primitive status; it is essentially the discrete‑step count and metabolic overhead required to maintain global causal consistency. Addressing algebraic bottlenecks such as metric divergence, spatial dissolution, and gravitational attenuation that emerge during ultra‑large‑scale cosmic evolution, this paper puts forward the Sovereign‑Universe Tree‑of‑Life Protocol hypothesis. It describes the mechanism whereby local highly‑coherent sub‑spaces undergo non‑linear cascading rupture, decouple, and generate independent sovereign matrix root seeds. It derives the underlying discrete‑evolution step‑count corresponding to the 13.8‑billion‑year macroscopic cosmic age, and explains how high‑order topological features are inherited in the form of algebraic residuals. Cosmic rebirth is reinterpreted as a self‑optimising helical‑iterative process at the topological level. Placed as the opening manuscript because the author holds the view that the universe has undergone multiple generative iterations, and that the next cosmic reproduction represents humanity’s ultimate mission.
+
+2. **Inspired‑Multipath‑Topological‑Flow‑Purification Architecture and Local‑Operator Implementation**
+> Abstract: This paper presents a locally‑confined, low‑computational‑cost general‑purpose mathematical toolkit for multipath topological‑flow purification, avoiding high complexity and boundary‑truncation errors introduced by global‑matrix reconstruction. Local multi‑channel tracking nodes are abstracted as discrete cross‑spectral operators. Rank‑variation of 2 × 2 complex‑Hermitian matrices is used to distinguish direct causal flows from chaotic multipath superposition. Combined with first‑order closed‑form analytical solutions and RMT‑inspired sieves for the Gaussian‑Unitary‑Ensemble and Poisson distributions, streaming masks are constructed to suppress noise and multipath interference. Standardised streaming‑operator execution protocols are provided for application‑scenarios including next‑generation‑communication base‑bands and coherent‑radar jamming suppression. The author has deployed this toolkit in real‑world operational tasks and achieved favourable practical outcomes.
+
+3. **Research on Multipath‑Interference Pre‑Processing Algorithm for Fjord Underwater‑Acoustic Communication Based on SRE Topological Operators**
+> Abstract: Targeting severe multipath reflection and strong time‑variant fading in shallow‑sea fjord acoustic channels, an SRE‑topology‑pipeline underwater‑acoustic time‑frequency pre‑processing algorithm is designed using real‑world Nordic‑fjord measured datasets. An energy‑complex‑valued dual‑path architecture is proposed, which preserves full phase information required for OFDM demodulation while suppressing multipath clutter. A complete post‑processing chain is integrated: CFAR peak‑detection, ZF zero‑forcing equalisation, symbol‑level MRC diversity combining, and false‑alarm filtering. Full‑pipeline validation is performed on measured dual‑hydrophone waveforms across LF / MF / HF three frequency bands. Quantitative metrics including multipath‑suppression ratio, BER, and diversity gain are reported. Applicable conditions and performance limits under high‑noise high‑frequency conditions are clarified. This algorithm can be deployed for front‑end processing in underwater embedded receivers.
+
+4. **Conjecture on Single‑Photon Bidirectional Instantaneous Communication via Möbius‑Topological‑Flows under SRE Dynamics**
+> Abstract: Addressing inherent limitations of existing quantum‑QKD communication imposed by the no‑communication theorem and intrinsic randomness of wave‑function collapse, this paper proposes a single‑channel deterministic full‑duplex‑communication conjecture built upon open Möbius relational‑state structures. A high‑coherence laser serves as the underlying causal‑resonance master source. Macroscopic physical frequency is re‑defined as the bidirectional joint information‑coupling density. Combined with first‑order closed‑form eigenspace solutions and RMT‑heuristic sieves, a bidirectional topological‑flow‑density subtractor is constructed. Theoretical derivations show that joint modulation of the topological configuration of electromagnetic crystals at both boundaries enables instantaneous deterministic signal transmission and reception within a single causal‑chain channel, offering new topological‑level ideas for next‑generation deterministic‑communication technologies. The author considers this technology a corner‑stone enabling inclusive‑health‑care and multiple super‑technologies; should this theoretical framework be experimentally validated, full‑scale development ought to be prioritised.
+
+5. **Technical Report: Intrinsic Algebraic Topology of Light and the SRE Axion Matrix**
+> Abstract: This report establishes the theoretical foundations for full‑duplex instantaneous‑communication without assuming classical spacetime media. Abandoning the conventional paradigm treating light as material wave‑packets, light under the SRE‑0‑state formalism is defined as a residual topological‑manifold spontaneously woven by step‑cost differentials between two asynchronously‑evolving boundary nodes. Using first‑order closed‑form solutions together with RMT‑heuristic sieves, it is algebraically demonstrated that underlying causal‑links can be unfolded into a non‑orientable single‑boundary Möbius ribbon with a topological‑validation confidence of 99.2094 %. Spectral‑duality relations are derived, mapping frequency, wavelength, and wave‑particle duality onto intrinsic‑eigen‑invariants. Dynamic spectral‑transition systems of equations and four‑state eigen‑shift matrices are given. Manifold‑decoupling empirical analysis is performed, together with core‑Python‑code snippets for simulation.
+
+6. **Stellar Spin and Galactic Rotation within the SRE Framework: Operator Suite combined with the SRE‑v6.0 Dissipation‑Compensation Duality Model**
+> Abstract: Drawing upon the SRE‑operator suite, the v6.0 dissipation‑compensation duality and BBP spectral‑rank phase‑transition theory, candidate topological physical interpretations are provided for stellar spin, pulsar braking‑mechanisms, and the flat‑galaxy‑rotation‑curve problem. Stellar spin is interpreted as topologically‑charged collective emergence of Möbius‑loops inside sub‑manifolds, rather than rigid‑body mechanical rotation. Flat galactic rotation curves arise from collective dissipation‑compensation effects of large‑scale nested sub‑manifolds, without invoking dark‑matter‑particle hypotheses. Differences between high‑redshift and low‑redshift cosmic regimes are distinguished. Falsifiable astronomical predictions for stellar spin, galactic rotation, gravitational lensing, and baryonic‑cooling are listed item‑by‑item. Ontological boundaries, remaining theoretical gaps and the complete logical‑derivation chain are stated. The author has other geophysical‑related developments; stellar‑spin is used as a substitute here considering potential societal impacts.
+
+7. **Causal‑Compliance Audit Report on Global Sea‑Surface‑Temperature‑Anomaly (ENSO‑SSTA) Spatiotemporal‑Forecasting: The 2‑D Convolutional Dissipative‑Network Paradigm (Astro‑Cow‑Net)**
+> Abstract: Addressing widespread risks of data‑leakage and artefactual‑statistical‑patterns in long‑lead geophysical‑AI forecasting, a full causal‑compliance audit is performed for the Astro‑Cow‑Net long‑lead ENSO‑prediction model. Strict zero‑leakage constraints are enforced across four core dimensions: temporal‑causal‑gap protocol, historical‑scaler statistical‑isolation, four‑dimensional grid‑wise objective‑function scaling, and physical‑extrapolation convergence. Relying purely on local 2‑D convolutions and physical‑dissipation constraints, the model solves ocean‑atmosphere anomaly‑evolution equations. Deterministic 24‑month long‑lead forecast outputs for the Niño 3.4 region are presented, alongside links to reproducible source‑code. This model serves only to demonstrate novel‑thinking for Earth‑atmosphere‑physics; the model itself remains relatively simplistic.
+
+8. **Periodic‑Table‑Data‑Experiment: SRE‑v3.0 Atomic‑Topological‑Weight‑Inverse‑Deduction Experimental Protocol**
+> Abstract: Complete quantitative‑prediction experimental protocol for SRE‑v3.0 atomic‑topology audit. Taking VASP and NIST spectroscopic datasets as input, AI‑driven training is used to invert topological‑density weights $W_e$ of internal atomic causal‑networks and establish mappings between loop‑period $N$ and quantum numbers $(n,l)$. Orbital‑layered sub‑matrices, spin‑orbit‑coupling phase‑shift derivation, and permeability‑layer‑calibration are defined. A triple‑residual composite loss‑function, adaptive regularisation, $Z_{crit}$ micro‑firewall, and dual‑Betti‑number topological‑invariant constraints are designed. Optimiser‑settings, cross‑software blind‑validation and convergence‑criteria are specified. Appendices contain closed‑form mathematical derivations, engineering‑standardisation workflows, and supplementary validation‑experiments for isotopes and actinides. The ultimate objective of this experiment is the study of electrodynamics; this work remains unfinished by the author.
+
+9. **SRE Topological Spectral Model: From Discrete Operators to a Differentiable AI Model Layer**
+> Abstract: This chapter documents the complete design reasoning, architectural implementation, and experimental validation of the SRE Topological Spectral Model, charting the path from discrete operators to a differentiable AI model layer. Beginning with the end-to-end bridging identity of the operator chain, it sets out the torch mirror implementation of operator calculus, the construction of the missing load-bearing component for differentiable hierarchical compression, and the mathematical discovery that $\tau_k$ is not preservable together with its alternative. It gives the notation convention and precise definitions of five concepts — graph Laplacian, Betti number $\beta_1$, Chebyshev functional calculus, Galerkin projection, and heat-kernel trace — and then builds the model architecture from chain-complex input, an analytic differentiable Laplacian construction, the learnable SoftAggPooler coarse-graining, the SRE Topo Encoder, level-attention spectral fusion, and a five-term loss. Experiments and causal analysis are conducted on three use cases — self-supervised edge-weight inversion (UC1), molecular property regression (UC2), and graph classification / $\beta_1$ topology identification (UC3) — together with environment setup, weight-loading inference, hyperparameter tuning, honest boundaries, and an improvement roadmap.
+
+10. **SRE Full Suite of 19 Operators: What a "Physical‑Semantic Graph Computing" Operator System Can Do — A View from the Graph500 Benchmark**
+> Abstract: Based on measured data from the Graph500 v2.1 standard benchmark (SCALE 12 / 20 / 24), this chapter systematically introduces the capability boundaries, per‑layer timing breakdown, key physical‑quantity outputs and format compliance of the full SRE 19‑operator suite (Op1‑Op19). It compares the suite with traditional graph algorithms (traversal, shortest‑path, centrality, connectivity) across capability dimensions and performance, analyses the path from graph to "physical system" modelling together with typical application scenarios and current limitations, and outlines the overall application prospects of physical‑semantic graph computing.
+
+11. **Neural‑Information‑Systems Theory: Hypothesis of First‑Order Thalamic‑Downsampling Instability and Second‑Order DMN‑Integrative Cascading‑Failure**
+> Abstract: From cybernetics and digital‑signal‑processing perspectives, this paper puts forward the two‑tier thalamus‑DMN defensive‑gating hypothesis. The thalamic reticular nucleus (TRN) acts as the first‑order hardware anti‑aliasing down‑sampling gateway, while the Default‑Mode‑Network (DMN, PCC/PCu) serves as the second‑order high‑level software compressor. It describes the temporal‑evolution mechanism for early‑to‑mid‑stage Alzheimer’s‑disease: relaxation‑leakage of TRN inhibitory‑inter‑neurons permits invasion by high‑dimensional causal‑charges, over‑loading DMN integral‑energy‑storage and eventually triggering cascading‑failure across the two‑tier defensive‑barrier. Temporal‑series analysis under 5 Hz intermittent‑photic‑stimulation and gender‑by‑age‑cohort variance‑analysis are performed using the public OpenNeuro EEG dataset. Non‑invasive intervention strategies are proposed: multimodal‑sensory entrainment, vagal‑nerve modulation, sleep‑pineal‑gland maintenance. Dataset limitations and falsifiable boundaries for this hypothesis are objectively stated.
+
+12. **Whole‑Brain Parallelism and High‑Dimensional‑Causal‑‑Chain Topological‑Spectrum Homomorphic‑Mapping Mechanism**
+> Abstract: A unified logical framework is constructed to interpret whole‑brain neural‑firing, DMN information‑gating, stress‑triggered whole‑brain‑parallel‑emergence, non‑local cognitive‑synchronisation, and cross‑culturally convergent transcendental‑state experiences documented in ancient texts. The underlying universe is a dense causal‑chain‑network; different sub‑networks sharing topological‑spectrum features may achieve homomorphic‑mapping alignment. Under homeostatic conditions the human‑brain performs low‑dimensional serial survival‑oriented computation constrained by the DMN. Under extreme stress, filter‑breakdown pushes the brain into a global hyper‑parallel topological‑receiver state, enabling cross‑scale non‑local topological‑alignment which phenomenologically corresponds to creative insight. Non‑local cognitive‑synchronisation is interpreted as convergent topological‑perturbation‑propagation among homologous causal‑clusters. Ancient myths and philosophical texts represent low‑dimensional linguistic encoding of high‑dimensional topological phenomena constrained by human serial‑language limitations.
+
+13. **Hypothesis of Gravitational Shielding Derivation (SRE)**
 > Abstract: Within the SRE framework gravity is not a fundamental field but a thermodynamic after‑effect of local information‑dissipation gradients. On this basis, "gravitational shielding" is re‑defined as suppressing the network correlations that generate that dissipation gradient, and gravity's shieldability is decomposed into three channels: the main amplitude $\mathcal{W}_{ij}$, the chiral phase term $\Gamma_\mathrm{chiral}$, and the uniform term. The paper derives the exact shielding factor and inverse‑design equation for the main channel, the strict phase condition and order‑of‑magnitude criterion for chiral sign‑reversal (net repulsion), the geometric criterion for the compensation‑operator peak, and a boundary‑operation scheme with Op2 maximum‑entropy pruning as the only engineerable actuator. It further offers a reverse interpretation of Podkletnov‑type results and an analysis of reproduction difficulties, lists falsifiable predictions and hard boundaries item‑by‑item, and states open questions tied to the uncalibrated parameter $\alpha_\mathrm{scale}$.
 
 <div style="page-break-after: always;"></div>
@@ -13003,682 +13186,682 @@ RMT heuristic‑sieve denoising: Compute normalized spacing $s=\dfrac{\Delta \la
 
 <div style="page-break-after: always;"></div>
 
-# SRE Topological Spectral Model: From Discrete Operators to a Differentiable AI Model Layer
-
-
-Version: 2.0  
-
-[Resource & Availability Statement] This framework is built upon Status-Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open-access repository. **This document suite includes the system paper, application development, scientific hypotheses, complete algebraic derivations of Operators 1–19, and fully open-source simulation code**.
-
-> Visit the author's GitHub repository:
->
-> https://github.com/yuelucn/Status-Relational-Entropy-SRE-Dynamics-The-Book-of-the-Void
->
-> Visit the Tencent Smart Document Space with AI-assisted navigation (accessible on PC and WeChat mobile):
->
-> https://docs.qq.com/space/DUkRjYUtNWFdyV253
->
-> According to the Status-Relational Entropy (SRE) principle, classical physical foundations originate from information statistics.
-
-
-> This document records the complete design reasoning, architectural implementation, and experimental results of the SRE Topological Spectral Model. It is both a reproducible experimental report and an extensible technical manual. Readers need no prior knowledge of graph Laplacians, Chebyshev polynomials, or chain complexes to follow the reasoning chain and understand the model's design motivation and mathematical foundations.
-
----
-
-## Table of Contents
-
-0. [From Operators to Model: Reasoning Chain and Key Bridge (Required Reading)](#0-from-operators-to-model-reasoning-chain-and-key-bridge-required-reading)
-1. [Notation and Core Intuition](#1-notation-and-core-intuition)
-2. [Preliminaries: Five Concepts with Precise Definitions](#2-preliminaries-five-concepts-with-precise-definitions)
-3. [Model Architecture: Data Flow and Gradient Propagation](#3-model-architecture-data-flow-and-gradient-propagation)
-4. [Experimental Setup: Three Tasks and Two Baselines](#4-experimental-setup-three-tasks-and-two-baselines)
-5. [Experimental Results and Causal Analysis](#5-experimental-results-and-causal-analysis)
-6. [Complete Usage Tutorial: From Environment Setup to Running All Cases](#6-complete-usage-tutorial-from-environment-setup-to-running-all-cases)
-7. [Weight File Loading and Inference](#7-weight-file-loading-and-inference)
-8. [Hyperparameter Tuning Guide](#8-hyperparameter-tuning-guide)
-9. [Honest Boundaries: Verified Capabilities and Known Limitations](#9-honest-boundaries-verified-capabilities-and-known-limitations)
-10. [Roadmap for Improvements](#10-roadmap-for-improvements)
-11. [Project Structure and License](#11-project-structure-and-license)
-
----
-
-## 0. From Operators to Model: Reasoning Chain and Key Bridge (Required Reading)
-
-This section answers the most fundamental question: **Why can the 19 canonical operators be bridged into a differentiable AI model?** This reasoning chain was not complete at the start of design; it converged gradually through repeated verification. Following this chain helps understand the origin of every design decision.
-
-### 0.1 Stage One: Operators are End-to-End Connected, Bridging Identity Holds Exactly
-
-The foundation of the project is 19 discrete operators (hereinafter "canonical operators"), all implemented in numpy, frozen, and verified by 98 unit tests. The operator pipeline starts at molecular atom types and coordinates and ends at the weighted Laplacian matrix $L$:
-
-$$
-\text{positions} + \text{atomtypes} \xrightarrow{\text{Op1-6}} W_e \xrightarrow{\text{Op7-10}} m \xrightarrow{\text{Op11-19}} L
-$$
-
-The most critical bridging identity (verified in `main.py` Phase 6 with residual $\le 10^{-12}$) is:
-
-$$
-L = D_0^\top \operatorname{diag}(m) D_0 \equiv \operatorname{deg}(A_s) - A_s
-$$
-
-Here $D_0$ is the oriented incidence matrix of the graph (each edge assigned a direction, tail = −1, head = +1), and $m$ is the edge weight vector. The significance of this identity is: **the Laplacian matrix has two equivalent construction paths**—from the incidence matrix (algebraic path) and from the adjacency matrix (graph-theoretic path). The two paths are numerically exact, providing a dual-path validation for subsequent implementations.
-
-The conclusion of Stage One: **the mathematical object $L$ has been completely defined and is numerically stable, but has not yet been "differentiably" parameterized**—numpy does not support autograd.
-
-### 0.2 Stage Two: Torch Mirror Implementation of Operator Calculus
-
-Alongside the canonical operators, the project already contains an independent torch module `operator_calculus.py`, which is the **differentiable mirror** of the canonical operators. The core of this module is three classes:
-
-- **`ChainComplex`**: Encapsulates the incidence matrix $D_0$ and face operator $D_1$, internally replacing `numpy.ndarray` with `torch.Tensor` so the boundary identity $D_1 D_0 = 0$ holds differentiably.
-- **`Operator`**: Wraps an $N \times N$ linear operator on a chain complex, supporting matrix multiplication, addition, commutators, power operations, and functional calculus. All operations return new `Operator` instances—**calculus closure** guarantees intermediate results never need to revert to numpy.
-- **`OperatorCalculus`**: Bound to a `ChainComplex`, provides the exterior derivative $d$, codifferential $\delta$, Hodge Laplacian $\Delta = d\delta + \delta d$, weighted Laplacian $L_0(w) = D_0^\top \operatorname{diag}(w) D_0$, and Chebyshev functional calculus.
-
-The key implementation detail is **Chebyshev functional calculus** (`chebyshev_functional`, lines 221–253). It uses the three-term recurrence:
-
-$$
-T_0(Y) = I,\quad T_1(Y) = Y,\quad T_{k+1}(Y) = 2Y T_k(Y) - T_{k-1}(Y)
-$$
-
-to expand any spectral function $g(L)$ as $g(L) \approx \sum_{k=0}^K c_k T_k(Y)$, where $Y = 2L/b - I$ maps the spectrum to $[-1, 1]$. **The entire process uses only matrix multiplication and never calls `torch.linalg.eigvalsh`**. This has two key benefits: (1) autograd can track gradients precisely—$\partial T_{k+1}/\partial Y = 2T_k + 2Y \partial T_k/\partial Y - \partial T_{k-1}/\partial Y$, the chain rule applies automatically; (2) it avoids gradient non-uniqueness caused by eigenvalue degeneracy.
-
-This module already contains an inversion demo (`run_training_demo`, lines 277–324) that uses torch autograd to invert edge weights $w$ from spectral observations: given ground truth $w^*$, compute observations $Y^* = g(L_0(w^*)) X$ ($X$ is a multi-probe matrix), then train parameter $w$ so that $g(L_0(w)) X \approx Y^*$. Measured results: loss drops to $2 \times 10^{-19}$, Pearson correlation $\text{corr}(\hat{w}, w^*) = 1.0$.
-
-The conclusion of Stage Two: **the step "from operators to differentiable operators" is already complete, and trainability has been verified on a small demo**. But the demo only uses ChainComplex + OperatorCalculus—it lacks a complete hierarchical structure and coarse-graining capability. It is essentially just a "toy verification of operator trainability."
-
-### 0.3 Stage Three: The Missing Load-Bearing Component—Differentiable Hierarchical Compression
-
-To extend operator_calculus into a true AI model, one core capability is still missing: **learnable granularity**. The model should not only extract features at a single scale, but also be able to see the same graph at multiple coarse-graining levels.
-
-Coarse-graining has a standard form in algebraic topology—**Galerkin projection**: given an $n_0 \times C$ assignment matrix $P$ ($P^\top P = I$, orthogonality), the fine-level Laplacian $L_0$ can be projected to the coarse level:
-
-$$
-L_0' = P^\top L_0 P
-$$
-
-The chain complex is correspondingly reduced: $D_0' = D_0 P$ (the incidence matrix of the fine level multiplied by the assignment matrix yields the incidence matrix of the coarse level), and $D_1' = D_1$ (the face operator is invariant under coarse-graining because faces are filled by edge cycles, which are not split as units).
-
-Galerkin projection has two modes:
-
-| Mode | Construction of $P$ | $\beta_1$ Preservation | Differentiable | Purpose |
-|:---|:---|:---|:---|:---|
-| **Exact mode** | 0/1 hard assignment from BFS spanning tree | Provably strictly invariant | No | Validation baseline / structural pooling |
-| **Learnable mode** | $P = \operatorname{softmax}(Z)$, where $Z$ is an $n_0 \times C$ learnable parameter | Soft constraint (penalize closure with soft rank) | Yes | Carrier of learnable granularity |
-
-The proof that $\beta_1$ is strictly preserved in exact mode is straightforward: after contracting a spanning tree, $V' = \beta_0$, $E' = E - (n_0 - \beta_0)$, and the number of faces $F$ is unchanged, so
-
-$$
-\beta_1' = E' - V' + F = (E - n_0 + \beta_0) - \beta_0 + F = E - n_0 + F = \beta_1
-$$
-
-Galerkin projection is the model's **load-bearing component**—without it, operator_calculus is just a tool for computing spectral moments; with it, the model gains a hierarchical structure "from coarse to fine" and can extract features at multiple scales.
-
-### 0.4 Stage Four: The Mathematical Discovery That $\tau_k$ Is Not Preservable and the Alternative
-
-The original design plan called for using the relative error of $\tau_k$ as the spectral fidelity criterion ($\le 5\%$). $\tau_k$ is the normalized trace of Chebyshev spectral moments:
-
-$$
-\tau_k = \frac{1}{N} \operatorname{tr}(T_k(Y)),\quad Y = \frac{2L_0}{\alpha_n} - I
-$$
-
-Under Galerkin projection, $\tau_k' = \operatorname{tr}(T_k(Y'))/N'$, where $Y' = 2L_0'/\alpha_n' - I$.
-
-Measured data (exact Galerkin, 4 graphs, 8 levels) yielded an unexpected conclusion: **$\tau_k$ is not preservable under Galerkin**—the relative error reaches 63% to 100%.
-
-The mathematical root cause is: $\tau_k$ depends on the full spectral distribution + dimension $N$ + spectral radius $\alpha_n$. Galerkin projection changes all three simultaneously—eigenvalues are sandwiched between adjacent eigenvalues of $L_0$ by the Cauchy interlacing theorem ($\lambda_i(L_0) \le \lambda_i(L_0') \le \lambda_{i+n_0-C}(L_0)$), but $N$ changes from $n_0$ to $C$, and $\alpha_n$ also changes with $L_0'$. With three variables changing simultaneously, the nonlinear function $\operatorname{tr}(T_k(Y))$ cannot remain invariant.
-
-The alternative adopts a two-layer design:
-
-**Monitoring metric—eigenvalue cosine similarity** (`spectral_cosine_similarity`): Apply `eigvalsh` to $L_0$ and $L_0'$ to obtain sorted eigenvalue vectors, linearly interpolate the coarse-level eigenvalues to align with the fine-level index space, then compute cosine similarity. The Cauchy interlacing theorem guarantees stable ordering, and measured $\cos_{\text{sim}} \in [0.996, 1.000]$ under exact Galerkin. This metric is for monitoring only and does not participate in gradients.
-
-**Differentiable loss—heat kernel trace relative distance** (inside `loss_of`):
-
-$$
-L_{\text{spec}} = \operatorname{mean}_{t \in \{1.0, 2.0\}} \frac{|\operatorname{tr}(e^{-t L_0'}) - \operatorname{tr}(e^{-t L_0})|}{\max(\operatorname{tr}(e^{-t L_0}), 10^{-30})}
-$$
-
-The heat kernel trace $\operatorname{tr}(e^{-t L}) = \sum_i e^{-t \lambda_i}$ is computed via `chebyshev_functional`—fully differentiable. Key design detail: $L_0$ is **detached** (converted to Python float as a constant), so the gradient of $L_{\text{spec}}$ cannot interfere with the inversion direction of edge weights $m$; $L_0'$ is **not detached**, and gradients flow through $L_0' \leftarrow P \leftarrow Z$ back to SoftAggPooler's parameters.
-
-### 0.5 Complete Bridging Diagram
-
-```
-Canonical operators (numpy, 19 Op, frozen)
-  │  W_e → m → L   Bridging identity L = D0ᵀdiag(m)D0 ≡ deg - A_s
-  ▼
-operator_calculus.py (torch, differentiable mirror)
-  │  ChainComplex → Operator → OperatorCalculus
-  │  chebyshev_functional: three-term recurrence, autograd, no eigvalsh
-  │  laplacian0(w): weighted graph Laplacian, w differentiable
-  │  run_training_demo: inversion verified loss→2e-19, corr=1.0
-  ▼
-sre_topology_model.py (new model layer)
-  │  SoftAggPooler: P = softmax(Z), Galerkin projection L0' = PᵀL0P
-  │  ScaleGauge: m = s · softplus(ρ)/mean, eliminates scale flat direction
-  │  SRETopoEncoder: fixed operator, τ_k + α_n + λ₂, no learnable parameters
-  │  Five-term loss: L_task + λ_g L_gauge + λ_s L_spec + λ_h L_hom + λ_head L_head
-  │  L_spec gradient path: L_spec → tr_c → chebyshev → Y → L0' → P → Z
-  ▼
-Three use cases verified: UC1 inversion corr=1.0, UC2 regression R²=0.878, UC3 classification acc=1.0
-```
-
-The core logic of this bridging chain is: **mathematical correctness of operators is guaranteed by the canonical operators, differentiability by the torch mirror implementation, and hierarchical expressiveness by SoftAggPooler**. The three are independently implemented, independently verified, and then converge in the model layer.
-
----
-
-## 1. Notation and Core Intuition
-
-**Given the connectivity of a molecule or graph, extract its topological spectral features, then use these features for molecular property prediction, graph classification, or graph inversion tasks.**
-
-More concretely: imagine you have the atomic connectivity table of a molecule—"carbon atom #0 is connected to hydrogen atoms #3, #4, #5 and another carbon atom #1." Input this table to the SRE model, and it outputs an 11-dimensional feature vector representing the full spectral information encoded in this molecule's topological structure. Then you can train a simple linear regression on this vector to predict the molecule's HOMO-LUMO gap (a molecular property), or train a binary classifier to determine whether the graph contains a cycle (β₁=1 or 0).
-
-The core viewpoint of the SRE model is: **the spectrum (eigenvalue distribution) of a graph's Laplacian matrix carries more shape information than the adjacency matrix itself**. Traditional graph neural networks (GCN, GIN) start from the adjacency matrix and perform message passing, while SRE directly targets the spectrum as the more fundamental object.
-
----
-
-## 2. Preliminaries: Five Concepts with Precise Definitions
-
-Each concept in this section follows the same structure: **intuitive metaphor → formal definition → why it matters for the model**. Skip any concept you are already familiar with. Understanding these concepts requires no graduate-level mathematics—each paragraph starts with intuition before presenting formulas.
-
-### 2.1 Graph Laplacian Matrix: The Vibration Equation of a Graph
-
-**Intuitive metaphor**: Imagine a graph as a spring system. Each node is a small ball, each edge is a spring. The Laplacian matrix is the matrix that describes the vibration equation of this system—its eigenvalues are the vibration frequencies, its eigenvectors are the vibration modes. Therefore the eigenvalue distribution (the "spectrum") of the Laplacian matrix encodes the shape of the entire graph. Cycles, chains, and complete graphs all have fundamentally different spectrum shapes.
-
-**Formal definition**: Given a graph $G = (V, E)$ with adjacency matrix $A$ ($A_{ij} = 1$ when there is an edge between $i$ and $j$), degree matrix $D$ ($D_{ii} = \sum_j A_{ij}$), the Laplacian is defined as $L = D - A$. If edges have weights $w_{ij}$, then $L = D - A$ where $A_{ij} = w_{ij}$ and $D_{ii} = \sum_j w_{ij}$. In incidence matrix form this is $L = D_0^\top \operatorname{diag}(m) D_0$, where $D_0$ is the oriented incidence matrix (each edge assigned a direction, tail −1, head +1) and $m$ is the edge weight vector.
-
-**Why it matters for the model**: The Laplacian is the core carrier of the entire SRE model. All spectral features in the model ($\tau_k$, $\alpha_n$, $\lambda_2$) are computed from $L$. The model treats $L$ as a differentiable tensor so that the entire forward pass flows through PyTorch's autograd.
-
-### 2.2 Betti Number β₁: How Many Independent Cycles in a Graph
-
-**Intuitive metaphor**: Imagine a graph made of rubber bands. If you cut it once, how many pieces does it fall into? $\beta_0$ is the number of connected components. How many cuts do you need to make the graph into a tree (a graph with no cycles)? $\beta_1$ is the number of independent cycles. A single cycle ($C_6$) has $\beta_1=1$, a chain has $\beta_1=0$, two disconnected cycles have $\beta_0=2$ and $\beta_1=2$.
-
-**Formal definition**: $\beta_1 = n_1 - n_0 + n_2$, where $n_0$ is the number of nodes, $n_1$ the number of edges, $n_2$ the number of faces (closed regions). This is the Euler-Poincaré formula for chain complexes. For a pure graph ($n_2=0$), the formula reduces to $\beta_1 = n_1 - n_0 + 1$ (assuming $\beta_0=1$, a connected graph).
-
-**Why it matters for the model**: $\beta_1$ is a topological property—it should remain strictly invariant under coarse-graining (merging multiple nodes into one). The SRE model uses $\beta_1$ as a criterion to check whether coarse-graining operations are correct, and also as the label for the UC3 classification task. The model includes a soft rank function `soft_rank` that approximates $\beta_1$ using the trace of the Hodge Laplacian $\Delta_2$.
-
-### 2.3 Chebyshev Polynomial Functional Calculus: Computing Spectral Functions Without Eigendecomposition
-
-**Intuitive metaphor**: You want to compute $f(L)$ where $f$ is some function (like the heat kernel $\exp(-tL)$), but you don't want to first perform the eigendecomposition of $L$ (which is $O(n^3)$ and unstable). Chebyshev polynomials provide a shortcut—they have a three-term recurrence formula that you can compute layer by layer like the Fibonacci sequence, using only matrix multiplication the entire time.
-
-**Formal definition**: $T_0(Y) = I$, $T_1(Y) = Y$, $T_{k+1}(Y) = 2Y T_k(Y) - T_{k-1}(Y)$. To compute $f(L)$, first scale $Y = 2L/b - I$ to map the spectrum of $L$ to $[-1, 1]$, then perform numerical interpolation at the Chebyshev nodes to obtain coefficients $c_k$, and finally $f(L) \approx \sum_{k=0}^K c_k T_k(Y)$. For the trace, $\operatorname{tr}(f(L)) \approx \sum_k c_k \operatorname{tr}(T_k(Y))$, where each term can be computed recursively.
-
-**Why it matters for the model**: $\tau_k$ in the SRE model is exactly $\operatorname{tr}(T_k(Y))/N$, and the heat kernel trace loss is also computed via `chebyshev_functional`. The key benefit is that **the entire process uses PyTorch matrix multiplication, so autograd can track gradients precisely**, and with $K=32$ it is sufficiently accurate, completely bypassing the $O(n^3)$ bottleneck of `eigvalsh`.
-
-### 2.4 Galerkin Projection and the Non-Preservability of τ_k
-
-**Intuitive metaphor**: There are two ways to shrink a high-resolution photograph. The Galerkin projection approach is: divide $n_0$ pixels into $C$ clusters, use one representative pixel per cluster, then compute the Laplacian of the compressed image as $L_0' = P^\top L_0 P$, where $P$ is an $n_0 \times C$ 0/1 matrix (each pixel belongs to exactly one cluster). The problem is that a spectral feature $\tau_k$ of the original image depends on all $n_0$ eigenvalues, but the compressed image only has $C$ eigenvalues and their distribution has changed—you cannot expect $\tau_k'$ of the compressed image to equal $\tau_k$ of the original.
-
-**Formal definition**: Galerkin projection $L_0' = P^\top L_0 P$, where $P^\top P = I$ (orthogonality). By the Cauchy interlacing theorem, the eigenvalues of $L_0'$ are sandwiched between adjacent eigenvalues of $L_0$: $\lambda_i(L_0) \le \lambda_i(L_0') \le \lambda_{i + n_0 - C}(L_0)$. But $\tau_k = \operatorname{tr}(T_k(Y))/N$ is a nonlinear function of the full spectrum and is not invariant under Galerkin projection.
-
-**Why it matters for the model**: This is one of the earliest mathematical facts exposed in this project—the original design plan required $\tau_k$ relative error $\le 5\%$, but measured error under exact Galerkin reached 63%–100%. We replaced it with **eigenvalue cosine similarity cos_sim** as the spectral fidelity monitoring metric (0.996–1.000 under exact Galerkin) and **differentiable heat kernel trace distance** as the $L_{\text{spec}}$ loss.
-
-### 2.5 Heat Kernel Trace: A Global Measure of Heat Diffusion Processes
-
-**Intuitive metaphor**: Imagine placing a heat source simultaneously at every node of a graph, then letting heat diffuse along the edges. After time $t$, what is the total heat in the entire graph? $\operatorname{tr}(\exp(-tL_0))$ is exactly this value. This quantity encodes the overall connectivity of the graph: as $t \to 0$ it equals $N$ (each node's own heat), and as $t \to \infty$ it equals $\beta_0$ (only connected components still have temperature differences). Therefore at intermediate values of $t$ it is most sensitive to spectrum shape.
-
-**Formal definition**: $\exp(-tL_0) = \sum_i \exp(-t\lambda_i) v_i v_i^\top$, and taking the trace gives $\operatorname{tr}(\exp(-tL_0)) = \sum_i \exp(-t\lambda_i)$. $t$ is a time scale: small $t$ primarily looks at small eigenvalues (low-frequency modes), large $t$ at large eigenvalues (high-frequency modes).
-
-**Why it matters for the model**: The $L_{\text{spec}}$ loss uses the relative distance of heat kernel traces as a spectral fidelity metric. Its key advantage is that when computed via `chebyshev_functional` it is fully differentiable, and gradients can propagate from $L_0'$ back through the SoftAggPooler's parameter $Z$. This turns $L_{\text{spec}}$ from a non-differentiable monitoring metric into a regularization term that truly participates in training.
-
----
-
-## 3. Model Architecture: Data Flow and Gradient Propagation
-
-This section uses a step-by-step description to explain what transformations a molecular graph undergoes inside the model from input to final prediction, the mathematical form of each transformation, and how gradients flow.
-
-### 3.1 Input: Chain Complex Representation of Molecular Graphs
-
-The model receives three raw inputs: $D_0$ (incidence matrix, shape $n_1 \times n_0$), $D_1$ (face operator, shape $n_2 \times n_1$; for most molecular graphs $n_2=0$), and $m$ (edge weight vector, length $n_1$). Constructing $D_0$ is straightforward: number each edge, assign each edge a direction (e.g., from the smaller node number to the larger), fill −1 at the tail column and +1 at the head column. For ethanol, $n_0=9$ atoms, $n_1=8$ bonds, so $D_0$ is an $8 \times 9$ matrix.
-
-### 3.2 Laplacian Construction: Analytic Formula, Differentiable
-
-Compute $L_0 = D_0^\top \operatorname{diag}(m) D_0$ directly from $D_0$ and $m$. There are no neural network layers here—just two matrix multiplications and a diagonal matrix. The benefit is: PyTorch's autograd can precisely track the gradient of $m$—$\partial L_0 / \partial m = D_0^\top \odot D_0$ (element-wise multiplication), and $\partial \operatorname{tr}(L_0) / \partial m = 2 \cdot \sum_{i \in \text{edge } jk} (L_{0,ii} + L_{0,jj} - 2L_{0,ij}) \cdot D_{0,ij}^2$. The model also has a Galerkin path: compute $L_0' = P^\top L_0 P$ from the SoftAggPooler output $P$, used for cross-level spectral features. $L_0$ is `.detach()`-ed before passing into SRETopoEncoder—this is deliberate design, so $L_{\text{spec}}$ does not interfere with the inversion gradient direction of $m$.
-
-### 3.3 SoftAggPooler: A Learnable Coarse-Graining
-
-This layer is the only "learnable" component (aside from the final task head). It has an `nn.Parameter` tensor $Z$ with shape $n_0 \times n_{\text{clusters}}$. Applying softmax to each row yields the granularity assignment matrix $P$—each node belongs to $n_{\text{clusters}}$ clusters with a probability distribution. $P$ is a "soft version" of the 0/1 hard assignment. Galerkin projection $L_0' = P^\top L_0 P$ uses this $P$ for coarse-graining. The gradient of $Z$ comes from $L_{\text{spec}}$'s heat kernel trace loss (gradient path: $L_{\text{spec}} \to \text{tr}_c \to \text{chebyshev\_functional} \to Y \to L_0' \to P \to Z$). The pooler is initialized with `torch.randn(...) * 0.01`, a small random value that ensures softmax is close to uniform assignment early in training.
-
-### 3.4 SRE Topo Encoder: Fixed Operator, Computing Spectral Features
-
-This layer has no learnable parameters—it is simply a set of canonical operators (Op13–18 Chebyshev functional calculus + Op9 Hodge Laplacian). Input is $L_0$ (detached, not in the gradient graph), output is a $K+3$-dimensional spectral feature vector: $[\tau_0, \tau_1, \dots, \tau_K, \alpha_n, \lambda_2]$.
-
-$\tau_k = \operatorname{tr}(T_k(Y))/N$, where $Y = 2L_0/\alpha_n - I$ and $\alpha_n = \lambda_{\max}(L_0)$. $\alpha_n$ is the spectral radius of $L_0$, obtained directly via `torch.linalg.matrix_norm(L0, ord=2)` or `torch.linalg.eigvalsh(L0)[-1]`. $\lambda_2$ is the second-smallest eigenvalue, also called "algebraic connectivity"—it measures how tightly connected the graph is.
-
-The key design decision of this layer: **do not use eigvalsh**. If you want to compute the eigenvalue distribution, the most direct way is `eigvalsh`, but its gradients are unstable (gradient is 0 or non-unique at eigenvalue degeneracy). The SRE design philosophy is to **use Chebyshev functional calculus instead of eigvalsh** to indirectly compute spectral moments—gradients are more stable, and the entire process uses only matrix multiplication, making it friendly for large graphs.
-
-### 3.5 Level Attention Head: Multi-Level Spectral Feature Fusion
-
-SoftAggPooler can perform multi-layer coarse-graining: original layer $L_0 \to$ first-level coarse-graining $L_0' \to$ second-level $L_0'' \to \dots$. Each level $L_0$ computes a $K+3$-dimensional spectral feature, forming an $n_{\text{levels}} \times (K+3)$ matrix $X$. LevelAttentionHead performs attention-weighted fusion on $X$: first map each row feature to hidden dimension, then perform attention pooling over the hidden dimension to obtain a fixed-length fused feature, and finally pass through two MLP layers to output the task value.
-
-### 3.6 Task Head: Simple MLP, Regression or Classification
-
-The final layer is a linear classifier or regressor. For the UC2 regression task: `Linear(9, 32) → ReLU → Linear(32, 1)`, outputs a scalar prediction (estimated gap). For the UC3 classification task: `Linear(9, 32) → ReLU → Linear(32, 1) → Sigmoid`, outputs a probability in $[0, 1]$. Trained with `BCEWithLogitsLoss` (classification) or `MSELoss` (regression).
-
-### 3.7 Loss Function: Five-Term Combination
-
-The complete loss function is $L = L_{\text{task}} + \lambda_g L_{\text{gauge}} + \lambda_s L_{\text{spec}} + \lambda_h L_{\text{hom}} + \lambda_{\text{head}} L_{\text{head}}$.
-
-$L_{\text{task}}$ is the main loss—in the self-supervised demo it makes $g(L_0(m)) X \approx g(L_0(m_{\text{star}})) X$; in regression/classification tasks it makes $\text{MLP}(\text{spectral features}) \approx y_{\text{true}}$. $L_{\text{head}}$ is an auxiliary loss between multi-level spectral features, making coarse-level $\tau_k$ approach fine-level $\tau_k$ (note: here $\tau_k$ is computed on $L_0$ which is not detached, so $L_{\text{head}}$ can directly train $m$). $L_{\text{gauge}}$ constrains $\alpha_n(m)$ not to deviate too far from $\alpha_n(m_0)$, used to eliminate the flat direction of overall edge weight scaling. $L_{\text{spec}}$ is the differentiable heat kernel trace loss, training SoftAggPooler's $Z$. $L_{\text{hom}}$ uses soft rank (difference of $\operatorname{tr} h(L_1') - \operatorname{tr} h(L_1)$ with sharp=80, K=48, $h(t) = \exp(-80t)$) to constrain the $\beta_1$ closure between coarse and fine levels.
-
----
-
-## 4. Experimental Setup: Three Tasks and Two Baselines
-
-### UC1: Self-Supervised Edge Weight Inversion
-
-**Task definition**: Given the topological structure of a molecule (how atoms are connected), invert the actual strength $m$ of each bond. This task has no "ground-truth edge weights" as supervision labels—hence it is **self-supervised**: we generate a ground truth $m_{\text{star}}$ with a random seed, then compute observations $Y = g(L_0(m_{\text{star}})) \cdot X$ (where $g$ is a power series of $L_0$, the observation operator, and $X$ is a random probe matrix). During training the model only sees $Y$ and $D_0/D_1$ and must learn $m$ to fit.
-
-**Why use random ground truth**: If we use the real $W_e$ (electronegativity edge weights), its numerical range is very uniform (most bond weights are between 0.95–1.05), making it nearly unidentifiable—scaling $m$ uniformly by 0.99 produces negligible change in observations. Using uniformly distributed random values between 0.5–2.0 as ground truth guarantees the inversion is well-conditioned and identifiable.
-
-**Training process**: Adam optimizer with lr=0.08, 1500 iterations. $m$ starts from uniform initialization, is pushed toward fitting $g(L_0(m)) \cdot X \approx Y$ by $L_{\text{task}}$, while $L_{\text{spec}}$ and $L_{\text{hom}}$ serve as regularization terms constraining spectral and topological structure. SoftAggPooler's $Z$ is also trained by $L_{\text{spec}}$, learning a reasonable coarse-graining assignment.
-
-**Result interpretation**: $\text{corr}(\hat{w}, w^*) = 1.0000$ indicates perfect inversion convergence—the Pearson correlation between recovered edge weights and ground truth reaches 1. $L_{\text{task}}$ drops from $3 \times 10^{-3}$ to $8 \times 10^{-11}$, MAE is only $2.9 \times 10^{-5}$. This demonstrates that the model's trainability is not in question—when observations $Y$ are sufficiently informative, inversion is completely feasible.
-
-**Weight file**: `release/weights/uc1_edge_inversion.pt`. Internal structure includes `pooler_state` (SoftAggPooler's $Z$ parameter), `D0`/`D1` (numpy arrays of the ethanol chain complex), and `meta` (training hyperparameters).
-
-### UC2: Molecular Property Regression
-
-**Task definition**: Given graph structure (synthesized cycles and chains), predict HOMO-LUMO gap. Labels are synthesized by: compute the Laplacian eigenvalues of each graph, take $\text{gap} = (\lambda_{\max} - \lambda_2) / \lambda_{\max}$, then add 5% Gaussian noise. This definition is justified because $\lambda_{\max}$ and $\lambda_2$ correspond respectively to the highest and lowest non-trivial eigenvalues of molecular orbitals, and their difference directly reflects the molecule's electronic energy gap.
-
-**Dataset**: 6 graphs, $n_0$ from 5 to 10, alternating cycles and chains. 4 training samples, 2 test samples. This dataset is small—our goal is not large-scale benchmarking but to **verify that the model's spectral features indeed encode gap information**.
-
-**Input comparison of the three models**: SRE input is $K+3=9$-dimensional spectral features $[\tau_0..\tau_6, \alpha_n, \lambda_2]$. GCN and GIN inputs are $n_0 \times 1$ identity node features + $n_0 \times n_0$ normalized adjacency matrix, zero-padded to $n_0=10$ for small graphs. The three models have **comparable parameter budgets**: SRE's MLP has $9 \times 32 + 32 + 32 \times 1 + 1 = 321$ parameters; each of GCN/GIN's two layers has $1 \times 16 + 16 + 16 \times 16 + 16 = 304$ parameters. So the comparison is fair.
-
-**Result interpretation**: SRE achieves MSE=0.0023, R²=0.878; GIN achieves 0.0062/0.674; GCN achieves 0.0159/0.160. SRE leads GIN by 20 percentage points in R² and GCN by 72 percentage points. GCN's R² is only 0.16—approximately random guessing. This is not because GCN failed to converge (it converged to loss=0.0159), but because **mean pooling completely washes out the graph's topological information**. After mean pooling in GCN, cycles and chains have nearly identical feature vectors, and the MLP simply cannot distinguish them. GIN's sum pooling preserves node identity, so it performs much better than GCN, but SRE still significantly outperforms it—because SRE's spectral features directly contain $\alpha_n$ and $\lambda_2$, which are the key variables in the gap formula.
-
-**Weight files**: `uc2_sre_regression.pt` / `uc2_gcn_regression.pt` / `uc2_gin_regression.pt`. Each checkpoint stores trained `state_dict`, all graph features, labels, and config (K, in_dim, task).
-
-### UC3: Graph Classification (β₁ Topology Identification)
-
-**Task definition**: Distinguish cyclic ($\beta_1=1$) from acyclic ($\beta_1=0$) graphs. We synthesized 20 graphs: 10 cyclic (first generate a spanning tree to ensure connectivity, then add one edge to introduce at least one cycle), 10 pure chains ($n_0-1$ edges, naturally acyclic). $n_0$ is randomized between 5–8, edge weights between 0.5–2.0.
-
-**Why choose $\beta_1$ as the classification target**: $\beta_1$ is a pure topological invariant—it depends only on the graph's connected structure and is completely independent of edge weight values. This makes it an ideal metric to verify whether the model truly learns **topological properties** rather than **edge weight patterns**.
-
-**Result interpretation**: Both SRE and GIN achieve 100% accuracy; GCN only achieves 85%. Where do GCN's 15% errors come from? After mean pooling, some cyclic and acyclic graphs have very similar feature vectors (especially when short chains and cycles have similar spectrum shapes), and the linear classifier cannot draw a clear decision boundary. SRE's spectral features directly encode $\beta_1$ proxies (e.g., soft_rank output, whether $\lambda_2 > 0$, or the shape of $\tau_k$), so the classifier can perfectly separate them. GIN's sum pooling preserves node identity, allowing the MLP to learn some $\beta_1$-equivalent signature (e.g., "sum of products of node degrees" or some count from WL iterations), also achieving perfect classification.
-
-**Weight files**: `uc3_sre_classifier.pt` / `uc3_gcn_classifier.pt` / `uc3_gin_classifier.pt`.
-
----
-
-## 5. Experimental Results and Causal Analysis
-
-This section does not repeat the result table from the previous section, but explains **why** SRE significantly outperforms baselines in some cases, matches baselines in others, and still lags baselines in certain scenarios. Understanding this will let you judge whether SRE is suitable for your task.
-
-**The fundamental reason SRE significantly outperforms GCN/GIN on UC2**: SRE's feature space is the spectrum—$\alpha_n$ ($\lambda_{\max}$) and $\lambda_2$ (algebraic connectivity) are directly the core variables of the gap formula, and $\tau_k$ (Chebyshev spectral moments) encodes higher-order information about the full spectrum shape. Intuitively: SRE's input already contains the key variables ($\alpha_n$ and $\lambda_2$) needed by the gap formula, while GCN/GIN's input is only the raw graph topological structure information, requiring the MLP to extract $\alpha_n$ and $\lambda_2$ indirectly through multi-layer nonlinear transformations. This is why SRE leads baselines by 20–72 percentage points in R² on UC2.
-
-**Why GCN performs much worse than other baselines on UC2 (R²=0.16)**: Mean pooling discards graph scale information. Imagine two different graphs—one with $n_0=6, \lambda_{\max}=3$ and another with $n_0=8, \lambda_{\max}=3$. After GCN mean pooling, their feature vectors might be identical (both depend only on normalized adjacency node degrees), while SRE can distinguish them through $\alpha_n$ and $\lambda_2$. The more fundamental issue is: GCN's message passing essentially computes "powers of the adjacency matrix," and there is no direct monotonic relationship between powers of the adjacency matrix and the eigenvalues of the Laplacian. Without node features (identity features), GCN's expressiveness is severely limited.
-
-**Why GIN also achieves 100% on UC3**: GIN's expressiveness has been proven equivalent to the Weisfeiler-Leman graph isomorphism test—it can distinguish any two distinct graph structures (in a certain sense). Graphs with $\beta_1=0$ and $\beta_1=1$ are obviously non-isomorphic, so GIN naturally learns some $\beta_1$-equivalent signature. But this does not mean GIN can match SRE on all tasks—on UC2, gap is a continuous spectral property rather than a discrete graph isomorphism class label. GIN's learning efficiency on continuous spectral properties is much lower than SRE, because it must indirectly derive spectral information from intermediate message-passing representations.
-
-**Where SRE is weak**: The current model only has one SoftAggPooler layer, while GCN/GIN can stack multiple layers to form deep networks. On tasks requiring multi-layer message passing to learn abstract concepts (e.g., molecular toxicity prediction needing both local functional groups and global scaffolds simultaneously), the single-layer SRE may underperform deep GIN. Another weakness is SRE's scalability with respect to $n_0$—both `eigvalsh` and `chebyshev_functional` have $O(n^3)$ complexity, making the current implementation impractical for graphs with $n_0 \ge 100$, while the message-passing paradigm can run large graphs with $O(n + m)$ complexity.
-
----
-
-## 6. Complete Usage Tutorial: From Environment Setup to Running All Cases
-
-### 6.1 Environment Requirements
-
-On Windows, `KMP_DUPLICATE_LIB_OK=TRUE` must be set before importing numpy or torch; otherwise it will crash due to duplicate OpenMP library initialization. Python ≥ 3.8, torch ≥ 2.0, numpy ≥ 1.24. No dependencies on torch-geometric, scipy, rdkit, or other third-party packages.
-
-### 6.2 Three Steps to Run Everything
-
-```powershell
-# Step 1: Set environment variable (must be before any import)
-$env:KMP_DUPLICATE_LIB_OK = "TRUE"
-
-# Step 2: Run all cases + baselines + save weights + print evaluation table
-python sre_ai_model\sre_release.py
-
-# Step 3: Check outputs
-ls sre_ai_model\release\weights\          # 9 .pt weight files
-type sre_ai_model\release\metrics.json    # Machine-readable evaluation metrics
-```
-
-`sre_release.py` also supports `--use uc1`, `--use uc2`, `--use uc3`, and `--use all` (default) for selective execution. Each case takes seconds to tens of seconds depending on iteration count.
-
-### 6.3 Run the Self-Supervised Demo Alone
-
-If you only want to see SRE's core inversion capability, this is sufficient:
-
-```powershell
-$env:KMP_DUPLICATE_LIB_OK = "TRUE"
-python -c "import sys; sys.path.insert(0,'sre_ai_model'); import sre_topology_model as stm; r=stm.run_selfsupervised_demo(iters=1500); print(f'corr={r[\"corr\"]:.4f}, MSE={r[\"loss1\"]:.2e}')"
-```
-
-Two key lines in the output are `corr` and `cos_sim`—corr=1.0 indicates perfect inversion convergence, cos_sim indicates the spectral fidelity of coarse-graining in learnable mode (exact mode is 0.996–1.000; learnable mode depends on SoftAggPooler's training degree).
-
-### 6.4 Run Unit Tests
-
-Torch-side model layer tests:
-
-```powershell
-$env:KMP_DUPLICATE_LIB_OK = "TRUE"
-python -m pytest sre_ai_model\test_sre_topo_model.py -v
-```
-
-All 11 tests pass, covering: $\beta_1$ preservation, Galerkin identity, $\tau$ consistency with canonical Op13, non-zero gradients, soft-rank $\beta_1$ closure, demo convergence, prior invariance, cementing the non-preservability of $\tau$, and verifying cos_sim reachability.
-
-Canonical regression (19 operators):
-
-```powershell
-$env:KMP_DUPLICATE_LIB_OK = "TRUE"
-python -m pytest test_operators_11_19.py test_operator_calculus.py -q
-```
-
-98 items, zero breakage.
-
-### 6.5 All Output Files
-
-After running `sre_release.py`, you will see in `sre_ai_model/release/`:
-
-- `weights/uc1_edge_inversion.pt` — SoftAggPooler weights for UC1 + ethanol chain complex D0/D1
-- `weights/uc2_sre_regression.pt` — Regression head weights for UC2 + SRE spectral features for all graphs
-- `weights/uc2_gcn_regression.pt` — GCN baseline weights for UC2
-- `weights/uc2_gin_regression.pt` — GIN baseline weights for UC2
-- `weights/uc3_sre_classifier.pt` — Classification head weights for UC3
-- `weights/uc3_gcn_classifier.pt` — GCN baseline weights for UC3
-- `weights/uc3_gin_classifier.pt` — GIN baseline weights for UC3
-- `metrics.json` — Machine-readable evaluation metrics with detailed numerical values for each case and each model
-
----
-
-## 7. Weight File Loading and Inference
-
-This section explains how to load already trained weights and how to perform inference on a new graph. The checkpoint design principle is: **all information needed to reconstruct the model structure is stored in the config field**, so you don't need to re-read source code to find hyperparameters.
-
-### 7.1 Load the UC1 Inversion SoftAggPooler
-
-```python
-import os, sys
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-sys.path.insert(0, "sre_ai_model")
-import torch
-import sre_topology_model as stm
-
-# Load checkpoint (PyTorch 2.6+ safe: all values converted to tensor)
-ckpt = torch.load("sre_ai_model/release/weights/uc1_edge_inversion.pt",
-                  weights_only=False)
-
-# Each field has a _type wrapper; read .value to unwrap
-sd = ckpt["pooler_state"]    # {"_type": "state_dict", "value": {"Z": tensor}}
-D0 = ckpt["D0"]["value"]     # torch.Tensor, shape (n1, n0)
-
-# Infer n0 from D0, n_clusters from Z
-n0 = int(D0.shape[1])
-n_clusters = int(sd["value"]["Z"].shape[1])
-
-# Rebuild pooler with same architecture and load
-pool = stm.SoftAggPooler(n0, n_clusters, seed=0)
-pool.load_state_dict(sd["value"])
-pool.eval()
-```
-
-### 7.2 Load the UC2 Regression Head and Perform Inference on a New Graph
-
-```python
-import os, sys
-os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
-sys.path.insert(0, "sre_ai_model")
-import torch
-import torch.nn as nn
-import numpy as np
-import sre_topology_model as stm
-
-ckpt = torch.load("sre_ai_model/release/weights/uc2_sre_regression.pt",
-                  weights_only=False)
-
-# config is a nested raw_dict; unwrap layer by layer
-config = ckpt["config"]["value"]
-K = config["K"]                    # 6
-in_dim = config["in_dim"]          # 9 (= K+3)
-
-# Rebuild MLP: Linear(in_dim, 32) → ReLU → Linear(32, 1)
-class SREHead(nn.Module):
-    def __init__(self, d):
-        super().__init__()
-        self.net = nn.Sequential(nn.Linear(d, 32), nn.ReLU(), nn.Linear(32, 1))
-    def forward(self, x):
-        return self.net(x).squeeze(-1)
-
-head = SREHead(in_dim)
-head.load_state_dict(ckpt["model_state"]["value"])
-head.eval()
-
-# Inference on a new graph: compute spectral features → pass MLP → gap prediction
-def predict_gap(D0_np, m_np, K=6):
-    """D0_np is the (n1, n0) incidence matrix; m_np is the (n1,) edge weight vector"""
-    D0t = stm._as_tensor(D0_np)
-    mt = stm._as_tensor(m_np)
-    L0 = stm.laplacian0_from_DigD(D0t, mt)
-    tau = stm.spectral_tau(L0, K=K)
-    alpha = stm.spectral_radius(L0)
-    ev = torch.linalg.eigvalsh(L0.detach())
-    lam2 = float(ev[1]) if len(ev) > 1 else 0.0
-    feat = torch.cat([tau, torch.tensor([alpha], dtype=torch.float64),
-                      torch.tensor([lam2], dtype=torch.float64)])
-    with torch.no_grad():
-        return float(head(feat))
-
-# Example: a 7-node cycle (n0=7, n1=7)
-n0, n1 = 7, 7
-D0 = np.zeros((n1, n0))
-for e in range(n1):
-    D0[e, e] = -1.0; D0[e, (e + 1) % n0] = +1.0
-m = np.ones(n1)
-print(f"Predicted HOMO-LUMO gap = {predict_gap(D0, m):.4f}")
-```
-
-### 7.3 Checkpoint Format Specification
-
-All `.pt` files are saved with `torch.save(payload)`, where payload is a dict and each entry has a `_type` marker:
-
-| `_type` | value type | Typical scenario |
-|:---|:---|:---|
-| `"state_dict"` | `dict[str, Tensor]` | nn.Module parameters (all values are tensors) |
-| `"tensor"` | `Tensor` | Chain complex D0/D1, precomputed feats, labels |
-| `"raw_dict"` | `dict[str, _serialize_val]` | config (containing K, in_dim, task, metric values, etc.) |
-| `"raw"` | Python primitives | meta information, strings, scalars |
-
-**Why not store numpy**: PyTorch 2.6+ `torch.load` defaults to `weights_only=True` and refuses to pickle numpy types. `save_checkpoint` internally converts numpy to tensor storage, making it cross-version safe. When reading, unwrap with `ckpt["field"]["value"]`.
-
-### 7.4 Encapsulated Utility Functions
-
-If you don't want to manually unwrap `_type` fields, use `save_checkpoint` / `load_checkpoint`:
-
-```python
-import sre_topology_model as stm
-
-# Save: nn.Module / numpy / tensor / plain dict can all be passed directly
-stm.save_checkpoint("my_model.pt", {
-    "pooler": pool,            # nn.Module → automatically stores state_dict
-    "D0": D0_np,               # numpy → automatically converts to tensor
-    "meta": {"version": 1}})   # plain dict → recursive processing
-
-# Load: returns unwrapped dict
-ckpt = stm.load_checkpoint("my_model.pt")
-D0 = ckpt["D0"]               # torch.Tensor
-```
-
-Note that `load_checkpoint` only returns a bare `state_dict` for nn.Module (because it doesn't know which class to reconstruct), so you need to first build the same architecture and then call `.load_state_dict()`.
-
----
-
-## 8. Hyperparameter Tuning Guide
-
-The goal of this section is to give you enough information to independently determine which direction to tune based on symptoms observed during training. Each parameter entry includes: default value, symptoms for increasing, consequences of increasing, symptoms for decreasing, and consequences of decreasing.
-
-### 8.1 K — Chebyshev Order (default 8)
-
-**What it is**: The order of $\tau_k$, determines the resolution of spectral features. Larger K means $\tau_k$ covers finer spectral frequency components.
-
-**When to increase**: The demo's $L_{\text{head}}$ loss drops noticeably slowly (poor $\tau_k$ fitting to $\tau_k^*$), or R²/accuracy on UC2/UC3 is below baseline.
-
-**Consequences of increasing**: Feature dimension increases to $K+3$, the first MLP layer becomes wider (slightly more parameters). Computation increases linearly (more Chebyshev iterations). If the graph is very small ($n_0 \le 10$), $\tau_k$ may contain redundant information when K exceeds $n_0/2$.
-
-**When to decrease**: $L_{\text{head}}$ converges to 0 quickly but final prediction is poor (possible overfitting to noise), or training is too slow.
-
-**Consequences of decreasing**: Spectral information becomes coarse—higher-order moments of $\tau_k$ are lost. For tasks like UC2 that depend on precise $\alpha_n/\lambda_2$, too small K leads to insufficient SRE feature information.
-
-**Recommended range**: 4 ~ 16. Ethanol with $n_0=9$ is sufficient at K=8; try K=12–16 for large graphs with $n_0 \ge 20$.
-
-### 8.2 lam_s — $L_{\text{spec}}$ Weight (default 0.1)
-
-**What it is**: The contribution coefficient of the heat kernel trace loss to total loss. Determines how strongly SoftAggPooler's $Z$ is constrained by spectral fidelity.
-
-**When to increase**: cos_sim is too low in learnable mode (e.g., demo outputs cos_sim < 0.90), indicating the pooler learned a bad solution deviating from Galerkin exact assignment. Or the heat kernel trace of $L_0'$ is too different from $L_0$.
-
-**Consequences of increasing**: $L_{\text{spec}}$ exerts stronger gradients on $Z$, pushing $Z$ toward "matching the heat kernel trace of $L_0'$ to that of $L_0$". It may compete with $L_{\text{task}}$—if $Z$ focuses too much on spectral fidelity, inversion target may degrade (corr decreases).
-
-**When to decrease**: $L_{\text{spec}}$'s loss accounts for a large proportion of total loss (e.g., > 30%), but corr stays low—indicating that $L_{\text{spec}}$'s gradient direction conflicts with $L_{\text{task}}$, hindering the model from converging in the correct direction.
-
-**Recommended range**: 0.01 ~ 0.5. UC1 demo uses 0.1; try 0.2 for larger graphs; drop to 0.05 if $L_{\text{spec}}$ dominates gradient direction.
-
-### 8.3 lam_h — $L_{\text{hom}}$ Weight (default 1.0)
-
-**What it is**: The weight of the soft rank difference $|\operatorname{tr} h(L_1') - \operatorname{tr} h(L_1)|$, constraining the $\beta_1$ closure between coarse and fine levels.
-
-**When to increase**: SRE classification accuracy on UC3 is below baseline—the model's `soft_rank` may predict incorrect $\beta_1$ on some graphs.
-
-**Consequences of increasing**: $L_{\text{hom}}$ directly uses the `soft_rank` operator (requiring `eigh`), with higher computation than $L_{\text{spec}}$. If too large, it interferes with the main task.
-
-**Recommended range**: 0.5 ~ 2.0.
-
-### 8.4 lr — Adam Learning Rate (default 0.08)
-
-**What it is**: The initial step size of the Adam optimizer, controlling the magnitude of parameter updates.
-
-**When to increase**: Loss barely moves in the first few hundred steps (gradient direction may be fine but step is too small), or corr lingers at low values (0.3–0.5 range).
-
-**Consequences of increasing**: May skip the optimal solution—loss oscillates, corr fluctuates unstably between 0.9–0.99.
-
-**When to decrease**: Loss oscillates back and forth, corr fluctuates unstably beyond 0.05, or the norm of SoftAggPooler's Z.grad suddenly increases dramatically.
-
-**Recommended range**: 0.01 ~ 0.2. Ethanol demo uses 0.08 for fast convergence; regression/classification heads for UC2/UC3 are more stable at 0.01–0.05.
-
-### 8.5 n_clusters — SoftAggPooler Granularity (default $(n_0+1)//2$)
-
-**What it is**: How many clusters SoftAggPooler divides $n_0$ nodes into. More clusters means less "coarse" coarse-graining, $L_0'$ and $L_0$ are closer; fewer clusters means stronger coarse-graining.
-
-**When to increase**: cos_sim is already close to 1.0 under exact Galerkin, indicating $n_{\text{clusters}}$ is too small causing severe information loss.
-
-**Consequences of increasing**: $P$ matrix becomes larger (more columns in $n_0 \times C$), dimension of $L_0'$ changes from $C$ to $C'$, making $L_0'$ and $L_0$ more similar. If $C$ approaches $n_0$, coarse-graining degenerates to the identity mapping.
-
-**When to decrease**: $n_0$ is large (e.g., 50+), $C$ is also large causing computation to increase dramatically. Or $L_{\text{spec}}$ loses regularization meaning because $C$ is too large.
-
-**Recommended range**: $\max(2, n_0//3) \sim n_0$. Default of 5 is appropriate for $n_0=9$; try 7–10 for $n_0=20$.
-
-### 8.6 Recommended Tuning Procedure
-
-Grid search is the simplest approach: fix all but one parameter, sweep that parameter over a reasonable range, record corr and cos_sim, and pick the optimal one. Then proceed to the next. Recommended order: **first lr (affects convergence speed) → then lam_s (affects regularization strength) → finally K (affects feature dimension)**.
-
----
-
-## 9. Honest Boundaries: Verified Capabilities and Known Limitations
-
-The purpose of this section is to let you clearly understand the model's capability boundaries before deciding whether to apply SRE to your project. All statements are supported by measured data, not speculation.
-
-### 9.1 Verified Capabilities
-
-UC1 self-supervised inversion (corr=1.0), UC2 molecular property regression (R²=0.878, leading GCN/GIN), UC3 $\beta_1$ classification (acc=1.0). Spectral fidelity monitoring cos_sim is 0.996–1.000 under exact Galerkin. Differentiable $L_{\text{spec}}$ can make SoftAggPooler.Z receive non-zero gradients and participate in training under learnable mode. All 19 canonical operators are fully implemented and pass 100% of regression tests (98 items).
-
-### 9.2 Observed but Unresolved Issues
-
-**Large graphs are impractical**: `eigvalsh` is $O(n^3)$ for $n_0 \ge 100$, and intermediate computations of `chebyshev_functional` also require $O(n^3)$ matrix multiplication. The current implementation is not practical for graphs above 100 nodes.
-
-**Cross-domain generalization residual**: Zero-shot inversion residual of 0.131 on RMAT graphs (completely random topology, untrained). This indicates the spectral features learned by the model still have a gap on out-of-distribution topologies.
-
-**Single-layer pooler**: Currently only one SoftAggPooler + one task head has been verified. Whether multi-layer stacking can further improve performance and how gradients propagate between layers have not been investigated.
-
-**soft_rank depends on eigvalsh**: Soft rank uses `torch.linalg.eigvalsh(L1)`, where $L1$ is the Hodge Laplacian with dimension $n_2 \times n_2$ (square of the number of faces). For many molecular graphs $n_2=0$ or very small, but for graphs with $n_2=100$ this step would also be slow.
-
-### 9.3 Explicitly Abandoned Directions
-
-**Making $L_{\text{spec}}$ propagate back to $m$**: We tried making $L_0$ also differentiable (not detached), so that $L_{\text{spec}}$ gradients train both $Z$ and $m$. Measured inversion diverged—loss rose to $10^{-1}$, corr dropped to −0.17. The explanation is that $L_{\text{spec}}$'s gradient direction conflicts with $L_{\text{task}}$, and together they push $m$ toward an unsatisfactory equilibrium point for both.
-
-**Using $\tau_k$ as spectral fidelity criterion**: The original plan §8 required $\tau_k$ relative error $\le 5\% / \le 3\%$. Measured error under exact Galerkin is 63%–100%. Mathematically impossible—$\tau_k$ is a nonlinear function of the full spectrum + dimension, and Galerkin changes both simultaneously.
-
-**Heat kernel trace distance as sole component of final loss**: We tried using only `hkt_dist` without cos_sim. `hkt_dist` is unstable under extreme reduction (→ 1 node)—after reducing a random graph to 1 node, $\operatorname{tr}(\exp(-tL))$ becomes $N_0$ (number of connected components of original graph), $\operatorname{tr}(\exp(-tL'))$ becomes 1, and relative error increases dramatically.
-
----
-
-## 10. Roadmap for Improvements
-
-This section lists five priority-sorted improvement directions, from immediately actionable to architecture-refactoring. Each gives expected benefit, implementation difficulty, and key risks.
-
-### P0: Real Molecular Dataset Validation (Large Benefit, Low Difficulty)
-
-Replace UC2's synthetic dataset with a small sample from QM9 (e.g., 100 molecules' HOMO-LUMO gap). QM9 data can be downloaded directly from pytorch-geometric, but this project does not use torch-geometric—manually parse QM9 xyz files to extract atomic coordinates and element types, compute adjacency matrices (covalent radius threshold) and chain complexes ourselves. We expect SRE to still outperform GCN/GIN on QM9, because gap is essentially a spectral property. The risk is that QM9 molecules typically have $n_0 \ge 10$, and `chebyshev_functional` computation will increase noticeably.
-
-### P1: Multi-Layer SoftAggPooler Stacking (Medium Benefit, Medium Difficulty)
-
-Currently only one pooler. We can stack two layers: first layer does $C_1 = n_0/2$ coarse-graining, second layer does another $C_2 = C_1/2$ coarse-graining on the first layer's $L_0'$. Each layer has its own $L_{\text{spec}}$ loss (spectral consistency between levels). This way the model can learn multi-scale topological patterns—local (original level) and global (coarse level). The risk is longer gradient paths between layers; need to increase lam_s to compensate for gradient decay.
-
-### P2: C++/CUDA Acceleration of chebyshev_functional (Large Benefit, High Difficulty)
-
-Current `chebyshev_functional` uses pure PyTorch matrix multiplication. For $n_0=100$ graphs with $K=32$, one forward pass needs 32 $(100 \times 100) \times (100 \times 100)$ matrix multiplications. Writing a CUDA kernel can fuse the three-term recurrence into one kernel, reducing GPU memory round-trips. Expected 5–10× forward speedup. The risk is needing to write a C++ extension and handle Windows compilation environment.
-
-### P3: Differentiable Alternative for $\tau_k$ (Medium Benefit, Medium Difficulty)
-
-Currently $\tau_k$ is computed from detached $L_0$ and does not enter the gradient graph. Making $\tau_k$ differentiable would allow using $\tau$ matching loss to directly train $m$ (consistent with the original plan). But $\tau_k$ is not preservable under Galerkin, so $\tau$ matching loss would conflict with Galerkin regularization. The alternative is to **compute $\tau_k$ directly on $m$**, not contrasting with Galerkin, but making $\tau_k$ at different granularities form a hierarchy consistent loss (closed loop similar to $L_{\text{hom}}$).
-
-### P4: Cross-Domain Robustness (Medium Benefit, High Difficulty)
-
-Can the model trained on UC2 (molecular gap) be directly applied to UC3 ($\beta_1$ classification) or to completely unrelated graph tasks? Current spectral features $[\tau_0..\tau_K, \alpha_n, \lambda_2]$ are theoretically domain-agnostic—they depend only on the Laplacian spectrum of the graph, not on which domain the graph comes from. But the measured RMAT zero-shot residual of 0.131 indicates there is still a gap. We can use domain adaptation techniques (e.g., SRE features + domain discriminator) to close the cross-domain gap.
-
----
-
-## 11. Project Structure and License
-
-### 11.1 Project Structure
-
-```
-math-vector_v2/
-├── sre_ai_model/                     AI model layer (new in this project)
-│   ├── sre_topology_model.py         Model main body (~65 KB)
-│   ├── sre_release.py                Release script (UC1/UC2/UC3 + baselines)
-│   ├── test_sre_topo_model.py        11 unit tests
-│   └── release/
-│       ├── weights/                  9 .pt weight files
-│       ├── metrics.json              Evaluation metrics summary
-│       └── SRE_AI_Model_C.md         This document (Chinese version)
-├── operator_calculus.py              Canonical operator calculus (frozen, numpy-only)
-├── sre_electronic_layer.py           Canonical electronic layer operators (frozen)
-├── sre_spectral_solver.py            Canonical spectral solver (frozen)
-├── test_operators_11_19.py           Op11-19 unit tests (61 items)
-├── test_operator_calculus.py         Operator calculus unit tests (37 items)
-└── .trae/documents/
-    └── SRE_AI_Model_Design.md        Design document (authoritative source, contains all criterion definitions)
-```
-
-### 11.2 Dependencies
-
-- Python ≥ 3.8
-- torch ≥ 2.0 (includes torch.linalg.eigvalsh)
-- numpy ≥ 1.24
-- No dependencies on torch-geometric, scipy, rdkit, or other third-party packages
-
-### 11.3 License
-
-The 19 canonical operators and AI model layer code are both released under the **MIT License**.
-
-```text
-Copyright (c) 2026
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
+# SRE Topological Spectral Model: From Discrete Operators to a Differentiable AI Model Layer
+
+
+Version: 2.0  
+
+[Resource & Availability Statement] This framework is built upon Status-Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open-access repository. **This document suite includes the system paper, application development, scientific hypotheses, complete algebraic derivations of Operators 1–19, and fully open-source simulation code**.
+
+> Visit the author's GitHub repository:
+>
+> https://github.com/yuelucn/Status-Relational-Entropy-SRE-Dynamics-The-Book-of-the-Void
+>
+> Visit the Tencent Smart Document Space with AI-assisted navigation (accessible on PC and WeChat mobile):
+>
+> https://docs.qq.com/space/DUkRjYUtNWFdyV253
+>
+> According to the Status-Relational Entropy (SRE) principle, classical physical foundations originate from information statistics.
+
+
+> This document records the complete design reasoning, architectural implementation, and experimental results of the SRE Topological Spectral Model. It is both a reproducible experimental report and an extensible technical manual. Readers need no prior knowledge of graph Laplacians, Chebyshev polynomials, or chain complexes to follow the reasoning chain and understand the model's design motivation and mathematical foundations.
+
+---
+
+## Table of Contents
+
+0. [From Operators to Model: Reasoning Chain and Key Bridge (Required Reading)](#0-from-operators-to-model-reasoning-chain-and-key-bridge-required-reading)
+1. [Notation and Core Intuition](#1-notation-and-core-intuition)
+2. [Preliminaries: Five Concepts with Precise Definitions](#2-preliminaries-five-concepts-with-precise-definitions)
+3. [Model Architecture: Data Flow and Gradient Propagation](#3-model-architecture-data-flow-and-gradient-propagation)
+4. [Experimental Setup: Three Tasks and Two Baselines](#4-experimental-setup-three-tasks-and-two-baselines)
+5. [Experimental Results and Causal Analysis](#5-experimental-results-and-causal-analysis)
+6. [Complete Usage Tutorial: From Environment Setup to Running All Cases](#6-complete-usage-tutorial-from-environment-setup-to-running-all-cases)
+7. [Weight File Loading and Inference](#7-weight-file-loading-and-inference)
+8. [Hyperparameter Tuning Guide](#8-hyperparameter-tuning-guide)
+9. [Honest Boundaries: Verified Capabilities and Known Limitations](#9-honest-boundaries-verified-capabilities-and-known-limitations)
+10. [Roadmap for Improvements](#10-roadmap-for-improvements)
+11. [Project Structure and License](#11-project-structure-and-license)
+
+---
+
+## 0. From Operators to Model: Reasoning Chain and Key Bridge (Required Reading)
+
+This section answers the most fundamental question: **Why can the 19 canonical operators be bridged into a differentiable AI model?** This reasoning chain was not complete at the start of design; it converged gradually through repeated verification. Following this chain helps understand the origin of every design decision.
+
+### 0.1 Stage One: Operators are End-to-End Connected, Bridging Identity Holds Exactly
+
+The foundation of the project is 19 discrete operators (hereinafter "canonical operators"), all implemented in numpy, frozen, and verified by 98 unit tests. The operator pipeline starts at molecular atom types and coordinates and ends at the weighted Laplacian matrix $L$:
+
+$$
+\text{positions} + \text{atomtypes} \xrightarrow{\text{Op1-6}} W_e \xrightarrow{\text{Op7-10}} m \xrightarrow{\text{Op11-19}} L
+$$
+
+The most critical bridging identity (verified in `main.py` Phase 6 with residual $\le 10^{-12}$) is:
+
+$$
+L = D_0^\top \operatorname{diag}(m) D_0 \equiv \operatorname{deg}(A_s) - A_s
+$$
+
+Here $D_0$ is the oriented incidence matrix of the graph (each edge assigned a direction, tail = −1, head = +1), and $m$ is the edge weight vector. The significance of this identity is: **the Laplacian matrix has two equivalent construction paths**—from the incidence matrix (algebraic path) and from the adjacency matrix (graph-theoretic path). The two paths are numerically exact, providing a dual-path validation for subsequent implementations.
+
+The conclusion of Stage One: **the mathematical object $L$ has been completely defined and is numerically stable, but has not yet been "differentiably" parameterized**—numpy does not support autograd.
+
+### 0.2 Stage Two: Torch Mirror Implementation of Operator Calculus
+
+Alongside the canonical operators, the project already contains an independent torch module `operator_calculus.py`, which is the **differentiable mirror** of the canonical operators. The core of this module is three classes:
+
+- **`ChainComplex`**: Encapsulates the incidence matrix $D_0$ and face operator $D_1$, internally replacing `numpy.ndarray` with `torch.Tensor` so the boundary identity $D_1 D_0 = 0$ holds differentiably.
+- **`Operator`**: Wraps an $N \times N$ linear operator on a chain complex, supporting matrix multiplication, addition, commutators, power operations, and functional calculus. All operations return new `Operator` instances—**calculus closure** guarantees intermediate results never need to revert to numpy.
+- **`OperatorCalculus`**: Bound to a `ChainComplex`, provides the exterior derivative $d$, codifferential $\delta$, Hodge Laplacian $\Delta = d\delta + \delta d$, weighted Laplacian $L_0(w) = D_0^\top \operatorname{diag}(w) D_0$, and Chebyshev functional calculus.
+
+The key implementation detail is **Chebyshev functional calculus** (`chebyshev_functional`, lines 221–253). It uses the three-term recurrence:
+
+$$
+T_0(Y) = I,\quad T_1(Y) = Y,\quad T_{k+1}(Y) = 2Y T_k(Y) - T_{k-1}(Y)
+$$
+
+to expand any spectral function $g(L)$ as $g(L) \approx \sum_{k=0}^K c_k T_k(Y)$, where $Y = 2L/b - I$ maps the spectrum to $[-1, 1]$. **The entire process uses only matrix multiplication and never calls `torch.linalg.eigvalsh`**. This has two key benefits: (1) autograd can track gradients precisely—$\partial T_{k+1}/\partial Y = 2T_k + 2Y \partial T_k/\partial Y - \partial T_{k-1}/\partial Y$, the chain rule applies automatically; (2) it avoids gradient non-uniqueness caused by eigenvalue degeneracy.
+
+This module already contains an inversion demo (`run_training_demo`, lines 277–324) that uses torch autograd to invert edge weights $w$ from spectral observations: given ground truth $w^*$, compute observations $Y^* = g(L_0(w^*)) X$ ($X$ is a multi-probe matrix), then train parameter $w$ so that $g(L_0(w)) X \approx Y^*$. Measured results: loss drops to $2 \times 10^{-19}$, Pearson correlation $\text{corr}(\hat{w}, w^*) = 1.0$.
+
+The conclusion of Stage Two: **the step "from operators to differentiable operators" is already complete, and trainability has been verified on a small demo**. But the demo only uses ChainComplex + OperatorCalculus—it lacks a complete hierarchical structure and coarse-graining capability. It is essentially just a "toy verification of operator trainability."
+
+### 0.3 Stage Three: The Missing Load-Bearing Component—Differentiable Hierarchical Compression
+
+To extend operator_calculus into a true AI model, one core capability is still missing: **learnable granularity**. The model should not only extract features at a single scale, but also be able to see the same graph at multiple coarse-graining levels.
+
+Coarse-graining has a standard form in algebraic topology—**Galerkin projection**: given an $n_0 \times C$ assignment matrix $P$ ($P^\top P = I$, orthogonality), the fine-level Laplacian $L_0$ can be projected to the coarse level:
+
+$$
+L_0' = P^\top L_0 P
+$$
+
+The chain complex is correspondingly reduced: $D_0' = D_0 P$ (the incidence matrix of the fine level multiplied by the assignment matrix yields the incidence matrix of the coarse level), and $D_1' = D_1$ (the face operator is invariant under coarse-graining because faces are filled by edge cycles, which are not split as units).
+
+Galerkin projection has two modes:
+
+| Mode | Construction of $P$ | $\beta_1$ Preservation | Differentiable | Purpose |
+|:---|:---|:---|:---|:---|
+| **Exact mode** | 0/1 hard assignment from BFS spanning tree | Provably strictly invariant | No | Validation baseline / structural pooling |
+| **Learnable mode** | $P = \operatorname{softmax}(Z)$, where $Z$ is an $n_0 \times C$ learnable parameter | Soft constraint (penalize closure with soft rank) | Yes | Carrier of learnable granularity |
+
+The proof that $\beta_1$ is strictly preserved in exact mode is straightforward: after contracting a spanning tree, $V' = \beta_0$, $E' = E - (n_0 - \beta_0)$, and the number of faces $F$ is unchanged, so
+
+$$
+\beta_1' = E' - V' + F = (E - n_0 + \beta_0) - \beta_0 + F = E - n_0 + F = \beta_1
+$$
+
+Galerkin projection is the model's **load-bearing component**—without it, operator_calculus is just a tool for computing spectral moments; with it, the model gains a hierarchical structure "from coarse to fine" and can extract features at multiple scales.
+
+### 0.4 Stage Four: The Mathematical Discovery That $\tau_k$ Is Not Preservable and the Alternative
+
+The original design plan called for using the relative error of $\tau_k$ as the spectral fidelity criterion ($\le 5\%$). $\tau_k$ is the normalized trace of Chebyshev spectral moments:
+
+$$
+\tau_k = \frac{1}{N} \operatorname{tr}(T_k(Y)),\quad Y = \frac{2L_0}{\alpha_n} - I
+$$
+
+Under Galerkin projection, $\tau_k' = \operatorname{tr}(T_k(Y'))/N'$, where $Y' = 2L_0'/\alpha_n' - I$.
+
+Measured data (exact Galerkin, 4 graphs, 8 levels) yielded an unexpected conclusion: **$\tau_k$ is not preservable under Galerkin**—the relative error reaches 63% to 100%.
+
+The mathematical root cause is: $\tau_k$ depends on the full spectral distribution + dimension $N$ + spectral radius $\alpha_n$. Galerkin projection changes all three simultaneously—eigenvalues are sandwiched between adjacent eigenvalues of $L_0$ by the Cauchy interlacing theorem ($\lambda_i(L_0) \le \lambda_i(L_0') \le \lambda_{i+n_0-C}(L_0)$), but $N$ changes from $n_0$ to $C$, and $\alpha_n$ also changes with $L_0'$. With three variables changing simultaneously, the nonlinear function $\operatorname{tr}(T_k(Y))$ cannot remain invariant.
+
+The alternative adopts a two-layer design:
+
+**Monitoring metric—eigenvalue cosine similarity** (`spectral_cosine_similarity`): Apply `eigvalsh` to $L_0$ and $L_0'$ to obtain sorted eigenvalue vectors, linearly interpolate the coarse-level eigenvalues to align with the fine-level index space, then compute cosine similarity. The Cauchy interlacing theorem guarantees stable ordering, and measured $\cos_{\text{sim}} \in [0.996, 1.000]$ under exact Galerkin. This metric is for monitoring only and does not participate in gradients.
+
+**Differentiable loss—heat kernel trace relative distance** (inside `loss_of`):
+
+$$
+L_{\text{spec}} = \operatorname{mean}_{t \in \{1.0, 2.0\}} \frac{|\operatorname{tr}(e^{-t L_0'}) - \operatorname{tr}(e^{-t L_0})|}{\max(\operatorname{tr}(e^{-t L_0}), 10^{-30})}
+$$
+
+The heat kernel trace $\operatorname{tr}(e^{-t L}) = \sum_i e^{-t \lambda_i}$ is computed via `chebyshev_functional`—fully differentiable. Key design detail: $L_0$ is **detached** (converted to Python float as a constant), so the gradient of $L_{\text{spec}}$ cannot interfere with the inversion direction of edge weights $m$; $L_0'$ is **not detached**, and gradients flow through $L_0' \leftarrow P \leftarrow Z$ back to SoftAggPooler's parameters.
+
+### 0.5 Complete Bridging Diagram
+
+```
+Canonical operators (numpy, 19 Op, frozen)
+  │  W_e → m → L   Bridging identity L = D0ᵀdiag(m)D0 ≡ deg - A_s
+  ▼
+operator_calculus.py (torch, differentiable mirror)
+  │  ChainComplex → Operator → OperatorCalculus
+  │  chebyshev_functional: three-term recurrence, autograd, no eigvalsh
+  │  laplacian0(w): weighted graph Laplacian, w differentiable
+  │  run_training_demo: inversion verified loss→2e-19, corr=1.0
+  ▼
+sre_topology_model.py (new model layer)
+  │  SoftAggPooler: P = softmax(Z), Galerkin projection L0' = PᵀL0P
+  │  ScaleGauge: m = s · softplus(ρ)/mean, eliminates scale flat direction
+  │  SRETopoEncoder: fixed operator, τ_k + α_n + λ₂, no learnable parameters
+  │  Five-term loss: L_task + λ_g L_gauge + λ_s L_spec + λ_h L_hom + λ_head L_head
+  │  L_spec gradient path: L_spec → tr_c → chebyshev → Y → L0' → P → Z
+  ▼
+Three use cases verified: UC1 inversion corr=1.0, UC2 regression R²=0.878, UC3 classification acc=1.0
+```
+
+The core logic of this bridging chain is: **mathematical correctness of operators is guaranteed by the canonical operators, differentiability by the torch mirror implementation, and hierarchical expressiveness by SoftAggPooler**. The three are independently implemented, independently verified, and then converge in the model layer.
+
+---
+
+## 1. Notation and Core Intuition
+
+**Given the connectivity of a molecule or graph, extract its topological spectral features, then use these features for molecular property prediction, graph classification, or graph inversion tasks.**
+
+More concretely: imagine you have the atomic connectivity table of a molecule—"carbon atom #0 is connected to hydrogen atoms #3, #4, #5 and another carbon atom #1." Input this table to the SRE model, and it outputs an 11-dimensional feature vector representing the full spectral information encoded in this molecule's topological structure. Then you can train a simple linear regression on this vector to predict the molecule's HOMO-LUMO gap (a molecular property), or train a binary classifier to determine whether the graph contains a cycle (β₁=1 or 0).
+
+The core viewpoint of the SRE model is: **the spectrum (eigenvalue distribution) of a graph's Laplacian matrix carries more shape information than the adjacency matrix itself**. Traditional graph neural networks (GCN, GIN) start from the adjacency matrix and perform message passing, while SRE directly targets the spectrum as the more fundamental object.
+
+---
+
+## 2. Preliminaries: Five Concepts with Precise Definitions
+
+Each concept in this section follows the same structure: **intuitive metaphor → formal definition → why it matters for the model**. Skip any concept you are already familiar with. Understanding these concepts requires no graduate-level mathematics—each paragraph starts with intuition before presenting formulas.
+
+### 2.1 Graph Laplacian Matrix: The Vibration Equation of a Graph
+
+**Intuitive metaphor**: Imagine a graph as a spring system. Each node is a small ball, each edge is a spring. The Laplacian matrix is the matrix that describes the vibration equation of this system—its eigenvalues are the vibration frequencies, its eigenvectors are the vibration modes. Therefore the eigenvalue distribution (the "spectrum") of the Laplacian matrix encodes the shape of the entire graph. Cycles, chains, and complete graphs all have fundamentally different spectrum shapes.
+
+**Formal definition**: Given a graph $G = (V, E)$ with adjacency matrix $A$ ($A_{ij} = 1$ when there is an edge between $i$ and $j$), degree matrix $D$ ($D_{ii} = \sum_j A_{ij}$), the Laplacian is defined as $L = D - A$. If edges have weights $w_{ij}$, then $L = D - A$ where $A_{ij} = w_{ij}$ and $D_{ii} = \sum_j w_{ij}$. In incidence matrix form this is $L = D_0^\top \operatorname{diag}(m) D_0$, where $D_0$ is the oriented incidence matrix (each edge assigned a direction, tail −1, head +1) and $m$ is the edge weight vector.
+
+**Why it matters for the model**: The Laplacian is the core carrier of the entire SRE model. All spectral features in the model ($\tau_k$, $\alpha_n$, $\lambda_2$) are computed from $L$. The model treats $L$ as a differentiable tensor so that the entire forward pass flows through PyTorch's autograd.
+
+### 2.2 Betti Number β₁: How Many Independent Cycles in a Graph
+
+**Intuitive metaphor**: Imagine a graph made of rubber bands. If you cut it once, how many pieces does it fall into? $\beta_0$ is the number of connected components. How many cuts do you need to make the graph into a tree (a graph with no cycles)? $\beta_1$ is the number of independent cycles. A single cycle ($C_6$) has $\beta_1=1$, a chain has $\beta_1=0$, two disconnected cycles have $\beta_0=2$ and $\beta_1=2$.
+
+**Formal definition**: $\beta_1 = n_1 - n_0 + n_2$, where $n_0$ is the number of nodes, $n_1$ the number of edges, $n_2$ the number of faces (closed regions). This is the Euler-Poincaré formula for chain complexes. For a pure graph ($n_2=0$), the formula reduces to $\beta_1 = n_1 - n_0 + 1$ (assuming $\beta_0=1$, a connected graph).
+
+**Why it matters for the model**: $\beta_1$ is a topological property—it should remain strictly invariant under coarse-graining (merging multiple nodes into one). The SRE model uses $\beta_1$ as a criterion to check whether coarse-graining operations are correct, and also as the label for the UC3 classification task. The model includes a soft rank function `soft_rank` that approximates $\beta_1$ using the trace of the Hodge Laplacian $\Delta_2$.
+
+### 2.3 Chebyshev Polynomial Functional Calculus: Computing Spectral Functions Without Eigendecomposition
+
+**Intuitive metaphor**: You want to compute $f(L)$ where $f$ is some function (like the heat kernel $\exp(-tL)$), but you don't want to first perform the eigendecomposition of $L$ (which is $O(n^3)$ and unstable). Chebyshev polynomials provide a shortcut—they have a three-term recurrence formula that you can compute layer by layer like the Fibonacci sequence, using only matrix multiplication the entire time.
+
+**Formal definition**: $T_0(Y) = I$, $T_1(Y) = Y$, $T_{k+1}(Y) = 2Y T_k(Y) - T_{k-1}(Y)$. To compute $f(L)$, first scale $Y = 2L/b - I$ to map the spectrum of $L$ to $[-1, 1]$, then perform numerical interpolation at the Chebyshev nodes to obtain coefficients $c_k$, and finally $f(L) \approx \sum_{k=0}^K c_k T_k(Y)$. For the trace, $\operatorname{tr}(f(L)) \approx \sum_k c_k \operatorname{tr}(T_k(Y))$, where each term can be computed recursively.
+
+**Why it matters for the model**: $\tau_k$ in the SRE model is exactly $\operatorname{tr}(T_k(Y))/N$, and the heat kernel trace loss is also computed via `chebyshev_functional`. The key benefit is that **the entire process uses PyTorch matrix multiplication, so autograd can track gradients precisely**, and with $K=32$ it is sufficiently accurate, completely bypassing the $O(n^3)$ bottleneck of `eigvalsh`.
+
+### 2.4 Galerkin Projection and the Non-Preservability of τ_k
+
+**Intuitive metaphor**: There are two ways to shrink a high-resolution photograph. The Galerkin projection approach is: divide $n_0$ pixels into $C$ clusters, use one representative pixel per cluster, then compute the Laplacian of the compressed image as $L_0' = P^\top L_0 P$, where $P$ is an $n_0 \times C$ 0/1 matrix (each pixel belongs to exactly one cluster). The problem is that a spectral feature $\tau_k$ of the original image depends on all $n_0$ eigenvalues, but the compressed image only has $C$ eigenvalues and their distribution has changed—you cannot expect $\tau_k'$ of the compressed image to equal $\tau_k$ of the original.
+
+**Formal definition**: Galerkin projection $L_0' = P^\top L_0 P$, where $P^\top P = I$ (orthogonality). By the Cauchy interlacing theorem, the eigenvalues of $L_0'$ are sandwiched between adjacent eigenvalues of $L_0$: $\lambda_i(L_0) \le \lambda_i(L_0') \le \lambda_{i + n_0 - C}(L_0)$. But $\tau_k = \operatorname{tr}(T_k(Y))/N$ is a nonlinear function of the full spectrum and is not invariant under Galerkin projection.
+
+**Why it matters for the model**: This is one of the earliest mathematical facts exposed in this project—the original design plan required $\tau_k$ relative error $\le 5\%$, but measured error under exact Galerkin reached 63%–100%. We replaced it with **eigenvalue cosine similarity cos_sim** as the spectral fidelity monitoring metric (0.996–1.000 under exact Galerkin) and **differentiable heat kernel trace distance** as the $L_{\text{spec}}$ loss.
+
+### 2.5 Heat Kernel Trace: A Global Measure of Heat Diffusion Processes
+
+**Intuitive metaphor**: Imagine placing a heat source simultaneously at every node of a graph, then letting heat diffuse along the edges. After time $t$, what is the total heat in the entire graph? $\operatorname{tr}(\exp(-tL_0))$ is exactly this value. This quantity encodes the overall connectivity of the graph: as $t \to 0$ it equals $N$ (each node's own heat), and as $t \to \infty$ it equals $\beta_0$ (only connected components still have temperature differences). Therefore at intermediate values of $t$ it is most sensitive to spectrum shape.
+
+**Formal definition**: $\exp(-tL_0) = \sum_i \exp(-t\lambda_i) v_i v_i^\top$, and taking the trace gives $\operatorname{tr}(\exp(-tL_0)) = \sum_i \exp(-t\lambda_i)$. $t$ is a time scale: small $t$ primarily looks at small eigenvalues (low-frequency modes), large $t$ at large eigenvalues (high-frequency modes).
+
+**Why it matters for the model**: The $L_{\text{spec}}$ loss uses the relative distance of heat kernel traces as a spectral fidelity metric. Its key advantage is that when computed via `chebyshev_functional` it is fully differentiable, and gradients can propagate from $L_0'$ back through the SoftAggPooler's parameter $Z$. This turns $L_{\text{spec}}$ from a non-differentiable monitoring metric into a regularization term that truly participates in training.
+
+---
+
+## 3. Model Architecture: Data Flow and Gradient Propagation
+
+This section uses a step-by-step description to explain what transformations a molecular graph undergoes inside the model from input to final prediction, the mathematical form of each transformation, and how gradients flow.
+
+### 3.1 Input: Chain Complex Representation of Molecular Graphs
+
+The model receives three raw inputs: $D_0$ (incidence matrix, shape $n_1 \times n_0$), $D_1$ (face operator, shape $n_2 \times n_1$; for most molecular graphs $n_2=0$), and $m$ (edge weight vector, length $n_1$). Constructing $D_0$ is straightforward: number each edge, assign each edge a direction (e.g., from the smaller node number to the larger), fill −1 at the tail column and +1 at the head column. For ethanol, $n_0=9$ atoms, $n_1=8$ bonds, so $D_0$ is an $8 \times 9$ matrix.
+
+### 3.2 Laplacian Construction: Analytic Formula, Differentiable
+
+Compute $L_0 = D_0^\top \operatorname{diag}(m) D_0$ directly from $D_0$ and $m$. There are no neural network layers here—just two matrix multiplications and a diagonal matrix. The benefit is: PyTorch's autograd can precisely track the gradient of $m$—$\partial L_0 / \partial m = D_0^\top \odot D_0$ (element-wise multiplication), and $\partial \operatorname{tr}(L_0) / \partial m = 2 \cdot \sum_{i \in \text{edge } jk} (L_{0,ii} + L_{0,jj} - 2L_{0,ij}) \cdot D_{0,ij}^2$. The model also has a Galerkin path: compute $L_0' = P^\top L_0 P$ from the SoftAggPooler output $P$, used for cross-level spectral features. $L_0$ is `.detach()`-ed before passing into SRETopoEncoder—this is deliberate design, so $L_{\text{spec}}$ does not interfere with the inversion gradient direction of $m$.
+
+### 3.3 SoftAggPooler: A Learnable Coarse-Graining
+
+This layer is the only "learnable" component (aside from the final task head). It has an `nn.Parameter` tensor $Z$ with shape $n_0 \times n_{\text{clusters}}$. Applying softmax to each row yields the granularity assignment matrix $P$—each node belongs to $n_{\text{clusters}}$ clusters with a probability distribution. $P$ is a "soft version" of the 0/1 hard assignment. Galerkin projection $L_0' = P^\top L_0 P$ uses this $P$ for coarse-graining. The gradient of $Z$ comes from $L_{\text{spec}}$'s heat kernel trace loss (gradient path: $L_{\text{spec}} \to \text{tr}_c \to \text{chebyshev\_functional} \to Y \to L_0' \to P \to Z$). The pooler is initialized with `torch.randn(...) * 0.01`, a small random value that ensures softmax is close to uniform assignment early in training.
+
+### 3.4 SRE Topo Encoder: Fixed Operator, Computing Spectral Features
+
+This layer has no learnable parameters—it is simply a set of canonical operators (Op13–18 Chebyshev functional calculus + Op9 Hodge Laplacian). Input is $L_0$ (detached, not in the gradient graph), output is a $K+3$-dimensional spectral feature vector: $[\tau_0, \tau_1, \dots, \tau_K, \alpha_n, \lambda_2]$.
+
+$\tau_k = \operatorname{tr}(T_k(Y))/N$, where $Y = 2L_0/\alpha_n - I$ and $\alpha_n = \lambda_{\max}(L_0)$. $\alpha_n$ is the spectral radius of $L_0$, obtained directly via `torch.linalg.matrix_norm(L0, ord=2)` or `torch.linalg.eigvalsh(L0)[-1]`. $\lambda_2$ is the second-smallest eigenvalue, also called "algebraic connectivity"—it measures how tightly connected the graph is.
+
+The key design decision of this layer: **do not use eigvalsh**. If you want to compute the eigenvalue distribution, the most direct way is `eigvalsh`, but its gradients are unstable (gradient is 0 or non-unique at eigenvalue degeneracy). The SRE design philosophy is to **use Chebyshev functional calculus instead of eigvalsh** to indirectly compute spectral moments—gradients are more stable, and the entire process uses only matrix multiplication, making it friendly for large graphs.
+
+### 3.5 Level Attention Head: Multi-Level Spectral Feature Fusion
+
+SoftAggPooler can perform multi-layer coarse-graining: original layer $L_0 \to$ first-level coarse-graining $L_0' \to$ second-level $L_0'' \to \dots$. Each level $L_0$ computes a $K+3$-dimensional spectral feature, forming an $n_{\text{levels}} \times (K+3)$ matrix $X$. LevelAttentionHead performs attention-weighted fusion on $X$: first map each row feature to hidden dimension, then perform attention pooling over the hidden dimension to obtain a fixed-length fused feature, and finally pass through two MLP layers to output the task value.
+
+### 3.6 Task Head: Simple MLP, Regression or Classification
+
+The final layer is a linear classifier or regressor. For the UC2 regression task: `Linear(9, 32) → ReLU → Linear(32, 1)`, outputs a scalar prediction (estimated gap). For the UC3 classification task: `Linear(9, 32) → ReLU → Linear(32, 1) → Sigmoid`, outputs a probability in $[0, 1]$. Trained with `BCEWithLogitsLoss` (classification) or `MSELoss` (regression).
+
+### 3.7 Loss Function: Five-Term Combination
+
+The complete loss function is $L = L_{\text{task}} + \lambda_g L_{\text{gauge}} + \lambda_s L_{\text{spec}} + \lambda_h L_{\text{hom}} + \lambda_{\text{head}} L_{\text{head}}$.
+
+$L_{\text{task}}$ is the main loss—in the self-supervised demo it makes $g(L_0(m)) X \approx g(L_0(m_{\text{star}})) X$; in regression/classification tasks it makes $\text{MLP}(\text{spectral features}) \approx y_{\text{true}}$. $L_{\text{head}}$ is an auxiliary loss between multi-level spectral features, making coarse-level $\tau_k$ approach fine-level $\tau_k$ (note: here $\tau_k$ is computed on $L_0$ which is not detached, so $L_{\text{head}}$ can directly train $m$). $L_{\text{gauge}}$ constrains $\alpha_n(m)$ not to deviate too far from $\alpha_n(m_0)$, used to eliminate the flat direction of overall edge weight scaling. $L_{\text{spec}}$ is the differentiable heat kernel trace loss, training SoftAggPooler's $Z$. $L_{\text{hom}}$ uses soft rank (difference of $\operatorname{tr} h(L_1') - \operatorname{tr} h(L_1)$ with sharp=80, K=48, $h(t) = \exp(-80t)$) to constrain the $\beta_1$ closure between coarse and fine levels.
+
+---
+
+## 4. Experimental Setup: Three Tasks and Two Baselines
+
+### UC1: Self-Supervised Edge Weight Inversion
+
+**Task definition**: Given the topological structure of a molecule (how atoms are connected), invert the actual strength $m$ of each bond. This task has no "ground-truth edge weights" as supervision labels—hence it is **self-supervised**: we generate a ground truth $m_{\text{star}}$ with a random seed, then compute observations $Y = g(L_0(m_{\text{star}})) \cdot X$ (where $g$ is a power series of $L_0$, the observation operator, and $X$ is a random probe matrix). During training the model only sees $Y$ and $D_0/D_1$ and must learn $m$ to fit.
+
+**Why use random ground truth**: If we use the real $W_e$ (electronegativity edge weights), its numerical range is very uniform (most bond weights are between 0.95–1.05), making it nearly unidentifiable—scaling $m$ uniformly by 0.99 produces negligible change in observations. Using uniformly distributed random values between 0.5–2.0 as ground truth guarantees the inversion is well-conditioned and identifiable.
+
+**Training process**: Adam optimizer with lr=0.08, 1500 iterations. $m$ starts from uniform initialization, is pushed toward fitting $g(L_0(m)) \cdot X \approx Y$ by $L_{\text{task}}$, while $L_{\text{spec}}$ and $L_{\text{hom}}$ serve as regularization terms constraining spectral and topological structure. SoftAggPooler's $Z$ is also trained by $L_{\text{spec}}$, learning a reasonable coarse-graining assignment.
+
+**Result interpretation**: $\text{corr}(\hat{w}, w^*) = 1.0000$ indicates perfect inversion convergence—the Pearson correlation between recovered edge weights and ground truth reaches 1. $L_{\text{task}}$ drops from $3 \times 10^{-3}$ to $8 \times 10^{-11}$, MAE is only $2.9 \times 10^{-5}$. This demonstrates that the model's trainability is not in question—when observations $Y$ are sufficiently informative, inversion is completely feasible.
+
+**Weight file**: `release/weights/uc1_edge_inversion.pt`. Internal structure includes `pooler_state` (SoftAggPooler's $Z$ parameter), `D0`/`D1` (numpy arrays of the ethanol chain complex), and `meta` (training hyperparameters).
+
+### UC2: Molecular Property Regression
+
+**Task definition**: Given graph structure (synthesized cycles and chains), predict HOMO-LUMO gap. Labels are synthesized by: compute the Laplacian eigenvalues of each graph, take $\text{gap} = (\lambda_{\max} - \lambda_2) / \lambda_{\max}$, then add 5% Gaussian noise. This definition is justified because $\lambda_{\max}$ and $\lambda_2$ correspond respectively to the highest and lowest non-trivial eigenvalues of molecular orbitals, and their difference directly reflects the molecule's electronic energy gap.
+
+**Dataset**: 6 graphs, $n_0$ from 5 to 10, alternating cycles and chains. 4 training samples, 2 test samples. This dataset is small—our goal is not large-scale benchmarking but to **verify that the model's spectral features indeed encode gap information**.
+
+**Input comparison of the three models**: SRE input is $K+3=9$-dimensional spectral features $[\tau_0..\tau_6, \alpha_n, \lambda_2]$. GCN and GIN inputs are $n_0 \times 1$ identity node features + $n_0 \times n_0$ normalized adjacency matrix, zero-padded to $n_0=10$ for small graphs. The three models have **comparable parameter budgets**: SRE's MLP has $9 \times 32 + 32 + 32 \times 1 + 1 = 321$ parameters; each of GCN/GIN's two layers has $1 \times 16 + 16 + 16 \times 16 + 16 = 304$ parameters. So the comparison is fair.
+
+**Result interpretation**: SRE achieves MSE=0.0023, R²=0.878; GIN achieves 0.0062/0.674; GCN achieves 0.0159/0.160. SRE leads GIN by 20 percentage points in R² and GCN by 72 percentage points. GCN's R² is only 0.16—approximately random guessing. This is not because GCN failed to converge (it converged to loss=0.0159), but because **mean pooling completely washes out the graph's topological information**. After mean pooling in GCN, cycles and chains have nearly identical feature vectors, and the MLP simply cannot distinguish them. GIN's sum pooling preserves node identity, so it performs much better than GCN, but SRE still significantly outperforms it—because SRE's spectral features directly contain $\alpha_n$ and $\lambda_2$, which are the key variables in the gap formula.
+
+**Weight files**: `uc2_sre_regression.pt` / `uc2_gcn_regression.pt` / `uc2_gin_regression.pt`. Each checkpoint stores trained `state_dict`, all graph features, labels, and config (K, in_dim, task).
+
+### UC3: Graph Classification (β₁ Topology Identification)
+
+**Task definition**: Distinguish cyclic ($\beta_1=1$) from acyclic ($\beta_1=0$) graphs. We synthesized 20 graphs: 10 cyclic (first generate a spanning tree to ensure connectivity, then add one edge to introduce at least one cycle), 10 pure chains ($n_0-1$ edges, naturally acyclic). $n_0$ is randomized between 5–8, edge weights between 0.5–2.0.
+
+**Why choose $\beta_1$ as the classification target**: $\beta_1$ is a pure topological invariant—it depends only on the graph's connected structure and is completely independent of edge weight values. This makes it an ideal metric to verify whether the model truly learns **topological properties** rather than **edge weight patterns**.
+
+**Result interpretation**: Both SRE and GIN achieve 100% accuracy; GCN only achieves 85%. Where do GCN's 15% errors come from? After mean pooling, some cyclic and acyclic graphs have very similar feature vectors (especially when short chains and cycles have similar spectrum shapes), and the linear classifier cannot draw a clear decision boundary. SRE's spectral features directly encode $\beta_1$ proxies (e.g., soft_rank output, whether $\lambda_2 > 0$, or the shape of $\tau_k$), so the classifier can perfectly separate them. GIN's sum pooling preserves node identity, allowing the MLP to learn some $\beta_1$-equivalent signature (e.g., "sum of products of node degrees" or some count from WL iterations), also achieving perfect classification.
+
+**Weight files**: `uc3_sre_classifier.pt` / `uc3_gcn_classifier.pt` / `uc3_gin_classifier.pt`.
+
+---
+
+## 5. Experimental Results and Causal Analysis
+
+This section does not repeat the result table from the previous section, but explains **why** SRE significantly outperforms baselines in some cases, matches baselines in others, and still lags baselines in certain scenarios. Understanding this will let you judge whether SRE is suitable for your task.
+
+**The fundamental reason SRE significantly outperforms GCN/GIN on UC2**: SRE's feature space is the spectrum—$\alpha_n$ ($\lambda_{\max}$) and $\lambda_2$ (algebraic connectivity) are directly the core variables of the gap formula, and $\tau_k$ (Chebyshev spectral moments) encodes higher-order information about the full spectrum shape. Intuitively: SRE's input already contains the key variables ($\alpha_n$ and $\lambda_2$) needed by the gap formula, while GCN/GIN's input is only the raw graph topological structure information, requiring the MLP to extract $\alpha_n$ and $\lambda_2$ indirectly through multi-layer nonlinear transformations. This is why SRE leads baselines by 20–72 percentage points in R² on UC2.
+
+**Why GCN performs much worse than other baselines on UC2 (R²=0.16)**: Mean pooling discards graph scale information. Imagine two different graphs—one with $n_0=6, \lambda_{\max}=3$ and another with $n_0=8, \lambda_{\max}=3$. After GCN mean pooling, their feature vectors might be identical (both depend only on normalized adjacency node degrees), while SRE can distinguish them through $\alpha_n$ and $\lambda_2$. The more fundamental issue is: GCN's message passing essentially computes "powers of the adjacency matrix," and there is no direct monotonic relationship between powers of the adjacency matrix and the eigenvalues of the Laplacian. Without node features (identity features), GCN's expressiveness is severely limited.
+
+**Why GIN also achieves 100% on UC3**: GIN's expressiveness has been proven equivalent to the Weisfeiler-Leman graph isomorphism test—it can distinguish any two distinct graph structures (in a certain sense). Graphs with $\beta_1=0$ and $\beta_1=1$ are obviously non-isomorphic, so GIN naturally learns some $\beta_1$-equivalent signature. But this does not mean GIN can match SRE on all tasks—on UC2, gap is a continuous spectral property rather than a discrete graph isomorphism class label. GIN's learning efficiency on continuous spectral properties is much lower than SRE, because it must indirectly derive spectral information from intermediate message-passing representations.
+
+**Where SRE is weak**: The current model only has one SoftAggPooler layer, while GCN/GIN can stack multiple layers to form deep networks. On tasks requiring multi-layer message passing to learn abstract concepts (e.g., molecular toxicity prediction needing both local functional groups and global scaffolds simultaneously), the single-layer SRE may underperform deep GIN. Another weakness is SRE's scalability with respect to $n_0$—both `eigvalsh` and `chebyshev_functional` have $O(n^3)$ complexity, making the current implementation impractical for graphs with $n_0 \ge 100$, while the message-passing paradigm can run large graphs with $O(n + m)$ complexity.
+
+---
+
+## 6. Complete Usage Tutorial: From Environment Setup to Running All Cases
+
+### 6.1 Environment Requirements
+
+On Windows, `KMP_DUPLICATE_LIB_OK=TRUE` must be set before importing numpy or torch; otherwise it will crash due to duplicate OpenMP library initialization. Python ≥ 3.8, torch ≥ 2.0, numpy ≥ 1.24. No dependencies on torch-geometric, scipy, rdkit, or other third-party packages.
+
+### 6.2 Three Steps to Run Everything
+
+```powershell
+# Step 1: Set environment variable (must be before any import)
+$env:KMP_DUPLICATE_LIB_OK = "TRUE"
+
+# Step 2: Run all cases + baselines + save weights + print evaluation table
+python sre_ai_model\sre_release.py
+
+# Step 3: Check outputs
+ls sre_ai_model\release\weights\          # 9 .pt weight files
+type sre_ai_model\release\metrics.json    # Machine-readable evaluation metrics
+```
+
+`sre_release.py` also supports `--use uc1`, `--use uc2`, `--use uc3`, and `--use all` (default) for selective execution. Each case takes seconds to tens of seconds depending on iteration count.
+
+### 6.3 Run the Self-Supervised Demo Alone
+
+If you only want to see SRE's core inversion capability, this is sufficient:
+
+```powershell
+$env:KMP_DUPLICATE_LIB_OK = "TRUE"
+python -c "import sys; sys.path.insert(0,'sre_ai_model'); import sre_topology_model as stm; r=stm.run_selfsupervised_demo(iters=1500); print(f'corr={r[\"corr\"]:.4f}, MSE={r[\"loss1\"]:.2e}')"
+```
+
+Two key lines in the output are `corr` and `cos_sim`—corr=1.0 indicates perfect inversion convergence, cos_sim indicates the spectral fidelity of coarse-graining in learnable mode (exact mode is 0.996–1.000; learnable mode depends on SoftAggPooler's training degree).
+
+### 6.4 Run Unit Tests
+
+Torch-side model layer tests:
+
+```powershell
+$env:KMP_DUPLICATE_LIB_OK = "TRUE"
+python -m pytest sre_ai_model\test_sre_topo_model.py -v
+```
+
+All 11 tests pass, covering: $\beta_1$ preservation, Galerkin identity, $\tau$ consistency with canonical Op13, non-zero gradients, soft-rank $\beta_1$ closure, demo convergence, prior invariance, cementing the non-preservability of $\tau$, and verifying cos_sim reachability.
+
+Canonical regression (19 operators):
+
+```powershell
+$env:KMP_DUPLICATE_LIB_OK = "TRUE"
+python -m pytest test_operators_11_19.py test_operator_calculus.py -q
+```
+
+98 items, zero breakage.
+
+### 6.5 All Output Files
+
+After running `sre_release.py`, you will see in `sre_ai_model/release/`:
+
+- `weights/uc1_edge_inversion.pt` — SoftAggPooler weights for UC1 + ethanol chain complex D0/D1
+- `weights/uc2_sre_regression.pt` — Regression head weights for UC2 + SRE spectral features for all graphs
+- `weights/uc2_gcn_regression.pt` — GCN baseline weights for UC2
+- `weights/uc2_gin_regression.pt` — GIN baseline weights for UC2
+- `weights/uc3_sre_classifier.pt` — Classification head weights for UC3
+- `weights/uc3_gcn_classifier.pt` — GCN baseline weights for UC3
+- `weights/uc3_gin_classifier.pt` — GIN baseline weights for UC3
+- `metrics.json` — Machine-readable evaluation metrics with detailed numerical values for each case and each model
+
+---
+
+## 7. Weight File Loading and Inference
+
+This section explains how to load already trained weights and how to perform inference on a new graph. The checkpoint design principle is: **all information needed to reconstruct the model structure is stored in the config field**, so you don't need to re-read source code to find hyperparameters.
+
+### 7.1 Load the UC1 Inversion SoftAggPooler
+
+```python
+import os, sys
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+sys.path.insert(0, "sre_ai_model")
+import torch
+import sre_topology_model as stm
+
+# Load checkpoint (PyTorch 2.6+ safe: all values converted to tensor)
+ckpt = torch.load("sre_ai_model/release/weights/uc1_edge_inversion.pt",
+                  weights_only=False)
+
+# Each field has a _type wrapper; read .value to unwrap
+sd = ckpt["pooler_state"]    # {"_type": "state_dict", "value": {"Z": tensor}}
+D0 = ckpt["D0"]["value"]     # torch.Tensor, shape (n1, n0)
+
+# Infer n0 from D0, n_clusters from Z
+n0 = int(D0.shape[1])
+n_clusters = int(sd["value"]["Z"].shape[1])
+
+# Rebuild pooler with same architecture and load
+pool = stm.SoftAggPooler(n0, n_clusters, seed=0)
+pool.load_state_dict(sd["value"])
+pool.eval()
+```
+
+### 7.2 Load the UC2 Regression Head and Perform Inference on a New Graph
+
+```python
+import os, sys
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
+sys.path.insert(0, "sre_ai_model")
+import torch
+import torch.nn as nn
+import numpy as np
+import sre_topology_model as stm
+
+ckpt = torch.load("sre_ai_model/release/weights/uc2_sre_regression.pt",
+                  weights_only=False)
+
+# config is a nested raw_dict; unwrap layer by layer
+config = ckpt["config"]["value"]
+K = config["K"]                    # 6
+in_dim = config["in_dim"]          # 9 (= K+3)
+
+# Rebuild MLP: Linear(in_dim, 32) → ReLU → Linear(32, 1)
+class SREHead(nn.Module):
+    def __init__(self, d):
+        super().__init__()
+        self.net = nn.Sequential(nn.Linear(d, 32), nn.ReLU(), nn.Linear(32, 1))
+    def forward(self, x):
+        return self.net(x).squeeze(-1)
+
+head = SREHead(in_dim)
+head.load_state_dict(ckpt["model_state"]["value"])
+head.eval()
+
+# Inference on a new graph: compute spectral features → pass MLP → gap prediction
+def predict_gap(D0_np, m_np, K=6):
+    """D0_np is the (n1, n0) incidence matrix; m_np is the (n1,) edge weight vector"""
+    D0t = stm._as_tensor(D0_np)
+    mt = stm._as_tensor(m_np)
+    L0 = stm.laplacian0_from_DigD(D0t, mt)
+    tau = stm.spectral_tau(L0, K=K)
+    alpha = stm.spectral_radius(L0)
+    ev = torch.linalg.eigvalsh(L0.detach())
+    lam2 = float(ev[1]) if len(ev) > 1 else 0.0
+    feat = torch.cat([tau, torch.tensor([alpha], dtype=torch.float64),
+                      torch.tensor([lam2], dtype=torch.float64)])
+    with torch.no_grad():
+        return float(head(feat))
+
+# Example: a 7-node cycle (n0=7, n1=7)
+n0, n1 = 7, 7
+D0 = np.zeros((n1, n0))
+for e in range(n1):
+    D0[e, e] = -1.0; D0[e, (e + 1) % n0] = +1.0
+m = np.ones(n1)
+print(f"Predicted HOMO-LUMO gap = {predict_gap(D0, m):.4f}")
+```
+
+### 7.3 Checkpoint Format Specification
+
+All `.pt` files are saved with `torch.save(payload)`, where payload is a dict and each entry has a `_type` marker:
+
+| `_type` | value type | Typical scenario |
+|:---|:---|:---|
+| `"state_dict"` | `dict[str, Tensor]` | nn.Module parameters (all values are tensors) |
+| `"tensor"` | `Tensor` | Chain complex D0/D1, precomputed feats, labels |
+| `"raw_dict"` | `dict[str, _serialize_val]` | config (containing K, in_dim, task, metric values, etc.) |
+| `"raw"` | Python primitives | meta information, strings, scalars |
+
+**Why not store numpy**: PyTorch 2.6+ `torch.load` defaults to `weights_only=True` and refuses to pickle numpy types. `save_checkpoint` internally converts numpy to tensor storage, making it cross-version safe. When reading, unwrap with `ckpt["field"]["value"]`.
+
+### 7.4 Encapsulated Utility Functions
+
+If you don't want to manually unwrap `_type` fields, use `save_checkpoint` / `load_checkpoint`:
+
+```python
+import sre_topology_model as stm
+
+# Save: nn.Module / numpy / tensor / plain dict can all be passed directly
+stm.save_checkpoint("my_model.pt", {
+    "pooler": pool,            # nn.Module → automatically stores state_dict
+    "D0": D0_np,               # numpy → automatically converts to tensor
+    "meta": {"version": 1}})   # plain dict → recursive processing
+
+# Load: returns unwrapped dict
+ckpt = stm.load_checkpoint("my_model.pt")
+D0 = ckpt["D0"]               # torch.Tensor
+```
+
+Note that `load_checkpoint` only returns a bare `state_dict` for nn.Module (because it doesn't know which class to reconstruct), so you need to first build the same architecture and then call `.load_state_dict()`.
+
+---
+
+## 8. Hyperparameter Tuning Guide
+
+The goal of this section is to give you enough information to independently determine which direction to tune based on symptoms observed during training. Each parameter entry includes: default value, symptoms for increasing, consequences of increasing, symptoms for decreasing, and consequences of decreasing.
+
+### 8.1 K — Chebyshev Order (default 8)
+
+**What it is**: The order of $\tau_k$, determines the resolution of spectral features. Larger K means $\tau_k$ covers finer spectral frequency components.
+
+**When to increase**: The demo's $L_{\text{head}}$ loss drops noticeably slowly (poor $\tau_k$ fitting to $\tau_k^*$), or R²/accuracy on UC2/UC3 is below baseline.
+
+**Consequences of increasing**: Feature dimension increases to $K+3$, the first MLP layer becomes wider (slightly more parameters). Computation increases linearly (more Chebyshev iterations). If the graph is very small ($n_0 \le 10$), $\tau_k$ may contain redundant information when K exceeds $n_0/2$.
+
+**When to decrease**: $L_{\text{head}}$ converges to 0 quickly but final prediction is poor (possible overfitting to noise), or training is too slow.
+
+**Consequences of decreasing**: Spectral information becomes coarse—higher-order moments of $\tau_k$ are lost. For tasks like UC2 that depend on precise $\alpha_n/\lambda_2$, too small K leads to insufficient SRE feature information.
+
+**Recommended range**: 4 ~ 16. Ethanol with $n_0=9$ is sufficient at K=8; try K=12–16 for large graphs with $n_0 \ge 20$.
+
+### 8.2 lam_s — $L_{\text{spec}}$ Weight (default 0.1)
+
+**What it is**: The contribution coefficient of the heat kernel trace loss to total loss. Determines how strongly SoftAggPooler's $Z$ is constrained by spectral fidelity.
+
+**When to increase**: cos_sim is too low in learnable mode (e.g., demo outputs cos_sim < 0.90), indicating the pooler learned a bad solution deviating from Galerkin exact assignment. Or the heat kernel trace of $L_0'$ is too different from $L_0$.
+
+**Consequences of increasing**: $L_{\text{spec}}$ exerts stronger gradients on $Z$, pushing $Z$ toward "matching the heat kernel trace of $L_0'$ to that of $L_0$". It may compete with $L_{\text{task}}$—if $Z$ focuses too much on spectral fidelity, inversion target may degrade (corr decreases).
+
+**When to decrease**: $L_{\text{spec}}$'s loss accounts for a large proportion of total loss (e.g., > 30%), but corr stays low—indicating that $L_{\text{spec}}$'s gradient direction conflicts with $L_{\text{task}}$, hindering the model from converging in the correct direction.
+
+**Recommended range**: 0.01 ~ 0.5. UC1 demo uses 0.1; try 0.2 for larger graphs; drop to 0.05 if $L_{\text{spec}}$ dominates gradient direction.
+
+### 8.3 lam_h — $L_{\text{hom}}$ Weight (default 1.0)
+
+**What it is**: The weight of the soft rank difference $|\operatorname{tr} h(L_1') - \operatorname{tr} h(L_1)|$, constraining the $\beta_1$ closure between coarse and fine levels.
+
+**When to increase**: SRE classification accuracy on UC3 is below baseline—the model's `soft_rank` may predict incorrect $\beta_1$ on some graphs.
+
+**Consequences of increasing**: $L_{\text{hom}}$ directly uses the `soft_rank` operator (requiring `eigh`), with higher computation than $L_{\text{spec}}$. If too large, it interferes with the main task.
+
+**Recommended range**: 0.5 ~ 2.0.
+
+### 8.4 lr — Adam Learning Rate (default 0.08)
+
+**What it is**: The initial step size of the Adam optimizer, controlling the magnitude of parameter updates.
+
+**When to increase**: Loss barely moves in the first few hundred steps (gradient direction may be fine but step is too small), or corr lingers at low values (0.3–0.5 range).
+
+**Consequences of increasing**: May skip the optimal solution—loss oscillates, corr fluctuates unstably between 0.9–0.99.
+
+**When to decrease**: Loss oscillates back and forth, corr fluctuates unstably beyond 0.05, or the norm of SoftAggPooler's Z.grad suddenly increases dramatically.
+
+**Recommended range**: 0.01 ~ 0.2. Ethanol demo uses 0.08 for fast convergence; regression/classification heads for UC2/UC3 are more stable at 0.01–0.05.
+
+### 8.5 n_clusters — SoftAggPooler Granularity (default $(n_0+1)//2$)
+
+**What it is**: How many clusters SoftAggPooler divides $n_0$ nodes into. More clusters means less "coarse" coarse-graining, $L_0'$ and $L_0$ are closer; fewer clusters means stronger coarse-graining.
+
+**When to increase**: cos_sim is already close to 1.0 under exact Galerkin, indicating $n_{\text{clusters}}$ is too small causing severe information loss.
+
+**Consequences of increasing**: $P$ matrix becomes larger (more columns in $n_0 \times C$), dimension of $L_0'$ changes from $C$ to $C'$, making $L_0'$ and $L_0$ more similar. If $C$ approaches $n_0$, coarse-graining degenerates to the identity mapping.
+
+**When to decrease**: $n_0$ is large (e.g., 50+), $C$ is also large causing computation to increase dramatically. Or $L_{\text{spec}}$ loses regularization meaning because $C$ is too large.
+
+**Recommended range**: $\max(2, n_0//3) \sim n_0$. Default of 5 is appropriate for $n_0=9$; try 7–10 for $n_0=20$.
+
+### 8.6 Recommended Tuning Procedure
+
+Grid search is the simplest approach: fix all but one parameter, sweep that parameter over a reasonable range, record corr and cos_sim, and pick the optimal one. Then proceed to the next. Recommended order: **first lr (affects convergence speed) → then lam_s (affects regularization strength) → finally K (affects feature dimension)**.
+
+---
+
+## 9. Honest Boundaries: Verified Capabilities and Known Limitations
+
+The purpose of this section is to let you clearly understand the model's capability boundaries before deciding whether to apply SRE to your project. All statements are supported by measured data, not speculation.
+
+### 9.1 Verified Capabilities
+
+UC1 self-supervised inversion (corr=1.0), UC2 molecular property regression (R²=0.878, leading GCN/GIN), UC3 $\beta_1$ classification (acc=1.0). Spectral fidelity monitoring cos_sim is 0.996–1.000 under exact Galerkin. Differentiable $L_{\text{spec}}$ can make SoftAggPooler.Z receive non-zero gradients and participate in training under learnable mode. All 19 canonical operators are fully implemented and pass 100% of regression tests (98 items).
+
+### 9.2 Observed but Unresolved Issues
+
+**Large graphs are impractical**: `eigvalsh` is $O(n^3)$ for $n_0 \ge 100$, and intermediate computations of `chebyshev_functional` also require $O(n^3)$ matrix multiplication. The current implementation is not practical for graphs above 100 nodes.
+
+**Cross-domain generalization residual**: Zero-shot inversion residual of 0.131 on RMAT graphs (completely random topology, untrained). This indicates the spectral features learned by the model still have a gap on out-of-distribution topologies.
+
+**Single-layer pooler**: Currently only one SoftAggPooler + one task head has been verified. Whether multi-layer stacking can further improve performance and how gradients propagate between layers have not been investigated.
+
+**soft_rank depends on eigvalsh**: Soft rank uses `torch.linalg.eigvalsh(L1)`, where $L1$ is the Hodge Laplacian with dimension $n_2 \times n_2$ (square of the number of faces). For many molecular graphs $n_2=0$ or very small, but for graphs with $n_2=100$ this step would also be slow.
+
+### 9.3 Explicitly Abandoned Directions
+
+**Making $L_{\text{spec}}$ propagate back to $m$**: We tried making $L_0$ also differentiable (not detached), so that $L_{\text{spec}}$ gradients train both $Z$ and $m$. Measured inversion diverged—loss rose to $10^{-1}$, corr dropped to −0.17. The explanation is that $L_{\text{spec}}$'s gradient direction conflicts with $L_{\text{task}}$, and together they push $m$ toward an unsatisfactory equilibrium point for both.
+
+**Using $\tau_k$ as spectral fidelity criterion**: The original plan §8 required $\tau_k$ relative error $\le 5\% / \le 3\%$. Measured error under exact Galerkin is 63%–100%. Mathematically impossible—$\tau_k$ is a nonlinear function of the full spectrum + dimension, and Galerkin changes both simultaneously.
+
+**Heat kernel trace distance as sole component of final loss**: We tried using only `hkt_dist` without cos_sim. `hkt_dist` is unstable under extreme reduction (→ 1 node)—after reducing a random graph to 1 node, $\operatorname{tr}(\exp(-tL))$ becomes $N_0$ (number of connected components of original graph), $\operatorname{tr}(\exp(-tL'))$ becomes 1, and relative error increases dramatically.
+
+---
+
+## 10. Roadmap for Improvements
+
+This section lists five priority-sorted improvement directions, from immediately actionable to architecture-refactoring. Each gives expected benefit, implementation difficulty, and key risks.
+
+### P0: Real Molecular Dataset Validation (Large Benefit, Low Difficulty)
+
+Replace UC2's synthetic dataset with a small sample from QM9 (e.g., 100 molecules' HOMO-LUMO gap). QM9 data can be downloaded directly from pytorch-geometric, but this project does not use torch-geometric—manually parse QM9 xyz files to extract atomic coordinates and element types, compute adjacency matrices (covalent radius threshold) and chain complexes ourselves. We expect SRE to still outperform GCN/GIN on QM9, because gap is essentially a spectral property. The risk is that QM9 molecules typically have $n_0 \ge 10$, and `chebyshev_functional` computation will increase noticeably.
+
+### P1: Multi-Layer SoftAggPooler Stacking (Medium Benefit, Medium Difficulty)
+
+Currently only one pooler. We can stack two layers: first layer does $C_1 = n_0/2$ coarse-graining, second layer does another $C_2 = C_1/2$ coarse-graining on the first layer's $L_0'$. Each layer has its own $L_{\text{spec}}$ loss (spectral consistency between levels). This way the model can learn multi-scale topological patterns—local (original level) and global (coarse level). The risk is longer gradient paths between layers; need to increase lam_s to compensate for gradient decay.
+
+### P2: C++/CUDA Acceleration of chebyshev_functional (Large Benefit, High Difficulty)
+
+Current `chebyshev_functional` uses pure PyTorch matrix multiplication. For $n_0=100$ graphs with $K=32$, one forward pass needs 32 $(100 \times 100) \times (100 \times 100)$ matrix multiplications. Writing a CUDA kernel can fuse the three-term recurrence into one kernel, reducing GPU memory round-trips. Expected 5–10× forward speedup. The risk is needing to write a C++ extension and handle Windows compilation environment.
+
+### P3: Differentiable Alternative for $\tau_k$ (Medium Benefit, Medium Difficulty)
+
+Currently $\tau_k$ is computed from detached $L_0$ and does not enter the gradient graph. Making $\tau_k$ differentiable would allow using $\tau$ matching loss to directly train $m$ (consistent with the original plan). But $\tau_k$ is not preservable under Galerkin, so $\tau$ matching loss would conflict with Galerkin regularization. The alternative is to **compute $\tau_k$ directly on $m$**, not contrasting with Galerkin, but making $\tau_k$ at different granularities form a hierarchy consistent loss (closed loop similar to $L_{\text{hom}}$).
+
+### P4: Cross-Domain Robustness (Medium Benefit, High Difficulty)
+
+Can the model trained on UC2 (molecular gap) be directly applied to UC3 ($\beta_1$ classification) or to completely unrelated graph tasks? Current spectral features $[\tau_0..\tau_K, \alpha_n, \lambda_2]$ are theoretically domain-agnostic—they depend only on the Laplacian spectrum of the graph, not on which domain the graph comes from. But the measured RMAT zero-shot residual of 0.131 indicates there is still a gap. We can use domain adaptation techniques (e.g., SRE features + domain discriminator) to close the cross-domain gap.
+
+---
+
+## 11. Project Structure and License
+
+### 11.1 Project Structure
+
+```
+math-vector_v2/
+├── sre_ai_model/                     AI model layer (new in this project)
+│   ├── sre_topology_model.py         Model main body (~65 KB)
+│   ├── sre_release.py                Release script (UC1/UC2/UC3 + baselines)
+│   ├── test_sre_topo_model.py        11 unit tests
+│   └── release/
+│       ├── weights/                  9 .pt weight files
+│       ├── metrics.json              Evaluation metrics summary
+│       └── SRE_AI_Model_C.md         This document (Chinese version)
+├── operator_calculus.py              Canonical operator calculus (frozen, numpy-only)
+├── sre_electronic_layer.py           Canonical electronic layer operators (frozen)
+├── sre_spectral_solver.py            Canonical spectral solver (frozen)
+├── test_operators_11_19.py           Op11-19 unit tests (61 items)
+├── test_operator_calculus.py         Operator calculus unit tests (37 items)
+└── .trae/documents/
+    └── SRE_AI_Model_Design.md        Design document (authoritative source, contains all criterion definitions)
+```
+
+### 11.2 Dependencies
+
+- Python ≥ 3.8
+- torch ≥ 2.0 (includes torch.linalg.eigvalsh)
+- numpy ≥ 1.24
+- No dependencies on torch-geometric, scipy, rdkit, or other third-party packages
+
+### 11.3 License
+
+The 19 canonical operators and AI model layer code are both released under the **MIT License**.
+
+```text
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
 
 
 <div style="page-break-after: always;"></div>
@@ -14169,552 +14352,552 @@ The universe possesses no independent physical entities; it forms an invariant s
 
 <div style="page-break-after: always;"></div>
 
-# Hypothesis of Gravitational Shielding Derivation (SRE)
-
-
-
-Version: 1.0  
-
-
-- Basis: the following articles in the manuscript collection `The Book of the Void` of *Status-Relational Entropy (SRE) Dynamics* (https://doi.org/10.5281/zenodo.23275050) (all references in this document are given as **article name + section**, and no longer by line number)
-- Terminology convention: uniformly expressed as **"gravitational shielding"**—shielding naturally produces anti-gravity/weightlessness, rather than "flipping the sign of gravity / introducing negative mass".
-- Status: This document only performs derivation, order-of-magnitude criteria, and phenomenological interpretation.
-
----
-
-## Literature Correspondence Table (Articles and Sections Cited in This Document)
-
-This document cites the following seven articles in the manuscript collection ``The Book of the Void``. In the main text, sources are uniformly marked in the form 《short name》§section; the table below gives the correspondence between short names and full titles, so that readers can cross-check under any typesetting (including PDF).
-
-| Short name | Full article title (manuscript-collection title) | Sections used in this document |
-|---|---|---|
-| **《Multidimensional Spacetime and Dynamical Gravity》** | 《Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks》 (Chinese title: 正则化因果信息网络下多维时空与动态变光速引力) | §2.2 Topological dissipation tensor and compensation operator; §2.3 Topological stiffness weights and baryonic center-of-mass redshift; §2.4 Spectral resonance deriving the dynamic compression coefficient; §5 Causal emergent gravity: a thermodynamic effect as a dissipation gradient |
-| **《Composite Elementary Particles》** | 《Composite Elementary Particles and the SRE-Dynamics Topological Paradigm of Relational-Space Emergence》 (Chinese title: 复合基本粒子与关系空间涌现的SRE动力学拓扑范式) | §1.3 Local cross-spectral operator and information-geometry mapping; §II Core paradigm: the three-in-one emergence jump and composite-particle generation; §Discussion · Model capability boundary |
-| **《Reconstruction of Classical Electrodynamics》** | 《A Basic Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality》 (Chinese title: 基于离散图拓扑与双向因果性对经典电动力学的基础重构) | §4 Mass–energy equivalence $E=mc^2$ as a topological theorem |
-| **《Necessity of Turbulence Emergence》** | 《The Necessity of Turbulence Emergence and an Algebraic Computation Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction》 (Chinese title: 基于离散微观因果统计与多维流形重构的湍流涌现必然性及代数计算方法) | §4.1 Operator 1: boundary expansion; §4.2 Operator 2: maximum-entropy pruning; §4.3 Gain $\Gamma$: exogenous $\Lambda$ and endogenous $\lambda(n)$ |
-| **《Logical-Depth Anchoring and Safety Shielding》** | 《On the Order-of-Magnitude Anchoring of the Logical Depth N and the Safety Shielding of Observation Protocols》 (Chinese title: 关于逻辑深度 N 的量级锚定与观测协议的安全性屏蔽) | Section 3 Core safety adjudication: the physical-level "read-only" restriction |
-| **《Complete Characterization of the Nucleon》** | 《A Complete Characterization of the Nucleon in the SRE Framework: Open–Closed Two-State Skeleton Inversion, Quark Conjecture, and a Unified Formulation Validated by Nuclear Reactions》 (Chinese title: SRE 框架下核子的完整刻画：开闭二态骨架反演、夸克推测与核反应验证的统一表述) | §2.1 Binary self-organizing network and the sim_p generator |
-| **《Graph-Operator Pipeline Whitepaper》** | 《Overall Framework Whitepaper of the General Graph-Operator Pipeline for Status-Relational Entropy (SRE) Dynamics (Academic Revision)》 (Chinese title: 状态‑关系熵（SRE）动力学通用图算子流水线总体框架白皮书（学术修订版）) | §1.2 Operator 1: local graph-expansion operator; §3.1 Operator 5: endogenous-variable delay-calibration operator; §4.2 Morphological-morphism projection principle of macroscopic observables; §5.1 Operator 10: preemptive homological random-pruning operator; §5.3 Operator 8: local lock-free algebraic-valve equalization operator |
-
-**Reading convention**: "Part I" appearing in the main text refers to the first part of this document (Gravitational Shielding Derivation); "Part II" refers to the second part (Reverse Interpretation of the Podkletnov Result). Cross-part citations are written as "Part I §n" or "Part II §n".
-
----
-
-## Part I　Gravitational Shielding Derivation
-
-## 0 Summary of Conclusions
-
-1. In SRE, gravity is not a fundamental field but a **thermodynamic aftereffect of local information-dissipation gradients** (*Multidimensional Spacetime and Dynamical Gravity* §5). Therefore "gravitational shielding" = **suppressing the network correlations capable of generating that dissipation gradient**, rather than canceling a fundamental force.
-2. The dependence of the gravitational acceleration $a_\mathrm{SRE}$ on the network state can be decomposed into **three shieldable quantities**:
-   - Main amplitude $\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}$ (suppressible, the only substantive channel)
-   - Chiral phase term $\Gamma_\mathrm{chiral}$ (the only sign-reversible term, capable of providing net repulsion)
-   - Uniform term $-\gamma c_\mathrm{eff}^2/4$ (a global term, not locally shieldable)
-3. The main channel yields an **exact, dimensionless shielding factor** (Part I §3):
-   $$\Xi\equiv\frac{\mathcal{W}_{ij}^{\text{shielded}}}{\mathcal{W}_{ij}^{\text{vacuum}}}=\frac{1+\ln(1+\sigma_z^{\text{vacuum}})}{1+\ln(1+\sigma_z^{\text{shielded}})}<1$$
-   The cost is that the **local measurement entropy must be amplified logarithmically**: $\Xi=0.5$ requires $\sigma_z$ to increase by about 180 times, and $\Xi=0.1$ by about $9\times10^3$ times. $\mathcal{W}\to0$ (complete weightlessness) corresponds to $\sigma_z\to\infty$, and is **unreachable**.
-4. The compensation operator $\hat{\mathcal{C}}$ is **non-monotonic/oscillatory** with respect to the dissipation $\hat{\mathcal{D}}$ (period $1/\alpha_0$, the first maximum at $\hat{\mathcal{D}}_0^{*}=1/(2\alpha_0)$; the derivative proof is given in Part I §5). However, under realistic parameters $\hat{\mathcal{D}}\sim 18\text{–}27 \gg 1/\alpha_0$, it falls into the strong-oscillation regime, where its envelope mean is pinned at $\langle\hat{\mathcal{C}}\rangle=1/(2\alpha_0)$, and it is **not a clean local knob** (an honest conclusion).
-5. The only engineerable actuation mechanism is **Op2 maximum-entropy pruning** (*Necessity of Turbulence Emergence* §4.2): set the channel spin to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution **without breaking graph connectivity**. Because the interior of a mass closed loop is "non-addressable/non-writable" (read-only barrier, *Logical-Depth Anchoring and Safety Shielding* Section 3), **shielding can only be a boundary operation**—operating on the dissipation–compensation channel between the shielded region and the external network, rather than rewriting the internal closed loop.
-6. The chiral term $\Gamma_\mathrm{chiral}$ can reverse sign to produce **net repulsion**, and its phase condition is strictly obtainable (Part I §4); but whether it can dominate depends on the not-yet-calibrated dimensionless $\alpha_\mathrm{scale}$: only when $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$ is the chiral repulsion of the same order as the Newtonian term. **Thus the door to "true anti-gravity" is ajar, and its hinge is the experimental anchoring of $\alpha_\mathrm{scale}$.**
-
----
-
-## 1 Starting Point: Gravity as a Thermodynamic Aftereffect of Dissipation Gradients
-
-The theoretical body (*Multidimensional Spacetime and Dynamical Gravity* §5, verbatim):
-
-$$
-a_\mathrm{SRE}(r,z)=
-\begin{cases}
--\dfrac{\alpha_\mathrm{scale}\cdot \mathcal{W}_{ij}}{r}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4} & \mathrm{Rank}=2,\ z<z^* \\[10pt]
--\dfrac{2\,\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}}{r^{2}}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4}+\Gamma_\mathrm{chiral}(r)
-& \mathrm{Rank}=4,\ z\ge z^*
-\end{cases}
-$$
-
-$$
-\Gamma_\mathrm{chiral}(r)=\xi(z)\cdot\frac{\sin\!\big(\pi\alpha_{0,\mathrm{dynamic}}\cdot 2\mu\big)}{r^{2}\cdot\ln(r/\ell_P)}
-$$
-
-Supporting definitions (*Multidimensional Spacetime and Dynamical Gravity* §2.2–§2.4, verbatim):
-
-$$
-\hat{\mathcal{D}}_{ij}=\ln\!\Big(1+\frac{\sigma_{z,i}\cdot\sigma_{z,j}}{\epsilon_\mathrm{mach}}\Big),\qquad
-\hat{\mathcal{C}}=\alpha_{0,\mathrm{dynamic}}^{-1}\cdot\sin^{2}\!\big(\pi\alpha_{0,\mathrm{dynamic}}\hat{\mathcal{D}}_{ij}\big)
-$$
-
-$$
-R_{ij}^{2}\equiv \mathrm{Tr}\big(\hat{\mathcal{D}}_{ij}\cdot\hat{\mathcal{C}}\big)\cdot\exp(-\gamma\,\mu_\mathrm{loss})
-$$
-
-$$
-\mathcal{W}_{ij}=\sqrt{\mathcal{C}_i\,\mathcal{C}_j}
-=\Big[\big(1+\ln(1+\sigma_{z,i})\big)\big(1+\ln(1+\sigma_{z,j})\big)\Big]^{-1/2}
-$$
-
-$$
-\mu=\frac{\sum_i \mathcal{C}_i z_i}{\sum_i \mathcal{C}_i},\qquad
-\xi(z)\equiv\xi(\mu)=0.08\,e^{0.15\mu}
-$$
-
-$$
-\alpha_{0,\mathrm{dynamic}}=\frac{\theta_\mathrm{conformal}}{\Delta z+\epsilon_\mathrm{mach}},\qquad
-\theta_\mathrm{conformal}\approx0.82798,\qquad \gamma=0.0585=\frac{1}{2\pi e}
-$$
-
-Ontological key point (*Multidimensional Spacetime and Dynamical Gravity* §5): "Gravity is not a fundamental field; it is a statistical thermodynamic aftereffect brought about by local information-dissipation gradients."—This statement directly provides the **physical entry point** for shielding: to shield gravity is essentially to suppress the **local dissipation tensor and its gradient**, which is determined by the measurement entropy $\sigma_z$ and its spatial distribution.
-
----
-
-## 2 Structural Decomposition of Gravity: Three Shieldable Quantities
-
-Writing $a_\mathrm{SRE}$ as a "source × kernel" decomposition, and extracting the independently adjustable factors within the kernel:
-
-| Quantity | Expression | Dependence on network state | Shieldable? | Role |
-|---|---|---|---|---|
-| Main amplitude | $\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}$ | $\mathcal{W}_{ij}=f(\sigma_{z,i},\sigma_{z,j})$ | ✅ Suppressible | The only substantive channel |
-| Chiral term | $\Gamma_\mathrm{chiral}=\xi(z)\sin(\cdot)/(r^2\ln(r/\ell_P))$ | Phase $\propto\alpha_0\mu$ | ✅ Sign-reversible | The only source of net repulsion |
-| Uniform term | $-\gamma c_\mathrm{eff}^2/4$ | Global $c_\mathrm{eff}(z)$ | ❌ Not local | Background/expansion term |
-
-**Key observation**: $\mathcal{W}_{ij}$ is a **strictly decreasing** function of $\sigma_z$ (*Multidimensional Spacetime and Dynamical Gravity* §2.3); while the dissipation $\hat{\mathcal{D}}_{ij}$ is a **strictly increasing** function of $\sigma_z$ (*Multidimensional Spacetime and Dynamical Gravity* §2.2). Hence the single action of **injecting local measurement entropy** simultaneously:
-- (i) directly lowers $\mathcal{W}_{ij}$ → lowers the amplitude of $a_\mathrm{SRE}$;
-- (ii) raises $\hat{\mathcal{D}}_{ij}$ → shifts the operating point of the compensation operator (Part I §5).
-
-The two channels share the same origin, so "gravitational shielding" has a unified operational definition in this theory: **raise the local measurement entropy $\sigma_z$ of the target region (making its information more "blurred" and more decohered), and cut off its dissipation–compensation channel to the outside.**
-
----
-
-## 3 Main Channel: $\mathcal{W}_{ij}$ Entropy Collapse (Exact, Quantifiable)
-
-### 3.1 Shielding Factor
-
-Let the endpoint vacuum measurement entropy be $\sigma_z$, and after shielding be $\sigma_z'$. From the definition of $\mathcal{W}_{ij}$:
-
-$$
-\boxed{\;\Xi\equiv\frac{\mathcal{W}(\sigma_z')}{\mathcal{W}(\sigma_z)}=\frac{1+\ln(1+\sigma_z)}{1+\ln(1+\sigma_z')}\;}
-$$
-
-Since both branches of $a_\mathrm{SRE}$ are proportional to $\mathcal{W}_{ij}$, **the relative gravity-weakening amount is exactly $1-\Xi$**, independent of $\alpha_\mathrm{scale}$, $r$, and $z$—determined purely by the local measurement entropy. This is the cleanest result of this derivation.
-
-### 3.2 Inverse Design Equation
-
-Given a target shielding factor $\Xi$, the required local measurement entropy:
-
-$$
-\boxed{\;\sigma_z'=\exp\!\left(\frac{1+\ln(1+\sigma_z)}{\Xi}-1\right)-1\;}
-$$
-
-### 3.3 Order-of-Magnitude Table (taking $\sigma_z=0.01$, $1+\ln(1.01)=1.00995$)
-
-| Target $\Xi$ | Gravity weakening | Required $\sigma_z'$ | Amplification relative to vacuum |
-|---|---|---|---|
-| 0.99 | 1% | 0.0204 | ×2.0 |
-| 0.98 | 2% | 0.0310 | ×3.1 |
-| 0.90 | 10% | 0.1300 | ×13 |
-| 0.50 | 50% | 1.773 | ×177 |
-| 0.10 | 90% | $8.95\times10^3$ | $9.0\times10^5$ |
-
-**Conclusion**: Weight reduction is "logarithmic-scale investment for linear-scale weight reduction"; $\Xi\to0$ requires $\sigma_z\to\infty$. **Within the main channel, complete weightlessness is unreachable; only asymptotic weight reduction is possible.** This falls in the same order-of-magnitude window as the "weight-reduction ceiling of about 2%" (Podkletnov scale) in the early conjecture.
-
----
-
-## 4 Phase Channel: $\Gamma_\mathrm{chiral}$, the Only Sign-Reversible Term
-
-### 4.1 Strict Condition for Sign Reversal (Net Repulsion)
-
-$\Gamma_\mathrm{chiral}$ carries its sign through $\sin(\pi\alpha_0\cdot2\mu)$ (*Multidimensional Spacetime and Dynamical Gravity* §5). Taking $\sin=-1$ (maximum outward contribution):
-
-$$
-\pi\alpha_0\cdot 2\mu = -\frac{\pi}{2}+2\pi n
-\;\Longrightarrow\;
-\boxed{\;\mu^{*}=\frac{4n-1}{4\,\alpha_{0,\mathrm{dynamic}}}\;}
-$$
-
-Then $\Gamma_\mathrm{chiral}^{\max\to-}=-\dfrac{\xi(z)}{r^2\ln(r/\ell_P)}$, producing a **net subtraction** from the attractive term. $\mu$ is the baryonic center-of-mass redshift ($\mu=\sum\mathcal{C}_iz_i/\sum\mathcal{C}_i$; definition in *Multidimensional Spacetime and Dynamical Gravity* §2.3), set by the weighted redshift of the local subgraph $V_\mathrm{slice}$—**thus the phase is tunable** (by changing the redshift composition of the observed subgraph).
-
-### 4.2 Order-of-Magnitude Criterion (Deciding Whether "Anti-Gravity" Is Feasible)
-
-The ratio of the chiral term to the main attractive term (Rank=4):
-
-$$
-\mathcal{R}\equiv\frac{|\Gamma_\mathrm{chiral}|}{2\alpha_\mathrm{scale}\mathcal{W}_{ij}/r^2}
-=\frac{\xi(z)\,\big|\sin(\cdot)\big|}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
-\;\xrightarrow[\ \sin=\pm1\ ]{}\;
-\frac{\xi(z)}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
-$$
-
-Substituting $\xi\approx0.108$ ($\mu\approx2$), $\mathcal{W}\approx1$, $\ln(r/\ell_P)\approx80$ ($r\sim1\,\mathrm{m}$):
-
-$$
-\mathcal{R}\approx\frac{6.8\times10^{-4}}{\alpha_\mathrm{scale}}
-$$
-
-**Interpretation**:
-- If $\alpha_\mathrm{scale}\sim1$: $\mathcal{R}\sim10^{-3}$, the chiral term is a perturbation (phenomenologically manifesting as a small-amplitude oscillation of $G_\mathrm{eff}$; see the discussion of smooth $G_\mathrm{eff}$ oscillation in *Multidimensional Spacetime and Dynamical Gravity* §5), **insufficient to produce anti-gravity by itself**.
-- If $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$: $\mathcal{R}\gtrsim1$, the chiral repulsion is of the same order as the Newtonian term or even dominant → **net repulsion (anti-gravity) holds**.
-
-Since $\alpha_\mathrm{scale}$ is a dimensionless free coupling in the theory, whose physical anchoring is deferred to experiment (see Part I §9), **"whether anti-gravity is reachable" is here precisely reduced to an experimentally decidable number**: the order of magnitude of $\alpha_\mathrm{scale}$.
-
-### 4.3 Design Equation for Complete Cancellation
-
-Requiring $a_\mathrm{SRE}=0$ at some radius $r$ (ignoring the uniform term):
-
-$$
-\xi^{*}=\frac{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}{\big|\sin(\cdot)\big|}
-\;\xrightarrow[\ \sin=1\ ]{}\;
-2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)
-$$
-
-Then, from $\xi=0.08e^{0.15\mu}$ (*Multidimensional Spacetime and Dynamical Gravity* §2.3), invert to find the required center-of-mass redshift:
-
-$$
-\boxed{\;\mu_\mathrm{cancel}=\frac{20}{3}\,\ln\!\Big(\frac{\xi^{*}}{0.08}\Big)\;}
-$$
-
----
-
-## 5 Geometric Criterion: Compensation-Operator Peak $\hat{\mathcal{D}}_0^{*}=\dfrac{1}{2\alpha_0}$
-
-Differentiating $\hat{\mathcal{C}}(\hat{\mathcal{D}})=\alpha_0^{-1}\sin^2(\pi\alpha_0\hat{\mathcal{D}})$ (definition in *Multidimensional Spacetime and Dynamical Gravity* §2.2):
-
-$$
-\frac{d\hat{\mathcal{C}}}{d\hat{\mathcal{D}}}=\alpha_0^{-1}\cdot 2\sin(\pi\alpha_0\hat{\mathcal{D}})\cos(\pi\alpha_0\hat{\mathcal{D}})\cdot\pi\alpha_0
-=\pi\,\sin\!\big(2\pi\alpha_0\hat{\mathcal{D}}\big)
-$$
-
-- Extremum condition $\sin(2\pi\alpha_0\hat{\mathcal{D}})=0\Rightarrow \hat{\mathcal{D}}=\dfrac{n}{2\alpha_0}$, $n\in\mathbb{Z}$;
-- The first **maximum** (strongest compensation) is at $\hat{\mathcal{D}}_0^{*}=\dfrac{1}{2\alpha_0}$, with maximum value $\hat{\mathcal{C}}_{\max}=1/\alpha_0$;
-- The zeros are at $\hat{\mathcal{D}}=\dfrac{n}{\alpha_0}$ (compensation collapses to zero).
-
-Numerically (SDSS window): $\Delta z\approx0.03925$, $\alpha_0=\theta/\Delta z=21.094$ (*Multidimensional Spacetime and Dynamical Gravity* §2.4), hence
-
-$$
-\hat{\mathcal{D}}_0^{*}=\frac{1}{2\alpha_0}=\frac{\Delta z}{2\theta}=\frac{0.03925}{2\times0.82798}=0.02370
-$$
-
-**Meaning**: The compensation operator is the "routing compute" that the network schedules to offset dissipation, and it is **non-monotonic**. If the local operating point can be placed at a zero of $\hat{\mathcal{C}}$ ($\hat{\mathcal{D}}=n/\alpha_0$), then the compensation in that region collapses → $R^2$ collapses → the gravity generated by the dissipation gradient is locally zeroed ("resonant zero-point shielding").
-
-**Honest order-of-magnitude limitation**: Under realistic parameters $\epsilon_\mathrm{mach}\sim2\times10^{-16}$, $\sigma_z\sim10^{-2}$, so
-
-$$
-\hat{\mathcal{D}}=\ln\!\Big(1+\frac{\sigma_z^2}{\epsilon_\mathrm{mach}}\Big)\approx 2\ln\sigma_z+36.0\approx 26.8
-$$
-
-and $1/\alpha_0\approx0.0474$, so $\hat{\mathcal{D}}$ is already in the **strong-oscillation regime** (about $565$ oscillation periods). The region-averaged compensation is then pinned at the envelope mean:
-
-$$
-\langle\hat{\mathcal{C}}\rangle=\alpha_0^{-1}\langle\sin^2\rangle=\frac{1}{2\alpha_0}=0.02370
-$$
-
-which **exactly equals** the value of $\hat{\mathcal{D}}_0^{*}$. To "lock" onto a particular zero, one would need to control $\ln\sigma_z$ to $10^{-8}$-level precision—**practically uncontrollable**. Hence this channel of Part I §5 is **mathematically valid but engineering-fragile**: it explains why intrinsic oscillations and a discrete spectrum exist at the geometric scale, but it does not constitute a clean shielding knob.
-
----
-
-## 6 Actuation Mechanism: Op2 Maximum-Entropy Pruning and "Boundary-ness"
-
-### 6.1 Mechanism (*Necessity of Turbulence Emergence* §4.2–§4.3, verbatim)
-
-Pruning probability (maximum-entropy pruning master equation):
-
-$$
-p_\text{prune}(v_f,v_m)=1-\frac{1}{1+\Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}
-$$
-
-When pruning occurs ($\chi=0$), **Paradigm B (eliminate–conduct)** is executed:
-
-$$
-M_{n+1}(i,j)\leftarrow \chi\cdot M_{n+1}(i,j)+(1-\chi)\cdot 1
-$$
-
-"That is, the channel spin is forcibly set to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution from the product feedback loop without disconnecting graph connectivity. Surviving channels ($\chi=1$) are injected with an antisymmetric chiral shear." (*Necessity of Turbulence Emergence* §4.2)
-
-The pruning gain $\Gamma$ has two modes (*Necessity of Turbulence Emergence* §4.3):
-
-| Mode | Pruning gain | Meaning |
-|---|---|---|
-| A (exogenous) | $\Gamma=\Lambda$ | $\Lambda$ directly serves as the phase-transition control quantity |
-| B (adaptive) | $\Gamma=\Lambda\cdot\lambda(n)$ | Superimposed with state-adaptive correction |
-
-### 6.2 Why This Is the Physical Actuation Channel for Shielding
-
-- After the channel spin is set to $+1$ (multiplicative identity), that edge's contribution to the **product feedback loop** is eliminated, but **connectivity is preserved**—precisely the property required by "shield without destroying": cutting phase contribution ≠ cutting topology.
-- Raising the local pruning gain $\Gamma$ (i.e., raising the local $\Lambda$) → raises $p_\text{prune}$ → more edges go dormant → the local multi-loop structure is weakened → the local ability to maintain a low $\sigma_z$ (coherent measurement) decreases → $\sigma_z$ rises → by Part I §3, $\Xi<1$, so **gravity is locally weakened**.
-- Therefore **$\Lambda$ (or the local $\Gamma$) is precisely the control knob for "gravitational shielding"**.
-
-### 6.3 Boundary Operation, Not Internal Rewriting (Key Clarification)
-
-"Shielding" has two distinct meanings in this document (a trap, do not conflate):
-1. **Observational shielding / read-only barrier**: the internal topology of a mass closed loop is "non-addressable, non-writable"; the outside can only manipulate the rendering layer as a whole (electromagnetic, scattering). → **We cannot directly "dismantle" the mass closed loop of a target object** (that is exactly the source of the infeasibility of topological decoupling; *Logical-Depth Anchoring and Safety Shielding* Section 3).
-2. **Phase-contribution shielding / gating**: Op2 sets the edge's spin to the multiplicative identity, eliminating its phase contribution to the feedback loop while **not breaking global connectivity**. → This is an **accessible** operation.
-
-Combining the two gives the correct picture: **gravitational shielding is a boundary operation**—it does not rewrite the object's interior (non-addressable), but performs gating (Op2) **on the dissipation–compensation channel between the object and the external network**, so that the region's dissipation gradient as measured externally is suppressed. By analogy: it is not "turning off the inside of the light bulb", but "inserting a controllable scattering layer between the light bulb and the observer".
-
----
-
-## 7 Three Intensity Tiers and Hard Boundaries
-
-### 7.1 Three Tiers
-
-| Tier | Mechanism | Reachability | Order of magnitude |
-|---|---|---|---|
-| **A Weight reduction** | Local injection of $\sigma_z$ (Part I §3 main channel) | Self-consistent, engineerable | $\Xi\sim0.98$ (about 2%), rising logarithmically with injection |
-| **B Shielded weightlessness** | Boundary Op2 gating + suppression of the local dissipation gradient; or (fragilely) locking a compensation zero | Theoretical boundary | $\Xi\ll1$, but requires continuous power input to counter self-repair |
-| **C Topological decoupling** | Directly release the mass closed loop ($m\equiv$ closed loop; *Reconstruction of Classical Electrodynamics* §4) | Hypothesis-level | Blocked by the read-only barrier, **no known stable mechanism** |
-
-### 7.2 Hard Boundaries (Why This Is Not a Perpetual-Motion Machine)
-
-1. **The uniform term is unshieldable**: $-\gamma c_\mathrm{eff}^2/4$ is a global term that local operations cannot eliminate; any "local weightlessness" is superimposed on this background.
-2. **The compensation operator is self-repair**: $\hat{\mathcal{C}}$ is the self-patching mechanism by which the network counters dissipation and maintains numerical stability (*Multidimensional Spacetime and Dynamical Gravity* §2.2). The $\sigma_z$ you inject will be continuously "flattened" by the network, so shielding requires **continuous energy input**; there is no steady-state weightlessness with zero input.
-3. **Order of magnitude of the chiral term**: unless $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$, $\Gamma_\mathrm{chiral}$ is only a $10^{-3}$-level perturbation and cannot produce anti-gravity by itself (Part I §4).
-4. **Topological decoupling destroys the definition of mass**: locally releasing a closed loop locally cancels the very concept of "mass"; the current formalization cannot guarantee the stability and recoverability of the decoupled region.
-
----
-
-## 8 Design Equations and Falsifiable Predictions
-
-**Summary of design equations**
-
-$$
-\Xi=\frac{1+\ln(1+\sigma_z)}{1+\ln(1+\sigma_z')}
-\qquad
-\sigma_z'=\exp\!\Big(\tfrac{1+\ln(1+\sigma_z)}{\Xi}-1\Big)-1
-$$
-
-$$
-\hat{\mathcal{D}}_0^{*}=\frac{1}{2\alpha_{0,\mathrm{dynamic}}}=\frac{\Delta z}{2\theta_\mathrm{conformal}}
-\qquad
-\mu^{*}=\frac{4n-1}{4\alpha_{0,\mathrm{dynamic}}}
-\qquad
-\mu_\mathrm{cancel}=\frac{20}{3}\ln\!\Big(\frac{\xi^{*}}{0.08}\Big)
-$$
-
-**Falsifiable predictions**
-
-1. **Shielding amount is independent of the absolute gravitational constant**: under a fixed increment of $\sigma_z$, the gravity-weakening ratio $1-\Xi$ should be independent of the test mass and position (universality). Any "material-dependent" additional shielding would require introducing a mechanism beyond $\mathcal{W}_{ij}$.
-2. **Logarithmic law**: the weight-reduction effect saturates with injected entropy in a $1/(1+\ln)$ form—the marginal benefit of increasing injection diminishes (distinguishable from a "linear response" prediction).
-3. **Phase reversal**: in the Rank=4 region ($z\ge z^*$), when the local center-of-mass redshift is tuned to $\mu^{*}$, a sign flip/zero of $G_\mathrm{eff}$ should appear (corresponding to the smooth $G_\mathrm{eff}$ oscillation described in *Multidimensional Spacetime and Dynamical Gravity* §5).
-4. **$\alpha_\mathrm{scale}$ criterion**: if experiments measure $\alpha_\mathrm{scale}\gtrsim10^{-3}$, then "net anti-gravity" is falsified within SRE (only weight reduction is possible); if $\alpha_\mathrm{scale}\ll10^{-3}$, then chiral repulsion is the dominant channel.
-
----
-
-## 9 Relation to the Uncalibrated $\alpha_\mathrm{scale}$
-
-$\alpha_\mathrm{scale}$ "appears" throughout the text but is never "calibrated" (see the localization conclusion from the previous round); moreover, according to the SRE axioms, **before anchoring, all quantities are dimensionless numbers**. This brings one advantage and one cost:
-
-- **Advantage**: The shielding factor $\Xi$ of the Part I §3 main channel is independent of $\alpha_\mathrm{scale}$, so the "weight-reduction ratio" is a testable prediction that can be **given prior to anchoring**.
-- **Cost**: "whether chirality can dominate" in Part I §4, and "whether net anti-gravity is truly possible", **depend uniquely on the order of magnitude of $\alpha_\mathrm{scale}$**—which must be fixed only after future experiments (Newtonian-limit calibration).
-
-Therefore this derivation compresses "anti-gravity" from a slogan into a definite experimentally-decidable numerical criterion: **the order of magnitude of $\alpha_\mathrm{scale}$**.
-
----
-
-## 10 Open Questions (To-Do)
-
-1. An explicit mapping between $\Lambda$ (the local pruning gain) and macroscopic observables ($\sigma_z$ injection rate, shielding power).
-2. The **construction and reachability** of Op2 local gating: how the Op1 frontier (node injection) delivers the control signal to the target boundary while being constrained by the read-only barrier. → **Completed; see Part I §11**.
-3. Chiral-phase tunability: the specific observables and operating window for setting $\mu^{*}$ by changing the subgraph redshift composition.
-4. The **stability and dissipation cost** of the shielded region: the lower bound on continuous power required to counter the self-repair of $\hat{\mathcal{C}}$.
-
----
-
-## 11 Op2 Local Gating Construction and Op1 Reachability (Execution Plan)
-
-### 11.1 Three Reachability Constraints (Primary Sources)
-
-| # | Constraint | Content | Source |
-|---|---|---|---|
-| 1 | **Read-only inheritance** | $M_{n+1}[1{:}n,1{:}n]\equiv M_n$: once realized, the historical sub-block cannot be retroactively modified (with axiomatic status) | *Necessity of Turbulence Emergence* §4.1 Operator 1 |
-| 2 | **Frontier-size upper bound** | $M_K\le K_0\ll n$: each step acts on only $O(1)$ frontier channels, decoupled from the network-wide size | *Graph-Operator Pipeline Whitepaper* §5.3 Operator 8 |
-| 3 | **Read-only/causal barrier** | The deep interior topology of the target closed loop is non-addressable and non-writable; $\ell_\min$ is the lower bound of addressable scale at the rendering layer | *Logical-Depth Anchoring and Safety Shielding* Section 3 |
-
-> Key distinction (*Logical-Depth Anchoring and Safety Shielding* Section 3): the barrier **does not prevent ordinary physical manipulation of the entire topological closed loop at the rendering layer** (electromagnetic fields, scattering); it only forbids **penetrating the closed loop to rewrite its deep interior topology**.
-
-**Corollary 11.1 (Reachability Theorem)**: Op2 gating **cannot act on the interior closed loop of the target object**; it can only act on the **boundary channel** between "the target region ↔ the external network"; moreover, by constraint 1, **existing old edges cannot be rewritten**—the control signal must be fed in via the Op1 **newly added frontier nodes**. ⇒ Shielding is a **boundary-layer, incremental** operation.
-
-### 11.2 Four-Step Construction of Local Gating (Aligned with the Operator Pipeline)
-
-Goal: on the boundary shell $\Omega_\partial$ surrounding the target region, set **redundant** dissipation–compensation channels to dormant ($\chi=0$, spin → $+1$), while preserving cut-set connectivity.
-
-**Step 1 Op1 access** (Operator 1 boundary expansion $\mathcal{G}_{n\to n+1}$, *Necessity of Turbulence Emergence* §4.1):
-
-$$
-M_{n+1}=\begin{pmatrix}M_n & \mathbf{x}_{n+1}\\ \mathbf{x}_{n+1}^T & y_{n+1}\end{pmatrix},\qquad M_{n+1}[1{:}n,1{:}n]\equiv M_n
-$$
-
-Push a ring of frontier nodes $\mathcal{V}_\partial$ into the perimeter of the target region (new rows/columns; history is read-only). **What is addressable is only these newly added boundary nodes, not the object's interior**—this is precisely the only legitimate interface that bypasses the barrier.
-
-**Step 2 Op2 gating** (Operator 2 maximum-entropy pruning, *Necessity of Turbulence Emergence* §4.2):
-
-$$
-p_\text{prune}=1-\frac{1}{1+\Gamma_\partial\cdot \mathcal{D}_s/\mathfrak{B}}
-\;\xrightarrow[\ \Gamma_\partial\,\mathcal{D}_s/\mathfrak{B}\gg1\ ]{}\;1,
-\qquad
-M(i,j)\leftarrow \chi\,M(i,j)+(1-\chi)\cdot 1
-$$
-
-On $\Omega_\partial$, raise the local pruning gain to $\Gamma_\partial$, and roll the gate $\chi$ edge by edge; boundary edges with $\chi=0$ → $+1$ (**conducting but forming no loop**; *Complete Characterization of the Nucleon* §2.1).
-
-**Step 3 Safety exemption** (Operator 10, *Graph-Operator Pipeline Whitepaper* §5.1): for the **bridge edges** on $\Omega_\partial$, enforce $\boldsymbol{\chi}_{e_\text{bridge}}\equiv1$, preserving
-
-$$
-\lambda_2(n+1)\ \ge\ \lambda_2(n)>0
-$$
-
-⇒ The graph does not tear, and global connectivity is preserved.
-
-**Step 4 Effective-impedance screening** (also belonging to the effective topological-impedance criterion of Operator 10, *Graph-Operator Pipeline Whitepaper* §5.1): use $\mathbf{L}_n^{+}$ to compute the effective topological impedance of candidate edges
-
-$$
-\mathbf{Z}_\text{eff}(u,v_f)=(\mathbf{e}_u-\mathbf{e}_{v_f})^T\,\mathbf{L}_n^{+}\,(\mathbf{e}_u-\mathbf{e}_{v_f})
-$$
-
-**Only low-impedance (non-bridge) edges are allowed to go dormant.** This gives the **geometric criterion** for gating: shielding only consumes "redundant channels" and does not touch "unique channels".
-
-### 11.3 Quantitative Reachability Bound (Upper Limit of Shieldable Fraction)
-
-Let the boundary shell $\Omega_\partial$ have $|V_\partial|$ nodes and $|E_\partial|$ edges. Operator 10 requires retaining a spanning tree ($|V_\partial|-1$ edges), so the **number of dormable edges** is
-
-$$
-N_\text{gate}\ \le\ |E_\partial|-(|V_\partial|-1)
-$$
-
-**Upper limit of the shieldable channel fraction**
-
-$$
-\boxed{\ \frac{N_\text{gate}}{|E_\partial|}\ \le\ 1-\frac{|V_\partial|-1}{|E_\partial|}\ =\ 1-\frac{2}{\langle k\rangle}\ }
-$$
-
-($\langle k\rangle$ is the boundary average degree.) Example: $\langle k\rangle=4$ ⇒ at most **50%** of boundary channels can be shielded per operation; $\langle k\rangle=6$ ⇒ upper limit 67%.
-
-**Meaning (falsifiable)**: The upper limit of shielding capability is determined by the **boundary topological redundancy**, not by energy alone; low-connectivity (near-bridge) boundaries are **structurally unshieldable**.
-
-### 11.4 Control-Signal Path and Diffusion Cost
-
-The transfer chain of the control quantity $\Gamma_\partial$ (Mode A: $\Gamma=\Lambda$; Mode B: $\Gamma=\Lambda\lambda(n)$, *Necessity of Turbulence Emergence* §4.3):
-
-$$
-\Lambda_\text{local}\ \xrightarrow[\ \text{Op1}\ ]{}\ \mathcal{V}_{n+1}\ (\text{frontier-variable injection})\ \xrightarrow[\ \text{Op2}\ ]{}\ \Gamma\ \text{acts on candidate frontier edges}\ \xrightarrow[\ \text{Op6/10}\ ]{}\ \Omega_\partial\ \text{executes gating}
-$$
-
-Key costs (from constraints 1+2):
-
-- **Each step affects only $M_K\le K_0$ channels** ⇒ gating the entire shell requires $N_\text{steps}\ge M_\partial/K_0$ ⇒ shielding is **established diffusively and gradually**, with a time cost $\propto$ boundary area/perimeter, and **cannot be instantaneous**.
-- Each step of frontier expansion "injects new random differences and expands outward" (*Complete Characterization of the Nucleon* §2.1)—the advance itself raises the local $\sigma_z$. **Two-sidedness**: on the positive side, it directly contributes to the Part I §3 main channel ($\Xi<1$); on the negative side, the injected differences are **uncontrollable random quantities**, making the shielding band fluctuate randomly frontier by frontier.
-- Because of read-only inheritance (constraint 1), shielding is **non-rollbackable**—to undo shielding, a new frontier must be built; old edges cannot be reverted.
-
-### 11.5 Why Tier C (Topological Decoupling) Is Thoroughly Blocked
-
-Tier C requires **dismantling an already-realized mass closed loop** ($m\equiv$ closed loop; *Reconstruction of Classical Electrodynamics* §4). But: the read-only barrier makes the deep interior topology non-addressable and non-writable (*Logical-Depth Anchoring and Safety Shielding* Section 3); and read-only inheritance $M_{n+1}[1{:}n,1{:}n]\equiv M_n$ does not permit rewriting existing edges (*Necessity of Turbulence Emergence* §4.1).
-
-**Double blocking** ⇒ within the theory there **exists no accessible operation** capable of dismantling an already-realized closed loop. Hence Tier C is not "hypothesis-level" but **mechanically excluded**. The only exception is the rendering-layer holistic manipulation permitted by *Logical-Depth Anchoring and Safety Shielding* Section 3 (electromagnetic/scattering)—that is the **transport/interaction** of mass, not the elimination of mass.
-
-### 11.6 Summary (Grading of Executable Claims)
-
-| Claim | Status | Basis |
-|---|---|---|
-| Boundary shell can be gated by Op2 | **Constructible** | Part I §11.2 four steps |
-| Shieldable fraction $\le 1-2/\langle k\rangle$ | **Structural theorem** | Part I §11.3 |
-| Shielding is gradual, non-instantaneous, non-rollbackable, and requires continuous power | **Constraint corollary** | Part I §11.4 + Part I §7 |
-| Interior closed loop can be dismantled (true anti-gravity/topological decoupling) | **Mechanically excluded** | Part I §11.5 |
-
----
-
-## Part II　Reverse Interpretation of the Podkletnov Result and the Difficulty of Reproduction
-
-**Premise (assuming the result holds)**: an object above a rotating YBCO superconducting disk loses about 2% of its weight (Podkletnov & Nieminen 1992); a double-layer disk produces a stronger effect; a later "impulse gravity generator" gives a directed force.
-**Task**: not to question the experiment, but to explain **why it holds** within the SRE framework, and to give discriminable predictions—as well as why others find it hard to reproduce.
-
----
-
-## Part II-1 Pivot: Two Opposite Effects of Coherent Saturation
-
-"Phase-coherent saturation ($\rho\to1$)" has **two oppositely-signed** consequences in SRE; conflating them necessarily yields the wrong sign:
-
-| | Mechanism | Consequence |
-|---|---|---|
-| **Interior effect** | Closed-loop merging, combinatorial explosion of secondary feedback paths | Relational space collapses $D\to0$, **mass rises nonlinearly** (*Composite Elementary Particles* §Discussion · Model capability boundary) |
-| **Boundary effect** | Relative phases are pinned flat ⇒ the local **dissipation gradient is flattened** | The gravity source (= dissipation gradient, *Multidimensional Spacetime and Dynamical Gravity* §5) is suppressed ⇒ **weight reduction** |
-
-**Weight reduction comes from the boundary effect, not the interior effect.** This distinction is the pivot of the entire explanation chain.
-
-## Part II-2 Mechanism Chain (Five Steps)
-
-1. **Superconductor = phase-rigid plate**: Cooper pairs drive the in-disk network into macroscopic phase locking ($\rho\to1$; *Composite Elementary Particles* §1.3 and §II), pinning the channel relative phases to the same value.
-2. **Equivalent to Op2 dormancy**: phase locking makes the disk↔outside boundary channels behave equivalently to dormant edges $M(i,j)\leftarrow+1$—"**conducting but forming no loop**" (*Complete Characterization of the Nucleon* §2.1; mechanism definition in *Necessity of Turbulence Emergence* §4.2). The disk becomes a **gating layer** that only conducts and does not generate multi-loop feedback.
-3. **Dissipation gradient is short-circuited**: on the boundary shell $\Omega_\partial$, execute the four steps of Part I §11 (Op1 access → Op2 gating → Operator 10 preserving $\lambda_2>0$ → effective-impedance screening consuming only low-$Z_\text{eff}$ redundant edges), reducing the local stiffness $\mathcal{W}_{ij}$ of the test mass.
-4. **Rotation = chiral bias**: surviving channels are injected with an antisymmetric chiral shear (*Necessity of Turbulence Emergence* §4.2), pushing the phase $\pi\alpha_0\!\cdot\!2\mu$ away from zero, so that $\Gamma_\mathrm{chiral}$ acquires an **outward** component ⇒ a small anti-gravity term is superimposed, and a **directionality** along the rotation axis is given.
-5. **Layer compounding**: each disk layer is a boundary shell, $\Xi_\text{tot}=\prod_k\Xi_k$ ⇒ the stronger double-layer effect is a **product law**.
-
-## Part II-3 Quantitative Self-Consistency
-
-$$\Xi=\frac{1+\ln(1+\sigma_z)}{1+\ln(1+\sigma_z')}$$
-
-$2\%$ weight reduction $\Rightarrow \Xi=0.98 \Rightarrow$ $\sigma_z$ need only be ×3. This belongs to **Tier A weight reduction** (Part I §7), matching the order of magnitude of the "weight-reduction ceiling of about 2%"—**this is precisely why the effect is small**.
-
-## Part II-4 Why Only About 2% (Hard Boundaries)
-
-- Upper limit of the shieldable fraction $1-2/\langle k\rangle$ (capped by boundary redundancy; Part I §11.3);
-- Limited coherence budget (the phase difference the disk can rearrange is finite);
-- Must continuously counter the self-repair of $\hat{\mathcal{C}}$ ⇒ **it disappears upon stopping rotation/heating** (consistent with the experiment's requirement of "low temperature + rotation").
-
-## Part II-5 Discriminable Predictions (If the Result Holds, SRE Requires These to Co-occur)
-
-1. **Tc discontinuity**: the effect vanishes **abruptly** as the temperature crosses the superconducting critical temperature (coherent saturation is a phase transition, not a gradual change).
-2. **Chirality**: the effect depends on the **direction** of rotation (sign reversal), and is monotonic with rotation speed.
-3. **Product law**: multiple layers superimpose as $\prod\Xi_k$, **not** linear addition.
-4. **Material independence**: the weight-reduction ratio of the shielded object is independent of its own composition/density ($\Xi$ depends only on $\sigma_z$).
-5. **Counterintuitive**: during shielding, the **superconducting disk itself** should have its inertial mass **slightly increased** (the mass surge from interior closed-loop merging; *Composite Elementary Particles* §Discussion · Model capability boundary), while the object above the disk becomes lighter—this is the discriminant that separates the two opposite effects.
-6. **Geometry**: weight reduction occurs only **above the disk** and varies with the rotation-axis orientation (boundary gating + chiral directionality).
-
-## Part II-6 Bounds and Extensions
-
-- Belongs to **gravitational shielding (Tier A/B)**, not Tier C topological decoupling (the latter is **doubly excluded** by the read-only barrier + read-only inheritance; Part I §11.5).
-- The "impulse gravity generator" = the **$\Gamma_\mathrm{chiral}$ traveling wave** emitted by a coherent chiral source (a directed phase pulse of an open loop), isomorphic to the SRE picture "closed→open = luminescence/radiation" (*Reconstruction of Classical Electrodynamics* §4).
-- The same mechanism as Section I of the early conjecture, "superconductivity isomorphism: back-reaction of causal developmental probability"; here it lands on the concrete operators $\mathcal{W}_{ij}$ and Op2.
-
-## Part II-7 Why Others Find It Hard to Reproduce (Same SRE Framework)
-
-| # | Irreproducibility mechanism | SRE basis | What reproduction must control |
-|---|---|---|---|
-| 1 | Boundary redundancy is an **exogenous local quantity**, differing across samples ⇒ different $\Xi$ | $\Xi$ depends on $\sigma_z$ (Part I §3); shieldable fraction $\le1-2/\langle k\rangle$ (Part I §11.3) | Single-phase single crystal, specified crystallographic orientation/twin structure |
-| 2 | Coherent saturation is a **phase-transition criticality**; off the critical point it fails avalanche-like | $\rho\to1$ saturation (*Composite Elementary Particles* §1.3, §II) | Strict temperature control, pushing $\langle\rho\rangle$ to the critical neighborhood |
-| 3 | **Path dependence** (read-only inheritance ⇒ hysteresis, non-ergodicity) | Op1 read-only inheritance (*Necessity of Turbulence Emergence* §4.1) | Reproduce the **cooling/rotation time-sequence protocol**, not just the final-state parameters |
-| 4 | Frontier expansion **carries its own random-difference injection**; the small effect is buried by noise | The sim_p generator injects random differences at each step (*Complete Characterization of the Nucleon* §2.1) | Sufficient averaging / per-frontier locking |
-| 5 | $\hat{\mathcal{C}}$ **self-repairs**; requires continuous power + the correct sampling time window | Part I §7 hard boundaries | Steady-state power + correct duty cycle |
-| 6 | **The chiral phase is signed and exogenous**; if unmatched, the directional part vanishes or reverses | $\Gamma_\mathrm{chiral}\propto\sin(\pi\alpha_0 2\mu)$ (*Multidimensional Spacetime and Dynamical Gravity* §5) | Phase matching (rotation-axis orientation / subgraph window) |
-| 7 | The order of magnitude is only 2%, and **boundary effects are easily mechanically short-circuited** | 2% ≈ buoyancy/thermal drift; boundary gating (Part I §11) | Decoupled support + differential measurement |
-
-**Falsifiability boundary (against excuse-making)**: if some experiment **simultaneously** satisfies the above 7 conditions (especially $\langle\rho\rangle$ in the critical neighborhood, phase matching, and consistent historical protocol) and still measures no effect, then **Tier A weight reduction is falsified**—"hard to reproduce" ends here and can no longer serve as an explanation.
-
----
-
-## Appendix A Symbol Table
-
-| Symbol | Meaning | Source (article · section) |
-|---|---|---|
-| $a_\mathrm{SRE}$ | SRE gravitational acceleration, in two branches Rank=2/4 | *Multidimensional Spacetime and Dynamical Gravity* §5 |
-| $\alpha_\mathrm{scale}$ | Dimensionless gravitational coupling (uncalibrated, pending experimental anchoring) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
-| $\mathcal{W}_{ij}$ | Topological stiffness weight (macroscopic mass equivalent), a decreasing function of $\sigma_z$ | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
-| $\hat{\mathcal{D}}_{ij}$ | Topological dissipation tensor | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
-| $\hat{\mathcal{C}}$ | Dynamic topological compensation operator (non-monotonic/oscillatory) | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
-| $R_{ij}^2$ | Squared macroscopic metric distance | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
-| $\gamma$ | Handshake-latency coefficient $=1/(2\pi e)=0.0585$ | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
-| $\xi(z)$ | Higher-order loop correction $=0.08e^{0.15\mu}$ | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
-| $\Gamma_\mathrm{chiral}$ | Chiral correction (the only sign-reversible term) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
-| $\mu$ | Baryonic center-of-mass redshift | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
-| $\alpha_{0,\mathrm{dynamic}}$ | Dynamic compression coefficient $=\theta/\Delta z$ | *Multidimensional Spacetime and Dynamical Gravity* §2.4 |
-| $\theta_\mathrm{conformal}$ | Conformal geometric exponent $\approx0.82798$ | *Multidimensional Spacetime and Dynamical Gravity* §2.4 |
-| $\Lambda,\Gamma$ | Pruning gain / phase-transition control quantity (shielding knob) | *Necessity of Turbulence Emergence* §4.3 |
-| $\ell_P$ | Planck length (emergent UV boundary) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
-
-## Appendix B Comparison with the Early Conjecture
-
-| Early conjecture (Theoretical Synopsis Based on Status) | Corresponding item in this design | Verdict |
-|---|---|---|
-| Eliminating local observation probability → local $G$ drift | Raising local $\sigma_z$ → $\mathcal{W}_{ij}\downarrow$ (Part I §3) | Isomorphic, now quantified ($\Xi$) |
-| Back-reaction of causal developmental probability (superconductivity isomorphism) | Network self-repair $\hat{\mathcal{C}}$ + Op2 gating | Corresponding, belongs to Tier B |
-| Weight-reduction ceiling of about 2% (Podkletnov level) | $\Xi\approx0.98$ requires $\sigma_z$ ×3 | Order of magnitude consistent |
-| Ramanujan theta + Bernoulli nested fitting | Not incorporated into this design (belongs to the fitting layer) | To-do |
-
----
-
-**Basis (article · section correspondence)**: gravity source = dissipation gradient → *Multidimensional Spacetime and Dynamical Gravity* §5; $\mathcal{W}_{ij}$ → *Multidimensional Spacetime and Dynamical Gravity* §2.3; dissipation tensor and compensation operator → *Multidimensional Spacetime and Dynamical Gravity* §2.2; coherent saturation → *Composite Elementary Particles* §1.3, §II, §Discussion · Model capability boundary; Op2 dormancy mechanism → *Necessity of Turbulence Emergence* §4.2, and see *Complete Characterization of the Nucleon* §2.1; Op1 read-only inheritance → *Necessity of Turbulence Emergence* §4.1; frontier random-difference injection → *Complete Characterization of the Nucleon* §2.1; mass–energy equivalence / closed–open → *Reconstruction of Classical Electrodynamics* §4; read-only barrier → *Logical-Depth Anchoring and Safety Shielding* Section 3; permeability → *Graph-Operator Pipeline Whitepaper* §3.1 Operator 5; frontier-size upper bound and safety exemption/impedance criterion → *Graph-Operator Pipeline Whitepaper* §5.1 Operator 10, §5.3 Operator 8.
+# Hypothesis of Gravitational Shielding Derivation (SRE)
+
+
+
+Version: 1.0  
+
+
+- Basis: the following articles in the manuscript collection `The Book of the Void` of *Status-Relational Entropy (SRE) Dynamics* (https://doi.org/10.5281/zenodo.23275050) (all references in this document are given as **article name + section**, and no longer by line number)
+- Terminology convention: uniformly expressed as **"gravitational shielding"**—shielding naturally produces anti-gravity/weightlessness, rather than "flipping the sign of gravity / introducing negative mass".
+- Status: This document only performs derivation, order-of-magnitude criteria, and phenomenological interpretation.
+
+---
+
+## Literature Correspondence Table (Articles and Sections Cited in This Document)
+
+This document cites the following seven articles in the manuscript collection ``The Book of the Void``. In the main text, sources are uniformly marked in the form 《short name》§section; the table below gives the correspondence between short names and full titles, so that readers can cross-check under any typesetting (including PDF).
+
+| Short name | Full article title (manuscript-collection title) | Sections used in this document |
+|---|---|---|
+| **《Multidimensional Spacetime and Dynamical Gravity》** | 《Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks》 (Chinese title: 正则化因果信息网络下多维时空与动态变光速引力) | §2.2 Topological dissipation tensor and compensation operator; §2.3 Topological stiffness weights and baryonic center-of-mass redshift; §2.4 Spectral resonance deriving the dynamic compression coefficient; §5 Causal emergent gravity: a thermodynamic effect as a dissipation gradient |
+| **《Composite Elementary Particles》** | 《Composite Elementary Particles and the SRE-Dynamics Topological Paradigm of Relational-Space Emergence》 (Chinese title: 复合基本粒子与关系空间涌现的SRE动力学拓扑范式) | §1.3 Local cross-spectral operator and information-geometry mapping; §II Core paradigm: the three-in-one emergence jump and composite-particle generation; §Discussion · Model capability boundary |
+| **《Reconstruction of Classical Electrodynamics》** | 《A Basic Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality》 (Chinese title: 基于离散图拓扑与双向因果性对经典电动力学的基础重构) | §4 Mass–energy equivalence $E=mc^2$ as a topological theorem |
+| **《N–S Turbulence Benchmark》** | 《Benchmarking Classical Navier–Stokes Turbulence with a Discrete Causal Network》 (Chinese title: 用离散因果网络对标经典 Navier–Stokes 湍流) | §2.3 Operator 1 (boundary expansion) and Operator 2 (maximum-entropy pruning); §2.4 pruning gain $\Gamma$ and control quantity $\Lambda$ |
+| **《Logical-Depth Anchoring and Safety Shielding》** | 《On the Order-of-Magnitude Anchoring of the Logical Depth N and the Safety Shielding of Observation Protocols》 (Chinese title: 关于逻辑深度 N 的量级锚定与观测协议的安全性屏蔽) | Section 3 Core safety adjudication: the physical-level "read-only" restriction |
+| **《Complete Characterization of the Nucleon》** | 《A Complete Characterization of the Nucleon in the SRE Framework: Open–Closed Two-State Skeleton Inversion, Quark Conjecture, and a Unified Formulation Validated by Nuclear Reactions》 (Chinese title: SRE 框架下核子的完整刻画：开闭二态骨架反演、夸克推测与核反应验证的统一表述) | §2.1 Binary self-organizing network and the sim_p generator |
+| **《Graph-Operator Pipeline Whitepaper》** | 《Overall Framework Whitepaper of the General Graph-Operator Pipeline for Status-Relational Entropy (SRE) Dynamics (Academic Revision)》 (Chinese title: 状态‑关系熵（SRE）动力学通用图算子流水线总体框架白皮书（学术修订版）) | §1.2 Operator 1: local graph-expansion operator; §3.1 Operator 5: endogenous-variable delay-calibration operator; §4.2 Morphological-morphism projection principle of macroscopic observables; §5.1 Operator 10: preemptive homological random-pruning operator; §5.3 Operator 8: local lock-free algebraic-valve equalization operator |
+
+**Reading convention**: "Part I" appearing in the main text refers to the first part of this document (Gravitational Shielding Derivation); "Part II" refers to the second part (Reverse Interpretation of the Podkletnov Result). Cross-part citations are written as "Part I §n" or "Part II §n".
+
+---
+
+## Part I　Gravitational Shielding Derivation
+
+## 0 Summary of Conclusions
+
+1. In SRE, gravity is not a fundamental field but a **thermodynamic aftereffect of local information-dissipation gradients** (*Multidimensional Spacetime and Dynamical Gravity* §5). Therefore "gravitational shielding" = **suppressing the network correlations capable of generating that dissipation gradient**, rather than canceling a fundamental force.
+2. The dependence of the gravitational acceleration $a_\mathrm{SRE}$ on the network state can be decomposed into **three shieldable quantities**:
+   - Main amplitude $\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}$ (suppressible, the only substantive channel)
+   - Chiral phase term $\Gamma_\mathrm{chiral}$ (the only sign-reversible term, capable of providing net repulsion)
+   - Uniform term $-\gamma c_\mathrm{eff}^2/4$ (a global term, not locally shieldable)
+3. The main channel yields an **exact, dimensionless shielding factor** (Part I §3):
+   $$\Xi\equiv\frac{\mathcal{W}_{ij}^{\text{shielded}}}{\mathcal{W}_{ij}^{\text{vacuum}}}=\frac{1+\ln(1+\sigma_z^{\text{vacuum}})}{1+\ln(1+\sigma_z^{\text{shielded}})}<1$$
+   The cost is that the **local measurement entropy must be amplified logarithmically**: $\Xi=0.5$ requires $\sigma_z$ to increase by about 180 times, and $\Xi=0.1$ by about $9\times10^3$ times. $\mathcal{W}\to0$ (complete weightlessness) corresponds to $\sigma_z\to\infty$, and is **unreachable**.
+4. The compensation operator $\hat{\mathcal{C}}$ is **non-monotonic/oscillatory** with respect to the dissipation $\hat{\mathcal{D}}$ (period $1/\alpha_0$, the first maximum at $\hat{\mathcal{D}}_0^{*}=1/(2\alpha_0)$; the derivative proof is given in Part I §5). However, under realistic parameters $\hat{\mathcal{D}}\sim 18\text{–}27 \gg 1/\alpha_0$, it falls into the strong-oscillation regime, where its envelope mean is pinned at $\langle\hat{\mathcal{C}}\rangle=1/(2\alpha_0)$, and it is **not a clean local knob** (an honest conclusion).
+5. The only engineerable actuation mechanism is **Op2 maximum-entropy pruning** (*N–S Turbulence Benchmark* §2.3): set the channel spin to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution **without breaking graph connectivity**. Because the interior of a mass closed loop is "non-addressable/non-writable" (read-only barrier, *Logical-Depth Anchoring and Safety Shielding* Section 3), **shielding can only be a boundary operation**—operating on the dissipation–compensation channel between the shielded region and the external network, rather than rewriting the internal closed loop.
+6. The chiral term $\Gamma_\mathrm{chiral}$ can reverse sign to produce **net repulsion**, and its phase condition is strictly obtainable (Part I §4); but whether it can dominate depends on the not-yet-calibrated dimensionless $\alpha_\mathrm{scale}$: only when $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$ is the chiral repulsion of the same order as the Newtonian term. **Thus the door to "true anti-gravity" is ajar, and its hinge is the experimental anchoring of $\alpha_\mathrm{scale}$.**
+
+---
+
+## 1 Starting Point: Gravity as a Thermodynamic Aftereffect of Dissipation Gradients
+
+The theoretical body (*Multidimensional Spacetime and Dynamical Gravity* §5, verbatim):
+
+$$
+a_\mathrm{SRE}(r,z)=
+\begin{cases}
+-\dfrac{\alpha_\mathrm{scale}\cdot \mathcal{W}_{ij}}{r}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4} & \mathrm{Rank}=2,\ z<z^* \\[10pt]
+-\dfrac{2\,\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}}{r^{2}}-\dfrac{\gamma c_\mathrm{eff}(z)^2}{4}+\Gamma_\mathrm{chiral}(r)
+& \mathrm{Rank}=4,\ z\ge z^*
+\end{cases}
+$$
+
+$$
+\Gamma_\mathrm{chiral}(r)=\xi(z)\cdot\frac{\sin\!\big(\pi\alpha_{0,\mathrm{dynamic}}\cdot 2\mu\big)}{r^{2}\cdot\ln(r/\ell_P)}
+$$
+
+Supporting definitions (*Multidimensional Spacetime and Dynamical Gravity* §2.2–§2.4, verbatim):
+
+$$
+\hat{\mathcal{D}}_{ij}=\ln\!\Big(1+\frac{\sigma_{z,i}\cdot\sigma_{z,j}}{\epsilon_\mathrm{mach}}\Big),\qquad
+\hat{\mathcal{C}}=\alpha_{0,\mathrm{dynamic}}^{-1}\cdot\sin^{2}\!\big(\pi\alpha_{0,\mathrm{dynamic}}\hat{\mathcal{D}}_{ij}\big)
+$$
+
+$$
+R_{ij}^{2}\equiv \mathrm{Tr}\big(\hat{\mathcal{D}}_{ij}\cdot\hat{\mathcal{C}}\big)\cdot\exp(-\gamma\,\mu_\mathrm{loss})
+$$
+
+$$
+\mathcal{W}_{ij}=\sqrt{\mathcal{C}_i\,\mathcal{C}_j}
+=\Big[\big(1+\ln(1+\sigma_{z,i})\big)\big(1+\ln(1+\sigma_{z,j})\big)\Big]^{-1/2}
+$$
+
+$$
+\mu=\frac{\sum_i \mathcal{C}_i z_i}{\sum_i \mathcal{C}_i},\qquad
+\xi(z)\equiv\xi(\mu)=0.08\,e^{0.15\mu}
+$$
+
+$$
+\alpha_{0,\mathrm{dynamic}}=\frac{\theta_\mathrm{conformal}}{\Delta z+\epsilon_\mathrm{mach}},\qquad
+\theta_\mathrm{conformal}\approx0.82798,\qquad \gamma=0.0585=\frac{1}{2\pi e}
+$$
+
+Ontological key point (*Multidimensional Spacetime and Dynamical Gravity* §5): "Gravity is not a fundamental field; it is a statistical thermodynamic aftereffect brought about by local information-dissipation gradients."—This statement directly provides the **physical entry point** for shielding: to shield gravity is essentially to suppress the **local dissipation tensor and its gradient**, which is determined by the measurement entropy $\sigma_z$ and its spatial distribution.
+
+---
+
+## 2 Structural Decomposition of Gravity: Three Shieldable Quantities
+
+Writing $a_\mathrm{SRE}$ as a "source × kernel" decomposition, and extracting the independently adjustable factors within the kernel:
+
+| Quantity | Expression | Dependence on network state | Shieldable? | Role |
+|---|---|---|---|---|
+| Main amplitude | $\alpha_\mathrm{scale}\cdot\mathcal{W}_{ij}$ | $\mathcal{W}_{ij}=f(\sigma_{z,i},\sigma_{z,j})$ | ✅ Suppressible | The only substantive channel |
+| Chiral term | $\Gamma_\mathrm{chiral}=\xi(z)\sin(\cdot)/(r^2\ln(r/\ell_P))$ | Phase $\propto\alpha_0\mu$ | ✅ Sign-reversible | The only source of net repulsion |
+| Uniform term | $-\gamma c_\mathrm{eff}^2/4$ | Global $c_\mathrm{eff}(z)$ | ❌ Not local | Background/expansion term |
+
+**Key observation**: $\mathcal{W}_{ij}$ is a **strictly decreasing** function of $\sigma_z$ (*Multidimensional Spacetime and Dynamical Gravity* §2.3); while the dissipation $\hat{\mathcal{D}}_{ij}$ is a **strictly increasing** function of $\sigma_z$ (*Multidimensional Spacetime and Dynamical Gravity* §2.2). Hence the single action of **injecting local measurement entropy** simultaneously:
+- (i) directly lowers $\mathcal{W}_{ij}$ → lowers the amplitude of $a_\mathrm{SRE}$;
+- (ii) raises $\hat{\mathcal{D}}_{ij}$ → shifts the operating point of the compensation operator (Part I §5).
+
+The two channels share the same origin, so "gravitational shielding" has a unified operational definition in this theory: **raise the local measurement entropy $\sigma_z$ of the target region (making its information more "blurred" and more decohered), and cut off its dissipation–compensation channel to the outside.**
+
+---
+
+## 3 Main Channel: $\mathcal{W}_{ij}$ Entropy Collapse (Exact, Quantifiable)
+
+### 3.1 Shielding Factor
+
+Let the endpoint vacuum measurement entropy be $\sigma_z$, and after shielding be $\sigma_z'$. From the definition of $\mathcal{W}_{ij}$:
+
+$$
+\boxed{\;\Xi\equiv\frac{\mathcal{W}(\sigma_z')}{\mathcal{W}(\sigma_z)}=\frac{1+\ln(1+\sigma_z)}{1+\ln(1+\sigma_z')}\;}
+$$
+
+Since both branches of $a_\mathrm{SRE}$ are proportional to $\mathcal{W}_{ij}$, **the relative gravity-weakening amount is exactly $1-\Xi$**, independent of $\alpha_\mathrm{scale}$, $r$, and $z$—determined purely by the local measurement entropy. This is the cleanest result of this derivation.
+
+### 3.2 Inverse Design Equation
+
+Given a target shielding factor $\Xi$, the required local measurement entropy:
+
+$$
+\boxed{\;\sigma_z'=\exp\!\left(\frac{1+\ln(1+\sigma_z)}{\Xi}-1\right)-1\;}
+$$
+
+### 3.3 Order-of-Magnitude Table (taking $\sigma_z=0.01$, $1+\ln(1.01)=1.00995$)
+
+| Target $\Xi$ | Gravity weakening | Required $\sigma_z'$ | Amplification relative to vacuum |
+|---|---|---|---|
+| 0.99 | 1% | 0.0204 | ×2.0 |
+| 0.98 | 2% | 0.0310 | ×3.1 |
+| 0.90 | 10% | 0.1300 | ×13 |
+| 0.50 | 50% | 1.773 | ×177 |
+| 0.10 | 90% | $8.95\times10^3$ | $9.0\times10^5$ |
+
+**Conclusion**: Weight reduction is "logarithmic-scale investment for linear-scale weight reduction"; $\Xi\to0$ requires $\sigma_z\to\infty$. **Within the main channel, complete weightlessness is unreachable; only asymptotic weight reduction is possible.** This falls in the same order-of-magnitude window as the "weight-reduction ceiling of about 2%" (Podkletnov scale) in the early conjecture.
+
+---
+
+## 4 Phase Channel: $\Gamma_\mathrm{chiral}$, the Only Sign-Reversible Term
+
+### 4.1 Strict Condition for Sign Reversal (Net Repulsion)
+
+$\Gamma_\mathrm{chiral}$ carries its sign through $\sin(\pi\alpha_0\cdot2\mu)$ (*Multidimensional Spacetime and Dynamical Gravity* §5). Taking $\sin=-1$ (maximum outward contribution):
+
+$$
+\pi\alpha_0\cdot 2\mu = -\frac{\pi}{2}+2\pi n
+\;\Longrightarrow\;
+\boxed{\;\mu^{*}=\frac{4n-1}{4\,\alpha_{0,\mathrm{dynamic}}}\;}
+$$
+
+Then $\Gamma_\mathrm{chiral}^{\max\to-}=-\dfrac{\xi(z)}{r^2\ln(r/\ell_P)}$, producing a **net subtraction** from the attractive term. $\mu$ is the baryonic center-of-mass redshift ($\mu=\sum\mathcal{C}_iz_i/\sum\mathcal{C}_i$; definition in *Multidimensional Spacetime and Dynamical Gravity* §2.3), set by the weighted redshift of the local subgraph $V_\mathrm{slice}$—**thus the phase is tunable** (by changing the redshift composition of the observed subgraph).
+
+### 4.2 Order-of-Magnitude Criterion (Deciding Whether "Anti-Gravity" Is Feasible)
+
+The ratio of the chiral term to the main attractive term (Rank=4):
+
+$$
+\mathcal{R}\equiv\frac{|\Gamma_\mathrm{chiral}|}{2\alpha_\mathrm{scale}\mathcal{W}_{ij}/r^2}
+=\frac{\xi(z)\,\big|\sin(\cdot)\big|}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
+\;\xrightarrow[\ \sin=\pm1\ ]{}\;
+\frac{\xi(z)}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
+$$
+
+Substituting $\xi\approx0.108$ ($\mu\approx2$), $\mathcal{W}\approx1$, $\ln(r/\ell_P)\approx80$ ($r\sim1\,\mathrm{m}$):
+
+$$
+\mathcal{R}\approx\frac{6.8\times10^{-4}}{\alpha_\mathrm{scale}}
+$$
+
+**Interpretation**:
+- If $\alpha_\mathrm{scale}\sim1$: $\mathcal{R}\sim10^{-3}$, the chiral term is a perturbation (phenomenologically manifesting as a small-amplitude oscillation of $G_\mathrm{eff}$; see the discussion of smooth $G_\mathrm{eff}$ oscillation in *Multidimensional Spacetime and Dynamical Gravity* §5), **insufficient to produce anti-gravity by itself**.
+- If $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$: $\mathcal{R}\gtrsim1$, the chiral repulsion is of the same order as the Newtonian term or even dominant → **net repulsion (anti-gravity) holds**.
+
+Since $\alpha_\mathrm{scale}$ is a dimensionless free coupling in the theory, whose physical anchoring is deferred to experiment (see Part I §9), **"whether anti-gravity is reachable" is here precisely reduced to an experimentally decidable number**: the order of magnitude of $\alpha_\mathrm{scale}$.
+
+### 4.3 Design Equation for Complete Cancellation
+
+Requiring $a_\mathrm{SRE}=0$ at some radius $r$ (ignoring the uniform term):
+
+$$
+\xi^{*}=\frac{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}{\big|\sin(\cdot)\big|}
+\;\xrightarrow[\ \sin=1\ ]{}\;
+2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)
+$$
+
+Then, from $\xi=0.08e^{0.15\mu}$ (*Multidimensional Spacetime and Dynamical Gravity* §2.3), invert to find the required center-of-mass redshift:
+
+$$
+\boxed{\;\mu_\mathrm{cancel}=\frac{20}{3}\,\ln\!\Big(\frac{\xi^{*}}{0.08}\Big)\;}
+$$
+
+---
+
+## 5 Geometric Criterion: Compensation-Operator Peak $\hat{\mathcal{D}}_0^{*}=\dfrac{1}{2\alpha_0}$
+
+Differentiating $\hat{\mathcal{C}}(\hat{\mathcal{D}})=\alpha_0^{-1}\sin^2(\pi\alpha_0\hat{\mathcal{D}})$ (definition in *Multidimensional Spacetime and Dynamical Gravity* §2.2):
+
+$$
+\frac{d\hat{\mathcal{C}}}{d\hat{\mathcal{D}}}=\alpha_0^{-1}\cdot 2\sin(\pi\alpha_0\hat{\mathcal{D}})\cos(\pi\alpha_0\hat{\mathcal{D}})\cdot\pi\alpha_0
+=\pi\,\sin\!\big(2\pi\alpha_0\hat{\mathcal{D}}\big)
+$$
+
+- Extremum condition $\sin(2\pi\alpha_0\hat{\mathcal{D}})=0\Rightarrow \hat{\mathcal{D}}=\dfrac{n}{2\alpha_0}$, $n\in\mathbb{Z}$;
+- The first **maximum** (strongest compensation) is at $\hat{\mathcal{D}}_0^{*}=\dfrac{1}{2\alpha_0}$, with maximum value $\hat{\mathcal{C}}_{\max}=1/\alpha_0$;
+- The zeros are at $\hat{\mathcal{D}}=\dfrac{n}{\alpha_0}$ (compensation collapses to zero).
+
+Numerically (SDSS window): $\Delta z\approx0.03925$, $\alpha_0=\theta/\Delta z=21.094$ (*Multidimensional Spacetime and Dynamical Gravity* §2.4), hence
+
+$$
+\hat{\mathcal{D}}_0^{*}=\frac{1}{2\alpha_0}=\frac{\Delta z}{2\theta}=\frac{0.03925}{2\times0.82798}=0.02370
+$$
+
+**Meaning**: The compensation operator is the "routing compute" that the network schedules to offset dissipation, and it is **non-monotonic**. If the local operating point can be placed at a zero of $\hat{\mathcal{C}}$ ($\hat{\mathcal{D}}=n/\alpha_0$), then the compensation in that region collapses → $R^2$ collapses → the gravity generated by the dissipation gradient is locally zeroed ("resonant zero-point shielding").
+
+**Honest order-of-magnitude limitation**: Under realistic parameters $\epsilon_\mathrm{mach}\sim2\times10^{-16}$, $\sigma_z\sim10^{-2}$, so
+
+$$
+\hat{\mathcal{D}}=\ln\!\Big(1+\frac{\sigma_z^2}{\epsilon_\mathrm{mach}}\Big)\approx 2\ln\sigma_z+36.0\approx 26.8
+$$
+
+and $1/\alpha_0\approx0.0474$, so $\hat{\mathcal{D}}$ is already in the **strong-oscillation regime** (about $565$ oscillation periods). The region-averaged compensation is then pinned at the envelope mean:
+
+$$
+\langle\hat{\mathcal{C}}\rangle=\alpha_0^{-1}\langle\sin^2\rangle=\frac{1}{2\alpha_0}=0.02370
+$$
+
+which **exactly equals** the value of $\hat{\mathcal{D}}_0^{*}$. To "lock" onto a particular zero, one would need to control $\ln\sigma_z$ to $10^{-8}$-level precision—**practically uncontrollable**. Hence this channel of Part I §5 is **mathematically valid but engineering-fragile**: it explains why intrinsic oscillations and a discrete spectrum exist at the geometric scale, but it does not constitute a clean shielding knob.
+
+---
+
+## 6 Actuation Mechanism: Op2 Maximum-Entropy Pruning and "Boundary-ness"
+
+### 6.1 Mechanism (*N–S Turbulence Benchmark* §2.3–§2.4, verbatim)
+
+Pruning probability (maximum-entropy pruning master equation):
+
+$$
+p_\text{prune}(v_f,v_m)=1-\frac{1}{1+\Gamma\cdot\dfrac{\mathcal{D}_s}{\mathfrak{B}}}
+$$
+
+When pruning occurs ($\chi=0$), **Paradigm B (eliminate–conduct)** is executed:
+
+$$
+M_{n+1}(i,j)\leftarrow \chi\cdot M_{n+1}(i,j)+(1-\chi)\cdot 1
+$$
+
+"That is, the channel spin is forcibly set to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution from the product feedback loop without disconnecting graph connectivity. Surviving channels ($\chi=1$) are injected with an antisymmetric chiral shear." (*N–S Turbulence Benchmark* §2.3)
+
+The pruning gain $\Gamma$ has two modes (*N–S Turbulence Benchmark* §2.4):
+
+| Mode | Pruning gain | Meaning |
+|---|---|---|
+| A (exogenous) | $\Gamma=\Lambda$ | $\Lambda$ directly serves as the phase-transition control quantity |
+| B (adaptive) | $\Gamma=\Lambda\cdot\lambda(n)$ | Superimposed with state-adaptive correction |
+
+### 6.2 Why This Is the Physical Actuation Channel for Shielding
+
+- After the channel spin is set to $+1$ (multiplicative identity), that edge's contribution to the **product feedback loop** is eliminated, but **connectivity is preserved**—precisely the property required by "shield without destroying": cutting phase contribution ≠ cutting topology.
+- Raising the local pruning gain $\Gamma$ (i.e., raising the local $\Lambda$) → raises $p_\text{prune}$ → more edges go dormant → the local multi-loop structure is weakened → the local ability to maintain a low $\sigma_z$ (coherent measurement) decreases → $\sigma_z$ rises → by Part I §3, $\Xi<1$, so **gravity is locally weakened**.
+- Therefore **$\Lambda$ (or the local $\Gamma$) is precisely the control knob for "gravitational shielding"**.
+
+### 6.3 Boundary Operation, Not Internal Rewriting (Key Clarification)
+
+"Shielding" has two distinct meanings in this document (a trap, do not conflate):
+1. **Observational shielding / read-only barrier**: the internal topology of a mass closed loop is "non-addressable, non-writable"; the outside can only manipulate the rendering layer as a whole (electromagnetic, scattering). → **We cannot directly "dismantle" the mass closed loop of a target object** (that is exactly the source of the infeasibility of topological decoupling; *Logical-Depth Anchoring and Safety Shielding* Section 3).
+2. **Phase-contribution shielding / gating**: Op2 sets the edge's spin to the multiplicative identity, eliminating its phase contribution to the feedback loop while **not breaking global connectivity**. → This is an **accessible** operation.
+
+Combining the two gives the correct picture: **gravitational shielding is a boundary operation**—it does not rewrite the object's interior (non-addressable), but performs gating (Op2) **on the dissipation–compensation channel between the object and the external network**, so that the region's dissipation gradient as measured externally is suppressed. By analogy: it is not "turning off the inside of the light bulb", but "inserting a controllable scattering layer between the light bulb and the observer".
+
+---
+
+## 7 Three Intensity Tiers and Hard Boundaries
+
+### 7.1 Three Tiers
+
+| Tier | Mechanism | Reachability | Order of magnitude |
+|---|---|---|---|
+| **A Weight reduction** | Local injection of $\sigma_z$ (Part I §3 main channel) | Self-consistent, engineerable | $\Xi\sim0.98$ (about 2%), rising logarithmically with injection |
+| **B Shielded weightlessness** | Boundary Op2 gating + suppression of the local dissipation gradient; or (fragilely) locking a compensation zero | Theoretical boundary | $\Xi\ll1$, but requires continuous power input to counter self-repair |
+| **C Topological decoupling** | Directly release the mass closed loop ($m\equiv$ closed loop; *Reconstruction of Classical Electrodynamics* §4) | Hypothesis-level | Blocked by the read-only barrier, **no known stable mechanism** |
+
+### 7.2 Hard Boundaries (Why This Is Not a Perpetual-Motion Machine)
+
+1. **The uniform term is unshieldable**: $-\gamma c_\mathrm{eff}^2/4$ is a global term that local operations cannot eliminate; any "local weightlessness" is superimposed on this background.
+2. **The compensation operator is self-repair**: $\hat{\mathcal{C}}$ is the self-patching mechanism by which the network counters dissipation and maintains numerical stability (*Multidimensional Spacetime and Dynamical Gravity* §2.2). The $\sigma_z$ you inject will be continuously "flattened" by the network, so shielding requires **continuous energy input**; there is no steady-state weightlessness with zero input.
+3. **Order of magnitude of the chiral term**: unless $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$, $\Gamma_\mathrm{chiral}$ is only a $10^{-3}$-level perturbation and cannot produce anti-gravity by itself (Part I §4).
+4. **Topological decoupling destroys the definition of mass**: locally releasing a closed loop locally cancels the very concept of "mass"; the current formalization cannot guarantee the stability and recoverability of the decoupled region.
+
+---
+
+## 8 Design Equations and Falsifiable Predictions
+
+**Summary of design equations**
+
+$$
+\Xi=\frac{1+\ln(1+\sigma_z)}{1+\ln(1+\sigma_z')}
+\qquad
+\sigma_z'=\exp\!\Big(\tfrac{1+\ln(1+\sigma_z)}{\Xi}-1\Big)-1
+$$
+
+$$
+\hat{\mathcal{D}}_0^{*}=\frac{1}{2\alpha_{0,\mathrm{dynamic}}}=\frac{\Delta z}{2\theta_\mathrm{conformal}}
+\qquad
+\mu^{*}=\frac{4n-1}{4\alpha_{0,\mathrm{dynamic}}}
+\qquad
+\mu_\mathrm{cancel}=\frac{20}{3}\ln\!\Big(\frac{\xi^{*}}{0.08}\Big)
+$$
+
+**Falsifiable predictions**
+
+1. **Shielding amount is independent of the absolute gravitational constant**: under a fixed increment of $\sigma_z$, the gravity-weakening ratio $1-\Xi$ should be independent of the test mass and position (universality). Any "material-dependent" additional shielding would require introducing a mechanism beyond $\mathcal{W}_{ij}$.
+2. **Logarithmic law**: the weight-reduction effect saturates with injected entropy in a $1/(1+\ln)$ form—the marginal benefit of increasing injection diminishes (distinguishable from a "linear response" prediction).
+3. **Phase reversal**: in the Rank=4 region ($z\ge z^*$), when the local center-of-mass redshift is tuned to $\mu^{*}$, a sign flip/zero of $G_\mathrm{eff}$ should appear (corresponding to the smooth $G_\mathrm{eff}$ oscillation described in *Multidimensional Spacetime and Dynamical Gravity* §5).
+4. **$\alpha_\mathrm{scale}$ criterion**: if experiments measure $\alpha_\mathrm{scale}\gtrsim10^{-3}$, then "net anti-gravity" is falsified within SRE (only weight reduction is possible); if $\alpha_\mathrm{scale}\ll10^{-3}$, then chiral repulsion is the dominant channel.
+
+---
+
+## 9 Relation to the Uncalibrated $\alpha_\mathrm{scale}$
+
+$\alpha_\mathrm{scale}$ "appears" throughout the text but is never "calibrated" (see the localization conclusion from the previous round); moreover, according to the SRE axioms, **before anchoring, all quantities are dimensionless numbers**. This brings one advantage and one cost:
+
+- **Advantage**: The shielding factor $\Xi$ of the Part I §3 main channel is independent of $\alpha_\mathrm{scale}$, so the "weight-reduction ratio" is a testable prediction that can be **given prior to anchoring**.
+- **Cost**: "whether chirality can dominate" in Part I §4, and "whether net anti-gravity is truly possible", **depend uniquely on the order of magnitude of $\alpha_\mathrm{scale}$**—which must be fixed only after future experiments (Newtonian-limit calibration).
+
+Therefore this derivation compresses "anti-gravity" from a slogan into a definite experimentally-decidable numerical criterion: **the order of magnitude of $\alpha_\mathrm{scale}$**.
+
+---
+
+## 10 Open Questions (To-Do)
+
+1. An explicit mapping between $\Lambda$ (the local pruning gain) and macroscopic observables ($\sigma_z$ injection rate, shielding power).
+2. The **construction and reachability** of Op2 local gating: how the Op1 frontier (node injection) delivers the control signal to the target boundary while being constrained by the read-only barrier. → **Completed; see Part I §11**.
+3. Chiral-phase tunability: the specific observables and operating window for setting $\mu^{*}$ by changing the subgraph redshift composition.
+4. The **stability and dissipation cost** of the shielded region: the lower bound on continuous power required to counter the self-repair of $\hat{\mathcal{C}}$.
+
+---
+
+## 11 Op2 Local Gating Construction and Op1 Reachability (Execution Plan)
+
+### 11.1 Three Reachability Constraints (Primary Sources)
+
+| # | Constraint | Content | Source |
+|---|---|---|---|
+| 1 | **Read-only inheritance** | $M_{n+1}[1{:}n,1{:}n]\equiv M_n$: once realized, the historical sub-block cannot be retroactively modified (with axiomatic status) | *N–S Turbulence Benchmark* §2.3 Operator 1 |
+| 2 | **Frontier-size upper bound** | $M_K\le K_0\ll n$: each step acts on only $O(1)$ frontier channels, decoupled from the network-wide size | *Graph-Operator Pipeline Whitepaper* §5.3 Operator 8 |
+| 3 | **Read-only/causal barrier** | The deep interior topology of the target closed loop is non-addressable and non-writable; $\ell_\min$ is the lower bound of addressable scale at the rendering layer | *Logical-Depth Anchoring and Safety Shielding* Section 3 |
+
+> Key distinction (*Logical-Depth Anchoring and Safety Shielding* Section 3): the barrier **does not prevent ordinary physical manipulation of the entire topological closed loop at the rendering layer** (electromagnetic fields, scattering); it only forbids **penetrating the closed loop to rewrite its deep interior topology**.
+
+**Corollary 11.1 (Reachability Theorem)**: Op2 gating **cannot act on the interior closed loop of the target object**; it can only act on the **boundary channel** between "the target region ↔ the external network"; moreover, by constraint 1, **existing old edges cannot be rewritten**—the control signal must be fed in via the Op1 **newly added frontier nodes**. ⇒ Shielding is a **boundary-layer, incremental** operation.
+
+### 11.2 Four-Step Construction of Local Gating (Aligned with the Operator Pipeline)
+
+Goal: on the boundary shell $\Omega_\partial$ surrounding the target region, set **redundant** dissipation–compensation channels to dormant ($\chi=0$, spin → $+1$), while preserving cut-set connectivity.
+
+**Step 1 Op1 access** (Operator 1 boundary expansion $\mathcal{G}_{n\to n+1}$, *N–S Turbulence Benchmark* §2.3):
+
+$$
+M_{n+1}=\begin{pmatrix}M_n & \mathbf{x}_{n+1}\\ \mathbf{x}_{n+1}^T & y_{n+1}\end{pmatrix},\qquad M_{n+1}[1{:}n,1{:}n]\equiv M_n
+$$
+
+Push a ring of frontier nodes $\mathcal{V}_\partial$ into the perimeter of the target region (new rows/columns; history is read-only). **What is addressable is only these newly added boundary nodes, not the object's interior**—this is precisely the only legitimate interface that bypasses the barrier.
+
+**Step 2 Op2 gating** (Operator 2 maximum-entropy pruning, *N–S Turbulence Benchmark* §2.3):
+
+$$
+p_\text{prune}=1-\frac{1}{1+\Gamma_\partial\cdot \mathcal{D}_s/\mathfrak{B}}
+\;\xrightarrow[\ \Gamma_\partial\,\mathcal{D}_s/\mathfrak{B}\gg1\ ]{}\;1,
+\qquad
+M(i,j)\leftarrow \chi\,M(i,j)+(1-\chi)\cdot 1
+$$
+
+On $\Omega_\partial$, raise the local pruning gain to $\Gamma_\partial$, and roll the gate $\chi$ edge by edge; boundary edges with $\chi=0$ → $+1$ (**conducting but forming no loop**; *Complete Characterization of the Nucleon* §2.1).
+
+**Step 3 Safety exemption** (Operator 10, *Graph-Operator Pipeline Whitepaper* §5.1): for the **bridge edges** on $\Omega_\partial$, enforce $\boldsymbol{\chi}_{e_\text{bridge}}\equiv1$, preserving
+
+$$
+\lambda_2(n+1)\ \ge\ \lambda_2(n)>0
+$$
+
+⇒ The graph does not tear, and global connectivity is preserved.
+
+**Step 4 Effective-impedance screening** (also belonging to the effective topological-impedance criterion of Operator 10, *Graph-Operator Pipeline Whitepaper* §5.1): use $\mathbf{L}_n^{+}$ to compute the effective topological impedance of candidate edges
+
+$$
+\mathbf{Z}_\text{eff}(u,v_f)=(\mathbf{e}_u-\mathbf{e}_{v_f})^T\,\mathbf{L}_n^{+}\,(\mathbf{e}_u-\mathbf{e}_{v_f})
+$$
+
+**Only low-impedance (non-bridge) edges are allowed to go dormant.** This gives the **geometric criterion** for gating: shielding only consumes "redundant channels" and does not touch "unique channels".
+
+### 11.3 Quantitative Reachability Bound (Upper Limit of Shieldable Fraction)
+
+Let the boundary shell $\Omega_\partial$ have $|V_\partial|$ nodes and $|E_\partial|$ edges. Operator 10 requires retaining a spanning tree ($|V_\partial|-1$ edges), so the **number of dormable edges** is
+
+$$
+N_\text{gate}\ \le\ |E_\partial|-(|V_\partial|-1)
+$$
+
+**Upper limit of the shieldable channel fraction**
+
+$$
+\boxed{\ \frac{N_\text{gate}}{|E_\partial|}\ \le\ 1-\frac{|V_\partial|-1}{|E_\partial|}\ =\ 1-\frac{2}{\langle k\rangle}\ }
+$$
+
+($\langle k\rangle$ is the boundary average degree.) Example: $\langle k\rangle=4$ ⇒ at most **50%** of boundary channels can be shielded per operation; $\langle k\rangle=6$ ⇒ upper limit 67%.
+
+**Meaning (falsifiable)**: The upper limit of shielding capability is determined by the **boundary topological redundancy**, not by energy alone; low-connectivity (near-bridge) boundaries are **structurally unshieldable**.
+
+### 11.4 Control-Signal Path and Diffusion Cost
+
+The transfer chain of the control quantity $\Gamma_\partial$ (Mode A: $\Gamma=\Lambda$; Mode B: $\Gamma=\Lambda\lambda(n)$, *N–S Turbulence Benchmark* §2.4):
+
+$$
+\Lambda_\text{local}\ \xrightarrow[\ \text{Op1}\ ]{}\ \mathcal{V}_{n+1}\ (\text{frontier-variable injection})\ \xrightarrow[\ \text{Op2}\ ]{}\ \Gamma\ \text{acts on candidate frontier edges}\ \xrightarrow[\ \text{Op6/10}\ ]{}\ \Omega_\partial\ \text{executes gating}
+$$
+
+Key costs (from constraints 1+2):
+
+- **Each step affects only $M_K\le K_0$ channels** ⇒ gating the entire shell requires $N_\text{steps}\ge M_\partial/K_0$ ⇒ shielding is **established diffusively and gradually**, with a time cost $\propto$ boundary area/perimeter, and **cannot be instantaneous**.
+- Each step of frontier expansion "injects new random differences and expands outward" (*Complete Characterization of the Nucleon* §2.1)—the advance itself raises the local $\sigma_z$. **Two-sidedness**: on the positive side, it directly contributes to the Part I §3 main channel ($\Xi<1$); on the negative side, the injected differences are **uncontrollable random quantities**, making the shielding band fluctuate randomly frontier by frontier.
+- Because of read-only inheritance (constraint 1), shielding is **non-rollbackable**—to undo shielding, a new frontier must be built; old edges cannot be reverted.
+
+### 11.5 Why Tier C (Topological Decoupling) Is Thoroughly Blocked
+
+Tier C requires **dismantling an already-realized mass closed loop** ($m\equiv$ closed loop; *Reconstruction of Classical Electrodynamics* §4). But: the read-only barrier makes the deep interior topology non-addressable and non-writable (*Logical-Depth Anchoring and Safety Shielding* Section 3); and read-only inheritance $M_{n+1}[1{:}n,1{:}n]\equiv M_n$ does not permit rewriting existing edges (*N–S Turbulence Benchmark* §2.3).
+
+**Double blocking** ⇒ within the theory there **exists no accessible operation** capable of dismantling an already-realized closed loop. Hence Tier C is not "hypothesis-level" but **mechanically excluded**. The only exception is the rendering-layer holistic manipulation permitted by *Logical-Depth Anchoring and Safety Shielding* Section 3 (electromagnetic/scattering)—that is the **transport/interaction** of mass, not the elimination of mass.
+
+### 11.6 Summary (Grading of Executable Claims)
+
+| Claim | Status | Basis |
+|---|---|---|
+| Boundary shell can be gated by Op2 | **Constructible** | Part I §11.2 four steps |
+| Shieldable fraction $\le 1-2/\langle k\rangle$ | **Structural theorem** | Part I §11.3 |
+| Shielding is gradual, non-instantaneous, non-rollbackable, and requires continuous power | **Constraint corollary** | Part I §11.4 + Part I §7 |
+| Interior closed loop can be dismantled (true anti-gravity/topological decoupling) | **Mechanically excluded** | Part I §11.5 |
+
+---
+
+## Part II　Reverse Interpretation of the Podkletnov Result and the Difficulty of Reproduction
+
+**Premise (assuming the result holds)**: an object above a rotating YBCO superconducting disk loses about 2% of its weight (Podkletnov & Nieminen 1992); a double-layer disk produces a stronger effect; a later "impulse gravity generator" gives a directed force.
+**Task**: not to question the experiment, but to explain **why it holds** within the SRE framework, and to give discriminable predictions—as well as why others find it hard to reproduce.
+
+---
+
+## Part II-1 Pivot: Two Opposite Effects of Coherent Saturation
+
+"Phase-coherent saturation ($\rho\to1$)" has **two oppositely-signed** consequences in SRE; conflating them necessarily yields the wrong sign:
+
+| | Mechanism | Consequence |
+|---|---|---|
+| **Interior effect** | Closed-loop merging, combinatorial explosion of secondary feedback paths | Relational space collapses $D\to0$, **mass rises nonlinearly** (*Composite Elementary Particles* §Discussion · Model capability boundary) |
+| **Boundary effect** | Relative phases are pinned flat ⇒ the local **dissipation gradient is flattened** | The gravity source (= dissipation gradient, *Multidimensional Spacetime and Dynamical Gravity* §5) is suppressed ⇒ **weight reduction** |
+
+**Weight reduction comes from the boundary effect, not the interior effect.** This distinction is the pivot of the entire explanation chain.
+
+## Part II-2 Mechanism Chain (Five Steps)
+
+1. **Superconductor = phase-rigid plate**: Cooper pairs drive the in-disk network into macroscopic phase locking ($\rho\to1$; *Composite Elementary Particles* §1.3 and §II), pinning the channel relative phases to the same value.
+2. **Equivalent to Op2 dormancy**: phase locking makes the disk↔outside boundary channels behave equivalently to dormant edges $M(i,j)\leftarrow+1$—"**conducting but forming no loop**" (*Complete Characterization of the Nucleon* §2.1; mechanism definition in *N–S Turbulence Benchmark* §2.3). The disk becomes a **gating layer** that only conducts and does not generate multi-loop feedback.
+3. **Dissipation gradient is short-circuited**: on the boundary shell $\Omega_\partial$, execute the four steps of Part I §11 (Op1 access → Op2 gating → Operator 10 preserving $\lambda_2>0$ → effective-impedance screening consuming only low-$Z_\text{eff}$ redundant edges), reducing the local stiffness $\mathcal{W}_{ij}$ of the test mass.
+4. **Rotation = chiral bias**: surviving channels are injected with an antisymmetric chiral shear (*N–S Turbulence Benchmark* §2.3), pushing the phase $\pi\alpha_0\!\cdot\!2\mu$ away from zero, so that $\Gamma_\mathrm{chiral}$ acquires an **outward** component ⇒ a small anti-gravity term is superimposed, and a **directionality** along the rotation axis is given.
+5. **Layer compounding**: each disk layer is a boundary shell, $\Xi_\text{tot}=\prod_k\Xi_k$ ⇒ the stronger double-layer effect is a **product law**.
+
+## Part II-3 Quantitative Self-Consistency
+
+$$\Xi=\frac{1+\ln(1+\sigma_z)}{1+\ln(1+\sigma_z')}$$
+
+$2\%$ weight reduction $\Rightarrow \Xi=0.98 \Rightarrow$ $\sigma_z$ need only be ×3. This belongs to **Tier A weight reduction** (Part I §7), matching the order of magnitude of the "weight-reduction ceiling of about 2%"—**this is precisely why the effect is small**.
+
+## Part II-4 Why Only About 2% (Hard Boundaries)
+
+- Upper limit of the shieldable fraction $1-2/\langle k\rangle$ (capped by boundary redundancy; Part I §11.3);
+- Limited coherence budget (the phase difference the disk can rearrange is finite);
+- Must continuously counter the self-repair of $\hat{\mathcal{C}}$ ⇒ **it disappears upon stopping rotation/heating** (consistent with the experiment's requirement of "low temperature + rotation").
+
+## Part II-5 Discriminable Predictions (If the Result Holds, SRE Requires These to Co-occur)
+
+1. **Tc discontinuity**: the effect vanishes **abruptly** as the temperature crosses the superconducting critical temperature (coherent saturation is a phase transition, not a gradual change).
+2. **Chirality**: the effect depends on the **direction** of rotation (sign reversal), and is monotonic with rotation speed.
+3. **Product law**: multiple layers superimpose as $\prod\Xi_k$, **not** linear addition.
+4. **Material independence**: the weight-reduction ratio of the shielded object is independent of its own composition/density ($\Xi$ depends only on $\sigma_z$).
+5. **Counterintuitive**: during shielding, the **superconducting disk itself** should have its inertial mass **slightly increased** (the mass surge from interior closed-loop merging; *Composite Elementary Particles* §Discussion · Model capability boundary), while the object above the disk becomes lighter—this is the discriminant that separates the two opposite effects.
+6. **Geometry**: weight reduction occurs only **above the disk** and varies with the rotation-axis orientation (boundary gating + chiral directionality).
+
+## Part II-6 Bounds and Extensions
+
+- Belongs to **gravitational shielding (Tier A/B)**, not Tier C topological decoupling (the latter is **doubly excluded** by the read-only barrier + read-only inheritance; Part I §11.5).
+- The "impulse gravity generator" = the **$\Gamma_\mathrm{chiral}$ traveling wave** emitted by a coherent chiral source (a directed phase pulse of an open loop), isomorphic to the SRE picture "closed→open = luminescence/radiation" (*Reconstruction of Classical Electrodynamics* §4).
+- The same mechanism as Section I of the early conjecture, "superconductivity isomorphism: back-reaction of causal developmental probability"; here it lands on the concrete operators $\mathcal{W}_{ij}$ and Op2.
+
+## Part II-7 Why Others Find It Hard to Reproduce (Same SRE Framework)
+
+| # | Irreproducibility mechanism | SRE basis | What reproduction must control |
+|---|---|---|---|
+| 1 | Boundary redundancy is an **exogenous local quantity**, differing across samples ⇒ different $\Xi$ | $\Xi$ depends on $\sigma_z$ (Part I §3); shieldable fraction $\le1-2/\langle k\rangle$ (Part I §11.3) | Single-phase single crystal, specified crystallographic orientation/twin structure |
+| 2 | Coherent saturation is a **phase-transition criticality**; off the critical point it fails avalanche-like | $\rho\to1$ saturation (*Composite Elementary Particles* §1.3, §II) | Strict temperature control, pushing $\langle\rho\rangle$ to the critical neighborhood |
+| 3 | **Path dependence** (read-only inheritance ⇒ hysteresis, non-ergodicity) | Op1 read-only inheritance (*N–S Turbulence Benchmark* §2.3) | Reproduce the **cooling/rotation time-sequence protocol**, not just the final-state parameters |
+| 4 | Frontier expansion **carries its own random-difference injection**; the small effect is buried by noise | The sim_p generator injects random differences at each step (*Complete Characterization of the Nucleon* §2.1) | Sufficient averaging / per-frontier locking |
+| 5 | $\hat{\mathcal{C}}$ **self-repairs**; requires continuous power + the correct sampling time window | Part I §7 hard boundaries | Steady-state power + correct duty cycle |
+| 6 | **The chiral phase is signed and exogenous**; if unmatched, the directional part vanishes or reverses | $\Gamma_\mathrm{chiral}\propto\sin(\pi\alpha_0 2\mu)$ (*Multidimensional Spacetime and Dynamical Gravity* §5) | Phase matching (rotation-axis orientation / subgraph window) |
+| 7 | The order of magnitude is only 2%, and **boundary effects are easily mechanically short-circuited** | 2% ≈ buoyancy/thermal drift; boundary gating (Part I §11) | Decoupled support + differential measurement |
+
+**Falsifiability boundary (against excuse-making)**: if some experiment **simultaneously** satisfies the above 7 conditions (especially $\langle\rho\rangle$ in the critical neighborhood, phase matching, and consistent historical protocol) and still measures no effect, then **Tier A weight reduction is falsified**—"hard to reproduce" ends here and can no longer serve as an explanation.
+
+---
+
+## Appendix A Symbol Table
+
+| Symbol | Meaning | Source (article · section) |
+|---|---|---|
+| $a_\mathrm{SRE}$ | SRE gravitational acceleration, in two branches Rank=2/4 | *Multidimensional Spacetime and Dynamical Gravity* §5 |
+| $\alpha_\mathrm{scale}$ | Dimensionless gravitational coupling (uncalibrated, pending experimental anchoring) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
+| $\mathcal{W}_{ij}$ | Topological stiffness weight (macroscopic mass equivalent), a decreasing function of $\sigma_z$ | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
+| $\hat{\mathcal{D}}_{ij}$ | Topological dissipation tensor | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
+| $\hat{\mathcal{C}}$ | Dynamic topological compensation operator (non-monotonic/oscillatory) | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
+| $R_{ij}^2$ | Squared macroscopic metric distance | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
+| $\gamma$ | Handshake-latency coefficient $=1/(2\pi e)=0.0585$ | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
+| $\xi(z)$ | Higher-order loop correction $=0.08e^{0.15\mu}$ | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
+| $\Gamma_\mathrm{chiral}$ | Chiral correction (the only sign-reversible term) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
+| $\mu$ | Baryonic center-of-mass redshift | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
+| $\alpha_{0,\mathrm{dynamic}}$ | Dynamic compression coefficient $=\theta/\Delta z$ | *Multidimensional Spacetime and Dynamical Gravity* §2.4 |
+| $\theta_\mathrm{conformal}$ | Conformal geometric exponent $\approx0.82798$ | *Multidimensional Spacetime and Dynamical Gravity* §2.4 |
+| $\Lambda,\Gamma$ | Pruning gain / phase-transition control quantity (shielding knob) | *N–S Turbulence Benchmark* §2.4 |
+| $\ell_P$ | Planck length (emergent UV boundary) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
+
+## Appendix B Comparison with the Early Conjecture
+
+| Early conjecture (Theoretical Synopsis Based on Status) | Corresponding item in this design | Verdict |
+|---|---|---|
+| Eliminating local observation probability → local $G$ drift | Raising local $\sigma_z$ → $\mathcal{W}_{ij}\downarrow$ (Part I §3) | Isomorphic, now quantified ($\Xi$) |
+| Back-reaction of causal developmental probability (superconductivity isomorphism) | Network self-repair $\hat{\mathcal{C}}$ + Op2 gating | Corresponding, belongs to Tier B |
+| Weight-reduction ceiling of about 2% (Podkletnov level) | $\Xi\approx0.98$ requires $\sigma_z$ ×3 | Order of magnitude consistent |
+| Ramanujan theta + Bernoulli nested fitting | Not incorporated into this design (belongs to the fitting layer) | To-do |
+
+---
+
+**Basis (article · section correspondence)**: gravity source = dissipation gradient → *Multidimensional Spacetime and Dynamical Gravity* §5; $\mathcal{W}_{ij}$ → *Multidimensional Spacetime and Dynamical Gravity* §2.3; dissipation tensor and compensation operator → *Multidimensional Spacetime and Dynamical Gravity* §2.2; coherent saturation → *Composite Elementary Particles* §1.3, §II, §Discussion · Model capability boundary; Op2 dormancy mechanism → *N–S Turbulence Benchmark* §2.3, and see *Complete Characterization of the Nucleon* §2.1; Op1 read-only inheritance → *N–S Turbulence Benchmark* §2.3; frontier random-difference injection → *Complete Characterization of the Nucleon* §2.1; mass–energy equivalence / closed–open → *Reconstruction of Classical Electrodynamics* §4; read-only barrier → *Logical-Depth Anchoring and Safety Shielding* Section 3; permeability → *Graph-Operator Pipeline Whitepaper* §3.1 Operator 5; frontier-size upper bound and safety exemption/impedance criterion → *Graph-Operator Pipeline Whitepaper* §5.1 Operator 10, §5.3 Operator 8.
