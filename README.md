@@ -28,9 +28,9 @@ The book is organised into five parts:
     - Pure‑hypothesis subjects: instantaneous bidirectional optical communication, inclusive‑benefit medical care, next‑generation semiconductor design, anti‑gravity, life science.
 5. **Part V Supplementary Programs and Datasets**.
 
-A defining feature of this work is the full open‑source release of **Operators 1–19**:
+A defining feature of this work is the full open‑source release of **Operators 1–20**:
 Their complete mathematical specifications, algebraic derivations and simulation code constitute the main body of Parts III and V.
-Includes extension operators `11,12` (electronic degrees‑of‑freedom, Sep 2026), and operators `13‑19` (spectral‑equation solving & charge‑symbol‑channel).
+Includes extension operators `11,12` (electronic degrees‑of‑freedom, Sep 2026), operators `13‑19` (spectral‑equation solving & charge‑symbol‑channel), and operator `20` (activation / bridge).
 The entire pipeline is released under open‑source licence for reproduction, audit and secondary‑development.
 
 > Scientific intuition arises out of the void, and returns to the void.
@@ -54,8 +54,8 @@ The entire pipeline is released under open‑source licence for reproduction, au
     - 假说猜想议题：光瞬时双向通讯、普惠医疗、下一代半导体设计、反重力、生命科学。
 5. **第五部分 配套程序与数据**。
 
-本书一大特征：**算子1‑19完整开源**
-完整数学规范、代数推导与仿真代码构成第三、五部分主体；包含2026‑09新增11、12号电子自由度扩展算子，以及13‑19号谱形方程求解、电荷符号通道算子。整套流水线开源发布，支持复现、审计、二次开发。
+本书一大特征：**算子1‑20完整开源**
+完整数学规范、代数推导与仿真代码构成第三、五部分主体；包含2026‑09新增11、12号电子自由度扩展算子，13‑19号谱形方程求解、电荷符号通道算子，以及20号反应活化 / 桥接算子。整套流水线开源发布，支持复现、审计、二次开发。
 
 > 科学的直觉源于虚空，亦归于虚空。
 
@@ -86,7 +86,7 @@ This repository applies **two separate licenses to different contents**:
 > https://creativecommons.org/licenses/by/4.0/
 > Consistent with the Zenodo archive SRE‑v1.6 Axiom Suite.
 
-2. **Source code, simulation scripts, implementation of Operators 1‑19 (program files)**
+2. **Source code, simulation scripts, implementation of Operators 1‑20 (program files)**
 > Licensed under **MIT License**.
 > Full license text: see `LICENSE‑MIT`.
 
@@ -99,7 +99,7 @@ This repository applies **two separate licenses to different contents**:
 ### 许可（中文）
 本仓库不同内容采用两套独立许可协议：
 1. **书稿文稿、理论正文（所有Markdown书稿章节、作者序、理论描述文本）**：采用 **CC‑BY‑4.0（知识共享署名4.0国际）**，详见根目录`LICENSE‑CC‑BY‑4.0`，与Zenodo归档SRE‑v1.6公理套件许可保持一致。
-2. **源代码、仿真脚本、算子1‑19实现程序文件**：采用 **MIT开源协议**，详见根目录`LICENSE‑MIT`。
+2. **源代码、仿真脚本、算子1‑20实现程序文件**：采用 **MIT开源协议**，详见根目录`LICENSE‑MIT`。
 
 > 对于同时包含文字正文与内嵌代码片段的混合文件：
 > 文本内容的引用、复用遵守 CC‑BY‑4.0；

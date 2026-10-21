@@ -1,9 +1,12 @@
 # 算子 19：ℤ₂ holonomy / σ 电荷符号通道算子
 ## 严格数学规范、可解性推理依据与验证协议
 
-**版本**：1.0（2026 年 10 月 · SRE 算子体系第 19 号）
-**参考实现**：`sre_z2_holonomy_bridge.py`（公共入口 `operator_19_z2_charge_channel`）
-**配套验证程序**：`verify_operator_19.py`（独立严格验证，V1–V12，零外部依赖 numpy/networkx）
+**版本**：1.1（2026 年 10 月 · SRE 算子体系第 19 号，极性注入与跨实现验证增补）
+**参考实现**：功能式桥接 `sre_z2_holonomy_bridge.py`（入口 `operator_19_z2_charge_channel`）；类式发布套件 `sre_charge_channel.py`（`SREChargeChannelSuite.execute_operator_19_z2_charge_channel`；三份镜像 SHA-256 一致）——双实现互证无歧义
+**配套验证程序**：三份独立程序共同实证本规范
+  - `verify_operator_19.py`（V1–V12，骨架忠实 / 定理逐项 / 冻结契约，45 断言）
+  - `verify_operator_19_mobius.py`（M1–M9，Möbius 型图专项，57 断言）
+  - `verify_operator_19_cross.py`（X1–X10，跨实现一致性 + 守卫边界，29 断言）
 **前置依赖**：算子 1/4（SRE 平滑邻接 $A_s$ 的键图支撑）、算子 11（自旋极性诊断量 $s_i,\sigma_{ij}$）、算子 12（一阶贝蒂数 $\beta_1$ 环计数）
 **上游论文**：《SRE 体系下正负电荷的涌现：量值、符号与数值确证》（下称"电荷涌现论文"）
 **下游集成**：`sre_cluster_substitute_screen.py`（`z2_*` 字段接入化合物筛选流水线）
@@ -61,7 +64,7 @@ $$Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\qquad \deg(K)=\beta_1(K)\bmod 2,\qquad \sig
 
 把 $\sigma$ 通道**单独**建基为算子 19：
 
-- **输入**：算子 1/4 输出的 SRE 平滑邻接 $A_s$（键图支撑为 $A_s>0$）、电负性 $\chi$（自旋口径）、元素标号（分子着色）；
+- **输入**：算子 1/4 输出的 SRE 平滑邻接 $A_s$（键图支撑为 $A_s>0$）；可选极性口径四选一（D3）——缺省 `polarity="topo"`，或显式 `edge_polarity` / 轨道 `orbit_signs` / 自旋 `chi`；可选元素标号（分子着色，保色 Aut）；可选守卫参数 `aut_cap`（缺省 100 000）与 `aut_max_v`（缺省 22，超限仅跳过可达性）。
 - **输出**：图不变量 $\{V,E,c,\beta_1,\deg,\text{bipartite},\text{has\_odd\_cycle}\}$、$\sigma$ 类 $\{\sigma\text{-vector},\sigma\text{-class},\text{trivial}\}$、Aut-不变可达性、以及模型内部电荷档 $Q_{\text{model}}=\sigma\cdot\deg$；
 - **性质**：T0–T8（§5）。
 
@@ -103,9 +106,15 @@ SRE 公理 1（无零元）保证每条边只能取 $s_e\in\{+1,-1\}$，即 $z_e
 
 **D2（边极性 1-上链 $s$）**　$s:E\to\{+1,-1\}$，$z_e\equiv\varphi(s_e)\in\mathbb{F}_2$；$s\in C^1(G;\mathbb{F}_2)$。
 
-**D3（字面口径 / 顶点势口径）**　
-- **字面口径**（电荷涌现论文 A1）：协同边一律 $s_e=+1$（拓扑全正）；
-- **自旋口径**（算子 11 诊断量）：$s_e=s_i\cdot s_j$，$s_i=\operatorname{sign}(\chi_i-\bar\chi)$。
+**D3（四种边极性口径 / 注入优先级）**　
+算子 19 支持四种**互斥**的边极性来源，按优先级排序：
+
+1. **explicit 显式注入**（`polarity="explicit"` + `edge_polarity=spec`）：外部字典 `{(i,j):±1}` 或长度 $E$ 的序列，必须覆盖全部边且取值仅 $\pm1$。最灵活的调试/实验口径。
+2. **orbit 轨道注入**（`polarity="orbit"` + `orbit_signs=[±1,\dots]`）：每条边轨道整体取同一符号，**构造上即 Aut-不变**（对接电荷涌现 §13.2 的明示假设）。长度必须等于边轨道数，且要求 $V\le\text{aut\_max\_v}$。
+3. **spin 自旋口径**（`polarity="spin"` + `chi=\chi`）：$s_e=s_i\cdot s_j$，$s_i=\operatorname{sign}(\chi_i-\bar\chi)$。由 T1 其 holonomy **恒平凡**，故该口径可用来演示"顶点势型无法产生非平凡符号通道"。
+4. **topo 字面口径**（`polarity="topo"`，缺省）：协同边一律 $s_e=+1$（电荷涌现论文 A1 的字面声明）。
+
+同时提供多注入口径（如 `edge_polarity` 与 `orbit_signs` 同给）或非法取值会抛出 `ValueError`，两类实现共享同一校验契约（见 §8.3 / X8）。
 
 **D4（环 holonomy）**　对环 $\gamma$(顶点序列 $v_0v_1\cdots v_{L-1}v_0$)：$\sigma(\gamma)\equiv\prod_{k}s_{(v_k,v_{k+1})}$，等价地 $\sigma(\gamma)=\big(\sum_{e\in\gamma}z_e\big)\bmod 2$。
 
@@ -241,12 +250,47 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 
 结论：**电子被骨架对称性强制到平凡 holonomy 类，质子落在非平凡类**，与 A0 一起给出电子/质子异号的结构来源。中子的 $\deg=0$，无论 $\sigma$ 如何 $Q_{\text{model}}=0$——**量值通道单独使中子中性**。
 
+### 6.1 Möbius 型图实证（M1–M9，57/57 通过）
+
+`verify_operator_19_mobius.py` 以显式构造的 Möbius 族，把「非平凡 $\sigma$」从定理变成可复现的数值实验——并给出非平凡类的**显式证书**（holonomy $-1$、非余边界、双重覆盖复原）。
+
+**构造族**：
+
+- **Möbius 梯 $M_k$** $=$ 偶环 $C_{2k}$ + 对径弦 $(i, i+k)$；$V=2k, E=3k, \beta_1=k+1$。$M_3$ 退化为 $K_{3,3}$，$M_4$ 即 Wagner 图 $V_8$（射影平面最小三角剖分的 1-骨架）。
+- **圆柱梯 $\Pi_k$** 对照：双 $k$-环 + $k$ 竖档；与 $M_k$ 同 $V$ 同 $E$，仅"扭"不同。
+- **加扭偶环**：偶环 $C_{2k}$ 上把相邻两顶点标为异色，构成扭缺陷。
+
+**核心数值结论**（M1–M3）：
+
+| 族 | $\beta_1$ | 通道类型 | 结构来源 |
+|---|---|---|---|
+| $M_3 = K_{3,3}$ | 4 | **electron-like** | 二分 + 单边轨道，T6 强制平凡 |
+| $M_k, k\ge 4$ | $k+1$ | **nucleon-like** | 非二分（含奇环）+ 多轨道，T2 $M\neq0$ |
+| $\Pi_k$（偶 $k$） | $k+1$ | **electron-like** | 二分（含偶柱面）+ 单边轨道（偶数阶） |
+| $\Pi_k$（奇 $k$） | $k+1$ | **nucleon-like** | 含三角面（奇环），**非二分**——故真正决定翻转的是奇环存在性，而非"扭转"几何直观本身 |
+
+**非平凡 $\sigma$ 的显式证书**（M4）：$M_4$ 上存在见证边轨道，令其取 $-1$、其余取 $+1$ 得 Aut-不变极性 $s_{\text{witness}}$，满足
+1. $\sigma(\gamma) = -1$（基本环上有一奇环 holonomy $-1$）；
+2. 独立余边界求解器（与实现无关）返回 False，确认 $s_{\text{witness}}$ **非余边界**；
+3. Op19 注入口径直出 $\sigma_{\text{class}}=$ nontrivially、Q\_model $=-1$。
+
+**双重覆盖复原**（M5）：$\sigma(\gamma^{2}) = \sigma(\gamma)^2 = +1$——绕 Möbius 梯两次回到平凡类（2π 变号 / 4π 复原），是 Möbius 带拓扑的直接数值体现。
+
+**顶点势口径的恒平凡性**（M6）：自旋极性 $s_e=s_i s_j$ 在 $M_k$ 上的 holonomy **全为 $+1$**，再次实证 T1。
+
+**独立交叉校验**（M7）：DFS 独立环基、$2^{\#\text{轨道}}$ 暴力枚举、独立余边界求解器三口径与 Op19 输出一致。
+
+**电子骨架 $Q_3$ 的强制平凡**（M8）：二分 + 单边轨道，无论注入何种 Aut-不变极性，Op19 恒输出 electron-like。
+
+**极性注入 API 回归**（M9）：orbit / explicit 双口径、Aut-不变诊断、非法输入校验，与 §8.3 / X2/X3/X8 等价。
+
 ---
 
 ## 7 算法与复杂度
 
 | 步骤 | 输入 | 输出 | 复杂度 |
 |---|---|---|---|
+| 0 极性选取 | `polarity` + 注入参数（D3） | 边极性 $s_e$ | 取决于口径（explicit/orbit/topo $O(E)$；spin $O(n)$ + $O(E)$） |
 | 1 键图 | $A_s$ | 布尔邻接 $\mathrm{adj}$ | $\mathcal{O}(n^2)$ |
 | 2 图不变量 | $\mathrm{adj}$ | $V,E,c,\beta_1,\deg,\text{bipartite}$ | $\mathcal{O}(n^2)$ |
 | 3 基本环基 | $\mathrm{adj}$ | $\{\gamma_i\}_{i\le\beta_1}$ | $\mathcal{O}(n^2+E\cdot L)$ |
@@ -255,6 +299,8 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 | 6 可达性（可选） | $\{\gamma_i\},\{\text{轨道}\}$ | $M$、非平凡可达、见证 | $\mathcal{O}(\beta_1\cdot k)$ |
 
 **总复杂度**：$\mathcal{O}(n^2 + \beta_1\cdot\bar L)$（不含自同构枚举）；自同构枚举为瓶颈，故设守卫 `aut_max_v=22`，超限仅跳过可达性而**不影响** $\sigma$ 类判别与 $Q_{\text{model}}$。
+
+极性选取的校验契约（两类实现共享）：多注入口径同时给出抛 `ValueError`；`orbit_signs` 长度 ≠ 轨道数抛 `ValueError`；`edge_polarity` 缺边或含非法取值（非 $\pm1$）抛 `ValueError`；`polarity="spin"` 缺 `chi` 抛 `ValueError`。详见 §8.3 / X8。
 
 ---
 
@@ -281,10 +327,41 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 
 ### 8.2 运行
 
+三份验证程序各自独立运行，任一行断言失败以退出码 1 结束：
+
 ```
-python verify_operator_19.py
+python verify_operator_19.py          # V1–V12，45 断言（严格定理逐项）
+python verify_operator_19_mobius.py   # M1–M9，57 断言（Möbius 型图专项）
+python verify_operator_19_cross.py    # X1–X10，29 断言（跨实现一致性 + 守卫边界）
 ```
-零外部依赖（仅 numpy + networkx，networkx 仅用于自同构枚举）；任一行断言失败以退出码 1 结束。
+
+零外部依赖（仅 numpy + networkx，networkx 仅用于自同构枚举）。
+
+### 8.3 跨实现一致性结果（X1–X10，29/29 通过）
+
+算子 19 存在两套独立维护的平行实现，二者共享本规范但代码库分离：
+
+| 实现 | 入口 | 镜像 |
+|---|---|---|
+| 功能式桥接 | `operator_19_z2_charge_channel` | 单一 `sre_z2_holonomy_bridge.py` |
+| 类式发布套件 | `SREChargeChannelSuite.execute_operator_19_z2_charge_channel` | 三份 SHA-256 一致（`release/`、`math-vector_v2/`、`dist/windows/`） |
+
+`verify_operator_19_cross.py` 以同一输入对拍两实现的全部可观测量（$V,E,c,\beta_1,\deg,\sigma$-vector, $\sigma$-class, $\sigma_{\text{canonical}}, Q_{\text{model}}$, channel\_type, reachability 全字段），覆盖：
+
+- **X1** topo 口径 32 张图（Möbius $M_3$–$M_8$、圆柱 $\Pi_3$–$\Pi_8$、$Q_3$、$Y_3$ 闭/开、$K_{2,2,2}$、16 张随机连通图）
+- **X2** explicit 三口径（全 $+1$ / 首边翻转 / 逐边随机 $\pm1$）
+- **X3** orbit 四口径（all+1 / all−1 / flip-first / flip-witness）
+- **X4** spin 口径（含 `spin_net_sign`）
+- **X5** 冻结契约：`charge_channel_keys` 恒 10 键且两实现逐键等值；跳过时键数不变、内部字段以 `None` 占位
+- **X6** $V>\text{aut\_max\_v}$ 守卫（含自定义 `aut\_max\_v=10` 触发）：两实现一致跳过可达性、skip 原因一致、$\sigma$ 类仍有效
+- **X7** 非连通图（双三角）：$c=2,\beta_1=E-V+c$ 两实现一致
+- **X8** 8 类非法输入（极性口径非法、多注入冲突、长度不符、缺边、取值非 $\pm1$、spin 缺 chi、orbit 于 $V>\text{aut\_max\_v}$）：两实现抛同型 `ValueError`
+- **X9** 元素着色对轨道与可达性的影响：两实现一致
+- **X10** 顶点重标号不变性：$\sigma$ 类 / channel\_type / 不变量在随机置换下不变，且重标号后仍两实现一致
+
+全部 29 项断言通过，证明本规范在两独立代码库上的**行为收敛**——不存在「规范文字可被多歧义解读」的空间。
+
+> **冻结契约（D5，不得违反）**：`charge_channel_keys(res)` 必须恒定返回 **10 键**；两实现已被证实遵守，禁止后续实现改动此键数。
 
 ---
 
@@ -301,7 +378,7 @@ python verify_operator_19.py
 | **算子 18**（同调解实现） | step 5 用 Fiedler 符号门赋自旋 $\Gamma(k,j)=\operatorname{sgn}(v_2(j))$ | 18 的自旋赋型属**顶点势型**，由 **T1** 其 holonomy 恒平凡；19 证明"18 的赋型无法产生非平凡符号通道"，构成握手边界 |
 | **算子 11**（自旋-电荷邻接） | 输出诊断量 $s_i,\sigma_{ij},d_{ij}$ | 11 的 $\sigma_{ij}=s_is_j$ **恰是** T1 的平凡类样例；19 把它定位为"不可造符号" |
 
-**层级定位**：开源底座层（1–6）、开源核心层（7–10）、电子自由度扩展层（11–12）、谱形方程求解层（13–18）之后的**第五层——电荷符号 / $\mathbb{Z}_2$ holonomy 通道层（19）**。
+**层级定位**：开源底座层（1–6）、同调缝合核心层（7–10）、电子自由度扩展层（11–12）、谱形方程求解层（13–18）之后的**第五层——电荷符号 / $\mathbb{Z}_2$ holonomy 通道层（19）**。
 
 ---
 

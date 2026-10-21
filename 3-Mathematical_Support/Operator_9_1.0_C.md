@@ -58,7 +58,7 @@ $$\Delta \beta_1 \equiv 0$$
 
 我们将全局亏格差分算式改写为边界算子的秩与空间维数的显式代数线性组合：
 $$\Delta \beta_1 = \left( \dim C_1^{(n+1)} - \operatorname{rank}(\partial_1^{(n+1)}) \right) - \left( \dim C_1^{(n)} - \operatorname{rank}(\partial_1^{(n)}) \right)$$
-$$\Delta \beta_1 = \left( \dim C_1^{(n+1)} - \dim C_1^{(n)} \right) - \left( \operatorname{rank}(\partial_1^{(n+1)}) \right) - \operatorname{rank}(\partial_1^{(n)}) \right)$$
+$$\Delta \beta_1 = \left( \dim C_1^{(n+1)} - \dim C_1^{(n)} \right) - \left( \operatorname{rank}(\partial_1^{(n+1)}) - \operatorname{rank}(\partial_1^{(n)}) \right)$$
 
 根据算子 1 的 outward 边界扩展传播公理，单步脉冲演化从 $n \to n+1$ 时，前沿仅注入唯一一个 parametric 符号顶点 $v_f$。该顶点的诞生，在线性链空间维度上引入了固定的前沿通道增量 $\Delta |E| = \dim C_1^{(n+1)} - \dim C_1^{(n)} \equiv \vert{}\mathcal{N}(v_f)\vert{}$（即前沿顶点的本地度数）。代入上式，维数差分算式被精准归结为边界算子线性秩的补偿行为：
 $$\Delta \beta_1 = \vert{}\mathcal{N}(v_f)\vert{} - \Delta \operatorname{rank}(\partial_1)$$

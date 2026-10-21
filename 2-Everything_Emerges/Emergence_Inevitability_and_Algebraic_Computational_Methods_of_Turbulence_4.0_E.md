@@ -6,7 +6,7 @@ Version: 4.0
 
 > **Translation note**: strict line-by-line English rendering of the Chinese version `n-s_C_4.0.md`, pending author revision.
 
-[Resources and Availability Statement] This framework is built upon State-Relation Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open-source data repository. **This document suite includes the systematic paper, application development, scientific hypotheses, the complete algebraic derivations of Operators 1–19, and the simulation code, all fully open source.**
+[Resources and Availability Statement] This framework is built upon State-Relation Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open-source data repository. **This document suite includes the systematic paper, application development, scientific hypotheses, the complete algebraic derivations of Operators 1‑20, and the simulation code, all fully open source.**
 
 > The author's GitHub repository is accessible at:
 >

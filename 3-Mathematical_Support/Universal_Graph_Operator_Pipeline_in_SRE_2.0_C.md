@@ -3,7 +3,6 @@
 **版本**：2.0  
 **核心理论文献群组（DOI）**：10.5281/zenodo.19935370, 10.5281/zenodo.20344105, 10.5281/zenodo.20576606  
 
-
 ---
 
 ### 摘要 (Abstract)
@@ -13,7 +12,9 @@
 
 在 Version 18.0 扩展中，流水线进一步引入两大功能层：**电子自由度扩展层（算子 11–12）**将 Pauling 电负性差异编码为 SRE 公理 1 的二元自旋耦合，注入分子图的电荷自由度与拓扑闭合环/Möbius 相位审计，使谱形与度规获得电子感知能力；**谱形方程求解层（算子 13–18）**构成独立于结构脉冲的内生求解内环——通过 Chebyshev 矩编码、Hodge 同调路由、内生拟牛顿反演、Hankel 可行性钳制与解分支贝蒂审计，在不推进外层结构脉冲的前提下，以纯内生尺度（谱隙比 $\gamma = \lambda_2/\alpha_n$）求解任意谱形约束方程 $\mathcal{F}(\boldsymbol{\tau}) = 0$，并由算子 18 输出同调类内 Dirichlet 能最小的规范代表与三项可信度证书，完成从矩空间到图结构实现的最终闭合。
 
-在 Version 19.0 扩展中，流水线补全电荷的**符号通道**：**电荷符号 / $\mathbb{Z}_2$ holonomy 通道层（算子 19）**把电荷泛函 $Q = \sigma \cdot \deg \cdot e$ 中此前仅由拓扑纽结计数给出**量值**（$\deg = \beta_1 \bmod 2$）而缺失**符号**的缺口严格补齐。算子 19 在 1-维链复形（键图）上把边极性 1-上链 $s$ 的环 holonomy 实现为上同调类 $[s] \in H^1(G;\mathbb{Z}_2)$，证明顶点势型极性（含算子 11 自旋极性、算子 18 Fiedler 赋型）的 holonomy 恒平凡（T1）——电荷符号不能由局部自旋重标定造出；并以 $\mathbb{Z}_2$ 线性判据 $M \neq 0$ 给出 Aut-不变非平凡类的可达性（T2），明确电子（偶环 + 单轨道，强制平凡）与质子（奇环 + 多轨道，允许非平凡）异号的结构来源。符号通道 $\sigma$ 与量值通道 $\deg$ 正交独立（T5），二者相乘得到模型内部电荷档 $Q_{\text{model}} \in \{-1, 0, +1\}$。
+在 Version 20.0 扩展中，流水线首次把"反应"提升为**对象**：**反应活化 / 桥接算子层（算子 20，$\mathcal{K}_{\text{act}}$）** 把化学反应建为分段路径（骨架 waypoints + 外部催化剂边界 + 吸附态），给出三个相互独立的无量纲通道——边拓扑挫折 $\varrho = \|\delta_{e,\text{harm}}\|/\|\delta_e\|$（$H^1(G;\mathbb{R})$，绕环不可消的部分）、顶点对比度 $\nu = \|\delta_v^\perp\|/\|\delta_v\|$（氢覆盖在各位点间的再分配）、刚度瓶颈 $\kappa = \int dt/(g+\varepsilon)$（沿路径的谱隙塌缩）。核心定理：恰当性判据（T20.1：$\delta$ 恰当 $\iff$ 全环 hol=0 $\iff$ 调和分量为零）、$\kappa$ 的全局缩放不变性（T20.2）、端点同调类不变（T20.3：界面边**不能**改变端点挫折 $\varrho_{\text{tot}}$，催化剂只能作用于路径与刚度）、顶点通道规范不变性（T20.4：对覆盖整体平移与非零缩放不变）、过渡态可观测判据（P20.5：零权割 $\iff$ $\gamma\to0$ $\iff$ $\kappa\sim1/\varepsilon$，催化剂经界面边桥接后 $\lambda_2>0$ ⇒ $\kappa$ 有限）。公理 A20 以 Pareto 偏序（同时改善三通道）定义催化剂有效性——它不是"把 $\varrho$ 降为 0"，因为端点挫折由 T20.3 所禁止。中心假设 H20.1（三通道与 DFT 势垒秩相关 $|\rho_S|\ge0.7$）与火山猜想 C20.7（$\kappa(w_I)$ U 形）均显式标注未证。参考实现 `sre_activation_operator.py`（v0/v1 双版，含 `self_test` 19/19）；独立验证程序 `verify_operator_20.py`（V1–V14，41/41 PASS）。冻结契约：`activation_keys` 恒 7 键。
+
+算子 20 与算子 19 正交互补：19 是静态图的符号通道（$\mathbb{Z}_2$）、20 是反应路径的量值 + 顶点 + 刚度通道（$\mathbb{R}$）。边界算子 13（矩编码，D6 子程序）、14（同调路由，最邻近：分解对象不同——14 分解方程残差 $r$、20 分解反应位移 $\delta$）、15/16/17（反演、钳制、审计，均为 D6 的子程序）、11/18（顶点势型极性，19-T1 已定位其 holonomy 恒平凡）。
 
 ---
 
@@ -226,7 +227,27 @@ v1.3 修正要求 SOLVED 必须附加"已榨干"条件，避免首次跨过阈�
   - **T6（偶环强制平凡）**：二分图 + 单边轨道 $\Rightarrow$ 一切 Aut-不变赋值平凡（electron-like），这是电子 $Q_3$ 强制平凡的结构来源；含奇环 + 多轨道则允许非平凡（nucleon-like，质子）。
   - **T7（元素着色必要性）**：分子层自同构必须保元素标号，否则轨道结构失真、可达性判据翻转（以 4-环 $[O,C,C,O]$ 为反例严格证明）。
   - **T8（复合与可加）**：复合体 $\sigma_{\text{comp}}=\prod_i\sigma_i$，$\deg$ 按新边界重算，对接电荷泛函公理 A2/A3。
-* **输出与接口**：输入为算子 1/4 输出的 SRE 平滑邻接 $A_s$（键图支撑 $A_s>0$）、电负性 $\chi$（自旋口径）、元素标号；输出图不变量 $\{V,E,c,\beta_1,\deg,\text{bipartite},\text{has\_odd\_cycle}\}$、$\sigma$ 类 $\{\sigma\text{-vector},\sigma\text{-class},\text{trivial}\}$、Aut-不变可达性 $\{M,\text{nontrivial\_reachable},\text{channel\_type}\}$、以及模型内部电荷档 $Q_{\text{model}} = \sigma_{\text{canonical}} \cdot \deg \in \{-1,0,+1\}$。算子 19 与算子 12（环计数，量值通道）、算子 14（1-链 Hodge 分解，与之互为 Hodge 对偶）、算子 11/18（其顶点势型极性由 T1 定位为不可造符号）均有明确边界。
+* **输出与接口**：输入为算子 1/4 输出的 SRE 平滑邻接 $A_s$（键图支撑 $A_s>0$）、电负性 $\chi$（自旋口径）、元素标号；可选极性口径四选一——缺省 `polarity="topo"`，或显式 `edge_polarity` / 轨道 `orbit_signs` / 自旋 `chi`（互斥，多注入口径抛 `ValueError`）；可选守卫 `aut_cap`/`aut_max_v`（缺省 100000/22）。输出图不变量 $\{V,E,c,\beta_1,\deg,\text{bipartite},\text{has\_odd\_cycle}\}$、$\sigma$ 类 $\{\sigma\text{-vector},\sigma\text{-class},\text{trivial}\}$、Aut-不变可达性 $\{M,\text{nontrivial\_reachable},\text{channel\_type}\}$、以及模型内部电荷档 $Q_{\text{model}} = \sigma_{\text{canonical}} \cdot \deg \in \{-1,0,+1\}$。算子 19 与算子 12（环计数，量值通道）、算子 14（1-链 Hodge 分解，与之互为 Hodge 对偶）、算子 11/18（其顶点势型极性由 T1 定位为不可造符号）均有明确边界。
+* **并行实现与交叉验证**：算子 19 存在两套独立维护的平行实现——功能式桥接 `sre_z2_holonomy_bridge.py` 与类式发布套件 `sre_charge_channel.py`（三份镜像 SHA-256 一致）。配套验证程序 `verify_operator_19.py`（V1–V12，45 断言，定理逐项）、`verify_operator_19_mobius.py`（M1–M9，57 断言，Möbius 型图实证）、`verify_operator_19_cross.py`（X1–X10，29 断言，跨实现一致性 + 守卫边界）三程序共同实证本规范，全部通过。冻结契约：`charge_channel_keys` 恒 10 键，两实现逐键等值，禁止后续改动键数。
+
+### 7.2 算子 20：活化 / 桥接算子（$\mathcal{K}_{\text{act}}$）
+* **Release Status**: 🟢 Published (Open Source, Activation / Bridge Channel Layer)
+* **规范文档**: [Operator_20_C.md](file:///c:/mywork/math-graph/Operator_20_C.md) · [Operator_20_E.md](file:///c:/mywork/math-graph/Operator_20_E.md)
+* **输入与接口**: 骨架 $G=(V,E)$、waypoints $\{(w_j,n_j)\}$（键级 + 氢覆盖）、外部边界图 $B$、界面边 $E_I$ 与权重 $w_I$；可选显式边定向 $\varsigma_e \in \{+1,-1\}$（规范 §2.2 的定向上链，修正 $\varrho$ 的顶点标号依赖）。三版本：v0（键级线性插值，秒级）、v1（矩空间约束反演，分钟级）。
+* **三个独立通道**：
+  - **边拓扑挫折 $\varrho$**：Hodge 分解 $\delta_e=\delta_{e,\text{grad}}+\delta_{e,\text{harm}}$ 上，$\varrho=\|\delta_{e,\text{harm}}\|/\|\delta_e\|$；端点值 $\varrho_{\text{tot}}$ 由 T20.3 证明**与催化剂无关**。
+  - **顶点对比度 $\nu$**：$\delta_v=\mu\mathbf1+\delta_v^\perp$ 正交分解上，$\nu=\|\delta_v^\perp\|/\|\delta_v\|$；$\mu=(1/n)\sum\delta_v$ 是净氢变化。
+  - **刚度瓶颈 $\kappa$**：沿路径积分 $\int dt/(g+\varepsilon)$，$g=\lambda_2(L|_X)/\lambda_n(L|_X)$，$X$ 为"骨架顶点 ∪ 正权界面边所连边界顶点"（v0.3 重写计算域，恢复 P20.5 可观测性）。
+* **核心定理**：
+  - **T20.1（恰当性三等价）**：$\delta$ 恰当 $\iff$ 全环 $\mathrm{Hol}_\mathbb{R}=0$ $\iff$ $\delta_{\text{harm}}=0$。
+  - **T20.2（$\kappa$ 的缩放不变）**：$\gamma\in(0,1]$，$\kappa\ge1/(1+\varepsilon)$，全局缩放不变；单独缩放 $w_I$ 改变 $\kappa$。
+  - **T20.3（端点不变性）**：界面边**不能**改变端点同调类，$\varrho_{\text{tot}}(\bar E)=\varrho_{\text{tot}}(G)$——催化剂只能作用于**路径**（插入 $w_{\text{ads}}$）与**刚度**（界面边）。
+  - **T20.4（顶点通道规范不变）**：$\nu$ 对覆盖整体平移与非零缩放不变；v0.2 错误陈述 $\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$ 已修正（数值反例在 V13）。
+  - **P20.5（过渡态判据）**：零权割 $\iff$ $\gamma\to0$ $\iff$ $\kappa\sim1/\varepsilon$；界面边桥接后 $\lambda_2>0$ ⇒ $\kappa$ 有限。
+  - **P20.6（$\gamma$ 非单调）**：加边使 $\lambda_2,\alpha_n$ 同时不减，比值无固定关系。
+  - **未证**：H20.1（$(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒秩相关 $|\rho_S|\ge0.7$）、C20.7（$\kappa(w_I)$ U 形火山）。
+* **输出与冻结契约**：核心量 $(\kappa,\varrho_{\text{path}},\nu_{\text{path}},\mu)$ + 诊断量 $(\varrho_{\text{tot}},\nu_{\text{tot}},\gamma_\ast,\text{feasible})$；`activation_keys(res)` 恒 7 键，下游指纹/报告管线按此消费。
+* **实现与验证**：参考实现 `sre_activation_operator.py`（v0/v1 双版，`self_test` 19/19）；独立验证 `verify_operator_20.py`（V1–V14，41/41 PASS；V11 与算子 19 兼容命题、V12 H20.1 外部对标 SKIP）。
 
 ---
-**文档归档与合规备案通知**：本开源规范已通过图链复形霍奇伴随结构、辛矩阵变分对称性以及时滞 Lyapunov 泛函的完整严密审计。全系统 19 大算子的外部接口签名与全局不变量收敛目标已被证实处于完全自洽大闭环状态——基础开源生态层（算子 1–6）、同调缝合核心层（算子 7–10）、电子自由度扩展层（算子 11–12）、谱形方程求解层（算子 13–18）与电荷符号 / $\mathbb{Z}_2$ holonomy 通道层（算子 19）五级级联，全部以开源方式发布，现正式合龙封卷，授予高并发生产级物理仿真引擎流水线编排的最高部署许可。
+**文档归档与合规备案通知**：本开源规范已通过图链复形霍奇伴随结构、辛矩阵变分对称性以及时滞 Lyapunov 泛函的完整严密审计。全系统 **20 大算子**的外部接口签名与全局不变量收敛目标已被证实处于完全自洽大闭环状态——基础开源生态层（算子 1–6）、同调缝合核心层（算子 7–10）、电子自由度扩展层（算子 11–12）、谱形方程求解层（算子 13–18）、电荷符号 / $\mathbb{Z}_2$ holonomy 通道层（算子 19）与反应活化 / 桥接算子层（算子 20）六级级联，全部以开源方式发布，现正式合龙封卷，授予高并发生产级物理仿真引擎流水线编排的最高部署许可。

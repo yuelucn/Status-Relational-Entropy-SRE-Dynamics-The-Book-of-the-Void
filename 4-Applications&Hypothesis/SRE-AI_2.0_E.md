@@ -3,7 +3,7 @@
 
 Version: 2.0  
 
-[Resource & Availability Statement] This framework is built upon Status-Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open-access repository. **This document suite includes the system paper, application development, scientific hypotheses, complete algebraic derivations of Operators 1–19, and fully open-source simulation code**.
+[Resource & Availability Statement] This framework is built upon Status-Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open-access repository. **This document suite includes the system paper, application development, scientific hypotheses, complete algebraic derivations of Operators 1–20, and fully open-source simulation code**.
 
 > Visit the author's GitHub repository:
 >

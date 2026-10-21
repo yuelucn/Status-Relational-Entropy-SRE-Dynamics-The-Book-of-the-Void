@@ -3,7 +3,7 @@
 Version: 1.0
 
 This framework is constructed based on Status-Relational Entropy (SRE) Dynamics.
-All theoretical materials of this framework are archived in the Zenodo open-access repository. The mathematical-specification papers, algebraic derivations and simulation codes for all Operators 1-19 are fully open-source. You may also access the fully open-source Tencent Smart Document with AI-assisted support (accessible via PC and WeChat mobile client). As of August-, 2026, due to Google Terms-of-Service restrictions, the author no longer maintains or updates the SRE-series document library on Google Gemini notebook:
+All theoretical materials of this framework are archived in the Zenodo open-access repository. The mathematical-specification papers, algebraic derivations and simulation codes for all Operators 1-20 are fully open-source. You may also access the fully open-source Tencent Smart Document with AI-assisted support (accessible via PC and WeChat mobile client). As of August-, 2026, due to Google Terms-of-Service restrictions, the author no longer maintains or updates the SRE-series document library on Google Gemini notebook:
 [Knowledge-Seeking] [https://docs.qq.com/space/DUkRjYUtNWFdyV253?nlc=1&mode=ai_mode](https://docs.qq.com/space/DUkRjYUtNWFdyV253?nlc=1&mode=ai_mode)
 
 According to the Status-Relational Entropy (SRE) principle, the foundations of classical physics originate from information statistics.

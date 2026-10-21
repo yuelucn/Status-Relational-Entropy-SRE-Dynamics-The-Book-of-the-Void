@@ -20,7 +20,7 @@ This framework is built upon Status-Relational Entropy (SRE) Dynamics. All theor
 All related materials for this book, together with the reproduction programs and datasets accompanying each chapter, are available in my GitHub repository:
 <https://github.com/yuelucn/Status-Relational-Entropy-SRE-Dynamics-The-Book-of-the-Void>
 
-**Open-source scope of the operator suite**: the complete mathematical specifications, algebraic derivations and simulation code for all Operators 1-19 are fully open-source, and constitute the main body of Parts III and V of this book. The entire operator pipeline is released under an open-source licence for reproduction, audit and secondary development.
+**Open-source scope of the operator suite**: the complete mathematical specifications, algebraic derivations and simulation code for all Operators 1-20 are fully open-source, and constitute the main body of Parts III and V of this book. The entire operator pipeline is released under an open-source licence for reproduction, audit and secondary development.
 
 In addition, an AI-assisted Tencent intelligent-document space is available (accessible on both PC and WeChat mobile):
 <https://docs.qq.com/space/DUkRjYUtNWFdyV253>
@@ -36,7 +36,7 @@ Part II *Emergence of All Things* presents falsifiable inferences for the emer
 
 Part III *Mathematical-Physical Support* spans multiple sub-fields of mathematics and physics and has a relatively high reading threshold. Its core idea is to build a complete operator system based on binary self-organising networks. This yields efficient and concise graph algorithms supporting local parallel graph computation for very-large-scale graph networks. Beyond supporting the present dynamical framework, this operator suite can also be applied independently to other engineering scenarios.
 
-Within this part, the complete suite of Operators 1-19 is released under an open-source licence to provide full mathematical-physical support for the ontological theory, including the two electronic-degrees-of-freedom extension operators 11 and 12 introduced in September 2026 and the spectral-equation-solving and charge-symbol-channel operators 13-19. The entire pipeline is open-sourced for reproduction, audit and secondary development.
+Within this part, the complete suite of Operators 1-20 is released under an open-source licence to provide full mathematical-physical support for the ontological theory, including the two electronic-degrees-of-freedom extension operators 11 and 12 introduced in September 2026, the spectral-equation-solving and charge-symbol-channel operators 13-19, and the Operator 20 activation / bridge operator. The entire pipeline is open-sourced for reproduction, audit and secondary development.
 
 Part IV is titled *Applications and Hypotheses*. This naming arises because topics such as signal processing, AI-models, graph-computing and brain science are independent of the world-information-ontology premise of this theory and can directly deliver commercial-value-oriented implementations. By contrast, subjects including instantaneous bidirectional optical communication, inclusive-benefit medical care, next-generation semiconductor design, anti-gravity and life-science remain purely hypothetical at the present stage.
 
