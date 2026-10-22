@@ -2,8 +2,19 @@
 
 
 
-Version: 1.0  
+Version: 1.1  
 
+[Resource & Availability Statement] This framework is built on State‑Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open data repository. **This document suite includes the systems paper, application development, scientific hypotheses, the complete algebraic derivations of Operators 1‑20, and the simulation code, all fully open source.**
+
+> The author's GitHub repository is accessible at:
+>
+> https://github.com/yuelucn/Status-Relational-Entropy-SRE-Dynamics-The-Book-of-the-Void
+>
+> A Tencent intelligent document space (with AI-assisted search) is accessible at (available on both PC and WeChat mobile):
+>
+> https://docs.qq.com/space/DUkRjYUtNWFdyV253
+>
+> According to the State‑Relational Entropy (SRE) principle, the foundations of classical physics derive from information statistics.
 
 - Basis: the following articles in the manuscript collection `The Book of the Void` of *Status-Relational Entropy (SRE) Dynamics* (https://doi.org/10.5281/zenodo.23275050) (all references in this document are given as **article name + section**, and no longer by line number)
 - Terminology convention: uniformly expressed as **"gravitational shielding"**—shielding naturally produces anti-gravity/weightlessness, rather than "flipping the sign of gravity / introducing negative mass".
@@ -20,7 +31,7 @@ This document cites the following seven articles in the manuscript collection ``
 | **《Multidimensional Spacetime and Dynamical Gravity》** | 《Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks》 (Chinese title: 正则化因果信息网络下多维时空与动态变光速引力) | §2.2 Topological dissipation tensor and compensation operator; §2.3 Topological stiffness weights and baryonic center-of-mass redshift; §2.4 Spectral resonance deriving the dynamic compression coefficient; §5 Causal emergent gravity: a thermodynamic effect as a dissipation gradient |
 | **《Composite Elementary Particles》** | 《Composite Elementary Particles and the SRE-Dynamics Topological Paradigm of Relational-Space Emergence》 (Chinese title: 复合基本粒子与关系空间涌现的SRE动力学拓扑范式) | §1.3 Local cross-spectral operator and information-geometry mapping; §II Core paradigm: the three-in-one emergence jump and composite-particle generation; §Discussion · Model capability boundary |
 | **《Reconstruction of Classical Electrodynamics》** | 《A Basic Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality》 (Chinese title: 基于离散图拓扑与双向因果性对经典电动力学的基础重构) | §4 Mass–energy equivalence $E=mc^2$ as a topological theorem |
-| **《N–S Turbulence Benchmark》** | 《Benchmarking Classical Navier–Stokes Turbulence with a Discrete Causal Network》 (Chinese title: 用离散因果网络对标经典 Navier–Stokes 湍流) | §2.3 Operator 1 (boundary expansion) and Operator 2 (maximum-entropy pruning); §2.4 pruning gain $\Gamma$ and control quantity $\Lambda$ |
+| **《Necessity of Turbulence Emergence》** | 《The Necessity of Turbulence Emergence and an Algebraic Computation Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction》 (Chinese title: 基于离散微观因果统计与多维流形重构的湍流涌现必然性及代数计算方法) | §4.1 Operator 1: boundary expansion; §4.2 Operator 2: maximum-entropy pruning; §4.3 Gain $\Gamma$: exogenous $\Lambda$ and endogenous $\lambda(n)$ |
 | **《Logical-Depth Anchoring and Safety Shielding》** | 《On the Order-of-Magnitude Anchoring of the Logical Depth N and the Safety Shielding of Observation Protocols》 (Chinese title: 关于逻辑深度 N 的量级锚定与观测协议的安全性屏蔽) | Section 3 Core safety adjudication: the physical-level "read-only" restriction |
 | **《Complete Characterization of the Nucleon》** | 《A Complete Characterization of the Nucleon in the SRE Framework: Open–Closed Two-State Skeleton Inversion, Quark Conjecture, and a Unified Formulation Validated by Nuclear Reactions》 (Chinese title: SRE 框架下核子的完整刻画：开闭二态骨架反演、夸克推测与核反应验证的统一表述) | §2.1 Binary self-organizing network and the sim_p generator |
 | **《Graph-Operator Pipeline Whitepaper》** | 《Overall Framework Whitepaper of the General Graph-Operator Pipeline for Status-Relational Entropy (SRE) Dynamics (Academic Revision)》 (Chinese title: 状态‑关系熵（SRE）动力学通用图算子流水线总体框架白皮书（学术修订版）) | §1.2 Operator 1: local graph-expansion operator; §3.1 Operator 5: endogenous-variable delay-calibration operator; §4.2 Morphological-morphism projection principle of macroscopic observables; §5.1 Operator 10: preemptive homological random-pruning operator; §5.3 Operator 8: local lock-free algebraic-valve equalization operator |
@@ -42,8 +53,8 @@ This document cites the following seven articles in the manuscript collection ``
    $$\Xi\equiv\frac{\mathcal{W}_{ij}^{\text{shielded}}}{\mathcal{W}_{ij}^{\text{vacuum}}}=\frac{1+\ln(1+\sigma_z^{\text{vacuum}})}{1+\ln(1+\sigma_z^{\text{shielded}})}<1$$
    The cost is that the **local measurement entropy must be amplified logarithmically**: $\Xi=0.5$ requires $\sigma_z$ to increase by about 180 times, and $\Xi=0.1$ by about $9\times10^3$ times. $\mathcal{W}\to0$ (complete weightlessness) corresponds to $\sigma_z\to\infty$, and is **unreachable**.
 4. The compensation operator $\hat{\mathcal{C}}$ is **non-monotonic/oscillatory** with respect to the dissipation $\hat{\mathcal{D}}$ (period $1/\alpha_0$, the first maximum at $\hat{\mathcal{D}}_0^{*}=1/(2\alpha_0)$; the derivative proof is given in Part I §5). However, under realistic parameters $\hat{\mathcal{D}}\sim 18\text{–}27 \gg 1/\alpha_0$, it falls into the strong-oscillation regime, where its envelope mean is pinned at $\langle\hat{\mathcal{C}}\rangle=1/(2\alpha_0)$, and it is **not a clean local knob** (an honest conclusion).
-5. The only engineerable actuation mechanism is **Op2 maximum-entropy pruning** (*N–S Turbulence Benchmark* §2.3): set the channel spin to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution **without breaking graph connectivity**. Because the interior of a mass closed loop is "non-addressable/non-writable" (read-only barrier, *Logical-Depth Anchoring and Safety Shielding* Section 3), **shielding can only be a boundary operation**—operating on the dissipation–compensation channel between the shielded region and the external network, rather than rewriting the internal closed loop.
-6. The chiral term $\Gamma_\mathrm{chiral}$ can reverse sign to produce **net repulsion**, and its phase condition is strictly obtainable (Part I §4); but whether it can dominate depends on the not-yet-calibrated dimensionless $\alpha_\mathrm{scale}$: only when $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$ is the chiral repulsion of the same order as the Newtonian term. **Thus the door to "true anti-gravity" is ajar, and its hinge is the experimental anchoring of $\alpha_\mathrm{scale}$.**
+5. The only engineerable actuation mechanism is **Op2 maximum-entropy pruning** (*Necessity of Turbulence Emergence* §4.2): set the channel spin to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution **without breaking graph connectivity**. Because the interior of a mass closed loop is "non-addressable/non-writable" (read-only barrier, *Logical-Depth Anchoring and Safety Shielding* Section 3), **shielding can only be a boundary operation**—operating on the dissipation–compensation channel between the shielded region and the external network, rather than rewriting the internal closed loop.
+6. The chiral term $\Gamma_\mathrm{chiral}$ can reverse sign to produce **net repulsion**, and its phase condition is strictly obtainable (Part I §4); but whether it can dominate depends on the not-yet-calibrated dimensionless $\alpha_\mathrm{scale}$: only when $\alpha_\mathrm{scale}\lesssim8\times10^{-4}$ is the chiral repulsion of the same order as the Newtonian term. **Thus the door to "true anti-gravity" is ajar, and its hinge is the experimental anchoring of $\alpha_\mathrm{scale}$.** §9 of this document has now measured that hinge with public BOSS DR12 data: $\alpha_\mathrm{scale}>2.2\times10^{-6}$ (95%), while the gate $8\times10^{-4}$ lies inside the allowed interval, so the present measurement has no discriminating power.
 
 ---
 
@@ -240,7 +251,7 @@ which **exactly equals** the value of $\hat{\mathcal{D}}_0^{*}$. To "lock" onto 
 
 ## 6 Actuation Mechanism: Op2 Maximum-Entropy Pruning and "Boundary-ness"
 
-### 6.1 Mechanism (*N–S Turbulence Benchmark* §2.3–§2.4, verbatim)
+### 6.1 Mechanism (*Necessity of Turbulence Emergence* §4.2–§4.3, verbatim)
 
 Pruning probability (maximum-entropy pruning master equation):
 
@@ -254,9 +265,9 @@ $$
 M_{n+1}(i,j)\leftarrow \chi\cdot M_{n+1}(i,j)+(1-\chi)\cdot 1
 $$
 
-"That is, the channel spin is forcibly set to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution from the product feedback loop without disconnecting graph connectivity. Surviving channels ($\chi=1$) are injected with an antisymmetric chiral shear." (*N–S Turbulence Benchmark* §2.3)
+"That is, the channel spin is forcibly set to the multiplicative identity $+1$, thereby eliminating that channel's phase contribution from the product feedback loop without disconnecting graph connectivity. Surviving channels ($\chi=1$) are injected with an antisymmetric chiral shear." (*Necessity of Turbulence Emergence* §4.2)
 
-The pruning gain $\Gamma$ has two modes (*N–S Turbulence Benchmark* §2.4):
+The pruning gain $\Gamma$ has two modes (*Necessity of Turbulence Emergence* §4.3):
 
 | Mode | Pruning gain | Meaning |
 |---|---|---|
@@ -321,18 +332,195 @@ $$
 1. **Shielding amount is independent of the absolute gravitational constant**: under a fixed increment of $\sigma_z$, the gravity-weakening ratio $1-\Xi$ should be independent of the test mass and position (universality). Any "material-dependent" additional shielding would require introducing a mechanism beyond $\mathcal{W}_{ij}$.
 2. **Logarithmic law**: the weight-reduction effect saturates with injected entropy in a $1/(1+\ln)$ form—the marginal benefit of increasing injection diminishes (distinguishable from a "linear response" prediction).
 3. **Phase reversal**: in the Rank=4 region ($z\ge z^*$), when the local center-of-mass redshift is tuned to $\mu^{*}$, a sign flip/zero of $G_\mathrm{eff}$ should appear (corresponding to the smooth $G_\mathrm{eff}$ oscillation described in *Multidimensional Spacetime and Dynamical Gravity* §5).
-4. **$\alpha_\mathrm{scale}$ criterion**: if experiments measure $\alpha_\mathrm{scale}\gtrsim10^{-3}$, then "net anti-gravity" is falsified within SRE (only weight reduction is possible); if $\alpha_\mathrm{scale}\ll10^{-3}$, then chiral repulsion is the dominant channel.
+4. **$\alpha_\mathrm{scale}$ criterion**: if experiments measure $\alpha_\mathrm{scale}\gtrsim10^{-3}$, then "net anti-gravity" is falsified within SRE (only weight reduction is possible); if $\alpha_\mathrm{scale}\ll10^{-3}$, then chiral repulsion is the dominant channel. (Measured in this document's §9: $\alpha_\mathrm{scale}>2.2\times10^{-6}$, still 362 times short of the $10^{-3}$ discriminating power, so this criterion is not yet usable.)
 
 ---
 
-## 9 Relation to the Uncalibrated $\alpha_\mathrm{scale}$
+## 9 Calibrating $\alpha_\mathrm{scale}$ from Observational Data
 
-$\alpha_\mathrm{scale}$ "appears" throughout the text but is never "calibrated" (see the localization conclusion from the previous round); moreover, according to the SRE axioms, **before anchoring, all quantities are dimensionless numbers**. This brings one advantage and one cost:
+In earlier versions of this document, $\alpha_\mathrm{scale}$ only "appeared" and was never "calibrated"; moreover, according to the SRE axioms, **before anchoring all quantities are dimensionless numbers**. This brings one advantage and one cost:
 
 - **Advantage**: The shielding factor $\Xi$ of the Part I §3 main channel is independent of $\alpha_\mathrm{scale}$, so the "weight-reduction ratio" is a testable prediction that can be **given prior to anchoring**.
-- **Cost**: "whether chirality can dominate" in Part I §4, and "whether net anti-gravity is truly possible", **depend uniquely on the order of magnitude of $\alpha_\mathrm{scale}$**—which must be fixed only after future experiments (Newtonian-limit calibration).
+- **Cost**: "whether chirality can dominate" in Part I §4, and "whether net anti-gravity is truly possible", **depend uniquely on the order of magnitude of $\alpha_\mathrm{scale}$**.
 
-Therefore this derivation compresses "anti-gravity" from a slogan into a definite experimentally-decidable numerical criterion: **the order of magnitude of $\alpha_\mathrm{scale}$**.
+This section pays off that "cost": without relying on any new ground-based experiment, using only **public galaxy-survey data**, we obtain a measured 95% confidence lower bound on $\alpha_\mathrm{scale}$. Every step is reproducible; the commands and products are listed in 9.10.
+
+### 9.1 The Conclusion First
+
+$$\alpha_\mathrm{scale}>2.2\times10^{-6}\qquad(95\%\ \text{one-sided})$$
+
+The baseline treatment gives $2.21\times10^{-6}$; including all reasonable treatments of the statistical and systematic terms, the range is $1.4\times10^{-6}$–$2.5\times10^{-6}$. **The present data give no upper bound**. The gate value $8\times10^{-4}$ lies inside the allowed range and is 362 times stronger than the measured lower bound. Hence this document **can neither declare that "the anti-gravity door is closed" nor that "the door is open"**—this is the honest conclusion of this measurement.
+
+### 9.2 Why This Is Measurable
+
+The reader only needs to remember two differences:
+
+1. **Different shapes**. The Newtonian term and the main channel $\alpha_\mathrm{scale}\mathcal{W}_{ij}$ produce an $f\sigma_8(z)$ that varies **smoothly and monotonically** with redshift; the chiral term $\Gamma_\mathrm{chiral}$ superimposes a **fast oscillation** on that smooth background, with a period of about 0.047 (in redshift units). The two shapes can be separated in the data.
+2. **Only a ratio is measured**. We do not fit an absolute amplitude but the **amplitude of the chiral oscillation relative to the smooth background**, denoted $A$. This ratio is proportional to $C/\alpha_\mathrm{scale}$ (see 9.3), so $\alpha_\mathrm{scale}$ can be inverted without knowing the overall normalization.
+
+$f\sigma_8$ is a standard observable of the cosmic large-scale structure "growth rate": $f=\mathrm{d}\ln D/\mathrm{d}\ln a$ is the logarithmic derivative of the growth factor $D$, and $\sigma_8$ is the amplitude of density fluctuations on the 8 Mpc scale. It is measured through **redshift-space distortions** (RSD: galaxy peculiar velocities squash or stretch the clustering pattern along the line of sight) and is the growth quantity with the highest precision in current survey data.
+
+The same oscillation was also tested in the **weak-lensing** channel: the response of $\xi_\pm$ to the fast oscillation is 3–11 times weaker than that of $f\sigma_8$ (an amplitude probe suffers an extra $\omega_x$ suppression relative to a derivative probe, and the tomographic kernel is much wider than the oscillation period). Therefore only $f\sigma_8$ is used here.
+
+### 9.3 Model and Calibration Relation
+
+Projecting the gravity decomposition of Part I onto the growth observable, the model reads
+
+$$f\sigma_8(z)=s_8\,U(z)\Big[1+A\big(\cos\varphi\,R_s(z)+\sin\varphi\,R_c(z)\big)\Big],\qquad A=\frac{C_{8\,\mathrm{Mpc}}}{\alpha_\mathrm{scale}}$$
+
+where:
+
+- $U(z)=D'(z)/D(0)$ is the **normalized derivative of the growth factor** ($D'=\mathrm{d}D/\mathrm{d}\ln a$), describing the purely Newtonian redshift dependence;
+- $R_s(z)$ and $R_c(z)$ are two **response templates**, obtained by numerically solving the growth equation $D''+P D'=Q D$ with SRE source terms, corresponding to the "Newtonian-type" and "chiral-type" sources respectively;
+- $s_8$ is the overall amplitude (a fit parameter, degenerate with $\sigma_8$ and the bias);
+- $A$ is the chiral amplitude and $\varphi$ its phase (two free parameters);
+- $C_{8\,\mathrm{Mpc}}=4.071\times10^{-4}$ is a **purely geometric constant**: $C=1/\ln(r/\ell_P)$ evaluated at $r=8\,\mathrm{Mpc}$, where $\ln(r/\ell_P)=133.97$. It contains no adjustable parameter.
+
+The relation $A=C/\alpha_\mathrm{scale}$ is intuitive: the smaller $\alpha_\mathrm{scale}$, the stronger the chiral term relative to the Newtonian one. The gate amplitude $A_\mathrm{gate}=0.509$ corresponds to $\alpha_\mathrm{gate}=C/A_\mathrm{gate}=8\times10^{-4}$, exactly the number appearing in Part I §4.
+
+### 9.4 Data and Binning
+
+| Item | Value |
+|---|---|
+| Catalog | BOSS DR12 `CMASSLOWZTOT`, north (N) and south (S) caps |
+| Galaxy weights | FKP weights $w=1/(1+n(z)P_0)$, $P_0=2\times10^{4}\,(h/\mathrm{Mpc})^3$ |
+| Galaxy counts | 953,255 (N cap) and 372,601 (S cap) |
+| Redshift range | $z\in[0.15,0.70]$, measured coverage $[0.156,0.689]$ |
+| Binning | 46 narrow bins, width $\Delta z=0.01185$ |
+| Number of measurements | $46\times2=92$ |
+
+The bin width is dictated by the oscillation period: with a period of about 0.047 and a bin width of 0.01185, there are only **about 4 samples per period**. This is already close to the Nyquist limit (at least 2 points per period) and is the root of all the limitations in 9.9.
+
+### 9.5 Per-Bin Measurement: Three-Parameter Kaiser Fit
+
+For each (bin, cap) cell, both the galaxy and the random catalogs are placed on the same $512^3$ grid, FKP-weighted to obtain the density field and Fourier-transformed; 9 $k$-shells are used ($k=0.02$–$0.20\,h/\mathrm{Mpc}$, $\Delta k=0.02$), and the three multipoles $P_0(k),P_2(k),P_4(k)$ are measured. A linear Kaiser form is then fitted:
+
+$$P(k,\mu)=\theta_0+2\theta_1\mu^{2}+\theta_2\mu^{4}$$
+
+For general bias, the physical meaning of the three coefficients is
+
+$$\theta_0=(b\,s_\mathrm{ref})^2,\qquad \theta_1=b\,s_\mathrm{ref}\,f\sigma_8,\qquad \theta_2=(f\sigma_8)^2$$
+
+where $s_\mathrm{ref}=0.6475$ is the reference amplitude ($\sigma_{8,0}=0.8$ times $D(z=0.4)/D(0)$). Hence
+
+$$f\sigma_8=\frac{\theta_1}{\sqrt{\theta_0}}$$
+
+**independent of bias**—this is crucial: we need not know the galaxy bias $b$ in advance, and therefore need no external calibration.
+
+Measured results (medians over the 92 cells): the median of $\theta_0$ is $1.675$, corresponding to $b\,s_\mathrm{ref}=1.294$, i.e. $b\approx2.0$, consistent with the BOSS CMASS literature value, showing that the data themselves are not anomalous; the median of $f\sigma_8$ is $0.181$. The median relative per-bin error $\sigma_{f\sigma_8}/f\sigma_8$ is **31%**—an intrinsic limitation of thin bins (the Fourier window of a 35 Mpc/$h$ bin is about $2\pi/35\approx0.18\,h/\mathrm{Mpc}$ wide, almost the entire $k$ range, so the 9 shells are strongly correlated).
+
+### 9.6 Errors: Covariance from 30 Mock Catalogs
+
+Per-bin errors cannot be estimated from a formula; they must come from **mock catalogs run through the identical pipeline**. The procedure is:
+
+1. Construct 30 mocks from the random catalog with the Zel'dovich displacement method: $\Psi=b\,\mathrm{IFT}[\,i k_i/k^2\,\hat\delta\,]$ gives the density displacement, and an RSD displacement modulated by the growth factor is superposed along the line of sight;
+2. Run exactly the 9.5 pipeline on each mock, obtaining 30 vectors of dimension 27 (3 multipoles × 9 shells);
+3. Estimate the 27×27 covariance from these 30 vectors.
+
+Estimating a 27-dimensional covariance from 30 samples is a "small-sample" situation (Wishart noise suppresses small eigenvalues; in the full-rank case the error can be inflated by hundreds of times). Therefore a **diagonal shrinkage** (Ledoit–Wolf type) is applied:
+
+$$S\ \longrightarrow\ (1-\rho)S+\rho\,\mathrm{diag}(S)$$
+
+The shrinkage coefficient $\rho=0.3$ is not arbitrary but fixed by **leave-one-out** calibration: for each cell, one mock is held out in turn, the covariance is computed from the remaining 29 and used to whiten the held-out sample, and the resulting $\chi^2/\mathrm{dof}$ is inspected. This gives 20.91 at $\rho=0$ (severely inflated) and **1.01** at $\rho=0.3$, hence 0.3 is adopted.
+
+Two technical points about the mocks must be stated:
+
+- **Construction damping**: the absolute $f\sigma_8$ of the displacement-method mocks is suppressed by about 44% (nonlinear damping of the displacement; $|\Psi|_\mathrm{rms}\approx6.4\,\mathrm{Mpc}$ is of the same order as the grid spacing $9.86\,\mathrm{Mpc}$). Because the suppression is a **smooth multiplicative factor**, it does not affect the recovery of the oscillation amplitude $A$, only the absolute amplitude.
+- **The bias must match**: the mock bias is taken as $b=2.0$ (self-calibrated from the data as $b=\sqrt{1.675}/0.6475\approx2.0$), and the galaxy counts are matched to the measured values cap by cap. If the mocks used $b=0.5$, the signal part of the covariance would be underestimated by up to $(2.0/0.5)^4\approx256$ times, $\sigma_{f\sigma_8}$ would be underestimated by about 10 times, and a spurious $\chi^2/\mathrm{dof}\approx78$ would be fabricated—a trap already ruled out in this project.
+
+### 9.7 Global Fit and the 95% Lower Bound
+
+The 92 values of $f\sigma_8$ are fitted to the model of 9.3 by **generalized least squares** (GLS: weighting by the per-bin errors of 9.6 so that $\chi^2$ is minimized), yielding three free parameters $s_8,B_1',B_2'$, where $B_1'=A\cos\varphi$ and $B_2'=A\sin\varphi$. The chiral amplitude is
+
+$$\hat A=\frac{\sqrt{B_1'^2+B_2'^2}}{s_8}$$
+
+**Why $\hat A$ cannot be used directly as the upper limit**: $\hat A$ is a positive-definite amplitude estimator and is nonzero even for pure noise (Rice distribution). A frequentist upper limit is therefore required:
+
+$$A_{95}=\frac{|\hat B|+r_{95}}{s_8},\qquad r_{95}=1.645\,/\sqrt{\lambda_\mathrm{min}}$$
+
+Here $\lambda_\mathrm{min}$ is the smallest eigenvalue of the 2×2 amplitude information matrix after **marginalizing over $s_8$**, and $r_{95}$ is the one-sided 95% (1.645$\sigma$) half-width along the **weakest-constrained direction**. Physically, $A_{95}$ answers: "at 95% confidence, how large can the chiral amplitude be at most?"
+
+Finally, convert to $\alpha_\mathrm{scale}$. Since $A=C/\alpha$ is monotonically inverse, an upper limit on $A$ gives a **lower** limit on $\alpha$:
+
+$$\alpha_\mathrm{scale}>\frac{C_{8\,\mathrm{Mpc}}}{A_{95}}$$
+
+### 9.8 Results
+
+| Quantity | Value | Note |
+|---|---|---|
+| Number of measurements | 92 | 46 bins × 2 caps |
+| Median $\theta_0$ | 1.675 | $\Rightarrow b\approx2.0$, consistent with the literature |
+| Median $f\sigma_8$ | 0.181 | absolute amplitude (suppressed by construction damping) |
+| Median $\sigma_{f\sigma_8}$ | 0.245 | 31% relative error |
+| $\chi^2/\mathrm{dof}$ | 6.66 | see 9.9; reflects shape mismatch |
+| $\hat A$ | 120.2 | amplitude estimate (a noise solution, not a physically large value) |
+| $A_{95}$ (excluding $\hat B$) | 64.06 | offset-free treatment, for reference only |
+| $A_{95}$ (frequentist, adopted) | **184.27** | the official treatment |
+| $\alpha_\mathrm{scale}$ lower bound (baseline) | $\mathbf{2.21\times10^{-6}}$ | $C/A_{95}$ |
+| Conservative range of the bound | $1.4$–$2.5\times10^{-6}$ | covers $\chi^2$ rescaling, 5–30% systematic floors, damping correction |
+| Upper bound | **none** | see 9.9 |
+| Gate value | $8\times10^{-4}$ | 362 times stronger than the lower bound |
+
+### 9.9 Honest Reading: Why This Does Not Constitute "Closing the Door"
+
+The raw output contains a flag $\Delta\chi^2_\mathrm{gate}=9.66>2.71$, which read literally would mean "the door is closed". **That reading must not be trusted**, for three verifiable reasons:
+
+1. **The errors are underestimated**. $\chi^2/\mathrm{dof}=6.66$ shows that the per-bin errors are collectively too small; inflating the errors uniformly to $\chi^2/\mathrm{dof}=1$ (i.e. $\sigma\times2.58$) lowers $\Delta\chi^2_\mathrm{gate}$ to **1.45**, and the door reopens.
+2. **$\hat A=120$ is itself a noise solution**. Because there are only about 4 samples per period (9.4), the oscillation mode is nearly degenerate with noise and the free amplitude estimator is heavy-tailed. A best-fit amplitude more than 200 times the gate value does not mean the data reject the gate value; it means **the data hardly constrain the amplitude at all**—as $A_{95}=184$ shows.
+3. **$A=0$ is compatible with the data**. Direct check: $\Delta\chi^2(A=0)=9.74$, which is only **1.46** (below 2$\sigma$) in the normalized treatment with $\chi^2/\mathrm{dof}=6.66$. $A=0$ corresponds to $\alpha_\mathrm{scale}\to\infty$, so this data set **also gives no upper bound**.
+
+The correct statement is therefore: **$\alpha_\mathrm{scale}\in(2.2\times10^{-6},+\infty)$ (95%); the gate value $8\times10^{-4}$ lies inside this interval, and this measurement can neither confirm nor refute the gate.**
+
+At the same time, the systematic terms of this measurement must be listed explicitly and not omitted:
+
+| Category | Content | Direction |
+|---|---|---|
+| Construction damping | mock absolute $f\sigma_8$ low by about 44% (displacement nonlinearity) | lowers only the absolute amplitude; oscillation amplitude unaffected |
+| Finite mocks | 30 mocks versus 27 dimensions, shrinkage $\rho=0.3$ (leave-one-out calibrated) | calibrated; leave-one-out $\chi^2/\mathrm{dof}=1.01$ |
+| Sampling | bin width 0.01185, about 4 points per period (near Nyquist) | makes $A_{95}$ larger $\rightarrow$ weaker bound |
+| Shape mismatch | $\chi^2/\mathrm{dof}=6.66$ (residual outside the $f\sigma_8$ direction) | bracketed by multiple treatments |
+
+### 9.10 Reproduction Steps
+
+All computations were done under Python 3.10 + numpy 2.2.5 + scipy 1.15.3, with scripts in `S3_mu_scan/src/` and products written to `S3_mu_scan/results/`.
+
+```text
+## (1) covariance from 30 mocks (about 52 min)
+python S3_mu_scan/src/s3_fs8_bins.py cov  --ngrid 512 --nm 30 --threads 3 --cap NS --bmock 2.0 --xfer 0.0
+
+## (2) per-bin fit on the real data (about 10 min)
+python S3_mu_scan/src/s3_fs8_bins.py data --ngrid 512 --cap NS
+
+## (3) global GLS and the 95% lower bound (a few seconds)
+python S3_mu_scan/src/s3_real_stack.py data
+```
+
+Products: `results/fs8_cov_mocks_NS.npz` (covariance), `results/fs8_boss_bins.csv` (92 per-bin rows), `results/real_stack.json` (baseline values, five treatment variants, and the systematic list), `results/fig_s3_boss_stack.png|svg` (per-point $f\sigma_8$ compared with the gate signal).
+
+Note that step (1) must explicitly pass `--xfer 0.0`: the construction pre-compensation exponent was calibrated only at a specific bias, and at $b=2.0$ any nonzero value distorts the oscillation amplitude of the mocks.
+
+The data flow is as follows:
+
+```mermaid
+graph TD
+    A["(1) public catalog BOSS DR12<br/>CMASSLOWZTOT, N/S caps"] --> B["(2) 46 narrow z bins x 2 caps<br/>= 92 measurements"]
+    B --> C["(3) per-bin Kaiser 3-parameter fit<br/>P = theta0 + 2theta1 mu^2 + theta2 mu^4<br/>fsigma8 = theta1 / sqrt(theta0)"]
+    C --> D["(4) 30 Zel'dovich mocks<br/>27x27 covariance + shrinkage rho=0.3"]
+    D --> E["(5) global GLS<br/>y = s8 U (1 + B1'Rs + B2'Rc)"]
+    E --> F["(6) amplitude A = sqrt(B1'^2+B2'^2)/s8<br/>95% upper limit A95 = 184.3"]
+    F --> G["(7) alpha_scale > C / A95<br/>= 2.2e-6"]
+    G --> H{"compare with gate 8e-4"}
+    H --> I["gate lies inside the allowed range<br/>no discriminating power"]
+    style A fill:#e3f2fd,stroke:#1565c0
+    style B fill:#e8f5e9,stroke:#2e7d32
+    style C fill:#fff3e0,stroke:#e65100
+    style D fill:#f3e5f5,stroke:#6a1b9a
+    style E fill:#e0f7fa,stroke:#00838f
+    style F fill:#fff9c4,stroke:#f9a825
+    style G fill:#ffebee,stroke:#c62828
+    style H fill:#f5f5f5,stroke:#424242
+    style I fill:#ffebee,stroke:#c62828
+```
 
 ---
 
@@ -342,6 +530,7 @@ Therefore this derivation compresses "anti-gravity" from a slogan into a definit
 2. The **construction and reachability** of Op2 local gating: how the Op1 frontier (node injection) delivers the control signal to the target boundary while being constrained by the read-only barrier. → **Completed; see Part I §11**.
 3. Chiral-phase tunability: the specific observables and operating window for setting $\mu^{*}$ by changing the subgraph redshift composition.
 4. The **stability and dissipation cost** of the shielded region: the lower bound on continuous power required to counter the self-repair of $\hat{\mathcal{C}}$.
+5. The **upper bound** on $\alpha_\mathrm{scale}$ and a tighter lower bound: §9 already gives $\alpha_\mathrm{scale}>2.2\times10^{-6}$ (95%) from BOSS DR12 CMASSLOWZTOT, but the gate $8\times10^{-4}$ lies inside the allowed interval, so this measurement can neither open nor close the gate. To push the lower bound to the gate, the per-bin relative error of $f\sigma_8$ must drop to $\lesssim0.9\%$ (measured: 31% in §9); extrapolating roughly as $\sigma\propto1/\sqrt{N}$, this needs about three orders of magnitude more modes, together with sub-percent per-bin RSD systematics—beyond the reach of BOSS DR12, and requiring DESI DR1-class samples (or wider redshift coverage). An upper bound additionally requires the significance of $\hat B$ relative to $A=0$; the present $\Delta\chi^2(A=0)=9.74$ is only 1.46 after rescaling to $\chi^2/\mathrm{dof}=6.66$, so no upper bound is available either.
 
 ---
 
@@ -351,7 +540,7 @@ Therefore this derivation compresses "anti-gravity" from a slogan into a definit
 
 | # | Constraint | Content | Source |
 |---|---|---|---|
-| 1 | **Read-only inheritance** | $M_{n+1}[1{:}n,1{:}n]\equiv M_n$: once realized, the historical sub-block cannot be retroactively modified (with axiomatic status) | *N–S Turbulence Benchmark* §2.3 Operator 1 |
+| 1 | **Read-only inheritance** | $M_{n+1}[1{:}n,1{:}n]\equiv M_n$: once realized, the historical sub-block cannot be retroactively modified (with axiomatic status) | *Necessity of Turbulence Emergence* §4.1 Operator 1 |
 | 2 | **Frontier-size upper bound** | $M_K\le K_0\ll n$: each step acts on only $O(1)$ frontier channels, decoupled from the network-wide size | *Graph-Operator Pipeline Whitepaper* §5.3 Operator 8 |
 | 3 | **Read-only/causal barrier** | The deep interior topology of the target closed loop is non-addressable and non-writable; $\ell_\min$ is the lower bound of addressable scale at the rendering layer | *Logical-Depth Anchoring and Safety Shielding* Section 3 |
 
@@ -363,7 +552,7 @@ Therefore this derivation compresses "anti-gravity" from a slogan into a definit
 
 Goal: on the boundary shell $\Omega_\partial$ surrounding the target region, set **redundant** dissipation–compensation channels to dormant ($\chi=0$, spin → $+1$), while preserving cut-set connectivity.
 
-**Step 1 Op1 access** (Operator 1 boundary expansion $\mathcal{G}_{n\to n+1}$, *N–S Turbulence Benchmark* §2.3):
+**Step 1 Op1 access** (Operator 1 boundary expansion $\mathcal{G}_{n\to n+1}$, *Necessity of Turbulence Emergence* §4.1):
 
 $$
 M_{n+1}=\begin{pmatrix}M_n & \mathbf{x}_{n+1}\\ \mathbf{x}_{n+1}^T & y_{n+1}\end{pmatrix},\qquad M_{n+1}[1{:}n,1{:}n]\equiv M_n
@@ -371,7 +560,7 @@ $$
 
 Push a ring of frontier nodes $\mathcal{V}_\partial$ into the perimeter of the target region (new rows/columns; history is read-only). **What is addressable is only these newly added boundary nodes, not the object's interior**—this is precisely the only legitimate interface that bypasses the barrier.
 
-**Step 2 Op2 gating** (Operator 2 maximum-entropy pruning, *N–S Turbulence Benchmark* §2.3):
+**Step 2 Op2 gating** (Operator 2 maximum-entropy pruning, *Necessity of Turbulence Emergence* §4.2):
 
 $$
 p_\text{prune}=1-\frac{1}{1+\Gamma_\partial\cdot \mathcal{D}_s/\mathfrak{B}}
@@ -418,7 +607,7 @@ $$
 
 ### 11.4 Control-Signal Path and Diffusion Cost
 
-The transfer chain of the control quantity $\Gamma_\partial$ (Mode A: $\Gamma=\Lambda$; Mode B: $\Gamma=\Lambda\lambda(n)$, *N–S Turbulence Benchmark* §2.4):
+The transfer chain of the control quantity $\Gamma_\partial$ (Mode A: $\Gamma=\Lambda$; Mode B: $\Gamma=\Lambda\lambda(n)$, *Necessity of Turbulence Emergence* §4.3):
 
 $$
 \Lambda_\text{local}\ \xrightarrow[\ \text{Op1}\ ]{}\ \mathcal{V}_{n+1}\ (\text{frontier-variable injection})\ \xrightarrow[\ \text{Op2}\ ]{}\ \Gamma\ \text{acts on candidate frontier edges}\ \xrightarrow[\ \text{Op6/10}\ ]{}\ \Omega_\partial\ \text{executes gating}
@@ -432,7 +621,7 @@ Key costs (from constraints 1+2):
 
 ### 11.5 Why Tier C (Topological Decoupling) Is Thoroughly Blocked
 
-Tier C requires **dismantling an already-realized mass closed loop** ($m\equiv$ closed loop; *Reconstruction of Classical Electrodynamics* §4). But: the read-only barrier makes the deep interior topology non-addressable and non-writable (*Logical-Depth Anchoring and Safety Shielding* Section 3); and read-only inheritance $M_{n+1}[1{:}n,1{:}n]\equiv M_n$ does not permit rewriting existing edges (*N–S Turbulence Benchmark* §2.3).
+Tier C requires **dismantling an already-realized mass closed loop** ($m\equiv$ closed loop; *Reconstruction of Classical Electrodynamics* §4). But: the read-only barrier makes the deep interior topology non-addressable and non-writable (*Logical-Depth Anchoring and Safety Shielding* Section 3); and read-only inheritance $M_{n+1}[1{:}n,1{:}n]\equiv M_n$ does not permit rewriting existing edges (*Necessity of Turbulence Emergence* §4.1).
 
 **Double blocking** ⇒ within the theory there **exists no accessible operation** capable of dismantling an already-realized closed loop. Hence Tier C is not "hypothesis-level" but **mechanically excluded**. The only exception is the rendering-layer holistic manipulation permitted by *Logical-Depth Anchoring and Safety Shielding* Section 3 (electromagnetic/scattering)—that is the **transport/interaction** of mass, not the elimination of mass.
 
@@ -468,9 +657,9 @@ Tier C requires **dismantling an already-realized mass closed loop** ($m\equiv$ 
 ## Part II-2 Mechanism Chain (Five Steps)
 
 1. **Superconductor = phase-rigid plate**: Cooper pairs drive the in-disk network into macroscopic phase locking ($\rho\to1$; *Composite Elementary Particles* §1.3 and §II), pinning the channel relative phases to the same value.
-2. **Equivalent to Op2 dormancy**: phase locking makes the disk↔outside boundary channels behave equivalently to dormant edges $M(i,j)\leftarrow+1$—"**conducting but forming no loop**" (*Complete Characterization of the Nucleon* §2.1; mechanism definition in *N–S Turbulence Benchmark* §2.3). The disk becomes a **gating layer** that only conducts and does not generate multi-loop feedback.
+2. **Equivalent to Op2 dormancy**: phase locking makes the disk↔outside boundary channels behave equivalently to dormant edges $M(i,j)\leftarrow+1$—"**conducting but forming no loop**" (*Complete Characterization of the Nucleon* §2.1; mechanism definition in *Necessity of Turbulence Emergence* §4.2). The disk becomes a **gating layer** that only conducts and does not generate multi-loop feedback.
 3. **Dissipation gradient is short-circuited**: on the boundary shell $\Omega_\partial$, execute the four steps of Part I §11 (Op1 access → Op2 gating → Operator 10 preserving $\lambda_2>0$ → effective-impedance screening consuming only low-$Z_\text{eff}$ redundant edges), reducing the local stiffness $\mathcal{W}_{ij}$ of the test mass.
-4. **Rotation = chiral bias**: surviving channels are injected with an antisymmetric chiral shear (*N–S Turbulence Benchmark* §2.3), pushing the phase $\pi\alpha_0\!\cdot\!2\mu$ away from zero, so that $\Gamma_\mathrm{chiral}$ acquires an **outward** component ⇒ a small anti-gravity term is superimposed, and a **directionality** along the rotation axis is given.
+4. **Rotation = chiral bias**: surviving channels are injected with an antisymmetric chiral shear (*Necessity of Turbulence Emergence* §4.2), pushing the phase $\pi\alpha_0\!\cdot\!2\mu$ away from zero, so that $\Gamma_\mathrm{chiral}$ acquires an **outward** component ⇒ a small anti-gravity term is superimposed, and a **directionality** along the rotation axis is given.
 5. **Layer compounding**: each disk layer is a boundary shell, $\Xi_\text{tot}=\prod_k\Xi_k$ ⇒ the stronger double-layer effect is a **product law**.
 
 ## Part II-3 Quantitative Self-Consistency
@@ -506,7 +695,7 @@ $2\%$ weight reduction $\Rightarrow \Xi=0.98 \Rightarrow$ $\sigma_z$ need only b
 |---|---|---|---|
 | 1 | Boundary redundancy is an **exogenous local quantity**, differing across samples ⇒ different $\Xi$ | $\Xi$ depends on $\sigma_z$ (Part I §3); shieldable fraction $\le1-2/\langle k\rangle$ (Part I §11.3) | Single-phase single crystal, specified crystallographic orientation/twin structure |
 | 2 | Coherent saturation is a **phase-transition criticality**; off the critical point it fails avalanche-like | $\rho\to1$ saturation (*Composite Elementary Particles* §1.3, §II) | Strict temperature control, pushing $\langle\rho\rangle$ to the critical neighborhood |
-| 3 | **Path dependence** (read-only inheritance ⇒ hysteresis, non-ergodicity) | Op1 read-only inheritance (*N–S Turbulence Benchmark* §2.3) | Reproduce the **cooling/rotation time-sequence protocol**, not just the final-state parameters |
+| 3 | **Path dependence** (read-only inheritance ⇒ hysteresis, non-ergodicity) | Op1 read-only inheritance (*Necessity of Turbulence Emergence* §4.1) | Reproduce the **cooling/rotation time-sequence protocol**, not just the final-state parameters |
 | 4 | Frontier expansion **carries its own random-difference injection**; the small effect is buried by noise | The sim_p generator injects random differences at each step (*Complete Characterization of the Nucleon* §2.1) | Sufficient averaging / per-frontier locking |
 | 5 | $\hat{\mathcal{C}}$ **self-repairs**; requires continuous power + the correct sampling time window | Part I §7 hard boundaries | Steady-state power + correct duty cycle |
 | 6 | **The chiral phase is signed and exogenous**; if unmatched, the directional part vanishes or reverses | $\Gamma_\mathrm{chiral}\propto\sin(\pi\alpha_0 2\mu)$ (*Multidimensional Spacetime and Dynamical Gravity* §5) | Phase matching (rotation-axis orientation / subgraph window) |
@@ -521,7 +710,7 @@ $2\%$ weight reduction $\Rightarrow \Xi=0.98 \Rightarrow$ $\sigma_z$ need only b
 | Symbol | Meaning | Source (article · section) |
 |---|---|---|
 | $a_\mathrm{SRE}$ | SRE gravitational acceleration, in two branches Rank=2/4 | *Multidimensional Spacetime and Dynamical Gravity* §5 |
-| $\alpha_\mathrm{scale}$ | Dimensionless gravitational coupling (uncalibrated, pending experimental anchoring) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
+| $\alpha_\mathrm{scale}$ | Dimensionless gravitational coupling (§9 gives a measured lower bound $>2.2\times10^{-6}$, 95%; no upper bound) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
 | $\mathcal{W}_{ij}$ | Topological stiffness weight (macroscopic mass equivalent), a decreasing function of $\sigma_z$ | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
 | $\hat{\mathcal{D}}_{ij}$ | Topological dissipation tensor | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
 | $\hat{\mathcal{C}}$ | Dynamic topological compensation operator (non-monotonic/oscillatory) | *Multidimensional Spacetime and Dynamical Gravity* §2.2 |
@@ -532,7 +721,7 @@ $2\%$ weight reduction $\Rightarrow \Xi=0.98 \Rightarrow$ $\sigma_z$ need only b
 | $\mu$ | Baryonic center-of-mass redshift | *Multidimensional Spacetime and Dynamical Gravity* §2.3 |
 | $\alpha_{0,\mathrm{dynamic}}$ | Dynamic compression coefficient $=\theta/\Delta z$ | *Multidimensional Spacetime and Dynamical Gravity* §2.4 |
 | $\theta_\mathrm{conformal}$ | Conformal geometric exponent $\approx0.82798$ | *Multidimensional Spacetime and Dynamical Gravity* §2.4 |
-| $\Lambda,\Gamma$ | Pruning gain / phase-transition control quantity (shielding knob) | *N–S Turbulence Benchmark* §2.4 |
+| $\Lambda,\Gamma$ | Pruning gain / phase-transition control quantity (shielding knob) | *Necessity of Turbulence Emergence* §4.3 |
 | $\ell_P$ | Planck length (emergent UV boundary) | *Multidimensional Spacetime and Dynamical Gravity* §5 |
 
 ## Appendix B Comparison with the Early Conjecture
@@ -546,4 +735,4 @@ $2\%$ weight reduction $\Rightarrow \Xi=0.98 \Rightarrow$ $\sigma_z$ need only b
 
 ---
 
-**Basis (article · section correspondence)**: gravity source = dissipation gradient → *Multidimensional Spacetime and Dynamical Gravity* §5; $\mathcal{W}_{ij}$ → *Multidimensional Spacetime and Dynamical Gravity* §2.3; dissipation tensor and compensation operator → *Multidimensional Spacetime and Dynamical Gravity* §2.2; coherent saturation → *Composite Elementary Particles* §1.3, §II, §Discussion · Model capability boundary; Op2 dormancy mechanism → *N–S Turbulence Benchmark* §2.3, and see *Complete Characterization of the Nucleon* §2.1; Op1 read-only inheritance → *N–S Turbulence Benchmark* §2.3; frontier random-difference injection → *Complete Characterization of the Nucleon* §2.1; mass–energy equivalence / closed–open → *Reconstruction of Classical Electrodynamics* §4; read-only barrier → *Logical-Depth Anchoring and Safety Shielding* Section 3; permeability → *Graph-Operator Pipeline Whitepaper* §3.1 Operator 5; frontier-size upper bound and safety exemption/impedance criterion → *Graph-Operator Pipeline Whitepaper* §5.1 Operator 10, §5.3 Operator 8.
+**Basis (article · section correspondence)**: gravity source = dissipation gradient → *Multidimensional Spacetime and Dynamical Gravity* §5; $\mathcal{W}_{ij}$ → *Multidimensional Spacetime and Dynamical Gravity* §2.3; dissipation tensor and compensation operator → *Multidimensional Spacetime and Dynamical Gravity* §2.2; coherent saturation → *Composite Elementary Particles* §1.3, §II, §Discussion · Model capability boundary; Op2 dormancy mechanism → *Necessity of Turbulence Emergence* §4.2, and see *Complete Characterization of the Nucleon* §2.1; Op1 read-only inheritance → *Necessity of Turbulence Emergence* §4.1; frontier random-difference injection → *Complete Characterization of the Nucleon* §2.1; mass–energy equivalence / closed–open → *Reconstruction of Classical Electrodynamics* §4; read-only barrier → *Logical-Depth Anchoring and Safety Shielding* Section 3; permeability → *Graph-Operator Pipeline Whitepaper* §3.1 Operator 5; frontier-size upper bound and safety exemption/impedance criterion → *Graph-Operator Pipeline Whitepaper* §5.1 Operator 10, §5.3 Operator 8.

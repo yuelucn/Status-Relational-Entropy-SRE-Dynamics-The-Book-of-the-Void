@@ -1,0 +1,27 @@
+# fσ8(z) RSD compilation — Sagredo, Nesseris & Sapone 2018, PRD 98, 083543 (arXiv:1806.10822), Table I
+# Retrieved from ar5iv HTML rendering, values transcribed verbatim (2026-10-19).
+# This is the same 22-point compilation used by Nunes & Vagnozzi 2021 (arXiv:2106.01208, their Ref. [105]).
+# Columns: idx,z,fs8,err,Om_ref,survey,refkey
+# WiggleZ (idx 12,13,14) covariance: C = 1e-3 * [[6.400,2.570,0],[2.570,3.969,2.540],[0,2.540,5.184]]
+1,0.02,0.428,0.0465,0.3,CF3 velocity field,Huterer:2016uyq
+2,0.02,0.398,0.065,0.3,SNeIa+IRAS (First Amendment),Turnbull:2011ty+Hudson:2012gt
+3,0.02,0.314,0.048,0.266,2MASS,Davis:2010sw+Hudson:2012gt
+4,0.10,0.370,0.130,0.3,SDSS DR7,Feix:2015dla
+5,0.15,0.490,0.145,0.31,SDSS MGS,Howlett:2014opa
+6,0.17,0.510,0.060,0.3,2dFGRS,Song:2008qt
+7,0.18,0.360,0.090,0.27,GAMA,Blake:2013nif
+8,0.38,0.440,0.060,0.27,GAMA,Blake:2013nif
+9,0.25,0.3512,0.0583,0.25,SDSS-II LRG (lowz),Samushia:2011cs
+10,0.37,0.4602,0.0378,0.25,SDSS-II LRG,Samushia:2011cs
+11,0.32,0.384,0.095,0.274,BOSS DR11 LOWZ,Sanchez:2013tga
+12,0.59,0.488,0.060,0.307115,BOSS CMASS,Chuang:2013wga
+13,0.44,0.413,0.080,0.27,WiggleZ,Blake:2012pj
+14,0.60,0.390,0.063,0.27,WiggleZ,Blake:2012pj
+15,0.73,0.437,0.072,0.27,WiggleZ,Blake:2012pj
+16,0.60,0.550,0.120,0.3,VIPERS,Pezzotta:2016gbo
+17,0.86,0.400,0.110,0.3,VIPERS,Pezzotta:2016gbo
+18,1.40,0.482,0.116,0.27,FastSound,Okumura:2015lvp
+19,0.978,0.379,0.176,0.31,eBOSS quasar,Zhao:2018jxv
+20,1.23,0.385,0.099,0.31,eBOSS quasar,Zhao:2018jxv
+21,1.526,0.342,0.070,0.31,eBOSS quasar,Zhao:2018jxv
+22,1.944,0.364,0.106,0.31,eBOSS quasar,Zhao:2018jxv

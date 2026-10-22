@@ -1,0 +1,105 @@
+{
+ "boss_real": {
+  "s8": 0.28287283250962886,
+  "B1p": 23.987220093807526,
+  "B2p": 24.100261575963497,
+  "A": 120.20623552810501,
+  "phi": 0.7877489056282472,
+  "chi2": 592.8912293989138,
+  "dof": 89,
+  "r95": 18.121080182137337,
+  "A95_offsetfree": 64.06087152791707,
+  "A95_frequentist": 184.26710705602207,
+  "chi2_gate": 602.5539000148866,
+  "phi_gate": 0.74945067464278,
+  "dchi2_gate": 9.662670615972843,
+  "gate_closed": true,
+  "alpha_min95": 2.2092665270424656e-06,
+  "n_rows": 92,
+  "tag": "boss_real",
+  "mean_sigma_frac": 0.10697636558554126,
+  "median_sigma_over_fs8": 0.31466161526513553,
+  "max_abs_pull": 9.327939361054703,
+  "sensitivity_variants": {
+   "chi2_rescaled": {
+    "label": "sigma x sqrt(chi2/dof=6.66)",
+    "A": 120.20623552810497,
+    "A95_frequentist": 285.5490600903636,
+    "dchi2_gate": 1.4504813736129591,
+    "gate_closed": false,
+    "alpha_min95": 1.4256574737979965e-06,
+    "chi2_over_dof": 1.0,
+    "s8": 0.28287283250962897
+   },
+   "floor_05pct": {
+    "label": "add 5% fractional systematic floor in quadrature",
+    "A": 115.37443257680155,
+    "A95_frequentist": 178.9339087690758,
+    "dchi2_gate": 9.04647518827096,
+    "gate_closed": true,
+    "alpha_min95": 2.275114618879751e-06,
+    "chi2_over_dof": 6.239897295864492,
+    "s8": 0.2883012732322865
+   },
+   "floor_10pct": {
+    "label": "add 10% fractional systematic floor in quadrature",
+    "A": 105.7755677141376,
+    "A95_frequentist": 169.67044517179193,
+    "dchi2_gate": 7.525061266731996,
+    "gate_closed": true,
+    "alpha_min95": 2.39932859987274e-06,
+    "chi2_over_dof": 5.355569219949349,
+    "s8": 0.2947184539199509
+   },
+   "floor_15pct": {
+    "label": "add 15% fractional systematic floor in quadrature",
+    "A": 96.82360142645157,
+    "A95_frequentist": 163.28057412148664,
+    "dchi2_gate": 5.825235795039021,
+    "gate_closed": true,
+    "alpha_min95": 2.4932246462517123e-06,
+    "chi2_over_dof": 4.473120124504028,
+    "s8": 0.29323751362498907
+   },
+   "floor_20pct": {
+    "label": "add 20% fractional systematic floor in quadrature",
+    "A": 89.88420142235361,
+    "A95_frequentist": 160.81603624461593,
+    "dchi2_gate": 4.405868276142485,
+    "gate_closed": true,
+    "alpha_min95": 2.531433811952628e-06,
+    "chi2_over_dof": 3.7362792947437646,
+    "s8": 0.28489542144585117
+   },
+   "floor_30pct": {
+    "label": "add 30% fractional systematic floor in quadrature",
+    "A": 81.36453998399644,
+    "A95_frequentist": 165.06937059225385,
+    "dchi2_gate": 2.5993309700761813,
+    "gate_closed": false,
+    "alpha_min95": 2.4662064815125895e-06,
+    "chi2_over_dof": 2.6786420243092848,
+    "s8": 0.259286939344252
+   }
+  },
+  "honest_reading": {
+   "verdict": "NO GATE DISCRIMINATION",
+   "reason": "per-bin sigma_fs8 is 31% of fs8 (92 bins, 4 samples per 0.0474 oscillation period -> near Nyquist), so the fitted oscillation amplitude is unconstrained (A=120, A95=184). The raw dchi2_gate=9.66>2.71 flag is NOT a rejection of A=A_gate: after inflating errors to chi2/dof=1 (sigma x 2.58) it drops to 1.45 and the gate is NOT closed.",
+   "alpha_min95_range": [
+    1.4256574737979965e-06,
+    2.531433811952628e-06
+   ],
+   "damping_corrected_alpha_min95": {
+    "note": "mock construction damps the signal part of the covariance by ~0.79^2, so sigma_fs8 is too small; inflating sigma makes A95 larger and the LOWER bound WEAKER (alpha_min95 = C/A95)",
+    "sigma_x1.27": {"A95_frequentist": 201.56, "alpha_min95": 2.02e-6, "chi2_over_dof": 4.13},
+    "sigma_x1.50": {"A95_frequentist": 216.30, "alpha_min95": 1.88e-6, "chi2_over_dof": 2.96}
+   },
+   "gate_alpha": 0.0008,
+   "systematics": [
+    "mock construction damps fs8 low by ~44% (Zel'dovich displacement nonlinearity: |Psi|_rms 6.4 Mpc vs dx 9.86); absolute fs8 is biased low, fractional oscillation amplitude is unaffected",
+    "30 mocks vs 27-D blocks -> Ledoit-Wolf diagonal shrinkage rho=0.3 (LOO-calibrated, LOO chi2/dof 1.01)",
+    "z bins 0.01185 wide -> ~4 samples per chiral period 0.0474"
+   ]
+  }
+ }
+}
