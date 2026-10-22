@@ -485,13 +485,13 @@ $$\alpha_\mathrm{scale}>\frac{C_{8\,\mathrm{Mpc}}}{A_{95}}$$
 全部计算在 Python 3.10 + numpy 2.2.5 + scipy 1.15.3 下完成，脚本位于仓库 `S3_mu_scan/src/`，产物写入 `S3_mu_scan/results/`。
 
 ```text
-## ① 30 组 mock 协方差（约 52 min）
+# ① 30 组 mock 协方差（约 52 min）
 python S3_mu_scan/src/s3_fs8_bins.py cov  --ngrid 512 --nm 30 --threads 3 --cap NS --bmock 2.0 --xfer 0.0
 
-## ② 实数据逐箱拟合（约 10 min）
+# ② 实数据逐箱拟合（约 10 min）
 python S3_mu_scan/src/s3_fs8_bins.py data --ngrid 512 --cap NS
 
-## ③ 全局 GLS 与 95% 下界（数秒）
+# ③ 全局 GLS 与 95% 下界（数秒）
 python S3_mu_scan/src/s3_real_stack.py data
 ```
 

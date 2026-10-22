@@ -224,9 +224,12 @@ v1.3 修正要求 SOLVED 必须附加"已榨干"条件，避免首次跨过阈�
   - **T3（环基无关性）**：$\sigma$ 的平凡性判别与基本环基选取无关。
   - **T4（余边界规范不变性）**：乘以顶点势不改变任何环 holonomy，$\sigma$ 只依赖上同调类 $[s]$。
   - **T5（双通道正交独立）**：$\deg$ 只由 $(V,E,c)$ 决定，$\sigma$ 只由 $[s]$ 决定，二者自变量不相交，$Q=\sigma\cdot\deg$ 由两个独立通道相乘得到。
-  - **T6（偶环强制平凡）**：二分图 + 单边轨道 $\Rightarrow$ 一切 Aut-不变赋值平凡（electron-like），这是电子 $Q_3$ 强制平凡的结构来源；含奇环 + 多轨道则允许非平凡（nucleon-like，质子）。
+  - **T6（偶环强制平凡）**：二分图 + 单边轨道 $\Rightarrow$ 一切 Aut-不变赋值平凡（electron-like），这是电子 $Q_3$ 强制平凡的结构来源；含奇环 + 多轨道则允许非平凡（nucleon-like，质子）。**注意（v1.2）**：这是**充分**条件，逆不真——见 T11。
   - **T7（元素着色必要性）**：分子层自同构必须保元素标号，否则轨道结构失真、可达性判据翻转（以 4-环 $[O,C,C,O]$ 为反例严格证明）。
   - **T8（复合与可加）**：复合体 $\sigma_{\text{comp}}=\prod_i\sigma_i$，$\deg$ 按新边界重算，对接电荷泛函公理 A2/A3。
+  - **T9（割空间充要判据，v1.2）**：$\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)$，可达类数 $=2^{\operatorname{rank}_{\rm hol}}$；符号通道平凡 $\iff$ 一切 Aut-不变赋值都是割。三骨架读数：$Q_3=0$、$Y_3^{\rm cl}=1$、$Y_3^{\rm op}=2$（$T2$ 只判"有无"，T9 给出"几个比特"）。
+  - **T10 / §6.2（双 $\mathbb{Z}_2$ 通道并置判决，v1.2）**：同一 $Y_3^{\rm cl}$ 上 $H^1$ 通道打开（1 比特）而 **Pfaffian 定向通道无解**，并给出 6 行极小不可解行子集证书（去掉任一行即变为可解）——电荷符号归属由**实测**决定，不再靠梯族外推。Pfaffian 为外部对照通道，不进入算子输出、不新增键。
+  - **T11（梯族充要条件，v1.2）**：$\operatorname{rank}_{\rm hol}=0 \iff k=3$（$K_{3,3}$）；$k\ge5$ 奇梯族为二分图（无奇环）却仍打开通道，故**奇环既非充分也非必要**。相应修正 v1.1 的两处表述：§6.1 "真正决定翻转的是奇环存在性" 与 §10 第 3 条把"奇环 + 多轨道"写作必要条件。§6.3 另判 $Y_3^{\rm cl}$ 与梯族**零覆盖、零商**，但为 $K_4$ 的三折正规覆盖；并建立书内 $M_k$ 与论文 $M_{2n}$ 的因子 2 编号对照。
 * **输出与接口**：输入为算子 1/4 输出的 SRE 平滑邻接 $A_s$（键图支撑 $A_s>0$）、电负性 $\chi$（自旋口径）、元素标号；可选极性口径四选一——缺省 `polarity="topo"`，或显式 `edge_polarity` / 轨道 `orbit_signs` / 自旋 `chi`（互斥，多注入口径抛 `ValueError`）；可选守卫 `aut_cap`/`aut_max_v`（缺省 100000/22）。输出图不变量 $\{V,E,c,\beta_1,\deg,\text{bipartite},\text{has\_odd\_cycle}\}$、$\sigma$ 类 $\{\sigma\text{-vector},\sigma\text{-class},\text{trivial}\}$、Aut-不变可达性 $\{M,\text{nontrivial\_reachable},\text{channel\_type}\}$、以及模型内部电荷档 $Q_{\text{model}} = \sigma_{\text{canonical}} \cdot \deg \in \{-1,0,+1\}$。算子 19 与算子 12（环计数，量值通道）、算子 14（1-链 Hodge 分解，与之互为 Hodge 对偶）、算子 11/18（其顶点势型极性由 T1 定位为不可造符号）均有明确边界。
 * **并行实现与交叉验证**：算子 19 存在两套独立维护的平行实现——功能式桥接 `sre_z2_holonomy_bridge.py` 与类式发布套件 `sre_charge_channel.py`（三份镜像 SHA-256 一致）。配套验证程序 `verify_operator_19.py`（V1–V12，45 断言，定理逐项）、`verify_operator_19_mobius.py`（M1–M9，57 断言，Möbius 型图实证）、`verify_operator_19_cross.py`（X1–X10，29 断言，跨实现一致性 + 守卫边界）三程序共同实证本规范，全部通过。冻结契约：`charge_channel_keys` 恒 10 键，两实现逐键等值，禁止后续改动键数。
 

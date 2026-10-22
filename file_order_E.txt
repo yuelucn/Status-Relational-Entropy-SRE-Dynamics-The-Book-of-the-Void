@@ -47,7 +47,8 @@
 ./3-Mathematical_Support/Operator_11_1.1_E.md
 ./3-Mathematical_Support/Operator_12_1.1_E.md
 ./3-Mathematical_Support/Operator_13_18_1.3_E.md
-./3-Mathematical_Support/Operator_19_1.1_E.md
+./3-Mathematical_Support/Operator_19_1.2_E.md
+./3-Mathematical_Support/Operator_19_Y3_DualZ2_Channel_Verdict_1.0_E.md
 ./3-Mathematical_Support/Operator_20_0.3_E.md
 
 #part-4

@@ -91,6 +91,7 @@ I have recorded all of this here. Scientific intuition arises out of the void, a
 - [Mathematical Specifications and Algebraic Derivations for the Topological Closed-Loop Audit Operator (Operator 12)](#Mathematical-Specifications-and-Algebraic-Derivations-for-the-Topological-Closed-Loop-Audit-Operator-(Operator-12))
 - [Strict Mathematical Specification of the Spectral-Shape Equation-Solving Operator Set (Operators 13–18): Homological Solvability Theorems and the Endogenous Inversion Pipeline](#Strict-Mathematical-Specification-of-the-Spectral-Shape-Equation-Solving-Operator-Set-(Operators-13–18):-Homological-Solvability-Theorems-and-the-Endogenous-Inversion-Pipeline)
 - [Operator 19: ℤ₂ Holonomy / σ Charge-Sign Channel Operator](#Operator-19:-ℤ₂-Holonomy-/-σ-Charge-Sign-Channel-Operator)
+- [Dual ℤ₂-Channel Verdict on the Nucleon Skeleton Y₃: Landing the Cut-Space Criterion on the Project's Own Object, the Relation to the Möbius Ladder Family, and a Readable Certificate for the Pfaffian Obstruction](#Dual-ℤ₂-Channel-Verdict-on-the-Nucleon-Skeleton-Y₃:-Landing-the-Cut-Space-Criterion-on-the-Project's-Own-Object,-the-Relation-to-the-Möbius-Ladder-Family,-and-a-Readable-Certificate-for-the-Pfaffian-Obstruction)
 - [Operator 20: Activation / Bridge Operator $\mathcal{K}_{\text{act}}$](#Operator-20:-Activation-/-Bridge-Operator-$\mathcal{K}_{\text{act}}$)
 - [Part IV: Applications and Scientific Hypotheses](#Part-IV:-Applications-and-Scientific-Hypotheses)
 - [Academic Hypothesis: The Sovereign Universe Tree of Life Protocol and Topological Residual Inheritance via State‑Relation Entropy (SRE) Dynamics](#Academic-Hypothesis:-The-Sovereign-Universe-Tree-of-Life-Protocol-and-Topological-Residual-Inheritance-via-State‑Relation-Entropy-(SRE)-Dynamics)
@@ -8094,9 +8095,11 @@ This part constitutes **Part III of State‑Relational‑Entropy (SRE) Dynamic
 14. **Operator-12: Mathematical Specifications and Algebraic Derivations for the Topological Closed‑Loop Audit Operator ($\mathcal{O}_\mathrm{loop\text{-}audit}$) with Möbius Phase Detection**: Combining DFS‑based simple‑cycle enumeration with phase audit on the SRE sign matrix, it detects the "N‑scale topological closed loop + Möbius double‑layer phase" pattern and maps chemical ring structures (benzene, epoxide, etc.) onto the closed retro‑causal chains described by SRE electron topology. It rigorously proves the correspondence between simple‑cycle counts and the first Betti number $\beta_1$, the Möbius sign‑balance criterion, Cauchy interlacing and condition‑number clamping on ring subgraphs, and a Lipschitz robustness bound for the audit trace. The operator audits the $A_q$ produced by Operator 11, and its result modulates the information‑propagation rate $c_e$ of Operator 5.
 15. **Operators 13–18: Strict Mathematical Specification of the Spectral‑Shape Equation‑Solving Operator Set, Homological Solvability Theorems and the Endogenous Inversion Pipeline**: For the inverse problem "several unknown spectral shapes form an equation; find its solution", it provides a complete solving methodology within the SRE dimensionless graph‑operator system. Its core is a structural discovery: the $k$-th spectral moment of a graph is algebraically exactly the normalized weight sum of $k$-step closed walks, and the span of those cycles after modding out face boundaries is precisely the first homology group $H_1$; hence the residual of a spectral‑shape equation is intrinsically a first cohomology class $[r]\in H^1$, and solving the equation is equivalent to annihilating that class on $H^1$. The solving process invents no new dynamics and is rigorously reduced to a discrete Hodge three‑component routing on the existing boundary operators — the gradient component reuses Operator 6, the curl component reuses Operator 7, and the harmonic component can only be eliminated topologically by Operator 9. It gives the axiomatic placement of Operators 13–18, the homological solvability theorems and the endogenous inversion pipeline, together with the reference implementation `Operator_13_18_P.py` (built‑in checks 19/19 passing) and a 50‑equation stress‑test suite (50/50 passing).
 
-16. **Operator-19: Strict Mathematical Specification, Solvability Reasoning Basis and Verification Protocol for the $\mathbb{Z}_2$ Holonomy / $\sigma$ Charge‑Sign Channel Operator (v1.1, polarity injection and cross‑implementation verification added)**: It establishes the sign channel $\sigma$ of the charge‑emergence paper as an operator in its own right. Over the 1‑dimensional chain complex of molecular bond graphs it rigorously formalizes the chain "edge polarity → loop holonomy → cohomology class", proving that $\sigma$ is an $\mathbb{F}_2$‑linear functional on $H_1$ (T0), that vertex‑potential‑type polarities always have trivial holonomy (T1, so the charge sign cannot be produced by local spin relabeling), the $\mathbb{Z}_2$ linear criterion for Aut‑invariant reachability (T2), and all theorems and proofs T0–T8. v1.1 adds four mutually exclusive polarity‑injection gauges (default topological, or explicit edge polarity / orbit signs / spin electronegativity, with conflicting injections raising `ValueError`) together with guard parameters. The specification is proven by two independently maintained parallel implementations — the functional bridge `sre_z2_holonomy_bridge.py` and the class‑style release suite `sre_charge_channel.py` (three SHA‑256 identical mirrors) — and validated collectively by three companion programs: `verify_operator_19.py` (V1–V12, 45 assertions), `verify_operator_19_mobius.py` (M1–M9, 57 assertions) and `verify_operator_19_cross.py` (X1–X10, 29 assertions), all passing.
+16. **Operator-19: Strict Mathematical Specification, Solvability Reasoning Basis, Dual $\mathbb{Z}_2$ Channel Verdict and Verification Protocol for the $\mathbb{Z}_2$ Holonomy / $\sigma$ Charge‑Sign Channel Operator (v1.2, cut‑space necessary‑and‑sufficient criterion and dual‑channel verdict added)**: It establishes the sign channel $\sigma$ of the charge‑emergence paper as an operator in its own right. Over the 1‑dimensional chain complex of molecular bond graphs it rigorously formalizes the chain "edge polarity → loop holonomy → cohomology class", proving that $\sigma$ is an $\mathbb{F}_2$‑linear functional on $H_1$ (T0), that vertex‑potential‑type polarities always have trivial holonomy (T1, so the charge sign cannot be produced by local spin relabeling), the $\mathbb{Z}_2$ linear criterion for Aut‑invariant reachability (T2), and all theorems and proofs T0–T11. v1.2 adds three results: the **cut‑space identity** $\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)$ (T9, deepening T2's existence criterion into a dimension identity, with the three official skeletons reading $Q_3=0$, $Y_3^{\rm cl}=1$, $Y_3^{\rm op}=2$); the **side‑by‑side dual $\mathbb{Z}_2$ channel verdict** (§6.2: on the same $Y_3^{\rm cl}$ the $H^1$ channel opens one bit while the Pfaffian orientation channel has no solution, yielding a 6‑row minimal unsatisfiable certificate); and the **covering verdict with the numbering convention** (§6.3: $Y_3^{\rm cl}$ is a 3‑fold regular cover of $K_4\cong M_4$, with zero cover and zero quotient against the Möbius ladder family $M_{2n}$, $n\ge3$). v1.2 also corrects one erroneous statement of v1.1 — "non‑trivial reachability requires an odd cycle together with at least two orbits" is falsified by the ladder family at $k\ge5$; the correct criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$. The four mutually exclusive polarity‑injection gauges and guard parameters of v1.1 are retained. The specification is proven by two independently maintained parallel implementations — the functional bridge `sre_z2_holonomy_bridge.py` and the class‑style release suite `sre_charge_channel.py` (three SHA‑256 identical mirrors) — and validated collectively by three companion programs: `verify_operator_19.py` (V1–V12, 45 assertions), `verify_operator_19_mobius.py` (M1–M9, 57 assertions) and `verify_operator_19_cross.py` (X1–X10, 29 assertions), all passing.
 
-17. **Operator-20: Rigorous Mathematical Specification of the Activation / Bridge Operator ($\mathcal{K}_{\text{act}}$), v0.3**: It promotes "reaction" to an object. Beyond the skeleton graph $G=(V,E)$ it introduces an external boundary graph $B$ with interface edges $E_I$, and models a reaction as a piecewise path carrying an adsorption waypoint, yielding three mutually independent dimensionless channels: edge topological frustration $\varrho=\|\delta_{e,\text{harm}}\|/\|\delta_e\|$ (the $H^1(G;\mathbb{R})$ component that no spanning-tree adjustment can cancel), vertex contrast $\nu=\|\delta_v^\perp\|/\|\delta_v\|$ (hydrogen-coverage redistribution), and rigidity bottleneck $\kappa=\int dt/(g+\varepsilon)$ (spectral-gap collapse along the path). Core results: properness trichotomy (T20.1), global scale invariance of $\kappa$ (T20.2), endpoint homology-class immutability (T20.3: interface edges **cannot** change endpoint frustration, so catalysts act only on the path and the rigidity), vertex-channel gauge invariance (T20.4), the transition-state observability criterion (P20.5) and the non-monotonicity of $\gamma$ (P20.6); the central hypothesis H20.1 and the volcano conjecture C20.7 are explicitly flagged as unproven. Reference implementation `sre_activation_operator.py` (v0/v1 dual editions, `self_test` 19/19) and independent verification `verify_operator_20.py` (V1–V14, 41/41 PASS); the freeze contract keeps `activation_keys` at exactly 7 keys. Operator 20 is orthogonal and complementary to Operator 19: 19 is the $\mathbb{Z}_2$ sign channel of a static graph, 20 is the magnitude + vertex + rigidity channel ($\mathbb{R}$) of a reaction path.
+17. **Dual $\mathbb{Z}_2$-Channel Verdict on the Nucleon Skeleton $Y_3$ (v1.0)**: The empirical landing of Operator 19. On the project's own object $Y_3^{\rm cl}$ the two channels are placed side by side: the $H^1$ channel yields exactly two reachable classes (one bit of freedom) while the Pfaffian orientation channel has **no solution**, upgrading "the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation" from an indirect ladder-family argument to a positive measurement on the skeleton itself. The negative verdict is presented as a checkable **minimal unsatisfiable certificate** (a 6-row row subset, deleting any row makes the system solvable), and "one edge deletion flips Pfaffian existence" is located to a concrete mechanism — the nice-even-cycle obstruction set drops from 42 to 0. It further gives the dimension reading of the cut-space identity ($\operatorname{rank}_{\rm hol}=1$, $\dim(W\cap\operatorname{Cut})=1$ on $Y_3^{\rm cl}$), the covering verdict that $Y_3^{\rm cl}$ is a 3-fold regular cover of $K_4\cong M_4$, the correspondence between Operator 19 indexing $M_k$ and the paper indexing $M_{2n}$ (a factor of 2, with $K_4=M_2=M_4$), and the five methodological rules G70–G74. The companion programs `_dir7_y3_skeleton_verdict.py` and `_dir7b_book_index_convention.py` and their JSON outputs ship with the chapter.
+
+18. **Operator-20: Rigorous Mathematical Specification of the Activation / Bridge Operator ($\mathcal{K}_{\text{act}}$), v0.3**: It promotes "reaction" to an object. Beyond the skeleton graph $G=(V,E)$ it introduces an external boundary graph $B$ with interface edges $E_I$, and models a reaction as a piecewise path carrying an adsorption waypoint, yielding three mutually independent dimensionless channels: edge topological frustration $\varrho=\|\delta_{e,\text{harm}}\|/\|\delta_e\|$ (the $H^1(G;\mathbb{R})$ component that no spanning-tree adjustment can cancel), vertex contrast $\nu=\|\delta_v^\perp\|/\|\delta_v\|$ (hydrogen-coverage redistribution), and rigidity bottleneck $\kappa=\int dt/(g+\varepsilon)$ (spectral-gap collapse along the path). Core results: properness trichotomy (T20.1), global scale invariance of $\kappa$ (T20.2), endpoint homology-class immutability (T20.3: interface edges **cannot** change endpoint frustration, so catalysts act only on the path and the rigidity), vertex-channel gauge invariance (T20.4), the transition-state observability criterion (P20.5) and the non-monotonicity of $\gamma$ (P20.6); the central hypothesis H20.1 and the volcano conjecture C20.7 are explicitly flagged as unproven. Reference implementation `sre_activation_operator.py` (v0/v1 dual editions, `self_test` 19/19) and independent verification `verify_operator_20.py` (V1–V14, 41/41 PASS); the freeze contract keeps `activation_keys` at exactly 7 keys. Operator 20 is orthogonal and complementary to Operator 19: 19 is the $\mathbb{Z}_2$ sign channel of a static graph, 20 is the magnitude + vertex + rigidity channel ($\mathbb{R}$) of a reaction path.
 
 > This suite belongs to the underlying mathematical‑implementation layer and builds upon the Part I axiomatic ontology. Its main focus is **how to translate SRE causal‑network ideas into computable algebraic pipelines**. Operators 1‑20 are all released open‑source with mathematical specifications and simulation code; large-scale distributed-simulation engineering implementations are subjects for subsequent research work. This part likewise **does not answer the ultimate origin of causal differences**.
 
@@ -8330,9 +8333,12 @@ Operator 18 must output three credibility certificates with the solution: homolo
   - **T3 (cycle-basis independence)**: The triviality criterion for $\sigma$ is independent of the chosen fundamental cycle basis.
   - **T4 (coboundary gauge invariance)**: Multiplying by a vertex potential changes no cycle holonomy; $\sigma$ depends only on the cohomology class $[s]$.
   - **T5 (two-channel orthogonal independence)**: $\deg$ is determined solely by $(V,E,c)$ and $\sigma$ solely by $[s]$; their independent variables are disjoint, so $Q=\sigma\cdot\deg$ is the product of two independent channels.
-  - **T6 (even-cycle forced triviality)**: A bipartite graph with a single edge orbit forces every Aut-invariant assignment to be trivial (electron-like)—the structural origin of the forced triviality of the electron $Q_3$; an odd cycle with multiple orbits allows nontriviality (nucleon-like, proton).
+  - **T6 (even-cycle forced triviality)**: A bipartite graph with a single edge orbit forces every Aut-invariant assignment to be trivial (electron-like)—the structural origin of the forced triviality of the electron $Q_3$; an odd cycle with multiple orbits allows nontriviality (nucleon-like, proton). **Note (v1.2)**: this is a **sufficient** condition whose converse fails—see T11.
   - **T7 (element-coloring necessity)**: Molecular-layer automorphisms must preserve element labels; otherwise the orbit structure is distorted and the reachability criterion flips (rigorously demonstrated by the 4-cycle $[O,C,C,O]$ counterexample).
   - **T8 (composition and additivity)**: For a composite body, $\sigma_{\text{comp}}=\prod_i\sigma_i$ and $\deg$ is recomputed at the new boundary, matching charge-functional axioms A2/A3.
+  - **T9 (cut-space necessary-and-sufficient criterion, v1.2)**: $\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)$, reachable classes $=2^{\operatorname{rank}_{\rm hol}}$; the sign channel is trivial $\iff$ every Aut-invariant assignment is a cut. Skeleton readings: $Q_3=0$, $Y_3^{\rm cl}=1$, $Y_3^{\rm op}=2$ (T2 answers "is there one"; T9 answers "how many bits").
+  - **T10 / §6.2 (side-by-side dual $\mathbb{Z}_2$ channel verdict, v1.2)**: On the same $Y_3^{\rm cl}$ the $H^1$ channel is open (1 bit) while the **Pfaffian orientation channel is unsolvable**, with a 6-row minimal unsatisfiable row-subset certificate (removing any single row makes it solvable)—the attribution of the charge sign is settled by **measurement**, no longer by extrapolation from the ladder family. Pfaffian is an external control channel: it enters no operator output and adds no keys.
+  - **T11 (ladder-family necessary-and-sufficient condition, v1.2)**: $\operatorname{rank}_{\rm hol}=0 \iff k=3$ ($K_{3,3}$); odd-$k\ge5$ ladders are bipartite (no odd cycle) yet still open the channel, so **odd cycles are neither sufficient nor necessary**. This corrects two v1.1 statements: §6.1's "what actually determines the flip is the existence of odd cycles" and §10 item 3's writing of "odd cycle + multiple orbits" as a necessary condition. §6.3 further rules that $Y_3^{\rm cl}$ has **zero coverings and zero quotients** over the ladder family yet is a 3-fold regular cover of $K_4$; it also tabulates the factor-2 numbering correspondence between the in-book $M_k$ and the paper's $M_{2n}$.
 * **Output & Interface**: Input is the SRE smoothed adjacency $A_s$ from Operators 1/4 (bond support $A_s>0$), electronegativity $\chi$ (spin gauge), and element labels; optionally one of four mutually exclusive polarity gauges — default `polarity="topo"`, or explicit `edge_polarity` / orbit `orbit_signs` / spin `chi` (conflicting injection gauges raise `ValueError`); optional guards `aut_cap`/`aut_max_v` (default 100000/22). Output includes graph invariants $\{V,E,c,\beta_1,\deg,\text{bipartite},\text{has\_odd\_cycle}\}$, the $\sigma$-class $\{\sigma\text{-vector},\sigma\text{-class},\text{trivial}\}$, Aut-invariant reachability $\{M,\text{nontrivial\_reachable},\text{channel\_type}\}$, and the in-model charge tier $Q_{\text{model}} = \sigma_{\text{canonical}} \cdot \deg \in \{-1,0,+1\}$. Operator 19 has explicit boundaries with Operator 12 (cycle count, magnitude channel), Operator 14 (Hodge decomposition of 1-chains, its Hodge dual), and Operators 11/18 (whose vertex-potential polarities are located by T1 as incapable of producing sign).
 * **Parallel Implementations and Cross-Validation**: Operator 19 lives in two independently maintained parallel codebases — the functional bridge `sre_z2_holonomy_bridge.py` and the class-style release suite `sre_charge_channel.py` (three SHA-256 identical mirrors). Three companion verification programs collectively validate this specification: `verify_operator_19.py` (V1–V12, 45 assertions, theorem-by-theorem), `verify_operator_19_mobius.py` (M1–M9, 57 assertions, Möbius-family experiments), and `verify_operator_19_cross.py` (X1–X10, 29 assertions, cross-implementation parity + guard boundaries) — all passing. Freeze contract: `charge_channel_keys` always returns 10 keys, with pairwise equality between both implementations; no future implementation may change this count.
 
@@ -11722,9 +11728,9 @@ The 10 random equations of v1.2 are generalized to **10 problem types × 5 rando
 <div style="page-break-after: always;"></div>
 
 # Operator 19: ℤ₂ Holonomy / σ Charge-Sign Channel Operator
-## Rigorous Mathematical Specification, Solvability Rationale, and Verification Protocol
+## Rigorous Mathematical Specification, Solvability Rationale, Dual ℤ₂ Channel Verdict, and Verification Protocol
 
-**Version**: 1.1 (October 2026 · SRE Operator System No. 19, polarity injection and cross-implementation verification added)
+**Version**: 1.2 (October 2026 · SRE Operator System No. 19; v1.1 added polarity injection and cross-implementation verification; v1.2 adds the cut-space necessary-and-sufficient criterion, the side-by-side Pfaffian / $H^1$ dual-channel verdict, and the ladder-family numbering convention)
 **Reference Implementations**: Functional bridge `sre_z2_holonomy_bridge.py` (entry `operator_19_z2_charge_channel`); class-style release suite `sre_charge_channel.py` (`SREChargeChannelSuite.execute_operator_19_z2_charge_channel`; three mirrors share identical SHA-256) — dual implementations prove no ambiguity in the specification
 **Companion Verification Programs**: Three independent programs collectively validate this specification
   - `verify_operator_19.py` (V1–V12, skeleton fidelity / theorem-by-theorem / freeze contract, 45 assertions)
@@ -11734,6 +11740,7 @@ The 10 random equations of v1.2 are generalized to **10 problem types × 5 rando
 **Upstream Paper**: *"Emergence of Positive and Negative Charge in the SRE System: Magnitude, Sign, and Numerical Validation"* (the "charge-emergence paper" hereinafter)
 **Downstream Integration**: `sre_cluster_substitute_screen.py` (`z2_*` fields piped into compound screening pipeline)
 **Numbering Note**: This operator is numbered **19** after the existing 18; pairwise verification confirms **no overlap** with all 18 operators in `SRE-math_C.md` (boundary details in §9).
+**External Verdict Report (cited by v1.2)**: *"Dual $\mathbb{Z}_2$ Channel Verdict on the Nucleon Skeleton $Y_3$: Landing the Cut-Space Necessary-and-Sufficient Criterion on the Project's Own Objects, Its Relation to the Möbius Ladder Family, and a Readable Certificate of the Pfaffian Obstruction"* (round 104, the "$Y_3$ verdict report" hereinafter). All measured values and certificates in T9, T10, T11, §6.2 and §6.3 of this version originate from that report; the cut-space identities have additionally been independently re-checked inside this project (§8.4).
 
 ---
 
@@ -11745,7 +11752,7 @@ $$Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\qquad \deg(K)=\beta_1(K)\bmod 2,\qquad \sig
 
 where the "sign channel" $\sigma$ is declared as a $\mathbb{Z}_2$ holonomy cohomology class—but that paper used a standalone numerical script (`_se_assignment_test.py`) to spot-check a handful of skeletons and molecules, **without providing an independent, reusable, provable implementation specification** for this operator. This document grounds the $\sigma$ channel **separately** as **Operator 19** and delivers three previously missing pieces:
 
-1. **Rigorous rationale** (§2–§5): On the **1-dimensional chain complex** of molecular bond graphs, the "edge polarity → cycle holonomy → cohomology class" pipeline is formalised, the well-definedness of the operator output is proven, and **all theorems with proofs** are given (T0–T8).
+1. **Rigorous rationale** (§2–§5): On the **1-dimensional chain complex** of molecular bond graphs, the "edge polarity → cycle holonomy → cohomology class" pipeline is formalised, the well-definedness of the operator output is proven, and **all theorems with proofs** are given (T0–T11).
 2. **Accompanying paper** (this document): The operator's axiomatic positioning, bridging semantics with upstream electronic operators, boundaries with existing operators, and faithful reproduction on official skeletons and molecular layers.
 3. **Rigorous verification programs** (`verify_operator_19.py`): Each theorem is mapped to a reproducible assertion (V1–V12); passing all assertions empirically establishes this specification.
 
@@ -11762,8 +11769,18 @@ Core conclusions (all rigorous on 1-complexes, independent of any external param
 | **T6** | Bipartite graph + single edge orbit $\Rightarrow$ **forced triviality** (electron-like) | Structural origin of electron $Q_3$ |
 | **T7** | Molecular-layer Aut **must preserve element coloring**; otherwise reachability criterion is distorted (can flip) | Necessity of element coloring |
 | **T8** | Composite body $\sigma_{\text{comp}}=\prod_i\sigma_i$, $Q$ recomputed at new boundary | Hooks A2/A3 |
+| **T9** | $\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)$ | **Necessary-and-sufficient criterion for triviality** (dimension refinement of T2) |
+| **T10** | The Pfaffian unsolvability of $Y_3^{\rm cl}$ has a **minimal unsatisfiable certificate** (all 6 rows needed for contradiction, one row short) | Negative verdict is machine-checkable |
+| **T11** | Ladder family: $\operatorname{rank}_{\rm hol}=0\iff k=3$ ($K_{3,3}$) | Odd cycles are **not** the criterion for channel opening |
 
-**Keywords**: $\mathbb{Z}_2$ cohomology; holonomy; coboundary; vertex potential; edge orbit; Aut-invariant assignment; charge-sign channel; first Betti number
+**v1.2 Additions (all gated by the $Y_3$ verdict report A–F and re-checked inside this project)**:
+
+1. **T9 (cut-space identity)**　Deepens T2's "does a nontrivial class exist" criterion into a **dimension identity**: the number of reachable (Aut-invariant) classes is exactly $2^{\operatorname{rank}_{\rm hol}}$; the three official skeletons read $Q_3=0$, $Y_3^{\rm cl}=1$, $Y_3^{\rm op}=2$ (§6, Table 6.2).
+2. **§6.2 Side-by-side dual $\mathbb{Z}_2$ channel verdict**　On the very same $Y_3^{\rm cl}$ the $H^1$ channel is **open** (1 bit) while the **Pfaffian channel admits not a single orientation**, with a readable certificate (6-row minimal unsatisfiable subset) and a mechanism (42 nice even cycles vanish in the open state).
+3. **§6.3 Covering verdict and numbering convention**　$Y_3^{\rm cl}$ has **zero coverings and zero quotients** over $M_{2n}(n\ge3)$, yet is exactly a **3-fold regular cover of $K_4\cong M_4$**; a factor-2 correspondence table between the in-book $M_k$ and the paper's $M_{2n}$ is established (Table 6.5).
+4. **Correction to v1.1**　The v1.1 §10 item 3 statement "nontrivial reachability **only if** the graph contains an odd cycle and has $\ge2$ orbits" is **falsified**: odd-$k\ge5$ ladders are bipartite (no odd cycle) and still have $\operatorname{rank}_{\rm hol}\ge1$; the correct criterion is $W\not\subseteq\operatorname{Cut}$ (T9). Correspondingly, the §6.1 sentence "what actually determines the flip is the existence of odd cycles" is corrected as well.
+
+**Keywords**: $\mathbb{Z}_2$ cohomology; holonomy; coboundary; cut space; edge orbit; Aut-invariant assignment; charge-sign channel; Pfaffian orientation; first Betti number
 
 ---
 
@@ -11789,7 +11806,7 @@ Ground the $\sigma$ channel **separately** as Operator 19:
 
 - **Input**: SRE smoothed adjacency $A_s$ from Operators 1/4 (bond-graph support $A_s>0$); optional polarity gauge chosen from four mutually exclusive options (D3) — default `polarity="topo"`, or explicit `edge_polarity` / orbit `orbit_signs` / spin `chi`; optional element labels (molecular coloring, color-preserving Aut); optional guard parameters `aut_cap` (default 100,000) and `aut_max_v` (default 22, skips reachability only when exceeded).
 - **Output**: Graph invariants $\{V,E,c,\beta_1,\deg,\text{bipartite},\text{has\_odd\_cycle}\}$, $\sigma$-class $\{\sigma\text{-vector},\sigma\text{-class},\text{trivial}\}$, Aut-invariant reachability, and in-model charge tier $Q_{\text{model}}=\sigma\cdot\deg$;
-- **Properties**: T0–T8 (§5).
+- **Properties**: T0–T11 (§5). T9 supplies the bit count of the sign channel (cut-space necessary-and-sufficient criterion); T10/T11 together with §6.2/§6.3 supply the dual $\mathbb{Z}_2$ channel verdict and the ladder-family numbering convention (added in v1.2; the latter changes neither the input/output nor the freeze contract).
 
 ---
 
@@ -11856,6 +11873,20 @@ Providing multiple injection gauges simultaneously (e.g. both `edge_polarity` an
 - **electron-like (forced trivial)**: under Aut-invariant assignments, **every** $s$ is trivial;
 - **nucleon-like (nontrivial allowed)**: $\exists$ Aut-invariant $s$ that is nontrivial.
 
+**D11 (Aut-Invariant Assignment Space $W(G)$, new in v1.2)**　Let the edge orbits be $O_1,\dots,O_k$,
+$$W(G)\equiv\operatorname{span}_{\mathbb{F}_2}\{\mathbf 1_{O_1},\dots,\mathbf 1_{O_k}\}\subseteq C^1(G;\mathbb{F}_2),\qquad \dim W(G)=n_{\rm orb}=k .$$
+$W(G)$ is the subspace of "all Aut-invariant assignments". **Contrast**: without the Aut constraint the assignment space is the whole $C^1$ (dimension $m$), and nontrivial classes are then the norm (dimension $\beta_1$, see §10 item 2).
+
+**D12 (Cut Space $\operatorname{Cut}(G)$, new in v1.2)**
+$$\operatorname{Cut}(G)\equiv\{d(S):S\subseteq V\}=\operatorname{im}\delta_0=\delta C^0\subseteq C^1(G;\mathbb{F}_2),\qquad \dim\operatorname{Cut}(G)=n-c ,$$
+where $d(S)$ is the set of edges with exactly one endpoint in $S$. **Use the star-set basis** $d(\{v\})$ (all edges incident to $v$). **Pitfall warning**: if the basis is mistakenly taken as "the tree-path edge set from $v$ to the root", the resulting space is the **cycle space** (the tree half of the tree–cotree decomposition), not the cut space—the $Y_3$ verdict report measured 566 mismatches out of 996 cases under this substitution (see §8.4, gate B′).
+
+**D13 (Holonomy Rank and Number of Reachable Classes, new in v1.2)**　Define the $\mathbb{F}_2$-linear map
+$$\Phi_G:W(G)\longrightarrow H^1(G;\mathbb{F}_2),\qquad z\longmapsto[s(z)],\qquad \operatorname{rank}_{\rm hol}(G)\equiv\dim_{\mathbb{F}_2}\operatorname{im}\Phi_G .$$
+**Meaning**: $\operatorname{rank}_{\rm hol}$ is the "number of bits of the sign channel"; the number of Aut-invariant reachable classes is $2^{\operatorname{rank}_{\rm hol}}$; $\operatorname{rank}_{\rm hol}=0\iff$ every Aut-invariant assignment is trivial (i.e. the electron-like case of D10, made precise here).
+
+**D14 (Pfaffian Orientation Class, new in v1.2 — control channel for §6.2 only)**　Let $\mathcal M$ be the set of perfect matchings of $G$. An edge orientation $t:E\to\{\pm1\}$ is a **Pfaffian orientation** if for every $M\in\mathcal M$, $\prod_{e\in M}t_e=(-1)^{\mathrm{cr}(M)}$, where $\mathrm{cr}(M)$ is the number of crossing pairs in the matching mod 2. This is equivalent to the solvability of the **unbalanced linear system** $\sum_{e\in M}t_e=\mathrm{cr}(M)\ (\bmod 2)$; its solution set is denoted $\mathcal O_{\rm Pf}(G)$. When $\#\mathcal M=0$ the criterion passes vacuously and **cannot be used as a discovery**.
+
 ---
 
 ## 4 Axioms (Inherited from the Charge-Emergence Paper)
@@ -11913,6 +11944,14 @@ Thus reachability is equivalent to $M\neq0$ — we need only find any nonzero en
 
 **Corollary T2.1**　The trivial class is **always reachable** (take the zero assignment $s_e\equiv+1$). A nontrivial class is reachable **if and only if** some edge orbit appears an odd number of times in some fundamental cycle.
 
+**T2.2 (Rank Form: $\operatorname{rank}(M)=\operatorname{rank}_{\rm hol}$, new in v1.2)**
+
+**Statement**　$\operatorname{rank}_{\mathbb{F}_2}(M)=k-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)=\operatorname{rank}_{\rm hol}(G)$.
+
+**Proof**　The null space of $M$ is $\ker M=\{z:Mz=0\}=\{z:\sigma(\gamma_i)=0\ \forall i\}$. By T3 (cycle-basis independence), "vanishing on the fundamental cycle basis" $\iff$ "vanishing on every cycle" $\iff[s(z)]=0$; and by T4, $[s(z)]=0\iff s(z)\in\delta C^0=\operatorname{Cut}$. Hence $\ker M=W(G)\cap\operatorname{Cut}(G)$. The rank–nullity theorem gives $\operatorname{rank}M=k-\dim\ker M=k-\dim(W\cap\operatorname{Cut})$, which equals $\operatorname{rank}_{\rm hol}$ by T9. $\blacksquare$
+
+**T2.3 (Status of the Criterion: the Misstated Necessity, corrected in v1.2)**　The $M\neq0$ criterion of T2 is an **existence** criterion (equivalent to $\operatorname{rank}_{\rm hol}\ge1$); it **does not give the dimension** (the dimension comes from T9/T2.2). The v1.1 §10 item 3 wrote "contains an odd cycle + orbit count $\ge2$" as a **necessary condition**, which **has been falsified**: the (in-book) ladder family with odd $k\ge5$ is **bipartite** (no odd cycle) with two orbits, yet still has $\operatorname{rank}_{\rm hol}\ge1$ (§6.3, T11); while $k=3$ ($K_{3,3}$) is bipartite with a single orbit and has $\operatorname{rank}_{\rm hol}=0$. **Odd cycles are neither sufficient nor necessary**; the only necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
+
 ### T3 (Cycle-Basis Independence)
 
 **Statement**　The triviality criterion for $\sigma$ ($[s]=0$) is independent of the choice of fundamental cycle basis $\{\gamma_i\}$.
@@ -11961,11 +12000,43 @@ The two gauges give **opposite channel criteria**, so element coloring is a nece
 
 **Proof**　The composite recomputes new boundaries (A2), with boundary equal to the symmetric difference of each $\partial K_i$; by T0 linearity, $\sigma$ sums over the symmetric difference $\Rightarrow$ polarities multiply (Lemma 2.1). $\deg$ is recomputed from the new $(V,E,c)$. Additive separation (A3) follows from $Q$ summing over independent components. $\blacksquare$
 
+### T9 (Cut-Space Identity / Necessary-and-Sufficient Criterion for Triviality, new in v1.2)
+
+**Statement**　Let $G$ be connected ($c=1$; the general $c$ case is applied component-wise), $n_{\rm orb}=\dim W(G)$. Then
+
+$$\boxed{\ \operatorname{rank}_{\rm hol}(G)=n_{\rm orb}-\dim_{\mathbb{F}_2}\big(W(G)\cap\operatorname{Cut}(G)\big)\ }\qquad\text{and}\qquad \boxed{\ \operatorname{rank}_{\rm hol}(G)=0\iff W(G)\subseteq\operatorname{Cut}(G)\ }$$
+
+That is: **the sign channel is trivial $\iff$ every Aut-invariant assignment is some cut**.
+
+**Proof**　By D13, $\Phi_G:W(G)\to H^1$ is $\mathbb{F}_2$-linear. Its kernel is
+$$\ker\Phi_G=\{s\in W(G):[s]=0\in H^1\}=\{s\in W(G):s\in\delta C^0\}=W(G)\cap\operatorname{Cut}(G),$$
+where the first equality is the definition of the kernel, the second follows from $H^1=C^1/\delta C^0$ (§2.1) together with T4 (the class is uniquely determined by $[s]$), and the third from D12 ($\operatorname{Cut}=\delta C^0$). By the rank–nullity theorem,
+$$\operatorname{rank}_{\rm hol}=\dim\operatorname{im}\Phi_G=\dim W(G)-\dim\ker\Phi_G=n_{\rm orb}-\dim(W\cap\operatorname{Cut}).$$
+Then $\operatorname{rank}_{\rm hol}=0\iff\operatorname{im}\Phi_G=0\iff\ker\Phi_G=W(G)\iff W(G)\subseteq\operatorname{Cut}(G)$ gives the second equivalence. $\blacksquare$
+
+**Corollary T9.1 (Connection to T2)**　$\operatorname{rank}_{\rm hol}\ge1\iff W(G)\not\subseteq\operatorname{Cut}(G)\iff M\neq0$ (the existence criterion of T2). T2 only answers "is there a nontrivial class"; T9 answers "how many bits".
+
+**Corollary T9.2 (Two Mutually Independent Computational Routes)**　Route A: the matrix rank $\operatorname{rank}_{\mathbb{F}_2}M$ of T2 ($\mathcal{O}(\beta_1 k)$); Route B: the cut-space intersection dimension $\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$ with the **star-set** basis of $\operatorname{Cut}$ (D12). The $Y_3$ verdict report measured these two routes plus "$H^1$ class enumeration" and "subset enumeration" on 22 samples (ladder family, prism family, classical graphs, random 3-regular graphs) with **zero mismatch across all four routes**.
+
+**Corollary T9.3 (Official Skeleton Readings)**
+
+| Skeleton | $n_{\rm orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\operatorname{rank}_{\rm hol}$ |
+|---|---|---|---|---|
+| $Q_3$ | 1 | 7 | 1 | **0** |
+| $Y_3^{\rm cl}$ | 2 | 11 | 1 | **1** |
+| $Y_3^{\rm op}$ | 7 | 11 | 5 | **2** |
+
+This agrees with the T2 criterion ($Q_3$: $M=0$; $Y_3^{\rm cl}$: $M\neq0$) and with the channel types in charge-emergence paper §10.2; moreover the triviality of $Q_3$ now receives a **mechanistic explanation**: its only Aut-invariant assignment (all ones, since the graph is edge-transitive) happens to lie inside the cut space.
+
+**Note (Label Independence)**　$\operatorname{rank}_{\rm hol}$ is an integer depending only on the orbit structure and the cut space of $G$; it is **independent** of the choice of cycle basis (T3) and of vertex labeling (matching the $\sigma$ class of §6). This is exactly opposite to $\varrho$-type quantities (Operator 20, see its specification §2.2), which are label-sensitive. Hence $\operatorname{rank}_{\rm hol}$ is a **comparable invariant** across skeletons.
+
 ---
 
 ## 6 Bond with the Upstream Charge-Emergence Paper (Faithful Reproduction on Official Skeletons)
 
 Operator 19 faithfully reproduces the three skeletons from charge-emergence paper §10.2 using `skel_electron_q3 / skel_y3_closed / skel_y3_open`, serving as the **anchor self-test** of the specification:
+
+**Table 6.1　Anchor readings of the three skeletons**
 
 | Skeleton | $V$ | $E$ | $\beta_1$ | $\deg$ | $\lvert\operatorname{Aut}\rvert$ | Edge Orbits | Bipartite | Nontrivial Reachable | Channel Type |
 |---|---|---|---|---|---|---|---|---|---|
@@ -11973,7 +12044,15 @@ Operator 19 faithfully reproduces the three skeletons from charge-emergence pape
 | Proton $p$ (closed) | 12 | 18 | 7 | 1 | 36 | 2 | No | **Yes** | nucleon-like |
 | Neutron $n$ (open) | 12 | 17 | 6 | 0 | 4 | 7 | No | **Yes** | nucleon-like |
 
-Conclusion: **The electron is forced into a trivial holonomy class by skeleton symmetry; the proton lands in a nontrivial class**, which together with A0 gives the structural origin of the electron/proton sign difference. The neutron has $\deg=0$ — regardless of $\sigma$, $Q_{\text{model}}=0$ — **the magnitude channel alone makes the neutron neutral**.
+**Table 6.2　Cut-space readings (T9; item-by-item identical to Table 3.1 of the $Y_3$ verdict report, re-checked inside this project in §8.4)**
+
+| Skeleton | $n_{\rm orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\operatorname{rank}_{\rm hol}$ | Reachable classes $2^{\rm rank}$ |
+|---|---|---|---|---|---|
+| $Q_3$ (electron) | 1 | 7 | 1 | **0** | 1 |
+| $Y_3^{\rm cl}$ (proton) | 2 | 11 | 1 | **1** | 2 |
+| $Y_3^{\rm op}$ (neutron) | 7 | 11 | 5 | **2** | 4 |
+
+Conclusion (strengthened in v1.2): **The electron is forced into a trivial holonomy class by skeleton symmetry**—not "by coincidence", but because the only candidate assignment ($Q_3$ is edge-transitive $\Rightarrow$ all ones) happens to lie inside the cut space ($\dim(W\cap\operatorname{Cut})=n_{\rm orb}=1\Rightarrow\operatorname{rank}_{\rm hol}=0$); **the proton has exactly 1 bit of sign freedom** (of its two edge orbits exactly one assignment lies in the cut space, so the $H^1$ channel is open with exactly 2 reachable classes); **the neutron has 2 bits** (7 orbits, intersection dimension 5). Together with A0 this gives the structural origin of the electron/proton sign difference. The neutron has $\deg=0$, so $Q_{\text{model}}=0$ regardless of $\sigma$—**the magnitude channel alone makes the neutron neutral**.
 
 ### 6.1 Möbius-Family Experiments (M1–M9, 57/57 passed)
 
@@ -11981,7 +12060,7 @@ Conclusion: **The electron is forced into a trivial holonomy class by skeleton s
 
 **Construction Families**:
 
-- **Möbius ladder $M_k$** $=$ even cycle $C_{2k}$ + antipodal chords $(i, i+k)$; $V=2k, E=3k, \beta_1=k+1$. $M_3$ degenerates to $K_{3,3}$; $M_4$ is the Wagner graph $V_8$ (the 1-skeleton of the smallest triangulation of the real projective plane).
+- **Möbius ladder $M_k$** $=$ even cycle $C_{2k}$ + antipodal chords $(i, i+k)$; $V=2k, E=3k, \beta_1=k+1$. $M_3$ degenerates to $K_{3,3}$; $M_4$ is the Wagner graph $V_8$ (the 1-skeleton of the smallest triangulation of the real projective plane). **Numbering convention (v1.2)**: this section uses the **in-book numbering** $M_k$ ($V=2k$) throughout; the $Y_3$ verdict report uses the **paper numbering** $M_{2n}=\mathrm{Cay}(\mathbb{Z}_{2n},\{1,n\})$ ($V=2n$). The two differ by a factor of 2; see Table 6.5 in §6.3.
 - **Prism ladder $\Pi_k$** (control): two $k$-cycles + $k$ rungs; same $V$ and $E$ as $M_k$, differing only by the "twist".
 - **Twisted even cycle**: on $C_{2k}$, mark two adjacent vertices with different colors to form a twist defect.
 
@@ -11990,9 +12069,9 @@ Conclusion: **The electron is forced into a trivial holonomy class by skeleton s
 | Family | $\beta_1$ | Channel Type | Structural Origin |
 |---|---|---|---|
 | $M_3 = K_{3,3}$ | 4 | **electron-like** | Bipartite + single orbit, forced trivial by T6 |
-| $M_k, k\ge 4$ | $k+1$ | **nucleon-like** | Non-bipartite (contains odd cycles) + multiple orbits, $M\neq0$ by T2 |
+| $M_k, k\ge 4$ | $k+1$ | **nucleon-like** | Multiple orbits, $M\neq0$ (T2). **v1.2 refinement**: even $k$ is non-bipartite (contains odd cycles); odd $k$ is **bipartite**—here the channel opens via "bipartite + two orbits" ($\operatorname{rank}_{\rm hol}\ge1$), independently of odd cycles (P19.4 / T11) |
 | $\Pi_k$ (even $k$) | $k+1$ | **electron-like** | Bipartite (contains even prism) + single orbit (even order) |
-| $\Pi_k$ (odd $k$) | $k+1$ | **nucleon-like** | Contains triangular faces (odd cycles), **non-bipartite** — so what actually determines the flip is the existence of odd cycles, not the intuitive "twist" geometry itself |
+| $\Pi_k$ (odd $k$) | $k+1$ | **nucleon-like** | Contains triangular faces (odd cycles), **non-bipartite**. **v1.2 correction**: v1.1 inferred from this that "what actually determines the flip is the existence of odd cycles"—**that inference fails**: odd-$k\ge5$ ladders are bipartite (no odd cycle) yet have $\operatorname{rank}_{\rm hol}\ge1$ (§6.3, T11). The sole criterion is $W\not\subseteq\operatorname{Cut}$ (T9); the within-family co-occurrence of the flip with odd cycles is a **family-local coincidence** |
 
 **Explicit Certificate of Nontrivial $\sigma$** (M4): On $M_4$, there exists a witness edge orbit that, when assigned $-1$ (all others $+1$), gives an Aut-invariant polarity $s_{\text{witness}}$ satisfying
 1. $\sigma(\gamma) = -1$ (one odd cycle on the fundamental basis has holonomy $-1$);
@@ -12008,6 +12087,62 @@ Conclusion: **The electron is forced into a trivial holonomy class by skeleton s
 **Forced Triviality of Electron Skeleton $Q_3$** (M8): Bipartite + single orbit; regardless of which Aut-invariant polarity is injected, Op19 always outputs electron-like.
 
 **Polarity Injection API Regression** (M9): orbit / explicit dual gauges, Aut-invariance diagnostics, invalid-input validation — equivalent to §8.3 / X2/X3/X8.
+
+### 6.2 Side-by-Side Dual $\mathbb{Z}_2$ Channel Verdict: $H^1$ Holonomy vs. Pfaffian Orientation (new in v1.2)
+
+The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$. Graph theory contains another equally $\mathbb{Z}_2$-valued "sign" channel—the **Pfaffian orientation class** (D14). Whether the two share a common origin had previously been argued only indirectly on the ladder family; this section renders a side-by-side verdict on the **project's own nucleon skeletons**.
+
+**Table 6.3　Side-by-side readings of the two channels ($Y_3$ verdict report §4.1)**
+
+| Skeleton | $n_{\rm orb}$ | $\operatorname{rank}_{\rm hol}$ ($H^1$ channel) | $\#\mathcal M$ | $\lvert\mathcal O_{\rm Pf}\rvert$ | $\dim\mathcal O_{\rm Pf}$ | Pfaffian channel | nice even cycles |
+|---|---|---|---|---|---|---|---|
+| $Q_3$ (electron) | 1 | 0 | 9 | 128 | 6 | **solvable** | 0 |
+| $Y_3^{\rm cl}$ (proton) | 2 | 1 | 6 | **0** | — | **unsolvable** | **42** |
+| $Y_3^{\rm op}$ (neutron) | 7 | 2 | 4 | 16384 | 13 | **solvable** | **0** |
+
+**Proposition P19.1 (Channel-Separation Verdict)**　On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\operatorname{rank}_{\rm hol}=1$, exactly 2 reachable classes), while the Pfaffian channel is **closed** ($\mathcal O_{\rm Pf}=\emptyset$). Hence the project's core claim—that the charge sign is carried by $H^1$ holonomy rather than by Pfaffian orientation—obtains **direct side-by-side measurement on the project's own skeleton**, no longer resting only on the indirect argument "holds on the ladder family, fails to extrapolate to the skeleton".
+
+**Theorem T10 (Minimal Unsatisfiable Row-Subset Certificate)**　The unbalanced system of $Y_3^{\rm cl}$ has $6$ rows (6 perfect matchings) $\times\,18$ columns (18 edges); its **full set of 6 rows** is a minimal unsatisfiable row subset: removing any single row leaves the remaining 5 rows **solvable** (maximum satisfiable row count $=5/6$). That is, $Y_3^{\rm cl}$ is **exactly one row away** from admitting a Pfaffian orientation.
+
+**Proof**　By criterion D14, list the 6 perfect matchings row by row together with the right-hand sides $\mathrm{cr}$ (Table 6.4), and exhaust all $2^6$ row subsets: only the full set is unsatisfiable, while all 63 proper subsets are satisfiable; hence the full set is a minimal unsatisfiable row subset. $\blacksquare$
+
+**Table 6.4　The unbalanced system of $Y_3^{\rm cl}$ (6 rows × 18 columns; right-hand sides are $\mathrm{cr}(M)$)**
+
+| Row | Perfect matching $M$ | $\mathrm{cr}(M)$ |
+|---|---|---|
+| 1 | $\{(0,1),(2,6),(3,11),(4,7),(5,9),(8,10)\}$ | 1 |
+| 2 | $\{(0,1),(2,10),(3,7),(4,6),(5,9),(8,11)\}$ | 0 |
+| 3 | $\{(0,2),(1,5),(3,11),(4,7),(6,10),(8,9)\}$ | 0 |
+| 4 | $\{(0,2),(1,9),(3,7),(4,5),(6,10),(8,11)\}$ | 1 |
+| 5 | $\{(0,3),(1,5),(2,10),(4,6),(7,11),(8,9)\}$ | 1 |
+| 6 | $\{(0,3),(1,9),(2,6),(4,5),(7,11),(8,10)\}$ | 0 |
+
+"One row short" is confirmed by **exhausting all row subsets**, not heuristically.
+
+**Proposition P19.2 (Structural Mechanism: nice even cycles vanish)**　$Y_3^{\rm cl}$ contains **42** nice even cycles (9 of length 6, 9 of length 8, 18 of length 10, 6 of length 12); the open state $Y_3^{\rm op}$, obtained by deleting one rim edge, has **0**, and the Pfaffian channel opens accordingly ($\dim=13$, $\lvert\mathcal O_{\rm Pf}\rvert=2^{13}$, with the particular solution independently cross-checked at $\mathrm{Pf}=+4=\#\mathcal M$). Thus the v1.1 qualitative observation—"a single closed/open decision flips existence"—now has a **concrete mechanism**.
+
+> **Boundary 1 (an indicator is not a criterion)**　nice even cycles are only an **obstruction indicator**: used as a classifier on 22 samples it scores TP=4, FP=2, FN=3, TN=13 (false positives such as the Wagner graph $M_8$: nice=1 yet solvable; false negatives are mostly bipartite graphs). Ground truth always comes from the unbalanced system.
+> **Boundary 2 (contract unchanged)**　Pfaffian orientation is an **adjacent graph-theoretic channel, not part of Operator 19's output**: the implementation introduces no new keys, `charge_channel_keys` still returns exactly **10 keys** (§8.3), and the freeze contract is untouched by this section.
+
+### 6.3 Relation of $Y_3$ to the Möbius Ladder Family and the Numbering Convention (new in v1.2)
+
+**Proposition P19.3 (Covering / Quotient Verdict)**　$Y_3^{\rm cl}$ is **non-isomorphic** to every $M_{2n}$ ($n\ge3$) (adjacency spectra and triangle counts both differ), admits **zero coverings** (complete backtracking enumeration over $M_4$–$M_{14}$ returns 0) and **zero quotients** (a quotient is a special case of a covering, so zero coverings implies zero quotients). **However**, $Y_3^{\rm cl}$ is a **$k=3$ regular cover of $K_4$** (unique covering; deck group of order 3; quotient $\cong K_4$; each of the four $K_4$ edges lifts 3 times). The "three-ness" of $Y_3$ (3 centers, 3 leg groups, 3 triangles, $\lvert\operatorname{Aut}\rvert=36=3!\times3!$, 2 edge orbits of 9 edges each) thereby receives a unified explanation: **$Y_3$ is a 3-fold complete graph**.
+
+**Table 6.5　Numbering convention (factor 2; always check before cross-referencing)**
+
+| Graph | In-book $M_k$ (even cycle $C_{2k}$ + antipodal chords, $V=2k$) | Paper $M_{2n}=\mathrm{Cay}(\mathbb{Z}_{2n},\{1,n\})$, $V=2n$ |
+|---|---|---|
+| $K_4$ | $M_2$ | $M_4$ |
+| $K_{3,3}$ | $M_3$ | $M_6$ |
+| Wagner graph | $M_4$ | $M_8$ |
+
+**Proposition P19.4 (Full-Family Readings in the In-Book Convention, $k=2,\dots,24$)**　$n_{\rm orb}=1\iff k\in\{2,3\}$; even $k\iff$ non-bipartite, odd $k\iff$ bipartite; $\operatorname{rank}_{\rm hol}=0\iff k=3$.
+
+**Theorem T11 (Necessary-and-Sufficient Condition for Opening the Sign Channel on the Ladder Family)**　On the ladder family, $\operatorname{rank}_{\rm hol}=0$ **if and only if** $k=3$ (i.e. $K_{3,3}$, the family's only "bipartite + single orbit" member). Hence every ladder with $k\neq3$ opens the sign channel; when $k\ge5$ is odd the graph is **bipartite** (no odd cycle) yet the channel is still open, with mechanism "bipartite + two orbits".
+
+**Proof**　For $k=3$, single orbit + bipartite forces triviality by T6. For $k=2$ the graph is $K_4$: single orbit but contains triangles, so $\operatorname{rank}_{\rm hol}\ge1$. For $k\ge4$, $n_{\rm orb}=2$; if $k$ is even the graph contains odd cycles, if $k$ is odd it is bipartite—in either case at least one of the two orbits does not lie in the cut space (for odd $k$ the all-ones assignment lies in the cut space while the other does not), so $\dim(W\cap\operatorname{Cut})\le1<n_{\rm orb}=2$, and T9 yields $\operatorname{rank}_{\rm hol}\ge1$. $\blacksquare$
+
+**Corollary T11.1 (Correction to T6 and §6.1)**　T6's "bipartite + single orbit $\Rightarrow$ forced triviality" is a **sufficient** condition whose **converse fails** (counterexample: odd-$k\ge5$ ladders—bipartite with two orbits, channel open). Therefore the §6.1 sentence "what actually determines the flip is the existence of odd cycles" **does not hold**, and the v1.1 §10 item 3 writing "odd cycle + multiple orbits" as a necessary condition is tightened accordingly: the sole necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
 
 ---
 
@@ -12086,7 +12221,23 @@ Operator 19 exists in two independently maintained parallel implementations shar
 
 All 29 assertions pass, proving **behavioural convergence** of this specification across two independent codebases — there is no room for "ambiguous interpretation of the specification text".
 
-> **Freeze Contract (D5, must not be violated)**: `charge_channel_keys(res)` must always return **10 keys**; both implementations are confirmed compliant, and no future implementation may change this count.
+> **Freeze Contract (D5, must not be violated)**: `charge_channel_keys(res)` must always return exactly **10 keys**; both implementations have been verified to comply, and no future implementation may change this count.
+
+### 8.4 Re-Check of the External Verdict Report (new in v1.2, gates A–F)
+
+Every conclusion of the $Y_3$ verdict report is re-checked gate by gate across six gates; inside this project **no implementation is modified and no key is added**—only an independent script calls the existing bridge functions to recompute the observables:
+
+| Gate | What is re-checked | Verdict |
+|---|---|---|
+| **A** Object fidelity | $V,E,\beta_1,\deg,\lvert\operatorname{Aut}\rvert$, edge-orbit count and bipartiteness of $Y_3^{\rm cl}$ / $Y_3^{\rm op}$ | Item-by-item identical to Table 6.1 of §6 |
+| **B** Cut-space identity | The four-column readings $n_{\rm orb},\dim\operatorname{Cut},\dim(W\cap\operatorname{Cut}),\operatorname{rank}_{\rm hol}$ for the three skeletons; compatibility of $\operatorname{rank}_{\rm hol}$ with the T2 criterion $M\neq0$ | $Q_3=0$, $Y_3^{\rm cl}=1$, $Y_3^{\rm op}=2$—**independently reproduced inside this project** |
+| **B′** Basis-selection pitfall | Cut-space basis taken as the star set $d(\{v\})$ vs. mistakenly as "spanning-tree path edge sets" (the latter is actually the cycle space) | The star-set convention reproduces all readings; the mistaken convention mismatches 566 of 996 cases in the report, confirming that the D12 pitfall warning is necessary |
+| **C** Four-route zero mismatch | Matrix rank (T2) / cut-space intersection dimension (T9) / $H^1$ class enumeration / subset enumeration—four independent routes | Zero mismatch over 22 samples; T9.2 holds |
+| **D** Pfaffian certificate | Unsolvability of the unbalanced system and the minimal unsatisfiable row subset (T10), cross-check of the particular solution $\mathrm{Pf}$, nice-even-cycle counts and classifier metrics | Item-by-item identical (Tables 6.3 and 6.4); the indicator's false-positive/false-negative boundaries are as stated in §6.2 and do not affect the criterion |
+| **E** Covering verdict and convention | Isomorphism / covering / quotient verdict of $Y_3^{\rm cl}$ against $M_{2n}$; the 3-fold cover $Y_3^{\rm cl}\to K_4$; the in-book $M_k$ vs. paper $M_{2n}$ correspondence | Consistent (P19.3, Table 6.5) |
+| **F** Numbering and conclusion revisions | Whether the report's two corrections to v1.1 (the §6.1 odd-cycle criterion and the §10 item 3 necessary condition) are absorbed in this document | Absorbed (T2.3, T11.1, §10) |
+
+**Note on method**: the re-check script **is not persisted as a standalone verification program**—it reuses `edge_list / automorphisms / edge_orbits` and the skeleton constructors of `sre_z2_holonomy_bridge.py`, appending cut-space dimension computations only outside the library. Hence the counts for V1–V12 / M1–M9 / X1–X10 remain unchanged (45 / 57 / 29). If T9 is later to enter routine regression, it should be added as **V13**, with the three assertion counts and the freeze-contract wording updated together.
 
 ---
 
@@ -12111,10 +12262,15 @@ Operator 19 has been pairwise verified against all 18 operators in `SRE-math_C.m
 
 1. **Internal model construction, not a physical assertion**. All conclusions of this specification are **internally self-consistent constructions** of the SRE model; $Q_{\text{model}}$ is the **in-model charge tier** ($\in\{-1,0,+1\}$) and does not constitute a physical assertion about the charge values of real molecules or particles.
 2. **Aut-invariance is an explicit assumption**. Reachability conclusions (T2, T6) rely on the **explicit assumption** "edge polarities are invariant under automorphisms" from charge-emergence paper §13.2. **Without this assumption**, any graph containing cycles admits nontrivial classes (1 bit of freedom, dimension $=\beta_1$) and reachability analysis collapses to a trivial fact.
-3. **Necessary conditions for nontrivial reachability**. Only when the graph contains **odd cycles** and has $\ge2$ edge orbits (more precisely, $M\neq0$) is nontrivial reachable — this is the direct consequence of "even-cycle families are forced trivial by even length" (T6).
+3. **The necessary-and-sufficient condition for nontrivial reachability is the cut-space criterion, not the odd-cycle criterion (corrected in v1.2)**. v1.1 wrote "contains **odd cycles** and has $\ge2$ edge orbits" as a necessary condition; **that formulation has been falsified**: odd-$k\ge5$ ladders are bipartite (no odd cycle) yet have $\operatorname{rank}_{\rm hol}\ge1$ (T11). The correct statement is T9: $W(G)\not\subseteq\operatorname{Cut}(G)$, equivalent to $M\neq0$ of T2. **Bipartiteness, odd-cycle existence and orbit count are all non-necessary**; they co-occur with the conclusion only inside specific families.
 4. **Molecular layer requires element coloring**. The Aut of molecular bond graphs must respect element labels (T7), otherwise different elements like C and H may be conflated and the orbit structure distorted.
 5. **Scale guard**. Automorphism enumeration uses a guard at `aut_max_v=22`; very large graphs skip only reachability analysis, while $\sigma$-class discrimination and $Q_{\text{model}}$ remain valid.
 6. **$A_s$ semantics**. Operator 19 reuses the $A_s$ from Operators 1/4, whose bond-graph support $A_s>0$ is guaranteed upstream (cooperative edges $E^+$ of SRE Axiom 1); if the upstream $A_s$ contains numerical noise, judge with `bond_graph_from_As(eps)` using the $\epsilon$ parameter.
+7. **The cut-space basis must be the star set (v1.2)**. Take the basis of $\operatorname{Cut}$ as $d(\{v\})$; if it is mistakenly taken as "the tree-path edge set from $v$ to the root", the result is the **cycle space** rather than the cut space, and $\operatorname{rank}_{\rm hol}$ is systematically distorted (566 of 996 cases mismatch in the report; §8.4 gate B′).
+8. **Pfaffian is an external control channel, not an Operator 19 output (v1.2)**. The Pfaffian readings of §6.2 enter no computation and add no key; `charge_channel_keys` still returns exactly **10 keys**. Pfaffian logic needs its own entry point and must not be attached to Operator 19's return value.
+9. **nice even cycles are only an indicator (v1.2)**. On the 22-sample classifier it scores TP=4 / FP=2 / FN=3 / TN=13 and **must not** be used as a criterion; ground truth must come from the unbalanced linear system (D14).
+10. **The numbering convention must be stated (v1.2)**. The in-book $M_k$ ($V=2k$) and the paper's $M_{2n}$ ($V=2n$) differ by a factor of 2; every cross-reference to ladder numbering must write both conventions (Table 6.5), otherwise correspondences such as $K_{3,3}=M_3=M_6$ shift by one slot.
+11. **Cross-skeleton comparability of $\operatorname{rank}_{\rm hol}$ has a precondition (v1.2)**. It depends only on the orbit structure and the cut space, hence is label-independent (superior to $\varrho$-type quantities); but it is **comparable only under the same Aut constraint**—after relaxing the Aut constraint the space becomes all of $C^1$ with dimension $\beta_1$, which cannot be mixed with the $n_{\rm orb}$ convention.
 
 ---
 
@@ -12124,10 +12280,13 @@ Operator 19 grounds the $\sigma$ **sign channel** from the charge-emergence pape
 
 - **Well-defined** (T0): On 1-complexes, $\sigma$ is an $\mathbb{F}_2$-linear functional on $H_1$, free of representative ambiguity;
 - **Nonmanufacturability of sign** (T1/T1.1): Vertex-potential polarities (including Operator 11's spin polarities and Operator 18's sign assignment) always have trivial holonomy — charge sign cannot be manufactured by local spin relabeling;
-- **Closed-form reachability criterion** (T2/T2.1): Nontrivial reachable $\iff M\neq0$, $\mathcal{O}(\beta_1 k)$, no $2^k$ enumeration;
+- **Closed-form reachability criterion** (T2/T2.1/T2.2): Nontrivial reachable $\iff M\neq0$, $\mathcal{O}(\beta_1 k)$, no $2^k$ enumeration;
+- **Necessary-and-sufficient criterion and bit counting** (T9/T9.2, v1.2): $\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim(W\cap\operatorname{Cut})$, reachable classes $=2^{\operatorname{rank}_{\rm hol}}$; two independent computational routes agree with zero mismatch over 22 samples;
+- **Side-by-side verdict of the dual $\mathbb{Z}_2$ channels** (§6.2, v1.2): on $Y_3^{\rm cl}$ the $H^1$ channel is open (1 bit) while the Pfaffian channel is unsolvable (minimal unsatisfiable certificate: all 6 rows needed for contradiction), so the attribution of the sign is settled by measurement rather than inference;
+- **Covering relation and numbering convention** (§6.3, v1.2): $Y_3^{\rm cl}$ has zero coverings and zero quotients over the ladder family, yet is a 3-fold regular cover of $K_4$; the factor-2 correspondence between the in-book $M_k$ and the paper's $M_{2n}$ is tabulated;
 - **Gauge invariance** (T3/T4): Triviality criterion is independent of cycle basis, $\sigma$ is immune to vertex-potential relabeling, depending only on $[s]\in H^1$;
 - **Two-channel separation** (T5): Sign $\sigma$ and magnitude $\deg$ are orthogonal, $Q=\sigma\deg$;
-- **Structural origin of electron/nucleon type** (T6): Even-cycle + single orbit forces triviality (electron); odd cycle + multiple orbits allows nontriviality (proton);
+- **Structural origin of electron/nucleon type** (T6/T11.1): Even-cycle + single orbit forces triviality (electron)—but the **converse fails**: odd-$k\ge5$ ladders are bipartite yet open the channel; the criterion converges to T9;
 - **Necessary component of molecular layer** (T7): Element-color-preserving Aut; otherwise criterion flips.
 
 While sharing the same graph ($A_s$) with upstream electronic operators, it outputs `z2_*` scalar keys piped into compound screening pipelines, enabling atomic/electronic-level high-speed sign-channel computation.
@@ -12149,8 +12308,342 @@ While sharing the same graph ($A_s$) with upstream electronic operators, it outp
 | $O_o$ | Edge orbit under Aut |
 | $m_{i,o}$ | Number of edges from orbit $o$ in fundamental cycle $i$, mod 2 |
 | $M=(m_{i,o})$ | Reachability matrix, nontrivial reachable $\iff M\neq0$ |
+| $W(G)=\operatorname{span}\{\mathbf 1_{O_o}\}$ | Aut-invariant assignment subspace, $\dim=n_{\rm orb}$ (v1.2) |
+| $\operatorname{Cut}(G)=d(S)$ | Cut space $=\operatorname{im}\delta_0$, $\dim=n-c$; basis taken as the star set $d(\{v\})$ (v1.2) |
+| $\operatorname{rank}_{\rm hol}=\dim\operatorname{im}\Phi_G$ | Sign-channel bit count, reachable classes $=2^{\operatorname{rank}_{\rm hol}}$ (v1.2) |
+| $\mathcal O_{\rm Pf}$ | Pfaffian orientation solution set (external control channel, not an Operator 19 output) (v1.2) |
 | $\deg=\beta_1\bmod2$ | Magnitude channel |
 | $Q_{\text{model}}=\sigma_{\text{canonical}}\cdot\deg$ | In-model charge tier |
+
+
+<div style="page-break-after: always;"></div>
+
+# Dual ℤ₂-Channel Verdict on the Nucleon Skeleton Y₃: Landing the Cut-Space Criterion on the Project's Own Object, the Relation to the Möbius Ladder Family, and a Readable Certificate for the Pfaffian Obstruction
+
+> **Abstract**　The core carrier of this project is the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$ (closed state $V=12,E=18,\beta_1=7,|\mathrm{Aut}|=36$). Rounds 101–103 established, respectively, the unbiased linear system for Pfaffian orientation classes, the label-independent $\mathbb Z_2$ invariant $\mathrm{rank}_{\rm hol}$, and a necessary-and-sufficient criterion for the latter (the cut-space intersection-dimension identity). These three results were never placed side by side on $Y_3$ itself, so the project's central claim — that the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation — still lacked direct measurement on its own object; moreover, "the closed state has no Pfaffian orientation" existed only as the bare fact "the system is infeasible", which a reader cannot check; and the true relation between $Y_3$ and the Möbius ladder family $M_{2n}$ had never been adjudicated.
+>
+> This report closes all three gaps. **First**, three independent implementations recompute $\mathrm{rank}_{\rm hol}$ on $Q_3$, $Y_3^{\rm cl}$ and $Y_3^{\rm op}$, giving $0/1/2$ — in exact agreement with Operator 19 v1.1 — and in zero mismatch with the cut-space identity. **Second**, a **readable certificate** is given for the absence of a Pfaffian orientation on $Y_3^{\rm cl}$: its six perfect-matching equations form a minimal unsatisfiable row subset, and removing any single row restores solvability, i.e. the obstruction is one equation away from being satisfiable. The structural reason is identified: $Y_3^{\rm cl}$ contains 42 nice even cycles, whereas $Y_3^{\rm op}$ — obtained by deleting one ring edge — contains none, and the Pfaffian channel opens accordingly ($\dim=13$, $|\mathcal O_{\rm Pf}|=2^{13}$). **Third**, the relation between $Y_3$ and $M_{2n}$ is adjudicated: complete backtracking enumeration proves zero coverings and zero quotients of $Y_3^{\rm cl}$ onto any $n\ge3$ ladder, while $Y_3^{\rm cl}$ is exactly a **three-fold regular covering** of $K_4\cong M_4$ (deck group of order 3, quotient $\cong K_4$) — which both explains why $Y_3^{\rm cl}$ has three triangles and pins down, to a verifiable precision, the long-open question of whether the two families are related.
+>
+> All 45 in-repository copies of the $Y_3$ constructor were put through an isomorphism health check (16 independently checkable copies all isomorphic; the 5 that could not be executed in isolation are recorded individually with their cause — signature or same-file dependency; zero non-isomorphic ones). Zero mismatch across four readings on 22 samples; all five falsification gates pass. **Two new portable rules** result (G70 the isomorphism-consistency law, G71 the minimal-conflict-certificate law).
+
+**Keywords**: nucleon skeleton; $\mathbb Z_2$ sign channel; cut space; Pfaffian orientation class; nice even cycle; graph covering; Möbius ladder
+
+---
+
+## 1　Origin: three unsettled questions
+
+The two main lines of this project — "charge emergence" and "mass origin" — share one carrier: the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$. Its closed state (proton) and open state (neutron) are joined by deleting a single ring edge. The previous three rounds each touched it without landing on it.
+
+**Question one (the claim lacks direct measurement).** the initial Operator 19 release proved that on the Möbius ladder family "a Pfaffian orientation class exists $\iff$ the graph is non-bipartite", and established $\mathcal O_{\rm Pf}(M_{2n})\neq\emptyset\iff n$ even $\iff$ non-bipartite; Operator 19 v1.1 introduced the label-independent $\mathbb Z_2$ invariant $\mathrm{rank}_{\rm hol}$ and measured $Q_3=0$, $Y_3^{\rm cl}=1$, $Y_3^{\rm op}=2$; Operator 19 v1.2 gave a necessary-and-sufficient criterion for $\mathrm{rank}_{\rm hol}$ (the cut-space intersection-dimension identity T9) and corrected three statements in the Operator 19 text. What was always missing at the seam: **the "Pfaffian channel" and the "$H^1$ holonomy channel" were never adjudicated side by side on $Y_3$ itself**. The evidence chain for the central claim — "the charge sign is carried by $H^1$ holonomy, not by a Pfaffian orientation" — was therefore "on the ladder family it holds, and extrapolating to the skeleton fails", an indirect argument. This report measures precisely that.
+
+**Question two (a negative verdict that cannot be checked).** the initial Operator 19 release's verdict was "the closed state $Y_3^{\rm cl}$ admits no Pfaffian orientation", technically "the unbiased linear system is infeasible". This statement is **correct but uncheckable**: from "the system is infeasible" the reader cannot see which row carries the contradiction, nor how close the system is to being feasible. Operator 19 v1.1 recorded it more pointedly as "within one skeleton family, a single edge deletion flips the Pfaffian existence — a sharp falsifiable anchor" — yet gave no structural reason for the flip.
+
+**Question three (the relation was never adjudicated).** An open question carried over from Operator 19 v1.1 asks for a measurement of the relation between $Y_3$ and the Möbius ladder $M_{2n}$, and for "the honest form of the bridge". What existed was one assertion from the initial Operator 19 release — "$Y_3^{\rm cl}$ and $M_{12}$ differ in triangle count, hence are not isomorphic" — which excludes isomorphism only, and leaves weaker relations (covering, quotient, double cover) open.
+
+**Question four (implementation consistency never health-checked).** While preparing this report, it was found that the $Y_3$ constructor appears in the repository in **45** places, merging into **21** distinct implementation bodies. The project had never verified that they all yield the same graph. The iron law G63 (shared-engine law) requires "the same implementation" before a strong cross-certification is available; here even "the same implementation" was not established.
+
+---
+
+## 2　Preliminaries: the three skeletons and the two channels
+
+### 2.1　The canonical construction
+
+**Definition 2.1 (closed nucleon skeleton $Y_3$).** Take the vertex set $\{c_0,c_1,c_2\}\cup\{L_{ij}:i,j\in\{0,1,2\}\}$ (12 vertices). The edge set is
+$$E\bigl(Y_3^{\rm cl}\bigr)=\bigl\{\{c_i,L_{ij}\}:i,j\in\{0,1,2\}\bigr\}\;\cup\;\bigl\{\{L_{0j},L_{1j}\},\{L_{1j},L_{2j}\},\{L_{2j},L_{0j}\}:j\in\{0,1,2\}\bigr\}.$$
+Semantically: three centres $c_i$, each joined to three "legs" $L_{ij}$; the legs are grouped by $j$ into three groups, each group $(L_{0j},L_{1j},L_{2j})$ forming a triangle. Hence the closed state contains three triangles.
+
+**Definition 2.2 (open state $Y_3$).** Obtained from $Y_3^{\rm cl}$ by deleting one triangle edge; denote it $Y_3^{\rm op}$.
+
+**Proposition 2.3 (basic quantities).** $Y_3^{\rm cl}$: $V=12$, $E=18$, 3-regular, $\beta_1=7$, $|\mathrm{Aut}|=36$, 2 edge orbits (9 edges each), non-planar, non-bipartite. $Y_3^{\rm op}$: $V=12$, $E=17$, $\beta_1=6$, $|\mathrm{Aut}|=4$, 7 edge orbits (sizes $1,2,2,2,2,4,4$), non-planar, non-bipartite.
+
+> **Note 2.4 (a fact about implementation scatter).** The repository contains 45 bodies of $y_3$ / $y_{3,\mathrm{closed}}$ / $y_{3,\mathrm{open}}$, merging into 21 distinct implementation bodies (by function name × body md5). All measurement in this report uses the canonical adjacency of Definition 2.1.
+
+### 2.2　The two ℤ₂ channels
+
+**Definition 2.5 (the $H^1$ holonomy channel).** Let $G$ be connected. $\mathrm{Aut}(G)$ acts on the edge set; the orbits are **edge orbits**, and $\dim W(G)=n_{\rm orb}$. Assign a sign $s_e\in\{\pm1\}$ to each edge (constant on each orbit, hence an element of $W(G)$), and define $\sigma(\gamma)=\prod_{e\in\gamma}s_e$ for a cycle $\gamma$; $\sigma$ takes values in $H^1(G;\mathbb F_2)$. Operator 19 v1.1 defined the invariant
+$$\mathrm{rank}_{\rm hol}(G):=\dim_{\mathbb F_2}\operatorname{im}\Phi_G,\qquad \Phi_G:W(G)\longrightarrow H^1(G;\mathbb F_2).$$
+
+**Theorem 2.6 (Operator 19 v1.2 main theorem, the cut-space identity).** Write $\operatorname{Cut}(G)=\{d(S):S\subseteq V\}$, where $d(S)$ is the set of edges with exactly one endpoint in $S$ (the cut space, i.e. the coboundary space $\operatorname{im}\partial^{\mathsf T}$). Then
+$$\boxed{\ \mathrm{rank}_{\rm hol}(G)=n_{\rm orb}-\dim\bigl(W(G)\cap\operatorname{Cut}(G)\bigr)\ }$$
+and $\mathrm{rank}_{\rm hol}(G)=0\iff W(G)\subseteq\operatorname{Cut}(G)$ (a necessary-and-sufficient criterion for triviality: every Aut-invariant assignment is some cut).
+
+> **Note 2.7 (cut space vs cycle space — do not confuse).** A basis of $\operatorname{Cut}(G)$ consists of the **stars** $d(\{v\})$ (all edges incident to $v$). If one mistakenly takes "the edge set of the tree path from $v$ to the root", one obtains the tree of the tree-cotree decomposition, which belongs to the **cycle space**; this caused 566/996 mismatches in measurement. Gate B below deliberately uses that substitution as a **falsification** check (see §7.2).
+
+**Definition 2.8 (Pfaffian orientation class).** Let $G$ have perfect matchings $\mathcal{M}$. An edge orientation $t:E(G)\to\{\pm1\}$ is a **Pfaffian orientation** if for every $M\in\mathcal{M}$,
+$$\prod_{e\in M}t_e=(-1)^{\mathrm{cr}(M)},\qquad \mathrm{cr}(M)=\text{crossing number of }M \bmod 2 .$$
+the initial Operator 19 release proved this equivalent to the solvability of an **unbiased linear system** (no orientation presupposed):
+$$\sum_{e\in M}t_e=\mathrm{cr}(M)\quad(\bmod\ 2),\qquad\text{for every }M\in\mathcal{M}.$$
+Write the solution set $\mathcal O_{\rm Pf}(G)$. When $\#\mathcal{M}=0$ the Pfaffian vanishes identically, the criterion passes trivially, and it **cannot serve as a discovery**.
+
+**Definition 2.9 (nice even cycle).** An even cycle $C$ is a nice even cycle if each of its edges belongs to exactly **two** perfect matchings of $G$.
+
+### 2.3　The relation between the two channels: a structural fact
+
+the initial Operator 19 release obtained, on $Y_3$, the fact that the closed state has **no solution** in the Pfaffian channel but **does** in the $H^1$ channel. This report upgrades that fact to a checkable verdict and supplies a mechanism.
+
+---
+
+## 3　Verdict one: the $H^1$ channel on the three skeletons
+
+### 3.1　Three independent implementations
+
+**Method 3.1 (three implementations).** On $Q_3$, $Y_3^{\rm cl}$ and $Y_3^{\rm op}$, compute $\mathrm{rank}_{\rm hol}$ along three **mutually independent** routes:
+
+- **I1 (the $M$-matrix route).** Replicates T2 of the Operator 19 chapter: rows of $M$ are cycle-basis elements, columns are edge orbits, and $M[c][o]$ is the number of edges of $c$ lying in orbit $o$, mod 2. Then $\mathrm{rank}_{\rm hol}=\operatorname{rank}_{\mathbb F_2}M$.
+- **I2 (cut-space intersection route).** Take the orbit characteristic vectors as a basis of $W$ and the stars as a basis of $\operatorname{Cut}$; from $\dim(W\cap\operatorname{Cut})=\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$ obtain $\mathrm{rank}_{\rm hol}$.
+- **I3 (subset-enumeration route).** Enumerate all $2^{|V|}$ subsets $S$ and take **all distinct values** of $d(S)$ as a generating set for $\operatorname{Cut}$ (a construction *not* cohomologous with I2's "star basis"), then intersect with $W$.
+
+**Theorem 3.2.** On $Q_3$, $Y_3^{\rm cl}$ and $Y_3^{\rm op}$, the readings of I1, I2, I3 and the identity of Theorem 2.6 agree **exactly**:
+$$\mathrm{rank}_{\rm hol}(Q_3)=0,\qquad \mathrm{rank}_{\rm hol}\bigl(Y_3^{\rm cl}\bigr)=1,\qquad \mathrm{rank}_{\rm hol}\bigl(Y_3^{\rm op}\bigr)=2 .$$
+The per-item values of $|W|$, $\dim\operatorname{Cut}$ and $\dim(W\cap\operatorname{Cut})$ are given in Table 3.1, and the four readings show zero mismatch on 22 samples (ladder family, prism family, control graphs, random 3-regular graphs).
+
+**Table 3.1　Four readings on the three skeletons**
+
+| Skeleton | $V$ | $E$ | $\beta_1$ | $|\mathrm{Aut}|$ | $n_{\rm orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\mathrm{rank}_{\rm hol}$ (I1/I2/I3/T9) |
+|---|---|---|---|---|---|---|---|---|
+| $Q_3$ (electron) | 8 | 12 | 5 | 48 | 1 | 7 | 1 | **0** / 0 / 0 / 0 |
+| $Y_3^{\rm cl}$ (proton) | 12 | 18 | 7 | 36 | 2 | 11 | 1 | **1** / 1 / 1 / 1 |
+| $Y_3^{\rm op}$ (neutron) | 12 | 17 | 6 | 4 | 7 | 11 | 5 | **2** / 2 / 2 / 2 |
+
+### 3.2　What the three readings mean
+
+**Corollary 3.3 (the electron's sign is locked by topology).** $\mathrm{rank}_{\rm hol}(Q_3)=0$, i.e. $W(Q_3)\subseteq\operatorname{Cut}(Q_3)$: the unique Aut-invariant assignment (all-ones, since $Q_3$ is edge-transitive) is exactly a cut of the bipartite graph, so the sign has **no** topological degree of freedom. This agrees with Operator 19 v1.1's $\lambda(Q_3)=\mathrm{True}$ and supplies its mechanism: the sign is not "locked by accident" but "the single candidate assignment happens to lie in the cut space".
+
+**Corollary 3.4 (the proton has exactly one bit of sign freedom).** For $Y_3^{\rm cl}$, $n_{\rm orb}=2$ while $\dim(W\cap\operatorname{Cut})=1$, so $\mathrm{rank}_{\rm hol}=1$: exactly two reachable holonomy classes (the trivial class and a nontrivial class $v$). In Operator 19 v1.1 this appeared only as "$\mathrm{sym\_n\_classes}=2$"; this report gives its **structural source**: of the two edge orbits, exactly one has its assignment inside the cut space and the other does not.
+
+**Corollary 3.5 (the neutron has two bits).** $Y_3^{\rm op}$ has 7 edge orbits, so $n_{\rm orb}=7$; the intersection dimension is 5, hence $\mathrm{rank}_{\rm hol}=2$.
+
+**Corollary 3.6 (independent agreement with Operator 19 v1.1).** The three readings $0/1/2$ agree **exactly** with Operator 19 v1.1's holonomy class counts ($\mathrm{sym\_n\_classes}=1/2/4$), although the two paths use different implementations (the former works in the linear algebra of the Aut-invariant assignment space, the latter counts $H^1$ classes). By G63 this is a **strong cross-certification** of Operator 19 v1.1.
+
+---
+
+## 4　Verdict two: the Pfaffian channel reading and a readable certificate
+
+### 4.1　The reading
+
+**Table 4.1　The dual-channel verdict (central result)**
+
+| Skeleton | $n_{\rm orb}$ | $\mathrm{rank}_{\rm hol}$ ($H^1$ channel) | $\#\mathcal M$ | $\|\mathcal O_{\rm Pf}\|$ | $\dim\mathcal O_{\rm Pf}$ | Pfaffian channel | nice even cycles |
+|---|---|---|---|---|---|---|---|
+| $Q_3$ | 1 | 0 | 9 | 128 | 6 | **solvable** | 0 |
+| $Y_3^{\rm cl}$ | 2 | 1 | 6 | **0** | — | **infeasible** | **42** |
+| $Y_3^{\rm op}$ | 7 | 2 | 4 | 16384 | 13 | **solvable** | **0** |
+
+**Proposition 4.2 (channel separation).** On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\mathrm{rank}_{\rm hol}=1$) while the Pfaffian channel is **closed** ($\mathcal O_{\rm Pf}=\emptyset$). Hence the project's central claim — that the charge sign is carried by $H^1$ holonomy — receives, **for the first time, direct side-by-side measurement on the project's own object**, rather than the indirect argument "it holds on the ladder family and extrapolates to the skeleton".
+
+### 4.2　A readable certificate: the minimal unsatisfiable row subset
+
+**Definition 4.3 (minimal conflict certificate).** For the unbiased linear system of Definition 2.8, a subset $R'$ of the row set $R$ is a **minimal unsatisfiable row subset** (minimal unsatisfiable subset) if $R'$ is infeasible while every proper subset $R''\subsetneq R'$ is feasible.
+
+**Theorem 4.4 (the certificate for $Y_3^{\rm cl}$).** The unbiased system of $Y_3^{\rm cl}$ has 6 rows (6 perfect matchings) $\times\,18$ columns (18 edges), and **all 6 rows** form a minimal unsatisfiable row subset; removing any single row leaves a **feasible** 5-row system. That is: $Y_3^{\rm cl}$ is **one equation away** from admitting a Pfaffian orientation.
+
+> **Note 4.5 (checkability).** The six rows and their right-hand sides (the $\mathrm{cr}$ values) are listed one by one in the experimental output (Table 7.2 in §7.3); the "one row away" fact was confirmed by **exhausting all row subsets**, not heuristically.
+
+**Proposition 4.6 (structural reason: the nice even cycles vanish).** $Y_3^{\rm cl}$ contains **42** nice even cycles (length distribution: 9 of length 6, 9 of length 8, 18 of length 10, 6 of length 12); $Y_3^{\rm op}$ contains **0**. The existence of nice even cycles forces the "sign consistency around the cycle" conditions of a Pfaffian orientation into mutual conflict; deleting one ring edge empties that obstruction set, and the Pfaffian channel opens accordingly ($\dim=13$, $\|\mathcal O_{\rm Pf}\|=2^{13}=16384$, with the particular solution independently re-checked: $\mathrm{Pf}=+4=\#\mathcal M$).
+
+> **Note 4.7 (the nice obstruction is an indicator, not a criterion).** In the classifier sense (false positives and false negatives must both be reported, per G69), taking "has a nice even cycle" as an **indicator** of "no Pfaffian orientation" yields TP=4, FP=2, FN=3, TN=13 on the 22 samples. False positive: $M_8$ (Wagner graph, nice=1 yet solvable, $|\mathcal O_{\rm Pf}|=256$). False negatives: $M_{10}$, $M_{14}$ (bipartite, nice=0 yet infeasible) and one random 3-regular graph ($\mathrm{rank}_{\rm hol}=3$, nice=0, infeasible). Hence a nice even cycle can only serve as an **obstruction indicator, never as a criterion**; the truth is always supplied by the unbiased system. This evaluation also locates the false negatives: they lie mainly in the **bipartite** quadrant (in a bipartite graph the all-ones assignment lies in the cut space, so no nice obstruction arises, yet the system may still be infeasible).
+
+---
+
+## 5　Verdict three: the relation between $Y_3$ and the Möbius ladder family
+
+### 5.1　Complete enumeration of coverings
+
+**Method 5.1 (covering enumeration).** A **covering** $G\to H$ is a map $t:V(G)\to V(H)$ satisfying (i) homomorphism, $uv\in E(G)\Rightarrow t(u)\sim t(v)\in E(H)$; and (ii) **local bijectivity**: for every $v$, $\{t(w):w\in N_G(v)\}=N_H(t(v))$. The enumeration is by backtracking: fix $t$ pointwise in BFS order, pruning only by necessary conditions (adjacency to already-fixed images, distinctness from the images of already-fixed neighbours, and the local-bijectivity condition at vertices whose neighbourhood is fully fixed). The enumeration is **complete**.
+
+**Proposition 5.2 (covering and isomorphism exclusion).**
+
+1. $Y_3^{\rm cl}$ is **not isomorphic** to any $M_{2n}$ ($n\ge3$): the adjacency spectra differ (e.g. $Y_3^{\rm cl}$: $[-2.303,-2.303,-1,-1,-1,-1,-1,1.303,1.303,2,2,3]$; $M_{12}$: $[-2.732,-2.732,-1,-1,-1,0,0,0.732,0.732,2,2,3]$), and the triangle counts differ (3 vs 0).
+2. There are **zero** coverings $Y_3^{\rm cl}\to M_{2n}$ for $n\ge3$ (complete backtracking over $\{M_4,M_6,M_8,M_{10},M_{12},M_{14}\}$, all giving 0).
+3. There is **no** regular covering whose quotient makes $Y_3^{\rm cl}$ isomorphic to any ladder (a quotient is a special case of a covering, so zero coverings implies zero quotients).
+4. **But**: $Y_3^{\rm cl}$ is a **$k=3$ regular covering** of $K_4$ (the unique covering; deck group of order 3; quotient $\cong K_4$; each of the six $K_4$ edges is lifted three times).
+
+> **Note 5.3 ($K_4$ *is* $M_4$).** The edge set of $M_4=\mathrm{Cay}(\mathbb Z_4,\{1,2\})$ is exactly $K_4$ ($V=4$, $E=6$, 4 triangles); the two are isomorphic. Hence the $K_4$ of Proposition 5.2(4) **is the degenerate small member** of the ladder family. The strict statement is therefore: $Y_3$ *does* stand in a covering/quotient relation to the ladder family, but the base graph is $M_4$ ($n=2$), and it is unrelated to any genuine ladder with $n\ge3$.
+
+**Theorem 5.4 (the structural origin of $Y_3$).** $Y_3^{\rm cl}$ is a three-fold covering of the complete graph $K_4$, and this covering is **regular** (deck group of order 3). Its fibres are four groups of three points each; every $K_4$ edge is lifted three times. $Y_3^{\rm cl}$ has exactly three triangles — consistent with "the four triangles of $K_4$ are spread over three fibres".
+
+### 5.2　The honest form of the verdict
+
+**Proposition 5.5 (a direct answer to an open question carried over from Operator 19 v1.1).** $Y_3$ and the Möbius ladder family $M_{2n}$ ($n\ge3$) stand in **no** covering, quotient or double-cover relation: not isomorphic, zero coverings, zero quotients. $Y_3$ does possess a covering structure, but its base graph is $K_4\cong M_4$, the **smallest degenerate point** of the ladder family, not any genuine ladder. The "threefold" character of $Y_3$ (3 centres, 3 leg groups, 3 triangles, $|\mathrm{Aut}|=36=3!\times3!$, 2 edge orbits of 9 edges) acquires a unified explanation in the covering view: **$Y_3$ is a three-fold complete graph**.
+
+**Corollary 5.6 (why the the initial Operator 19 release theorem does not extrapolate).** the initial Operator 19 release's theorem "$\mathcal O_{\rm Pf}(M_{2n})\neq\emptyset\iff n$ even $\iff$ non-bipartite" holds within the ladder family. $Y_3^{\rm cl}$ is non-bipartite yet admits **no** Pfaffian orientation, so "non-bipartite $\Rightarrow$ an orientation class exists" is **not a universal proposition**. This report supplies its structural reason (Corollary 5.6): $Y_3^{\rm cl}$ lies outside the ladder family (§5.1) and carries 42 nice even cycles (§4.2), whereas even-$n$ ladders carry none.
+
+### 5.3　Cross-reference index conventions (added in the second half of this report)
+
+**Problem.** All the verdicts above are written as "$M_{2n}$", but the **Operator 19 chapter** (and the preamble of its initial release) denotes the same family by $M_k$, and the two subscripts are **not** defined identically. Without settling the conventions first, a statement such as "$Y_3$ is not isomorphic to $M_{12}$" points at the wrong graph once it is cited across documents.
+
+**Definition 5.7 (the two conventions).**
+
+- **Operator-19 convention**: $M_k=$ the even cycle $C_{2k}$ plus a diametric chord, with $V=2k$ vertices;
+- **Paper convention**: $M_{2n}=\mathrm{Cay}(\mathbb Z_{2n},\{1,n\})$, with $V=2n$ vertices.
+
+**Proposition 5.8 (index correspondence).** $\text{Operator-19 }M_k\cong\text{this-report }M_{2k}$: for the same family the two indexings **differ by a factor of 2**. Verified case by case on 11 examples ($k=2,\dots,12$), all isomorphic, 0 mismatches. The three error-prone anchors are
+
+| Graph | Operator-19 index | Paper index | $V$ |
+|---|---|---|---|
+| $K_4$ | $M_2$ | $M_4$ | 4 |
+| $K_{3,3}$ | $M_3$ | $M_6$ | 6 |
+| Wagner graph ($M_8$) | $M_4$ | $M_8$ | 8 |
+
+**Corollary 5.9 (restating §5.1).** The set $\{M_4,M_6,M_8,M_{10},M_{12},M_{14}\}$ in **paper** indexing corresponds to $\{M_2,M_3,M_4,M_5,M_6,M_7\}$ in **Operator-19** indexing; note that $M_2\cong K_4$ there. Hence the "zero coverings" claim of §5.1(2) refers to the **same set of objects** under both conventions, but the $n=2$ member must be excluded by definition to obtain "genuine ladders".
+
+**Proposition 5.10 (whole-family readings under Operator-19 conventions for the whole family, $k=2,\dots,24$).** Four-way readings ($n_{\rm orb}$ / $\mathrm{rank}_{\rm hol}$ / bipartiteness / triangle count) on all 23 members in **Operator-19** indexing give the exact laws:
+
+1. $n_{\rm orb}=1\iff k\in\{2,3\}$, and 2 otherwise;
+2. $k$ even $\iff$ non-bipartite; $k$ odd $\iff$ bipartite;
+3. $\mathrm{rank}_{\rm hol}=0\iff k=3$, and $\ge1$ otherwise; $k=3$ is the family's **only** "bipartite + single-orbit" member.
+
+**Theorem 5.11 (necessary and sufficient condition for the ladder family to open the symbolic channel).** Within the ladder family, $\mathrm{rank}_{\rm hol}=0$ (the $H^1$ channel is trivial) **if and only if** $k=3$ in Operator-19 indexing, i.e. $n=3$ in paper indexing. Hence **the ladder family opens the symbolic channel if and only if $k\neq3$**. Remark: for odd $k\ge5$ the channel is still open, but the mechanism is **not** an odd cycle (the graph is bipartite there) — it is "bipartite + two orbits". This is why the initial Operator 19 release, treating "has an odd cycle" as a sufficient condition, missed an entire class.
+
+> **Note 5.12 ($k=3$ is the only member needing separate treatment).** $k=3$ (Operator-19) $=K_{3,3}=$ paper $M_6$ is the family's unique member that is simultaneously bipartite, single-orbit and $H^1$-trivial; it is also the $K_{3,3}$ of §5.1 that carries 15 nice even cycles, all unsatisfiable. The family's behaviour therefore splits into **three** classes indexed by $k$ — $k=3$ / $k$ even / odd $k\ge5$ — rather than the intuitive two.
+
+---
+
+## 6　Five new portable rules
+
+**Rule G70 (the isomorphism-consistency law).** Whenever a single skeletal object exists in the repository as **several implementation copies**, one must **first prove they yield the same graph** (isomorphic) before making any claim that rests on it; the number of copies is itself a risk signal. Measured this report: 45 function bodies, 21 implementation bodies, 16 independently checkable copies all isomorphic, 5 that cannot be executed in isolation (due to a parameterised signature or a same-file dependency) recorded individually with their cause, and 0 non-isomorphic. **Corollary**: before isomorphism is proven, "the multiple copies agree" cannot be used as an assumption.
+
+**Rule G71 (the minimal-conflict-certificate law).** When "some linear system is infeasible" is reported merely as a **fact**, the reader can neither check it nor judge how close it is. Two things must be added: (i) a **minimal unsatisfiable row subset**, independently re-checked (extract that subset and re-solve: still infeasible; remove any one row: becomes feasible); and (ii) the **satisfiable fraction** (here: $Y_3^{\rm cl}$ is one row short of a contradiction). This report thereby upgrades the initial Operator 19 release's "the closed state has no solution" from a fact to a checkable certificate.
+
+**Rule G72 (the audit-criterion law).** The **criterion** of an audit script must itself be falsifiable; otherwise an all-green report carries no information. Two requirements: (i) a **negative control** — inject known-wrong expected values and require the checker to report MISS (this report: injecting 3 wrong values yields exactly 5 MISSes; injecting 3 cell-level corruptions yields 3 alarms); (ii) the criterion must **locate by structure** — parse tables and read column positions rather than relying on fragile string needles. Measured this report: the needle-based criterion raised 9 false alarms on a perfectly correct document, so without this fix a correct paper would have been judged wrong. **Companion rule**: an enumerating implementation that exceeds its capability boundary ($|V|>16$) must be marked `n/a` rather than **counted as a mismatch** — otherwise "cannot compute" is misread as "disagrees".
+
+**Rule G73 (the index-convention correspondence law).** **The same family may differ by a factor in its subscript across documents** (here: Operator-19 $M_k$ is the even cycle $C_{2k}$ plus a diametric chord with $V=2k$; paper $M_{2n}$ is $\mathrm{Cay}(\mathbb Z_{2n},\{1,n\})$ with $V=2n$; the two differ by a factor of 2) ⇒ **an index-convention correspondence table must be built before any cross-document citation**. The three error-prone anchors: $K_4$ = Operator-19 $M_2$ = paper $M_4$; $K_{3,3}$ = $M_3$ = $M_6$; Wagner graph = $M_4$ = $M_8$. **Corollary**: any statement of the form "$X$ is not isomorphic to $M_{12}$" is **not decidable** unless the indexing system is stated — it may denote two different graphs.
+
+**Rule G74 (the covering-enumeration law).** A graph covering $G\to H$ is defined by **homomorphism plus local bijectivity** $\{t(w):w\in N_G(v)\}=N_H(t(v))$; neither condition may be dropped (demanding only a homomorphism admits the trivial map and folds). The enumeration must be **complete**: this report uses pure CSP backtracking with pruning by **homomorphism-necessary conditions only** (adjacent to the images of already-placed neighbours, distinct from them), and it is validated by the positive control $Q_3\to K_4$ (the $k=2$ double covering) — stronger pruning would miss that case, so "completeness" is an attribute that must be verified separately, not a default. **Two corollaries**: (i) a **quotient is a special case of a covering**, so "zero coverings" **implies** "zero quotients", not conversely; (ii) a **normal covering $\iff$ a non-trivial deck group** (deck transformations = automorphisms preserving the covering map).
+
+> **Note 6.1 (relation to existing rules).** G71 belongs to the same family as G67 (falsification gates must be injectable) and G68 (tampering must delete every occurrence) — all under "a verdict must be checkable"; G72 **strengthens** G67: not only must the gate be injectable, the **criterion itself** must be injectable. It complements G62 (a counterexample in a finite field suffices to establish incrementality): G62 says that one counterexample in a finite field settles incrementality, G71 says that a negative verdict must come with its minimal conflict size. Gate F below is constructed per G67/G68/G72. G73 and G74 belong to the family of G29 (first ask whether the obstruction is discreteness, cardinality, or labelling): G73 shows that a **labelling**-level convention issue can masquerade as a mathematical-level counterexample.
+
+---
+
+## 7　Verification protocol
+
+### 7.1　Implementation inventory
+
+| No. | Script | Role |
+|---|---|---|
+| E1 | `5-Appendixs/Operators/Y3_Verdict/_dir7_y3_skeleton_verdict.py` | Main experiment: Parts A–F (all verdicts of this report) |
+| E2 | `5-Appendixs/Operators/Y3_Verdict/_probe_y3_impls.py` | Probe: implementation distribution and API localisation (conclusions folded into E1) |
+| E3 | `5-Appendixs/Operators/Y3_Verdict/_probe_y3_facts.py` | Probe: preliminary measurement of nice cycles, bridges, spectra |
+| existing | `5-Appendixs/Operators/Y3_Verdict/_pfcore.py`, `5-Appendixs/Operators/Y3_Verdict/_gf2.py` | the initial Operator 19 release Pfaffian engine (unbiased system + dual-implementation cross-check) |
+| existing | `5-Appendixs/Operators/Y3_Verdict/_bridge101_nucleon.py` | the initial Operator 19 release bridge ($Y_3$ construction and holonomy mechanism) |
+
+### 7.2　Gate table
+
+| Gate | Content | Result |
+|---|---|---|
+| A | All in-repository $Y_3$ implementations isomorphic to the canonical adjacency (those checkable) | **PASS** (16/16 isomorphic, 0 non-isomorphic) |
+| A′ | Falsification: $Y_3^{\rm cl}\not\cong Q_3$ and $Y_3^{\rm cl}\cong Y_3^{\rm cl}$ | **PASS** |
+| B | I1/I2/I3 + Theorem 2.6 in zero mismatch on the three skeletons | **PASS** |
+| B′ | Falsification: replacing the definition of $\operatorname{Cut}$ by "tree path edge sets" must change the reading ($1\to2$) | **PASS** |
+| B″ | Positive control: $W$ degenerating to the zero space forces $\mathrm{rank}_{\rm hol}=0$ | **PASS** |
+| E | Three implementations + identity in zero mismatch on 22 samples | **PASS** |
+| F1 | Injecting known-bad data (breaking one edge of $Y_3^{\rm cl}$) must be reported as non-isomorphic | **PASS** |
+| F2 | Positive control $Y_3^{\rm op}$ (true value: solvable) judged solvable + known-bad $Y_3^{\rm cl}$ judged infeasible | **PASS** |
+| F3 | Validity of the minimal conflict certificate: the subset alone re-solves infeasible, and removing any row makes it feasible | **PASS** |
+| F4 | Tampering with the T9 reading must raise an alarm | **PASS** |
+| F5 | Positive control: the classical double covering $Q_3\to K_4$ must be enumerated ($k=2$, fibres $2,2,2,2$) | **PASS** |
+
+### 7.3　Certificate details
+
+**Table 7.1　The unbiased system of $Y_3^{\rm cl}$ (6 rows × 18 columns)**
+
+| Row | Perfect matching $M$ | $\mathrm{cr}(M)$ |
+|---|---|---|
+| 1 | $\{(0,1),(2,6),(3,11),(4,7),(5,9),(8,10)\}$ | 1 |
+| 2 | $\{(0,1),(2,10),(3,7),(4,6),(5,9),(8,11)\}$ | 0 |
+| 3 | $\{(0,2),(1,5),(3,11),(4,7),(6,10),(8,9)\}$ | 0 |
+| 4 | $\{(0,2),(1,9),(3,7),(4,5),(6,10),(8,11)\}$ | 1 |
+| 5 | $\{(0,3),(1,5),(2,10),(4,6),(7,11),(8,9)\}$ | 1 |
+| 6 | $\{(0,3),(1,9),(2,6),(4,5),(7,11),(8,10)\}$ | 0 |
+
+All six rows together are infeasible; removing any one row leaves a feasible 5-row system (maximal satisfiable row count $=5/6$).
+
+**Table 7.2　nice even cycle counts (length distribution)**
+
+| Graph | Total | len 4 | len 6 | len 8 | len 10 | len 12 | Pfaffian |
+|---|---|---|---|---|---|---|---|
+| $Y_3^{\rm cl}$ | 42 | 0 | 9 | 9 | 18 | 6 | infeasible |
+| $Y_3^{\rm op}$ | 0 | 0 | 0 | 0 | 0 | 0 | solvable ($\dim=13$) |
+| $M_8$ | 1 | 0 | 0 | 1 | 0 | 0 | solvable |
+| $M_{12}$ | 0 | 0 | 0 | 0 | 0 | 0 | solvable |
+| Petersen | 25 | 0 | 10 | 15 | 0 | 0 | infeasible |
+| $K_{3,3}$ | 15 | 9 | 6 | 0 | 0 | 0 | infeasible |
+
+### 7.4　External-sample falsification
+
+The 22 samples cover the ladder family $M_4$–$M_{16}$, the prism family $\mathrm{prism}_3$–$\mathrm{prism}_6$, classical graphs ($Q_3$, $K_3$, $K_4$, Heawood, Petersen) and four random 3-regular graphs (fixed seed). The four readings show zero mismatch on all 22 samples; the out-of-family distribution of the two channels' behaviour is fully recorded (Table 4.1, Note 4.7). **No** new type beyond "$H^1$ open but Pfaffian closed" was found; $Q_3$ is the only sample of type "$H^1$ closed, Pfaffian open" shared with $K_{3,3}$, $M_6$, $M_{10}$, $M_{14}$, Heawood, $\mathrm{prism}_4$ and $\mathrm{prism}_6$.
+
+---
+
+## 8　Conclusions
+
+### 8.1　Table of the three verdicts
+
+| Verdict | Statement | Basis |
+|---|---|---|
+| One | $\mathrm{rank}_{\rm hol}$ on $Q_3/Y_3^{\rm cl}/Y_3^{\rm op}$ equals $0/1/2$, with zero mismatch across four readings | Theorem 3.2, Table 3.1, Gates B/B′/B″ |
+| Two | The absence of a Pfaffian orientation on $Y_3^{\rm cl}$ carries a **readable certificate** (6-row minimal unsatisfiable set, one row short); the structural reason is 42 nice even cycles, and $Y_3^{\rm op}$'s vanishing of that count reopens the channel | Theorem 4.4, Proposition 4.6, Note 4.7 |
+| Three | $Y_3$ stands in no covering/quotient/double-cover relation with $M_{2n}(n\ge3)$; $Y_3$ is a three-fold regular covering of $K_4$ | Proposition 5.2, Theorem 5.4, Proposition 5.5 |
+
+### 8.2　What this says about the project's own results
+
+This report upgrades "the charge sign is carried by $H^1(G;\mathbb Z_2)$ holonomy rather than by a Pfaffian orientation" from an **indirect argument** (holds on the ladder family, fails on extrapolation to the skeleton) to a **side-by-side measurement on the project's own object** (Proposition 4.2): on the very same graph $Y_3^{\rm cl}$, the $H^1$ channel yields exactly two reachable classes (one bit of freedom) while the Pfaffian channel admits no orientation at all — with a checkable certificate (§4.2) and a structural mechanism (the nice even cycle count drops from 42 to 0). Simultaneously, Operator 19 v1.1's qualitative observation that "one edge deletion flips the Pfaffian existence within a single skeleton family" is located to a **specific mechanism**: deleting a ring edge empties the nice-even-cycle obstruction set.
+
+The scope of the initial Operator 19 release's theorem is likewise tightened, with a structural reason (Corollary 5.6): "non-bipartite $\Rightarrow$ a Pfaffian orientation class exists" holds only inside the ladder family; $Y_3$ supplies an out-of-family counterexample, and the counterexample works because $Y_3$ is a different family and carries nice obstructions.
+
+### 8.3　Relation to the Operator 19 chapter
+
+Operator 19 v1.2 already adjudicated three statements in its own text and prepared five patches. The present report does **not** overturn those verdicts; rather, it provides **positive evidence drawn from this project's own objects** for the item "the §6.1 skeleton table": that table lists skeletons such as $Y_3$ as "multi-orbit + non-bipartite", and v1.2 falsified the way its reasoning was written ("$T_2\ M\neq0$" as a necessary condition); this report measures $\mathrm{rank}_{\rm hol}(Y_3^{\rm cl})=1\neq0$ and $\dim(W\cap\operatorname{Cut})=1$, confirming on the **project's own object** that the channel is indeed open — thereby supporting the table row while rejecting the form of its justification.
+
+At the same time, the five new rules (G70–G74) are **methodological increments** that have now been folded into Operator 19 §10 boundary clauses: G70 adds "multiple implementations of one object must first be proven isomorphic"; G71 adds "a negative verdict must carry a minimal conflict certificate"; G72 adds "the audit criterion itself must be falsifiable"; G74 adds "the covering definition includes local bijectivity, and completeness of the enumeration must be verified separately".
+
+**A dedicated remark on index conventions (G73).** Operator 19 §6.1 skeleton table and the family notation in §6.2 use $M_k$, whereas this report uses $M_{2n}$. The two **differ by a factor of 2** (both have $V=2k$/$2n$ vertices, but the subscripts mean different things). When citing this report's statement "$k=3$ is the only $H^1$-trivial member", note that this $k=3$ is $M_6\cong K_{3,3}$ in this report's indexing, **not** $M_3$. The index-convention correspondence table is Proposition 5.8, and the whole-family readings under Operator 19 conventions are Proposition 5.10.
+
+**A third boundary concerning criteria.** When this report was first written it measured that searches of the Operator 19 text for `Pfaffian`, `rank_hol` and "closed/open flip" returned **0 hits each** — i.e. the results of this report, v1.1 and v1.2 had at that time not yet entered the text. This release has merged T9–T11, §6.2 and §6.3 into Operator 19 and corrected v1.1's odd-cycle criterion statement, so this boundary is closed as of this release.
+
+### 8.4　Honest boundaries
+
+1. **Completeness of the covering enumeration rests on the implementation**: the completeness of Method 5.1 is guaranteed by "pruning only by necessary conditions" and is checked by the positive control $Q_3\to K_4$ ($k=2$); but no third-party independent implementation cross-check was performed.
+2. **$|\mathrm{Aut}|$ was not classified group-theoretically**: the group structure of $|\mathrm{Aut}(Y_3^{\rm cl})|=36$ (conjecturally $S_3\times S_3$) is unproved; the isomorphism type of the order-3 deck group is undetermined.
+3. **No universal proof of the causal link between nice even cycles and infeasibility**: Proposition 4.6 gives the empirical correspondence in the direction "the nice count vanishes $\Rightarrow$ the channel opens", together with a full indicator evaluation (TP/FP/FN/TN all reported); the sufficiency of "has a nice cycle $\Rightarrow$ infeasible" is **not** proven (there is a false positive, $M_8$).
+4. **No physical interpretation was advanced**: this report adjudicates at the graph-theoretic level only and does **not** match the covering structure ($Y_3$ as a three-fold $K_4$) against the physical quantities of mass and charge; that line is left for a later merging with the molecular layer (the $\kappa,\varrho,\nu$ channels of Operator 20).
+5. **Sample size**: 22 external samples is small for the distribution of out-of-family behaviour; this report only **reports** that distribution and asserts nothing universal from it.
+6. **Choice of deleted edge for $Y_3^{\rm op}$**: this report follows the initial Operator 19 release's canonical choice (the first triangle edge). Given the high $S_3\times S_3$ symmetry of the three leg groups in $Y_3^{\rm cl}$, the choice is **probably** immaterial, but its independence from the choice of edge is **not proven**.
+
+---
+
+## References
+
+[1] WorkBuddy. *SRE Operator 19: the $\mathbb Z_2$ holonomy charge-sign channel — a rigorous mathematical specification and paper*. Part 3, "Operator 19", of this book (v1.2).
+[2] WorkBuddy. *SRE non-planar canonical orientation classes: the Möbius ladder*. Earlier work in this project (the initial Operator 19 release).
+[3] WorkBuddy. *A triviality criterion for the $\mathbb Z_2$ channel: cut-space intersection dimension, parity counterexamples on the Möbius ladder, and three verdicts on the Operator 19 text*. In this project (Chinese/English mirror, Operator 19 v1.2).
+[4] Kasteleyn, C. A. D. *The number of perfect matchings of the 3-regular planar graphs*. J. Combin. Theory 3 (1967) 269–271.
+[5] Lovász, L. T.; Plummer, M. D. *A survey of the theory of Pfaffian orientations*. J. Combin. Theory B 40 (1986) 227–252.
+[6] Thomas, R. *Graphs with every cycle even*. Discrete Math. 61 (1986) 1–12.
+[7] Biggs, N. *Algebraic Graph Theory and Its Applications*. Cambridge UP, 1993 (coverings and deck transformations).
+[8] Godsil, R.; Royle, G. *Algebraic Graph Theory*. Springer, 2001 (graph coverings, double coverings).
+[9] Kasteleyn, C. A. D. *The number of perfect matchings of the 3-regular planar graphs*; the Pfaffian expansion condition for Kasteleyn orientations.
+[10] Diestel, R. *Graph Theory*. 5th ed. Springer, 2017 (cycle space, cut space, tree-cotree decomposition).
+[11] WorkBuddy. *The last-subshell-state criterion: mechanism tracing and a new hold-out set*. Earlier work in this project (predecessor of Operator 19 v1.1).
+
+---
+
+## Appendix A　Reproduction
+
+```
+C:\myapp\miniconda3\envs\ai\python.exe 5-Appendixs\Operators\Y3_Verdict\_dir7_y3_skeleton_verdict.py
+```
+Output: `5-Appendixs/Operators/Y3_Verdict/_dir7_y3_skeleton_verdict.json` (containing all numerical values of Parts A–F). Runtime is about 2 minutes (the covering backtracking of Part D and the minimal-subset exhaustion of Part C account for most of it).
+
+> **A boundary on Part A (implementation census)**: Part A recursively scans every `.py` under `SRE_Y3_ROOT` (default: the directory containing the script) and counts the copies and isomorphism status of the `y3_closed` / `y3_open` / `y3` family. The shipped JSON records the readings on the **full project source tree** (21 implementations, 45 copies); run inside the appendix directory alone, only 4 are reachable and the `partA` readings shrink accordingly. **Parts B–F and every conclusion of this chapter are independent of that scan** — the chapter has been re-run in the appendix directory: Parts B–F match the shipped JSON key by key, and gates D, E, F all PASS. To reproduce 21/45, set `SRE_Y3_ROOT=<project source root>` before running.
+
+The index-convention correspondence of §5.3 and the whole-family readings under Operator-19 conventions are produced by a second script:
+
+```
+C:\myapp\miniconda3\envs\ai\python.exe 5-Appendixs\Operators\Y3_Verdict\_dir7b_book_index_convention.py
+```
+
+Output: `5-Appendixs/Operators/Y3_Verdict/_dir7b_book_index_convention.json` (Part 1: 11 convention-correspondence cases; Part 2: four-way readings of the whole Operator-19-indexed family $M_k$, $k=2,\dots,24$; Part 3: correspondence checks and reverse-validity tests).
 
 
 <div style="page-break-after: always;"></div>
@@ -12614,60 +13107,60 @@ Items below are cited in the main text as **R1–R11**.
 
 <div style="page-break-after: always;"></div>
 
-# Part IV: Applications and Scientific Hypotheses
-
-This part collects engineering implementations, experimental protocols, application‑oriented algorithms, and falsifiable scientific hypotheses derived from the Status‑Relational‑Entropy (SRE) Dynamics framework. Based on the operator‑axiom system and topological‑algebra foundations established in Part II and Part III, the complete Op1‑Op19 topological‑operator suite is extended to multiple research fields: underwater‑acoustic communication, optical physics, astrophysics, geophysical‑climate forecasting, atomic‑chemistry simulation, high‑performance graph computing, graph neural networks, and cognitive neuroscience.
-
-The content falls into two major categories: reproducible technical materials including signal‑processing pipelines, benchmark evaluations, and experimental‑calibration protocols; and physical‑ and neuroscience‑related conjectures which remain to be validated by experiments and astronomical observations.
-
-> Important Note: Engineering algorithms, benchmark tests and experimental protocols within this part constitute reproducible technical content. Physical, astrophysical and neuroscientific hypotheses are candidate interpretations deduced under the SRE framework and do not represent confirmed objective reality. Falsification criteria are provided for each hypothesis, and further validation by measured and observational datasets is required.
-
-## Brief Description of Each Manuscript in This Document Set
-
-1. **Academic Hypothesis: The Sovereign‑Universe Tree‑of‑Life Protocol and Topological‑Residue Inheritance under Status‑Relational‑Entropy (SRE) Dynamics**
-> Abstract: Within the SRE‑Dynamics framework, spacetime, mass, and Newton’s gravitational constant are interpreted as macroscopically emergent statistical metrics arising from the expansion of dimensionless binary matrices. Conventional time flow possesses no fundamental primitive status; it is essentially the discrete‑step count and metabolic overhead required to maintain global causal consistency. Addressing algebraic bottlenecks such as metric divergence, spatial dissolution, and gravitational attenuation that emerge during ultra‑large‑scale cosmic evolution, this paper puts forward the Sovereign‑Universe Tree‑of‑Life Protocol hypothesis. It describes the mechanism whereby local highly‑coherent sub‑spaces undergo non‑linear cascading rupture, decouple, and generate independent sovereign matrix root seeds. It derives the underlying discrete‑evolution step‑count corresponding to the 13.8‑billion‑year macroscopic cosmic age, and explains how high‑order topological features are inherited in the form of algebraic residuals. Cosmic rebirth is reinterpreted as a self‑optimising helical‑iterative process at the topological level. Placed as the opening manuscript because the author holds the view that the universe has undergone multiple generative iterations, and that the next cosmic reproduction represents humanity’s ultimate mission.
-
-2. **Inspired‑Multipath‑Topological‑Flow‑Purification Architecture and Local‑Operator Implementation**
-> Abstract: This paper presents a locally‑confined, low‑computational‑cost general‑purpose mathematical toolkit for multipath topological‑flow purification, avoiding high complexity and boundary‑truncation errors introduced by global‑matrix reconstruction. Local multi‑channel tracking nodes are abstracted as discrete cross‑spectral operators. Rank‑variation of 2 × 2 complex‑Hermitian matrices is used to distinguish direct causal flows from chaotic multipath superposition. Combined with first‑order closed‑form analytical solutions and RMT‑inspired sieves for the Gaussian‑Unitary‑Ensemble and Poisson distributions, streaming masks are constructed to suppress noise and multipath interference. Standardised streaming‑operator execution protocols are provided for application‑scenarios including next‑generation‑communication base‑bands and coherent‑radar jamming suppression. The author has deployed this toolkit in real‑world operational tasks and achieved favourable practical outcomes.
-
-3. **Research on Multipath‑Interference Pre‑Processing Algorithm for Fjord Underwater‑Acoustic Communication Based on SRE Topological Operators**
-> Abstract: Targeting severe multipath reflection and strong time‑variant fading in shallow‑sea fjord acoustic channels, an SRE‑topology‑pipeline underwater‑acoustic time‑frequency pre‑processing algorithm is designed using real‑world Nordic‑fjord measured datasets. An energy‑complex‑valued dual‑path architecture is proposed, which preserves full phase information required for OFDM demodulation while suppressing multipath clutter. A complete post‑processing chain is integrated: CFAR peak‑detection, ZF zero‑forcing equalisation, symbol‑level MRC diversity combining, and false‑alarm filtering. Full‑pipeline validation is performed on measured dual‑hydrophone waveforms across LF / MF / HF three frequency bands. Quantitative metrics including multipath‑suppression ratio, BER, and diversity gain are reported. Applicable conditions and performance limits under high‑noise high‑frequency conditions are clarified. This algorithm can be deployed for front‑end processing in underwater embedded receivers.
-
-4. **Conjecture on Single‑Photon Bidirectional Instantaneous Communication via Möbius‑Topological‑Flows under SRE Dynamics**
-> Abstract: Addressing inherent limitations of existing quantum‑QKD communication imposed by the no‑communication theorem and intrinsic randomness of wave‑function collapse, this paper proposes a single‑channel deterministic full‑duplex‑communication conjecture built upon open Möbius relational‑state structures. A high‑coherence laser serves as the underlying causal‑resonance master source. Macroscopic physical frequency is re‑defined as the bidirectional joint information‑coupling density. Combined with first‑order closed‑form eigenspace solutions and RMT‑heuristic sieves, a bidirectional topological‑flow‑density subtractor is constructed. Theoretical derivations show that joint modulation of the topological configuration of electromagnetic crystals at both boundaries enables instantaneous deterministic signal transmission and reception within a single causal‑chain channel, offering new topological‑level ideas for next‑generation deterministic‑communication technologies. The author considers this technology a corner‑stone enabling inclusive‑health‑care and multiple super‑technologies; should this theoretical framework be experimentally validated, full‑scale development ought to be prioritised.
-
-5. **Technical Report: Intrinsic Algebraic Topology of Light and the SRE Axion Matrix**
-> Abstract: This report establishes the theoretical foundations for full‑duplex instantaneous‑communication without assuming classical spacetime media. Abandoning the conventional paradigm treating light as material wave‑packets, light under the SRE‑0‑state formalism is defined as a residual topological‑manifold spontaneously woven by step‑cost differentials between two asynchronously‑evolving boundary nodes. Using first‑order closed‑form solutions together with RMT‑heuristic sieves, it is algebraically demonstrated that underlying causal‑links can be unfolded into a non‑orientable single‑boundary Möbius ribbon with a topological‑validation confidence of 99.2094 %. Spectral‑duality relations are derived, mapping frequency, wavelength, and wave‑particle duality onto intrinsic‑eigen‑invariants. Dynamic spectral‑transition systems of equations and four‑state eigen‑shift matrices are given. Manifold‑decoupling empirical analysis is performed, together with core‑Python‑code snippets for simulation.
-
-6. **Stellar Spin and Galactic Rotation within the SRE Framework: Operator Suite combined with the SRE‑v6.0 Dissipation‑Compensation Duality Model**
-> Abstract: Drawing upon the SRE‑operator suite, the v6.0 dissipation‑compensation duality and BBP spectral‑rank phase‑transition theory, candidate topological physical interpretations are provided for stellar spin, pulsar braking‑mechanisms, and the flat‑galaxy‑rotation‑curve problem. Stellar spin is interpreted as topologically‑charged collective emergence of Möbius‑loops inside sub‑manifolds, rather than rigid‑body mechanical rotation. Flat galactic rotation curves arise from collective dissipation‑compensation effects of large‑scale nested sub‑manifolds, without invoking dark‑matter‑particle hypotheses. Differences between high‑redshift and low‑redshift cosmic regimes are distinguished. Falsifiable astronomical predictions for stellar spin, galactic rotation, gravitational lensing, and baryonic‑cooling are listed item‑by‑item. Ontological boundaries, remaining theoretical gaps and the complete logical‑derivation chain are stated. The author has other geophysical‑related developments; stellar‑spin is used as a substitute here considering potential societal impacts.
-
-7. **Causal‑Compliance Audit Report on Global Sea‑Surface‑Temperature‑Anomaly (ENSO‑SSTA) Spatiotemporal‑Forecasting: The 2‑D Convolutional Dissipative‑Network Paradigm (Astro‑Cow‑Net)**
-> Abstract: Addressing widespread risks of data‑leakage and artefactual‑statistical‑patterns in long‑lead geophysical‑AI forecasting, a full causal‑compliance audit is performed for the Astro‑Cow‑Net long‑lead ENSO‑prediction model. Strict zero‑leakage constraints are enforced across four core dimensions: temporal‑causal‑gap protocol, historical‑scaler statistical‑isolation, four‑dimensional grid‑wise objective‑function scaling, and physical‑extrapolation convergence. Relying purely on local 2‑D convolutions and physical‑dissipation constraints, the model solves ocean‑atmosphere anomaly‑evolution equations. Deterministic 24‑month long‑lead forecast outputs for the Niño 3.4 region are presented, alongside links to reproducible source‑code. This model serves only to demonstrate novel‑thinking for Earth‑atmosphere‑physics; the model itself remains relatively simplistic.
-
-8. **Periodic‑Table‑Data‑Experiment: SRE‑v3.0 Atomic‑Topological‑Weight‑Inverse‑Deduction Experimental Protocol**
-> Abstract: Complete quantitative‑prediction experimental protocol for SRE‑v3.0 atomic‑topology audit. Taking VASP and NIST spectroscopic datasets as input, AI‑driven training is used to invert topological‑density weights $W_e$ of internal atomic causal‑networks and establish mappings between loop‑period $N$ and quantum numbers $(n,l)$. Orbital‑layered sub‑matrices, spin‑orbit‑coupling phase‑shift derivation, and permeability‑layer‑calibration are defined. A triple‑residual composite loss‑function, adaptive regularisation, $Z_{crit}$ micro‑firewall, and dual‑Betti‑number topological‑invariant constraints are designed. Optimiser‑settings, cross‑software blind‑validation and convergence‑criteria are specified. Appendices contain closed‑form mathematical derivations, engineering‑standardisation workflows, and supplementary validation‑experiments for isotopes and actinides. The ultimate objective of this experiment is the study of electrodynamics; this work remains unfinished by the author.
-
-9. **SRE Topological Spectral Model: From Discrete Operators to a Differentiable AI Model Layer**
-> Abstract: This chapter documents the complete design reasoning, architectural implementation, and experimental validation of the SRE Topological Spectral Model, charting the path from discrete operators to a differentiable AI model layer. Beginning with the end-to-end bridging identity of the operator chain, it sets out the torch mirror implementation of operator calculus, the construction of the missing load-bearing component for differentiable hierarchical compression, and the mathematical discovery that $\tau_k$ is not preservable together with its alternative. It gives the notation convention and precise definitions of five concepts — graph Laplacian, Betti number $\beta_1$, Chebyshev functional calculus, Galerkin projection, and heat-kernel trace — and then builds the model architecture from chain-complex input, an analytic differentiable Laplacian construction, the learnable SoftAggPooler coarse-graining, the SRE Topo Encoder, level-attention spectral fusion, and a five-term loss. Experiments and causal analysis are conducted on three use cases — self-supervised edge-weight inversion (UC1), molecular property regression (UC2), and graph classification / $\beta_1$ topology identification (UC3) — together with environment setup, weight-loading inference, hyperparameter tuning, honest boundaries, and an improvement roadmap.
-
-10. **SRE Full Suite of 19 Operators: What a "Physical‑Semantic Graph Computing" Operator System Can Do — A View from the Graph500 Benchmark**
-> Abstract: Based on measured data from the Graph500 v2.1 standard benchmark (SCALE 12 / 20 / 24), this chapter systematically introduces the capability boundaries, per‑layer timing breakdown, key physical‑quantity outputs and format compliance of the full SRE 19‑operator suite (Op1‑Op19). It compares the suite with traditional graph algorithms (traversal, shortest‑path, centrality, connectivity) across capability dimensions and performance, analyses the path from graph to "physical system" modelling together with typical application scenarios and current limitations, and outlines the overall application prospects of physical‑semantic graph computing.
-
-11. **Neural‑Information‑Systems Theory: Hypothesis of First‑Order Thalamic‑Downsampling Instability and Second‑Order DMN‑Integrative Cascading‑Failure**
-> Abstract: From cybernetics and digital‑signal‑processing perspectives, this paper puts forward the two‑tier thalamus‑DMN defensive‑gating hypothesis. The thalamic reticular nucleus (TRN) acts as the first‑order hardware anti‑aliasing down‑sampling gateway, while the Default‑Mode‑Network (DMN, PCC/PCu) serves as the second‑order high‑level software compressor. It describes the temporal‑evolution mechanism for early‑to‑mid‑stage Alzheimer’s‑disease: relaxation‑leakage of TRN inhibitory‑inter‑neurons permits invasion by high‑dimensional causal‑charges, over‑loading DMN integral‑energy‑storage and eventually triggering cascading‑failure across the two‑tier defensive‑barrier. Temporal‑series analysis under 5 Hz intermittent‑photic‑stimulation and gender‑by‑age‑cohort variance‑analysis are performed using the public OpenNeuro EEG dataset. Non‑invasive intervention strategies are proposed: multimodal‑sensory entrainment, vagal‑nerve modulation, sleep‑pineal‑gland maintenance. Dataset limitations and falsifiable boundaries for this hypothesis are objectively stated.
-
-12. **Whole‑Brain Parallelism and High‑Dimensional‑Causal‑‑Chain Topological‑Spectrum Homomorphic‑Mapping Mechanism**
-> Abstract: A unified logical framework is constructed to interpret whole‑brain neural‑firing, DMN information‑gating, stress‑triggered whole‑brain‑parallel‑emergence, non‑local cognitive‑synchronisation, and cross‑culturally convergent transcendental‑state experiences documented in ancient texts. The underlying universe is a dense causal‑chain‑network; different sub‑networks sharing topological‑spectrum features may achieve homomorphic‑mapping alignment. Under homeostatic conditions the human‑brain performs low‑dimensional serial survival‑oriented computation constrained by the DMN. Under extreme stress, filter‑breakdown pushes the brain into a global hyper‑parallel topological‑receiver state, enabling cross‑scale non‑local topological‑alignment which phenomenologically corresponds to creative insight. Non‑local cognitive‑synchronisation is interpreted as convergent topological‑perturbation‑propagation among homologous causal‑clusters. Ancient myths and philosophical texts represent low‑dimensional linguistic encoding of high‑dimensional topological phenomena constrained by human serial‑language limitations.
-
-13. **Hypothesis of Gravitational Shielding Derivation (SRE)**
-> Abstract: Within the SRE framework gravity is not a fundamental field but a thermodynamic after‑effect of local information‑dissipation gradients. On this basis, "gravitational shielding" is re‑defined as suppressing the network correlations that generate that dissipation gradient, and gravity's shieldability is decomposed into three channels: the main amplitude $\mathcal{W}_{ij}$, the chiral phase term $\Gamma_\mathrm{chiral}$, and the uniform term. The paper derives the exact shielding factor and inverse‑design equation for the main channel, the strict phase condition and order‑of‑magnitude criterion for chiral sign‑reversal (net repulsion), the geometric criterion for the compensation‑operator peak, and a boundary‑operation scheme with Op2 maximum‑entropy pruning as the only engineerable actuator. It further offers a reverse interpretation of Podkletnov‑type results, an analysis of reproduction difficulties, and item‑by‑item falsifiable predictions and hard boundaries. Version 1.1 adds Section 9, a first empirical calibration of the previously uncalibrated parameter $\alpha_\mathrm{scale}$ using public galaxy‑survey data (BOSS DR12 CMASSLOWZTOT: 46 redshift bins × 2 caps = 92 measurements, with covariances from 30 mock catalogues). From the response of $f\sigma_8$ to the fast chiral oscillation, the paper derives a 95% one‑sided lower bound $\alpha_\mathrm{scale}>2.2\times10^{-6}$ (conservative interval $1.4$–$2.5\times10^{-6}$); since the chirality‑dominated threshold $8\times10^{-4}$ lies inside the allowed interval (362 times stronger than the bound), this measurement can neither open nor close the "anti‑gravity gate". Four classes of systematic terms (construction damping, finite mocks, near‑Nyquist sampling, shape mismatch) are listed explicitly, together with complete reproduction steps.
-
-14. **SRE Dynamics Reconstruction of Transistor Physics (v2.0, Experimentally Validated Edition)**
-> Abstract: Without importing any external quantum‑mechanical parameters, transistor physics is reconstructed purely from the binary self‑organising network structure of the silicon lattice: the three transistor regions (emitter / base / collector) are treated as three doped sub‑graphs on one bonding network, and the operator suite (connectivity, cycle counting, symmetry) endogenously derives the PN‑junction contact barrier $V_T$, the current‑amplification coefficient $\beta$, and the PN‑junction current law $I = I_S(e^{V/V_T} - 1)$, together with the placement of the classical Ebers‑Moll model within the SRE system and the topological pairing mechanism of the intrinsic carrier concentration. Operator 19 ($\mathbb{Z}_2$ holonomy / $\sigma$ charge‑sign channel) is used here to detect the "charge‑annihilating loop structures" that directly determine the amplification coefficient $\beta$. The document consists of two parts: Part 1 is the theoretical framework (including a diagnosis of earlier v1.1 issues, cross‑validation of public measured data against SRE theory, and program verification by forward simulation of the 2N3904 topological graph); Part 2 is a standalone experimental paper (physical background, SRE method, simulation method, results, discussion, reproduction checklist and v5 directions), closing with a transparency‑boundary statement.
-
-15. **The Consensus Protocol v2.0: A Causal-Eradication Framework for Cancer Based on the SRE v1.6 Axiom Suite and Light-Gated Biology**
-> Abstract: The v1.1 “causal island + inverse causal pulse” scheme exposes three structural breakpoints once the SRE v1.6 suite and Operators 1–19 are in place (the Planck scale is no longer a network pixel, energy is repositioned as a ledger quantity, and wiping to zero equals necrosis). This paper is therefore a structural rewrite: a tumour is no longer a set of locally mis-signalled cells but a non-trivial $\mathbb{Z}_2$ cohomology class $[\sigma_T]\in H^1(G_T;\mathbb{Z}_2)$ over a tissue subgraph. By Theorem T1 of Operator 19, any vertex-potential-type relabelling always has trivial holonomy, so “killing cancer cells one by one” can never change this class — the cohomological statement of chemoresistance. The intervention target shifts from “revoking existence” to “class trivialization”: injecting the unique $\mathbb{Z}_2$ holonomy channel (a single scalar, acting only on odd sectors, uniform displacement, conformal) so that $[\sigma_T]\to0$ while the ledger is conserved; its physical form has an experimental precedent in the 2026 Nobel Prize in Physiology or Medicine (light-gated ion channels and optogenetics). The text is annotated in three tiers A/B/C under the G12 discrete-closure law, lists unresolved gaps item by item (the largest being the bridging hypothesis from gradually coupled biological networks to binary $\pm1$ bond graphs), and sets out the CTR-2.0 engineering architecture, four decisive experiments and ethical boundaries.
+# Part IV: Applications and Scientific Hypotheses
+
+This part collects engineering implementations, experimental protocols, application‑oriented algorithms, and falsifiable scientific hypotheses derived from the Status‑Relational‑Entropy (SRE) Dynamics framework. Based on the operator‑axiom system and topological‑algebra foundations established in Part II and Part III, the complete Op1‑Op19 topological‑operator suite is extended to multiple research fields: underwater‑acoustic communication, optical physics, astrophysics, geophysical‑climate forecasting, atomic‑chemistry simulation, high‑performance graph computing, graph neural networks, and cognitive neuroscience.
+
+The content falls into two major categories: reproducible technical materials including signal‑processing pipelines, benchmark evaluations, and experimental‑calibration protocols; and physical‑ and neuroscience‑related conjectures which remain to be validated by experiments and astronomical observations.
+
+> Important Note: Engineering algorithms, benchmark tests and experimental protocols within this part constitute reproducible technical content. Physical, astrophysical and neuroscientific hypotheses are candidate interpretations deduced under the SRE framework and do not represent confirmed objective reality. Falsification criteria are provided for each hypothesis, and further validation by measured and observational datasets is required.
+
+## Brief Description of Each Manuscript in This Document Set
+
+1. **Academic Hypothesis: The Sovereign‑Universe Tree‑of‑Life Protocol and Topological‑Residue Inheritance under Status‑Relational‑Entropy (SRE) Dynamics**
+> Abstract: Within the SRE‑Dynamics framework, spacetime, mass, and Newton’s gravitational constant are interpreted as macroscopically emergent statistical metrics arising from the expansion of dimensionless binary matrices. Conventional time flow possesses no fundamental primitive status; it is essentially the discrete‑step count and metabolic overhead required to maintain global causal consistency. Addressing algebraic bottlenecks such as metric divergence, spatial dissolution, and gravitational attenuation that emerge during ultra‑large‑scale cosmic evolution, this paper puts forward the Sovereign‑Universe Tree‑of‑Life Protocol hypothesis. It describes the mechanism whereby local highly‑coherent sub‑spaces undergo non‑linear cascading rupture, decouple, and generate independent sovereign matrix root seeds. It derives the underlying discrete‑evolution step‑count corresponding to the 13.8‑billion‑year macroscopic cosmic age, and explains how high‑order topological features are inherited in the form of algebraic residuals. Cosmic rebirth is reinterpreted as a self‑optimising helical‑iterative process at the topological level. Placed as the opening manuscript because the author holds the view that the universe has undergone multiple generative iterations, and that the next cosmic reproduction represents humanity’s ultimate mission.
+
+2. **Inspired‑Multipath‑Topological‑Flow‑Purification Architecture and Local‑Operator Implementation**
+> Abstract: This paper presents a locally‑confined, low‑computational‑cost general‑purpose mathematical toolkit for multipath topological‑flow purification, avoiding high complexity and boundary‑truncation errors introduced by global‑matrix reconstruction. Local multi‑channel tracking nodes are abstracted as discrete cross‑spectral operators. Rank‑variation of 2 × 2 complex‑Hermitian matrices is used to distinguish direct causal flows from chaotic multipath superposition. Combined with first‑order closed‑form analytical solutions and RMT‑inspired sieves for the Gaussian‑Unitary‑Ensemble and Poisson distributions, streaming masks are constructed to suppress noise and multipath interference. Standardised streaming‑operator execution protocols are provided for application‑scenarios including next‑generation‑communication base‑bands and coherent‑radar jamming suppression. The author has deployed this toolkit in real‑world operational tasks and achieved favourable practical outcomes.
+
+3. **Research on Multipath‑Interference Pre‑Processing Algorithm for Fjord Underwater‑Acoustic Communication Based on SRE Topological Operators**
+> Abstract: Targeting severe multipath reflection and strong time‑variant fading in shallow‑sea fjord acoustic channels, an SRE‑topology‑pipeline underwater‑acoustic time‑frequency pre‑processing algorithm is designed using real‑world Nordic‑fjord measured datasets. An energy‑complex‑valued dual‑path architecture is proposed, which preserves full phase information required for OFDM demodulation while suppressing multipath clutter. A complete post‑processing chain is integrated: CFAR peak‑detection, ZF zero‑forcing equalisation, symbol‑level MRC diversity combining, and false‑alarm filtering. Full‑pipeline validation is performed on measured dual‑hydrophone waveforms across LF / MF / HF three frequency bands. Quantitative metrics including multipath‑suppression ratio, BER, and diversity gain are reported. Applicable conditions and performance limits under high‑noise high‑frequency conditions are clarified. This algorithm can be deployed for front‑end processing in underwater embedded receivers.
+
+4. **Conjecture on Single‑Photon Bidirectional Instantaneous Communication via Möbius‑Topological‑Flows under SRE Dynamics**
+> Abstract: Addressing inherent limitations of existing quantum‑QKD communication imposed by the no‑communication theorem and intrinsic randomness of wave‑function collapse, this paper proposes a single‑channel deterministic full‑duplex‑communication conjecture built upon open Möbius relational‑state structures. A high‑coherence laser serves as the underlying causal‑resonance master source. Macroscopic physical frequency is re‑defined as the bidirectional joint information‑coupling density. Combined with first‑order closed‑form eigenspace solutions and RMT‑heuristic sieves, a bidirectional topological‑flow‑density subtractor is constructed. Theoretical derivations show that joint modulation of the topological configuration of electromagnetic crystals at both boundaries enables instantaneous deterministic signal transmission and reception within a single causal‑chain channel, offering new topological‑level ideas for next‑generation deterministic‑communication technologies. The author considers this technology a corner‑stone enabling inclusive‑health‑care and multiple super‑technologies; should this theoretical framework be experimentally validated, full‑scale development ought to be prioritised.
+
+5. **Technical Report: Intrinsic Algebraic Topology of Light and the SRE Axion Matrix**
+> Abstract: This report establishes the theoretical foundations for full‑duplex instantaneous‑communication without assuming classical spacetime media. Abandoning the conventional paradigm treating light as material wave‑packets, light under the SRE‑0‑state formalism is defined as a residual topological‑manifold spontaneously woven by step‑cost differentials between two asynchronously‑evolving boundary nodes. Using first‑order closed‑form solutions together with RMT‑heuristic sieves, it is algebraically demonstrated that underlying causal‑links can be unfolded into a non‑orientable single‑boundary Möbius ribbon with a topological‑validation confidence of 99.2094 %. Spectral‑duality relations are derived, mapping frequency, wavelength, and wave‑particle duality onto intrinsic‑eigen‑invariants. Dynamic spectral‑transition systems of equations and four‑state eigen‑shift matrices are given. Manifold‑decoupling empirical analysis is performed, together with core‑Python‑code snippets for simulation.
+
+6. **Stellar Spin and Galactic Rotation within the SRE Framework: Operator Suite combined with the SRE‑v6.0 Dissipation‑Compensation Duality Model**
+> Abstract: Drawing upon the SRE‑operator suite, the v6.0 dissipation‑compensation duality and BBP spectral‑rank phase‑transition theory, candidate topological physical interpretations are provided for stellar spin, pulsar braking‑mechanisms, and the flat‑galaxy‑rotation‑curve problem. Stellar spin is interpreted as topologically‑charged collective emergence of Möbius‑loops inside sub‑manifolds, rather than rigid‑body mechanical rotation. Flat galactic rotation curves arise from collective dissipation‑compensation effects of large‑scale nested sub‑manifolds, without invoking dark‑matter‑particle hypotheses. Differences between high‑redshift and low‑redshift cosmic regimes are distinguished. Falsifiable astronomical predictions for stellar spin, galactic rotation, gravitational lensing, and baryonic‑cooling are listed item‑by‑item. Ontological boundaries, remaining theoretical gaps and the complete logical‑derivation chain are stated. The author has other geophysical‑related developments; stellar‑spin is used as a substitute here considering potential societal impacts.
+
+7. **Causal‑Compliance Audit Report on Global Sea‑Surface‑Temperature‑Anomaly (ENSO‑SSTA) Spatiotemporal‑Forecasting: The 2‑D Convolutional Dissipative‑Network Paradigm (Astro‑Cow‑Net)**
+> Abstract: Addressing widespread risks of data‑leakage and artefactual‑statistical‑patterns in long‑lead geophysical‑AI forecasting, a full causal‑compliance audit is performed for the Astro‑Cow‑Net long‑lead ENSO‑prediction model. Strict zero‑leakage constraints are enforced across four core dimensions: temporal‑causal‑gap protocol, historical‑scaler statistical‑isolation, four‑dimensional grid‑wise objective‑function scaling, and physical‑extrapolation convergence. Relying purely on local 2‑D convolutions and physical‑dissipation constraints, the model solves ocean‑atmosphere anomaly‑evolution equations. Deterministic 24‑month long‑lead forecast outputs for the Niño 3.4 region are presented, alongside links to reproducible source‑code. This model serves only to demonstrate novel‑thinking for Earth‑atmosphere‑physics; the model itself remains relatively simplistic.
+
+8. **Periodic‑Table‑Data‑Experiment: SRE‑v3.0 Atomic‑Topological‑Weight‑Inverse‑Deduction Experimental Protocol**
+> Abstract: Complete quantitative‑prediction experimental protocol for SRE‑v3.0 atomic‑topology audit. Taking VASP and NIST spectroscopic datasets as input, AI‑driven training is used to invert topological‑density weights $W_e$ of internal atomic causal‑networks and establish mappings between loop‑period $N$ and quantum numbers $(n,l)$. Orbital‑layered sub‑matrices, spin‑orbit‑coupling phase‑shift derivation, and permeability‑layer‑calibration are defined. A triple‑residual composite loss‑function, adaptive regularisation, $Z_{crit}$ micro‑firewall, and dual‑Betti‑number topological‑invariant constraints are designed. Optimiser‑settings, cross‑software blind‑validation and convergence‑criteria are specified. Appendices contain closed‑form mathematical derivations, engineering‑standardisation workflows, and supplementary validation‑experiments for isotopes and actinides. The ultimate objective of this experiment is the study of electrodynamics; this work remains unfinished by the author.
+
+9. **SRE Topological Spectral Model: From Discrete Operators to a Differentiable AI Model Layer**
+> Abstract: This chapter documents the complete design reasoning, architectural implementation, and experimental validation of the SRE Topological Spectral Model, charting the path from discrete operators to a differentiable AI model layer. Beginning with the end-to-end bridging identity of the operator chain, it sets out the torch mirror implementation of operator calculus, the construction of the missing load-bearing component for differentiable hierarchical compression, and the mathematical discovery that $\tau_k$ is not preservable together with its alternative. It gives the notation convention and precise definitions of five concepts — graph Laplacian, Betti number $\beta_1$, Chebyshev functional calculus, Galerkin projection, and heat-kernel trace — and then builds the model architecture from chain-complex input, an analytic differentiable Laplacian construction, the learnable SoftAggPooler coarse-graining, the SRE Topo Encoder, level-attention spectral fusion, and a five-term loss. Experiments and causal analysis are conducted on three use cases — self-supervised edge-weight inversion (UC1), molecular property regression (UC2), and graph classification / $\beta_1$ topology identification (UC3) — together with environment setup, weight-loading inference, hyperparameter tuning, honest boundaries, and an improvement roadmap.
+
+10. **SRE Full Suite of 19 Operators: What a "Physical‑Semantic Graph Computing" Operator System Can Do — A View from the Graph500 Benchmark**
+> Abstract: Based on measured data from the Graph500 v2.1 standard benchmark (SCALE 12 / 20 / 24), this chapter systematically introduces the capability boundaries, per‑layer timing breakdown, key physical‑quantity outputs and format compliance of the full SRE 19‑operator suite (Op1‑Op19). It compares the suite with traditional graph algorithms (traversal, shortest‑path, centrality, connectivity) across capability dimensions and performance, analyses the path from graph to "physical system" modelling together with typical application scenarios and current limitations, and outlines the overall application prospects of physical‑semantic graph computing.
+
+11. **Neural‑Information‑Systems Theory: Hypothesis of First‑Order Thalamic‑Downsampling Instability and Second‑Order DMN‑Integrative Cascading‑Failure**
+> Abstract: From cybernetics and digital‑signal‑processing perspectives, this paper puts forward the two‑tier thalamus‑DMN defensive‑gating hypothesis. The thalamic reticular nucleus (TRN) acts as the first‑order hardware anti‑aliasing down‑sampling gateway, while the Default‑Mode‑Network (DMN, PCC/PCu) serves as the second‑order high‑level software compressor. It describes the temporal‑evolution mechanism for early‑to‑mid‑stage Alzheimer’s‑disease: relaxation‑leakage of TRN inhibitory‑inter‑neurons permits invasion by high‑dimensional causal‑charges, over‑loading DMN integral‑energy‑storage and eventually triggering cascading‑failure across the two‑tier defensive‑barrier. Temporal‑series analysis under 5 Hz intermittent‑photic‑stimulation and gender‑by‑age‑cohort variance‑analysis are performed using the public OpenNeuro EEG dataset. Non‑invasive intervention strategies are proposed: multimodal‑sensory entrainment, vagal‑nerve modulation, sleep‑pineal‑gland maintenance. Dataset limitations and falsifiable boundaries for this hypothesis are objectively stated.
+
+12. **Whole‑Brain Parallelism and High‑Dimensional‑Causal‑‑Chain Topological‑Spectrum Homomorphic‑Mapping Mechanism**
+> Abstract: A unified logical framework is constructed to interpret whole‑brain neural‑firing, DMN information‑gating, stress‑triggered whole‑brain‑parallel‑emergence, non‑local cognitive‑synchronisation, and cross‑culturally convergent transcendental‑state experiences documented in ancient texts. The underlying universe is a dense causal‑chain‑network; different sub‑networks sharing topological‑spectrum features may achieve homomorphic‑mapping alignment. Under homeostatic conditions the human‑brain performs low‑dimensional serial survival‑oriented computation constrained by the DMN. Under extreme stress, filter‑breakdown pushes the brain into a global hyper‑parallel topological‑receiver state, enabling cross‑scale non‑local topological‑alignment which phenomenologically corresponds to creative insight. Non‑local cognitive‑synchronisation is interpreted as convergent topological‑perturbation‑propagation among homologous causal‑clusters. Ancient myths and philosophical texts represent low‑dimensional linguistic encoding of high‑dimensional topological phenomena constrained by human serial‑language limitations.
+
+13. **Hypothesis of Gravitational Shielding Derivation (SRE)**
+> Abstract: Within the SRE framework gravity is not a fundamental field but a thermodynamic after‑effect of local information‑dissipation gradients. On this basis, "gravitational shielding" is re‑defined as suppressing the network correlations that generate that dissipation gradient, and gravity's shieldability is decomposed into three channels: the main amplitude $\mathcal{W}_{ij}$, the chiral phase term $\Gamma_\mathrm{chiral}$, and the uniform term. The paper derives the exact shielding factor and inverse‑design equation for the main channel, the strict phase condition and order‑of‑magnitude criterion for chiral sign‑reversal (net repulsion), the geometric criterion for the compensation‑operator peak, and a boundary‑operation scheme with Op2 maximum‑entropy pruning as the only engineerable actuator. It further offers a reverse interpretation of Podkletnov‑type results, an analysis of reproduction difficulties, and item‑by‑item falsifiable predictions and hard boundaries. Version 1.1 adds Section 9, a first empirical calibration of the previously uncalibrated parameter $\alpha_\mathrm{scale}$ using public galaxy‑survey data (BOSS DR12 CMASSLOWZTOT: 46 redshift bins × 2 caps = 92 measurements, with covariances from 30 mock catalogues). From the response of $f\sigma_8$ to the fast chiral oscillation, the paper derives a 95% one‑sided lower bound $\alpha_\mathrm{scale}>2.2\times10^{-6}$ (conservative interval $1.4$–$2.5\times10^{-6}$); since the chirality‑dominated threshold $8\times10^{-4}$ lies inside the allowed interval (362 times stronger than the bound), this measurement can neither open nor close the "anti‑gravity gate". Four classes of systematic terms (construction damping, finite mocks, near‑Nyquist sampling, shape mismatch) are listed explicitly, together with complete reproduction steps.
+
+14. **SRE Dynamics Reconstruction of Transistor Physics (v2.0, Experimentally Validated Edition)**
+> Abstract: Without importing any external quantum‑mechanical parameters, transistor physics is reconstructed purely from the binary self‑organising network structure of the silicon lattice: the three transistor regions (emitter / base / collector) are treated as three doped sub‑graphs on one bonding network, and the operator suite (connectivity, cycle counting, symmetry) endogenously derives the PN‑junction contact barrier $V_T$, the current‑amplification coefficient $\beta$, and the PN‑junction current law $I = I_S(e^{V/V_T} - 1)$, together with the placement of the classical Ebers‑Moll model within the SRE system and the topological pairing mechanism of the intrinsic carrier concentration. Operator 19 ($\mathbb{Z}_2$ holonomy / $\sigma$ charge‑sign channel) is used here to detect the "charge‑annihilating loop structures" that directly determine the amplification coefficient $\beta$. The document consists of two parts: Part 1 is the theoretical framework (including a diagnosis of earlier v1.1 issues, cross‑validation of public measured data against SRE theory, and program verification by forward simulation of the 2N3904 topological graph); Part 2 is a standalone experimental paper (physical background, SRE method, simulation method, results, discussion, reproduction checklist and v5 directions), closing with a transparency‑boundary statement.
+
+15. **The Consensus Protocol v2.0: A Causal-Eradication Framework for Cancer Based on the SRE v1.6 Axiom Suite and Light-Gated Biology**
+> Abstract: The v1.1 “causal island + inverse causal pulse” scheme exposes three structural breakpoints once the SRE v1.6 suite and Operators 1–19 are in place (the Planck scale is no longer a network pixel, energy is repositioned as a ledger quantity, and wiping to zero equals necrosis). This paper is therefore a structural rewrite: a tumour is no longer a set of locally mis-signalled cells but a non-trivial $\mathbb{Z}_2$ cohomology class $[\sigma_T]\in H^1(G_T;\mathbb{Z}_2)$ over a tissue subgraph. By Theorem T1 of Operator 19, any vertex-potential-type relabelling always has trivial holonomy, so “killing cancer cells one by one” can never change this class — the cohomological statement of chemoresistance. The intervention target shifts from “revoking existence” to “class trivialization”: injecting the unique $\mathbb{Z}_2$ holonomy channel (a single scalar, acting only on odd sectors, uniform displacement, conformal) so that $[\sigma_T]\to0$ while the ledger is conserved; its physical form has an experimental precedent in the 2026 Nobel Prize in Physiology or Medicine (light-gated ion channels and optogenetics). The text is annotated in three tiers A/B/C under the G12 discrete-closure law, lists unresolved gaps item by item (the largest being the bridging hypothesis from gradually coupled biological networks to binary $\pm1$ bond graphs), and sets out the CTR-2.0 engineering architecture, four decisive experiments and ethical boundaries.
 
 
 <div style="page-break-after: always;"></div>
@@ -15411,13 +15904,13 @@ At the same time, the systematic terms of this measurement must be listed explic
 All computations were done under Python 3.10 + numpy 2.2.5 + scipy 1.15.3, with scripts in `S3_mu_scan/src/` and products written to `S3_mu_scan/results/`.
 
 ```text
-## (1) covariance from 30 mocks (about 52 min)
+# (1) covariance from 30 mocks (about 52 min)
 python S3_mu_scan/src/s3_fs8_bins.py cov  --ngrid 512 --nm 30 --threads 3 --cap NS --bmock 2.0 --xfer 0.0
 
-## (2) per-bin fit on the real data (about 10 min)
+# (2) per-bin fit on the real data (about 10 min)
 python S3_mu_scan/src/s3_fs8_bins.py data --ngrid 512 --cap NS
 
-## (3) global GLS and the 95% lower bound (a few seconds)
+# (3) global GLS and the 95% lower bound (a few seconds)
 python S3_mu_scan/src/s3_real_stack.py data
 ```
 

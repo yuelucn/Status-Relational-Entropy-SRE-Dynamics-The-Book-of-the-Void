@@ -1,0 +1,925 @@
+{
+ "partA": {
+  "rows": [
+   {
+    "func": "y3",
+    "md5": "65b3e4d1",
+    "path": "_cubic_enum.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3",
+    "md5": "77d6b5fa",
+    "path": "_sre_nucleon_release_rarity.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3",
+    "md5": "9085b0e3",
+    "path": "_sre_nucleon_ringedge_transition.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3",
+    "md5": "917abea3",
+    "path": "_sre_nucleon_orbit_reading_check.py",
+    "n_copies": 4,
+    "status": "ISOLATED-FAIL",
+    "iso": null,
+    "V": null,
+    "E": null,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3",
+    "md5": "a1bd2b2b",
+    "path": "_sre_nucleon_skeleton_plot.py",
+    "n_copies": 3,
+    "status": "ISOLATED-FAIL",
+    "iso": null,
+    "V": null,
+    "E": null,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3",
+    "md5": "cef61b90",
+    "path": "_sre_nucleon_tiebreak_scan.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3",
+    "md5": "f607a285",
+    "path": "_sre_nucleon_tiebreak_v2.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "2a80c630",
+    "path": "code/_lit_relation.py",
+    "n_copies": 6,
+    "status": "ISOLATED-FAIL",
+    "iso": null,
+    "V": null,
+    "E": null,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "4af8c3b8",
+    "path": "SRE-charge-emergence/_se_assignment_test.py",
+    "n_copies": 1,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "4f3f329a",
+    "path": "code/_nucleon_multibody_charge.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "78de29ee",
+    "path": "code/_dir7_y3_skeleton_verdict.py",
+    "n_copies": 1,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "af301e98",
+    "path": "code/_bridge101_nucleon.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "b781c4c9",
+    "path": "SRE-charge-emergence/_sigma_deg_independence.py",
+    "n_copies": 1,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "c8903fa6",
+    "path": "_sre_nucleon_skeleton_inversion.py",
+    "n_copies": 2,
+    "status": "ISOLATED-FAIL",
+    "iso": null,
+    "V": null,
+    "E": null,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_closed",
+    "md5": "ee23cbf3",
+    "path": "code/_dir3_earn_a0.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 18,
+    "target": "Y3闭"
+   },
+   {
+    "func": "y3_open",
+    "md5": "4055d166",
+    "path": "SRE-charge-emergence/_sigma_deg_independence.py",
+    "n_copies": 1,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 17,
+    "target": "Y3开"
+   },
+   {
+    "func": "y3_open",
+    "md5": "46768834",
+    "path": "code/_dir7_y3_skeleton_verdict.py",
+    "n_copies": 1,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 17,
+    "target": "Y3开"
+   },
+   {
+    "func": "y3_open",
+    "md5": "62694224",
+    "path": "code/_paper_final.py",
+    "n_copies": 2,
+    "status": "ISOLATED-FAIL",
+    "iso": null,
+    "V": null,
+    "E": null,
+    "target": "Y3开"
+   },
+   {
+    "func": "y3_open",
+    "md5": "68995d1f",
+    "path": "code/_bridge101_nucleon.py",
+    "n_copies": 4,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 17,
+    "target": "Y3开"
+   },
+   {
+    "func": "y3_open",
+    "md5": "f378b3b1",
+    "path": "SRE-charge-emergence/_se_assignment_test.py",
+    "n_copies": 1,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 17,
+    "target": "Y3开"
+   },
+   {
+    "func": "y3_open",
+    "md5": "f875c77e",
+    "path": "code/_nucleon_multibody_charge.py",
+    "n_copies": 2,
+    "status": "OK",
+    "iso": true,
+    "V": 12,
+    "E": 17,
+    "target": "Y3开"
+   }
+  ],
+  "gateA": true,
+  "sens": true,
+  "n_impl": 21,
+  "n_copies": 45
+ },
+ "partB": [
+  {
+   "name": "Q₃(电子)",
+   "V": 8,
+   "E": 12,
+   "b1": 5,
+   "n_aut": 48,
+   "n_orb": 1,
+   "rank_B1": 0,
+   "rank_B2": 0,
+   "rank_B3": 0,
+   "t9": 0,
+   "dimInter": 1,
+   "dimInter3": 1,
+   "dimCut": 7,
+   "dimCut3": 7,
+   "agree": true
+  },
+  {
+   "name": "Y₃闭(质子)",
+   "V": 12,
+   "E": 18,
+   "b1": 7,
+   "n_aut": 36,
+   "n_orb": 2,
+   "rank_B1": 1,
+   "rank_B2": 1,
+   "rank_B3": 1,
+   "t9": 1,
+   "dimInter": 1,
+   "dimInter3": 1,
+   "dimCut": 11,
+   "dimCut3": 11,
+   "agree": true
+  },
+  {
+   "name": "Y₃开(中子)",
+   "V": 12,
+   "E": 17,
+   "b1": 6,
+   "n_aut": 4,
+   "n_orb": 7,
+   "rank_B1": 2,
+   "rank_B2": 2,
+   "rank_B3": 2,
+   "t9": 2,
+   "dimInter": 5,
+   "dimInter3": 5,
+   "dimCut": 11,
+   "dimCut3": 11,
+   "agree": true
+  }
+ ],
+ "gateB": true,
+ "partC": [
+  {
+   "name": "Q₃(电子)",
+   "V": 8,
+   "E": 12,
+   "bip": true,
+   "npm": 9,
+   "is_pf": true,
+   "n_set": 128,
+   "dim": 6,
+   "n_pos": 64,
+   "n_neg": 64,
+   "n_nice": 0,
+   "nice_lens": []
+  },
+  {
+   "name": "Y₃闭(质子)",
+   "V": 12,
+   "E": 18,
+   "bip": false,
+   "npm": 6,
+   "is_pf": false,
+   "n_set": 0,
+   "dim": null,
+   "n_pos": 0,
+   "n_neg": 0,
+   "n_nice": 42,
+   "nice_lens": [
+    [
+     6,
+     9
+    ],
+    [
+     8,
+     9
+    ],
+    [
+     10,
+     18
+    ],
+    [
+     12,
+     6
+    ]
+   ]
+  },
+  {
+   "name": "Y₃开(中子)",
+   "V": 12,
+   "E": 17,
+   "bip": false,
+   "npm": 4,
+   "is_pf": true,
+   "n_set": 16384,
+   "dim": 13,
+   "n_pos": 8192,
+   "n_neg": 8192,
+   "n_nice": 0,
+   "nice_lens": []
+  },
+  {
+   "name": "M₈(Wagner)",
+   "V": 8,
+   "E": 12,
+   "bip": false,
+   "npm": 7,
+   "is_pf": true,
+   "n_set": 256,
+   "dim": 7,
+   "n_pos": 128,
+   "n_neg": 128,
+   "n_nice": 1,
+   "nice_lens": [
+    [
+     8,
+     1
+    ]
+   ]
+  },
+  {
+   "name": "M₁₂",
+   "V": 12,
+   "E": 18,
+   "bip": false,
+   "npm": 18,
+   "is_pf": true,
+   "n_set": 4096,
+   "dim": 11,
+   "n_pos": 2048,
+   "n_neg": 2048,
+   "n_nice": 0,
+   "nice_lens": []
+  },
+  {
+   "name": "Petersen",
+   "V": 10,
+   "E": 15,
+   "bip": false,
+   "npm": 6,
+   "is_pf": false,
+   "n_set": 0,
+   "dim": null,
+   "n_pos": 0,
+   "n_neg": 0,
+   "n_nice": 25,
+   "nice_lens": [
+    [
+     6,
+     10
+    ],
+    [
+     8,
+     15
+    ]
+   ]
+  },
+  {
+   "name": "K₃,₃",
+   "V": 6,
+   "E": 9,
+   "bip": true,
+   "npm": 6,
+   "is_pf": false,
+   "n_set": 0,
+   "dim": null,
+   "n_pos": 0,
+   "n_neg": 0,
+   "n_nice": 15,
+   "nice_lens": [
+    [
+     4,
+     9
+    ],
+    [
+     6,
+     6
+    ]
+   ]
+  }
+ ],
+ "partD": {
+  "inv": {
+   "M10": {
+    "V": 10,
+    "E": 15,
+    "n_orb": 2,
+    "n_aut": 20,
+    "tri": 0,
+    "ev": [
+     -3.0,
+     -1.618034,
+     -1.618034,
+     -0.618034,
+     -0.618034,
+     0.618034,
+     0.618034,
+     1.618034,
+     1.618034,
+     3.0
+    ]
+   },
+   "M12": {
+    "V": 12,
+    "E": 18,
+    "n_orb": 2,
+    "n_aut": 24,
+    "tri": 0,
+    "ev": [
+     -2.732051,
+     -2.732051,
+     -1.0,
+     -1.0,
+     -1.0,
+     -0.0,
+     0.0,
+     0.732051,
+     0.732051,
+     2.0,
+     2.0,
+     3.0
+    ]
+   },
+   "M14": {
+    "V": 14,
+    "E": 21,
+    "n_orb": 2,
+    "n_aut": 28,
+    "tri": 0,
+    "ev": [
+     -3.0,
+     -2.24698,
+     -2.24698,
+     -0.801938,
+     -0.801938,
+     -0.554958,
+     -0.554958,
+     0.554958,
+     0.554958,
+     0.801938,
+     0.801938,
+     2.24698,
+     2.24698,
+     3.0
+    ]
+   },
+   "M4": {
+    "V": 4,
+    "E": 6,
+    "n_orb": 1,
+    "n_aut": 24,
+    "tri": 4,
+    "ev": [
+     -1.0,
+     -1.0,
+     -1.0,
+     3.0
+    ]
+   },
+   "M6": {
+    "V": 6,
+    "E": 9,
+    "n_orb": 1,
+    "n_aut": 72,
+    "tri": 0,
+    "ev": [
+     -3.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     3.0
+    ]
+   },
+   "M8": {
+    "V": 8,
+    "E": 12,
+    "n_orb": 2,
+    "n_aut": 16,
+    "tri": 0,
+    "ev": [
+     -2.414214,
+     -2.414214,
+     -1.0,
+     0.414214,
+     0.414214,
+     1.0,
+     1.0,
+     3.0
+    ]
+   },
+   "Y₃闭": {
+    "V": 12,
+    "E": 18,
+    "n_orb": 2,
+    "n_aut": 36,
+    "tri": 3,
+    "ev": [
+     -2.302776,
+     -2.302776,
+     -1.0,
+     -1.0,
+     -1.0,
+     -1.0,
+     -1.0,
+     1.302776,
+     1.302776,
+     2.0,
+     2.0,
+     3.0
+    ]
+   }
+  },
+  "cov_hits": [
+   {
+    "target": "K₄",
+    "n_cov": 1,
+    "k": 3,
+    "deck": 3
+   },
+   {
+    "target": "M4",
+    "n_cov": 1,
+    "k": 3,
+    "deck": 3
+   }
+  ],
+  "quot_hits": [
+   [
+    "M4",
+    "M4",
+    3
+   ]
+  ]
+ },
+ "partE": [
+  {
+   "name": "M4",
+   "V": 4,
+   "E": 6,
+   "n_orb": 1,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "M6",
+   "V": 6,
+   "E": 9,
+   "n_orb": 1,
+   "r1": 0,
+   "r2": 0,
+   "r3": 0,
+   "t9": 0,
+   "bip": true,
+   "is_pf": false,
+   "n_nice": 15,
+   "agree": true
+  },
+  {
+   "name": "M8",
+   "V": 8,
+   "E": 12,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 1,
+   "agree": true
+  },
+  {
+   "name": "M10",
+   "V": 10,
+   "E": 15,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": true,
+   "is_pf": false,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "M12",
+   "V": 12,
+   "E": 18,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "M14",
+   "V": 14,
+   "E": 21,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": true,
+   "is_pf": false,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "M16",
+   "V": 16,
+   "E": 24,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "prism3",
+   "V": 6,
+   "E": 9,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "prism4",
+   "V": 8,
+   "E": 12,
+   "n_orb": 1,
+   "r1": 0,
+   "r2": 0,
+   "r3": 0,
+   "t9": 0,
+   "bip": true,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "prism5",
+   "V": 10,
+   "E": 15,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "prism6",
+   "V": 12,
+   "E": 18,
+   "n_orb": 2,
+   "r1": 0,
+   "r2": 0,
+   "r3": 0,
+   "t9": 0,
+   "bip": true,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "Q₃",
+   "V": 8,
+   "E": 12,
+   "n_orb": 1,
+   "r1": 0,
+   "r2": 0,
+   "r3": 0,
+   "t9": 0,
+   "bip": true,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "Y₃闭",
+   "V": 12,
+   "E": 18,
+   "n_orb": 2,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": false,
+   "n_nice": 42,
+   "agree": true
+  },
+  {
+   "name": "Y₃开",
+   "V": 12,
+   "E": 17,
+   "n_orb": 7,
+   "r1": 2,
+   "r2": 2,
+   "r3": 2,
+   "t9": 2,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "Petersen",
+   "V": 10,
+   "E": 15,
+   "n_orb": 1,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": false,
+   "n_nice": 25,
+   "agree": true
+  },
+  {
+   "name": "K₃,₃",
+   "V": 6,
+   "E": 9,
+   "n_orb": 1,
+   "r1": 0,
+   "r2": 0,
+   "r3": 0,
+   "t9": 0,
+   "bip": true,
+   "is_pf": false,
+   "n_nice": 15,
+   "agree": true
+  },
+  {
+   "name": "K₄",
+   "V": 4,
+   "E": 6,
+   "n_orb": 1,
+   "r1": 1,
+   "r2": 1,
+   "r3": 1,
+   "t9": 1,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "Heawood",
+   "V": 14,
+   "E": 21,
+   "n_orb": 1,
+   "r1": 0,
+   "r2": 0,
+   "r3": 0,
+   "t9": 0,
+   "bip": true,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "rand3reg0",
+   "V": 10,
+   "E": 15,
+   "n_orb": 8,
+   "r1": 3,
+   "r2": 3,
+   "r3": 3,
+   "t9": 3,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "rand3reg1",
+   "V": 10,
+   "E": 15,
+   "n_orb": 8,
+   "r1": 3,
+   "r2": 3,
+   "r3": 3,
+   "t9": 3,
+   "bip": false,
+   "is_pf": false,
+   "n_nice": 0,
+   "agree": true
+  },
+  {
+   "name": "rand3reg2",
+   "V": 10,
+   "E": 15,
+   "n_orb": 6,
+   "r1": 3,
+   "r2": 3,
+   "r3": 3,
+   "t9": 3,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 1,
+   "agree": true
+  },
+  {
+   "name": "rand3reg3",
+   "V": 10,
+   "E": 15,
+   "n_orb": 8,
+   "r1": 3,
+   "r2": 3,
+   "r3": 3,
+   "t9": 3,
+   "bip": false,
+   "is_pf": true,
+   "n_nice": 0,
+   "agree": true
+  }
+ ],
+ "gateE": true,
+ "partF": {
+  "results": [
+   [
+    "F1",
+    true
+   ],
+   [
+    "F2",
+    true
+   ],
+   [
+    "F3",
+    true
+   ],
+   [
+    "F4",
+    true
+   ],
+   [
+    "F5",
+    true
+   ]
+  ],
+  "ok": true
+ }
+}

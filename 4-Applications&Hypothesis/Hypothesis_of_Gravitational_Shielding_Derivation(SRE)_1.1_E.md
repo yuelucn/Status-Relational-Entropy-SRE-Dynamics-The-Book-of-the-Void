@@ -485,13 +485,13 @@ At the same time, the systematic terms of this measurement must be listed explic
 All computations were done under Python 3.10 + numpy 2.2.5 + scipy 1.15.3, with scripts in `S3_mu_scan/src/` and products written to `S3_mu_scan/results/`.
 
 ```text
-## (1) covariance from 30 mocks (about 52 min)
+# (1) covariance from 30 mocks (about 52 min)
 python S3_mu_scan/src/s3_fs8_bins.py cov  --ngrid 512 --nm 30 --threads 3 --cap NS --bmock 2.0 --xfer 0.0
 
-## (2) per-bin fit on the real data (about 10 min)
+# (2) per-bin fit on the real data (about 10 min)
 python S3_mu_scan/src/s3_fs8_bins.py data --ngrid 512 --cap NS
 
-## (3) global GLS and the 95% lower bound (a few seconds)
+# (3) global GLS and the 95% lower bound (a few seconds)
 python S3_mu_scan/src/s3_real_stack.py data
 ```
 

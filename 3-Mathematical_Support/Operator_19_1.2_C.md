@@ -1,7 +1,7 @@
 # 算子 19：ℤ₂ holonomy / σ 电荷符号通道算子
-## 严格数学规范、可解性推理依据与验证协议
+## 严格数学规范、可解性推理依据、双 ℤ₂ 通道判决与验证协议
 
-**版本**：1.1（2026 年 10 月 · SRE 算子体系第 19 号，极性注入与跨实现验证增补）
+**版本**：1.2（2026 年 10 月 · SRE 算子体系第 19 号；v1.1 增补极性注入与跨实现验证，v1.2 增补割空间充要判据、Pfaffian / $H^1$ 双通道并置判决与梯族编号口径对照）
 **参考实现**：功能式桥接 `sre_z2_holonomy_bridge.py`（入口 `operator_19_z2_charge_channel`）；类式发布套件 `sre_charge_channel.py`（`SREChargeChannelSuite.execute_operator_19_z2_charge_channel`；三份镜像 SHA-256 一致）——双实现互证无歧义
 **配套验证程序**：三份独立程序共同实证本规范
   - `verify_operator_19.py`（V1–V12，骨架忠实 / 定理逐项 / 冻结契约，45 断言）
@@ -11,6 +11,7 @@
 **上游论文**：《SRE 体系下正负电荷的涌现：量值、符号与数值确证》（下称"电荷涌现论文"）
 **下游集成**：`sre_cluster_substitute_screen.py`（`z2_*` 字段接入化合物筛选流水线）
 **编号说明**：算子在既有 18 号之后接续编号为 **19**；已逐条核验与 `SRE-math_C.md` 全部 18 个算子**无重合**（边界见 §9）。
+**外部判决报告（v1.2 引用）**：《核子骨架 $Y_3$ 的双 $\mathbb{Z}_2$ 通道判决：割空间充要判据在项目自身对象上的落地、与莫比乌斯梯族的关系及 Pfaffian 障碍的可读证书》（第 104 轮，下称"$Y_3$ 判决报告"）。本版 T9、T10、T11、§6.2、§6.3 的实测数值与证书均源于该报告；其中割空间恒等式已在本项目内独立复核（§8.4）。
 
 ---
 
@@ -22,7 +23,7 @@ $$Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\qquad \deg(K)=\beta_1(K)\bmod 2,\qquad \sig
 
 其中「符号通道」$\sigma$ 被声明为一条 **$\mathbb{Z}_2$ 卷绕相位（holonomy）** 上同调类，但该论文以一个**独立数值脚本**（`_se_assignment_test.py`）在少数骨架与分子上做了抽样验证，**并未给出该算子的独立、可复用、可证明的实现规范**。本文把 $\sigma$ 通道**单独**实现为 **算子 19**，并给出三项此前缺失的内容：
 
-1. **严格的推理依据**（§2–§5）：在分子键图的 **1-维链复形** 上，把「边极性 $\to$ 环 holonomy $\to$ 上同调类」的链路严格化，证明算子输出的良定义性，并给出**全部定理与证明**（T0–T8）。
+1. **严格的推理依据**（§2–§5）：在分子键图的 **1-维链复形** 上，把「边极性 $\to$ 环 holonomy $\to$ 上同调类」的链路严格化，证明算子输出的良定义性，并给出**全部定理与证明**（T0–T11）。
 2. **对应的论文**（本文）：给出算子的公理定位、与上游电子算子的桥接语义、与既有算子的边界，以及在官方骨架与分子层上的忠实复现。
 3. **严格验证程序**（`verify_operator_19.py`）：把每条定理映射为可复现断言（V1–V12），运行全部通过即实证本规范。
 
@@ -39,8 +40,18 @@ $$Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\qquad \deg(K)=\beta_1(K)\bmod 2,\qquad \sig
 | **T6** | 二分图 + 单边轨道 $\Rightarrow$ **强制平凡**（电子型）| 电子 $Q_3$ 的结构来源 |
 | **T7** | 分子层 Aut **必须保元素着色**，否则可达性判据失真（可致判据翻转）| 元素着色的必要性 |
 | **T8** | 复合体 $\sigma_{\text{comp}}=\prod_i\sigma_i$，$Q$ 按新边界重算 | 对接 A2/A3 |
+| **T9** | $\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)$ | **平凡性的充要判据**（T2 的维数深化） |
+| **T10** | $Y_3^{\rm cl}$ 的 Pfaffian 无解有**极小不可解证书**（6 行全用即矛盾，差 1 行） | 判负可核查 |
+| **T11** | 梯族 $\operatorname{rank}_{\rm hol}=0\iff k=3$（$K_{3,3}$） | 奇环**不是**通道开闭的判据 |
 
-**关键词**：$\mathbb{Z}_2$ 上同调；holonomy；余边界；顶点势；边轨道；Aut-不变赋值；电荷符号通道；一阶贝蒂数
+**v1.2 新增（全部经 $Y_3$ 判决报告门 A–F 与本项目内复核）**：
+
+1. **T9（割空间恒等式）**　把 T2 的「存在非平凡类」判据深化为**维数恒等式**：可达（Aut-不变）类数恰为 $2^{\operatorname{rank}_{\rm hol}}$；三个官方骨架读数为 $Q_3=0$、$Y_3^{\rm cl}=1$、$Y_3^{\rm op}=2$（§6 表 6.2）。
+2. **§6.2 双 $\mathbb{Z}_2$ 通道并置判决**　在同一个 $Y_3^{\rm cl}$ 上，$H^1$ 通道**打开**（1 比特）而 **Pfaffian 通道一个定向都不存在**，并给出可读证书（6 行极小不可解）与机制（42 条 nice even cycle 在开态归零）。
+3. **§6.3 覆盖判决与编号口径**　$Y_3^{\rm cl}$ 与 $M_{2n}(n\ge3)$ **零覆盖、零商**，但恰是 $K_4\cong M_4$ 的**三折正规覆盖**；并建立书内 $M_k$ 与论文 $M_{2n}$ 的因子 2 对照表（表 6.5）。
+4. **对 v1.1 的纠正**　v1.1 §10 第 3 条「非平凡可达**仅当**含奇环且轨道数 $\ge2$」**已被证伪**：梯族 $k\ge5$ 奇为二分图（无奇环）却仍有 $\operatorname{rank}_{\rm hol}\ge1$；正确判据是 T9 的 $W\not\subseteq\operatorname{Cut}$。相应地，§6.1 原句「真正决定翻转的是奇环存在性」亦已修正。
+
+**关键词**：$\mathbb{Z}_2$ 上同调；holonomy；余边界；割空间；边轨道；Aut-不变赋值；电荷符号通道；Pfaffian 定向；一阶贝蒂数
 
 ---
 
@@ -66,7 +77,7 @@ $$Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\qquad \deg(K)=\beta_1(K)\bmod 2,\qquad \sig
 
 - **输入**：算子 1/4 输出的 SRE 平滑邻接 $A_s$（键图支撑为 $A_s>0$）；可选极性口径四选一（D3）——缺省 `polarity="topo"`，或显式 `edge_polarity` / 轨道 `orbit_signs` / 自旋 `chi`；可选元素标号（分子着色，保色 Aut）；可选守卫参数 `aut_cap`（缺省 100 000）与 `aut_max_v`（缺省 22，超限仅跳过可达性）。
 - **输出**：图不变量 $\{V,E,c,\beta_1,\deg,\text{bipartite},\text{has\_odd\_cycle}\}$、$\sigma$ 类 $\{\sigma\text{-vector},\sigma\text{-class},\text{trivial}\}$、Aut-不变可达性、以及模型内部电荷档 $Q_{\text{model}}=\sigma\cdot\deg$；
-- **性质**：T0–T8（§5）。
+- **性质**：T0–T11（§5）。其中 T9 给出符号通道的比特数（割空间充要判据），T10/T11 与 §6.2/§6.3 给出双 $\mathbb{Z}_2$ 通道并置判决与梯族编号口径（v1.2 新增；后者不改变输入输出与冻结契约）。
 
 ---
 
@@ -132,6 +143,20 @@ SRE 公理 1（无零元）保证每条边只能取 $s_e\in\{+1,-1\}$，即 $z_e
 - **electron-like（强制平凡）**：Aut-不变赋值下**所有** $s$ 都平凡；
 - **nucleon-like（允许非平凡）**：$\exists$ Aut-不变 $s$ 非平凡。
 
+**D11（Aut-不变赋值空间 $W(G)$，v1.2 新增）**　设边轨道为 $O_1,\dots,O_k$，
+$$W(G)\equiv\operatorname{span}_{\mathbb{F}_2}\{\mathbf 1_{O_1},\dots,\mathbf 1_{O_k}\}\subseteq C^1(G;\mathbb{F}_2),\qquad \dim W(G)=n_{\rm orb}=k .$$
+$W(G)$ 是"全体 Aut-不变赋值"构成的子空间。**对照**：不加 Aut 约束时赋值空间为整个 $C^1$（维 $m$），此时非平凡类是常态（维 $\beta_1$，见 §10 第 2 条）。
+
+**D12（割空间 $\operatorname{Cut}(G)$，v1.2 新增）**　
+$$\operatorname{Cut}(G)\equiv\{d(S):S\subseteq V\}=\operatorname{im}\delta_0=\delta C^0\subseteq C^1(G;\mathbb{F}_2),\qquad \dim\operatorname{Cut}(G)=n-c ,$$
+其中 $d(S)$ 为恰有一个端点在 $S$ 中的边集。**基取星集** $d(\{v\})$（与 $v$ 关联的全部边）。**陷阱提示**：若误把基取为"生成树上 $v\to$ 根的路径边集"，得到的是 **循环空间**（tree-cotree 分解中的 tree），不是割空间——$Y_3$ 判决报告实测该替换在 996 例中造成 566 例失配（见 §8.4 门 B′）。
+
+**D13（holonomy 秩与可达类数，v1.2 新增）**　定义 $\mathbb{F}_2$-线性映射
+$$\Phi_G:W(G)\longrightarrow H^1(G;\mathbb{F}_2),\qquad z\longmapsto[s(z)],\qquad \operatorname{rank}_{\rm hol}(G)\equiv\dim_{\mathbb{F}_2}\operatorname{im}\Phi_G .$$
+**含义**：$\operatorname{rank}_{\rm hol}$ 是"符号通道的比特数"，Aut-不变可达类数 $=2^{\operatorname{rank}_{\rm hol}}$；$\operatorname{rank}_{\rm hol}=0\iff$ 一切 Aut-不变赋值平凡（即 D10 的 electron-like，此处给出精确化）。
+
+**D14（Pfaffian 定向类，v1.2 新增——仅作 §6.2 的对照通道）**　设 $G$ 的完美匹配集为 $\mathcal M$。边定向 $t:E\to\{\pm1\}$ 称 **Pfaffian 定向**，若对每个 $M\in\mathcal M$ 有 $\prod_{e\in M}t_e=(-1)^{\mathrm{cr}(M)}$，$\mathrm{cr}(M)$ 为匹配交叉数 $\bmod\,2$。等价于**无偏线性系统** $\sum_{e\in M}t_e=\mathrm{cr}(M)\ (\bmod 2)$ 的可解性，解集记 $\mathcal O_{\rm Pf}(G)$。$\#\mathcal M=0$ 时判据恒通过，**不可作发现**。
+
 ---
 
 ## 4 公理（承接电荷涌现论文）
@@ -188,6 +213,14 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 
 **推论 T2.1**　平凡类**恒可达**（取全零赋值 $s_e\equiv+1$）。非平凡类可达**当且仅当**存在某条边轨道在某个基本环上出现奇数次。
 
+**T2.2（秩形式：$\operatorname{rank}(M)=\operatorname{rank}_{\rm hol}$，v1.2 新增）**
+
+**陈述**　$\operatorname{rank}_{\mathbb{F}_2}(M)=k-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)=\operatorname{rank}_{\rm hol}(G)$。
+
+**证明**　$M$ 的零空间为 $\ker M=\{z:Mz=0\}=\{z:\sigma(\gamma_i)=0\ \forall i\}$。由 T3（环基无关性），"在基本环基上全为零"$\iff$"在一切环上全为零"$\iff[s(z)]=0$；又由 T4，$[s(z)]=0\iff s(z)\in\delta C^0=\operatorname{Cut}$。故 $\ker M=W(G)\cap\operatorname{Cut}(G)$。秩-零化度定理给出 $\operatorname{rank}M=k-\dim\ker M=k-\dim(W\cap\operatorname{Cut})$，再由 T9 等于 $\operatorname{rank}_{\rm hol}$。$\blacksquare$
+
+**T2.3（判据的地位：必要性的误写，v1.2 修正）**　T2 的 $M\neq0$ 是**存在性**判据（等价于 $\operatorname{rank}_{\rm hol}\ge1$），**不给维数**（维数由 T9/T2.2 给出）。v1.1 §10 第 3 条把"含奇环 + 轨道数 $\ge2$"写成**必要条件**，**已被证伪**：梯族（书内编号）$k\ge5$ 奇为**二分图**（无奇环）、双轨道，却仍有 $\operatorname{rank}_{\rm hol}\ge1$（§6.3 T11）；而 $k=3$（$K_{3,3}$）为二分 + 单轨道，$\operatorname{rank}_{\rm hol}=0$。**奇环既非充分也非必要**，唯一充要判据是 T9 的 $W(G)\not\subseteq\operatorname{Cut}(G)$。
+
 ### T3（环基选取无关性）
 
 **陈述**　$\sigma$ 的平凡性判别（$[s]=0$）与基本环基 $\{\gamma_i\}$ 的选取无关。
@@ -236,11 +269,43 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 
 **证明**　复合体重算新边界（A2），边界为各 $\partial K_i$ 之对称差；由 T0 线性性 $\sigma$ 沿对称差相加 $\Rightarrow$ 极性相乘（引理 2.1）。$\deg$ 按新 $(V,E,c)$ 重算。分离可加（A3）由 $Q$ 对独立成分求和给出。$\blacksquare$
 
+### T9（割空间恒等式 / 平凡性的充要判据，v1.2 新增）
+
+**陈述**　设 $G$ 连通（$c=1$；一般 $c$ 情形逐分量套用），$n_{\rm orb}=\dim W(G)$，则
+
+$$\boxed{\ \operatorname{rank}_{\rm hol}(G)=n_{\rm orb}-\dim_{\mathbb{F}_2}\big(W(G)\cap\operatorname{Cut}(G)\big)\ }\qquad\text{且}\qquad \boxed{\ \operatorname{rank}_{\rm hol}(G)=0\iff W(G)\subseteq\operatorname{Cut}(G)\ }$$
+
+即：**符号通道平凡 $\iff$ 每个 Aut-不变赋值都是某个割**。
+
+**证明**　由 D13，$\Phi_G:W(G)\to H^1$ 是 $\mathbb{F}_2$-线性映射。其核
+$$\ker\Phi_G=\{s\in W(G):[s]=0\in H^1\}=\{s\in W(G):s\in\delta C^0\}=W(G)\cap\operatorname{Cut}(G),$$
+第一个等号是核的定义，第二个等号由 $H^1=C^1/\delta C^0$（§2.1）与 T4（类由 $[s]$ 唯一决定），第三个等号由 D12（$\operatorname{Cut}=\delta C^0$）。按秩-零化度定理，
+$$\operatorname{rank}_{\rm hol}=\dim\operatorname{im}\Phi_G=\dim W(G)-\dim\ker\Phi_G=n_{\rm orb}-\dim(W\cap\operatorname{Cut}).$$
+再由 $\operatorname{rank}_{\rm hol}=0\iff\operatorname{im}\Phi_G=0\iff\ker\Phi_G=W(G)\iff W(G)\subseteq\operatorname{Cut}(G)$ 得第二个等价式。$\blacksquare$
+
+**推论 T9.1（与 T2 的衔接）**　$\operatorname{rank}_{\rm hol}\ge1\iff W(G)\not\subseteq\operatorname{Cut}(G)\iff M\neq0$（T2 的存在性判据）。T2 只回答"有没有非平凡类"，T9 回答"有几个比特"。
+
+**推论 T9.2（两条相互独立的计算路线）**　路线 A：T2 的矩阵秩 $\operatorname{rank}_{\mathbb{F}_2}M$（$\mathcal{O}(\beta_1 k)$）；路线 B：割空间交维数 $\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$，$\operatorname{Cut}$ 基取**星集**（D12）。$Y_3$ 判决报告在 22 个样本上（梯族、柱族、经典图、随机 3-正则图）实测两路线与"$H^1$ 类枚举""子集枚举"四路零失配。
+
+**推论 T9.3（官方骨架读数）**　
+
+| 骨架 | $n_{\rm orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\operatorname{rank}_{\rm hol}$ |
+|---|---|---|---|---|
+| $Q_3$ | 1 | 7 | 1 | **0** |
+| $Y_3^{\rm cl}$ | 2 | 11 | 1 | **1** |
+| $Y_3^{\rm op}$ | 7 | 11 | 5 | **2** |
+
+与 T2 的判据一致（$Q_3$：$M=0$；$Y_3^{\rm cl}$：$M\neq0$），并与电荷涌现论文 §10.2 的通道类型一致；其中 $Q_3$ 的平凡性获得**机制解释**：其唯一 Aut-不变赋值（全 1，因边传递）恰落在割空间内。
+
+**注（标号无关性）**　$\operatorname{rank}_{\rm hol}$ 是整数，且只依赖 $G$ 的轨道结构与割空间，**不依赖**环基选取（T3）、不依赖顶点标号（与 §6 的 $\sigma$ 类同）；这与 $\varrho$ 类量（算子 20，见其规范 §2.2）恰相反——后者对顶点标号敏感。故 $\operatorname{rank}_{\rm hol}$ 可作跨骨架的**可比较不变量**。
+
 ---
 
 ## 6 与上游电荷涌现论文的对接（官方骨架忠实复现）
 
 算子 19 以 `skel_electron_q3 / skel_y3_closed / skel_y3_open` 忠实复现电荷涌现论文 §10.2 三类骨架，作为规范的**锚点自测**：
+
+**表 6.1　三类骨架锚点读数**
 
 | 骨架 | $V$ | $E$ | $\beta_1$ | $\deg$ | $\lvert\operatorname{Aut}\rvert$ | 边轨道 | 二分 | 非平凡可达 | 通道类型 |
 |---|---|---|---|---|---|---|---|---|---|
@@ -248,7 +313,15 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 | 质子 $p$（闭态） | 12 | 18 | 7 | 1 | 36 | 2 | 否 | **是** | nucleon-like |
 | 中子 $n$（开态） | 12 | 17 | 6 | 0 | 4 | 7 | 否 | **是** | nucleon-like |
 
-结论：**电子被骨架对称性强制到平凡 holonomy 类，质子落在非平凡类**，与 A0 一起给出电子/质子异号的结构来源。中子的 $\deg=0$，无论 $\sigma$ 如何 $Q_{\text{model}}=0$——**量值通道单独使中子中性**。
+**表 6.2　割空间读数（T9；与 $Y_3$ 判决报告表 3.1 逐项一致，本项目内复核见 §8.4）**
+
+| 骨架 | $n_{\rm orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\operatorname{rank}_{\rm hol}$ | 可达类数 $2^{\rm rank}$ |
+|---|---|---|---|---|---|
+| $Q_3$（电子） | 1 | 7 | 1 | **0** | 1 |
+| $Y_3^{\rm cl}$（质子） | 2 | 11 | 1 | **1** | 2 |
+| $Y_3^{\rm op}$（中子） | 7 | 11 | 5 | **2** | 4 |
+
+结论（v1.2 强化）：**电子被骨架对称性强制到平凡 holonomy 类**——不是"碰巧"，而是唯一候选赋值（$Q_3$ 边传递 $\Rightarrow$ 全 1）恰落在割空间内（$\dim(W\cap\operatorname{Cut})=n_{\rm orb}=1\Rightarrow\operatorname{rank}_{\rm hol}=0$）；**质子恰有 1 比特符号自由度**（两条边轨道中恰有一条的赋值落在割空间内，故 $H^1$ 通道打开、恰 2 个可达类）；**中子有 2 比特**（7 轨道、交维数 5）。与 A0 一起给出电子/质子异号的结构来源。中子的 $\deg=0$，无论 $\sigma$ 如何 $Q_{\text{model}}=0$——**量值通道单独使中子中性**。
 
 ### 6.1 Möbius 型图实证（M1–M9，57/57 通过）
 
@@ -256,7 +329,7 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 
 **构造族**：
 
-- **Möbius 梯 $M_k$** $=$ 偶环 $C_{2k}$ + 对径弦 $(i, i+k)$；$V=2k, E=3k, \beta_1=k+1$。$M_3$ 退化为 $K_{3,3}$，$M_4$ 即 Wagner 图 $V_8$（射影平面最小三角剖分的 1-骨架）。
+- **Möbius 梯 $M_k$** $=$ 偶环 $C_{2k}$ + 对径弦 $(i, i+k)$；$V=2k, E=3k, \beta_1=k+1$。$M_3$ 退化为 $K_{3,3}$，$M_4$ 即 Wagner 图 $V_8$（射影平面最小三角剖分的 1-骨架）。**编号口径（v1.2）**：本节一律用**书内编号** $M_k$（$V=2k$）；$Y_3$ 判决报告用**论文编号** $M_{2n}=\mathrm{Cay}(\mathbb{Z}_{2n},\{1,n\})$（$V=2n$），二者差因子 2，对照见 §6.3 表 6.5。
 - **圆柱梯 $\Pi_k$** 对照：双 $k$-环 + $k$ 竖档；与 $M_k$ 同 $V$ 同 $E$，仅"扭"不同。
 - **加扭偶环**：偶环 $C_{2k}$ 上把相邻两顶点标为异色，构成扭缺陷。
 
@@ -265,9 +338,9 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 | 族 | $\beta_1$ | 通道类型 | 结构来源 |
 |---|---|---|---|
 | $M_3 = K_{3,3}$ | 4 | **electron-like** | 二分 + 单边轨道，T6 强制平凡 |
-| $M_k, k\ge 4$ | $k+1$ | **nucleon-like** | 非二分（含奇环）+ 多轨道，T2 $M\neq0$ |
+| $M_k, k\ge 4$ | $k+1$ | **nucleon-like** | 多轨道，$M\neq0$（T2）。**v1.2 细分**：$k$ **偶**为非二分（含奇环）；$k$ **奇**为**二分**——此时通道打开靠"二分 + 双轨道"（$\operatorname{rank}_{\rm hol}\ge1$），与奇环无关（P19.4 / T11） |
 | $\Pi_k$（偶 $k$） | $k+1$ | **electron-like** | 二分（含偶柱面）+ 单边轨道（偶数阶） |
-| $\Pi_k$（奇 $k$） | $k+1$ | **nucleon-like** | 含三角面（奇环），**非二分**——故真正决定翻转的是奇环存在性，而非"扭转"几何直观本身 |
+| $\Pi_k$（奇 $k$） | $k+1$ | **nucleon-like** | 含三角面（奇环），**非二分**。**v1.2 修正**：v1.1 由此推出"真正决定翻转的是奇环存在性"，**该推理不成立**——梯族 $k\ge5$ 奇为二分图（无奇环）却有 $\operatorname{rank}_{\rm hol}\ge1$（§6.3 T11）。唯一判据是 $W\not\subseteq\operatorname{Cut}$（T9）；本族内翻转与奇环同步只是**族内巧合** |
 
 **非平凡 $\sigma$ 的显式证书**（M4）：$M_4$ 上存在见证边轨道，令其取 $-1$、其余取 $+1$ 得 Aut-不变极性 $s_{\text{witness}}$，满足
 1. $\sigma(\gamma) = -1$（基本环上有一奇环 holonomy $-1$）；
@@ -283,6 +356,62 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 **电子骨架 $Q_3$ 的强制平凡**（M8）：二分 + 单边轨道，无论注入何种 Aut-不变极性，Op19 恒输出 electron-like。
 
 **极性注入 API 回归**（M9）：orbit / explicit 双口径、Aut-不变诊断、非法输入校验，与 §8.3 / X2/X3/X8 等价。
+
+### 6.2 双 $\mathbb{Z}_2$ 通道并置判决：$H^1$ holonomy 与 Pfaffian 定向（v1.2 新增）
+
+算子 19 的 $\sigma$ 通道是 $H^1(G;\mathbb{Z}_2)$ 上的 holonomy 类。图论中另有一条同样取 $\mathbb{Z}_2$ 的"符号"通道——**Pfaffian 定向类**（D14）。二者是否同源，此前只在梯族上间接论证；本节在**项目自身的核子骨架**上并置判决。
+
+**表 6.3　两通道并置读数（$Y_3$ 判决报告 §4.1）**
+
+| 骨架 | $n_{\rm orb}$ | $\operatorname{rank}_{\rm hol}$（$H^1$ 通道） | $\#\mathcal M$ | $\lvert\mathcal O_{\rm Pf}\rvert$ | $\dim\mathcal O_{\rm Pf}$ | Pfaffian 通道 | nice even cycle |
+|---|---|---|---|---|---|---|---|
+| $Q_3$（电子） | 1 | 0 | 9 | 128 | 6 | **有解** | 0 |
+| $Y_3^{\rm cl}$（质子） | 2 | 1 | 6 | **0** | — | **无解** | **42** |
+| $Y_3^{\rm op}$（中子） | 7 | 2 | 4 | 16384 | 13 | **有解** | **0** |
+
+**命题 P19.1（通道分离判决）**　在核子骨架闭态上，$H^1$ holonomy 通道**打开**（$\operatorname{rank}_{\rm hol}=1$，恰 2 个可达类），而 Pfaffian 通道**关闭**（$\mathcal O_{\rm Pf}=\emptyset$）。故"电荷符号由 $H^1$ holonomy 承载、而非 Pfaffian 定向承载"这一项目核心主张，在项目自身骨架上获得**直接并置实测**，不再只是"梯族上成立、骨架上外推失败"的间接论证。
+
+**定理 T10（极小不可解行子集证书）**　$Y_3^{\rm cl}$ 的无偏系统为 $6$ 行（6 个完美匹配）$\times\,18$ 列（18 条边）；其**全部 6 行**构成极小不可解行子集：去掉任意一行，余下 5 行**可解**（可满足的最大行数 $=5/6$）。即 $Y_3^{\rm cl}$ 与"有 Pfaffian 定向"之间**只差一行**。
+
+**证明**　由判据 D14，逐行列出 6 个完美匹配与右端 $\mathrm{cr}$ 值（表 6.4），对全部 $2^6$ 个行子集穷举：仅全集不可解，其余 63 个真子集均可解；故全集是极小不可解行子集。$\blacksquare$
+
+**表 6.4　$Y_3^{\rm cl}$ 的无偏系统（6 行 × 18 列，右端为 $\mathrm{cr}(M)$）**
+
+| 行 | 完美匹配 $M$ | $\mathrm{cr}(M)$ |
+|---|---|---|
+| 1 | $\{(0,1),(2,6),(3,11),(4,7),(5,9),(8,10)\}$ | 1 |
+| 2 | $\{(0,1),(2,10),(3,7),(4,6),(5,9),(8,11)\}$ | 0 |
+| 3 | $\{(0,2),(1,5),(3,11),(4,7),(6,10),(8,9)\}$ | 0 |
+| 4 | $\{(0,2),(1,9),(3,7),(4,5),(6,10),(8,11)\}$ | 1 |
+| 5 | $\{(0,3),(1,5),(2,10),(4,6),(7,11),(8,9)\}$ | 1 |
+| 6 | $\{(0,3),(1,9),(2,6),(4,5),(7,11),(8,10)\}$ | 0 |
+
+"差一行"由**穷举全部行子集**确认，非启发式。
+
+**命题 P19.2（结构性机制：nice even cycle 归零）**　$Y_3^{\rm cl}$ 含 **42** 条 nice even cycle（长 6 共 9、长 8 共 9、长 10 共 18、长 12 共 6）；删去一条环边得到的 $Y_3^{\rm op}$ 该数为 **0**，Pfaffian 通道随之打开（$\dim=13$、$\lvert\mathcal O_{\rm Pf}\rvert=2^{13}$，特解独立复核 $\mathrm{Pf}=+4=\#\mathcal M$）。故"闭/开一念之差导致存在性翻转"这一 v1.1 的定性观察，现有了**具体机制**。
+
+> **边界一（指示器不是判据）**　nice even cycle 只是**障碍指示器**：在 22 个样本上作分类器得 TP=4、FP=2、FN=3、TN=13（假阳性如 Wagner 图 $M_8$：nice=1 但有解；假阴性多为二分图）。真值始终由无偏系统给出。
+> **边界二（契约不变）**　Pfaffian 是**邻接的图论通道，不属于算子 19 的输出**：实现不引入任何新键，`charge_channel_keys` 仍恒 **10 键**（§8.3），冻结契约不因本节改动。
+
+### 6.3 $Y_3$ 与 Möbius 梯族的关系判决与编号口径（v1.2 新增）
+
+**命题 P19.3（覆盖 / 商判决）**　$Y_3^{\rm cl}$ 与任何 $M_{2n}$（$n\ge3$）**不同构**（邻接谱与三角形数均不同）、**零覆盖**（完备回溯枚举 $M_4$–$M_{14}$ 全为 0）、**零商**（商是覆盖的特例，零覆盖蕴含零商）。**但** $Y_3^{\rm cl}$ 是 $K_4$ 的 **$k=3$ 正规覆盖**（唯一覆盖；deck 群 3 阶；商 $\cong K_4$；四条 $K_4$ 边各被提升 3 次）。$Y_3$ 的"三"（3 中心、3 组腿、3 个三角形、$\lvert\operatorname{Aut}\rvert=36=3!\times3!$、2 条边轨道各 9 条）由此获得统一解释：**$Y_3$ 是三折的完全图**。
+
+**表 6.5　编号口径对照（差因子 2；跨文献引用前必查）**
+
+| 图 | 书内编号 $M_k$（偶环 $C_{2k}$ + 对径弦，$V=2k$） | 论文编号 $M_{2n}=\mathrm{Cay}(\mathbb{Z}_{2n},\{1,n\})$，$V=2n$ |
+|---|---|---|
+| $K_4$ | $M_2$ | $M_4$ |
+| $K_{3,3}$ | $M_3$ | $M_6$ |
+| Wagner 图 | $M_4$ | $M_8$ |
+
+**命题 P19.4（书内口径全族读数，$k=2,\dots,24$）**　$n_{\rm orb}=1\iff k\in\{2,3\}$；$k$ 偶 $\iff$ 非二分，$k$ 奇 $\iff$ 二分；$\operatorname{rank}_{\rm hol}=0\iff k=3$。
+
+**定理 T11（梯族打开符号通道的充要条件）**　梯族中 $\operatorname{rank}_{\rm hol}=0$ **当且仅当** $k=3$（即 $K_{3,3}$，全族唯一"二分 + 单轨道"成员）。故 $k\neq3$ 的梯族一律打开符号通道；当 $k\ge5$ 为奇时图为**二分**（无奇环）而通道仍打开，机制是"二分 + 双轨道"。
+
+**证明**　$k=3$ 时单轨道 + 二分，由 T6 强制平凡；$k=2$ 为 $K_4$：单轨道但含三角形，$\operatorname{rank}_{\rm hol}\ge1$。$k\ge4$ 时 $n_{\rm orb}=2$；若 $k$ 偶则含奇环，若 $k$ 奇则二分——两种情形下两条轨道中至少一条不落在割空间内（$k$ 奇时全 1 赋值落在割空间、另一条不落），故 $\dim(W\cap\operatorname{Cut})\le1<n_{\rm orb}=2$，由 T9 得 $\operatorname{rank}_{\rm hol}\ge1$。$\blacksquare$
+
+**推论 T11.1（对 T6 与 §6.1 的修正）**　T6 的"二分 + 单轨道 $\Rightarrow$ 强制平凡"是**充分**条件，其**逆不真**（反例：$k\ge5$ 奇的梯族，二分 + 双轨道、通道打开）。因此 §6.1 原句"真正决定翻转的是奇环存在性"**不成立**，同时收紧 v1.1 §10 第 3 条把"奇环 + 多轨道"写作必要条件的写法：唯一充要判据是 T9 的 $W(G)\not\subseteq\operatorname{Cut}(G)$。
 
 ---
 
@@ -363,6 +492,22 @@ python verify_operator_19_cross.py    # X1–X10，29 断言（跨实现一致�
 
 > **冻结契约（D5，不得违反）**：`charge_channel_keys(res)` 必须恒定返回 **10 键**；两实现已被证实遵守，禁止后续实现改动此键数。
 
+### 8.4 外部判决报告的复核（v1.2 新增，门 A–F）
+
+$Y_3$ 判决报告的全部结论按六个门逐项复核；本项目内**不修改任何实现、不新增任何键**，只以独立脚本调用既有桥接函数重算可观测量：
+
+| 门 | 复核内容 | 判定 |
+|---|---|---|
+| **A** 对象忠实性 | $Y_3^{\rm cl}$ / $Y_3^{\rm op}$ 的 $V,E,\beta_1,\deg,\lvert\operatorname{Aut}\rvert$、边轨道数、二分性 | 与 §6 表 6.1 逐项一致 |
+| **B** 割空间恒等式 | 三骨架的 $n_{\rm orb},\dim\operatorname{Cut},\dim(W\cap\operatorname{Cut}),\operatorname{rank}_{\rm hol}$ 四列读数；$\operatorname{rank}_{\rm hol}$ 与 T2 判据 $M\neq0$ 的相容性 | $Q_3=0$、$Y_3^{\rm cl}=1$、$Y_3^{\rm op}=2$，**在本项目内独立复现** |
+| **B′** 基选取陷阱 | 割空间基取星集 $d(\{v\})$ vs 误取"生成树路径边集"（后者实为循环空间） | 星集口径复现全部读数；误取口径在报告 996 例中 566 例失配，确认 D12 的陷阱提示必要 |
+| **C** 四路零失配 | 矩阵秩（T2）/ 割空间交维数（T9）/ $H^1$ 类枚举 / 子集枚举 四条独立路线 | 22 个样本零失配，T9.2 成立 |
+| **D** Pfaffian 证书 | 无偏系统可解性与极小不可解行子集（T10）、特解 $\mathrm{Pf}$ 交叉校验、nice even cycle 计数与分类器指标 | 逐项一致（表 6.3、6.4）；指示器假阳性/假阴性边界如 §6.2 所述，不改变判据 |
+| **E** 覆盖判决与口径 | $Y_3^{\rm cl}$ 对 $M_{2n}$ 的同构/覆盖/商判定；$Y_3^{\rm cl}\to K_4$ 三折覆盖；书内 $M_k$ 与论文 $M_{2n}$ 对照 | 一致（P19.3、表 6.5） |
+| **F** 编号与结论修订 | 报告对 v1.1 的两处纠正（§6.1 奇环判据、§10 第 3 条必要条件）是否已被本文吸收 | 已吸收（T2.3、T11.1、§10） |
+
+**复核方法说明**：本项目的复核脚本**不落盘为独立验证程序**——它复用 `sre_z2_holonomy_bridge.py` 的 `edge_list / automorphisms / edge_orbits` 与骨架构造器，只在外部追加割空间维数计算；因此 V1–V12 / M1–M9 / X1–X10 的计数不变（45 / 57 / 29）。若后续需把 T9 纳入常规回归，应作为 **V13** 新增，并同步更新三处计数与冻结契约表述。
+
 ---
 
 ## 9 与既有算子（1–18）的边界（不重合声明）
@@ -386,10 +531,15 @@ python verify_operator_19_cross.py    # X1–X10，29 断言（跨实现一致�
 
 1. **模型内部构造，非物理断言**。本规范全部结论为 SRE 模型**内部自洽构造**；$Q_{\text{model}}$ 是**模型内部电荷档**（$\in\{-1,0,+1\}$），不构成对现实分子/粒子电荷数值的物理断言。
 2. **Aut-不变是明示假设**。可达性结论（T2、T6）依赖电荷涌现论文 §13.2 的**明示假设**"边极性在自同构下不变"。**不加此假设**时，任何含环的图都容许非平凡类（1 bit 自由度，维数 $=\beta_1$），可达性分析退化为平凡事实。
-3. **非平凡可达的必要条件**。仅当图含**奇环**且边轨道数 $\ge2$（更准确：$M\neq0$）时，非平凡类才可达——这是"偶数环族被偶长强制平凡"（T6）的直接后果。
+3. **非平凡可达的充要条件是割空间判据，不是奇环判据（v1.2 修正）**。v1.1 曾把"含**奇环**且边轨道数 $\ge2$"写作必要条件，**该写法已被证伪**：梯族 $k\ge5$ 奇为二分图（无奇环）而 $\operatorname{rank}_{\rm hol}\ge1$（T11）。正确表述是 T9：$W(G)\not\subseteq\operatorname{Cut}(G)$，等价于 T2 的 $M\neq0$。**二分性、奇环存在性、轨道数均非充要**；它们只在特定族内与结论同步。
 4. **分子层需元素着色**。分子键图的 Aut 必须以元素标号着色（T7），否则 C 与 H 等异元素可能被混同，轨道结构失真。
 5. **规模守卫**。自同构枚举设 `aut_max_v=22` 守卫；超大图仅跳过可达性分析，$\sigma$ 类判别与 $Q_{\text{model}}$ 仍有效。
 6. **$A_s$ 语义**。19 复用算子 1/4 输出的 $A_s$，其键图支撑 $A_s>0$ 的语义由上游保证（SRE 公理 1 的协同边 $E^+$）；若上游 $A_s$ 含数值噪声，请以 `bond_graph_from_As(eps)` 的 $\epsilon$ 判定。
+7. **割空间基必须取星集（v1.2）**。$\operatorname{Cut}$ 的基取 $d(\{v\})$；若误取"生成树上 $v\to$ 根的路径边集"，得到的是**循环空间**而非割空间，$\operatorname{rank}_{\rm hol}$ 将系统性失真（报告 996 例中 566 例失配，§8.4 门 B′）。
+8. **Pfaffian 是外部对照通道，不是算子 19 的输出（v1.2）**。§6.2 的 Pfaffian 读数不进入计算结果、不新增键；`charge_channel_keys` 仍恒 **10 键**。Pfaffian 逻辑需另设入口，禁止挂到算子 19 的返回值上。
+9. **nice even cycle 只是指示器（v1.2）**。其在 22 样本分类器上 TP=4 / FP=2 / FN=3 / TN=13，**不可**用作判据；真值必须由无偏线性系统给出（D14）。
+10. **编号口径必须标注（v1.2）**。书内 $M_k$（$V=2k$）与论文 $M_{2n}$（$V=2n$）差因子 2；任何跨文献引用梯族编号处必须同时写出两套编号（表 6.5），否则 $K_{3,3}=M_3=M_6$ 之类的对照会错位一格。
+11. **$\operatorname{rank}_{\rm hol}$ 的跨骨架可比性有前提（v1.2）**。它只依赖轨道结构与割空间，故与标号无关（优于 $\varrho$ 类量）；但**只在相同 Aut 约束下可比**——放宽 Aut 约束后空间变为整个 $C^1$，维数变为 $\beta_1$，与 $n_{\rm orb}$ 口径不可混用。
 
 ---
 
@@ -399,10 +549,13 @@ python verify_operator_19_cross.py    # X1–X10，29 断言（跨实现一致�
 
 - **良定义**（T0）：1-复形上 $\sigma$ 是 $H_1$ 上的 $\mathbb{F}_2$-线性泛函，无代表歧义；
 - **符号的不可伪造性**（T1/T1.1）：顶点势型极性（含算子 11 自旋极性、算子 18 符号赋型）holonomy 恒平凡——电荷符号不能由局部自旋重标定造出；
-- **可达性的封闭判据**（T2/T2.1）：非平凡可达 $\iff M\neq0$，$\mathcal{O}(\beta_1 k)$，无需 $2^k$ 枚举；
+- **可达性的封闭判据**（T2/T2.1/T2.2）：非平凡可达 $\iff M\neq0$，$\mathcal{O}(\beta_1 k)$，无需 $2^k$ 枚举；
+- **平凡性的充要判据与比特计数**（T9/T9.2，v1.2）：$\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim(W\cap\operatorname{Cut})$，可达类数 $=2^{\operatorname{rank}_{\rm hol}}$；两独立计算路线在 22 样本零失配；
+- **双 $\mathbb{Z}_2$ 通道的并置判决**（§6.2，v1.2）：在 $Y_3^{\rm cl}$ 上 $H^1$ 通道打开（1 比特）而 Pfaffian 通道无解（极小不可解证书：6 行全用才矛盾），符号归属由实测而非推断确定；
+- **覆盖关系与编号口径**（§6.3，v1.2）：$Y_3^{\rm cl}$ 与梯族零覆盖、零商，但为 $K_4$ 的三折正规覆盖；书内 $M_k$ 与论文 $M_{2n}$ 的因子 2 对照已建表；
 - **规范不变性**（T3/T4）：平凡性判别与环基无关，$\sigma$ 对顶点势重标定免疫，只依赖 $[s]\in H^1$；
 - **双通道分离**（T5）：符号 $\sigma$ 与量值 $\deg$ 正交，$Q=\sigma\deg$；
-- **电子型/核子型的结构来源**（T6）：偶环 + 单轨道强制平凡（电子），奇环 + 多轨道允许非平凡（质子）；
+- **电子型/核子型的结构来源**（T6/T11.1）：偶环 + 单轨道强制平凡（电子）——但**逆不真**，$k\ge5$ 奇梯族为二分却打开通道；判据收敛到 T9；
 - **分子层的必要形成分**（T7）：元素着色 Aut，否则判据翻转。
 
 并与上游电子算子共享同一张图（$A_s$），输出 `z2_*` 标量键接入化合物筛选流水线，实现原子/电子级的高速符号通道计算。
@@ -424,5 +577,9 @@ python verify_operator_19_cross.py    # X1–X10，29 断言（跨实现一致�
 | $O_o$ | Aut 作用下的边轨道 |
 | $m_{i,o}$ | 轨道 $o$ 在基本环 $i$ 上的边数 mod 2 |
 | $M=(m_{i,o})$ | 可达性矩阵，非平凡可达 $\iff M\neq0$ |
+| $W(G)=\operatorname{span}\{\mathbf 1_{O_o}\}$ | Aut-不变赋值子空间，$\dim=n_{\rm orb}$（v1.2） |
+| $\operatorname{Cut}(G)=d(S)$ | 割空间 $=\operatorname{im}\delta_0$，$\dim=n-c$；基取星集 $d(\{v\})$（v1.2） |
+| $\operatorname{rank}_{\rm hol}=\dim\operatorname{im}\Phi_G$ | 符号通道比特数，可达类数 $=2^{\operatorname{rank}_{\rm hol}}$（v1.2） |
+| $\mathcal O_{\rm Pf}$ | Pfaffian 定向解集（外部对照通道，不属算子 19 输出）（v1.2） |
 | $\deg=\beta_1\bmod2$ | 量值通道 |
 | $Q_{\text{model}}=\sigma_{\text{canonical}}\cdot\deg$ | 模型内部电荷档 |
