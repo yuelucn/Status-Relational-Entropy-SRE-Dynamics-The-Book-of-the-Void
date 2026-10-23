@@ -20,7 +20,7 @@
 - SRE 经典电动力学基础重构 v1.1-rev（`2-Everything_Emerges/Classical_Electrodynamics_1.1_C.md`）
 - SRE 麦克斯韦方程严格重构 v2.1（`2-Everything_Emerges/Rigorous_Reconstruction_of_Maxwell_2.1_C.md`）
 - SRE 电子完整刻画 v1.0（`2-Everything_Emerges/SRE_Electron_Complete_Paper_1.0_C.md`）
-- SRE 电荷涌现 v1.0（`2-Everything_Emerges/SRE_charge_emergence_1.0_C.md`）
+- SRE 电荷涌现 v1.1（`2-Everything_Emerges/SRE_charge_emergence_1.1_C.md`）
 - SRE 19 算子流水线 v2.0（`3-Mathematical_Support/Universal_Graph_Operator_Pipeline_in_SRE_2.0_C.md`）
 
 ---

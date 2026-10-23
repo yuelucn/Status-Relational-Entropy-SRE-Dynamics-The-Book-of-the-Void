@@ -20,7 +20,7 @@
 - SRE Classical Electrodynamics Foundation Reconstruction v1.1-rev (`2-Everything_Emerges/Classical_Electrodynamics_1.1_C.md`)
 - SRE Rigorous Reconstruction of Maxwell Equations v2.1 (`2-Everything_Emerges/Rigorous_Reconstruction_of_Maxwell_2.1_C.md`)
 - SRE Complete Electron Characterization v1.0 (`2-Everything_Emerges/SRE_Electron_Complete_Paper_1.0_C.md`)
-- SRE Charge Emergence v1.0 (`2-Everything_Emerges/SRE_charge_emergence_1.0_C.md`)
+- SRE Charge Emergence v1.1 (`2-Everything_Emerges/SRE_charge_emergence_1.1_C.md`)
 - SRE 19-Operator Pipeline v2.0 (`3-Mathematical_Support/Universal_Graph_Operator_Pipeline_in_SRE_2.0_C.md`)
 
 ---

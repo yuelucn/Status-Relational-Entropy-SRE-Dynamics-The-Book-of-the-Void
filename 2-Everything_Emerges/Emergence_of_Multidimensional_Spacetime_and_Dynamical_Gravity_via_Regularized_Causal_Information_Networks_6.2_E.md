@@ -1,5 +1,5 @@
 ﻿# Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal-Information Networks
-**Version**: 6.2-rev (incorporating ontological corrigendum; updated numerical simulation results, distinguishing historical reference value from Bootstrap statistical simulation outputs)
+**Version**: 6.3-rev (incorporating ontological corrigendum; updated numerical simulation results, distinguishing historical reference value from Bootstrap statistical simulation outputs)
 
 ## Abstract
 The ΛCDM standard-cosmology framework encounters significant observational tension at high redshift $z>5$. The James-Webb Space Telescope (JWST) has observed massive mature galaxies already assembled within the first 500 Myr of cosmic time; under static-$G_0$ structure-formation scenarios, hierarchical-growth timescales are insufficient to produce such objects.
@@ -135,7 +135,107 @@ $$
 =g_{00}c_0^2\mathrm{d}t^2+\Omega^2 g_{ij}\mathrm{d}x^i\mathrm{d}x^j
 $$
 
-Therefore, even as $c_\mathrm{eff}$ evolves cosmologically, **locally-measured observer light-speed remains $c_0$, satisfying Lorentz-invariance**, consistent with qualitative SRE-v1.6 predictions.
+> **v6.3 revision (premise audit)**: the step above is a **conditional** cancellation, not an unconditional conclusion. It requires $c_\mathrm{eff}\propto\Omega$, i.e. $c_\mathrm{eff}$ linear in the network scale; but the actual form of operator 5 is not linear. The audit follows.
+
+**(a) The true functional form of operator 5.** The edge capacity is $W_e\equiv\sqrt{D_{ii}D_{jj}}$, where $D_{ii}=\sum_j A_{ij}$ is the vertex degree. Measured (identical for a 2-node graph and a 3-node chain, $W\in[0.01,20]$):
+$$
+c_e=\alpha_n\min\!\left(3,\ \frac{1}{\ln(1+W_e)}\right)
+\quad\Longleftrightarrow\quad
+v_e=\frac{1}{\alpha_n}\max\!\left(\tfrac13,\ \ln(1+W_e)\right)
+$$
+i.e. a **logarithmic rate plus a speed floor of $1/3$**, with critical capacity $W_c=e^{1/3}-1=0.395612$. The linear relation only holds approximately when $sW\ll1$.
+
+**(b) The criterion for cancellation is the metric's shape, not the speed's value.** Any scalar factor is divided out by normalisation, so only a change of shape implies non-cancellation. Measured for three carriers:
+
+| Carrier | Uniform degree? | $W_e$ edge span | $\lambda_2/\lambda_\max$ | Shape drift ($s$ sweep) |
+|---|---|---|---|---|
+| Complete matrix graph $n=60$ | yes (59-regular) | $1.0\times$ | $1.000$ | geometrically degenerate, unusable |
+| $M_{60}$ ladder ($\alpha$-anchor carrier) | yes (3-regular) | $1.0\times$ | $0.0073$ | $4.4\times10^{-16}$ |
+| $\chi=1$ subgraph $n=150$ | no (degree 2–15) | $3.9\times$ | $0.088$ | $3.03\times10^{-1}$ |
+
+Multiplying by any scalar $\Omega\in\{0.5,1,3,17\}$ leaves the shape drift at $0.303218$ in all four cases: **a scalar can change scale, never shape**.
+
+**(c) Revised proposition (v6.3).**
+$$
+\boxed{\ \text{local light-speed invariance}\iff W_e\ \text{edge-uniform}\iff\text{carrier graph is regular}\ }
+$$
+On a uniform carrier, take $\Omega(s)=\dfrac{\max(1/3,\ln(1+sW))}{\max(1/3,\ln(1+W))}$; cancellation then holds exactly (drift $4.4\times10^{-16}$). This $\Omega(s)$ **replaces** the $\Omega=\exp(I(z))$ used earlier in this section: the latter is the approximation in the linear limit $sW\ll1$ and coincides with it only on a uniform carrier in the low-capacity region. On a heterogeneous carrier no scalar conformal factor exists; the only edge-wise candidate $\Omega_e=v(sW_e)/v(W_e)$ differs edge by edge by construction (span $1.22\times$ at $s=2$), i.e. it is a **Weyl transformation** rather than a conformal one, so the shape genuinely changes.
+
+⇒ The original statement "the locally measured light-speed equals $c_0$" must be restricted to **regular carriers** (the $M_{60}$ used by the $\alpha$ anchor is of this class). A generic evolving network (the $\chi=1$ subgraph) does not satisfy the premise, and its local light-speed changes with epoch. This revision does not touch the $\alpha=\lambda_2/\lambda_\max$ anchor — a dimensionless ratio is invariant under uniform rescaling.
+
+### 3.3 Testable prediction: the relative refractive index of a medium pair drifts with epoch
+Part (a) directly gives the relative refractive index
+$$
+n_\mathrm{rel}(s)=\frac{\max\!\left(\tfrac13,\ \ln(1+sW_a)\right)}{\max\!\left(\tfrac13,\ \ln(1+sW_b)\right)}
+$$
+With $W_a=3$, $W_b=1$ (two link-density classes), analytic values:
+
+| Epoch scale $s$ | 0.5 | 1 | 2 | 10 |
+|---|---|---|---|---|
+| $n_\mathrm{rel}$ | 2.259851 | 2.000000 | 1.771244 | 1.432084 |
+
+Monotonically decreasing towards 1. Physical reading: **the refractive contrast of media is stronger in the early universe and vanishes with epoch**; when both capacities fall into the floored region ($W<W_c=0.395612$) the speeds are clamped, so the contrast is identically 1 ("no refraction in an extremely dilute medium").
+
+**Criterion**: the ratio $R(z)$ measured across redshift for the same medium pair must lie within the shape family given in §3.4 (start $1$, peak $1.1736$, end $0.5$, non-monotone); any monotone curve, or an asymptote different from $1/n_\mathrm{rel}(0)$, falsifies it. §3.4 supplies the $s(z)$ mapping and the reading of $\kappa$.
+
+(Sources: `verify_e8_conformal_log_fix.py`, `verify_e9_uniformity_audit.py`)
+
+### 3.4 Mapping from epoch scale to redshift: $s(z)$ and the redshift criterion
+
+The drift in §3.3 uses the epoch scale $s$ as its independent variable, whereas the observable is the redshift $z$. This subsection supplies $s(z)$ and turns the "testable prediction" of §3.3 into a criterion that can be checked directly. **This is the only new constitutive identification in this paper**: it is a continuous-to-continuous map, it introduces no new dimensionless free parameter, but it must be declared explicitly (G12).
+
+**(a) Mapping.** Take the power law
+$$
+s(z)=(1+z)^{-\kappa},\qquad \kappa\in\{0,1,2,3\}
+$$
+The reading of $\kappa$ is fixed by what the capacity counts: $\kappa=1$ length (capacity follows the linear size of the causal cell), $\kappa=2$ holographic boundary (area), $\kappa=3$ counting (number of channels in the cell, $\propto$ volume), $\kappa=0$ no drift ($s$ independent of $z$, redshift carries no capacity information). The direction is fixed by §3.2: $z$ up $\Rightarrow s$ down $\Rightarrow W_e=sW$ down $\Rightarrow v_e=\max(1/3,\ln(1+W_e))/\alpha_n$ down, consistent with "$c_\mathrm{eff}$ decreases in the high-dissipation primordial regime". **$\kappa=3$ is the default reading**; $\kappa$ is an integer, not a fitted real number.
+
+**(b) Criterion quantity.** Take the double ratio of the speed ratios of the same medium pair at two epochs:
+$$
+R(z)\equiv\frac{v\!\left(s(z)W_a\right)/v\!\left(s(z)W_b\right)}{v(W_a)/v(W_b)},\qquad R(0)=1 .
+$$
+It is insensitive to the reciprocal convention ($n=c/v$ versus $v$) and cancels the unmeasurable common factor in the absolute speeds — a purely **differential** observable (for instance the source-redshift dependence of the time-delay ratio between two lensed images).
+
+**(c) Three $\kappa$-independent anchors.**
+
+1. **Start**: $R(0)=1$.
+2. **Peak height**: the slower medium hits the floor first ($s_1=W_c/W_b$), where
+$$
+R_\mathrm{peak}=\frac{v\!\left(W_cW_a/W_b\right)/W_c}{\ln(1+W_a)/\ln(1+W_b)} ;
+$$
+for $W_a=3,W_b=1$, $R_\mathrm{peak}=1.173600$ — **independent of $\kappa$**; $\kappa$ only moves the peak ($z_\mathrm{peak}\simeq z_1$).
+3. **High-$z$ freeze**: as $z\to\infty$ both hit the floor and $R(\infty)=1/n_\mathrm{rel}(0)=0.5$ (same pair).
+
+Hence the **shape** (start $1$, peak $1.1736$, end $0.5$, non-monotone) is fully fixed; $\kappa$ only sets the two kink positions:
+$$
+z_1=\left(\frac{W_b}{W_c}\right)^{1/\kappa}-1,\qquad z_2=\left(\frac{W_a}{W_c}\right)^{1/\kappa}-1 .
+$$
+
+| $z$ | 0.2 | 0.3 | 0.5 | 1 | 2 | 5 | 10 |
+|---|---|---|---|---|---|---|---|
+| $R_{\kappa=1}$ | 1.033401 | 1.048341 | 1.075330 | 1.129926 | 1.039721 | 0.608198 | 0.500000 |
+| $R_{\kappa=2}$ | 1.067603 | 1.097974 | 1.152082 | 0.839424 | 0.500000 | 0.500000 | 0.500000 |
+| $R_{\kappa=3}$ | 1.102200 | 1.147618 | 0.953983 | 0.500000 | 0.500000 | 0.500000 | 0.500000 |
+
+Corresponding kinks: $\kappa=1$ gives $(z_1,z_2)=(1.527726,\ 6.583179)$; $\kappa=2$ gives $(0.589883,\ 1.753757)$; $\kappa=3$ gives $(0.362208,\ 0.964644)$.
+
+**(d) Self-calibration and over-determination.** From the observed positions of the two kinks, invert for the capacities:
+$$
+W_b=W_c(1+z_1)^{\kappa},\qquad W_a=W_c(1+z_2)^{\kappa},
+$$
+then check against the locally measured $n_\mathrm{rel}(0)=\ln(1+W_a)/\ln(1+W_b)$. The three numbers $(n_0,z_1,z_2)$ contain only two independent capacity degrees of freedom, so the third is an **over-determination test**: closure fixes both $\kappa$ and the two capacities at once; failure to close falsifies.
+
+**(e) Alternative internal reading, and its exclusion.** If redshift is instead **defined** as the ratio of background speeds, $1+z=v(W_0)/v(sW_0)$, then $s(z)=\left[(1+W_0)^{1/(1+z)}-1\right]/W_0$, with a redshift ceiling
+$$
+z_\max=3\ln(1+W_0)-1 .
+$$
+$W_0=1$ gives $z_\max=1.079$, $W_0=3$ gives $z_\max=3.159$. **Quasars have been observed at $z\simeq7$**, so this reading requires $W_0\ge e^{8/3}-1=13.392$ — the model provides no mechanism for a background capacity that large. We therefore adopt the counting reading (a) and register this reading as already excluded by observation.
+
+**(f) Falsification list.** (i) If at $z\simeq0.3$ the deviation of $R$ from $1$ is below $1\%$ (i.e. $\kappa=0$), the drift prediction is falsified; (ii) if $R(\infty)\ne0.5$ (for $W_a=3,W_b=1$), falsified; (iii) if the curve is monotone, with neither peak nor kink, falsified; (iv) if the kink positions do not yield an integer $\kappa$, or the $(n_0,z_1,z_2)$ over-determination fails to close, falsified.
+
+**Observational threshold**: at $z=0.3$, $\kappa=3$ deviates from no-drift by $14.8\%$, $\kappa=2$ by $9.8\%$ and $\kappa=1$ by $4.8\%$; a $5\%$ measurement of the differential time-delay ratio already separates $\kappa=3$ from no drift.
+
+(Sources: `verify_e10_redshift_sz.py`)
 
 ## 4 Random-Matrix-Theory and BBP Spectral-Rank Phase-Transition: 2D-Holographic ↔ 4D-Unlocked-Spacetime
 Effective rendered-spacetime dimensionality is determined by the eigenvalue-spectrum of the stabilised association matrix $B_\mathrm{stabilized}$. Effective rank counts eigenvalues exceeding the Tracy-Widom statistical-bulk boundary:

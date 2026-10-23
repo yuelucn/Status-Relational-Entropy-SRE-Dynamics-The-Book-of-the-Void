@@ -42,7 +42,7 @@ Within the mapping workflow, **reciprocal measurement mediated by light-residual
 
 Time and space coordinates do not exist prior to measurement interactions. On the contrary: one complete reciprocal-measurement event represents one full round of dissipation-evaluation and compensation-settlement. Each settlement contributes one new increment to temporal book-keeping and simultaneously updates topological-book-keeping results for spatial metrics.
 
-Durational perception and spatial distance inside the rendering layer are macroscopic manifestations after homomorphic-mapping of large-numbers of reciprocal-measurement events. Conformal-gauge covariance further guarantees the invariance of locally measured speed-of-light inside the rendering layer.
+Durational perception and spatial distance inside the rendering layer are macroscopic manifestations after homomorphic-mapping of large-numbers of reciprocal-measurement events. Conformal-gauge covariance guarantees the invariance of locally measured speed-of-light inside the rendering layer **under the premise that the carrier graph is regular and the capacity field is uniform along edges**; a generic evolving network does not satisfy this premise, its local speed of light varies with epoch, and the testable form is relative-refractive-index drift between a fixed pair of media (see *Multidimensional Spacetime and Dynamical Gravity* §3.2–§3.3).
 
 ## V. Conclusion
 The SRE Mapping Prerequisites define the domain-of-applicability for the framework. This work does not answer the question of the ultimate origin of causal differences. Instead it articulates the constraints required for mapping to occur.

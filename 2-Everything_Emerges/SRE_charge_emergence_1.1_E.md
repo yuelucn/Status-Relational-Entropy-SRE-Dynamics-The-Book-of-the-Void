@@ -1,12 +1,12 @@
 # Emergence of Positive and Negative Electric Charge in the SRE Framework: Magnitude, Sign, and Numerical Verification
 
 
-Version: 1.0
-
+Version: 1.1
 
 > **Companion scripts**: `_sigma_deg_independence.py`, `_se_assignment_test.py` (both reuse the official skeleton `y3()` from §8 of *A Complete Characterization of the Nucleon in the SRE Framework*).
 
-**Cited articles from *The Book of the Void***: https://zenodo.org/records/23137136
+**Cited articles from *The Book of the Void***: https://doi.org/10.5281/zenodo.23560671
+
 - *State-Relation Entropy (SRE) Dynamics: User Manual and Theoretical Background*
 - *A Unified Theory of the Electronic Logical Structure and Physical Properties Based on an Instantiable Minimal Topological Scale*
 - *A Fundamental Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality*
@@ -154,6 +154,15 @@ This agrees with the "homology ladder" $|H^1(G;\mathbb{Z}_n)|=n^{\beta_1}$ of *T
 
 **Proof** $\{+1,-1\}$ is a group of order two; its unique non-trivial automorphism is negation, which sends every holonomy class to its opposite class; $\deg$ depends only on the graph, not on the edge assignment. $\square$
 
+**Realizability (supplementary proof, 2026-10-23)** The formula above is a reversal at the **class level**, not "flip every edge". To be a physical operation it must come with an edge assignment that realizes it. Let $C$ be the cycle–edge incidence matrix (rows = fundamental cycles, columns = edges, over $\mathbb{F}_2$) and solve $Cx=\mathbf 1$; $C$ is full rank for both $Q_3$ and $Y_3\ltimes\triangle_3$ ($\beta_1=5,\,7$) ⇒ **a solution always exists**.
+
+| Skeleton | $\beta_1$ | Explicit assignment negating all basis cycles | Result of flipping all edges |
+|---|---|---|---|
+| $Q_3$ | 5 | flip 3/$12$ edges $\{(0,1),(0,2),(1,3)\}$ | all $+1$ (bipartite, all cycles even) |
+| $Y_3\ltimes\triangle_3$ | 7 | flip 4/$18$ edges $\{(0,3),(3,6),(4,7),(5,8)\}$ | $(+,+,+,+,-,-,-)$ |
+
+⇒ $\mathcal{C}$ has a physical carrier: a concrete assignment implements it. **But it is not "flip all edges"** — on a bipartite skeleton the latter yields all $+1$ because every cycle has even length, i.e. it is the identity. This point was previously left implicit and is the only place where $\mathcal{C}$ is easy to misread. (Source: `verify_e6_charge_conjugation.py`)
+
 **Physical reading**: **charge conjugation = holonomy reversal**: $e^-\leftrightarrow e^+,\ p\leftrightarrow\bar p$.
 
 ---
@@ -182,6 +191,15 @@ Physics (including classical electromagnetism) determines only the **relative si
 
 Namely: **electron in the trivial class (assigned negative) ↔ proton in the non-trivial class (assigned positive)**, uniquely determined by the skeleton automorphism structure.
 
+**Scope restriction (added, 2026-10-23)** The two items above hold only under the **Aut-equivariant reading**: they apply to "$s_e$ assignments that respect the skeleton's symmetry", **not to an arbitrary $M$**. D3 defines $s_e=\operatorname{sign}\mathbf M_{ij}$; substituting the actual $M$ directly, the probability of landing in the trivial class is $2^{-\beta_1}$:
+
+| Skeleton | $\beta_1$ | Probability a generic $M$ lands in the trivial class (theory) | Measured |
+|---|---|---|---|
+| $Q_3$ | 5 | $2^{-5}=0.03125$ | 0.03125 |
+| $Y_3\ltimes\triangle_3$ | 7 | $2^{-7}=0.00781$ | not enumerated ($2^{18}$ too large) |
+
+The two levels must not be cited across each other: the **skeleton level** (Aut-equivariant) supplies the **necessity** of the sign split; the class of the **evolving-network level** (actual $M$) is diffusely non-trivial — on the actual $M$, 52.2% of length-4 simple cycles satisfy $h=-1$, indistinguishable from a structureless $\pm1$ matrix of the same size. The full table in §9 belongs to the former level, not the latter. (Source: `verify_e6_charge_conjugation.py`, `verify_e5_mobius_holonomy.py`)
+
 ---
 
 ## 9. Full Table (after anchoring A0)
@@ -189,12 +207,12 @@ Namely: **electron in the trivial class (assigned negative) ↔ proton in the no
 | Particle | skeleton | $\beta_1$ | $\deg$ | holonomy class $\sigma$ | $Q$ |
 |---|---|---|---|---|---|
 | electron $e^-$ | $Q_3$ (edge-transitive + bipartite) | 5 | 1 | **trivial class** (A0 anchors −) | $-e$ |
-| positron $e^+$ | $Q_3$, after $\mathcal{C}$ | 5 | 1 | non-trivial class (+) | $+e$ |
+| positron $e^+$ | $Q_3$, after $\mathcal{C}$ | 5 | 1 | **$=-(\text{electron class})$** (+) | $+e$ |
 | proton $p$ | $Y_3\ltimes\triangle_3$ closed state | 7 | 1 | **non-trivial class** (+) | $+e$ |
 | neutron $n$ | $Y_3\ltimes\triangle_3$ open state | 6 | 0 | (magnitude 0, sign meaningless) | $0$ |
-| antiproton $\bar p$ | closed state, after $\mathcal{C}$ | 7 | 1 | trivial class (−) | $-e$ |
+| antiproton $\bar p$ | closed state, after $\mathcal{C}$ | 7 | 1 | **$=-(\text{proton class})$** (−) | $-e$ |
 
-**Consistency**: $\mathcal{C}$ flips $\sigma$ row by row while keeping $\deg$ fixed ⇒ all particle/antiparticle pairs hold.
+**Consistency**: $\mathcal{C}$ reverses $\sigma$ while keeping $\deg$ fixed ⇒ all particle/antiparticle pairs hold. The reversal is defined at the **class level** (§7 supplies the explicit realization on that skeleton), so the antiparticle class is uniquely determined by the parent class and needs no extra parameter.
 
 ---
 
