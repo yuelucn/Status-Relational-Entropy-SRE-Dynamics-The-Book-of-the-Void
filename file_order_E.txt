@@ -29,6 +29,7 @@
 ./2-Everything_Emerges/SRE_Time_Emergence_1.0_E.md
 ./2-Everything_Emerges/SRE_Time_Emergence_Plain_1.0_E.md
 ./2-Everything_Emerges/SRE_charge_emergence_1.1_E.md
+./2-Everything_Emerges/SRE_Fine_Structure_Constant_Derivation_1.2_E.md
 
 #part-3
 ./3-Mathematical_Support/0‑Abstract_Part_3_E.md
