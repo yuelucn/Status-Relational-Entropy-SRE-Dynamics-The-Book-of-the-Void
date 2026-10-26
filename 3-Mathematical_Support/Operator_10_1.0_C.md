@@ -43,8 +43,8 @@ $$\mathcal{O}_{\text{gate\_batch}}(\boldsymbol{\chi}_e) \equiv \begin{cases} 1, 
 
 ### 2.2 伴随上链随机门概率 $p_{\text{cochain}}(e)$ 的受控修正方程
 对于未触发硬性拦截的其余常规前沿通道，算子 10 拒绝使用均匀随机采样。其驱动的 Bernoulli 导通试验发生概率 $p_{\text{cochain}}(e)$ 受到内源拓扑阻抗不变量的联合非线性控制修正：
-$$p_{\text{cochain}}(e) \equiv \frac{1}{1 + \exp\left( - \beta \cdot \left[ \frac{\kappa \cdot \mathbf{Z}_{\text{eff}}(u, v_f)}{\max\left(1 - \mathbf{Z}_{\text{eff}}(u, v_f),\ \delta_{\text{flt}}\right)} \right] \right)}$$
-其中 $\beta = 2.0$ 为统计力学逆温度生产常数，$\kappa = 1.5$ 为阻抗增益尺度常数（生产实现中以固定常数 $\kappa$ 取代对谱半径先验 $\alpha_n$ 的运行时耦合，以保证 $\mathcal{O}(1)$ 局域决策门的完全无外部依赖性），$\delta_{\text{flt}} = 10^{-16}$ 为硬件级防发散微调分量（分母采用 $\max$ 下限截断形式执行除零防护）。
+$$p_{\text{cochain}}(e) \equiv \frac{1}{1 + \exp\left( - \beta_{\rm gate} \cdot \left[ \frac{\kappa \cdot \mathbf{Z}_{\text{eff}}(u, v_f)}{\max\left(1 - \mathbf{Z}_{\text{eff}}(u, v_f),\ \delta_{\text{flt}}\right)} \right] \right)}$$
+其中 $\beta_{\rm gate} = 2.0$ 为统计力学逆温度生产常数（算子 10 的 S 形门增益，与自由能形式的温度 $T=1$ 无关），$\kappa = 1.5$ 为阻抗增益尺度常数（生产实现中以固定常数 $\kappa$ 取代对谱半径先验 $\alpha_n$ 的运行时耦合，以保证 $\mathcal{O}(1)$ 局域决策门的完全无外部依赖性），$\delta_{\text{flt}} = 10^{-16}$ 为硬件级防发散微调分量（分母采用 $\max$ 下限截断形式执行除零防护）。
 
 在该修正算式下，当两个节点之间的局部拓扑阻抗增大（代表全局相干路径稀疏、系统逼近临界割裂周界）时，剪枝落入休眠状态的概率自发、非线性地滑向 0（即导通概率 $p \to 1$）。这成功实现了将宏观全局连通性控制信息，无缝、前向解耦地灌注进本地微观随机分布式决策门中。
 ## 3. 内源有效拓扑阻抗张量豁免定理与图灵完备性保全的严密数理证明 (Rigorous Proof of Homological Exemption)
@@ -127,4 +127,4 @@ $$\lim_{n \to \infty} T_{\mathcal{O}10}(n) = \mathcal{O}(M_K) \le \mathcal{O}(K_
 9. **算子 8 ($\mathcal{O}_{\text{valve}}$)**：完全粉碎全局互斥锁，通过对角线微迹外积投影将多 Actors 异步叠写冲突方差无损转译为 1-chain 映像空间光滑流体范数，实现局域 $\mathcal{O}(N_K^2)$ 无锁并发。
 10. **算子 9 ($\mathcal{O}_{\text{stitch\_dual}}$)**：提取高阶拉普拉斯算子 $\mathbf{L}_{\Omega}^{(3)}$ 的非奇异零空间，实施同调伴随缝合，将全局一阶贝蒂数变分步长重言式死死锁死在 $\Delta \beta_1 \equiv 0$。
 
-离散的量子二元自旋网络，在历经上述 10 大算子的洗礼、钳制、对消与缝合后，在没有任何外部硬编码坐标度规的背景下，终于自发、平滑且非退化地凝聚凝聚出了一个满足**因果 Timeline 一致、物理守恒律完备、瞬时强有界夹紧、全局拓扑恒真且具备内在几何曲率的宏观三维连续自洽宇宙时空流形**。
+离散的量子二元自旋网络，在历经上述 10 大算子的洗礼、钳制、对消与缝合后，在没有任何外部硬编码坐标度规的背景下，终于自发、平滑且非退化地凝聚凝聚出了一个满足**因果 Timeline 一致、补偿开销记账闭合完备、瞬时强有界夹紧、全局拓扑恒真且具备内在几何曲率的宏观三维连续自洽宇宙时空流形**。

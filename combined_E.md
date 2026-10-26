@@ -80,6 +80,7 @@ I have recorded all of this here. Scientific intuition arises out of the void, a
 - [Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator（$\mathcal{G}_{n\rightarrow n+1}$）](#Operator-1:-Pure-Algebraic-Mathematical-Specification-for-the-Local-Graph-Expansion-Operator（$\mathcal{G}_{n\rightarrow-n+1}$）)
 - [Operator-1: Local Graph Expansion Operator - Full Explanatory Document](#Operator-1:-Local-Graph-Expansion-Operator---Full-Explanatory-Document)
 - [Operator-2： Local Metric & Probabilistic Pruning Operator（$\mathcal{M}_\chi \circ \mathcal{E}_{\text{local}}$）](#Operator-2：-Local-Metric-&-Probabilistic-Pruning-Operator（$\mathcal{M}_\chi-\circ-\mathcal{E}_{\text{local}}$）)
+- [The Free-Energy Generative Structure of Operator 2 in Status–Relational Entropy Dynamics: The Heat-Bath Identity, the Geometric-Mean Law, and Four Verifiable Uses](#The-Free-Energy-Generative-Structure-of-Operator-2-in-Status–Relational-Entropy-Dynamics:-The-Heat-Bath-Identity,-the-Geometric-Mean-Law,-and-Four-Verifiable-Uses)
 - [Operator -3: Rigorous Mathematical-Derivation Specification](#Operator--3:-Rigorous-Mathematical-Derivation-Specification)
 - [Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator （$\mathcal{M}_{\text{degree}}$） and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional](#Operator-4:-Algebraic-Construction-of-Local-Topology-Degree-Statistic-Operator-（$\mathcal{M}_{\text{degree}}$）-and-Rigorous-Positive-Definite-Boundedness-Proof-for-Dirichlet-Energy-Functional)
 - [Operator-5: Endogenous Variable Latency Calibration Operator （$\mathcal{M}_{\text{latency}}$）](#Operator-5:-Endogenous-Variable-Latency-Calibration-Operator-（$\mathcal{M}_{\text{latency}}$）)
@@ -1238,7 +1239,7 @@ SRE Dynamics abandons classical notions of absolute space (“meters”) and con
 
 **Intrinsic Update Velocity $\boldsymbol{c}$**: A proportional constant defining the maximum rate of bidirectional causal reconciliation inside the SRE network. Determined by the global “topological rigidity” of the matrix, it serves as an absolute upper bound for computation and propagation speed.
 
-**Bidirectional Causality**: Spacetime evolution does not propagate unidirectionally from node A to node B. Instead it is governed by global bidirectional harmonic resonance. A local topological state transitions to its final discrete computational steady-state **only after causal loops fully close across the whole network**, enforcing strict conservation laws at boundary interfaces.
+**Bidirectional Causality**: Spacetime evolution does not propagate unidirectionally from node A to node B. Instead it is governed by global bidirectional harmonic resonance. A local topological state transitions to its final discrete computational steady-state **only after causal loops fully close across the whole network**, enforcing strict bookkeeping closure at boundary interfaces.
 
 ## 2 Higher-Order Adjacency Definitions & Physical Manifestations
 To fully formalise the framework, powers of adjacency matrix $\boldsymbol{A}$ directly correspond to discrete causal-link lengths, defining physical mechanisms for fields:
@@ -1420,10 +1421,12 @@ $$
 Z_0 \equiv \frac{\text{Tr}\left(\mathbf{C}_{cycle}^T \mathbf{C}_{cycle}\right)}{\text{Tr}\left(\mathbf{D}_{edge}^T \mathbf{D}_{edge}\right)} = \frac{\dim(\mathcal{F})}{\dim(\mathcal{E})} \quad [\text{Dimensionless Ratio}]
 $$
 
-3. **The Planck Constant ($h \equiv 1$):** To satisfy the Symplectic Invariant (energy conservation) of the field phase-space across global evolution step $\boldsymbol{\Delta S=1}$, the state-transition operator $\mathbf{M}$ must maintain a determinant of unity ($\det(\mathbf{M}) = 1$). The Planck constant $h$ emerges as the **minimal symplectic phase volume** required to secure state-update closure on the graph manifold, functioning as an exact algebraic unity:
+3. **The Planck Constant ($h \equiv 1$):** To ensure that the phase-space volume element of the field across the global evolution step $\boldsymbol{\Delta S=1}$ is neither amplified nor compressed by the discrete solver itself, the state-transition operator $\mathbf{M}$ is assigned a determinant of unity ($\det(\mathbf{M}) = 1$):
 $$
 h \equiv \det(\mathbf{M}_{\text{symplectic}}) \equiv 1
 $$
+
+**Qualification**: this property is a structure-preserving condition at the **solver layer** (discrete symplectic integration) and does not imply energy conservation. The refresh generator of SRE is the combinatorial Laplacian $\mathbf{L}=\mathbf{D}-\mathbf{A}$ on the state graph (symmetric positive semi-definite, generating a dissipative semigroup); hence no conserved energy exists, and macroscopic "energy conservation" appears only in the coarse-grained limit as **bookkeeping closure** (see the classical-mechanics emergence chapter, §4.1).
 
 4. **The Fine-Structure Constant ($\alpha$)**<sup>*</sup>: The macro-coupling strength $\alpha$ is derived analytically as the **dominant spectral-radius ceiling ($\rho_{\text{spectral}}$)** of the coupled primal-dual exterior-derivative operators executed over a non-planar graph embedding $\mathcal{G}$:
 $$
@@ -1833,9 +1836,11 @@ From the relation matrix M, the following dimensionless observables are derived 
 | `skew` | **frontier skewness** | normalized third moment of the frontier-relation distribution | velocity-increment skewness S₃ |
 | `σ_d` | **frontier heterogeneity** | standard deviation of the frontier-relation distribution | width of critical fluctuations |
 | `γ` | **spectral slope** | log–log slope of the one-dimensional power spectrum of the chiral field A along the causal order | slope of the energy spectrum E(k) (surrogate) |
-| `β` | **scale-separation exponent** | `−d ln(1/C)/d ln(Re)` | the Re exponent of ℓ_int/η (SRE version) |
+| `β_turb` | **scale-separation exponent** | `−d ln(1/C)/d ln(Re)` | the Re exponent of ℓ_int/η (SRE version) |
 
 Relation of β to the classical 3/4 law: K41 predicts `ℓ_int/η ∼ Re^{3/4}` (i.e. `β = 0.75`), see §1.1.
+
+> **Naming note**: this book contains two other homonymous symbols — $\beta_{\rm th}\equiv1$ (the temperature of the free-energy form in Operator 2) and $\beta_{\rm gate}=2.0$ (the sigmoid gate gain of Operator 10) — neither of which is related to the scale-separation exponent here; in the text and figures of this chapter it is abbreviated as $\beta\equiv\beta_{\rm turb}$.
 
 **Important qualification on the spectral slope γ**: it is obtained by taking the one-dimensional power spectrum of the chiral field A along the **causal order** (the order in which states are added); it is a **one-dimensional surrogate spectrum** and is **not equal** to the three-dimensional spatial energy spectrum `E(k)`. Its definition is isomorphic to the classical energy spectrum, but the spatial dimensionality and the meaning of the coordinates are both different. Therefore γ can only serve as a **qualitative indicator** of "whether a stable power-law cascade region exists", and its numerical value cannot be compared digit-by-digit with −5/3.
 
@@ -2292,7 +2297,7 @@ Classical mechanics is widely understood as a macroscopic effective limit of und
 
 This paper establishes ontological mappings between core SRE network-level observables and central quantities of Newtonian classical mechanics. Three necessary conditions for the emergence of classical-like behaviour are identified: large-sample coarse-graining, sufficient environmental decoherence, and operating far from topological-phase-transition thresholds (the BBP spectral-rank phase-transition and causal-loop coherence saturation $\rho\to1$). Three representative examples - inertia, the force-mass-acceleration relation, and Hooke’s elastic law - demonstrate statistical emergence of classical-style behaviour when all conditions are satisfied, while also marking breakdown boundaries for each phenomenon.
 
-Conservation of momentum and conservation of energy can be traced to global closed-loop symmetries of the underlying causal graph. This manuscript completes one conceptual segment of the SRE unified theoretical hierarchy: axiomatic causal-information network → composite-particle / gluon-sea mass generation → topological electrodynamics → emergent classical mechanics → cosmological BBP-RMT simulation constrained by spectroscopic observational datasets.
+Conservation of momentum and **bookkeeping closure of energy** can be traced to global closed-loop symmetries of the underlying causal graph (here "energy conservation" denotes bookkeeping conservation of compensation overhead, not a conserved energy). This manuscript completes one conceptual segment of the SRE unified theoretical hierarchy: axiomatic causal-information network → composite-particle / gluon-sea mass generation → topological electrodynamics → emergent classical mechanics → cosmological BBP-RMT simulation constrained by spectroscopic observational datasets.
 
 This work emphasises ontological correspondence instead of exhaustive analytical reproduction of every textbook formula in analytical mechanics. Illustrative topological-evolution derivations are supplied in the appendix for pedagogical intuition and are not regarded as rigorous core proofs of the paper.
 
@@ -2309,7 +2314,7 @@ The present paper fills this conceptual gap. **This manuscript does not aim to d
 1. State a set of necessary physical conditions under which classical-mechanics-like behaviour emerges from SRE causal-information networks;
 2. Build an ontological-mapping table between network-level observables and physical quantities of classical mechanics;
 3. Deploy three representative examples (inertia, $F\propto ma$, Hooke’s law $F=-kx$) to demonstrate emergent behaviour together with corresponding breakdown thresholds;
-4. Trace momentum-energy conservation to global closed-loop symmetries of causal graphs;
+4. Trace momentum conservation and energy bookkeeping closure to global closed-loop symmetries of causal graphs;
 5. Delimit physical regimes where classical descriptions break down and one must fall back to the underlying discrete-network description.
 
 Illustrative pedagogical topological-evolution derivations are placed in Appendix A and are not treated as rigorous core proofs.
@@ -2356,7 +2361,7 @@ Within transition regimes, compensation-operator topology undergoes abrupt struc
 
 ### 4.1 Ontological Origin of Conservation Laws
 - **Momentum conservation**: arises from global closed-loop symmetry of causal-network link interactions. Directed information-propagation flux cannot be locally created or annihilated out-of-nothing; flux can only be redistributed among subsystems. This yields macroscopic momentum conservation after coarse-graining.
-- **Energy conservation**: originates from conservation of total topological-compensation overhead of the whole causal-information network. Transformations occur between internally-stored closed-loop configurations and open propagating-flow forms; total overhead magnitude is preserved.
+- **Energy bookkeeping closure (not a conserved energy)**: originates from bookkeeping-level invariance of the total topological-compensation overhead of the whole causal-information network. Transformations occur between internally-stored closed-loop configurations and open propagating-flow forms; total overhead magnitude is preserved.
 
 ## 5 Three Representative Physical Examples
 > Preamble: All examples below demonstrate behavioural correspondences under the triple emergence conditions. **They are not rigorous analytical mathematical proofs derived directly from axioms**. If any emergence condition breaks down, the described classical-style behaviour ceases to hold. Topological-evolution formulae are given in Appendix A.
@@ -2414,7 +2419,7 @@ Important conceptual distinction: ontological mapping and behavioural-example ma
 
 ## 7 Conclusions
 1. Newtonian classical mechanics emerges from SRE discrete causal-information-network as an effective-theory description subject to three joint necessary conditions: large-sample coarse-graining, sufficient environmental decoherence, and operation far-removed from topological-phase-transition thresholds. Breaking any of these conditions invalidates classical-level description.
-2. Core classical quantities (mass, momentum, force, space, time, kinetic / potential energy) can be given clear ontological interpretations at causal-network graph-level. Momentum- and energy-conservation laws trace back to global causal-graph closure symmetries.
+2. Core classical quantities (mass, momentum, force, space, time, kinetic / potential energy) can be given clear ontological interpretations at causal-network graph-level. Momentum conservation and energy bookkeeping closure trace back to global causal-graph closure symmetries.
 3. Three representative examples - inertia, force-mass-acceleration trend, Hooke’s law - illustrate how classical-style behaviours appear under the required emergence-conditions, and each example also defines its own breakdown threshold.
 4. This work completes a conceptual link inside the SRE unified-framework; full term-by-term analytical derivation of all analytical-mechanics formulae is not performed here and remains a direction for follow-up research.
 
@@ -8984,33 +8989,34 @@ This part constitutes **Part III of State‑Relational‑Entropy (SRE) Dynamic
 3. **Operator-1: Full‑Interpretation‑Document for the Local‑Graph‑Expansion Operator**: Supporting explanatory text, clarifies the boundary between the operator layer and downstream dynamical‑simulation layers, resolves numerous common conceptual misunderstandings, and elaborates its physical meaning within the SRE relational ontology.
 
 4. **Operator-2: Rigorous‑Mathematical‑Derivation‑and‑Specification‑Manual for the Local‑Metric‑and‑Probability‑Pruning Operator ($\mathcal{M}_\chi \circ \mathcal{E}_\mathrm{local}$)**: Implements graph‑topology pruning, path‑interference, and statistical‑mechanical derivation of local Hamiltonians; endogenously proves upper bounds on vertex‑degree saturation; establishes the paradigm‑B elimination‑conduction pruning mechanism to avoid axiom conflicts caused by direct zero‑assignment.
+5. **Operator-2: The Free‑Energy Generative Structure (Heat‑Bath Identity, Geometric‑Mean Law and Four Verifiable Uses)**: A one‑step rewriting of the pruning probability of Operator 2 gives the heat‑bath form $p=\sigma(-F)$, $F=\ln(\mathfrak{B}/(\Lambda D))$, proving that Operator 2 is itself a Glauber heat bath at temperature 1 and that $F$ is the free‑energy difference of a single flip. Three testable consequences follow: the coherence length is controlled by the geometric‑mean barrier (Theorem 2, with the correction $-\kappa_3s^3/12$), the scaling exponent is a local quantity that varies with depth (Theorem 3, $\alpha=0.4028$), and replacing the arithmetic mean by the geometric mean produces an exactly computable Jensen gap (Proposition 4); a negative result states that SRE cannot possess a Hamiltonian, the three obstacles being mutually independent (Proposition 5). All four uses have been run successfully: even/odd‑depth extrapolation (error 0.122→0.0090, $R^2=0.995$), inversion of $\Lambda$ (error 2.0% versus 80% for the naive procedure), prediction of the critical $\Lambda^*$ (1.5% after two‑step fixed‑point iteration) and $F$‑based channel selection (keeping 10% recovers 40%–59%). Every conclusion is strictly tested on $1.1\times10^6$ channel decisions: identity residual $2.2\times10^{-16}$, standardized residual $0.96\sim1.07$.
 
-5. **Operator-3: Final‑Matching‑Mathematical‑Derivation‑Specification**: Constructs a 5‑node non‑homogeneous frontier lattice to break topological‑degeneracy traps; purely algebraically proves the spontaneous emergence of the two‑input NAND logic gate from spin networks, completing the proof of system Turing‑completeness.
+6. **Operator-3: Final‑Matching‑Mathematical‑Derivation‑Specification**: Constructs a 5‑node non‑homogeneous frontier lattice to break topological‑degeneracy traps; purely algebraically proves the spontaneous emergence of the two‑input NAND logic gate from spin networks, completing the proof of system Turing‑completeness.
 
-6. **Operator-4: Algebraic‑Construction‑and‑Proof‑of‑Positive‑Definite‑Dirichlet‑Energy‑Bounds for the Local‑Topology‑Degree‑Statistics Operator ($\mathcal{M}_\mathrm{degree}$)**: Performs smoothing‑metric construction via second‑order graph‑walk kernels. Its core theorem rigorously proves that the Dirichlet‑energy functional is rigidly bounded positive‑definite, erases vacuum singularities at zero‑degree sparse‑network regions, and guarantees long‑term stability for distributed simulation.
+7. **Operator-4: Algebraic‑Construction‑and‑Proof‑of‑Positive‑Definite‑Dirichlet‑Energy‑Bounds for the Local‑Topology‑Degree‑Statistics Operator ($\mathcal{M}_\mathrm{degree}$)**: Performs smoothing‑metric construction via second‑order graph‑walk kernels. Its core theorem rigorously proves that the Dirichlet‑energy functional is rigidly bounded positive‑definite, erases vacuum singularities at zero‑degree sparse‑network regions, and guarantees long‑term stability for distributed simulation.
 
-7. **Operator-5: Rigorous‑Mathematical‑Specification‑Derivation‑and‑Argumentation‑Complete‑Version for the Endogenous‑Variable‑Latency‑Calibration Operator ($\mathcal{M}_\mathrm{latency}$)**: Reduces gravitational time‑dilation effects to logarithmic contraction of discrete‑penetration‑rates on topological channels. Proves zero‑measure manifold cloaking properties for sampling‑PDFs, providing security protection against differential side‑channel observations.
+8. **Operator-5: Rigorous‑Mathematical‑Specification‑Derivation‑and‑Argumentation‑Complete‑Version for the Endogenous‑Variable‑Latency‑Calibration Operator ($\mathcal{M}_\mathrm{latency}$)**: Reduces gravitational time‑dilation effects to logarithmic contraction of discrete‑penetration‑rates on topological channels. Proves zero‑measure manifold cloaking properties for sampling‑PDFs, providing security protection against differential side‑channel observations.
 
-8. **Operator-6: Rigorous‑Mathematical‑Specification‑Derivation‑and‑Argumentation‑Final‑Draft‑Specification for the Subspace‑Sieve‑and‑Splicing‑Operator ($\mathcal{P}_\mathrm{sieve} \cup \mathcal{O}_\mathrm{splice}$)**: Implements Rayleigh‑Ritz local‑splicing kernels, discards global QR eigen‑decomposition; reduces spectral‑solving complexity from $\mathcal O(n^3)$ down to the sparse‑subdomain upper bound $\mathcal O(m_g \cdot k_\mathrm{rank})$, eliminating full‑network global‑synchronization dead‑locks.
+9. **Operator-6: Rigorous‑Mathematical‑Specification‑Derivation‑and‑Argumentation‑Final‑Draft‑Specification for the Subspace‑Sieve‑and‑Splicing‑Operator ($\mathcal{P}_\mathrm{sieve} \cup \mathcal{O}_\mathrm{splice}$)**: Implements Rayleigh‑Ritz local‑splicing kernels, discards global QR eigen‑decomposition; reduces spectral‑solving complexity from $\mathcal O(n^3)$ down to the sparse‑subdomain upper bound $\mathcal O(m_g \cdot k_\mathrm{rank})$, eliminating full‑network global‑synchronization dead‑locks.
 
-9. **Operator-7: Algebraic Reconstruction and Proof of the Hodge Closure Theorem for the Adjoint Filter Locking and Complex Dual Equalizer Operator ($\mathcal{O}_\mathrm{lock}$)**: Core operator of Phase 3 (Dual Balancing). Discarding the qualitative description of the orientation fundamental class of continuous manifolds, it completes an algebraic reconstruction grounded in the de Rham–Hodge orthogonal decomposition over discrete graph chain complexes, and proves the necessary and sufficient condition for the Symplectic Front Total‑Variation Vanishing (Zero‑Flux Escape) flow: the vanishing of the local variation is equivalent to un‑degraded Hodge adjoint closure of kernel homology–cohomology, yielding a lossless morphism from micro‑step 1‑chain flux variation to the macro‑scale bounded charge‑neutral invariant $Q_\mathrm{net}$.
+10. **Operator-7: Algebraic Reconstruction and Proof of the Hodge Closure Theorem for the Adjoint Filter Locking and Complex Dual Equalizer Operator ($\mathcal{O}_\mathrm{lock}$)**: Core operator of Phase 3 (Dual Balancing). Discarding the qualitative description of the orientation fundamental class of continuous manifolds, it completes an algebraic reconstruction grounded in the de Rham–Hodge orthogonal decomposition over discrete graph chain complexes, and proves the necessary and sufficient condition for the Symplectic Front Total‑Variation Vanishing (Zero‑Flux Escape) flow: the vanishing of the local variation is equivalent to un‑degraded Hodge adjoint closure of kernel homology–cohomology, yielding a lossless morphism from micro‑step 1‑chain flux variation to the macro‑scale bounded charge‑neutral invariant $Q_\mathrm{net}$.
 
-10. **Operator-8: Mathematical Specifications, Algebraic Derivations and the Distributed Micro‑Trace Smoothing Theorem for the Local Lock‑Free Algebraic Valve Balancing Operator ($\mathcal{O}_\mathrm{valve}$)**: Core operator of Phase 4 (Trace‑Master Smooth). Taking the Local Trace Correction Micro‑operators $\mu_\mathrm{trace}$ as the sole lock‑free decentralized adjudication standard, it proves the Distributed Multi‑Actor Write‑Contention Variance to Chain‑Complex Image‑Space Flux Variance Transformation Theorem; write conflicts are losslessly projected onto gradient‑flow divergence flux, the tangential convective‑flux Jacobian is proved strictly monotone‑convergent, and the single‑step overhead is clamped from the global $\mathcal O(n^3)$ down to the localized polynomial upper bound $\mathcal O(N_K^2)$.
+11. **Operator-8: Mathematical Specifications, Algebraic Derivations and the Distributed Micro‑Trace Smoothing Theorem for the Local Lock‑Free Algebraic Valve Balancing Operator ($\mathcal{O}_\mathrm{valve}$)**: Core operator of Phase 4 (Trace‑Master Smooth). Taking the Local Trace Correction Micro‑operators $\mu_\mathrm{trace}$ as the sole lock‑free decentralized adjudication standard, it proves the Distributed Multi‑Actor Write‑Contention Variance to Chain‑Complex Image‑Space Flux Variance Transformation Theorem; write conflicts are losslessly projected onto gradient‑flow divergence flux, the tangential convective‑flux Jacobian is proved strictly monotone‑convergent, and the single‑step overhead is clamped from the global $\mathcal O(n^3)$ down to the localized polynomial upper bound $\mathcal O(N_K^2)$.
 
-11. **Operator-9: Mathematical Specifications, Algebraic Derivations and the Topological‑Invariant Rigid Anchoring Theorem for the Dual‑Order Smooth Betti‑Number Synchronous Stitching Operator ($\mathcal{O}_\mathrm{stitch\_dual}$)**: The ultimate convergence operator of Phase 4 (Trace‑Master Smooth). By extracting the non‑singular null space of the third‑order localized sub‑network Laplacian $\mathbf{L}_\Omega^{(3)}$ to build an adjoint homological map, it proves the Global First Betti‑Number Step‑Wise Variation Rigid Anchoring Theorem ($\Delta\beta_1\equiv0$), completing the topological closure that solidifies discrete spin networks into an integer 3‑dimensional positive‑definite manifold.
+12. **Operator-9: Mathematical Specifications, Algebraic Derivations and the Topological‑Invariant Rigid Anchoring Theorem for the Dual‑Order Smooth Betti‑Number Synchronous Stitching Operator ($\mathcal{O}_\mathrm{stitch\_dual}$)**: The ultimate convergence operator of Phase 4 (Trace‑Master Smooth). By extracting the non‑singular null space of the third‑order localized sub‑network Laplacian $\mathbf{L}_\Omega^{(3)}$ to build an adjoint homological map, it proves the Global First Betti‑Number Step‑Wise Variation Rigid Anchoring Theorem ($\Delta\beta_1\equiv0$), completing the topological closure that solidifies discrete spin networks into an integer 3‑dimensional positive‑definite manifold.
 
-12. **Operator-10: Mathematical Specifications, Algebraic Derivations and the Endogenous Effective Topological Impedance Tensor Exemption Theorem for the Pre‑emptive Homological Random Pruning Operator ($\mathcal{O}_\mathrm{gate\_batch}$)**: The pre‑emptive defense operator of Phase 2 (Causal Blocking). It explicitly constructs the endogenous effective topological impedance tensor $\mathbf{Z}_\mathrm{eff}$ over the directed chain complex and pre‑emptively exempts every non‑homomorphic bridge edge (satisfying the connectivity indication scalar $\tau(G')=0$) that could degrade graph connectivity, forcing critical channels to remain permanently conductive; the theorem unconditionally safeguards the Turing completeness of the spacetime manifold at the algebraic‑topology level, providing the causal firewall for the strictly positive spectral gap ($\lambda_2(n)>0$) of the downstream homogeneous‑metric layer.
+13. **Operator-10: Mathematical Specifications, Algebraic Derivations and the Endogenous Effective Topological Impedance Tensor Exemption Theorem for the Pre‑emptive Homological Random Pruning Operator ($\mathcal{O}_\mathrm{gate\_batch}$)**: The pre‑emptive defense operator of Phase 2 (Causal Blocking). It explicitly constructs the endogenous effective topological impedance tensor $\mathbf{Z}_\mathrm{eff}$ over the directed chain complex and pre‑emptively exempts every non‑homomorphic bridge edge (satisfying the connectivity indication scalar $\tau(G')=0$) that could degrade graph connectivity, forcing critical channels to remain permanently conductive; the theorem unconditionally safeguards the Turing completeness of the spacetime manifold at the algebraic‑topology level, providing the causal firewall for the strictly positive spectral gap ($\lambda_2(n)>0$) of the downstream homogeneous‑metric layer.
 
-13. **Operator-11: Mathematical Specifications and Algebraic Derivations for the Spin‑Charge Adjacency Operator ($\mathcal{O}_\mathrm{spin\text{-}charge}$) and the Encoding of Electronic Degrees of Freedom**: Building upon the SRE smooth adjacency matrix $A_s$, it encodes Pauling electronegativity differences as the binary spin coupling of Axiom 1 and endogenously constructs the charge‑weighted adjacency $A_q$ together with the charge‑weighted graph Laplacian $L_q$. It proves that $A_q$ is symmetric, non‑negative and element‑wise no smaller than $A_s$ with preserved support, that $L_q$ is positive semi‑definite with a strictly positive Fiedler value, and derives the Weyl spectral‑perturbation bound along with continuous degeneration as $\rho \to 0$. The operator **requires no external quantum‑mechanical computation** and directly replaces the $A_s$ input of Operator 4, thereby injecting electronic degrees of freedom into molecular graphs.
+14. **Operator-11: Mathematical Specifications and Algebraic Derivations for the Spin‑Charge Adjacency Operator ($\mathcal{O}_\mathrm{spin\text{-}charge}$) and the Encoding of Electronic Degrees of Freedom**: Building upon the SRE smooth adjacency matrix $A_s$, it encodes Pauling electronegativity differences as the binary spin coupling of Axiom 1 and endogenously constructs the charge‑weighted adjacency $A_q$ together with the charge‑weighted graph Laplacian $L_q$. It proves that $A_q$ is symmetric, non‑negative and element‑wise no smaller than $A_s$ with preserved support, that $L_q$ is positive semi‑definite with a strictly positive Fiedler value, and derives the Weyl spectral‑perturbation bound along with continuous degeneration as $\rho \to 0$. The operator **requires no external quantum‑mechanical computation** and directly replaces the $A_s$ input of Operator 4, thereby injecting electronic degrees of freedom into molecular graphs.
 
-14. **Operator-12: Mathematical Specifications and Algebraic Derivations for the Topological Closed‑Loop Audit Operator ($\mathcal{O}_\mathrm{loop\text{-}audit}$) with Möbius Phase Detection**: Combining DFS‑based simple‑cycle enumeration with phase audit on the SRE sign matrix, it detects the "N‑scale topological closed loop + Möbius double‑layer phase" pattern and maps chemical ring structures (benzene, epoxide, etc.) onto the closed retro‑causal chains described by SRE electron topology. It rigorously proves the correspondence between simple‑cycle counts and the first Betti number $\beta_1$, the Möbius sign‑balance criterion, Cauchy interlacing and condition‑number clamping on ring subgraphs, and a Lipschitz robustness bound for the audit trace. The operator audits the $A_q$ produced by Operator 11, and its result modulates the information‑propagation rate $c_e$ of Operator 5.
-15. **Operators 13–18: Strict Mathematical Specification of the Spectral‑Shape Equation‑Solving Operator Set, Homological Solvability Theorems and the Endogenous Inversion Pipeline**: For the inverse problem "several unknown spectral shapes form an equation; find its solution", it provides a complete solving methodology within the SRE dimensionless graph‑operator system. Its core is a structural discovery: the $k$-th spectral moment of a graph is algebraically exactly the normalized weight sum of $k$-step closed walks, and the span of those cycles after modding out face boundaries is precisely the first homology group $H_1$; hence the residual of a spectral‑shape equation is intrinsically a first cohomology class $[r]\in H^1$, and solving the equation is equivalent to annihilating that class on $H^1$. The solving process invents no new dynamics and is rigorously reduced to a discrete Hodge three‑component routing on the existing boundary operators — the gradient component reuses Operator 6, the curl component reuses Operator 7, and the harmonic component can only be eliminated topologically by Operator 9. It gives the axiomatic placement of Operators 13–18, the homological solvability theorems and the endogenous inversion pipeline, together with the reference implementation `Operator_13_18_P.py` (built‑in checks 19/19 passing) and a 50‑equation stress‑test suite (50/50 passing).
+15. **Operator-12: Mathematical Specifications and Algebraic Derivations for the Topological Closed‑Loop Audit Operator ($\mathcal{O}_\mathrm{loop\text{-}audit}$) with Möbius Phase Detection**: Combining DFS‑based simple‑cycle enumeration with phase audit on the SRE sign matrix, it detects the "N‑scale topological closed loop + Möbius double‑layer phase" pattern and maps chemical ring structures (benzene, epoxide, etc.) onto the closed retro‑causal chains described by SRE electron topology. It rigorously proves the correspondence between simple‑cycle counts and the first Betti number $\beta_1$, the Möbius sign‑balance criterion, Cauchy interlacing and condition‑number clamping on ring subgraphs, and a Lipschitz robustness bound for the audit trace. The operator audits the $A_q$ produced by Operator 11, and its result modulates the information‑propagation rate $c_e$ of Operator 5.
+16. **Operators 13–18: Strict Mathematical Specification of the Spectral‑Shape Equation‑Solving Operator Set, Homological Solvability Theorems and the Endogenous Inversion Pipeline**: For the inverse problem "several unknown spectral shapes form an equation; find its solution", it provides a complete solving methodology within the SRE dimensionless graph‑operator system. Its core is a structural discovery: the $k$-th spectral moment of a graph is algebraically exactly the normalized weight sum of $k$-step closed walks, and the span of those cycles after modding out face boundaries is precisely the first homology group $H_1$; hence the residual of a spectral‑shape equation is intrinsically a first cohomology class $[r]\in H^1$, and solving the equation is equivalent to annihilating that class on $H^1$. The solving process invents no new dynamics and is rigorously reduced to a discrete Hodge three‑component routing on the existing boundary operators — the gradient component reuses Operator 6, the curl component reuses Operator 7, and the harmonic component can only be eliminated topologically by Operator 9. It gives the axiomatic placement of Operators 13–18, the homological solvability theorems and the endogenous inversion pipeline, together with the reference implementation `Operator_13_18_P.py` (built‑in checks 19/19 passing) and a 50‑equation stress‑test suite (50/50 passing).
 
-16. **Operator-19: Strict Mathematical Specification, Solvability Reasoning Basis, Dual $\mathbb{Z}_2$ Channel Verdict and Verification Protocol for the $\mathbb{Z}_2$ Holonomy / $\sigma$ Charge‑Sign Channel Operator (v1.2, cut‑space necessary‑and‑sufficient criterion and dual‑channel verdict added)**: It establishes the sign channel $\sigma$ of the charge‑emergence paper as an operator in its own right. Over the 1‑dimensional chain complex of molecular bond graphs it rigorously formalizes the chain "edge polarity → loop holonomy → cohomology class", proving that $\sigma$ is an $\mathbb{F}_2$‑linear functional on $H_1$ (T0), that vertex‑potential‑type polarities always have trivial holonomy (T1, so the charge sign cannot be produced by local spin relabeling), the $\mathbb{Z}_2$ linear criterion for Aut‑invariant reachability (T2), and all theorems and proofs T0–T11. v1.2 adds three results: the **cut‑space identity** $\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)$ (T9, deepening T2's existence criterion into a dimension identity, with the three official skeletons reading $Q_3=0$, $Y_3^{\rm cl}=1$, $Y_3^{\rm op}=2$); the **side‑by‑side dual $\mathbb{Z}_2$ channel verdict** (§6.2: on the same $Y_3^{\rm cl}$ the $H^1$ channel opens one bit while the Pfaffian orientation channel has no solution, yielding a 6‑row minimal unsatisfiable certificate); and the **covering verdict with the numbering convention** (§6.3: $Y_3^{\rm cl}$ is a 3‑fold regular cover of $K_4\cong M_4$, with zero cover and zero quotient against the Möbius ladder family $M_{2n}$, $n\ge3$). v1.2 also corrects one erroneous statement of v1.1 — "non‑trivial reachability requires an odd cycle together with at least two orbits" is falsified by the ladder family at $k\ge5$; the correct criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$. The four mutually exclusive polarity‑injection gauges and guard parameters of v1.1 are retained. The specification is proven by two independently maintained parallel implementations — the functional bridge `sre_z2_holonomy_bridge.py` and the class‑style release suite `sre_charge_channel.py` (three SHA‑256 identical mirrors) — and validated collectively by three companion programs: `verify_operator_19.py` (V1–V12, 45 assertions), `verify_operator_19_mobius.py` (M1–M9, 57 assertions) and `verify_operator_19_cross.py` (X1–X10, 29 assertions), all passing.
+17. **Operator-19: Strict Mathematical Specification, Solvability Reasoning Basis, Dual $\mathbb{Z}_2$ Channel Verdict and Verification Protocol for the $\mathbb{Z}_2$ Holonomy / $\sigma$ Charge‑Sign Channel Operator (v1.2, cut‑space necessary‑and‑sufficient criterion and dual‑channel verdict added)**: It establishes the sign channel $\sigma$ of the charge‑emergence paper as an operator in its own right. Over the 1‑dimensional chain complex of molecular bond graphs it rigorously formalizes the chain "edge polarity → loop holonomy → cohomology class", proving that $\sigma$ is an $\mathbb{F}_2$‑linear functional on $H_1$ (T0), that vertex‑potential‑type polarities always have trivial holonomy (T1, so the charge sign cannot be produced by local spin relabeling), the $\mathbb{Z}_2$ linear criterion for Aut‑invariant reachability (T2), and all theorems and proofs T0–T11. v1.2 adds three results: the **cut‑space identity** $\operatorname{rank}_{\rm hol}=n_{\rm orb}-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)$ (T9, deepening T2's existence criterion into a dimension identity, with the three official skeletons reading $Q_3=0$, $Y_3^{\rm cl}=1$, $Y_3^{\rm op}=2$); the **side‑by‑side dual $\mathbb{Z}_2$ channel verdict** (§6.2: on the same $Y_3^{\rm cl}$ the $H^1$ channel opens one bit while the Pfaffian orientation channel has no solution, yielding a 6‑row minimal unsatisfiable certificate); and the **covering verdict with the numbering convention** (§6.3: $Y_3^{\rm cl}$ is a 3‑fold regular cover of $K_4\cong M_4$, with zero cover and zero quotient against the Möbius ladder family $M_{2n}$, $n\ge3$). v1.2 also corrects one erroneous statement of v1.1 — "non‑trivial reachability requires an odd cycle together with at least two orbits" is falsified by the ladder family at $k\ge5$; the correct criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$. The four mutually exclusive polarity‑injection gauges and guard parameters of v1.1 are retained. The specification is proven by two independently maintained parallel implementations — the functional bridge `sre_z2_holonomy_bridge.py` and the class‑style release suite `sre_charge_channel.py` (three SHA‑256 identical mirrors) — and validated collectively by three companion programs: `verify_operator_19.py` (V1–V12, 45 assertions), `verify_operator_19_mobius.py` (M1–M9, 57 assertions) and `verify_operator_19_cross.py` (X1–X10, 29 assertions), all passing.
 
-17. **Dual $\mathbb{Z}_2$-Channel Verdict on the Nucleon Skeleton $Y_3$ (v1.0)**: The empirical landing of Operator 19. On the project's own object $Y_3^{\rm cl}$ the two channels are placed side by side: the $H^1$ channel yields exactly two reachable classes (one bit of freedom) while the Pfaffian orientation channel has **no solution**, upgrading "the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation" from an indirect ladder-family argument to a positive measurement on the skeleton itself. The negative verdict is presented as a checkable **minimal unsatisfiable certificate** (a 6-row row subset, deleting any row makes the system solvable), and "one edge deletion flips Pfaffian existence" is located to a concrete mechanism — the nice-even-cycle obstruction set drops from 42 to 0. It further gives the dimension reading of the cut-space identity ($\operatorname{rank}_{\rm hol}=1$, $\dim(W\cap\operatorname{Cut})=1$ on $Y_3^{\rm cl}$), the covering verdict that $Y_3^{\rm cl}$ is a 3-fold regular cover of $K_4\cong M_4$, the correspondence between Operator 19 indexing $M_k$ and the paper indexing $M_{2n}$ (a factor of 2, with $K_4=M_2=M_4$), and the five methodological rules G70–G74. The companion programs `_dir7_y3_skeleton_verdict.py` and `_dir7b_book_index_convention.py` and their JSON outputs ship with the chapter.
+18. **Dual $\mathbb{Z}_2$-Channel Verdict on the Nucleon Skeleton $Y_3$ (v1.0)**: The empirical landing of Operator 19. On the project's own object $Y_3^{\rm cl}$ the two channels are placed side by side: the $H^1$ channel yields exactly two reachable classes (one bit of freedom) while the Pfaffian orientation channel has **no solution**, upgrading "the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation" from an indirect ladder-family argument to a positive measurement on the skeleton itself. The negative verdict is presented as a checkable **minimal unsatisfiable certificate** (a 6-row row subset, deleting any row makes the system solvable), and "one edge deletion flips Pfaffian existence" is located to a concrete mechanism — the nice-even-cycle obstruction set drops from 42 to 0. It further gives the dimension reading of the cut-space identity ($\operatorname{rank}_{\rm hol}=1$, $\dim(W\cap\operatorname{Cut})=1$ on $Y_3^{\rm cl}$), the covering verdict that $Y_3^{\rm cl}$ is a 3-fold regular cover of $K_4\cong M_4$, the correspondence between Operator 19 indexing $M_k$ and the paper indexing $M_{2n}$ (a factor of 2, with $K_4=M_2=M_4$), and the five methodological rules G70–G74. The companion programs `_dir7_y3_skeleton_verdict.py` and `_dir7b_book_index_convention.py` and their JSON outputs ship with the chapter.
 
-18. **Operator-20: Rigorous Mathematical Specification of the Activation / Bridge Operator ($\mathcal{K}_{\text{act}}$), v0.3**: It promotes "reaction" to an object. Beyond the skeleton graph $G=(V,E)$ it introduces an external boundary graph $B$ with interface edges $E_I$, and models a reaction as a piecewise path carrying an adsorption waypoint, yielding three mutually independent dimensionless channels: edge topological frustration $\varrho=\|\delta_{e,\text{harm}}\|/\|\delta_e\|$ (the $H^1(G;\mathbb{R})$ component that no spanning-tree adjustment can cancel), vertex contrast $\nu=\|\delta_v^\perp\|/\|\delta_v\|$ (hydrogen-coverage redistribution), and rigidity bottleneck $\kappa=\int dt/(g+\varepsilon)$ (spectral-gap collapse along the path). Core results: properness trichotomy (T20.1), global scale invariance of $\kappa$ (T20.2), endpoint homology-class immutability (T20.3: interface edges **cannot** change endpoint frustration, so catalysts act only on the path and the rigidity), vertex-channel gauge invariance (T20.4), the transition-state observability criterion (P20.5) and the non-monotonicity of $\gamma$ (P20.6); the central hypothesis H20.1 and the volcano conjecture C20.7 are explicitly flagged as unproven. Reference implementation `sre_activation_operator.py` (v0/v1 dual editions, `self_test` 19/19) and independent verification `verify_operator_20.py` (V1–V14, 41/41 PASS); the freeze contract keeps `activation_keys` at exactly 7 keys. Operator 20 is orthogonal and complementary to Operator 19: 19 is the $\mathbb{Z}_2$ sign channel of a static graph, 20 is the magnitude + vertex + rigidity channel ($\mathbb{R}$) of a reaction path.
+19. **Operator-20: Rigorous Mathematical Specification of the Activation / Bridge Operator ($\mathcal{K}_{\text{act}}$), v0.3**: It promotes "reaction" to an object. Beyond the skeleton graph $G=(V,E)$ it introduces an external boundary graph $B$ with interface edges $E_I$, and models a reaction as a piecewise path carrying an adsorption waypoint, yielding three mutually independent dimensionless channels: edge topological frustration $\varrho=\|\delta_{e,\text{harm}}\|/\|\delta_e\|$ (the $H^1(G;\mathbb{R})$ component that no spanning-tree adjustment can cancel), vertex contrast $\nu=\|\delta_v^\perp\|/\|\delta_v\|$ (hydrogen-coverage redistribution), and rigidity bottleneck $\kappa=\int dt/(g+\varepsilon)$ (spectral-gap collapse along the path). Core results: properness trichotomy (T20.1), global scale invariance of $\kappa$ (T20.2), endpoint homology-class immutability (T20.3: interface edges **cannot** change endpoint frustration, so catalysts act only on the path and the rigidity), vertex-channel gauge invariance (T20.4), the transition-state observability criterion (P20.5) and the non-monotonicity of $\gamma$ (P20.6); the central hypothesis H20.1 and the volcano conjecture C20.7 are explicitly flagged as unproven. Reference implementation `sre_activation_operator.py` (v0/v1 dual editions, `self_test` 19/19) and independent verification `verify_operator_20.py` (V1–V14, 41/41 PASS); the freeze contract keeps `activation_keys` at exactly 7 keys. Operator 20 is orthogonal and complementary to Operator 19: 19 is the $\mathbb{Z}_2$ sign channel of a static graph, 20 is the magnitude + vertex + rigidity channel ($\mathbb{R}$) of a reaction path.
 
 > This suite belongs to the underlying mathematical‑implementation layer and builds upon the Part I axiomatic ontology. Its main focus is **how to translate SRE causal‑network ideas into computable algebraic pipelines**. Operators 1‑20 are all released open‑source with mathematical specifications and simulation code; large-scale distributed-simulation engineering implementations are subjects for subsequent research work. This part likewise **does not answer the ultimate origin of causal differences**.
 
@@ -9025,9 +9031,9 @@ This part constitutes **Part III of State‑Relational‑Entropy (SRE) Dynamic
 ---
 
 ### Abstract
-This white paper delivers the definitive structural specification, algebraic derivation, and multi-morphic validation of the Universal Graph Operator Pipeline within the Status-Relational Entropy (SRE) dynamics framework. Operating entirely under the No-Background-Metric Principle, this architecture shatters the necessity of pre-assigned background space coordinates, spatial manifolds, or hard-coded metric tensors. Instead, macroscopic spacetime geometries, causal timelines, and physical conservation laws emerge purely as intrinsic topological properties of a discrete, binary, self-organizing quantum spin network undergoing multi-stage relational cascades indexed by discrete pulse intervals ($n \in \mathbb{N}^+$).
+This white paper delivers the definitive structural specification, algebraic derivation, and multi-morphic validation of the Universal Graph Operator Pipeline within the Status-Relational Entropy (SRE) dynamics framework. Operating entirely under the No-Background-Metric Principle, this architecture shatters the necessity of pre-assigned background space coordinates, spatial manifolds, or hard-coded metric tensors. Instead, macroscopic spacetime geometries, causal timelines, and the bookkeeping closure of compensation overhead emerge purely as intrinsic topological properties of a discrete, binary, self-organizing quantum spin network undergoing multi-stage relational cascades indexed by discrete pulse intervals ($n \in \mathbb{N}^+$).
 
-The primary mathematical breakthrough of this unified framework resides in the complete systemic closure achieved by combining the metric optimization layers (Operators 1–6) with the dual-order homological stitching matrices of the Homological Stitching Core Layer. By resolving the non-singular null-spaces of higher-order Graph Laplacian operators under findable local horizons, the step-wise discrete variation of the global 1-st order Betti numbers is rigidly anchored onto the absolute zero-potential surface ($\Delta\beta_1 \equiv 0$). This identity terminates non-homogeneous dimension splitting and un-bounded genus inflation during asynchronous outward cascades. The mathematical and engineering convergence of the 10 cascaded graph operators presented herein establishes that a discrete quantum network spontaneously, smoothly, and losslessly solidifies into a macroscopically smooth Riemannian manifold endowed with intrinsic geometric curvature, global physical conservation laws, and consistent causal histories, setting the definitive foundation for lock-free, deadlock-free distributed relational physics engines.
+The primary mathematical breakthrough of this unified framework resides in the complete systemic closure achieved by combining the metric optimization layers (Operators 1–6) with the dual-order homological stitching matrices of the Homological Stitching Core Layer. By resolving the non-singular null-spaces of higher-order Graph Laplacian operators under findable local horizons, the step-wise discrete variation of the global 1-st order Betti numbers is rigidly anchored onto the absolute zero-potential surface ($\Delta\beta_1 \equiv 0$). This identity terminates non-homogeneous dimension splitting and un-bounded genus inflation during asynchronous outward cascades. The mathematical and engineering convergence of the 10 cascaded graph operators presented herein establishes that a discrete quantum network spontaneously, smoothly, and losslessly solidifies into a macroscopically smooth Riemannian manifold endowed with intrinsic geometric curvature, bookkeeping closure of compensation overhead, and consistent causal histories, setting the definitive foundation for lock-free, deadlock-free distributed relational physics engines.
 
 In the Version 18.0 extension, the pipeline further introduces two functional layers. The **Electronic Degrees-of-Freedom Extension Layer (Operators 11–12)** encodes Pauling electronegativity differences as binary spin couplings under SRE Axiom 1, injecting charge degrees of freedom and topological closed-loop/Möbius phase audits into molecular graphs, endowing the spectral shape and metric with electronic awareness. The **Spectral Equation Solving Layer (Operators 13–18)** forms an endogenous solving inner loop independent of structural pulses—through Chebyshev moment encoding, Hodge homological routing, endogenous quasi-Newton inversion, Hankel feasibility clamping, and solution-branch Betti auditing—it solves arbitrary spectral constraint equations $\mathcal{F}(\boldsymbol{\tau}) = 0$ using purely endogenous scales (the spectral gap ratio $\gamma = \lambda_2/\alpha_n$) without advancing the outer structural pulse, and Operator 18 outputs the canonical representative minimizing Dirichlet energy within the homology class together with a three-term credibility certificate, completing the final closure from moment space to graph structural realization.
 
@@ -9165,7 +9171,7 @@ $$\Delta \beta_1 \equiv 0$$
 
 Empirical numerical simulations confirm that across 50 rounds of macro-scale asynchronous extensions, the topological dimension fragmentation frequency is identically 0 with 0 maximum deviation, clamping the runtime co-chain matrix resolution complexity tightly to a flat constant bound of $\mathcal{O}(1)$.
 
-Through this dual-order homological stitching, the algebraic interlocks of the 10 cascaded graph operators achieve complete grand finalization. The discrete network quantum spins perfectly solidify into a continuous global substrate. Without hard-coding background space coordinates or artificial metric tensors, the system smoothly, autonomously, and losslessly instantiates an emergent macroscopic continuous spacetime manifold characterized by integer three-dimensional positive-definiteness, consistent causal timelines, global physical conservation laws, and intrinsic geometric curvature, completing the unified mathematical foundation of self-organizing relational universes.
+Through this dual-order homological stitching, the algebraic interlocks of the 10 cascaded graph operators achieve complete grand finalization. The discrete network quantum spins perfectly solidify into a continuous global substrate. Without hard-coding background space coordinates or artificial metric tensors, the system smoothly, autonomously, and losslessly instantiates an emergent macroscopic continuous spacetime manifold characterized by integer three-dimensional positive-definiteness, consistent causal timelines, bookkeeping closure of compensation overhead, and intrinsic geometric curvature, completing the unified mathematical foundation of self-organizing relational universes.
 
 ## Chapter 6: Electronic Degrees of Freedom & Spectral Equation Solving
 
@@ -9996,6 +10002,38 @@ $$
 ## 7. Statistical Mechanics Derivation: Thermodynamic Origin of the Zero-Interference Boundary
 To isolate non-coherent topological states and eliminate any analytical degeneracy in probability behaviors, the absolute zero-interference plateau ($\text{sgn}=0$) must be derived independently from the microstate partition function of Status-Relational Entropy (SRE) dynamics.
 
+### 7.0 Free-Energy Form: The Heat-Bath Identity of Operator 2
+
+**Definition (free-energy difference).** For a channel $c$ ($D_c\ge1$), define
+
+$$F_c=\ln\frac{\mathfrak{B}_c}{\Lambda D_c},\qquad \mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$$
+
+**Theorem 1 (heat-bath identity).** The pruning probability of Operator 2 satisfies
+
+$$p_c=\sigma(-F_c)=\frac{1}{1+e^{F_c}}$$
+
+**Proof.** From $\Lambda D_c/\mathfrak{B}_c=e^{-F_c}$ we obtain $p_c=1-\dfrac{1}{1+e^{-F_c}}=\dfrac{e^{-F_c}}{1+e^{-F_c}}=\sigma(-F_c)$. Q.E.D.
+
+**Reading.** $F_c$ is the free-energy difference of this single flip: $\ln\mathfrak{B}_c$ is the resistance and $\ln(\Lambda D_c)$ is the driving force. When $F_c>0$, $p_c<\tfrac12$ (survival favoured); when $F_c<0$, $p_c>\tfrac12$ (pruning favoured). Operator 2 is therefore a **Glauber heat bath at temperature 1**, and $\sigma$ is its acceptance rule.
+
+**Corollary (three-phase criterion and switching).** The three-layer structure is precisely the trichotomy of $\operatorname{sgn}F_c$; the coexistence surface $F_c=0$ is $\Lambda_c=\mathfrak{B}_c/D_c$.
+
+**Theorem 2 (geometric-mean law of the coherence length).** Let $\mu_D=\mathbb{E}[\ln\mathfrak{B}\mid D]$ and $s_D^2=\operatorname{Var}(\ln\mathfrak{B}\mid D)$; then the half-value point $\xi$ ($f(\xi)=\tfrac12$) satisfies
+
+$$\ln(\Lambda\xi)=\mu_\xi+O\big(\kappa_{3,\xi}s_\xi^3\big),\qquad \xi=\frac{\mathfrak{B}_{\mathrm{geo}}(\xi)}{\Lambda},\quad \mathfrak{B}_{\mathrm{geo}}=e^{\mu}$$
+
+that is, the coherence length is controlled by the **geometric mean**, not the arithmetic mean. The correction coefficient is $-1/12$ and does not exceed $2\times10^{-3}$ logarithmic units within this ensemble.
+
+**Theorem 3 (local scaling exponent).**
+
+$$n(D)=\Big(1-\frac{\mathrm{d}\mu_D}{\mathrm{d}\ln D}\Big)\cdot\frac{1}{\sqrt{1+\alpha s_D^2}},\qquad \alpha=0.4028$$
+
+$\alpha$ is obtained by numerical calibration of the logistic–normal integral (no simulation data are used). Note that the commonly reported "string slope" is the weighted average of $n(D)$ within the band, varies with $\Lambda$, and is not a universal constant.
+
+**Note (relation to the symplectic structure of Operator 7).** The symplectic matrix $\mathbf{J}$ of Operator 7 is a legitimate discrete dual structure at the solver layer, used to preserve the structure-preserving property of the discrete integration; it **does not constitute a Hamiltonian generator of the ontology**. Under the present axioms SRE has no Hamiltonian: the generator is a symmetric dissipative combinatorial Laplacian (generating a semigroup rather than a group), the composition of Operators 1/2 is irreversible (no generating function), and the configuration is binary with a forbidden zero and no conjugate momentum.
+
+**Note (quantitative verification and uses).** Rigorous verification of the three formulas above (standardized residual $0.96\sim1.07$, i.e. the residual is exactly binomial noise) and the four verified uses (prediction without outcomes, inversion of $\Lambda$, extrapolation of the critical parameter, channel selection) are given in the separate paper "The Free-Energy Generative Structure of Operator 2 in Status–Relational Entropy Dynamics" (chapter Operator_2_Free_Energy_Structure in this book).
+
 #### Theorem 5 (SRE Hamiltonian Phase Separation Theorem)
 The local topological Hamiltonian $\mathcal{H}_{\text{local}}$ driven by the un-realized path interference polynomial $\tilde{\mathcal{E}}_{\text{local}}(v_f, v_m)$ under the valuation homomorphism consists strictly of three mutually disjoint phase spaces:
 $$
@@ -10007,12 +10045,19 @@ $$
 \end{cases}
 $$
 
+(Remark: the term "Hamiltonian" here follows the original naming; it is in fact a piecewise potential function of the configuration and generates no evolution. Its relation to the free-energy difference is $\mathcal{H}_{\mathrm{local}}\equiv-\ln\mathfrak{B}$, hence $F_c=-\mathcal{H}_c-\ln(\Lambda D_c)$. Under the present axioms this theory has no Hamiltonian generator; see the closing note of §7.0.)
+
 **Proof**
-1. Based on the fundamental principles of SRE dynamics, the microscopic occurrence probability of a local front channel follows a canonical distribution governed by its local Hamiltonian, where the statistical weight evaluates to $\exp(-\beta \cdot \mathcal{H})$.
-2. When $\tilde{\mathcal{E}}_{\text{local}} > 0$, the local loop is entirely free from topological frustration, allowing the network to condense coherently and lower its free energy. The Hamiltonian manifests as an attractive potential well, where the structural correction term inside the energy denominator yields $\exp(+1) = e$.
-3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$, the system plunges into deep structural frustration. The non-neutralizable phase conflict acts as an active gauge work. The Hamiltonian switches into a repulsive energy barrier, where the structural correction term scales down to $\exp(-\beta \cdot \Delta E_{\text{gauge}}) = \exp(-1) = e^{-1}$.
-4. When $\tilde{\mathcal{E}}_{\text{local}} = 0$, a perfect algebraic cancellation occurs between positive and negative polarities across all 2-step paths. In the language of statistical physics, this local manifold possesses neither ordered-phase condensation nor phase-gauge work. The degeneracies of opposite-energy states are perfectly balanced, collapsing the local topological Hamiltonian strictly to zero: $\mathcal{H}_{\text{local}} \equiv 0$.
-5. Substituting $\mathcal{H}_{\text{local}} = 0$ back into the Boltzmann canonical factor, the phase-separation correction term yields $\exp(0) = 1$. This eliminates any mathematical continuity gaps at the phase boundaries, ensuring complete decoupling between different topological states.
+1. By the pruning rule of Operator 2, the channel-flip probability can be **identically** rewritten in heat-bath form (derivation in §7.0):
+   　$p_c=\sigma(-F_c)$, $F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$,
+   　$\mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
+   This expression is an algebraic identity and contains no statistical assumption.
+2. When $\tilde{\mathcal{E}}_{\text{local}} > 0$: $\mathfrak{B}=\tilde{\mathcal{E}}+e$, the barrier takes the upper branch, $F$ rises, $p<\tfrac12$, and the channel preferentially survives — the coherent condensation phase.
+3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$: $\mathfrak{B}=|\tilde{\mathcal{E}}|+e^{-1}$, the barrier takes the lower branch, $F$ is depressed, $p>\tfrac12$, and the channel is preferentially pruned — the frustrated phase.
+4. When $\tilde{\mathcal{E}}_{\text{local}} = 0$: $\operatorname{sgn}0=0$ so $\mathfrak{B}=1$, $F=-\ln(\Lambda D)$, $p=1-\dfrac{1}{1+\Lambda D}$ — the absolute information vacuum phase.
+5. The three branches are given by one and the same piecewise function $\mathfrak{B}(\tilde{\mathcal{E}})$; $e$ and $e^{-1}$ are barrier offsets of $+1$ and $-1$ thermal units ($T=1$), **not** multiplicative corrections of a Boltzmann factor. The coexistence surface $F=0$ is $\Lambda_c=\mathfrak{B}/D$ — the switching centre is the zero set of $F$, no longer an externally calibrated parameter.
+
+**Note (the jump at the zero-interference point).** As $\tilde{\mathcal{E}}\to0^{-}$, $\mathfrak{B}\to e^{-1}\approx0.368$; at $\tilde{\mathcal{E}}=0$, $\mathfrak{B}=1$; as $\tilde{\mathcal{E}}\to0^{+}$, $\mathfrak{B}\to e\approx2.718$. Hence the pruning probability jumps two-sidedly at $\tilde{\mathcal{E}}=0$ rather than passing continuously; the original statement about "eliminating mathematical continuity gaps at the phase boundary" should be deleted. $\tilde{\mathcal{E}}=0$ is an independent third branch of measure zero.
 
 ◼ Theorem 5 is complete.
 
@@ -10041,7 +10086,7 @@ $$
 6. We define the effective attraction radius (coherence length) as $\xi$. Once causal-depth steps cross this critical threshold ($\mathcal{D}_s > \xi$), the binary random-decision gate collapses to dormant state $\chi \equiv 0$ with probability one.
 7. According to Paradigm B (Elimination-Conduction Mechanism) selected in Section 6, these edges are all forced to constant $+1$, cutting off information flow in multiplicative feedback loops.
 8. Accordingly, the number of historical vertices for which $v_f$ can maintain non-unit spin and carry them into next-round multiplicative evolution is rigidly confined within finite generational window: $\sigma(v_m) \in [n+1-\xi,\,n+1]$.
-9. Set absolute constant upper bound $K_0 = \lceil \xi \rceil$. Since $\xi$ is uniquely determined by statistical-mechanical inverse temperature $\beta$ and fundamental constant $\lambda_0$, it is algebraically independent of total system scale $n$. Hence:
+9. Set absolute constant upper bound $K_0 = \lceil \xi \rceil$. Since $\xi$ is uniquely determined by statistical-mechanical inverse temperature $\beta_{\rm th}$ and fundamental constant $\lambda_0$ (in this chapter $\beta_{\rm th}\equiv1$; temperature 1 is constructive), it is algebraically independent of total system scale $n$. Hence:
 $$
 \sup_{n \in \mathbb{N}^+} \max_{v \in V_n} \text{Degree}(v) \le K_0 \quad \text{holds unconditionally}.
 $$
@@ -10085,14 +10130,14 @@ In earlier formulations, $\lambda(n)$ depended on spectral radius $\rho(\mathbf{
 #### Theorem 8 (Decoupled Normalization-Constant Unique-Determinism Theorem)
 Reconstruct explicit mapping for coupling-constant $\lambda(n)$ in terms of deterministic historical subgraph spectral radius $\rho(\mathbf{A}_{n-1})$ obtained from previous evolutionary round:
 $$
-\lambda(n) = \frac{1}{\beta} \cdot \frac{\ln\big(1 + \rho(\mathbf{A}_{n-1})\big)}{n + 1}.
+\lambda(n) = \frac{1}{\beta_\lambda} \cdot \frac{\ln\big(1 + \rho(\mathbf{A}_{n-1})\big)}{n + 1}.
 $$
 This reconstructed formula yields uniquely-determined real analytic solution at every frontier-expansion step and fully removes cross-operator circular dead-lock.
 
 **Proof**
 1. At start of $n$-th dimensional expansion step ($n\to n+1$), historical subgraph $\mathbf{A}_{n-1}$ has already finished all pruning and evaluation mappings from previous iteration; hence $\mathbf{A}_{n-1}$ is a fully-deterministic real-valued sparse matrix.
 2. By Perron-Frobenius theorem, spectral radius (maximum absolute eigenvalue) $\rho(\mathbf{A}_{n-1})$ of any real-symmetric sparse matrix is an unconditionally unique deterministic algebraic topological invariant.
-3. Substitute unique scalar $\rho(\mathbf{A}_{n-1})$, pre-evolution step index $n$, macroscopic inverse-temperature constant $\beta>0$ directly into reconstructed explicit formula.
+3. Substitute unique scalar $\rho(\mathbf{A}_{n-1})$, pre-evolution step index $n$, macroscopic inverse-temperature constant $\beta_\lambda>0$ directly into reconstructed explicit formula.
 4. Logarithm and division are single-valued monotonic functions over positive real domain $(0,+\infty)$. Right-hand side contains no unresolved future-dependent pruning-mask parameters.
 5. Consequently $\lambda(n)$ acts purely as forward-looking prior control-parameter, its analytic solution is uniquely determined; circular-dependency conflict is fundamentally eliminated.
 
@@ -10100,19 +10145,21 @@ This reconstructed formula yields uniquely-determined real analytic solution at 
 
 ---
 ##-. P0 Emergency Revision: Derivation of Explicit Topological-Weight $w_\alpha$ and its SRE Statistical-Mechanical Origin
-#### Theorem 9 (Explicit Mapping of Topological-Weight $w_\alpha$ and Minimal-Action Derivation Theorem)
-Within highly-overlapping multi-loop polygonal networks, explicit topological weight for each independent fundamental-cycle basis element $L_\alpha$ is defined as reciprocal of loop length: $w_\alpha = \frac{1}{|L_\alpha|}$. Its value range is strictly confined to interval $(0,\,\frac13]$, and its thermodynamic origin strictly follows minimal-action principle of SRE path integral.
+#### Theorem 9 (Explicit Mapping of Topological-Weight $w_\alpha$ and Harmonic-Decay Theorem)
+Within highly-overlapping multi-loop polygonal networks, explicit topological weight for each independent fundamental-cycle basis element $L_\alpha$ is defined as reciprocal of loop length: $w_\alpha = \frac{1}{|L_\alpha|}$. Its value range is strictly confined to interval $(0,\,\frac13]$; its value is given by the harmonic decay of local coherent control and is a weight ansatz rather than a variational extremum.
 
 **Proof**
 1. According to local causality principle of Status-Relational Entropy dynamics, phase loss for spin information propagating along long paths is proportional to topological step-count (edge-count $|L_\alpha|$) of that path.
-2. Total local action exerted on frontier is superposition of local-path-integral contributions from all overlapping fundamental historical cycles: $\mathcal{S}_{\text{total}}=\sum_\alpha \mathcal{S}(L_\alpha)$.
-3. To satisfy macroscopic-microscopic interaction minimal-action principle ($\delta\mathcal{S}=0$), long loops suffer harmonic-series decay of coherent control strength upon frontier edges proportional to loop length. Hence contribution weight must be reciprocal of loop length:
+2. The local weight felt by the frontier is the superposition of contributions from all overlapping fundamental historical cycles: $\mathcal{W}_{\text{total}}=\sum_\alpha w_\alpha$.
+3. The coherent control strength of long loops on frontier edges decays harmonically with loop length ($\propto 1/|L_\alpha|$); hence the weight is taken as the reciprocal of the loop length:
 $$
 w_\alpha = \frac{1}{|L_\alpha|}.
 $$
 4. Boundary analysis: According to algebraic graph theory, shortest non-trivial closed loop is triangle satisfying $|L_\alpha|\ge3$. Weight attains maximum value $w_\alpha=\frac13$ for triangular loops. As long-loop length tends to thermodynamic limit $|L_\alpha|\to\infty$, weight converges to zero. Value range is strictly $(0,\,\frac13]$.
 
 ◼ Theorem 9 is complete.
+
+**Note.** This chapter no longer invokes the principle of least action: $\mathcal{W}_{\text{total}}$ is a definition of superposed weights, not an action functional that can be extremized. For a variational form, see the free-energy functional and its zero set in §7.0.
 
 ---
 ## 12. P1 Supplementary Improvement: Symbolic-Polynomial-Domain Prospective Frustration-Judgement Theorem
@@ -10129,7 +10176,7 @@ $$
 2. Suppose polynomial algebraic structure contains irreducible inter-locked monomial combinations, for instance sub-structure like $x_1^2-x_1x_2$.
 3. Apply arbitrary valid global-binary-assignment homomorphism $\Phi$. Under binary-spin constraints, even-power monomials collapse to constant $+1$: $\Phi(x_1^2)\equiv1$.
 4. Odd-power monomials such as $\Phi(x_1 x_2)$ fluctuate within set $\{+1,-1\}$ depending on concrete spin assignments.
-5. Even-order constant term $+1$ can algebraically cancel against fluctuating odd-order terms ($1-1=0$). This triggers non-linear jump of Hamiltonian towards repulsive-barrier regime $\mathcal{H}_{\text{local}}>0$.
+5. Even-order constant term $+1$ can algebraically cancel against fluctuating odd-order terms ($1-1=0$). This triggers a non-linear jump of the local barrier into the repulsive regime ($\mathfrak{B}$ takes the lower branch, $F<0$).
 6. This energy-level collapse is purely determined by topological-locked structure inside symbolic matrix; prospective frustration-lock judgement can therefore be performed already in polynomial-input domain.
 
 ◼ Theorem 10 is complete.
@@ -10166,6 +10213,467 @@ $$
 \lim_{\lambda \to \infty} p(v_f, v_m) = 1 - \frac{1}{1 + \infty} = 1 \implies \chi \equiv 0
 $$
 * **Physical Interpretation**: Channel dormancy probability converges unconditionally to $100\,\%$. Under Paradigm-B rules, all connected edges of topological network are forced algebraically to constant $1$ upon first generation. System loses all capacity for polarity inversion and topological bifurcation; network spontaneously collapses into completely isotropic discrete isolated-point cluster without information interaction (Absolute-Vacuum phase); macroscopic heat-death is realized instantaneously.
+
+
+<div style="page-break-after: always;"></div>
+
+# The Free-Energy Generative Structure of Operator 2 in Status–Relational Entropy Dynamics: The Heat-Bath Identity, the Geometric-Mean Law, and Four Verifiable Uses
+
+Version: 1.0  
+
+[Resource & Availability Statement] This framework is built on Status–Relational Entropy (SRE) dynamics. All theoretical materials are archived in the Zenodo open data repository. **This document suite includes the systems paper, application development, scientific hypotheses, the complete algebraic derivations of Operators 1–20, and the simulation code, all fully open source.**
+
+> The author's GitHub repository is accessible at:
+>
+> https://github.com/yuelucn/Status-Relational-Entropy-SRE-Dynamics-The-Book-of-the-Void
+>
+> A Tencent intelligent document space (with AI-assisted search) is accessible at (available on both PC and WeChat mobile):
+>
+> https://docs.qq.com/space/DUkRjYUtNWFdyV253
+>
+> According to the Status–Relational Entropy (SRE) principle, the foundations of classical physics derive from information statistics.
+
+
+**Abstract.** Status–Relational Entropy (SRE) dynamics reinterprets evolution in terms of "dissipation–compensation", yet throughout it possesses no generating functional: there is neither a phase space nor a Hamiltonian. This paper shows that what is missing is not a symbol $H$, but the **mechanism that converts already-existing objects into one and the same scalar**, and that this mechanism is in fact already written inside Operator 2. Rewriting the pruning probability of Operator 2 by one step yields
+
+$$p=\sigma(-F),\qquad F=\ln\frac{\mathfrak{B}}{\Lambda D}$$
+
+that is: **Operator 2 is itself a heat bath at temperature 1 (Glauber dynamics), and $F$ is the free-energy difference of this single flip.** Three testable consequences follow: the coherence length is controlled by the "geometric-mean barrier" rather than the arithmetic mean; the scaling exponent is not a constant but a local quantity that varies with depth; and replacing the arithmetic mean by the geometric mean incurs a bias that can be computed exactly (the Jensen gap). We performed a strict test on about $1.1\times10^6$ channel decisions: the identity residual is $2.2\times10^{-16}$, and the standardized residual is $0.96\sim1.07$ (if the formula is correct, this number should be exactly 1), showing that the geometric-mean law is an exact law rather than a fit.
+
+More importantly, this set of formulas **works**. This paper presents four uses that have already been run successfully on real simulations: fitting only 3 parameters on even depths predicts the pruning rate at odd depths, reducing the error from 0.122 to 0.0090 ($R^2=0.995$); inverting the dissipation coefficient $\Lambda$ from observed data with an error of 2.0%, whereas the naive procedure that ignores the barrier errs by 80%; predicting the critical $\Lambda^*$ at which "the first layer is exactly half pruned", which is off by 33% in one shot and drops to 1.5% after two-step fixed-point iteration; and scoring channels by $F$ for selection, where keeping only 10% of channels recovers 40%–59% of the truly surviving channels, an enrichment of 4.0–5.9 fold. A negative result is also given: SRE cannot possess a Hamiltonian, and the three obstacles are mutually independent.
+
+**Keywords**: free energy; Glauber heat bath; geometric mean; Jensen inequality; coherence length; scaling exponent; inverse problem; channel selection
+
+---
+
+## 1 Introduction
+
+### 1.1 A gap between name and substance
+
+SRE contains a quantity called $\mathcal H_{\mathrm{local}}$ whose name is "Hamiltonian", but which is in fact only a piecewise-linear function of the configuration, used to compute a weight and never generating any equation of motion. Elsewhere in the text there are three further "energy/action" objects — the local weight, the Dirichlet energy, and the symplectic structure — none of which can be converted into another. Consequently the theory speaks of "variational closure, energy conservation, least action", while structurally there is no functional that can be varied.
+
+### 1.2 What this paper does
+
+This paper does not supply an $H$; it argues instead that **SRE's true identity is free-energy-type dissipative dynamics, that its generative structure is hidden in the probability rule of Operator 2, and that nobody has ever solved it out.** Specifically it does three things:
+
+1. rewrite the probability of Operator 2 into heat-bath form and give the closed form of $F$ (Theorem 1);
+2. derive from $F$ the correct forms of the coherence length and the scaling exponent, with analytic expressions for the two corrections (Theorems 2 and 3);
+3. prove that SRE cannot have a Hamiltonian and state clearly what the obstacles are (Proposition 5);
+4. give four uses that are **already running, with reproducible numbers** (Section 6).
+
+### 1.3 For undergraduates reading this for the first time
+
+There is no need to understand the glossary in Section 2 first. The suggested reading order is: read 3.1 to see what the two operators do, then read Theorem 1 (it is one line of algebra), then jump to Section 6 to see what these formulas can do, and finally come back to the proofs. Every technical term at its first occurrence is explained in the body by a **boldfaced "one sentence"**; the glossary is only for later lookup.
+
+---
+
+## 2 Glossary
+
+### 2.1 Probability and statistics
+
+| Term | One-sentence explanation | Where used in this paper |
+|---|---|---|
+| probability $p$ | the confidence that an event occurs, ranging from 0 to 1 | pruning probability |
+| odds | $p/(1-p)$, turning "0 to 1" into "0 to infinity" | logit |
+| logit | the logarithm of the odds, $\ln\frac{p}{1-p}$. Its advantage is that it **turns multiplication into addition**, so that slope and intercept become meaningful | Theorem 3 |
+| sigmoid $\sigma$ | $\sigma(z)=\frac{1}{1+e^{-z}}$, compressing any real number back into 0 to 1; it is the inverse of the logit | Theorem 1 |
+| expectation $\mathbb{E}$ | weighted average (the weights are probabilities) | throughout |
+| variance / standard deviation | the mean squared fluctuation / the typical size of a fluctuation | Theorem 2 |
+| skewness / third cumulant | whether the distribution is left–right asymmetric | correction term of Theorem 2 |
+| logarithm $\ln$ | turns "multiplication" into "addition"; $\ln(ab)=\ln a+\ln b$ | definition of $F$ |
+| arithmetic mean | ordinary sum divided by the count | control |
+| geometric mean | take logarithms, average, then transform back, $\exp(\mathbb{E}\ln x)$. It is **more robust to extreme values** | Theorem 2 |
+| Jensen inequality | for a nonlinear function, "average then compute" $\ne$ "compute then average". For convex functions the former is larger, for concave functions smaller | Proposition 4 |
+| normal distribution | the bell curve, fully determined by mean and variance | proof of Theorem 2 |
+| binomial distribution | the distribution of the number of successes when a biased coin is tossed $n$ times | noise of the verification |
+| standard error (SE) | the sampling fluctuation of an estimator; for a proportion it is $\sqrt{p(1-p)/n}$ | verification criterion |
+| residual / standardized residual | observation minus prediction / residual divided by the fluctuation it should have. **If the model is right, the standardized residual should be "the noise itself", with RMS $\approx1$** | core of Section 5 |
+| $R^2$ (coefficient of determination) | how much better the model is than "guess with the mean alone"; 1 means perfect | A1 |
+| Gauss–Hermite quadrature | a numerical method that turns "a continuous integral" into "a small weighted sum" | Appendix A |
+| probit approximation | approximating the sigmoid by the normal distribution function, error about 1% | Appendix A comparison |
+| AUC | the probability that, given one positive and one negative sample at random, the scorer ranks the positive first. 0.5 is guessing, 1 is perfect ordering | A4 |
+| precision / recall | of what was selected, how much is correct / of what is correct, how much was selected | A4 |
+| lift | precision divided by the "pick at random" baseline, measuring how many times better than guessing | A4 |
+| hold-out | fit on one half of the data and test on the other, to prevent self-deception | A1, A2 |
+
+### 2.2 Physics
+
+| Term | One-sentence explanation | Where used in this paper |
+|---|---|---|
+| free energy | a measure of "how much work the system wants to do", $F=E-TS$: energy wants to decrease, entropy wants to increase, and the temperature $T$ decides whose voice is louder | Theorem 1 |
+| Boltzmann weight | $e^{-E/T}$; the lower the energy, the larger the weight | the phase-transition argument of the original text |
+| heat bath / Glauber dynamics | the system sits in a constant-temperature environment and accepts a flip with probability $\sigma(-\Delta F/T)$. **No Newtonian equation needs to be written** | Theorem 1 |
+| phase space | the space spanned jointly by "position + momentum"; the minimal stage of classical mechanics | Proposition 5 |
+| conjugate momentum | the quantity paired with position (for example velocity times mass) | Proposition 5 |
+| Hamiltonian $H$ | a function on phase space that **generates** time evolution: $\dot q=\partial H/\partial p$, $\dot p=-\partial H/\partial q$ | Proposition 5 |
+| Lagrangian / action | the "cost" accumulated along a path; an extremal action is the principle of least action | Proposition 5 |
+| Poisson bracket / symplectic structure | the algebraic skeleton of Hamiltonian evolution, which must be **antisymmetric** | Proposition 5 |
+| canonical transformation | a coordinate transformation preserving the symplectic structure. **Hamiltonian evolution is always a canonical transformation**, hence must be invertible | Proposition 5(ii) |
+| generating function | the "potential" describing a canonical transformation. Conversely: **an irreversible transformation has no generating function, and hence no $H$** | Proposition 5(ii) |
+| Noether's theorem | each continuous symmetry corresponds to a conserved quantity; time-translation symmetry corresponds to energy conservation | Proposition 5(iii) |
+| generator / semigroup | when evolution can be written $e^{tA}$, $A$ is the generator. If it is definable only for $t\ge0$, it is a semigroup (irreversible) | Proposition 5(i) |
+| eigenvalue / eigenmode | those modes whose shape evolution does not change, only being scaled by $e^{\lambda t}$ | Proposition 5(i) |
+| coherence length $\xi$ | beyond this scale, two places are essentially "mutually incoherent" | Theorem 2 |
+| scaling exponent / power law | the $n$ in $y\propto x^n$; on log axes it is the slope | Theorem 3 |
+| GENERIC | the framework that writes "reversible energy flow" and "irreversible entropy production" side by side in one equation | corollary of Proposition 5 |
+
+### 2.3 Graphs and algorithms
+
+| Term | One-sentence explanation | Where used in this paper |
+|---|---|---|
+| graph Laplacian $\mathbf L_G=\mathbf D-\mathbf A$ | the standard "diffusion" operator on a graph; it is symmetric, hence can only decay, not oscillate | Proposition 5(i) |
+| surjective / injective | every target has a preimage / distinct inputs map to distinct outputs. Not being surjective means "losing information", i.e. not invertible | Proposition 5(ii) |
+| read-only inheritance | rows and columns already written are never revised | Operator 1 |
+| classifier scoring | give every sample a score, sort by score, take the first few | A4 |
+| fixed-point iteration | repeatedly applying $x\leftarrow g(x)$ to approach the solution of $x=g(x)$ | A3 |
+
+---
+
+## 3 Notation and objects
+
+### 3.1 Configurations and the two operators
+
+A **configuration** is an $n\times n$ relational matrix $M$ with entries $+1$ or $-1$: $+1$ means "identity element / no relation", $-1$ means "chirality present / interference present". Binary and zero-forbidden.
+
+**Operator 1 (expansion)**: at step $n$ a new $n$-th row and $n$-th column are added, and for each old column $v_m<n$ a value is decided in turn; once written it propagates forward only and is never revised (read-only inheritance).
+
+**Operator 2 (pruning)**: for a channel $c$, first compute a "two-step-walk interference quantity"
+
+$$\tilde{\mathcal E}_c=\underbrace{\sum_{k}\big[M_{k,v_m}\ne1\big]\big[M_{v,k}\ne1\big]M_{v,k}M_{k,v_m}}_{\text{interference}}+\underbrace{2M_{v,v_m}}_{\text{self}}$$
+
+The first term is the interference term of the two-step walk: **only intermediate nodes whose both endpoints are non-identity are counted**; the second term is the self term.
+
+Then define the **barrier** $\mathfrak{B}_c=\lvert\tilde{\mathcal E}_c\rvert+e^{\operatorname{sgn}\tilde{\mathcal E}_c}>0$ and the **depth** $D_c=n-v_m-1$ (the more recently a channel is added, the shallower it is; the newest channel has $D=0$), and finally
+
+$$p_c=1-\frac{1}{1+\Lambda D_c/\mathfrak{B}_c} \qquad (1)$$
+
+toss a coin to decide whether to prune. $\Lambda$ is the exogenous dissipation coefficient (written $\Gamma$ in the original text). This paper uses $\Lambda$ so as not to be confused with the inverse temperature $\beta$.
+
+> **Notation note**: a channel with $D=0$ is never pruned by (1) ($p=0$); all formulas below assume $D\ge1$ by default.
+
+### 3.2 Why the double mask is mandatory
+
+$\tilde{\mathcal E}$ accumulates only intermediate nodes **non-identity at both ends**. If the second layer $[M_{v,k}\ne1]$ is omitted, the $+1$ "empty slots" are counted as genuine interference, producing impossible channels with $\mathfrak{B}=1$ and inflating the Jensen gap from 0.95 to a spurious 0.70. An early version of this paper fell into this trap; it should be written into the formal definition of the operator.
+
+---
+
+## 4 Main results
+
+### 4.1 Theorem 1 (heat-bath identity)
+
+> **In one sentence: the rule of Operator 2 is not an arbitrary design; it is exactly a standard heat bath.**
+
+Let
+
+$$F_c=\ln\frac{\mathfrak{B}_c}{\Lambda D_c} \qquad (2)$$
+
+Then (1) and the following are **identical**:
+
+$$p_c=\sigma(-F_c)=\frac{1}{1+e^{F_c}} \qquad (3)$$
+
+**Proof.** From $\Lambda D_c/\mathfrak{B}_c=e^{-F_c}$ we have $\dfrac{1}{1+\Lambda D_c/\mathfrak{B}_c}=\dfrac{1}{1+e^{-F_c}}=\sigma(-F_c)$, and then $1-\sigma(-F_c)=\dfrac{e^{-F_c}}{1+e^{-F_c}}=\dfrac{1}{1+e^{F_c}}=\sigma(-F_c)$. Q.E.D.
+
+**How to read (3)**: when $F>0$, $\sigma(-F)<1/2$, tending not to prune; when $F<0$, tending to prune. $F$ is exactly "the difference of free energy before and after this flip" — $\ln\mathfrak{B}$ is the resistance, $\ln(\Lambda D)$ the driving force, and their difference is the net driving force. This is the heat-bath rule $\sigma(-\Delta F/T)$ specialized to $T=1$ with $\Delta F=\ln(\Lambda D)-\ln\mathfrak{B}$.
+
+**Corollary 1.1** The dynamical class of Operator 2 is the Glauber heat bath, and $F$ is the scalar mother-object of this system.
+
+**Corollary 1.2 (the three layers and the transition no longer need external calibration)** $F>0$, $F\approx0$, $F<0$ are exactly the three-layer structure; the coexistence surface $F=0$ is $\Lambda_c=\mathfrak{B}/D$ — the transition point, formerly treated as a "calibration anchor", is now the zero set of $F$.
+
+### 4.2 Theorem 2 (geometric-mean law)
+
+> **In one sentence: what controls the coherence length is the geometric mean of the barrier, not the arithmetic mean.**
+
+Fix the depth $D$, and write $u=\ln\mathfrak{B}$, $\mu_D=\mathbb{E}[u\mid D]$, $s_D^2=\operatorname{Var}(u\mid D)$. The expected pruning rate of the depth profile is
+
+$$f(D)=\mathbb{E}\big[\sigma\big(\ln(\Lambda D)-u\big)\mid D\big] \qquad (4)$$
+
+**Conclusion**: the half-value point $\xi$ (satisfying $f(\xi)=\tfrac12$) obeys
+
+$$\ln(\Lambda\xi)=\mu_\xi+O\big(\kappa_{3,\xi}s_\xi^3\big),\qquad \xi=\frac{\mathfrak{B}_{\mathrm{geo}}(\xi)}{\Lambda},\quad \mathfrak{B}_{\mathrm{geo}}=e^{\mu} \qquad (5)$$
+
+**Proof.** Let $g(m)=\mathbb{E}[\sigma(m-u)]$. Since $\sigma$ is strictly monotone, $g$ is strictly monotone and the half-value point is unique. Expand $u$ about $\mu$ to third order:
+
+$$g(\mu+\delta)=\sigma(\delta)+\frac{s^2}{2}\sigma''(\delta)-\frac{\kappa_3s^3}{6}\sigma'''(\delta)+O(s^4)$$
+
+Substituting $\sigma(0)=\tfrac12$, $\sigma''(0)=0$, $\sigma'''(0)=-\tfrac18$ gives $g=\tfrac12+\tfrac{\delta}{4}+\tfrac{\kappa_3s^3}{48}+O(s^4)$. Setting $g=\tfrac12$ yields $\delta=-\kappa_3s^3/12$. Q.E.D.
+
+**Order of magnitude**: measured $s\le0.17$, $\lvert\kappa_3\rvert\le4.7$, so the correction is $\le2\times10^{-3}$ in log units and negligible. This is why "the geometric mean" is almost exact in this ensemble.
+
+**Note 1 (why a global mean cannot be used)**: replacing $\mu$ by a global mean $\bar\mu$ introduces a drift of $\mu$ along depth. Measured, $\xi\Lambda$ varies between $4.75$ and $5.77$ (21%), so "$\xi\propto1/\Lambda$ with a global geometric-mean proportionality constant" holds only to 20% accuracy.
+
+### 4.3 Theorem 3 (local scaling exponent)
+
+> **In one sentence: the scaling exponent is not a constant; it varies with depth, and fluctuations contribute less than 1% correction.**
+
+$$n(D)=\Big(1-\frac{\mathrm{d}\mu_D}{\mathrm{d}\ln D}\Big)\cdot\frac{1}{\sqrt{1+\alpha s_D^2}},\qquad \alpha=0.4028 \qquad (6)$$
+
+**Proof.** From (4), $\mathrm{logit}\,f=\mathrm{logit}\,g(m)$ with $m=\ln(\Lambda D)$. Differentiating totally with respect to $\ln D$: the explicit part of $m$ contributes 1, the implicit part of $\mu_D$ contributes $-\mathrm{d}\mu_D/\mathrm{d}\ln D$, and the whole is multiplied by the slope of $G(m)\equiv\mathrm{logit}\,\mathbb{E}[\sigma(m-u)]$ at $m=\mu$. That slope is independently calibrated by Gauss–Hermite quadrature as $A(s)=1/\sqrt{1+\alpha s^2}$ (Appendix A). Q.E.D.
+
+**Note 2 (the chord slope is not the exponent)**: in practice $\mathrm{logit}f$ is regressed linearly against $\ln D$ over the whole range, and the resulting "exponent" is really the weighted average of $n(D)$ within that range, further superposed with the nonlinearity of $\mu_D$. It changes with $\Lambda$ (measured $1.023\sim1.116$) and should not be reported as a universal constant.
+
+### 4.4 Proposition 4 (Jensen gap)
+
+$$\lambda_J\equiv\frac{\mathfrak{B}_{\mathrm{geo}}}{\mathfrak{B}_{\mathrm{arith}}}=\exp\big(\mathbb{E}[\ln\mathfrak{B}]-\ln\mathbb{E}[\mathfrak{B}]\big)\le1 \qquad (7)$$
+
+> **In one sentence: it quantifies exactly the error of "using the arithmetic mean instead of the geometric mean".**
+
+Measured $\lambda_J=0.946\sim0.999$ ($\Lambda:0.2\to2.0$), i.e. an error of 0.1%–5.4%.
+
+### 4.5 Proposition 5 (no Hamiltonian is possible)
+
+> **In one sentence: this is not "not yet found", but three independent structural obstacles.**
+
+**(i) The generator is of the wrong type.** The original text explicitly fixes the generator of the refresh dynamics as the graph Laplacian $\mathbf L_G=\mathbf D-\mathbf A$. It is symmetric positive semidefinite and generates a **semigroup** $e^{-\mathbf L_Gs}$, whose eigenvalues are decay rates; a Hamiltonian is antisymmetric and generates a **group** $e^{-iHt}$, whose eigenvalues are frequencies. Different categories.
+
+**(ii) Irreversible, hence no generating function.** Hamiltonian evolution is a canonical transformation and must be invertible and preserve phase volume. The read-only inheritance of Operator 1 makes the map non-surjective, and Operator 2 is an elimination; their composition is irreversible, and an irreversible transformation has no generating function, so no $H(q,p)$ can be written.
+
+**(iii) No phase space.** Configurations take values in $\{\pm1\}$ with no conjugate momentum; time is only the accumulated bookkeeping of dissipation–compensation, with no time-translation symmetry, so Noether's theorem yields no conserved energy.
+
+**Corollary 5.1** SRE belongs at most to a free-energy gradient flow / generalized GENERIC:
+
+$$\partial_s m=\kappa_A\mathbf J\nabla\mathcal E+\kappa_L\mathbf L_G\nabla\mathcal S$$
+
+but neither of the two degeneracy conditions of strict GENERIC holds ($\mathbf J\nabla\mathcal S\ne0$, $\mathbf L_G\nabla\mathcal E\ne0$), so $F=\mathcal E-T\mathcal S$ is in general not monotone. This is consistent with (5)(6): **free energy is a "potential", not an "energy".**
+
+---
+
+## 5 Strict numerical verification
+
+### 5.1 Protocol
+
+$N=600$ steps, 6 random seeds, 6 values of $\Lambda$, with about $1.08\times10^6$ channel decisions merged per value. Binning by depth (at least 300 samples per bin), keeping only the transition band with $f\in(0.05,0.95)$. All tests are performed in **logit space** and standardized with the delta-method standard error $\mathrm{SE}=1/\sqrt{nf(1-f)}$.
+
+| ID | Test | Criterion |
+|---|---|---|
+| K1 | identity (3) | $\max\lvert p-\sigma(-F)\rvert<10^{-12}$ |
+| K2 | barrier positivity | $\mathfrak{B}>0$ |
+| K3 | geometric-mean law (5) | standardized residual ${\mathrm{RMS}}(z)\in[0.75,1.25]$ |
+| K4 | intersection equation | $\lvert\ln(\Lambda\xi)-\mu(\xi)\rvert<0.08$ |
+| K5 | local exponent (6) | chord slope differs from $1-\Delta\mu/\Delta\ln D$ by $<0.03$ |
+
+**K3 is the core**: if (5) is right, the residual should be exactly the binomial sampling noise, ${\mathrm{RMS}}(z)\approx1$; if the geometric-mean law is wrong, this number will be far larger than 1. Using "the distribution of the predicted residual" rather than "tuning parameters to fit the curve" is the key distinction of the verification in this paper.
+
+### 5.2 Results
+
+| $\Lambda$ | bins | ${\mathrm{RMS}}(z)$ | $\ln(\Lambda\xi)-\mu(\xi)$ | $\xi$ | geometric error | arithmetic error | chord slope (measured) | chord slope (predicted) | $\lambda_J$ |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 0.20 | 479 | 1.000 | $+0.019$ | 25.90 | 1.90% | 1.92% | 1.116 | 1.137 | 0.946 |
+| 0.34 | 285 | 1.066 | $-0.008$ | 13.97 | 0.84% | 1.44% | 1.069 | 1.086 | 0.977 |
+| 0.50 | 193 | 1.034 | $-0.040$ | 10.59 | 4.10% | 7.06% | 1.046 | 1.065 | 0.988 |
+| 0.80 | 115 | 1.064 | $+0.001$ | 7.21 | 0.06% | 1.71% | 1.038 | 1.044 | 0.995 |
+| 1.20 | 79 | 0.960 | $+0.019$ | 4.45 | 1.88% | 0.72% | 1.026 | 1.033 | 0.997 |
+| 2.00 | 47 | 1.005 | $+0.024$ | 2.56 | 2.36% | 1.80% | 1.023 | 1.023 | 0.999 |
+
+K1–K5 all pass (script exit code 0, output `SUCCESS`).
+
+### 5.3 Three readings
+
+1. **${\mathrm{RMS}}(z)\approx1$ is evidence that "the formula is right", not that "the fit is good".** We tuned no parameter to match the curve; instead we first computed how large the residual should be, then checked whether it is exactly the noise.
+2. **The chord slope being systematically greater than 1 is physics, not error.** $\mathrm{d}\mu/\mathrm{d}\ln D<0$ makes $n(D)>1$; as $\Lambda$ increases the barrier contrast collapses, so the chord slope decreases monotonically from 1.116 to 1.023.
+3. **Geometric and arithmetic means are indistinguishable in this ensemble** ($\lambda_J\ge0.946$, maximum difference 5.4%, the same order as the interpolation error). Hence the evidence for (5) comes from K4, not from a comparison of "which mean is more accurate". To genuinely distinguish the two, an ensemble with larger $\mathfrak{B}$ dispersion must be constructed.
+
+---
+
+## 6 What it is good for: four scenarios already running
+
+> All numbers in this section come from `verify_applications.py`, which shares the same simulator as Section 5; the evaluation data were never fed back into the fit.
+
+### 6.1 A1: predicting the pruning rate without tossing the coin
+
+**Question**: given an already grown matrix, can the pruning rate at some depth be predicted **without waiting for the actual pruning outcome**? In engineering terms this is "can one measure the structure only, not the outcome". The answer is yes — because $\mathfrak{B}$ is computed from the matrix before the coin is tossed, and $F$ depends only on $\mathfrak{B}$ and $D$.
+
+**Procedure**: at $\Lambda=0.8$, $N=600$, fit 3 parameters using only the **even depths** (155 of them)
+
+$$\mu(D)=a+b\ln D+c(\ln D)^2$$
+
+(measured $a=1.7461$, $b=-0.0315$, $c=-0.0001$), then predict $f(D)=\sigma(\ln(0.8D)-\mu(D))$ at the **odd depths** (153 of them, which took no part in the fit).
+
+**Results**:
+
+| Metric | Value |
+|---|---|
+| prediction RMSE (probability space) | **0.0090** |
+| baseline (always guess the training-set mean pruning rate) RMSE | 0.1224 |
+| explanatory power relative to baseline $R^2$ | **0.9946** |
+
+The prediction error is only 1/14 of the baseline. **Use**: three numbers can replace the empirical statistics of more than three hundred depth bins; conversely, if the measured curve departs from this 3-parameter curve and the residual exceeds the sampling noise, the system contains heterogeneity beyond the structure — which is itself a ready-made anomaly-detection idea (control chart: alarm when the residual $z$ exceeds 3).
+
+### 6.2 A2: inverting the dissipation coefficient from observations
+
+**Question**: if $\Lambda$ is unknown (it is often supplied by the external environment and cannot be measured), can it be recovered from "the curve of pruning rate versus depth"?
+
+**Procedure**: take the logit of (3) and rearrange:
+
+$$\ln\Lambda=\mathrm{logit}\,f(D)-\ln D+\mu_D \qquad (8)$$
+
+Every quantity on the right is measurable ($f$ from outcome counts, $\mu_D$ from the barrier), so averaging over several depths gives the estimator $\hat\Lambda=\exp\langle\cdot\rangle$.
+
+**Results** (true $\Lambda=0.8$):
+
+| Estimator | Value | Relative error |
+|---|---|---|
+| corrected estimate $\hat\Lambda=\exp\langle\mathrm{logit}f-\ln D+\mu_D\rangle$ | 0.7839 | **2.01%** |
+| naive estimate $\hat\Lambda_0=\exp\langle\mathrm{logit}f-\ln D\rangle$ (assuming $\mathfrak{B}=1$) | 0.1596 | 80.06% |
+
+The naive method is low by a factor of 5.01, because it drops the barrier ($\langle\ln\mathfrak{B}\rangle\approx1.59$, $e^{1.59}\approx4.9$). **Use**: $\Lambda$ is a physical parameter that can be inverted, rather than a constant that can only be specified externally — this gives SRE, for the first time, a channel for "determining parameters from data". It also shows that the $\mathfrak{B}$ term **cannot be omitted**: omitting it means a factor-5 bias.
+
+### 6.3 A3: extrapolating to a new parameter (including one failure)
+
+**Question**: can the critical $\Lambda^*$ at which "the first layer ($D=1$) is exactly half pruned" be predicted without a parameter sweep?
+
+**One-shot prediction**: at $\Lambda=0.8$ we measure $\mu_1=1.9097$. Setting $f(1)=\tfrac12$ in (5) gives $\Lambda^*=e^{\mu_1}=6.751$.
+
+**Test**: actually running $\Lambda=6.751$ gives $f(1)=0.5635$ — a deviation of **0.0635** from 0.5. Compared with the fixed-point solution $\Lambda^*=5.081$, $\Lambda$ was overestimated by **33%**.
+
+**Why it fails**: $\mu_1$ itself varies with $\Lambda$. When $\Lambda$ is large the matrix is pruned emptier, and the barrier distribution changes with it, so $\mathfrak{B}$ is not an exogenous constant and a one-shot substitution must be biased.
+
+**Correction**: treat (5) as a **self-consistent equation** $\Lambda=e^{\mu_1(\Lambda)}$ and perform fixed-point iteration:
+
+| Iteration | $\Lambda$ | $\mu_1$ | measured $f(1)$ | next $\Lambda$ |
+|---:|---:|---:|---:|---:|
+| 0 | 6.751 | 1.6078 | 0.5635 | 4.992 |
+| 1 | 4.992 | 1.6256 | 0.4849 | 5.081 |
+| converged | **5.081** | — | **0.4849** | deviation 0.0151 |
+
+Two steps compress the deviation of $f(1)$ from 0.0635 to **0.0151** (a 4.2-fold improvement). **Use**: this gives an operational method — **whenever predicting a parameter coupled to its own state, one must solve the self-consistent equation, never substitute once**. This lesson is more valuable than the prediction itself.
+
+### 6.4 A4: scoring channels with $F$ for selection
+
+**Question**: if only the "skeleton" of the matrix is to be kept, which channels should be kept? $F$ is exactly the ranking score (the smaller $p$, the more it should be kept).
+
+**Procedure**: sort by increasing $p$, keep only the first 10%, and record the "survival purity" (the fraction of kept channels that truly survive), the "survival recall" (the fraction of truly surviving channels that are recovered) and the enrichment factor.
+
+**Results**:
+
+| $\Lambda$ | pruning base rate | AUC | discard-side purity (lift) | keep 10%: survival purity (lift) | survival recall |
+|---:|---:|---:|---:|---:|---:|
+| 0.34 | 84.7% | 0.808 | 0.971 (1.15×) | 0.617 (**4.03×**) | 0.403 |
+| 0.80 | 92.2% | 0.825 | 0.988 (1.07×) | 0.393 (**5.03×**) | 0.503 |
+| 2.00 | 96.2% | 0.847 | 0.995 (1.04×) | 0.227 (**5.90×**) | 0.590 |
+
+**How to read**: in this system the vast majority of channels are pruned anyway (base rate 85%–96%), so "discard-side purity 0.99" is almost the same as guessing (lift only 1.04–1.15×), and **this is not the selling point**. The real selling point is the retained side: keeping only 10% of channels recovers 40%–59% of the truly surviving channels, an enrichment of 4.0–5.9 fold; and the "cleaner" the system ($\Lambda$ larger), the stronger the enrichment.
+
+**Use**: this is a quantitative scheme for "skeleton extraction" — compress by 90% and keep about half of the true structure. The larger $\Lambda$, the more economical the scheme.
+
+### 6.5 Summary
+
+| Scenario | Input | Output | Measured accuracy | Corresponding formula |
+|---|---|---|---|---|
+| A1 prediction | barrier + 3 parameters | pruning rate at any depth | RMSE 0.0090 ($R^2=0.995$) | (3)(5) |
+| A2 inversion | pruning counts + barrier | $\Lambda$ | error 2.01% | (8) |
+| A3 extrapolation | local measurement at $\Lambda=0.8$ | critical $\Lambda^*$ | 27% off in one shot, 1.5% after iteration | (5) self-consistent |
+| A4 selection | full matrix | 10% skeleton | recall 0.40–0.59, enrichment 4–5.9× | (3) |
+
+All four are **predictive** uses (they use data that took no part in the fit), not descriptive uses (restating what has already been seen in different words).
+
+---
+
+## 7 Relation to existing texts
+
+**Correction to Theorem 5 of the original text.** The original text argues the three phases using "probability follows $\exp(-\beta\mathcal H_{\mathrm{local}})$". But $\mathcal H_{\mathrm{local}}$ is **piecewise linear** in $\tilde{\mathcal E}$, whereas the driving quantity of (1) is the **logarithm** $\ln\mathfrak{B}$; no single $\beta$ can make the two equal. The correct causal direction is the reverse: $\mathfrak{B}$ (and hence $F$) is the mother object, and $\mathcal H_{\mathrm{local}}$ is only the hard $T\to0$ limit and a monotone surrogate. The three phases in this picture are the constant offsets $e^{-1},1,e$ of $F$ — **those two $\pm1$ are "thermal units", not Euler's constant**.
+
+**Correction to Theorem 2 of the original text.** The three layers are the trichotomy of $\operatorname{sgn}F_c$; but the transition layer degenerates into a single section in mean-field depth coordinates (measured transition-band fraction $\approx0$). A mesoscopic layer with width must rely on fluctuations of $\mathfrak{B}$ or on multiscale heterogeneity.
+
+**Relation to Operator 7.** The symplectic matrix $\mathbf J$ is a legitimate discrete realization on the dual space and may serve as a candidate for the antisymmetric block $\mathbf L$ in GENERIC; but it serves the solver, not the ontology.
+
+---
+
+## 8 Discussion
+
+### 8.1 How the scaling law should be written
+
+Do not write "$\xi\propto1/\Lambda$ with proportionality constant $\langle\mathfrak{B}\rangle$". The correct statements are two:
+
+**Local form**
+
+$$\xi(D)=\frac{\mathfrak{B}_{\mathrm{geo}}(D)}{\Lambda}$$
+
+**Exponent form**
+
+$$n(D)=1-\frac{\mathrm{d}\ln\mathfrak{B}_{\mathrm{geo}}}{\mathrm{d}\ln D}$$
+
+The global form holds approximately only when $\mathfrak{B}_{\mathrm{geo}}$ varies slowly (measured drift 21%).
+
+### 8.2 Why the fluctuation correction is sub-percent
+
+Measured $s^2\le0.028$, hence $A(s)\ge0.994$. The dominant effect is the drift of $\mu_D$, not the fluctuation. This is directly related to the support of $\mathfrak{B}$ being pinned to $[4.718,\infty)$ with mass concentrated on few values.
+
+### 8.3 Limitations
+
+1. **$\lambda_J$ is not resolvable**: geometric and arithmetic means differ by less than 5.4% in this ensemble, the same order as the interpolation error. Resolving them requires a variant with larger $\mathfrak{B}$ dispersion.
+2. **Temperature is pinned at 1**: if an adjustable $T$ were introduced, (3) would become $\sigma(-F/T)$, and both $\xi$ and $n$ would shift with $T$, allowing a stricter collapse test.
+3. **Sensitive to implementation details**: both layers of the mask are indispensable (§3.2).
+4. **$\mathfrak{B}$ is not an exogenous constant**: A3 has shown that it varies with $\Lambda$, so any "one-shot substitution" extrapolation is unreliable.
+5. **The mechanism of read-only inheritance is not elaborated**: this paper uses only the statistics of $D$ and $\mathfrak{B}$.
+
+### 8.4 Falsifiable predictions
+
+1. At any $\Lambda$, the intersection satisfies $\lvert\ln(\Lambda\xi)-\mu(\xi)\rvert<0.05$.
+2. $n(D)$ approaches 1 monotonically with $\Lambda$, and $n(D)-1$ has the same sign as $\mathrm{d}\mu/\mathrm{d}\ln D$.
+3. $\lambda_J(\Lambda)\to1$ as $\Lambda$ increases.
+4. In a variant with amplified $\mathfrak{B}$ dispersion, the intersection must follow the geometric mean, in which case $\lambda_J$ is measurable and $<1$.
+
+---
+
+## 9 Conclusion
+
+SRE does not need an externally supplied Hamiltonian; it needs to solve its own probability rule into a free energy. In Operator 2 this step is an **identity rather than an assumption**: $p=\sigma(-F)$, $F=\ln(\mathfrak{B}/\Lambda D)$. The geometric-mean law and the local exponent law derived from it behave as exact laws on million-scale samples (the standardized residual is exactly the noise), and yield two corrections that must be written into the theory.
+
+In terms of use, this set of formulas can already: predict the pruning rate at any depth with 3 parameters ($R^2=0.995$); invert $\Lambda$ from observations (error 2%, naive method 80%); predict the critical parameter (requires solving a self-consistent equation, two iterations converging to 1.5%); and compress the matrix to 10% while retaining about half of the true skeleton (enrichment 4–5.9×). Meanwhile Proposition 5 explains why no Hamiltonian will appear along this route. Positioning SRE as **free-energy-type dissipative dynamics** is more accurate than claiming "everything unifies in a Hamiltonian", and is also easier to falsify.
+
+---
+
+## Appendix A Independent calibration of the logistic–normal integral
+
+For $u\sim\mathcal N(0,1)$, $v=m+su$, compute $\mathbb{E}[\sigma(v)]$ with 80-point Gauss–Hermite quadrature, then regress $\mathrm{logit}\,\mathbb{E}[\sigma]$ on $m$ within $f\in(0.05,0.95)$:
+
+| $s$ | 0.00 | 0.20 | 0.40 | 0.60 | 0.80 | 1.00 | 1.20 | 1.40 | 1.60 |
+|---|---|---|---|---|---|---|---|---|---|
+| $A(s)$ | 1.000 | 0.992 | 0.970 | 0.936 | 0.893 | 0.845 | 0.796 | 0.747 | 0.701 |
+
+Fitting $A(s)=1/\sqrt{1+\alpha s^2}$ gives $\alpha=0.4028$, with maximum deviation $3.2\times10^{-3}$. The probit approximation gives $1/1.702^2=0.3452$ (17% off); the numerically calibrated value is authoritative. **This calibration uses no simulation data**, so the test of (6) is a cross-validation of two independent computational routes.
+
+## Appendix B Reproduction
+
+```powershell
+cd 5-Appendixs/Operators/Operator_2_Free_Energy_Structure   # chapter program directory (archived with the book)
+python verify_free_energy_strict.py   # Section 5: K1–K5
+python verify_applications.py         # Section 6: A1–A4
+```
+
+Both scripts print item-by-item KPIs and exit with code 0 when normal.
+
+## Appendix C Symbols
+
+| Symbol | Meaning |
+|---|---|
+| $M$ | relational matrix, entries $\in\{\pm1\}$, $+1$ is the identity element |
+| $\tilde{\mathcal E}$ | two-step-walk interference quantity (double mask) |
+| $\mathfrak{B}$ | barrier $\lvert\tilde{\mathcal E}\rvert+e^{\operatorname{sgn}\tilde{\mathcal E}}>0$ |
+| $D$ | channel depth $n-v_m-1$ |
+| $\Lambda$ | exogenous dissipation coefficient ($\Gamma$ in the original text) |
+| $F$ | free-energy difference $\ln(\mathfrak{B}/\Lambda D)$ |
+| $\mu_D,s_D^2$ | depth-conditional mean and variance of $\ln\mathfrak{B}$ |
+| $\xi$ | coherence length (intersection depth of $f=\tfrac12$) |
+| $\mathfrak{B}_{\mathrm{geo}}$ | geometric mean $e^{\mu}$ |
+| $\lambda_J$ | Jensen gap |
+| $n(D)$ | local scaling exponent |
+| $\alpha$ | logistic–normal convolution coefficient, $0.4028$ |
+
+## Appendix D Implementation notes for the applications
+
+- **A1**: fitting on even depths and testing on odd depths is "alternating hold-out", harder to fake than one-sided extrapolation; using a quadratic polynomial for $\mu(D)$ is an empirical choice, not a theoretical requirement.
+- **A2**: the estimator is very sensitive to the error of $\mu_D$ ($\ln\Lambda$ adds $\mu$ directly), so the two-layer mask of the barrier definition must first be confirmed correct (§3.2).
+- **A3**: whether the fixed-point iteration converges depends on $\lvert\mathrm{d}\mu/\mathrm{d}\Lambda\rvert$; in this example two steps converge, but in general one should try the iteration before drawing conclusions.
+- **A4**: base rate and lift must be reported together. Looking at precision alone is fooled by a high base rate (here the discard-side lift is only 1.04–1.15×).
+
+## References (internal)
+
+[1] `combined_C.md`, the pruning rule and pseudocode of Operator 2.
+[2] ibid., the combinatorial Laplacian as generator, eigenmodes as relaxation modes.
+[3] ibid., Theorem 5 (three phases) and Theorem 2 (three-layer structure).
+[4] ibid., the symplectic structure $\mathbf J$ of Operator 7.
+[5] ibid., two assertions corrected by this paper: that the conservation property is "complete", and that $\det\mathbf M=1$ implies energy conservation; §7.0 and the introduction show that neither holds.
 
 
 <div style="page-break-after: always;"></div>
@@ -11286,7 +11794,7 @@ Within the genus differential variational framework, this study has delivered th
 
 The mathematical and engineering convergence of Operator 9 marks the **official completion and overarching finalization of the Status-Relational Entropy (SRE) dynamics universal graph operator pipeline**. The multi-morphic causal processing engine—composed of Operator 1 (Geometric Graph Growth), Operator 2/2-Batch (Homological Interception and Degree Saturation), Operator 6 (Low-Rank Sub-space Spectral Sieve), Operator 4 (Dirichlet Energy Positive Clamping), Operator 5 (Logarithmic Latency and Lebesgue Zero-Measure PDF Cloaking), Operator 3 (Parity-Breaking Spontaneous NAND Logic Emergence and Physical Mapping), Operator 7 (Symplectic Adjoint Hodge Closure), and Operator 8 (Lock-Free Trace Convective Flux Valve)—reaches its **ultimate categorical闭环 (closure)** at the Operator 9 interface.
 
-Discrete network binary spins solidify perfectively into a continuous global substrate here. Without hard-coding background space coordinates or artificial metric tensors, the system smoothly, autonomously, and losslessly instantiates an emergent macroscopic continuous spacetime manifold characterized by integer three-dimensional positive-definiteness, consistent causal timelines, global physical conservation laws, and intrinsic geometric curvature.
+Discrete network binary spins solidify perfectively into a continuous global substrate here. Without hard-coding background space coordinates or artificial metric tensors, the system smoothly, autonomously, and losslessly instantiates an emergent macroscopic continuous spacetime manifold characterized by integer three-dimensional positive-definiteness, consistent causal timelines, bookkeeping closure of compensation overhead, and intrinsic geometric curvature.
 
 
 <div style="page-break-after: always;"></div>
@@ -11337,8 +11845,8 @@ By evaluating whether the endogenous impedance tensor approaches its singular di
 
 ### 2.2 Non-linear Modification of the Adjoint Co-chain Sampling Probability $p_{\text{cochain}}(e)$
 For conventional frontier channels that do not trigger the rigid homological interception, Operator 10 rejects flat uniform random sampling. The conduction probability $p_{\text{cochain}}(e)$ governing the Bernoulli trial is coupled non-linearly to the endogenous topological impedance invariant:
-$$p_{\text{cochain}}(e) \equiv \frac{1}{1 + \exp\left( - \beta \cdot \left[ \frac{\kappa \cdot \mathbf{Z}_{\text{eff}}(u, v_f)}{\max\left(1 - \mathbf{Z}_{\text{eff}}(u, v_f),\ \delta_{\text{flt}}\right)} \right] \right)}$$
-where $\beta = 2.0$ denotes the statistical mechanics inverse temperature production constant, $\kappa = 1.5$ denotes the impedance gain scale constant (in production implementations the fixed constant $\kappa$ replaces the runtime coupling to the spectral radius prior $\alpha_n$ forwarded from Operator 6, guaranteeing the complete external-dependency-free nature of the $\mathcal{O}(1)$ localized decision gate), and $\delta_{\text{flt}} = 10^{-16}$ represents the hardware-level floating-point protection infinitesimal (the denominator adopts the $\max$ lower-bound clamped form for division-by-zero protection).
+$$p_{\text{cochain}}(e) \equiv \frac{1}{1 + \exp\left( - \beta_{\rm gate} \cdot \left[ \frac{\kappa \cdot \mathbf{Z}_{\text{eff}}(u, v_f)}{\max\left(1 - \mathbf{Z}_{\text{eff}}(u, v_f),\ \delta_{\text{flt}}\right)} \right] \right)}$$
+where $\beta_{\rm gate} = 2.0$ denotes the statistical-mechanics inverse-temperature production constant (the sigmoid gate gain of Operator 10, unrelated to the temperature $T=1$ of the free-energy form), $\kappa = 1.5$ denotes the impedance gain scale constant (in production implementations the fixed constant $\kappa$ replaces the runtime coupling to the spectral radius prior $\alpha_n$ forwarded from Operator 6, guaranteeing the complete external-dependency-free nature of the $\mathcal{O}(1)$ localized decision gate), and $\delta_{\text{flt}} = 10^{-16}$ represents the hardware-level floating-point protection infinitesimal (the denominator adopts the $\max$ lower-bound clamped form for division-by-zero protection).
 
 Under this controlled formulation, as the local topological impedance increases—signifying a sparseness of global coherent paths and the approach toward a critical cutting perimeter—the dormancy rate automatically drops to zero, driving the channel conduction probability non-linearly toward unity ($p \to 1$). This successfully embeds global structural connectedness metrics directly into the micro-scale localized random decision engines.
 ## 3. Rigorous Proof of the Endogenous Effective Impedance Exemption Theorem and Preservation of Turing Completeness
@@ -11410,7 +11918,7 @@ Within the matrix perturbation recursive framework, this study has delivered the
 
 The successful specification and verification of Operator 10 marks the **flawless mathematical convergence and final closure of the entire Status-Relational Entropy (SRE) dynamics universal graph operator pipeline**. The multi-morphic causal processing engine—composed of Operator 1 (Geometric Graph Growth), Operator 10 (Pre-emptive Homological Interception), Operator 6 (Low-Rank Sub-space Spectral Sieve), Operator 4 (Dirichlet Energy Positive Clamping), Operator 5 (Logarithmic Latency and Lebesgue Zero-Measure PDF Cloaking), Operator 2 (Flexible Co-chain Probabilistic Pruning), Operator 3 (Parity-Breaking Spontaneous NAND Logic Emergence), Operator 7 (Symplectic Adjoint Hodge Closure), Operator 8 (Lock-Free Trace Convective Flux Valve), and Operator 9 (Dual-Order Betti Invariant Anchoring)—reaches its **ultimate unified closure** at the system-level interface.
 
-Discrete network binary spins solidify perfectively into a continuous, macroscopic, and causally consistent Riemannian manifold here. Without hard-coding background space coordinates or artificial metric tensors, the system smoothly, autonomously, and losslessly instantiates an emergent continuous spacetime characterized by integer three-dimensional positive-definiteness, consistent causal timelines, global physical conservation laws, and intrinsic geometric curvature, finalizing the mathematical foundation of self-organizing relational universes.
+Discrete network binary spins solidify perfectively into a continuous, macroscopic, and causally consistent Riemannian manifold here. Without hard-coding background space coordinates or artificial metric tensors, the system smoothly, autonomously, and losslessly instantiates an emergent continuous spacetime characterized by integer three-dimensional positive-definiteness, consistent causal timelines, bookkeeping closure of compensation overhead, and intrinsic geometric curvature, finalizing the mathematical foundation of self-organizing relational universes.
 
 
 <div style="page-break-after: always;"></div>
@@ -15061,7 +15569,7 @@ https://www.kaggle.com/code/yuelucn/notebook64cf93cf14/notebook?scriptVersionId=
 \[
 L_{total }=w_{1} \operatorname{Res}\left(\Delta G^{\ddagger}\right)+w_{2} \operatorname{Res}\left(E_{ion }\right)+w_{3} \operatorname{Res}(\Delta \lambda)+\gamma \tilde{\mathcal{E}}_{local }
 \]
-where weights $w_{1,2,3}$ are determined automatically by the SRE local‑Hamiltonian three‑phase separation theorem; $\tilde{\mathcal{E}}_{local}$ denotes the topological‑frustration regularization term characterizing orbital anomalies.
+where weights $w_{1,2,3}$ are determined automatically by the SRE local‑barrier three‑phase separation theorem (Operator-2 chapter, §7.0–§7, Theorem 5); $\tilde{\mathcal{E}}_{local}$ denotes the topological‑frustration regularization term characterizing orbital anomalies.
 
 **Adaptive layered regularization**: The Tikhonov‑regularization coefficient $\lambda_{reg}$ adjusts dynamically according to the dimension of $\Omega_{n}$, avoiding floating‑point singularities inside high‑dimensional matrices.
 
@@ -15089,9 +15597,9 @@ Based on the core axioms and operator logic of Status‑Relational‑Entropy (SR
 
 ## Appendix A: Closed‑Form Derivations
 ### A1 Analytical solutions for loss weights $w_1$, $w_2$, $\gamma$ from three‑phase entropy
-According to the SRE local‑Hamiltonian three‑phase separation theorem, local manifolds exhibit three phases: Coherent, Frustrated, Vacuum.
+According to the SRE local‑barrier three‑phase separation theorem (Operator-2 chapter, §7, Theorem 5), local manifolds exhibit three phases: Coherent, Frustrated, Vacuum.
 
-Derivation logic: Define partition‑function for each phase: $Z_{i}=\exp(-\beta H_{i})$.
+Derivation logic: the free‑energy difference $F_i$ of §7.0 replaces the partition function, and the weights are normalized as $w_i\propto e^{-F_i}$.
 
 Analytical expressions:
 - $w_1$ (activation‑energy weight): corresponds to coherent‑phase contribution, $w_{1}=\dfrac{S_{coh }}{S_{total }}$, where $S_{coh }=\ln (E_{local }+e)$.

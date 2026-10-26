@@ -27,7 +27,7 @@
 \[
 L_{total }=w_{1} Res\left(\Delta G^{\ddagger}\right)+w_{2} Res\left(E_{ion }\right)+w_{3} Res(\Delta \lambda)+\gamma \tilde{\mathcal{E}}_{local }
 \]
-式中权重$w_{1,2,3}$由SRE局域哈密顿量三态分离定理自动确定；$\tilde{\mathcal{E}}_{local}$为表征轨道异常的拓扑阻挫正则项。
+式中权重$w_{1,2,3}$由SRE局域势垒三态分离定理（算子-2 篇 §7.0–§7 定理5）自动确定；$\tilde{\mathcal{E}}_{local}$为表征轨道异常的拓扑阻挫正则项。
 
 **自适应分层正则化**：吉洪诺夫正则化系数 $\lambda_{reg}$ 随子矩阵$\Omega_{n}$维度动态调整，避免高维矩阵出现浮点奇点。
 
@@ -55,9 +55,9 @@ L_{total }=w_{1} Res\left(\Delta G^{\ddagger}\right)+w_{2} Res\left(E_{ion }\rig
 
 ## 附录A 闭式推导
 ### A1 基于三态熵的损失权重$w_1$、$w_2$、$\gamma$解析解
-依据SRE局域哈密顿三态分离定理，局域流形存在三种相：相干相、阻挫相、真空相。
+依据SRE局域势垒三态分离定理（算子-2 篇 §7 定理5），局域流形存在三种相：相干相、阻挫相、真空相。
 
-推导逻辑：定义每一个相的配分函数 $Z_{i}=\exp(-\beta H_{i})$。
+推导逻辑：以 §7.0 的自由能差 $F_i$ 代替配分函数，权重按 $w_i\propto e^{-F_i}$ 归一化。
 
 解析表达式：
 - $w_1$（活化能权重）：对应相干相贡献，$w_{1}=\dfrac{S_{coh }}{S_{total }}$，其中 $S_{coh }=\ln (E_{local }+e)$

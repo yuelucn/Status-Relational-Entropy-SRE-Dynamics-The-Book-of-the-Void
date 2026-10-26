@@ -18,10 +18,12 @@ $$
 Z_0 \equiv \frac{\text{Tr}\left(\mathbf{C}_{cycle}^T \mathbf{C}_{cycle}\right)}{\text{Tr}\left(\mathbf{D}_{edge}^T \mathbf{D}_{edge}\right)} = \frac{\dim(\mathcal{F})}{\dim(\mathcal{E})} \quad [\text{无量纲比值}]
 $$
 
-3. **普朗克常数（$h \equiv 1$）：** 为保证跨全局演化步$\boldsymbol{\Delta S=1}$的场相空间辛不变量（能量守恒）成立，状态转移算子$\mathbf{M}$必须满足行列式为1（$\det(\mathbf{M})=1$）。普朗克常数$h$作为保障流形上状态更新闭合所需的**最小辛相体积**涌现出来，作为严格的代数单位元：
+3. **普朗克常数（$h \equiv 1$）：** 为保证跨全局演化步 $\boldsymbol{\Delta S=1}$ 的场相空间体积元不被离散求解器自身放大或压缩，状态转移算子 $\mathbf{M}$ 取行列式为 1（$\det(\mathbf{M})=1$）：
 $$
 h \equiv \det(\mathbf{M}_{\text{symplectic}}) \equiv 1
 $$
+
+**限定**：该性质属于**求解器层**的保结构条件（离散辛积分），不蕴含能量守恒。SRE 的刷新生成元是状态图上的组合拉普拉斯 $\mathbf{L}=\mathbf{D}-\mathbf{A}$（对称半正定，生成耗散半群），因此不存在守恒能量；宏观的"能量守恒"只在粗粒化极限下作为**记账闭合**出现（见经典力学涌现篇 §4.1）。
 
 4. **精细结构常数（$\alpha$）<sup>*</sup>：** 宏观耦合强度$\alpha$解析推导为在非平面图嵌入$\mathcal{G}$之上执行原-对偶外导数算子耦合后的**主导谱半径上界（$\rho_{\text{spectral}}$）**：
 $$

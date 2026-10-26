@@ -19,10 +19,12 @@ $$
 Z_0 \equiv \frac{\text{Tr}\left(\mathbf{C}_{cycle}^T \mathbf{C}_{cycle}\right)}{\text{Tr}\left(\mathbf{D}_{edge}^T \mathbf{D}_{edge}\right)} = \frac{\dim(\mathcal{F})}{\dim(\mathcal{E})} \quad [\text{Dimensionless Ratio}]
 $$
 
-3. **The Planck Constant ($h \equiv 1$):** To satisfy the Symplectic Invariant (energy conservation) of the field phase-space across global evolution step $\boldsymbol{\Delta S=1}$, the state-transition operator $\mathbf{M}$ must maintain a determinant of unity ($\det(\mathbf{M}) = 1$). The Planck constant $h$ emerges as the **minimal symplectic phase volume** required to secure state-update closure on the graph manifold, functioning as an exact algebraic unity:
+3. **The Planck Constant ($h \equiv 1$):** To ensure that the phase-space volume element of the field across the global evolution step $\boldsymbol{\Delta S=1}$ is neither amplified nor compressed by the discrete solver itself, the state-transition operator $\mathbf{M}$ is assigned a determinant of unity ($\det(\mathbf{M}) = 1$):
 $$
 h \equiv \det(\mathbf{M}_{\text{symplectic}}) \equiv 1
 $$
+
+**Qualification**: this property is a structure-preserving condition at the **solver layer** (discrete symplectic integration) and does not imply energy conservation. The refresh generator of SRE is the combinatorial Laplacian $\mathbf{L}=\mathbf{D}-\mathbf{A}$ on the state graph (symmetric positive semi-definite, generating a dissipative semigroup); hence no conserved energy exists, and macroscopic "energy conservation" appears only in the coarse-grained limit as **bookkeeping closure** (see the classical-mechanics emergence chapter, §4.1).
 
 4. **The Fine-Structure Constant ($\alpha$)**<sup>*</sup>: The macro-coupling strength $\alpha$ is derived analytically as the **dominant spectral-radius ceiling ($\rho_{\text{spectral}}$)** of the coupled primal-dual exterior-derivative operators executed over a non-planar graph embedding $\mathcal{G}$:
 $$

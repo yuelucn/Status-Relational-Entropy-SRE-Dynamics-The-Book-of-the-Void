@@ -27,7 +27,7 @@
 \[
 L_{total }=w_{1} \operatorname{Res}\left(\Delta G^{\ddagger}\right)+w_{2} \operatorname{Res}\left(E_{ion }\right)+w_{3} \operatorname{Res}(\Delta \lambda)+\gamma \tilde{\mathcal{E}}_{local }
 \]
-where weights $w_{1,2,3}$ are determined automatically by the SRE local‑Hamiltonian three‑phase separation theorem; $\tilde{\mathcal{E}}_{local}$ denotes the topological‑frustration regularization term characterizing orbital anomalies.
+where weights $w_{1,2,3}$ are determined automatically by the SRE local‑barrier three‑phase separation theorem (Operator-2 chapter, §7.0–§7, Theorem 5); $\tilde{\mathcal{E}}_{local}$ denotes the topological‑frustration regularization term characterizing orbital anomalies.
 
 **Adaptive layered regularization**: The Tikhonov‑regularization coefficient $\lambda_{reg}$ adjusts dynamically according to the dimension of $\Omega_{n}$, avoiding floating‑point singularities inside high‑dimensional matrices.
 
@@ -55,9 +55,9 @@ Based on the core axioms and operator logic of Status‑Relational‑Entropy (SR
 
 ## Appendix A: Closed‑Form Derivations
 ### A1 Analytical solutions for loss weights $w_1$, $w_2$, $\gamma$ from three‑phase entropy
-According to the SRE local‑Hamiltonian three‑phase separation theorem, local manifolds exhibit three phases: Coherent, Frustrated, Vacuum.
+According to the SRE local‑barrier three‑phase separation theorem (Operator-2 chapter, §7, Theorem 5), local manifolds exhibit three phases: Coherent, Frustrated, Vacuum.
 
-Derivation logic: Define partition‑function for each phase: $Z_{i}=\exp(-\beta H_{i})$.
+Derivation logic: the free‑energy difference $F_i$ of §7.0 replaces the partition function, and the weights are normalized as $w_i\propto e^{-F_i}$.
 
 Analytical expressions:
 - $w_1$ (activation‑energy weight): corresponds to coherent‑phase contribution, $w_{1}=\dfrac{S_{coh }}{S_{total }}$, where $S_{coh }=\ln (E_{local }+e)$.

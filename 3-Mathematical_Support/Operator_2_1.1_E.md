@@ -163,6 +163,38 @@ $$
 ## 7. Statistical Mechanics Derivation: Thermodynamic Origin of the Zero-Interference Boundary
 To isolate non-coherent topological states and eliminate any analytical degeneracy in probability behaviors, the absolute zero-interference plateau ($\text{sgn}=0$) must be derived independently from the microstate partition function of Status-Relational Entropy (SRE) dynamics.
 
+### 7.0 Free-Energy Form: The Heat-Bath Identity of Operator 2
+
+**Definition (free-energy difference).** For a channel $c$ ($D_c\ge1$), define
+
+$$F_c=\ln\frac{\mathfrak{B}_c}{\Lambda D_c},\qquad \mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$$
+
+**Theorem 1 (heat-bath identity).** The pruning probability of Operator 2 satisfies
+
+$$p_c=\sigma(-F_c)=\frac{1}{1+e^{F_c}}$$
+
+**Proof.** From $\Lambda D_c/\mathfrak{B}_c=e^{-F_c}$ we obtain $p_c=1-\dfrac{1}{1+e^{-F_c}}=\dfrac{e^{-F_c}}{1+e^{-F_c}}=\sigma(-F_c)$. Q.E.D.
+
+**Reading.** $F_c$ is the free-energy difference of this single flip: $\ln\mathfrak{B}_c$ is the resistance and $\ln(\Lambda D_c)$ is the driving force. When $F_c>0$, $p_c<\tfrac12$ (survival favoured); when $F_c<0$, $p_c>\tfrac12$ (pruning favoured). Operator 2 is therefore a **Glauber heat bath at temperature 1**, and $\sigma$ is its acceptance rule.
+
+**Corollary (three-phase criterion and switching).** The three-layer structure is precisely the trichotomy of $\operatorname{sgn}F_c$; the coexistence surface $F_c=0$ is $\Lambda_c=\mathfrak{B}_c/D_c$.
+
+**Theorem 2 (geometric-mean law of the coherence length).** Let $\mu_D=\mathbb{E}[\ln\mathfrak{B}\mid D]$ and $s_D^2=\operatorname{Var}(\ln\mathfrak{B}\mid D)$; then the half-value point $\xi$ ($f(\xi)=\tfrac12$) satisfies
+
+$$\ln(\Lambda\xi)=\mu_\xi+O\big(\kappa_{3,\xi}s_\xi^3\big),\qquad \xi=\frac{\mathfrak{B}_{\mathrm{geo}}(\xi)}{\Lambda},\quad \mathfrak{B}_{\mathrm{geo}}=e^{\mu}$$
+
+that is, the coherence length is controlled by the **geometric mean**, not the arithmetic mean. The correction coefficient is $-1/12$ and does not exceed $2\times10^{-3}$ logarithmic units within this ensemble.
+
+**Theorem 3 (local scaling exponent).**
+
+$$n(D)=\Big(1-\frac{\mathrm{d}\mu_D}{\mathrm{d}\ln D}\Big)\cdot\frac{1}{\sqrt{1+\alpha s_D^2}},\qquad \alpha=0.4028$$
+
+$\alpha$ is obtained by numerical calibration of the logistic–normal integral (no simulation data are used). Note that the commonly reported "string slope" is the weighted average of $n(D)$ within the band, varies with $\Lambda$, and is not a universal constant.
+
+**Note (relation to the symplectic structure of Operator 7).** The symplectic matrix $\mathbf{J}$ of Operator 7 is a legitimate discrete dual structure at the solver layer, used to preserve the structure-preserving property of the discrete integration; it **does not constitute a Hamiltonian generator of the ontology**. Under the present axioms SRE has no Hamiltonian: the generator is a symmetric dissipative combinatorial Laplacian (generating a semigroup rather than a group), the composition of Operators 1/2 is irreversible (no generating function), and the configuration is binary with a forbidden zero and no conjugate momentum.
+
+**Note (quantitative verification and uses).** Rigorous verification of the three formulas above (standardized residual $0.96\sim1.07$, i.e. the residual is exactly binomial noise) and the four verified uses (prediction without outcomes, inversion of $\Lambda$, extrapolation of the critical parameter, channel selection) are given in the separate paper "The Free-Energy Generative Structure of Operator 2 in Status–Relational Entropy Dynamics" (chapter Operator_2_Free_Energy_Structure in this book).
+
 #### Theorem 5 (SRE Hamiltonian Phase Separation Theorem)
 The local topological Hamiltonian $\mathcal{H}_{\text{local}}$ driven by the un-realized path interference polynomial $\tilde{\mathcal{E}}_{\text{local}}(v_f, v_m)$ under the valuation homomorphism consists strictly of three mutually disjoint phase spaces:
 $$
@@ -174,12 +206,19 @@ $$
 \end{cases}
 $$
 
+(Remark: the term "Hamiltonian" here follows the original naming; it is in fact a piecewise potential function of the configuration and generates no evolution. Its relation to the free-energy difference is $\mathcal{H}_{\mathrm{local}}\equiv-\ln\mathfrak{B}$, hence $F_c=-\mathcal{H}_c-\ln(\Lambda D_c)$. Under the present axioms this theory has no Hamiltonian generator; see the closing note of §7.0.)
+
 **Proof**
-1. Based on the fundamental principles of SRE dynamics, the microscopic occurrence probability of a local front channel follows a canonical distribution governed by its local Hamiltonian, where the statistical weight evaluates to $\exp(-\beta \cdot \mathcal{H})$.
-2. When $\tilde{\mathcal{E}}_{\text{local}} > 0$, the local loop is entirely free from topological frustration, allowing the network to condense coherently and lower its free energy. The Hamiltonian manifests as an attractive potential well, where the structural correction term inside the energy denominator yields $\exp(+1) = e$.
-3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$, the system plunges into deep structural frustration. The non-neutralizable phase conflict acts as an active gauge work. The Hamiltonian switches into a repulsive energy barrier, where the structural correction term scales down to $\exp(-\beta \cdot \Delta E_{\text{gauge}}) = \exp(-1) = e^{-1}$.
-4. When $\tilde{\mathcal{E}}_{\text{local}} = 0$, a perfect algebraic cancellation occurs between positive and negative polarities across all 2-step paths. In the language of statistical physics, this local manifold possesses neither ordered-phase condensation nor phase-gauge work. The degeneracies of opposite-energy states are perfectly balanced, collapsing the local topological Hamiltonian strictly to zero: $\mathcal{H}_{\text{local}} \equiv 0$.
-5. Substituting $\mathcal{H}_{\text{local}} = 0$ back into the Boltzmann canonical factor, the phase-separation correction term yields $\exp(0) = 1$. This eliminates any mathematical continuity gaps at the phase boundaries, ensuring complete decoupling between different topological states.
+1. By the pruning rule of Operator 2, the channel-flip probability can be **identically** rewritten in heat-bath form (derivation in §7.0):
+   　$p_c=\sigma(-F_c)$, $F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$,
+   　$\mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
+   This expression is an algebraic identity and contains no statistical assumption.
+2. When $\tilde{\mathcal{E}}_{\text{local}} > 0$: $\mathfrak{B}=\tilde{\mathcal{E}}+e$, the barrier takes the upper branch, $F$ rises, $p<\tfrac12$, and the channel preferentially survives — the coherent condensation phase.
+3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$: $\mathfrak{B}=|\tilde{\mathcal{E}}|+e^{-1}$, the barrier takes the lower branch, $F$ is depressed, $p>\tfrac12$, and the channel is preferentially pruned — the frustrated phase.
+4. When $\tilde{\mathcal{E}}_{\text{local}} = 0$: $\operatorname{sgn}0=0$ so $\mathfrak{B}=1$, $F=-\ln(\Lambda D)$, $p=1-\dfrac{1}{1+\Lambda D}$ — the absolute information vacuum phase.
+5. The three branches are given by one and the same piecewise function $\mathfrak{B}(\tilde{\mathcal{E}})$; $e$ and $e^{-1}$ are barrier offsets of $+1$ and $-1$ thermal units ($T=1$), **not** multiplicative corrections of a Boltzmann factor. The coexistence surface $F=0$ is $\Lambda_c=\mathfrak{B}/D$ — the switching centre is the zero set of $F$, no longer an externally calibrated parameter.
+
+**Note (the jump at the zero-interference point).** As $\tilde{\mathcal{E}}\to0^{-}$, $\mathfrak{B}\to e^{-1}\approx0.368$; at $\tilde{\mathcal{E}}=0$, $\mathfrak{B}=1$; as $\tilde{\mathcal{E}}\to0^{+}$, $\mathfrak{B}\to e\approx2.718$. Hence the pruning probability jumps two-sidedly at $\tilde{\mathcal{E}}=0$ rather than passing continuously; the original statement about "eliminating mathematical continuity gaps at the phase boundary" should be deleted. $\tilde{\mathcal{E}}=0$ is an independent third branch of measure zero.
 
 ◼ Theorem 5 is complete.
 
@@ -208,7 +247,7 @@ $$
 6. We define the effective attraction radius (coherence length) as $\xi$. Once causal-depth steps cross this critical threshold ($\mathcal{D}_s > \xi$), the binary random-decision gate collapses to dormant state $\chi \equiv 0$ with probability one.
 7. According to Paradigm B (Elimination-Conduction Mechanism) selected in Section 6, these edges are all forced to constant $+1$, cutting off information flow in multiplicative feedback loops.
 8. Accordingly, the number of historical vertices for which $v_f$ can maintain non-unit spin and carry them into next-round multiplicative evolution is rigidly confined within finite generational window: $\sigma(v_m) \in [n+1-\xi,\,n+1]$.
-9. Set absolute constant upper bound $K_0 = \lceil \xi \rceil$. Since $\xi$ is uniquely determined by statistical-mechanical inverse temperature $\beta$ and fundamental constant $\lambda_0$, it is algebraically independent of total system scale $n$. Hence:
+9. Set absolute constant upper bound $K_0 = \lceil \xi \rceil$. Since $\xi$ is uniquely determined by statistical-mechanical inverse temperature $\beta_{\rm th}$ and fundamental constant $\lambda_0$ (in this chapter $\beta_{\rm th}\equiv1$; temperature 1 is constructive), it is algebraically independent of total system scale $n$. Hence:
 $$
 \sup_{n \in \mathbb{N}^+} \max_{v \in V_n} \text{Degree}(v) \le K_0 \quad \text{holds unconditionally}.
 $$
@@ -252,14 +291,14 @@ In earlier formulations, $\lambda(n)$ depended on spectral radius $\rho(\mathbf{
 #### Theorem 8 (Decoupled Normalization-Constant Unique-Determinism Theorem)
 Reconstruct explicit mapping for coupling-constant $\lambda(n)$ in terms of deterministic historical subgraph spectral radius $\rho(\mathbf{A}_{n-1})$ obtained from previous evolutionary round:
 $$
-\lambda(n) = \frac{1}{\beta} \cdot \frac{\ln\big(1 + \rho(\mathbf{A}_{n-1})\big)}{n + 1}.
+\lambda(n) = \frac{1}{\beta_\lambda} \cdot \frac{\ln\big(1 + \rho(\mathbf{A}_{n-1})\big)}{n + 1}.
 $$
 This reconstructed formula yields uniquely-determined real analytic solution at every frontier-expansion step and fully removes cross-operator circular dead-lock.
 
 **Proof**
 1. At start of $n$-th dimensional expansion step ($n\to n+1$), historical subgraph $\mathbf{A}_{n-1}$ has already finished all pruning and evaluation mappings from previous iteration; hence $\mathbf{A}_{n-1}$ is a fully-deterministic real-valued sparse matrix.
 2. By Perron-Frobenius theorem, spectral radius (maximum absolute eigenvalue) $\rho(\mathbf{A}_{n-1})$ of any real-symmetric sparse matrix is an unconditionally unique deterministic algebraic topological invariant.
-3. Substitute unique scalar $\rho(\mathbf{A}_{n-1})$, pre-evolution step index $n$, macroscopic inverse-temperature constant $\beta>0$ directly into reconstructed explicit formula.
+3. Substitute unique scalar $\rho(\mathbf{A}_{n-1})$, pre-evolution step index $n$, macroscopic inverse-temperature constant $\beta_\lambda>0$ directly into reconstructed explicit formula.
 4. Logarithm and division are single-valued monotonic functions over positive real domain $(0,+\infty)$. Right-hand side contains no unresolved future-dependent pruning-mask parameters.
 5. Consequently $\lambda(n)$ acts purely as forward-looking prior control-parameter, its analytic solution is uniquely determined; circular-dependency conflict is fundamentally eliminated.
 
@@ -267,19 +306,21 @@ This reconstructed formula yields uniquely-determined real analytic solution at 
 
 ---
 ##-. P0 Emergency Revision: Derivation of Explicit Topological-Weight $w_\alpha$ and its SRE Statistical-Mechanical Origin
-#### Theorem 9 (Explicit Mapping of Topological-Weight $w_\alpha$ and Minimal-Action Derivation Theorem)
-Within highly-overlapping multi-loop polygonal networks, explicit topological weight for each independent fundamental-cycle basis element $L_\alpha$ is defined as reciprocal of loop length: $w_\alpha = \frac{1}{|L_\alpha|}$. Its value range is strictly confined to interval $(0,\,\frac13]$, and its thermodynamic origin strictly follows minimal-action principle of SRE path integral.
+#### Theorem 9 (Explicit Mapping of Topological-Weight $w_\alpha$ and Harmonic-Decay Theorem)
+Within highly-overlapping multi-loop polygonal networks, explicit topological weight for each independent fundamental-cycle basis element $L_\alpha$ is defined as reciprocal of loop length: $w_\alpha = \frac{1}{|L_\alpha|}$. Its value range is strictly confined to interval $(0,\,\frac13]$; its value is given by the harmonic decay of local coherent control and is a weight ansatz rather than a variational extremum.
 
 **Proof**
 1. According to local causality principle of Status-Relational Entropy dynamics, phase loss for spin information propagating along long paths is proportional to topological step-count (edge-count $|L_\alpha|$) of that path.
-2. Total local action exerted on frontier is superposition of local-path-integral contributions from all overlapping fundamental historical cycles: $\mathcal{S}_{\text{total}}=\sum_\alpha \mathcal{S}(L_\alpha)$.
-3. To satisfy macroscopic-microscopic interaction minimal-action principle ($\delta\mathcal{S}=0$), long loops suffer harmonic-series decay of coherent control strength upon frontier edges proportional to loop length. Hence contribution weight must be reciprocal of loop length:
+2. The local weight felt by the frontier is the superposition of contributions from all overlapping fundamental historical cycles: $\mathcal{W}_{\text{total}}=\sum_\alpha w_\alpha$.
+3. The coherent control strength of long loops on frontier edges decays harmonically with loop length ($\propto 1/|L_\alpha|$); hence the weight is taken as the reciprocal of the loop length:
 $$
 w_\alpha = \frac{1}{|L_\alpha|}.
 $$
 4. Boundary analysis: According to algebraic graph theory, shortest non-trivial closed loop is triangle satisfying $|L_\alpha|\ge3$. Weight attains maximum value $w_\alpha=\frac13$ for triangular loops. As long-loop length tends to thermodynamic limit $|L_\alpha|\to\infty$, weight converges to zero. Value range is strictly $(0,\,\frac13]$.
 
 ◼ Theorem 9 is complete.
+
+**Note.** This chapter no longer invokes the principle of least action: $\mathcal{W}_{\text{total}}$ is a definition of superposed weights, not an action functional that can be extremized. For a variational form, see the free-energy functional and its zero set in §7.0.
 
 ---
 ## 12. P1 Supplementary Improvement: Symbolic-Polynomial-Domain Prospective Frustration-Judgement Theorem
@@ -296,7 +337,7 @@ $$
 2. Suppose polynomial algebraic structure contains irreducible inter-locked monomial combinations, for instance sub-structure like $x_1^2-x_1x_2$.
 3. Apply arbitrary valid global-binary-assignment homomorphism $\Phi$. Under binary-spin constraints, even-power monomials collapse to constant $+1$: $\Phi(x_1^2)\equiv1$.
 4. Odd-power monomials such as $\Phi(x_1 x_2)$ fluctuate within set $\{+1,-1\}$ depending on concrete spin assignments.
-5. Even-order constant term $+1$ can algebraically cancel against fluctuating odd-order terms ($1-1=0$). This triggers non-linear jump of Hamiltonian towards repulsive-barrier regime $\mathcal{H}_{\text{local}}>0$.
+5. Even-order constant term $+1$ can algebraically cancel against fluctuating odd-order terms ($1-1=0$). This triggers a non-linear jump of the local barrier into the repulsive regime ($\mathfrak{B}$ takes the lower branch, $F<0$).
 6. This energy-level collapse is purely determined by topological-locked structure inside symbolic matrix; prospective frustration-lock judgement can therefore be performed already in polynomial-input domain.
 
 ◼ Theorem 10 is complete.

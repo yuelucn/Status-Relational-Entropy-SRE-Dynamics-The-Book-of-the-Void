@@ -8,7 +8,7 @@ Classical mechanics is widely understood as a macroscopic effective limit of und
 
 This paper establishes ontological mappings between core SRE network-level observables and central quantities of Newtonian classical mechanics. Three necessary conditions for the emergence of classical-like behaviour are identified: large-sample coarse-graining, sufficient environmental decoherence, and operating far from topological-phase-transition thresholds (the BBP spectral-rank phase-transition and causal-loop coherence saturation $\rho\to1$). Three representative examples - inertia, the force-mass-acceleration relation, and Hooke’s elastic law - demonstrate statistical emergence of classical-style behaviour when all conditions are satisfied, while also marking breakdown boundaries for each phenomenon.
 
-Conservation of momentum and conservation of energy can be traced to global closed-loop symmetries of the underlying causal graph. This manuscript completes one conceptual segment of the SRE unified theoretical hierarchy: axiomatic causal-information network → composite-particle / gluon-sea mass generation → topological electrodynamics → emergent classical mechanics → cosmological BBP-RMT simulation constrained by spectroscopic observational datasets.
+Conservation of momentum and **bookkeeping closure of energy** can be traced to global closed-loop symmetries of the underlying causal graph (here "energy conservation" denotes bookkeeping conservation of compensation overhead, not a conserved energy). This manuscript completes one conceptual segment of the SRE unified theoretical hierarchy: axiomatic causal-information network → composite-particle / gluon-sea mass generation → topological electrodynamics → emergent classical mechanics → cosmological BBP-RMT simulation constrained by spectroscopic observational datasets.
 
 This work emphasises ontological correspondence instead of exhaustive analytical reproduction of every textbook formula in analytical mechanics. Illustrative topological-evolution derivations are supplied in the appendix for pedagogical intuition and are not regarded as rigorous core proofs of the paper.
 
@@ -25,7 +25,7 @@ The present paper fills this conceptual gap. **This manuscript does not aim to d
 1. State a set of necessary physical conditions under which classical-mechanics-like behaviour emerges from SRE causal-information networks;
 2. Build an ontological-mapping table between network-level observables and physical quantities of classical mechanics;
 3. Deploy three representative examples (inertia, $F\propto ma$, Hooke’s law $F=-kx$) to demonstrate emergent behaviour together with corresponding breakdown thresholds;
-4. Trace momentum-energy conservation to global closed-loop symmetries of causal graphs;
+4. Trace momentum conservation and energy bookkeeping closure to global closed-loop symmetries of causal graphs;
 5. Delimit physical regimes where classical descriptions break down and one must fall back to the underlying discrete-network description.
 
 Illustrative pedagogical topological-evolution derivations are placed in Appendix A and are not treated as rigorous core proofs.
@@ -72,7 +72,7 @@ Within transition regimes, compensation-operator topology undergoes abrupt struc
 
 ### 4.1 Ontological Origin of Conservation Laws
 - **Momentum conservation**: arises from global closed-loop symmetry of causal-network link interactions. Directed information-propagation flux cannot be locally created or annihilated out-of-nothing; flux can only be redistributed among subsystems. This yields macroscopic momentum conservation after coarse-graining.
-- **Energy conservation**: originates from conservation of total topological-compensation overhead of the whole causal-information network. Transformations occur between internally-stored closed-loop configurations and open propagating-flow forms; total overhead magnitude is preserved.
+- **Energy bookkeeping closure (not a conserved energy)**: originates from bookkeeping-level invariance of the total topological-compensation overhead of the whole causal-information network. Transformations occur between internally-stored closed-loop configurations and open propagating-flow forms; total overhead magnitude is preserved.
 
 ## 5 Three Representative Physical Examples
 > Preamble: All examples below demonstrate behavioural correspondences under the triple emergence conditions. **They are not rigorous analytical mathematical proofs derived directly from axioms**. If any emergence condition breaks down, the described classical-style behaviour ceases to hold. Topological-evolution formulae are given in Appendix A.
@@ -130,7 +130,7 @@ Important conceptual distinction: ontological mapping and behavioural-example ma
 
 ## 7 Conclusions
 1. Newtonian classical mechanics emerges from SRE discrete causal-information-network as an effective-theory description subject to three joint necessary conditions: large-sample coarse-graining, sufficient environmental decoherence, and operation far-removed from topological-phase-transition thresholds. Breaking any of these conditions invalidates classical-level description.
-2. Core classical quantities (mass, momentum, force, space, time, kinetic / potential energy) can be given clear ontological interpretations at causal-network graph-level. Momentum- and energy-conservation laws trace back to global causal-graph closure symmetries.
+2. Core classical quantities (mass, momentum, force, space, time, kinetic / potential energy) can be given clear ontological interpretations at causal-network graph-level. Momentum conservation and energy bookkeeping closure trace back to global causal-graph closure symmetries.
 3. Three representative examples - inertia, force-mass-acceleration trend, Hooke’s law - illustrate how classical-style behaviours appear under the required emergence-conditions, and each example also defines its own breakdown threshold.
 4. This work completes a conceptual link inside the SRE unified-framework; full term-by-term analytical derivation of all analytical-mechanics formulae is not performed here and remains a direction for follow-up research.
 

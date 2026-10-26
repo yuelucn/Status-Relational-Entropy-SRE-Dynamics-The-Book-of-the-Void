@@ -37,6 +37,7 @@
 ./3-Mathematical_Support/Operator_1_1.0_C.md
 ./3-Mathematical_Support/Operator_1_Interpretation_1.0_C.md
 ./3-Mathematical_Support/Operator_2_1.1_C.md
+./3-Mathematical_Support/Operator_2_Free_Energy_Structure_1.0_C.md
 ./3-Mathematical_Support/Operator_3_1.1_C.md
 ./3-Mathematical_Support/Operator_4_1.1_C.md
 ./3-Mathematical_Support/Operator_5_1.1_C.md

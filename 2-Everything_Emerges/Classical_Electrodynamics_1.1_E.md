@@ -19,7 +19,7 @@ SRE Dynamics abandons classical notions of absolute space (“meters”) and con
 
 **Intrinsic Update Velocity $\boldsymbol{c}$**: A proportional constant defining the maximum rate of bidirectional causal reconciliation inside the SRE network. Determined by the global “topological rigidity” of the matrix, it serves as an absolute upper bound for computation and propagation speed.
 
-**Bidirectional Causality**: Spacetime evolution does not propagate unidirectionally from node A to node B. Instead it is governed by global bidirectional harmonic resonance. A local topological state transitions to its final discrete computational steady-state **only after causal loops fully close across the whole network**, enforcing strict conservation laws at boundary interfaces.
+**Bidirectional Causality**: Spacetime evolution does not propagate unidirectionally from node A to node B. Instead it is governed by global bidirectional harmonic resonance. A local topological state transitions to its final discrete computational steady-state **only after causal loops fully close across the whole network**, enforcing strict bookkeeping closure at boundary interfaces.
 
 ## 2 Higher-Order Adjacency Definitions & Physical Manifestations
 To fully formalise the framework, powers of adjacency matrix $\boldsymbol{A}$ directly correspond to discrete causal-link lengths, defining physical mechanisms for fields:
