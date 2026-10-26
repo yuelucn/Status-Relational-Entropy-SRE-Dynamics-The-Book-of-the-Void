@@ -13,6 +13,7 @@ $$
 Fundamentally it eliminates logarithmic-divergence singularities originating from floating-point round-off errors of distributed cut-sets, guaranteeing mathematical completeness for long-timescale distributed-engineering deployment.
 
 ---
+
 ## 1. Introduction & Physical Philosophy
 During outward-expansion cascades of SRE-dynamics networks, direct adoption of raw discrete node-degrees as topological-evolution probability measures inevitably encounters two major mathematical-physical difficulties:
 1. **Localized Horizon Fragmentation**: Distributed actors can only observe local-fragmented topology, causing discontinuity step-jumps of global-connectivity measures along boundaries and introducing high-frequency step-noise.
@@ -21,6 +22,7 @@ During outward-expansion cascades of SRE-dynamics networks, direct adoption of r
 To overcome these defects, the design of Operator 4 fully implements the physical-philosophy of **Spectral Homogeneous Smoothing**. It completely abandons metrics relying on extrinsic background spacetime or manually hard-coded prescriptions. Instead, endogenous damping is composed from the system’s own **2-Step Graph-Walk Kernel invariants** together with global spectral priors, endowing discrete network-graph topological-evolution with smooth continuum rheological properties.
 
 ---
+
 ## 2. Algebraic Spaces & Notation Conventions
 For rigid interfacing with subsequent operators within the pipeline, mathematical spaces and symbolic matrices acted-upon by Operator 4 are defined below:
 
@@ -51,6 +53,7 @@ $$
 * **Graph-Map Output Edge-Weight ($W_{e(i,j)}^{(s-1)}$)**: Homogeneous-smoothed continuous scalar weight output by Operator 4, constituting core parameter for flow-field divergence control.
 
 ---
+
 ## 3. Analytical Derivation of Operator 4 Standard Algebraic Equations
 Analytic construction for homogeneous weight coefficient $W_{e(i,j)}^{(s-1)}$ is compound-superimposed in two parts: **normalised topological base component** and **graph-walk-kernel logarithmic damping component**.
 
@@ -75,6 +78,7 @@ W_{e(i,j)}^{(s-1)} \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in
 $$
 
 ---
+
 ## 4. Rigorous Mathematical Proof: Rigid-Clamping Theorem for Lower Bound of Dirichlet-Energy Functional
 ### Theorem 4.1 (Theorem of Complete Positive-Definiteness of Dirichlet-Energy and Spontaneous Singularity Elimination)
 Under extremely-sparse distributed-evolution or zero-degree-vacuum-edge scenarios (namely local-degree statistics facing limit collapse $D_{ii}^{\text{out}} \to 0,\; D_{jj}^{\text{in}} \to 0$, driving output-weight towards zero convergence $W_e \to 0$), Operator 4 autonomously activates the global algebraic-connectivity scale-adjustment valve, rigidly clamping the global-graph Dirichlet-Energy-Functional algebraic lower-bound inside fully positive-definite compact subspace:
@@ -167,6 +171,7 @@ Dirichlet-Energy-Functional cannot collapse down to zero. Denominator-terms insi
 ◼ Theorem 4.1 is complete.
 
 ---
+
 ## 5. Conclusions and Next-Step Pipeline Roadmap
 Operator 4 ($\mathcal{M}_{\text{degree}}$) achieves smooth homogeneous-metric on purely topological dimension via cascade-composition of local-normalised cross-correlation kernel and 2-Step-Graph-Walk causal kernel. The successful proof for Rigid-Clamping Theorem of Dirichlet-Energy lower-bound establishes deadlock-free mathematical foundation for long-timescale stable distributed-simulation of entire SRE-dynamics network.
 

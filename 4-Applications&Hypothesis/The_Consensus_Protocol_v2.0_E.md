@@ -80,11 +80,11 @@ This yields the **ledger–spectrum orthogonality theorem**: **"how much energy 
 
 The erroneous nature of $A_c=h\nu$ is therefore clear: it takes the **frequency of the carrier** for the **energy of the ledger**. The correct writing is
 
-$$A_c \equiv \Delta\mathcal{L}=\big(\Delta E,\ \Delta\beta_1\big)\quad\text{(the ledger difference of one closed→open transition)}\tag{1}$$
+$$A_c \equiv \Delta\mathcal{L}=\big(\Delta E,\ \Delta\beta_1\big)\quad\text{(the ledger difference of one closed→open transition)}\qquad(1)$$
 
 and the legitimate definition of frequency is the topological compression density of the carrier [A]:
 
-$$f \propto \Delta\lambda=\sqrt{\operatorname{Tr}(M)^{2}-4\det M}=\alpha\cdot\frac{\lambda_1}{\lambda_2+\lambda_3}\tag{2}$$
+$$f \propto \Delta\lambda=\sqrt{\operatorname{Tr}(M)^{2}-4\det M}=\alpha\cdot\frac{\lambda_1}{\lambda_2+\lambda_3}\qquad(2)$$
 
 Equation (2) and Equation (1) describe **two different things**. v1.1 welds them together with a single symbol $h\nu$, which is precisely the "discrete→continuous" transgression identified by the G12 law.
 
@@ -134,11 +134,11 @@ This section gives only conclusions and intuition, and does not repeat proofs. E
 
 The residuality axiom of SRE: let boundary node A evolve to logical-depth step $t$ and node B to $t'$; light is the **mutually non-annihilating topological residual** of their jointly executed chains at the causal intersection:
 
-$$\Psi_{\text{light}}(\phi,w)\equiv\ker\!\big(\partial_{\text{mutual}}(A_t,B_{t'})\big)\tag{3}$$
+$$\Psi_{\text{light}}(\phi,w)\equiv\ker\!\big(\partial_{\text{mutual}}(A_t,B_{t'})\big)\qquad(3)$$
 
 This residual is parameterised by a non-orientable Möbius band with a single boundary and has only two intrinsic degrees of freedom: the winding phase $\phi\in[0,2\pi]$ and the transverse micro-impedance bandwidth $w$:
 
-$$\mathbf{X}(\phi,w)=\Big(\big(1+w\cos\tfrac{\phi}{2}\big)\cos\phi,\ \big(1+w\cos\tfrac{\phi}{2}\big)\sin\phi,\ w\sin\tfrac{\phi}{2}\Big)\tag{4}$$
+$$\mathbf{X}(\phi,w)=\Big(\big(1+w\cos\tfrac{\phi}{2}\big)\cos\phi,\ \big(1+w\cos\tfrac{\phi}{2}\big)\sin\phi,\ w\sin\tfrac{\phi}{2}\Big)\qquad(4)$$
 
 As $\phi\to\phi+2\pi$, $w\to-w$, and one must traverse the full $\Delta\phi=4\pi$ to close. **"Going one lap returns you to the opposite sheet" — this step is exactly the geometric content of the $\mathbb{Z}_2$ double cover.**
 
@@ -146,11 +146,11 @@ As $\phi\to\phi+2\pi$, $w\to-w$, and one must traverse the full $\Delta\phi=4\pi
 
 Discretising the above structure onto $n$ equally spaced nodes ($n$ even) yields the **weighted Möbius ladder $M_n$**: circumferential edges $(i,i\pm1)$ with weight $c$ (within-sheet refresh), and identification edges $(i,i+n/2)$ with weight $w$ (the Möbius twist channel). The light carrier is defined as the involution
 
-$$P=S^{n/2},\qquad P^{2}=I,\qquad Pv_k=(-1)^{k}v_k\tag{5}$$
+$$P=S^{n/2},\qquad P^{2}=I,\qquad Pv_k=(-1)^{k}v_k\qquad(5)$$
 
 The spectrum of $P$ is identically $\{+1,-1\}$, and it commutes with the graph Laplacian; hence the Laplacian spectrum splits into two halves by sector [A]:
 
-$$\mu_k=2c\Big(1-\cos\frac{2\pi k}{n}\Big)+2w\cdot\mathbb{1}[k\ \text{odd}],\qquad k=0,1,\dots,n-1\tag{6}$$
+$$\mu_k=2c\Big(1-\cos\frac{2\pi k}{n}\Big)+2w\cdot\mathbb{1}[k\ \text{odd}],\qquad k=0,1,\dots,n-1\qquad(6)$$
 
 - $k$ **even** → **electron sector** (soft mode);
 - $k$ **odd** → **photon sector**.
@@ -194,7 +194,7 @@ Typical externally paid items: the absolute scale of mass $c_0$, the calibration
 
 **Definition 3 (causal island)** A subgraph $G_T$ is called a causal island if and only if the class of its charge-sign channel
 
-$$\sigma_T\in H^{1}(G_T;\mathbb{Z}_2),\qquad Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\quad \deg(K)=\beta_1(K)\bmod 2\tag{7}$$
+$$\sigma_T\in H^{1}(G_T;\mathbb{Z}_2),\qquad Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\quad \deg(K)=\beta_1(K)\bmod 2\qquad(7)$$
 
 is **nontrivial**, i.e. $[\sigma_T]\neq0$.
 
@@ -298,7 +298,7 @@ v1.1 §2.1 proposes an "inverse causal pulse": extract the malignant node's "log
 
 **Proposition 3 (intervention target)** The target of intervention is not energy but the class:
 
-$$[\sigma_T]\neq0\ \longrightarrow\ [\sigma_T]=0,\qquad \text{while}\ \ \mathcal{L}\ \text{is conserved}\tag{8}$$
+$$[\sigma_T]\neq0\ \longrightarrow\ [\sigma_T]=0,\qquad \text{while}\ \ \mathcal{L}\ \text{is conserved}\qquad(8)$$
 
 That is: **let this subgraph regain the capacity for closed→open transitions, rather than let it cease to exist.**
 
@@ -384,7 +384,7 @@ v1.1's CTR (Causal Topology Remapping) retains its three-layer skeleton, but the
 
 v1.1 used SQUID and ultra-high-frequency bio-impedance spectroscopy to "extract the logical step-size bias and phase mismatch". v2.0 instead outputs an **auditable structural signature**:
 
-$$\mathcal{F}(G_T)=\Big(\lambda_2,\ \rho,\ \beta_1,\ [\sigma_T],\ \text{odd-sector spectral shape},\ \delta_A\Big)\tag{9}$$
+$$\mathcal{F}(G_T)=\Big(\lambda_2,\ \rho,\ \beta_1,\ [\sigma_T],\ \text{odd-sector spectral shape},\ \delta_A\Big)\qquad(9)$$
 
 Operator provenance of each component [A]:
 

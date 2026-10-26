@@ -50,6 +50,7 @@ The SRE Mapping Prerequisites define the domain-of-applicability for the framewo
 Direct isomorphic projection from the underlying substrate to the physical rendering layer does not exist. Only under the constraints of micro-meso-macro three-level rigid coherence-truncation boundaries can homomorphic instantiated mapping from causal space to the physical rendering layer be realised. Spacetime, matter, and interactions are all emergent outputs of this homomorphic-mapping procedure.
 
 ---
+
 ### Core-Concept Memorandum (Version-traceability, internal-document use only)
 1. Discarded assumptions inherited from older versions: absolute-symmetry zero-void initial state, single initial pulse, distance equivalent to logical-hop count, Planck-scale quantities treated as hardware granularity of underlying network, unconditional direct mapping.
 2. New core logical components: decoherence-dissipation plus emergent ontological ultraviolet boundaries of the substrate render isomorphic mapping infeasible; multi-scale rigid coherence-truncation boundaries as pre-conditions; constrained homomorphic mapping preserving core dynamics; logical primacy of reciprocal measurement.

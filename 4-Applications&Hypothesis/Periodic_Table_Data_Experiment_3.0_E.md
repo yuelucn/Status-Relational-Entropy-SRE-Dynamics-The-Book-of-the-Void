@@ -51,6 +51,7 @@ where weights $w_{1,2,3}$ are determined automatically by the SRE local‑barrie
 > **Protocol Conclusion**: This protocol elevates chemical research from “empirical induction” to a “topological‑audit” paradigm. By parsing and reading the underlying source‑code of atoms, we bypass biochemical “black‑box” behaviour and simulate matter‑evolution properties precisely at the algebraic level.
 
 ---
+
 Based on the core axioms and operator logic of Status‑Relational‑Entropy (SRE) Dynamics, three sets of closed‑form derivations, an engineering‑standardization appendix and validation‑experiment designs are supplemented for Version 3.0 Atomic‑Topology‑Audit Protocol. These additions guarantee algebraic uniqueness and numerical robustness when handling complex atomic systems.
 
 ## Appendix A: Closed‑Form Derivations

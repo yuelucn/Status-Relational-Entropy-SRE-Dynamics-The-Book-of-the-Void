@@ -820,12 +820,12 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 | V1 | 矩编码递推 vs 特征分解直算 | $1.86\times10^{-15}$ | PASS |
 | V2 | 灵敏度解析式 vs 中心差分 | $3.57\times10^{-10}$ | PASS |
 | V3 | Hodge 正交性 + 勾股等式 | $2.82\times10^{-15}$ | PASS |
-| V4 | 调和判据 $\\|D^Th\\|,\\|Ch\\|$ | $1.10\times10^{-14}$ | PASS |
+| V4 | 调和判据 $\lVert D^{Th}\rVert,\lVert Ch\rVert$ | $1.10\times10^{-14}$ | PASS |
 | V5 | 可解方程残差单调下降 | $F:\ 7.16\!\times\!10^{-2}\to3.83\!\times\!10^{-3}$（4 步） | PASS |
 | V6 | 目标泛函 $\Psi$ 单调非增 | $2.57\!\times\!10^{-3}\to7.32\!\times\!10^{-6}$ | PASS |
 | V7 | $\langle\Delta M,h\rangle$ | $4.42\times10^{-16}$ | PASS |
 | V8 | Hankel 钳制可行性恢复 | $-3.73\!\times\!10^{-1}\to-1.0\!\times\!10^{-9}$（$t^\star=0.099$） | PASS |
-| V9 | 调和残差驱动反演 | $\\|\Delta M\\| = 0$（完全无法消除） | PASS |
+| V9 | 调和残差驱动反演 | $\lVert\Delta M\rVert = 0$（完全无法消除） | PASS |
 | V10 | 闭合流 $E=D\varphi$ 配对守恒 | $6.29\times10^{-17}$ | PASS |
 | V11 | 非闭合流反例 | $-4.12\times10^{-1}$（显著非零） | PASS |
 

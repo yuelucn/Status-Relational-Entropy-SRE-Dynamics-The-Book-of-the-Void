@@ -306,7 +306,7 @@ $\mathcal C:\sigma\mapsto-\sigma$ 翻转粒子/反粒子对；中子（$\deg=0$�
 ### 14.6 多体：A3 按体求和给出核电荷 $Z\cdot e$
 
 多体脚手架 $V=9k+3,\ E=15k+3,\ \beta_1=6k+1$ **恒为奇数**（$k\ge1$），故单体判据「中性 ⇔ $\beta_1$ 偶」不能套用于整个脚手架。按 A3 对核子**体**求和：
-$$Q_{\rm nucleus}=\sum_{\text{质子体}}(+e)+\sum_{\text{中子体}}(0)=Z\cdot e,$$
+$$Q_\mathrm{nucleus}=\sum_{\text{质子体}}(+e)+\sum_{\text{中子体}}(0)=Z\cdot e,$$
 其中 $Z$ 为质子体数目。中子体（$\deg=0$）不贡献——正是「中子不带电」。可复算的脚本核对见 `_nucleon_multibody_charge.py`。
 
 ---

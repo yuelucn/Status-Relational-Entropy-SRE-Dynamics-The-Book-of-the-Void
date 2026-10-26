@@ -25,7 +25,7 @@
 系统中的边界幂零性 $\partial_1 \circ \partial_2 = 0$ 是复形的天然属性，不可作为人工拦截约束。因此，我们修正算子2-Batch（$\mathcal{O}_{\text{gate\_batch}}$）的数理表述：算子2-Batch 的本质不是“创造”幂零性，而是通过修剪矩阵 $\mathbf{M}_{\Omega}$ 来**保全有效基底的非退化性**。
 
 令修剪后的有效通道投影矩阵为 $\mathbf{P}_{\chi} \in \mathbb{R}^{|E| \times |E|}$（对角线非零元对应 $\chi=1$）。算子2-Batch 拦截“桥接边”的代数结果，是硬性保证修剪后的有效 1-阶上同调基底 $\mathbf{B}_{\text{co}} \cdot \mathbf{P}_{\chi}$ 的特征谱隙满足：
-$$\sigma_{\min}\left( (\mathbf{B}_{\text{co}} \mathbf{P}_{\sub}) (\mathbf{B}_{\text{co}} \mathbf{P}_{\chi})^T \right) \ge \lambda_2(n) > 0$$
+$$\sigma_{\min}\left( (\mathbf{B}_{\text{co}} \mathbf{P}_{\mathrm{sub}}) (\mathbf{B}_{\text{co}} \mathbf{P}_{\chi})^T \right) \ge \lambda_2(n) > 0$$
 这就将前置算子的控制效果转译成了清晰的**正定特征谱下界约束**。
 
 ### 1.3 复对偶嵌入的域公理与辛空间范畴包含完备性支撑

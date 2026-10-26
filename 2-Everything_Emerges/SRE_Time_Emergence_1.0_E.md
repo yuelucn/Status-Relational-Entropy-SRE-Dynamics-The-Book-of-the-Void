@@ -21,11 +21,11 @@ a_{ij}=\frac{\rho_{ij}}{1+\rho_{ij}},\qquad
 \rho_{ij}=\frac{\lambda\,d_{ij}}{|M^{2}|_{ij}+1},
 $$
 
-read as "the time worth of step $n$ = the expected amount of change in the world at that step", together with $T_{\rm em}(n)=\sum_{k<n}\Omega(k)$, the **emergent time**. Every conclusion is synthesized from two **pre-existing zero-parameter laws** (the age-distribution law and the iid $|S_n|$ spectral law of round 77) and then compared against measurement.
+read as "the time worth of step $n$ = the expected amount of change in the world at that step", together with $T_\mathrm{em}(n)=\sum_{k<n}\Omega(k)$, the **emergent time**. Every conclusion is synthesized from two **pre-existing zero-parameter laws** (the age-distribution law and the iid $|S_n|$ spectral law of round 77) and then compared against measurement.
 
-**Results.** Seven verdicts. (1) **Saturation**: $\Omega$ rises monotonically toward $1$; at $999$ steps the remaining gap is still $0.1540$, and the self-consistency check holds to $2.2\times10^{-16}$. (2) **Saturation law**: $1-\Omega=c\ln n/\sqrt n$ with $c=0.694157$ and a maximum relative residual of $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail. The same law is predicted **with zero free parameters** by combining the age law with the spectral law, agreeing with measurement to $0.28\%$–$1.65\%$. (3) **Asymptotic uniformity**: the relative step-to-step non-uniformity $\eta$ falls from $4.23\times10^{-3}$ ($n=50$) to $6.10\times10^{-5}$ ($n=980$), and its ratio to the prediction *differentiated from the saturation law* stays inside $[0.873,1.407]$. (4) **Internal non-uniformity**: the rewriting rate of a single element rises monotonically with its own age; at $n=999$ it runs from $0.058931$ (newborn) to $0.957750$ (oldest), so the clock of an individual member is not uniform. (5) **Universality**: sweeping $\lambda$ from $0.2$ to $3.0$ (a factor of $15$) does not move the limit of $\Omega$, only the speed of approach. (6) **Phase transition**: squaring the denominator of the update rule (a single symbol) moves the limit from $1.0000$ to about $0.390$; at $1099$ steps the gap between the two groups has reached $0.4629$ and is still widening. (7) **The price**: calibrating with the memory horizon gives $\tau_{\rm mem}\propto\sqrt n$, calibrating with the amount of change gives $T_{\rm em}\propto n$, and their ratio diverges with $n$ (a factor of $6.89$ and still growing), so **no rescaling can make both clocks uniform simultaneously**.
+**Results.** Seven verdicts. (1) **Saturation**: $\Omega$ rises monotonically toward $1$; at $999$ steps the remaining gap is still $0.1540$, and the self-consistency check holds to $2.2\times10^{-16}$. (2) **Saturation law**: $1-\Omega=c\ln n/\sqrt n$ with $c=0.694157$ and a maximum relative residual of $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail. The same law is predicted **with zero free parameters** by combining the age law with the spectral law, agreeing with measurement to $0.28\%$–$1.65\%$. (3) **Asymptotic uniformity**: the relative step-to-step non-uniformity $\eta$ falls from $4.23\times10^{-3}$ ($n=50$) to $6.10\times10^{-5}$ ($n=980$), and its ratio to the prediction *differentiated from the saturation law* stays inside $[0.873,1.407]$. (4) **Internal non-uniformity**: the rewriting rate of a single element rises monotonically with its own age; at $n=999$ it runs from $0.058931$ (newborn) to $0.957750$ (oldest), so the clock of an individual member is not uniform. (5) **Universality**: sweeping $\lambda$ from $0.2$ to $3.0$ (a factor of $15$) does not move the limit of $\Omega$, only the speed of approach. (6) **Phase transition**: squaring the denominator of the update rule (a single symbol) moves the limit from $1.0000$ to about $0.390$; at $1099$ steps the gap between the two groups has reached $0.4629$ and is still widening. (7) **The price**: calibrating with the memory horizon gives $\tau_\mathrm{mem}\propto\sqrt n$, calibrating with the amount of change gives $T_\mathrm{em}\propto n$, and their ratio diverges with $n$ (a factor of $6.89$ and still growing), so **no rescaling can make both clocks uniform simultaneously**.
 
-**Boundaries and conclusions.** Three limitations must be stated. First, the emergent time has **shape but no scale**: $T_{\rm em}\to n$ states that the emergent time is asymptotically equivalent to the external step count, while "how many seconds one step is" remains external input; this paper does not solve the scale problem. Second, at attainable sizes "time is constant" holds only to about $22\%$ ($T_{\rm em}/n=0.7776$ at $n=999$), and convergence is as slow as $\ln n/\sqrt n$. Third, two **guesses formed before measurement** have been refuted by measurement ($c\propto\lambda^{-1}$ gives $-0.577$; "the variant kernel runs away into freezing, $\Omega'\to0$" settles instead at a fixed point near $0.39$), and both are registered honestly as open items rather than used as evidence. One further separation must be preserved: **there is structure, there is no memory** — the joint distribution of the state matrix rejects full independence (row-sum variance is $1.94$–$2.03$ times the iid value, KS $p<10^{-4}$), yet two different prefixes become indistinguishable after continued evolution (exact permutation $p\ge0.3841$, none significant after Holm correction). It is precisely this that gives content to the claim that time must be *emergent* rather than *read off*: the present state carries zero bits about its own past. All numerical verification holds **only inside the SRE model**; any comparison with physical time is stated as a structural analogy and **not** as a numerical prediction.
+**Boundaries and conclusions.** Three limitations must be stated. First, the emergent time has **shape but no scale**: $T_\mathrm{em}\to n$ states that the emergent time is asymptotically equivalent to the external step count, while "how many seconds one step is" remains external input; this paper does not solve the scale problem. Second, at attainable sizes "time is constant" holds only to about $22\%$ ($T_\mathrm{em}/n=0.7776$ at $n=999$), and convergence is as slow as $\ln n/\sqrt n$. Third, two **guesses formed before measurement** have been refuted by measurement ($c\propto\lambda^{-1}$ gives $-0.577$; "the variant kernel runs away into freezing, $\Omega'\to0$" settles instead at a fixed point near $0.39$), and both are registered honestly as open items rather than used as evidence. One further separation must be preserved: **there is structure, there is no memory** — the joint distribution of the state matrix rejects full independence (row-sum variance is $1.94$–$2.03$ times the iid value, KS $p<10^{-4}$), yet two different prefixes become indistinguishable after continued evolution (exact permutation $p\ge0.3841$, none significant after Holm correction). It is precisely this that gives content to the claim that time must be *emergent* rather than *read off*: the present state carries zero bits about its own past. All numerical verification holds **only inside the SRE model**; any comparison with physical time is stated as a structural analogy and **not** as a numerical prediction.
 
 **Keywords**: State–Relational Entropy (SRE); emergence of time; saturation law; rewriting rate; age law; memory horizon; incompatibility of two clocks; separation of structure and memory; exact permutation test; discrete closure law.
 
@@ -45,11 +45,11 @@ Synonyms must be cleared before any work begins — this project has paid severa
 
 | Symbol | Name | Definition | How obtained |
 |---|---|---|---|
-| $t_{\rm ext}$ | external counting time | $n$ (evolution steps) | counting steps from **outside** the network |
-| $\tau_{\rm mem}$ | memory intrinsic time | $\displaystyle\int^{n}\frac{dk}{H(k)}\propto\sqrt n$ (round 77, §8) | calibrating with the **memory horizon** $H$ |
-| $T_{\rm em}$ | emergent time | $\displaystyle\sum_{k<n}\Omega(k)$ (this paper) | calibrating with the **amount of change** $\Omega$ |
+| $t_\mathrm{ext}$ | external counting time | $n$ (evolution steps) | counting steps from **outside** the network |
+| $\tau_\mathrm{mem}$ | memory intrinsic time | $\displaystyle\int^{n}\frac{dk}{H(k)}\propto\sqrt n$ (round 77, §8) | calibrating with the **memory horizon** $H$ |
+| $T_\mathrm{em}$ | emergent time | $\displaystyle\sum_{k<n}\Omega(k)$ (this paper) | calibrating with the **amount of change** $\Omega$ |
 
-None of the three equals or injects into another, and round 77 explicitly forbids taking $n$ as time **unconditionally**. This paper does not circumvent that discipline: §4 shows that $T_{\rm em}/n\to1$ holds **asymptotically but fails strictly at finite $n$**, and gives the exact order of the deviation, $O(\sqrt n\ln n)$. That is, this paper does not argue that "$n$ really is time after all"; it computes *when $n$ starts to behave like time, and how well*.
+None of the three equals or injects into another, and round 77 explicitly forbids taking $n$ as time **unconditionally**. This paper does not circumvent that discipline: §4 shows that $T_\mathrm{em}/n\to1$ holds **asymptotically but fails strictly at finite $n$**, and gives the exact order of the deviation, $O(\sqrt n\ln n)$. That is, this paper does not argue that "$n$ really is time after all"; it computes *when $n$ starts to behave like time, and how well*.
 
 ### 1.3 Contributions
 
@@ -91,7 +91,7 @@ Here $d_{ij}$ is the **age** of entry $(i,j)$. Since the early block is inherite
 
 ### 2.2 Symbolic discipline: the name is inverted
 
-The source variable `dorm` equals $r_{ij}=(1+\rho)^{-1}$ numerically, while `activate = rand >= p_matrix` gives $P(\text{history survives})=1-p_{\rm matrix}=r_{ij}$. Thus `dorm`, nominally "dormancy", is actually the **history-retention rate** — registered in round 77. This paper always speaks by the numbers and adopts the following symbols:
+The source variable `dorm` equals $r_{ij}=(1+\rho)^{-1}$ numerically, while `activate = rand >= p_matrix` gives $P(\text{history survives})=1-p_\mathrm{matrix}=r_{ij}$. Thus `dorm`, nominally "dormancy", is actually the **history-retention rate** — registered in round 77. This paper always speaks by the numbers and adopts the following symbols:
 
 | Symbol | Source counterpart | Meaning |
 |---|---|---|
@@ -109,13 +109,13 @@ $$
 \#\{(i,j):d_{ij}=d\}=2(n-d)+1,\qquad d=1,\dots ,n,\qquad \textstyle\sum_{d}=n^{2}.
 $$
 
-Measured item-by-item error is identically $0$. The law **contains no dynamics**: whether the evolution is run, which seed, which $\lambda$, none of it matters. Corollaries: the median age ratio $d_{\rm med}/n\to1-1/\sqrt2=0.292893$; the mean $\bar d=(n+1)(2n+1)/(6n)\to n/3$.
+Measured item-by-item error is identically $0$. The law **contains no dynamics**: whether the evolution is run, which seed, which $\lambda$, none of it matters. Corollaries: the median age ratio $d_\mathrm{med}/n\to1-1/\sqrt2=0.292893$; the mean $\bar d=(n+1)(2n+1)/(6n)\to n/3$.
 
 **Proposition 2 (spectral law E5, round 77).**
 
 $$
-\big\langle |E_{ij}|^{2}\big\rangle_{\rm off}=n,\qquad
-\big\langle |E_{ij}|\big\rangle_{\rm off}=\mathbb E|S_{n}|\;\approx\;\sqrt{2n/\pi},
+\big\langle |E_{ij}|^{2}\big\rangle_\mathrm{off}=n,\qquad
+\big\langle |E_{ij}|\big\rangle_\mathrm{off}=\mathbb E|S_{n}|\;\approx\;\sqrt{2n/\pi},
 $$
 
 i.e. the off-diagonal activity field sits at the maximum-entropy (iid symmetric Rademacher) position; both exact moments deviate by less than $0.5\%$ for $n\ge400$.
@@ -141,7 +141,7 @@ Four standing rules are carried forward:
 
 $$
 \boxed{\ \Omega(n)\;=\;\frac{1}{n^{2}}\sum_{i,j}a_{ij}(n),\qquad
-T_{\rm em}(n)\;=\;\sum_{k=1}^{n-1}\Omega(k)\ }
+T_\mathrm{em}(n)\;=\;\sum_{k=1}^{n-1}\Omega(k)\ }
 $$
 
 That is: the time worth of step $n$ equals the expected amount of change occurring in the world at that step, and the emergent time is its accumulation. The definition compresses the operationalist view of time (counting change with some process) into a directly computable quantity that requires no external unit.
@@ -191,7 +191,7 @@ Pure power laws are decisively rejected; $\ln n/\sqrt n$ is the only admissible 
 **Zero-parameter numerical prediction.** Using the age weights of Proposition 1 and the exact $|S_n|$ distribution of Proposition 2,
 
 $$
-\langle r\rangle_{\rm pred}
+\langle r\rangle_\mathrm{pred}
 =\frac{1}{n^{2}}\sum_{d=1}^{n}\bigl(2(n-d)+1\bigr)\,
 \mathbb E_{|S_{n}|}\!\left[\frac{K+1}{K+1+\lambda d}\right],
 $$
@@ -242,10 +242,10 @@ $\eta$ falls by a factor of $69.3$, and the ratio stays inside $[0.873,1.407]$ t
 **Corollary 4.2 (emergent time vs. step count).**
 
 $$
-T_{\rm em}(n)\;=\;n-O(\sqrt n\,\ln n).
+T_\mathrm{em}(n)\;=\;n-O(\sqrt n\,\ln n).
 $$
 
-Measured $T_{\rm em}/n=0.5734,\,0.7077,\,0.7776$ at $n=100,400,999$. This corollary is the strict version of the round-77 discipline: **do not take $n$ as time unconditionally**; only after designating "calibrate with the amount of change" does $n$ become time asymptotically, and even then with a sublinear error term too large to ignore.
+Measured $T_\mathrm{em}/n=0.5734,\,0.7077,\,0.7776$ at $n=100,400,999$. This corollary is the strict version of the round-77 discipline: **do not take $n$ as time unconditionally**; only after designating "calibrate with the amount of change" does $n$ become time asymptotically, and even then with a sublinear error term too large to ignore.
 
 ---
 
@@ -253,7 +253,7 @@ Measured $T_{\rm em}/n=0.5734,\,0.7077,\,0.7776$ at $n=100,400,999$. This coroll
 
 Uniformity of the aggregate does not mean uniformity everywhere inside. Fixing the current step $n$ and scanning the age $d$ of entries:
 
-| $n$ | $a(d=1)$ | $a(d=n/8)$ | $a(d=n/4)$ | $a(d=n/2)$ | $a(d=3n/4)$ | half-life age $H_{\rm eff}$ | $H_{\rm eff}/\sqrt n$ |
+| $n$ | $a(d=1)$ | $a(d=n/8)$ | $a(d=n/4)$ | $a(d=n/2)$ | $a(d=3n/4)$ | half-life age $H_\mathrm{eff}$ | $H_\mathrm{eff}/\sqrt n$ |
 |---|---|---|---|---|---|---|---|
 | 100 | 0.139768 | 0.596166 | 0.729099 | 0.824956 | 0.886612 | 9 | 0.9000 |
 | 400 | 0.083088 | 0.728347 | 0.827560 | 0.912367 | 0.929344 | 17 | 0.8500 |
@@ -345,32 +345,32 @@ The analogy must have stated limits, otherwise it becomes a universal pass.
 
 **Where it holds.** Both quantities are **saturation or ceiling values**, hence insensitive to base-level coupling parameters (here $\lambda$; there the state of motion of the source); both are **structural constants** (here the form of the update rule; there the metric structure of spacetime), and changing the structure changes the constant.
 
-**Where it fails (three items, not to be extrapolated).** First, $\Omega_{\infty}$ here is **dimensionless** (a fraction of entries rewritten per step), whereas $c$ **carries dimensions** and requires a unit system; they are not the same kind of number. Second, the other side of the analogy — the *scale* of time (seconds) — is **still absent** here ($T_{\rm em}\to n$ settles the shape only). Third, the invariance of $c$ rests on the experimental basis of Lorentz invariance, whereas $\Omega_{\infty}$ here has been verified only in two controlled comparisons inside a model. **Nothing in this paper may be used to assert any numerical conclusion about the physical speed of light.**
+**Where it fails (three items, not to be extrapolated).** First, $\Omega_{\infty}$ here is **dimensionless** (a fraction of entries rewritten per step), whereas $c$ **carries dimensions** and requires a unit system; they are not the same kind of number. Second, the other side of the analogy — the *scale* of time (seconds) — is **still absent** here ($T_\mathrm{em}\to n$ settles the shape only). Third, the invariance of $c$ rests on the experimental basis of Lorentz invariance, whereas $\Omega_{\infty}$ here has been verified only in two controlled comparisons inside a model. **Nothing in this paper may be used to assert any numerical conclusion about the physical speed of light.**
 
 ---
 
 ## 7. Theorem 7: two clocks cannot coexist (time is not unique)
 
-Round 77 calibrated with the memory horizon and obtained $\tau_{\rm mem}(n)=2\lambda\sqrt{\pi/2}\,\sqrt n=2.005303\sqrt n$, with the verdict "this clock decelerates continuously". This paper calibrates with the amount of change and obtains $T_{\rm em}\propto n$. Both are readings taken **inside** the network.
+Round 77 calibrated with the memory horizon and obtained $\tau_\mathrm{mem}(n)=2\lambda\sqrt{\pi/2}\,\sqrt n=2.005303\sqrt n$, with the verdict "this clock decelerates continuously". This paper calibrates with the amount of change and obtains $T_\mathrm{em}\propto n$. Both are readings taken **inside** the network.
 
 | $n$ | 50 | 100 | 200 | 400 | 600 | 800 | 999 |
 |---|---|---|---|---|---|---|---|
-| $\tau_{\rm mem}$ | 14.1796 | 20.0530 | 28.3593 | 40.1061 | 49.1197 | 56.7185 | 63.3815 |
-| $T_{\rm em}$ | 25.2648 | 58.0257 | 129.6670 | 283.8656 | 445.1452 | 610.4507 | 777.6977 |
-| $T_{\rm em}/\tau_{\rm mem}$ | 1.7818 | 2.8936 | 4.5723 | 7.0779 | 9.0625 | 10.7628 | 12.2701 |
-| $T_{\rm em}/n$ | 0.505296 | 0.580257 | 0.648335 | 0.709664 | 0.741909 | 0.763063 | 0.778476 |
+| $\tau_\mathrm{mem}$ | 14.1796 | 20.0530 | 28.3593 | 40.1061 | 49.1197 | 56.7185 | 63.3815 |
+| $T_\mathrm{em}$ | 25.2648 | 58.0257 | 129.6670 | 283.8656 | 445.1452 | 610.4507 | 777.6977 |
+| $T_\mathrm{em}/\tau_\mathrm{mem}$ | 1.7818 | 2.8936 | 4.5723 | 7.0779 | 9.0625 | 10.7628 | 12.2701 |
+| $T_\mathrm{em}/n$ | 0.505296 | 0.580257 | 0.648335 | 0.709664 | 0.741909 | 0.763063 | 0.778476 |
 
-**Theorem 7 (incompatibility).** The ratio $T_{\rm em}/\tau_{\rm mem}$ diverges with $n$ (a measured factor of $6.89$ and still growing). Therefore no rescaling exists under which both intrinsic clocks are uniform simultaneously; "time" is not a property the system carries, but a derived quantity obtained **after a clock process has been chosen**.
+**Theorem 7 (incompatibility).** The ratio $T_\mathrm{em}/\tau_\mathrm{mem}$ diverges with $n$ (a measured factor of $6.89$ and still growing). Therefore no rescaling exists under which both intrinsic clocks are uniform simultaneously; "time" is not a property the system carries, but a derived quantity obtained **after a clock process has been chosen**.
 
 **Both tend to uniformity, but at different rates:**
 
 | $n$ | 100 | 400 | 980 |
 |---|---|---|---|
-| $\eta(T_{\rm em})$ | $1.395\times10^{-3}$ | $2.378\times10^{-4}$ | $6.102\times10^{-5}$ |
-| $\eta(\tau_{\rm mem})=1/(2n+2)$ | $4.963\times10^{-3}$ | $1.248\times10^{-3}$ | $5.098\times10^{-4}$ |
+| $\eta(T_\mathrm{em})$ | $1.395\times10^{-3}$ | $2.378\times10^{-4}$ | $6.102\times10^{-5}$ |
+| $\eta(\tau_\mathrm{mem})=1/(2n+2)$ | $4.963\times10^{-3}$ | $1.248\times10^{-3}$ | $5.098\times10^{-4}$ |
 | ratio | 0.28 | 0.19 | 0.12 |
 
-$\eta(T_{\rm em})\propto\ln n/n^{3/2}$ while $\eta(\tau_{\rm mem})\propto1/n$: **calibrating with the amount of change pushes non-uniformity one order further down.** This is where the sentence of §1.1 finally lands: uniform time is observed because observers implicitly use the reading "how much happened in the world", not the memory-horizon reading.
+$\eta(T_\mathrm{em})\propto\ln n/n^{3/2}$ while $\eta(\tau_\mathrm{mem})\propto1/n$: **calibrating with the amount of change pushes non-uniformity one order further down.** This is where the sentence of §1.1 finally lands: uniform time is observed because observers implicitly use the reading "how much happened in the world", not the memory-horizon reading.
 
 ---
 
@@ -384,7 +384,7 @@ Taking the joint null hypothesis to be "entries are iid" is the **wrong null** �
 
 | statistic | $n=150$ real | $n=150$ iid | gap$/\sigma$ | $n=300$ real | $n=300$ iid | gap$/\sigma$ |
 |---|---|---|---|---|---|---|
-| $\langle|E|\rangle_{\rm off}$ | $9.8442\pm0.1274$ | $9.7549\pm0.1045$ | 0.70 | $13.8493\pm0.0767$ | $13.7983\pm0.0681$ | 0.66 |
+| $\langle|E|\rangle_\mathrm{off}$ | $9.8442\pm0.1274$ | $9.7549\pm0.1045$ | 0.70 | $13.8493\pm0.0767$ | $13.7983\pm0.0681$ | 0.66 |
 | fraction of $+1$ | $0.5020\pm0.0059$ | $0.5016\pm0.0039$ | 0.07 | $0.5013\pm0.0025$ | $0.5007\pm0.0019$ | 0.27 |
 | spectral radius$/\sqrt n$ | $1.9881\pm0.0419$ | $1.9606\pm0.0373$ | 0.66 | $2.0027\pm0.0186$ | $1.9798\pm0.0208$ | 1.23 |
 | **row-sum variance$/n$** | $\mathbf{1.9446\pm0.1060}$ | $\mathbf{1.0170\pm0.1200}$ | **8.75** | $\mathbf{2.0302\pm0.0740}$ | $\mathbf{1.0019\pm0.0957}$ | **13.89** |
@@ -395,9 +395,9 @@ The **marginal** layer of the $E$-field (mean, $\sigma$, sign fraction, spectral
 
 **Experimental design.** Take two prefixes with **nothing in common** (different seeds, each run to step $150$; the two differ in $48.50\%$ of entries). From each prefix run $G=8$ continuations with mutually different random streams up to step $300$, giving $2G=16$ terminal states. $H_{0}$: these $16$ states are exchangeable. **Exact permutation test** (enumerating all $C(16,8)=12870$ splits):
 
-| statistic | group A | group B | $|\text{difference}|/\sigma_{\rm pooled}$ | permutation $p$ |
+| statistic | group A | group B | $|\text{difference}|/\sigma_\mathrm{pooled}$ | permutation $p$ |
 |---|---|---|---|---|
-| $\langle|E|\rangle_{\rm off}$ | $13.8645\pm0.0731$ | $13.8676\pm0.0517$ | 0.050 | 0.9223 |
+| $\langle|E|\rangle_\mathrm{off}$ | $13.8645\pm0.0731$ | $13.8676\pm0.0517$ | 0.050 | 0.9223 |
 | $\sigma(|E|)$ | $10.5091\pm0.0692$ | $10.5015\pm0.0370$ | 0.141 | 0.8222 |
 | row-sum variance$/n$ | $1.9720\pm0.0971$ | $1.9734\pm0.0871$ | 0.015 | 0.9775 |
 | fraction of $+1$ | $0.5009\pm0.0017$ | $0.5018\pm0.0021$ | 0.453 | 0.3841 |
@@ -427,7 +427,7 @@ Each item below can be used to reject this paper directly with the same script:
 |---|---|---|---|
 | P1 | $1-\Omega$ must contain $\ln n$ | pure power law significantly worse than $\ln n/\sqrt n$ | $26.43\%$ vs $1.59\%$ |
 | P2 | the zero-parameter synthesis holds | prediction within $2\%$ of measurement | $0.28\%$–$1.65\%$ |
-| P3 | $\eta\to0$ with ratio near $1$ | $\eta/\eta_{\rm pred}\in[0.5,2]$ | $[0.873,1.407]$ |
+| P3 | $\eta\to0$ with ratio near $1$ | $\eta/\eta_\mathrm{pred}\in[0.5,2]$ | $[0.873,1.407]$ |
 | P4 | $\Omega_{\infty}$ independent of $\lambda$ | $\Omega$ monotone in $\lambda$ and in $n$ | holds ($8$ values of $\lambda$) |
 | P5 | changing rule form moves the limit | gap monotone and $>0.30$ | $0.4629$ |
 | P6 | joint has structure | row-sum variance gap $>3\sigma$ and KS $p<0.01$ | $8.75\sigma$ / $13.89\sigma$, $p<10^{-4}$ |
@@ -444,7 +444,7 @@ Each item below can be used to reject this paper directly with the same script:
 
 The thesis of this paper passes alongside several familiar discussions in the philosophy of time, but borrows **no** quantitative result from any of them:
 
-- **Relationalism / timeless ordering** (Barbour-style "time does not exist"): this paper agrees that "time is not in the state" but rejects the inference to non-existence; it supplies instead a **computable substitute** $T_{\rm em}$ whose uniformity is a corollary, not an assumption.
+- **Relationalism / timeless ordering** (Barbour-style "time does not exist"): this paper agrees that "time is not in the state" but rejects the inference to non-existence; it supplies instead a **computable substitute** $T_\mathrm{em}$ whose uniformity is a corollary, not an assumption.
 - **Thermal time hypothesis** (Connes–Rovelli style: time supplied by the modular flow of a state): $\Omega$ here is likewise a time specified by "how the state changes", but this paper **measures its saturation law and the convergence order of its non-uniformity**, which thermal-time constructions usually do not provide.
 - **Page–Wootters style** (taking a subsystem as clock): Theorem 7 is a **limitation** on that idea — choosing a different subsystem may yield an incompatible clock whose ratio diverges.
 
@@ -455,10 +455,10 @@ All are registered as **structural analogies only** and are not used as evidence
 | round | conclusion | relation to this paper |
 |---|---|---|
 | 76 | vibrational-period axis: graph side $0$ bit, $\mu$-only $0.07\%$; there are steps but no seconds | this paper inherits "the scale must still be supplied externally" |
-| 77 | $\tau_{\rm mem}\propto\sqrt n$; exact $0$ bit on the diagonal; $\varepsilon$ demoted to a window function | this paper takes $\tau_{\rm mem}$ as the second clock, from which the non-coexistence follows |
-| this paper | $T_{\rm em}\propto n$; saturation law; universality / phase transition; structure vs memory | completes the pre-registered 77→78 exit |
+| 77 | $\tau_\mathrm{mem}\propto\sqrt n$; exact $0$ bit on the diagonal; $\varepsilon$ demoted to a window function | this paper takes $\tau_\mathrm{mem}$ as the second clock, from which the non-coexistence follows |
+| this paper | $T_\mathrm{em}\propto n$; saturation law; universality / phase transition; structure vs memory | completes the pre-registered 77→78 exit |
 
-**Still unsolved**: the scale. $T_{\rm em}\to n$ shows only that the emergent time is asymptotically equivalent to the step count; "how many seconds is one step" remains external input. The gap identified in rounds 76 and 77 is not narrowed here.
+**Still unsolved**: the scale. $T_\mathrm{em}\to n$ shows only that the emergent time is asymptotically equivalent to the step count; "how many seconds is one step" remains external input. The gap identified in rounds 76 and 77 is not narrowed here.
 
 ### 10.3 Guiding analogy
 
@@ -466,8 +466,8 @@ One sentence for the non-specialist: **time is uniform not because the universe 
 
 ### 10.4 View from the discrete closure law (G12, instance 16)
 
-- **Given (discrete side, closed)**: the distribution of $d$, the $n^{2}$ weights, the distribution of $|S_{n}|$, the symmetry ⇒ hence the shape $\ln n/\sqrt n$ and the form of $T_{\rm em}$.
-- **Not given (continuous side, external input required)**: the physical unit corresponding to $\Omega_{\infty}$ (seconds), and why one *ought* to calibrate with $\Omega$ rather than $\tau_{\rm mem}$ — the latter is a choice on the observer's side, which the dynamics cannot answer.
+- **Given (discrete side, closed)**: the distribution of $d$, the $n^{2}$ weights, the distribution of $|S_{n}|$, the symmetry ⇒ hence the shape $\ln n/\sqrt n$ and the form of $T_\mathrm{em}$.
+- **Not given (continuous side, external input required)**: the physical unit corresponding to $\Omega_{\infty}$ (seconds), and why one *ought* to calibrate with $\Omega$ rather than $\tau_\mathrm{mem}$ — the latter is a choice on the observer's side, which the dynamics cannot answer.
 
 ---
 
@@ -479,13 +479,13 @@ All seven verdicts pass:
 |---|---|---|
 | T1 | definition of emergent time and saturation | pass (self-consistency $2.2\times10^{-16}$) |
 | T2 | saturation law $\ln n/\sqrt n$ + zero-parameter prediction | pass (residual $1.589\%$, deviation $\le1.65\%$) |
-| T3 | relative step non-uniformity $\to0$ | pass ($\eta/\eta_{\rm pred}\in[0.873,1.407]$) |
+| T3 | relative step non-uniformity $\to0$ | pass ($\eta/\eta_\mathrm{pred}\in[0.873,1.407]$) |
 | T4 | single-member clock accelerates with its own age | pass |
 | T5a / T5b | structure / no memory | pass ($8.75\sigma$–$13.89\sigma$; $\min p=0.3841$) |
 | T6a / T6b | $\lambda$ does not move the limit / rule form does | pass (gap $0.4629$) |
 | T7 | two clocks cannot coexist | pass (ratio grows by $6.89$ and diverges) |
 
-Together with three open items ($c\propto\lambda^{-1}$ rejected; $T_{\rm em}/n$ reaches only $0.7776$ at attainable sizes; the scale remains unsolved) and two guesses formed before measurement that were refuted, the balance sheet of this paper is clear:
+Together with three open items ($c\propto\lambda^{-1}$ rejected; $T_\mathrm{em}/n$ reaches only $0.7776$ at attainable sizes; the scale remains unsolved) and two guesses formed before measurement that were refuted, the balance sheet of this paper is clear:
 
 **(Established)** Time is not an external parameter; it is a quantity accumulated **as part of** an internal process. Its uniformity is not an assumption but a corollary of a saturation law, and that saturation law is explained in full by two pre-existing zero-parameter laws down to the sub-percent level.
 
@@ -503,7 +503,7 @@ Together with three open items ($c\propto\lambda^{-1}$ rejected; $T_{\rm em}/n$ 
 
 | item | script | key quantities |
 |---|---|---|
-| saturation law and all verdicts | `code/_time_emergence.py` (PART 0–8) | $\Omega(n)$, $c$, $\eta$, $T_{\rm em}$ |
+| saturation law and all verdicts | `code/_time_emergence.py` (PART 0–8) | $\Omega(n)$, $c$, $\eta$, $T_\mathrm{em}$ |
 | supplementary probe ($\Omega$ first used as target) | `code/_probe_time78.py` | initial shape judgement for $1-\Omega$ |
 | T6 follow-up | `code/_probe_time78b.py` | two windows for $c(\lambda)$; long-run trend of the variant kernel |
 | reference implementation of the loop | `code/sim_p.py` | the single authoritative version of the update rule |
@@ -517,12 +517,12 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 1. **One guess that preceded measurement**: $c\propto\lambda^{-1}$ is rejected (measured slope $-0.577$). Every statement involving $c(\lambda)$ is a registration, **not a conclusion**.
 2. **A second such guess**: "the variant kernel runs away into freezing, $\Omega'\to0$" is refuted; it settles at a fixed point near $0.39$. The original guess is preserved in §6.3.
-3. **Limited attainable precision**: at $n=999$, $T_{\rm em}/n=0.7776$, i.e. "time is constant" holds to only about $22\%$ at attainable sizes. Any reading that equates the results here with "physical time is strictly uniform" is a misreading.
+3. **Limited attainable precision**: at $n=999$, $T_\mathrm{em}/n=0.7776$, i.e. "time is constant" holds to only about $22\%$ at attainable sizes. Any reading that equates the results here with "physical time is strictly uniform" is a misreading.
 4. **Statistics with no discriminating power**: the $50\%$ and $90\%$ quantiles of the $E$-field take identical values in both populations ($8$ and $20$; $12$ and $28$), giving gap$/\sigma=\infty$ with KS $p=1.0000$. Under G13 such statistics must be reported as "indistinguishable" and **must not** be counted as agreement. They are excluded from the tables above.
 5. **Limit of reach of T5b**: the permutation test is performed on $5$ scalar statistics only and is not a general proof about mutual information. A stronger version would require vector-valued or spectral two-sample tests.
 6. **$\lambda=0.8$ and $\sqrt{2/\pi}=0.797885$ differ by $0.265\%$**: registered in round 77 as a conjecture awaiting test. Since $\lambda$ currently has no independent calibration, this paper does **not** use that proximity as an argument (G6; "too accurate" = the fingerprint of circularity).
 7. **$\varepsilon=0.183246$ remains a window function** (the verdict of round 77 §7 is not altered here): the $\Omega$ used in this paper is defined step by step and involves no window.
-8. **The scale is absent**: stated a third time — $T_{\rm em}$ has shape, not seconds.
+8. **The scale is absent**: stated a third time — $T_\mathrm{em}$ has shape, not seconds.
 
 ---
 
@@ -538,7 +538,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 ## Appendix D　References
 
-1. This project: *The dormancy/activation clock: zero-parameter laws, zero-bit branches and intrinsic time* (round 77) — Proposition 1 (age law), Proposition 2 (diagonal closed form), E5 (spectral law), source of $\tau_{\rm mem}$.
+1. This project: *The dormancy/activation clock: zero-parameter laws, zero-bit branches and intrinsic time* (round 77) — Proposition 1 (age law), Proposition 2 (diagonal closed form), E5 (spectral law), source of $\tau_\mathrm{mem}$.
 2. This project: *The vibrational-period axis: definition of time and the isotope criterion* (round 76) — the topological definition of frequency $\Delta\lambda=|\lambda_{1}-\lambda_{2}|$, and the verdict "steps but no seconds".
 3. This project: *Applied layer, ninth run: the general form of Proposition U* (round 74) — methodological source of the information bound $\le1$ bit.
 4. This project: *Applied layer, tenth run: ascending to $L_{3}$* (round 75) — source of the discipline "range verdicts precede fitting verdicts".

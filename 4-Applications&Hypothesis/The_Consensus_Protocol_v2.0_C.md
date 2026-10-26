@@ -80,11 +80,11 @@ v1.6 之后的 SRE 用一条定理禁止了这种等同。在核子骨架 $Y_3$ 
 
 于是 $A_c=h\nu$ 的错误性质就清楚了：它把**载波的频率**当成了**账本的能量**。正确的写法是
 
-$$A_c \equiv \Delta\mathcal{L}=\big(\Delta E,\ \Delta\beta_1\big)\quad\text{（一次闭→开跃迁的账本差）}\tag{1}$$
+$$A_c \equiv \Delta\mathcal{L}=\big(\Delta E,\ \Delta\beta_1\big)\quad\text{（一次闭→开跃迁的账本差）}\qquad(1)$$
 
 而频率的合法定义是载波的拓扑压缩密度 [A]：
 
-$$f \propto \Delta\lambda=\sqrt{\operatorname{Tr}(M)^{2}-4\det M}=\alpha\cdot\frac{\lambda_1}{\lambda_2+\lambda_3}\tag{2}$$
+$$f \propto \Delta\lambda=\sqrt{\operatorname{Tr}(M)^{2}-4\det M}=\alpha\cdot\frac{\lambda_1}{\lambda_2+\lambda_3}\qquad(2)$$
 
 式 (2) 与式 (1) 描述的是**两件不同的事**。v1.1 用一个符号 $h\nu$ 把它们焊在一起，这是 G12 律所指的"离散→连续"越界。
 
@@ -134,11 +134,11 @@ flowchart TD
 
 SRE 的残余性公理：设边界节点 A 演化到逻辑深度步 $t$，节点 B 演化到 $t'$，光就是二者联合执行链在因果交集处的**互不湮灭的拓扑残差**：
 
-$$\Psi_{\text{light}}(\phi,w)\equiv\ker\!\big(\partial_{\text{mutual}}(A_t,B_{t'})\big)\tag{3}$$
+$$\Psi_{\text{light}}(\phi,w)\equiv\ker\!\big(\partial_{\text{mutual}}(A_t,B_{t'})\big)\qquad(3)$$
 
 该残差由一个不可定向、单边界的莫比乌斯带参数化，只有两个内禀自由度：绕行相位 $\phi\in[0,2\pi]$ 与横向微阻抗带宽 $w$：
 
-$$\mathbf{X}(\phi,w)=\Big(\big(1+w\cos\tfrac{\phi}{2}\big)\cos\phi,\ \big(1+w\cos\tfrac{\phi}{2}\big)\sin\phi,\ w\sin\tfrac{\phi}{2}\Big)\tag{4}$$
+$$\mathbf{X}(\phi,w)=\Big(\big(1+w\cos\tfrac{\phi}{2}\big)\cos\phi,\ \big(1+w\cos\tfrac{\phi}{2}\big)\sin\phi,\ w\sin\tfrac{\phi}{2}\Big)\qquad(4)$$
 
 当 $\phi\to\phi+2\pi$ 时 $w\to-w$，必须走满 $\Delta\phi=4\pi$ 才能闭合。**"转一圈回到对面那一层"这一步，就是 $\mathbb{Z}_2$ 双覆盖的几何内容。**
 
@@ -146,11 +146,11 @@ $$\mathbf{X}(\phi,w)=\Big(\big(1+w\cos\tfrac{\phi}{2}\big)\cos\phi,\ \big(1+w\co
 
 把上述结构离散到 $n$ 个等距节点（$n$ 为偶数），得**加权莫比乌斯梯 $M_n$**：环向边 $(i,i\pm1)$ 权重 $c$（片内刷新），识别边 $(i,i+n/2)$ 权重 $w$（莫比乌斯扭转通道）。光载波定义为对合
 
-$$P=S^{n/2},\qquad P^{2}=I,\qquad Pv_k=(-1)^{k}v_k\tag{5}$$
+$$P=S^{n/2},\qquad P^{2}=I,\qquad Pv_k=(-1)^{k}v_k\qquad(5)$$
 
 $P$ 的谱恒为 $\{+1,-1\}$，与图拉普拉斯交换，因此拉普拉斯谱按扇区劈成两半 [A]：
 
-$$\mu_k=2c\Big(1-\cos\frac{2\pi k}{n}\Big)+2w\cdot\mathbb{1}[k\ \text{odd}],\qquad k=0,1,\dots,n-1\tag{6}$$
+$$\mu_k=2c\Big(1-\cos\frac{2\pi k}{n}\Big)+2w\cdot\mathbb{1}[k\ \text{odd}],\qquad k=0,1,\dots,n-1\qquad(6)$$
 
 - $k$ **偶** → **电子扇区**（软模）；
 - $k$ **奇** → **光子扇区**。
@@ -194,7 +194,7 @@ $$\mu_k=2c\Big(1-\cos\frac{2\pi k}{n}\Big)+2w\cdot\mathbb{1}[k\ \text{odd}],\qqu
 
 **定义 3（因果孤岛）**　子图 $G_T$ 称为因果孤岛，当且仅当其电荷符号通道
 
-$$\sigma_T\in H^{1}(G_T;\mathbb{Z}_2),\qquad Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\quad \deg(K)=\beta_1(K)\bmod 2\tag{7}$$
+$$\sigma_T\in H^{1}(G_T;\mathbb{Z}_2),\qquad Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\quad \deg(K)=\beta_1(K)\bmod 2\qquad(7)$$
 
 所在的类**非平凡**，即 $[\sigma_T]\neq0$。
 
@@ -298,7 +298,7 @@ v1.1 §2.1 提出"逆因果脉冲"：提取恶性节点的"逻辑指纹"（精�
 
 **命题 3（干预目标）**　干预的靶不是能量，而是类：
 
-$$[\sigma_T]\neq0\ \longrightarrow\ [\sigma_T]=0,\qquad \text{同时}\ \ \mathcal{L}\ \text{守恒}\tag{8}$$
+$$[\sigma_T]\neq0\ \longrightarrow\ [\sigma_T]=0,\qquad \text{同时}\ \ \mathcal{L}\ \text{守恒}\qquad(8)$$
 
 即：**让这个子图重新获得闭→开跃迁能力，而不是让它停止存在。**
 
@@ -384,7 +384,7 @@ v1.1 的 CTR（Causal Topology Remapping）保留三层骨架，但每层的输�
 
 v1.1 用 SQUID 与超高频生物阻抗谱"提取逻辑步长偏置与相位失配"。v2.0 改为输出一个**可审计的结构签名**：
 
-$$\mathcal{F}(G_T)=\Big(\lambda_2,\ \rho,\ \beta_1,\ [\sigma_T],\ \text{奇扇区谱形},\ \delta_A\Big)\tag{9}$$
+$$\mathcal{F}(G_T)=\Big(\lambda_2,\ \rho,\ \beta_1,\ [\sigma_T],\ \text{奇扇区谱形},\ \delta_A\Big)\qquad(9)$$
 
 各项的算子来源 [A]：
 

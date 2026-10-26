@@ -10,10 +10,11 @@
 * $\Phi_{\text{full}}$: Full-connection fixed-evaluation homomorphism (all-ones special case).
 * $\mathcal{G}_{n\rightarrow n+1}$: Local Graph Expansion Operator (declarative dimension-extension operator).
 * $\rho(A)$: Spectral radius of matrix $A$ (maximum absolute eigenvalue).
-* $\varinjlim$: Inductive-limit (direct-limit) operator in commutative-algebra category theory.
+* $\mathrm{lim}_{\longrightarrow}$: Inductive-limit (direct-limit) operator in commutative-algebra category theory.
 * $\partial_{n\rightarrow m}$: Canonical-embedding operator extending polynomial rings from order $n$ to order $m$.
 
 ---
+
 ## 2. Algebraic Construction of Inductive-Limit Ring and Global Homomorphism
 To handle formal variables introduced by successive expansions within a single algebraic object, we adopt the inductive-limit mechanism from commutative-algebra category theory and define scenario-isolation constraints: formal-symbol operations reside in polynomial-ring spaces; numerical evaluations take place over real numbers. Homomorphism preservation (additivity and multiplicativity) separates these two domains.
 
@@ -51,6 +52,7 @@ Based on limit ring $\mathcal{R}_\infty$, under unconditional real-symmetry cons
 \]
 
 ---
+
 ## 3. Graph-Theory Terminology and General Topological-Frustration Criterion Theorems
 ### 3.1 Formal Walks and Path-Interference Definitions
 * **Formal symbolic graph walk**: Formal matrix power multiplication inside polynomial-matrix space. Matrix element $(M^k)_{ij}$ denotes the formal expanded polynomial for weighted paths connecting node $i$ to node $j$.
@@ -103,6 +105,7 @@ Evaluate the two-step-walk path-interference entry $(M_3^2)_{23}$ via row-column
 The result yields deterministic real scalar $3$. Numerically demonstrates residual local net-bias arising from multi-loop superposition and self-loop sign entanglement which cannot be cancelled to zero.
 
 ---
+
 ## 4 Rigorous Mapping Specification and Property Proof for Local Graph Expansion Operator
 ### 4.1 Iteration Origin and Operator Mapping
 Absolute iteration origin is constant matrix $M_1 = \begin{pmatrix}1\end{pmatrix} \in \mathcal{M}_1$.
@@ -173,6 +176,7 @@ Co-domain space $\mathcal{M}_{n+1}[\mathbf{x}_{n+1},y_{n+1}]$ in principle permi
 Consider matrix $B$ in co-domain such that $B[1,1]=x_{(n+1,1)}$. This violates constant-sub-block inheritance constraint and cannot belong to operator image. Non-surjectivity proven. ◼
 
 ---
+
 ## 5 Divergence Quantification and General-Invariant Proof
 ### 5.1 Quantitative Divergence under Full-Connection Fixed Evaluation
 If intermediate formal states skip downstream operator solving and are directly forced into full-connection fixed-assignment special case ($\Phi_{\text{full}}$: $\Phi_{\text{full}}(\mathbf{x}_{n+1})=\mathbf{1}_n$, $\Phi_{\text{full}}(y_{n+1})=1$).
@@ -266,6 +270,7 @@ Substitute constants back to summation:
 This reduction holds for arbitrary positive integer $n\in\mathbb{N}^+$, independent of specific assignments for indeterminates. Theorem 3 proven. ◼
 
 ---
+
 ## 6 Constraint Compatibility and Iterative-Complexity-Bound Analysis
 ### 6.1 Constraint-Compatibility Analysis
 Operator 1 outputs formal-symbol matrix containing $n+1$ algebraically-independent indeterminates; resulting Boolean solution-space size is $2^{n+1}$.
@@ -279,6 +284,7 @@ Separate algebraic-logic complexity versus physical runtime-implementation overh
 3. **Downstream formal-matrix-multiplication complexity**: If downstream code computes $M_{n+1}^2$ formal product, naive multivariate-polynomial expansion upper-bound reads $O((n+1)^3)$. But leveraging that top-left block $M_n$ is purely numerical constant, block-aware symbolic-multiplication reduces practical polynomial-multiplication overhead to $\boldsymbol{O(n^2)}$. This guarantees engineering feasibility for iterating to large system-sizes.
 
 ---
+
 ## Appendix Directory
 For stable large-scale distributed-computation deployment, this algebraic specification defines these auxiliary appendices (accessible via main system catalogue):
 

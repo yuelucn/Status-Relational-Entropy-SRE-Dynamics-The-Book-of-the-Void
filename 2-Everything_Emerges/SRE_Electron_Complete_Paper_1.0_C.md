@@ -290,7 +290,7 @@ $$\Delta\lambda = \sqrt{\text{Tr}(M)^2 - 4\det(M)} = \alpha \cdot \frac{\lambda_
 $\text{Tr}(M) = \lambda_1 + \lambda_2$、$\det(M) = \lambda_1 \lambda_2$，代入得
 $\Delta\lambda = |\lambda_1 - \lambda_2|$，故频率公式化为：
 
-$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \tag{1}$$
+$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
 
 **四态本征谱**：边界节点通过在 High ($\rho = 10$) 和 Low ($\rho = 2$) 之间切换，驱动全局
 流形在四个离散本征谱态间跃迁：
@@ -315,16 +315,16 @@ $\gamma \cdot |\rho_A - \rho_B| = 0$，使 $\lambda_2 = \lambda_0$ 直接暴露�
 
 **展开 $\lambda_2 + \lambda_3$**：
 
-$$\lambda_2 + \lambda_3 = \lambda_0\left(1 + \frac{1}{4(1+\kappa)}\right) = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \tag{2}$$
+$$\lambda_2 + \lambda_3 = \lambda_0\left(1 + \frac{1}{4(1+\kappa)}\right) = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \qquad(2)$$
 
 **代入频率公式**：将 (L,L) 值与式 (2) 代入式 (1) 并求 $\alpha$：
 
-$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \tag{3}$$
+$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \qquad(3)$$
 
 **精确解与简化**：量级分析 $\lambda_0 / (16\beta) = 1.9 \times 10^{-5} \ll 1$，因此
 $16\beta - \lambda_0 \approx 16\beta$（误差 < 0.002%），式 (3) 简化为：
 
-$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \tag{4}$$
+$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \qquad(4)$$
 
 反向求解：$\lambda_0 = \alpha \cdot \frac{4 + 4\kappa}{5 + 4\kappa}$（式 5）。
 
@@ -360,7 +360,7 @@ $$\text{arc}(w) = 4\pi + \frac{1}{2}\frac{d^2 \text{arc}}{dw^2}\bigg|_{w=0} w^2 
 
 **弧长修正比**：定义归一化弧长修正：
 
-$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \tag{6}$$
+$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \qquad(6)$$
 
 **精细结构常数的弧长编码**：令 $\delta = \alpha$，得 $w = \sqrt{8\alpha} = 0.241617$（式 7）。
 数值验证：

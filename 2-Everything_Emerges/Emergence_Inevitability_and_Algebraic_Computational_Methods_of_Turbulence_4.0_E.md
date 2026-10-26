@@ -282,7 +282,7 @@ From the relation matrix M, the following dimensionless observables are derived 
 
 Relation of β to the classical 3/4 law: K41 predicts `ℓ_int/η ∼ Re^{3/4}` (i.e. `β = 0.75`), see §1.1.
 
-> **Naming note**: this book contains two other homonymous symbols — $\beta_{\rm th}\equiv1$ (the temperature of the free-energy form in Operator 2) and $\beta_{\rm gate}=2.0$ (the sigmoid gate gain of Operator 10) — neither of which is related to the scale-separation exponent here; in the text and figures of this chapter it is abbreviated as $\beta\equiv\beta_{\rm turb}$.
+> **Naming note**: this book contains two other homonymous symbols — $\beta_\mathrm{th}\equiv1$ (the temperature of the free-energy form in Operator 2) and $\beta_\mathrm{gate}=2.0$ (the sigmoid gate gain of Operator 10) — neither of which is related to the scale-separation exponent here; in the text and figures of this chapter it is abbreviated as $\beta\equiv\beta_\mathrm{turb}$.
 
 **Important qualification on the spectral slope γ**: it is obtained by taking the one-dimensional power spectrum of the chiral field A along the **causal order** (the order in which states are added); it is a **one-dimensional surrogate spectrum** and is **not equal** to the three-dimensional spatial energy spectrum `E(k)`. Its definition is isomorphic to the classical energy spectrum, but the spatial dimensionality and the meaning of the coordinates are both different. Therefore γ can only serve as a **qualitative indicator** of "whether a stable power-law cascade region exists", and its numerical value cannot be compared digit-by-digit with −5/3.
 

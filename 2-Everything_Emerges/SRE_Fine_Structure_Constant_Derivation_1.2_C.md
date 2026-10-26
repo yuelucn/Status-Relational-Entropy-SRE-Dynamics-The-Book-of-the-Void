@@ -238,7 +238,7 @@ $$\Delta\lambda = \sqrt{(\lambda_1 + \lambda_2)^2 - 4\lambda_1\lambda_2} = |\lam
 
 代入频率公式：
 
-$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \tag{1}$$
+$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
 
 ### 5.3 四态本征谱
 
@@ -271,7 +271,7 @@ $$\lambda_2 + \lambda_3 = \lambda_0 + \frac{\lambda_0}{4(1+\kappa)} = \lambda_0\
 
 通分：
 
-$$= \lambda_0 \cdot \frac{4(1+\kappa) + 1}{4(1+\kappa)} = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \tag{2}$$
+$$= \lambda_0 \cdot \frac{4(1+\kappa) + 1}{4(1+\kappa)} = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \qquad(2)$$
 
 ### 5.6 代入频率公式
 
@@ -281,7 +281,7 @@ $$|16\beta - \lambda_0| = \alpha \cdot \frac{16\beta}{\lambda_0 \cdot \frac{5+4\
 
 求解 $\alpha$：
 
-$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \tag{3}$$
+$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \qquad(3)$$
 
 ### 5.7 精确解与简化
 
@@ -289,11 +289,11 @@ $$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\bet
 
 因此 $16\beta - \lambda_0 \approx 16\beta$（误差 < 0.002%），式 (3) 简化为：
 
-$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \tag{4}$$
+$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \qquad(4)$$
 
 **反向求解**：
 
-$$\lambda_0 = \alpha \cdot \frac{4 + 4\kappa}{5 + 4\kappa} \tag{5}$$
+$$\lambda_0 = \alpha \cdot \frac{4 + 4\kappa}{5 + 4\kappa} \qquad(5)$$
 
 ### 5.8 数值验证
 
@@ -357,13 +357,13 @@ $$\text{arc}(w) \approx 4\pi + \frac{\pi}{2}w^2 + O(w^4)$$
 
 定义归一化弧长修正：
 
-$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \tag{6}$$
+$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \qquad(6)$$
 
 ### 6.5 精细结构常数的弧长编码
 
 令 $\delta = \alpha$：
 
-$$\alpha = \frac{w^2}{8} \implies w = \sqrt{8\alpha} = 0.241617 \tag{7}$$
+$$\alpha = \frac{w^2}{8} \implies w = \sqrt{8\alpha} = 0.241617 \qquad(7)$$
 
 **数值验证**：
 

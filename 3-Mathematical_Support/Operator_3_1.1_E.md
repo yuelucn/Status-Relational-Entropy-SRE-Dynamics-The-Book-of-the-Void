@@ -9,7 +9,7 @@ This specification thoroughly removes the dependence of conventional physics on 
 ### 1.1 Global Symbol-Lookup Table and Base Domains
 To eliminate representation-layer confusion between the binary Boolean-algebra space $\mathbb{F}_2$ and the state-spin discrete real-matrix space $\mathcal{M}_{\text{spin}}$, this specification rigidly establishes the following global symbol spaces together with the $1/0$ sub-index conversion mechanism:
 
-* **Continuous polynomial maternal-ring space** $\mathcal{R}_{\infty} = \varinjlim \mathbb{R}[\mathcal{V}_n]$: full-historical space of symbol-independent parameters.
+* **Continuous polynomial maternal-ring space** $\mathcal{R}_{\infty} = \mathrm{lim}_{\longrightarrow} \mathbb{R}[\mathcal{V}_n]$: full-historical space of symbol-independent parameters.
 * **Numerical-matrix spin space** $\mathcal{M}_{\text{spin}}^{(n)} \subseteq \{+1, -1\}^{n \times n}$: strictly-symmetric zero-free purely-binary real-valued square-matrix space. Its one-based indexing domain is denoted $\mathcal{J}_n = \{1, 2, \dots, n\}$.
 * **Directed-edge-space chain-complex domain** $\mathcal{E}^{(m)} \in \mathbb{R}^m$ and **cycle-complex cohomology-space domain** $\mathcal{C}^{(f)} \in \mathbb{R}^f$: real-valued directed-flux spaces rigidly constrained by 1-chain and 2-chain boundary operators of the graph Laplacian.
 * **Boolean-logic-operation control space** $\mathbb{B}^n \in \{0, 1\}^n$: finite-field $\mathbb{F}_2$ discrete-addition space.

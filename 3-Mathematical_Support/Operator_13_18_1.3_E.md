@@ -219,6 +219,7 @@ $$\|r\|_2^2 = \|D\phi\|_2^2 + \|h\|_2^2 + \|C^T\psi\|_2^2$$
 **Corollary S3.1 (obstruction certificate)**: when the iteration stalls with $\|h\|$ not decreasing, the harmonic component $h$ itself is the **algebraic certificate** that the equation is unsolvable — it precisely indicates "how many independent loops the equation demands that the current manifold cannot provide".
 
 ---
+
 ## 3. Operator Specifications
 
 ### Operator 13: $\mathcal{E}_{\text{mom}}$, the Spectral-Shape Chebyshev Moment Encoder
@@ -465,6 +466,7 @@ $\mathcal{O}\!\left(\sum_\nu M_{K_\nu}K + m_g + f\right) = \mathcal{O}(p\,M_K K)
 **Hard red line**: the injection **must never** touch the diagonal entries of $M_\Omega$ (Postulate 2); curl cancellation may only be performed in the edge/cycle space. The only legal route for diagonal correction is Operator 8's $\mu_{\text{trace}}$. With multiple shards one must also verify that all shards use the **same** $\alpha_n$; per-shard normalization is forbidden (it would make the moment scales inconsistent and render the product terms on both sides of the coupled equation meaningless).
 
 ---
+
 ### Operator 15: $\mathcal{N}_{\text{endo}}$, the Endogenous Quasi-Newton Spectral Inverter
 **(Endogenous Quasi-Newton Spectral Inverter)**
 
@@ -724,6 +726,7 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$, executed only once.
 - when $\beta_1 = 0$ the homological-solution set degenerates to the whole space (degeneracy warning, §2-bis), in which case **the canonical-representative criterion (minimum Dirichlet energy) is the sole basis for selection**, and step 3 must not be omitted.
 
 ---
+
 ## 4. Extended Pipeline Timing (embedded into the Version 18.0 four-phase pulse)
 
 A new **Phase 3.5: spectral-shape equation solving inner loop (Solve Inner Loop, step $\kappa$)** is added, located after Phase 3 field closure and before Phase 4 conservation. The solving inner loop **does not change the advancement of the structural pulse $s$**; it merely performs sub-step iterations inside a unified pulse, so all network Actors still advance in strict lockstep.
@@ -817,12 +820,12 @@ The actual run output of the reference implementation `Operator_13_18_P.py` (upg
 | V1 | Moment-encoding recurrence vs. direct eigendecomposition | $1.86\times10^{-15}$ | PASS |
 | V2 | Sensitivity closed form vs. central differences | $3.57\times10^{-10}$ | PASS |
 | V3 | Hodge orthogonality + Pythagorean identity | $2.82\times10^{-15}$ | PASS |
-| V4 | Harmonic criterion $\\|D^Th\\|,\\|Ch\\|$ | $1.10\times10^{-14}$ | PASS |
+| V4 | Harmonic criterion $\lVert D^{Th}\rVert,\lVert Ch\rVert$ | $1.10\times10^{-14}$ | PASS |
 | V5 | Monotone decrease of the residual for a solvable equation | $F:\ 7.16\!\times\!10^{-2}\to3.83\!\times\!10^{-3}$ (4 steps) | PASS |
 | V6 | Objective functional $\Psi$ non-increasing | $2.57\!\times\!10^{-3}\to7.32\!\times\!10^{-6}$ | PASS |
 | V7 | $\langle\Delta M,h\rangle$ | $4.42\times10^{-16}$ | PASS |
 | V8 | Feasibility recovery after Hankel clamping | $-3.73\!\times\!10^{-1}\to-1.0\!\times\!10^{-9}$ ($t^\star=0.099$) | PASS |
-| V9 | Inversion driven by harmonic residual | $\\|\Delta M\\| = 0$ (completely uneliminable) | PASS |
+| V9 | Inversion driven by harmonic residual | $\lVert\Delta M\rVert = 0$ (completely uneliminable) | PASS |
 | V10 | Closed flow $E=D\varphi$ pairing conservation | $6.29\times10^{-17}$ | PASS |
 | V11 | Non-closed-flow counterexample | $-4.12\times10^{-1}$ (significantly nonzero) | PASS |
 

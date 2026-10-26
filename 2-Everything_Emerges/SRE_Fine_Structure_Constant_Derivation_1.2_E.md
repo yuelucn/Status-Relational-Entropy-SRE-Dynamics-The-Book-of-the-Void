@@ -238,7 +238,7 @@ $$\Delta\lambda = \sqrt{(\lambda_1 + \lambda_2)^2 - 4\lambda_1\lambda_2} = |\lam
 
 Substituting into the frequency formula:
 
-$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \tag{1}$$
+$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
 
 ### 5.3 Four-State Eigen-Spectrum
 
@@ -271,7 +271,7 @@ $$\lambda_2 + \lambda_3 = \lambda_0 + \frac{\lambda_0}{4(1+\kappa)} = \lambda_0\
 
 Combining:
 
-$$= \lambda_0 \cdot \frac{4(1+\kappa) + 1}{4(1+\kappa)} = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \tag{2}$$
+$$= \lambda_0 \cdot \frac{4(1+\kappa) + 1}{4(1+\kappa)} = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \qquad(2)$$
 
 ### 5.6 Substituting into the Frequency Formula
 
@@ -281,7 +281,7 @@ $$|16\beta - \lambda_0| = \alpha \cdot \frac{16\beta}{\lambda_0 \cdot \frac{5+4\
 
 Solving for $\alpha$:
 
-$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \tag{3}$$
+$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \qquad(3)$$
 
 ### 5.7 Exact Solution and Simplification
 
@@ -289,11 +289,11 @@ $$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\bet
 
 Therefore $16\beta - \lambda_0 \approx 16\beta$ (error < 0.002%), and Eq. (3) simplifies to:
 
-$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \tag{4}$$
+$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \qquad(4)$$
 
 **Inverse solution**:
 
-$$\lambda_0 = \alpha \cdot \frac{4 + 4\kappa}{5 + 4\kappa} \tag{5}$$
+$$\lambda_0 = \alpha \cdot \frac{4 + 4\kappa}{5 + 4\kappa} \qquad(5)$$
 
 ### 5.8 Numerical Verification
 
@@ -357,13 +357,13 @@ $$\text{arc}(w) \approx 4\pi + \frac{\pi}{2}w^2 + O(w^4)$$
 
 Defining the normalized arc-length correction:
 
-$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \tag{6}$$
+$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \qquad(6)$$
 
 ### 6.5 Arc-Length Encoding of the Fine Structure Constant
 
 Setting $\delta = \alpha$:
 
-$$\alpha = \frac{w^2}{8} \implies w = \sqrt{8\alpha} = 0.241617 \tag{7}$$
+$$\alpha = \frac{w^2}{8} \implies w = \sqrt{8\alpha} = 0.241617 \qquad(7)$$
 
 **Numerical verification**:
 

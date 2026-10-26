@@ -8,6 +8,7 @@ According to the pipeline configuration specified in the *SRE Universal Graph Op
 The core engineering objective of Operator 6 is to multiplex topological invariants within the local overlapping domains of the directed chain complex via **Algebraic Rayleigh-Ritz Splicing Kernels**. This mechanism successfully crushes the temporal computational overhead of global spectral space resolution from the traditional cubic synchronous deadlocks of $\mathcal{O}(n^3)$ down to a sparse sub-domain upper bound of **$\mathcal{O}(m_g \cdot k_{\text{rank}})$**, thoroughly eliminating global synchronous stalls across distributed Actor clusters.
 
 ---
+
 ## I. Top-Level Algebraic Space Specification and Design Philosophy
 In conventional graph signal processing and high-dimensional manifold reconstruction, executing a full spectral decomposition over the global Graph Laplacian matrix stands as the unique analytical method to extract global topological connectivity priors, such as the Fiedler vector and the algebraic connectivity $\lambda_2(n)$. However, global spectral decomposition induces two fatal deadlocks under distributed asynchronous Actor architectures:
 
@@ -35,6 +36,7 @@ $$
 $$
 
 ---
+
 ## II. Mathematical Derivation of the Algebraic Rayleigh-Ritz Splicing Kernel
 To extract the low-order extreme eigenpairs of the global Laplacian operator $\mathbf{L}_G$ without storing or assembling global matrices, Operator 6 constructs strict algebraic projection mappings over the local overlapping perimeters of the chain complex.
 
@@ -82,6 +84,7 @@ This non-zero lower bound directly immunizes the logarithmic and rational contro
 ◼ Theorem 6.1 is complete.
 
 ---
+
 ## III. Verification of Engineering Complexity Boundaries at Runtime
 To comply strictly with the complexity boundary invariants dictated by the third segment of the systemic roadmap, Operator 6 must achieve complete decoupling from the cubic scaling expansion of the global node population under the thermodynamic limit.
 

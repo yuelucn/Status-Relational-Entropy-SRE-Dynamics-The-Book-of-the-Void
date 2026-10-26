@@ -8,6 +8,7 @@ This operator resides in the **Phase 2 (Causal-Blocking)** stage within the pi
 Its core engineering-physical mission is to perform **Relativistic Dimensional Reduction**. By computing microscopic discrete penetration rates over directed channels, it reduces Einstein’s macroscopic physical phenomenon of “gravitational time dilation” down to pure algebraic measures at the graph fundamental layer. At the same time it acts as a **causal-safety interceptor** for the whole distributed streaming pipeline via logical obfuscation of Bernoulli-trial sampling routines.
 
 ---
+
 ## I. Top-Level Algebraic Definition and Design Philosophy
 Within Status-Relational-Entropy (SRE)-dynamics networks, spacetime is not a hard-coded background manifold. Instead it is an emergent endogenous metric driven by causal-stream propagation under discrete-pulse iterations (step index $n$). Nevertheless, as local network topological density expands inhomogeneously, the actual pulse-step cost for information streams to traverse topological sub-domains of differing density undergoes adaptive distortion. Without proper calibration, causal-time axes across distributed actors become logically misaligned and trigger cascading control collapse.
 
@@ -20,6 +21,7 @@ $$
 $$
 
 ---
+
 ## II. Mathematical Derivation, Closed-Form Construction and Saturation-Clamping for Discrete-Penetration-Rate Equation
 ### 2.1 Introduction of Core Topological-Density Weight
 According to the universal physical representation mapping (Theorem 6.1), when causal streams cross regions of high topological density (macroscopic massive-source regime), their superimposed core weight $W_e$ expands exponentially. To reproduce this impedance-originated non-linear warping and conduction retardation inside a discrete algebraic space, a logarithmic adaptive contraction operator must be constructed.
@@ -54,6 +56,7 @@ $$
 The **discrete penetration-rate $c_e^{(s)}$ undergoes adaptive logarithmic collapse and asymptotically approaches zero**. This means the microscopic-pulse-iteration-step cost (time overhead) for information streams to traverse the given geodesic topological depth **stretches logarithmically without bound**. Without non-local action-at-a-distance or hard-coded Einstein field-equations, pure graph-algebraic structure spontaneously gives rise to the macroscopic physical **gravitational time-dilation effect**.
 
 ---
+
 ## III. Random-Decision-Gate Obfuscation and Measure-Theoretic Rigorous Proof of PDF Cloaking
 ### 3.1 Dependency of Discrete Bernoulli Random Decision Gates
 Whether information can successfully traverse a directed channel is ultimately decided at the underlying decision-gate by means of a Bernoulli trial. Activation random variable $\chi_e \in \{0,1\}$ obeys occurrence probabilities directly governed by penetration-rate:
@@ -89,6 +92,7 @@ $$
 This provides measure-theoretic absolute resistance against differential-observation attacks for logical PDF cloaking.
 
 ---
+
 ## IV. Runtime Engineering Complexity-Bound Validation
 To guarantee engineering tractability when scaling towards macroscopic long-range iterative regimes, Operator 5 must satisfy the constant-asymptotic-overhead red-line constraints of Phase 2:
 
@@ -101,6 +105,7 @@ To guarantee engineering tractability when scaling towards macroscopic long-rang
 > Subplot 3: Runtime engineering overhead red-line: measured execution time stays approximately constant with growing global node count $n$, confirming the $\mathcal{O}(1)$ algebraic-logic complexity property.
 
 ---
+
 ## V. Operator Corollary and Dynamical Closure
 
 #### Corollary 5.1 (Causal-Latency Self-Convergence Stability)

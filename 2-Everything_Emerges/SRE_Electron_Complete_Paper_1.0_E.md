@@ -237,7 +237,7 @@ where $M$ is the $2 \times 2$ cross-spectral response matrix, and $\lambda_1, \l
 
 **Cross-spectral matrix M:** take $M = \text{diag}(\lambda_1, \lambda_2)$; then $\text{Tr}(M) = \lambda_1 + \lambda_2$, $\det(M) = \lambda_1 \lambda_2$, which, upon substitution, gives $\Delta\lambda = |\lambda_1 - \lambda_2|$; the frequency formula thus becomes:
 
-$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \tag{1}$$
+$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
 
 **Four-state eigen-spectrum:** the boundary nodes drive the global manifold through transitions among four discrete eigen-spectrum states by switching between High ($\rho = 10$) and Low ($\rho = 2$):
 
@@ -260,15 +260,15 @@ $$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamm
 
 **Expanding $\lambda_2 + \lambda_3$:**
 
-$$\lambda_2 + \lambda_3 = \lambda_0\left(1 + \frac{1}{4(1+\kappa)}\right) = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \tag{2}$$
+$$\lambda_2 + \lambda_3 = \lambda_0\left(1 + \frac{1}{4(1+\kappa)}\right) = \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa} \qquad(2)$$
 
 **Substitution into the frequency formula:** substitute the (L,L) values and Eq. (2) into Eq. (1) and solve for $\alpha$:
 
-$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \tag{3}$$
+$$\alpha = (16\beta - \lambda_0) \cdot \lambda_0 \cdot \frac{5 + 4\kappa}{16\beta \cdot (4 + 4\kappa)} \qquad(3)$$
 
 **Exact solution and simplification:** the magnitude analysis $\lambda_0 / (16\beta) = 1.9 \times 10^{-5} \ll 1$ gives $16\beta - \lambda_0 \approx 16\beta$ (error < 0.002%), so Eq. (3) simplifies to:
 
-$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \tag{4}$$
+$$\boxed{\alpha \approx \lambda_0 \cdot \frac{5 + 4\kappa}{4 + 4\kappa}} \qquad(4)$$
 
 Solving inversely: $\lambda_0 = \alpha \cdot \frac{4 + 4\kappa}{5 + 4\kappa}$ (Eq. 5).
 
@@ -299,7 +299,7 @@ that is, $\text{arc}(w) \approx 4\pi + \frac{\pi}{2}w^2 + O(w^4)$.
 
 **Arc-length correction ratio:** define the normalized arc-length correction:
 
-$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \tag{6}$$
+$$\delta(w) = \frac{\text{arc}(w) - 4\pi}{4\pi} = \frac{w^2}{8} + O(w^4) \qquad(6)$$
 
 **Arc-length encoding of the fine-structure constant:** setting $\delta = \alpha$ gives $w = \sqrt{8\alpha} = 0.241617$ (Eq. 7). Numerical validation:
 

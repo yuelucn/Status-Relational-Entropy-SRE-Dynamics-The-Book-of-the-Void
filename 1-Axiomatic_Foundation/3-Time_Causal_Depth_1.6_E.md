@@ -25,6 +25,7 @@ Distinguishing time as **dissipation-book-keeping depth** and space as **rendere
 - **Apparent Instantaneous Leap (Causal Re-mapping)**: The theoretical objective is to perform “causal re-mapping”: bypass sequential intermediate causal steps and establish direct topological associative links between two sets of quantum-evidential nodes. Subject to network-stability and instantiation-boundary constraints, this operation minimizes traversed causal book-keeping depth and thereby produces an apparent instantaneous-leap effect within the physical rendering layer. This process cannot violate the self-consistency constraints of the underlying causal network; it remains purely an apparent effect at the rendering layer and does not break causal self-consistency.
 
 ---
+
 ### Key Rewrite Reference Memorandum
 1. Removed content inherited from old v1.5.1: *Planck time as the atomic cycle for single causal triggers, Planck length as indexing pixel granularity, distance as count of intermediate logical steps*.
 2. Retained and reconstructed core conceptual kernels:

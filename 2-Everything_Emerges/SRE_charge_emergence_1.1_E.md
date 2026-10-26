@@ -308,7 +308,7 @@ Nucleon paper v1.5 §6 marks open/closed as an isospin Z₂ "independent of char
 ### 14.6 Multi-body: A3 body-sum gives nuclear charge $Z\cdot e$
 
 The multi-body scaffold $V=9k+3,\ E=15k+3,\ \beta_1=6k+1$ is **always odd** ($k\ge1$), so the single-knot criterion "neutral ⇔ $\beta_1$ even" cannot be applied to the whole scaffold. By A3, sum over nucleon **bodies**:
-$$Q_{\rm nucleus}=\sum_{\text{proton bodies}}(+e)+\sum_{\text{neutron bodies}}(0)=Z\cdot e,$$
+$$Q_\mathrm{nucleus}=\sum_{\text{proton bodies}}(+e)+\sum_{\text{neutron bodies}}(0)=Z\cdot e,$$
 with $Z$ = number of proton bodies. Neutron bodies ($\deg=0$) contribute nothing — exactly "neutrons are uncharged". A re-computable script verification is provided in `SRE-charge-emergence/_nucleon_multibody_charge.py`.
 
 ---

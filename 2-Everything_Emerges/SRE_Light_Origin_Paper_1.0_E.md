@@ -85,7 +85,7 @@ Section 2 gives the existing stipulations, notation, an **analogy guide** and th
 **(a) Residuality (Axiom I).** The original wording of electron paper §3.1 [1] is:
 
 > "Light is not an independent material substance. Given a boundary node A evolving to logical-depth step $t$, and a node B evolving to step $t'$, light is embodied as the **mutually non-annihilating topological residue** at the causal intersection of the jointly executed chains:
-> $$\Psi_{\text{light}}(\phi,w)\equiv\ker\!\left(\partial_{\text{mutual}}(A_t,B_{t'})\right)."$$
+> $$\Psi_{\text{light}}(\phi,w)\equiv\ker\!\left(\partial_{\text{mutual}}(A_t,B_{t'})\right).$$
 
 **(b) The Möbius double cover (Axiom II).** The same residual manifold is governed by **two intrinsic degrees of freedom**:
 

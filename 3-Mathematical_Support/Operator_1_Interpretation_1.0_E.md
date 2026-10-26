@@ -118,7 +118,7 @@ Repeated invocations of $\mathcal{G}_{n\to n+1}$ continuously produce new formal
 
 1. Variable sets generated in distinct expansion steps are pairwise disjoint: $v_k \cap v_m=\emptyset$ for $k\neq m$.
 2. Canonical embeddings $\partial_{n\to m}$ realize injection of lower-order polynomials into higher-order rings.
-3. $\mathcal{R}_\infty=\varinjlim \mathcal{R}_n$, containing all formal-symbol polynomials across the full evolutionary history.
+3. $\mathcal{R}_\infty=\mathrm{lim}_{\longrightarrow} \mathcal{R}_n$, containing all formal-symbol polynomials across the full evolutionary history.
 
 $\mathcal{R}_\infty$ represents the complete relational possibility-space; at this stage all quantities remain purely symbolic with no assigned physical numerical values.
 
@@ -242,7 +242,7 @@ Within the axiomatic system of SRE, the framework offers a conceptually self-con
 
 The evolutionary boundary of the universe corresponds to the expansion frontier of Operator-1. Beyond this frontier there exists no space and no void. Only formal relational possibilities not yet realized by the evaluation homomorphism reside there. Extrapolating emergent geometric concepts of spacetime past this frontier constitutes an invalid logical extrapolation.
 
-##-. Open Theoretical Boundaries and Future Extensions
+## 11. Open Theoretical Boundaries and Future Extensions
 
 1. **Endogenization of vertex generation**: In the present version new vertices are introduced via an external-pulse axiom. Future work aims to trigger vertex birth internally by thresholds of topological-frustration tension, path-interference effects or entropy fluctuations, eliminating the external-pulse postulate.
 2. **Integration with Random-Matrix Theory (RMT)**: Perform spectral-statistical analysis for this iteratively-grown matrix ensemble derived from the operator. Study universal large-$N$ spectral behaviour and distinguish microscopic fluctuations from macroscopic statistical determinacy.
@@ -250,6 +250,7 @@ The evolutionary boundary of the universe corresponds to the expansion frontier 
 4. **Generalization of the operator**: Extend operator formalism to permit non-uniform, non-sequential advance of the possibility-space frontier.
 
 ---
+
 > **Supplementary Explanatory Note | This is interpretive material, not original mathematical specification. All mathematical proofs should be consulted in the original source paper.**
 > DOI: [https://doi.org/10.5281/zenodo.21454140](https://doi.org/10.5281/zenodo.21454140)
 
