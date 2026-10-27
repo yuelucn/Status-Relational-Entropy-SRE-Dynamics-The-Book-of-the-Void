@@ -1,4 +1,4 @@
-﻿# Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator（$\mathcal{G}_{n\rightarrow n+1}$）
+﻿# Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator($\mathcal{G}_{n\rightarrow n+1}$)
 ## 1. Unified Mathematical Notation Index
 * $\mathbb{N}^+$: Set of positive integers $\{1, 2, 3, \dots\}$ (zero excluded).
 * $\mathcal{I}_n$: Index-baseline set $\{1, 2, 3, \dots, n\}$. All global slicing and matrix-element access strictly adopt **1-based indexing**.

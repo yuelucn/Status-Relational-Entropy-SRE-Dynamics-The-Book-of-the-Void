@@ -98,17 +98,17 @@ For each undirected edge $e=\{i,j\}$ ($i<j$), fix the reference orientation $i\t
 
 $$\varepsilon_{e,\gamma}=\begin{cases}+1,& \gamma\ \text{traverses along}\ i\to j\\-1,& \text{reversed}\end{cases},\qquad \mathrm{Hol}_\mathbb{R}(\delta,\gamma)=\sum_{e\in\gamma}\varepsilon_{e,\gamma}\,\delta_e .$$
 
-**Specification Clause (added in v0.3, mandatory to read)**　$\varepsilon_{e,\gamma}$ is the sign of **cycle traversal** relative to the reference orientation — a different matter from the §2.2 reference orientation itself. The reference orientation is fixed by an **assignment convention**:
+**Specification Clause (added in v0.3, mandatory to read)** $\varepsilon_{e,\gamma}$ is the sign of **cycle traversal** relative to the reference orientation — a different matter from the §2.2 reference orientation itself. The reference orientation is fixed by an **assignment convention**:
 
 $$\boxed{\ \text{Reference orientation of edge }e=\{i,j\}=i\to j\ (i<j)\ \text{ (by vertex numbering)}\ }$$
 
 Therefore, **$\delta\in C^1(G;\mathbb{R})$ is a directed cochain "along the reference orientation"**: $\delta_e$ is the increment in the $i\to j$ direction, not an undirected scalar.
 
-**Resulting labeling dependency (important, see §10 R11)**　Bond orders (and their changes) are **undirected** chemical data, while $C^1$ coordinates carry orientation; mapping undirected data into directed coordinates requires one assignment, and different assignments give different Hodge decompositions. **Therefore $\varrho$ depends on vertex labeling**: the same physical reaction (6-ring uniform bond-order $+0.5$, i.e. benzene aromatisation) gives $\varrho=2/3$ under labeling $[0,1,2,3,4,5]$ and $\varrho=1/3$ after swapping $1\leftrightarrow2$ (measured in V3).
+**Resulting labeling dependency (important, see §10 R11)** Bond orders (and their changes) are **undirected** chemical data, while $C^1$ coordinates carry orientation; mapping undirected data into directed coordinates requires one assignment, and different assignments give different Hodge decompositions. **Therefore $\varrho$ depends on vertex labeling**: the same physical reaction (6-ring uniform bond-order $+0.5$, i.e. benzene aromatisation) gives $\varrho=2/3$ under labeling $[0,1,2,3,4,5]$ and $\varrho=1/3$ after swapping $1\leftrightarrow2$ (measured in V3).
 
-**Optional explicit orientation $\varsigma_e$ (added input in v0.3)**　If the user wants to read the chemical intuition (e.g. to have "uniform bond-order increase around a ring" read as a pure cycle channel), they may additionally provide $\varsigma_e\in\{+1,-1\}$; the specification automatically replaces $\delta_e$ with $\varsigma_e\delta_e$ before decomposition. **Default $\varsigma_e\equiv+1$** (i.e. bit-wise identical to v0.2). $\varsigma$ is a different symbol from $\varepsilon_{e,\gamma}$ and from the D7 regular $\varepsilon$.
+**Optional explicit orientation $\varsigma_e$ (added input in v0.3)** If the user wants to read the chemical intuition (e.g. to have "uniform bond-order increase around a ring" read as a pure cycle channel), they may additionally provide $\varsigma_e\in\{+1,-1\}$; the specification automatically replaces $\delta_e$ with $\varsigma_e\delta_e$ before decomposition. **Default $\varsigma_e\equiv+1$** (i.e. bit-wise identical to v0.2). $\varsigma$ is a different symbol from $\varepsilon_{e,\gamma}$ and from the D7 regular $\varepsilon$.
 
-**Implementation Status (wired in v0.3)**　`build_reaction(..., orient=ς)` accepts a scalar, length-$\lvert E\rvert$ vector, or `{(i,j):±1}` dictionary; non-$\pm1$ values raise error; $\varsigma_e$ **only acts on the edge channel** ($\varrho$), **does not affect** $\kappa$ (uses $W$, no orientation) or $\nu,\mu$ (vertex channel, no orientation). Public helper `orient_from_cycle(n, edges, cycle)`: takes $\varsigma_e=\varepsilon_{e,\gamma}$, turning the chemical intuition of "entire ring synchronously increasing/decreasing bond order" into a specification orientation.
+**Implementation Status (wired in v0.3)** `build_reaction(..., orient=ς)` accepts a scalar, length-$\lvert E\rvert$ vector, or `{(i,j):±1}` dictionary; non-$\pm1$ values raise error; $\varsigma_e$ **only acts on the edge channel** ($\varrho$), **does not affect** $\kappa$ (uses $W$, no orientation) or $\nu,\mu$ (vertex channel, no orientation). Public helper `orient_from_cycle(n, edges, cycle)`: takes $\varsigma_e=\varepsilon_{e,\gamma}$, turning the chemical intuition of "entire ring synchronously increasing/decreasing bond order" into a specification orientation.
 
 Measured (6-ring uniform $+0.5$, i.e. benzene aromatisation, with both default and natural-cycle traversal):
 
@@ -199,7 +199,7 @@ $$w(t)=\arg\min_{w\in[0,3]^E}\ \|\boldsymbol\tau(w)-\boldsymbol\tau(t)\|^2+\lamb
 
 ### D7 (Rigidity Bottleneck $\kappa$, computation domain rewritten in v0.3)
 
-**Computation domain $X$ (v0.3 core correction)**　v0.2 took "largest connected component containing active sites", which is self-contradictory: by definition that component is connected ⇒ $\lambda_2>0$ ⇒ P20.5's equivalence is always true and $\gamma\to0$ is never observable. v0.3 changes it to **union of components containing active sites**:
+**Computation domain $X$ (v0.3 core correction)** v0.2 took "largest connected component containing active sites", which is self-contradictory: by definition that component is connected ⇒ $\lambda_2>0$ ⇒ P20.5's equivalence is always true and $\gamma\to0$ is never observable. v0.3 changes it to **union of components containing active sites**:
 
 $$\boxed{\ X=V\ \cup\ \big\{b\in V_B\ :\ \exists\,(a,b)\in E_I,\ w_I(a,b)>0\big\}\ }$$
 
@@ -229,13 +229,13 @@ with at least one strict inequality. **No scalarisation defined** — weights ar
 
 ## 4 Positioning Axioms
 
-**A20 (Bridge Axiom, Pareto version)**　A catalyst works by **simultaneously improving all three channels along the path under fixed stoichiometry**:
+**A20 (Bridge Axiom, Pareto version)** A catalyst works by **simultaneously improving all three channels along the path under fixed stoichiometry**:
 
 $$\boxed{\ C\ \text{effective}\iff \mathcal{K}_{\text{act}}(C)\preceq \mathcal{K}_{\text{act}}(\text{direct reference}),\quad \mu\ \text{fixed}\ }$$
 
 It is **not** "reduce $\varrho$ to 0" — by T20.3, interface edges cannot change endpoint $\varrho_{\text{tot}}$; what is possible is changing the **path** (via $w_{\text{ads}}$) and lowering $\kappa$.
 
-**H20.2 (Orthogonality Hypothesis, former A20′)**　Three channels encode independent barriers; any one being zero does not imply the others are zero. Verified numerically by V4.
+**H20.2 (Orthogonality Hypothesis, former A20′)** Three channels encode independent barriers; any one being zero does not imply the others are zero. Verified numerically by V4.
 
 ---
 
@@ -254,7 +254,7 @@ Let $G$ be connected, $\delta\in C^1(G;\mathbb{R})$. The following are equivalen
 (ii)⇒(i): Take base point $v_0$, let $\varphi_v=\sum_{e\in P(v_0\to v)}\varepsilon_{e,P}\delta_e$. If $P,P'$ are two paths $v_0\to v$, then $P\cup P'^{-1}$ is a closed chain; when not simple it can be decomposed into a sum of simple cycles, each summing to $0$ by (ii), so $\varphi_v$ is path-independent, thus $\delta_e=\varphi_i-\varphi_j$.
 (i)⇔(iii): By the orthogonal decomposition in §2.1. $\square$
 
-**Corollary 20.1.1**　$\varrho$ is independent of cycle-basis choice ($\delta_{\text{harm}}$ is the orthogonal projection onto $\mathcal{H}^1$).
+**Corollary 20.1.1** $\varrho$ is independent of cycle-basis choice ($\delta_{\text{harm}}$ is the orthogonal projection onto $\mathcal{H}^1$).
 
 ### T20.2 (Bounds of $\kappa$ and Scaling Invariance)
 
@@ -264,7 +264,7 @@ $$\kappa\ge\frac{1}{1+\varepsilon},$$
 
 and $L(cW)=cL(W)$ ⇒ $\gamma(cW)=\gamma(W)$, so $\kappa$ is invariant under **global** weight scaling.
 
-**Proof**　$\lambda_2\le\lambda_n$ is obvious; connectedness gives $\lambda_2>0$; scaling cancels. $\square$
+**Proof** $\lambda_2\le\lambda_n$ is obvious; connectedness gives $\lambda_2>0$; scaling cancels. $\square$
 
 **Note**: scaling invariance requires both $w$ **and** $w_I$ to scale together; scaling only the interface weights changes $\kappa$ (this is exactly the quantity C20.7 scans).
 
@@ -274,7 +274,7 @@ Let $\bar E=E\cup E_B\cup E_I$. For arbitrary $E_I$ and $w_I$, the endpoint disp
 
 $$\varrho_{\text{tot}}(\bar E)=\varrho_{\text{tot}}(G).$$
 
-**Proof**　The inclusion map $\iota:C^1(G)\to C^1(\bar E)$ extends the 1-cochain on $E$ by $0$ on $E_I$; dually, $H_1(G)\hookrightarrow H_1(\bar E)$ is injective. For any $\gamma\subset G$,
+**Proof** The inclusion map $\iota:C^1(G)\to C^1(\bar E)$ extends the 1-cochain on $E$ by $0$ on $E_I$; dually, $H_1(G)\hookrightarrow H_1(\bar E)$ is injective. For any $\gamma\subset G$,
 $$\langle[\delta_{\text{tot}}],[\gamma]\rangle_{\bar E}=\sum_{e\in\gamma}\varepsilon_{e,\gamma}\delta_{e,\text{tot}}=\langle[\delta_{\text{tot}}|_G],[\gamma]\rangle_G$$
 independent of $E_I$. So $\delta_{\text{tot}}$'s image on $H_1(G)$ is unchanged, and $\varrho_{\text{tot}}$ is unchanged. $\square$
 
@@ -284,21 +284,21 @@ independent of $E_I$. So $\delta_{\text{tot}}$'s image on $H_1(G)$ is unchanged,
 
 $\delta_v=\mu\mathbf1+\delta_v^{\perp}$ is an orthogonal decomposition ($\mathbf1^\top\delta_v^\perp=0$), and $\nu$ satisfies two **correct** invariances:
 
-**(a) Invariant under global translation of all waypoint coverages**　If $n_j\mapsto n_j+c\mathbf1$ (with $c$ independent of $j$, i.e. every waypoint at every site adds the same $c$), all $\delta_v^{(j)}$, $\mu$, and $\nu$ are unchanged;
-**(b) Invariant under nonzero scaling of $\delta_v$**　$\nu(c\,\delta_v)=\nu(\delta_v)$ ($c\neq0$).
+**(a) Invariant under global translation of all waypoint coverages** If $n_j\mapsto n_j+c\mathbf1$ (with $c$ independent of $j$, i.e. every waypoint at every site adds the same $c$), all $\delta_v^{(j)}$, $\mu$, and $\nu$ are unchanged;
+**(b) Invariant under nonzero scaling of $\delta_v$** $\nu(c\,\delta_v)=\nu(\delta_v)$ ($c\neq0$).
 
-**Proof**　(a) Translation gives $\delta_v^{(j)}=(n_j+c\mathbf1)-(n_{j-1}+c\mathbf1)=\delta_v^{(j)}$, unchanged term by term. $\square$
+**Proof** (a) Translation gives $\delta_v^{(j)}=(n_j+c\mathbf1)-(n_{j-1}+c\mathbf1)=\delta_v^{(j)}$, unchanged term by term. $\square$
 (b) $\delta_v=\mu\mathbf1+\delta_v^\perp$ ⇒ $c\delta_v=(c\mu)\mathbf1+c\delta_v^\perp$ ($\mathbf1^\top(c\delta_v^\perp)=c\cdot0=0$, still orthogonal decomposition), so
 $$\nu(c\delta_v)=\frac{\|c\delta_v^\perp\|}{\|c\delta_v\|}=\frac{\lvert c\rvert \,\|\delta_v^\perp\|}{\lvert c\rvert \,\|\delta_v\|}=\nu(\delta_v).\ \square$$
 
-> **False statement from v0.2 deleted**　v0.2 wrote "for any $c\in\mathbb{R}$, $\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$". This is **false**: $\nu$'s denominator is $\|\delta_v\|$, translation changes numerator (which is unchanged) and denominator (which increases when $c\neq0$), so $\nu$ generally decreases. Numerical counterexample in V13. **This is a substantive v0.2 error**: the orthogonal decomposition itself is correct, but the invariance it implies was incorrectly written on $\delta_v$ (it should be on $n_j$, i.e. (a)).
+> **False statement from v0.2 deleted** v0.2 wrote "for any $c\in\mathbb{R}$, $\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$". This is **false**: $\nu$'s denominator is $\|\delta_v\|$, translation changes numerator (which is unchanged) and denominator (which increases when $c\neq0$), so $\nu$ generally decreases. Numerical counterexample in V13. **This is a substantive v0.2 error**: the orthogonal decomposition itself is correct, but the invariance it implies was incorrectly written on $\delta_v$ (it should be on $n_j$, i.e. (a)).
 
 ### P20.5 (Transition-State Criterion, restated in v0.3)
 
 On domain $X$ (union of components containing active sites, per D7),
 $$g(t^\ast)=0\iff\lambda_2\big(L|_X(w(t^\ast))\big)=0\iff \text{the zero-weight edge set contains a cut of the induced graph on } X.$$
 
-**Proof**　$\lambda_2=0\iff L|_X$ is disconnected (degenerate zero modes) $\iff$ there exists a cut with all-zero weights. Taking $X$ as "skeleton vertices $\cup$ boundary vertices connected by positive-weight interface edges" already excludes two kinds of trivial zero modes: (i) isolated vertices caused by removed H — H does not create nodes, no zero mode; (ii) isolated boundary vertices not connected by positive interface edges — excluded from $X$. $\square$
+**Proof** $\lambda_2=0\iff L|_X$ is disconnected (degenerate zero modes) $\iff$ there exists a cut with all-zero weights. Taking $X$ as "skeleton vertices $\cup$ boundary vertices connected by positive-weight interface edges" already excludes two kinds of trivial zero modes: (i) isolated vertices caused by removed H — H does not create nodes, no zero mode; (ii) isolated boundary vertices not connected by positive interface edges — excluded from $X$. $\square$
 
 **Significance**: transition state = spectral degeneracy point of the weighted skeleton; $\kappa$ measures how close the path comes to degeneracy; a catalyst's role is to **route the path around the degeneracy point** (provide a detour). **This was unobservable in v0.2** ("largest connected component" is by definition connected ⇒ always has $\lambda_2>0$ ⇒ right-hand side always false); after rewriting the computation domain in v0.3 this criterion is finally testable (V7).
 
@@ -306,7 +306,7 @@ $$g(t^\ast)=0\iff\lambda_2\big(L|_X(w(t^\ast))\big)=0\iff \text{the zero-weight 
 
 Adding edges $W'=W+\Delta W$ ($\Delta W\ge0$) gives $L'\succeq L$; Weyl's theorem gives component-wise non-decreasing eigenvalues, so $\lambda_2$ and $\alpha_n$ both increase, and $\gamma'=\lambda_2'/\alpha_n'$ has **no fixed size relation** to $\gamma$.
 
-**Proof**　$\Delta L=w(e_i-e_j)(e_i-e_j)^{\top}\succeq0$; Weyl monotonicity; ratio is indefinite. $\square$
+**Proof** $\Delta L=w(e_i-e_j)(e_i-e_j)^{\top}\succeq0$; Weyl monotonicity; ratio is indefinite. $\square$
 
 ### C20.7 (Volcano Conjecture, **unproven**)
 
@@ -406,7 +406,7 @@ V1–V11, V13–V14 are internal consistency (executable immediately); **V12 is 
 | 9/7 | Betti stitching / cohomology locking | Different: acts on equation solvability |
 | **19** | $\mathbb{Z}_2$ sign channel | **Orthogonal complement**: 19 is sign ($\mathbb{Z}_2$); 20 is magnitude ($\mathbb{R}$) + vertex + rigidity |
 
-**Compatibility proposition with 19 (to be rigorously proven)**　If $G$ is bipartite and has exactly 1 edge orbit, any **bipartite-preserving** interface grafting cannot make 19's $\sigma$ nontrivial; catalyst must interface with "same-color vertices" to create odd cycles and simultaneously open the sign channel (per 19-T6).
+**Compatibility proposition with 19 (to be rigorously proven)** If $G$ is bipartite and has exactly 1 edge orbit, any **bipartite-preserving** interface grafting cannot make 19's $\sigma$ nontrivial; catalyst must interface with "same-color vertices" to create odd cycles and simultaneously open the sign channel (per 19-T6).
 
 ---
 
@@ -448,7 +448,7 @@ Items below are cited in the main text as **R1–R11**.
 8. **Add rigorous proof for §9 compatibility proposition** (V11 has numerical evidence in both bipartite / odd-cycle directions; proof is missing).
 9. DBT instance: C21 skeleton + 18 H coverage changes, run v0, output $(\kappa,\varrho,\nu,\mu)$.
 10. **V12 DFT benchmark**: 5–8 elementary steps, test H20.1 — the external validation deciding the operator's reason for existing.
-11. **v1.0 theoretical gap (根治 R11)**: induce edge orientation from reaction data itself, freeing $\varrho$ from arbitrary labeling conventions. Until then, $\varrho$ can only be used for **relative ranking under the same labeling convention**; $\varsigma_e$ provides a manual correction knob, but not automatic resolution.
+11. **v1.0 theoretical gap (R11 root fix)**: induce edge orientation from reaction data itself, freeing $\varrho$ from arbitrary labeling conventions. Until then, $\varrho$ can only be used for **relative ranking under the same labeling convention**; $\varsigma_e$ provides a manual correction knob, but not automatic resolution.
 
 ---
 

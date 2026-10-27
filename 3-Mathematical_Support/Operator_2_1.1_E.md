@@ -1,4 +1,4 @@
-﻿# Operator-2： Local Metric & Probabilistic Pruning Operator（$\mathcal{M}_\chi \circ \mathcal{E}_{\text{local}}$）
+﻿# Operator-2: Local Metric & Probabilistic Pruning Operator($\mathcal{M}_\chi \circ \mathcal{E}_{\text{local}}$)
 ## Rigorous Mathematical Derivation and Specification
 
 **Version:** 1.1
@@ -217,8 +217,8 @@ $$
 
 **Proof**
 1. By the pruning rule of Operator 2, the channel-flip probability can be **identically** rewritten in heat-bath form (derivation in §7.0):
-   　$p_c=\sigma(-F_c)$, $F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$,
-   　$\mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
+    $p_c=\sigma(-F_c)$, $F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$,
+    $\mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
    This expression is an algebraic identity and contains no statistical assumption.
 2. When $\tilde{\mathcal{E}}_{\text{local}} > 0$: $\mathfrak{B}=\tilde{\mathcal{E}}+e$, the barrier takes the upper branch, $F$ rises, $p<\tfrac12$, and the channel preferentially survives — the coherent condensation phase.
 3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$: $\mathfrak{B}=\lvert \tilde{\mathcal{E}}\rvert +e^{-1}$, the barrier takes the lower branch, $F$ is depressed, $p>\tfrac12$, and the channel is preferentially pruned — the frustrated phase.

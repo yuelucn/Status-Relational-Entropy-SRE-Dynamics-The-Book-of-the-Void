@@ -1,4 +1,4 @@
-# Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator （$\mathcal{M}_{\text{degree}}$） and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional
+# Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator ($\mathcal{M}_{\text{degree}}$) and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional
 **Version**: 1.1
 
 > **Document positioning**: This manuscript constitutes core component of Phase-1 Homogeneous-Metric Operator Suite within Status-Relational-Entropy (SRE) Dynamics. Operator 4 receives intermediate outputs from Operator 1 and Operator 2, and supplies spectral-prior parameters for downstream Operator 5. All Operators 1-20 are now released open-source with complete derivations and reference implementations.

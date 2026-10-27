@@ -9,7 +9,7 @@ This paper builds upon the full suite of SRE operator‑series papers (archived 
 
 ## 1 Pre‑Requisite Theoretical Foundations
 ### 1.1 Core Tool‑Set: Operators‑1~10
-At the SRE底层 level, Operator‑1 (pulse‑expansion operator) generates binary discrete causal‑relation networks. The formal‑symbol layer is maintained inside the inductive‑limit ring $\mathcal{R}_{\infty}$. Instance relation‑matrices are obtained via ring‑homomorphism evaluation. The full operator pipeline provides a complete algebraic‑constraint toolbox:
+At the SRE basal level, Operator‑1 (pulse‑expansion operator) generates binary discrete causal‑relation networks. The formal‑symbol layer is maintained inside the inductive‑limit ring $\mathcal{R}_{\infty}$. Instance relation‑matrices are obtained via ring‑homomorphism evaluation. The full operator pipeline provides a complete algebraic‑constraint toolbox:
 
 1. **Op9 Dual‑Betti Splicing Operator**: Inside rigid sub‑manifolds $\Delta \beta_{1} \equiv 0$. In the absence of external high‑energy perturbations, the total number of independent closed‑loops cannot spontaneously increase nor annihilate. Loop‑sets constitute the carriers of topological charge.
 2. **Op10 Topological‑Impedance Firewall**: Identifies bridge‑edges via the effective topological‑impedance tensor $Z_{eff}(u, v)$, preserves global connectivity and guarantees graph algebraic‑connectivity $\lambda_{2}>0$, preventing network topological fragmentation.

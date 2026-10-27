@@ -61,7 +61,7 @@ This paper provides a unified and complete characterization of nucleons within t
 
 This paper organizes all nucleon-related documents (v1 topological derivation, inversion v2 skeleton, quark speculation, many-body assembly law and shared ring, dimension collapse test, fission chain verification, theoretical constraints) into a unified representation in the following order:
 
-- Section 1: **Terminology Convention**. Uncommon terms appearing for the first time in the text are marked with [], and their precise definitions are concentrated in this section, presented in plain written language for readers without physical or mathematical background. Each key term is accompanied by a note indicating its "model internal structure/analogy" status to avoid confusion with real physical quantities.
+- Section 1: **Terminology Convention**. Uncommon terms appearing for the first time in the text are marked with a bracketed remark, and their precise definitions are concentrated in this section, presented in plain written language for readers without physical or mathematical background. Each key term is accompanied by a note indicating its "model internal structure/analogy" status to avoid confusion with real physical quantities.
 - Section 2: **SRE Theoretical Basis**: Binary self-organizing networks, sim_p generator and conservation closure, ratio methodology constraints, and the only calibrated projection Π₁.
 - Section 3: **General Methodology for Nucleon Derivation**: Local input → topological solution → inversion, which is homologous to electron derivation, and the interchange principle between SRE and classical physics.
 - Section 4: **Three Quark Speculations (Author's Claim)**, listed separately after the methodology chapter as they **determine what the nucleon skeleton should look like** — they are the "structural priors" for subsequent screening, and the screening results will change if they are altered. They are recorded truthfully to make readers aware: the skeleton in this paper is not "objectively emerged" from the data, but selected within the search space defined by this set of speculations.
@@ -1200,7 +1200,7 @@ This item also **corrects a presupposition of the first draft of this section** 
 | Hits at $\varepsilon=3\%$ | **1**: `1/E = 1/33 = 0.030303` (deviation 1.28%, E being the edge count of the deuteron assembly) |
 | Hits at $\varepsilon=1\%$ | **0** |
 | MC null hypothesis A (randomized target, 2×10⁴ draws) | probability that a random target is hit by any candidate, $p_A$ = **0.166** ⇒ expected hits 0.17 (observed 1) |
-| MC null hypothesis B (200 random graphs with the same degree sequence) | hit rate of random graphs **0.385** ＞ 0.010 for the SRE assemblies |
+| MC null hypothesis B (200 random graphs with the same degree sequence) | hit rate of random graphs **0.385** > 0.010 for the SRE assemblies |
 
 ⇒ the sole hit has no mechanistic connection with neutrinos, and the hit rate of the SRE assemblies is **lower** than that of random graphs ⇒ **no structural signal** (a direct application of the lesson of Section 12.8: cross-hits must first pass a whole-set hit-rate check).
 

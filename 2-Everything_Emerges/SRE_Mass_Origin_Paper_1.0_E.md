@@ -118,7 +118,7 @@ Together these are equivalent to: **the three rings are a ℤ₃-torsor**. This 
 | $\eta,\ \delta$ | the **amplitude ratio** and **phase** of the non-trivial component of the circulant operator: $c_1=\lvert c_1\rvert e^{i\theta}$, $\eta=\lvert c_1\rvert /c_0$ |
 | $Q$ | the **Koide combination** $Q=\dfrac{\sum m}{(\sum\sqrt m)^{2}}$ |
 | $\rho,\ \lambda_2,\ \Pi_1$ | spectral radius, second-smallest Laplacian eigenvalue, closure degree $\Pi_1=\lambda_2/\rho$ |
-| D1／D2／D3 | adjudication discipline: small-denominator rationals listed separately／angles may not serve as anchors／the main statistics use only irrational readings × clean targets |
+| D1/D2/D3 | adjudication discipline: small-denominator rationals listed separately/angles may not serve as anchors/the main statistics use only irrational readings × clean targets |
 
 ### 2.3 Analogy guide: three-phase alternating current
 
@@ -303,7 +303,7 @@ Measured comparison: the real-symmetric choice $c_0=1,\lvert c_1\rvert =0.3$ giv
 
 > Proposition 5 directly answers "why a phase is needed": **the spectrum of a real-symmetric circulant degenerates structurally and cannot carry three distinct generations; for the three generations to be distinct the operator must be Hermitian rather than real-symmetric** (thereby giving the Hermitian form of Corollary 1 its necessity).
 
-**Note 2 (registration, not conclusion).** Proposition 5 and the "closed-state ℤ₃ ／ open-state ℤ₂" of Table 2 echo each other at the level of operators: the open state has only two values (a $\mathbb{Z}_2$-type degeneracy), the closed state generally three (the full $\mathbb{Z}_3$). This paper has **not proved** that the two are the same mechanism (see Appendix B item 4) and merely registers the observation.
+**Note 2 (registration, not conclusion).** Proposition 5 and the "closed-state ℤ₃ / open-state ℤ₂" of Table 2 echo each other at the level of operators: the open state has only two values (a $\mathbb{Z}_2$-type degeneracy), the closed state generally three (the full $\mathbb{Z}_3$). This paper has **not proved** that the two are the same mechanism (see Appendix B item 4) and merely registers the observation.
 
 ### 5.3 A correction that must be stated: the cosine shape is "free"
 
@@ -676,7 +676,7 @@ This paper gives the following adjudication of the precise mathematical expressi
 
 ---
 
-## Appendix A　Recomputation list
+## Appendix A Recomputation list
 
 **One-command recomputation of all readings** (requires numpy + networkx):
 
@@ -695,9 +695,9 @@ The two scripts are mutually independent implementations and share the project's
 |---|---|---|
 | Theorem 2 (§4.1) | PART 1 | rank $6/9$, null-space basis all circulant = true |
 | Proposition 4 (§5.1) | PART 2 | 6 random sets, maximum error $1.1\times10^{-15}$ |
-| Proposition 5 (§5.2) | PART 2 | $(0.7,0.7,1.6)$／$(0.400668,1.27515,1.324181)$ |
+| Proposition 5 (§5.2) | PART 2 | $(0.7,0.7,1.6)$/$(0.400668,1.27515,1.324181)$ |
 | Example 2 (§4.2) | v2 Ex.2 | $(0.436184,\ 1.104189,\ 1.459627)$ |
-| Theorem 3 (§5.3) | PART 3／v2 Ex.1 | 8 sets of arbitrary triples, reconstruction error $5.11\times10^{-15}$ |
+| Theorem 3 (§5.3) | PART 3/v2 Ex.1 | 8 sets of arbitrary triples, reconstruction error $5.11\times10^{-15}$ |
 | Example 1 (§2.3) | v2 Ex.1 | $\bar u=0.966667$, $\lvert c_1\rvert =0.145297$, $\theta=1.455835$ rad |
 | Proposition 8 (§7.1) | PART 4 | $Q$ range $\le1.6\times10^{-15}$; $R$ varies with $\delta$ |
 | Proposition 6 (§6.1) | PART 4 | $\lvert \Delta Q\rvert \le2.2\times10^{-16}$ |
@@ -719,7 +719,7 @@ The two scripts are mutually independent implementations and share the project's
 
 ---
 
-## Appendix B　Honesty boundary
+## Appendix B Honesty boundary
 
 1. Everything in this paper is a self-consistent statement **internal to the SRE model / at the level of linear algebra and group theory**, and **no** numerical prediction for real physics is claimed. The comparison with charged-lepton masses in the text is **structural consistency**, not prediction.
 2. "Taking $a=\sqrt m$ rather than $m$" is the **empirical content of Koide**, equivalent to "**the square root of the mass operator** is ℤ₃-equivariant" — a **testable structural hypothesis** that this paper **has not proved**.
@@ -734,7 +734,7 @@ The two scripts are mutually independent implementations and share the project's
 
 ---
 
-## Appendix C　Analogy index
+## Appendix C Analogy index
 
 A survey of the analogies and illustrations used in this paper (each is developed in full at the corresponding place above).
 
@@ -759,7 +759,7 @@ A survey of the analogies and illustrations used in this paper (each is develope
 
 ---
 
-## Appendix D　References
+## Appendix D References
 
 [1] Y. Koide, *A Fermion-Boson Composite Model of Quarks and Leptons*, Phys. Lett. B **105**, 121 (1981); and the subsequent series of works on the "Koide relation" $Q=2/3$.
 

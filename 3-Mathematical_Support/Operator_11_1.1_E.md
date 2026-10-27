@@ -38,7 +38,7 @@ $$c_e = \min\left(\frac{\alpha_n}{\ln(1 + W_e) + \delta_{\text{flt}}}, c_{\max}\
 
 ### 2.1 Step 1 — Electronegativity to Spin Polarity (Diagnostic, v1.1 Decoupled)
 
-SRE Axiom 1 requires $M_n$ elements $\in \{+1, -1\}$. Define atom $i$'s spin polarity (diagnostic scalar, not参与 weight modulation):
+SRE Axiom 1 requires $M_n$ elements $\in \{+1, -1\}$. Define atom $i$'s spin polarity (diagnostic scalar, not involved in weight modulation):
 
 $$s_i = \text{sign}(\chi_i - \bar{\chi})$$
 

@@ -77,13 +77,13 @@ I have recorded all of this here. Scientific intuition arises out of the void, a
 - [Topological Derivation of the Fine Structure Constant in the SRE Framework](#Topological-Derivation-of-the-Fine-Structure-Constant-in-the-SRE-Framework)
 - [Part III: Mathematical‑Technical Support — Abstract](#Part-III:-Mathematical‑Technical-Support-—-Abstract)
 - [Universal Graph Operator Pipeline in Status-Relational Entropy (SRE) Dynamics: A Unified Foundational Framework White Paper](#Universal-Graph-Operator-Pipeline-in-Status-Relational-Entropy-(SRE)-Dynamics:-A-Unified-Foundational-Framework-White-Paper)
-- [Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator（$\mathcal{G}_{n\rightarrow n+1}$）](#Operator-1:-Pure-Algebraic-Mathematical-Specification-for-the-Local-Graph-Expansion-Operator（$\mathcal{G}_{n\rightarrow-n+1}$）)
+- [Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator($\mathcal{G}_{n\rightarrow n+1}$)](#Operator-1:-Pure-Algebraic-Mathematical-Specification-for-the-Local-Graph-Expansion-Operator($\mathcal{G}_{n\rightarrow-n+1}$))
 - [Operator-1: Local Graph Expansion Operator - Full Explanatory Document](#Operator-1:-Local-Graph-Expansion-Operator---Full-Explanatory-Document)
-- [Operator-2： Local Metric & Probabilistic Pruning Operator（$\mathcal{M}_\chi \circ \mathcal{E}_{\text{local}}$）](#Operator-2：-Local-Metric-&-Probabilistic-Pruning-Operator（$\mathcal{M}_\chi-\circ-\mathcal{E}_{\text{local}}$）)
+- [Operator-2: Local Metric & Probabilistic Pruning Operator($\mathcal{M}_\chi \circ \mathcal{E}_{\text{local}}$)](#Operator-2:-Local-Metric-&-Probabilistic-Pruning-Operator($\mathcal{M}_\chi-\circ-\mathcal{E}_{\text{local}}$))
 - [The Free-Energy Generative Structure of Operator 2 in Status–Relational Entropy Dynamics: The Heat-Bath Identity, the Geometric-Mean Law, and Four Verifiable Uses](#The-Free-Energy-Generative-Structure-of-Operator-2-in-Status–Relational-Entropy-Dynamics:-The-Heat-Bath-Identity,-the-Geometric-Mean-Law,-and-Four-Verifiable-Uses)
 - [Operator -3: Rigorous Mathematical-Derivation Specification](#Operator--3:-Rigorous-Mathematical-Derivation-Specification)
-- [Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator （$\mathcal{M}_{\text{degree}}$） and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional](#Operator-4:-Algebraic-Construction-of-Local-Topology-Degree-Statistic-Operator-（$\mathcal{M}_{\text{degree}}$）-and-Rigorous-Positive-Definite-Boundedness-Proof-for-Dirichlet-Energy-Functional)
-- [Operator-5: Endogenous Variable Latency Calibration Operator （$\mathcal{M}_{\text{latency}}$）](#Operator-5:-Endogenous-Variable-Latency-Calibration-Operator-（$\mathcal{M}_{\text{latency}}$）)
+- [Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator ($\mathcal{M}_{\text{degree}}$) and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional](#Operator-4:-Algebraic-Construction-of-Local-Topology-Degree-Statistic-Operator-($\mathcal{M}_{\text{degree}}$)-and-Rigorous-Positive-Definite-Boundedness-Proof-for-Dirichlet-Energy-Functional)
+- [Operator-5: Endogenous Variable Latency Calibration Operator ($\mathcal{M}_{\text{latency}}$)](#Operator-5:-Endogenous-Variable-Latency-Calibration-Operator-($\mathcal{M}_{\text{latency}}$))
 - [Operator-6: Sub-space Spectral Sieve & Splicing Operator ($\mathcal{P}_{\text{sieve}} \cup \mathcal{O}_{\text{splice}}$)](#Operator-6:-Sub-space-Spectral-Sieve-&-Splicing-Operator-($\mathcal{P}_{\text{sieve}}-\cup-\mathcal{O}_{\text{splice}}$))
 - [Mathematical Specifications, Algebraic Derivations, and Proof of Hodge Closure Completeness for the Adjoint Filter Locking & Complex Dual Equalizer Operator (Operator 7)](#Mathematical-Specifications,-Algebraic-Derivations,-and-Proof-of-Hodge-Closure-Completeness-for-the-Adjoint-Filter-Locking-&-Complex-Dual-Equalizer-Operator-(Operator-7))
 - [Mathematical Specifications, Algebraic Derivations, and Proof of Monotone Convergence for the Local Lock-Free Algebraic Valve Balancing Operator (Operator 8)](#Mathematical-Specifications,-Algebraic-Derivations,-and-Proof-of-Monotone-Convergence-for-the-Local-Lock-Free-Algebraic-Valve-Balancing-Operator-(Operator-8))
@@ -772,7 +772,7 @@ $$
 \alpha_{0,\mathrm{dynamic}}=\frac{\theta_\mathrm{conformal}}{\Delta z+\epsilon_\mathrm{mach}}
 $$
 
-Where the conformal-geometric index $\theta_\mathrm{conformal}\approx0.82798$ comes from辛-eigenvalue integration for maximum-packing fractions on complex-hyperbolic Möbius manifolds:
+Where the conformal-geometric index $\theta_\mathrm{conformal}\approx0.82798$ comes from symplectic-eigenvalue integration for maximum-packing fractions on complex-hyperbolic Möbius manifolds:
 $$
 \theta_\mathrm{conformal}=\frac{1}{\pi}\int_{0}^{1}\frac{\ln(1+x^2)}{x}\mathrm{d}x+\frac{1}{2e}\approx 0.82798
 $$
@@ -1223,7 +1223,7 @@ Cross-spectral matrices, condition-numbers and coherence-coefficients are merely
 # A Foundational Reconstruction of Classical Electrodynamics via Discrete Graph Topology and Bidirectional Causality
 **Version**: v1.1-rev
 
-> Remark: This manuscript adopts a pragmatic hybrid approach combining the SRE ontological picture with classical-engineering frameworks. Underlying topological evolution obeys SRE axioms. Observational-mapping anchors adopt experimentally-measured universal constants as conversion interfaces and are not endogenously derived directly from SRE axioms. Fully endogenous derivation of all cosmic universal constants is a long-term research objective and lies outside the scope of v1.1-rev. The accompanying simulation `sre_simulation.py` is an engineering-oriented demonstration after mapping, not native dimensionless topological evolution at the底层 level.
+> Remark: This manuscript adopts a pragmatic hybrid approach combining the SRE ontological picture with classical-engineering frameworks. Underlying topological evolution obeys SRE axioms. Observational-mapping anchors adopt experimentally-measured universal constants as conversion interfaces and are not endogenously derived directly from SRE axioms. Fully endogenous derivation of all cosmic universal constants is a long-term research objective and lies outside the scope of v1.1-rev. The accompanying simulation `sre_simulation.py` is an engineering-oriented demonstration after mapping, not native dimensionless topological evolution at the basal level.
 
 ## Abstract
 This paper carries out a paradigm-shift in fundamental physics: discarding continuous spacetime background, continuous electric charge and scalar energy fields, reconstruction is performed within the Status-Relational-Entropy (SRE) Dynamics framework. Macro-physical phenomena are mapped onto a discrete-graph network composed of infinite nodes, and fundamental electrical equations are derived using first-order and n-th-order adjacency matrices. Four sets of **observational-mapping anchors** $(\kappa_{I}, \kappa_{R}, \kappa_{V}, \kappa_{P})$ are defined, which adopt known universal cosmic constants as conversion interfaces to map dimensionless discrete-topology observables onto laboratory-scale SI engineering quantities. This enables the SRE topological picture to interface with power-system and semiconductor-device engineering simulations.
@@ -1578,7 +1578,7 @@ Version: 4.0
 >
 > According to the State-Relation Entropy (SRE) principle, the foundations of classical physics originate from information statistics.
 
-> **Code baseline**: `sre_core.py`　**Dataset**: `phase_data_v2.json`　**Date**: 2026-10-16
+> **Code baseline**: `sre_core.py` **Dataset**: `phase_data_v2.json` **Date**: 2026-10-16
 >
 > **Reading prerequisites**: This paper is a **self-contained** report. The reader needs only university-undergraduate-level familiarity with classical mechanics, fluid mechanics, and statistical physics (Reynolds number, energy cascade, power laws, correlation functions), and **no** prior knowledge of the SRE framework. All SRE-specific concepts are defined in place in Chapter 2, all technical terms are given a standardized correspondence table in Appendix A, and every numerical value cited in the main text can be traced in Appendix B to a saved artifact file.
 
@@ -2548,7 +2548,7 @@ This manuscript provides a unified and complete characterization of the electron
 
 This manuscript is organized in the following order, fusing four existing component documents (the fine-structure-constant derivation, the complete characterization of the electron, the Fork A axiomatic derivation, and the electron orbital-assignment derivation) into a unified account:
 
-- Section 1 presents the **terminological conventions**. Unfamiliar terms that first appear in the text are marked with 【】; their precise definitions are collected in this section, given in plain written form for readers without a physics or mathematics background. Each key term is accompanied by a note indicating its status as an "internal construct/analogy of the model", so as to avoid confusion with real physical quantities.
+- Section 1 presents the **terminological conventions**. Unfamiliar terms that first appear in the text are marked with a **boldface entry**; their precise definitions are collected in this section, given in plain written form for readers without a physics or mathematics background. Each key term is accompanied by a note indicating its status as an "internal construct/analogy of the model", so as to avoid confusion with real physical quantities.
 - Section 2 gives the **theoretical foundations of SRE**: the three axioms, the Operator chain, and the Dirichlet energy lower bound.
 - Section 3 establishes the **Möbius topological modeling of light**: the residual manifold, the 4π closure period, and the validation confidence.
 - Sections 4–5 give the **three independent derivation paths for the fine-structure constant α** and their convergence analysis, including the Tier 0 independent computational review.
@@ -2565,32 +2565,32 @@ Throughout, this manuscript follows a single contextual-distinction principle: *
 
 ## 1. Terminological conventions
 
-Each key term below is marked with a 【Remark】 indicating its model-internal status within the SRE framework. Unfamiliar terms that first appear in the text are marked with 【】; conventions for symbols are collected in §1.2.
+Each key term below is marked with a [Remark] indicating its model-internal status within the SRE framework. Unfamiliar terms that first appear in the text are marked with a bracketed remark; conventions for symbols are collected in §1.2.
 
 ### 1.1 Glossary
 
 | Term | Definition (with remark on model-internal status) |
 |---|---|
-| **Binary self-organizing network** | A square matrix `M ∈ {+1,−1}^{n×n}` whose entries are the elements `+1` and `−1`: `+1` indicates that the relation between two nodes is co-oriented (connection) and `−1` indicates counter-orientation (repulsion). Starting from a unit seed, the network grows step by step according to a local dormancy–activation rule. SRE theory regards it as the primitive language of the underlying structure of the world. 【Remark: internal construct of the model — the simulation mechanism by which SRE describes the underlying world, not an observable independent of the model】 |
-| **Coherent core** | When the network has evolved to scale `N`, the rigid kernel within it whose internal order is stable and no longer degrades; the electron resides within this kernel. 【Remark: model-internal concept, corresponding to the rigid kernel of network evolution in simulations, not a real detectable structure】 |
-| **Z₂ holonomy (Z₂ winding phase)** | The sign factor accumulated by a closed path traversing one full circuit. On a binary network, for any closed loop formed by four nodes, the product of the four edge-relation values is strictly `+1` or `−1`; the value `−1` indicates that the traversal experienced one spatial flip. This is the algebraic essence of electron spin-1/2 and of 4π (restoration after two turns). 【Remark: model-internal algebraic-structure analogy used to interpret the sign factor of spin-1/2; not a direct measurement of real spin】 |
-| **Möbius double cover (4π)** | The electron must rotate two full turns (720°) to be restored, a property analogous to the Möbius band; in signed-network language, this is a structure that "closes only after two steps". 【Remark: model-internal geometric analogy (analogous to the Möbius band), not a real spacetime structure】 |
-| **DCF (discrete closed-chain complex / double-cover four-state complex)** | A triple $(\lvert V\rvert, \lvert E\rvert, \beta_1)$ describing a complex of discrete closed loops, denoting vertex count, edge count, and first Betti number, respectively; `β₁` characterizes the number of independent closed loops. The basal structure of the electron takes the value `(8, 12, 5)`. 【Remark: model-internal counting tool; (8, 12, 5) describes the topological type of a simulated object, not a measured geometric result of the real electron】 |
-| **Spectral-gap ratio α = λ₂/λ_max** | The ratio of the second-smallest eigenvalue (the second-lowest collective vibration mode) to the largest eigenvalue of the relation-matrix spectrum, used to measure the relative stiffness of the softest collective mode of the system. The α of the electron equals precisely the fine-structure constant **1/137.036**. 【Remark: model-internal spectral feature; its agreement with 1/137.036 is an internal reproduction of the model and does not mean that α has been "measured" by this model; the real α remains determined by experiment】 |
-| **MDS inversion** (multi-dimensional scaling) | Starting from the pairwise distance matrix of objects, reconstruct their coordinates in a space of given dimension. In SRE, the spatial shape of the electron emerges from the relation matrix through this route, rather than being pre-given. 【Remark: model-internal geometric construction used to reconstruct coordinates from the relation matrix, which presupposes no real space; the coordinates obtained are a model-internal relational embedding, not a measurement of real positions】 |
-| **Renormalization / coarse-graining (RG)** | Merging a cluster of nodes into a single super-node, thereby examining the system at a coarser scale; SRE uses it to roll the network upward layer by layer, establishing the micro–meso–macro correspondence. 【Remark: model-internal multi-scale up-rolling operation; the micro–meso–macro correspondence is a model picture, not a settled claim about real levels】 |
-| **Fixed point** | An object that remains unchanged under repeated application of some operator. The electron is a fixed point of the sparse operator `R`. 【Remark: a purely mathematical concept; here it describes the iterative behavior of an operator】 |
-| **Fork A axioms** | The axiom system for deriving the 60-node projection of the electron, composed of four axioms (A1–A4) and one rule (R1), proceeding purely from logic and topology without relying on empirical parameters. 【Remark: an internal axiom system of the model; its consequences hold only within the model】 |
-| **Basal structure** | The minimal invariant kernel that cannot be further compressed under arbitrary coarse-graining. The basal structure of the electron is the three-dimensional cube Q₃. 【Remark: model-internal "minimal invariant kernel"; Q₃ is the graph-theoretic type of a simulated object, not a real geometric body of the electron】 |
-| **Logical depth** | The number of nested relational levels required to constitute an object. For the electron it is approximately `10²³` layers, hence "deep"; after collapse its basal structure is merely `12×5`, hence "compact". 【Remark: model-internal count/analogy (10²³), not a measured property of the real electron】 |
-| **Bare coupling δ** (delta) | The small input constant required to make the spectral gap converge precisely to 1/137; its status is isomorphic to that of α as a measured input in QED. 【Remark: model-internal input constant; it only analogizes the status of α as a measured input in QED and does not constitute a substitute conclusion about QED】 |
-| **Cell (state unit)** | The smallest distinguishable unit `(v, σ)` of the basal state space of the electron: basal Q₃ vertex × spin sheet, 16 in total. 【Remark: model-internal count; capacity 1, i.e., Pauli cell-uniqueness (see Section 13)】 |
-| **Faithful cover** | The property that the relation rows of the individual units on the double-cover matrix are pairwise distinct. 【Remark: model-internal algebraic property; it is the algebraic basis of the Pauli exclusion principle】 |
-| **Orbital (SRE)** | A collective vibration mode on the atom (mesoscopic kernel) = an eigenvector of the relation Laplacian. 【Remark: model-internal analogy; its density pattern and the spatial orbital functions of quantum mechanics are not the same object】 |
-| **Subshell capacity 4ℓ+2** | The number of electrons that can be accommodated in the subshell of azimuthal quantum number ℓ = 2(2ℓ+1). 【Remark: purely arithmetic combinatorics; the source of the degeneracy is a borrowed term (see Section 13)】 |
-| **Shell capacity 2n²** | The electron capacity of the principal shell n = Σ_{ℓ<n}(4ℓ+2). 【Remark: purely arithmetic combinatorics】 |
-| **Pairing tension** | The number of orbitals in which both spin sheets of the same orbital are occupied (paired). 【Remark: a proxy quantity of the model-internal energy functional; the object minimized by Hund's rule】 |
-| **Madelung rule** | The empirical construction order in which orbitals are filled in ascending order of (n + ℓ). 【Remark: an open borrowed term, not derived by SRE】 |
+| **Binary self-organizing network** | A square matrix `M ∈ {+1,−1}^{n×n}` whose entries are the elements `+1` and `−1`: `+1` indicates that the relation between two nodes is co-oriented (connection) and `−1` indicates counter-orientation (repulsion). Starting from a unit seed, the network grows step by step according to a local dormancy–activation rule. SRE theory regards it as the primitive language of the underlying structure of the world. [Remark: internal construct of the model — the simulation mechanism by which SRE describes the underlying world, not an observable independent of the model] |
+| **Coherent core** | When the network has evolved to scale `N`, the rigid kernel within it whose internal order is stable and no longer degrades; the electron resides within this kernel. [Remark: model-internal concept, corresponding to the rigid kernel of network evolution in simulations, not a real detectable structure] |
+| **Z₂ holonomy (Z₂ winding phase)** | The sign factor accumulated by a closed path traversing one full circuit. On a binary network, for any closed loop formed by four nodes, the product of the four edge-relation values is strictly `+1` or `−1`; the value `−1` indicates that the traversal experienced one spatial flip. This is the algebraic essence of electron spin-1/2 and of 4π (restoration after two turns). [Remark: model-internal algebraic-structure analogy used to interpret the sign factor of spin-1/2; not a direct measurement of real spin] |
+| **Möbius double cover (4π)** | The electron must rotate two full turns (720°) to be restored, a property analogous to the Möbius band; in signed-network language, this is a structure that "closes only after two steps". [Remark: model-internal geometric analogy (analogous to the Möbius band), not a real spacetime structure] |
+| **DCF (discrete closed-chain complex / double-cover four-state complex)** | A triple $(\lvert V\rvert, \lvert E\rvert, \beta_1)$ describing a complex of discrete closed loops, denoting vertex count, edge count, and first Betti number, respectively; `β₁` characterizes the number of independent closed loops. The basal structure of the electron takes the value `(8, 12, 5)`. [Remark: model-internal counting tool; (8, 12, 5) describes the topological type of a simulated object, not a measured geometric result of the real electron] |
+| **Spectral-gap ratio α = λ₂/λ_max** | The ratio of the second-smallest eigenvalue (the second-lowest collective vibration mode) to the largest eigenvalue of the relation-matrix spectrum, used to measure the relative stiffness of the softest collective mode of the system. The α of the electron equals precisely the fine-structure constant **1/137.036**. [Remark: model-internal spectral feature; its agreement with 1/137.036 is an internal reproduction of the model and does not mean that α has been "measured" by this model; the real α remains determined by experiment] |
+| **MDS inversion** (multi-dimensional scaling) | Starting from the pairwise distance matrix of objects, reconstruct their coordinates in a space of given dimension. In SRE, the spatial shape of the electron emerges from the relation matrix through this route, rather than being pre-given. [Remark: model-internal geometric construction used to reconstruct coordinates from the relation matrix, which presupposes no real space; the coordinates obtained are a model-internal relational embedding, not a measurement of real positions] |
+| **Renormalization / coarse-graining (RG)** | Merging a cluster of nodes into a single super-node, thereby examining the system at a coarser scale; SRE uses it to roll the network upward layer by layer, establishing the micro–meso–macro correspondence. [Remark: model-internal multi-scale up-rolling operation; the micro–meso–macro correspondence is a model picture, not a settled claim about real levels] |
+| **Fixed point** | An object that remains unchanged under repeated application of some operator. The electron is a fixed point of the sparse operator `R`. [Remark: a purely mathematical concept; here it describes the iterative behavior of an operator] |
+| **Fork A axioms** | The axiom system for deriving the 60-node projection of the electron, composed of four axioms (A1–A4) and one rule (R1), proceeding purely from logic and topology without relying on empirical parameters. [Remark: an internal axiom system of the model; its consequences hold only within the model] |
+| **Basal structure** | The minimal invariant kernel that cannot be further compressed under arbitrary coarse-graining. The basal structure of the electron is the three-dimensional cube Q₃. [Remark: model-internal "minimal invariant kernel"; Q₃ is the graph-theoretic type of a simulated object, not a real geometric body of the electron] |
+| **Logical depth** | The number of nested relational levels required to constitute an object. For the electron it is approximately `10²³` layers, hence "deep"; after collapse its basal structure is merely `12×5`, hence "compact". [Remark: model-internal count/analogy (10²³), not a measured property of the real electron] |
+| **Bare coupling δ** (delta) | The small input constant required to make the spectral gap converge precisely to 1/137; its status is isomorphic to that of α as a measured input in QED. [Remark: model-internal input constant; it only analogizes the status of α as a measured input in QED and does not constitute a substitute conclusion about QED] |
+| **Cell (state unit)** | The smallest distinguishable unit `(v, σ)` of the basal state space of the electron: basal Q₃ vertex × spin sheet, 16 in total. [Remark: model-internal count; capacity 1, i.e., Pauli cell-uniqueness (see Section 13)] |
+| **Faithful cover** | The property that the relation rows of the individual units on the double-cover matrix are pairwise distinct. [Remark: model-internal algebraic property; it is the algebraic basis of the Pauli exclusion principle] |
+| **Orbital (SRE)** | A collective vibration mode on the atom (mesoscopic kernel) = an eigenvector of the relation Laplacian. [Remark: model-internal analogy; its density pattern and the spatial orbital functions of quantum mechanics are not the same object] |
+| **Subshell capacity 4ℓ+2** | The number of electrons that can be accommodated in the subshell of azimuthal quantum number ℓ = 2(2ℓ+1). [Remark: purely arithmetic combinatorics; the source of the degeneracy is a borrowed term (see Section 13)] |
+| **Shell capacity 2n²** | The electron capacity of the principal shell n = Σ_{ℓ<n}(4ℓ+2). [Remark: purely arithmetic combinatorics] |
+| **Pairing tension** | The number of orbitals in which both spin sheets of the same orbital are occupied (paired). [Remark: a proxy quantity of the model-internal energy functional; the object minimized by Hund's rule] |
+| **Madelung rule** | The empirical construction order in which orbitals are filled in ascending order of (n + ℓ). [Remark: an open borrowed term, not derived by SRE] |
 
 ### 1.2 Symbol conventions
 
@@ -2629,7 +2629,7 @@ SRE dynamics is built upon three discrete-topology axioms:
 
 ### 2.2 The binary self-organizing network and the coherent core
 
-The basic starting point of SRE is that all structure emerges from the binary relation matrix `M ∈ {+1,−1}`, in which no space, particle, or force is pre-given; only co-oriented/counter-oriented binary relations between nodes exist. The network grows autonomously according to the dormancy–activation rule (implementation in `code/sim_p.py`). This is analogous to an assembly of magnetic needles admitting only the two orientations "co-oriented/counter-oriented": under random perturbation, the system spontaneously forms an ordered kernel.【The above is a model-internal picture of the world, not an assertion about the real world】
+The basic starting point of SRE is that all structure emerges from the binary relation matrix `M ∈ {+1,−1}`, in which no space, particle, or force is pre-given; only co-oriented/counter-oriented binary relations between nodes exist. The network grows autonomously according to the dormancy–activation rule (implementation in `code/sim_p.py`). This is analogous to an assembly of magnetic needles admitting only the two orientations "co-oriented/counter-oriented": under random perturbation, the system spontaneously forms an ordered kernel.[The above is a model-internal picture of the world, not an assertion about the real world]
 
 When the network has evolved to scale `N`, the innermost `k = ⌊0.2 N⌋` nodes form a rigid, non-degenerate kernel; the strictness of the existence and stability of this kernel in the `N→∞` limit is guaranteed by Theorem 1 of the theoretical monograph (DOI: 10.5281/zenodo.22162514) (the citation of 14-2 appears in Appendix E). **This kernel is the logical basis of the electron (model-internal)**. The numerical simulation at `N=300` gives `k=60`, which coincides exactly with the electron projection scale `n=60`. This agreement should be positioned as a "co-directional indication" rather than a strict proof, and both quantities are model-internal numerical values (`N=300` is a simulation choice); its scope of applicability and limitations are detailed in Section 14.
 
@@ -2737,7 +2737,7 @@ Compared with $\alpha = 0.0072973526$, the **error is 0.0015%**.
 
 $$n = 60 = \dim(E) \times \dim(F) = \lvert E\rvert  \times \beta_1 = 12 \times 5$$
 
-where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell-equation validation: the D_edge of Maxwell.py defines a cell complex of an 8-ring plus 4 skip-2 chords ($\lvert V\rvert =8$, $\lvert E\rvert =12$, $\beta_1=5$). The angular spacing is $\frac{4\pi}{60} = \frac{\pi}{15}$, and $15 = 3 \times 5$, indicating that the discretization precision of the Möbius band is determined by the dimensional structure of the Maxwell-equation circuit diagram.【Naming correction: the source code labeled this graph as $K_{3,5}$, but the true complete bipartite graph $K_{3,5}$ has 15 edges and $\beta_1=8$; the correct name of this complex is the double-cover four-state complex (DCF), whose origin appears in Section 6.】
+where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell-equation validation: the D_edge of Maxwell.py defines a cell complex of an 8-ring plus 4 skip-2 chords ($\lvert V\rvert =8$, $\lvert E\rvert =12$, $\beta_1=5$). The angular spacing is $\frac{4\pi}{60} = \frac{\pi}{15}$, and $15 = 3 \times 5$, indicating that the discretization precision of the Möbius band is determined by the dimensional structure of the Maxwell-equation circuit diagram.[Naming correction: the source code labeled this graph as $K_{3,5}$, but the true complete bipartite graph $K_{3,5}$ has 15 edges and $\beta_1=8$; the correct name of this complex is the double-cover four-state complex (DCF), whose origin appears in Section 6.]
 
 ### 4.2 Path 2: the four-state eigen-spectrum frequency formula
 
@@ -2848,11 +2848,11 @@ The three paths are mathematically independent (algebraic graph theory / linear 
 
 An independent computational review of the three paths above (programs `code/_tier0_lambda0_independent.py`, `code/_tier0_refinement_limit.py`, `code/_tier0_theory_reaudit.py`) yields three corrective conclusions:
 
-**（1）λ₀ is not an independent primitive (PASS-A failure):** under the constraint of forbidding α as an input, four pre-registered candidate spectral quantities (C1–C4) attempted independently to yield λ₀. The result is that C4 (3D kNN spectral gap) directly gives α (error 0.0015%), whereas the candidate quantities for λ₀ (C1, C3) carry large errors. Conclusion: λ₀ is **not an independent primitive**; the gap path has made λ₀/κ redundant intermediate quantities.
+**(1)λ₀ is not an independent primitive (PASS-A failure):** under the constraint of forbidding α as an input, four pre-registered candidate spectral quantities (C1–C4) attempted independently to yield λ₀. The result is that C4 (3D kNN spectral gap) directly gives α (error 0.0015%), whereas the candidate quantities for λ₀ (C1, C3) carry large errors. Conclusion: λ₀ is **not an independent primitive**; the gap path has made λ₀/κ redundant intermediate quantities.
 
-**（2）Grid refinement limit FAIL:** design the refinement sequence $n = 60 \times 2^m$ and test whether the C4 spectral gap converges to α as $n \to \infty$. The result is that the spectral gap $\propto n^{-1.99} \to 0$, **not converging to α**. This indicates that the n=60 hit is a discretization coincidence, not the projection of a continuum limit.
+**(2)Grid refinement limit FAIL:** design the refinement sequence $n = 60 \times 2^m$ and test whether the C4 spectral gap converges to α as $n \to \infty$. The result is that the spectral gap $\propto n^{-1.99} \to 0$, **not converging to α**. This indicates that the n=60 hit is a discretization coincidence, not the projection of a continuum limit.
 
-**（3）$n_\alpha = 60.000436$:** solving exactly for the crossing point $\text{gap}(M_n) = \alpha$ gives $n_\alpha = 60.000436$ — a relative deviation of only $7.3 \times 10^{-6}$ from the integer 60. It is the unique even integer within the 1% window, with an a-priori probability of about 1/99. The residual $1.452 \times 10^{-5}$ is not rounding noise and requires a corrective mechanism for explanation.
+**(3)$n_\alpha = 60.000436$:** solving exactly for the crossing point $\text{gap}(M_n) = \alpha$ gives $n_\alpha = 60.000436$ — a relative deviation of only $7.3 \times 10^{-6}$ from the integer 60. It is the unique even integer within the 1% window, with an a-priori probability of about 1/99. The residual $1.452 \times 10^{-5}$ is not rounding noise and requires a corrective mechanism for explanation.
 
 **Discrete-primitivism stance** (a framework-level declaration aligned here; see the cited monograph for details): SRE dynamics explicitly denies the fundamental status of the continuous Riemannian manifold — "there is no preordained continuous Riemannian manifold; the spacetime dimension, the gravitational coupling, and the speed of light all emerge macroscopically from the topological connectivity density of a discrete causal network." The refinement-limit test (gap ∝ n^{−1.99} → 0), regarded as a "continuum-limit" test of a discrete object, therefore has a premise that does not apply within discrete primitivism; $n=60$ is the node count of a discrete Möbius ladder, and no continuum limit $n \to \infty$ exists. The three reviews above thereby translate into the three gaps that Fork A must deliver (next chapter).
 
@@ -2875,21 +2875,21 @@ Fork A (discrete primitivism), in order to fill in the three gaps exposed by the
 
 ### 6.2 Gap 1: derivation of the double-cover four-state complex (DCF)
 
-**P1.1**【imposed, by A1】The state space contains 4 combinatorial states.
+**P1.1**[imposed, by A1]The state space contains 4 combinatorial states.
 
-**P1.2**【imposed, by A2】Möbius double cover: each combinatorial state exists on two sheets (φ and φ+2π are co-phase sheets), hence
+**P1.2**[imposed, by A2]Möbius double cover: each combinatorial state exists on two sheets (φ and φ+2π are co-phase sheets), hence
 
 ```text
 |V| = 4 × 2 = 8
 ```
 
-**P1.3**【imposed, by A3】The refresh tour passes through all 8 nodes in order with period 4π (nodes 0–3 are the four states of sheet 1, enter sheet 2 through the twist edge 3→4, and twist back to sheet 1 via 7→0), forming the base ring C₈:
+**P1.3**[imposed, by A3]The refresh tour passes through all 8 nodes in order with period 4π (nodes 0–3 are the four states of sheet 1, enter sheet 2 through the twist edge 3→4, and twist back to sheet 1 via 7→0), forming the base ring C₈:
 
 ```text
 Base ring edge count |E⁰| = 8
 ```
 
-**P1.4**【R1 combination rule + A2 + A1】Independent circulation channels:
+**P1.4**[R1 combination rule + A2 + A1]Independent circulation channels:
 
 - 4 state-localized channels: each combinatorial state carries one localized circulation (inheriting the four-state structure of A1);
 - 1 global holonomy channel: the Möbius band is non-orientable, so traversing 2π causes a sheet flip; this twist circulation is a globally enforced topological mode.
@@ -2898,13 +2898,13 @@ Base ring edge count |E⁰| = 8
 β1 = 4 + 1 = 5
 ```
 
-**P1.5**【imposed, by P1.4】The base ring C₈ itself contributes β1⁰ = 1; each non-repeated chord increases the number of independent loops by exactly 1, hence the number of chords = β1 − 1 = 4:
+**P1.5**[imposed, by P1.4]The base ring C₈ itself contributes β1⁰ = 1; each non-repeated chord increases the number of independent loops by exactly 1, hence the number of chords = β1 − 1 = 4:
 
 ```text
 |E| = 8 + 4 = 12
 ```
 
-**P1.6**【A4】Phase-space dimension:
+**P1.6**[A4]Phase-space dimension:
 
 ```text
 n = dim(E) × dim(F) = |E| × β1 = 12 × 5 = 60
@@ -3083,7 +3083,7 @@ Within the model, compressing the coherent core toward the minimal invariant ker
 - this structure is precisely the **three-dimensional cube Q₃** (8 vertices, 12 edges, 5 independent loops);
 - `|E| × β₁ = 12 × 5 = 60` — this is the true identity of the electron's "60-node projection": it is not 60 independent nodes, but a counting expansion of the basal structure `(12×5)`.
 
-In short, **within the SRE model, the topological prototype of the electron is the cube Q₃; the number 60 is the count of "edge count × independent-loop count" of this cube** — not 60 independent degrees of freedom.【The above ruling is a model-internal graph-theoretic description, not a geometric measurement or physical assertion about the real electron】
+In short, **within the SRE model, the topological prototype of the electron is the cube Q₃; the number 60 is the count of "edge count × independent-loop count" of this cube** — not 60 independent degrees of freedom.[The above ruling is a model-internal graph-theoretic description, not a geometric measurement or physical assertion about the real electron]
 
 ### 9.2 The "deep yet compact" property of the electron
 
@@ -3091,15 +3091,15 @@ In short, **within the SRE model, the topological prototype of the electron is t
 - **Compact:** basal structure `12×5`, i.e., the **stable topological invariant (model-internal)** surviving after the depth folding.
 - **Folding:** the homomorphic quotient map `h: deep loop (10²³) → basal structure (12×5)`. The topological type is determined by the Fork A axioms, while the visible granularity is determined by the resolution gap `1/10²³`. The two are complementary and mutually non-conflicting.
 
-【Remark: the logical depth `10²³` and the "mass carrier" are both model-internal counts and analogies, not the measured mass or measured depth of the real electron. The folding is the homomorphic quotient map h: G_loop(N~10²³) → G_basal(12×5) with compression ratio ~N; the statistically stable invariants retained (charge → Z₂ holonomy; spin-1/2 → Z₂ double cover; mass → topological depth/cumulative path count of interior loops; intrinsic loop structure → β₁=5, |E|=12) map exactly onto the basal topological invariants.】
+[Remark: the logical depth `10²³` and the "mass carrier" are both model-internal counts and analogies, not the measured mass or measured depth of the real electron. The folding is the homomorphic quotient map h: G_loop(N~10²³) → G_basal(12×5) with compression ratio ~N; the statistically stable invariants retained (charge → Z₂ holonomy; spin-1/2 → Z₂ double cover; mass → topological depth/cumulative path count of interior loops; intrinsic loop structure → β₁=5, |E|=12) map exactly onto the basal topological invariants.]
 
 ### 9.3 α as a native spectral quantity of the network
 
-A spectral analysis of the electron's relation matrix shows that the ratio of its second-softest mode to the stiffest mode is `1/137.036`. Within the model, this value is not implanted externally but is a **generic spectral quantity** of the binary-network relation graph; the Möbius ladder of Fork A is merely the specific sparse realization that places this spectral quantity exactly at 1/137.【**Important contextual limitation:** here α is a model-internal spectral quantity; its agreement with 1/137.036 is an internal reproduction within the model and does not constitute a real-physics conclusion that "the fine-structure constant is derived by this model"; the numerical value of the real α remains determined by experiment】
+A spectral analysis of the electron's relation matrix shows that the ratio of its second-softest mode to the stiffest mode is `1/137.036`. Within the model, this value is not implanted externally but is a **generic spectral quantity** of the binary-network relation graph; the Möbius ladder of Fork A is merely the specific sparse realization that places this spectral quantity exactly at 1/137.[**Important contextual limitation:** here α is a model-internal spectral quantity; its agreement with 1/137.036 is an internal reproduction within the model and does not constitute a real-physics conclusion that "the fine-structure constant is derived by this model"; the numerical value of the real α remains determined by experiment]
 
 ### 9.4 Emergence of space
 
-Defining the relational distance `D_ij = √(2 − 2·S_ij)` from the relation matrix `S`, and then applying MDS inversion, yields three-dimensional coordinates for the electron (see the `60×3` output of `code/_sre_electron_binary_bridge.py`). **Within the model, shape emerges from relations** — this is the fundamental divergence between SRE and the traditional view of "space first, particles placed within it afterwards".【Remark: the coordinates obtained by MDS inversion are model-internal relational-embedding coordinates, belonging to the model picture, not measurements of real spatial positions】
+Defining the relational distance `D_ij = √(2 − 2·S_ij)` from the relation matrix `S`, and then applying MDS inversion, yields three-dimensional coordinates for the electron (see the `60×3` output of `code/_sre_electron_binary_bridge.py`). **Within the model, shape emerges from relations** — this is the fundamental divergence between SRE and the traditional view of "space first, particles placed within it afterwards".[Remark: the coordinates obtained by MDS inversion are model-internal relational-embedding coordinates, belonging to the model picture, not measurements of real spatial positions]
 
 ### 9.5 Three-layer emergence structure and the RG flow
 
@@ -3113,7 +3113,7 @@ The coarse-graining operator $C_\eta$ merges sub-kernels of the coherent core in
 
 $$M'[b_i,b_j]=\operatorname{sgn}\!\Big(\prod_{u\in B_i,\,v\in B_j} M_{uv}\Big)\in\{\pm1\}$$
 
-The output is still a {±1} matrix (vocabulary conservation), and the homomorphic mapping preserves the group structure, so the Z₂ double cover is conserved under compression at any scale (verified in `code/_sre_coherence_rg.py`). Micro: the electron basal structure (8,12,5) is the microscopic coherent-core seed; meso: repeated application of C causes the microscopic kernel to recombine upward into atomic/molecular coherent cores; macro: continuing C to the bulk, the **BBP phase transition z*=3.13** (Book of the Void v1.6, DOI: 10.5281/zenodo.22162514; the old value 4.1605 has been demoted to a historical reference) is the scale at which the global coherent core switches from the 2D holographic single channel to the 4D two-channel compensation, i.e., the macroscopic spacetime-release point. The statistically stable basal structures at the various scales are the **attracting fixed points** of the RG flow at the respective scales: the electron 12×5 is the microscopic fixed point, and atoms/molecules/bulk are fixed points at higher scales.【**Important contextual limitation:** the renormalization flow, the "micro–meso–macro" correspondence, and the z*=3.13 cosmological-phase-transition release are all constructions and analogies internal to the SRE model (within the framework of DOI: 10.5281/zenodo.22162514); conclusions about real cosmology and the levels of matter must be examined separately by independent observations and theories】
+The output is still a {±1} matrix (vocabulary conservation), and the homomorphic mapping preserves the group structure, so the Z₂ double cover is conserved under compression at any scale (verified in `code/_sre_coherence_rg.py`). Micro: the electron basal structure (8,12,5) is the microscopic coherent-core seed; meso: repeated application of C causes the microscopic kernel to recombine upward into atomic/molecular coherent cores; macro: continuing C to the bulk, the **BBP phase transition z*=3.13** (Book of the Void v1.6, DOI: 10.5281/zenodo.22162514; the old value 4.1605 has been demoted to a historical reference) is the scale at which the global coherent core switches from the 2D holographic single channel to the 4D two-channel compensation, i.e., the macroscopic spacetime-release point. The statistically stable basal structures at the various scales are the **attracting fixed points** of the RG flow at the respective scales: the electron 12×5 is the microscopic fixed point, and atoms/molecules/bulk are fixed points at higher scales.[**Important contextual limitation:** the renormalization flow, the "micro–meso–macro" correspondence, and the z*=3.13 cosmological-phase-transition release are all constructions and analogies internal to the SRE model (within the framework of DOI: 10.5281/zenodo.22162514); conclusions about real cosmology and the levels of matter must be examined separately by independent observations and theories]
 
 ---
 
@@ -3128,7 +3128,7 @@ The following four-step arguments all hold within the SRE simulation model: they
 | **R2** | the sparse operator necessarily converges | `R` has non-increasing node count and stops in a finite number of steps; the strict version satisfies `R²=R` (idempotence) | **convergence theorem holds** |
 | **R3** | robustness under noise/dissipation | ε calibrated physically from the network dormancy probability (=0.18); the batch operator `R_batch` resists edge flips, executing in O(depth) steps | **robust-convergence validation passed** |
 
-**Closed-loop conclusion (model-internal):** the electron projection = the product of the Fork A axioms = the **unique, stable, robustly convergent fixed point** of the sparse operator of the binary network — the three are fully corresponding. The electron thereby ascends from a "floating independent graph" to the "inevitable basal structure of the binary self-organizing network".【The "uniqueness/convergence/robustness" above are all model-internal self-consistency conclusions and are not automatically extrapolated to real physics】
+**Closed-loop conclusion (model-internal):** the electron projection = the product of the Fork A axioms = the **unique, stable, robustly convergent fixed point** of the sparse operator of the binary network — the three are fully corresponding. The electron thereby ascends from a "floating independent graph" to the "inevitable basal structure of the binary self-organizing network".[The "uniqueness/convergence/robustness" above are all model-internal self-consistency conclusions and are not automatically extrapolated to real physics]
 
 **Figure 10-1** (figures/sre_electron_schematic_EN.png): the overall schematic of the electron within the SRE framework (3×3 panels): row A shows the coherent-core heat map / Q₃ basal structure / Möbius 4π double cover; row B shows the convergence of the sparse operator R (64→8), the α spectrum (real w=1+δ), and the MDS three-dimensional inversion; row C shows the three-layer RG flow, the 10²³→12×5 logical-depth folding, and the conclusion statement.
 
@@ -3296,9 +3296,9 @@ def sre_mds_embed(adj, ref_coords):
 
 ```text
   molecule   atoms  bonds      MCI    Q3?   RMSD(A)  note
-  benzene        6      6   0.2500     no     1.474  芳香环, 刚性闭合壳 (MCI 较大)
-  cubane         8     12   0.3333    YES     1.414  碳骨架=Q3, 直接承载电子本体拓扑
-  n-hexane       6      5   0.0718     no     0.000  线性链, 极小 MCI = 柔性骨架(低频弯曲)
+  benzene        6      6   0.2500     no     1.474  aromatic ring, rigid closed shell (large MCI)
+  cubane         8     12   0.3333    YES     1.414  carbon skeleton = Q3, carries the electron basal topology
+  n-hexane       6      5   0.0718     no     0.000  linear chain, minimal MCI = flexible skeleton (low-frequency bending)
 ```
 
 Interpretation of the results:
@@ -3673,7 +3673,7 @@ This paper provides a unified and complete characterization of nucleons within t
 
 This paper organizes all nucleon-related documents (v1 topological derivation, inversion v2 skeleton, quark speculation, many-body assembly law and shared ring, dimension collapse test, fission chain verification, theoretical constraints) into a unified representation in the following order:
 
-- Section 1: **Terminology Convention**. Uncommon terms appearing for the first time in the text are marked with [], and their precise definitions are concentrated in this section, presented in plain written language for readers without physical or mathematical background. Each key term is accompanied by a note indicating its "model internal structure/analogy" status to avoid confusion with real physical quantities.
+- Section 1: **Terminology Convention**. Uncommon terms appearing for the first time in the text are marked with a bracketed remark, and their precise definitions are concentrated in this section, presented in plain written language for readers without physical or mathematical background. Each key term is accompanied by a note indicating its "model internal structure/analogy" status to avoid confusion with real physical quantities.
 - Section 2: **SRE Theoretical Basis**: Binary self-organizing networks, sim_p generator and conservation closure, ratio methodology constraints, and the only calibrated projection Π₁.
 - Section 3: **General Methodology for Nucleon Derivation**: Local input → topological solution → inversion, which is homologous to electron derivation, and the interchange principle between SRE and classical physics.
 - Section 4: **Three Quark Speculations (Author's Claim)**, listed separately after the methodology chapter as they **determine what the nucleon skeleton should look like** — they are the "structural priors" for subsequent screening, and the screening results will change if they are altered. They are recorded truthfully to make readers aware: the skeleton in this paper is not "objectively emerged" from the data, but selected within the search space defined by this set of speculations.
@@ -4812,7 +4812,7 @@ This item also **corrects a presupposition of the first draft of this section** 
 | Hits at $\varepsilon=3\%$ | **1**: `1/E = 1/33 = 0.030303` (deviation 1.28%, E being the edge count of the deuteron assembly) |
 | Hits at $\varepsilon=1\%$ | **0** |
 | MC null hypothesis A (randomized target, 2×10⁴ draws) | probability that a random target is hit by any candidate, $p_A$ = **0.166** ⇒ expected hits 0.17 (observed 1) |
-| MC null hypothesis B (200 random graphs with the same degree sequence) | hit rate of random graphs **0.385** ＞ 0.010 for the SRE assemblies |
+| MC null hypothesis B (200 random graphs with the same degree sequence) | hit rate of random graphs **0.385** > 0.010 for the SRE assemblies |
 
 ⇒ the sole hit has no mechanistic connection with neutrinos, and the hit rate of the SRE assemblies is **lower** than that of random graphs ⇒ **no structural signal** (a direct application of the lesson of Section 12.8: cross-hits must first pass a whole-set hit-rate check).
 
@@ -5502,7 +5502,7 @@ Together these are equivalent to: **the three rings are a ℤ₃-torsor**. This 
 | $\eta,\ \delta$ | the **amplitude ratio** and **phase** of the non-trivial component of the circulant operator: $c_1=\lvert c_1\rvert e^{i\theta}$, $\eta=\lvert c_1\rvert /c_0$ |
 | $Q$ | the **Koide combination** $Q=\dfrac{\sum m}{(\sum\sqrt m)^{2}}$ |
 | $\rho,\ \lambda_2,\ \Pi_1$ | spectral radius, second-smallest Laplacian eigenvalue, closure degree $\Pi_1=\lambda_2/\rho$ |
-| D1／D2／D3 | adjudication discipline: small-denominator rationals listed separately／angles may not serve as anchors／the main statistics use only irrational readings × clean targets |
+| D1/D2/D3 | adjudication discipline: small-denominator rationals listed separately/angles may not serve as anchors/the main statistics use only irrational readings × clean targets |
 
 ### 2.3 Analogy guide: three-phase alternating current
 
@@ -5687,7 +5687,7 @@ Measured comparison: the real-symmetric choice $c_0=1,\lvert c_1\rvert =0.3$ giv
 
 > Proposition 5 directly answers "why a phase is needed": **the spectrum of a real-symmetric circulant degenerates structurally and cannot carry three distinct generations; for the three generations to be distinct the operator must be Hermitian rather than real-symmetric** (thereby giving the Hermitian form of Corollary 1 its necessity).
 
-**Note 2 (registration, not conclusion).** Proposition 5 and the "closed-state ℤ₃ ／ open-state ℤ₂" of Table 2 echo each other at the level of operators: the open state has only two values (a $\mathbb{Z}_2$-type degeneracy), the closed state generally three (the full $\mathbb{Z}_3$). This paper has **not proved** that the two are the same mechanism (see Appendix B item 4) and merely registers the observation.
+**Note 2 (registration, not conclusion).** Proposition 5 and the "closed-state ℤ₃ / open-state ℤ₂" of Table 2 echo each other at the level of operators: the open state has only two values (a $\mathbb{Z}_2$-type degeneracy), the closed state generally three (the full $\mathbb{Z}_3$). This paper has **not proved** that the two are the same mechanism (see Appendix B item 4) and merely registers the observation.
 
 ### 5.3 A correction that must be stated: the cosine shape is "free"
 
@@ -6060,7 +6060,7 @@ This paper gives the following adjudication of the precise mathematical expressi
 
 ---
 
-## Appendix A　Recomputation list
+## Appendix A Recomputation list
 
 **One-command recomputation of all readings** (requires numpy + networkx):
 
@@ -6079,9 +6079,9 @@ The two scripts are mutually independent implementations and share the project's
 |---|---|---|
 | Theorem 2 (§4.1) | PART 1 | rank $6/9$, null-space basis all circulant = true |
 | Proposition 4 (§5.1) | PART 2 | 6 random sets, maximum error $1.1\times10^{-15}$ |
-| Proposition 5 (§5.2) | PART 2 | $(0.7,0.7,1.6)$／$(0.400668,1.27515,1.324181)$ |
+| Proposition 5 (§5.2) | PART 2 | $(0.7,0.7,1.6)$/$(0.400668,1.27515,1.324181)$ |
 | Example 2 (§4.2) | v2 Ex.2 | $(0.436184,\ 1.104189,\ 1.459627)$ |
-| Theorem 3 (§5.3) | PART 3／v2 Ex.1 | 8 sets of arbitrary triples, reconstruction error $5.11\times10^{-15}$ |
+| Theorem 3 (§5.3) | PART 3/v2 Ex.1 | 8 sets of arbitrary triples, reconstruction error $5.11\times10^{-15}$ |
 | Example 1 (§2.3) | v2 Ex.1 | $\bar u=0.966667$, $\lvert c_1\rvert =0.145297$, $\theta=1.455835$ rad |
 | Proposition 8 (§7.1) | PART 4 | $Q$ range $\le1.6\times10^{-15}$; $R$ varies with $\delta$ |
 | Proposition 6 (§6.1) | PART 4 | $\lvert \Delta Q\rvert \le2.2\times10^{-16}$ |
@@ -6103,7 +6103,7 @@ The two scripts are mutually independent implementations and share the project's
 
 ---
 
-## Appendix B　Honesty boundary
+## Appendix B Honesty boundary
 
 1. Everything in this paper is a self-consistent statement **internal to the SRE model / at the level of linear algebra and group theory**, and **no** numerical prediction for real physics is claimed. The comparison with charged-lepton masses in the text is **structural consistency**, not prediction.
 2. "Taking $a=\sqrt m$ rather than $m$" is the **empirical content of Koide**, equivalent to "**the square root of the mass operator** is ℤ₃-equivariant" — a **testable structural hypothesis** that this paper **has not proved**.
@@ -6118,7 +6118,7 @@ The two scripts are mutually independent implementations and share the project's
 
 ---
 
-## Appendix C　Analogy index
+## Appendix C Analogy index
 
 A survey of the analogies and illustrations used in this paper (each is developed in full at the corresponding place above).
 
@@ -6143,7 +6143,7 @@ A survey of the analogies and illustrations used in this paper (each is develope
 
 ---
 
-## Appendix D　References
+## Appendix D References
 
 [1] Y. Koide, *A Fermion-Boson Composite Model of Quarks and Leptons*, Phys. Lett. B **105**, 121 (1981); and the subsequent series of works on the "Koide relation" $Q=2/3$.
 
@@ -6818,7 +6818,7 @@ This paper gives the following rulings on "the positioning of light and electrom
 
 ---
 
-## Appendix A　Recomputation list
+## Appendix A Recomputation list
 
 **Recompute all readings in one command** (requires numpy + networkx):
 
@@ -6858,7 +6858,7 @@ python.exe -u _sre_light_origin_paper_check.py \
 
 ---
 
-## Appendix B　Honesty boundary
+## Appendix B Honesty boundary
 
 1. Everything in this paper is a self-consistent statement **internal to the SRE model / at the level of linear algebra and group theory**, and **does not** claim numerical predictions about real physics. The comparison with experimental orders of magnitude (eV/MeV) serves only to illustrate that "the difference lies in the ledger".
 2. **All light-side readings come from the project's existing axioms** (residuality axiom, Möbius double cover, Fork A involution, $\delta_A$, Maxwell engine); this paper **only puts them into recomputable form and adds no light-side physical content**.
@@ -6873,7 +6873,7 @@ python.exe -u _sre_light_origin_paper_check.py \
 
 ---
 
-## Appendix C　Analogy index
+## Appendix C Analogy index
 
 **Table C1.** Index of analogies and illustrations.
 
@@ -6893,7 +6893,7 @@ python.exe -u _sre_light_origin_paper_check.py \
 
 ---
 
-## Appendix D　References
+## Appendix D References
 
 [1] This project, *A Complete Characterisation of the Electron in the SRE Framework* (electron complete paper) §3: the residuality axiom (Axiom I) and the closed-form parameter map (Axiom II).
 
@@ -7419,7 +7419,7 @@ Together with three open items ($c\propto\lambda^{-1}$ rejected; $T_\mathrm{em}/
 
 ---
 
-## Appendix A　Recomputation checklist
+## Appendix A Recomputation checklist
 
 | item | script | key quantities |
 |---|---|---|
@@ -7433,7 +7433,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 ---
 
-## Appendix B　Honest boundaries
+## Appendix B Honest boundaries
 
 1. **One guess that preceded measurement**: $c\propto\lambda^{-1}$ is rejected (measured slope $-0.577$). Every statement involving $c(\lambda)$ is a registration, **not a conclusion**.
 2. **A second such guess**: "the variant kernel runs away into freezing, $\Omega'\to0$" is refuted; it settles at a fixed point near $0.39$. The original guess is preserved in §6.3.
@@ -7446,7 +7446,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 ---
 
-## Appendix C　Analogy index
+## Appendix C Analogy index
 
 | analogy | purpose | failure point |
 |---|---|---|
@@ -7456,7 +7456,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 ---
 
-## Appendix D　References
+## Appendix D References
 
 1. This project: *The dormancy/activation clock: zero-parameter laws, zero-bit branches and intrinsic time* (round 77) — Proposition 1 (age law), Proposition 2 (diagonal closed form), E5 (spectral law), source of $\tau_\mathrm{mem}$.
 2. This project: *The vibrational-period axis: definition of time and the isotope criterion* (round 76) — the topological definition of frequency $\Delta\lambda=\lvert \lambda_{1}-\lambda_{2}\rvert$, and the verdict "steps but no seconds".
@@ -8859,7 +8859,7 @@ The cost is also clear: $\delta$ cannot be falsified inside $\alpha$. Hence the 
 
 ### B. Verification Script Inventory
 
-> **Package location**　All scripts and result data of this chapter are bundled in the book's appendix directory at `5-Appendixs/SRE_Fine_Structure_Constant_Derivation/SRE_alpha_package.zip` (16 scripts + 6 JSON files under `results/`, 22 files in total). The scripts are self-contained once unzipped and can be run directly in the B.6 order.
+> **Package location** All scripts and result data of this chapter are bundled in the book's appendix directory at `5-Appendixs/SRE_Fine_Structure_Constant_Derivation/SRE_alpha_package.zip` (16 scripts + 6 JSON files under `results/`, 22 files in total). The scripts are self-contained once unzipped and can be run directly in the B.6 order.
 
 #### B.1 Direct Verification Scripts (5)
 
@@ -9287,7 +9287,7 @@ Operator 18 must output three credibility certificates with the solution: homolo
 
 <div style="page-break-after: always;"></div>
 
-# Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator（$\mathcal{G}_{n\rightarrow n+1}$）
+# Operator-1: Pure-Algebraic Mathematical Specification for the Local Graph Expansion Operator($\mathcal{G}_{n\rightarrow n+1}$)
 ## 1. Unified Mathematical Notation Index
 * $\mathbb{N}^+$: Set of positive integers $\{1, 2, 3, \dots\}$ (zero excluded).
 * $\mathcal{I}_n$: Index-baseline set $\{1, 2, 3, \dots, n\}$. All global slicing and matrix-element access strictly adopt **1-based indexing**.
@@ -9847,7 +9847,7 @@ The evolutionary boundary of the universe corresponds to the expansion frontier 
 
 <div style="page-break-after: always;"></div>
 
-# Operator-2： Local Metric & Probabilistic Pruning Operator（$\mathcal{M}_\chi \circ \mathcal{E}_{\text{local}}$）
+# Operator-2: Local Metric & Probabilistic Pruning Operator($\mathcal{M}_\chi \circ \mathcal{E}_{\text{local}}$)
 ## Rigorous Mathematical Derivation and Specification
 
 **Version:** 1.1
@@ -10066,8 +10066,8 @@ $$
 
 **Proof**
 1. By the pruning rule of Operator 2, the channel-flip probability can be **identically** rewritten in heat-bath form (derivation in §7.0):
-   　$p_c=\sigma(-F_c)$, $F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$,
-   　$\mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
+    $p_c=\sigma(-F_c)$, $F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$,
+    $\mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
    This expression is an algebraic identity and contains no statistical assumption.
 2. When $\tilde{\mathcal{E}}_{\text{local}} > 0$: $\mathfrak{B}=\tilde{\mathcal{E}}+e$, the barrier takes the upper branch, $F$ rises, $p<\tfrac12$, and the channel preferentially survives — the coherent condensation phase.
 3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$: $\mathfrak{B}=\lvert \tilde{\mathcal{E}}\rvert +e^{-1}$, the barrier takes the lower branch, $F$ is depressed, $p>\tfrac12$, and the channel is preferentially pruned — the frustrated phase.
@@ -10972,7 +10972,7 @@ When information-flows traverse high-energy-density regions, topological-overlap
 
 <div style="page-break-after: always;"></div>
 
-# Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator （$\mathcal{M}_{\text{degree}}$） and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional
+# Operator-4: Algebraic Construction of Local-Topology Degree-Statistic Operator ($\mathcal{M}_{\text{degree}}$) and Rigorous Positive-Definite Boundedness Proof for Dirichlet Energy Functional
 **Version**: 1.1
 
 > **Document positioning**: This manuscript constitutes core component of Phase-1 Homogeneous-Metric Operator Suite within Status-Relational-Entropy (SRE) Dynamics. Operator 4 receives intermediate outputs from Operator 1 and Operator 2, and supplies spectral-prior parameters for downstream Operator 5. All Operators 1-20 are now released open-source with complete derivations and reference implementations.
@@ -11156,7 +11156,7 @@ Following Version 18.0 dependency-topology pipeline order, after mathematical 
 
 <div style="page-break-after: always;"></div>
 
-# Operator-5: Endogenous Variable Latency Calibration Operator （$\mathcal{M}_{\text{latency}}$）
+# Operator-5: Endogenous Variable Latency Calibration Operator ($\mathcal{M}_{\text{latency}}$)
 ## Strict Mathematical Specification, Derivation, and Verification (Full Comprehensive Edition)
 
 **Version:** 1.1
@@ -11515,7 +11515,7 @@ $$\delta \Pi(s) = (\delta \Omega_s)^T B_{s+1/2} + \Omega_s^T (\delta B_{s+1/2}) 
   By the algebraic definition of image spaces over a directed graph complex, there must exist a 0-chain real-valued scalar node potential field vector $\phi \in C_0(V; \mathbb{R})$ such that the equalizer flow can be explicitly represented as a pure discrete gradient:
   $$B_{s+1/2} = \delta_0 \phi = \partial_1^T \phi$$
   
-  We directly substitute this explicit gradient representation back into the core micro-step dual pairing quadratic pairing field equation $\Pi(s)$：
+  We directly substitute this explicit gradient representation back into the core micro-step dual pairing quadratic pairing field equation $\Pi(s)$:
   $$\Pi(s) = E_s^T \cdot \mathbf{B}_{\text{co}}^T \cdot B_{s+1/2} = E_s^T \cdot \mathbf{B}_{\text{co}}^T \cdot \left( \partial_1^T \phi \right)$$
   Regrouping the matrix associative multiplication operators isolates the chained compound block:
   $$\Pi(s) = E_s^T \cdot \left( \partial_1 \cdot \mathbf{B}_{\text{co}}^T \right)^T \cdot \phi$$
@@ -11564,7 +11564,7 @@ $$\Delta Q_{\text{net}} = Q_{\text{net}}^{(n+1)} - Q_{\text{net}}^{(n)} = \mathc
   Suppose at any arbitrary pulse step $n_0$, the net charge resides within the equilibrium plateau: $\lvert Q_{\text{net}}^{(n_0)}\rvert  \le 0.5$. According to the single-pulse state equation, the maximum possible outward excursion in a single step is rigidly bounded by the single-point spin flip amplitude $\pm 1$:
   $$\lvert Q_{\text{net}}^{(n_0+1)}\rvert  \le \lvert Q_{\text{net}}^{(n_0)}\rvert  + \lvert \mathcal{S}_{\text{corner}}\rvert  \le 0.5 + 1.0 = 1.5$$
   
-  Once the state crosses the $0.5$ threshold (reaching at most $1.5$), it instantly triggers the $\Delta V_{\text{delay}} < 0$ strict回拉 (pullback) regime, forcing the trajectory back toward the center at the next step. This mathematically establishes that the instantaneous net charge can never escape the compact constant envelope $K_{\text{bound}} = 1.5$, explicitly proving the global non-divergence property:
+  Once the state crosses the $0.5$ threshold (reaching at most $1.5$), it instantly triggers the $\Delta V_{\text{delay}} < 0$ strict pullback regime, forcing the trajectory back toward the center at the next step. This mathematically establishes that the instantaneous net charge can never escape the compact constant envelope $K_{\text{bound}} = 1.5$, explicitly proving the global non-divergence property:
   $$\sup_{n \in \mathbb{N}^+} \lvert Q_{\text{net}}^{(n)}\rvert  \le 1.5 < \infty$$
 
 * **Step II: Asymptotic Ergodic Long-Term Convergence**  
@@ -11601,7 +11601,7 @@ The analytical proof of Hodge adjoint closure (guaranteeing that the cycle space
 ### Abstract
 This paper presents the formal algebraic derivation, structural specification, and systematic validation of the Local Lock-Free Algebraic Valve Balancing Operator ($\mathcal{O}_{\text{valve}}$, designated as Operator 8). Operating as the foundational concurrency control interface within the Phase 4: Trace-Master Smooth segment of the Status-Relational Entropy (SRE) dynamics framework, this operator succeeds the Symplectic adjoint filtering pipelines to execute real-time balancing of overlapping boundary variables. Adhering strictly to the No-Background-Metric Principle, this architecture completely abolishes traditional synchronous barriers, global semaphores, and mutual exclusion (mutex) deadlocks during high-dimensional distributed space rewrites. Instead, it formalizes a decentralized adjudication protocol driven purely by **Local Trace Correction Micro-operators ($\mu_{\text{trace}}$)**.
 
-The primary mathematical breakthrough of this work resides in the definitive proof of the **Distributed Multi-Actor Write-Contention Variance to Chain-Complex Image-Space Flux Variance Transformation Theorem**. The derivation establishes that the localized total variation of the asynchronous rewrite manifold unconditionally satisfies $\Delta \Pi_{\text{valve}}(s) \le 0$ as the micro-step relaxation index evolves. By projecting discrete, non-continuous state-极性 (polarity) step modifications onto the continuous gradient 1-chain flow subspace, Operator 8 guarantees strict **Monotone Convergence** without freezing independent system actors. This mechanism permanently shatters the cubic synchronization redline ($\mathcal{O}(n^3)$) under the thermodynamic limit, clamping the single-step temporal computational overhead strictly within a localized polynomial upper bound of $\mathcal{O}(N_K^2)$.
+The primary mathematical breakthrough of this work resides in the definitive proof of the **Distributed Multi-Actor Write-Contention Variance to Chain-Complex Image-Space Flux Variance Transformation Theorem**. The derivation establishes that the localized total variation of the asynchronous rewrite manifold unconditionally satisfies $\Delta \Pi_{\text{valve}}(s) \le 0$ as the micro-step relaxation index evolves. By projecting discrete, non-continuous state-polarity step modifications onto the continuous gradient 1-chain flow subspace, Operator 8 guarantees strict **Monotone Convergence** without freezing independent system actors. This mechanism permanently shatters the cubic synchronization redline ($\mathcal{O}(n^3)$) under the thermodynamic limit, clamping the single-step temporal computational overhead strictly within a localized polynomial upper bound of $\mathcal{O}(N_K^2)$.
 
 ---
 
@@ -11624,7 +11624,7 @@ Rather than blocking these collisions, Operator 8 permits the real-time occurren
 ### 1.3 The Local Trace Correction Micro-operator ($\mu_{\text{trace}}$) and Mother Pool Projection
 Operator 8 rejects global coordinator nodes. Instead, it embeds an independent, self-consistent **Local Trace Correction Micro-operator $\mu_{\text{trace}}$** within the internal subspace of each localized Actor slice. 
 
-The algebraic essence of this micro-operator is a real-valued scalar correction factor tracking the diagonal trace elements of the localized sub-graph configuration matrix. Its active domain is rigidly projected into the **1-st Order Chain-Complex Image Space $\operatorname{Im}(\delta_0) = \operatorname{Im}(\partial_1^T)$**, which is pre-secured by the Hodge closure invariants of Operator 7. By mapping discrete自旋 (spin) state jumps into continuous fluid flux variances within the gradient上链 (co-chain) mother pool, the micro-operator instantiates a fully lock-free synchronization timeline.
+The algebraic essence of this micro-operator is a real-valued scalar correction factor tracking the diagonal trace elements of the localized sub-graph configuration matrix. Its active domain is rigidly projected into the **1-st Order Chain-Complex Image Space $\operatorname{Im}(\delta_0) = \operatorname{Im}(\partial_1^T)$**, which is pre-secured by the Hodge closure invariants of Operator 7. By mapping discrete spin-state jumps into continuous fluid flux variances within the gradient co-chain mother pool, the micro-operator instantiates a fully lock-free synchronization timeline.
 ## 2. Analytical Closed-Form Formulations and Differential Fluid Rheology of Operator 8
 
 The mathematical mechanism of Operator 8 ($\mathcal{O}_{\text{valve}}$) utilizes localized convective rheology to map time-domain thread contention into smooth, spatial algebraic fluid fields over directed 1-chain channels.
@@ -11651,7 +11651,7 @@ $$\Delta \Pi_{\text{valve}}(s) \le 0$$
 #### Rigorous Step-by-Step Variational Derivations:
 
 ### 3.1 Phase I: Homological Elimination of the Outer-Product Projection Components
-We substitute the explicit閉式 (closed-form) expression of the Valve Convective Flux Tensor $\mathbf{\Phi}_{\text{valve}}$ derived in Section 2.2 directly into the total variation pairing kernel $\Pi_{\text{valve}}(s)$. Utilizing the linear additive properties of the trace operator, we split the formulation into two independent components:
+We substitute the explicit closed-form expression of the Valve Convective Flux Tensor $\mathbf{\Phi}_{\text{valve}}$ derived in Section 2.2 directly into the total variation pairing kernel $\Pi_{\text{valve}}(s)$. Utilizing the linear additive properties of the trace operator, we split the formulation into two independent components:
 $$\Pi_{\text{valve}}(s) = \operatorname{Tr}\left( \left\{ \sum_{i \in \Omega_\alpha} \mu_{\text{trace}}(i) \left[ \left( \mathbf{B}_{\text{co}}^T B_{s+1/2} \right) \left( \mathbf{B}_{\text{co}}^T B_{s+1/2} \right)^T \right] + \alpha_{\text{smooth}} \mathbf{V}_{\text{write}} \right\}^T \mathbf{V}_{\text{write}} \right)$$
 $$\Pi_{\text{valve}}(s) = \sum_{i \in \Omega_\alpha} \mu_{\text{trace}}(i) \cdot \operatorname{Tr}\left( \left[ \left( \mathbf{B}_{\text{co}}^T B_{s+1/2} \right) \left( \mathbf{B}_{\text{co}}^T B_{s+1/2} \right)^T \right]^T \mathbf{V}_{\text{write}} \right) + \alpha_{\text{smooth}} \cdot \operatorname{Tr}\left( \mathbf{V}_{\text{write}}^T \mathbf{V}_{\text{write}} \right)$$
 
@@ -11807,9 +11807,9 @@ This establishes the definitive mathematical verification that Operator 9, by ex
 To secure physical tractability and processing reliability under long-cycle macroscopic scaling horizons, Operator 9 establishes a definitive localized homological truncation barrier, completely terminating the data synchronization stalls typical of high-dimensional global co-chain solvers.
 
 ### 4.1 Eradication of Eigenvalue Deadlocks in Global Homological Resolutions
-In conventional topological data analysis or high-dimensional manifold stitching routines, securing the stability of global Betti invariants mandates a full matrix resolution over the entire network's chain complex (e.g., via global Smith Normal Forms or global rational renormalization). This all-to-all global相干 (coherence) correction forces the computational overhead to scale with a cubic divergence velocity ($\mathcal{O}(n^3)$). As the network undergoes outward expansions, distributed compute clusters inevitably suffer devastating multi-second or permanent synchronization stalls.
+In conventional topological data analysis or high-dimensional manifold stitching routines, securing the stability of global Betti invariants mandates a full matrix resolution over the entire network's chain complex (e.g., via global Smith Normal Forms or global rational renormalization). This all-to-all global-coherence correction forces the computational overhead to scale with a cubic divergence velocity ($\mathcal{O}(n^3)$). As the network undergoes outward expansions, distributed compute clusters inevitably suffer devastating multi-second or permanent synchronization stalls.
 
-The higher-order adjoint stitching matrix $\mathbf{S}_{\text{dual}}$ designed by Operator 8 completely shatters this発散 (divergence) deadlock. Benefiting from the Rayleigh-Ritz low-dimensional subspace projection prior dynamically forwarded by Operator 6, Operator 9 bypasses the physical assembly and physical storage of global higher-order matrices. Its homological filtering and quadratic spectral regularization are locked strictly within the internal overlap perimeters shared between localized processing Actor layers, decoupling the runtime execution from full-network synchronous barriers.
+The higher-order adjoint stitching matrix $\mathbf{S}_{\text{dual}}$ designed by Operator 8 completely shatters this divergence deadlock. Benefiting from the Rayleigh-Ritz low-dimensional subspace projection prior dynamically forwarded by Operator 6, Operator 9 bypasses the physical assembly and physical storage of global higher-order matrices. Its homological filtering and quadratic spectral regularization are locked strictly within the internal overlap perimeters shared between localized processing Actor layers, decoupling the runtime execution from full-network synchronous barriers.
 
 ### 4.2 Localized Null-Space Processing Complexity Clamping
 Thanks to the internal "topological firewall" and degree saturation criteria enforced by the baseline Operator 2-Batch, the local edge degree of the frontier vertex and the maximum cardinality of the facet sub-set within a standalone sub-domain are permanently truncated to a fixed constant:
@@ -11826,9 +11826,9 @@ Under the thermodynamic limit, the single-step temporal computational overhead o
 
 This paper has presented the rigorous mathematical specification, algebraic derivation, and runtime boundary closure for the Dual-Order Smooth Betti Number Synchronous Stitching Operator (Operator 9, $\mathcal{O}_{\text{stitch\_dual}}$). By combining a 3-rd order localized Laplacian null-space orthogonal projection with a quadratic spectral regularization bottom $\lambda_2(n)^2 \cdot \mathbf{I}$, Operator 9 successfully establishes a non-degenerate homological adjoint stitching mechanism over discrete graph chain complexes.
 
-Within the genus differential variational framework, this study has delivered the definitive proof of the Global 1-st Order Betti Number Step-Wise Variation Rigid Anchoring Theorem. The verification demonstrates that high-frequency rank mutations induced by asynchronous outward expansions are perfectively and deterministically neutralized by the local stitching operator. This mechanism locks the global Betti step-wise progression unconditionally inside the tautological true identity $\Delta \beta_1 \equiv 0$, compressing the complexity of processing spatial发散 (divergence) down to the localized常数 (constant) domain $\mathcal{O}(1)$ limit.
+Within the genus differential variational framework, this study has delivered the definitive proof of the Global 1-st Order Betti Number Step-Wise Variation Rigid Anchoring Theorem. The verification demonstrates that high-frequency rank mutations induced by asynchronous outward expansions are perfectively and deterministically neutralized by the local stitching operator. This mechanism locks the global Betti step-wise progression unconditionally inside the tautological true identity $\Delta \beta_1 \equiv 0$, compressing the complexity of processing spatial divergence down to the localized constant domain $\mathcal{O}(1)$ limit.
 
-The mathematical and engineering convergence of Operator 9 marks the **official completion and overarching finalization of the Status-Relational Entropy (SRE) dynamics universal graph operator pipeline**. The multi-morphic causal processing engine—composed of Operator 1 (Geometric Graph Growth), Operator 2/2-Batch (Homological Interception and Degree Saturation), Operator 6 (Low-Rank Sub-space Spectral Sieve), Operator 4 (Dirichlet Energy Positive Clamping), Operator 5 (Logarithmic Latency and Lebesgue Zero-Measure PDF Cloaking), Operator 3 (Parity-Breaking Spontaneous NAND Logic Emergence and Physical Mapping), Operator 7 (Symplectic Adjoint Hodge Closure), and Operator 8 (Lock-Free Trace Convective Flux Valve)—reaches its **ultimate categorical闭环 (closure)** at the Operator 9 interface.
+The mathematical and engineering convergence of Operator 9 marks the **official completion and overarching finalization of the Status-Relational Entropy (SRE) dynamics universal graph operator pipeline**. The multi-morphic causal processing engine—composed of Operator 1 (Geometric Graph Growth), Operator 2/2-Batch (Homological Interception and Degree Saturation), Operator 6 (Low-Rank Sub-space Spectral Sieve), Operator 4 (Dirichlet Energy Positive Clamping), Operator 5 (Logarithmic Latency and Lebesgue Zero-Measure PDF Cloaking), Operator 3 (Parity-Breaking Spontaneous NAND Logic Emergence and Physical Mapping), Operator 7 (Symplectic Adjoint Hodge Closure), and Operator 8 (Lock-Free Trace Convective Flux Valve)—reaches its **ultimate categorical closure** at the Operator 9 interface.
 
 Discrete network binary spins solidify perfectively into a continuous global substrate here. Without hard-coding background space coordinates or artificial metric tensors, the system smoothly, autonomously, and losslessly instantiates an emergent macroscopic continuous spacetime manifold characterized by integer three-dimensional positive-definiteness, consistent causal timelines, bookkeeping closure of compensation overhead, and intrinsic geometric curvature.
 
@@ -11999,7 +11999,7 @@ $$c_e = \min\left(\frac{\alpha_n}{\ln(1 + W_e) + \delta_{\text{flt}}}, c_{\max}\
 
 ### 2.1 Step 1 — Electronegativity to Spin Polarity (Diagnostic, v1.1 Decoupled)
 
-SRE Axiom 1 requires $M_n$ elements $\in \{+1, -1\}$. Define atom $i$'s spin polarity (diagnostic scalar, not参与 weight modulation):
+SRE Axiom 1 requires $M_n$ elements $\in \{+1, -1\}$. Define atom $i$'s spin polarity (diagnostic scalar, not involved in weight modulation):
 
 $$s_i = \text{sign}(\chi_i - \bar{\chi})$$
 
@@ -13233,10 +13233,10 @@ Core conclusions (all rigorous on 1-complexes, independent of any external param
 
 **v1.2 Additions (all gated by the $Y_3$ verdict report A–F and re-checked inside this project)**:
 
-1. **T9 (cut-space identity)**　Deepens T2's "does a nontrivial class exist" criterion into a **dimension identity**: the number of reachable (Aut-invariant) classes is exactly $2^{\operatorname{rank}_\mathrm{hol}}$; the three official skeletons read $Q_3=0$, $Y_3^\mathrm{cl}=1$, $Y_3^\mathrm{op}=2$ (§6, Table 6.2).
-2. **§6.2 Side-by-side dual $\mathbb{Z}_2$ channel verdict**　On the very same $Y_3^\mathrm{cl}$ the $H^1$ channel is **open** (1 bit) while the **Pfaffian channel admits not a single orientation**, with a readable certificate (6-row minimal unsatisfiable subset) and a mechanism (42 nice even cycles vanish in the open state).
-3. **§6.3 Covering verdict and numbering convention**　$Y_3^\mathrm{cl}$ has **zero coverings and zero quotients** over $M_{2n}(n\ge3)$, yet is exactly a **3-fold regular cover of $K_4\cong M_4$**; a factor-2 correspondence table between the in-book $M_k$ and the paper's $M_{2n}$ is established (Table 6.5).
-4. **Correction to v1.1**　The v1.1 §10 item 3 statement "nontrivial reachability **only if** the graph contains an odd cycle and has $\ge2$ orbits" is **falsified**: odd-$k\ge5$ ladders are bipartite (no odd cycle) and still have $\operatorname{rank}_\mathrm{hol}\ge1$; the correct criterion is $W\not\subseteq\operatorname{Cut}$ (T9). Correspondingly, the §6.1 sentence "what actually determines the flip is the existence of odd cycles" is corrected as well.
+1. **T9 (cut-space identity)** Deepens T2's "does a nontrivial class exist" criterion into a **dimension identity**: the number of reachable (Aut-invariant) classes is exactly $2^{\operatorname{rank}_\mathrm{hol}}$; the three official skeletons read $Q_3=0$, $Y_3^\mathrm{cl}=1$, $Y_3^\mathrm{op}=2$ (§6, Table 6.2).
+2. **§6.2 Side-by-side dual $\mathbb{Z}_2$ channel verdict** On the very same $Y_3^\mathrm{cl}$ the $H^1$ channel is **open** (1 bit) while the **Pfaffian channel admits not a single orientation**, with a readable certificate (6-row minimal unsatisfiable subset) and a mechanism (42 nice even cycles vanish in the open state).
+3. **§6.3 Covering verdict and numbering convention** $Y_3^\mathrm{cl}$ has **zero coverings and zero quotients** over $M_{2n}(n\ge3)$, yet is exactly a **3-fold regular cover of $K_4\cong M_4$**; a factor-2 correspondence table between the in-book $M_k$ and the paper's $M_{2n}$ is established (Table 6.5).
+4. **Correction to v1.1** The v1.1 §10 item 3 statement "nontrivial reachability **only if** the graph contains an odd cycle and has $\ge2$ orbits" is **falsified**: odd-$k\ge5$ ladders are bipartite (no odd cycle) and still have $\operatorname{rank}_\mathrm{hol}\ge1$; the correct criterion is $W\not\subseteq\operatorname{Cut}$ (T9). Correspondingly, the §6.1 sentence "what actually determines the flip is the existence of odd cycles" is corrected as well.
 
 **Keywords**: $\mathbb{Z}_2$ cohomology; holonomy; coboundary; cut space; edge orbit; Aut-invariant assignment; charge-sign channel; Pfaffian orientation; first Betti number
 
@@ -13286,9 +13286,9 @@ $\delta C^0$ is the **coboundary** (vertex-potential 1-cochain). The pairing $H^
 
 ### 2.2 Polarity–Boolean Isomorphism
 
-**Lemma 2.1 (Polarity–Boolean Isomorphism)**　The map $\varphi:\{+1,-1\}\to\mathbb{F}_2$, $\varphi(S)\equiv\frac{1-S}{2}$ ($-1\mapsto1,\ +1\mapsto0$), is a group isomorphism $(\{+1,-1\},\cdot)\cong(\mathbb{F}_2,\oplus)$.
+**Lemma 2.1 (Polarity–Boolean Isomorphism)** The map $\varphi:\{+1,-1\}\to\mathbb{F}_2$, $\varphi(S)\equiv\frac{1-S}{2}$ ($-1\mapsto1,\ +1\mapsto0$), is a group isomorphism $(\{+1,-1\},\cdot)\cong(\mathbb{F}_2,\oplus)$.
 
-**Proof**　Bijectivity is obvious. Verify homomorphism: $\varphi(S_1S_2)=1$ iff exactly one $S_k=-1$, which matches $\varphi(S_1)\oplus\varphi(S_2)$; all four input combinations hold one-by-one. $\square$
+**Proof** Bijectivity is obvious. Verify homomorphism: $\varphi(S_1S_2)=1$ iff exactly one $S_k=-1$, which matches $\varphi(S_1)\oplus\varphi(S_2)$; all four input combinations hold one-by-one. $\square$
 
 Thus "multiplying polarities" and "adding mod 2" are in strict one-to-one correspondence; subsequent operations use $\mathbb{F}_2$ (denoting $z_e\equiv\varphi(s_e)$).
 
@@ -13300,9 +13300,9 @@ SRE Axiom 1 (no zero elements) guarantees each edge takes only $s_e\in\{+1,-1\}$
 
 ## 3 Definitions
 
-**D1 (Bond Graph $G$)**　Given by the support of $A_s$: $G=(V,E)$, $E=\{(i,j):A_s{}_{ij}>0,\,i<j\}$. (Corresponds to SRE Axiom 1's cooperative edge set $E^+$.)
+**D1 (Bond Graph $G$)** Given by the support of $A_s$: $G=(V,E)$, $E=\{(i,j):A_s{}_{ij}>0,\,i<j\}$. (Corresponds to SRE Axiom 1's cooperative edge set $E^+$.)
 
-**D2 (Edge-Polarity 1-Cochain $s$)**　$s:E\to\{+1,-1\}$, $z_e\equiv\varphi(s_e)\in\mathbb{F}_2$; $s\in C^1(G;\mathbb{F}_2)$.
+**D2 (Edge-Polarity 1-Cochain $s$)** $s:E\to\{+1,-1\}$, $z_e\equiv\varphi(s_e)\in\mathbb{F}_2$; $s\in C^1(G;\mathbb{F}_2)$.
 
 **D3 (Four Edge-Polarity Gauges / Injection Priority)**
 
@@ -13315,23 +13315,23 @@ Operator 19 supports four **mutually exclusive** sources of edge polarity, order
 
 Providing multiple injection gauges simultaneously (e.g. both `edge_polarity` and `orbit_signs`) or invalid values raises `ValueError`; both implementations share this validation contract (see §8.3 / X8).
 
-**D4 (Cycle Holonomy)**　For cycle $\gamma$ (vertex sequence $v_0v_1\cdots v_{L-1}v_0$): $\sigma(\gamma)\equiv\prod_{k}s_{(v_k,v_{k+1})}$, equivalently $\sigma(\gamma)=\big(\sum_{e\in\gamma}z_e\big)\bmod 2$.
+**D4 (Cycle Holonomy)** For cycle $\gamma$ (vertex sequence $v_0v_1\cdots v_{L-1}v_0$): $\sigma(\gamma)\equiv\prod_{k}s_{(v_k,v_{k+1})}$, equivalently $\sigma(\gamma)=\big(\sum_{e\in\gamma}z_e\big)\bmod 2$.
 
-**D5 (Fundamental Cycle Basis)**　Take a spanning forest of $G$ (BFS parent); each non-tree edge $(u,v)$ paired with the tree path $u\leadsto v$ forms a fundamental cycle $\gamma_i$, $i=1,\dots,\beta_1$. $\{\gamma_i\}$ is a basis of $H_1$.
+**D5 (Fundamental Cycle Basis)** Take a spanning forest of $G$ (BFS parent); each non-tree edge $(u,v)$ paired with the tree path $u\leadsto v$ forms a fundamental cycle $\gamma_i$, $i=1,\dots,\beta_1$. $\{\gamma_i\}$ is a basis of $H_1$.
 
-**D6 ($\sigma$-Class / Triviality)**　$[s]=s+\delta C^0\in H^1$. Call $[s]$ **trivial** ($[s]=0$) iff $s\in\delta C^0$ (i.e. there exists a vertex potential $t\in\{\pm1\}^V$ with $s_e=t_it_j$), equivalently **all** $\sigma(\gamma_i)=+1$ on the fundamental cycle basis. $\sigma_{\text{canonical}}\equiv+1$ (trivial) $/-1$ (nontrivial).
+**D6 ($\sigma$-Class / Triviality)** $[s]=s+\delta C^0\in H^1$. Call $[s]$ **trivial** ($[s]=0$) iff $s\in\delta C^0$ (i.e. there exists a vertex potential $t\in\{\pm1\}^V$ with $s_e=t_it_j$), equivalently **all** $\sigma(\gamma_i)=+1$ on the fundamental cycle basis. $\sigma_{\text{canonical}}\equiv+1$ (trivial) $/-1$ (nontrivial).
 
-**D7 (Magnitude Channel $\deg$)**　$\deg(K)\equiv\beta_1(K)\bmod 2$. (Independent of $s$.)
+**D7 (Magnitude Channel $\deg$)** $\deg(K)\equiv\beta_1(K)\bmod 2$. (Independent of $s$.)
 
-**D8 (In-Model Charge Tier $Q_{\text{model}}$)**　$Q_{\text{model}}\equiv\sigma_{\text{canonical}}\cdot\deg\in\{-1,0,+1\}$ (with $e$ normalised to 1).
+**D8 (In-Model Charge Tier $Q_{\text{model}}$)** $Q_{\text{model}}\equiv\sigma_{\text{canonical}}\cdot\deg\in\{-1,0,+1\}$ (with $e$ normalised to 1).
 
-**D9 (Aut-Invariant Assignment)**　Let the automorphism group $\operatorname{Aut}(G)$ (in the molecular context, **color-preserving** automorphisms; see T7) act on $E$, partitioning $E$ into edge orbits $\{O_1,\dots,O_k\}$. Call $s$ **Aut-invariant** if $s$ is constant on each orbit.
+**D9 (Aut-Invariant Assignment)** Let the automorphism group $\operatorname{Aut}(G)$ (in the molecular context, **color-preserving** automorphisms; see T7) act on $E$, partitioning $E$ into edge orbits $\{O_1,\dots,O_k\}$. Call $s$ **Aut-invariant** if $s$ is constant on each orbit.
 
 **D10 (Channel Type)**
 - **electron-like (forced trivial)**: under Aut-invariant assignments, **every** $s$ is trivial;
 - **nucleon-like (nontrivial allowed)**: $\exists$ Aut-invariant $s$ that is nontrivial.
 
-**D11 (Aut-Invariant Assignment Space $W(G)$, new in v1.2)**　Let the edge orbits be $O_1,\dots,O_k$,
+**D11 (Aut-Invariant Assignment Space $W(G)$, new in v1.2)** Let the edge orbits be $O_1,\dots,O_k$,
 $$W(G)\equiv\operatorname{span}_{\mathbb{F}_2}\{\mathbf 1_{O_1},\dots,\mathbf 1_{O_k}\}\subseteq C^1(G;\mathbb{F}_2),\qquad \dim W(G)=n_\mathrm{orb}=k .$$
 $W(G)$ is the subspace of "all Aut-invariant assignments". **Contrast**: without the Aut constraint the assignment space is the whole $C^1$ (dimension $m$), and nontrivial classes are then the norm (dimension $\beta_1$, see §10 item 2).
 
@@ -13339,20 +13339,20 @@ $W(G)$ is the subspace of "all Aut-invariant assignments". **Contrast**: without
 $$\operatorname{Cut}(G)\equiv\{d(S):S\subseteq V\}=\operatorname{im}\delta_0=\delta C^0\subseteq C^1(G;\mathbb{F}_2),\qquad \dim\operatorname{Cut}(G)=n-c ,$$
 where $d(S)$ is the set of edges with exactly one endpoint in $S$. **Use the star-set basis** $d(\{v\})$ (all edges incident to $v$). **Pitfall warning**: if the basis is mistakenly taken as "the tree-path edge set from $v$ to the root", the resulting space is the **cycle space** (the tree half of the tree–cotree decomposition), not the cut space—the $Y_3$ verdict report measured 566 mismatches out of 996 cases under this substitution (see §8.4, gate B′).
 
-**D13 (Holonomy Rank and Number of Reachable Classes, new in v1.2)**　Define the $\mathbb{F}_2$-linear map
+**D13 (Holonomy Rank and Number of Reachable Classes, new in v1.2)** Define the $\mathbb{F}_2$-linear map
 $$\Phi_G:W(G)\longrightarrow H^1(G;\mathbb{F}_2),\qquad z\longmapsto[s(z)],\qquad \operatorname{rank}_\mathrm{hol}(G)\equiv\dim_{\mathbb{F}_2}\operatorname{im}\Phi_G .$$
 **Meaning**: $\operatorname{rank}_\mathrm{hol}$ is the "number of bits of the sign channel"; the number of Aut-invariant reachable classes is $2^{\operatorname{rank}_\mathrm{hol}}$; $\operatorname{rank}_\mathrm{hol}=0\iff$ every Aut-invariant assignment is trivial (i.e. the electron-like case of D10, made precise here).
 
-**D14 (Pfaffian Orientation Class, new in v1.2 — control channel for §6.2 only)**　Let $\mathcal M$ be the set of perfect matchings of $G$. An edge orientation $t:E\to\{\pm1\}$ is a **Pfaffian orientation** if for every $M\in\mathcal M$, $\prod_{e\in M}t_e=(-1)^{\mathrm{cr}(M)}$, where $\mathrm{cr}(M)$ is the number of crossing pairs in the matching mod 2. This is equivalent to the solvability of the **unbalanced linear system** $\sum_{e\in M}t_e=\mathrm{cr}(M)\ (\bmod 2)$; its solution set is denoted $\mathcal O_\mathrm{Pf}(G)$. When $\#\mathcal M=0$ the criterion passes vacuously and **cannot be used as a discovery**.
+**D14 (Pfaffian Orientation Class, new in v1.2 — control channel for §6.2 only)** Let $\mathcal M$ be the set of perfect matchings of $G$. An edge orientation $t:E\to\{\pm1\}$ is a **Pfaffian orientation** if for every $M\in\mathcal M$, $\prod_{e\in M}t_e=(-1)^{\mathrm{cr}(M)}$, where $\mathrm{cr}(M)$ is the number of crossing pairs in the matching mod 2. This is equivalent to the solvability of the **unbalanced linear system** $\sum_{e\in M}t_e=\mathrm{cr}(M)\ (\bmod 2)$; its solution set is denoted $\mathcal O_\mathrm{Pf}(G)$. When $\#\mathcal M=0$ the criterion passes vacuously and **cannot be used as a discovery**.
 
 ---
 
 ## 4 Axioms (Inherited from the Charge-Emergence Paper)
 
-**A1 (Charge Functional)**　$Q=\sigma\cdot\deg\cdot e$, $\sigma\in H^1(G;\mathbb{F}_2)$.
-**A2 (Composite Recomputation)**　For a composite knot $K_{\text{comp}}$, $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$.
-**A3 (Additive Separation)**　Independent knots satisfy $Q_{\text{tot}}=\sum_i Q(K_i)$.
-**A0 (Sign Reference)**　Convention: the holonomy class containing the electron is "negative" (gauge convention).
+**A1 (Charge Functional)** $Q=\sigma\cdot\deg\cdot e$, $\sigma\in H^1(G;\mathbb{F}_2)$.
+**A2 (Composite Recomputation)** For a composite knot $K_{\text{comp}}$, $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$.
+**A3 (Additive Separation)** Independent knots satisfy $Q_{\text{tot}}=\sum_i Q(K_i)$.
+**A0 (Sign Reference)** Convention: the holonomy class containing the electron is "negative" (gauge convention).
 
 **Operator 19 Gauge Statement**: Operator 19 implements the $\sigma$ channel and the $\deg$ channel, outputting $Q_{\text{model}}$ as the **in-model charge tier**; the "negative" reference in A0 is carried by $\sigma_{\text{canonical}}=-1$.
 
@@ -13364,21 +13364,21 @@ $$\Phi_G:W(G)\longrightarrow H^1(G;\mathbb{F}_2),\qquad z\longmapsto[s(z)],\qqua
 
 ### T0 (Well-Definedness: $\sigma$ is an $\mathbb{F}_2$-Linear Functional on $H_1$)
 
-**Statement**　On a graph without 2-cells, $B_1=0$ so $H_1=Z_1$; the map $\sigma:Z_1\to\mathbb{F}_2$, $\gamma\mapsto\sum_{e\in\gamma}z_e$, is a linear functional depending only on the cycle chain itself.
+**Statement** On a graph without 2-cells, $B_1=0$ so $H_1=Z_1$; the map $\sigma:Z_1\to\mathbb{F}_2$, $\gamma\mapsto\sum_{e\in\gamma}z_e$, is a linear functional depending only on the cycle chain itself.
 
-**Proof**　$\partial_2=0\Rightarrow B_1=0\Rightarrow H_1=Z_1$; a cycle is a homology class, so $\sigma$ has no "representative ambiguity". Linearity: for $\gamma_1,\gamma_2\in Z_1$, $\sigma(\gamma_1+\gamma_2)=\sum_{e\in\gamma_1\triangle\gamma_2}z_e=\sigma(\gamma_1)+\sigma(\gamma_2)\ (\mathrm{mod}\,2)$, because common edges appear twice in the symmetric difference and cancel mod 2. $\blacksquare$
+**Proof** $\partial_2=0\Rightarrow B_1=0\Rightarrow H_1=Z_1$; a cycle is a homology class, so $\sigma$ has no "representative ambiguity". Linearity: for $\gamma_1,\gamma_2\in Z_1$, $\sigma(\gamma_1+\gamma_2)=\sum_{e\in\gamma_1\triangle\gamma_2}z_e=\sigma(\gamma_1)+\sigma(\gamma_2)\ (\mathrm{mod}\,2)$, because common edges appear twice in the symmetric difference and cancel mod 2. $\blacksquare$
 
-**Note**　This is one place where Operator 19 is simpler than general graph theory: molecular bond graphs have no faces filling cycles, so the declaration "$\sigma\in H^1$" from the charge-emergence paper holds **automatically** at the graph level, with no extra 2-cell structure required.
+**Note** This is one place where Operator 19 is simpler than general graph theory: molecular bond graphs have no faces filling cycles, so the declaration "$\sigma\in H^1$" from the charge-emergence paper holds **automatically** at the graph level, with no extra 2-cell structure required.
 
 ### T1 (Vertex-Potential Triviality Theorem)
 
-**Statement**　If $s_e=t_i\cdot t_j$ ($t\in\{\pm1\}^V$, i.e. $s$ is a $\delta$-type vertex potential), then for **every** closed chain $\gamma$ we have $\sigma(\gamma)=+1$; that is, $[s]=0$.
+**Statement** If $s_e=t_i\cdot t_j$ ($t\in\{\pm1\}^V$, i.e. $s$ is a $\delta$-type vertex potential), then for **every** closed chain $\gamma$ we have $\sigma(\gamma)=+1$; that is, $[s]=0$.
 
-**Proof**　
+**Proof** 
 $$\sigma(\gamma)=\prod_{(i,j)\in\gamma}s_i s_j=\prod_{v\in\gamma}t_v^{\,\deg_\gamma(v)},$$
 where $\deg_\gamma(v)$ is the number of edges incident to $v$ in the closed chain $\gamma$. A closed chain satisfies the conservation of incoming and outgoing degrees at each vertex, so $\deg_\gamma(v)$ is **even**, hence $t_v^{\deg_\gamma(v)}=+1$; the product yields $\sigma(\gamma)=+1$. $\blacksquare$
 
-**Corollary T1.1 (Charge Sign Cannot Emerge from Local Spin Relabeling)**　The spin polarities of Operator 11, $s_e=s_i s_j$, are **precisely** of vertex-potential type; by T1 their holonomy is always trivial. Therefore:
+**Corollary T1.1 (Charge Sign Cannot Emerge from Local Spin Relabeling)** The spin polarities of Operator 11, $s_e=s_i s_j$, are **precisely** of vertex-potential type; by T1 their holonomy is always trivial. Therefore:
 
 > **The charge-sign channel $\sigma$ must come from a genuinely non-coboundary cochain $[s]\neq0\in H^1$ — it cannot be manufactured by local vertex-spin relabeling.**
 
@@ -13386,7 +13386,7 @@ This explains why "naively assigning vertex-spin signs" cannot produce a net cha
 
 ### T2 (Aut-Invariant Reachability Linear Criterion over $\mathbb{Z}_2$)
 
-**Statement**　Let the Aut edge orbits be $O_1,\dots,O_k$ and let Aut-invariant assignments take values $z_o\in\mathbb{F}_2$ on orbit $o$. Define
+**Statement** Let the Aut edge orbits be $O_1,\dots,O_k$ and let Aut-invariant assignments take values $z_o\in\mathbb{F}_2$ on orbit $o$. Define
 
 $$m_{i,o}\equiv\#\{e\in O_o\cap\gamma_i\}\bmod2\in\mathbb{F}_2,\qquad M=(m_{i,o})\in\mathbb{F}_2^{\beta_1\times k}.$$
 
@@ -13394,47 +13394,47 @@ Then $\sigma(\gamma_i)=\bigoplus_{o}m_{i,o}z_o$, and
 
 $$\boxed{\ \text{Nontrivial class reachable}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }$$
 
-**Proof**　By the linearity of T0, $\sigma(\gamma_i)=\sum_{e\in\gamma_i}z_e=\sum_o z_o\cdot\#(O_o\cap\gamma_i)=\bigoplus_o m_{i,o}z_o$ — so $M$ gives a linear map $T:\mathbb{F}_2^k\to\mathbb{F}_2^{\beta_1}$, $z\mapsto Mz$.
+**Proof** By the linearity of T0, $\sigma(\gamma_i)=\sum_{e\in\gamma_i}z_e=\sum_o z_o\cdot\#(O_o\cap\gamma_i)=\bigoplus_o m_{i,o}z_o$ — so $M$ gives a linear map $T:\mathbb{F}_2^k\to\mathbb{F}_2^{\beta_1}$, $z\mapsto Mz$.
 - ($\Leftarrow$) If $\exists m_{i,o}=1$, take $z=e_o$ (only $z_o=1$); then $\sigma(\gamma_i)=m_{i,o}=1\neq0$ and nontrivial reachability is achieved (the trivial class $z=0$ is always reachable).
 - ($\Rightarrow$) If $M=0$, then $\forall z$, $Mz=0$, so every cycle holonomy is always $+1$ and no nontrivial class is reachable.
 
 Thus reachability is equivalent to $M\neq0$ — we need only find any nonzero entry in $M$ with complexity $\mathcal{O}(\beta_1\cdot k)$, **no $2^k$ exhaustive enumeration**. $\blacksquare$
 
-**Corollary T2.1**　The trivial class is **always reachable** (take the zero assignment $s_e\equiv+1$). A nontrivial class is reachable **if and only if** some edge orbit appears an odd number of times in some fundamental cycle.
+**Corollary T2.1** The trivial class is **always reachable** (take the zero assignment $s_e\equiv+1$). A nontrivial class is reachable **if and only if** some edge orbit appears an odd number of times in some fundamental cycle.
 
 **T2.2 (Rank Form: $\operatorname{rank}(M)=\operatorname{rank}_\mathrm{hol}$, new in v1.2)**
 
-**Statement**　$\operatorname{rank}_{\mathbb{F}_2}(M)=k-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)=\operatorname{rank}_\mathrm{hol}(G)$.
+**Statement** $\operatorname{rank}_{\mathbb{F}_2}(M)=k-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)=\operatorname{rank}_\mathrm{hol}(G)$.
 
-**Proof**　The null space of $M$ is $\ker M=\{z:Mz=0\}=\{z:\sigma(\gamma_i)=0\ \forall i\}$. By T3 (cycle-basis independence), "vanishing on the fundamental cycle basis" $\iff$ "vanishing on every cycle" $\iff[s(z)]=0$; and by T4, $[s(z)]=0\iff s(z)\in\delta C^0=\operatorname{Cut}$. Hence $\ker M=W(G)\cap\operatorname{Cut}(G)$. The rank–nullity theorem gives $\operatorname{rank}M=k-\dim\ker M=k-\dim(W\cap\operatorname{Cut})$, which equals $\operatorname{rank}_\mathrm{hol}$ by T9. $\blacksquare$
+**Proof** The null space of $M$ is $\ker M=\{z:Mz=0\}=\{z:\sigma(\gamma_i)=0\ \forall i\}$. By T3 (cycle-basis independence), "vanishing on the fundamental cycle basis" $\iff$ "vanishing on every cycle" $\iff[s(z)]=0$; and by T4, $[s(z)]=0\iff s(z)\in\delta C^0=\operatorname{Cut}$. Hence $\ker M=W(G)\cap\operatorname{Cut}(G)$. The rank–nullity theorem gives $\operatorname{rank}M=k-\dim\ker M=k-\dim(W\cap\operatorname{Cut})$, which equals $\operatorname{rank}_\mathrm{hol}$ by T9. $\blacksquare$
 
-**T2.3 (Status of the Criterion: the Misstated Necessity, corrected in v1.2)**　The $M\neq0$ criterion of T2 is an **existence** criterion (equivalent to $\operatorname{rank}_\mathrm{hol}\ge1$); it **does not give the dimension** (the dimension comes from T9/T2.2). The v1.1 §10 item 3 wrote "contains an odd cycle + orbit count $\ge2$" as a **necessary condition**, which **has been falsified**: the (in-book) ladder family with odd $k\ge5$ is **bipartite** (no odd cycle) with two orbits, yet still has $\operatorname{rank}_\mathrm{hol}\ge1$ (§6.3, T11); while $k=3$ ($K_{3,3}$) is bipartite with a single orbit and has $\operatorname{rank}_\mathrm{hol}=0$. **Odd cycles are neither sufficient nor necessary**; the only necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
+**T2.3 (Status of the Criterion: the Misstated Necessity, corrected in v1.2)** The $M\neq0$ criterion of T2 is an **existence** criterion (equivalent to $\operatorname{rank}_\mathrm{hol}\ge1$); it **does not give the dimension** (the dimension comes from T9/T2.2). The v1.1 §10 item 3 wrote "contains an odd cycle + orbit count $\ge2$" as a **necessary condition**, which **has been falsified**: the (in-book) ladder family with odd $k\ge5$ is **bipartite** (no odd cycle) with two orbits, yet still has $\operatorname{rank}_\mathrm{hol}\ge1$ (§6.3, T11); while $k=3$ ($K_{3,3}$) is bipartite with a single orbit and has $\operatorname{rank}_\mathrm{hol}=0$. **Odd cycles are neither sufficient nor necessary**; the only necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
 
 ### T3 (Cycle-Basis Independence)
 
-**Statement**　The triviality criterion for $\sigma$ ($[s]=0$) is independent of the choice of fundamental cycle basis $\{\gamma_i\}$.
+**Statement** The triviality criterion for $\sigma$ ($[s]=0$) is independent of the choice of fundamental cycle basis $\{\gamma_i\}$.
 
-**Proof**　Take any two fundamental cycle bases $\{\gamma_i\},\{\gamma'_j\}$; both are bases of $H_1=Z_1$, so $\gamma'_j=\sum_i a_{ji}\gamma_i$ ($a_{ji}\in\mathbb{F}_2$). By T0 linearity $\sigma(\gamma'_j)=\bigoplus_i a_{ji}\sigma(\gamma_i)$. Therefore "all zero on one basis" is equivalent to "all zero on the other basis", so the triviality criterion is unique. $\blacksquare$
+**Proof** Take any two fundamental cycle bases $\{\gamma_i\},\{\gamma'_j\}$; both are bases of $H_1=Z_1$, so $\gamma'_j=\sum_i a_{ji}\gamma_i$ ($a_{ji}\in\mathbb{F}_2$). By T0 linearity $\sigma(\gamma'_j)=\bigoplus_i a_{ji}\sigma(\gamma_i)$. Therefore "all zero on one basis" is equivalent to "all zero on the other basis", so the triviality criterion is unique. $\blacksquare$
 
 ### T4 (Coboundary Gauge Invariance / Cohomology Class is a Gauge Invariant)
 
-**Statement**　Let $s'=s\cdot\delta t$ (i.e. $s'_e=s_e\,t_it_j$, $t\in\{\pm1\}^V$). Then $\forall\gamma:\sigma'(\gamma)=\sigma(\gamma)$; hence $\sigma$ depends only on $[s]\in H^1$.
+**Statement** Let $s'=s\cdot\delta t$ (i.e. $s'_e=s_e\,t_it_j$, $t\in\{\pm1\}^V$). Then $\forall\gamma:\sigma'(\gamma)=\sigma(\gamma)$; hence $\sigma$ depends only on $[s]\in H^1$.
 
-**Proof**　$\sigma'(\gamma)=\big(\prod_{e\in\gamma}s_e\big)\cdot\big(\prod_{e\in\gamma}t_it_j\big)=\sigma(\gamma)\cdot1$, where the last factor is always $+1$ by T1. $\blacksquare$
+**Proof** $\sigma'(\gamma)=\big(\prod_{e\in\gamma}s_e\big)\cdot\big(\prod_{e\in\gamma}t_it_j\big)=\sigma(\gamma)\cdot1$, where the last factor is always $+1$ by T1. $\blacksquare$
 
-**Corollary T4.1**　The quotient structure $H^1=C^1/\delta C^0$ precisely matches "$\sigma$ is immune to vertex-potential relabeling"; the gauge freedom is $\delta C^0$ (vertex potentials).
+**Corollary T4.1** The quotient structure $H^1=C^1/\delta C^0$ precisely matches "$\sigma$ is immune to vertex-potential relabeling"; the gauge freedom is $\delta C^0$ (vertex potentials).
 
 ### T5 (Two-Channel Orthogonal Independence)
 
-**Statement**　$\deg=\beta_1\bmod2$ is determined solely by $(V,E,c)$, independent of $s$; $\sigma$ depends solely on $[s]$, not on the specific values of $(V,E,c)$ (only on the graph's **orbit structure** and $[s]$). Their independent variables are disjoint, so they take values independently.
+**Statement** $\deg=\beta_1\bmod2$ is determined solely by $(V,E,c)$, independent of $s$; $\sigma$ depends solely on $[s]$, not on the specific values of $(V,E,c)$ (only on the graph's **orbit structure** and $[s]$). Their independent variables are disjoint, so they take values independently.
 
-**Proof**　$\deg$ is a topological function of the graph ($\beta_1=E-V+c$); $\sigma$ is a function of the cohomology class. Taking different $s,s'$ preserves $\deg$ while changing $\sigma$; taking different graphs (changing $\deg$) preserves the $\sigma$ structure. So $Q=\sigma\cdot\deg$ is indeed the product of two independent channels. $\blacksquare$
+**Proof** $\deg$ is a topological function of the graph ($\beta_1=E-V+c$); $\sigma$ is a function of the cohomology class. Taking different $s,s'$ preserves $\deg$ while changing $\sigma$; taking different graphs (changing $\deg$) preserves the $\sigma$ structure. So $Q=\sigma\cdot\deg$ is indeed the product of two independent channels. $\blacksquare$
 
 ### T6 (Even-Cycle Forced Triviality: Structural Origin of Electron Type)
 
-**Statement**　If $G$ is **bipartite** (no odd cycles) and has exactly **one edge orbit**, then every Aut-invariant assignment is trivial (electron-like).
+**Statement** If $G$ is **bipartite** (no odd cycles) and has exactly **one edge orbit**, then every Aut-invariant assignment is trivial (electron-like).
 
-**Proof**　A single orbit $\Rightarrow s$ is a constant $z$ (in $\mathbb{F}_2$). Bipartite $\Rightarrow$ every cycle $\gamma$ has even length $\lvert \gamma\rvert$. Hence $\sigma(\gamma)=z^{\lvert \gamma\rvert }=(z)^{\text{even}}=+1$, trivial. $\blacksquare$
+**Proof** A single orbit $\Rightarrow s$ is a constant $z$ (in $\mathbb{F}_2$). Bipartite $\Rightarrow$ every cycle $\gamma$ has even length $\lvert \gamma\rvert$. Hence $\sigma(\gamma)=z^{\lvert \gamma\rvert }=(z)^{\text{even}}=+1$, trivial. $\blacksquare$
 
 **Reference** (consistent with charge-emergence paper §10.2):
 - Electron $Q_3$ (cube graph): bipartite, single edge orbit $\Rightarrow$ **forced trivial** ($[s]=0$);
@@ -13442,39 +13442,39 @@ Thus reachability is equivalent to $M\neq0$ — we need only find any nonzero en
 
 ### T7 (Element-Coloring Necessity)
 
-**Statement**　In molecular contexts, automorphisms **must preserve element labels** (color-preserving Aut). Using non-color-preserving Aut merges edge orbits that should remain distinct, distorting the reachability criterion and **potentially flipping it**.
+**Statement** In molecular contexts, automorphisms **must preserve element labels** (color-preserving Aut). Using non-color-preserving Aut merges edge orbits that should remain distinct, distorting the reachability criterion and **potentially flipping it**.
 
-**Proof (Counterexample)**　Take a 4-cycle $v_0v_1v_2v_3v_0$ with elements $[O,C,C,O]$ ($v_0{=}O, v_1{=}C, v_2{=}C, v_3{=}O$) and edges $e_1{=}(0,1),e_2{=}(1,2),e_3{=}(2,3),e_4{=}(3,0)$.
+**Proof (Counterexample)** Take a 4-cycle $v_0v_1v_2v_3v_0$ with elements $[O,C,C,O]$ ($v_0{=}O, v_1{=}C, v_2{=}C, v_3{=}O$) and edges $e_1{=}(0,1),e_2{=}(1,2),e_3{=}(2,3),e_4{=}(3,0)$.
 - **Color-preserving Aut**: swap $v_0\leftrightarrow v_3$ and $v_1\leftrightarrow v_2$ preserve elements. Orbits: $O_1=\{e_1,e_3\}, O_2=\{e_2\}, O_3=\{e_4\}$ (3 orbits). On the unique cycle $\gamma$: $m_{\gamma,O_1}=2\equiv0, m_{\gamma,O_2}=1, m_{\gamma,O_3}=1$, so $M\neq0$ $\Rightarrow$ **nontrivial reachable**.
 - **Non-color-preserving Aut**: $D_4$ acts **transitively** on all 4 edges (1 orbit). Cycle $\gamma$ has length 4, even, $\sigma=z^{4}=+1$ $\Rightarrow$ **forced trivial**.
 
 The two gauges give **opposite channel criteria**, so element coloring is a necessary condition for molecular-layer analysis. $\blacksquare$
 
-**Implementation Requirement**　`automorphisms(adj, colors=elements)` must restrict automorphisms by `node_match` (by element label); `elements=None` falls back to non-color-preserving, suitable only for abstract-graph experiments.
+**Implementation Requirement** `automorphisms(adj, colors=elements)` must restrict automorphisms by `node_match` (by element label); `elements=None` falls back to non-color-preserving, suitable only for abstract-graph experiments.
 
 ### T8 (Composition and Additivity: Hooks A2/A3)
 
-**Statement**　For a composite body $K_{\text{comp}}$ formed by coherently merging $n$ knots: $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$, $Q_{\text{comp}}=\sigma_{\text{comp}}\deg_{\text{comp}}$.
+**Statement** For a composite body $K_{\text{comp}}$ formed by coherently merging $n$ knots: $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$, $Q_{\text{comp}}=\sigma_{\text{comp}}\deg_{\text{comp}}$.
 
-**Proof**　The composite recomputes new boundaries (A2), with boundary equal to the symmetric difference of each $\partial K_i$; by T0 linearity, $\sigma$ sums over the symmetric difference $\Rightarrow$ polarities multiply (Lemma 2.1). $\deg$ is recomputed from the new $(V,E,c)$. Additive separation (A3) follows from $Q$ summing over independent components. $\blacksquare$
+**Proof** The composite recomputes new boundaries (A2), with boundary equal to the symmetric difference of each $\partial K_i$; by T0 linearity, $\sigma$ sums over the symmetric difference $\Rightarrow$ polarities multiply (Lemma 2.1). $\deg$ is recomputed from the new $(V,E,c)$. Additive separation (A3) follows from $Q$ summing over independent components. $\blacksquare$
 
 ### T9 (Cut-Space Identity / Necessary-and-Sufficient Criterion for Triviality, new in v1.2)
 
-**Statement**　Let $G$ be connected ($c=1$; the general $c$ case is applied component-wise), $n_\mathrm{orb}=\dim W(G)$. Then
+**Statement** Let $G$ be connected ($c=1$; the general $c$ case is applied component-wise), $n_\mathrm{orb}=\dim W(G)$. Then
 
 $$\boxed{\ \operatorname{rank}_\mathrm{hol}(G)=n_\mathrm{orb}-\dim_{\mathbb{F}_2}\big(W(G)\cap\operatorname{Cut}(G)\big)\ }\qquad\text{and}\qquad \boxed{\ \operatorname{rank}_\mathrm{hol}(G)=0\iff W(G)\subseteq\operatorname{Cut}(G)\ }$$
 
 That is: **the sign channel is trivial $\iff$ every Aut-invariant assignment is some cut**.
 
-**Proof**　By D13, $\Phi_G:W(G)\to H^1$ is $\mathbb{F}_2$-linear. Its kernel is
+**Proof** By D13, $\Phi_G:W(G)\to H^1$ is $\mathbb{F}_2$-linear. Its kernel is
 $$\ker\Phi_G=\{s\in W(G):[s]=0\in H^1\}=\{s\in W(G):s\in\delta C^0\}=W(G)\cap\operatorname{Cut}(G),$$
 where the first equality is the definition of the kernel, the second follows from $H^1=C^1/\delta C^0$ (§2.1) together with T4 (the class is uniquely determined by $[s]$), and the third from D12 ($\operatorname{Cut}=\delta C^0$). By the rank–nullity theorem,
 $$\operatorname{rank}_\mathrm{hol}=\dim\operatorname{im}\Phi_G=\dim W(G)-\dim\ker\Phi_G=n_\mathrm{orb}-\dim(W\cap\operatorname{Cut}).$$
 Then $\operatorname{rank}_\mathrm{hol}=0\iff\operatorname{im}\Phi_G=0\iff\ker\Phi_G=W(G)\iff W(G)\subseteq\operatorname{Cut}(G)$ gives the second equivalence. $\blacksquare$
 
-**Corollary T9.1 (Connection to T2)**　$\operatorname{rank}_\mathrm{hol}\ge1\iff W(G)\not\subseteq\operatorname{Cut}(G)\iff M\neq0$ (the existence criterion of T2). T2 only answers "is there a nontrivial class"; T9 answers "how many bits".
+**Corollary T9.1 (Connection to T2)** $\operatorname{rank}_\mathrm{hol}\ge1\iff W(G)\not\subseteq\operatorname{Cut}(G)\iff M\neq0$ (the existence criterion of T2). T2 only answers "is there a nontrivial class"; T9 answers "how many bits".
 
-**Corollary T9.2 (Two Mutually Independent Computational Routes)**　Route A: the matrix rank $\operatorname{rank}_{\mathbb{F}_2}M$ of T2 ($\mathcal{O}(\beta_1 k)$); Route B: the cut-space intersection dimension $\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$ with the **star-set** basis of $\operatorname{Cut}$ (D12). The $Y_3$ verdict report measured these two routes plus "$H^1$ class enumeration" and "subset enumeration" on 22 samples (ladder family, prism family, classical graphs, random 3-regular graphs) with **zero mismatch across all four routes**.
+**Corollary T9.2 (Two Mutually Independent Computational Routes)** Route A: the matrix rank $\operatorname{rank}_{\mathbb{F}_2}M$ of T2 ($\mathcal{O}(\beta_1 k)$); Route B: the cut-space intersection dimension $\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$ with the **star-set** basis of $\operatorname{Cut}$ (D12). The $Y_3$ verdict report measured these two routes plus "$H^1$ class enumeration" and "subset enumeration" on 22 samples (ladder family, prism family, classical graphs, random 3-regular graphs) with **zero mismatch across all four routes**.
 
 **Corollary T9.3 (Official Skeleton Readings)**
 
@@ -13486,7 +13486,7 @@ Then $\operatorname{rank}_\mathrm{hol}=0\iff\operatorname{im}\Phi_G=0\iff\ker\Ph
 
 This agrees with the T2 criterion ($Q_3$: $M=0$; $Y_3^\mathrm{cl}$: $M\neq0$) and with the channel types in charge-emergence paper §10.2; moreover the triviality of $Q_3$ now receives a **mechanistic explanation**: its only Aut-invariant assignment (all ones, since the graph is edge-transitive) happens to lie inside the cut space.
 
-**Note (Label Independence)**　$\operatorname{rank}_\mathrm{hol}$ is an integer depending only on the orbit structure and the cut space of $G$; it is **independent** of the choice of cycle basis (T3) and of vertex labeling (matching the $\sigma$ class of §6). This is exactly opposite to $\varrho$-type quantities (Operator 20, see its specification §2.2), which are label-sensitive. Hence $\operatorname{rank}_\mathrm{hol}$ is a **comparable invariant** across skeletons.
+**Note (Label Independence)** $\operatorname{rank}_\mathrm{hol}$ is an integer depending only on the orbit structure and the cut space of $G$; it is **independent** of the choice of cycle basis (T3) and of vertex labeling (matching the $\sigma$ class of §6). This is exactly opposite to $\varrho$-type quantities (Operator 20, see its specification §2.2), which are label-sensitive. Hence $\operatorname{rank}_\mathrm{hol}$ is a **comparable invariant** across skeletons.
 
 ---
 
@@ -13494,7 +13494,7 @@ This agrees with the T2 criterion ($Q_3$: $M=0$; $Y_3^\mathrm{cl}$: $M\neq0$) an
 
 Operator 19 faithfully reproduces the three skeletons from charge-emergence paper §10.2 using `skel_electron_q3 / skel_y3_closed / skel_y3_open`, serving as the **anchor self-test** of the specification:
 
-**Table 6.1　Anchor readings of the three skeletons**
+**Table 6.1 Anchor readings of the three skeletons**
 
 | Skeleton | $V$ | $E$ | $\beta_1$ | $\deg$ | $\lvert\operatorname{Aut}\rvert$ | Edge Orbits | Bipartite | Nontrivial Reachable | Channel Type |
 |---|---|---|---|---|---|---|---|---|---|
@@ -13502,7 +13502,7 @@ Operator 19 faithfully reproduces the three skeletons from charge-emergence pape
 | Proton $p$ (closed) | 12 | 18 | 7 | 1 | 36 | 2 | No | **Yes** | nucleon-like |
 | Neutron $n$ (open) | 12 | 17 | 6 | 0 | 4 | 7 | No | **Yes** | nucleon-like |
 
-**Table 6.2　Cut-space readings (T9; item-by-item identical to Table 3.1 of the $Y_3$ verdict report, re-checked inside this project in §8.4)**
+**Table 6.2 Cut-space readings (T9; item-by-item identical to Table 3.1 of the $Y_3$ verdict report, re-checked inside this project in §8.4)**
 
 | Skeleton | $n_\mathrm{orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\operatorname{rank}_\mathrm{hol}$ | Reachable classes $2^\mathrm{rank}$ |
 |---|---|---|---|---|---|
@@ -13550,7 +13550,7 @@ Conclusion (strengthened in v1.2): **The electron is forced into a trivial holon
 
 The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$. Graph theory contains another equally $\mathbb{Z}_2$-valued "sign" channel—the **Pfaffian orientation class** (D14). Whether the two share a common origin had previously been argued only indirectly on the ladder family; this section renders a side-by-side verdict on the **project's own nucleon skeletons**.
 
-**Table 6.3　Side-by-side readings of the two channels ($Y_3$ verdict report §4.1)**
+**Table 6.3 Side-by-side readings of the two channels ($Y_3$ verdict report §4.1)**
 
 | Skeleton | $n_\mathrm{orb}$ | $\operatorname{rank}_\mathrm{hol}$ ($H^1$ channel) | $\#\mathcal M$ | $\lvert\mathcal O_\mathrm{Pf}\rvert$ | $\dim\mathcal O_\mathrm{Pf}$ | Pfaffian channel | nice even cycles |
 |---|---|---|---|---|---|---|---|
@@ -13558,13 +13558,13 @@ The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$
 | $Y_3^\mathrm{cl}$ (proton) | 2 | 1 | 6 | **0** | — | **unsolvable** | **42** |
 | $Y_3^\mathrm{op}$ (neutron) | 7 | 2 | 4 | 16384 | 13 | **solvable** | **0** |
 
-**Proposition P19.1 (Channel-Separation Verdict)**　On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\operatorname{rank}_\mathrm{hol}=1$, exactly 2 reachable classes), while the Pfaffian channel is **closed** ($\mathcal O_\mathrm{Pf}=\emptyset$). Hence the project's core claim—that the charge sign is carried by $H^1$ holonomy rather than by Pfaffian orientation—obtains **direct side-by-side measurement on the project's own skeleton**, no longer resting only on the indirect argument "holds on the ladder family, fails to extrapolate to the skeleton".
+**Proposition P19.1 (Channel-Separation Verdict)** On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\operatorname{rank}_\mathrm{hol}=1$, exactly 2 reachable classes), while the Pfaffian channel is **closed** ($\mathcal O_\mathrm{Pf}=\emptyset$). Hence the project's core claim—that the charge sign is carried by $H^1$ holonomy rather than by Pfaffian orientation—obtains **direct side-by-side measurement on the project's own skeleton**, no longer resting only on the indirect argument "holds on the ladder family, fails to extrapolate to the skeleton".
 
-**Theorem T10 (Minimal Unsatisfiable Row-Subset Certificate)**　The unbalanced system of $Y_3^\mathrm{cl}$ has $6$ rows (6 perfect matchings) $\times\,18$ columns (18 edges); its **full set of 6 rows** is a minimal unsatisfiable row subset: removing any single row leaves the remaining 5 rows **solvable** (maximum satisfiable row count $=5/6$). That is, $Y_3^\mathrm{cl}$ is **exactly one row away** from admitting a Pfaffian orientation.
+**Theorem T10 (Minimal Unsatisfiable Row-Subset Certificate)** The unbalanced system of $Y_3^\mathrm{cl}$ has $6$ rows (6 perfect matchings) $\times\,18$ columns (18 edges); its **full set of 6 rows** is a minimal unsatisfiable row subset: removing any single row leaves the remaining 5 rows **solvable** (maximum satisfiable row count $=5/6$). That is, $Y_3^\mathrm{cl}$ is **exactly one row away** from admitting a Pfaffian orientation.
 
-**Proof**　By criterion D14, list the 6 perfect matchings row by row together with the right-hand sides $\mathrm{cr}$ (Table 6.4), and exhaust all $2^6$ row subsets: only the full set is unsatisfiable, while all 63 proper subsets are satisfiable; hence the full set is a minimal unsatisfiable row subset. $\blacksquare$
+**Proof** By criterion D14, list the 6 perfect matchings row by row together with the right-hand sides $\mathrm{cr}$ (Table 6.4), and exhaust all $2^6$ row subsets: only the full set is unsatisfiable, while all 63 proper subsets are satisfiable; hence the full set is a minimal unsatisfiable row subset. $\blacksquare$
 
-**Table 6.4　The unbalanced system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns; right-hand sides are $\mathrm{cr}(M)$)**
+**Table 6.4 The unbalanced system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns; right-hand sides are $\mathrm{cr}(M)$)**
 
 | Row | Perfect matching $M$ | $\mathrm{cr}(M)$ |
 |---|---|---|
@@ -13577,16 +13577,16 @@ The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$
 
 "One row short" is confirmed by **exhausting all row subsets**, not heuristically.
 
-**Proposition P19.2 (Structural Mechanism: nice even cycles vanish)**　$Y_3^\mathrm{cl}$ contains **42** nice even cycles (9 of length 6, 9 of length 8, 18 of length 10, 6 of length 12); the open state $Y_3^\mathrm{op}$, obtained by deleting one rim edge, has **0**, and the Pfaffian channel opens accordingly ($\dim=13$, $\lvert\mathcal O_\mathrm{Pf}\rvert=2^{13}$, with the particular solution independently cross-checked at $\mathrm{Pf}=+4=\#\mathcal M$). Thus the v1.1 qualitative observation—"a single closed/open decision flips existence"—now has a **concrete mechanism**.
+**Proposition P19.2 (Structural Mechanism: nice even cycles vanish)** $Y_3^\mathrm{cl}$ contains **42** nice even cycles (9 of length 6, 9 of length 8, 18 of length 10, 6 of length 12); the open state $Y_3^\mathrm{op}$, obtained by deleting one rim edge, has **0**, and the Pfaffian channel opens accordingly ($\dim=13$, $\lvert\mathcal O_\mathrm{Pf}\rvert=2^{13}$, with the particular solution independently cross-checked at $\mathrm{Pf}=+4=\#\mathcal M$). Thus the v1.1 qualitative observation—"a single closed/open decision flips existence"—now has a **concrete mechanism**.
 
-> **Boundary 1 (an indicator is not a criterion)**　nice even cycles are only an **obstruction indicator**: used as a classifier on 22 samples it scores TP=4, FP=2, FN=3, TN=13 (false positives such as the Wagner graph $M_8$: nice=1 yet solvable; false negatives are mostly bipartite graphs). Ground truth always comes from the unbalanced system.
-> **Boundary 2 (contract unchanged)**　Pfaffian orientation is an **adjacent graph-theoretic channel, not part of Operator 19's output**: the implementation introduces no new keys, `charge_channel_keys` still returns exactly **10 keys** (§8.3), and the freeze contract is untouched by this section.
+> **Boundary 1 (an indicator is not a criterion)** nice even cycles are only an **obstruction indicator**: used as a classifier on 22 samples it scores TP=4, FP=2, FN=3, TN=13 (false positives such as the Wagner graph $M_8$: nice=1 yet solvable; false negatives are mostly bipartite graphs). Ground truth always comes from the unbalanced system.
+> **Boundary 2 (contract unchanged)** Pfaffian orientation is an **adjacent graph-theoretic channel, not part of Operator 19's output**: the implementation introduces no new keys, `charge_channel_keys` still returns exactly **10 keys** (§8.3), and the freeze contract is untouched by this section.
 
 ### 6.3 Relation of $Y_3$ to the Möbius Ladder Family and the Numbering Convention (new in v1.2)
 
-**Proposition P19.3 (Covering / Quotient Verdict)**　$Y_3^\mathrm{cl}$ is **non-isomorphic** to every $M_{2n}$ ($n\ge3$) (adjacency spectra and triangle counts both differ), admits **zero coverings** (complete backtracking enumeration over $M_4$–$M_{14}$ returns 0) and **zero quotients** (a quotient is a special case of a covering, so zero coverings implies zero quotients). **However**, $Y_3^\mathrm{cl}$ is a **$k=3$ regular cover of $K_4$** (unique covering; deck group of order 3; quotient $\cong K_4$; each of the four $K_4$ edges lifts 3 times). The "three-ness" of $Y_3$ (3 centers, 3 leg groups, 3 triangles, $\lvert\operatorname{Aut}\rvert=36=3!\times3!$, 2 edge orbits of 9 edges each) thereby receives a unified explanation: **$Y_3$ is a 3-fold complete graph**.
+**Proposition P19.3 (Covering / Quotient Verdict)** $Y_3^\mathrm{cl}$ is **non-isomorphic** to every $M_{2n}$ ($n\ge3$) (adjacency spectra and triangle counts both differ), admits **zero coverings** (complete backtracking enumeration over $M_4$–$M_{14}$ returns 0) and **zero quotients** (a quotient is a special case of a covering, so zero coverings implies zero quotients). **However**, $Y_3^\mathrm{cl}$ is a **$k=3$ regular cover of $K_4$** (unique covering; deck group of order 3; quotient $\cong K_4$; each of the four $K_4$ edges lifts 3 times). The "three-ness" of $Y_3$ (3 centers, 3 leg groups, 3 triangles, $\lvert\operatorname{Aut}\rvert=36=3!\times3!$, 2 edge orbits of 9 edges each) thereby receives a unified explanation: **$Y_3$ is a 3-fold complete graph**.
 
-**Table 6.5　Numbering convention (factor 2; always check before cross-referencing)**
+**Table 6.5 Numbering convention (factor 2; always check before cross-referencing)**
 
 | Graph | In-book $M_k$ (even cycle $C_{2k}$ + antipodal chords, $V=2k$) | Paper $M_{2n}=\mathrm{Cay}(\mathbb{Z}_{2n},\{1,n\})$, $V=2n$ |
 |---|---|---|
@@ -13594,13 +13594,13 @@ The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$
 | $K_{3,3}$ | $M_3$ | $M_6$ |
 | Wagner graph | $M_4$ | $M_8$ |
 
-**Proposition P19.4 (Full-Family Readings in the In-Book Convention, $k=2,\dots,24$)**　$n_\mathrm{orb}=1\iff k\in\{2,3\}$; even $k\iff$ non-bipartite, odd $k\iff$ bipartite; $\operatorname{rank}_\mathrm{hol}=0\iff k=3$.
+**Proposition P19.4 (Full-Family Readings in the In-Book Convention, $k=2,\dots,24$)** $n_\mathrm{orb}=1\iff k\in\{2,3\}$; even $k\iff$ non-bipartite, odd $k\iff$ bipartite; $\operatorname{rank}_\mathrm{hol}=0\iff k=3$.
 
-**Theorem T11 (Necessary-and-Sufficient Condition for Opening the Sign Channel on the Ladder Family)**　On the ladder family, $\operatorname{rank}_\mathrm{hol}=0$ **if and only if** $k=3$ (i.e. $K_{3,3}$, the family's only "bipartite + single orbit" member). Hence every ladder with $k\neq3$ opens the sign channel; when $k\ge5$ is odd the graph is **bipartite** (no odd cycle) yet the channel is still open, with mechanism "bipartite + two orbits".
+**Theorem T11 (Necessary-and-Sufficient Condition for Opening the Sign Channel on the Ladder Family)** On the ladder family, $\operatorname{rank}_\mathrm{hol}=0$ **if and only if** $k=3$ (i.e. $K_{3,3}$, the family's only "bipartite + single orbit" member). Hence every ladder with $k\neq3$ opens the sign channel; when $k\ge5$ is odd the graph is **bipartite** (no odd cycle) yet the channel is still open, with mechanism "bipartite + two orbits".
 
-**Proof**　For $k=3$, single orbit + bipartite forces triviality by T6. For $k=2$ the graph is $K_4$: single orbit but contains triangles, so $\operatorname{rank}_\mathrm{hol}\ge1$. For $k\ge4$, $n_\mathrm{orb}=2$; if $k$ is even the graph contains odd cycles, if $k$ is odd it is bipartite—in either case at least one of the two orbits does not lie in the cut space (for odd $k$ the all-ones assignment lies in the cut space while the other does not), so $\dim(W\cap\operatorname{Cut})\le1<n_\mathrm{orb}=2$, and T9 yields $\operatorname{rank}_\mathrm{hol}\ge1$. $\blacksquare$
+**Proof** For $k=3$, single orbit + bipartite forces triviality by T6. For $k=2$ the graph is $K_4$: single orbit but contains triangles, so $\operatorname{rank}_\mathrm{hol}\ge1$. For $k\ge4$, $n_\mathrm{orb}=2$; if $k$ is even the graph contains odd cycles, if $k$ is odd it is bipartite—in either case at least one of the two orbits does not lie in the cut space (for odd $k$ the all-ones assignment lies in the cut space while the other does not), so $\dim(W\cap\operatorname{Cut})\le1<n_\mathrm{orb}=2$, and T9 yields $\operatorname{rank}_\mathrm{hol}\ge1$. $\blacksquare$
 
-**Corollary T11.1 (Correction to T6 and §6.1)**　T6's "bipartite + single orbit $\Rightarrow$ forced triviality" is a **sufficient** condition whose **converse fails** (counterexample: odd-$k\ge5$ ladders—bipartite with two orbits, channel open). Therefore the §6.1 sentence "what actually determines the flip is the existence of odd cycles" **does not hold**, and the v1.1 §10 item 3 writing "odd cycle + multiple orbits" as a necessary condition is tightened accordingly: the sole necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
+**Corollary T11.1 (Correction to T6 and §6.1)** T6's "bipartite + single orbit $\Rightarrow$ forced triviality" is a **sufficient** condition whose **converse fails** (counterexample: odd-$k\ge5$ ladders—bipartite with two orbits, channel open). Therefore the §6.1 sentence "what actually determines the flip is the existence of odd cycles" **does not hold**, and the v1.1 §10 item 3 writing "odd cycle + multiple orbits" as a necessary condition is tightened accordingly: the sole necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
 
 ---
 
@@ -13778,7 +13778,7 @@ While sharing the same graph ($A_s$) with upstream electronic operators, it outp
 
 # Dual ℤ₂-Channel Verdict on the Nucleon Skeleton Y₃: Landing the Cut-Space Criterion on the Project's Own Object, the Relation to the Möbius Ladder Family, and a Readable Certificate for the Pfaffian Obstruction
 
-> **Abstract**　The core carrier of this project is the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$ (closed state $V=12,E=18,\beta_1=7,\lvert \mathrm{Aut}\rvert =36$). Rounds 101–103 established, respectively, the unbiased linear system for Pfaffian orientation classes, the label-independent $\mathbb Z_2$ invariant $\mathrm{rank}_\mathrm{hol}$, and a necessary-and-sufficient criterion for the latter (the cut-space intersection-dimension identity). These three results were never placed side by side on $Y_3$ itself, so the project's central claim — that the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation — still lacked direct measurement on its own object; moreover, "the closed state has no Pfaffian orientation" existed only as the bare fact "the system is infeasible", which a reader cannot check; and the true relation between $Y_3$ and the Möbius ladder family $M_{2n}$ had never been adjudicated.
+> **Abstract** The core carrier of this project is the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$ (closed state $V=12,E=18,\beta_1=7,\lvert \mathrm{Aut}\rvert =36$). Rounds 101–103 established, respectively, the unbiased linear system for Pfaffian orientation classes, the label-independent $\mathbb Z_2$ invariant $\mathrm{rank}_\mathrm{hol}$, and a necessary-and-sufficient criterion for the latter (the cut-space intersection-dimension identity). These three results were never placed side by side on $Y_3$ itself, so the project's central claim — that the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation — still lacked direct measurement on its own object; moreover, "the closed state has no Pfaffian orientation" existed only as the bare fact "the system is infeasible", which a reader cannot check; and the true relation between $Y_3$ and the Möbius ladder family $M_{2n}$ had never been adjudicated.
 >
 > This report closes all three gaps. **First**, three independent implementations recompute $\mathrm{rank}_\mathrm{hol}$ on $Q_3$, $Y_3^\mathrm{cl}$ and $Y_3^\mathrm{op}$, giving $0/1/2$ — in exact agreement with Operator 19 v1.1 — and in zero mismatch with the cut-space identity. **Second**, a **readable certificate** is given for the absence of a Pfaffian orientation on $Y_3^\mathrm{cl}$: its six perfect-matching equations form a minimal unsatisfiable row subset, and removing any single row restores solvability, i.e. the obstruction is one equation away from being satisfiable. The structural reason is identified: $Y_3^\mathrm{cl}$ contains 42 nice even cycles, whereas $Y_3^\mathrm{op}$ — obtained by deleting one ring edge — contains none, and the Pfaffian channel opens accordingly ($\dim=13$, $\lvert \mathcal O_\mathrm{Pf}\rvert =2^{13}$). **Third**, the relation between $Y_3$ and $M_{2n}$ is adjudicated: complete backtracking enumeration proves zero coverings and zero quotients of $Y_3^\mathrm{cl}$ onto any $n\ge3$ ladder, while $Y_3^\mathrm{cl}$ is exactly a **three-fold regular covering** of $K_4\cong M_4$ (deck group of order 3, quotient $\cong K_4$) — which both explains why $Y_3^\mathrm{cl}$ has three triangles and pins down, to a verifiable precision, the long-open question of whether the two families are related.
 >
@@ -13788,7 +13788,7 @@ While sharing the same graph ($A_s$) with upstream electronic operators, it outp
 
 ---
 
-## 1　Origin: three unsettled questions
+## 1 Origin: three unsettled questions
 
 The two main lines of this project — "charge emergence" and "mass origin" — share one carrier: the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$. Its closed state (proton) and open state (neutron) are joined by deleting a single ring edge. The previous three rounds each touched it without landing on it.
 
@@ -13802,9 +13802,9 @@ The two main lines of this project — "charge emergence" and "mass origin" — 
 
 ---
 
-## 2　Preliminaries: the three skeletons and the two channels
+## 2 Preliminaries: the three skeletons and the two channels
 
-### 2.1　The canonical construction
+### 2.1 The canonical construction
 
 **Definition 2.1 (closed nucleon skeleton $Y_3$).** Take the vertex set $\{c_0,c_1,c_2\}\cup\{L_{ij}:i,j\in\{0,1,2\}\}$ (12 vertices). The edge set is
 $$E\bigl(Y_3^\mathrm{cl}\bigr)=\bigl\{\{c_i,L_{ij}\}:i,j\in\{0,1,2\}\bigr\}\;\cup\;\bigl\{\{L_{0j},L_{1j}\},\{L_{1j},L_{2j}\},\{L_{2j},L_{0j}\}:j\in\{0,1,2\}\bigr\}.$$
@@ -13816,7 +13816,7 @@ Semantically: three centres $c_i$, each joined to three "legs" $L_{ij}$; the leg
 
 > **Note 2.4 (a fact about implementation scatter).** The repository contains 45 bodies of $y_3$ / $y_{3,\mathrm{closed}}$ / $y_{3,\mathrm{open}}$, merging into 21 distinct implementation bodies (by function name × body md5). All measurement in this report uses the canonical adjacency of Definition 2.1.
 
-### 2.2　The two ℤ₂ channels
+### 2.2 The two ℤ₂ channels
 
 **Definition 2.5 (the $H^1$ holonomy channel).** Let $G$ be connected. $\mathrm{Aut}(G)$ acts on the edge set; the orbits are **edge orbits**, and $\dim W(G)=n_\mathrm{orb}$. Assign a sign $s_e\in\{\pm1\}$ to each edge (constant on each orbit, hence an element of $W(G)$), and define $\sigma(\gamma)=\prod_{e\in\gamma}s_e$ for a cycle $\gamma$; $\sigma$ takes values in $H^1(G;\mathbb F_2)$. Operator 19 v1.1 defined the invariant
 $$\mathrm{rank}_\mathrm{hol}(G):=\dim_{\mathbb F_2}\operatorname{im}\Phi_G,\qquad \Phi_G:W(G)\longrightarrow H^1(G;\mathbb F_2).$$
@@ -13835,15 +13835,15 @@ Write the solution set $\mathcal O_\mathrm{Pf}(G)$. When $\#\mathcal{M}=0$ the P
 
 **Definition 2.9 (nice even cycle).** An even cycle $C$ is a nice even cycle if each of its edges belongs to exactly **two** perfect matchings of $G$.
 
-### 2.3　The relation between the two channels: a structural fact
+### 2.3 The relation between the two channels: a structural fact
 
 the initial Operator 19 release obtained, on $Y_3$, the fact that the closed state has **no solution** in the Pfaffian channel but **does** in the $H^1$ channel. This report upgrades that fact to a checkable verdict and supplies a mechanism.
 
 ---
 
-## 3　Verdict one: the $H^1$ channel on the three skeletons
+## 3 Verdict one: the $H^1$ channel on the three skeletons
 
-### 3.1　Three independent implementations
+### 3.1 Three independent implementations
 
 **Method 3.1 (three implementations).** On $Q_3$, $Y_3^\mathrm{cl}$ and $Y_3^\mathrm{op}$, compute $\mathrm{rank}_\mathrm{hol}$ along three **mutually independent** routes:
 
@@ -13855,7 +13855,7 @@ the initial Operator 19 release obtained, on $Y_3$, the fact that the closed sta
 $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\mathrm{cl}\bigr)=1,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\mathrm{op}\bigr)=2 .$$
 The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\cap\operatorname{Cut})$ are given in Table 3.1, and the four readings show zero mismatch on 22 samples (ladder family, prism family, control graphs, random 3-regular graphs).
 
-**Table 3.1　Four readings on the three skeletons**
+**Table 3.1 Four readings on the three skeletons**
 
 | Skeleton | $V$ | $E$ | $\beta_1$ | $\lvert \mathrm{Aut}\rvert$ | $n_\mathrm{orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\mathrm{rank}_\mathrm{hol}$ (I1/I2/I3/T9) |
 |---|---|---|---|---|---|---|---|---|
@@ -13863,7 +13863,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 | $Y_3^\mathrm{cl}$ (proton) | 12 | 18 | 7 | 36 | 2 | 11 | 1 | **1** / 1 / 1 / 1 |
 | $Y_3^\mathrm{op}$ (neutron) | 12 | 17 | 6 | 4 | 7 | 11 | 5 | **2** / 2 / 2 / 2 |
 
-### 3.2　What the three readings mean
+### 3.2 What the three readings mean
 
 **Corollary 3.3 (the electron's sign is locked by topology).** $\mathrm{rank}_\mathrm{hol}(Q_3)=0$, i.e. $W(Q_3)\subseteq\operatorname{Cut}(Q_3)$: the unique Aut-invariant assignment (all-ones, since $Q_3$ is edge-transitive) is exactly a cut of the bipartite graph, so the sign has **no** topological degree of freedom. This agrees with Operator 19 v1.1's $\lambda(Q_3)=\mathrm{True}$ and supplies its mechanism: the sign is not "locked by accident" but "the single candidate assignment happens to lie in the cut space".
 
@@ -13875,11 +13875,11 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 4　Verdict two: the Pfaffian channel reading and a readable certificate
+## 4 Verdict two: the Pfaffian channel reading and a readable certificate
 
-### 4.1　The reading
+### 4.1 The reading
 
-**Table 4.1　The dual-channel verdict (central result)**
+**Table 4.1 The dual-channel verdict (central result)**
 
 | Skeleton | $n_\mathrm{orb}$ | $\mathrm{rank}_\mathrm{hol}$ ($H^1$ channel) | $\#\mathcal M$ | $\lVert \mathcal O_\mathrm{Pf}\rVert$ | $\dim\mathcal O_\mathrm{Pf}$ | Pfaffian channel | nice even cycles |
 |---|---|---|---|---|---|---|---|
@@ -13889,7 +13889,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 **Proposition 4.2 (channel separation).** On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\mathrm{rank}_\mathrm{hol}=1$) while the Pfaffian channel is **closed** ($\mathcal O_\mathrm{Pf}=\emptyset$). Hence the project's central claim — that the charge sign is carried by $H^1$ holonomy — receives, **for the first time, direct side-by-side measurement on the project's own object**, rather than the indirect argument "it holds on the ladder family and extrapolates to the skeleton".
 
-### 4.2　A readable certificate: the minimal unsatisfiable row subset
+### 4.2 A readable certificate: the minimal unsatisfiable row subset
 
 **Definition 4.3 (minimal conflict certificate).** For the unbiased linear system of Definition 2.8, a subset $R'$ of the row set $R$ is a **minimal unsatisfiable row subset** (minimal unsatisfiable subset) if $R'$ is infeasible while every proper subset $R''\subsetneq R'$ is feasible.
 
@@ -13903,9 +13903,9 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 5　Verdict three: the relation between $Y_3$ and the Möbius ladder family
+## 5 Verdict three: the relation between $Y_3$ and the Möbius ladder family
 
-### 5.1　Complete enumeration of coverings
+### 5.1 Complete enumeration of coverings
 
 **Method 5.1 (covering enumeration).** A **covering** $G\to H$ is a map $t:V(G)\to V(H)$ satisfying (i) homomorphism, $uv\in E(G)\Rightarrow t(u)\sim t(v)\in E(H)$; and (ii) **local bijectivity**: for every $v$, $\{t(w):w\in N_G(v)\}=N_H(t(v))$. The enumeration is by backtracking: fix $t$ pointwise in BFS order, pruning only by necessary conditions (adjacency to already-fixed images, distinctness from the images of already-fixed neighbours, and the local-bijectivity condition at vertices whose neighbourhood is fully fixed). The enumeration is **complete**.
 
@@ -13920,13 +13920,13 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 **Theorem 5.4 (the structural origin of $Y_3$).** $Y_3^\mathrm{cl}$ is a three-fold covering of the complete graph $K_4$, and this covering is **regular** (deck group of order 3). Its fibres are four groups of three points each; every $K_4$ edge is lifted three times. $Y_3^\mathrm{cl}$ has exactly three triangles — consistent with "the four triangles of $K_4$ are spread over three fibres".
 
-### 5.2　The honest form of the verdict
+### 5.2 The honest form of the verdict
 
 **Proposition 5.5 (a direct answer to an open question carried over from Operator 19 v1.1).** $Y_3$ and the Möbius ladder family $M_{2n}$ ($n\ge3$) stand in **no** covering, quotient or double-cover relation: not isomorphic, zero coverings, zero quotients. $Y_3$ does possess a covering structure, but its base graph is $K_4\cong M_4$, the **smallest degenerate point** of the ladder family, not any genuine ladder. The "threefold" character of $Y_3$ (3 centres, 3 leg groups, 3 triangles, $\lvert \mathrm{Aut}\rvert =36=3!\times3!$, 2 edge orbits of 9 edges) acquires a unified explanation in the covering view: **$Y_3$ is a three-fold complete graph**.
 
 **Corollary 5.6 (why the the initial Operator 19 release theorem does not extrapolate).** the initial Operator 19 release's theorem "$\mathcal O_\mathrm{Pf}(M_{2n})\neq\emptyset\iff n$ even $\iff$ non-bipartite" holds within the ladder family. $Y_3^\mathrm{cl}$ is non-bipartite yet admits **no** Pfaffian orientation, so "non-bipartite $\Rightarrow$ an orientation class exists" is **not a universal proposition**. This report supplies its structural reason (Corollary 5.6): $Y_3^\mathrm{cl}$ lies outside the ladder family (§5.1) and carries 42 nice even cycles (§4.2), whereas even-$n$ ladders carry none.
 
-### 5.3　Cross-reference index conventions (added in the second half of this report)
+### 5.3 Cross-reference index conventions (added in the second half of this report)
 
 **Problem.** All the verdicts above are written as "$M_{2n}$", but the **Operator 19 chapter** (and the preamble of its initial release) denotes the same family by $M_k$, and the two subscripts are **not** defined identically. Without settling the conventions first, a statement such as "$Y_3$ is not isomorphic to $M_{12}$" points at the wrong graph once it is cited across documents.
 
@@ -13957,7 +13957,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 6　Five new portable rules
+## 6 Five new portable rules
 
 **Rule G70 (the isomorphism-consistency law).** Whenever a single skeletal object exists in the repository as **several implementation copies**, one must **first prove they yield the same graph** (isomorphic) before making any claim that rests on it; the number of copies is itself a risk signal. Measured this report: 45 function bodies, 21 implementation bodies, 16 independently checkable copies all isomorphic, 5 that cannot be executed in isolation (due to a parameterised signature or a same-file dependency) recorded individually with their cause, and 0 non-isomorphic. **Corollary**: before isomorphism is proven, "the multiple copies agree" cannot be used as an assumption.
 
@@ -13973,9 +13973,9 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 7　Verification protocol
+## 7 Verification protocol
 
-### 7.1　Implementation inventory
+### 7.1 Implementation inventory
 
 | No. | Script | Role |
 |---|---|---|
@@ -13985,7 +13985,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 | existing | `5-Appendixs/Operators/Y3_Verdict/_pfcore.py`, `5-Appendixs/Operators/Y3_Verdict/_gf2.py` | the initial Operator 19 release Pfaffian engine (unbiased system + dual-implementation cross-check) |
 | existing | `5-Appendixs/Operators/Y3_Verdict/_bridge101_nucleon.py` | the initial Operator 19 release bridge ($Y_3$ construction and holonomy mechanism) |
 
-### 7.2　Gate table
+### 7.2 Gate table
 
 | Gate | Content | Result |
 |---|---|---|
@@ -14001,9 +14001,9 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 | F4 | Tampering with the T9 reading must raise an alarm | **PASS** |
 | F5 | Positive control: the classical double covering $Q_3\to K_4$ must be enumerated ($k=2$, fibres $2,2,2,2$) | **PASS** |
 
-### 7.3　Certificate details
+### 7.3 Certificate details
 
-**Table 7.1　The unbiased system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns)**
+**Table 7.1 The unbiased system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns)**
 
 | Row | Perfect matching $M$ | $\mathrm{cr}(M)$ |
 |---|---|---|
@@ -14016,7 +14016,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 All six rows together are infeasible; removing any one row leaves a feasible 5-row system (maximal satisfiable row count $=5/6$).
 
-**Table 7.2　nice even cycle counts (length distribution)**
+**Table 7.2 nice even cycle counts (length distribution)**
 
 | Graph | Total | len 4 | len 6 | len 8 | len 10 | len 12 | Pfaffian |
 |---|---|---|---|---|---|---|---|
@@ -14027,15 +14027,15 @@ All six rows together are infeasible; removing any one row leaves a feasible 5-r
 | Petersen | 25 | 0 | 10 | 15 | 0 | 0 | infeasible |
 | $K_{3,3}$ | 15 | 9 | 6 | 0 | 0 | 0 | infeasible |
 
-### 7.4　External-sample falsification
+### 7.4 External-sample falsification
 
 The 22 samples cover the ladder family $M_4$–$M_{16}$, the prism family $\mathrm{prism}_3$–$\mathrm{prism}_6$, classical graphs ($Q_3$, $K_3$, $K_4$, Heawood, Petersen) and four random 3-regular graphs (fixed seed). The four readings show zero mismatch on all 22 samples; the out-of-family distribution of the two channels' behaviour is fully recorded (Table 4.1, Note 4.7). **No** new type beyond "$H^1$ open but Pfaffian closed" was found; $Q_3$ is the only sample of type "$H^1$ closed, Pfaffian open" shared with $K_{3,3}$, $M_6$, $M_{10}$, $M_{14}$, Heawood, $\mathrm{prism}_4$ and $\mathrm{prism}_6$.
 
 ---
 
-## 8　Conclusions
+## 8 Conclusions
 
-### 8.1　Table of the three verdicts
+### 8.1 Table of the three verdicts
 
 | Verdict | Statement | Basis |
 |---|---|---|
@@ -14043,13 +14043,13 @@ The 22 samples cover the ladder family $M_4$–$M_{16}$, the prism family $\math
 | Two | The absence of a Pfaffian orientation on $Y_3^\mathrm{cl}$ carries a **readable certificate** (6-row minimal unsatisfiable set, one row short); the structural reason is 42 nice even cycles, and $Y_3^\mathrm{op}$'s vanishing of that count reopens the channel | Theorem 4.4, Proposition 4.6, Note 4.7 |
 | Three | $Y_3$ stands in no covering/quotient/double-cover relation with $M_{2n}(n\ge3)$; $Y_3$ is a three-fold regular covering of $K_4$ | Proposition 5.2, Theorem 5.4, Proposition 5.5 |
 
-### 8.2　What this says about the project's own results
+### 8.2 What this says about the project's own results
 
 This report upgrades "the charge sign is carried by $H^1(G;\mathbb Z_2)$ holonomy rather than by a Pfaffian orientation" from an **indirect argument** (holds on the ladder family, fails on extrapolation to the skeleton) to a **side-by-side measurement on the project's own object** (Proposition 4.2): on the very same graph $Y_3^\mathrm{cl}$, the $H^1$ channel yields exactly two reachable classes (one bit of freedom) while the Pfaffian channel admits no orientation at all — with a checkable certificate (§4.2) and a structural mechanism (the nice even cycle count drops from 42 to 0). Simultaneously, Operator 19 v1.1's qualitative observation that "one edge deletion flips the Pfaffian existence within a single skeleton family" is located to a **specific mechanism**: deleting a ring edge empties the nice-even-cycle obstruction set.
 
 The scope of the initial Operator 19 release's theorem is likewise tightened, with a structural reason (Corollary 5.6): "non-bipartite $\Rightarrow$ a Pfaffian orientation class exists" holds only inside the ladder family; $Y_3$ supplies an out-of-family counterexample, and the counterexample works because $Y_3$ is a different family and carries nice obstructions.
 
-### 8.3　Relation to the Operator 19 chapter
+### 8.3 Relation to the Operator 19 chapter
 
 Operator 19 v1.2 already adjudicated three statements in its own text and prepared five patches. The present report does **not** overturn those verdicts; rather, it provides **positive evidence drawn from this project's own objects** for the item "the §6.1 skeleton table": that table lists skeletons such as $Y_3$ as "multi-orbit + non-bipartite", and v1.2 falsified the way its reasoning was written ("$T_2\ M\neq0$" as a necessary condition); this report measures $\mathrm{rank}_\mathrm{hol}(Y_3^\mathrm{cl})=1\neq0$ and $\dim(W\cap\operatorname{Cut})=1$, confirming on the **project's own object** that the channel is indeed open — thereby supporting the table row while rejecting the form of its justification.
 
@@ -14059,7 +14059,7 @@ At the same time, the five new rules (G70–G74) are **methodological increments
 
 **A third boundary concerning criteria.** When this report was first written it measured that searches of the Operator 19 text for `Pfaffian`, `rank_hol` and "closed/open flip" returned **0 hits each** — i.e. the results of this report, v1.1 and v1.2 had at that time not yet entered the text. This release has merged T9–T11, §6.2 and §6.3 into Operator 19 and corrected v1.1's odd-cycle criterion statement, so this boundary is closed as of this release.
 
-### 8.4　Honest boundaries
+### 8.4 Honest boundaries
 
 1. **Completeness of the covering enumeration rests on the implementation**: the completeness of Method 5.1 is guaranteed by "pruning only by necessary conditions" and is checked by the positive control $Q_3\to K_4$ ($k=2$); but no third-party independent implementation cross-check was performed.
 2. **$\lvert \mathrm{Aut}\rvert$ was not classified group-theoretically**: the group structure of $\lvert \mathrm{Aut}(Y_3^\mathrm{cl})\rvert =36$ (conjecturally $S_3\times S_3$) is unproved; the isomorphism type of the order-3 deck group is undetermined.
@@ -14086,7 +14086,7 @@ At the same time, the five new rules (G70–G74) are **methodological increments
 
 ---
 
-## Appendix A　Reproduction
+## Appendix A Reproduction
 
 ```
 C:\myapp\miniconda3\envs\ai\python.exe 5-Appendixs\Operators\Y3_Verdict\_dir7_y3_skeleton_verdict.py
@@ -14206,17 +14206,17 @@ For each undirected edge $e=\{i,j\}$ ($i<j$), fix the reference orientation $i\t
 
 $$\varepsilon_{e,\gamma}=\begin{cases}+1,& \gamma\ \text{traverses along}\ i\to j\\-1,& \text{reversed}\end{cases},\qquad \mathrm{Hol}_\mathbb{R}(\delta,\gamma)=\sum_{e\in\gamma}\varepsilon_{e,\gamma}\,\delta_e .$$
 
-**Specification Clause (added in v0.3, mandatory to read)**　$\varepsilon_{e,\gamma}$ is the sign of **cycle traversal** relative to the reference orientation — a different matter from the §2.2 reference orientation itself. The reference orientation is fixed by an **assignment convention**:
+**Specification Clause (added in v0.3, mandatory to read)** $\varepsilon_{e,\gamma}$ is the sign of **cycle traversal** relative to the reference orientation — a different matter from the §2.2 reference orientation itself. The reference orientation is fixed by an **assignment convention**:
 
 $$\boxed{\ \text{Reference orientation of edge }e=\{i,j\}=i\to j\ (i<j)\ \text{ (by vertex numbering)}\ }$$
 
 Therefore, **$\delta\in C^1(G;\mathbb{R})$ is a directed cochain "along the reference orientation"**: $\delta_e$ is the increment in the $i\to j$ direction, not an undirected scalar.
 
-**Resulting labeling dependency (important, see §10 R11)**　Bond orders (and their changes) are **undirected** chemical data, while $C^1$ coordinates carry orientation; mapping undirected data into directed coordinates requires one assignment, and different assignments give different Hodge decompositions. **Therefore $\varrho$ depends on vertex labeling**: the same physical reaction (6-ring uniform bond-order $+0.5$, i.e. benzene aromatisation) gives $\varrho=2/3$ under labeling $[0,1,2,3,4,5]$ and $\varrho=1/3$ after swapping $1\leftrightarrow2$ (measured in V3).
+**Resulting labeling dependency (important, see §10 R11)** Bond orders (and their changes) are **undirected** chemical data, while $C^1$ coordinates carry orientation; mapping undirected data into directed coordinates requires one assignment, and different assignments give different Hodge decompositions. **Therefore $\varrho$ depends on vertex labeling**: the same physical reaction (6-ring uniform bond-order $+0.5$, i.e. benzene aromatisation) gives $\varrho=2/3$ under labeling $[0,1,2,3,4,5]$ and $\varrho=1/3$ after swapping $1\leftrightarrow2$ (measured in V3).
 
-**Optional explicit orientation $\varsigma_e$ (added input in v0.3)**　If the user wants to read the chemical intuition (e.g. to have "uniform bond-order increase around a ring" read as a pure cycle channel), they may additionally provide $\varsigma_e\in\{+1,-1\}$; the specification automatically replaces $\delta_e$ with $\varsigma_e\delta_e$ before decomposition. **Default $\varsigma_e\equiv+1$** (i.e. bit-wise identical to v0.2). $\varsigma$ is a different symbol from $\varepsilon_{e,\gamma}$ and from the D7 regular $\varepsilon$.
+**Optional explicit orientation $\varsigma_e$ (added input in v0.3)** If the user wants to read the chemical intuition (e.g. to have "uniform bond-order increase around a ring" read as a pure cycle channel), they may additionally provide $\varsigma_e\in\{+1,-1\}$; the specification automatically replaces $\delta_e$ with $\varsigma_e\delta_e$ before decomposition. **Default $\varsigma_e\equiv+1$** (i.e. bit-wise identical to v0.2). $\varsigma$ is a different symbol from $\varepsilon_{e,\gamma}$ and from the D7 regular $\varepsilon$.
 
-**Implementation Status (wired in v0.3)**　`build_reaction(..., orient=ς)` accepts a scalar, length-$\lvert E\rvert$ vector, or `{(i,j):±1}` dictionary; non-$\pm1$ values raise error; $\varsigma_e$ **only acts on the edge channel** ($\varrho$), **does not affect** $\kappa$ (uses $W$, no orientation) or $\nu,\mu$ (vertex channel, no orientation). Public helper `orient_from_cycle(n, edges, cycle)`: takes $\varsigma_e=\varepsilon_{e,\gamma}$, turning the chemical intuition of "entire ring synchronously increasing/decreasing bond order" into a specification orientation.
+**Implementation Status (wired in v0.3)** `build_reaction(..., orient=ς)` accepts a scalar, length-$\lvert E\rvert$ vector, or `{(i,j):±1}` dictionary; non-$\pm1$ values raise error; $\varsigma_e$ **only acts on the edge channel** ($\varrho$), **does not affect** $\kappa$ (uses $W$, no orientation) or $\nu,\mu$ (vertex channel, no orientation). Public helper `orient_from_cycle(n, edges, cycle)`: takes $\varsigma_e=\varepsilon_{e,\gamma}$, turning the chemical intuition of "entire ring synchronously increasing/decreasing bond order" into a specification orientation.
 
 Measured (6-ring uniform $+0.5$, i.e. benzene aromatisation, with both default and natural-cycle traversal):
 
@@ -14307,7 +14307,7 @@ $$w(t)=\arg\min_{w\in[0,3]^E}\ \|\boldsymbol\tau(w)-\boldsymbol\tau(t)\|^2+\lamb
 
 ### D7 (Rigidity Bottleneck $\kappa$, computation domain rewritten in v0.3)
 
-**Computation domain $X$ (v0.3 core correction)**　v0.2 took "largest connected component containing active sites", which is self-contradictory: by definition that component is connected ⇒ $\lambda_2>0$ ⇒ P20.5's equivalence is always true and $\gamma\to0$ is never observable. v0.3 changes it to **union of components containing active sites**:
+**Computation domain $X$ (v0.3 core correction)** v0.2 took "largest connected component containing active sites", which is self-contradictory: by definition that component is connected ⇒ $\lambda_2>0$ ⇒ P20.5's equivalence is always true and $\gamma\to0$ is never observable. v0.3 changes it to **union of components containing active sites**:
 
 $$\boxed{\ X=V\ \cup\ \big\{b\in V_B\ :\ \exists\,(a,b)\in E_I,\ w_I(a,b)>0\big\}\ }$$
 
@@ -14337,13 +14337,13 @@ with at least one strict inequality. **No scalarisation defined** — weights ar
 
 ## 4 Positioning Axioms
 
-**A20 (Bridge Axiom, Pareto version)**　A catalyst works by **simultaneously improving all three channels along the path under fixed stoichiometry**:
+**A20 (Bridge Axiom, Pareto version)** A catalyst works by **simultaneously improving all three channels along the path under fixed stoichiometry**:
 
 $$\boxed{\ C\ \text{effective}\iff \mathcal{K}_{\text{act}}(C)\preceq \mathcal{K}_{\text{act}}(\text{direct reference}),\quad \mu\ \text{fixed}\ }$$
 
 It is **not** "reduce $\varrho$ to 0" — by T20.3, interface edges cannot change endpoint $\varrho_{\text{tot}}$; what is possible is changing the **path** (via $w_{\text{ads}}$) and lowering $\kappa$.
 
-**H20.2 (Orthogonality Hypothesis, former A20′)**　Three channels encode independent barriers; any one being zero does not imply the others are zero. Verified numerically by V4.
+**H20.2 (Orthogonality Hypothesis, former A20′)** Three channels encode independent barriers; any one being zero does not imply the others are zero. Verified numerically by V4.
 
 ---
 
@@ -14362,7 +14362,7 @@ Let $G$ be connected, $\delta\in C^1(G;\mathbb{R})$. The following are equivalen
 (ii)⇒(i): Take base point $v_0$, let $\varphi_v=\sum_{e\in P(v_0\to v)}\varepsilon_{e,P}\delta_e$. If $P,P'$ are two paths $v_0\to v$, then $P\cup P'^{-1}$ is a closed chain; when not simple it can be decomposed into a sum of simple cycles, each summing to $0$ by (ii), so $\varphi_v$ is path-independent, thus $\delta_e=\varphi_i-\varphi_j$.
 (i)⇔(iii): By the orthogonal decomposition in §2.1. $\square$
 
-**Corollary 20.1.1**　$\varrho$ is independent of cycle-basis choice ($\delta_{\text{harm}}$ is the orthogonal projection onto $\mathcal{H}^1$).
+**Corollary 20.1.1** $\varrho$ is independent of cycle-basis choice ($\delta_{\text{harm}}$ is the orthogonal projection onto $\mathcal{H}^1$).
 
 ### T20.2 (Bounds of $\kappa$ and Scaling Invariance)
 
@@ -14372,7 +14372,7 @@ $$\kappa\ge\frac{1}{1+\varepsilon},$$
 
 and $L(cW)=cL(W)$ ⇒ $\gamma(cW)=\gamma(W)$, so $\kappa$ is invariant under **global** weight scaling.
 
-**Proof**　$\lambda_2\le\lambda_n$ is obvious; connectedness gives $\lambda_2>0$; scaling cancels. $\square$
+**Proof** $\lambda_2\le\lambda_n$ is obvious; connectedness gives $\lambda_2>0$; scaling cancels. $\square$
 
 **Note**: scaling invariance requires both $w$ **and** $w_I$ to scale together; scaling only the interface weights changes $\kappa$ (this is exactly the quantity C20.7 scans).
 
@@ -14382,7 +14382,7 @@ Let $\bar E=E\cup E_B\cup E_I$. For arbitrary $E_I$ and $w_I$, the endpoint disp
 
 $$\varrho_{\text{tot}}(\bar E)=\varrho_{\text{tot}}(G).$$
 
-**Proof**　The inclusion map $\iota:C^1(G)\to C^1(\bar E)$ extends the 1-cochain on $E$ by $0$ on $E_I$; dually, $H_1(G)\hookrightarrow H_1(\bar E)$ is injective. For any $\gamma\subset G$,
+**Proof** The inclusion map $\iota:C^1(G)\to C^1(\bar E)$ extends the 1-cochain on $E$ by $0$ on $E_I$; dually, $H_1(G)\hookrightarrow H_1(\bar E)$ is injective. For any $\gamma\subset G$,
 $$\langle[\delta_{\text{tot}}],[\gamma]\rangle_{\bar E}=\sum_{e\in\gamma}\varepsilon_{e,\gamma}\delta_{e,\text{tot}}=\langle[\delta_{\text{tot}}|_G],[\gamma]\rangle_G$$
 independent of $E_I$. So $\delta_{\text{tot}}$'s image on $H_1(G)$ is unchanged, and $\varrho_{\text{tot}}$ is unchanged. $\square$
 
@@ -14392,21 +14392,21 @@ independent of $E_I$. So $\delta_{\text{tot}}$'s image on $H_1(G)$ is unchanged,
 
 $\delta_v=\mu\mathbf1+\delta_v^{\perp}$ is an orthogonal decomposition ($\mathbf1^\top\delta_v^\perp=0$), and $\nu$ satisfies two **correct** invariances:
 
-**(a) Invariant under global translation of all waypoint coverages**　If $n_j\mapsto n_j+c\mathbf1$ (with $c$ independent of $j$, i.e. every waypoint at every site adds the same $c$), all $\delta_v^{(j)}$, $\mu$, and $\nu$ are unchanged;
-**(b) Invariant under nonzero scaling of $\delta_v$**　$\nu(c\,\delta_v)=\nu(\delta_v)$ ($c\neq0$).
+**(a) Invariant under global translation of all waypoint coverages** If $n_j\mapsto n_j+c\mathbf1$ (with $c$ independent of $j$, i.e. every waypoint at every site adds the same $c$), all $\delta_v^{(j)}$, $\mu$, and $\nu$ are unchanged;
+**(b) Invariant under nonzero scaling of $\delta_v$** $\nu(c\,\delta_v)=\nu(\delta_v)$ ($c\neq0$).
 
-**Proof**　(a) Translation gives $\delta_v^{(j)}=(n_j+c\mathbf1)-(n_{j-1}+c\mathbf1)=\delta_v^{(j)}$, unchanged term by term. $\square$
+**Proof** (a) Translation gives $\delta_v^{(j)}=(n_j+c\mathbf1)-(n_{j-1}+c\mathbf1)=\delta_v^{(j)}$, unchanged term by term. $\square$
 (b) $\delta_v=\mu\mathbf1+\delta_v^\perp$ ⇒ $c\delta_v=(c\mu)\mathbf1+c\delta_v^\perp$ ($\mathbf1^\top(c\delta_v^\perp)=c\cdot0=0$, still orthogonal decomposition), so
 $$\nu(c\delta_v)=\frac{\|c\delta_v^\perp\|}{\|c\delta_v\|}=\frac{\lvert c\rvert \,\|\delta_v^\perp\|}{\lvert c\rvert \,\|\delta_v\|}=\nu(\delta_v).\ \square$$
 
-> **False statement from v0.2 deleted**　v0.2 wrote "for any $c\in\mathbb{R}$, $\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$". This is **false**: $\nu$'s denominator is $\|\delta_v\|$, translation changes numerator (which is unchanged) and denominator (which increases when $c\neq0$), so $\nu$ generally decreases. Numerical counterexample in V13. **This is a substantive v0.2 error**: the orthogonal decomposition itself is correct, but the invariance it implies was incorrectly written on $\delta_v$ (it should be on $n_j$, i.e. (a)).
+> **False statement from v0.2 deleted** v0.2 wrote "for any $c\in\mathbb{R}$, $\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$". This is **false**: $\nu$'s denominator is $\|\delta_v\|$, translation changes numerator (which is unchanged) and denominator (which increases when $c\neq0$), so $\nu$ generally decreases. Numerical counterexample in V13. **This is a substantive v0.2 error**: the orthogonal decomposition itself is correct, but the invariance it implies was incorrectly written on $\delta_v$ (it should be on $n_j$, i.e. (a)).
 
 ### P20.5 (Transition-State Criterion, restated in v0.3)
 
 On domain $X$ (union of components containing active sites, per D7),
 $$g(t^\ast)=0\iff\lambda_2\big(L|_X(w(t^\ast))\big)=0\iff \text{the zero-weight edge set contains a cut of the induced graph on } X.$$
 
-**Proof**　$\lambda_2=0\iff L|_X$ is disconnected (degenerate zero modes) $\iff$ there exists a cut with all-zero weights. Taking $X$ as "skeleton vertices $\cup$ boundary vertices connected by positive-weight interface edges" already excludes two kinds of trivial zero modes: (i) isolated vertices caused by removed H — H does not create nodes, no zero mode; (ii) isolated boundary vertices not connected by positive interface edges — excluded from $X$. $\square$
+**Proof** $\lambda_2=0\iff L|_X$ is disconnected (degenerate zero modes) $\iff$ there exists a cut with all-zero weights. Taking $X$ as "skeleton vertices $\cup$ boundary vertices connected by positive-weight interface edges" already excludes two kinds of trivial zero modes: (i) isolated vertices caused by removed H — H does not create nodes, no zero mode; (ii) isolated boundary vertices not connected by positive interface edges — excluded from $X$. $\square$
 
 **Significance**: transition state = spectral degeneracy point of the weighted skeleton; $\kappa$ measures how close the path comes to degeneracy; a catalyst's role is to **route the path around the degeneracy point** (provide a detour). **This was unobservable in v0.2** ("largest connected component" is by definition connected ⇒ always has $\lambda_2>0$ ⇒ right-hand side always false); after rewriting the computation domain in v0.3 this criterion is finally testable (V7).
 
@@ -14414,7 +14414,7 @@ $$g(t^\ast)=0\iff\lambda_2\big(L|_X(w(t^\ast))\big)=0\iff \text{the zero-weight 
 
 Adding edges $W'=W+\Delta W$ ($\Delta W\ge0$) gives $L'\succeq L$; Weyl's theorem gives component-wise non-decreasing eigenvalues, so $\lambda_2$ and $\alpha_n$ both increase, and $\gamma'=\lambda_2'/\alpha_n'$ has **no fixed size relation** to $\gamma$.
 
-**Proof**　$\Delta L=w(e_i-e_j)(e_i-e_j)^{\top}\succeq0$; Weyl monotonicity; ratio is indefinite. $\square$
+**Proof** $\Delta L=w(e_i-e_j)(e_i-e_j)^{\top}\succeq0$; Weyl monotonicity; ratio is indefinite. $\square$
 
 ### C20.7 (Volcano Conjecture, **unproven**)
 
@@ -14514,7 +14514,7 @@ V1–V11, V13–V14 are internal consistency (executable immediately); **V12 is 
 | 9/7 | Betti stitching / cohomology locking | Different: acts on equation solvability |
 | **19** | $\mathbb{Z}_2$ sign channel | **Orthogonal complement**: 19 is sign ($\mathbb{Z}_2$); 20 is magnitude ($\mathbb{R}$) + vertex + rigidity |
 
-**Compatibility proposition with 19 (to be rigorously proven)**　If $G$ is bipartite and has exactly 1 edge orbit, any **bipartite-preserving** interface grafting cannot make 19's $\sigma$ nontrivial; catalyst must interface with "same-color vertices" to create odd cycles and simultaneously open the sign channel (per 19-T6).
+**Compatibility proposition with 19 (to be rigorously proven)** If $G$ is bipartite and has exactly 1 edge orbit, any **bipartite-preserving** interface grafting cannot make 19's $\sigma$ nontrivial; catalyst must interface with "same-color vertices" to create odd cycles and simultaneously open the sign channel (per 19-T6).
 
 ---
 
@@ -14556,7 +14556,7 @@ Items below are cited in the main text as **R1–R11**.
 8. **Add rigorous proof for §9 compatibility proposition** (V11 has numerical evidence in both bipartite / odd-cycle directions; proof is missing).
 9. DBT instance: C21 skeleton + 18 H coverage changes, run v0, output $(\kappa,\varrho,\nu,\mu)$.
 10. **V12 DFT benchmark**: 5–8 elementary steps, test H20.1 — the external validation deciding the operator's reason for existing.
-11. **v1.0 theoretical gap (根治 R11)**: induce edge orientation from reaction data itself, freeing $\varrho$ from arbitrary labeling conventions. Until then, $\varrho$ can only be used for **relative ranking under the same labeling convention**; $\varsigma_e$ provides a manual correction knob, but not automatic resolution.
+11. **v1.0 theoretical gap (R11 root fix)**: induce edge orientation from reaction data itself, freeing $\varrho$ from arbitrary labeling conventions. Until then, $\varrho$ can only be used for **relative ranking under the same labeling convention**; $\varsigma_e$ provides a manual correction knob, but not automatic resolution.
 
 ---
 
@@ -15374,7 +15374,7 @@ This paper builds upon the full suite of SRE operator‑series papers (archived 
 
 ## 1 Pre‑Requisite Theoretical Foundations
 ### 1.1 Core Tool‑Set: Operators‑1~10
-At the SRE底层 level, Operator‑1 (pulse‑expansion operator) generates binary discrete causal‑relation networks. The formal‑symbol layer is maintained inside the inductive‑limit ring $\mathcal{R}_{\infty}$. Instance relation‑matrices are obtained via ring‑homomorphism evaluation. The full operator pipeline provides a complete algebraic‑constraint toolbox:
+At the SRE basal level, Operator‑1 (pulse‑expansion operator) generates binary discrete causal‑relation networks. The formal‑symbol layer is maintained inside the inductive‑limit ring $\mathcal{R}_{\infty}$. Instance relation‑matrices are obtained via ring‑homomorphism evaluation. The full operator pipeline provides a complete algebraic‑constraint toolbox:
 
 1. **Op9 Dual‑Betti Splicing Operator**: Inside rigid sub‑manifolds $\Delta \beta_{1} \equiv 0$. In the absence of external high‑energy perturbations, the total number of independent closed‑loops cannot spontaneously increase nor annihilate. Loop‑sets constitute the carriers of topological charge.
 2. **Op10 Topological‑Impedance Firewall**: Identifies bridge‑edges via the effective topological‑impedance tensor $Z_{eff}(u, v)$, preserves global connectivity and guarantees graph algebraic‑connectivity $\lambda_{2}>0$, preventing network topological fragmentation.
@@ -16902,23 +16902,23 @@ Version: 1.1
 
 ## Literature Correspondence Table (Articles and Sections Cited in This Document)
 
-This document cites the following seven articles in the manuscript collection ``The Book of the Void``. In the main text, sources are uniformly marked in the form 《short name》§section; the table below gives the correspondence between short names and full titles, so that readers can cross-check under any typesetting (including PDF).
+This document cites the following seven articles in the manuscript collection ``The Book of the Void``. In the main text, sources are uniformly marked in the form "short name"§section; the table below gives the correspondence between short names and full titles, so that readers can cross-check under any typesetting (including PDF).
 
 | Short name | Full article title (manuscript-collection title) | Sections used in this document |
 |---|---|---|
-| **《Multidimensional Spacetime and Dynamical Gravity》** | 《Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks》 (Chinese title: 正则化因果信息网络下多维时空与动态变光速引力) | §2.2 Topological dissipation tensor and compensation operator; §2.3 Topological stiffness weights and baryonic center-of-mass redshift; §2.4 Spectral resonance deriving the dynamic compression coefficient; §5 Causal emergent gravity: a thermodynamic effect as a dissipation gradient |
-| **《Composite Elementary Particles》** | 《Composite Elementary Particles and the SRE-Dynamics Topological Paradigm of Relational-Space Emergence》 (Chinese title: 复合基本粒子与关系空间涌现的SRE动力学拓扑范式) | §1.3 Local cross-spectral operator and information-geometry mapping; §II Core paradigm: the three-in-one emergence jump and composite-particle generation; §Discussion · Model capability boundary |
-| **《Reconstruction of Classical Electrodynamics》** | 《A Basic Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality》 (Chinese title: 基于离散图拓扑与双向因果性对经典电动力学的基础重构) | §4 Mass–energy equivalence $E=mc^2$ as a topological theorem |
-| **《Necessity of Turbulence Emergence》** | 《The Necessity of Turbulence Emergence and an Algebraic Computation Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction》 (Chinese title: 基于离散微观因果统计与多维流形重构的湍流涌现必然性及代数计算方法) | §4.1 Operator 1: boundary expansion; §4.2 Operator 2: maximum-entropy pruning; §4.3 Gain $\Gamma$: exogenous $\Lambda$ and endogenous $\lambda(n)$ |
-| **《Logical-Depth Anchoring and Safety Shielding》** | 《On the Order-of-Magnitude Anchoring of the Logical Depth N and the Safety Shielding of Observation Protocols》 (Chinese title: 关于逻辑深度 N 的量级锚定与观测协议的安全性屏蔽) | Section 3 Core safety adjudication: the physical-level "read-only" restriction |
-| **《Complete Characterization of the Nucleon》** | 《A Complete Characterization of the Nucleon in the SRE Framework: Open–Closed Two-State Skeleton Inversion, Quark Conjecture, and a Unified Formulation Validated by Nuclear Reactions》 (Chinese title: SRE 框架下核子的完整刻画：开闭二态骨架反演、夸克推测与核反应验证的统一表述) | §2.1 Binary self-organizing network and the sim_p generator |
-| **《Graph-Operator Pipeline Whitepaper》** | 《Overall Framework Whitepaper of the General Graph-Operator Pipeline for Status-Relational Entropy (SRE) Dynamics (Academic Revision)》 (Chinese title: 状态‑关系熵（SRE）动力学通用图算子流水线总体框架白皮书（学术修订版）) | §1.2 Operator 1: local graph-expansion operator; §3.1 Operator 5: endogenous-variable delay-calibration operator; §4.2 Morphological-morphism projection principle of macroscopic observables; §5.1 Operator 10: preemptive homological random-pruning operator; §5.3 Operator 8: local lock-free algebraic-valve equalization operator |
+| **"Multidimensional Spacetime and Dynamical Gravity"** | "Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal Information Networks" (Chinese title: 正则化因果信息网络下多维时空与动态变光速引力) | §2.2 Topological dissipation tensor and compensation operator; §2.3 Topological stiffness weights and baryonic center-of-mass redshift; §2.4 Spectral resonance deriving the dynamic compression coefficient; §5 Causal emergent gravity: a thermodynamic effect as a dissipation gradient |
+| **"Composite Elementary Particles"** | "Composite Elementary Particles and the SRE-Dynamics Topological Paradigm of Relational-Space Emergence" (Chinese title: 复合基本粒子与关系空间涌现的SRE动力学拓扑范式) | §1.3 Local cross-spectral operator and information-geometry mapping; §II Core paradigm: the three-in-one emergence jump and composite-particle generation; §Discussion · Model capability boundary |
+| **"Reconstruction of Classical Electrodynamics"** | "A Basic Reconstruction of Classical Electrodynamics Based on Discrete Graph Topology and Bidirectional Causality" (Chinese title: 基于离散图拓扑与双向因果性对经典电动力学的基础重构) | §4 Mass–energy equivalence $E=mc^2$ as a topological theorem |
+| **"Necessity of Turbulence Emergence"** | "The Necessity of Turbulence Emergence and an Algebraic Computation Method Based on Discrete Microscopic Causal Statistics and Multidimensional Manifold Reconstruction" (Chinese title: 基于离散微观因果统计与多维流形重构的湍流涌现必然性及代数计算方法) | §4.1 Operator 1: boundary expansion; §4.2 Operator 2: maximum-entropy pruning; §4.3 Gain $\Gamma$: exogenous $\Lambda$ and endogenous $\lambda(n)$ |
+| **"Logical-Depth Anchoring and Safety Shielding"** | "On the Order-of-Magnitude Anchoring of the Logical Depth N and the Safety Shielding of Observation Protocols" (Chinese title: 关于逻辑深度 N 的量级锚定与观测协议的安全性屏蔽) | Section 3 Core safety adjudication: the physical-level "read-only" restriction |
+| **"Complete Characterization of the Nucleon"** | "A Complete Characterization of the Nucleon in the SRE Framework: Open–Closed Two-State Skeleton Inversion, Quark Conjecture, and a Unified Formulation Validated by Nuclear Reactions" (Chinese title: SRE 框架下核子的完整刻画：开闭二态骨架反演、夸克推测与核反应验证的统一表述) | §2.1 Binary self-organizing network and the sim_p generator |
+| **"Graph-Operator Pipeline Whitepaper"** | "Overall Framework Whitepaper of the General Graph-Operator Pipeline for Status-Relational Entropy (SRE) Dynamics (Academic Revision)" (Chinese title: 状态-关系熵（SRE）动力学通用图算子流水线总体框架白皮书（学术修订版）) | §1.2 Operator 1: local graph-expansion operator; §3.1 Operator 5: endogenous-variable delay-calibration operator; §4.2 Morphological-morphism projection principle of macroscopic observables; §5.1 Operator 10: preemptive homological random-pruning operator; §5.3 Operator 8: local lock-free algebraic-valve equalization operator |
 
 **Reading convention**: "Part I" appearing in the main text refers to the first part of this document (Gravitational Shielding Derivation); "Part II" refers to the second part (Reverse Interpretation of the Podkletnov Result). Cross-part citations are written as "Part I §n" or "Part II §n".
 
 ---
 
-## Part I　Gravitational Shielding Derivation
+## Part I Gravitational Shielding Derivation
 
 ## 0 Summary of Conclusions
 
@@ -17514,7 +17514,7 @@ Tier C requires **dismantling an already-realized mass closed loop** ($m\equiv$ 
 
 ---
 
-## Part II　Reverse Interpretation of the Podkletnov Result and the Difficulty of Reproduction
+## Part II Reverse Interpretation of the Podkletnov Result and the Difficulty of Reproduction
 
 **Premise (assuming the result holds)**: an object above a rotating YBCO superconducting disk loses about 2% of its weight (Podkletnov & Nieminen 1992); a double-layer disk produces a stronger effect; a later "impulse gravity generator" gives a directed force.
 **Task**: not to question the experiment, but to explain **why it holds** within the SRE framework, and to give discriminable predictions—as well as why others find it hard to reproduce.

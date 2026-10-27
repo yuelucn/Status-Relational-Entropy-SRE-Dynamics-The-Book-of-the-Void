@@ -110,7 +110,7 @@ $$\delta \Pi(s) = (\delta \Omega_s)^T B_{s+1/2} + \Omega_s^T (\delta B_{s+1/2}) 
   By the algebraic definition of image spaces over a directed graph complex, there must exist a 0-chain real-valued scalar node potential field vector $\phi \in C_0(V; \mathbb{R})$ such that the equalizer flow can be explicitly represented as a pure discrete gradient:
   $$B_{s+1/2} = \delta_0 \phi = \partial_1^T \phi$$
   
-  We directly substitute this explicit gradient representation back into the core micro-step dual pairing quadratic pairing field equation $\Pi(s)$：
+  We directly substitute this explicit gradient representation back into the core micro-step dual pairing quadratic pairing field equation $\Pi(s)$:
   $$\Pi(s) = E_s^T \cdot \mathbf{B}_{\text{co}}^T \cdot B_{s+1/2} = E_s^T \cdot \mathbf{B}_{\text{co}}^T \cdot \left( \partial_1^T \phi \right)$$
   Regrouping the matrix associative multiplication operators isolates the chained compound block:
   $$\Pi(s) = E_s^T \cdot \left( \partial_1 \cdot \mathbf{B}_{\text{co}}^T \right)^T \cdot \phi$$
@@ -159,7 +159,7 @@ $$\Delta Q_{\text{net}} = Q_{\text{net}}^{(n+1)} - Q_{\text{net}}^{(n)} = \mathc
   Suppose at any arbitrary pulse step $n_0$, the net charge resides within the equilibrium plateau: $\lvert Q_{\text{net}}^{(n_0)}\rvert  \le 0.5$. According to the single-pulse state equation, the maximum possible outward excursion in a single step is rigidly bounded by the single-point spin flip amplitude $\pm 1$:
   $$\lvert Q_{\text{net}}^{(n_0+1)}\rvert  \le \lvert Q_{\text{net}}^{(n_0)}\rvert  + \lvert \mathcal{S}_{\text{corner}}\rvert  \le 0.5 + 1.0 = 1.5$$
   
-  Once the state crosses the $0.5$ threshold (reaching at most $1.5$), it instantly triggers the $\Delta V_{\text{delay}} < 0$ strict回拉 (pullback) regime, forcing the trajectory back toward the center at the next step. This mathematically establishes that the instantaneous net charge can never escape the compact constant envelope $K_{\text{bound}} = 1.5$, explicitly proving the global non-divergence property:
+  Once the state crosses the $0.5$ threshold (reaching at most $1.5$), it instantly triggers the $\Delta V_{\text{delay}} < 0$ strict pullback regime, forcing the trajectory back toward the center at the next step. This mathematically establishes that the instantaneous net charge can never escape the compact constant envelope $K_{\text{bound}} = 1.5$, explicitly proving the global non-divergence property:
   $$\sup_{n \in \mathbb{N}^+} \lvert Q_{\text{net}}^{(n)}\rvert  \le 1.5 < \infty$$
 
 * **Step II: Asymptotic Ergodic Long-Term Convergence**  

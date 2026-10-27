@@ -499,7 +499,7 @@ Together with three open items ($c\propto\lambda^{-1}$ rejected; $T_\mathrm{em}/
 
 ---
 
-## Appendix A　Recomputation checklist
+## Appendix A Recomputation checklist
 
 | item | script | key quantities |
 |---|---|---|
@@ -513,7 +513,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 ---
 
-## Appendix B　Honest boundaries
+## Appendix B Honest boundaries
 
 1. **One guess that preceded measurement**: $c\propto\lambda^{-1}$ is rejected (measured slope $-0.577$). Every statement involving $c(\lambda)$ is a registration, **not a conclusion**.
 2. **A second such guess**: "the variant kernel runs away into freezing, $\Omega'\to0$" is refuted; it settles at a fixed point near $0.39$. The original guess is preserved in §6.3.
@@ -526,7 +526,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 ---
 
-## Appendix C　Analogy index
+## Appendix C Analogy index
 
 | analogy | purpose | failure point |
 |---|---|---|
@@ -536,7 +536,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 
 ---
 
-## Appendix D　References
+## Appendix D References
 
 1. This project: *The dormancy/activation clock: zero-parameter laws, zero-bit branches and intrinsic time* (round 77) — Proposition 1 (age law), Proposition 2 (diagonal closed form), E5 (spectral law), source of $\tau_\mathrm{mem}$.
 2. This project: *The vibrational-period axis: definition of time and the isotope criterion* (round 76) — the topological definition of frequency $\Delta\lambda=\lvert \lambda_{1}-\lambda_{2}\rvert$, and the verdict "steps but no seconds".

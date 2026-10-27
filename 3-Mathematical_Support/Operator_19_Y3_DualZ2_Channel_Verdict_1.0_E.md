@@ -1,6 +1,6 @@
 # Dual ℤ₂-Channel Verdict on the Nucleon Skeleton Y₃: Landing the Cut-Space Criterion on the Project's Own Object, the Relation to the Möbius Ladder Family, and a Readable Certificate for the Pfaffian Obstruction
 
-> **Abstract**　The core carrier of this project is the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$ (closed state $V=12,E=18,\beta_1=7,\lvert \mathrm{Aut}\rvert =36$). Rounds 101–103 established, respectively, the unbiased linear system for Pfaffian orientation classes, the label-independent $\mathbb Z_2$ invariant $\mathrm{rank}_\mathrm{hol}$, and a necessary-and-sufficient criterion for the latter (the cut-space intersection-dimension identity). These three results were never placed side by side on $Y_3$ itself, so the project's central claim — that the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation — still lacked direct measurement on its own object; moreover, "the closed state has no Pfaffian orientation" existed only as the bare fact "the system is infeasible", which a reader cannot check; and the true relation between $Y_3$ and the Möbius ladder family $M_{2n}$ had never been adjudicated.
+> **Abstract** The core carrier of this project is the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$ (closed state $V=12,E=18,\beta_1=7,\lvert \mathrm{Aut}\rvert =36$). Rounds 101–103 established, respectively, the unbiased linear system for Pfaffian orientation classes, the label-independent $\mathbb Z_2$ invariant $\mathrm{rank}_\mathrm{hol}$, and a necessary-and-sufficient criterion for the latter (the cut-space intersection-dimension identity). These three results were never placed side by side on $Y_3$ itself, so the project's central claim — that the charge sign is carried by $H^1$ holonomy rather than by a Pfaffian orientation — still lacked direct measurement on its own object; moreover, "the closed state has no Pfaffian orientation" existed only as the bare fact "the system is infeasible", which a reader cannot check; and the true relation between $Y_3$ and the Möbius ladder family $M_{2n}$ had never been adjudicated.
 >
 > This report closes all three gaps. **First**, three independent implementations recompute $\mathrm{rank}_\mathrm{hol}$ on $Q_3$, $Y_3^\mathrm{cl}$ and $Y_3^\mathrm{op}$, giving $0/1/2$ — in exact agreement with Operator 19 v1.1 — and in zero mismatch with the cut-space identity. **Second**, a **readable certificate** is given for the absence of a Pfaffian orientation on $Y_3^\mathrm{cl}$: its six perfect-matching equations form a minimal unsatisfiable row subset, and removing any single row restores solvability, i.e. the obstruction is one equation away from being satisfiable. The structural reason is identified: $Y_3^\mathrm{cl}$ contains 42 nice even cycles, whereas $Y_3^\mathrm{op}$ — obtained by deleting one ring edge — contains none, and the Pfaffian channel opens accordingly ($\dim=13$, $\lvert \mathcal O_\mathrm{Pf}\rvert =2^{13}$). **Third**, the relation between $Y_3$ and $M_{2n}$ is adjudicated: complete backtracking enumeration proves zero coverings and zero quotients of $Y_3^\mathrm{cl}$ onto any $n\ge3$ ladder, while $Y_3^\mathrm{cl}$ is exactly a **three-fold regular covering** of $K_4\cong M_4$ (deck group of order 3, quotient $\cong K_4$) — which both explains why $Y_3^\mathrm{cl}$ has three triangles and pins down, to a verifiable precision, the long-open question of whether the two families are related.
 >
@@ -10,7 +10,7 @@
 
 ---
 
-## 1　Origin: three unsettled questions
+## 1 Origin: three unsettled questions
 
 The two main lines of this project — "charge emergence" and "mass origin" — share one carrier: the nucleon skeleton $Y_3=Y_3\rtimes\triangle_3$. Its closed state (proton) and open state (neutron) are joined by deleting a single ring edge. The previous three rounds each touched it without landing on it.
 
@@ -24,9 +24,9 @@ The two main lines of this project — "charge emergence" and "mass origin" — 
 
 ---
 
-## 2　Preliminaries: the three skeletons and the two channels
+## 2 Preliminaries: the three skeletons and the two channels
 
-### 2.1　The canonical construction
+### 2.1 The canonical construction
 
 **Definition 2.1 (closed nucleon skeleton $Y_3$).** Take the vertex set $\{c_0,c_1,c_2\}\cup\{L_{ij}:i,j\in\{0,1,2\}\}$ (12 vertices). The edge set is
 $$E\bigl(Y_3^\mathrm{cl}\bigr)=\bigl\{\{c_i,L_{ij}\}:i,j\in\{0,1,2\}\bigr\}\;\cup\;\bigl\{\{L_{0j},L_{1j}\},\{L_{1j},L_{2j}\},\{L_{2j},L_{0j}\}:j\in\{0,1,2\}\bigr\}.$$
@@ -38,7 +38,7 @@ Semantically: three centres $c_i$, each joined to three "legs" $L_{ij}$; the leg
 
 > **Note 2.4 (a fact about implementation scatter).** The repository contains 45 bodies of $y_3$ / $y_{3,\mathrm{closed}}$ / $y_{3,\mathrm{open}}$, merging into 21 distinct implementation bodies (by function name × body md5). All measurement in this report uses the canonical adjacency of Definition 2.1.
 
-### 2.2　The two ℤ₂ channels
+### 2.2 The two ℤ₂ channels
 
 **Definition 2.5 (the $H^1$ holonomy channel).** Let $G$ be connected. $\mathrm{Aut}(G)$ acts on the edge set; the orbits are **edge orbits**, and $\dim W(G)=n_\mathrm{orb}$. Assign a sign $s_e\in\{\pm1\}$ to each edge (constant on each orbit, hence an element of $W(G)$), and define $\sigma(\gamma)=\prod_{e\in\gamma}s_e$ for a cycle $\gamma$; $\sigma$ takes values in $H^1(G;\mathbb F_2)$. Operator 19 v1.1 defined the invariant
 $$\mathrm{rank}_\mathrm{hol}(G):=\dim_{\mathbb F_2}\operatorname{im}\Phi_G,\qquad \Phi_G:W(G)\longrightarrow H^1(G;\mathbb F_2).$$
@@ -57,15 +57,15 @@ Write the solution set $\mathcal O_\mathrm{Pf}(G)$. When $\#\mathcal{M}=0$ the P
 
 **Definition 2.9 (nice even cycle).** An even cycle $C$ is a nice even cycle if each of its edges belongs to exactly **two** perfect matchings of $G$.
 
-### 2.3　The relation between the two channels: a structural fact
+### 2.3 The relation between the two channels: a structural fact
 
 the initial Operator 19 release obtained, on $Y_3$, the fact that the closed state has **no solution** in the Pfaffian channel but **does** in the $H^1$ channel. This report upgrades that fact to a checkable verdict and supplies a mechanism.
 
 ---
 
-## 3　Verdict one: the $H^1$ channel on the three skeletons
+## 3 Verdict one: the $H^1$ channel on the three skeletons
 
-### 3.1　Three independent implementations
+### 3.1 Three independent implementations
 
 **Method 3.1 (three implementations).** On $Q_3$, $Y_3^\mathrm{cl}$ and $Y_3^\mathrm{op}$, compute $\mathrm{rank}_\mathrm{hol}$ along three **mutually independent** routes:
 
@@ -77,7 +77,7 @@ the initial Operator 19 release obtained, on $Y_3$, the fact that the closed sta
 $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\mathrm{cl}\bigr)=1,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\mathrm{op}\bigr)=2 .$$
 The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\cap\operatorname{Cut})$ are given in Table 3.1, and the four readings show zero mismatch on 22 samples (ladder family, prism family, control graphs, random 3-regular graphs).
 
-**Table 3.1　Four readings on the three skeletons**
+**Table 3.1 Four readings on the three skeletons**
 
 | Skeleton | $V$ | $E$ | $\beta_1$ | $\lvert \mathrm{Aut}\rvert$ | $n_\mathrm{orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\mathrm{rank}_\mathrm{hol}$ (I1/I2/I3/T9) |
 |---|---|---|---|---|---|---|---|---|
@@ -85,7 +85,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 | $Y_3^\mathrm{cl}$ (proton) | 12 | 18 | 7 | 36 | 2 | 11 | 1 | **1** / 1 / 1 / 1 |
 | $Y_3^\mathrm{op}$ (neutron) | 12 | 17 | 6 | 4 | 7 | 11 | 5 | **2** / 2 / 2 / 2 |
 
-### 3.2　What the three readings mean
+### 3.2 What the three readings mean
 
 **Corollary 3.3 (the electron's sign is locked by topology).** $\mathrm{rank}_\mathrm{hol}(Q_3)=0$, i.e. $W(Q_3)\subseteq\operatorname{Cut}(Q_3)$: the unique Aut-invariant assignment (all-ones, since $Q_3$ is edge-transitive) is exactly a cut of the bipartite graph, so the sign has **no** topological degree of freedom. This agrees with Operator 19 v1.1's $\lambda(Q_3)=\mathrm{True}$ and supplies its mechanism: the sign is not "locked by accident" but "the single candidate assignment happens to lie in the cut space".
 
@@ -97,11 +97,11 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 4　Verdict two: the Pfaffian channel reading and a readable certificate
+## 4 Verdict two: the Pfaffian channel reading and a readable certificate
 
-### 4.1　The reading
+### 4.1 The reading
 
-**Table 4.1　The dual-channel verdict (central result)**
+**Table 4.1 The dual-channel verdict (central result)**
 
 | Skeleton | $n_\mathrm{orb}$ | $\mathrm{rank}_\mathrm{hol}$ ($H^1$ channel) | $\#\mathcal M$ | $\lVert \mathcal O_\mathrm{Pf}\rVert$ | $\dim\mathcal O_\mathrm{Pf}$ | Pfaffian channel | nice even cycles |
 |---|---|---|---|---|---|---|---|
@@ -111,7 +111,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 **Proposition 4.2 (channel separation).** On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\mathrm{rank}_\mathrm{hol}=1$) while the Pfaffian channel is **closed** ($\mathcal O_\mathrm{Pf}=\emptyset$). Hence the project's central claim — that the charge sign is carried by $H^1$ holonomy — receives, **for the first time, direct side-by-side measurement on the project's own object**, rather than the indirect argument "it holds on the ladder family and extrapolates to the skeleton".
 
-### 4.2　A readable certificate: the minimal unsatisfiable row subset
+### 4.2 A readable certificate: the minimal unsatisfiable row subset
 
 **Definition 4.3 (minimal conflict certificate).** For the unbiased linear system of Definition 2.8, a subset $R'$ of the row set $R$ is a **minimal unsatisfiable row subset** (minimal unsatisfiable subset) if $R'$ is infeasible while every proper subset $R''\subsetneq R'$ is feasible.
 
@@ -125,9 +125,9 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 5　Verdict three: the relation between $Y_3$ and the Möbius ladder family
+## 5 Verdict three: the relation between $Y_3$ and the Möbius ladder family
 
-### 5.1　Complete enumeration of coverings
+### 5.1 Complete enumeration of coverings
 
 **Method 5.1 (covering enumeration).** A **covering** $G\to H$ is a map $t:V(G)\to V(H)$ satisfying (i) homomorphism, $uv\in E(G)\Rightarrow t(u)\sim t(v)\in E(H)$; and (ii) **local bijectivity**: for every $v$, $\{t(w):w\in N_G(v)\}=N_H(t(v))$. The enumeration is by backtracking: fix $t$ pointwise in BFS order, pruning only by necessary conditions (adjacency to already-fixed images, distinctness from the images of already-fixed neighbours, and the local-bijectivity condition at vertices whose neighbourhood is fully fixed). The enumeration is **complete**.
 
@@ -142,13 +142,13 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 **Theorem 5.4 (the structural origin of $Y_3$).** $Y_3^\mathrm{cl}$ is a three-fold covering of the complete graph $K_4$, and this covering is **regular** (deck group of order 3). Its fibres are four groups of three points each; every $K_4$ edge is lifted three times. $Y_3^\mathrm{cl}$ has exactly three triangles — consistent with "the four triangles of $K_4$ are spread over three fibres".
 
-### 5.2　The honest form of the verdict
+### 5.2 The honest form of the verdict
 
 **Proposition 5.5 (a direct answer to an open question carried over from Operator 19 v1.1).** $Y_3$ and the Möbius ladder family $M_{2n}$ ($n\ge3$) stand in **no** covering, quotient or double-cover relation: not isomorphic, zero coverings, zero quotients. $Y_3$ does possess a covering structure, but its base graph is $K_4\cong M_4$, the **smallest degenerate point** of the ladder family, not any genuine ladder. The "threefold" character of $Y_3$ (3 centres, 3 leg groups, 3 triangles, $\lvert \mathrm{Aut}\rvert =36=3!\times3!$, 2 edge orbits of 9 edges) acquires a unified explanation in the covering view: **$Y_3$ is a three-fold complete graph**.
 
 **Corollary 5.6 (why the the initial Operator 19 release theorem does not extrapolate).** the initial Operator 19 release's theorem "$\mathcal O_\mathrm{Pf}(M_{2n})\neq\emptyset\iff n$ even $\iff$ non-bipartite" holds within the ladder family. $Y_3^\mathrm{cl}$ is non-bipartite yet admits **no** Pfaffian orientation, so "non-bipartite $\Rightarrow$ an orientation class exists" is **not a universal proposition**. This report supplies its structural reason (Corollary 5.6): $Y_3^\mathrm{cl}$ lies outside the ladder family (§5.1) and carries 42 nice even cycles (§4.2), whereas even-$n$ ladders carry none.
 
-### 5.3　Cross-reference index conventions (added in the second half of this report)
+### 5.3 Cross-reference index conventions (added in the second half of this report)
 
 **Problem.** All the verdicts above are written as "$M_{2n}$", but the **Operator 19 chapter** (and the preamble of its initial release) denotes the same family by $M_k$, and the two subscripts are **not** defined identically. Without settling the conventions first, a statement such as "$Y_3$ is not isomorphic to $M_{12}$" points at the wrong graph once it is cited across documents.
 
@@ -179,7 +179,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 6　Five new portable rules
+## 6 Five new portable rules
 
 **Rule G70 (the isomorphism-consistency law).** Whenever a single skeletal object exists in the repository as **several implementation copies**, one must **first prove they yield the same graph** (isomorphic) before making any claim that rests on it; the number of copies is itself a risk signal. Measured this report: 45 function bodies, 21 implementation bodies, 16 independently checkable copies all isomorphic, 5 that cannot be executed in isolation (due to a parameterised signature or a same-file dependency) recorded individually with their cause, and 0 non-isomorphic. **Corollary**: before isomorphism is proven, "the multiple copies agree" cannot be used as an assumption.
 
@@ -195,9 +195,9 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 ---
 
-## 7　Verification protocol
+## 7 Verification protocol
 
-### 7.1　Implementation inventory
+### 7.1 Implementation inventory
 
 | No. | Script | Role |
 |---|---|---|
@@ -207,7 +207,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 | existing | `5-Appendixs/Operators/Y3_Verdict/_pfcore.py`, `5-Appendixs/Operators/Y3_Verdict/_gf2.py` | the initial Operator 19 release Pfaffian engine (unbiased system + dual-implementation cross-check) |
 | existing | `5-Appendixs/Operators/Y3_Verdict/_bridge101_nucleon.py` | the initial Operator 19 release bridge ($Y_3$ construction and holonomy mechanism) |
 
-### 7.2　Gate table
+### 7.2 Gate table
 
 | Gate | Content | Result |
 |---|---|---|
@@ -223,9 +223,9 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 | F4 | Tampering with the T9 reading must raise an alarm | **PASS** |
 | F5 | Positive control: the classical double covering $Q_3\to K_4$ must be enumerated ($k=2$, fibres $2,2,2,2$) | **PASS** |
 
-### 7.3　Certificate details
+### 7.3 Certificate details
 
-**Table 7.1　The unbiased system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns)**
+**Table 7.1 The unbiased system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns)**
 
 | Row | Perfect matching $M$ | $\mathrm{cr}(M)$ |
 |---|---|---|
@@ -238,7 +238,7 @@ The per-item values of $\lvert W\rvert$, $\dim\operatorname{Cut}$ and $\dim(W\ca
 
 All six rows together are infeasible; removing any one row leaves a feasible 5-row system (maximal satisfiable row count $=5/6$).
 
-**Table 7.2　nice even cycle counts (length distribution)**
+**Table 7.2 nice even cycle counts (length distribution)**
 
 | Graph | Total | len 4 | len 6 | len 8 | len 10 | len 12 | Pfaffian |
 |---|---|---|---|---|---|---|---|
@@ -249,15 +249,15 @@ All six rows together are infeasible; removing any one row leaves a feasible 5-r
 | Petersen | 25 | 0 | 10 | 15 | 0 | 0 | infeasible |
 | $K_{3,3}$ | 15 | 9 | 6 | 0 | 0 | 0 | infeasible |
 
-### 7.4　External-sample falsification
+### 7.4 External-sample falsification
 
 The 22 samples cover the ladder family $M_4$–$M_{16}$, the prism family $\mathrm{prism}_3$–$\mathrm{prism}_6$, classical graphs ($Q_3$, $K_3$, $K_4$, Heawood, Petersen) and four random 3-regular graphs (fixed seed). The four readings show zero mismatch on all 22 samples; the out-of-family distribution of the two channels' behaviour is fully recorded (Table 4.1, Note 4.7). **No** new type beyond "$H^1$ open but Pfaffian closed" was found; $Q_3$ is the only sample of type "$H^1$ closed, Pfaffian open" shared with $K_{3,3}$, $M_6$, $M_{10}$, $M_{14}$, Heawood, $\mathrm{prism}_4$ and $\mathrm{prism}_6$.
 
 ---
 
-## 8　Conclusions
+## 8 Conclusions
 
-### 8.1　Table of the three verdicts
+### 8.1 Table of the three verdicts
 
 | Verdict | Statement | Basis |
 |---|---|---|
@@ -265,13 +265,13 @@ The 22 samples cover the ladder family $M_4$–$M_{16}$, the prism family $\math
 | Two | The absence of a Pfaffian orientation on $Y_3^\mathrm{cl}$ carries a **readable certificate** (6-row minimal unsatisfiable set, one row short); the structural reason is 42 nice even cycles, and $Y_3^\mathrm{op}$'s vanishing of that count reopens the channel | Theorem 4.4, Proposition 4.6, Note 4.7 |
 | Three | $Y_3$ stands in no covering/quotient/double-cover relation with $M_{2n}(n\ge3)$; $Y_3$ is a three-fold regular covering of $K_4$ | Proposition 5.2, Theorem 5.4, Proposition 5.5 |
 
-### 8.2　What this says about the project's own results
+### 8.2 What this says about the project's own results
 
 This report upgrades "the charge sign is carried by $H^1(G;\mathbb Z_2)$ holonomy rather than by a Pfaffian orientation" from an **indirect argument** (holds on the ladder family, fails on extrapolation to the skeleton) to a **side-by-side measurement on the project's own object** (Proposition 4.2): on the very same graph $Y_3^\mathrm{cl}$, the $H^1$ channel yields exactly two reachable classes (one bit of freedom) while the Pfaffian channel admits no orientation at all — with a checkable certificate (§4.2) and a structural mechanism (the nice even cycle count drops from 42 to 0). Simultaneously, Operator 19 v1.1's qualitative observation that "one edge deletion flips the Pfaffian existence within a single skeleton family" is located to a **specific mechanism**: deleting a ring edge empties the nice-even-cycle obstruction set.
 
 The scope of the initial Operator 19 release's theorem is likewise tightened, with a structural reason (Corollary 5.6): "non-bipartite $\Rightarrow$ a Pfaffian orientation class exists" holds only inside the ladder family; $Y_3$ supplies an out-of-family counterexample, and the counterexample works because $Y_3$ is a different family and carries nice obstructions.
 
-### 8.3　Relation to the Operator 19 chapter
+### 8.3 Relation to the Operator 19 chapter
 
 Operator 19 v1.2 already adjudicated three statements in its own text and prepared five patches. The present report does **not** overturn those verdicts; rather, it provides **positive evidence drawn from this project's own objects** for the item "the §6.1 skeleton table": that table lists skeletons such as $Y_3$ as "multi-orbit + non-bipartite", and v1.2 falsified the way its reasoning was written ("$T_2\ M\neq0$" as a necessary condition); this report measures $\mathrm{rank}_\mathrm{hol}(Y_3^\mathrm{cl})=1\neq0$ and $\dim(W\cap\operatorname{Cut})=1$, confirming on the **project's own object** that the channel is indeed open — thereby supporting the table row while rejecting the form of its justification.
 
@@ -281,7 +281,7 @@ At the same time, the five new rules (G70–G74) are **methodological increments
 
 **A third boundary concerning criteria.** When this report was first written it measured that searches of the Operator 19 text for `Pfaffian`, `rank_hol` and "closed/open flip" returned **0 hits each** — i.e. the results of this report, v1.1 and v1.2 had at that time not yet entered the text. This release has merged T9–T11, §6.2 and §6.3 into Operator 19 and corrected v1.1's odd-cycle criterion statement, so this boundary is closed as of this release.
 
-### 8.4　Honest boundaries
+### 8.4 Honest boundaries
 
 1. **Completeness of the covering enumeration rests on the implementation**: the completeness of Method 5.1 is guaranteed by "pruning only by necessary conditions" and is checked by the positive control $Q_3\to K_4$ ($k=2$); but no third-party independent implementation cross-check was performed.
 2. **$\lvert \mathrm{Aut}\rvert$ was not classified group-theoretically**: the group structure of $\lvert \mathrm{Aut}(Y_3^\mathrm{cl})\rvert =36$ (conjecturally $S_3\times S_3$) is unproved; the isomorphism type of the order-3 deck group is undetermined.
@@ -308,7 +308,7 @@ At the same time, the five new rules (G70–G74) are **methodological increments
 
 ---
 
-## Appendix A　Reproduction
+## Appendix A Reproduction
 
 ```
 C:\myapp\miniconda3\envs\ai\python.exe 5-Appendixs\Operators\Y3_Verdict\_dir7_y3_skeleton_verdict.py

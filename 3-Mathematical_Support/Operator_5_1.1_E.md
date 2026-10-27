@@ -1,4 +1,4 @@
-﻿# Operator-5: Endogenous Variable Latency Calibration Operator （$\mathcal{M}_{\text{latency}}$）
+﻿# Operator-5: Endogenous Variable Latency Calibration Operator ($\mathcal{M}_{\text{latency}}$)
 ## Strict Mathematical Specification, Derivation, and Verification (Full Comprehensive Edition)
 
 **Version:** 1.1

@@ -669,7 +669,7 @@ The cost is also clear: $\delta$ cannot be falsified inside $\alpha$. Hence the 
 
 ### B. Verification Script Inventory
 
-> **Package location**　All scripts and result data of this chapter are bundled in the book's appendix directory at `5-Appendixs/SRE_Fine_Structure_Constant_Derivation/SRE_alpha_package.zip` (16 scripts + 6 JSON files under `results/`, 22 files in total). The scripts are self-contained once unzipped and can be run directly in the B.6 order.
+> **Package location** All scripts and result data of this chapter are bundled in the book's appendix directory at `5-Appendixs/SRE_Fine_Structure_Constant_Derivation/SRE_alpha_package.zip` (16 scripts + 6 JSON files under `results/`, 22 files in total). The scripts are self-contained once unzipped and can be run directly in the B.6 order.
 
 #### B.1 Direct Verification Scripts (5)
 

@@ -18,7 +18,7 @@ Version: 4.0
 >
 > According to the State-Relation Entropy (SRE) principle, the foundations of classical physics originate from information statistics.
 
-> **Code baseline**: `sre_core.py`　**Dataset**: `phase_data_v2.json`　**Date**: 2026-10-16
+> **Code baseline**: `sre_core.py` **Dataset**: `phase_data_v2.json` **Date**: 2026-10-16
 >
 > **Reading prerequisites**: This paper is a **self-contained** report. The reader needs only university-undergraduate-level familiarity with classical mechanics, fluid mechanics, and statistical physics (Reynolds number, energy cascade, power laws, correlation functions), and **no** prior knowledge of the SRE framework. All SRE-specific concepts are defined in place in Chapter 2, all technical terms are given a standardized correspondence table in Appendix A, and every numerical value cited in the main text can be traced in Appendix B to a saved artifact file.
 

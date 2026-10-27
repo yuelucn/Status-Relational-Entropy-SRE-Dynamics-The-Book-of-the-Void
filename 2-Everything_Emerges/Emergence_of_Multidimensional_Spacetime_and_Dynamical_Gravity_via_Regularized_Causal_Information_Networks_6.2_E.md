@@ -91,7 +91,7 @@ $$
 \alpha_{0,\mathrm{dynamic}}=\frac{\theta_\mathrm{conformal}}{\Delta z+\epsilon_\mathrm{mach}}
 $$
 
-Where the conformal-geometric index $\theta_\mathrm{conformal}\approx0.82798$ comes from辛-eigenvalue integration for maximum-packing fractions on complex-hyperbolic Möbius manifolds:
+Where the conformal-geometric index $\theta_\mathrm{conformal}\approx0.82798$ comes from symplectic-eigenvalue integration for maximum-packing fractions on complex-hyperbolic Möbius manifolds:
 $$
 \theta_\mathrm{conformal}=\frac{1}{\pi}\int_{0}^{1}\frac{\ln(1+x^2)}{x}\mathrm{d}x+\frac{1}{2e}\approx 0.82798
 $$

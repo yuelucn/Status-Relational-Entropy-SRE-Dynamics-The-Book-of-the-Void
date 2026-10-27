@@ -638,7 +638,7 @@ This paper gives the following rulings on "the positioning of light and electrom
 
 ---
 
-## Appendix A　Recomputation list
+## Appendix A Recomputation list
 
 **Recompute all readings in one command** (requires numpy + networkx):
 
@@ -678,7 +678,7 @@ python.exe -u _sre_light_origin_paper_check.py \
 
 ---
 
-## Appendix B　Honesty boundary
+## Appendix B Honesty boundary
 
 1. Everything in this paper is a self-consistent statement **internal to the SRE model / at the level of linear algebra and group theory**, and **does not** claim numerical predictions about real physics. The comparison with experimental orders of magnitude (eV/MeV) serves only to illustrate that "the difference lies in the ledger".
 2. **All light-side readings come from the project's existing axioms** (residuality axiom, Möbius double cover, Fork A involution, $\delta_A$, Maxwell engine); this paper **only puts them into recomputable form and adds no light-side physical content**.
@@ -693,7 +693,7 @@ python.exe -u _sre_light_origin_paper_check.py \
 
 ---
 
-## Appendix C　Analogy index
+## Appendix C Analogy index
 
 **Table C1.** Index of analogies and illustrations.
 
@@ -713,7 +713,7 @@ python.exe -u _sre_light_origin_paper_check.py \
 
 ---
 
-## Appendix D　References
+## Appendix D References
 
 [1] This project, *A Complete Characterisation of the Electron in the SRE Framework* (electron complete paper) §3: the residuality axiom (Axiom I) and the closed-form parameter map (Axiom II).
 

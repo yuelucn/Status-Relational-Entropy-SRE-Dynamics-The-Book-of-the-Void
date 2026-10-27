@@ -46,10 +46,10 @@ Core conclusions (all rigorous on 1-complexes, independent of any external param
 
 **v1.2 Additions (all gated by the $Y_3$ verdict report A–F and re-checked inside this project)**:
 
-1. **T9 (cut-space identity)**　Deepens T2's "does a nontrivial class exist" criterion into a **dimension identity**: the number of reachable (Aut-invariant) classes is exactly $2^{\operatorname{rank}_\mathrm{hol}}$; the three official skeletons read $Q_3=0$, $Y_3^\mathrm{cl}=1$, $Y_3^\mathrm{op}=2$ (§6, Table 6.2).
-2. **§6.2 Side-by-side dual $\mathbb{Z}_2$ channel verdict**　On the very same $Y_3^\mathrm{cl}$ the $H^1$ channel is **open** (1 bit) while the **Pfaffian channel admits not a single orientation**, with a readable certificate (6-row minimal unsatisfiable subset) and a mechanism (42 nice even cycles vanish in the open state).
-3. **§6.3 Covering verdict and numbering convention**　$Y_3^\mathrm{cl}$ has **zero coverings and zero quotients** over $M_{2n}(n\ge3)$, yet is exactly a **3-fold regular cover of $K_4\cong M_4$**; a factor-2 correspondence table between the in-book $M_k$ and the paper's $M_{2n}$ is established (Table 6.5).
-4. **Correction to v1.1**　The v1.1 §10 item 3 statement "nontrivial reachability **only if** the graph contains an odd cycle and has $\ge2$ orbits" is **falsified**: odd-$k\ge5$ ladders are bipartite (no odd cycle) and still have $\operatorname{rank}_\mathrm{hol}\ge1$; the correct criterion is $W\not\subseteq\operatorname{Cut}$ (T9). Correspondingly, the §6.1 sentence "what actually determines the flip is the existence of odd cycles" is corrected as well.
+1. **T9 (cut-space identity)** Deepens T2's "does a nontrivial class exist" criterion into a **dimension identity**: the number of reachable (Aut-invariant) classes is exactly $2^{\operatorname{rank}_\mathrm{hol}}$; the three official skeletons read $Q_3=0$, $Y_3^\mathrm{cl}=1$, $Y_3^\mathrm{op}=2$ (§6, Table 6.2).
+2. **§6.2 Side-by-side dual $\mathbb{Z}_2$ channel verdict** On the very same $Y_3^\mathrm{cl}$ the $H^1$ channel is **open** (1 bit) while the **Pfaffian channel admits not a single orientation**, with a readable certificate (6-row minimal unsatisfiable subset) and a mechanism (42 nice even cycles vanish in the open state).
+3. **§6.3 Covering verdict and numbering convention** $Y_3^\mathrm{cl}$ has **zero coverings and zero quotients** over $M_{2n}(n\ge3)$, yet is exactly a **3-fold regular cover of $K_4\cong M_4$**; a factor-2 correspondence table between the in-book $M_k$ and the paper's $M_{2n}$ is established (Table 6.5).
+4. **Correction to v1.1** The v1.1 §10 item 3 statement "nontrivial reachability **only if** the graph contains an odd cycle and has $\ge2$ orbits" is **falsified**: odd-$k\ge5$ ladders are bipartite (no odd cycle) and still have $\operatorname{rank}_\mathrm{hol}\ge1$; the correct criterion is $W\not\subseteq\operatorname{Cut}$ (T9). Correspondingly, the §6.1 sentence "what actually determines the flip is the existence of odd cycles" is corrected as well.
 
 **Keywords**: $\mathbb{Z}_2$ cohomology; holonomy; coboundary; cut space; edge orbit; Aut-invariant assignment; charge-sign channel; Pfaffian orientation; first Betti number
 
@@ -99,9 +99,9 @@ $\delta C^0$ is the **coboundary** (vertex-potential 1-cochain). The pairing $H^
 
 ### 2.2 Polarity–Boolean Isomorphism
 
-**Lemma 2.1 (Polarity–Boolean Isomorphism)**　The map $\varphi:\{+1,-1\}\to\mathbb{F}_2$, $\varphi(S)\equiv\frac{1-S}{2}$ ($-1\mapsto1,\ +1\mapsto0$), is a group isomorphism $(\{+1,-1\},\cdot)\cong(\mathbb{F}_2,\oplus)$.
+**Lemma 2.1 (Polarity–Boolean Isomorphism)** The map $\varphi:\{+1,-1\}\to\mathbb{F}_2$, $\varphi(S)\equiv\frac{1-S}{2}$ ($-1\mapsto1,\ +1\mapsto0$), is a group isomorphism $(\{+1,-1\},\cdot)\cong(\mathbb{F}_2,\oplus)$.
 
-**Proof**　Bijectivity is obvious. Verify homomorphism: $\varphi(S_1S_2)=1$ iff exactly one $S_k=-1$, which matches $\varphi(S_1)\oplus\varphi(S_2)$; all four input combinations hold one-by-one. $\square$
+**Proof** Bijectivity is obvious. Verify homomorphism: $\varphi(S_1S_2)=1$ iff exactly one $S_k=-1$, which matches $\varphi(S_1)\oplus\varphi(S_2)$; all four input combinations hold one-by-one. $\square$
 
 Thus "multiplying polarities" and "adding mod 2" are in strict one-to-one correspondence; subsequent operations use $\mathbb{F}_2$ (denoting $z_e\equiv\varphi(s_e)$).
 
@@ -113,9 +113,9 @@ SRE Axiom 1 (no zero elements) guarantees each edge takes only $s_e\in\{+1,-1\}$
 
 ## 3 Definitions
 
-**D1 (Bond Graph $G$)**　Given by the support of $A_s$: $G=(V,E)$, $E=\{(i,j):A_s{}_{ij}>0,\,i<j\}$. (Corresponds to SRE Axiom 1's cooperative edge set $E^+$.)
+**D1 (Bond Graph $G$)** Given by the support of $A_s$: $G=(V,E)$, $E=\{(i,j):A_s{}_{ij}>0,\,i<j\}$. (Corresponds to SRE Axiom 1's cooperative edge set $E^+$.)
 
-**D2 (Edge-Polarity 1-Cochain $s$)**　$s:E\to\{+1,-1\}$, $z_e\equiv\varphi(s_e)\in\mathbb{F}_2$; $s\in C^1(G;\mathbb{F}_2)$.
+**D2 (Edge-Polarity 1-Cochain $s$)** $s:E\to\{+1,-1\}$, $z_e\equiv\varphi(s_e)\in\mathbb{F}_2$; $s\in C^1(G;\mathbb{F}_2)$.
 
 **D3 (Four Edge-Polarity Gauges / Injection Priority)**
 
@@ -128,23 +128,23 @@ Operator 19 supports four **mutually exclusive** sources of edge polarity, order
 
 Providing multiple injection gauges simultaneously (e.g. both `edge_polarity` and `orbit_signs`) or invalid values raises `ValueError`; both implementations share this validation contract (see §8.3 / X8).
 
-**D4 (Cycle Holonomy)**　For cycle $\gamma$ (vertex sequence $v_0v_1\cdots v_{L-1}v_0$): $\sigma(\gamma)\equiv\prod_{k}s_{(v_k,v_{k+1})}$, equivalently $\sigma(\gamma)=\big(\sum_{e\in\gamma}z_e\big)\bmod 2$.
+**D4 (Cycle Holonomy)** For cycle $\gamma$ (vertex sequence $v_0v_1\cdots v_{L-1}v_0$): $\sigma(\gamma)\equiv\prod_{k}s_{(v_k,v_{k+1})}$, equivalently $\sigma(\gamma)=\big(\sum_{e\in\gamma}z_e\big)\bmod 2$.
 
-**D5 (Fundamental Cycle Basis)**　Take a spanning forest of $G$ (BFS parent); each non-tree edge $(u,v)$ paired with the tree path $u\leadsto v$ forms a fundamental cycle $\gamma_i$, $i=1,\dots,\beta_1$. $\{\gamma_i\}$ is a basis of $H_1$.
+**D5 (Fundamental Cycle Basis)** Take a spanning forest of $G$ (BFS parent); each non-tree edge $(u,v)$ paired with the tree path $u\leadsto v$ forms a fundamental cycle $\gamma_i$, $i=1,\dots,\beta_1$. $\{\gamma_i\}$ is a basis of $H_1$.
 
-**D6 ($\sigma$-Class / Triviality)**　$[s]=s+\delta C^0\in H^1$. Call $[s]$ **trivial** ($[s]=0$) iff $s\in\delta C^0$ (i.e. there exists a vertex potential $t\in\{\pm1\}^V$ with $s_e=t_it_j$), equivalently **all** $\sigma(\gamma_i)=+1$ on the fundamental cycle basis. $\sigma_{\text{canonical}}\equiv+1$ (trivial) $/-1$ (nontrivial).
+**D6 ($\sigma$-Class / Triviality)** $[s]=s+\delta C^0\in H^1$. Call $[s]$ **trivial** ($[s]=0$) iff $s\in\delta C^0$ (i.e. there exists a vertex potential $t\in\{\pm1\}^V$ with $s_e=t_it_j$), equivalently **all** $\sigma(\gamma_i)=+1$ on the fundamental cycle basis. $\sigma_{\text{canonical}}\equiv+1$ (trivial) $/-1$ (nontrivial).
 
-**D7 (Magnitude Channel $\deg$)**　$\deg(K)\equiv\beta_1(K)\bmod 2$. (Independent of $s$.)
+**D7 (Magnitude Channel $\deg$)** $\deg(K)\equiv\beta_1(K)\bmod 2$. (Independent of $s$.)
 
-**D8 (In-Model Charge Tier $Q_{\text{model}}$)**　$Q_{\text{model}}\equiv\sigma_{\text{canonical}}\cdot\deg\in\{-1,0,+1\}$ (with $e$ normalised to 1).
+**D8 (In-Model Charge Tier $Q_{\text{model}}$)** $Q_{\text{model}}\equiv\sigma_{\text{canonical}}\cdot\deg\in\{-1,0,+1\}$ (with $e$ normalised to 1).
 
-**D9 (Aut-Invariant Assignment)**　Let the automorphism group $\operatorname{Aut}(G)$ (in the molecular context, **color-preserving** automorphisms; see T7) act on $E$, partitioning $E$ into edge orbits $\{O_1,\dots,O_k\}$. Call $s$ **Aut-invariant** if $s$ is constant on each orbit.
+**D9 (Aut-Invariant Assignment)** Let the automorphism group $\operatorname{Aut}(G)$ (in the molecular context, **color-preserving** automorphisms; see T7) act on $E$, partitioning $E$ into edge orbits $\{O_1,\dots,O_k\}$. Call $s$ **Aut-invariant** if $s$ is constant on each orbit.
 
 **D10 (Channel Type)**
 - **electron-like (forced trivial)**: under Aut-invariant assignments, **every** $s$ is trivial;
 - **nucleon-like (nontrivial allowed)**: $\exists$ Aut-invariant $s$ that is nontrivial.
 
-**D11 (Aut-Invariant Assignment Space $W(G)$, new in v1.2)**　Let the edge orbits be $O_1,\dots,O_k$,
+**D11 (Aut-Invariant Assignment Space $W(G)$, new in v1.2)** Let the edge orbits be $O_1,\dots,O_k$,
 $$W(G)\equiv\operatorname{span}_{\mathbb{F}_2}\{\mathbf 1_{O_1},\dots,\mathbf 1_{O_k}\}\subseteq C^1(G;\mathbb{F}_2),\qquad \dim W(G)=n_\mathrm{orb}=k .$$
 $W(G)$ is the subspace of "all Aut-invariant assignments". **Contrast**: without the Aut constraint the assignment space is the whole $C^1$ (dimension $m$), and nontrivial classes are then the norm (dimension $\beta_1$, see §10 item 2).
 
@@ -152,20 +152,20 @@ $W(G)$ is the subspace of "all Aut-invariant assignments". **Contrast**: without
 $$\operatorname{Cut}(G)\equiv\{d(S):S\subseteq V\}=\operatorname{im}\delta_0=\delta C^0\subseteq C^1(G;\mathbb{F}_2),\qquad \dim\operatorname{Cut}(G)=n-c ,$$
 where $d(S)$ is the set of edges with exactly one endpoint in $S$. **Use the star-set basis** $d(\{v\})$ (all edges incident to $v$). **Pitfall warning**: if the basis is mistakenly taken as "the tree-path edge set from $v$ to the root", the resulting space is the **cycle space** (the tree half of the tree–cotree decomposition), not the cut space—the $Y_3$ verdict report measured 566 mismatches out of 996 cases under this substitution (see §8.4, gate B′).
 
-**D13 (Holonomy Rank and Number of Reachable Classes, new in v1.2)**　Define the $\mathbb{F}_2$-linear map
+**D13 (Holonomy Rank and Number of Reachable Classes, new in v1.2)** Define the $\mathbb{F}_2$-linear map
 $$\Phi_G:W(G)\longrightarrow H^1(G;\mathbb{F}_2),\qquad z\longmapsto[s(z)],\qquad \operatorname{rank}_\mathrm{hol}(G)\equiv\dim_{\mathbb{F}_2}\operatorname{im}\Phi_G .$$
 **Meaning**: $\operatorname{rank}_\mathrm{hol}$ is the "number of bits of the sign channel"; the number of Aut-invariant reachable classes is $2^{\operatorname{rank}_\mathrm{hol}}$; $\operatorname{rank}_\mathrm{hol}=0\iff$ every Aut-invariant assignment is trivial (i.e. the electron-like case of D10, made precise here).
 
-**D14 (Pfaffian Orientation Class, new in v1.2 — control channel for §6.2 only)**　Let $\mathcal M$ be the set of perfect matchings of $G$. An edge orientation $t:E\to\{\pm1\}$ is a **Pfaffian orientation** if for every $M\in\mathcal M$, $\prod_{e\in M}t_e=(-1)^{\mathrm{cr}(M)}$, where $\mathrm{cr}(M)$ is the number of crossing pairs in the matching mod 2. This is equivalent to the solvability of the **unbalanced linear system** $\sum_{e\in M}t_e=\mathrm{cr}(M)\ (\bmod 2)$; its solution set is denoted $\mathcal O_\mathrm{Pf}(G)$. When $\#\mathcal M=0$ the criterion passes vacuously and **cannot be used as a discovery**.
+**D14 (Pfaffian Orientation Class, new in v1.2 — control channel for §6.2 only)** Let $\mathcal M$ be the set of perfect matchings of $G$. An edge orientation $t:E\to\{\pm1\}$ is a **Pfaffian orientation** if for every $M\in\mathcal M$, $\prod_{e\in M}t_e=(-1)^{\mathrm{cr}(M)}$, where $\mathrm{cr}(M)$ is the number of crossing pairs in the matching mod 2. This is equivalent to the solvability of the **unbalanced linear system** $\sum_{e\in M}t_e=\mathrm{cr}(M)\ (\bmod 2)$; its solution set is denoted $\mathcal O_\mathrm{Pf}(G)$. When $\#\mathcal M=0$ the criterion passes vacuously and **cannot be used as a discovery**.
 
 ---
 
 ## 4 Axioms (Inherited from the Charge-Emergence Paper)
 
-**A1 (Charge Functional)**　$Q=\sigma\cdot\deg\cdot e$, $\sigma\in H^1(G;\mathbb{F}_2)$.
-**A2 (Composite Recomputation)**　For a composite knot $K_{\text{comp}}$, $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$.
-**A3 (Additive Separation)**　Independent knots satisfy $Q_{\text{tot}}=\sum_i Q(K_i)$.
-**A0 (Sign Reference)**　Convention: the holonomy class containing the electron is "negative" (gauge convention).
+**A1 (Charge Functional)** $Q=\sigma\cdot\deg\cdot e$, $\sigma\in H^1(G;\mathbb{F}_2)$.
+**A2 (Composite Recomputation)** For a composite knot $K_{\text{comp}}$, $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$.
+**A3 (Additive Separation)** Independent knots satisfy $Q_{\text{tot}}=\sum_i Q(K_i)$.
+**A0 (Sign Reference)** Convention: the holonomy class containing the electron is "negative" (gauge convention).
 
 **Operator 19 Gauge Statement**: Operator 19 implements the $\sigma$ channel and the $\deg$ channel, outputting $Q_{\text{model}}$ as the **in-model charge tier**; the "negative" reference in A0 is carried by $\sigma_{\text{canonical}}=-1$.
 
@@ -177,21 +177,21 @@ $$\Phi_G:W(G)\longrightarrow H^1(G;\mathbb{F}_2),\qquad z\longmapsto[s(z)],\qqua
 
 ### T0 (Well-Definedness: $\sigma$ is an $\mathbb{F}_2$-Linear Functional on $H_1$)
 
-**Statement**　On a graph without 2-cells, $B_1=0$ so $H_1=Z_1$; the map $\sigma:Z_1\to\mathbb{F}_2$, $\gamma\mapsto\sum_{e\in\gamma}z_e$, is a linear functional depending only on the cycle chain itself.
+**Statement** On a graph without 2-cells, $B_1=0$ so $H_1=Z_1$; the map $\sigma:Z_1\to\mathbb{F}_2$, $\gamma\mapsto\sum_{e\in\gamma}z_e$, is a linear functional depending only on the cycle chain itself.
 
-**Proof**　$\partial_2=0\Rightarrow B_1=0\Rightarrow H_1=Z_1$; a cycle is a homology class, so $\sigma$ has no "representative ambiguity". Linearity: for $\gamma_1,\gamma_2\in Z_1$, $\sigma(\gamma_1+\gamma_2)=\sum_{e\in\gamma_1\triangle\gamma_2}z_e=\sigma(\gamma_1)+\sigma(\gamma_2)\ (\mathrm{mod}\,2)$, because common edges appear twice in the symmetric difference and cancel mod 2. $\blacksquare$
+**Proof** $\partial_2=0\Rightarrow B_1=0\Rightarrow H_1=Z_1$; a cycle is a homology class, so $\sigma$ has no "representative ambiguity". Linearity: for $\gamma_1,\gamma_2\in Z_1$, $\sigma(\gamma_1+\gamma_2)=\sum_{e\in\gamma_1\triangle\gamma_2}z_e=\sigma(\gamma_1)+\sigma(\gamma_2)\ (\mathrm{mod}\,2)$, because common edges appear twice in the symmetric difference and cancel mod 2. $\blacksquare$
 
-**Note**　This is one place where Operator 19 is simpler than general graph theory: molecular bond graphs have no faces filling cycles, so the declaration "$\sigma\in H^1$" from the charge-emergence paper holds **automatically** at the graph level, with no extra 2-cell structure required.
+**Note** This is one place where Operator 19 is simpler than general graph theory: molecular bond graphs have no faces filling cycles, so the declaration "$\sigma\in H^1$" from the charge-emergence paper holds **automatically** at the graph level, with no extra 2-cell structure required.
 
 ### T1 (Vertex-Potential Triviality Theorem)
 
-**Statement**　If $s_e=t_i\cdot t_j$ ($t\in\{\pm1\}^V$, i.e. $s$ is a $\delta$-type vertex potential), then for **every** closed chain $\gamma$ we have $\sigma(\gamma)=+1$; that is, $[s]=0$.
+**Statement** If $s_e=t_i\cdot t_j$ ($t\in\{\pm1\}^V$, i.e. $s$ is a $\delta$-type vertex potential), then for **every** closed chain $\gamma$ we have $\sigma(\gamma)=+1$; that is, $[s]=0$.
 
-**Proof**　
+**Proof** 
 $$\sigma(\gamma)=\prod_{(i,j)\in\gamma}s_i s_j=\prod_{v\in\gamma}t_v^{\,\deg_\gamma(v)},$$
 where $\deg_\gamma(v)$ is the number of edges incident to $v$ in the closed chain $\gamma$. A closed chain satisfies the conservation of incoming and outgoing degrees at each vertex, so $\deg_\gamma(v)$ is **even**, hence $t_v^{\deg_\gamma(v)}=+1$; the product yields $\sigma(\gamma)=+1$. $\blacksquare$
 
-**Corollary T1.1 (Charge Sign Cannot Emerge from Local Spin Relabeling)**　The spin polarities of Operator 11, $s_e=s_i s_j$, are **precisely** of vertex-potential type; by T1 their holonomy is always trivial. Therefore:
+**Corollary T1.1 (Charge Sign Cannot Emerge from Local Spin Relabeling)** The spin polarities of Operator 11, $s_e=s_i s_j$, are **precisely** of vertex-potential type; by T1 their holonomy is always trivial. Therefore:
 
 > **The charge-sign channel $\sigma$ must come from a genuinely non-coboundary cochain $[s]\neq0\in H^1$ — it cannot be manufactured by local vertex-spin relabeling.**
 
@@ -199,7 +199,7 @@ This explains why "naively assigning vertex-spin signs" cannot produce a net cha
 
 ### T2 (Aut-Invariant Reachability Linear Criterion over $\mathbb{Z}_2$)
 
-**Statement**　Let the Aut edge orbits be $O_1,\dots,O_k$ and let Aut-invariant assignments take values $z_o\in\mathbb{F}_2$ on orbit $o$. Define
+**Statement** Let the Aut edge orbits be $O_1,\dots,O_k$ and let Aut-invariant assignments take values $z_o\in\mathbb{F}_2$ on orbit $o$. Define
 
 $$m_{i,o}\equiv\#\{e\in O_o\cap\gamma_i\}\bmod2\in\mathbb{F}_2,\qquad M=(m_{i,o})\in\mathbb{F}_2^{\beta_1\times k}.$$
 
@@ -207,47 +207,47 @@ Then $\sigma(\gamma_i)=\bigoplus_{o}m_{i,o}z_o$, and
 
 $$\boxed{\ \text{Nontrivial class reachable}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }$$
 
-**Proof**　By the linearity of T0, $\sigma(\gamma_i)=\sum_{e\in\gamma_i}z_e=\sum_o z_o\cdot\#(O_o\cap\gamma_i)=\bigoplus_o m_{i,o}z_o$ — so $M$ gives a linear map $T:\mathbb{F}_2^k\to\mathbb{F}_2^{\beta_1}$, $z\mapsto Mz$.
+**Proof** By the linearity of T0, $\sigma(\gamma_i)=\sum_{e\in\gamma_i}z_e=\sum_o z_o\cdot\#(O_o\cap\gamma_i)=\bigoplus_o m_{i,o}z_o$ — so $M$ gives a linear map $T:\mathbb{F}_2^k\to\mathbb{F}_2^{\beta_1}$, $z\mapsto Mz$.
 - ($\Leftarrow$) If $\exists m_{i,o}=1$, take $z=e_o$ (only $z_o=1$); then $\sigma(\gamma_i)=m_{i,o}=1\neq0$ and nontrivial reachability is achieved (the trivial class $z=0$ is always reachable).
 - ($\Rightarrow$) If $M=0$, then $\forall z$, $Mz=0$, so every cycle holonomy is always $+1$ and no nontrivial class is reachable.
 
 Thus reachability is equivalent to $M\neq0$ — we need only find any nonzero entry in $M$ with complexity $\mathcal{O}(\beta_1\cdot k)$, **no $2^k$ exhaustive enumeration**. $\blacksquare$
 
-**Corollary T2.1**　The trivial class is **always reachable** (take the zero assignment $s_e\equiv+1$). A nontrivial class is reachable **if and only if** some edge orbit appears an odd number of times in some fundamental cycle.
+**Corollary T2.1** The trivial class is **always reachable** (take the zero assignment $s_e\equiv+1$). A nontrivial class is reachable **if and only if** some edge orbit appears an odd number of times in some fundamental cycle.
 
 **T2.2 (Rank Form: $\operatorname{rank}(M)=\operatorname{rank}_\mathrm{hol}$, new in v1.2)**
 
-**Statement**　$\operatorname{rank}_{\mathbb{F}_2}(M)=k-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)=\operatorname{rank}_\mathrm{hol}(G)$.
+**Statement** $\operatorname{rank}_{\mathbb{F}_2}(M)=k-\dim\big(W(G)\cap\operatorname{Cut}(G)\big)=\operatorname{rank}_\mathrm{hol}(G)$.
 
-**Proof**　The null space of $M$ is $\ker M=\{z:Mz=0\}=\{z:\sigma(\gamma_i)=0\ \forall i\}$. By T3 (cycle-basis independence), "vanishing on the fundamental cycle basis" $\iff$ "vanishing on every cycle" $\iff[s(z)]=0$; and by T4, $[s(z)]=0\iff s(z)\in\delta C^0=\operatorname{Cut}$. Hence $\ker M=W(G)\cap\operatorname{Cut}(G)$. The rank–nullity theorem gives $\operatorname{rank}M=k-\dim\ker M=k-\dim(W\cap\operatorname{Cut})$, which equals $\operatorname{rank}_\mathrm{hol}$ by T9. $\blacksquare$
+**Proof** The null space of $M$ is $\ker M=\{z:Mz=0\}=\{z:\sigma(\gamma_i)=0\ \forall i\}$. By T3 (cycle-basis independence), "vanishing on the fundamental cycle basis" $\iff$ "vanishing on every cycle" $\iff[s(z)]=0$; and by T4, $[s(z)]=0\iff s(z)\in\delta C^0=\operatorname{Cut}$. Hence $\ker M=W(G)\cap\operatorname{Cut}(G)$. The rank–nullity theorem gives $\operatorname{rank}M=k-\dim\ker M=k-\dim(W\cap\operatorname{Cut})$, which equals $\operatorname{rank}_\mathrm{hol}$ by T9. $\blacksquare$
 
-**T2.3 (Status of the Criterion: the Misstated Necessity, corrected in v1.2)**　The $M\neq0$ criterion of T2 is an **existence** criterion (equivalent to $\operatorname{rank}_\mathrm{hol}\ge1$); it **does not give the dimension** (the dimension comes from T9/T2.2). The v1.1 §10 item 3 wrote "contains an odd cycle + orbit count $\ge2$" as a **necessary condition**, which **has been falsified**: the (in-book) ladder family with odd $k\ge5$ is **bipartite** (no odd cycle) with two orbits, yet still has $\operatorname{rank}_\mathrm{hol}\ge1$ (§6.3, T11); while $k=3$ ($K_{3,3}$) is bipartite with a single orbit and has $\operatorname{rank}_\mathrm{hol}=0$. **Odd cycles are neither sufficient nor necessary**; the only necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
+**T2.3 (Status of the Criterion: the Misstated Necessity, corrected in v1.2)** The $M\neq0$ criterion of T2 is an **existence** criterion (equivalent to $\operatorname{rank}_\mathrm{hol}\ge1$); it **does not give the dimension** (the dimension comes from T9/T2.2). The v1.1 §10 item 3 wrote "contains an odd cycle + orbit count $\ge2$" as a **necessary condition**, which **has been falsified**: the (in-book) ladder family with odd $k\ge5$ is **bipartite** (no odd cycle) with two orbits, yet still has $\operatorname{rank}_\mathrm{hol}\ge1$ (§6.3, T11); while $k=3$ ($K_{3,3}$) is bipartite with a single orbit and has $\operatorname{rank}_\mathrm{hol}=0$. **Odd cycles are neither sufficient nor necessary**; the only necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
 
 ### T3 (Cycle-Basis Independence)
 
-**Statement**　The triviality criterion for $\sigma$ ($[s]=0$) is independent of the choice of fundamental cycle basis $\{\gamma_i\}$.
+**Statement** The triviality criterion for $\sigma$ ($[s]=0$) is independent of the choice of fundamental cycle basis $\{\gamma_i\}$.
 
-**Proof**　Take any two fundamental cycle bases $\{\gamma_i\},\{\gamma'_j\}$; both are bases of $H_1=Z_1$, so $\gamma'_j=\sum_i a_{ji}\gamma_i$ ($a_{ji}\in\mathbb{F}_2$). By T0 linearity $\sigma(\gamma'_j)=\bigoplus_i a_{ji}\sigma(\gamma_i)$. Therefore "all zero on one basis" is equivalent to "all zero on the other basis", so the triviality criterion is unique. $\blacksquare$
+**Proof** Take any two fundamental cycle bases $\{\gamma_i\},\{\gamma'_j\}$; both are bases of $H_1=Z_1$, so $\gamma'_j=\sum_i a_{ji}\gamma_i$ ($a_{ji}\in\mathbb{F}_2$). By T0 linearity $\sigma(\gamma'_j)=\bigoplus_i a_{ji}\sigma(\gamma_i)$. Therefore "all zero on one basis" is equivalent to "all zero on the other basis", so the triviality criterion is unique. $\blacksquare$
 
 ### T4 (Coboundary Gauge Invariance / Cohomology Class is a Gauge Invariant)
 
-**Statement**　Let $s'=s\cdot\delta t$ (i.e. $s'_e=s_e\,t_it_j$, $t\in\{\pm1\}^V$). Then $\forall\gamma:\sigma'(\gamma)=\sigma(\gamma)$; hence $\sigma$ depends only on $[s]\in H^1$.
+**Statement** Let $s'=s\cdot\delta t$ (i.e. $s'_e=s_e\,t_it_j$, $t\in\{\pm1\}^V$). Then $\forall\gamma:\sigma'(\gamma)=\sigma(\gamma)$; hence $\sigma$ depends only on $[s]\in H^1$.
 
-**Proof**　$\sigma'(\gamma)=\big(\prod_{e\in\gamma}s_e\big)\cdot\big(\prod_{e\in\gamma}t_it_j\big)=\sigma(\gamma)\cdot1$, where the last factor is always $+1$ by T1. $\blacksquare$
+**Proof** $\sigma'(\gamma)=\big(\prod_{e\in\gamma}s_e\big)\cdot\big(\prod_{e\in\gamma}t_it_j\big)=\sigma(\gamma)\cdot1$, where the last factor is always $+1$ by T1. $\blacksquare$
 
-**Corollary T4.1**　The quotient structure $H^1=C^1/\delta C^0$ precisely matches "$\sigma$ is immune to vertex-potential relabeling"; the gauge freedom is $\delta C^0$ (vertex potentials).
+**Corollary T4.1** The quotient structure $H^1=C^1/\delta C^0$ precisely matches "$\sigma$ is immune to vertex-potential relabeling"; the gauge freedom is $\delta C^0$ (vertex potentials).
 
 ### T5 (Two-Channel Orthogonal Independence)
 
-**Statement**　$\deg=\beta_1\bmod2$ is determined solely by $(V,E,c)$, independent of $s$; $\sigma$ depends solely on $[s]$, not on the specific values of $(V,E,c)$ (only on the graph's **orbit structure** and $[s]$). Their independent variables are disjoint, so they take values independently.
+**Statement** $\deg=\beta_1\bmod2$ is determined solely by $(V,E,c)$, independent of $s$; $\sigma$ depends solely on $[s]$, not on the specific values of $(V,E,c)$ (only on the graph's **orbit structure** and $[s]$). Their independent variables are disjoint, so they take values independently.
 
-**Proof**　$\deg$ is a topological function of the graph ($\beta_1=E-V+c$); $\sigma$ is a function of the cohomology class. Taking different $s,s'$ preserves $\deg$ while changing $\sigma$; taking different graphs (changing $\deg$) preserves the $\sigma$ structure. So $Q=\sigma\cdot\deg$ is indeed the product of two independent channels. $\blacksquare$
+**Proof** $\deg$ is a topological function of the graph ($\beta_1=E-V+c$); $\sigma$ is a function of the cohomology class. Taking different $s,s'$ preserves $\deg$ while changing $\sigma$; taking different graphs (changing $\deg$) preserves the $\sigma$ structure. So $Q=\sigma\cdot\deg$ is indeed the product of two independent channels. $\blacksquare$
 
 ### T6 (Even-Cycle Forced Triviality: Structural Origin of Electron Type)
 
-**Statement**　If $G$ is **bipartite** (no odd cycles) and has exactly **one edge orbit**, then every Aut-invariant assignment is trivial (electron-like).
+**Statement** If $G$ is **bipartite** (no odd cycles) and has exactly **one edge orbit**, then every Aut-invariant assignment is trivial (electron-like).
 
-**Proof**　A single orbit $\Rightarrow s$ is a constant $z$ (in $\mathbb{F}_2$). Bipartite $\Rightarrow$ every cycle $\gamma$ has even length $\lvert \gamma\rvert$. Hence $\sigma(\gamma)=z^{\lvert \gamma\rvert }=(z)^{\text{even}}=+1$, trivial. $\blacksquare$
+**Proof** A single orbit $\Rightarrow s$ is a constant $z$ (in $\mathbb{F}_2$). Bipartite $\Rightarrow$ every cycle $\gamma$ has even length $\lvert \gamma\rvert$. Hence $\sigma(\gamma)=z^{\lvert \gamma\rvert }=(z)^{\text{even}}=+1$, trivial. $\blacksquare$
 
 **Reference** (consistent with charge-emergence paper §10.2):
 - Electron $Q_3$ (cube graph): bipartite, single edge orbit $\Rightarrow$ **forced trivial** ($[s]=0$);
@@ -255,39 +255,39 @@ Thus reachability is equivalent to $M\neq0$ — we need only find any nonzero en
 
 ### T7 (Element-Coloring Necessity)
 
-**Statement**　In molecular contexts, automorphisms **must preserve element labels** (color-preserving Aut). Using non-color-preserving Aut merges edge orbits that should remain distinct, distorting the reachability criterion and **potentially flipping it**.
+**Statement** In molecular contexts, automorphisms **must preserve element labels** (color-preserving Aut). Using non-color-preserving Aut merges edge orbits that should remain distinct, distorting the reachability criterion and **potentially flipping it**.
 
-**Proof (Counterexample)**　Take a 4-cycle $v_0v_1v_2v_3v_0$ with elements $[O,C,C,O]$ ($v_0{=}O, v_1{=}C, v_2{=}C, v_3{=}O$) and edges $e_1{=}(0,1),e_2{=}(1,2),e_3{=}(2,3),e_4{=}(3,0)$.
+**Proof (Counterexample)** Take a 4-cycle $v_0v_1v_2v_3v_0$ with elements $[O,C,C,O]$ ($v_0{=}O, v_1{=}C, v_2{=}C, v_3{=}O$) and edges $e_1{=}(0,1),e_2{=}(1,2),e_3{=}(2,3),e_4{=}(3,0)$.
 - **Color-preserving Aut**: swap $v_0\leftrightarrow v_3$ and $v_1\leftrightarrow v_2$ preserve elements. Orbits: $O_1=\{e_1,e_3\}, O_2=\{e_2\}, O_3=\{e_4\}$ (3 orbits). On the unique cycle $\gamma$: $m_{\gamma,O_1}=2\equiv0, m_{\gamma,O_2}=1, m_{\gamma,O_3}=1$, so $M\neq0$ $\Rightarrow$ **nontrivial reachable**.
 - **Non-color-preserving Aut**: $D_4$ acts **transitively** on all 4 edges (1 orbit). Cycle $\gamma$ has length 4, even, $\sigma=z^{4}=+1$ $\Rightarrow$ **forced trivial**.
 
 The two gauges give **opposite channel criteria**, so element coloring is a necessary condition for molecular-layer analysis. $\blacksquare$
 
-**Implementation Requirement**　`automorphisms(adj, colors=elements)` must restrict automorphisms by `node_match` (by element label); `elements=None` falls back to non-color-preserving, suitable only for abstract-graph experiments.
+**Implementation Requirement** `automorphisms(adj, colors=elements)` must restrict automorphisms by `node_match` (by element label); `elements=None` falls back to non-color-preserving, suitable only for abstract-graph experiments.
 
 ### T8 (Composition and Additivity: Hooks A2/A3)
 
-**Statement**　For a composite body $K_{\text{comp}}$ formed by coherently merging $n$ knots: $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$, $Q_{\text{comp}}=\sigma_{\text{comp}}\deg_{\text{comp}}$.
+**Statement** For a composite body $K_{\text{comp}}$ formed by coherently merging $n$ knots: $\sigma_{\text{comp}}=\prod_i\sigma_i$ (in $\mathbb{F}_2$ addition), $\deg_{\text{comp}}=\beta_1(K_{\text{comp}})\bmod2$, $Q_{\text{comp}}=\sigma_{\text{comp}}\deg_{\text{comp}}$.
 
-**Proof**　The composite recomputes new boundaries (A2), with boundary equal to the symmetric difference of each $\partial K_i$; by T0 linearity, $\sigma$ sums over the symmetric difference $\Rightarrow$ polarities multiply (Lemma 2.1). $\deg$ is recomputed from the new $(V,E,c)$. Additive separation (A3) follows from $Q$ summing over independent components. $\blacksquare$
+**Proof** The composite recomputes new boundaries (A2), with boundary equal to the symmetric difference of each $\partial K_i$; by T0 linearity, $\sigma$ sums over the symmetric difference $\Rightarrow$ polarities multiply (Lemma 2.1). $\deg$ is recomputed from the new $(V,E,c)$. Additive separation (A3) follows from $Q$ summing over independent components. $\blacksquare$
 
 ### T9 (Cut-Space Identity / Necessary-and-Sufficient Criterion for Triviality, new in v1.2)
 
-**Statement**　Let $G$ be connected ($c=1$; the general $c$ case is applied component-wise), $n_\mathrm{orb}=\dim W(G)$. Then
+**Statement** Let $G$ be connected ($c=1$; the general $c$ case is applied component-wise), $n_\mathrm{orb}=\dim W(G)$. Then
 
 $$\boxed{\ \operatorname{rank}_\mathrm{hol}(G)=n_\mathrm{orb}-\dim_{\mathbb{F}_2}\big(W(G)\cap\operatorname{Cut}(G)\big)\ }\qquad\text{and}\qquad \boxed{\ \operatorname{rank}_\mathrm{hol}(G)=0\iff W(G)\subseteq\operatorname{Cut}(G)\ }$$
 
 That is: **the sign channel is trivial $\iff$ every Aut-invariant assignment is some cut**.
 
-**Proof**　By D13, $\Phi_G:W(G)\to H^1$ is $\mathbb{F}_2$-linear. Its kernel is
+**Proof** By D13, $\Phi_G:W(G)\to H^1$ is $\mathbb{F}_2$-linear. Its kernel is
 $$\ker\Phi_G=\{s\in W(G):[s]=0\in H^1\}=\{s\in W(G):s\in\delta C^0\}=W(G)\cap\operatorname{Cut}(G),$$
 where the first equality is the definition of the kernel, the second follows from $H^1=C^1/\delta C^0$ (§2.1) together with T4 (the class is uniquely determined by $[s]$), and the third from D12 ($\operatorname{Cut}=\delta C^0$). By the rank–nullity theorem,
 $$\operatorname{rank}_\mathrm{hol}=\dim\operatorname{im}\Phi_G=\dim W(G)-\dim\ker\Phi_G=n_\mathrm{orb}-\dim(W\cap\operatorname{Cut}).$$
 Then $\operatorname{rank}_\mathrm{hol}=0\iff\operatorname{im}\Phi_G=0\iff\ker\Phi_G=W(G)\iff W(G)\subseteq\operatorname{Cut}(G)$ gives the second equivalence. $\blacksquare$
 
-**Corollary T9.1 (Connection to T2)**　$\operatorname{rank}_\mathrm{hol}\ge1\iff W(G)\not\subseteq\operatorname{Cut}(G)\iff M\neq0$ (the existence criterion of T2). T2 only answers "is there a nontrivial class"; T9 answers "how many bits".
+**Corollary T9.1 (Connection to T2)** $\operatorname{rank}_\mathrm{hol}\ge1\iff W(G)\not\subseteq\operatorname{Cut}(G)\iff M\neq0$ (the existence criterion of T2). T2 only answers "is there a nontrivial class"; T9 answers "how many bits".
 
-**Corollary T9.2 (Two Mutually Independent Computational Routes)**　Route A: the matrix rank $\operatorname{rank}_{\mathbb{F}_2}M$ of T2 ($\mathcal{O}(\beta_1 k)$); Route B: the cut-space intersection dimension $\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$ with the **star-set** basis of $\operatorname{Cut}$ (D12). The $Y_3$ verdict report measured these two routes plus "$H^1$ class enumeration" and "subset enumeration" on 22 samples (ladder family, prism family, classical graphs, random 3-regular graphs) with **zero mismatch across all four routes**.
+**Corollary T9.2 (Two Mutually Independent Computational Routes)** Route A: the matrix rank $\operatorname{rank}_{\mathbb{F}_2}M$ of T2 ($\mathcal{O}(\beta_1 k)$); Route B: the cut-space intersection dimension $\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$ with the **star-set** basis of $\operatorname{Cut}$ (D12). The $Y_3$ verdict report measured these two routes plus "$H^1$ class enumeration" and "subset enumeration" on 22 samples (ladder family, prism family, classical graphs, random 3-regular graphs) with **zero mismatch across all four routes**.
 
 **Corollary T9.3 (Official Skeleton Readings)**
 
@@ -299,7 +299,7 @@ Then $\operatorname{rank}_\mathrm{hol}=0\iff\operatorname{im}\Phi_G=0\iff\ker\Ph
 
 This agrees with the T2 criterion ($Q_3$: $M=0$; $Y_3^\mathrm{cl}$: $M\neq0$) and with the channel types in charge-emergence paper §10.2; moreover the triviality of $Q_3$ now receives a **mechanistic explanation**: its only Aut-invariant assignment (all ones, since the graph is edge-transitive) happens to lie inside the cut space.
 
-**Note (Label Independence)**　$\operatorname{rank}_\mathrm{hol}$ is an integer depending only on the orbit structure and the cut space of $G$; it is **independent** of the choice of cycle basis (T3) and of vertex labeling (matching the $\sigma$ class of §6). This is exactly opposite to $\varrho$-type quantities (Operator 20, see its specification §2.2), which are label-sensitive. Hence $\operatorname{rank}_\mathrm{hol}$ is a **comparable invariant** across skeletons.
+**Note (Label Independence)** $\operatorname{rank}_\mathrm{hol}$ is an integer depending only on the orbit structure and the cut space of $G$; it is **independent** of the choice of cycle basis (T3) and of vertex labeling (matching the $\sigma$ class of §6). This is exactly opposite to $\varrho$-type quantities (Operator 20, see its specification §2.2), which are label-sensitive. Hence $\operatorname{rank}_\mathrm{hol}$ is a **comparable invariant** across skeletons.
 
 ---
 
@@ -307,7 +307,7 @@ This agrees with the T2 criterion ($Q_3$: $M=0$; $Y_3^\mathrm{cl}$: $M\neq0$) an
 
 Operator 19 faithfully reproduces the three skeletons from charge-emergence paper §10.2 using `skel_electron_q3 / skel_y3_closed / skel_y3_open`, serving as the **anchor self-test** of the specification:
 
-**Table 6.1　Anchor readings of the three skeletons**
+**Table 6.1 Anchor readings of the three skeletons**
 
 | Skeleton | $V$ | $E$ | $\beta_1$ | $\deg$ | $\lvert\operatorname{Aut}\rvert$ | Edge Orbits | Bipartite | Nontrivial Reachable | Channel Type |
 |---|---|---|---|---|---|---|---|---|---|
@@ -315,7 +315,7 @@ Operator 19 faithfully reproduces the three skeletons from charge-emergence pape
 | Proton $p$ (closed) | 12 | 18 | 7 | 1 | 36 | 2 | No | **Yes** | nucleon-like |
 | Neutron $n$ (open) | 12 | 17 | 6 | 0 | 4 | 7 | No | **Yes** | nucleon-like |
 
-**Table 6.2　Cut-space readings (T9; item-by-item identical to Table 3.1 of the $Y_3$ verdict report, re-checked inside this project in §8.4)**
+**Table 6.2 Cut-space readings (T9; item-by-item identical to Table 3.1 of the $Y_3$ verdict report, re-checked inside this project in §8.4)**
 
 | Skeleton | $n_\mathrm{orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\operatorname{rank}_\mathrm{hol}$ | Reachable classes $2^\mathrm{rank}$ |
 |---|---|---|---|---|---|
@@ -363,7 +363,7 @@ Conclusion (strengthened in v1.2): **The electron is forced into a trivial holon
 
 The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$. Graph theory contains another equally $\mathbb{Z}_2$-valued "sign" channel—the **Pfaffian orientation class** (D14). Whether the two share a common origin had previously been argued only indirectly on the ladder family; this section renders a side-by-side verdict on the **project's own nucleon skeletons**.
 
-**Table 6.3　Side-by-side readings of the two channels ($Y_3$ verdict report §4.1)**
+**Table 6.3 Side-by-side readings of the two channels ($Y_3$ verdict report §4.1)**
 
 | Skeleton | $n_\mathrm{orb}$ | $\operatorname{rank}_\mathrm{hol}$ ($H^1$ channel) | $\#\mathcal M$ | $\lvert\mathcal O_\mathrm{Pf}\rvert$ | $\dim\mathcal O_\mathrm{Pf}$ | Pfaffian channel | nice even cycles |
 |---|---|---|---|---|---|---|---|
@@ -371,13 +371,13 @@ The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$
 | $Y_3^\mathrm{cl}$ (proton) | 2 | 1 | 6 | **0** | — | **unsolvable** | **42** |
 | $Y_3^\mathrm{op}$ (neutron) | 7 | 2 | 4 | 16384 | 13 | **solvable** | **0** |
 
-**Proposition P19.1 (Channel-Separation Verdict)**　On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\operatorname{rank}_\mathrm{hol}=1$, exactly 2 reachable classes), while the Pfaffian channel is **closed** ($\mathcal O_\mathrm{Pf}=\emptyset$). Hence the project's core claim—that the charge sign is carried by $H^1$ holonomy rather than by Pfaffian orientation—obtains **direct side-by-side measurement on the project's own skeleton**, no longer resting only on the indirect argument "holds on the ladder family, fails to extrapolate to the skeleton".
+**Proposition P19.1 (Channel-Separation Verdict)** On the closed nucleon skeleton the $H^1$ holonomy channel is **open** ($\operatorname{rank}_\mathrm{hol}=1$, exactly 2 reachable classes), while the Pfaffian channel is **closed** ($\mathcal O_\mathrm{Pf}=\emptyset$). Hence the project's core claim—that the charge sign is carried by $H^1$ holonomy rather than by Pfaffian orientation—obtains **direct side-by-side measurement on the project's own skeleton**, no longer resting only on the indirect argument "holds on the ladder family, fails to extrapolate to the skeleton".
 
-**Theorem T10 (Minimal Unsatisfiable Row-Subset Certificate)**　The unbalanced system of $Y_3^\mathrm{cl}$ has $6$ rows (6 perfect matchings) $\times\,18$ columns (18 edges); its **full set of 6 rows** is a minimal unsatisfiable row subset: removing any single row leaves the remaining 5 rows **solvable** (maximum satisfiable row count $=5/6$). That is, $Y_3^\mathrm{cl}$ is **exactly one row away** from admitting a Pfaffian orientation.
+**Theorem T10 (Minimal Unsatisfiable Row-Subset Certificate)** The unbalanced system of $Y_3^\mathrm{cl}$ has $6$ rows (6 perfect matchings) $\times\,18$ columns (18 edges); its **full set of 6 rows** is a minimal unsatisfiable row subset: removing any single row leaves the remaining 5 rows **solvable** (maximum satisfiable row count $=5/6$). That is, $Y_3^\mathrm{cl}$ is **exactly one row away** from admitting a Pfaffian orientation.
 
-**Proof**　By criterion D14, list the 6 perfect matchings row by row together with the right-hand sides $\mathrm{cr}$ (Table 6.4), and exhaust all $2^6$ row subsets: only the full set is unsatisfiable, while all 63 proper subsets are satisfiable; hence the full set is a minimal unsatisfiable row subset. $\blacksquare$
+**Proof** By criterion D14, list the 6 perfect matchings row by row together with the right-hand sides $\mathrm{cr}$ (Table 6.4), and exhaust all $2^6$ row subsets: only the full set is unsatisfiable, while all 63 proper subsets are satisfiable; hence the full set is a minimal unsatisfiable row subset. $\blacksquare$
 
-**Table 6.4　The unbalanced system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns; right-hand sides are $\mathrm{cr}(M)$)**
+**Table 6.4 The unbalanced system of $Y_3^\mathrm{cl}$ (6 rows × 18 columns; right-hand sides are $\mathrm{cr}(M)$)**
 
 | Row | Perfect matching $M$ | $\mathrm{cr}(M)$ |
 |---|---|---|
@@ -390,16 +390,16 @@ The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$
 
 "One row short" is confirmed by **exhausting all row subsets**, not heuristically.
 
-**Proposition P19.2 (Structural Mechanism: nice even cycles vanish)**　$Y_3^\mathrm{cl}$ contains **42** nice even cycles (9 of length 6, 9 of length 8, 18 of length 10, 6 of length 12); the open state $Y_3^\mathrm{op}$, obtained by deleting one rim edge, has **0**, and the Pfaffian channel opens accordingly ($\dim=13$, $\lvert\mathcal O_\mathrm{Pf}\rvert=2^{13}$, with the particular solution independently cross-checked at $\mathrm{Pf}=+4=\#\mathcal M$). Thus the v1.1 qualitative observation—"a single closed/open decision flips existence"—now has a **concrete mechanism**.
+**Proposition P19.2 (Structural Mechanism: nice even cycles vanish)** $Y_3^\mathrm{cl}$ contains **42** nice even cycles (9 of length 6, 9 of length 8, 18 of length 10, 6 of length 12); the open state $Y_3^\mathrm{op}$, obtained by deleting one rim edge, has **0**, and the Pfaffian channel opens accordingly ($\dim=13$, $\lvert\mathcal O_\mathrm{Pf}\rvert=2^{13}$, with the particular solution independently cross-checked at $\mathrm{Pf}=+4=\#\mathcal M$). Thus the v1.1 qualitative observation—"a single closed/open decision flips existence"—now has a **concrete mechanism**.
 
-> **Boundary 1 (an indicator is not a criterion)**　nice even cycles are only an **obstruction indicator**: used as a classifier on 22 samples it scores TP=4, FP=2, FN=3, TN=13 (false positives such as the Wagner graph $M_8$: nice=1 yet solvable; false negatives are mostly bipartite graphs). Ground truth always comes from the unbalanced system.
-> **Boundary 2 (contract unchanged)**　Pfaffian orientation is an **adjacent graph-theoretic channel, not part of Operator 19's output**: the implementation introduces no new keys, `charge_channel_keys` still returns exactly **10 keys** (§8.3), and the freeze contract is untouched by this section.
+> **Boundary 1 (an indicator is not a criterion)** nice even cycles are only an **obstruction indicator**: used as a classifier on 22 samples it scores TP=4, FP=2, FN=3, TN=13 (false positives such as the Wagner graph $M_8$: nice=1 yet solvable; false negatives are mostly bipartite graphs). Ground truth always comes from the unbalanced system.
+> **Boundary 2 (contract unchanged)** Pfaffian orientation is an **adjacent graph-theoretic channel, not part of Operator 19's output**: the implementation introduces no new keys, `charge_channel_keys` still returns exactly **10 keys** (§8.3), and the freeze contract is untouched by this section.
 
 ### 6.3 Relation of $Y_3$ to the Möbius Ladder Family and the Numbering Convention (new in v1.2)
 
-**Proposition P19.3 (Covering / Quotient Verdict)**　$Y_3^\mathrm{cl}$ is **non-isomorphic** to every $M_{2n}$ ($n\ge3$) (adjacency spectra and triangle counts both differ), admits **zero coverings** (complete backtracking enumeration over $M_4$–$M_{14}$ returns 0) and **zero quotients** (a quotient is a special case of a covering, so zero coverings implies zero quotients). **However**, $Y_3^\mathrm{cl}$ is a **$k=3$ regular cover of $K_4$** (unique covering; deck group of order 3; quotient $\cong K_4$; each of the four $K_4$ edges lifts 3 times). The "three-ness" of $Y_3$ (3 centers, 3 leg groups, 3 triangles, $\lvert\operatorname{Aut}\rvert=36=3!\times3!$, 2 edge orbits of 9 edges each) thereby receives a unified explanation: **$Y_3$ is a 3-fold complete graph**.
+**Proposition P19.3 (Covering / Quotient Verdict)** $Y_3^\mathrm{cl}$ is **non-isomorphic** to every $M_{2n}$ ($n\ge3$) (adjacency spectra and triangle counts both differ), admits **zero coverings** (complete backtracking enumeration over $M_4$–$M_{14}$ returns 0) and **zero quotients** (a quotient is a special case of a covering, so zero coverings implies zero quotients). **However**, $Y_3^\mathrm{cl}$ is a **$k=3$ regular cover of $K_4$** (unique covering; deck group of order 3; quotient $\cong K_4$; each of the four $K_4$ edges lifts 3 times). The "three-ness" of $Y_3$ (3 centers, 3 leg groups, 3 triangles, $\lvert\operatorname{Aut}\rvert=36=3!\times3!$, 2 edge orbits of 9 edges each) thereby receives a unified explanation: **$Y_3$ is a 3-fold complete graph**.
 
-**Table 6.5　Numbering convention (factor 2; always check before cross-referencing)**
+**Table 6.5 Numbering convention (factor 2; always check before cross-referencing)**
 
 | Graph | In-book $M_k$ (even cycle $C_{2k}$ + antipodal chords, $V=2k$) | Paper $M_{2n}=\mathrm{Cay}(\mathbb{Z}_{2n},\{1,n\})$, $V=2n$ |
 |---|---|---|
@@ -407,13 +407,13 @@ The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$
 | $K_{3,3}$ | $M_3$ | $M_6$ |
 | Wagner graph | $M_4$ | $M_8$ |
 
-**Proposition P19.4 (Full-Family Readings in the In-Book Convention, $k=2,\dots,24$)**　$n_\mathrm{orb}=1\iff k\in\{2,3\}$; even $k\iff$ non-bipartite, odd $k\iff$ bipartite; $\operatorname{rank}_\mathrm{hol}=0\iff k=3$.
+**Proposition P19.4 (Full-Family Readings in the In-Book Convention, $k=2,\dots,24$)** $n_\mathrm{orb}=1\iff k\in\{2,3\}$; even $k\iff$ non-bipartite, odd $k\iff$ bipartite; $\operatorname{rank}_\mathrm{hol}=0\iff k=3$.
 
-**Theorem T11 (Necessary-and-Sufficient Condition for Opening the Sign Channel on the Ladder Family)**　On the ladder family, $\operatorname{rank}_\mathrm{hol}=0$ **if and only if** $k=3$ (i.e. $K_{3,3}$, the family's only "bipartite + single orbit" member). Hence every ladder with $k\neq3$ opens the sign channel; when $k\ge5$ is odd the graph is **bipartite** (no odd cycle) yet the channel is still open, with mechanism "bipartite + two orbits".
+**Theorem T11 (Necessary-and-Sufficient Condition for Opening the Sign Channel on the Ladder Family)** On the ladder family, $\operatorname{rank}_\mathrm{hol}=0$ **if and only if** $k=3$ (i.e. $K_{3,3}$, the family's only "bipartite + single orbit" member). Hence every ladder with $k\neq3$ opens the sign channel; when $k\ge5$ is odd the graph is **bipartite** (no odd cycle) yet the channel is still open, with mechanism "bipartite + two orbits".
 
-**Proof**　For $k=3$, single orbit + bipartite forces triviality by T6. For $k=2$ the graph is $K_4$: single orbit but contains triangles, so $\operatorname{rank}_\mathrm{hol}\ge1$. For $k\ge4$, $n_\mathrm{orb}=2$; if $k$ is even the graph contains odd cycles, if $k$ is odd it is bipartite—in either case at least one of the two orbits does not lie in the cut space (for odd $k$ the all-ones assignment lies in the cut space while the other does not), so $\dim(W\cap\operatorname{Cut})\le1<n_\mathrm{orb}=2$, and T9 yields $\operatorname{rank}_\mathrm{hol}\ge1$. $\blacksquare$
+**Proof** For $k=3$, single orbit + bipartite forces triviality by T6. For $k=2$ the graph is $K_4$: single orbit but contains triangles, so $\operatorname{rank}_\mathrm{hol}\ge1$. For $k\ge4$, $n_\mathrm{orb}=2$; if $k$ is even the graph contains odd cycles, if $k$ is odd it is bipartite—in either case at least one of the two orbits does not lie in the cut space (for odd $k$ the all-ones assignment lies in the cut space while the other does not), so $\dim(W\cap\operatorname{Cut})\le1<n_\mathrm{orb}=2$, and T9 yields $\operatorname{rank}_\mathrm{hol}\ge1$. $\blacksquare$
 
-**Corollary T11.1 (Correction to T6 and §6.1)**　T6's "bipartite + single orbit $\Rightarrow$ forced triviality" is a **sufficient** condition whose **converse fails** (counterexample: odd-$k\ge5$ ladders—bipartite with two orbits, channel open). Therefore the §6.1 sentence "what actually determines the flip is the existence of odd cycles" **does not hold**, and the v1.1 §10 item 3 writing "odd cycle + multiple orbits" as a necessary condition is tightened accordingly: the sole necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
+**Corollary T11.1 (Correction to T6 and §6.1)** T6's "bipartite + single orbit $\Rightarrow$ forced triviality" is a **sufficient** condition whose **converse fails** (counterexample: odd-$k\ge5$ ladders—bipartite with two orbits, channel open). Therefore the §6.1 sentence "what actually determines the flip is the existence of odd cycles" **does not hold**, and the v1.1 §10 item 3 writing "odd cycle + multiple orbits" as a necessary condition is tightened accordingly: the sole necessary-and-sufficient criterion is $W(G)\not\subseteq\operatorname{Cut}(G)$ (T9).
 
 ---
 

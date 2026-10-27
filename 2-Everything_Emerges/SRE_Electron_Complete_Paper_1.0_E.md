@@ -36,7 +36,7 @@ This manuscript provides a unified and complete characterization of the electron
 
 This manuscript is organized in the following order, fusing four existing component documents (the fine-structure-constant derivation, the complete characterization of the electron, the Fork A axiomatic derivation, and the electron orbital-assignment derivation) into a unified account:
 
-- Section 1 presents the **terminological conventions**. Unfamiliar terms that first appear in the text are marked with 【】; their precise definitions are collected in this section, given in plain written form for readers without a physics or mathematics background. Each key term is accompanied by a note indicating its status as an "internal construct/analogy of the model", so as to avoid confusion with real physical quantities.
+- Section 1 presents the **terminological conventions**. Unfamiliar terms that first appear in the text are marked with a **boldface entry**; their precise definitions are collected in this section, given in plain written form for readers without a physics or mathematics background. Each key term is accompanied by a note indicating its status as an "internal construct/analogy of the model", so as to avoid confusion with real physical quantities.
 - Section 2 gives the **theoretical foundations of SRE**: the three axioms, the Operator chain, and the Dirichlet energy lower bound.
 - Section 3 establishes the **Möbius topological modeling of light**: the residual manifold, the 4π closure period, and the validation confidence.
 - Sections 4–5 give the **three independent derivation paths for the fine-structure constant α** and their convergence analysis, including the Tier 0 independent computational review.
@@ -53,32 +53,32 @@ Throughout, this manuscript follows a single contextual-distinction principle: *
 
 ## 1. Terminological conventions
 
-Each key term below is marked with a 【Remark】 indicating its model-internal status within the SRE framework. Unfamiliar terms that first appear in the text are marked with 【】; conventions for symbols are collected in §1.2.
+Each key term below is marked with a [Remark] indicating its model-internal status within the SRE framework. Unfamiliar terms that first appear in the text are marked with a bracketed remark; conventions for symbols are collected in §1.2.
 
 ### 1.1 Glossary
 
 | Term | Definition (with remark on model-internal status) |
 |---|---|
-| **Binary self-organizing network** | A square matrix `M ∈ {+1,−1}^{n×n}` whose entries are the elements `+1` and `−1`: `+1` indicates that the relation between two nodes is co-oriented (connection) and `−1` indicates counter-orientation (repulsion). Starting from a unit seed, the network grows step by step according to a local dormancy–activation rule. SRE theory regards it as the primitive language of the underlying structure of the world. 【Remark: internal construct of the model — the simulation mechanism by which SRE describes the underlying world, not an observable independent of the model】 |
-| **Coherent core** | When the network has evolved to scale `N`, the rigid kernel within it whose internal order is stable and no longer degrades; the electron resides within this kernel. 【Remark: model-internal concept, corresponding to the rigid kernel of network evolution in simulations, not a real detectable structure】 |
-| **Z₂ holonomy (Z₂ winding phase)** | The sign factor accumulated by a closed path traversing one full circuit. On a binary network, for any closed loop formed by four nodes, the product of the four edge-relation values is strictly `+1` or `−1`; the value `−1` indicates that the traversal experienced one spatial flip. This is the algebraic essence of electron spin-1/2 and of 4π (restoration after two turns). 【Remark: model-internal algebraic-structure analogy used to interpret the sign factor of spin-1/2; not a direct measurement of real spin】 |
-| **Möbius double cover (4π)** | The electron must rotate two full turns (720°) to be restored, a property analogous to the Möbius band; in signed-network language, this is a structure that "closes only after two steps". 【Remark: model-internal geometric analogy (analogous to the Möbius band), not a real spacetime structure】 |
-| **DCF (discrete closed-chain complex / double-cover four-state complex)** | A triple $(\lvert V\rvert, \lvert E\rvert, \beta_1)$ describing a complex of discrete closed loops, denoting vertex count, edge count, and first Betti number, respectively; `β₁` characterizes the number of independent closed loops. The basal structure of the electron takes the value `(8, 12, 5)`. 【Remark: model-internal counting tool; (8, 12, 5) describes the topological type of a simulated object, not a measured geometric result of the real electron】 |
-| **Spectral-gap ratio α = λ₂/λ_max** | The ratio of the second-smallest eigenvalue (the second-lowest collective vibration mode) to the largest eigenvalue of the relation-matrix spectrum, used to measure the relative stiffness of the softest collective mode of the system. The α of the electron equals precisely the fine-structure constant **1/137.036**. 【Remark: model-internal spectral feature; its agreement with 1/137.036 is an internal reproduction of the model and does not mean that α has been "measured" by this model; the real α remains determined by experiment】 |
-| **MDS inversion** (multi-dimensional scaling) | Starting from the pairwise distance matrix of objects, reconstruct their coordinates in a space of given dimension. In SRE, the spatial shape of the electron emerges from the relation matrix through this route, rather than being pre-given. 【Remark: model-internal geometric construction used to reconstruct coordinates from the relation matrix, which presupposes no real space; the coordinates obtained are a model-internal relational embedding, not a measurement of real positions】 |
-| **Renormalization / coarse-graining (RG)** | Merging a cluster of nodes into a single super-node, thereby examining the system at a coarser scale; SRE uses it to roll the network upward layer by layer, establishing the micro–meso–macro correspondence. 【Remark: model-internal multi-scale up-rolling operation; the micro–meso–macro correspondence is a model picture, not a settled claim about real levels】 |
-| **Fixed point** | An object that remains unchanged under repeated application of some operator. The electron is a fixed point of the sparse operator `R`. 【Remark: a purely mathematical concept; here it describes the iterative behavior of an operator】 |
-| **Fork A axioms** | The axiom system for deriving the 60-node projection of the electron, composed of four axioms (A1–A4) and one rule (R1), proceeding purely from logic and topology without relying on empirical parameters. 【Remark: an internal axiom system of the model; its consequences hold only within the model】 |
-| **Basal structure** | The minimal invariant kernel that cannot be further compressed under arbitrary coarse-graining. The basal structure of the electron is the three-dimensional cube Q₃. 【Remark: model-internal "minimal invariant kernel"; Q₃ is the graph-theoretic type of a simulated object, not a real geometric body of the electron】 |
-| **Logical depth** | The number of nested relational levels required to constitute an object. For the electron it is approximately `10²³` layers, hence "deep"; after collapse its basal structure is merely `12×5`, hence "compact". 【Remark: model-internal count/analogy (10²³), not a measured property of the real electron】 |
-| **Bare coupling δ** (delta) | The small input constant required to make the spectral gap converge precisely to 1/137; its status is isomorphic to that of α as a measured input in QED. 【Remark: model-internal input constant; it only analogizes the status of α as a measured input in QED and does not constitute a substitute conclusion about QED】 |
-| **Cell (state unit)** | The smallest distinguishable unit `(v, σ)` of the basal state space of the electron: basal Q₃ vertex × spin sheet, 16 in total. 【Remark: model-internal count; capacity 1, i.e., Pauli cell-uniqueness (see Section 13)】 |
-| **Faithful cover** | The property that the relation rows of the individual units on the double-cover matrix are pairwise distinct. 【Remark: model-internal algebraic property; it is the algebraic basis of the Pauli exclusion principle】 |
-| **Orbital (SRE)** | A collective vibration mode on the atom (mesoscopic kernel) = an eigenvector of the relation Laplacian. 【Remark: model-internal analogy; its density pattern and the spatial orbital functions of quantum mechanics are not the same object】 |
-| **Subshell capacity 4ℓ+2** | The number of electrons that can be accommodated in the subshell of azimuthal quantum number ℓ = 2(2ℓ+1). 【Remark: purely arithmetic combinatorics; the source of the degeneracy is a borrowed term (see Section 13)】 |
-| **Shell capacity 2n²** | The electron capacity of the principal shell n = Σ_{ℓ<n}(4ℓ+2). 【Remark: purely arithmetic combinatorics】 |
-| **Pairing tension** | The number of orbitals in which both spin sheets of the same orbital are occupied (paired). 【Remark: a proxy quantity of the model-internal energy functional; the object minimized by Hund's rule】 |
-| **Madelung rule** | The empirical construction order in which orbitals are filled in ascending order of (n + ℓ). 【Remark: an open borrowed term, not derived by SRE】 |
+| **Binary self-organizing network** | A square matrix `M ∈ {+1,−1}^{n×n}` whose entries are the elements `+1` and `−1`: `+1` indicates that the relation between two nodes is co-oriented (connection) and `−1` indicates counter-orientation (repulsion). Starting from a unit seed, the network grows step by step according to a local dormancy–activation rule. SRE theory regards it as the primitive language of the underlying structure of the world. [Remark: internal construct of the model — the simulation mechanism by which SRE describes the underlying world, not an observable independent of the model] |
+| **Coherent core** | When the network has evolved to scale `N`, the rigid kernel within it whose internal order is stable and no longer degrades; the electron resides within this kernel. [Remark: model-internal concept, corresponding to the rigid kernel of network evolution in simulations, not a real detectable structure] |
+| **Z₂ holonomy (Z₂ winding phase)** | The sign factor accumulated by a closed path traversing one full circuit. On a binary network, for any closed loop formed by four nodes, the product of the four edge-relation values is strictly `+1` or `−1`; the value `−1` indicates that the traversal experienced one spatial flip. This is the algebraic essence of electron spin-1/2 and of 4π (restoration after two turns). [Remark: model-internal algebraic-structure analogy used to interpret the sign factor of spin-1/2; not a direct measurement of real spin] |
+| **Möbius double cover (4π)** | The electron must rotate two full turns (720°) to be restored, a property analogous to the Möbius band; in signed-network language, this is a structure that "closes only after two steps". [Remark: model-internal geometric analogy (analogous to the Möbius band), not a real spacetime structure] |
+| **DCF (discrete closed-chain complex / double-cover four-state complex)** | A triple $(\lvert V\rvert, \lvert E\rvert, \beta_1)$ describing a complex of discrete closed loops, denoting vertex count, edge count, and first Betti number, respectively; `β₁` characterizes the number of independent closed loops. The basal structure of the electron takes the value `(8, 12, 5)`. [Remark: model-internal counting tool; (8, 12, 5) describes the topological type of a simulated object, not a measured geometric result of the real electron] |
+| **Spectral-gap ratio α = λ₂/λ_max** | The ratio of the second-smallest eigenvalue (the second-lowest collective vibration mode) to the largest eigenvalue of the relation-matrix spectrum, used to measure the relative stiffness of the softest collective mode of the system. The α of the electron equals precisely the fine-structure constant **1/137.036**. [Remark: model-internal spectral feature; its agreement with 1/137.036 is an internal reproduction of the model and does not mean that α has been "measured" by this model; the real α remains determined by experiment] |
+| **MDS inversion** (multi-dimensional scaling) | Starting from the pairwise distance matrix of objects, reconstruct their coordinates in a space of given dimension. In SRE, the spatial shape of the electron emerges from the relation matrix through this route, rather than being pre-given. [Remark: model-internal geometric construction used to reconstruct coordinates from the relation matrix, which presupposes no real space; the coordinates obtained are a model-internal relational embedding, not a measurement of real positions] |
+| **Renormalization / coarse-graining (RG)** | Merging a cluster of nodes into a single super-node, thereby examining the system at a coarser scale; SRE uses it to roll the network upward layer by layer, establishing the micro–meso–macro correspondence. [Remark: model-internal multi-scale up-rolling operation; the micro–meso–macro correspondence is a model picture, not a settled claim about real levels] |
+| **Fixed point** | An object that remains unchanged under repeated application of some operator. The electron is a fixed point of the sparse operator `R`. [Remark: a purely mathematical concept; here it describes the iterative behavior of an operator] |
+| **Fork A axioms** | The axiom system for deriving the 60-node projection of the electron, composed of four axioms (A1–A4) and one rule (R1), proceeding purely from logic and topology without relying on empirical parameters. [Remark: an internal axiom system of the model; its consequences hold only within the model] |
+| **Basal structure** | The minimal invariant kernel that cannot be further compressed under arbitrary coarse-graining. The basal structure of the electron is the three-dimensional cube Q₃. [Remark: model-internal "minimal invariant kernel"; Q₃ is the graph-theoretic type of a simulated object, not a real geometric body of the electron] |
+| **Logical depth** | The number of nested relational levels required to constitute an object. For the electron it is approximately `10²³` layers, hence "deep"; after collapse its basal structure is merely `12×5`, hence "compact". [Remark: model-internal count/analogy (10²³), not a measured property of the real electron] |
+| **Bare coupling δ** (delta) | The small input constant required to make the spectral gap converge precisely to 1/137; its status is isomorphic to that of α as a measured input in QED. [Remark: model-internal input constant; it only analogizes the status of α as a measured input in QED and does not constitute a substitute conclusion about QED] |
+| **Cell (state unit)** | The smallest distinguishable unit `(v, σ)` of the basal state space of the electron: basal Q₃ vertex × spin sheet, 16 in total. [Remark: model-internal count; capacity 1, i.e., Pauli cell-uniqueness (see Section 13)] |
+| **Faithful cover** | The property that the relation rows of the individual units on the double-cover matrix are pairwise distinct. [Remark: model-internal algebraic property; it is the algebraic basis of the Pauli exclusion principle] |
+| **Orbital (SRE)** | A collective vibration mode on the atom (mesoscopic kernel) = an eigenvector of the relation Laplacian. [Remark: model-internal analogy; its density pattern and the spatial orbital functions of quantum mechanics are not the same object] |
+| **Subshell capacity 4ℓ+2** | The number of electrons that can be accommodated in the subshell of azimuthal quantum number ℓ = 2(2ℓ+1). [Remark: purely arithmetic combinatorics; the source of the degeneracy is a borrowed term (see Section 13)] |
+| **Shell capacity 2n²** | The electron capacity of the principal shell n = Σ_{ℓ<n}(4ℓ+2). [Remark: purely arithmetic combinatorics] |
+| **Pairing tension** | The number of orbitals in which both spin sheets of the same orbital are occupied (paired). [Remark: a proxy quantity of the model-internal energy functional; the object minimized by Hund's rule] |
+| **Madelung rule** | The empirical construction order in which orbitals are filled in ascending order of (n + ℓ). [Remark: an open borrowed term, not derived by SRE] |
 
 ### 1.2 Symbol conventions
 
@@ -117,7 +117,7 @@ SRE dynamics is built upon three discrete-topology axioms:
 
 ### 2.2 The binary self-organizing network and the coherent core
 
-The basic starting point of SRE is that all structure emerges from the binary relation matrix `M ∈ {+1,−1}`, in which no space, particle, or force is pre-given; only co-oriented/counter-oriented binary relations between nodes exist. The network grows autonomously according to the dormancy–activation rule (implementation in `code/sim_p.py`). This is analogous to an assembly of magnetic needles admitting only the two orientations "co-oriented/counter-oriented": under random perturbation, the system spontaneously forms an ordered kernel.【The above is a model-internal picture of the world, not an assertion about the real world】
+The basic starting point of SRE is that all structure emerges from the binary relation matrix `M ∈ {+1,−1}`, in which no space, particle, or force is pre-given; only co-oriented/counter-oriented binary relations between nodes exist. The network grows autonomously according to the dormancy–activation rule (implementation in `code/sim_p.py`). This is analogous to an assembly of magnetic needles admitting only the two orientations "co-oriented/counter-oriented": under random perturbation, the system spontaneously forms an ordered kernel.[The above is a model-internal picture of the world, not an assertion about the real world]
 
 When the network has evolved to scale `N`, the innermost `k = ⌊0.2 N⌋` nodes form a rigid, non-degenerate kernel; the strictness of the existence and stability of this kernel in the `N→∞` limit is guaranteed by Theorem 1 of the theoretical monograph (DOI: 10.5281/zenodo.22162514) (the citation of 14-2 appears in Appendix E). **This kernel is the logical basis of the electron (model-internal)**. The numerical simulation at `N=300` gives `k=60`, which coincides exactly with the electron projection scale `n=60`. This agreement should be positioned as a "co-directional indication" rather than a strict proof, and both quantities are model-internal numerical values (`N=300` is a simulation choice); its scope of applicability and limitations are detailed in Section 14.
 
@@ -225,7 +225,7 @@ Compared with $\alpha = 0.0072973526$, the **error is 0.0015%**.
 
 $$n = 60 = \dim(E) \times \dim(F) = \lvert E\rvert  \times \beta_1 = 12 \times 5$$
 
-where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell-equation validation: the D_edge of Maxwell.py defines a cell complex of an 8-ring plus 4 skip-2 chords ($\lvert V\rvert =8$, $\lvert E\rvert =12$, $\beta_1=5$). The angular spacing is $\frac{4\pi}{60} = \frac{\pi}{15}$, and $15 = 3 \times 5$, indicating that the discretization precision of the Möbius band is determined by the dimensional structure of the Maxwell-equation circuit diagram.【Naming correction: the source code labeled this graph as $K_{3,5}$, but the true complete bipartite graph $K_{3,5}$ has 15 edges and $\beta_1=8$; the correct name of this complex is the double-cover four-state complex (DCF), whose origin appears in Section 6.】
+where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell-equation validation: the D_edge of Maxwell.py defines a cell complex of an 8-ring plus 4 skip-2 chords ($\lvert V\rvert =8$, $\lvert E\rvert =12$, $\beta_1=5$). The angular spacing is $\frac{4\pi}{60} = \frac{\pi}{15}$, and $15 = 3 \times 5$, indicating that the discretization precision of the Möbius band is determined by the dimensional structure of the Maxwell-equation circuit diagram.[Naming correction: the source code labeled this graph as $K_{3,5}$, but the true complete bipartite graph $K_{3,5}$ has 15 edges and $\beta_1=8$; the correct name of this complex is the double-cover four-state complex (DCF), whose origin appears in Section 6.]
 
 ### 4.2 Path 2: the four-state eigen-spectrum frequency formula
 
@@ -336,11 +336,11 @@ The three paths are mathematically independent (algebraic graph theory / linear 
 
 An independent computational review of the three paths above (programs `code/_tier0_lambda0_independent.py`, `code/_tier0_refinement_limit.py`, `code/_tier0_theory_reaudit.py`) yields three corrective conclusions:
 
-**（1）λ₀ is not an independent primitive (PASS-A failure):** under the constraint of forbidding α as an input, four pre-registered candidate spectral quantities (C1–C4) attempted independently to yield λ₀. The result is that C4 (3D kNN spectral gap) directly gives α (error 0.0015%), whereas the candidate quantities for λ₀ (C1, C3) carry large errors. Conclusion: λ₀ is **not an independent primitive**; the gap path has made λ₀/κ redundant intermediate quantities.
+**(1)λ₀ is not an independent primitive (PASS-A failure):** under the constraint of forbidding α as an input, four pre-registered candidate spectral quantities (C1–C4) attempted independently to yield λ₀. The result is that C4 (3D kNN spectral gap) directly gives α (error 0.0015%), whereas the candidate quantities for λ₀ (C1, C3) carry large errors. Conclusion: λ₀ is **not an independent primitive**; the gap path has made λ₀/κ redundant intermediate quantities.
 
-**（2）Grid refinement limit FAIL:** design the refinement sequence $n = 60 \times 2^m$ and test whether the C4 spectral gap converges to α as $n \to \infty$. The result is that the spectral gap $\propto n^{-1.99} \to 0$, **not converging to α**. This indicates that the n=60 hit is a discretization coincidence, not the projection of a continuum limit.
+**(2)Grid refinement limit FAIL:** design the refinement sequence $n = 60 \times 2^m$ and test whether the C4 spectral gap converges to α as $n \to \infty$. The result is that the spectral gap $\propto n^{-1.99} \to 0$, **not converging to α**. This indicates that the n=60 hit is a discretization coincidence, not the projection of a continuum limit.
 
-**（3）$n_\alpha = 60.000436$:** solving exactly for the crossing point $\text{gap}(M_n) = \alpha$ gives $n_\alpha = 60.000436$ — a relative deviation of only $7.3 \times 10^{-6}$ from the integer 60. It is the unique even integer within the 1% window, with an a-priori probability of about 1/99. The residual $1.452 \times 10^{-5}$ is not rounding noise and requires a corrective mechanism for explanation.
+**(3)$n_\alpha = 60.000436$:** solving exactly for the crossing point $\text{gap}(M_n) = \alpha$ gives $n_\alpha = 60.000436$ — a relative deviation of only $7.3 \times 10^{-6}$ from the integer 60. It is the unique even integer within the 1% window, with an a-priori probability of about 1/99. The residual $1.452 \times 10^{-5}$ is not rounding noise and requires a corrective mechanism for explanation.
 
 **Discrete-primitivism stance** (a framework-level declaration aligned here; see the cited monograph for details): SRE dynamics explicitly denies the fundamental status of the continuous Riemannian manifold — "there is no preordained continuous Riemannian manifold; the spacetime dimension, the gravitational coupling, and the speed of light all emerge macroscopically from the topological connectivity density of a discrete causal network." The refinement-limit test (gap ∝ n^{−1.99} → 0), regarded as a "continuum-limit" test of a discrete object, therefore has a premise that does not apply within discrete primitivism; $n=60$ is the node count of a discrete Möbius ladder, and no continuum limit $n \to \infty$ exists. The three reviews above thereby translate into the three gaps that Fork A must deliver (next chapter).
 
@@ -363,21 +363,21 @@ Fork A (discrete primitivism), in order to fill in the three gaps exposed by the
 
 ### 6.2 Gap 1: derivation of the double-cover four-state complex (DCF)
 
-**P1.1**【imposed, by A1】The state space contains 4 combinatorial states.
+**P1.1**[imposed, by A1]The state space contains 4 combinatorial states.
 
-**P1.2**【imposed, by A2】Möbius double cover: each combinatorial state exists on two sheets (φ and φ+2π are co-phase sheets), hence
+**P1.2**[imposed, by A2]Möbius double cover: each combinatorial state exists on two sheets (φ and φ+2π are co-phase sheets), hence
 
 ```text
 |V| = 4 × 2 = 8
 ```
 
-**P1.3**【imposed, by A3】The refresh tour passes through all 8 nodes in order with period 4π (nodes 0–3 are the four states of sheet 1, enter sheet 2 through the twist edge 3→4, and twist back to sheet 1 via 7→0), forming the base ring C₈:
+**P1.3**[imposed, by A3]The refresh tour passes through all 8 nodes in order with period 4π (nodes 0–3 are the four states of sheet 1, enter sheet 2 through the twist edge 3→4, and twist back to sheet 1 via 7→0), forming the base ring C₈:
 
 ```text
 Base ring edge count |E⁰| = 8
 ```
 
-**P1.4**【R1 combination rule + A2 + A1】Independent circulation channels:
+**P1.4**[R1 combination rule + A2 + A1]Independent circulation channels:
 
 - 4 state-localized channels: each combinatorial state carries one localized circulation (inheriting the four-state structure of A1);
 - 1 global holonomy channel: the Möbius band is non-orientable, so traversing 2π causes a sheet flip; this twist circulation is a globally enforced topological mode.
@@ -386,13 +386,13 @@ Base ring edge count |E⁰| = 8
 β1 = 4 + 1 = 5
 ```
 
-**P1.5**【imposed, by P1.4】The base ring C₈ itself contributes β1⁰ = 1; each non-repeated chord increases the number of independent loops by exactly 1, hence the number of chords = β1 − 1 = 4:
+**P1.5**[imposed, by P1.4]The base ring C₈ itself contributes β1⁰ = 1; each non-repeated chord increases the number of independent loops by exactly 1, hence the number of chords = β1 − 1 = 4:
 
 ```text
 |E| = 8 + 4 = 12
 ```
 
-**P1.6**【A4】Phase-space dimension:
+**P1.6**[A4]Phase-space dimension:
 
 ```text
 n = dim(E) × dim(F) = |E| × β1 = 12 × 5 = 60
@@ -571,7 +571,7 @@ Within the model, compressing the coherent core toward the minimal invariant ker
 - this structure is precisely the **three-dimensional cube Q₃** (8 vertices, 12 edges, 5 independent loops);
 - `|E| × β₁ = 12 × 5 = 60` — this is the true identity of the electron's "60-node projection": it is not 60 independent nodes, but a counting expansion of the basal structure `(12×5)`.
 
-In short, **within the SRE model, the topological prototype of the electron is the cube Q₃; the number 60 is the count of "edge count × independent-loop count" of this cube** — not 60 independent degrees of freedom.【The above ruling is a model-internal graph-theoretic description, not a geometric measurement or physical assertion about the real electron】
+In short, **within the SRE model, the topological prototype of the electron is the cube Q₃; the number 60 is the count of "edge count × independent-loop count" of this cube** — not 60 independent degrees of freedom.[The above ruling is a model-internal graph-theoretic description, not a geometric measurement or physical assertion about the real electron]
 
 ### 9.2 The "deep yet compact" property of the electron
 
@@ -579,15 +579,15 @@ In short, **within the SRE model, the topological prototype of the electron is t
 - **Compact:** basal structure `12×5`, i.e., the **stable topological invariant (model-internal)** surviving after the depth folding.
 - **Folding:** the homomorphic quotient map `h: deep loop (10²³) → basal structure (12×5)`. The topological type is determined by the Fork A axioms, while the visible granularity is determined by the resolution gap `1/10²³`. The two are complementary and mutually non-conflicting.
 
-【Remark: the logical depth `10²³` and the "mass carrier" are both model-internal counts and analogies, not the measured mass or measured depth of the real electron. The folding is the homomorphic quotient map h: G_loop(N~10²³) → G_basal(12×5) with compression ratio ~N; the statistically stable invariants retained (charge → Z₂ holonomy; spin-1/2 → Z₂ double cover; mass → topological depth/cumulative path count of interior loops; intrinsic loop structure → β₁=5, |E|=12) map exactly onto the basal topological invariants.】
+[Remark: the logical depth `10²³` and the "mass carrier" are both model-internal counts and analogies, not the measured mass or measured depth of the real electron. The folding is the homomorphic quotient map h: G_loop(N~10²³) → G_basal(12×5) with compression ratio ~N; the statistically stable invariants retained (charge → Z₂ holonomy; spin-1/2 → Z₂ double cover; mass → topological depth/cumulative path count of interior loops; intrinsic loop structure → β₁=5, |E|=12) map exactly onto the basal topological invariants.]
 
 ### 9.3 α as a native spectral quantity of the network
 
-A spectral analysis of the electron's relation matrix shows that the ratio of its second-softest mode to the stiffest mode is `1/137.036`. Within the model, this value is not implanted externally but is a **generic spectral quantity** of the binary-network relation graph; the Möbius ladder of Fork A is merely the specific sparse realization that places this spectral quantity exactly at 1/137.【**Important contextual limitation:** here α is a model-internal spectral quantity; its agreement with 1/137.036 is an internal reproduction within the model and does not constitute a real-physics conclusion that "the fine-structure constant is derived by this model"; the numerical value of the real α remains determined by experiment】
+A spectral analysis of the electron's relation matrix shows that the ratio of its second-softest mode to the stiffest mode is `1/137.036`. Within the model, this value is not implanted externally but is a **generic spectral quantity** of the binary-network relation graph; the Möbius ladder of Fork A is merely the specific sparse realization that places this spectral quantity exactly at 1/137.[**Important contextual limitation:** here α is a model-internal spectral quantity; its agreement with 1/137.036 is an internal reproduction within the model and does not constitute a real-physics conclusion that "the fine-structure constant is derived by this model"; the numerical value of the real α remains determined by experiment]
 
 ### 9.4 Emergence of space
 
-Defining the relational distance `D_ij = √(2 − 2·S_ij)` from the relation matrix `S`, and then applying MDS inversion, yields three-dimensional coordinates for the electron (see the `60×3` output of `code/_sre_electron_binary_bridge.py`). **Within the model, shape emerges from relations** — this is the fundamental divergence between SRE and the traditional view of "space first, particles placed within it afterwards".【Remark: the coordinates obtained by MDS inversion are model-internal relational-embedding coordinates, belonging to the model picture, not measurements of real spatial positions】
+Defining the relational distance `D_ij = √(2 − 2·S_ij)` from the relation matrix `S`, and then applying MDS inversion, yields three-dimensional coordinates for the electron (see the `60×3` output of `code/_sre_electron_binary_bridge.py`). **Within the model, shape emerges from relations** — this is the fundamental divergence between SRE and the traditional view of "space first, particles placed within it afterwards".[Remark: the coordinates obtained by MDS inversion are model-internal relational-embedding coordinates, belonging to the model picture, not measurements of real spatial positions]
 
 ### 9.5 Three-layer emergence structure and the RG flow
 
@@ -601,7 +601,7 @@ The coarse-graining operator $C_\eta$ merges sub-kernels of the coherent core in
 
 $$M'[b_i,b_j]=\operatorname{sgn}\!\Big(\prod_{u\in B_i,\,v\in B_j} M_{uv}\Big)\in\{\pm1\}$$
 
-The output is still a {±1} matrix (vocabulary conservation), and the homomorphic mapping preserves the group structure, so the Z₂ double cover is conserved under compression at any scale (verified in `code/_sre_coherence_rg.py`). Micro: the electron basal structure (8,12,5) is the microscopic coherent-core seed; meso: repeated application of C causes the microscopic kernel to recombine upward into atomic/molecular coherent cores; macro: continuing C to the bulk, the **BBP phase transition z*=3.13** (Book of the Void v1.6, DOI: 10.5281/zenodo.22162514; the old value 4.1605 has been demoted to a historical reference) is the scale at which the global coherent core switches from the 2D holographic single channel to the 4D two-channel compensation, i.e., the macroscopic spacetime-release point. The statistically stable basal structures at the various scales are the **attracting fixed points** of the RG flow at the respective scales: the electron 12×5 is the microscopic fixed point, and atoms/molecules/bulk are fixed points at higher scales.【**Important contextual limitation:** the renormalization flow, the "micro–meso–macro" correspondence, and the z*=3.13 cosmological-phase-transition release are all constructions and analogies internal to the SRE model (within the framework of DOI: 10.5281/zenodo.22162514); conclusions about real cosmology and the levels of matter must be examined separately by independent observations and theories】
+The output is still a {±1} matrix (vocabulary conservation), and the homomorphic mapping preserves the group structure, so the Z₂ double cover is conserved under compression at any scale (verified in `code/_sre_coherence_rg.py`). Micro: the electron basal structure (8,12,5) is the microscopic coherent-core seed; meso: repeated application of C causes the microscopic kernel to recombine upward into atomic/molecular coherent cores; macro: continuing C to the bulk, the **BBP phase transition z*=3.13** (Book of the Void v1.6, DOI: 10.5281/zenodo.22162514; the old value 4.1605 has been demoted to a historical reference) is the scale at which the global coherent core switches from the 2D holographic single channel to the 4D two-channel compensation, i.e., the macroscopic spacetime-release point. The statistically stable basal structures at the various scales are the **attracting fixed points** of the RG flow at the respective scales: the electron 12×5 is the microscopic fixed point, and atoms/molecules/bulk are fixed points at higher scales.[**Important contextual limitation:** the renormalization flow, the "micro–meso–macro" correspondence, and the z*=3.13 cosmological-phase-transition release are all constructions and analogies internal to the SRE model (within the framework of DOI: 10.5281/zenodo.22162514); conclusions about real cosmology and the levels of matter must be examined separately by independent observations and theories]
 
 ---
 
@@ -616,7 +616,7 @@ The following four-step arguments all hold within the SRE simulation model: they
 | **R2** | the sparse operator necessarily converges | `R` has non-increasing node count and stops in a finite number of steps; the strict version satisfies `R²=R` (idempotence) | **convergence theorem holds** |
 | **R3** | robustness under noise/dissipation | ε calibrated physically from the network dormancy probability (=0.18); the batch operator `R_batch` resists edge flips, executing in O(depth) steps | **robust-convergence validation passed** |
 
-**Closed-loop conclusion (model-internal):** the electron projection = the product of the Fork A axioms = the **unique, stable, robustly convergent fixed point** of the sparse operator of the binary network — the three are fully corresponding. The electron thereby ascends from a "floating independent graph" to the "inevitable basal structure of the binary self-organizing network".【The "uniqueness/convergence/robustness" above are all model-internal self-consistency conclusions and are not automatically extrapolated to real physics】
+**Closed-loop conclusion (model-internal):** the electron projection = the product of the Fork A axioms = the **unique, stable, robustly convergent fixed point** of the sparse operator of the binary network — the three are fully corresponding. The electron thereby ascends from a "floating independent graph" to the "inevitable basal structure of the binary self-organizing network".[The "uniqueness/convergence/robustness" above are all model-internal self-consistency conclusions and are not automatically extrapolated to real physics]
 
 **Figure 10-1** (figures/sre_electron_schematic_EN.png): the overall schematic of the electron within the SRE framework (3×3 panels): row A shows the coherent-core heat map / Q₃ basal structure / Möbius 4π double cover; row B shows the convergence of the sparse operator R (64→8), the α spectrum (real w=1+δ), and the MDS three-dimensional inversion; row C shows the three-layer RG flow, the 10²³→12×5 logical-depth folding, and the conclusion statement.
 
@@ -784,9 +784,9 @@ def sre_mds_embed(adj, ref_coords):
 
 ```text
   molecule   atoms  bonds      MCI    Q3?   RMSD(A)  note
-  benzene        6      6   0.2500     no     1.474  芳香环, 刚性闭合壳 (MCI 较大)
-  cubane         8     12   0.3333    YES     1.414  碳骨架=Q3, 直接承载电子本体拓扑
-  n-hexane       6      5   0.0718     no     0.000  线性链, 极小 MCI = 柔性骨架(低频弯曲)
+  benzene        6      6   0.2500     no     1.474  aromatic ring, rigid closed shell (large MCI)
+  cubane         8     12   0.3333    YES     1.414  carbon skeleton = Q3, carries the electron basal topology
+  n-hexane       6      5   0.0718     no     0.000  linear chain, minimal MCI = flexible skeleton (low-frequency bending)
 ```
 
 Interpretation of the results:
