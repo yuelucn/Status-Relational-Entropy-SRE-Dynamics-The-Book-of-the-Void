@@ -127,7 +127,7 @@ $$
 **可微分 loss——热核迹相对距离**（在 `loss_of` 内部）：
 
 $$
-L_{\text{spec}} = \operatorname{mean}_{t \in \{1.0, 2.0\}} \frac{|\operatorname{tr}(e^{-t L_0'}) - \operatorname{tr}(e^{-t L_0})|}{\max(\operatorname{tr}(e^{-t L_0}), 10^{-30})}
+L_{\text{spec}} = \operatorname{mean}_{t \in \{1.0, 2.0\}} \frac{\lvert \operatorname{tr}(e^{-t L_0'}) - \operatorname{tr}(e^{-t L_0})\rvert }{\max(\operatorname{tr}(e^{-t L_0}), 10^{-30})}
 $$
 
 热核迹 $\operatorname{tr}(e^{-t L}) = \sum_i e^{-t \lambda_i}$ 通过 `chebyshev_functional` 计算——全程可微。关键设计细节：$L_0$ **detach**（用 Python float 转为常量），不让 $L_{\text{spec}}$ 的梯度干扰边权 $m$ 的反演方向；$L_0'$ **不 detach**，梯度流过 $L_0' \leftarrow P \leftarrow Z$ 回到 SoftAggPooler 的参数。

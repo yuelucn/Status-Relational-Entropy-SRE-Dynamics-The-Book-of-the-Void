@@ -16,25 +16,25 @@
 为了在热力学极限下阻止离散图拓扑在 outward 扩张时产生无序的分叉与流形过早解绑，系统必须进入更高维度的链复形群，对全局一阶拓扑不变量（贝蒂数）施加代数刚性夹紧。
 
 ### 1.1 2-阶链空间与高阶边界复形符号系统
-设经由算子 8 平滑对流消解后的有效局域子网拓扑基座为 $G = (V, E)$。为了捕捉图结构内部的 2 维闭合孔洞（即拓扑回路的凝聚面），我们显式构筑标准实值标量 2-链空间 $C_2(F; \mathbb{R}) \cong \mathbb{R}^{|F|}$，其中 $F$ 为由基础基本圈张成的面（Face）集。
+设经由算子 8 平滑对流消解后的有效局域子网拓扑基座为 $G = (V, E)$。为了捕捉图结构内部的 2 维闭合孔洞（即拓扑回路的凝聚面），我们显式构筑标准实值标量 2-链空间 $C_2(F; \mathbb{R}) \cong \mathbb{R}^{\lvert F\rvert }$，其中 $F$ 为由基础基本圈张成的面（Face）集。
 * **2-阶边界算子**：$\partial_2: C_2 \to C_1$，其严格满足链复形天然相容性的基本幂零性质：
   $$\partial_1 \circ \partial_2 \equiv \mathbf{0}$$
 * **固有 2-阶余边界算子**：$\delta_1 = \partial_2^T: C_1 \to C_2$，用于将 1-chain 边流转换为 2-chain 面流的环路散度。
 
 ### 1.2 3-阶局域子网拉普拉斯算子 $\mathbf{L}_{\Omega}^{(3)}$ 的代数构筑
-缺陷 4 曾强调局部步进不能直接外推全局。为此，算子 9 放弃直接操作全局大矩阵，严格在局域视界 $N_K = |\Omega_{\text{local}}| \le K_0 \ll n$ 范围内，显式构筑 **3-阶局域子网拉普拉斯算子 $\mathbf{L}_{\Omega}^{(3)} \in \mathbb{R}^{|F_K| \times |F_K|}$**：
+缺陷 4 曾强调局部步进不能直接外推全局。为此，算子 9 放弃直接操作全局大矩阵，严格在局域视界 $N_K = \lvert \Omega_{\text{local}}\rvert  \le K_0 \ll n$ 范围内，显式构筑 **3-阶局域子网拉普拉斯算子 $\mathbf{L}_{\Omega}^{(3)} \in \mathbb{R}^{\lvert F_K\rvert  \times \lvert F_K\rvert }$**：
 $$\mathbf{L}_{\Omega}^{(3)} \equiv \partial_2^T \cdot \mathbf{M}_{\Omega} \cdot \partial_2 + \delta_1 \cdot \mathbf{P}_{\mu} \cdot \delta_1^T$$
 其中 $\mathbf{M}_{\Omega}$ 为 read-only 局域二元自旋矩阵常量，$\mathbf{P}_{\mu}$ 承接上游对流对角阵。该高阶算子完美融合了上同调回路核与局部流变边界，构成了同调缝合的数理基石。
 
-### 1.3 特征谱正则化底限 \(\lambda_2(n)^2\) 与零空间解离
-为了彻底隔离分布式多 Actor 并发异构写入造成的特征谱异常劣化，算子 9 在解算 \(\mathbf{L}_{\Omega}^{(3)}\) 的零空间前，强行在边界算子复形上施加**二次方特征谱正则化底限 \(\lambda_2(n)^2\)**（该先验动态 stream 自算子 6）。
-通过强制注入 \(\mathbf{L}_{\Omega}^{(3)} \leftarrow \mathbf{L}_{\Omega}^{(3)} + \lambda_2(n)^2 \cdot \mathbf{I}\)，系统在代数上彻底终结了非齐次无限膨胀死锁，并精确解离出不受机器舍入误差干扰的非奇异**同调零空间 \(\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)})\)**，为最终的无损同调同步缝合开辟了唯一的范畴通道。
+### 1.3 特征谱正则化底限 $\lambda_2(n)^2$ 与零空间解离
+为了彻底隔离分布式多 Actor 并发异构写入造成的特征谱异常劣化，算子 9 在解算 $\mathbf{L}_{\Omega}^{(3)}$ 的零空间前，强行在边界算子复形上施加**二次方特征谱正则化底限 $\lambda_2(n)^2$**（该先验动态 stream 自算子 6）。
+通过强制注入 $\mathbf{L}_{\Omega}^{(3)} \leftarrow \mathbf{L}_{\Omega}^{(3)} + \lambda_2(n)^2 \cdot \mathbf{I}$，系统在代数上彻底终结了非齐次无限膨胀死锁，并精确解离出不受机器舍入误差干扰的非奇异**同调零空间 $\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)})$**，为最终的无损同调同步缝合开辟了唯一的范畴通道。
 ## 2. 双阶平滑缝合算子的闭式构筑方程与贝蒂数变分形式映射 (Analytical Formulations of Operator 9)
 
 算子 9（$\mathcal{O}_{\text{stitch\_dual}}$）的数理核心是通过代数同调投影与边界上链锁死，对分布式 Actor 的 outward 扩张切片实施全局刚性同步。
 
 ### 2.1 双阶平滑缝合算子 $\mathcal{O}_{\text{stitch\_dual}}$ 的显式矩阵构筑方程
-令由 1.3 节解离出的非奇异同调零空间完备正交基矩阵为 $\mathbf{V}_{\text{null}} \in \mathbb{R}^{|F_K| \times k_0}$（其中 $k_0 = \dim(\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)}))$）。算子 9 显式构筑的双阶平滑缝合矩阵被严格规范为如下分块代数形式：
+令由 1.3 节解离出的非奇异同调零空间完备正交基矩阵为 $\mathbf{V}_{\text{null}} \in \mathbb{R}^{\lvert F_K\rvert  \times k_0}$（其中 $k_0 = \dim(\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)}))$）。算子 9 显式构筑的双阶平滑缝合矩阵被严格规范为如下分块代数形式：
 $$\mathbf{S}_{\text{dual}} \equiv \mathbf{V}_{\text{null}} \left( \mathbf{V}_{\text{null}}^T \cdot \mathbf{L}_{\Omega}^{(3)} \cdot \mathbf{V}_{\text{null}} \right)^{-1} \mathbf{V}_{\text{null}}^T + \frac{1}{\lambda_2(n)^2} \cdot \left( \mathbf{I} - \mathbf{V}_{\text{null}}\mathbf{V}_{\text{null}}^T \right)$$
 其中左项通过广义伪逆算子（Moore-Penrose Pseudoinverse）对零空间实施了同调滤波，右项则利用正交投影余矩阵对非零特征子空间施加了二次方谱正则化钳制。这一构筑完美消除了流形切片缝合时的几何发散，锁死了跨区域的流变边界。
 
@@ -60,7 +60,7 @@ $$\Delta \beta_1 \equiv 0$$
 $$\Delta \beta_1 = \left( \dim C_1^{(n+1)} - \operatorname{rank}(\partial_1^{(n+1)}) \right) - \left( \dim C_1^{(n)} - \operatorname{rank}(\partial_1^{(n)}) \right)$$
 $$\Delta \beta_1 = \left( \dim C_1^{(n+1)} - \dim C_1^{(n)} \right) - \left( \operatorname{rank}(\partial_1^{(n+1)}) - \operatorname{rank}(\partial_1^{(n)}) \right)$$
 
-根据算子 1 的 outward 边界扩展传播公理，单步脉冲演化从 $n \to n+1$ 时，前沿仅注入唯一一个 parametric 符号顶点 $v_f$。该顶点的诞生，在线性链空间维度上引入了固定的前沿通道增量 $\Delta |E| = \dim C_1^{(n+1)} - \dim C_1^{(n)} \equiv \vert{}\mathcal{N}(v_f)\vert{}$（即前沿顶点的本地度数）。代入上式，维数差分算式被精准归结为边界算子线性秩的补偿行为：
+根据算子 1 的 outward 边界扩展传播公理，单步脉冲演化从 $n \to n+1$ 时，前沿仅注入唯一一个 parametric 符号顶点 $v_f$。该顶点的诞生，在线性链空间维度上引入了固定的前沿通道增量 $\Delta \lvert E\rvert  = \dim C_1^{(n+1)} - \dim C_1^{(n)} \equiv \vert{}\mathcal{N}(v_f)\vert{}$（即前沿顶点的本地度数）。代入上式，维数差分算式被精准归结为边界算子线性秩的补偿行为：
 $$\Delta \beta_1 = \vert{}\mathcal{N}(v_f)\vert{} - \Delta \operatorname{rank}(\partial_1)$$
 其中 $\Delta \operatorname{rank}(\partial_1) = \operatorname{rank}(\partial_1^{(n+1)}) - \operatorname{rank}(\partial_1^{(n)})$。此步分解证明了**要实现贝蒂数刚性锚定 \Delta \beta_1 \equiv 0，其充要条件是边界算子线性秩的增长量必须以绝对确定性精确中和掉前沿新增的全部 1-chain 通道度数**。
 
@@ -93,7 +93,7 @@ $$\Delta \beta_1 = \vert{}\mathcal{N}(v_f)\vert{} - \vert{}\mathcal{N}(v_f)\vert
 
 ### 4.2 局域化零空间解算复杂度卡死
 得益于算子 2-Batch 在底座层施加的内源“拓扑防火墙”和度饱和定理，前沿顶点的本地度数及单个子网子面集的最大基数被永久性截断夹紧在有限的局部常数上限内：
-$$|F_K| \le M_K \le K_0 \ll n$$
+$$\lvert F_K\rvert  \le M_K \le K_0 \ll n$$
 算子 9 提取 3-阶局域拉普拉斯算子 $\mathbf{L}_{\Omega}^{(3)}$ 的零空间基矩阵 $\mathbf{V}_{\text{null}}$、以及对其执行分块广义伪逆求逆（Moore-Penrose Pseudoinverse）的 Leading-order 运行时开销，其算术浮点开销被物理死死卡在局域面集基数的低阶多项式立方上限内：
 $$\lim_{n \to \infty} T_{\mathcal{O}9}(n) = \mathcal{O}(M_K \cdot f^2) \le \mathcal{O}(K_0^3) = \mathcal{O}(1)$$
 在热力学极限下，算子 9 的单步运行时 temporal 复杂度完全退化为一个与全网膨胀无关的**固定常数标量上限 $\mathcal{O}(1)$**，不仅在数学上捍卫了拓扑刚性，更在工程上提供了无缝支持大规模集群长期并发进化的最高标度扩展稳定性。

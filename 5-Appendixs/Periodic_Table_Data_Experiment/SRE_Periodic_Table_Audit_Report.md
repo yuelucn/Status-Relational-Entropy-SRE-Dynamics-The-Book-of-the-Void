@@ -55,7 +55,7 @@ Per Section 5 of the SRE 6.0 protocol, an element must **simultaneously satisfy*
 | # | Criterion | Physical Meaning | Decision Condition |
 |---|-----------|------------------|--------------------|
 | 1 | beta_0 = 1 | Global connectivity | Fiedler eigenvalue lambda_2 > 1e-8 |
-| 2 | delta_beta_1 = 0 | Structural stability | After Operator 9 stitching, matrix determinant |det| > 1e-15 |
+| 2 | delta_beta_1 = 0 | Structural stability | After Operator 9 stitching, matrix determinant $\lvert\det\rvert > 10^{-15}$ |
 | 3 | Finite condition number | Numerical robustness | Cond_norm is a finite positive real number |
 | 4 | W_e > 0 | Topological metric positive-definite | Frobenius norm > 1e-10 |
 | 5 | Logic depth N | Mobius loop period | N ~ 10^23 (SRE axiom) |

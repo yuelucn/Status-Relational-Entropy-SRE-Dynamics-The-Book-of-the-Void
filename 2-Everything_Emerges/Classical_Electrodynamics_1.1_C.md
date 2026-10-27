@@ -108,7 +108,7 @@ $$
 \frac{\partial^{2} \Psi}{\partial t^{2}}+\left(\frac{\kappa_{V}}{\kappa_{I} \cdot \Delta \tau^{2}}\right) L_{\mathrm{graph}} \Psi=0
 $$
 式中$t=S \cdot \Delta\tau$代表宏观秒；$L_{\mathrm{graph}}=D-A$为归一化图拉普拉斯矩阵，采用标准法拉第与欧姆量纲。
-在节点基数$|V|\to\infty$、测地步长$\Delta\ell\to0$的连续空间极限下，经过缩放的离散图拉普拉斯算子严格收敛到连续贝尔特拉米-拉普拉斯算子：
+在节点基数$\lvert V\rvert \to\infty$、测地步长$\Delta\ell\to0$的连续空间极限下，经过缩放的离散图拉普拉斯算子严格收敛到连续贝尔特拉米-拉普拉斯算子：
 $$
 \lim _{\Delta \ell \to 0} \frac{1}{\Delta \ell^{2}} L_{\mathrm{graph}} \Psi=-c^{2} \nabla^{2} \Psi
 $$
@@ -120,7 +120,7 @@ $$
 
 按照黎曼图流形谱缩放规律，狄利克雷边界条件下最小非零本征值（菲德勒本征值$\lambda_1$）对应系统基础谐振模态极限：
 $$
-\frac{1}{\lambda_{1}}=\iint_{\mathcal{G}} G(x, y) d C_{\mathrm{op}}(x) d L_{\mathrm{op}}(y) \stackrel{|\mathcal{V}| \to \infty}{\to} L \cdot C
+\frac{1}{\lambda_{1}}=\iint_{\mathcal{G}} G(x, y) d C_{\mathrm{op}}(x) d L_{\mathrm{op}}(y) \stackrel{\lvert \mathcal{V}\rvert  \to \infty}{\to} L \cdot C
 $$
 
 代入宏观角频率$\omega=2\pi f$的量纲化谱恒等式，演化系数实现完备量纲自洽：

@@ -16,15 +16,15 @@ The primary mathematical breakthrough of this work resides in the definitive pro
 To halt un-ordered topological branching and prevent premature unbinding of the emergent manifold during asynchronous outward cascades, the system must advance into higher-order chain groups to clamp global 1-st order topological invariants with algebraic rigidity.
 
 ### 1.1 Higher-Order Cell Complex & Coboundary Flux Notation
-Let the effective localized sub-network topology smoothed by the upstream Operator 8 convective channels be formalized as a non-background-dependent labeled graph $G = (V, E)$. To systematically isolate and trace the 2-dimensional enclosed topological voids (representing the boundaries of coherent loop surfaces), we construct the standard real-valued scalar 2-chain space $C_2(F; \mathbb{R}) \cong \mathbb{R}^{|F|}$, where $F$ denotes the fundamental cycle facet set.
+Let the effective localized sub-network topology smoothed by the upstream Operator 8 convective channels be formalized as a non-background-dependent labeled graph $G = (V, E)$. To systematically isolate and trace the 2-dimensional enclosed topological voids (representing the boundaries of coherent loop surfaces), we construct the standard real-valued scalar 2-chain space $C_2(F; \mathbb{R}) \cong \mathbb{R}^{\lvert F\rvert }$, where $F$ denotes the fundamental cycle facet set.
 * **The 2-nd Order Cell Boundary Operator**: We define the linear facet boundary operator as $\partial_2: C_2 \to C_1$. By the core homology axioms of chain complex representations, it natively satisfies the dual nilpotency identity:
   $$\partial_1 \circ \partial_2 \equiv \mathbf{0}$$
 * **The 2-nd Order Cell Coboundary Operator**: Its unique dual algebraic adjoint defines the native 2-nd order coboundary operator: $\delta_1 = \partial_2^T: C_1 \to C_2$. This map transforms 1-chain edge-flux vectors into 2-chain face-flux divergence sequences.
 
 ### 1.2 Algebraic Construction of the 3-rd Order Localized Laplacian ($\mathbf{L}_{\Omega}^{(3)}$)
-To avoid the mathematical pitfalls of un-bounded global matrix assemblies, Operator 9 restricts its active computational domain strictly to the local horizon population bounded by the topological firewall ($N_K = |\Omega_{\text{local}}| \le K_0 \ll n$). Within this sparse horizon, we explicitly construct the **3-rd Order Localized Sub-network Laplacian Operator $\mathbf{L}_{\Omega}^{(3)} \in \mathbb{R}^{|F_K| \times |F_K|}$** as:
+To avoid the mathematical pitfalls of un-bounded global matrix assemblies, Operator 9 restricts its active computational domain strictly to the local horizon population bounded by the topological firewall ($N_K = \lvert \Omega_{\text{local}}\rvert  \le K_0 \ll n$). Within this sparse horizon, we explicitly construct the **3-rd Order Localized Sub-network Laplacian Operator $\mathbf{L}_{\Omega}^{(3)} \in \mathbb{R}^{\lvert F_K\rvert  \times \lvert F_K\rvert }$** as:
 $$\mathbf{L}_{\Omega}^{(3)} \equiv \partial_2^T \cdot \mathbf{M}_{\Omega} \cdot \partial_2 + \delta_1 \cdot \mathbf{P}_{\mu} \cdot \delta_1^T$$
-where $\mathbf{M}_{\Omega} \in \mathbb{M}_{\text{spin}}^{(N_K)}$ represents the read-only realized local binary configuration matrix, and $\mathbf{P}_{\mu} \in \mathbb{R}^{|E| \times |E|}$ is the effective convective weight diagonal matrix forwarded from Operator 8. This higher-order matrix perfectly embeds both loop homologies and localized boundary flux variations.
+where $\mathbf{M}_{\Omega} \in \mathbb{M}_{\text{spin}}^{(N_K)}$ represents the read-only realized local binary configuration matrix, and $\mathbf{P}_{\mu} \in \mathbb{R}^{\lvert E\rvert  \times \lvert E\rvert }$ is the effective convective weight diagonal matrix forwarded from Operator 8. This higher-order matrix perfectly embeds both loop homologies and localized boundary flux variations.
 
 ### 1.3 Quadratic Spectral Regularization Bottom & Null-Space Extraction
 To insulate the cohomological solver against the spectral degradation induced by asynchronous multi-Actor write contentions, Operator 9 introduces a **Quadratic Spectral Regularization Bottom $\lambda_2(n)^2 \cdot \mathbf{I}$**, where the Fiedler value prior is streamed dynamically from the upstream Operator 6 sieve. 
@@ -35,7 +35,7 @@ By executing the algebraic transformation $\mathbf{L}_{\Omega}^{(3)} \leftarrow 
 The mathematical mechanism of Operator 9 ($\mathcal{O}_{\text{stitch\_dual}}$) utilizes homological projection and boundary co-chain locking to enforce global rigid synchronization across decentralized manifold slices.
 
 ### 2.1 Explicit Closed-Form Construction of the Dual-Order Stitching Matrix $\mathbf{S}_{\text{dual}}$
-Let the non-singular homological null-space basis matrix isolated in Section 1.3 be denoted as $\mathbf{V}_{\text{null}} \in \mathbb{R}^{|F_K| \times k_0}$, where $k_0 = \dim(\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)}))$ specifies the nullity dimension. Operator 9 explicitly defines the Dual-Order Stitching Matrix as the following partitioned algebraic block framework:
+Let the non-singular homological null-space basis matrix isolated in Section 1.3 be denoted as $\mathbf{V}_{\text{null}} \in \mathbb{R}^{\lvert F_K\rvert  \times k_0}$, where $k_0 = \dim(\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)}))$ specifies the nullity dimension. Operator 9 explicitly defines the Dual-Order Stitching Matrix as the following partitioned algebraic block framework:
 $$\mathbf{S}_{\text{dual}} \equiv \mathbf{V}_{\text{null}} \left( \mathbf{V}_{\text{null}}^T \cdot \mathbf{L}_{\Omega}^{(3)} \cdot \mathbf{V}_{\text{null}} \right)^{-1} \mathbf{V}_{\text{null}}^T + \frac{1}{\lambda_2(n)^2} \cdot \left( \mathbf{I} - \mathbf{V}_{\text{null}}\mathbf{V}_{\text{null}}^T \right)$$
 where the leading component executes homological filtering across the kernel space via a generalized pseudo-inverse operator, and the trailing component applies quadratic spectral regularization damping onto the non-zero complementary eigensubspace via the orthogonal projection complement matrix. This structural formulation perfectly counteracts manifold slice fragmentation during outward extensions, clamping the convective boundary drift.
 
@@ -61,8 +61,8 @@ We rewrite the global genus differential formula as an explicit linear combinati
 $$\Delta \beta_1 = \left( \dim C_1^{(n+1)} - \operatorname{rank}(\partial_1^{(n+1)}) \right) - \left( \dim C_1^{(n)} - \operatorname{rank}(\partial_1^{(n)}) \right)$$
 $$\Delta \beta_1 = \left( \dim C_1^{(n+1)} - \dim C_1^{(n)} \right) - \left( \operatorname{rank}(\partial_1^{(n+1)}) - \operatorname{rank}(\partial_1^{(n)}) \right)$$
 
-According to the outward propagation axioms of Operator 1, a single pulse iteration step appends exactly one unassigned parametric frontier vertex $v_f$ to the boundary block. The birth of this vertex introduces a fixed edge dimension increment equal to its localized degree cardinality: $\Delta |E| = \dim C_1^{(n+1)} - \dim C_1^{(n)} \equiv |\mathcal{N}(v_f)|$. Substituting this invariant constant back into the genus differential formula reduces the problem perfectly to a boundary operator rank compensation condition:
-$$\Delta \beta_1 = |\mathcal{N}(v_f)| - \Delta \operatorname{rank}(\partial_1)$$
+According to the outward propagation axioms of Operator 1, a single pulse iteration step appends exactly one unassigned parametric frontier vertex $v_f$ to the boundary block. The birth of this vertex introduces a fixed edge dimension increment equal to its localized degree cardinality: $\Delta \lvert E\rvert  = \dim C_1^{(n+1)} - \dim C_1^{(n)} \equiv \lvert \mathcal{N}(v_f)\lvert$. Substituting this invariant constant back into the genus differential formula reduces the problem perfectly to a boundary operator rank compensation condition:
+$$\Delta \beta_1 = \lvert \mathcal{N}(v_f)\rvert  - \Delta \operatorname{rank}(\partial_1)$$
 where $\Delta \operatorname{rank}(\partial_1) = \operatorname{rank}(\partial_1^{(n+1)}) - \operatorname{rank}(\partial_1^{(n)})$. This decomposition demonstrates that **the necessary and sufficient condition for achieving a rigid Betti anchoring ($\Delta \beta_1 \equiv 0$) is that the single-step rank increment of the cell boundary operator must perfectively and deterministically neutralize the exact channel degree added by the expanding frontier vertex**.
 
 ### 3.2 Phase II: Higher-Order Laplacian Null-Space Adjoint Splicing and Identity Cancellation
@@ -75,13 +75,13 @@ Substituting the explicit block-matrix formulation of $\mathbf{S}_{\text{dual}}$
 $$\operatorname{rank}(\partial_1^{(n+1)}) = \operatorname{rank}(\partial_1^{(n)}) + \operatorname{rank}\left( \partial_2 \cdot \left[ \mathbf{V}_{\text{null}} \left( \mathbf{V}_{\text{null}}^T \mathbf{L}_{\Omega}^{(3)} \mathbf{V}_{\text{null}} \right)^{-1} \mathbf{V}_{\text{null}}^T + \dots \right] \cdot \partial_2^T \right)$$
 
 Since $\mathbf{V}_{\text{null}}$ linearly spans the exact kernel subspace $\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)})$, and the pre-emptive homological filter of Operator 2-Batch bars the generation of degenerate bridge edges, the maximal algebraic rank of this orthogonal projection block under homological adjoint resolution is forced to collapse perfectively into an integer constant exactly equal to the 1-st order local degree of the frontier vertex:
-$$\operatorname{rank}\left( \partial_2 \cdot \mathbf{S}_{\text{dual}} \cdot \partial_2^T \right) \equiv |\mathcal{N}(v_f)|$$
+$$\operatorname{rank}\left( \partial_2 \cdot \mathbf{S}_{\text{dual}} \cdot \partial_2^T \right) \equiv \lvert \mathcal{N}(v_f)\lvert$$
 
 Bringing this rank increment result back into the compensation formula derived in Phase I:
-$$\Delta \operatorname{rank}(\partial_1) = \operatorname{rank}(\partial_1^{(n+1)}) - \operatorname{rank}(\partial_1^{(n)}) \equiv |\mathcal{N}(v_f)|$$
+$$\Delta \operatorname{rank}(\partial_1) = \operatorname{rank}(\partial_1^{(n+1)}) - \operatorname{rank}(\partial_1^{(n)}) \equiv \lvert \mathcal{N}(v_f)\lvert$$
 
 Finally, substituting this rank increment identity into the overarching global Betti variation system drives the two independent integer constants into complete, flawless algebraic cancellation:
-$$\Delta \beta_1 = |\mathcal{N}(v_f)| - |\mathcal{N}(v_f)| \equiv 0$$
+$$\Delta \beta_1 = \lvert \mathcal{N}(v_f)\rvert  - \lvert \mathcal{N}(v_f)\rvert  \equiv 0$$
 
 This establishes the definitive mathematical verification that Operator 9, by executing higher-order dual-step homological splicing, secures **unconditional topological invariant stability for the 1-st order Betti numbers across all asynchronous outward expansions**. Theorem 3.1 is complete.
 ## 4. Engineering Complexity Boundaries and Runtime Control Redline Verification
@@ -95,7 +95,7 @@ The higher-order adjoint stitching matrix $\mathbf{S}_{\text{dual}}$ designed by
 
 ### 4.2 Localized Null-Space Processing Complexity Clamping
 Thanks to the internal "topological firewall" and degree saturation criteria enforced by the baseline Operator 2-Batch, the local edge degree of the frontier vertex and the maximum cardinality of the facet sub-set within a standalone sub-domain are permanently truncated to a fixed constant:
-$$|F_K| \le M_K \le K_0 \ll n$$
+$$\lvert F_K\rvert  \le M_K \le K_0 \ll n$$
 
 The leading-order runtime complexity for Operator 9 to extract the homological null-space basis matrix $\mathbf{V}_{\text{null}}$ of the 3-rd order localized Laplacian $\mathbf{L}_{\Omega}^{(3)}$ and resolve its partitioned generalized pseudo-inverse matrix is rigidly locked within a low-order polynomial cubic ceiling governed by the local facet cardinality:
 $$\lim_{n \to \infty} T_{\mathcal{O}9}(n) = \mathcal{O}(M_K \cdot f^2) \le \mathcal{O}(K_0^3) = \mathcal{O}(1)$$

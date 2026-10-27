@@ -30,7 +30,7 @@
     满足严格对称性 $M_{\Omega, ij} = M_{\Omega, ji}$ 且不含零元素。
 *   **1-基于索引基准集 ($\mathcal{J}_{N_K}$)**：矩阵切片与元素读取严格遵循 $\mathcal{J}_{N_K} = \{1, 2, \dots, N_K\}$。
 *   **正向测度度数映射 ($\tau$)**：由于 $M_{\Omega}$ 中元素严格为 $\pm 1$，定义正向度数提取算子基准为元素绝对值求和。对应节点 $i$ 的局域出度基数 $D_{ii}^{\text{out}}$ 与入度基数 $D_{ii}^{\text{in}}$ 因对称性完全退化等价：
-    $$D_{ii}^{\text{out}} \equiv \sum_{j=1}^{N_K} |M_{\Omega, ij}| = D_{ii}^{\text{in}}$$
+    $$D_{ii}^{\text{out}} \equiv \sum_{j=1}^{N_K} \lvert M_{\Omega, ij}\rvert  = D_{ii}^{\text{in}}$$
 *   **对角线自环项 ($D_{ii}^{\text{self}}$)**：映射到矩阵主对角线上的顶点自自旋特征，满足：
     $$D_{ii}^{\text{self}} \equiv M_{\Omega, ii} \in \{-1, +1\}$$
 *   **全局代数连通 Fiedler 先验 ($\lambda_2(n)$)**：由前置6号算子通过低秩迭代流式吐出的上一脉冲步全局拉普拉斯矩阵的第二小特征值。由于2号算子的因果安全拦截，全网图始终保持完全连通，因而刚性锁定 $\lambda_2(n) > 0$。
@@ -52,11 +52,11 @@ $$W_{\text{base}}(i,j) \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\tex
 根据代数图论原理，分片自旋方阵的乘法内积绝对值 |$(M_{\Omega}^2)_{ij}$| 完美表征了从节点 $i$ 跨越长度为 2 的所有形式因果路径到达节点 $j$ 时的相干与对冲干涉总数。为了防止长程级联发散，必须采用非线性对数进行压缩。
 
 定义全局演化尺度调节阀为 $\frac{\lambda_2(n)}{\alpha_n}$。利用局部能量分流项 $\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}$ 对微扰进行平摊补偿，推导出对数扰动阻尼算式：
-$$W_{\text{damp}}(i,j) \equiv 1 + \frac{|(M_{\Omega}^2)_{ij}| \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}$$
+$$W_{\text{damp}}(i,j) \equiv 1 + \frac{\lvert (M_{\Omega}^2)_{ij}\rvert  \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}$$
 
 ### 3.3 算子完整通用闭式方程
 将基座项的几何归一化测度与阻尼项的非线性因果微扰进行齐次级联连乘，最终确立**4号算子局域拓扑度数统计的标准代数显式方程**：
-$$W_{e(i,j)}^{(s-1)} \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}{\sqrt{\lambda_2(n) + D_{ii}^{\text{self}} + D_{jj}^{\text{self}} + \epsilon_{\text{topo}}^{(s)}}} \cdot \left( 1 + \frac{|(M_{\Omega}^2)_{ij}| \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}} \right)$$
+$$W_{e(i,j)}^{(s-1)} \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}{\sqrt{\lambda_2(n) + D_{ii}^{\text{self}} + D_{jj}^{\text{self}} + \epsilon_{\text{topo}}^{(s)}}} \cdot \left( 1 + \frac{\lvert (M_{\Omega}^2)_{ij}\rvert  \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}} \right)$$
 
 ---
 

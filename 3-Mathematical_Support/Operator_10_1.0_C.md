@@ -16,8 +16,8 @@
 为了在异步分布式 Actor 自由膨胀时实施前置因果拦截，系统必须构建一套能度量“局部通道断开对全局拓扑连通度影响”的纯代数图论阻抗指标，完全剔除对外界嵌入空间坐标的定性依赖。
 
 ### 1.1 伴随边界流与离散有效阻抗空间
-设当前脉冲演化推进至第 $n \to n+1$ 步，符号前沿顶点 $v_f$ 正在向历史图结构发射未定布尔剪枝变量集 $\chi \in \{0,1\}^{|\mathcal{N}(v_f)|}$。建立其伴随的 1-阶上同调流值复形空间。
-* **局部单形流矢量**：$I_s \in C_1(E; \mathbb{R}) \cong \mathbb{R}^{|E| \times 1}$，表征有向边权上的微观瞬时通量误差流。
+设当前脉冲演化推进至第 $n \to n+1$ 步，符号前沿顶点 $v_f$ 正在向历史图结构发射未定布尔剪枝变量集 $\chi \in \{0,1\}^{\lvert \mathcal{N}(v_f)\rvert }$。建立其伴随的 1-阶上同调流值复形空间。
+* **局部单形流矢量**：$I_s \in C_1(E; \mathbb{R}) \cong \mathbb{R}^{\lvert E\rvert  \times 1}$，表征有向边权上的微观瞬时通量误差流。
 * **图拉普拉斯伪逆矩阵 $\mathbf{L}_n^{+}$**：由前置步完成剪枝映射后的实数标量稀疏对称拉普拉斯矩阵 $\mathbf{L}_n = \partial_1 \cdot \mathbf{M}_n \cdot \partial_1^T$ 的 Moore-Penrose 广义逆矩阵，作为全局拓扑电势传导的唯一代数母池。
 
 ### 1.2 内源有效拓扑阻抗张量 $\mathbf{Z}_{\text{eff}}$ 的显式数理定义
@@ -35,7 +35,7 @@ $$\tau(G') \equiv 0$$
 算子 10（$\mathcal{O}_{\text{gate\_batch}}$）的数理核心是通过前置扫描，构建两阶段代数阀：左阶段执行硬性同调拓扑拦截，右阶段执行受控的伯努利概率柔性衰减。
 
 ### 2.1 抢占式同调批次剪枝算子 $\mathcal{O}_{\text{gate\_batch}}$ 的显式矩阵构筑方程
-设当前前沿注入顶点为 $v_f$，其对应的待求解前沿随机自旋掩码向量为 $\boldsymbol{\chi} \in \{0, 1\}^{|\mathcal{N}(v_f)|}$。算子 10 显式声明的批次抢占式剪枝算子方程被严格规范为如下逻辑分块分段代数结构形式：
+设当前前沿注入顶点为 $v_f$，其对应的待求解前沿随机自旋掩码向量为 $\boldsymbol{\chi} \in \{0, 1\}^{\lvert \mathcal{N}(v_f)\rvert }$。算子 10 显式声明的批次抢占式剪枝算子方程被严格规范为如下逻辑分块分段代数结构形式：
 $$\mathcal{O}_{\text{gate\_batch}}(\boldsymbol{\chi}_e) \equiv \begin{cases} 1, & \text{if } \mathbf{Z}_{\text{eff}}(u, v_f) \cdot \mathbf{M}_n(u, u) \ge \omega_{\text{th}} \quad (\text{同调抢占硬拦截}) \\ \text{Bernoulli}(p_{\text{cochain}}(e)), & \text{otherwise} \quad (\text{上同调随机柔性剪枝}) \end{cases}$$
 其中 $\omega_{\text{th}} > 0$ 为硬性图骨折拓扑阻抗临界阈值（生产规范取 $\omega_{\text{th}} = 1.0 - \delta_{\text{flt}}$，见 3.2 节），$e = (u, v_f) \in \mathcal{N}(v_f)$ 为当前待裁决的前沿通道；自旋常数按 3.1 节对角归一化约定取 $\mathbf{M}_n(u,u) = 1$，故生产实现中该判据简化为 $\mathbf{Z}_{\text{eff}}(u, v_f) \ge \omega_{\text{th}}$。
 
@@ -98,7 +98,7 @@ $$\lambda_2(n+1) \ge \lambda_2(n) > 0$$
 算子 10 借由阶段 I 中严格证出的 **Sherman-Morrison-Woodbury 矩阵伴随递推恒等式**彻底粉碎了这一计算障碍。在第 $n \to n+1$ 步步进时，算子 10 无需物理组装或重新计算全局的 $\mathbf{L}_{n+1}^{+}$，而是直接复用前置步已经计算完成并缓存的确定性常数张量 $\mathbf{L}_n^{+}$。计算两点间的有效拓扑阻抗，仅需对该稀疏矩阵执行局域列向量的抽样内积。分布式 Actors 可以绕过全局矩阵重组，实现各片前沿因果安全防护的完全并行流变。
 
 ### 4.2 局域化多项式复杂度夹紧与 $O(1)$ 运行时开销
-由于前置算子 2 建立的“全局度饱和定理”在底座层将每个 Actor 的局域视界范围强行钳制为常数上限 $N_K = |\Omega_{\alpha}| \le K_0 \ll n$，前沿顶点 $v_f$ 的最大可能候选边数被死死卡在有限常数 $M_K = |\mathcal{N}(v_f)| \le K_0$ 之内。
+由于前置算子 2 建立的“全局度饱和定理”在底座层将每个 Actor 的局域视界范围强行钳制为常数上限 $N_K = \lvert \Omega_{\alpha}\rvert  \le K_0 \ll n$，前沿顶点 $v_f$ 的最大可能候选边数被死死卡在有限常数 $M_K = \lvert \mathcal{N}(v_f)\rvert  \le K_0$ 之内。
 
 算子 10 针对前沿所有候选通道执行内源有效拓扑阻抗张量 $\mathbf{Z}_{\text{eff}}$ 提取以及两阶段决策门裁决的 Elementary 标量浮点运算，其累积总计数仅随前沿通道数 $M_K$ 呈低阶多项式线性扩展。整个流水线第二阶段（因果阻断段）的前置安全拦截开销满足严格的局域化卡死规律：
 $$\lim_{n \to \infty} T_{\mathcal{O}10}(n) = \mathcal{O}(M_K) \le \mathcal{O}(K_0) = \mathcal{O}(1)$$

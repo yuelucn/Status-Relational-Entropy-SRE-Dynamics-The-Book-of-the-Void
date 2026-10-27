@@ -24,9 +24,9 @@
 
 ## 4 Analytic Loss & Regularization
 **Composite objective function**: Triple‑residual weighting eliminates weight degeneracy and guarantees unique solutions:
-\[
+$$
 L_{total }=w_{1} \operatorname{Res}\left(\Delta G^{\ddagger}\right)+w_{2} \operatorname{Res}\left(E_{ion }\right)+w_{3} \operatorname{Res}(\Delta \lambda)+\gamma \tilde{\mathcal{E}}_{local }
-\]
+$$
 where weights $w_{1,2,3}$ are determined automatically by the SRE local‑barrier three‑phase separation theorem (Operator-2 chapter, §7.0–§7, Theorem 5); $\tilde{\mathcal{E}}_{local}$ denotes the topological‑frustration regularization term characterizing orbital anomalies.
 
 **Adaptive layered regularization**: The Tikhonov‑regularization coefficient $\lambda_{reg}$ adjusts dynamically according to the dimension of $\Omega_{n}$, avoiding floating‑point singularities inside high‑dimensional matrices.
@@ -69,9 +69,9 @@ Analytical expressions:
 
 ### A2 Algebraic formula for orbital‑dependent critical impedance $Z_{crit}(n,l)$
 Effective topological impedance $Z_{eff}$ defines the “read‑only” boundary of the system.
-\[
+$$
 Z_{crit }(n, l)=1-\frac{1}{\ln (1+N_{n, l} \alpha)}
-\]
+$$
 where $N_{n,l}$ denotes orbital logic‑depth (loop period), satisfying $N_{n, l} \propto \dfrac{\lambda_{n, l}}{\ell_{min }}$.
 
 **Physical significance**: This formula yields the critical threshold for the microscopic firewall. For inner‑shell orbitals (large‑$N$), $Z_{crit}$ approaches 1 and forms a “hard‑encryption zone” which enforces algebraic sovereignty of nuclear‑structure sub‑manifolds.

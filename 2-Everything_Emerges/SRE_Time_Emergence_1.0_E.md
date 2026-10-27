@@ -18,10 +18,10 @@ $$
 \Omega(n)\;=\;\big\langle\,a_{ij}(n)\,\big\rangle_{\text{all }n^{2}\text{ entries}},
 \qquad
 a_{ij}=\frac{\rho_{ij}}{1+\rho_{ij}},\qquad
-\rho_{ij}=\frac{\lambda\,d_{ij}}{|M^{2}|_{ij}+1},
+\rho_{ij}=\frac{\lambda\,d_{ij}}{\lvert M^{2}\rvert _{ij}+1},
 $$
 
-read as "the time worth of step $n$ = the expected amount of change in the world at that step", together with $T_\mathrm{em}(n)=\sum_{k<n}\Omega(k)$, the **emergent time**. Every conclusion is synthesized from two **pre-existing zero-parameter laws** (the age-distribution law and the iid $|S_n|$ spectral law of round 77) and then compared against measurement.
+read as "the time worth of step $n$ = the expected amount of change in the world at that step", together with $T_\mathrm{em}(n)=\sum_{k<n}\Omega(k)$, the **emergent time**. Every conclusion is synthesized from two **pre-existing zero-parameter laws** (the age-distribution law and the iid $\lvert S_n\rvert$ spectral law of round 77) and then compared against measurement.
 
 **Results.** Seven verdicts. (1) **Saturation**: $\Omega$ rises monotonically toward $1$; at $999$ steps the remaining gap is still $0.1540$, and the self-consistency check holds to $2.2\times10^{-16}$. (2) **Saturation law**: $1-\Omega=c\ln n/\sqrt n$ with $c=0.694157$ and a maximum relative residual of $1.589\%$, whereas a pure power law $n^{-1/2}$ gives $26.43\%$ — the logarithm is the fingerprint of the harmonic tail. The same law is predicted **with zero free parameters** by combining the age law with the spectral law, agreeing with measurement to $0.28\%$–$1.65\%$. (3) **Asymptotic uniformity**: the relative step-to-step non-uniformity $\eta$ falls from $4.23\times10^{-3}$ ($n=50$) to $6.10\times10^{-5}$ ($n=980$), and its ratio to the prediction *differentiated from the saturation law* stays inside $[0.873,1.407]$. (4) **Internal non-uniformity**: the rewriting rate of a single element rises monotonically with its own age; at $n=999$ it runs from $0.058931$ (newborn) to $0.957750$ (oldest), so the clock of an individual member is not uniform. (5) **Universality**: sweeping $\lambda$ from $0.2$ to $3.0$ (a factor of $15$) does not move the limit of $\Omega$, only the speed of approach. (6) **Phase transition**: squaring the denominator of the update rule (a single symbol) moves the limit from $1.0000$ to about $0.390$; at $1099$ steps the gap between the two groups has reached $0.4629$ and is still widening. (7) **The price**: calibrating with the memory horizon gives $\tau_\mathrm{mem}\propto\sqrt n$, calibrating with the amount of change gives $T_\mathrm{em}\propto n$, and their ratio diverges with $n$ (a factor of $6.89$ and still growing), so **no rescaling can make both clocks uniform simultaneously**.
 
@@ -72,7 +72,7 @@ None of the three equals or injects into another, and round 77 explicitly forbid
 The evolving body is a symmetric $\pm1$ matrix $M$ starting from $M_{1}=[[1]]$. At step $n$ (before appending row $n$, so $M$ is $n\times n$):
 
 $$
-E=|M^{2}|,\qquad
+E=\lvert M^{2}\rvert ,\qquad
 d_{ij}=n-\max(i,j),\qquad
 \rho_{ij}=\frac{\lambda\,d_{ij}}{E_{ij}+1},
 $$
@@ -114,8 +114,8 @@ Measured item-by-item error is identically $0$. The law **contains no dynamics**
 **Proposition 2 (spectral law E5, round 77).**
 
 $$
-\big\langle |E_{ij}|^{2}\big\rangle_\mathrm{off}=n,\qquad
-\big\langle |E_{ij}|\big\rangle_\mathrm{off}=\mathbb E|S_{n}|\;\approx\;\sqrt{2n/\pi},
+\big\langle \lvert E_{ij}\lvert ^{2}\big\rangle_\mathrm{off}=n,\qquad
+\big\langle \lvert E_{ij}\rvert \big\rangle_\mathrm{off}=\mathbb E\lvert S_{n}\rvert \;\approx\;\sqrt{2n/\pi},
 $$
 
 i.e. the off-diagonal activity field sits at the maximum-entropy (iid symmetric Rademacher) position; both exact moments deviate by less than $0.5\%$ for $n\ge400$.
@@ -188,12 +188,12 @@ $$
 
 Pure power laws are decisively rejected; $\ln n/\sqrt n$ is the only admissible form, with residual $1.589\%$.
 
-**Zero-parameter numerical prediction.** Using the age weights of Proposition 1 and the exact $|S_n|$ distribution of Proposition 2,
+**Zero-parameter numerical prediction.** Using the age weights of Proposition 1 and the exact $\lvert S_n\rvert$ distribution of Proposition 2,
 
 $$
 \langle r\rangle_\mathrm{pred}
 =\frac{1}{n^{2}}\sum_{d=1}^{n}\bigl(2(n-d)+1\bigr)\,
-\mathbb E_{|S_{n}|}\!\left[\frac{K+1}{K+1+\lambda d}\right],
+\mathbb E_{\lvert S_{n}\rvert }\!\left[\frac{K+1}{K+1+\lambda d}\right],
 $$
 
 **containing no fitted constant whatsoever**:
@@ -213,7 +213,7 @@ The deviation decreases monotonically to $0.28\%$–$1.65\%$. **This is the stro
 **Definition 4.1 (relative step-to-step non-uniformity).**
 
 $$
-\eta(n)\;=\;\frac{|\Omega(n+1)-\Omega(n)|}{\Omega(n)} .
+\eta(n)\;=\;\frac{\lvert \Omega(n+1)-\Omega(n)\rvert }{\Omega(n)} .
 $$
 
 It measures whether consecutive steps are equivalent. Time is uniform if and only if $\eta\to0$.
@@ -294,7 +294,7 @@ the **time constant** of this dynamics: how much internal time one step is worth
 
 $\Omega$ is monotone increasing in $\lambda$ (at fixed $n$) and monotone increasing in $n$ (at fixed $\lambda$); both hold, hence all $\lambda$ approach **the same target**.
 
-**Why it looks like this.** $\Omega_{\infty}=1$ is a **saturation value**, and saturation values carry no coupling strength: however large or small $\lambda$ is, $\rho\sim\lambda n^{1/2}\to\infty$ still holds, and the ceiling of $a=\rho/(1+\rho)$ is $1$. This is the same structure as "the bound $|v|\le c$ does not depend on the specific strength of the interaction".
+**Why it looks like this.** $\Omega_{\infty}=1$ is a **saturation value**, and saturation values carry no coupling strength: however large or small $\lambda$ is, $\rho\sim\lambda n^{1/2}\to\infty$ still holds, and the ceiling of $a=\rho/(1+\rho)$ is $1$. This is the same structure as "the bound $\lvert v\rvert \le c$ does not depend on the specific strength of the interaction".
 
 **Open item (registered honestly).** For the approach-speed constant $c(\lambda)$, a naive asymptotic argument gives $c\propto\lambda^{-1}$ (the gap is proportional to the memory horizon, hence to $1/\lambda$). **Measurement rejects this guess**: the slope of $\ln c$ against $\ln\lambda$ is $-0.5549$ (window $100$–$399$), $-0.5914$ ($200$–$799$) and $-0.5769$ ($100$–$799$). The direction agrees with a correction term $\propto\ln\lambda/\ln n$ (the slope drifts weakly toward $-1$ as the window is pushed outward), but $1/\ln n$ decays too slowly for finite windows to reach $-1$. **This item is registered as open and forbidden as evidence.**
 
@@ -384,7 +384,7 @@ Taking the joint null hypothesis to be "entries are iid" is the **wrong null** �
 
 | statistic | $n=150$ real | $n=150$ iid | gap$/\sigma$ | $n=300$ real | $n=300$ iid | gap$/\sigma$ |
 |---|---|---|---|---|---|---|
-| $\langle|E|\rangle_\mathrm{off}$ | $9.8442\pm0.1274$ | $9.7549\pm0.1045$ | 0.70 | $13.8493\pm0.0767$ | $13.7983\pm0.0681$ | 0.66 |
+| $\langle\lvert E\rvert \rangle_\mathrm{off}$ | $9.8442\pm0.1274$ | $9.7549\pm0.1045$ | 0.70 | $13.8493\pm0.0767$ | $13.7983\pm0.0681$ | 0.66 |
 | fraction of $+1$ | $0.5020\pm0.0059$ | $0.5016\pm0.0039$ | 0.07 | $0.5013\pm0.0025$ | $0.5007\pm0.0019$ | 0.27 |
 | spectral radius$/\sqrt n$ | $1.9881\pm0.0419$ | $1.9606\pm0.0373$ | 0.66 | $2.0027\pm0.0186$ | $1.9798\pm0.0208$ | 1.23 |
 | **row-sum variance$/n$** | $\mathbf{1.9446\pm0.1060}$ | $\mathbf{1.0170\pm0.1200}$ | **8.75** | $\mathbf{2.0302\pm0.0740}$ | $\mathbf{1.0019\pm0.0957}$ | **13.89** |
@@ -395,10 +395,10 @@ The **marginal** layer of the $E$-field (mean, $\sigma$, sign fraction, spectral
 
 **Experimental design.** Take two prefixes with **nothing in common** (different seeds, each run to step $150$; the two differ in $48.50\%$ of entries). From each prefix run $G=8$ continuations with mutually different random streams up to step $300$, giving $2G=16$ terminal states. $H_{0}$: these $16$ states are exchangeable. **Exact permutation test** (enumerating all $C(16,8)=12870$ splits):
 
-| statistic | group A | group B | $|\text{difference}|/\sigma_\mathrm{pooled}$ | permutation $p$ |
+| statistic | group A | group B | $\lvert \text{difference}\rvert /\sigma_\mathrm{pooled}$ | permutation $p$ |
 |---|---|---|---|---|
-| $\langle|E|\rangle_\mathrm{off}$ | $13.8645\pm0.0731$ | $13.8676\pm0.0517$ | 0.050 | 0.9223 |
-| $\sigma(|E|)$ | $10.5091\pm0.0692$ | $10.5015\pm0.0370$ | 0.141 | 0.8222 |
+| $\langle\lvert E\rvert \rangle_\mathrm{off}$ | $13.8645\pm0.0731$ | $13.8676\pm0.0517$ | 0.050 | 0.9223 |
+| $\sigma(\lvert E\rvert )$ | $10.5091\pm0.0692$ | $10.5015\pm0.0370$ | 0.141 | 0.8222 |
 | row-sum variance$/n$ | $1.9720\pm0.0971$ | $1.9734\pm0.0871$ | 0.015 | 0.9775 |
 | fraction of $+1$ | $0.5009\pm0.0017$ | $0.5018\pm0.0021$ | 0.453 | 0.3841 |
 | spectral radius$/\sqrt n$ | $1.9931\pm0.0304$ | $2.0047\pm0.0348$ | 0.361 | 0.4920 |
@@ -466,7 +466,7 @@ One sentence for the non-specialist: **time is uniform not because the universe 
 
 ### 10.4 View from the discrete closure law (G12, instance 16)
 
-- **Given (discrete side, closed)**: the distribution of $d$, the $n^{2}$ weights, the distribution of $|S_{n}|$, the symmetry ⇒ hence the shape $\ln n/\sqrt n$ and the form of $T_\mathrm{em}$.
+- **Given (discrete side, closed)**: the distribution of $d$, the $n^{2}$ weights, the distribution of $\lvert S_{n}\rvert$, the symmetry ⇒ hence the shape $\ln n/\sqrt n$ and the form of $T_\mathrm{em}$.
 - **Not given (continuous side, external input required)**: the physical unit corresponding to $\Omega_{\infty}$ (seconds), and why one *ought* to calibrate with $\Omega$ rather than $\tau_\mathrm{mem}$ — the latter is a choice on the observer's side, which the dynamics cannot answer.
 
 ---
@@ -539,7 +539,7 @@ Recompute: `python code/_time_emergence.py` (about $2$ minutes, EXIT=0).
 ## Appendix D　References
 
 1. This project: *The dormancy/activation clock: zero-parameter laws, zero-bit branches and intrinsic time* (round 77) — Proposition 1 (age law), Proposition 2 (diagonal closed form), E5 (spectral law), source of $\tau_\mathrm{mem}$.
-2. This project: *The vibrational-period axis: definition of time and the isotope criterion* (round 76) — the topological definition of frequency $\Delta\lambda=|\lambda_{1}-\lambda_{2}|$, and the verdict "steps but no seconds".
+2. This project: *The vibrational-period axis: definition of time and the isotope criterion* (round 76) — the topological definition of frequency $\Delta\lambda=\lvert \lambda_{1}-\lambda_{2}\rvert$, and the verdict "steps but no seconds".
 3. This project: *Applied layer, ninth run: the general form of Proposition U* (round 74) — methodological source of the information bound $\le1$ bit.
 4. This project: *Applied layer, tenth run: ascending to $L_{3}$* (round 75) — source of the discipline "range verdicts precede fitting verdicts".
 5. `code/sim_p.py` — the single authoritative implementation of the evolution loop.

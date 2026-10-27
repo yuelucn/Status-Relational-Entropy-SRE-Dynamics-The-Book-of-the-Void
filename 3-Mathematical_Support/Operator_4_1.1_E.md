@@ -36,7 +36,7 @@ It satisfies strict symmetry $M_{\Omega, ij}=M_{\Omega, ji}$ and contains no zer
 
 * **Forward-Measure Degree Mapping ($\tau$)**: Since entries inside $M_{\Omega}$ are strictly $\pm1$, the baseline for forward-degree extraction operator is defined as element-absolute-value summation. Owing to symmetry, local out-degree cardinality $D_{ii}^{\text{out}}$ and in-degree cardinality $D_{ii}^{\text{in}}$ degenerate completely to equivalence:
 $$
-D_{ii}^{\text{out}} \equiv \sum_{j=1}^{N_K} |M_{\Omega, ij}| = D_{ii}^{\text{in}}
+D_{ii}^{\text{out}} \equiv \sum_{j=1}^{N_K} \lvert M_{\Omega, ij}\rvert  = D_{ii}^{\text{in}}
 $$
 
 * **Diagonal Self-Loop Term ($D_{ii}^{\text{self}}$)**: Vertex self-spin feature mapped onto matrix main diagonal, satisfying:
@@ -64,17 +64,17 @@ W_{\text{base}}(i,j) \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{
 $$
 
 ### 3.2 2-Step-Graph-Walk-Kernel Logarithmic-Perturbation Damping Component
-According to algebraic-graph-theory principles, absolute value $|(M_{\Omega}^2)_{ij}|$ of multiplied inner-product over fragmented spin-square matrix perfectly characterises total number of coherent interference and destructive-cancellation events for all formal causal paths of length-2 travelling from node $i$ to node $j$. Non-linear logarithm compression must be adopted to suppress long-range cascade divergence.
+According to algebraic-graph-theory principles, absolute value $\lvert (M_{\Omega}^2)_{ij}\rvert$ of multiplied inner-product over fragmented spin-square matrix perfectly characterises total number of coherent interference and destructive-cancellation events for all formal causal paths of length-2 travelling from node $i$ to node $j$. Non-linear logarithm compression must be adopted to suppress long-range cascade divergence.
 
 Define global-evolution-scale-regulating factor as $\frac{\lambda_2(n)}{\alpha_n}$. Using local-energy-shunting term $\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}$ for perturbation amortised compensation, logarithmic-perturbation-damping formula is derived:
 $$
-W_{\text{damp}}(i,j) \equiv 1 + \frac{|(M_{\Omega}^2)_{ij}| \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}
+W_{\text{damp}}(i,j) \equiv 1 + \frac{\lvert (M_{\Omega}^2)_{ij}\rvert  \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}
 $$
 
 ### 3.3 Complete Closed-Form General Equation of Operator 4
 Homogeneously cascade-multiply geometric-normalised measure of base-component and non-linear causal-perturbation of damping-component, finally establishing the standard explicit algebraic equation for Operator 4 Local-Topology Degree-Statistic:
 $$
-W_{e(i,j)}^{(s-1)} \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}{\sqrt{\lambda_2(n) + D_{ii}^{\text{self}} + D_{jj}^{\text{self}} + \epsilon_{\text{topo}}^{(s)}}} \cdot \left( 1 + \frac{|(M_{\Omega}^2)_{ij}| \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}} \right)
+W_{e(i,j)}^{(s-1)} \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}{\sqrt{\lambda_2(n) + D_{ii}^{\text{self}} + D_{jj}^{\text{self}} + \epsilon_{\text{topo}}^{(s)}}} \cdot \left( 1 + \frac{\lvert (M_{\Omega}^2)_{ij}\rvert  \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}} \right)
 $$
 
 ---
@@ -114,7 +114,7 @@ $$
 \lim_{D \to 0} W_{\text{base}}(i,j) = 0
 $$
 
-Now inspect logarithmic-perturbation damping-term $W_{\text{damp}}(i,j)$. As $M_{\Omega}$ becomes fully-sparse adjacency under this condition, its 2-step-walk product magnitude $|(M_{\Omega}^2)_{ij}| \to 0$, driving damping-term to converge towards multiplicative-identity element $1$:
+Now inspect logarithmic-perturbation damping-term $W_{\text{damp}}(i,j)$. As $M_{\Omega}$ becomes fully-sparse adjacency under this condition, its 2-step-walk product magnitude $\lvert (M_{\Omega}^2)_{ij}\rvert  \to 0$, driving damping-term to converge towards multiplicative-identity element $1$:
 $$
 \lim_{D \to 0} W_{\text{damp}}(i,j) = 1 + \frac{0 \cdot \ln(1 + \cdot)}{\alpha_n + 0} = 1
 $$

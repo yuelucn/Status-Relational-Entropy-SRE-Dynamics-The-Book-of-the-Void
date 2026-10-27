@@ -32,8 +32,8 @@ SRE 现有体系里，「反应」**不是对象**：算子 19 处理静态图�
 
 | 通道 | 数学量 | 编码什么 | 代数归属 | 催化剂可影响？ |
 |---|---|---|---|---|
-| **边拓扑挫折** $\varrho$ | $\|\delta_{e,\text{harm}}\|/\|\delta_e\|$ | 键级重排中绕环不可消的部分 | $H^1(G;\mathbb{R})$ | **仅路径值** $\varrho_{\text{path}}$（见 T20.3） |
-| **顶点对比度** $\nu$ | $\|\delta_v^{\perp}\|/\|\delta_v\|$ | 氢覆盖在各位点间的**再分配** | $C^0(G;\mathbb{R})$ | 是（经 waypoint） |
+| **边拓扑挫折** $\varrho$ | $\lVert \delta_{e,\text{harm}}\rVert /\lVert \delta_e\rVert$ | 键级重排中绕环不可消的部分 | $H^1(G;\mathbb{R})$ | **仅路径值** $\varrho_{\text{path}}$（见 T20.3） |
+| **顶点对比度** $\nu$ | $\lVert \delta_v^{\perp}\rVert /\lVert \delta_v\rVert$ | 氢覆盖在各位点间的**再分配** | $C^0(G;\mathbb{R})$ | 是（经 waypoint） |
 | **刚度瓶颈** $\kappa$ | $\int dt/(\gamma+\varepsilon)$ | 沿路径的谱隙塌缩 | 内生谱隙比 $\gamma=\lambda_2/\alpha_n$ | 是（经界面边） |
 
 核心结论：
@@ -46,7 +46,7 @@ SRE 现有体系里，「反应」**不是对象**：算子 19 处理静态图�
 | **T20.4** | $\delta_v=\mu\mathbf1+\delta_v^{\perp}$ 正交分解；$\nu$ 对**覆盖整体平移**与非零缩放不变 | 顶点通道的规范不变性 | **已证**（v0.3 修正） |
 | **P20.5** | $g(t^\ast)=0\iff$ 零权边含 $X$ 上的割（$X$=含活性位的分量之并） | 过渡态的操作性判据 | **已证**（v0.3 重述） |
 | **P20.6** | 加边使 $\lambda_2,\alpha_n$ 同时不减，$\gamma$ **不单调** | 禁止"加边必降 $\kappa$" | **已证** |
-| **H20.1** | $(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒秩相关 $|\rho_S|\ge0.7$ | **算子 20 的存在理由** | **未证** |
+| **H20.1** | $(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒秩相关 $\lvert \rho_S\rvert \ge0.7$ | **算子 20 的存在理由** | **未证** |
 | **C20.7** | $\kappa(w_I)$ 对界面权重呈 U 形 | SRE 版 Sabatier 火山曲线 | **未证（猜想）** |
 
 ---
@@ -82,7 +82,7 @@ SRE 的图本体论只有"构型"，没有"反应"。由此：
 
 ### 2.1 上链复形与 Hodge 分解
 
-对骨架 $G=(V,E)$，$|V|=n$，$|E|=m$。SRE 无 2-胞腔，故
+对骨架 $G=(V,E)$，$\lvert V\rvert =n$，$\lvert E\rvert =m$。SRE 无 2-胞腔，故
 
 $$C^0\xrightarrow{\ \delta_0\ }C^1\xrightarrow{\ \delta_1=0\ }C^2=0,\qquad H^1(G;\mathbb{R})=C^1/\,\mathrm{im}\,\delta_0 .$$
 
@@ -108,7 +108,7 @@ $$\boxed{\ \text{边 }e=\{i,j\}\text{ 的参考定向 }=i\to j\ (i<j)\ \text{（
 
 **可选显式定向 $\varsigma_e$（v0.3 新增输入）**　若使用者希望按化学直觉读（例如希望"环上均匀升键级"被算作纯环通道），可额外提供 $\varsigma_e\in\{+1,-1\}$，规范自动把 $\delta_e$ 换成 $\varsigma_e\delta_e$ 后再分解。**默认 $\varsigma_e\equiv+1$**（即与 v0.2 逐位一致）。$\varsigma$ 与 $\varepsilon_{e,\gamma}$、与 D7 的正则 $\varepsilon$ 均为不同记号。
 
-**实现状态（v0.3 已接入）**　`build_reaction(..., orient=ς)` 接受标量 / 长度 $|E|$ 的向量 / $\{(i,j):\pm1\}$ 字典，取值非 $\pm1$ 时报错；`ς_e` **只作用于边通道**（$\varrho$），**不影响** $\kappa$（用 $W$，无定向）与 $\nu,\mu$（顶点通道，无定向）。附带公共辅助 `orient_from_cycle(n, edges, cycle)`：取 $\varsigma_e=\varepsilon_{e,\gamma}$，把"整环同步加/减键级"这一化学直觉转成规范定向。
+**实现状态（v0.3 已接入）**　`build_reaction(..., orient=ς)` 接受标量 / 长度 $\lvert E\rvert$ 的向量 / $\{(i,j):\pm1\}$ 字典，取值非 $\pm1$ 时报错；`ς_e` **只作用于边通道**（$\varrho$），**不影响** $\kappa$（用 $W$，无定向）与 $\nu,\mu$（顶点通道，无定向）。附带公共辅助 `orient_from_cycle(n, edges, cycle)`：取 $\varsigma_e=\varepsilon_{e,\gamma}$，把"整环同步加/减键级"这一化学直觉转成规范定向。
 
 实测（6 环均匀 $+0.5$，即苯芳构化，$\varsigma$ 默认与自然环遍历两种）：
 
@@ -209,9 +209,9 @@ $$W|_X:\quad \text{骨架边取 }w(t),\quad \text{边界边取 }w_B,\quad \text{
 
 于是
 
-$$g(t)\equiv\frac{\lambda_2\big(L|_X(w(t))\big)}{\lambda_n\big(L|_X(w(t))\big)},\qquad \gamma_\ast=\min_{t}g(t),\qquad \boxed{\ \kappa=\sum_{j=1}^{m}\int_{t_{j-1}}^{t_j}\frac{dt}{g(t)+\varepsilon}\ }\quad(\varepsilon>0).$$
+$$g(t)\equiv\frac{\lambda_2\big(L\lvert _X(w(t))\big)}{\lambda_n\big(L\rvert _X(w(t))\big)},\qquad \gamma_\ast=\min_{t}g(t),\qquad \boxed{\ \kappa=\sum_{j=1}^{m}\int_{t_{j-1}}^{t_j}\frac{dt}{g(t)+\varepsilon}\ }\quad(\varepsilon>0).$$
 
-**约定**：$|X|\le1$ 时约定 $g=1$；当 $g(t)=0$（$X$ 上诱导图不连通）时该点对积分贡献按 $1/\varepsilon$ 计（数值上截断）。
+**约定**：$\lvert X\rvert \le1$ 时约定 $g=1$；当 $g(t)=0$（$X$ 上诱导图不连通）时该点对积分贡献按 $1/\varepsilon$ 计（数值上截断）。
 
 **由此 P20.5 恢复可观测性**：$w_I=0$ 且骨架含零权割 ⇒ $g=0$ ⇒ $\kappa\sim1/\varepsilon$；催化剂经界面边把割的两侧重新桥接 ⇒ $\lambda_2>0$ ⇒ $\kappa$ 有限。**这正是 A20 的机制**（V7/V9 实测：$\kappa$ 26.76 → 6.66）。
 
@@ -289,7 +289,7 @@ $\delta_v=\mu\mathbf1+\delta_v^{\perp}$ 是正交分解（$\mathbf1^\top\delta_v
 
 **证明**　(a) 平移使 $\delta_v^{(j)}=(n_j+c\mathbf1)-(n_{j-1}+c\mathbf1)=\delta_v^{(j)}$，逐项不变。$\square$
 (b) $\delta_v=\mu\mathbf1+\delta_v^\perp$ ⇒ $c\delta_v=(c\mu)\mathbf1+c\delta_v^\perp$（$\mathbf1^\top(c\delta_v^\perp)=c\cdot0=0$，仍是正交分解），故
-$$\nu(c\delta_v)=\frac{\|c\delta_v^\perp\|}{\|c\delta_v\|}=\frac{|c|\,\|\delta_v^\perp\|}{|c|\,\|\delta_v\|}=\nu(\delta_v).\ \square$$
+$$\nu(c\delta_v)=\frac{\|c\delta_v^\perp\|}{\|c\delta_v\|}=\frac{\lvert c\rvert \,\|\delta_v^\perp\|}{\lvert c\rvert \,\|\delta_v\|}=\nu(\delta_v).\ \square$$
 
 > **v0.2 的错误陈述已删除**　v0.2 写"对任意 $c\in\mathbb{R}$，$\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$"。该式**为假**：$\nu$ 的分母是 $\|\delta_v\|$，平移同时改变分子（不变）与分母（$c\neq0$ 时增大），故 $\nu$ 一般下降。数值反例见 V13。**这是 v0.2 的一处实质性错误**：正交分解本身正确，但由此推出的不变性被错误地写在 $\delta_v$ 上（应写在 $n_j$ 上，即 (a)）。
 
@@ -306,7 +306,7 @@ $$g(t^\ast)=0\iff\lambda_2\big(L|_X(w(t^\ast))\big)=0\iff \text{零权边集包�
 
 加边 $W'=W+\Delta W$（$\Delta W\ge0$）使 $L'\succeq L$，Weyl 定理给逐序特征值不减，故 $\lambda_2,\alpha_n$ 同时不减，$\gamma'=\lambda_2'/\alpha_n'$ 与 $\gamma$ **无固定大小关系**。
 
-**证明**　$\Delta L=w(e_i-e_j)(e_i-e_j)^\top\succeq0$；Weyl 单调；比值不定。$\square$
+**证明**　$\Delta L=w(e_i-e_j)(e_i-e_j)^{\top}\succeq0$；Weyl 单调；比值不定。$\square$
 
 ### C20.7（火山猜想，**未证**）
 
@@ -316,7 +316,7 @@ $$g(t^\ast)=0\iff\lambda_2\big(L|_X(w(t^\ast))\big)=0\iff \text{零权边集包�
 
 ### H20.1（中心假设，**未证**）
 
-$(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒 $\Delta^\ddagger$ 的秩相关 $|\rho_S|\ge0.7$，且符号在同类反应族内一致。**若 $|\rho_S|<0.5$ 或符号翻转，算子 20 降级为结构描述符。**
+$(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒 $\Delta^\ddagger$ 的秩相关 $\lvert \rho_S\rvert \ge0.7$，且符号在同类反应族内一致。**若 $\lvert \rho_S\rvert <0.5$ 或符号翻转，算子 20 降级为结构描述符。**
 
 ---
 
@@ -339,7 +339,7 @@ $(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒 $\Delta^\ddagg
 输出 (κ, ϱ_path, ν_path, μ; ϱ_tot, ν_tot, γ*, feasible)
 ```
 
-复杂度 $O(m\cdot n^3)$（稠密特征分解）或 $O(m\cdot |E|\cdot \text{iter})$（Lanczos）。
+复杂度 $O(m\cdot n^3)$（稠密特征分解）或 $O(m\cdot \lvert E\lvert \cdot \text{iter})$（Lanczos）。
 
 ### 6.2 v1（完整）
 
@@ -374,7 +374,7 @@ $(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒 $\Delta^\ddagg
 | V1 | 带定向的 $\mathrm{Hol}_\mathbb{R}$ 与手算一致（含反向遍历） | D3/§2.2 |
 | V2 | T20.1 三等价式在 $10^3$ 随机图上成立 | T20.1 |
 | V3 | $\varrho$ 与生成树/环基选取无关；显式测出 $\varrho$ 的顶点标号依赖；**$\varsigma_e$ 定向条款**（默认 $2/3$、自然环定向 $1$、全局取反不变、不影响 $\kappa$、非法值被拒、T20.3 仍成立） | 推论 20.1.1 + §2.2 + R11 |
-| V4 | 三通道秩相关 $|\rho_S|<0.7$（正交性） | H20.2 |
+| V4 | 三通道秩相关 $\lvert \rho_S\rvert <0.7$（正交性） | H20.2 |
 | V5 | $\kappa$ 对全局缩放不变；对单独 $w_I$ 缩放**不**不变 | T20.2 |
 | V6 | C20.7 火山形态（扫 $w_I$，判单峰/单调） | C20.7 |
 | V7 | 构造零权割，验证 $\gamma\to0$、$\kappa\sim1/\varepsilon$ | P20.5 |

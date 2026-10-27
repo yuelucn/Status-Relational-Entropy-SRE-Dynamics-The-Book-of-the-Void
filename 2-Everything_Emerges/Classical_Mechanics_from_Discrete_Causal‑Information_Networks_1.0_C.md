@@ -197,7 +197,7 @@ $$
 \boldsymbol{F}=-k\boldsymbol{x}
 $$
 
-> 失效判据拓扑条件：当$|\Delta \mathcal{D}_\mathrm{geo}|$超过中介链路容许拓扑阈值，中介因果链路发生断裂重连，$\mathcal{K}_\mathrm{topo}$不再维持常数，胡克定律拓扑关系被破坏。
+> 失效判据拓扑条件：当$\lvert \Delta \mathcal{D}_\mathrm{geo}\rvert$超过中介链路容许拓扑阈值，中介因果链路发生断裂重连，$\mathcal{K}_\mathrm{topo}$不再维持常数，胡克定律拓扑关系被破坏。
 
 ### A4 守恒律拓扑形式
 全局因果网络总拓扑补偿开销 $\mathcal{U}_\mathrm{total}$守恒：

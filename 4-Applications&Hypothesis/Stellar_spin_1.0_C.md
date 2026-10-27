@@ -26,9 +26,9 @@ SRE v6.0对度量本体完成升级，不再将空间距离作为理论原始公
 
 1. **耗散‑补偿对偶(Dissipation‑Compensation Duality)**
 宏观度量平方被定义为网络为抵消跨节点信息耗散而付出的拓扑路由开销：
-\[
+$$
 R_{i j}^{2} \equiv Tr\left(\hat{\mathcal{D}}_{i j} \cdot \hat{\mathcal{C}}_{compensation }\left(\alpha_{0, dynamic }\right)\right) \cdot exp \left(-\gamma \cdot \mu_{loss }\right)
-\]
+$$
 - $\hat{\mathcal{D}}_{i j}$：信息耗散张量，描述事件之间的信息损耗；
 - $\hat{\mathcal{C}}_{compensation }$：补偿算子，代表去中心化网络为维持矩阵稳定性部署的路由资源。
 
@@ -125,7 +125,7 @@ R_{i j}^{2} \equiv Tr\left(\hat{\mathcal{D}}_{i j} \cdot \hat{\mathcal{C}}_{comp
 本模型是一套公理化先验推理框架。即便全部后验观测拟合通过，仅代表现象可以被该框架描述；不能直接证明宇宙底层就是离散因果网络，不排除$\Lambda‑\text{CDM}$、MOND等其它竞争模型同样拟合观测。
 
 ## 6 完整逻辑链路总结
-\[
+$$
 \begin{gathered}
 \text{Operator1} \sim 10 \text{ 离散二元因果网络算子}
 \Rightarrow
@@ -147,6 +147,6 @@ R_{i j}^{2} \equiv Tr\left(\hat{\mathcal{D}}_{i j} \cdot \hat{\mathcal{C}}_{comp
 \xrightarrow{\text{后验观测拟合/证伪}}
 \text{评估模型候选有效性}
 \end{gathered}
-\]
+$$
 
 <div style="page-break-after: always;"></div>

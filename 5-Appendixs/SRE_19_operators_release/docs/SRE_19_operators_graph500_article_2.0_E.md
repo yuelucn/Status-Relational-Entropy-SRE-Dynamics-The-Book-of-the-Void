@@ -64,8 +64,8 @@ This layer provides the "infrastructure" of graph computing: Op4's sparse matrix
 
 | Operator | Name | Core Function | Key Outputs |
 |----------|------|---------------|-------------|
-| Op11 | Spin-Charge Adjacency | Encodes electronegativity differences as edge-weight gains `A_q = A_s·(1+ρ·|tanh(χᵢ-χⱼ)|)` | λ₂_q, α_q, κ_q, max_spin_coupling |
-| Op12 | Closed-Loop Audit | DFS enumeration of simple cycles + Möbius phase ratio `|tr(Mᵏ)|/nᵏ` | n_loops, mobius_ratio, λ₂_loop |
+| Op11 | Spin-Charge Adjacency | Encodes electronegativity differences as edge-weight gains $A_q = A_s\cdot(1+\rho\cdot\lvert\tanh(\chi_i-\chi_j)\rvert)$ | λ₂_q, α_q, κ_q, max_spin_coupling |
+| Op12 | Closed-Loop Audit | DFS enumeration of simple cycles + Möbius phase ratio $\lvert\mathrm{tr}(M^k)\rvert/n^k$ | n_loops, mobius_ratio, λ₂_loop |
 
 **Capabilities:**
 - Injects physical/chemical attributes of nodes (e.g., Pauling electronegativity) into the graph structure, producing a "charge-weighted adjacency matrix"

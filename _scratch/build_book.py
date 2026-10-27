@@ -25,8 +25,10 @@ def check_markdown_heading_warnings(filepath: str):
     return warns
 
 def main():
-    order_list_file = "file_order_C.txt"
-    out_combined = "combined_C.md"
+    tag = sys.argv[1] if len(sys.argv) > 1 else 'C'
+    order_list_file = f"file_order_{tag}.txt"
+    out_combined = f"combined_{tag}.md"
+    toc_title = "# 目录\n" if tag == 'C' else "# Table of content\n"
 
     md_inputs = []
     with open(order_list_file, "r", encoding="utf-8") as f:
@@ -64,7 +66,7 @@ def main():
 
     # 2.手动生成目录（跳过作者序）
     body_files = md_inputs[1:]
-    toc_lines = ["# 目录\n"]
+    toc_lines = [toc_title]
     for fn in body_files:
         with open(fn, "rb") as f:
             raw_bytes = f.read()

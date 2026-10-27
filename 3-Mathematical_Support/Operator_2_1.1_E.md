@@ -62,12 +62,12 @@ Under a sparse graph storage architecture bounded by a local Topological Firewal
 $$
 \exists K_0 \in \mathbb{N}^+ \quad \text{s.t.} \quad \sup_{n \in \mathbb{N}^+} \max_{v \in V_n} \text{Degree}(v) \le K_0 \ll n
 $$
-2. The computational engine of the Second Operator is driven by traversing the first-order neighborhood $\mathcal{N}(v_f)$. From the bound above, its neighborhood cardinality satisfies $|\mathcal{N}(v_f)| \le K_0$.
+2. The computational engine of the Second Operator is driven by traversing the first-order neighborhood $\mathcal{N}(v_f)$. From the bound above, its neighborhood cardinality satisfies $\lvert \mathcal{N}(v_f)\rvert  \le K_0$.
 3. For any historical neighborhood vertex $v_m \in \mathcal{N}(v_f)$, finding the common neighborhood intersection set $\Omega_1 = \mathcal{N}(v_f) \cap \mathcal{N}(v_m)$ via an optimized hash-table lookup requires an asymptotic overhead bounded by $O(\text{Degree}(v_f) + \text{Degree}(v_m)) \le 2 \cdot K_0$.
-4. The algebraic overhead for evaluating the complete 2-step graph walk interference along a single edge scales linearly with the intersection cardinality, i.e., $O(|\Omega_1|) \le O(K_0)$.
+4. The algebraic overhead for evaluating the complete 2-step graph walk interference along a single edge scales linearly with the intersection cardinality, i.e., $O(\lvert \Omega_1\rvert ) \le O(K_0)$.
 5. Summing over the active frontier, the total number of elementary algebraic operations $\mathcal{A}(n)$ executed during a single dimensional expansion step satisfies:
 $$
-\mathcal{A}(n) \le |\mathcal{N}(v_f)| \times \left( 2K_0 + K_0 \right) \le 3K_0^2
+\mathcal{A}(n) \le \lvert \mathcal{N}(v_f)\rvert  \times \left( 2K_0 + K_0 \right) \le 3K_0^2
 $$
 6. Let $C = 3K_0^2$. Since $K_0$ and $n$ are algebraically independent, there exists an evolutionary baseline $N_0 = 1$ such that for all $n > N_0$, $\mathcal{A}(n) \le C \cdot 1$. By the standard definition of asymptotic upper bounds:
 $$
@@ -174,7 +174,7 @@ To isolate non-coherent topological states and eliminate any analytical degenera
 
 **Definition (free-energy difference).** For a channel $c$ ($D_c\ge1$), define
 
-$$F_c=\ln\frac{\mathfrak{B}_c}{\Lambda D_c},\qquad \mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$$
+$$F_c=\ln\frac{\mathfrak{B}_c}{\Lambda D_c},\qquad \mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$$
 
 **Theorem 1 (heat-bath identity).** The pruning probability of Operator 2 satisfies
 
@@ -218,10 +218,10 @@ $$
 **Proof**
 1. By the pruning rule of Operator 2, the channel-flip probability can be **identically** rewritten in heat-bath form (derivation in §7.0):
    　$p_c=\sigma(-F_c)$, $F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$,
-   　$\mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
+   　$\mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$, with temperature set to 1.
    This expression is an algebraic identity and contains no statistical assumption.
 2. When $\tilde{\mathcal{E}}_{\text{local}} > 0$: $\mathfrak{B}=\tilde{\mathcal{E}}+e$, the barrier takes the upper branch, $F$ rises, $p<\tfrac12$, and the channel preferentially survives — the coherent condensation phase.
-3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$: $\mathfrak{B}=|\tilde{\mathcal{E}}|+e^{-1}$, the barrier takes the lower branch, $F$ is depressed, $p>\tfrac12$, and the channel is preferentially pruned — the frustrated phase.
+3. When $\tilde{\mathcal{E}}_{\text{local}} < 0$: $\mathfrak{B}=\lvert \tilde{\mathcal{E}}\rvert +e^{-1}$, the barrier takes the lower branch, $F$ is depressed, $p>\tfrac12$, and the channel is preferentially pruned — the frustrated phase.
 4. When $\tilde{\mathcal{E}}_{\text{local}} = 0$: $\operatorname{sgn}0=0$ so $\mathfrak{B}=1$, $F=-\ln(\Lambda D)$, $p=1-\dfrac{1}{1+\Lambda D}$ — the absolute information vacuum phase.
 5. The three branches are given by one and the same piecewise function $\mathfrak{B}(\tilde{\mathcal{E}})$; $e$ and $e^{-1}$ are barrier offsets of $+1$ and $-1$ thermal units ($T=1$), **not** multiplicative corrections of a Boltzmann factor. The coexistence surface $F=0$ is $\Lambda_c=\mathfrak{B}/D$ — the switching centre is the zero set of $F$, no longer an externally calibrated parameter.
 
@@ -318,16 +318,16 @@ This reconstructed formula yields uniquely-determined real analytic solution at 
 
 ## 11. P0 Emergency Revision: Derivation of Explicit Topological-Weight $w_\alpha$ and its SRE Statistical-Mechanical Origin
 #### Theorem 9 (Explicit Mapping of Topological-Weight $w_\alpha$ and Harmonic-Decay Theorem)
-Within highly-overlapping multi-loop polygonal networks, explicit topological weight for each independent fundamental-cycle basis element $L_\alpha$ is defined as reciprocal of loop length: $w_\alpha = \frac{1}{|L_\alpha|}$. Its value range is strictly confined to interval $(0,\,\frac13]$; its value is given by the harmonic decay of local coherent control and is a weight ansatz rather than a variational extremum.
+Within highly-overlapping multi-loop polygonal networks, explicit topological weight for each independent fundamental-cycle basis element $L_\alpha$ is defined as reciprocal of loop length: $w_\alpha = \frac{1}{\lvert L_\alpha\rvert }$. Its value range is strictly confined to interval $(0,\,\frac13]$; its value is given by the harmonic decay of local coherent control and is a weight ansatz rather than a variational extremum.
 
 **Proof**
-1. According to local causality principle of Status-Relational Entropy dynamics, phase loss for spin information propagating along long paths is proportional to topological step-count (edge-count $|L_\alpha|$) of that path.
+1. According to local causality principle of Status-Relational Entropy dynamics, phase loss for spin information propagating along long paths is proportional to topological step-count (edge-count $\lvert L_\alpha\rvert$) of that path.
 2. The local weight felt by the frontier is the superposition of contributions from all overlapping fundamental historical cycles: $\mathcal{W}_{\text{total}}=\sum_\alpha w_\alpha$.
-3. The coherent control strength of long loops on frontier edges decays harmonically with loop length ($\propto 1/|L_\alpha|$); hence the weight is taken as the reciprocal of the loop length:
+3. The coherent control strength of long loops on frontier edges decays harmonically with loop length ($\propto 1/\lvert L_\alpha\rvert$); hence the weight is taken as the reciprocal of the loop length:
 $$
-w_\alpha = \frac{1}{|L_\alpha|}.
+w_\alpha = \frac{1}{\lvert L_\alpha\rvert }.
 $$
-4. Boundary analysis: According to algebraic graph theory, shortest non-trivial closed loop is triangle satisfying $|L_\alpha|\ge3$. Weight attains maximum value $w_\alpha=\frac13$ for triangular loops. As long-loop length tends to thermodynamic limit $|L_\alpha|\to\infty$, weight converges to zero. Value range is strictly $(0,\,\frac13]$.
+4. Boundary analysis: According to algebraic graph theory, shortest non-trivial closed loop is triangle satisfying $\lvert L_\alpha\rvert \ge3$. Weight attains maximum value $w_\alpha=\frac13$ for triangular loops. As long-loop length tends to thermodynamic limit $\lvert L_\alpha\rvert \to\infty$, weight converges to zero. Value range is strictly $(0,\,\frac13]$.
 
 ◼ Theorem 9 is complete.
 

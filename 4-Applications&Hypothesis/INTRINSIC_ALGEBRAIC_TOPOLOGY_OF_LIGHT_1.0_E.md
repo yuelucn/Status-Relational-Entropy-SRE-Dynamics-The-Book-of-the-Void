@@ -16,13 +16,13 @@ Within a causal universe without dimensional embedding, the macroscopically‑ob
 
 **Axiom I: The Residual Nature of Light**
 Light possesses no independent material ontology. Given boundary‑node A evolving to logical‑depth step $t$ and node B evolving to step $t'$, light manifests as the mutual non‑annihilated topological residual located at the causal intersection of their joint execution chain:
-\[
+$$
 \Psi _{light}(\phi ,w)\equiv \ker (\partial _{mutual}(A_{t},B_{t^{\prime }}))
-\]
+$$
 
 **Axiom II: Closed‑Form Parametric Mapping**
 The unperturbed ideal 0‑State residual manifold is governed strictly by two intrinsic degrees‑of‑freedom: the global circular wrapping phase $\phi$ (representing relative causal logical depth, $\phi \in[0,2\pi]$), and the micro‑impedance bandwidth $w$ ($w \in[-w_{max }, w_{max }]$). The rigid emergent mapping onto intrinsic eigenspace coordinates $X=[X, Y, Z]^{T}$ reads:
-\[
+$$
 X(\phi, w)=
 \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
 =
@@ -31,7 +31,7 @@ X(\phi, w)=
 \left(1.0+w \cos \frac{\phi}{2}\right) \sin \phi \\
 w \sin \frac{\phi}{2}
 \end{pmatrix}
-\]
+$$
 
 **Topological Invariance**: This mapping enforces a strict sign‑inversion constraint: as $\phi \to \phi+2\pi$, the transverse vector undergoes intrinsic flip $w \to -w$ without local spatial displacement. Geometrically this guarantees the residual structure forms a non‑orientable topological manifold possessing exactly one single boundary loop.
 
@@ -46,26 +46,26 @@ Transformations mapping classically‑measured wave properties onto exact algebr
 
 ### 2.2 Physical Frequency ($f$) $\iff$ Eigenspace Spacing and Trace Ratio
 Macroscopic frequency is decoupled from continuous temporal dependence. It is mathematically re‑defined as the topological‑compression density of the manifold winding against the primitive causal‑knot background. It directly couples to the first‑order closed‑form eigenspace spacing $\Delta\lambda$ of the $2\times2$ cross‑spectral‑response matrix $\boldsymbol{M}$:
-\[
+$$
 f \propto \Delta \lambda=\sqrt{Tr(M)^{2}-4 det(M)}=\alpha \cdot \frac{\lambda_{1}}{\lambda_{2}+\lambda_{3}}
-\]
+$$
 
 > Inference: When boundaries initiate high‑excitation modulation, rapid expansion of the leading eigenvalue $\lambda_1$ compresses topological step‑cost along the $\phi$‑axis, macroscopically manifesting as deterministic frequency blue‑shift.
 
 ### 2.3 Wavelength ($\lambda_{wave}$) $\iff$ Global Geodesic Period
 Classical wavelength is uncovered as the minimal intrinsic geodesic distance required for manifold global consistency under spin‑rotation transformations:
-\[
+$$
 \lambda_{wave } \equiv \oint _{\mathcal{M}} d s=\int_{0}^{4 \pi}\left\| \frac {\partial X}{\partial \phi}\right\| d \phi
-\]
+$$
 
 > Inference: Due to non‑orientable single‑boundary geometry, full path closure ($X=X_{0}$) requires traversing $4\pi$ radians ($\Delta\phi=4\pi$). This furnishes the explicit geometric origin for half‑integer spin structures observed on the macroscopic rendering layer.
 
 ### 2.4 Wave‑Particle Duality $\iff$ Global Fiber‑Bundle versus Local Residual Operator
 - **Wave Nature**: Governed by continuous global eigenvector bundles $e_{i}(\phi, w)$. Any local modulation alters the global eigen‑spectrum of matrix $\boldsymbol{B}$, inducing zero‑latency non‑local respiration of full‑manifold curvature and producing coherent wave‑like interference over the shared causal chain.
 - **Particle Nature**: Originates from local cross‑section projection of the receiver interception slicing operator $\widehat{R}(\phi_{fix})$:
-\[
+$$
 \hat{R}\left(\phi_{fix}\right)=\lim _{\Delta \phi \to 0} \int_{\phi_{fix}}^{\phi_{fix}+\Delta \phi} X(\phi, w) X^{T}(\phi, w) d \phi
-\]
+$$
 
 When an observer intercepts the channel, the continuous manifold is truncated at a specific logical step $\phi_{fix}$. The detector captures only a finite discrete energy slice bounded by $\Delta w$. This local truncation artefact manifests as a statistical singularity macroscopically interpreted as “particle collapse”.
 
@@ -73,13 +73,13 @@ When an observer intercepts the channel, the continuous manifold is truncated at
 To realise concurrent full‑duplex signalling across a single shared causal chain, both communication boundaries alter local topological impedance within their electromagnetic crystals. This modulates independently injected causal fluxes $\rho_{A \to B}(t)$ and $\rho_{B \to A}(t)$ between a High state ($\rho=10$) and a Low state ($\rho=2$).
 
 These step‑changes force the global manifold to undergo instantaneous quantum jumps among four discrete eigen‑spectrum states governed by the rigid transition‑system:
-\[
+$$
 \begin{cases}
 \lambda_{1}(t)=\beta \cdot\left(\rho_{A \to B}(t)+\rho_{B \to A}(t)\right)^{2} \\
-\lambda_{2}(t)=\gamma \cdot\left|\rho_{A \to B}(t)-\rho_{B \to A}(t)\right|+\lambda_{0} \\
+\lambda_{2}(t)=\gamma \cdot\left\lvert \rho_{A \to B}(t)-\rho_{B \to A}(t)\right\rvert +\lambda_{0} \\
 \lambda_{3}(t)=\dfrac{\lambda_{2}(t)}{4.0 \cdot(1.0+\kappa)}
 \end{cases}
-\]
+$$
 Where $\beta$ and $\gamma$ are SRE topological‑scaling invariants, $\lambda_{0}$ denotes vacuum baseline spin remnant, and $\kappa$ is the chiral‑lock strain coefficient.
 
 ### Four‑State Eigen‑Spectrum Shift Matrix
@@ -93,9 +93,9 @@ Where $\beta$ and $\gamma$ are SRE topological‑scaling invariants, $\lambda_{0
 > Mathematical Proof of Atemporal Demodulation:
 Since the leading eigenvalue $\lambda_{1}(t)$ governs global geodesic period, any state‑jump executed by Node B updates global manifold structure on the physical‑rendering layer with zero propagation latency.
 Because Node A possesses perfect real‑time local knowledge of its self‑injected state $\rho_{A \to B}(t)$, its hardware subtractor instantaneously isolates the incoming reverse‑signal via first‑order algebraic subtraction without waiting for local physical wave‑packets to traverse classical spatial distance:
-\[
+$$
 \rho_{B \to A}(t)=\sqrt{\frac{\lambda_{1}(t)}{\beta}}-\rho_{A \to B}(t)
-\]
+$$
 
 ## 4 EMPIRICAL VALIDATION & MANIFOLD DECOUPLING ANALYSIS
 To characterise and evaluate geometric unrolling of the relational tensor, point‑cloud manifold metrics output by the algebraic‑inversion engine are tabulated explicitly below.

@@ -11,9 +11,9 @@
 
 **Background and problem.** Within the State–Relational–Entropy (SRE) framework, mass is treated as a **projected reading** of relational structure rather than an ontological input, and therefore in principle it should not be a number given in advance. However, the question "since mass is an emergent quantity, what exactly is its precise mathematical object?" had not previously been answered head-on. This paper answers that question and places the answer in a recomputable, falsifiable form.
 
-**Method.** This paper takes the SRE nucleon skeleton $Y_3\ltimes\triangle_3$ ($V=12$, $E=18$, $\beta_1=7$, $|\mathrm{Aut}|=36$) as its only structural input. It first proves that the three shared rings of this skeleton form a **ℤ₃-torsor** under the automorphism group — there is a cyclic order but no absolute origin; then, taking "respecting that structure" as the constraint, it derives the unique admissible form of the mass operator and sets out its spectrum, invariants and external comparisons.
+**Method.** This paper takes the SRE nucleon skeleton $Y_3\ltimes\triangle_3$ ($V=12$, $E=18$, $\beta_1=7$, $\lvert \mathrm{Aut}\rvert =36$) as its only structural input. It first proves that the three shared rings of this skeleton form a **ℤ₃-torsor** under the automorphism group — there is a cyclic order but no absolute origin; then, taking "respecting that structure" as the constraint, it derives the unique admissible form of the mass operator and sets out its spectrum, invariants and external comparisons.
 
-**Results.** The paper gives four mutually independent, verifiable propositions: (1) **the object proposition** — a mass operator that respects the three-ring structure must commute with the cyclic shift $S$, and "commuting with $S$" holds if and only if it is a **circulant matrix**; hence $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$, and ℤ₃-equivariance compresses 9 matrix entries into 3; (2) **the shape proposition (with one correction)** — the spectrum of a Hermitian circulant is a set of 120° samples of one cosine, $\lambda_j=c_0+2|c_1|\cos(\theta+2\pi j/3)$, but **this form holds trivially for any three generations** (three points, three unknowns, always solvable), so the "cosine shape" is a **free reparameterisation** rather than a constraint; (3) **the opening proposition** — writing the amplitude multiset as an ordered triple is equivalent to choosing an origin for the DFT characters, and the three choices give **exactly the same invariants**, so "opening" is a ℤ₃ **gauge degree of freedom** rather than information; (4) **the invariant proposition** — the invariant moduli space is **two-dimensional**, $(\eta,\ \delta\bmod 2\pi/3)$, and the Koide combination $Q=\tfrac13+\tfrac23\eta^{2}$ probes only the single direction $\eta$. Measurement on the charged leptons gives $\eta^{2}=1/2$ to within $3.3\times10^{-6}$.
+**Results.** The paper gives four mutually independent, verifiable propositions: (1) **the object proposition** — a mass operator that respects the three-ring structure must commute with the cyclic shift $S$, and "commuting with $S$" holds if and only if it is a **circulant matrix**; hence $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$, and ℤ₃-equivariance compresses 9 matrix entries into 3; (2) **the shape proposition (with one correction)** — the spectrum of a Hermitian circulant is a set of 120° samples of one cosine, $\lambda_j=c_0+2\lvert c_1\rvert \cos(\theta+2\pi j/3)$, but **this form holds trivially for any three generations** (three points, three unknowns, always solvable), so the "cosine shape" is a **free reparameterisation** rather than a constraint; (3) **the opening proposition** — writing the amplitude multiset as an ordered triple is equivalent to choosing an origin for the DFT characters, and the three choices give **exactly the same invariants**, so "opening" is a ℤ₃ **gauge degree of freedom** rather than information; (4) **the invariant proposition** — the invariant moduli space is **two-dimensional**, $(\eta,\ \delta\bmod 2\pi/3)$, and the Koide combination $Q=\tfrac13+\tfrac23\eta^{2}$ probes only the single direction $\eta$. Measurement on the charged leptons gives $\eta^{2}=1/2$ to within $3.3\times10^{-6}$.
 
 **Boundary and conclusion.** The paper also states two limitations that must be made explicit: **the cosine shape is free** (so the entire content of Koide collapses to **a single number** $\eta=1/\sqrt2$); and **absolute mass (the scale $c_0$) does not lie inside SRE**, while **only renormalization-group-invariant dimensionless combinations qualify as candidate targets**. The overall conclusion is registered as **case 15 of the discrete-closure law (G12)**: "three" and the functional form are given (discrete side, closed), while the value of $\eta$ and the scale are not (continuous side, requiring external input). All numerical verification in this paper **holds only within the SRE model**, and comparisons with charged-lepton masses are always stated as "structural consistency" rather than "numerical prediction".
 
@@ -81,14 +81,14 @@ SRE regards a physical object as a stable emergent state of a **binary self-orga
 
 **Definition 1 (nucleon skeleton $Y_3\ltimes\triangle_3$).** The skeleton is formed by **three** Y-shaped coherent cores closed into a **triangle**. Its vertex set and edge set are
 
-$$\mathcal{V}=\{c_0,c_1,c_2\}\cup\{L_{ij}:\ i,j\in\{0,1,2\}\},\qquad |\mathcal{V}|=12,$$
+$$\mathcal{V}=\{c_0,c_1,c_2\}\cup\{L_{ij}:\ i,j\in\{0,1,2\}\},\qquad \lvert \mathcal{V}\lvert =12,$$
 
 where $c_i$ is the **hub** of the $i$-th strand and $L_{ij}$ is the **ring leaf** at position $j$ of strand $i$. The edges fall into two classes:
 
 - **strand edges** (hub–leaf): $c_i\!-\!L_{ij}$, 3 per strand, 9 in total;
 - **ring edges** (leaf–leaf): ring $j$ is the triangle $\{L_{0j},L_{1j},L_{2j}\}$, 3 per ring, 9 in total.
 
-Hence $E=18$, $\beta_1=E-V+1=7$, $|\mathrm{Aut}|=36$ (proven, within-model); the spectral readings are $\rho=5.302775638$, $\lambda_2=1$, $\Pi_1=\lambda_2/\rho=0.188580485$.
+Hence $E=18$, $\beta_1=E-V+1=7$, $\lvert \mathrm{Aut}\rvert =36$ (proven, within-model); the spectral readings are $\rho=5.302775638$, $\lambda_2=1$, $\Pi_1=\lambda_2/\rho=0.188580485$.
 
 **Definition 2 (open/closed two states).** The **closed state** is the graph above, corresponding to the SRE proton state; the **open state** means removing one ring edge from the skeleton (here we fix the removal of $(L_{0r},L_{1r})$, $r=0$), so that $E=17$, $\beta_1=6$, corresponding to the neutron state.
 
@@ -115,7 +115,7 @@ Together these are equivalent to: **the three rings are a ℤ₃-torsor**. This 
 | $\mathrm{Aut}$ | the automorphism group of the skeleton |
 | $\mathrm{Circ}(n)$ | the space of $n$-th order circulant matrices, $\dim=n$ |
 | $\omega$ | the cube root of unity $e^{2\pi i/3}$ |
-| $\eta,\ \delta$ | the **amplitude ratio** and **phase** of the non-trivial component of the circulant operator: $c_1=|c_1|e^{i\theta}$, $\eta=|c_1|/c_0$ |
+| $\eta,\ \delta$ | the **amplitude ratio** and **phase** of the non-trivial component of the circulant operator: $c_1=\lvert c_1\rvert e^{i\theta}$, $\eta=\lvert c_1\rvert /c_0$ |
 | $Q$ | the **Koide combination** $Q=\dfrac{\sum m}{(\sum\sqrt m)^{2}}$ |
 | $\rho,\ \lambda_2,\ \Pi_1$ | spectral radius, second-smallest Laplacian eigenvalue, closure degree $\Pi_1=\lambda_2/\rho$ |
 | D1／D2／D3 | adjudication discipline: small-denominator rationals listed separately／angles may not serve as anchors／the main statistics use only irrational readings × clean targets |
@@ -138,11 +138,11 @@ Comparing with the notation of this paper, $a=\omega$, and $1+a+a^{2}=0$ corresp
 2. **Decomposition is DFT.** The method of symmetrical components (Fortescue) uses $a$ to decompose any three-phase signal into **positive-, negative- and zero-sequence** parts. Mathematically this decomposition is exactly the **third-order discrete Fourier transform**; its consequence is that every permutation-invariant, scale-invariant property of a three-phase system **can only** be determined by the amplitudes of these three components.
 3. **The cost of "opening" is zero.** Since "which is the first phase" is a convention, **writing the three phases as an ordered triple** **adds no information whatsoever** — and this is precisely the proposition proved in §6 of this paper (opening = gauge, not information).
 
-**Example 1 (cosine reparameterisation of three numbers, toy example).** Take the data $u=(1,\ 1.2,\ 0.7)$. Form the transform $z=\sum_k u_k\omega^{-k}$; measurement gives $|z|=0.435890$, $\arg z=-1.455835$ rad, so that
+**Example 1 (cosine reparameterisation of three numbers, toy example).** Take the data $u=(1,\ 1.2,\ 0.7)$. Form the transform $z=\sum_k u_k\omega^{-k}$; measurement gives $\lvert z\rvert =0.435890$, $\arg z=-1.455835$ rad, so that
 
-$$\bar u=\tfrac13\textstyle\sum_k u_k=0.966667,\qquad |c_1|=\tfrac{|z|}{3}=0.145297,\qquad \theta=-\arg z=1.455835\ \mathrm{rad}.$$
+$$\bar u=\tfrac13\textstyle\sum_k u_k=0.966667,\qquad \lvert c_1\lvert =\tfrac{\rvert z\lvert }{3}=0.145297,\qquad \theta=-\arg z=1.455835\ \mathrm{rad}.$$
 
-Substituting back into $u_k=\bar u+2|c_1|\cos\!\big(\theta+\tfrac{2\pi k}{3}\big)$ gives the multiset $\{1.000000,\ 1.200000,\ 0.700000\}$, consistent with the input (proven, within-model). Two points must be noted here first: (i) **any three numbers can be reparameterised in this way**, a triviality formally proved in Theorem 3; (ii) the **order** of the inverse output depends on the choice of origin (here the reconstructed order is $(1,\ 0.7,\ 1.2)$, different from the input arrangement), while **the multiset is unaffected** — and this is the simplest instance of the "opening = gauge" argument of §6.
+Substituting back into $u_k=\bar u+2\lvert c_1\rvert \cos\!\big(\theta+\tfrac{2\pi k}{3}\big)$ gives the multiset $\{1.000000,\ 1.200000,\ 0.700000\}$, consistent with the input (proven, within-model). Two points must be noted here first: (i) **any three numbers can be reparameterised in this way**, a triviality formally proved in Theorem 3; (ii) the **order** of the inverse output depends on the choice of origin (here the reconstructed order is $(1,\ 0.7,\ 1.2)$, different from the input arrangement), while **the multiset is unaffected** — and this is the simplest instance of the "opening = gauge" argument of §6.
 
 ### 2.4 Methodological discipline: the discrete-closure law (G12)
 
@@ -162,14 +162,14 @@ Fully enumerating the automorphisms of the closed-state and open-state skeletons
 
 **Table 2.** Skeleton invariants and three-ring orbit structure for the two states (proven, within-model).
 
-| State | $V$ | $E$ | $\beta_1$ | $|\mathrm{Aut}|$ | order-3 elements | order-2 elements | three-ring orbits |
+| State | $V$ | $E$ | $\beta_1$ | $\lvert \mathrm{Aut}\rvert$ | order-3 elements | order-2 elements | three-ring orbits |
 |---|---|---|---|---|---|---|---|
 | closed (proton) | 12 | 18 | 7 | **36** | **8** | 15 | **1 orbit: $\{0,1,2\}$** |
 | open (neutron) | 12 | 17 | 6 | **4** | **0** | 3 | **2 orbits: $\{0\}\mid\{1,2\}$** |
 
 In the closed state, the permutation induced by $\mathrm{Aut}$ on the three rings is **all six** (i.e. $S_3$); in the open state only two remain.
 
-Columns 4, 6 and 7 of **Table 2** are the source of every structural argument in this paper and must be checked one by one: for the closed state $|\mathrm{Aut}|=36=2^{2}\cdot3^{2}$, of which the **order-3 elements number 8** (Sylow-3 subgroup $\cong\mathbb{Z}_3\times\mathbb{Z}_3$); for the open state $|\mathrm{Aut}|$ falls to 4 and the **order-3 elements vanish**. The number of three-ring orbits changes from 1 to 2, the most vivid trace left by "closed → open" at the structural level.
+Columns 4, 6 and 7 of **Table 2** are the source of every structural argument in this paper and must be checked one by one: for the closed state $\lvert \mathrm{Aut}\rvert =36=2^{2}\cdot3^{2}$, of which the **order-3 elements number 8** (Sylow-3 subgroup $\cong\mathbb{Z}_3\times\mathbb{Z}_3$); for the open state $\lvert \mathrm{Aut}\rvert$ falls to 4 and the **order-3 elements vanish**. The number of three-ring orbits changes from 1 to 2, the most vivid trace left by "closed → open" at the structural level.
 
 ### 3.2 Explicit witness
 
@@ -187,7 +187,7 @@ The measured result is: edge-preserving = true, $\mathrm{ord}(\varphi)=3$ (prove
 
 > **Theorem 1 (ℤ₃-torsor structure of the three rings).** The three rings of the closed-state skeleton form a **ℤ₃-torsor**: there is a **cyclic order** among them, but **no absolute origin**; their only degree of freedom is an **overall phase shift**.
 
-*Proof.* Denote the three rings by the 3-element set $R=\{R_0,R_1,R_2\}$. By Proposition 1, $\langle\varphi\rangle\cong\mathbb{Z}_3$ acts on $R$; since $\varphi(R_j)=R_{j+1}$, the action is **transitive** (orbit $=R$). And since $|R|=3=|\langle\varphi\rangle|$, the stabiliser is trivial, so the action is **free**. A set acted on **freely and transitively** by a group $G$ is by definition a $G$-torsor: it carries the structure of a **principal homogeneous space** for $G$ — any two points are related by a unique $g\in G$, but **there is no base point fixed by the group action**. Taking $G=\mathbb{Z}_3$ gives the claim. $\square$
+*Proof.* Denote the three rings by the 3-element set $R=\{R_0,R_1,R_2\}$. By Proposition 1, $\langle\varphi\rangle\cong\mathbb{Z}_3$ acts on $R$; since $\varphi(R_j)=R_{j+1}$, the action is **transitive** (orbit $=R$). And since $\lvert R\rvert =3=\lvert \langle\varphi\rangle\rvert$, the stabiliser is trivial, so the action is **free**. A set acted on **freely and transitively** by a group $G$ is by definition a $G$-torsor: it carries the structure of a **principal homogeneous space** for $G$ — any two points are related by a unique $g\in G$, but **there is no base point fixed by the group action**. Taking $G=\mathbb{Z}_3$ gives the claim. $\square$
 
 Theorem 1 is the structural foundation of the entire paper. It gives the precise source of the shape of "three generations": **the three generations carry a ℤ₃ cyclic order, but no absolute origin** — the origin is precisely the overall phase shift, corresponding to the phase $\delta$ in the Koide parameterisation below.
 
@@ -248,7 +248,7 @@ This is not a language that has been picked, but a result **forced by the struct
 
 $$A=\begin{pmatrix}1 & 0.3e^{i40^\circ} & 0.3e^{-i40^\circ}\\[2pt] 0.3e^{-i40^\circ} & 1 & 0.3e^{i40^\circ}\\[2pt] 0.3e^{i40^\circ} & 0.3e^{-i40^\circ} & 1\end{pmatrix}.$$
 
-The matrix is **determined by only two real numbers** ($c_0$ and $|c_1|$, plus the phase $\theta$), whereas a $3\times3$ matrix has 9 entries in general. Its measured eigenvalues are
+The matrix is **determined by only two real numbers** ($c_0$ and $\lvert c_1\rvert$, plus the phase $\theta$), whereas a $3\times3$ matrix has 9 entries in general. Its measured eigenvalues are
 
 $$(0.436184,\ 1.104189,\ 1.459627)\quad(\text{ascending}),$$
 
@@ -281,11 +281,11 @@ This conclusion also explains the "**absence** of opening": once an origin is in
 
 ### 5.1 Spectral form
 
-**Proposition 4 (spectrum of a Hermitian circulant).** Let $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$ with $c_0\in\mathbb R$, $c_1=|c_1|e^{i\theta}$. Then the eigenvalues of $A$ are
+**Proposition 4 (spectrum of a Hermitian circulant).** Let $A=c_0\mathbb{1}+c_1S+\bar c_1S^{2}$ with $c_0\in\mathbb R$, $c_1=\lvert c_1\rvert e^{i\theta}$. Then the eigenvalues of $A$ are
 
-$$\lambda_j=c_0+c_1\omega^{j}+\bar c_1\omega^{-j}=c_0+2|c_1|\cos\!\Big(\theta+\frac{2\pi j}{3}\Big),\qquad j=0,1,2.$$
+$$\lambda_j=c_0+c_1\omega^{j}+\bar c_1\omega^{-j}=c_0+2\lvert c_1\rvert \cos\!\Big(\theta+\frac{2\pi j}{3}\Big),\qquad j=0,1,2.$$
 
-*Proof.* The eigenvectors of $S$ are the discrete Fourier basis $v_j=(1,\omega^{j},\omega^{2j})^{\mathsf T}/\sqrt3$, with eigenvalues $\omega^{j}$ ($j=0,1,2$). Any polynomial in $S$ shares these eigenvectors, so $A v_j=\big(c_0+c_1\omega^{j}+\bar c_1\omega^{-j}\big)v_j$. Using $\omega^{-j}=\overline{\omega^{j}}$, we get $c_1\omega^{j}+\bar c_1\omega^{-j}=2\,\mathrm{Re}\big(c_1\omega^{j}\big)=2|c_1|\cos(\theta+2\pi j/3)$. $\square$
+*Proof.* The eigenvectors of $S$ are the discrete Fourier basis $v_j=(1,\omega^{j},\omega^{2j})^{\mathsf T}/\sqrt3$, with eigenvalues $\omega^{j}$ ($j=0,1,2$). Any polynomial in $S$ shares these eigenvectors, so $A v_j=\big(c_0+c_1\omega^{j}+\bar c_1\omega^{-j}\big)v_j$. Using $\omega^{-j}=\overline{\omega^{j}}$, we get $c_1\omega^{j}+\bar c_1\omega^{-j}=2\,\mathrm{Re}\big(c_1\omega^{j}\big)=2\lvert c_1\rvert \cos(\theta+2\pi j/3)$. $\square$
 
 Numerical verification (6 random parameter sets against the analytic form): all Hermitian checks true, maximum error $1.1\times10^{-15}$ (proven, within-model).
 
@@ -295,11 +295,11 @@ The intuitive reading of **Proposition 4** is: **the three eigenvalues lie on th
 
 **Proposition 5 (real-symmetric degeneracy).** If $A$ is a real-symmetric circulant (i.e. $\theta=0$), its spectrum **always has two values**:
 
-$$\big(c_0+2|c_1|,\ \ c_0-|c_1|,\ \ c_0-|c_1|\big).$$
+$$\big(c_0+2\lvert c_1\rvert ,\ \ c_0-\lvert c_1\rvert ,\ \ c_0-\lvert c_1\rvert \big).$$
 
-*Proof.* At $\theta=0$, $\lambda_0=c_0+2|c_1|$, while $\lambda_1=c_0+2|c_1|\cos(2\pi/3)=c_0-|c_1|$ and $\lambda_2$ is the same (since $\cos(4\pi/3)=\cos(2\pi/3)$). $\square$
+*Proof.* At $\theta=0$, $\lambda_0=c_0+2\lvert c_1\rvert$, while $\lambda_1=c_0+2\lvert c_1\rvert \cos(2\pi/3)=c_0-\lvert c_1\rvert$ and $\lambda_2$ is the same (since $\cos(4\pi/3)=\cos(2\pi/3)$). $\square$
 
-Measured comparison: the real-symmetric choice $c_0=1,|c_1|=0.3$ gives the spectrum $(0.7,\,0.7,\,1.6)$, a **2+1** split; the complex phase $\theta=1$ gives the spectrum $(0.400668,\ 1.27515,\ 1.324181)$, a **1+1+1** split (proven, within-model).
+Measured comparison: the real-symmetric choice $c_0=1,\lvert c_1\rvert =0.3$ gives the spectrum $(0.7,\,0.7,\,1.6)$, a **2+1** split; the complex phase $\theta=1$ gives the spectrum $(0.400668,\ 1.27515,\ 1.324181)$, a **1+1+1** split (proven, within-model).
 
 > Proposition 5 directly answers "why a phase is needed": **the spectrum of a real-symmetric circulant degenerates structurally and cannot carry three distinct generations; for the three generations to be distinct the operator must be Hermitian rather than real-symmetric** (thereby giving the Hermitian form of Corollary 1 its necessity).
 
@@ -307,18 +307,18 @@ Measured comparison: the real-symmetric choice $c_0=1,|c_1|=0.3$ gives the spect
 
 ### 5.3 A correction that must be stated: the cosine shape is "free"
 
-**Theorem 3 (triviality of the shape).** The trigonometric form $\lambda_k=c_0+2|c_1|\cos(\theta+\tfrac{2\pi k}{3})$ has a solution for **any** three real numbers $\lambda_0,\lambda_1,\lambda_2$; that is, the form **contains no constraint whatsoever**.
+**Theorem 3 (triviality of the shape).** The trigonometric form $\lambda_k=c_0+2\lvert c_1\rvert \cos(\theta+\tfrac{2\pi k}{3})$ has a solution for **any** three real numbers $\lambda_0,\lambda_1,\lambda_2$; that is, the form **contains no constraint whatsoever**.
 
 *Proof.* Given the data $\lambda_k$, form
 
-$$\sum_k\lambda_k=3c_0,\qquad z:=\sum_k\lambda_k\,\omega^{k}=3|c_1|e^{-i\theta},$$
+$$\sum_k\lambda_k=3c_0,\qquad z:=\sum_k\lambda_k\,\omega^{k}=3\lvert c_1\rvert e^{-i\theta},$$
 
-i.e. $c_0=\overline{\lambda}$, $|c_1|=|z|/3$, $\theta=-\arg z$. The three unknowns ($c_0,|c_1|,\theta$) exactly match the three data, so generically the solution is unique and is given explicitly by the formulas above. $\square$
+i.e. $c_0=\overline{\lambda}$, $\lvert c_1\rvert =\lvert z\rvert /3$, $\theta=-\arg z$. The three unknowns ($c_0,\lvert c_1\rvert ,\theta$) exactly match the three data, so generically the solution is unique and is given explicitly by the formulas above. $\square$
 
 Measurement: taking 8 random sets of **arbitrary** three numbers, solving by the formulas above and substituting back to reconstruct, the maximum error is of order $10^{-15}$ (the companion script of this paper gives $5.11\times10^{-15}$, a preceding script $2.22\times10^{-15}$, the same order of magnitude) (proven, within-model).
 
 > **Correction (direct consequence of Theorem 3).** "Three points lie on one cosine" is **not** a constraint delivered by cyclicity, but the **standard reparameterisation of three numbers**. Hence saying "ℤ₃ gives the shape of Koide" is an **over-claim**. The **content** of Koide is not the shape but the number
-> $$\eta=\frac{|c_1|}{c_0}=\frac{1}{\sqrt{2}}\qquad(\text{measured }0.707104444\ \text{vs}\ 0.707106781,\ \text{deviation}\ -2.34\times10^{-6}).$$
+> $$\eta=\frac{\lvert c_1\rvert }{c_0}=\frac{1}{\sqrt{2}}\qquad(\text{measured }0.707104444\ \text{vs}\ 0.707106781,\ \text{deviation}\ -2.34\times10^{-6}).$$
 
 Thus the true contribution of ℤ₃ collapses to two items: **(a) why there are exactly 3 positions** (the torsor has size 3, not 2 or 4); **(b) why $\delta$ is gauge** (a torsor has no origin ⇒ the phase can only be taken mod $2\pi/3$). **The shape is trivial; "$\eta=1/\sqrt2$" is the number that genuinely awaits explanation** — and it belongs to the **continuous side** of G12.
 
@@ -343,8 +343,8 @@ Measurement: taking $\eta=1/\sqrt2$, $\delta=2/9$, the three representatives giv
 | representative (cyclic shift) | $Q$ | $R=(\lambda^{2}_{\max}-\lambda^{2}_{\min})/\sum\lambda^{2}$ |
 |---|---|---|
 | shift 0 | 0.666666666667 | 0.943349649589 |
-| shift 1 | 0.666666666667 ($|\Delta Q|=2.2\times10^{-16}$) | 0.943349649589 |
-| shift 2 | 0.666666666667 ($|\Delta Q|=0$) | 0.943349649589 |
+| shift 1 | 0.666666666667 ($\lvert \Delta Q\rvert =2.2\times10^{-16}$) | 0.943349649589 |
+| shift 2 | 0.666666666667 ($\lvert \Delta Q\rvert =0$) | 0.943349649589 |
 
 ⇒ **the three choices give three representatives of one and the same equivariance class.** Hence "opening" changes no SRE observable; it only decides "which generation is called the first" — **this is gauge (redundancy), not information**.
 
@@ -355,7 +355,7 @@ Measurement: taking $\eta=1/\sqrt2$, $\delta=2/9$, the three representatives giv
 | Level | Operation | Consequence |
 |---|---|---|
 | **(i) gauge level** | choosing an origin = ℤ₃ labelling | invariants **unchanged** (redundancy) — this is the level the original proposition refers to |
-| **(ii) physical level** | closed → open (cutting one ring edge) | $|\mathrm{Aut}|$ falls from 36 to 4, order-3 elements from 8 to 0: a **real** breaking ℤ₃→ℤ₂ that **changes** the accessible invariants |
+| **(ii) physical level** | closed → open (cutting one ring edge) | $\lvert \mathrm{Aut}\rvert$ falls from 36 to 4, order-3 elements from 8 to 0: a **real** breaking ℤ₃→ℤ₂ that **changes** the accessible invariants |
 
 **Analogy 5 (transposition of a score).** The **interval structure** of a melody is unchanged by an overall transposition — after transposition it is still "the same piece". Choosing an origin for the DFT characters is like **fixing the tonic**: it decides "which generation is the tonic" without changing the internal structure of the piece; whereas the physical-level "opening" of §6.2 (cutting a ring) is different, being like **rewriting the score itself** — the structure of the piece really changes.
 
@@ -428,27 +428,27 @@ The reading of **Table 9** is: **the quantities SRE can give internally all have
 
 ### 8.1 Analytic derivation
 
-**Theorem 4 (Koide relation).** Let $\lambda_k=c_0+2|c_1|\cos(\delta+\tfrac{2\pi k}{3})$ and $m_k\propto\lambda_k^{2}$. Then
+**Theorem 4 (Koide relation).** Let $\lambda_k=c_0+2\lvert c_1\rvert \cos(\delta+\tfrac{2\pi k}{3})$ and $m_k\propto\lambda_k^{2}$. Then
 
-$$Q=\frac{\sum_k m_k}{\big(\sum_k\sqrt{m_k}\big)^{2}}=\frac13+\frac23\eta^{2},\qquad \eta=\frac{|c_1|}{c_0}.$$
+$$Q=\frac{\sum_k m_k}{\big(\sum_k\sqrt{m_k}\big)^{2}}=\frac13+\frac23\eta^{2},\qquad \eta=\frac{\lvert c_1\rvert }{c_0}.$$
 
 *Proof.* From $\sum_k\cos(\delta+\tfrac{2\pi k}{3})=0$ and $\sum_k\cos^{2}(\delta+\tfrac{2\pi k}{3})=\tfrac32$ we directly get
 
-$$\sum_k\lambda_k=3c_0,\qquad \sum_k\lambda_k^{2}=3c_0^{2}+6|c_1|^{2}.$$
+$$\sum_k\lambda_k=3c_0,\qquad \sum_k\lambda_k^{2}=3c_0^{2}+6\lvert c_1\rvert ^{2}.$$
 
 Substituting into the definition of $Q$ (note $\sqrt{m_k}\propto\lambda_k$, so the denominator $=\big(\sum\lambda_k\big)^{2}$):
 
-$$Q=\frac{\sum_k\lambda_k^{2}}{\big(\sum_k\lambda_k\big)^{2}}=\frac{3c_0^{2}+6|c_1|^{2}}{9c_0^{2}}=\frac13+\frac23\Big(\frac{|c_1|}{c_0}\Big)^{2}. \square$$
+$$Q=\frac{\sum_k\lambda_k^{2}}{\big(\sum_k\lambda_k\big)^{2}}=\frac{3c_0^{2}+6\lvert c_1\rvert ^{2}}{9c_0^{2}}=\frac13+\frac23\Big(\frac{\lvert c_1\rvert }{c_0}\Big)^{2}. \square$$
 
-The point of **Theorem 4** is: $Q$ **depends only on $\eta=|c_1|/c_0$ and not at all on the phase $\delta$**. This is a direct consequence of the ℤ₃ invariance property — by Proposition 8, $Q$ probes only the $\eta$ direction in the moduli space. In particular,
+The point of **Theorem 4** is: $Q$ **depends only on $\eta=\lvert c_1\rvert /c_0$ and not at all on the phase $\delta$**. This is a direct consequence of the ℤ₃ invariance property — by Proposition 8, $Q$ probes only the $\eta$ direction in the moduli space. In particular,
 
-$$Q=\tfrac23\iff\eta^{2}=\tfrac12\iff\frac{|c_1|}{c_0}=\frac{1}{2\sqrt2}.$$
+$$Q=\tfrac23\iff\eta^{2}=\tfrac12\iff\frac{\lvert c_1\rvert }{c_0}=\frac{1}{2\sqrt2}.$$
 
 **Note 4 (one piece of empirical content).** "Taking $m_k\propto\lambda_k^{2}$ (i.e. $a=\sqrt m$ rather than $m$)" is the **empirical content of Koide**, equivalent to the testable structural hypothesis that "**the square root of the mass operator** is ℤ₃-equivariant". This paper **has not proved** it (see Appendix B item 2).
 
 ### 8.2 The equivalence chain: five ways of writing one constraint
 
-$$Q=\tfrac23\ \Longleftrightarrow\ \eta^{2}=\tfrac12\ \Longleftrightarrow\ |A|=\tfrac{1}{\sqrt2}\ \Longleftrightarrow\ \text{angle with }(1,1,1)=45^\circ\ \Longleftrightarrow\ Q\ \text{at the midpoint of the C–S interval}\ [\tfrac13,1].$$
+$$Q=\tfrac23\ \Longleftrightarrow\ \eta^{2}=\tfrac12\ \Longleftrightarrow\ \lvert A\lvert =\tfrac{1}{\sqrt2}\ \Longleftrightarrow\ \text{angle with }(1,1,1)=45^\circ\ \Longleftrightarrow\ Q\ \text{at the midpoint of the C–S interval}\ [\tfrac13,1].$$
 
 **Note 5.** The five items of this chain are **five languages for the same constraint**, **not five independent pieces of evidence**. They must not be listed side by side as mutually corroborating evidence.
 
@@ -698,9 +698,9 @@ The two scripts are mutually independent implementations and share the project's
 | Proposition 5 (§5.2) | PART 2 | $(0.7,0.7,1.6)$／$(0.400668,1.27515,1.324181)$ |
 | Example 2 (§4.2) | v2 Ex.2 | $(0.436184,\ 1.104189,\ 1.459627)$ |
 | Theorem 3 (§5.3) | PART 3／v2 Ex.1 | 8 sets of arbitrary triples, reconstruction error $5.11\times10^{-15}$ |
-| Example 1 (§2.3) | v2 Ex.1 | $\bar u=0.966667$, $|c_1|=0.145297$, $\theta=1.455835$ rad |
+| Example 1 (§2.3) | v2 Ex.1 | $\bar u=0.966667$, $\lvert c_1\rvert =0.145297$, $\theta=1.455835$ rad |
 | Proposition 8 (§7.1) | PART 4 | $Q$ range $\le1.6\times10^{-15}$; $R$ varies with $\delta$ |
-| Proposition 6 (§6.1) | PART 4 | $|\Delta Q|\le2.2\times10^{-16}$ |
+| Proposition 6 (§6.1) | PART 4 | $\lvert \Delta Q\rvert \le2.2\times10^{-16}$ |
 | Theorem 4, Table 10 (§8) | PART 5 | $Q=0.666664463$, $\eta^{2}=0.499996695$, $44.9999^\circ$ |
 | Theorem 1, Table 2 (§3) | PART 6 | closed $36/8/1$; open $4/0/2$; $\varphi$ edge-preserving, order 3 |
 | Proposition 2, Table 3 (§3.4) | PART 7 | vertex $1/2$; edge $1/3\mid2/3$ |

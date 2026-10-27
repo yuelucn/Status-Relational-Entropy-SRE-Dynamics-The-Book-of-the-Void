@@ -61,12 +61,12 @@ $$
 $$
 \exists K_0 \in \mathbb{N}^+ \quad \text{s.t.} \quad \sup_{n \in \mathbb{N}^+} \max_{v \in V_n} \text{Degree}(v) \le K_0 \ll n
 $$
-2. 第二算子的计算内核依靠遍历一阶邻域 $\mathcal{N}(v_f)$。由上述界，其邻域基数满足 $|\mathcal{N}(v_f)| \le K_0$。
+2. 第二算子的计算内核依靠遍历一阶邻域 $\mathcal{N}(v_f)$。由上述界，其邻域基数满足 $\lvert \mathcal{N}(v_f)\rvert  \le K_0$。
 3. 对任意历史邻域顶点 $v_m \in \mathcal{N}(v_f)$，使用优化哈希表查找求公共邻域交集 $\Omega_1 = \mathcal{N}(v_f) \cap \mathcal{N}(v_m)$，渐近开销上界为 $O(\text{Degree}(v_f) + \text{Degree}(v_m)) \le 2 \cdot K_0$。
-4. 沿单条边评估完整二步图游走干涉的代数开销随交集基数线性增长：$O(|\Omega_1|) \le O(K_0)$。
+4. 沿单条边评估完整二步图游走干涉的代数开销随交集基数线性增长：$O(\lvert \Omega_1\rvert ) \le O(K_0)$。
 5. 对活跃前沿做求和，单次维度扩张步执行的全部初等代数运算总次数 $\mathcal{A}(n)$ 满足：
 $$
-\mathcal{A}(n) \le |\mathcal{N}(v_f)| \times \left( 2K_0 + K_0 \right) \le 3K_0^2
+\mathcal{A}(n) \le \lvert \mathcal{N}(v_f)\rvert  \times \left( 2K_0 + K_0 \right) \le 3K_0^2
 $$
 6. 记 $C = 3K_0^2$。由于 $K_0$ 和 $n$ 在代数上相互独立，存在演化基准 $N_0 = 1$，对所有 $n > N_0$，均有 $\mathcal{A}(n) \le C \cdot 1$。根据渐近上界标准定义：
 $$
@@ -173,7 +173,7 @@ $$
 
 **定义（自由能差）.** 对通道 $c$（$D_c\ge1$），定义
 
-$$F_c=\ln\frac{\mathfrak{B}_c}{\Lambda D_c},\qquad \mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$$
+$$F_c=\ln\frac{\mathfrak{B}_c}{\Lambda D_c},\qquad \mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$$
 
 **定理 1（热浴恒等）.** 算子 2 的剪枝概率满足
 
@@ -217,10 +217,10 @@ $$
 **证明**
 1. 由算子 2 的剪枝规则，通道翻转概率可**恒等**改写为热浴形式（推导见 §7.0）：
    　$p_c=\sigma(-F_c)$，$F_c=\ln\big(\mathfrak{B}_c/(\Lambda D_c)\big)$，
-   　$\mathfrak{B}_c=|\tilde{\mathcal{E}}_c|+e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$，温度取 1。
+   　$\mathfrak{B}_c=\lvert \tilde{\mathcal{E}}_c\rvert +e^{\operatorname{sgn}\tilde{\mathcal{E}}_c}$，温度取 1。
    该式是代数恒等，不含任何统计假设。
 2. 当 $\tilde{\mathcal{E}}_{\text{local}} > 0$：$\mathfrak{B}=\tilde{\mathcal{E}}+e$，势垒取上支，$F$ 抬升，$p<\tfrac12$，通道优先存活——相干凝聚相。
-3. 当 $\tilde{\mathcal{E}}_{\text{local}} < 0$：$\mathfrak{B}=|\tilde{\mathcal{E}}|+e^{-1}$，势垒取下支，$F$ 压低，$p>\tfrac12$，通道优先剪除——阻挫相。
+3. 当 $\tilde{\mathcal{E}}_{\text{local}} < 0$：$\mathfrak{B}=\lvert \tilde{\mathcal{E}}\rvert +e^{-1}$，势垒取下支，$F$ 压低，$p>\tfrac12$，通道优先剪除——阻挫相。
 4. 当 $\tilde{\mathcal{E}}_{\text{local}} = 0$：$\operatorname{sgn}0=0$ 故 $\mathfrak{B}=1$，$F=-\ln(\Lambda D)$，$p=1-\dfrac{1}{1+\Lambda D}$——绝对信息真空相。
 5. 三支由同一个分段函数 $\mathfrak{B}(\tilde{\mathcal{E}})$ 给出；$e$ 与 $e^{-1}$ 分别是 $+1$ 与 $-1$ 个热单位（$T=1$）的势垒偏移，**不是玻尔兹曼因子的乘性修正**。共存面 $F=0$ 即 $\Lambda_c=\mathfrak{B}/D$——转捩中心是 $F$ 的零集，不再是外部标定参数。
 
@@ -317,16 +317,16 @@ $$
 
 ## 11. P0级紧急修订：拓扑权重 $w_\alpha$ 显式映射及其SRE统计力学起源
 #### 定理9（拓扑权重 $w_\alpha$ 显式映射与调和衰减定理）
-在高度交叠多环路多边形网络内，每个独立基础环路基元 $L_\alpha$ 的显式拓扑权重定义为环路长度的倒数：$w_\alpha = \frac{1}{|L_\alpha|}$。取值范围严格落在区间 $(0,\,\frac13]$，其取值由局域相干控制的调和衰减给出，属权重拟设，而非变分极值。
+在高度交叠多环路多边形网络内，每个独立基础环路基元 $L_\alpha$ 的显式拓扑权重定义为环路长度的倒数：$w_\alpha = \frac{1}{\lvert L_\alpha\rvert }$。取值范围严格落在区间 $(0,\,\frac13]$，其取值由局域相干控制的调和衰减给出，属权重拟设，而非变分极值。
 
 **证明**
-1. 根据状态-关系熵动力学局域因果原理，自旋信息沿长路径传播产生的相位损耗正比于该路径的拓扑边计数（环路长度$|L_\alpha|$）。
+1. 根据状态-关系熵动力学局域因果原理，自旋信息沿长路径传播产生的相位损耗正比于该路径的拓扑边计数（环路长度$\lvert L_\alpha\rvert$）。
 2. 前沿受到的局域权重，是全部交叠历史基础环路贡献的叠加：$\mathcal{W}_{\text{total}}=\sum_\alpha w_\alpha$。
-3. 长环路对前沿边的相干控制强度随环路长度做调和级数衰减（$\propto 1/|L_\alpha|$），故取权重为环路长度倒数：
+3. 长环路对前沿边的相干控制强度随环路长度做调和级数衰减（$\propto 1/\lvert L_\alpha\rvert$），故取权重为环路长度倒数：
 $$
-w_\alpha = \frac{1}{|L_\alpha|}.
+w_\alpha = \frac{1}{\lvert L_\alpha\rvert }.
 $$
-4. 边界分析：代数图论中，最短非平凡闭合环路为三角形，满足 $|L_\alpha|\ge3$。三角形环路取得权重最大值 $w_\alpha=\frac13$；当长环路长度趋向热力学极限 $|L_\alpha|\to\infty$，权重收敛到零。取值范围严格为 $(0,\,\frac13]$。
+4. 边界分析：代数图论中，最短非平凡闭合环路为三角形，满足 $\lvert L_\alpha\rvert \ge3$。三角形环路取得权重最大值 $w_\alpha=\frac13$；当长环路长度趋向热力学极限 $\lvert L_\alpha\rvert \to\infty$，权重收敛到零。取值范围严格为 $(0,\,\frac13]$。
 
 ◼ 定理9证毕。
 

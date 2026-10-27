@@ -63,7 +63,7 @@ Each key term below is marked with a 【Remark】 indicating its model-internal 
 | **Coherent core** | When the network has evolved to scale `N`, the rigid kernel within it whose internal order is stable and no longer degrades; the electron resides within this kernel. 【Remark: model-internal concept, corresponding to the rigid kernel of network evolution in simulations, not a real detectable structure】 |
 | **Z₂ holonomy (Z₂ winding phase)** | The sign factor accumulated by a closed path traversing one full circuit. On a binary network, for any closed loop formed by four nodes, the product of the four edge-relation values is strictly `+1` or `−1`; the value `−1` indicates that the traversal experienced one spatial flip. This is the algebraic essence of electron spin-1/2 and of 4π (restoration after two turns). 【Remark: model-internal algebraic-structure analogy used to interpret the sign factor of spin-1/2; not a direct measurement of real spin】 |
 | **Möbius double cover (4π)** | The electron must rotate two full turns (720°) to be restored, a property analogous to the Möbius band; in signed-network language, this is a structure that "closes only after two steps". 【Remark: model-internal geometric analogy (analogous to the Möbius band), not a real spacetime structure】 |
-| **DCF (discrete closed-chain complex / double-cover four-state complex)** | A triple `(|V|, |E|, β₁)` describing a complex of discrete closed loops, denoting vertex count, edge count, and first Betti number, respectively; `β₁` characterizes the number of independent closed loops. The basal structure of the electron takes the value `(8, 12, 5)`. 【Remark: model-internal counting tool; (8, 12, 5) describes the topological type of a simulated object, not a measured geometric result of the real electron】 |
+| **DCF (discrete closed-chain complex / double-cover four-state complex)** | A triple $(\lvert V\rvert, \lvert E\rvert, \beta_1)$ describing a complex of discrete closed loops, denoting vertex count, edge count, and first Betti number, respectively; `β₁` characterizes the number of independent closed loops. The basal structure of the electron takes the value `(8, 12, 5)`. 【Remark: model-internal counting tool; (8, 12, 5) describes the topological type of a simulated object, not a measured geometric result of the real electron】 |
 | **Spectral-gap ratio α = λ₂/λ_max** | The ratio of the second-smallest eigenvalue (the second-lowest collective vibration mode) to the largest eigenvalue of the relation-matrix spectrum, used to measure the relative stiffness of the softest collective mode of the system. The α of the electron equals precisely the fine-structure constant **1/137.036**. 【Remark: model-internal spectral feature; its agreement with 1/137.036 is an internal reproduction of the model and does not mean that α has been "measured" by this model; the real α remains determined by experiment】 |
 | **MDS inversion** (multi-dimensional scaling) | Starting from the pairwise distance matrix of objects, reconstruct their coordinates in a space of given dimension. In SRE, the spatial shape of the electron emerges from the relation matrix through this route, rather than being pre-given. 【Remark: model-internal geometric construction used to reconstruct coordinates from the relation matrix, which presupposes no real space; the coordinates obtained are a model-internal relational embedding, not a measurement of real positions】 |
 | **Renormalization / coarse-graining (RG)** | Merging a cluster of nodes into a single super-node, thereby examining the system at a coarser scale; SRE uses it to roll the network upward layer by layer, establishing the micro–meso–macro correspondence. 【Remark: model-internal multi-scale up-rolling operation; the micro–meso–macro correspondence is a model picture, not a settled claim about real levels】 |
@@ -223,9 +223,9 @@ Compared with $\alpha = 0.0072973526$, the **error is 0.0015%**.
 
 **Topological meaning of n=60:**
 
-$$n = 60 = \dim(E) \times \dim(F) = |E| \times \beta_1 = 12 \times 5$$
+$$n = 60 = \dim(E) \times \dim(F) = \lvert E\rvert  \times \beta_1 = 12 \times 5$$
 
-where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell-equation validation: the D_edge of Maxwell.py defines a cell complex of an 8-ring plus 4 skip-2 chords ($|V|=8$, $|E|=12$, $\beta_1=5$). The angular spacing is $\frac{4\pi}{60} = \frac{\pi}{15}$, and $15 = 3 \times 5$, indicating that the discretization precision of the Möbius band is determined by the dimensional structure of the Maxwell-equation circuit diagram.【Naming correction: the source code labeled this graph as $K_{3,5}$, but the true complete bipartite graph $K_{3,5}$ has 15 edges and $\beta_1=8$; the correct name of this complex is the double-cover four-state complex (DCF), whose origin appears in Section 6.】
+where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell-equation validation: the D_edge of Maxwell.py defines a cell complex of an 8-ring plus 4 skip-2 chords ($\lvert V\rvert =8$, $\lvert E\rvert =12$, $\beta_1=5$). The angular spacing is $\frac{4\pi}{60} = \frac{\pi}{15}$, and $15 = 3 \times 5$, indicating that the discretization precision of the Möbius band is determined by the dimensional structure of the Maxwell-equation circuit diagram.【Naming correction: the source code labeled this graph as $K_{3,5}$, but the true complete bipartite graph $K_{3,5}$ has 15 edges and $\beta_1=8$; the correct name of this complex is the double-cover four-state complex (DCF), whose origin appears in Section 6.】
 
 ### 4.2 Path 2: the four-state eigen-spectrum frequency formula
 
@@ -235,13 +235,13 @@ $$\Delta\lambda = \sqrt{\text{Tr}(M)^2 - 4\det(M)} = \alpha \cdot \frac{\lambda_
 
 where $M$ is the $2 \times 2$ cross-spectral response matrix, and $\lambda_1, \lambda_2, \lambda_3$ are the first three nonzero eigenvalues of the causal-association tensor $\mathbf{B}$.
 
-**Cross-spectral matrix M:** take $M = \text{diag}(\lambda_1, \lambda_2)$; then $\text{Tr}(M) = \lambda_1 + \lambda_2$, $\det(M) = \lambda_1 \lambda_2$, which, upon substitution, gives $\Delta\lambda = |\lambda_1 - \lambda_2|$; the frequency formula thus becomes:
+**Cross-spectral matrix M:** take $M = \text{diag}(\lambda_1, \lambda_2)$; then $\text{Tr}(M) = \lambda_1 + \lambda_2$, $\det(M) = \lambda_1 \lambda_2$, which, upon substitution, gives $\Delta\lambda = \lvert \lambda_1 - \lambda_2\lvert$; the frequency formula thus becomes:
 
-$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
+$$\lvert \lambda_1 - \lambda_2\rvert  = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
 
 **Four-state eigen-spectrum:** the boundary nodes drive the global manifold through transitions among four discrete eigen-spectrum states by switching between High ($\rho = 10$) and Low ($\rho = 2$):
 
-$$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamma \cdot |\rho_A - \rho_B| + \lambda_0 \\ \lambda_3 = \frac{\lambda_2}{4(1+\kappa)} \end{cases}$$
+$$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamma \cdot \lvert \rho_A - \rho_B\rvert  + \lambda_0 \\ \lambda_3 = \frac{\lambda_2}{4(1+\kappa)} \end{cases}$$
 
 | Modulation state | $\rho_{\text{total}}$ | $\lambda_1$ | $\lambda_2 - \lambda_3$ |
 |---|---|---|---|
@@ -250,7 +250,7 @@ $$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamm
 | (L,H) | 12 | $144\beta$ | $-8\gamma + \lambda_0'$ |
 | (L,L) | 4 | $16\beta$ | $0 + \lambda_0'$ |
 
-**Choosing the (L,L) symmetric state:** in the lowest-energy symmetric state (L,L) ($\rho_A = \rho_B = 2$), the chiral term $\gamma \cdot |\rho_A - \rho_B| = 0$, so that $\lambda_2 = \lambda_0$ directly exposes the vacuum residual:
+**Choosing the (L,L) symmetric state:** in the lowest-energy symmetric state (L,L) ($\rho_A = \rho_B = 2$), the chiral term $\gamma \cdot \lvert \rho_A - \rho_B\rvert  = 0$, so that $\lambda_2 = \lambda_0$ directly exposes the vacuum residual:
 
 | Parameter | Formula | (L,L) value |
 |---|---|---|
@@ -293,7 +293,7 @@ $$\lambda_{\text{wave}} \equiv \oint_{\mathcal{M}} ds = \int_0^{4\pi} \left\|\fr
 
 **Perturbation expansion:** the arc length is an even function of $w$, so the first derivative is zero. The second-order Taylor expansion:
 
-$$\text{arc}(w) = 4\pi + \frac{1}{2}\frac{d^2 \text{arc}}{dw^2}\bigg|_{w=0} w^2 + O(w^4), \qquad \frac{d^2 \text{arc}}{dw^2}\bigg|_{w=0} = \pi$$
+$$\text{arc}(w) = 4\pi + \frac{1}{2}\frac{d^2 \text{arc}}{dw^2}\bigg\lvert _{w=0} w^2 + O(w^4), \qquad \frac{d^2 \text{arc}}{dw^2}\bigg\rvert _{w=0} = \pi$$
 
 that is, $\text{arc}(w) \approx 4\pi + \frac{\pi}{2}w^2 + O(w^4)$.
 
@@ -818,7 +818,7 @@ This chapter addresses a naturally extending question: **if the electron is the 
 | No. | Premise | Content | Basis |
 |---|---|---|---|
 | P1 | fixed point | electron = the unique, stable, noise-robust fixed point of the sparse operator **R** over the coherent core of the binary self-organizing network | P0 / R2 / R3 |
-| P2 | basal structure | the basal complex of the electron is the three-dimensional cube **Q₃**: `\|V\|=8`, `\|E\|=12`, `β₁=5`, i.e., `12×5=60` | P0 uniqueness enumeration |
+| P2 | basal structure | the basal complex of the electron is the three-dimensional cube **Q₃**: $\lvert V\rvert=8$, $\lvert E\rvert=12$, `β₁=5`, i.e., `12×5=60` | P0 uniqueness enumeration |
 | P3 | spin | spin-1/2 = **Möbius 4π double cover / Z₂ holonomy**: 8 basal vertices × 2 sheets | Fork A / §9 |
 | P4 | space | space emerges as three-dimensional coordinates (60×3) from the relation matrix via the **MDS inversion** | §9.4 |
 | P5 | stability criterion | stable fixed point = configuration of **structural-tension minimization** (the dissipative version of R merges the minimal holonomy-tension pair at each step) | R2 / R3 |
@@ -832,7 +832,7 @@ The basal state space of a single electron takes the combination of each vertex 
 
 $$
 \mathcal{U} = \{ (v, \sigma) : v \in \{0,1\}^3,\ \sigma\in\{+1,-1\} \},
-\qquad |\mathcal{U}| = 8 \times 2 = 16 .
+\qquad \lvert \mathcal{U}\rvert  = 8 \times 2 = 16 .
 $$
 
 where `v` are the 8 vertices of Q₃ (three-bit triples) and `σ` are the two sheets of the double cover (corresponding to spin ↑/↓). 16 is the total number of basal states distinguishable "for one electron" at the intrinsic level. **Key structural property — faithful cover:** on the double-cover relation matrix M₁₆, the "relational patterns to all other units" (row vectors) of the 16 units are **pairwise distinct** (numerical validation: the 16 rows are mutually distinct). This indicates that the 16 cells are mutually distinguishable in the relational sense and the cover is **faithful**.
@@ -902,7 +902,7 @@ Enabling §13.3 Pauli, §13.5 capacity, §13.6 order, and §13.7 Hund simultaneo
 **One numerical coincidence worth recording** (co-directional indication, not proof):
 
 $$
-\sum_{n=1}^{4} 2n^{2} = 2+8+18+32 = 60 = |E|\times\beta_1 .
+\sum_{n=1}^{4} 2n^{2} = 2+8+18+32 = 60 = \lvert E\lvert \times\beta_1 .
 $$
 
 That is, **the basal count 60 of the electron equals exactly the total electron capacity of the first four principal shells (n=1..4, i.e., 1s through 4f)**. In accordance with the established honesty principle of this project, this coincidence is positioned as a "co-directional indication": the appearance of consistency between 60 in the electron basal structure (|E|×β₁=12×5) and "the total closed-shell capacity up to 4f" suggests an intrinsic connection between the basal count and the shell levels, but it **does not constitute a proof** and is not automatically extrapolated to real physics.
@@ -928,7 +928,7 @@ python _sre_orbital_assignment.py   # outputs sre_electron_orbital_assignment_re
 | V4 | Hund = tension minimization | at all k sites of ℓ=1, 2 the minimal pairing cost = the theoretical value max(0,k−(2ℓ+1)) ✓ |
 | V5 | Madelung order | `1s 2s 2p 3s 3p 4s 3d 4p …` (open item, demonstration only)|
 | V6 | periodic-table reconstruction | noble gases Z=2,10,18,36,54,86,118 are all complete subshells; potassium `4s¹`, iron `4s²3d⁶` ✓ |
-| V7 | 60 coincidence | Σ_{n=1..4} 2n² = 2+8+18+32 = 60 = |E|×β₁ (co-directional indication) ✓ |
+| V7 | 60 coincidence | $\sum_{n=1}^{4} 2n^2 = 2+8+18+32 = 60 = \lvert E\rvert\times\beta_1$ (co-directional indication) ✓ |
 
 **Contextual limitation:** the "✓" of V1–V7 indicates only that the model-internal enumeration and assertions pass, i.e., the SRE logic is self-consistent; it **does not constitute a comparison against or proof of real orbital-filling experiments**.
 

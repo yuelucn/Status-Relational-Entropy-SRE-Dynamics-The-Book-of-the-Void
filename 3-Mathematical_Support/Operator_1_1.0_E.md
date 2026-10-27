@@ -30,15 +30,15 @@ This family satisfies transitivity-compatibility over the directed system:
 $\partial_{m\rightarrow k} \circ \partial_{n\rightarrow m} = \partial_{n\rightarrow k} \quad (\forall\, n \le m \le k)$.
 
 Define the full historical formal-symbol ring as the category-theoretic **inductive limit** of this directed-inclusion system:
-\[
-\mathcal{R}_\infty = \varinjlim \mathcal{R}_n = \left( \bigoplus_{n=1}^\infty \mathcal{R}_n \right) \Big/ \sim
-\]
+$$
+\mathcal{R}_\infty = \mathrm{lim}_{\longrightarrow} \mathcal{R}_n = \left( \bigoplus_{n=1}^\infty \mathcal{R}_n \right) \Big/ \sim
+$$
 
 **Equivalence-relation rule ($\sim$)** for formal polynomials inside this limit ring:
 Given two symbolic polynomials $f\in \mathcal{R}_a$, $g\in \mathcal{R}_b$ belonging to finite-order rings, $f$ and $g$ are equivalent ($f\sim g$) **if and only if** there exists a sufficiently large common evolution-order $N \ge \max(a,b)$ such that their images under canonical embeddings inside the higher-order sub-ring $\mathcal{R}_N$ are identical:
-\[
+$$
 \partial_{a\rightarrow N}(f) \equiv \partial_{b\rightarrow N}(g) \quad \text{within } \mathcal{R}_N.
-\]
+$$
 
 ### 2.2 Global Evaluation Homomorphism and Matrix-Space Definitions
 Based on limit ring $\mathcal{R}_\infty$, under unconditional real-symmetry constraints ($A^T=A,\,B^T=B$), we define algebraic spaces and morphisms:
@@ -46,10 +46,10 @@ Based on limit ring $\mathcal{R}_\infty$, under unconditional real-symmetry cons
 1. **Discrete-valued square-matrix space ($\mathcal{M}_n \subseteq \{-1,1\}^{n\times n}$)**: Matrix space of purely binary real scalars. Its top-left sub-matrix unconditionally inherits constant numerical values from the prior step and contains no indeterminates.
 2. **Formal symbolic square-matrix space ($\mathcal{M}_{n+1}[\mathbf{x}_{n+1}, y_{n+1}] \subseteq \big(\mathbb{R}[\mathcal{V}_{n+1}]\big)^{(n+1)\times(n+1)}$)**: Space of formal-polynomial parameter matrices.
 3. **Global evaluation homomorphism ($\Phi: \mathcal{R}_\infty \rightarrow \mathbb{R}$)**: Algebraic morphism preserving addition and multiplication. Hard range constraints apply for all historical or current-step variables:
-\[
+$$
 \Phi(x_{(k,m)}) \in \{-1,1\}\quad (\forall\,k\in\mathbb{N}^+,\;\forall\,m\in\mathcal{I}_{k-1}),\quad
 \Phi(y_{k}) \in \{-1,1\}\quad (\forall\,k\in\mathbb{N}^+).
-\]
+$$
 
 ---
 
@@ -66,9 +66,9 @@ Derived to adaptively judge generalized multi-loop systems admitting self-loops 
 > Theorem summary: A single circuit inside a generalized graph is topologically frustrated **if and only if** the discrete algebraic product over all edge weights along that closed loop equals $-1$.
 
 Let realized matrix $M_n\in\mathcal{M}_n$ correspond to generalized graph $G$. Suppose $G$ contains a closed loop of length $L$ with vertex sequence $v_1 \rightarrow v_2 \rightarrow \dots \rightarrow v_L \rightarrow v_1$. The necessary-and-sufficient condition for this circuit to be frustrated reads:
-\[
+$$
 \prod_{m=1}^{L-1} M_n(v_m, v_{m+1}) \cdot M_n(v_L, v_1) = -1.
-\]
+$$
 
 #### Corollary 1: Global Algebraic-Frustration-Basis Theorem for Complex Superposed Systems
 > Theorem summary: A multi-loop system with self-loops is globally frustration-free **if and only if** every generator in its generalized cycle-space basis yields product $+1$.
@@ -81,7 +81,7 @@ If any generator evaluates to $-1$, algebraic independence of basis generators f
 
 #### 3.3 Numerical-Matrix Demonstration for Complex Multi-Loop Frustration
 Consider this third-order real-valued matrix:
-\[
+$$
 M_3 =
 \begin{pmatrix}
 1 & 1 & 1 \\
@@ -89,7 +89,7 @@ M_3 =
 1 & -1 & -1
 \end{pmatrix}
 \in \mathcal{M}_3.
-\]
+$$
 Test against generalized cycle-space basis:
 1. Evaluate product for fundamental circuit $1\rightarrow2\rightarrow3\rightarrow1$:
 $M_3(1,2)\cdot M_3(2,3)\cdot M_3(3,1)=1\cdot(-1)\cdot 1 = -1$. Violates condition 1 → circuit frustrated.
@@ -98,10 +98,10 @@ $M_3(1,2)\cdot M_3(2,3)\cdot M_3(3,1)=1\cdot(-1)\cdot 1 = -1$. Violates conditio
 By the algebraic-frustration-basis theorem, basis generators contain $-1$; the whole system falls into deep frustration.
 
 Evaluate the two-step-walk path-interference entry $(M_3^2)_{23}$ via row-column inner-product expansion:
-\[
+$$
 (M_3^2)_{23}=M_3(2,1)M_3(1,3)+M_3(2,2)M_3(2,3)+M_3(2,3)M_3(3,3)
-= \\ 1\cdot 1+(-1)(-1)+(-1)(-1)=3.
-\]
+= 1\cdot 1+(-1)(-1)+(-1)(-1)=3.
+$$
 The result yields deterministic real scalar $3$. Numerically demonstrates residual local net-bias arising from multi-loop superposition and self-loop sign entanglement which cannot be cancelled to zero.
 
 ---
@@ -112,22 +112,22 @@ Absolute iteration origin is constant matrix $M_1 = \begin{pmatrix}1\end{pmatrix
 
 Full name: Local Graph Expansion Operator; notation: $\mathcal{G}_{n\rightarrow n+1}$.
 It acts strictly upon one discrete realized square matrix with mapping:
-\[
+$$
 \mathcal{G}_{n\rightarrow n+1}: \mathcal{M}_n \longrightarrow \mathcal{M}_{n+1}[\mathbf{x}_{n+1}, y_{n+1}].
-\]
+$$
 
 ### 4.2 Matrix-Expansion Structural Equation and Explicit-Vector Definition
 For any input realized matrix $M_n\in\mathcal{M}_n$, the expansion operator outputs a unique formal polynomial block-matrix:
-\[
+$$
 \mathcal{G}_{n\rightarrow n+1}(M_n)=
 \begin{pmatrix}
 M_n & \mathbf{x}_{n+1} \\
 \mathbf{x}_{n+1}^T & y_{n+1}
 \end{pmatrix}.
-\]
+$$
 
 Frontier-coupling formal column vector:
-\[
+$$
 \mathbf{x}_{n+1}=
 \begin{bmatrix}
 x_{(n+1,1)} \\
@@ -136,7 +136,7 @@ x_{(n+1,2)} \\
 x_{(n+1,n)}
 \end{bmatrix}
 \in \big(\mathbb{R}[\mathcal{V}_{n+1}]\big)^n.
-\]
+$$
 
 The formal symbolic matrix enforces read-only subspace inheritance:
 $M_{n+1}[1:n,\;1:n] \equiv M_n$.
@@ -146,14 +146,14 @@ The $n+1$ algebraic indeterminates inside frontier set $\mathcal{V}_{n+1}$ are m
 1. **Input initial state**: Starting constant $M_1=\begin{pmatrix}1\end{pmatrix}\in\mathcal{M}_1$.
 2. **Operator invocation**: Call $\mathcal{G}_{1\rightarrow 2}(M_1)$. Declare second-order formal-variable set $\mathcal{V}_2=\{x_{(2,1)},\;y_2\}$.
 3. **Output formal structure**: Substitute into structural equation ($n=1$, vector degenerates to scalar component). Resulting second-order formal matrix:
-\[
+$$
 M_2(x_{(2,1)},\,y_2)=
 \begin{pmatrix}
 1 & x_{(2,1)} \\
 x_{(2,1)} & y_2
 \end{pmatrix}
 \in \mathcal{M}_2[\mathbf{x}_2,\,y_2].
-\]
+$$
 This example illustrates how operator preserves fixed historical constants in top-left block while appending parameterized rows-columns at frontier.
 
 ### 4.4 Operator-Mapping-Properties Proof (Injective but Non-Surjective)
@@ -163,11 +163,11 @@ This example illustrates how operator preserves fixed historical constants in to
 **Proof**:
 1. **Injectivity**:
 Take two distinct input matrices $M_n^{(1)}\neq M_n^{(2)} \in \mathcal{M}_n$. There exists some index pair $\exists i,j\in\mathcal{I}_n$ such that $M_n^{(1)}(i,j)\neq M_n^{(2)}(i,j)$. By read-only-subspace inheritance property:
-\[
+$$
 \mathcal{G}_{n\rightarrow n+1}(M_n^{(1)})[i,j]=M_n^{(1)}(i,j)
 \neq M_n^{(2)}(i,j)
 =\mathcal{G}_{n\rightarrow n+1}(M_n^{(2)})[i,j].
-\]
+$$
 Hence $\mathcal{G}_{n\rightarrow n+1}(M_n^{(1)}) \neq \mathcal{G}_{n\rightarrow n+1}(M_n^{(2)})$. Injectivity is proven.
 
 2. **Non-surjectivity**:
@@ -186,28 +186,28 @@ $S_n=\sum_{i=1}^n\sum_{j=1}^n \Phi_{\text{full}}(M_n(i,j))$,
 spectral-radius invariant: $\rho(\Phi_{\text{full}}(M_n))$.
 
 Recurrence relation for global total-sum via block-matrix expansion:
-\[
+$$
 S_{n+1}=S_n + 2\sum_{k=1}^n \Phi_{\text{full}}(x_{(n+1,k)})+\Phi_{\text{full}}(y_{n+1}).
-\]
+$$
 
 Substitute full-connection assignment:
-\[
+$$
 S_{n+1}=S_n + 2n+1.
-\]
+$$
 
 Starting from initial-condition $S_1=1$:
-\[
+$$
 S_n=1+\sum_{k=1}^{n-1}(2k+1)=n^2
 \;\Longrightarrow\;
 \lim_{n\rightarrow\infty} S_n=\lim_{n\rightarrow\infty}n^2=\infty.
-\]
+$$
 
 Under this assignment $M_n$ reduces to all-ones real matrix $J_n\in\{1\}^{n\times n}$. Its spectral-radius:
-\[
+$$
 \rho(\Phi_{\text{full}}(M_n))=n
 \;\Longrightarrow\;
 \lim_{n\rightarrow\infty}\rho(\Phi_{\text{full}}(M_n))=\infty.
-\]
+$$
 
 **Divergence conclusion**: Forcing fixed full-connection assignments at expansion frontier yields global scalar-sum diverging in $O(n^2)$ quadratic order and spectral-radius diverging linearly $O(n)$. This justifies algebraically keeping formal-symbol matrices unevaluated, to be resolved only by downstream operators.
 
@@ -219,7 +219,7 @@ Under this assignment $M_n$ reduces to all-ones real matrix $J_n\in\{1\}^{n\time
 
 **Proof**:
 Formally multiply block-structured formal matrix:
-\[
+$$
 M_{n+1}^2=
 \begin{pmatrix}
 M_n & \mathbf{x}_{n+1} \\
@@ -229,43 +229,43 @@ M_n & \mathbf{x}_{n+1} \\
 M_n & \mathbf{x}_{n+1} \\
 \mathbf{x}_{n+1}^T & y_{n+1}
 \end{pmatrix}.
-\]
+$$
 
 Extract last diagonal entry of product matrix:
-\[
+$$
 (M_{n+1}^2)_{n+1,\,n+1}
 =\left(\sum_{m=1}^{n} M_{n+1}(n+1,\,m)^2\right)
 + M_{n+1}(n+1,\,n+1)^2.
-\]
+$$
 
 Substitute formal-symbol components:
-\[
+$$
 (M_{n+1}^2)_{n+1,\,n+1}
 =\left(\sum_{m=1}^{n} x_{(n+1,m)}^2\right)+y_{n+1}^2.
-\]
+$$
 
 Apply global evaluation homomorphism $\Phi$:
-\[
+$$
 \Phi\big((M_{n+1}^2)_{n+1,\,n+1}\big)
 =\left(\sum_{m=1}^{n}\Phi(x_{(n+1,m)})^2\right)
 +\Phi(y_{n+1})^2.
-\]
+$$
 
 Hard binary-range constraints:
 $\Phi(x_{(n+1,m)})\in\{-1,1\},\;\Phi(y_{n+1})\in\{-1,1\}$.
 Any element squared in this binary-set equals real constant $1$.
-\[
+$$
 \Phi(x_{(n+1,m)})^2 \equiv 1,\quad
 \Phi(y_{n+1})^2 \equiv 1.
-\]
+$$
 
 Substitute constants back to summation:
-\[
+$$
 \Phi\big((M_{n+1}^2)_{n+1,\,n+1}\big)
 =\left(\sum_{m=1}^{n} 1\right)+1
 =\underbrace{1+1+\dots+1}_{n\;\text{terms}} +1
 = n+1.
-\]
+$$
 
 This reduction holds for arbitrary positive integer $n\in\mathbb{N}^+$, independent of specific assignments for indeterminates. Theorem 3 proven. ◼
 

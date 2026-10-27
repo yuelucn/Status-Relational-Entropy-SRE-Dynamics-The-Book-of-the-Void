@@ -181,7 +181,7 @@ And $1-(-1)^{k}=2\mathbb{1}[k\ \text{odd}]$. $\square$
 
 **Remark 2.** This is equivalent to the project's existing closed form $\mu_k=(2+w)-2\cos\frac{2\pi k}{n}-w(-1)^{k}$ ([3] §3.4) at $c=1$; Proposition 1 merely separates $c$ explicitly so that **channels** can be compared in §7.
 
-**Numerical check of Proposition 1** (Appendix A, PART 1a): for $n=6,8,10,20,30,60$, the maximum deviation between the closed form and direct diagonalisation is $\le6.2\times10^{-15}$; $\mu_0=0$ holds identically; the two branches have $n/2$ modes each (for $n=60$, $|$even$|=|$odd$|=30$) (proven, within-model).
+**Numerical check of Proposition 1** (Appendix A, PART 1a): for $n=6,8,10,20,30,60$, the maximum deviation between the closed form and direct diagonalisation is $\le6.2\times10^{-15}$; $\mu_0=0$ holds identically; the two branches have $n/2$ modes each (for $n=60$, $|$even$\lvert =\rvert$odd$|=30$) (proven, within-model).
 
 Proposition 1 immediately yields **two structural facts**, which will serve in §7 as the two criteria screening the "source channel":
 
@@ -245,7 +245,7 @@ $$\lambda_2(w)=2-2\cos\frac{4\pi}{n}\qquad(\text{independent of }w),\qquad \lamb
 
 **Proposition 3 (counting $n$-fold covers).** Let $G$ be a finite connected graph with first Betti number $\beta_1$. Then the number of $\mathbb{Z}_n$ principal covers of $G$ is
 
-$$\bigl|H^{1}(G;\mathbb{Z}_n)\bigr|=n^{\beta_1}.$$
+$$\bigl\lvert H^{1}(G;\mathbb{Z}_n)\bigr\rvert =n^{\beta_1}.$$
 
 *Proof.* $H^{1}(G;\mathbb{Z}_n)\cong\mathrm{Hom}\big(\pi_1(G),\mathbb{Z}_n\big)$, and the free part of $\pi_1(G)$ has rank $\beta_1$, hence $\lvert\mathrm{Hom}(\mathbb{Z}^{\beta_1},\mathbb{Z}_n)\rvert=n^{\beta_1}$. $\square$
 
@@ -359,7 +359,7 @@ The wording put forward by the user in round 32 is "**an evolutionary logic that
 
 **Measurement** (Appendix A, PART 7b):
 
-$$\bigl|\mathbf{X}(\phi{+}2\pi,w)-\mathbf{X}(\phi,-w)\bigr|=0,\qquad \bigl|\mathbf{X}(\phi{+}4\pi,w)-\mathbf{X}(\phi,w)\bigr|=1.1\times10^{-15}\ (\text{proven, within-model}).$$
+$$\bigl\lvert \mathbf{X}(\phi{+}2\pi,w)-\mathbf{X}(\phi,-w)\bigr\rvert =0,\qquad \bigl\lvert \mathbf{X}(\phi{+}4\pi,w)-\mathbf{X}(\phi,w)\bigr\rvert =1.1\times10^{-15}\ (\text{proven, within-model}).$$
 
 ### 6.3 The three sides are one and the same kind of statement
 

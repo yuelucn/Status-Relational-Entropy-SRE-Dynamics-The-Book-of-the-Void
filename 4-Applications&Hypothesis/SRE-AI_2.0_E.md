@@ -127,7 +127,7 @@ The alternative adopts a two-layer design:
 **Differentiable loss—heat kernel trace relative distance** (inside `loss_of`):
 
 $$
-L_{\text{spec}} = \operatorname{mean}_{t \in \{1.0, 2.0\}} \frac{|\operatorname{tr}(e^{-t L_0'}) - \operatorname{tr}(e^{-t L_0})|}{\max(\operatorname{tr}(e^{-t L_0}), 10^{-30})}
+L_{\text{spec}} = \operatorname{mean}_{t \in \{1.0, 2.0\}} \frac{\lvert \operatorname{tr}(e^{-t L_0'}) - \operatorname{tr}(e^{-t L_0})\rvert }{\max(\operatorname{tr}(e^{-t L_0}), 10^{-30})}
 $$
 
 The heat kernel trace $\operatorname{tr}(e^{-t L}) = \sum_i e^{-t \lambda_i}$ is computed via `chebyshev_functional`—fully differentiable. Key design detail: $L_0$ is **detached** (converted to Python float as a constant), so the gradient of $L_{\text{spec}}$ cannot interfere with the inversion direction of edge weights $m$; $L_0'$ is **not detached**, and gradients flow through $L_0' \leftarrow P \leftarrow Z$ back to SoftAggPooler's parameters.
@@ -527,7 +527,7 @@ The goal of this section is to give you enough information to independently dete
 
 ### 8.3 lam_h — $L_{\text{hom}}$ Weight (default 1.0)
 
-**What it is**: The weight of the soft rank difference $|\operatorname{tr} h(L_1') - \operatorname{tr} h(L_1)|$, constraining the $\beta_1$ closure between coarse and fine levels.
+**What it is**: The weight of the soft rank difference $\lvert \operatorname{tr} h(L_1') - \operatorname{tr} h(L_1)\rvert$, constraining the $\beta_1$ closure between coarse and fine levels.
 
 **When to increase**: SRE classification accuracy on UC3 is below baseline—the model's `soft_rank` may predict incorrect $\beta_1$ on some graphs.
 

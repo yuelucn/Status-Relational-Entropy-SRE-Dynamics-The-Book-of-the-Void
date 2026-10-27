@@ -1,4 +1,4 @@
-﻿# Rigorous Reconstruction of Maxwell's Field Equations via Purely Dimensionless Graph Cohomology and Global Evolution Step
+# Rigorous Reconstruction of Maxwell's Field Equations via Purely Dimensionless Graph Cohomology and Global Evolution Step
 **Version**: 2.1 (Absolute Axiomatic Invariant & Symplectic Closure Edition)
 
 > Remark: This manuscript belongs to the SRE underlying 0-State pure-dimensionless ontological-layer paper. No external empirical physical constants are imported. All universal constants herein emerge endogenously as algebraic invariants from discrete causal-network graph-cohomology operations. **This manuscript does not perform mapping toward SI engineering units. The SI observational-mapping-anchor mechanism is documented in the companion electrodynamics paper v1.1-rev, which constitutes an additional engineering-conversion layer built upon the ontological layer.**
@@ -60,7 +60,7 @@ $$
 \mathbf{P}_{\mathcal{E}} \equiv \mathbf{D}_{edge} \left(\mathbf{D}_{edge}^T \mathbf{D}_{edge}\right)^{\dagger} \mathbf{D}_{edge}^T, \quad \mathbf{P}_{\mathcal{F}} \equiv \mathbf{C}_{cycle} \left(\mathbf{C}_{cycle} \mathbf{C}_{cycle}^T\right)^{\dagger} \mathbf{C}_{cycle}
 $$
 
-Under the extreme test scenario of a single isolated vertex completely stripped of directed edges ($|\mathcal{E}| = 0$), the mutual-intersection kernel contracts to an empty-matrix set ($\mathbf{\Psi}_{\text{light}} \equiv \mathbf{0}$). Substituting this condition into the above equation yields:
+Under the extreme test scenario of a single isolated vertex completely stripped of directed edges ($\lvert \mathcal{E}\rvert  = 0$), the mutual-intersection kernel contracts to an empty-matrix set ($\mathbf{\Psi}_{\text{light}} \equiv \mathbf{0}$). Substituting this condition into the above equation yields:
 $$
 \mathbf{E}_S = \mathbf{P}_{\mathcal{E}}(\mathbf{0}) \equiv \mathbf{0}, \quad \mathbf{B}_{S+1/2} = \mathbf{P}_{\mathcal{F}}(\mathbf{0}) \equiv \mathbf{0}
 $$
@@ -132,7 +132,7 @@ $$
 
 Crucially, the algebraic stability of the $\text{Null}(\mathbf{L}^{(1)})$ base-alignment mode is guaranteed fully invariant via the zero-th Betti number ($\beta_0 = 1$) protection of the connected-component topology across all swept-parameter frameworks.
 
-| Topology Paradigm | Nodes $|\mathcal{V}|$ | Edges $|\mathcal{E}|$ | Swept Parameter Space | Max Residual Bounds | Matrix Invariant Protection |
+| Topology Paradigm | Nodes $\lvert\mathcal{V}\rvert$ | Edges $\lvert\mathcal{E}\rvert$ | Swept Parameter Space | Max Residual Bounds | Matrix Invariant Protection |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | Regular Planar Mesh | 16 | 24 | $k=1 \dots 5, \Delta z=0.02$ | $2.842171 \times 10^{-14}$ | Connected via Betti $\beta_0 = 1$ |
 | 1D Single-Ring Circuit | 12 | 12 | $k=1 \dots 5, \Delta z=0.05$ | $0.000000 \times 10^{0}$ | Connected via Betti $\beta_0 = 1$ |

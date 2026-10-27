@@ -18,14 +18,14 @@ To eliminate overlapping write contention across asynchronous execution layers w
 ### 1.1 Localized Horizon and Boundary Overlap Perimeters
 Let the global graph chain complex grid be partitioned across asynchronous distributed compute slices into $m_g$ mutually intersecting sub-domains. We denote a specific localized partition subdomain as $\Omega_{\alpha}$.
 * **The Local Horizon Population Ceiling ($N_K$)**: Enforced natively by the Global Degree Saturation Theorem of the antecedent Operator 2-Batch, the maximum cardinality of active vertices contained within any standalone sub-domain is strictly deadlocked to a system-level fixed invariant constant:
-  $$N_K = |\Omega_{\alpha}| \le K_0 \ll n$$
+  $$N_K = \lvert \Omega_{\alpha}\rvert  \le K_0 \ll n$$
   This boundary restriction ensures that the single-step mathematical operations of all subsequent algebraic valves are decoupled from full-network node population inflation ($n$).
 * **The Interleaved Boundary Overlap Perimeter ($\partial \Omega_{\alpha \beta}$)**: We define the shared topological boundary edge set between adjacent concurrent slices $\text{Actor}_{\alpha}$ and $\text{Actor}_{\beta}$ as $\partial \Omega_{\alpha \beta} \equiv \Omega_{\alpha} \cap \Omega_{\beta}$. This subspace represents the localized 1-chain channels possessing multi-actor read-write privileges.
 
 ### 1.2 Algebraic Characterization of the Write-Contention Variance Tensor ($\mathbf{V}_{\text{write}}$)
 When multiple distributed actors issue simultaneous override instructions to the shared perimeter channels $\partial \Omega_{\alpha \beta}$ without barrier alignments, the binary spin configuration matrix suffers high-frequency step fluctuations along the temporal axis due to non-uniform pulse-step velocities. 
 
-Rather than blocking these collisions, Operator 8 permits the real-time occurrence of write contentions and formalizes the discrete polarity differentials into a symmetric **Write-Contention Variance Tensor $\mathbf{V}_{\text{write}} \in \mathbb{R}^{M_K \times M_K}$**, where $M_K = |\partial \Omega_{\alpha \beta}| \le N_K$ represents the localized boundary channel cardinality.
+Rather than blocking these collisions, Operator 8 permits the real-time occurrence of write contentions and formalizes the discrete polarity differentials into a symmetric **Write-Contention Variance Tensor $\mathbf{V}_{\text{write}} \in \mathbb{R}^{M_K \times M_K}$**, where $M_K = \lvert \partial \Omega_{\alpha \beta}\rvert  \le N_K$ represents the localized boundary channel cardinality.
 
 ### 1.3 The Local Trace Correction Micro-operator ($\mu_{\text{trace}}$) and Mother Pool Projection
 Operator 8 rejects global coordinator nodes. Instead, it embeds an independent, self-consistent **Local Trace Correction Micro-operator $\mu_{\text{trace}}$** within the internal subspace of each localized Actor slice. 
@@ -104,7 +104,7 @@ The lock-free convective rheology implemented by Operator 8 completely shatters 
 
 ### 4.2 Localized Polynomial Complexity Clamping
 Because the Global Degree Saturation Theorem enforced by the antecedent Operator 2-Batch rigidly limits the maximum internal horizon population of any individual partition subdomain to a standalone finite constant:
-$$N_K = |\Omega_{\alpha}| \le K_0 \ll n$$
+$$N_K = \lvert \Omega_{\alpha}\rvert  \le K_0 \ll n$$
 The total count of elementary scalar floating-point operations executed by Operator 8 to track the micro-operator $\mu_{\text{trace}}$ and assemble the Valve Convective Flux Tensor $\mathbf{\Phi}_{\text{valve}}$ scales strictly as a quadratic polynomial with respect to the localized boundary channel cardinality $M_K$.
 
 Since the distributed actor layer executes these routines concurrently across decoupled processing pipelines, the leading-order temporal complexity of the overarching Phase 4 convergence segment is tightly clamped within the localized bound:

@@ -52,7 +52,7 @@ The dormancy probability $p_{ij}^{(n)}$ for lattice point $(i,j)$ at step $n$ is
 
 The coherent-tension inner product for lattice point $(i,j)$ on the matrix intersection manifold is defined:
 $$
-E_{\mathrm{local}}(i,j)=\left|\sum_{k=1}^{n}S_{ik}\cdot S_{kj}\right|
+E_{\mathrm{local}}(i,j)=\left\lvert \sum_{k=1}^{n}S_{ik}\cdot S_{kj}\right\rvert 
 $$
 Smaller absolute values indicate stronger cancellation of positive-negative polarities, corresponding to higher local geometric frustration; such links tend to degenerate into dormant edge states.
 

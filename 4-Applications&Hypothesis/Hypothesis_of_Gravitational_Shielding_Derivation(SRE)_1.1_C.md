@@ -176,8 +176,8 @@ $$
 手性项与主吸引项（Rank=4）之比：
 
 $$
-\mathcal{R}\equiv\frac{|\Gamma_\mathrm{chiral}|}{2\alpha_\mathrm{scale}\mathcal{W}_{ij}/r^2}
-=\frac{\xi(z)\,\big|\sin(\cdot)\big|}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
+\mathcal{R}\equiv\frac{\lvert \Gamma_\mathrm{chiral}\rvert }{2\alpha_\mathrm{scale}\mathcal{W}_{ij}/r^2}
+=\frac{\xi(z)\,\big\lvert \sin(\cdot)\big\rvert }{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
 \;\xrightarrow[\ \sin=\pm1\ ]{}\;
 \frac{\xi(z)}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
 $$
@@ -199,7 +199,7 @@ $$
 要求某半径 $r$ 处 $a_\mathrm{SRE}=0$（忽略均匀项）：
 
 $$
-\xi^{*}=\frac{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}{\big|\sin(\cdot)\big|}
+\xi^{*}=\frac{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}{\big\lvert \sin(\cdot)\big\rvert }
 \;\xrightarrow[\ \sin=1\ ]{}\;
 2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)
 $$
@@ -425,7 +425,7 @@ $$S\ \longrightarrow\ (1-\rho)S+\rho\,\mathrm{diag}(S)$$
 
 mock 还有两个必须说明的技术点：
 
-- **构造阻尼**：位移法 mock 的绝对 $f\sigma_8$ 被压低约 44%（位移的非线性阻尼，$|\Psi|_\mathrm{rms}\approx6.4\,\mathrm{Mpc}$ 与网格步长 $9.86\,\mathrm{Mpc}$ 同量级）。由于压低是**平滑的乘性因子**，它不影响振荡振幅 $A$ 的回收，只影响绝对幅度。
+- **构造阻尼**：位移法 mock 的绝对 $f\sigma_8$ 被压低约 44%（位移的非线性阻尼，$\lvert \Psi\rvert _\mathrm{rms}\approx6.4\,\mathrm{Mpc}$ 与网格步长 $9.86\,\mathrm{Mpc}$ 同量级）。由于压低是**平滑的乘性因子**，它不影响振荡振幅 $A$ 的回收，只影响绝对幅度。
 - **偏置必须匹配**：mock 的偏置取 $b=2.0$（由数据自校准 $b=\sqrt{1.675}/0.6475\approx2.0$），星系数按 cap 逐一匹配实测值。若 mock 用 $b=0.5$，协方差的信号部分会低估最多 $(2.0/0.5)^4\approx256$ 倍，$\sigma_{f\sigma_8}$ 会被低估约 10 倍，从而伪造出 $\chi^2/\mathrm{dof}\approx78$ 的假象——这是本项目已排除的一个陷阱。
 
 ### 9.7 全局拟合与 95% 下界
@@ -436,7 +436,7 @@ $$\hat A=\frac{\sqrt{B_1'^2+B_2'^2}}{s_8}$$
 
 **为什么不用 $\hat A$ 直接当上限**：$\hat A$ 是正定幅度估计量，纯噪声下也会给出非零值（Rice 分布）。因此必须给出频率学派的上限：
 
-$$A_{95}=\frac{|\hat B|+r_{95}}{s_8},\qquad r_{95}=1.645\,/\sqrt{\lambda_\mathrm{min}}$$
+$$A_{95}=\frac{\lvert \hat B\rvert +r_{95}}{s_8},\qquad r_{95}=1.645\,/\sqrt{\lambda_\mathrm{min}}$$
 
 这里 $\lambda_\mathrm{min}$ 是"把 $s_8$ 边缘化之后"的 2×2 振幅信息矩阵的最小特征值，$r_{95}$ 就是沿**最弱约束方向**的单侧 95%（1.645$\sigma$）半宽。物理上，$A_{95}$ 回答的是："在 95% 置信下，手性振幅最大能是多少。"
 
@@ -589,16 +589,16 @@ $$
 
 ### 11.3 可达性的定量界（可屏蔽比例上限）
 
-设边界壳层 $\Omega_\partial$ 有 $|V_\partial|$ 个节点、$|E_\partial|$ 条边。算子 10 要求保留一棵生成树（$|V_\partial|-1$ 条边），故**可休眠边数**
+设边界壳层 $\Omega_\partial$ 有 $\lvert V_\partial\rvert$ 个节点、$\lvert E_\partial\rvert$ 条边。算子 10 要求保留一棵生成树（$\lvert V_\partial\rvert -1$ 条边），故**可休眠边数**
 
 $$
-N_\text{gate}\ \le\ |E_\partial|-(|V_\partial|-1)
+N_\text{gate}\ \le\ \lvert E_\partial\lvert -(\rvert V_\partial\lvert -1)
 $$
 
 **可屏蔽通道比例上限**
 
 $$
-\boxed{\ \frac{N_\text{gate}}{|E_\partial|}\ \le\ 1-\frac{|V_\partial|-1}{|E_\partial|}\ =\ 1-\frac{2}{\langle k\rangle}\ }
+\boxed{\ \frac{N_\text{gate}}{\lvert E_\partial\rvert }\ \le\ 1-\frac{\lvert V_\partial\rvert -1}{\lvert E_\partial\rvert }\ =\ 1-\frac{2}{\langle k\rangle}\ }
 $$
 
 （$\langle k\rangle$ 为边界平均度）。例：$\langle k\rangle=4$ ⇒ 每次最多屏蔽 **50%** 边界通道；$\langle k\rangle=6$ ⇒ 上限 67%。

@@ -204,9 +204,9 @@ Compared to $\alpha = 0.0072973526$, the **error is $0.0015\%$**.
 
 ### 4.7 Topological Significance of n=60
 
-$$n = 60 = \dim(E) \times \dim(F) = |E| \times \beta_1 = 12 \times 5$$
+$$n = 60 = \dim(E) \times \dim(F) = \lvert E\rvert  \times \beta_1 = 12 \times 5$$
 
-where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell equation verification: Maxwell.py's D_edge defines a cell complex of 8-cycle + 4 skip-2 chords ($|V|=8$, $|E|=12$, $\beta_1=5$).
+where the dimensions come from the **double-cover four-state complex (DCF complex)** used in the SRE Maxwell equation verification: Maxwell.py's D_edge defines a cell complex of 8-cycle + 4 skip-2 chords ($\lvert V\rvert =8$, $\lvert E\rvert =12$, $\beta_1=5$).
 
 > **Nomenclature correction**: The source code labels this graph as $K_{3,5}$, but a true complete bipartite graph $K_{3,5}$ has 15 edges and $\beta_1=8$, which does not match D_edge. The correct designation is **double-cover four-state complex (DCF complex)**, whose dimensional structure is independently derived from the Möbius double-cover four-state axioms (see §7.5 Fork A Gap 1).
 
@@ -234,17 +234,17 @@ Taking $M = \text{diag}(\lambda_1, \lambda_2)$:
 
 $$\text{Tr}(M) = \lambda_1 + \lambda_2, \quad \det(M) = \lambda_1 \lambda_2$$
 
-$$\Delta\lambda = \sqrt{(\lambda_1 + \lambda_2)^2 - 4\lambda_1\lambda_2} = |\lambda_1 - \lambda_2|$$
+$$\Delta\lambda = \sqrt{(\lambda_1 + \lambda_2)^2 - 4\lambda_1\lambda_2} = \lvert \lambda_1 - \lambda_2\lvert$$
 
 Substituting into the frequency formula:
 
-$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
+$$\lvert \lambda_1 - \lambda_2\rvert  = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
 
 ### 5.3 Four-State Eigen-Spectrum
 
 By switching between High ($\rho = 10$) and Low ($\rho = 2$), the boundary nodes drive the global manifold to transition among four discrete eigen-spectrum states:
 
-$$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamma \cdot |\rho_A - \rho_B| + \lambda_0 \\ \lambda_3 = \frac{\lambda_2}{4(1+\kappa)} \end{cases}$$
+$$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamma \cdot \lvert \rho_A - \rho_B\rvert  + \lambda_0 \\ \lambda_3 = \frac{\lambda_2}{4(1+\kappa)} \end{cases}$$
 
 | Modulation State | $\rho_{\text{total}}$ | $\lambda_1$ | $\lambda_2 - \lambda_3$ |
 |---|---|---|---|
@@ -263,7 +263,7 @@ In the lowest-energy symmetric state (L,L) ($\rho_A = \rho_B = 2$):
 | $\lambda_2$ | $\gamma \cdot 0 + \lambda_0$ | $\lambda_0 = 0.006420$ |
 | $\lambda_3$ | $\lambda_0 / (4(1+\kappa))$ | $0.000878$ |
 
-Reason for selecting the symmetric state: the chirality term $\gamma \cdot |\rho_A - \rho_B| = 0$, so $\lambda_2 = \lambda_0$ directly exposes the vacuum remnant.
+Reason for selecting the symmetric state: the chirality term $\gamma \cdot \lvert \rho_A - \rho_B\rvert  = 0$, so $\lambda_2 = \lambda_0$ directly exposes the vacuum remnant.
 
 ### 5.5 Expanding $\lambda_2 + \lambda_3$
 
@@ -277,7 +277,7 @@ $$= \lambda_0 \cdot \frac{4(1+\kappa) + 1}{4(1+\kappa)} = \lambda_0 \cdot \frac{
 
 Substituting the (L,L) values and Eq. (2) into Eq. (1):
 
-$$|16\beta - \lambda_0| = \alpha \cdot \frac{16\beta}{\lambda_0 \cdot \frac{5+4\kappa}{4+4\kappa}}$$
+$$\lvert 16\beta - \lambda_0\rvert  = \alpha \cdot \frac{16\beta}{\lambda_0 \cdot \frac{5+4\kappa}{4+4\kappa}}$$
 
 Solving for $\alpha$:
 
@@ -408,7 +408,7 @@ The convergence of the three paths supports the self-consistency of $\alpha$ wit
 
 ### 7.3 Bridging Role of n=60
 
-$$n = 60 = \dim(E) \times \dim(F) = |E| \times \beta_1 = 12 \times 5$$
+$$n = 60 = \dim(E) \times \dim(F) = \lvert E\rvert  \times \beta_1 = 12 \times 5$$
 
 The DCF complex is the Maxwell equation verification graph (https://doi.org/10.5281/zenodo.22119957), and the Möbius band is the topological structure of light (https://doi.org/10.5281/zenodo.21025053). $n = 60$ appears in both paths, forming a bridge between the circuit graph (Maxwell) and the light topology (Möbius).
 
@@ -432,7 +432,7 @@ Precisely solving the crossing point $\text{gap}(M_n) = \alpha$ gives $n_\alpha 
 
 To close the three gaps exposed by Tier 0, Fork A (discrete primitive theory) axiomatic derivation is introduced:
 
-**Gap 1 (Complex derivation → closed)**: From axioms A1 (four-state space) + A2 (Möbius double cover 4$\pi$) + A3 (refresh loop) + R1 (channels = states + holonomy), $(|V|, |E|, \beta_1, n) = (8, 12, 5, 60)$ is independently derived. The sole new assumption is the R1 composition rule.
+**Gap 1 (Complex derivation → closed)**: From axioms A1 (four-state space) + A2 (Möbius double cover 4$\pi$) + A3 (refresh loop) + R1 (channels = states + holonomy), $(\lvert V\rvert , \lvert E\lvert , \beta_1, n) = (8, 12, 5, 60)$ is independently derived. The sole new assumption is the R1 composition rule.
 
 **Gap 2 (Observable dictionary → closed, dictionary-level)**: The relation $\alpha = \lambda_2 / \lambda_{\max} = v/c$ is established—the refresh rate ratio of the softest non-trivial mode (electron phase mode) to the hardest mode (photon mode) on the residual manifold state graph, which is precisely the fine structure constant (Bohr semantics: $v/c = \alpha$). The soft-mode topological protection theorem guarantees that $\lambda_2$ is exactly independent of the twist channel weight $w$.
 

@@ -12,7 +12,7 @@
 
 > **The three corrections of v1.2 over v1.1** (from what the "10 random equations" stress test exposed empirically):
 > 1. **The $K_f$ criterion of Operator 13.4 changed from "single term" to "tail sum"** (§13.4) — the original criterion truncates too early when the coefficients decay geometrically; the $\ln$ kernel yields $K_f=1$ while the tail still exceeds $\gamma$;
-> 2. **Zero-mode stripping is upgraded from "exclusive to singular kernels" to "mandatory whenever kernel expansion is used"** (§13.5) — for the Stieltjes kernel the analytic ellipse semi-axis is $a_{\max}=1.142 < |\xi_0|=1.536$, so the series **diverges** at the zero mode, and the higher the order the more the error explodes ($8.1\!\times\!10^{-1}\to5.0\!\times\!10^{5}$ as $K{:}2\to32$);
+> 2. **Zero-mode stripping is upgraded from "exclusive to singular kernels" to "mandatory whenever kernel expansion is used"** (§13.5) — for the Stieltjes kernel the analytic ellipse semi-axis is $a_{\max}=1.142 < \lvert \xi_0\lvert =1.536$, so the series **diverges** at the zero mode, and the higher the order the more the error explodes ($8.1\!\times\!10^{-1}\to5.0\!\times\!10^{5}$ as $K{:}2\to32$);
 > 3. **For multiple shards one must freeze $\alpha_n$ and $\lambda_2$ simultaneously** (§13.6), and it was clarified that "locked-shell rescaling" may be applied only to the initial value and **not to an already-obtained solution** — a frozen scale explicitly destroys the rescaling gauge redundancy.
 
 > **The three corrections of v1.3 over v1.2** (from what the "10 problem types × 5 groups = 50 random equations" stress test exposed empirically):
@@ -34,7 +34,7 @@ Consequently the solving process needs no new dynamics invented — it is rigoro
 
 | Residual component | Algebraic home | Elimination mechanism | Reused operator |
 |---|---|---|---|
-| Gradient component $D_{\text{global}}\phi$ | $\mathrm{im}(\partial_1)$ | Vertex-potential $\Phi$ re-solve | Operator 6 ($\Phi=(D^TD)^\dagger D^TE$) |
+| Gradient component $D_{\text{global}}\phi$ | $\mathrm{im}(\partial_1)$ | Vertex-potential $\Phi$ re-solve | Operator 6 ($\Phi=(D^TD)^{\dagger} D^TE$) |
 | Curl component $C_{\text{global}}^T\psi$ | $\mathrm{im}(\partial_2^T)$ | Circulation $B$-field leapfrog cancellation | Operator 7 ($\mathcal{O}_{\text{lock}}$) |
 | Harmonic component $h$ | $\mathcal{H}_1 = \ker(\partial_1^T)\cap\ker(\partial_2)$ | **Cannot be eliminated by field iteration** | Operator 9 (Betti stitching, changes topology) |
 
@@ -182,7 +182,7 @@ The solution of the equation is **unique in the sense of homology classes**: any
 
 ### ⚠ Degeneracy warning: homological solutions lose discriminating power when $\beta_1 = 0$
 
-When $\beta_1 = 0$ (e.g. a closed complex), $\mathcal{H}_1 = \{0\}$, so $h \equiv 0$ **holds for any graph** — the homological-solution set degenerates to the whole edge-weight space $\mathcal{S}_{\text{hom}} = \mathbb{R}^{m_g}$, and the criterion $|h| = 0$ carries no information.
+When $\beta_1 = 0$ (e.g. a closed complex), $\mathcal{H}_1 = \{0\}$, so $h \equiv 0$ **holds for any graph** — the homological-solution set degenerates to the whole edge-weight space $\mathcal{S}_{\text{hom}} = \mathbb{R}^{m_g}$, and the criterion $\lvert h\rvert  = 0$ carries no information.
 
 In this case one must invoke the **canonical-representative** criterion to select a unique realization (Operator 18): take the one minimizing the Dirichlet energy within the homology class. This also explains why canonical-representative selection in Operator 18 is not an option but a necessary component of v1.1.
 
@@ -203,7 +203,7 @@ and the projection operators are completely endogenous (using only the boundary 
 
 $$\phi \equiv \underbrace{(D^T D)^{\dagger}}_{\displaystyle L_0^{\dagger}\;(\text{0-order Laplacian pseudo-inverse})} D^T r \;\in\; \mathbb{R}^{n}, \qquad \psi \equiv (C C^T)^{\dagger} C\, r \;\in\; \mathbb{R}^{f}, \qquad h \equiv r - D\phi - C^T\psi$$
 
-**Note**: the solving formula for $\phi$ is **strictly isomorphic** to Operator 6's potential-closure formula $\Phi_{s-1} = (D^TD)^\dagger(D^T E_{s-1})$ (merely replacing the edge flow $E$ by the residual $r$), so all of Operator 6's $\mathcal{O}(1)$ local facilities can be reused directly, with zero new solver.
+**Note**: the solving formula for $\phi$ is **strictly isomorphic** to Operator 6's potential-closure formula $\Phi_{s-1} = (D^TD)^{\dagger}(D^T E_{s-1})$ (merely replacing the edge flow $E$ by the residual $r$), so all of Operator 6's $\mathcal{O}(1)$ local facilities can be reused directly, with zero new solver.
 
 **Solvability criterion**: the equation is solvable on the given graph topology $\iff h \equiv 0$.
 
@@ -212,7 +212,7 @@ $$\phi \equiv \underbrace{(D^T D)^{\dagger}}_{\displaystyle L_0^{\dagger}\;(\tex
 
 $$\|r\|_2^2 = \|D\phi\|_2^2 + \|h\|_2^2 + \|C^T\psi\|_2^2$$
 
-*(ii) Projection formulas*: $D\phi$ is the orthogonal projection of $r$ onto $\mathrm{im}\,\partial_1$, whose normal equation is $D^T(D\phi) = D^T r \Rightarrow (D^TD)\phi = D^T r$, hence $\phi = (D^TD)^\dagger D^T r$; likewise $C^T\psi$ is the projection of $r$ onto $\mathrm{im}\,\partial_2^T$, with $\psi = (CC^T)^\dagger C r$. The former is the 0-order Laplacian pseudo-inverse (of the same origin as Operator 6's potential solve), the latter the 2-order Laplacian pseudo-inverse; an $\mathcal{O}(1)$ local solving route has been established for both.
+*(ii) Projection formulas*: $D\phi$ is the orthogonal projection of $r$ onto $\mathrm{im}\,\partial_1$, whose normal equation is $D^T(D\phi) = D^T r \Rightarrow (D^TD)\phi = D^T r$, hence $\phi = (D^TD)^{\dagger} D^T r$; likewise $C^T\psi$ is the projection of $r$ onto $\mathrm{im}\,\partial_2^T$, with $\psi = (CC^T)^{\dagger} C r$. The former is the 0-order Laplacian pseudo-inverse (of the same origin as Operator 6's potential solve), the latter the 2-order Laplacian pseudo-inverse; an $\mathcal{O}(1)$ local solving route has been established for both.
 
 *(iii) Solvability*: the update direction of the solving iteration (Operator 15) must belong to $\mathrm{im}(\partial_1) \oplus \mathrm{im}(\partial_2^T) = \mathcal{H}_1^{\perp}$ (see Theorem 15.3). Hence if $h \neq 0$, the harmonic component of the residual falls into the kernel of the update operator, and **no number of field iterations can make it decrease**; then $r$ is a "closed but not exact" cohomology class, constituting a **topological obstruction**. Only changing the graph's topology ($\Delta\beta_1 \neq 0$, Operator 9's Betti stitching) can change the dimension of $\mathcal{H}_1$ and thereby open a new exact direction for the residual. $\blacksquare$
 
@@ -276,22 +276,22 @@ exact for polynomials of $\deg < N_c$; for general functions it converges at the
 **Endogenous adaptive truncation order $K_f$** (replacing the fixed $K$ of the polynomial-kernel case):
 
 > **v1.2 correction (empirical from the 10-equation random stress test, bench E06/E08)**. The original criterion took
-> $K_f = \max\{k : |c_k| > \gamma\max|c|\}$, which measures whether a **single term** has become small. This is logically wrong: the Chebyshev coefficients decay geometrically, and **a single term becoming small is far from meaning the approximation is good enough**. Empirically the $\ln$ kernel gives $K_f = 1$, while $\mathrm{tail}(1)$ still accounts for $21\%$ of the peak $> \gamma$, with a truncation error reaching $3.25\times10^{-2}$.
+> $K_f = \max\{k : \lvert c_k\rvert  > \gamma\max\lvert c\rvert \}$, which measures whether a **single term** has become small. This is logically wrong: the Chebyshev coefficients decay geometrically, and **a single term becoming small is far from meaning the approximation is good enough**. Empirically the $\ln$ kernel gives $K_f = 1$, while $\mathrm{tail}(1)$ still accounts for $21\%$ of the peak $> \gamma$, with a truncation error reaching $3.25\times10^{-2}$.
 
-What really determines accuracy is the **sum** of the discarded terms. Since $|T_k(s)| \le 1$ on $[-1,1]$,
-$$\Big| g(s) - \sum_{k\le K} c_k T_k(s)\Big| \;\le\; \sum_{k>K}|c_k| \;\equiv\; \mathrm{tail}(K)$$
+What really determines accuracy is the **sum** of the discarded terms. Since $\lvert T_k(s)\rvert  \le 1$ on $[-1,1]$,
+$$\Big\rvert  g(s) - \sum_{k\le K} c_k T_k(s)\Big\rvert  \;\le\; \sum_{k>K}\lvert c_k\rvert  \;\equiv\; \mathrm{tail}(K)$$
 so $\mathrm{tail}(K)$ is the **strict upper bound** on the approximation error, and is exactly the quantity that should be compared with the endogenous tolerance:
 
-$$\boxed{\; K_f \;\equiv\; \min\Big\{ K \;:\; \mathrm{tail}(K) \;\le\; \gamma\cdot\max_k|c_k| \Big\}, \qquad \mathrm{tail}(K) = \sum_{k>K}|c_k| \;}$$
+$$\boxed{\; K_f \;\equiv\; \min\Big\{ K \;:\; \mathrm{tail}(K) \;\le\; \gamma\cdot\max_k\lvert c_k\rvert  \Big\}, \qquad \mathrm{tail}(K) = \sum_{k>K}\rvert c_k\rvert  \;}$$
 
-The threshold is still $\gamma\cdot\max|c|$ — the sole endogenous scale, with no external parameters. **This criterion automatically adapts to the smoothness of the kernel**: smooth kernels give a small $K_f$, kernels with strong singularities give a large $K_f$.
+The threshold is still $\gamma\cdot\max\lvert c\rvert$ — the sole endogenous scale, with no external parameters. **This criterion automatically adapts to the smoothness of the kernel**: smooth kernels give a small $K_f$, kernels with strong singularities give a large $K_f$.
 
 **Note that this guarantees $\gamma$-level accuracy, not machine accuracy.** To reach the $10^{-6}$ level, $K$ must be as deep as $\mathcal{O}\!\left(1/\ln\rho\right)\approx 16$–$24$ — this is an explicitly stated cost, not a defect (see the bench report for the empirical $K$-sweep).
 
 **Theorem 13.2 (the convergence rate of non-polynomial kernels is determined solely by the spectral gap ratio)**
 For a kernel with a logarithmic branch point at $\hat\lambda = 0$ (typically $\ln\hat\lambda$), the location of its singularity in the $y$ variable and the Bernstein parameter are
-$$\xi_0 = -\frac{1+\gamma}{1-\gamma}, \qquad \rho \equiv |\xi_0| + \sqrt{\xi_0^2 - 1}$$
-The Chebyshev coefficients decay asymptotically as $|c_k| = \mathcal{O}\!\left(k^{-1}\rho^{-k}\right)$, so the lower bound on the required order is
+$$\xi_0 = -\frac{1+\gamma}{1-\gamma}, \qquad \rho \equiv \lvert \xi_0\rvert  + \sqrt{\xi_0^2 - 1}$$
+The Chebyshev coefficients decay asymptotically as $\lvert c_k\rvert  = \mathcal{O}\!\left(k^{-1}\rho^{-k}\right)$, so the lower bound on the required order is
 $$K_f \;\gtrsim\; \frac{\ln(1/\gamma)}{\ln \rho}, \qquad \lim_{\gamma \to 0}\rho = 1 \;\Rightarrow\; K_f \to \infty$$
 
 **Corollary**: **the spectral gap ratio $\gamma$ is simultaneously a measure of "the graph's connectivity margin" and of "the expandability of a non-polynomial kernel"**. The closer the graph is to disconnection ($\gamma \to 0$), the more the required expansion order of a $\ln$-type kernel diverges — this is the method's fundamental limitation on ill-conditioned graphs, and it cannot be circumvented by adding computing power.
@@ -312,10 +312,10 @@ $$\rho(\hat\lambda) = \frac{1}{\pi}\,\mathrm{Im}\, m(\hat\lambda + i\varepsilon)
 v1.1 wrote stripping as a prerequisite exclusive to singular kernels ($\ln$, $1/\hat\lambda$); **this is incomplete**. E08 (Stieltjes kernel) of the 10-equation random stress test exposed the true discriminating condition:
 
 The trivial zero mode in the shifted variable is always located at
-$$\xi_0 \;=\; -\frac{1+\gamma}{1-\gamma}, \qquad \rho(\xi_0) \;=\; |\xi_0| + \sqrt{\xi_0^2-1}$$
+$$\xi_0 \;=\; -\frac{1+\gamma}{1-\gamma}, \qquad \rho(\xi_0) \;=\; \lvert \xi_0\rvert  + \sqrt{\xi_0^2-1}$$
 It is **always outside $[-1,1]$**, and $T_k(\xi_0)$ grows exponentially as $\rho(\xi_0)^k$. Meanwhile the Chebyshev series of the kernel $g$ converges only inside its own Bernstein ellipse, whose real semi-axis is
 $$a_{\max} \;=\; \frac{\rho_{\max} + \rho_{\max}^{-1}}{2}$$
-where $\rho_{\max}$ is determined by the singularity of $g$ nearest to the spectral support. **As soon as $a_{\max} < |\xi_0|$, the series diverges at $\xi_0$**, and the high-order terms, amplified by the zero mode, explode — the higher the order, the worse.
+where $\rho_{\max}$ is determined by the singularity of $g$ nearest to the spectral support. **As soon as $a_{\max} < \lvert \xi_0\lvert$, the series diverges at $\xi_0$**, and the high-order terms, amplified by the zero mode, explode — the higher the order, the worse.
 
 Empirical Stieltjes kernel $z = 0.5 + i\gamma$ ($\gamma = 0.2113$):
 
@@ -372,15 +372,15 @@ otherwise the spectrum of $Y = 2L/\alpha_n^{\text{lock}} - I$ escapes $[-1,1]$, 
 >
 > **Conclusion: a frozen scale explicitly destroys the rescaling gauge redundancy; it is the symmetry this method actively gives up in exchange for the smoothness of $F$.** Therefore the residual $\alpha_n$ drift after convergence can only be accepted in Operator 16 as a second-order effect (see below).
 
-**Quantitative acceptance criterion for the drift**: write $\varepsilon \equiv \bigl|\alpha_n(M^\star)/\alpha_n^{\text{lock}} - 1\bigr|$. When the top of the support crosses from $1$ to $1+\varepsilon$, the Hausdorff infeasibility of the moment sequence appears only at **second order** (to first order it merely shifts the support boundary), so one should have
-$$\bigl|\lambda_{\min}(H)\bigr| \;=\; \mathcal{O}(\varepsilon^{2})$$
-Empirical E01: $\varepsilon^{2}=1.89\times10^{-5}$ vs $|\lambda_{\min}| = 1.00\times10^{-5}$ (ratio $0.53$); E09: $\varepsilon^{2}=5.59\times10^{-5}$ vs $8.43\times10^{-5}$ (ratio $1.51$). Operator 16's admission criterion is graded accordingly:
+**Quantitative acceptance criterion for the drift**: write $\varepsilon \equiv \bigl\lvert \alpha_n(M^\star)/\alpha_n^{\text{lock}} - 1\bigr\rvert$. When the top of the support crosses from $1$ to $1+\varepsilon$, the Hausdorff infeasibility of the moment sequence appears only at **second order** (to first order it merely shifts the support boundary), so one should have
+$$\bigl\lvert \lambda_{\min}(H)\bigr\rvert  \;=\; \mathcal{O}(\varepsilon^{2})$$
+Empirical E01: $\varepsilon^{2}=1.89\times10^{-5}$ vs $\lvert \lambda_{\min}\rvert  = 1.00\times10^{-5}$ (ratio $0.53$); E09: $\varepsilon^{2}=5.59\times10^{-5}$ vs $8.43\times10^{-5}$ (ratio $1.51$). Operator 16's admission criterion is graded accordingly:
 
 | Case | Verdict |
 |---|---|
 | $\lambda_{\min}(H) \ge 0$ | **pass** |
-| $\lambda_{\min}(H) < 0$ but $\|\lambda_{\min}\| \le 10\,\varepsilon^{2}$ and $\varepsilon < \gamma$ | **pass (*)** — every violation is explained by the freezing artifact |
-| $\lambda_{\min}(H) < 0$ and $\|\lambda_{\min}\| > 10\,\varepsilon^{2}$ | **fail** — genuinely infeasible moments, must be clamped by Op16 |
+| $\lambda_{\min}(H) < 0$ but $\lVert \lambda_{\min}\rVert  \le 10\,\varepsilon^{2}$ and $\varepsilon < \gamma$ | **pass (*)** — every violation is explained by the freezing artifact |
+| $\lambda_{\min}(H) < 0$ and $\lVert \lambda_{\min}\rVert  > 10\,\varepsilon^{2}$ | **fail** — genuinely infeasible moments, must be clamped by Op16 |
 
 #### Complexity and red lines
 $\mathcal{O}(N_K \cdot M_K \cdot K)$ (polynomial kernel) or $\mathcal{O}(N_c^2 + N_K M_K K_f)$ (non-polynomial kernel, with the coefficient quadrature precomputed once). Since Operator 10 has proved $N_K \le K_0 = \mathcal{O}(1)$, the whole is at the **local constant order**.
@@ -418,7 +418,7 @@ $$\phi \equiv (D^T D)^{\dagger} D^T r \in \mathbb{R}^{n},\qquad \psi \equiv (C C
 
 **Gradient channel** (vertex potential $\Phi$, Operator 6 reuse): the gradient component of the residual requires a vertex-potential correction $\phi$, injected directly in the 0-chain space:
 $$\Phi_{s-1} \;\leftarrow\; \Phi_{s-1} \;-\; \eta_{\text{inj}}^{(\phi)} \cdot \phi, \qquad \eta_{\text{inj}}^{(\phi)} \equiv \frac{\lambda_2}{\lambda_2 + \|D\phi\|_2}$$
-(equivalently, Operator 6's right-hand side is rewritten as $(D^TD)^\dagger D^T\!\left(E_{s-1} - \eta\,r\right)$; the two are equivalent by the projection idempotency $D(D^TD)^\dagger D^T = P_{\mathrm{im}D}$.)
+(equivalently, Operator 6's right-hand side is rewritten as $(D^TD)^{\dagger} D^T\!\left(E_{s-1} - \eta\,r\right)$; the two are equivalent by the projection idempotency $D(D^TD)^{\dagger} D^T = P_{\mathrm{im}D}$.)
 
 **Curl channel** (circulation $B$, Operator 7 reuse): $\psi \in \mathbb{R}^f$ is itself a face-space element, injected directly:
 $$B_{s+1/2} \;\leftarrow\; B_{s+1/2} \;-\; \eta_{\text{inj}}^{(\psi)} \cdot \psi, \qquad \eta_{\text{inj}}^{(\psi)} \equiv \frac{\lambda_2}{\lambda_2 + \|C^T\psi\|_2} \in (0,1]$$
@@ -431,7 +431,7 @@ $$\textbf{Harmonic} \to \text{suspended, handed to Operator 17 for adjudication}
 #### Theorem 14.1 (conservation of the dual pairing on a closed manifold)
 Under the premise that the **zero-flux-escape condition** $C_{\text{global}}E_{\text{global}} \equiv 0$ already guaranteed by Operator 7 holds, the Poincaré dual-pairing variation caused by the above curl injection is identically zero:
 $$\Delta\left( E_s^T \, C_{\text{global}}^T \, B_{s+1/2} \right) \;=\; -\eta_{\text{inj}}^{(\psi)}\left\langle C_{\text{global}} E_s,\; \psi \right\rangle \;=\; 0$$
-**Proof**: $C E_s = 0 \Rightarrow E_s \in \ker\partial_2 = \left(\mathrm{im}\,\partial_2^T\right)^\perp$, so $E_s \perp C^T\psi$ holds for any $\psi$, and the pairing variation is zero. $\blacksquare$
+**Proof**: $C E_s = 0 \Rightarrow E_s \in \ker\partial_2 = \left(\mathrm{im}\,\partial_2^T\right)^{\perp}$, so $E_s \perp C^T\psi$ holds for any $\psi$, and the pairing variation is zero. $\blacksquare$
 
 **Corollary 14.1 (constructive guarantee of closed flow)**: by the exactness of the chain complex $\partial_2\partial_1 = 0$, any gradient field $E = D_{\text{global}}\varphi$ automatically satisfies $CE = (CD)\varphi = 0$, so the edge flow generated by Operator 6's output potential field falls naturally within the domain of this theorem, **with no extra projection needed**.
 
@@ -459,7 +459,7 @@ $$\alpha_n \leftarrow \max\left(\alpha_{n-1},\ \alpha_{\Omega_k}\|P_{\Omega_k,\t
 Since $\max$/$\min$ are both monotone operations, **the change of the spectral gap ratio $\gamma = \lambda_2/\alpha_n$ within the solving inner loop is bounded and non-oscillatory**, so $K_f$ (Theorem 13.2) remains stable during the iteration. This is the **structural precondition** for coupled multiple spectral shapes to converge.
 
 **Theorem 14.2 (the endogenous trust region automatically absorbs the coupling amplification)**
-After multi-shard synthesis $\|\mathbf{g}_M\|_2$ grows with $p$ (contributions of the shards add up), but the trust-region denominator $1 + \tilde{\mathbf{g}}^TA^\dagger\tilde{\mathbf{g}}$ of Operator 15 grows quadratically while the numerator grows only linearly, so the step size is automatically compressed as $\mathcal{O}(1/p)$. **Conclusion: increasing the number of coupled shards requires no step-size re-tuning**.
+After multi-shard synthesis $\|\mathbf{g}_M\|_2$ grows with $p$ (contributions of the shards add up), but the trust-region denominator $1 + \tilde{\mathbf{g}}^{TA}^\dagger\tilde{\mathbf{g}}$ of Operator 15 grows quadratically while the numerator grows only linearly, so the step size is automatically compressed as $\mathcal{O}(1/p)$. **Conclusion: increasing the number of coupled shards requires no step-size re-tuning**.
 
 #### Complexity and red lines
 $\mathcal{O}\!\left(\sum_\nu M_{K_\nu}K + m_g + f\right) = \mathcal{O}(p\,M_K K)$ (multiple shards).
@@ -530,7 +530,7 @@ with equality if and only if $F = 0$. That is, each inversion step necessarily m
 
 #### Theorem 15.3 (orthogonality constraint on the update direction)
 $\Delta M \in \mathrm{im}(\partial_1) \oplus \mathrm{im}(\partial_2^T) = \mathcal{H}_1^{\perp}$, i.e. the update always lies in the orthogonal complement of the harmonic space.
-**Proof**: $\Delta M \propto A^\dagger(\mathbf{g}-h)$, and the range of $A^\dagger$ is $(\ker A)^\perp = \mathcal{H}_1^\perp$. $\blacksquare$
+**Proof**: $\Delta M \propto A^\dagger(\mathbf{g}-h)$, and the range of $A^\dagger$ is $(\ker A)^{\perp} = \mathcal{H}_1^\perp$. $\blacksquare$
 
 #### 15.3 Endogenous momentum acceleration (optional)
 
@@ -618,8 +618,8 @@ Taking the first-step residual $\|r_0\|_2$ as the endogenous reference scale, de
 
 | Mode | Enabling condition | Criterion | Monitored degrees of freedom |
 |---|---|---|---|
-| **Exact solution** | $\beta_1 = 0$, or the user explicitly requires it | $\|D\phi\|, \|C^T\psi\| \le \epsilon_{\text{endo}}$ and $\|h\| \le \epsilon_{\text{endo}}$ | $m_g$ |
-| **Homological solution** (default) | $\beta_1 > 0$ | **only** $\|h\|_2 \le \epsilon_{\text{endo}}$ | $\beta_1$ |
+| **Exact solution** | $\beta_1 = 0$, or the user explicitly requires it | $\lVert D\phi\rVert , \lVert C^T\psi\rVert  \le \epsilon_{\text{endo}}$ and $\lVert h\rVert  \le \epsilon_{\text{endo}}$ | $m_g$ |
+| **Homological solution** (default) | $\beta_1 > 0$ | **only** $\lVert h\rVert _2 \le \epsilon_{\text{endo}}$ | $\beta_1$ |
 
 **In the homological-solution mode no requirement is placed on the gradient/curl components** — they are absorbed naturally by Operators 6/7 in subsequent pulses (Definition 3.1). This brings two benefits:
 1. **the monitored dimension drops from $m_g$ to $\beta_1$**, greatly reducing the degrees of freedom tracked by the convergence decision;
@@ -659,10 +659,10 @@ Let `below` denote "all three channels meet the criterion", `exhausted` denote "
 | not `below`, and the update direction is not exhausted | **CONTINUE** | $\kappa \leftarrow \kappa+1$, return to Operator 15 |
 | `step_dead`, and `pert` and $\lnot$`harm` (**only** the harmonic part remains) | **OBSTRUCTION** | Hand to Operator 9 to perform Betti stitching (changes $\beta_1$), restart the inner loop |
 | `step_dead`, and not "only the harmonic part remains" | **STALLED** (numerical stall) | Report a numerical warning, **do not trigger a topological change** (protecting the $\Delta\beta_1\equiv0$ red line) |
-| $\|h\|$ still does not decrease after $\tau(s)$ stitching steps | **UNSOLVABLE** | Output the obstruction certificate $h$, terminate and warn |
+| $\lVert h\rVert$ still does not decrease after $\tau(s)$ stitching steps | **UNSOLVABLE** | Output the obstruction certificate $h$, terminate and warn |
 
 **The `exhausted` (wrung-dry) condition (v1.3 addition)**:
-$$|F_\kappa| \;\ge\; (1-\gamma)\,|F_{\kappa-1}|,$$
+$$\lvert F_\kappa\rvert  \;\ge\; (1-\gamma)\,\rvert F_{\kappa-1}\lvert ,$$
 i.e. the residual decrease of the previous step is below the relative fraction $\gamma$ — the information carried by the Newton direction has been wrung dry. It stands alongside "$\|r\|\le\epsilon_{\text{endo}}$" and together they constitute the criterion of `SOLVED`.
 
 > **Why this condition must be added**: the V-B independent-residual verification and the termination criterion **take the same threshold $\epsilon_{\text{endo}}$**. If one terminates merely on "first crossing $\epsilon_{\text{endo}}$", then any instance that happens to fall on either side of the threshold within the $1/\gamma$ band (empirically B4-E02 $=0.1726$, B5-E02 $=0.1787$ vs $\gamma = 0.1761$) will be judged "solved", but the independently recomputed residual is still above the threshold and V-B FAILs — **the verification degenerates into a tautology**. After adding `exhausted`, the V-B of 49 empirical equations falls to $10^{-14}\sim10^{-9}$, and B2-E02's V-B drops from $7.30\!\times\!10^{-1}$ to $1.29\!\times\!10^{-1}$.
@@ -715,9 +715,9 @@ Operator 18 must output the following three items together with the solution, as
 
 | Certificate item | Definition | Semantics |
 |---|---|---|
-| Homological residual $\|h\|_2$ | the norm of the harmonic projection of the residual | $=0$ ⟹ the homological solution holds |
-| Homological distance $d_{\text{hom}}(M^\star, M_{\text{init}})$ | $\|h(M^\star) - h(M_{\text{init}})\|_2$ | how far it has moved from the initial value (in the topological sense) |
-| Exact-residual budget $\|D\phi + C^T\psi\|_2$ | the amount to be absorbed by Operators 6/7 | the residual error of the exact solution |
+| Homological residual $\lVert h\rVert _2$ | the norm of the harmonic projection of the residual | $=0$ ⟹ the homological solution holds |
+| Homological distance $d_{\text{hom}}(M^\star, M_{\text{init}})$ | $\lVert h(M^\star) - h(M_{\text{init}})\rVert _2$ | how far it has moved from the initial value (in the topological sense) |
+| Exact-residual budget $\lVert D\phi + C^T\psi\rVert _2$ | the amount to be absorbed by Operators 6/7 | the residual error of the exact solution |
 
 #### Complexity and red lines
 $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$, executed only once.
@@ -766,7 +766,7 @@ A new **Phase 3.5: spectral-shape equation solving inner loop (Solve Inner Loop,
 
 For "an equation formed by unknown spectral shapes", the standard solving flow is:
 
-1. **Encoding** (Op13): encode each unknown spectral shape $\sigma_\nu$ as a Chebyshev moment vector $\boldsymbol{\tau}^{(\nu)}$. For polynomial kernels use $K = \lceil\alpha_n/\lambda_2\rceil$; **for non-polynomial kernels use the tail-sum criterion $K_f$** ($\sum_{k>K}|c_k| \le \gamma\max|c|$, §13.4 v1.2); **whenever kernel expansion is used, the zero mode must be stripped first** (§13.5) — *turn functions into finite vectors*.
+1. **Encoding** (Op13): encode each unknown spectral shape $\sigma_\nu$ as a Chebyshev moment vector $\boldsymbol{\tau}^{(\nu)}$. For polynomial kernels use $K = \lceil\alpha_n/\lambda_2\rceil$; **for non-polynomial kernels use the tail-sum criterion $K_f$** ($\sum_{k>K}\lvert c_k\rvert  \le \gamma\max\rvert c\lvert$, §13.4 v1.2); **whenever kernel expansion is used, the zero mode must be stripped first** (§13.5) — *turn functions into finite vectors*.
 2. **Algebraization** (Definition 1.2): turn the equation $\mathcal{F}(\sigma)=0$ into an equation in moment space. **Coupled multiple spectral shapes** manifest as a block Jacobian $J \in \mathbb{R}^{q\times p(K+1)}$, with coupling terms falling automatically into the block structure via the product rule — *turn functional equations into algebraic equations*.
 3. **Routing** (Op14): the residual is synthesized via the shard embeddings $\Xi_\nu$ and the sensitivity vectors into a global 1-chain, and a Hodge three-component decomposition is performed — *turn the residual into topological components*.
 4. **Inversion** (Op15 → 3.5b → 16): the endogenous quasi-Newton single-line closed form updates the edge weights, **the backtracking line search (§15.4) contracts the step to guarantee $\Psi$ strictly decreases**, and the Hankel clamp guarantees the spectral feasibility of the solution — *iterate to convergence in graph space*.
@@ -790,11 +790,11 @@ For "an equation formed by unknown spectral shapes", the standard solving flow i
 | V2 | Sensitivity closed form vs. central differences | relative error $< 10^{-6}$ | Eq. 13.3 |
 | V3 | Hodge orthogonality: $\langle D\phi, C^T\psi\rangle = \langle D\phi, h\rangle = \langle C^T\psi, h\rangle = 0$ | $\approx 0$ | Theorem S3 |
 | V4 | Harmonic criterion: $D^T h = 0$ and $C h = 0$; $\dim\mathcal{H}_1 = \beta_1 = \nu - \mathrm{rank}(\partial_2)$, $\nu = m_g-n+\beta_0$ | holds (numerical rank) | Theorem S3 + terminology convention |
-| V5 | Monotone decrease of the residual for a solvable equation (e.g. $\tau_2 - c = 0$) | $\|r_{\kappa+1}\| \le \|r_{\kappa}\|$ | Theorem 15.2 |
+| V5 | Monotone decrease of the residual for a solvable equation (e.g. $\tau_2 - c = 0$) | $\lVert r_{\kappa+1}\rVert  \le \lVert r_{\kappa}\rVert$ | Theorem 15.2 |
 | V6 | Dirichlet energy non-increasing | $\Delta\mathcal{E}_D \le 0$ | Theorem 15.2 |
 | V7 | Update-direction orthogonality: $\Delta M \perp \mathcal{H}_1$ | $\langle \Delta M, h\rangle \approx 0$ | Theorem 15.3 |
 | V8 | Both matrices positive semi-definite after Hankel clamping | $\lambda_{\min}(H^{(0)}), \lambda_{\min}(H^{(1)}) \ge -\epsilon$ | Theorem 16.1 |
-| V9 | Topological-obstruction test case: requiring a nonzero harmonic residual on a $\beta_1 = 0$ graph | Op17 correctly warns and $\|h\|$ does not decrease | Theorem S3 |
+| V9 | Topological-obstruction test case: requiring a nonzero harmonic residual on a $\beta_1 = 0$ graph | Op17 correctly warns and $\lVert h\rVert$ does not decrease | Theorem S3 |
 | V10 | Closed-flow conservation: taking $E = D\varphi$ (automatically satisfying $CE=0$), after injecting $\psi$, $\Delta(E^T C^T B)$ | $= 0$ | Theorem 14.1 |
 | V11 | Counterexample comparison: taking a non-closed flow with $CE \neq 0$ and injecting likewise | $\Delta \neq 0$, confirming the timing necessity | Corollary 14.1 note |
 
@@ -804,11 +804,11 @@ For "an equation formed by unknown spectral shapes", the standard solving flow i
 |---|---|---|---|
 | **V12** | Coupled multiple spectral shapes: two-shard equation $\tau_2^{(1)}\tau_2^{(2)} - c = 0$, block Jacobian + shard embedding $\Xi_\nu$ | residual decreases monotonically and a solution is adjudicated | §14.4 |
 | **V7b** | Equation scale invariance: $\Delta M$ must be invariant under $F\to sF$ ($s=1,10,100$) | new form relative offset $<10^{-8}$; the v1.0 old form deviates significantly (scale-dependent) | Theorem 15.1' |
-| **V13** | Non-polynomial kernel $\ln\hat\lambda$: Chebyshev coefficient sum $\mathbf{c}^T\boldsymbol{\tau}^{\text{red}}$ vs. reduced spectral integral (zero-mode stripping first) | empirical error $\le$ Bernstein tail bound $\sum_{j>K_f}\|c_j\|$, and $\le \gamma\|\text{exact}\|$ | §13.4 / §13.5 |
+| **V13** | Non-polynomial kernel $\ln\hat\lambda$: Chebyshev coefficient sum $\mathbf{c}^T\boldsymbol{\tau}^{\text{red}}$ vs. reduced spectral integral (zero-mode stripping first) | empirical error $\le$ Bernstein tail bound $\sum_{j>K_f}\lVert c_j\rVert$, and $\le \gamma\lVert \text{exact}\rVert$ | §13.4 / §13.5 |
 | **V14** | Bernstein ellipse rate: empirical $\ln$-kernel coefficient decay rate vs. $\rho = \frac{1+\gamma}{1-\gamma}+\sqrt{\left(\frac{1+\gamma}{1-\gamma}\right)^2-1}$ | empirical decay rate of the same order as the theoretical $\rho$ | Theorem 13.2 |
-| **V15** | Homological solution vs. exact solution: the same equation on a $\beta_1>0$ complex under the two criteria | homological-solution step count $\le$ exact-solution step count, and $\|h\|$ meets the criterion | Definition 3.1 |
-| **V16** | Homological distance: two different realizations $M_1^\star\neq M_2^\star$ that are homologically equivalent (must share the same set of locked scales + locked-shell rescaling, and both be judged SOLVED) | $d_{\text{hom}}\le\epsilon_{\text{endo}}$ while $\|M_1^\star - M_2^\star\| \gg 0$ | Definition 3.2 / Theorem S5 / §13.6 |
-| **V17** | Degeneracy warning: on a $\beta_1 = 0$ complex, $\|h\| \equiv 0$ holds for any graph | the homological-solution criterion fails, and the canonical-representative criterion must be used | §2-bis |
+| **V15** | Homological solution vs. exact solution: the same equation on a $\beta_1>0$ complex under the two criteria | homological-solution step count $\le$ exact-solution step count, and $\lVert h\rVert$ meets the criterion | Definition 3.1 |
+| **V16** | Homological distance: two different realizations $M_1^\star\neq M_2^\star$ that are homologically equivalent (must share the same set of locked scales + locked-shell rescaling, and both be judged SOLVED) | $d_{\text{hom}}\le\epsilon_{\text{endo}}$ while $\lVert M_1^\star - M_2^\star\rVert  \gg 0$ | Definition 3.2 / Theorem S5 / §13.6 |
+| **V17** | Degeneracy warning: on a $\beta_1 = 0$ complex, $\lVert h\rVert  \equiv 0$ holds for any graph | the homological-solution criterion fails, and the canonical-representative criterion must be used | §2-bis |
 | **V18** | Canonical representative: unique within a homological equivalence class by minimum Dirichlet energy | outputs a unique representative + three certificates | Operator 18 / Theorem 18.1 |
 
 ### v1.0 empirical results (n=12 ring + chord-edge complex, m_g=24)
@@ -848,18 +848,18 @@ The actual run output of the reference implementation `Operator_13_18_P.py` (upg
 |---|---|---|---|---|
 | V5 | Monotone decrease of the residual for a solvable equation | $7.16\!\times\!10^{-2}\to3.83\!\times\!10^{-3}$ (4 steps, **non-monotone**) | $7.16\!\times\!10^{-2}\to2.71\!\times\!10^{-3}$ (**2 steps, strictly monotone**) | PASS |
 | V6 | Objective functional $\Psi$ non-increasing | $2.57\!\times\!10^{-3}\to7.32\!\times\!10^{-6}$ | $2.57\!\times\!10^{-3}\to3.68\!\times\!10^{-6}$ (monotonicity restored) | PASS |
-| V7b | Equation scale invariance $F\to sF$ | — | new form $\|\Delta M\|$ identically $4.881435483\times10^{-2}$ ($s=1,10,100$, relative offset $8.4\times10^{-15}$); old form $3.31\times10^{-1}\to3.57\times10^{-3}\to3.57\times10^{-5}$ (spanning 4 orders of magnitude) | PASS (old form FAIL) |
+| V7b | Equation scale invariance $F\to sF$ | — | new form $\lVert \Delta M\rVert$ identically $4.881435483\times10^{-2}$ ($s=1,10,100$, relative offset $8.4\times10^{-15}$); old form $3.31\times10^{-1}\to3.57\times10^{-3}\to3.57\times10^{-5}$ (spanning 4 orders of magnitude) | PASS (old form FAIL) |
 
 **v1.1 new items, empirically**:
 
 | # | Verification item | Empirical | Conclusion |
 |---|---|---|---|
 | V12 | Coupled multiple spectral shapes $\tau_2^{(1)}\tau_2^{(2)}-c=0$ ($p=2$) | $F:\ -2.290\!\times\!10^{-3}\to+1.039\!\times\!10^{-4}$ (2 steps, monotone) | PASS |
-| V13 | $\ln\hat\lambda$ expansion (with zero-mode stripping) | $\xi_0=-1.5045$, $\rho=2.6286$; error vs. order $1.50\!\times\!10^{-2}(K{=}1)\to1.61\!\times\!10^{-2}(K{=}2)\to4.39\!\times\!10^{-3}\to1.61\!\times\!10^{-4}\to5.71\!\times\!10^{-5}(K{=}5)\to2.40\!\times\!10^{-7}(K{=}8)\to7.82\!\times\!10^{-10}(K{=}16)$; the v1.2 tail-sum criterion gives $K_f=2$, empirical error $1.61\!\times\!10^{-2}\le$ tail bound $5.19\!\times\!10^{-2}$ and $\le$ endogenous tolerance $\gamma\|\text{exact}\|=9.81\!\times\!10^{-2}$ | PASS |
+| V13 | $\ln\hat\lambda$ expansion (with zero-mode stripping) | $\xi_0=-1.5045$, $\rho=2.6286$; error vs. order $1.50\!\times\!10^{-2}(K{=}1)$ → $1.61\!\times\!10^{-2}(K{=}2)$ → $4.39\!\times\!10^{-3}$ → $1.61\!\times\!10^{-4}$ → $5.71\!\times\!10^{-5}(K{=}5)$ → $2.40\!\times\!10^{-7}(K{=}8)$ → $7.82\!\times\!10^{-10}(K{=}16)$; the v1.2 tail-sum criterion gives $K_f=2$, empirical error $1.61\!\times\!10^{-2}\le$ tail bound $5.19\!\times\!10^{-2}$ and $\le$ endogenous tolerance $\gamma\lVert \text{exact}\rVert =9.81\!\times\!10^{-2}$ | PASS |
 | V14 | Bernstein ellipse rate | empirical $\rho_{\text{fit}}=3.129$ vs. theoretical $\rho=2.629$, ratio $1.19$ | PASS |
 | V15 | Two-level criteria ($\beta_1=1$) | homological solution 2 steps / exact solution 2 steps, **no bifurcation point** (due to $\rho_h\approx0.947>\gamma$, see §17.1 qualification) | PASS |
-| V16 | Homological distance | $\|M_a^\star-M_b^\star\|=7.53\!\times\!10^{-1}$, $d_{\text{hom}}=3.42\!\times\!10^{-3}\le\epsilon_{\text{endo}}$; $\rho_h$ scan mean $0.9473$ | PASS |
-| V17 | $\beta_1=0$ degeneracy warning | $\|h\|$ of 5 random residuals $\in[6.5,14.9]\times10^{-15}$, homological-solution set = whole space | CONFIRMED |
+| V16 | Homological distance | $\lVert M_a^\star-M_b^\star\rVert =7.53\!\times\!10^{-1}$, $d_{\text{hom}}=3.42\!\times\!10^{-3}\le\epsilon_{\text{endo}}$; $\rho_h$ scan mean $0.9473$ | PASS |
+| V17 | $\beta_1=0$ degeneracy warning | $\lVert h\rVert$ of 5 random residuals $\in[6.5,14.9]\times10^{-15}$, homological-solution set = whole space | CONFIRMED |
 | V18 | Canonical representative (minimum Dirichlet energy) | $E_a=3.05\times10^{-9}$ wins, outputs three certificates | PASS |
 
 **The four points exposed empirically by v1.1** (all written back into the specification body):
@@ -876,8 +876,8 @@ Equation family: E01 $\tau_3$ / E02 $\sum a_k\tau_k^2$ (single spectral shape); 
 
 | Item | Content | Empirical range |
 |---|---|---|
-| V-A | moment cross $\max\|\tau_{\text{pipe}}-\tau_{\text{eig}}\|$ | $5.3\!\times\!10^{-16}\sim2.1\!\times\!10^{-15}$ |
-| V-B | independent residual $\|G_{\text{eig}}(M^\star)-c\|/\|G(m_a)-c\|$ (threshold $\gamma$) | $4.9\!\times\!10^{-3}\sim1.7\!\times\!10^{-1}$ |
+| V-A | moment cross $\max\lVert \tau_{\text{pipe}}-\tau_{\text{eig}}\rVert$ | $5.3\!\times\!10^{-16}\sim2.1\!\times\!10^{-15}$ |
+| V-B | independent residual $\lVert G_{\text{eig}}(M^\star)-c\rVert /\lVert G(m_a)-c\rVert$ (threshold $\gamma$) | $4.9\!\times\!10^{-3}\sim1.7\!\times\!10^{-1}$ |
 | V-C | kernel fidelity: expansion vs. exact spectral integral (threshold $\gamma$) | $1.1\!\times\!10^{-3}\sim1.4\!\times\!10^{-1}$ |
 | V-D | legality: positive edge weights, $\lambda_2>0$, Hankel feasible | E01/E09 are second-tier verdicts (see the §13.6 table) |
 | V-E | $\Psi=F^2/2$ non-increasing | 10/10 |
@@ -895,8 +895,8 @@ The 10 random equations of v1.2 are generalized to **10 problem types × 5 rando
 |---|---|
 | Overall verdict | **50 / 50 SOLVED** |
 | Total steps | 286 steps (mean $5.72$ steps/equation) |
-| V-A moment cross $\max\|\tau_{\text{pipe}}-\tau_{\text{eig}}\|$ | $\le 1.29\times10^{-14}$ (machine precision) |
-| V-B independent residual $\|G_{\text{eig}}(M^\star)-c\|/\|G(m_a)-c\|$ (threshold $\gamma$) | 49 equations $<10^{-9}$; B2-E02 $=1.29\times10^{-1}$ |
+| V-A moment cross $\max\lVert \tau_{\text{pipe}}-\tau_{\text{eig}}\rVert$ | $\le 1.29\times10^{-14}$ (machine precision) |
+| V-B independent residual $\lVert G_{\text{eig}}(M^\star)-c\rVert /\lVert G(m_a)-c\rVert$ (threshold $\gamma$) | 49 equations $<10^{-9}$; B2-E02 $=1.29\times10^{-1}$ |
 | V-D legality | 50/50 |
 | V-E monotonicity of $\Psi$ non-increasing | 50/50 |
 | V-F Operator 18's three certificates | 50/50 |
@@ -918,7 +918,7 @@ The 10 random equations of v1.2 are generalized to **10 problem types × 5 rando
 | This layer's operator | Existing operators depended on | Dependency content |
 |---|---|---|
 | Op13 | Op6, Op10 | $(\alpha_n,\lambda_2)$ spectral assets; $\mathcal{O}(1)$ pseudo-inverse facilities; $N_K \le K_0$ horizon clamping |
-| Op14 | Op6, Op7, Op10 | potential re-solve $\Phi$; $B$-field leapfrog; $(DD^T)^\dagger$ local solving |
+| Op14 | Op6, Op7, Op10 | potential re-solve $\Phi$; $B$-field leapfrog; $(DD^T)^{\dagger}$ local solving |
 | Op15 | Op7, Op10 | boundary operators $D,C$; Sherman-Morrison incremental recurrence; Dirichlet-energy monotonicity red line |
 | Op16 | Op4, Op9 | endogenous spectral support $[\gamma,1]$; adaptive spectral window $\tau(s)$ (for warning counting) |
 | Op17 | Op8, Op9 | $\mu_{\text{trace}}$ arbitration chain; Betti stitching; $\mathcal{S}_{\text{stable}}$ termination criterion |

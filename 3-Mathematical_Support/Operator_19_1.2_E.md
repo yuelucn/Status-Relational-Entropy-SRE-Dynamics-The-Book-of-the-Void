@@ -85,7 +85,7 @@ Ground the $\sigma$ channel **separately** as Operator 19:
 
 ### 2.1 Graph as a 1-Dimensional Chain Complex
 
-Let the bond graph be $G=(V,E)$ with $|V|=n$ and $|E|=m$. The SRE system operates **exclusively on 1-dimensional complexes (graphs)** — there are no 2-cells (faces), so
+Let the bond graph be $G=(V,E)$ with $\lvert V\rvert =n$ and $\lvert E\rvert =m$. The SRE system operates **exclusively on 1-dimensional complexes (graphs)** — there are no 2-cells (faces), so
 
 $$Z_1=\ker\partial_1,\qquad B_1=\mathrm{im}\,\partial_2=0,\qquad H_1(G;\mathbb{F}_2)=Z_1/B_1=Z_1,\qquad \dim H_1=\beta_1=E-V+c,$$
 
@@ -247,7 +247,7 @@ Thus reachability is equivalent to $M\neq0$ — we need only find any nonzero en
 
 **Statement**　If $G$ is **bipartite** (no odd cycles) and has exactly **one edge orbit**, then every Aut-invariant assignment is trivial (electron-like).
 
-**Proof**　A single orbit $\Rightarrow s$ is a constant $z$ (in $\mathbb{F}_2$). Bipartite $\Rightarrow$ every cycle $\gamma$ has even length $|\gamma|$. Hence $\sigma(\gamma)=z^{|\gamma|}=(z)^{\text{even}}=+1$, trivial. $\blacksquare$
+**Proof**　A single orbit $\Rightarrow s$ is a constant $z$ (in $\mathbb{F}_2$). Bipartite $\Rightarrow$ every cycle $\gamma$ has even length $\lvert \gamma\rvert$. Hence $\sigma(\gamma)=z^{\lvert \gamma\rvert }=(z)^{\text{even}}=+1$, trivial. $\blacksquare$
 
 **Reference** (consistent with charge-emergence paper §10.2):
 - Electron $Q_3$ (cube graph): bipartite, single edge orbit $\Rightarrow$ **forced trivial** ($[s]=0$);
@@ -425,7 +425,7 @@ The $\sigma$ channel of Operator 19 is a holonomy class in $H^1(G;\mathbb{Z}_2)$
 | 1 Bond Graph | $A_s$ | Boolean adjacency $\mathrm{adj}$ | $\mathcal{O}(n^2)$ |
 | 2 Graph Invariants | $\mathrm{adj}$ | $V,E,c,\beta_1,\deg,\text{bipartite}$ | $\mathcal{O}(n^2)$ |
 | 3 Fundamental Cycle Basis | $\mathrm{adj}$ | $\{\gamma_i\}_{i\le\beta_1}$ | $\mathcal{O}(n^2+E\cdot L)$ |
-| 4 Cycle Holonomy | $\{\gamma_i\},s$ | $\sigma$-vector, trivial | $\mathcal{O}(\sum_i|\gamma_i|)$ |
+| 4 Cycle Holonomy | $\{\gamma_i\},s$ | $\sigma$-vector, trivial | $\mathcal{O}(\sum_i\lvert \gamma_i\rvert )$ |
 | 5 Automorphisms (optional) | $\mathrm{adj},\text{colors}$ | Edge orbits | Guarded by `aut_cap`/`aut_max_v` (default $V\le22$, otherwise skipped) |
 | 6 Reachability (optional) | $\{\gamma_i\},\{\text{orbits}\}$ | $M$, nontrivial reachable, witness | $\mathcal{O}(\beta_1\cdot k)$ |
 

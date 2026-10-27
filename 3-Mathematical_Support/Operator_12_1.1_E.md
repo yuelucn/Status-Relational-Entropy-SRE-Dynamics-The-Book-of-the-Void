@@ -46,7 +46,7 @@ In molecular graphs, this corresponds to:
 
 - **No backtracking**: No vertex repetition within the path
 - **No duplicate counting**: Each cycle is enumerated once starting from its minimum vertex; forward and reverse directions are deduplicated by canonical representation
-- **Complexity**: For sparse molecular graphs ($|E| \sim O(n)$), the complexity is $O(n \cdot 2^{N_{\max}})$, negligible for $N_{\max} \leq 8$
+- **Complexity**: For sparse molecular graphs ($\lvert E\rvert  \sim O(n)$), the complexity is $O(n \cdot 2^{N_{\max}})$, negligible for $N_{\max} \leq 8$
 
 $$n_{\text{loops}} = \text{len}(\text{enumerate\_simple\_cycles}(A_q, N_{\max}))$$
 
@@ -58,7 +58,7 @@ $$n_{\text{loops}} = \text{len}(\text{enumerate\_simple\_cycles}(A_q, N_{\max}))
 
 SRE theory requires "$2N$ reciprocal measurements to restore the initial symmetric state" (Möbius phase). On the SRE sign matrix $M$, define:
 
-$$\text{mobius\_ratio} = \frac{1}{N_{\max} - 2} \sum_{k=3}^{N_{\max}} \frac{|\text{tr}(M^k)|}{n^k}$$
+$$\text{mobius\_ratio} = \frac{1}{N_{\max} - 2} \sum_{k=3}^{N_{\max}} \frac{\lvert \text{tr}(M^k)\rvert }{n^k}$$
 
 where $M$ is the SRE sign matrix (elements $\in \{+1, -1\}$, no zero elements) and $n$ is the number of atoms.
 
@@ -100,7 +100,7 @@ The algebraic connectivity of the loop-atom subgraph is no less than the full gr
 |------------|----------------------------|
 | N-scale topological closed loop | $n_{\text{loops}}$ (simple cycle count) |
 | $[A_1, ..., A_N]$ retrospective causality | DFS cycle enumeration (no backtracking contamination) |
-| Möbius bilayer phase | $\text{mobius\_ratio} = \|\text{tr}(M^k)\| / n^k$ |
+| Möbius bilayer phase | $\text{mobius\_ratio} = \lVert \text{tr}(M^k)\rVert  / n^k$ |
 | $2N$-step symmetry restoration | $\text{mobius\_ratio} < 1$ → double period required |
 | Spin 1/2 emergence | Statistical emergence of $\text{mobius\_ratio} \neq 1$ |
 | Charge = topological bias | Edge weight bias from electronegativity modulation in $A_q$ |

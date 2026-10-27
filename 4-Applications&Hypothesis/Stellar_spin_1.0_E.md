@@ -26,9 +26,9 @@ SRE‑v6.0 upgrades the metric ontology; spatial distance is no longer treated a
 
 1. **Dissipation‑Compensation Duality**
 The squared macroscopic metric is defined as the topological routing overhead expended by the network to counteract inter‑node information dissipation:
-\[
+$$
 R_{i j}^{2} \equiv Tr\left(\hat{\mathcal{D}}_{i j} \cdot \hat{\mathcal{C}}_{compensation }\left(\alpha_{0, dynamic }\right)\right) \cdot exp \left(-\gamma \cdot \mu_{loss }\right)
-\]
+$$
 - $\hat{\mathcal{D}}_{i j}$: information‑dissipation tensor, describing information‑loss between events;
 - $\hat{\mathcal{C}}_{compensation }$: compensation operator, representing routing‑resources deployed by the decentralized network to maintain matrix stability.
 
@@ -126,7 +126,7 @@ Correspondences mapping topological‑charge, dissipation‑tensor onto angular�
 This model constitutes an axiomatic a‑priori reasoning‑framework. Even if all a‑posteriori observational fits pass, it only demonstrates that phenomena admit description inside this framework. It cannot prove that the underlying universe is ontologically a discrete‑causal‑network. Competing frameworks such as $\Lambda‑\text{CDM}$ and MOND may equally fit observations.
 
 ## 6 Summary of Complete Logical Chain
-\[
+$$
 \begin{gathered}
 \text{Operator1} \sim 10 \text{ discrete binary causal‑network operators}
 \Rightarrow
@@ -148,6 +148,6 @@ This model constitutes an axiomatic a‑priori reasoning‑framework. Even if al
 \xrightarrow{\text{a‑posteriori observational fitting / falsification}}
 \text{assess candidate‑model validity}
 \end{gathered}
-\]
+$$
 
 <div style="page-break-after: always;"></div>

@@ -36,12 +36,12 @@ Let $X_{0}(t)$ and $X_{1}(t)$ denote discrete complex response streams output by
 
 $$
 M=\begin{pmatrix}
-E\left[\left|X_{0}\right|^{2}\right] & E\left[X_{0} X_{1}^{*}\right] \\
-E\left[X_{1} X_{0}^{*}\right] & E\left[\left|X_{1}\right|^{2}\right]
+E\left[\left\lvert X_{0}\right\rvert ^{2}\right] & E\left[X_{0} X_{1}^{*}\right] \\
+E\left[X_{1} X_{0}^{*}\right] & E\left[\left\lvert X_{1}\right\rvert ^{2}\right]
 \end{pmatrix}
 $$
 
-The modulus of the non-linear cross-coherence term $\rho=|E[X_{0} X_{1}^{*}]| \in[0,1]$ serves as a characterisation quantity directly quantifying logical correlation density between two causal chains. Emergent macroscopic distance $D$ is not propagated from an external background; it is derived strictly from Shannon mutual-information encoded within the local Hermitian-matrix representation. Define shared status-relational entropy between two loops as $I=-\ln (1-\rho^{2})$. Emergent geometric distance is inversely proportional to this shared logical density:
+The modulus of the non-linear cross-coherence term $\rho=\lvert E[X_{0} X_{1}^{*}]\rvert  \in[0,1]$ serves as a characterisation quantity directly quantifying logical correlation density between two causal chains. Emergent macroscopic distance $D$ is not propagated from an external background; it is derived strictly from Shannon mutual-information encoded within the local Hermitian-matrix representation. Define shared status-relational entropy between two loops as $I=-\ln (1-\rho^{2})$. Emergent geometric distance is inversely proportional to this shared logical density:
 
 $$
 D \propto \frac{1}{I}=\frac{1}{-\ln \left(1-\rho^{2}\right)}

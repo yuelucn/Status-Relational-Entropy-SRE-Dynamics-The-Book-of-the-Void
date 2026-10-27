@@ -14,7 +14,7 @@ In the State–Relational Entropy (SRE) framework the word "time" carries three 
 
 $$
 \Omega(n)=\big\langle a_{ij}(n)\big\rangle_{\text{all }n^{2}\text{ entries}},\qquad
-a_{ij}=\frac{\rho_{ij}}{1+\rho_{ij}},\quad \rho_{ij}=\frac{\lambda d_{ij}}{|M^{2}|_{ij}+1},
+a_{ij}=\frac{\rho_{ij}}{1+\rho_{ij}},\quad \rho_{ij}=\frac{\lambda d_{ij}}{\lvert M^{2}\rvert _{ij}+1},
 \qquad T_{\rm em}(n)=\sum_{k<n}\Omega(k),
 $$
 
@@ -36,7 +36,7 @@ The load-bearing separation is **structure without memory**: the joint distribut
 
 $$
 \Omega(n)=\big\langle a_{ij}(n)\big\rangle_{\text{全部 }n^{2}\text{ 个元素}},\qquad
-a_{ij}=\frac{\rho_{ij}}{1+\rho_{ij}},\quad \rho_{ij}=\frac{\lambda d_{ij}}{|M^{2}|_{ij}+1},
+a_{ij}=\frac{\rho_{ij}}{1+\rho_{ij}},\quad \rho_{ij}=\frac{\lambda d_{ij}}{\lvert M^{2}\rvert _{ij}+1},
 \qquad T_{\rm em}(n)=\sum_{k<n}\Omega(k),
 $$
 

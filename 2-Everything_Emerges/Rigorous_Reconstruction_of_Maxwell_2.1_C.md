@@ -1,4 +1,4 @@
-﻿# 基于纯无量纲图上同调与全局演化步对麦克斯韦场方程的严格重构
+# 基于纯无量纲图上同调与全局演化步对麦克斯韦场方程的严格重构
 **版本**: 2.1（绝对公理不变量与辛闭合版本）
 
 > 备注：本文为SRE底层0-State纯无量纲公理本体层稿件，不引入任何外部经验物理常数；文中各类普适常数全部作为离散因果网络图上同调运算的代数不变量内生涌现。**本文不实现向SI工程单位的映射；SI观测映射锚机制参见配套电学论文v1.1-rev，该映射锚是本体层之上额外增设的工程对接转换层。**
@@ -60,7 +60,7 @@ $$
 \mathbf{P}_{\mathcal{E}} \equiv \mathbf{D}_{edge} \left(\mathbf{D}_{edge}^T \mathbf{D}_{edge}\right)^{\dagger} \mathbf{D}_{edge}^T, \quad \mathbf{P}_{\mathcal{F}} \equiv \mathbf{C}_{cycle} \left(\mathbf{C}_{cycle} \mathbf{C}_{cycle}^T\right)^{\dagger} \mathbf{C}_{cycle}
 $$
 
-极端测试场景：单个孤立顶点，完全剥离全部有向边（$|\mathcal{E}|=0$），互交核收缩为空矩阵集合$\mathbf{\Psi}_{\text{light}} \equiv \mathbf{0}$。代入上式可得：
+极端测试场景：单个孤立顶点，完全剥离全部有向边（$\lvert \mathcal{E}\rvert =0$），互交核收缩为空矩阵集合$\mathbf{\Psi}_{\text{light}} \equiv \mathbf{0}$。代入上式可得：
 $$
 \mathbf{E}_S = \mathbf{P}_{\mathcal{E}}(\mathbf{0}) \equiv \mathbf{0}, \quad \mathbf{B}_{S+1/2} = \mathbf{P}_{\mathcal{F}}(\mathbf{0}) \equiv \mathbf{0}
 $$
@@ -137,7 +137,7 @@ $$
 
 关键点：零空间$\text{Null}(\mathbf{L}^{(1)})$基底对齐模式的代数稳定性，完全由连通分量拓扑的第0贝蒂数（$\beta_0=1$）保护，在全部参数扫参框架下保持不变。
 
-|拓扑范式 |节点$|\mathcal{V}|$ |边$|\mathcal{E}|$ |扫参参数空间 |最大残差上界 |矩阵不变量保护机制 |
+|拓扑范式 |节点$\lvert \mathcal{V}\rvert$ |边$\lvert\mathcal{E}\rvert$ |扫参参数空间 |最大残差上界 |矩阵不变量保护机制 |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 |普通平面网格 |16 |24 | $k=1 \dots 5,\ \Delta z=0.02$ | $2.842171 \times 10^{-14}$ | 贝蒂数$\beta_0=1$保证连通 |
 |一维单环电路 |12 |12 | $k=1 \dots 5,\ \Delta z=0.05$ | $0.000000 \times 10^{0}$ | 贝蒂数$\beta_0=1$保证连通 |

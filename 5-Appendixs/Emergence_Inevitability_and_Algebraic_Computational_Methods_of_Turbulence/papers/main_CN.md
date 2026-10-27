@@ -162,7 +162,7 @@ $$
 取绝对值与符号得局域相干势垒
 
 $$
-\mathcal{E}_{\text{local}} = |\tilde{\mathcal{E}}_{\text{local}}|, \qquad \mathfrak{B} = \mathcal{E}_{\text{local}} + \exp\!\big(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}}\big)
+\mathcal{E}_{\text{local}} = \lvert \tilde{\mathcal{E}}_{\text{local}}\lvert , \qquad \mathfrak{B} = \mathcal{E}_{\text{local}} + \exp\!\big(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}}\big)
 $$
 
 并定义**无量纲因果拓扑深度** `𝒟_s(v_f, v_m) = (n+1) - σ(v_m)`（σ 为节点加入序号）。最大熵剪枝主方程给出该通道被**剪除**的概率：

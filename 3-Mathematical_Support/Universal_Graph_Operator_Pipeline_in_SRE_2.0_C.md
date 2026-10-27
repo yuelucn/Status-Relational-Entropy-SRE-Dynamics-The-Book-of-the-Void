@@ -12,7 +12,7 @@
 
 在 Version 18.0 扩展中，流水线进一步引入两大功能层：**电子自由度扩展层（算子 11–12）**将 Pauling 电负性差异编码为 SRE 公理 1 的二元自旋耦合，注入分子图的电荷自由度与拓扑闭合环/Möbius 相位审计，使谱形与度规获得电子感知能力；**谱形方程求解层（算子 13–18）**构成独立于结构脉冲的内生求解内环——通过 Chebyshev 矩编码、Hodge 同调路由、内生拟牛顿反演、Hankel 可行性钳制与解分支贝蒂审计，在不推进外层结构脉冲的前提下，以纯内生尺度（谱隙比 $\gamma = \lambda_2/\alpha_n$）求解任意谱形约束方程 $\mathcal{F}(\boldsymbol{\tau}) = 0$，并由算子 18 输出同调类内 Dirichlet 能最小的规范代表与三项可信度证书，完成从矩空间到图结构实现的最终闭合。
 
-在 Version 20.0 扩展中，流水线首次把"反应"提升为**对象**：**反应活化 / 桥接算子层（算子 20，$\mathcal{K}_{\text{act}}$）** 把化学反应建为分段路径（骨架 waypoints + 外部催化剂边界 + 吸附态），给出三个相互独立的无量纲通道——边拓扑挫折 $\varrho = \|\delta_{e,\text{harm}}\|/\|\delta_e\|$（$H^1(G;\mathbb{R})$，绕环不可消的部分）、顶点对比度 $\nu = \|\delta_v^\perp\|/\|\delta_v\|$（氢覆盖在各位点间的再分配）、刚度瓶颈 $\kappa = \int dt/(g+\varepsilon)$（沿路径的谱隙塌缩）。核心定理：恰当性判据（T20.1：$\delta$ 恰当 $\iff$ 全环 hol=0 $\iff$ 调和分量为零）、$\kappa$ 的全局缩放不变性（T20.2）、端点同调类不变（T20.3：界面边**不能**改变端点挫折 $\varrho_{\text{tot}}$，催化剂只能作用于路径与刚度）、顶点通道规范不变性（T20.4：对覆盖整体平移与非零缩放不变）、过渡态可观测判据（P20.5：零权割 $\iff$ $\gamma\to0$ $\iff$ $\kappa\sim1/\varepsilon$，催化剂经界面边桥接后 $\lambda_2>0$ ⇒ $\kappa$ 有限）。公理 A20 以 Pareto 偏序（同时改善三通道）定义催化剂有效性——它不是"把 $\varrho$ 降为 0"，因为端点挫折由 T20.3 所禁止。中心假设 H20.1（三通道与 DFT 势垒秩相关 $|\rho_S|\ge0.7$）与火山猜想 C20.7（$\kappa(w_I)$ U 形）均显式标注未证。参考实现 `sre_activation_operator.py`（v0/v1 双版，含 `self_test` 19/19）；独立验证程序 `verify_operator_20.py`（V1–V14，41/41 PASS）。冻结契约：`activation_keys` 恒 7 键。
+在 Version 20.0 扩展中，流水线首次把"反应"提升为**对象**：**反应活化 / 桥接算子层（算子 20，$\mathcal{K}_{\text{act}}$）** 把化学反应建为分段路径（骨架 waypoints + 外部催化剂边界 + 吸附态），给出三个相互独立的无量纲通道——边拓扑挫折 $\varrho = \|\delta_{e,\text{harm}}\|/\|\delta_e\|$（$H^1(G;\mathbb{R})$，绕环不可消的部分）、顶点对比度 $\nu = \|\delta_v^\perp\|/\|\delta_v\|$（氢覆盖在各位点间的再分配）、刚度瓶颈 $\kappa = \int dt/(g+\varepsilon)$（沿路径的谱隙塌缩）。核心定理：恰当性判据（T20.1：$\delta$ 恰当 $\iff$ 全环 hol=0 $\iff$ 调和分量为零）、$\kappa$ 的全局缩放不变性（T20.2）、端点同调类不变（T20.3：界面边**不能**改变端点挫折 $\varrho_{\text{tot}}$，催化剂只能作用于路径与刚度）、顶点通道规范不变性（T20.4：对覆盖整体平移与非零缩放不变）、过渡态可观测判据（P20.5：零权割 $\iff$ $\gamma\to0$ $\iff$ $\kappa\sim1/\varepsilon$，催化剂经界面边桥接后 $\lambda_2>0$ ⇒ $\kappa$ 有限）。公理 A20 以 Pareto 偏序（同时改善三通道）定义催化剂有效性——它不是"把 $\varrho$ 降为 0"，因为端点挫折由 T20.3 所禁止。中心假设 H20.1（三通道与 DFT 势垒秩相关 $\lvert \rho_S\rvert \ge0.7$）与火山猜想 C20.7（$\kappa(w_I)$ U 形）均显式标注未证。参考实现 `sre_activation_operator.py`（v0/v1 双版，含 `self_test` 19/19）；独立验证程序 `verify_operator_20.py`（V1–V14，41/41 PASS）。冻结契约：`activation_keys` 恒 7 键。
 
 算子 20 与算子 19 正交互补：19 是静态图的符号通道（$\mathbb{Z}_2$）、20 是反应路径的量值 + 顶点 + 刚度通道（$\mathbb{R}$）。边界算子 13（矩编码，D6 子程序）、14（同调路由，最邻近：分解对象不同——14 分解方程残差 $r$、20 分解反应位移 $\delta$）、15/16/17（反演、钳制、审计，均为 D6 的子程序）、11/18（顶点势型极性，19-T1 已定位其 holonomy 恒平凡）。
 
@@ -59,8 +59,8 @@ $$\mathbf{K}_{\text{RR}} \equiv \mathbf{V}_{\text{global}}^T \mathbf{L}_G \mathb
 
 ### 2.2 算子 4：局部拓扑度统计算子（$\mathcal{M}_{\text{degree}}$）
 * **Release Status**: 🟢 Published (Open Source)
-* **数理机制规范**：为了消除分布式视界碎片化在边界周界激发的非连续台阶突变阶跃噪声，并防御零度真空场景下的浮点除零死锁，算子 4 实施了**谱齐次平滑（Spectral Homogeneous Smoothing）**。它完全立足于无维度原则，提取网络的内源 2 步图游走不变量元绝对值 $|(\mathbf{M}_\Omega^2)_{ij}|$（完美映射两点间长度为 2 的形式因果游走路径干涉总和），并将其与全局谱先验复合，重构出齐次解析闭式显式方程：
-$$W_e(i,j)^{(s-1)} \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}{\sqrt{\lambda_2(n) + D_{ii}^{\text{self}} + D_{jj}^{\text{self}} + \epsilon_{\text{topo}}^{(s)}}} \cdot \left( 1 + \frac{|(\mathbf{M}_\Omega^2)_{ij}| \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}} \right)$$
+* **数理机制规范**：为了消除分布式视界碎片化在边界周界激发的非连续台阶突变阶跃噪声，并防御零度真空场景下的浮点除零死锁，算子 4 实施了**谱齐次平滑（Spectral Homogeneous Smoothing）**。它完全立足于无维度原则，提取网络的内源 2 步图游走不变量元绝对值 $\lvert (\mathbf{M}_\Omega^2)_{ij}\rvert$（完美映射两点间长度为 2 的形式因果游走路径干涉总和），并将其与全局谱先验复合，重构出齐次解析闭式显式方程：
+$$W_e(i,j)^{(s-1)} \equiv \frac{\sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}}{\sqrt{\lambda_2(n) + D_{ii}^{\text{self}} + D_{jj}^{\text{self}} + \epsilon_{\text{topo}}^{(s)}}} \cdot \left( 1 + \frac{\lvert (\mathbf{M}_\Omega^2)_{ij}\rvert  \cdot \ln \left(1 + \frac{\lambda_2(n)}{\alpha_n}\right)}{\alpha_n + \sqrt{D_{ii}^{\text{out}} \cdot D_{jj}^{\text{in}}}} \right)$$
 
 由下游前置算子 10 筑牢的 $\lambda_2(n) > 0$ 先验，硬性锁死根号下各项之和恒真大于零。依据 Courant-Fischer 变分极值定理，算子 4 成功激活全局代数连通性调节阀，无论网络如何稀疏或遭遇零度真空割（Cut），全图的**狄利克雷能量泛函（Dirichlet Energy Functional）被死死夹紧在紧致正定子空间内**：
 $$\mathcal{E}_D(E_s) \ge \lambda_2(n) \cdot \Vert E_s \Vert_2^2 > 0$$
@@ -71,7 +71,7 @@ $$\mathcal{E}_D(E_s) \ge \lambda_2(n) \cdot \Vert E_s \Vert_2^2 > 0$$
 ### 3.1 算子 5：内源变量延迟校准算子（$\mathcal{M}_{\text{latency}}$）
 * **Release Status**: 🟢 Published (Open Source)
 * **接口定义与流空间映射**：算子 5 作为开源底座生态层的最后一个核心流变组件，接受算子 4 计算的本地邻域交叉交叠密度边权 $W_e(i,v_f)$ 与微观松弛步数 $s$，强行将其投影映射进入实值向量空间，定义为各独立有向边在前沿 outward 传播时的**离散渗透率（Discrete Penetration Rate）** $c_e^{(s)}$：
-$$\mathcal{M}_{\text{latency}}: \mathbb{R}^{n \times n} \times \mathbb{N} \longrightarrow \mathbb{R}^{|E_n|}$$
+$$\mathcal{M}_{\text{latency}}: \mathbb{R}^{n \times n} \times \mathbb{N} \longrightarrow \mathbb{R}^{\lvert E_n\rvert }$$
 
 * **引力时间膨胀自发涌现**：算子 5 复合全局谱半径主时钟 $\alpha_n$ 与硬件级防发散微调分量 $\delta_{\text{flt}}$ 配置，构建出受到最高速上限 $c_{\text{max}}$ 刚性截断夹紧的齐次显式方程：
 $$c_e^{(s)} \equiv \min \left( \frac{\alpha_n}{\ln(1 + W_e(i, v_f)) + \delta_{\text{flt}}}, \ c_{\text{max}} \right)$$
@@ -140,7 +140,7 @@ $$\Delta \Pi_{\text{valve}}(s) = - 2 \alpha_{\text{smooth}} \gamma_{\text{flow}}
 * **Release Status**: 🟢 Published (Open Source, Homological Stitching Core Layer)
 * **防线定位与接口声明**：算子 9 作为整条通用图算子流水线的**终极收官大印与大一统系统封顶组件**。它前向拦截经算子 8 平滑对流转译后的异步 Timeline 变量流，直接杀入高阶 2-阶单形链复形面空间 $C_2(F;\mathbb{R})$ 内部。算子 9 将作用域严格限制在前沿局域视界内，显式重构并提取出 3-阶局域子网拉普拉斯算子 $\mathbf{L}_{\Omega}^{(3)} \equiv \partial_2^T \mathbf{M}_{\Omega} \partial_2 + \delta_1 \mathbf{P}_{\mu} \delta_1^T$ 的非奇异**同调零空间（Null-Space）$\operatorname{Ker}(\mathbf{L}_{\Omega}^{(3)})$**。该内核空间此前已通过注入二次方特征谱先验底限 $\lambda_2(n)^2 \cdot \mathbf{I}$ 获得了免疫奇异性死锁的金身防护。
 
-* **收敛不变量指标与大圆满合龙**：利用解离出的完备零空间基底矩阵 $\mathbf{V}_{\text{null}}$，算子 9 分块代数构筑出双阶平滑缝合矩阵 $\mathbf{S}_{\text{dual}}$，施加广义伪逆投影对互斥切片执行重整化。同调变分推导给出了 **全局一阶贝蒂数微调差分硬性锚定定理** 的终审严密数学证明。在秩-零度（Rank-Nullity）维数转换映射下，异步 outward 拓扑扩张带来的前沿 1-chain 通道度数突变，被缝合算子伴随边界滤波器的线性秩同步增长完美、deterministic 地精确中和对消（$\Delta \operatorname{rank}(\partial_1) \equiv |\mathcal{N}(v_f)|$）。这硬性迫使图亏格独立环路数在全生命周期内的变分步长重言式恒等于绝对零：
+* **收敛不变量指标与大圆满合龙**：利用解离出的完备零空间基底矩阵 $\mathbf{V}_{\text{null}}$，算子 9 分块代数构筑出双阶平滑缝合矩阵 $\mathbf{S}_{\text{dual}}$，施加广义伪逆投影对互斥切片执行重整化。同调变分推导给出了 **全局一阶贝蒂数微调差分硬性锚定定理** 的终审严密数学证明。在秩-零度（Rank-Nullity）维数转换映射下，异步 outward 拓扑扩张带来的前沿 1-chain 通道度数突变，被缝合算子伴随边界滤波器的线性秩同步增长完美、deterministic 地精确中和对消（$\Delta \operatorname{rank}(\partial_1) \equiv \lvert \mathcal{N}(v_f)\lvert$）。这硬性迫使图亏格独立环路数在全生命周期内的变分步长重言式恒等于绝对零：
 $$\Delta \beta_1 \equiv 0$$
 
 大规模多 Actors 异步并发标度扩展实证表明，50轮长周期外扩相变中，系统拓扑维度断裂发散频次为 0 次，最大变分偏差为 0，高阶伪逆矩阵解离的时间复杂度收敛至平坦的 $\mathcal{O}(1)$ 极限上界。
@@ -151,16 +151,16 @@ $$\Delta \beta_1 \equiv 0$$
 
 ### 6.1 算子 11：自旋-电荷邻接算子（$\mathcal{O}_{\text{spin-charge}}$）
 * **Release Status**: 🟢 Published (Open Source, Electronic Topology Layer)
-* **数理机制规范**：算子 11 在 SRE 平滑邻接矩阵 $A_s$ 基础上，将 Pauling 电负性差异编码为 SRE 公理 1 的二元自旋耦合强度，从而在不引入外部量子力学计算的前提下为分子图注入电子自由度。它定义原子对 $(i,j)$ 的自旋耦合强度 $w_q(i,j) = |\tanh(\chi_i - \chi_j)|$（$\chi_i$ 为 Pauling 电负性），其中 $\tanh$ 在 $\Delta\chi \to 0$ 时呈线性响应、在 $\Delta\chi \to \infty$ 时饱和封顶，与算子 5 的对数增长形成对偶。电荷加权邻接矩阵定义为：
+* **数理机制规范**：算子 11 在 SRE 平滑邻接矩阵 $A_s$ 基础上，将 Pauling 电负性差异编码为 SRE 公理 1 的二元自旋耦合强度，从而在不引入外部量子力学计算的前提下为分子图注入电子自由度。它定义原子对 $(i,j)$ 的自旋耦合强度 $w_q(i,j) = \lvert \tanh(\chi_i - \chi_j)\lvert$（$\chi_i$ 为 Pauling 电负性），其中 $\tanh$ 在 $\Delta\chi \to 0$ 时呈线性响应、在 $\Delta\chi \to \infty$ 时饱和封顶，与算子 5 的对数增长形成对偶。电荷加权邻接矩阵定义为：
 $$A_q(i,j) = A_s(i,j) \cdot \bigl(1 + \rho \cdot w_q(i,j)\bigr)$$
-其中 $\rho \in [0,1]$ 为电子耦合强度参数。v1.1 规范统一了异核键的增益方向——异核键一律获得增益（增益排序定理：$g(\text{O-H}) > g(\text{C-O}) > g(\text{C-H}) > g(\text{C-C}) = 1$），不再随分子平均电负性漂移。算子 11 进而构建电荷加权图拉普拉斯 $L_q = \operatorname{diag}(A_q \mathbf{1}) - A_q$，输出电荷感知谱量：代数连通性 $\lambda_{2,q} = \lambda_2(L_q)$、谱半径 $\alpha_q = \max|\lambda(L_q)|$、条件数 $\kappa_q = \alpha_q/\lambda_{2,q}$，以及电负性离散度 $q_{\text{dispersion}} = \operatorname{std}(|\chi|)/\operatorname{mean}(|\chi|)$ 与最大自旋耦合 $\text{max\_spin\_coupling} = \tanh(\max|\Delta\chi|)$。由 Courant-Fischer 定理，电荷感知 Dirichlet 能同样满足 $E_D^{\text{elec}}(E_s) \ge \lambda_{2,q}\|E_s\|^2 > 0$。算子 11 的输出 $A_q$ 可直接替代算子 4 的 $A_s$ 输入，使 $W_e$ 自动获得电荷感知能力而无需修改算子 4 公式本身。
+其中 $\rho \in [0,1]$ 为电子耦合强度参数。v1.1 规范统一了异核键的增益方向——异核键一律获得增益（增益排序定理：$g(\text{O-H}) > g(\text{C-O}) > g(\text{C-H}) > g(\text{C-C}) = 1$），不再随分子平均电负性漂移。算子 11 进而构建电荷加权图拉普拉斯 $L_q = \operatorname{diag}(A_q \mathbf{1}) - A_q$，输出电荷感知谱量：代数连通性 $\lambda_{2,q} = \lambda_2(L_q)$、谱半径 $\alpha_q = \max\lvert \lambda(L_q)\rvert$、条件数 $\kappa_q = \alpha_q/\lambda_{2,q}$，以及电负性离散度 $q_{\text{dispersion}} = \operatorname{std}(\lvert \chi\rvert )/\operatorname{mean}(\lvert \chi\rvert )$ 与最大自旋耦合 $\text{max\_spin\_coupling} = \tanh(\max\lvert \Delta\chi\rvert )$。由 Courant-Fischer 定理，电荷感知 Dirichlet 能同样满足 $E_D^{\text{elec}}(E_s) \ge \lambda_{2,q}\|E_s\|^2 > 0$。算子 11 的输出 $A_q$ 可直接替代算子 4 的 $A_s$ 输入，使 $W_e$ 自动获得电荷感知能力而无需修改算子 4 公式本身。
 
 ### 6.2 算子 12：拓扑闭合环审计算子（$\mathcal{O}_{\text{loop-audit}}$）
 * **Release Status**: 🟢 Published (Open Source, Electronic Topology Layer)
 * **数理机制规范**：算子 12 通过简单环枚举与 SRE 符号矩阵相位审计，检测 SRE 理论描述的"N 尺度拓扑闭合环 + Möbius 双层相位"模式，将分子图中的化学环结构（苯环、环氧等）映射为 SRE 电子拓扑的闭合回溯因果。它执行两步核心审计：
-  1. **简单环枚举**（DFS，无回溯污染、方向去重）：$n_{\text{loops}} = |\text{enumerate\_simple\_cycles}(A_q, N_{\max})|$，严格等于一阶贝蒂数 $\beta_1$，彻底消除了全连通距离核导致的虚假三角形假阳性（定理 12.2）。
+  1. **简单环枚举**（DFS，无回溯污染、方向去重）：$n_{\text{loops}} = \lvert \text{enumerate\_simple\_cycles}(A_q, N_{\max})\lvert$，严格等于一阶贝蒂数 $\beta_1$，彻底消除了全连通距离核导致的虚假三角形假阳性（定理 12.2）。
   2. **Möbius 相位比**：在 SRE 符号矩阵 $M$（元素 $\in \{+1,-1\}$，无零元）上定义
-  $$\text{mobius\_ratio} = \frac{1}{N_{\max}-2}\sum_{k=3}^{N_{\max}} \frac{|\operatorname{tr}(M^k)|}{n^k}$$
+  $$\text{mobius\_ratio} = \frac{1}{N_{\max}-2}\sum_{k=3}^{N_{\max}} \frac{\lvert \operatorname{tr}(M^k)\rvert }{n^k}$$
   由定理 12.3（符号平衡判据）：$\text{mobius\_ratio} = 1 \iff$ 无 Möbius 相位（完全符号平衡）；$\text{mobius\_ratio} < 1 \iff$ Möbius 相位存在（对应电子自旋 1/2 特征，即需 $2N$ 次互测才恢复初始对称态）。
 
 若 $n_{\text{loops}} \ge 1$，算子 12 提取环原子并集 $S$，构建环原子子图拉普拉斯 $L_{\text{loop}} = L_q[S,S]$，输出环结构连通性 $\lambda_{2,\text{loop}} = \lambda_2(L_{\text{loop}})$ 与条件数 $\kappa_{\text{loop}}$。由定理 12.5（交错不等式），$\lambda_{2,\text{loop}} \ge \lambda_{2,q} > 0$，保证环结构的拓扑连通性。算子 12 位于算子 4 之后、算子 5 之前，其审计结果用于调制算子 5 的信息传播速率 $c_e$。
@@ -171,7 +171,7 @@ $$A_q(i,j) = A_s(i,j) \cdot \bigl(1 + \rho \cdot w_q(i,j)\bigr)$$
 $$\tau_k = \frac{1}{N}\operatorname{tr}\bigl(T_k(Y)\bigr), \quad k = 0, 1, \dots, K$$
 全程无特征分解。算子 13 同时输出矩对边权的解析灵敏度 $w_{k,e} = d\tau_k/dM_e = (2k/(N\alpha_n))\, d_e^T U_{k-1}(Y) d_e$（$U_{k-1}$ 为第二类 Chebyshev，$d_e$ 为边界算子第 $e$ 行）。内生截断阶由谱隙比与视界自由度对数共同钳制：
 $$K = \min\!\left(\bigl\lceil \alpha_n/\lambda_2 \bigr\rceil,\ \bigl\lfloor 2\ln(1+N_K) \bigr\rfloor\right)$$
-前项保证截断误差不超过内生谱隙比，后项为过拟合防护。对于非多项式核（如 $\ln\hat\lambda$），算子 13 提供移位 Chebyshev 编码与零模剥离（$\tau_k^{\text{red}} = (N\tau_k - T_k(s_0))/(N-1)$，$s_0$ 为 Bernstein 椭圆奇点），由余项判据 $K_f = \min\{K : \sum_{k>K}|c_k| \le \gamma\max_k|c_k|\}$ 内生决定展开深度。
+前项保证截断误差不超过内生谱隙比，后项为过拟合防护。对于非多项式核（如 $\ln\hat\lambda$），算子 13 提供移位 Chebyshev 编码与零模剥离（$\tau_k^{\text{red}} = (N\tau_k - T_k(s_0))/(N-1)$，$s_0$ 为 Bernstein 椭圆奇点），由余项判据 $K_f = \min\{K : \sum_{k>K}\lvert c_k\rvert  \le \gamma\max_k\rvert c_k\lvert \}$ 内生决定展开深度。
 
 ### 6.4 算子 14：方程残差同调路由算子（$\mathcal{R}_{\text{hodge}}$）
 * **Release Status**: 🟢 Published (Open Source, Spectral Equation Solving Layer)
@@ -194,7 +194,7 @@ $$H_0[i,j] = \mu_{i+j}, \qquad H_1[i,j] = \mu_{i+j} - \mu_{i+j+2}$$
 ### 6.7 算子 17：解分支贝蒂审计与终止裁定算子（$\mathcal{A}_{\text{sol}}$）
 * **Release Status**: 🟢 Published (Open Source, Spectral Equation Solving Layer)
 * **数理机制规范**：算子 17 是求解内环的终止裁定器，基于三通道内生收敛判据。内生容差由谱隙比生成：$\epsilon_{\text{endo}} = (\lambda_2/\alpha_n)\|r_0\|$。裁定逻辑区分四种状态：
-  - **SOLVED（解出）**：三通道（梯度、旋度、调和）范数均低于 $\epsilon_{\text{endo}}$，且残差已"榨干"（本步 $|F|$ 下降不足一个 $\gamma$ 因子）或更新方向已耗尽（step_dead）。
+  - **SOLVED（解出）**：三通道（梯度、旋度、调和）范数均低于 $\epsilon_{\text{endo}}$，且残差已"榨干"（本步 $\lvert F\rvert$ 下降不足一个 $\gamma$ 因子）或更新方向已耗尽（step_dead）。
   - **OBSTRUCTION（拓扑障碍）**：仅当方向耗尽且仍存在非零调和分量时判定，移交算子 9 进行 Betti 缝合。
   - **STALLED（停滞）**：方向耗尽但不属于障碍，登记不可解。
   - **CONTINUE（继续）**：以上均不满足，进入下一内层步。
@@ -240,7 +240,7 @@ v1.3 修正要求 SOLVED 必须附加"已榨干"条件，避免首次跨过阈�
 * **三个独立通道**：
   - **边拓扑挫折 $\varrho$**：Hodge 分解 $\delta_e=\delta_{e,\text{grad}}+\delta_{e,\text{harm}}$ 上，$\varrho=\|\delta_{e,\text{harm}}\|/\|\delta_e\|$；端点值 $\varrho_{\text{tot}}$ 由 T20.3 证明**与催化剂无关**。
   - **顶点对比度 $\nu$**：$\delta_v=\mu\mathbf1+\delta_v^\perp$ 正交分解上，$\nu=\|\delta_v^\perp\|/\|\delta_v\|$；$\mu=(1/n)\sum\delta_v$ 是净氢变化。
-  - **刚度瓶颈 $\kappa$**：沿路径积分 $\int dt/(g+\varepsilon)$，$g=\lambda_2(L|_X)/\lambda_n(L|_X)$，$X$ 为"骨架顶点 ∪ 正权界面边所连边界顶点"（v0.3 重写计算域，恢复 P20.5 可观测性）。
+  - **刚度瓶颈 $\kappa$**：沿路径积分 $\int dt/(g+\varepsilon)$，$g=\lambda_2(L\lvert _X)/\lambda_n(L\rvert _X)$，$X$ 为"骨架顶点 ∪ 正权界面边所连边界顶点"（v0.3 重写计算域，恢复 P20.5 可观测性）。
 * **核心定理**：
   - **T20.1（恰当性三等价）**：$\delta$ 恰当 $\iff$ 全环 $\mathrm{Hol}_\mathbb{R}=0$ $\iff$ $\delta_{\text{harm}}=0$。
   - **T20.2（$\kappa$ 的缩放不变）**：$\gamma\in(0,1]$，$\kappa\ge1/(1+\varepsilon)$，全局缩放不变；单独缩放 $w_I$ 改变 $\kappa$。
@@ -248,7 +248,7 @@ v1.3 修正要求 SOLVED 必须附加"已榨干"条件，避免首次跨过阈�
   - **T20.4（顶点通道规范不变）**：$\nu$ 对覆盖整体平移与非零缩放不变；v0.2 错误陈述 $\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$ 已修正（数值反例在 V13）。
   - **P20.5（过渡态判据）**：零权割 $\iff$ $\gamma\to0$ $\iff$ $\kappa\sim1/\varepsilon$；界面边桥接后 $\lambda_2>0$ ⇒ $\kappa$ 有限。
   - **P20.6（$\gamma$ 非单调）**：加边使 $\lambda_2,\alpha_n$ 同时不减，比值无固定关系。
-  - **未证**：H20.1（$(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒秩相关 $|\rho_S|\ge0.7$）、C20.7（$\kappa(w_I)$ U 形火山）。
+  - **未证**：H20.1（$(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ 与 DFT 势垒秩相关 $\lvert \rho_S\rvert \ge0.7$）、C20.7（$\kappa(w_I)$ U 形火山）。
 * **输出与冻结契约**：核心量 $(\kappa,\varrho_{\text{path}},\nu_{\text{path}},\mu)$ + 诊断量 $(\varrho_{\text{tot}},\nu_{\text{tot}},\gamma_\ast,\text{feasible})$；`activation_keys(res)` 恒 7 键，下游指纹/报告管线按此消费。
 * **实现与验证**：参考实现 `sre_activation_operator.py`（v0/v1 双版，`self_test` 19/19）；独立验证 `verify_operator_20.py`（V1–V14，41/41 PASS；V11 与算子 19 兼容命题、V12 H20.1 外部对标 SKIP）。
 

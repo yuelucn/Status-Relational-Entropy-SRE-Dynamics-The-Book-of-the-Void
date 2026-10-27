@@ -184,7 +184,7 @@ $$L v_k=\big[(2c+w)-2c\cos\tfrac{2\pi k}{n}-w(-1)^{k}\big]v_k=2c\Big(1-\cos\tfra
 
 **注记 2.** 与项目既有闭式 $\mu_k=(2+w)-2\cos\frac{2\pi k}{n}-w(-1)^{k}$（[3] §3.4）在 $c=1$ 时等价；命题 1 只是把 $c$ 显式分离出来，以便在 §7 比较**通道**。
 
-**命题 1 的实测核对**（附录 A，PART 1a）：$n=6,8,10,20,30,60$，闭式谱与直接对角化的最大偏差 $\le6.2\times10^{-15}$；$\mu_0=0$ 恒成立；两支各 $n/2$ 个模（$n=60$ 时 $|$偶$|=|$奇$|=30$）（已证，模型内）。
+**命题 1 的实测核对**（附录 A，PART 1a）：$n=6,8,10,20,30,60$，闭式谱与直接对角化的最大偏差 $\le6.2\times10^{-15}$；$\mu_0=0$ 恒成立；两支各 $n/2$ 个模（$n=60$ 时 $|$偶$\lvert =\rvert$奇$|=30$）（已证，模型内）。
 
 命题 1 立刻给出**两条结构事实**，它们将在 §7 成为筛选「源通道」的两条判据：
 
@@ -248,7 +248,7 @@ $$\lambda_2(w)=2-2\cos\frac{4\pi}{n}\qquad(\text{与 }w\text{ 无关}),\qquad \l
 
 **命题 3（$n$ 元覆盖的计数）.** 设 $G$ 为有限连通图，$\beta_1$ 为其第一贝蒂数。则在 $G$ 上的 $\mathbb{Z}_n$ 主覆盖的个数为
 
-$$\bigl|H^{1}(G;\mathbb{Z}_n)\bigr|=n^{\beta_1}.$$
+$$\bigl\lvert H^{1}(G;\mathbb{Z}_n)\bigr\rvert =n^{\beta_1}.$$
 
 *证明.* $H^{1}(G;\mathbb{Z}_n)\cong\mathrm{Hom}\big(\pi_1(G),\mathbb{Z}_n\big)$，而 $\pi_1(G)$ 的自由部分秩为 $\beta_1$，故 $\lvert\mathrm{Hom}(\mathbb{Z}^{\beta_1},\mathbb{Z}_n)\rvert=n^{\beta_1}$。$\square$
 
@@ -362,7 +362,7 @@ $$\bigl|H^{1}(G;\mathbb{Z}_n)\bigr|=n^{\beta_1}.$$
 
 **实测**（附录 A，PART 7b）：
 
-$$\bigl|\mathbf{X}(\phi{+}2\pi,w)-\mathbf{X}(\phi,-w)\bigr|=0,\qquad \bigl|\mathbf{X}(\phi{+}4\pi,w)-\mathbf{X}(\phi,w)\bigr|=1.1\times10^{-15}\ (\text{已证，模型内}).$$
+$$\bigl\lvert \mathbf{X}(\phi{+}2\pi,w)-\mathbf{X}(\phi,-w)\bigr\rvert =0,\qquad \bigl\lvert \mathbf{X}(\phi{+}4\pi,w)-\mathbf{X}(\phi,w)\bigr\rvert =1.1\times10^{-15}\ (\text{已证，模型内}).$$
 
 ### 6.3 三侧是同一类陈述
 

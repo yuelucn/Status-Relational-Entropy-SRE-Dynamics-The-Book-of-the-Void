@@ -32,11 +32,11 @@ The task of this report is to turn this "claim" into an **executable quantitativ
 
 Conclusions at three levels:
 
-1. **Macroscopic calibration**: taking the pipe-flow transition center as an anchor, a mapping between the SRE dissipation coefficient Λ and the Reynolds number can be established, `Re ≈ 783/Λ`; on the strong-turbulence side, the one-dimensional surrogate spectrum of the SRE chiral field gives a stable power-law region with slope `γ ≈ −1.81 ± 0.04`, which differs from the K41 value `−1.667` by about 9% and is **not** exactly −5/3.
+1. **Macroscopic calibration**: taking the pipe-flow transition center as an anchor, a mapping between the SRE dissipation coefficient Λ and the Reynolds number can be established, `Re ≈ 783/Λ`; on the strong-turbulence side, the one-dimensional surrogate spectrum of the SRE chiral field gives a stable power-law region with slope $γ ≈ −1.81 ± 0.04$, which differs from the K41 value $−1.667$ by about 9% and is **not** exactly −5/3.
 
-2. **Structural invariants**: the skewness of the causal-frontier profile strictly passes through zero, `+ → 0 → −`, along the laminar→turbulent direction, consistent with the qualitative behavior of the classical third-order velocity-increment moment S₃; but its magnitude differs by about one order (|skew| ≈ 3–6 versus |S₃| ≈ 0.1–0.7). The coherence fraction C decreases monotonically from ≈0.97 to ≈0.09, complementary to the rise of the classical coherence-length ratio ℓ_int/η.
+2. **Structural invariants**: the skewness of the causal-frontier profile strictly passes through zero, $+ → 0 → −$, along the laminar→turbulent direction, consistent with the qualitative behavior of the classical third-order velocity-increment moment S₃; but its magnitude differs by about one order ($\lvert skew\rvert  ≈ 3–6$ versus $\lvert S_{3}\rvert  ≈ 0.1–0.7$). The coherence fraction C decreases monotonically from ≈0.97 to ≈0.09, complementary to the rise of the classical coherence-length ratio $ℓ_{int}/η$.
 
-3. **Finite-size scaling**: the scale-separation exponent β (the SRE version of the ℓ_int/η exponent) decreases monotonically with system size N from 800 to 25600 (0.7456 → 0.4360), but **converges extremely slowly**. The fit to the six-point chain falls in a **degenerate region** between a "logarithmic form (β∞ ≈ 0)" and a "weak power law (p ≈ 0.28)"; the data can neither rule out the former nor confirm the latter, and all that can be given is the interval constraint `β∞ ∈ [−0.2, +0.2]`. Simple inverse-power extrapolations (1/N, 1/N²) are excluded by the data. **No evidence supports any simple rational number as the asymptotic exponent.**
+3. **Finite-size scaling**: the scale-separation exponent $β$ (the SRE version of the $ℓ_{int}/η$ exponent) decreases monotonically with system size N from 800 to 25600 (0.7456 → 0.4360), but **converges extremely slowly**. The fit to the six-point chain falls in a **degenerate region** between a "logarithmic form ($β_∞ ≈ 0$)" and a "weak power law ($p ≈ 0.28$)"; the data can neither rule out the former nor confirm the latter, and all that can be given is the interval constraint $β_∞ ∈ [−0.2, +0.2]$. Simple inverse-power extrapolations (1/N, 1/N²) are excluded by the data. **No evidence supports any simple rational number as the asymptotic exponent.**
 
 **One-sentence conclusion**: The SRE network qualitatively reproduces the main narrative of classical turbulence—"as the Reynolds number rises the cascade strengthens and coherent structures break up"—but quantitatively deviates persistently from the exact power law of K41; its scale-separation exponent cannot converge to any single value within the accessible computational budget. This is neither "strict agreement" nor "disproof", but a **discrete surrogate model that has not yet converged while remaining structurally self-consistent**.
 
@@ -52,7 +52,7 @@ $$
 \rho\left(\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u}\right) = -\nabla p + \mu\,\nabla^2\mathbf{u}, \qquad \nabla\cdot\mathbf{u}=0
 $$
 
-Introducing a characteristic velocity U and a characteristic length L, the only control parameter after non-dimensionalization is the **Reynolds number** `Re = UL/ν` (ν = μ/ρ is the kinematic viscosity). When Re exceeds a critical value, the laminar flow loses stability and becomes turbulent.
+Introducing a characteristic velocity U and a characteristic length L, the only control parameter after non-dimensionalization is the **Reynolds number** ${Re} = UL/ν$($ν = μ/ρ$ is the kinematic viscosity). When Re exceeds a critical value, the laminar flow loses stability and becomes turbulent.
 
 The central picture given by Kolmogorov 1941 theory (K41) is the **energy cascade**: energy is transferred step by step from large-scale eddies (the top of the inertial range) down to small scales, until the viscous dissipation range. In the inertial subrange, the energy spectrum obeys the power law
 
@@ -60,13 +60,13 @@ $$
 E(k) \sim k^{-5/3}
 $$
 
-corresponding to a spectral slope `γ = −5/3 ≈ −1.667`. The same scaling argument also gives the **third-order structure function (the 3/4 law)**: the third moment of the velocity increment δu, ⟨δu³⟩ ∝ −εr (the negative sign coming from the downward directionality of the energy cascade), so that the **skewness** of the velocity increment (the normalized third moment) takes a negative, approximately constant value in the inertial range. Another common scaling is the growth of the ratio of coherence length to dissipation scale, `ℓ_int/η`, with Re, whose exponent tends to 3/4 at high Re:
+corresponding to a spectral slope $γ = −5/3 ≈ −1.667$. The same scaling argument also gives the **third-order structure function (the 3/4 law)**: the third moment of the velocity increment δu, ⟨δu³⟩ ∝ −εr (the negative sign coming from the downward directionality of the energy cascade), so that the **skewness** of the velocity increment (the normalized third moment) takes a negative, approximately constant value in the inertial range. Another common scaling is the growth of the ratio of coherence length to dissipation scale, $ℓ_{int}/η$, with Re, whose exponent tends to 3/4 at high Re:
 
 $$
 \ell_{\text{int}}/\eta \sim Re^{3/4}
 $$
 
-These three—**the −5/3 spectrum, the 3/4 law of negative skewness, and the 3/4 exponent of ℓ_int/η**—constitute the quantitative benchmark of classical turbulence phenomenology.
+These three—**the −5/3 spectrum, the 3/4 law of negative skewness, and the 3/4 exponent of $ℓ_{int}/η$**—constitute the quantitative benchmark of classical turbulence phenomenology.
 
 ### 1.2 Why a Discrete Causal Surrogate Model Is Needed
 
@@ -92,18 +92,18 @@ This chapter is the core of the paper. A reader with no SRE background who under
 
 ### 2.1 Basic Objects: the State Set and the Relation Matrix M
 
-The complete set of degrees of freedom of the fluid at one instant is discretized into `N` **microscopic causal states**, numbered `1, …, N` (N is called the **system size**). Whether a "causal correlation" exists between these states is represented by a **relation matrix**:
+The complete set of degrees of freedom of the fluid at one instant is discretized into `N` **microscopic causal states**, numbered $1, …, N$(N is called the **system size**). Whether a "causal correlation" exists between these states is represented by a **relation matrix**:
 
 $$
 M \in \mathbb{R}^{N\times N}, \qquad M_{ij} \in \{-1, +1\}
 $$
 
-- `M_ij = +1` means states i and j are **coherently ordered** (the causal correlation is positive and the directions agree);
-- `M_ij = -1` means **anti-coherent** (the correlation is negative and the directions are opposite).
+- $M_{ij} = +1$ means states i and j are **coherently ordered** (the causal correlation is positive and the directions agree);
+- $M_{ij} = -1$ means **anti-coherent** (the correlation is negative and the directions are opposite).
 
-The elements of M are **directional**: `M_ij` is the relation "as seen from j to i", and `M_ji` is the relation "as seen from i to j". The two **need not be equal**, so M is in general **non-symmetric**. The non-symmetry is not numerical noise but the physical content of the model: it carries "chirality" (chirality, i.e. the directionality of the vortex).
+The elements of M are **directional**: $M_{ij}$ is the relation "as seen from j to i", and $M_{ji}$ is the relation "as seen from i to j". The two **need not be equal**, so M is in general **non-symmetric**. The non-symmetry is not numerical noise but the physical content of the model: it carries "chirality" (chirality, i.e. the directionality of the vortex).
 
-Initially there is only one state: `M = [[+1]]`.
+Initially there is only one state: $M = +1$.
 
 ### 2.2 The Symmetric–Antisymmetric Bisection: Geometry and Chirality
 
@@ -128,23 +128,23 @@ $$
 M\ \text{is non-symmetric} \iff \mathbf{A}\neq 0 \iff \text{the system carries chirality}
 $$
 
-**Relation distance.** Since the elements of S lie in `{−1, 0, +1}`, we define the discrete **relation distance**
+**Relation distance.** Since the elements of S lie in $\{−1, 0, +1\}$, we define the discrete **relation distance**
 
 $$
 D \equiv 1 - S \in \{0, 1, 2\}
 $$
 
-`D = 0` corresponds to bidirectional coherence (i and j each see the other as +1); `D = 2` corresponds to bidirectional anti-coherence. As will be seen below, `D = 2` **never occurs** during the evolution, and this algebraic fact greatly simplifies the measurement of coherence.
+$D = 0$ corresponds to bidirectional coherence (i and j each see the other as +1); $D = 2$ corresponds to bidirectional anti-coherence. As will be seen below, $D = 2$ **never occurs** during the evolution, and this algebraic fact greatly simplifies the measurement of coherence.
 
 ### 2.3 The Three Evolution Operators
 
-The system evolves from `M_n` (n×n, already realized) to `M_{n+1}` ((n+1)×(n+1)) by a cascade of three operators:
+The system evolves from $M_n$(n×n, already realized) to $M_{n+1}$ ((n+1)×(n+1)) by a cascade of three operators:
 
 $$
 M(t+\tau) = \mathcal{O}_3 \circ \mathcal{O}_2 \circ \mathcal{O}_1\,[M(t)]
 $$
 
-**Operator 1 (inheritance operator / boundary expansion)** `G_{n→n+1}`: each step adds one new state `v_f = n` (called the **causal frontier node**), expanding the matrix into block form
+**Operator 1 (inheritance operator / boundary expansion)** $G_{n→n+1}$: each step adds one new state $v_f = n$ (called the **causal frontier node**), expanding the matrix into block form
 
 $$
 M_{n+1} = \begin{pmatrix} M_n & \mathbf{x} \\ \mathbf{x}^{\mathsf T} & y \end{pmatrix}, \qquad M_{n+1}[1{:}n,\,1{:}n] \equiv M_n
@@ -152,7 +152,7 @@ $$
 
 The key convention here is **read-only inheritance**: the historical sub-block (the upper-left n×n block) is **never modified**. "Once realized, history cannot be retroactively modified" is a structural axiom of the model, not an optional constraint. Its physical meaning is: the causal history is frozen, and energy/information can only be injected through the newly added frontier node.
 
-**Operator 2 (maximum-entropy pruning)** `M_χ ∘ E_local`: for the channel between the frontier node `v_f` and each historical node `v_m`, compute a two-step graph walk (local multi-loop interference polynomial)
+**Operator 2 (maximum-entropy pruning)** $M_χ ∘ E_{local}$: for the channel between the frontier node $v_f$ and each historical node $v_m$, compute a two-step graph walk (local multi-loop interference polynomial)
 
 $$
 \tilde{\mathcal{E}}_{\text{local}}(v_f, v_m) = \sum_{v_k \in \mathcal{N}(v_f)\cap \mathcal{N}(v_m)} M(v_f,v_k)\,M(v_k,v_m) + 2\,M(v_f,v_m)
@@ -161,18 +161,18 @@ $$
 Taking the absolute value and the sign gives the local coherence barrier
 
 $$
-\mathcal{E}_{\text{local}} = |\tilde{\mathcal{E}}_{\text{local}}|, \qquad \mathfrak{B} = \mathcal{E}_{\text{local}} + \exp\!\big(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}}\big)
+\mathcal{E}_{\text{local}} = \lvert \tilde{\mathcal{E}}_{\text{local}}\lvert , \qquad \mathfrak{B} = \mathcal{E}_{\text{local}} + \exp\!\big(\operatorname{sgn}\tilde{\mathcal{E}}_{\text{local}}\big)
 $$
 
-and define the **dimensionless causal topological depth** `𝒟_s(v_f, v_m) = (n+1) - σ(v_m)` (σ is the node's addition index). The maximum-entropy pruning master equation gives the probability that this channel is **pruned**:
+and define the **dimensionless causal topological depth** $𝒟_s(v_f, v_m) = (n+1) - σ(v_m)$(σ is the node's addition index). The maximum-entropy pruning master equation gives the probability that this channel is **pruned**:
 
 $$
 p_{\text{prune}}(v_f, v_m) = 1 - \frac{1}{1 + \Gamma\,\dfrac{\mathcal{D}_s}{\mathfrak{B}}}
 $$
 
-where `Γ` is the **pruning gain** (see §2.4). Upon pruning (`χ = 0`) the "elimination–conduction" paradigm is executed: the channel spin is forced to the multiplicative identity `+1`, thereby **eliminating its phase contribution while not disconnecting the graph connectivity**; upon survival (`χ = 1`) an antisymmetric chiral shear is injected.
+where $Γ$ is the **pruning gain** (see §2.4). Upon pruning ($χ = 0$) the "elimination–conduction" paradigm is executed: the channel spin is forced to the multiplicative identity $+1$, thereby **eliminating its phase contribution while not disconnecting the graph connectivity**; upon survival ($χ = 1$) an antisymmetric chiral shear is injected.
 
-**Operator 3 (five-node parity breaking)**: at `n: 5 → 6` a fixed inversion anchor is injected, so that the macroscopic spin field
+**Operator 3 (five-node parity breaking)**: at $n: 5 → 6$ a fixed inversion anchor is injected, so that the macroscopic spin field
 
 $$
 Y_{\text{spin}} = \operatorname{sgn}\!\Big(\tfrac12(S_{1,6}+S_{2,6}) - S_{3,6}\Big)
@@ -204,13 +204,13 @@ Output: M (N×N)
 
 ### 2.4 The Control Quantity Λ and the System Size N
 
-**Dissipation coefficient Λ.** Let the microscopic intrinsic relaxation time be `τ₀` and the macroscopic characteristic time be `T`; define the dimensionless dissipation coefficient
+**Dissipation coefficient Λ.** Let the microscopic intrinsic relaxation time be $\tau_0$ and the macroscopic characteristic time be $T$; define the dimensionless dissipation coefficient
 
 $$
 \Lambda \equiv \frac{\tau_0}{T} \propto \frac{1}{Re}
 $$
 
-`Λ` is an **exogenous** (externally imposed) macroscopic dissipation authority: `Λ` large → local relaxation extremely fast → a topological difference is smoothed away as soon as it is generated → laminar; `Λ` small → insufficient smoothing → fluctuations are activated over a large area → structural phase (turbulence). Thus `Λ` plays the role of `1/Re` in classical theory and is the **control quantity of the transition**.
+$Λ$ is an **exogenous** (externally imposed) macroscopic dissipation authority: $Λ$ large → local relaxation extremely fast → a topological difference is smoothed away as soon as it is generated → laminar; $Λ$ small → insufficient smoothing → fluctuations are activated over a large area → structural phase (turbulence). Thus $Λ$ plays the role of $1/{Re}$ in classical theory and is the **control quantity of the transition**.
 
 **Pruning gain Γ.** This benchmark adopts the **exogenous mode**:
 
@@ -218,22 +218,22 @@ $$
 \Gamma = \Lambda
 $$
 
-(The model has another "adaptive mode" `Γ = Λ·λ(n)`, in which `λ(n)` is constructed from the spectral radius of the already realized subgraph; that mode rescales the effective gain globally and introduces temporal non-stationarity, and is not used in this benchmark.)
+(The model has another "adaptive mode" $Γ = Λ·λ(n)$, in which $λ(n)$ is constructed from the spectral radius of the already realized subgraph; that mode rescales the effective gain globally and introduces temporal non-stationarity, and is not used in this benchmark.)
 
-**System size N.** `N` is the total number of discrete states, i.e. the order of the relation matrix. Increasing `N` is equivalent to increasing the "fluid volume"/raising the discrete resolution. **The finite-size effect** is the central theme of this report: all macroscopic quantities drift with N, and the `N` dependence must be studied explicitly.
+**System size N.** $N$ is the total number of discrete states, i.e. the order of the relation matrix. Increasing $N$ is equivalent to increasing the "fluid volume"/raising the discrete resolution. **The finite-size effect** is the central theme of this report: all macroscopic quantities drift with N, and the $N$ dependence must be studied explicitly.
 
 ### 2.5 Structural Correspondence with the Classical N–S Equations (Continuum Limit)
 
-Let `τ → 0, ℓ → 0`, map `M_ij` to a multi-point correlation function `M(x, y, t)` on a continuous manifold, and define the macroscopic density and velocity fields from the first-order moments of the matrix:
+Let $\tau → 0, ℓ → 0$, map $M_{ij}$ to a multi-point correlation function $M(x, y, t)$on a continuous manifold, and define the macroscopic density and velocity fields from the first-order moments of the matrix:
 
 $$
 \rho(\mathbf{x},t) = \int M\,d\mathbf{y}, \qquad \rho\,\mathbf{u}(\mathbf{x},t) = \int \frac{\mathbf{x}-\mathbf{y}}{\tau} M\,d\mathbf{y}
 $$
 
-In the limit `Λ → ∞` with microscopic fluctuations tending to zero, the transition probability degenerates to Dirac δ evolution, the algebraic free evolution is written as a continuous master equation, and a Chapman–Enskog expansion is performed (expansion small parameter `ε = ℓ/L`, the algebraic version of the Knudsen number):
+In the limit $Λ → ∞$ with microscopic fluctuations tending to zero, the transition probability degenerates to Dirac δ evolution, the algebraic free evolution is written as a continuous master equation, and a Chapman–Enskog expansion is performed (expansion small parameter $ε = ℓ/L$, the algebraic version of the Knudsen number):
 
-1. The first moment → the continuity equation `∂_t ρ + ∇·(ρ u) = 0`;
-2. The second moment + momentum conservation of the collision operator → the convective term; the second-order correction `M^{(1)}` gives the viscous stress tensor under symmetry breaking.
+1. The first moment → the continuity equation $∂_t ρ + ∇·(ρ u) = 0$;
+2. The second moment + momentum conservation of the collision operator → the convective term; the second-order correction $M^{(1)}$gives the viscous stress tensor under symmetry breaking.
 
 This yields the standard N–S equations
 
@@ -241,23 +241,23 @@ $$
 \rho\left(\frac{\partial \mathbf{u}}{\partial t} + (\mathbf{u}\cdot\nabla)\mathbf{u}\right) = -\nabla p + \rho\,\zeta\ell^2\Lambda\,\nabla^2\mathbf{u}
 $$
 
-in which the kinematic viscosity is formally written `ν = ζ ℓ² Λ`, and `ζ` is a network geometric constant to be calibrated.
+in which the kinematic viscosity is formally written $ν = ζ ℓ^{2} Λ$, and $ζ$ is a network geometric constant to be calibrated.
 
-> **Qualification**: This section establishes a **structural compatibility** (the discrete algebraic master equation **possesses** the moment structure of N–S in the continuum limit), and **is not** a proof of quantitative equivalence. `ν = ζ ℓ² Λ` is currently a formal correspondence under dimensional analysis, and its coefficient `ζ` must be determined by subsequent calibration. All quantitative results reported in this paper come from **direct numerical measurement of the discrete network** and do not depend on this continuum-limit statement.
+> **Qualification**: This section establishes a **structural compatibility** (the discrete algebraic master equation **possesses** the moment structure of N–S in the continuum limit), and **is not** a proof of quantitative equivalence. $ν = ζ ℓ^{2} Λ$ is currently a formal correspondence under dimensional analysis, and its coefficient $ζ$ must be determined by subsequent calibration. All quantitative results reported in this paper come from **direct numerical measurement of the discrete network** and do not depend on this continuum-limit statement.
 
 ---
 
 ## 3. Calibration and Measurement Protocol
 
-### 3.1 Reynolds-Number Calibration: `Re ≈ α/Λ`
+### 3.1 Reynolds-Number Calibration: ${Re} ≈ α/Λ$
 
-To relate the SRE `Λ` to the classical Reynolds number, an anchor is needed. Take the **transition center**: SRE undergoes the macroscopic laminar↔turbulent transition at `Λ_c ≈ 0.34`, and align it with the critical Reynolds number of classical pipe flow, `Re_crit ≈ 2300`. This defines the calibration constant `α`:
+To relate the SRE `Λ` to the classical Reynolds number, an anchor is needed. Take the **transition center**: SRE undergoes the macroscopic laminar↔turbulent transition at $Λ_c ≈ 0.34$, and align it with the critical Reynolds number of classical pipe flow, $Re_{crit} ≈ 2300$. This defines the calibration constant $α$:
 
 $$
 \mathrm{Re} \approx \frac{\alpha}{\Lambda}, \qquad \alpha \approx 783
 $$
 
-That is, substituting `Λ_c = 0.34` gives `Re = 783/0.34 ≈ 2300`, consistent with the pipe critical value. The corresponding macroscopic regimes are:
+That is, substituting $Λ_c = 0.34$ gives ${Re} = 783/0.34 ≈ 2300$, consistent with the pipe critical value. The corresponding macroscopic regimes are:
 
 | Λ range | Re range | State |
 | :--- | :--- | :--- |
@@ -273,24 +273,24 @@ From the relation matrix M, the following dimensionless observables are derived 
 
 | Symbol | Name | Definition | Classical counterpart |
 | :--- | :--- | :--- | :--- |
-| `Φ` | **structural density** | fraction of negative elements in M, `frac_neg = mean(M < 0)` | turbulence activity |
-| `C` | **coherence fraction** | fraction of `D = 0` in the frontier relations (bidirectional coherence) | the complementary quantity to ℓ_int/η |
-| `skew` | **frontier skewness** | normalized third moment of the frontier-relation distribution | velocity-increment skewness S₃ |
-| `σ_d` | **frontier heterogeneity** | standard deviation of the frontier-relation distribution | width of critical fluctuations |
-| `γ` | **spectral slope** | log–log slope of the one-dimensional power spectrum of the chiral field A along the causal order | slope of the energy spectrum E(k) (surrogate) |
-| `β_turb` | **scale-separation exponent** | `−d ln(1/C)/d ln(Re)` | the Re exponent of ℓ_int/η (SRE version) |
+| $\phi$ | **structural density** | fraction of negative elements in M, $frac_{neg} = mean(M < 0)$ | turbulence activity |
+| $C$ | **coherence fraction** | fraction of $D = 0$ in the frontier relations (bidirectional coherence) | the complementary quantity to $ℓ_{int}/η$ |
+| $skew$ | **frontier skewness** | normalized third moment of the frontier-relation distribution | velocity-increment skewness S₃ |
+| $σ_d$ | **frontier heterogeneity** | standard deviation of the frontier-relation distribution | width of critical fluctuations |
+| $γ$ | **spectral slope** | log–log slope of the one-dimensional power spectrum of the chiral field A along the causal order | slope of the energy spectrum E(k) (surrogate) |
+| $β_{turb}$ | **scale-separation exponent** | $−d ln(1/C)/d ln({Re})$| the Re exponent of $ℓ_{int}/η$ (SRE version) |
 
-Relation of β to the classical 3/4 law: K41 predicts `ℓ_int/η ∼ Re^{3/4}` (i.e. `β = 0.75`), see §1.1.
+Relation of β to the classical 3/4 law: K41 predicts $\ell_{int}/\eta \sim Re^{3/4}$ (i.e. $β = 0.75$), see §1.1.
 
 > **Naming note**: this book contains two other homonymous symbols — $\beta_\mathrm{th}\equiv1$ (the temperature of the free-energy form in Operator 2) and $\beta_\mathrm{gate}=2.0$ (the sigmoid gate gain of Operator 10) — neither of which is related to the scale-separation exponent here; in the text and figures of this chapter it is abbreviated as $\beta\equiv\beta_\mathrm{turb}$.
 
-**Important qualification on the spectral slope γ**: it is obtained by taking the one-dimensional power spectrum of the chiral field A along the **causal order** (the order in which states are added); it is a **one-dimensional surrogate spectrum** and is **not equal** to the three-dimensional spatial energy spectrum `E(k)`. Its definition is isomorphic to the classical energy spectrum, but the spatial dimensionality and the meaning of the coordinates are both different. Therefore γ can only serve as a **qualitative indicator** of "whether a stable power-law cascade region exists", and its numerical value cannot be compared digit-by-digit with −5/3.
+**Important qualification on the spectral slope γ**: it is obtained by taking the one-dimensional power spectrum of the chiral field A along the **causal order** (the order in which states are added); it is a **one-dimensional surrogate spectrum** and is **not equal** to the three-dimensional spatial energy spectrum $E(k)$. Its definition is isomorphic to the classical energy spectrum, but the spatial dimensionality and the meaning of the coordinates are both different. Therefore γ can only serve as a **qualitative indicator** of "whether a stable power-law cascade region exists", and its numerical value cannot be compared digit-by-digit with −5/3.
 
 ### 3.3 The Causal Frontier Profile and the Fixed Window
 
-The **causal frontier** is the distinctive structure of the model. Because of the read-only inheritance of Operator 1, the historical sub-block `M[:n,:n]` never changes, so the **only new information** at each step is concentrated in the newly injected frontier row `M[n, :n]` (and its reverse column). Analyzing the frontier row directly bypasses all the difficulty of "recovering geometric coordinates from the distance matrix".
+The **causal frontier** is the distinctive structure of the model. Because of the read-only inheritance of Operator 1, the historical sub-block $M[:n,:n]$ never changes, so the **only new information** at each step is concentrated in the newly injected frontier row $M[n, :n]$ (and its reverse column). Analyzing the frontier row directly bypasses all the difficulty of "recovering geometric coordinates from the distance matrix".
 
-The **frontier profile** is formed from the statistics of the frontier row's relation distribution `{D(v_f, v_m)}_{m<n}`: skewness, heterogeneity, and the coherence fraction C. All frontier-profile measurements **invariably adopt a fixed window**—the **last 60 steps** before the evolution terminates—to avoid the systematic bias introduced by a window that varies with N. The laminar→turbulent scan uses `66` `Λ` points × `7` random seeds × `N = 200`.
+The **frontier profile** is formed from the statistics of the frontier row's relation distribution $\{D(v_f, v_m)\}_{m<n}$: skewness, heterogeneity, and the coherence fraction C. All frontier-profile measurements **invariably adopt a fixed window**—the **last 60 steps** before the evolution terminates—to avoid the systematic bias introduced by a window that varies with N. The laminar→turbulent scan uses `66` `Λ` points × `7` random seeds × `N = 200`.
 
 ### 3.4 The Two Ways of Estimating the Scale-Separation Exponent
 
@@ -300,12 +300,12 @@ $$
 \beta \equiv \frac{d\ln(1/C)}{d\ln \mathrm{Re}} = -\frac{d\ln C}{d\ln \mathrm{Re}}
 $$
 
-Measurements show that `C(Re)` is a **strongly concave** curve on the log–log plot: the derivative is large at low Re and small at high Re. For a concave curve, an **overall linear fit** over a few Re points gives only the **average slope** over that interval, and it depends strongly on "which points are sampled and where they fall"—this is not a theoretical issue but a matter of sensitivity in the estimation method.
+Measurements show that $C({Re})$ is a **strongly concave** curve on the log–log plot: the derivative is large at low Re and small at high Re. For a concave curve, an **overall linear fit** over a few Re points gives only the **average slope** over that interval, and it depends strongly on "which points are sampled and where they fall"—this is not a theoretical issue but a matter of sensitivity in the estimation method.
 
 Therefore this report distinguishes two estimates, and **adopts only the second as the scale-separation exponent of the main text**:
 
-- **Global fitted exponent `β_glob`**: fits all Λ points within some Re window by a log C–log Re linear fit and takes the slope. Contaminated by the concave curvature, **it serves only as an appendix cross-check**.
-- **High-Re-end local exponent `β_loc`**: takes the **highest pair of Re** in the entire `Λ` scan and computes a two-point local slope
+- **Global fitted exponent $β_{glob}$**: fits all Λ points within some Re window by a log C–log Re linear fit and takes the slope. Contaminated by the concave curvature, **it serves only as an appendix cross-check**.
+- **High-Re-end local exponent $β_{loc}$**: takes the **highest pair of Re** in the entire `Λ` scan and computes a two-point local slope
 
 $$
 \beta_{\text{loc}} = -\frac{\ln\big(C(\Lambda_1)/C(\Lambda_2)\big)}{\ln\big(\mathrm{Re}_1/\mathrm{Re}_2\big)}, \qquad \Lambda_1 = 0.005,\ \Lambda_2 = 0.008
@@ -333,7 +333,7 @@ flowchart TB
 
 ### 4.1 Macroscopic Calibration: the Chiral-Field Spectral Slope
 
-On the strong-turbulence side (`Re > 2×10⁴`), the one-dimensional surrogate spectrum of the chiral field exhibits a stable power-law region in its mid-section:
+On the strong-turbulence side ($Re > 2×10^4$), the one-dimensional surrogate spectrum of the chiral field exhibits a stable power-law region in its mid-section:
 
 $$
 \gamma = -1.81 \pm 0.04
@@ -352,13 +352,13 @@ The behavior with increasing N (key):
 
 On the `Λ = 10⁻³` side, the slope **saturates** at ≈−1.79 for `N ≥ 800` (it no longer steepens with N); on the `Λ = 10⁻²` side it instead **flattens** (−1.63 → −1.38). In other words, the slope of the framework's spontaneous power-law region **tends to a plateau at large N rather than diverging persistently**. This is quantitatively consistent with the "extremely slow finite-size correction" mechanism of §4.4.
 
-> **Terminal conclusion**: SRE does spontaneously produce a stable power-law scaling region, which is currently the most robust empirical signal; but it is **not** Kolmogorov's `k^{−5/3}`—the measured value is about −1.8 and saturates to a plateau at large N. Moreover, because this spectrum is a one-dimensional causal-order surrogate spectrum and is sensitive to the implementation details of the chiral field (see §5.3), this paper asserts only the **qualitative** fact that "a stable power-law region exists and its slope saturates at about −1.8 at large N", and **does not assert** that its numerical value can be compared digit-by-digit with K41.
+> **Terminal conclusion**: SRE does spontaneously produce a stable power-law scaling region, which is currently the most robust empirical signal; but it is **not** Kolmogorov's $k^{−5/3}$—the measured value is about −1.8 and saturates to a plateau at large N. Moreover, because this spectrum is a one-dimensional causal-order surrogate spectrum and is sensitive to the implementation details of the chiral field (see §5.3), this paper asserts only the **qualitative** fact that "a stable power-law region exists and its slope saturates at about −1.8 at large N", and **does not assert** that its numerical value can be compared digit-by-digit with K41.
 
 ### 4.2 The Causal Frontier Invariants
 
-For the frontier-profile scan at `N = 200`, `66 Λ × 7 seeds`, five representative Λ points are obtained (`C` is the coherence fraction, `σ_d` the heterogeneity, `skew` the skewness, `Φ` the structural density):
+For the frontier-profile scan at `N = 200`, `66 Λ × 7 seeds`, five representative Λ points are obtained ($C$ is the coherence fraction, $σ_d$ the heterogeneity, $skew$ the skewness, $\phi$ the structural density):
 
-| Λ | Re | C | σ_d | skew | Φ (frac_neg) |
+| $Λ$ | ${Re}$ | $C$ | $σ_d$ | ${skew}$ | $\phi (frac_{neg})$ |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | 4.82 | 162 | 0.974 | 0.156 | **+6.41** | 0.020 |
 | 0.33 | 2383 | 0.761 | 0.425 | **+1.24** | 0.150 |
@@ -368,23 +368,23 @@ For the frontier-profile scan at `N = 200`, `66 Λ × 7 seeds`, five representat
 
 Three core findings:
 
-1. **Skewness strictly crosses zero**: `skew` undergoes `+ → 0 → −` as Re increases, and the zero-crossing is consistent with the qualitative behavior of "the velocity-increment skewness turns from positive to negative" in the classical 3/4 law (all t-tests at the zero-crossing are significant, t = 18–69).
-2. **The coherence fraction decreases monotonically**: `C` drops from 0.97 to 0.09, complementary to the rise of the classical `ℓ_int/η`.
-3. **The heterogeneity peak coincides with the skewness zero-crossing** (`σ_d` peaks at 0.50 at `Λ ≈ 0.108`), corresponding to the classical picture's feature that "fluctuations are strongest in the transitional region".
+1. **Skewness strictly crosses zero**: $skew$ undergoes $+ → 0 → −$ as Re increases, and the zero-crossing is consistent with the qualitative behavior of "the velocity-increment skewness turns from positive to negative" in the classical 3/4 law (all t-tests at the zero-crossing are significant, t = 18–69).
+2. **The coherence fraction decreases monotonically**: $C$ drops from 0.97 to 0.09, complementary to the rise of the classical $ℓ_{int}/η$.
+3. **The heterogeneity peak coincides with the skewness zero-crossing** ($σ_d$ peaks at 0.50 at $Λ ≈ 0.108$), corresponding to the classical picture's feature that "fluctuations are strongest in the transitional region".
 
-**The discreteness of the relation distance**: `M_kn ∈ {−1,+1} ⟹ S ∈ {−1,0,+1} ⟹ D ∈ {0,1,2}`. In the measurements, `D = 2` (bidirectional anti-coherence) **never occurs**, therefore
+**The discreteness of the relation distance**: $M_{kn} ∈ \{−1,+1\} ⟹ S ∈ \{−1,0,+1\} ⟹ D ∈ \{0,1,2\}$. In the measurements, $D = 2$ (bidirectional anti-coherence) **never occurs**, therefore
 
 $$
 C = \mathrm{frac}(D = 0) = \mathrm{frac}(M_{kn} = +1 \ \text{and}\ M_{nk} = +1) \approx \mathrm{frac}(M_{kn} = +1) - \mathrm{frac}(\text{mixed})
 $$
 
-The `D = 0` fraction evolves with Λ as: `Λ = 2.0 → 97.5%`, `Λ = 0.1 → 43%`, `Λ = 0.01 → 15%` (consistent with C).
+The $D = 0$ fraction evolves with Λ as: $Λ = 2.0 → 97.5%$, $Λ = 0.1 → 43%$, $Λ = 0.01 → 15%$(consistent with C).
 
 ### 4.3 Finite-Size Scaling: the β(N) Six-Point Chain
 
 Using the high-Re-end local exponent `β_loc` of §3.4, under a fixed protocol (the same pair `Λ = 0.005/0.008`, fixed window), six N points are measured:
 
-| N | β_loc | seed-σ | Note |
+| $N$ | $β_{loc}$ | $seed-σ$ | Note |
 | :--- | :--- | :--- | :--- |
 | 800 | 0.7456 | 0.0079 | 2 seeds |
 | 1600 | 0.6641 | <0.001 | 2 seeds |
@@ -393,7 +393,7 @@ Using the high-Re-end local exponent `β_loc` of §3.4, under a fixed protocol (
 | 12800 | 0.4779 | 0.0021 | 2 seeds |
 | **25600** | **0.4360** | — | single seed |
 
-`β(N)` decreases **monotonically and cleanly**, from 0.7456 (N=800) to 0.4360 (N=25600). Adjacent differences:
+$β(N)$decreases **monotonically and cleanly**, from 0.7456 (N=800) to 0.4360 (N=25600). Adjacent differences:
 
 | Interval | Δβ | ratio = Δβᵢ / Δβᵢ₊₁ |
 | :--- | :--- | :--- |
@@ -409,16 +409,16 @@ The ratio sequence is **non-monotonic** (1.039, 1.172, 1.641, 0.974): a genuine 
 
 Four classes of convergence models are fitted to the six-point chain:
 
-| Convergence model | β∞ | R² | Prediction at N=25600 | Measured |
+| Convergence model | $β_∞$ | R² | Prediction at N=25600 | Measured |
 | :--- | :--- | :--- | :--- | :--- |
 | Logarithmic `β = β∞ + a/ln N` | **−0.174 ± 0.016** | **0.9982** | 0.4317 | 0.4360 |
 | Free power law `β = β∞ + a·N^{−p}` | **+0.249 ± 0.046** (p = 0.285 ± 0.041) | **0.9988** | 0.4351 | 0.4360 |
 | Power law fixed p = 0.25 | +0.206 ± 0.007 | 0.9985 | 0.4326 | 0.4360 |
 | Inverse power `1/N` | +0.472 ± 0.023 | 0.9092 | 0.4816 | 0.4360 |
 
-**Verdict**: the logarithmic model (β∞ negative) and the free power law (β∞ positive, p ≈ 0.28) differ by only 0.003 in their prediction at N=25600, and the measurement cannot distinguish the two; the `1/N` model is clearly excluded (its prediction at N=25600 is 0.4816, exceeding the measurement by 0.046, with R² only 0.91).
+**Verdict**: the logarithmic model ($β_∞$ negative) and the free power law ($β_∞$ positive, p ≈ 0.28) differ by only 0.003 in their prediction at N=25600, and the measurement cannot distinguish the two; the $1/N$ model is clearly excluded (its prediction at N=25600 is 0.4816, exceeding the measurement by 0.046, with R² only 0.91).
 
-> **Conclusion**: the convergence of `β(N)` is **extremely slow**, falling in the **degenerate region** between "the logarithmic form (β∞ ≲ 0)" and "the weak power law p ≈ 0.28 (β∞ ≳ 0)". All the data can give is an interval constraint
+> **Conclusion**: the convergence of $β(N)$ is **extremely slow**, falling in the **degenerate region** between "the logarithmic form ($β_∞ ≲ 0$)" and "the weak power law p ≈ 0.28 ($β_∞ ≳ 0$)". All the data can give is an interval constraint
 
 $$
 \boxed{\ \beta_\infty \in [-0.2,\ +0.2]\ }
@@ -428,17 +428,17 @@ $$
 
 **Why so slow?** There are two measurable sources:
 
-1. **At fixed Re, C still grows with N.** At fixed `Λ = 0.01` (Re = 78320), measuring `1−C ~ N^{−q}`:
+1. **At fixed Re, C still grows with N.** At fixed $Λ = 0.01$ (${Re} = 78320$), measuring $1−C ~ N^{−q}$:
 
 | N | 100 | 200 | 400 | 800 | 1600 | 3200 | 6400 | 12800 | 25600 |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | 1−C | 0.9506 | 0.9151 | 0.8609 | 0.7849 | 0.6988 | 0.6047 | 0.5060 | 0.4032 | 0.3030 |
 
-The local slope `d ln(1−C)/d ln N` steepens **monotonically all the way** from −0.055 to −0.412, showing that `1−C` **has not yet entered the power-law asymptotic region**. A zero-intercept power-law fit over `N ≥ 800` (including 25600) gives `q ≈ 0.249`, corresponding to a correlation-length scaling `ξ ~ N^{s}` with `s = 2q ≈ 0.50`; if only `N ≥ 3200` is used, `q` rises to 0.318. **Since the slope is still growing, the true asymptotic q can only be larger**, and `s ≈ 0.50` is only the current effective value, not the converged value.
+The local slope $d ln(1−C)/d ln N$ steepens **monotonically all the way** from −0.055 to −0.412, showing that $1−C$ **has not yet entered the power-law asymptotic region**. A zero-intercept power-law fit over $N ≥ 800$ (including 25600) gives $q ≈ 0.249$, corresponding to a correlation-length scaling $ξ ~ N^{s}$ with $s = 2q ≈ 0.50$; if only $N ≥ 3200$ is used, $q$ rises to 0.318. **Since the slope is still growing, the true asymptotic q can only be larger**, and $s ≈ 0.50$ is only the current effective value, not the converged value.
 
-2. **The curvature of `C(Re)` evolves with N**, and the far-end derivative is continuously pressed down. The superposition of the two makes the decay of β slower than the logarithmic type, so it lingers in the degenerate region for a long time.
+2. **The curvature of $C({Re})$ evolves with N**, and the far-end derivative is continuously pressed down. The superposition of the two makes the decay of β slower than the logarithmic type, so it lingers in the degenerate region for a long time.
 
-**A note on a particular rational number**: the measured `β(25600) = 0.4360` differs from `0.375` (= (3/4)×(1/2)) by 0.061, more than 8 times the seed uncertainty (conservatively taking the 2-seed σ ≈ 0.0074 gives ≈ 8.2σ); and at the measured decay rate `Δβ ≈ 0.050/doubling` (N ≥ 3200), about 1.22 more doublings (N ≈ 6×10⁴) would be needed to reach 0.375, whereas the closed N ladder stops at 25600. **Within the data-accessible range, no stationary trend pointing to that value or any other simple rational number is visible.** Therefore this report does not take any simple rational number as the asymptotic exponent of SRE.
+**A note on a particular rational number**: the measured $β(25600) = 0.4360$ differs from `0.375` (= (3/4)×(1/2)) by 0.061, more than 8 times the seed uncertainty (conservatively taking the 2-seed σ ≈ 0.0074 gives ≈ 8.2σ); and at the measured decay rate $Δβ ≈ 0.050/doubling$(N ≥ 3200), about 1.22 more doublings (N ≈ 6×10⁴) would be needed to reach 0.375, whereas the closed N ladder stops at 25600. **Within the data-accessible range, no stationary trend pointing to that value or any other simple rational number is visible.** Therefore this report does not take any simple rational number as the asymptotic exponent of SRE.
 
 ### 4.5 The Upper Limit of the N Ladder
 
@@ -461,10 +461,10 @@ Increasing N requires storing an N×N matrix, and memory grows as N²:
 | Benchmark quantity | Classical K41 prediction | SRE measured | Gap | Assessment |
 | :--- | :--- | :--- | :--- | :--- |
 | cascade spectral slope γ | −1.667 (−5/3) | ≈ −1.81 ± 0.04 | about 9% | qualitatively reproduced, quantitatively deviated |
-| scale-separation exponent β | 0.75 (3/4 law) | β(25600)=0.4360, still decreasing, β∞∈[−0.2,0.2] | far from converged | not directly comparable |
-| skewness zero-crossing | velocity-increment S₃ turns from + to − | frontier skew strictly `+→0→−` | qualitatively consistent | magnitude differs by about 10× (\|skew\|≈3–6 versus \|S₃\|≈0.1–0.7) |
-| coherence-length scaling | ℓ_int/η ↑ with Re | coherence fraction C ↓, 1−C ~ N^{−0.249} | complementary trends consistent | exponent not converged |
-| transition location | Re_crit ≈ 2300 (pipe) | Λ_c ≈ 0.34 ↔ Re ≈ 2300 (by calibration) | anchored by calibration | geometry-dependent |
+| scale-separation exponent β | 0.75 (3/4 law) | β(25600)=0.4360, still decreasing, $β_∞∈[−0.2,0.2]$| far from converged | not directly comparable |
+| skewness zero-crossing | velocity-increment S₃ turns from + to − | frontier skew strictly `+→0→−` | qualitatively consistent | magnitude differs by about 10× ($\lVert skew\rVert ≈3–6 versus \lVert S_{3}\rVert ≈0.1–0.7$) |
+| coherence-length scaling | $ℓ_{int}/η ↑$ with Re | coherence fraction C ↓, $1−C ~ N^{−0.249}$ | complementary trends consistent | exponent not converged |
+| transition location | ${Re}_{crit}$ ≈ 2300 (pipe) | $Λ_c ≈ 0.34 ↔ {Re} ≈ 2300$ (by calibration) | anchored by calibration | geometry-dependent |
 
 ### 5.2 What Is Qualitatively Reproduced, and What Quantitatively Deviates
 
@@ -478,7 +478,7 @@ The 3/4 law of K41 implicitly assumes three premises: **a continuous medium** (f
 
 1. **Discrete causal nodes**: the smallest unit is an SRE state, so a smallest scale exists;
 2. **Read-only inheritance**: historical distances are frozen, the cascade can occur only at the causal frontier, and it cannot unfold self-similarly at all scales;
-3. **Extremely strong finite-size effect**: `ξ ~ N^{0.50}` (effective value), the curvature of `C(Re)` evolves with N, and the convergence is slower than the logarithmic type.
+3. **Extremely strong finite-size effect**: $ξ ~ N^{0.50}$ (effective value), the curvature of $C({Re})$ evolves with N, and the convergence is slower than the logarithmic type.
 
 These three points make it impossible for the SRE β to approach 0.75, or any clean fraction, within the accessible N.
 
@@ -486,26 +486,26 @@ These three points make it impossible for the SRE β to approach 0.75, or any cl
 
 | Limitation | Status | Impact |
 | :--- | :--- | :--- |
-| β∞ cannot be determined | unresolved | only the interval `[−0.2, +0.2]` can be given |
-| the q of `1−C` has not converged | unresolved | `s ≈ 0.50` is an effective value, not an asymptotic value |
+| $β_∞$ cannot be determined | unresolved | only the interval $[−0.2, +0.2]$ can be given |
+| the q of $1−C$ has not converged | unresolved | $s ≈ 0.50$ is an effective value, not an asymptotic value |
 | N=25600 still a single seed | partially mitigated | the gap still exceeds 8σ, so the qualitative part is unaffected |
 | N ≤ 6400 has only 2 seeds | below the ≥5 seeds rule | the chain's own seed-σ is small (≤0.008) |
 | the chiral-field spectrum is sensitive to chiral implementation details | unresolved | at the same Λ different random implementations can differ by up to 0.5 (high-Λ side), so γ serves only as a qualitative indicator |
-| `α ≈ 783` calibrated with the pipe critical Re | unresolved | different geometries may have different α, so the calibration is geometry-dependent |
-| the algebraic reason why `D = 2` never occurs | unresolved | the reconstruction formula for `C` is approximate |
+| $α ≈ 783$ calibrated with the pipe critical Re | unresolved | different geometries may have different α, so the calibration is geometry-dependent |
+| the algebraic reason why $D = 2$ never occurs | unresolved | the reconstruction formula for $C$ is approximate |
 | the spectral slope is a 1D causal-order surrogate spectrum | inherent | it cannot be compared digit-by-digit with the 3D energy spectrum E(k) |
 
 ---
 
 ## 6. Conclusion
 
-1. **The macroscopic calibration holds**: the answer to whether the SRE dissipation coefficient Λ can establish a monotonic mapping with the Reynolds number is yes—taking the pipe-flow transition center as an anchor gives `Re ≈ 783/Λ`, and the macroscopic observables evolve monotonically as Re increases.
+1. **The macroscopic calibration holds**: the answer to whether the SRE dissipation coefficient Λ can establish a monotonic mapping with the Reynolds number is yes—taking the pipe-flow transition center as an anchor gives ${Re} ≈ 783/Λ$, and the macroscopic observables evolve monotonically as Re increases.
 
 2. **The qualitative main narrative of classical turbulence is reproduced**: the energy cascade strengthens, the coherence fraction decreases monotonically, the frontier skewness strictly crosses zero, and the heterogeneity peak coincides with the transitional region. SRE does not "start from scratch"; its phenomenology is isomorphic to the classical picture.
 
 3. **A stable quantitative deviation from K41**: the chiral-field spectral slope is ≈ −1.81 (too steep by 9%), and the scale-separation exponent is far from converged. This is neither "strict agreement" nor "disproof", but a **discrete surrogate model that has not yet converged**.
 
-4. **Extremely slow finite-size convergence is a fundamental feature of this model**: the `β(N)` six-point chain decreases monotonically but falls in the degenerate region between "the logarithmic form" and "the weak power law p ≈ 0.28", and `β∞` can only be constrained to `[−0.2, +0.2]`; the correlation-length scaling of `1−C`, `s ≈ 0.50`, is an effective value and the slope is still steepening. Simple inverse-power extrapolations are excluded by the data, and **no simple rational number can serve as the asymptotic exponent of SRE**.
+4. **Extremely slow finite-size convergence is a fundamental feature of this model**: the $β(N)$ six-point chain decreases monotonically but falls in the degenerate region between "the logarithmic form" and "the weak power law p ≈ 0.28", and $β_∞$ can only be constrained to $[−0.2, +0.2]$; the correlation-length scaling of $1−C$, $s ≈ 0.50$, is an effective value and the slope is still steepening. Simple inverse-power extrapolations are excluded by the data, and **no simple rational number can serve as the asymptotic exponent of SRE**.
 
 5. **Honest labeling of the boundaries**: the spectral slope is a one-dimensional causal-order surrogate spectrum rather than a three-dimensional energy spectrum; the calibration of α depends on pipe geometry; the N ladder stops at 25600 (limited by memory). These qualifications delimit the applicable scope of this report's conclusions.
 

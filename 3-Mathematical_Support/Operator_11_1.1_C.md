@@ -8,7 +8,7 @@
 
 本研究给出了状态关系熵（SRE）动力学框架下，电子自由度扩展的核心算子——**自旋-电荷邻接算子（Operator 11, $\mathcal{O}_{\text{spin-charge}}$）**的严密代数推导与规格制定。该算子在 SRE 平滑邻接矩阵 $A_s$ 基础上，将 Pauling 电负性差异编码为 SRE 公理 1 的二元自旋耦合，调制边权重，从而在不引入外部量子力学计算的前提下，为分子图注入电子自由度信息。
 
-v1.1 版本相对原版修正了两个核心问题（D1-D2）：解耦了自旋极性对均值的依赖（D2），统一了异核键的增益方向（D1），使得权重调制只依赖键内电负性差 $w_q = |\tanh(\chi_i - \chi_j)|$，不再随分子组成漂移。
+v1.1 版本相对原版修正了两个核心问题（D1-D2）：解耦了自旋极性对均值的依赖（D2），统一了异核键的增益方向（D1），使得权重调制只依赖键内电负性差 $w_q = \lvert \tanh(\chi_i - \chi_j)\lvert$，不再随分子组成漂移。
 
 ---
 
@@ -27,7 +27,7 @@ Operator 11 的目标：在不引入外部 QM 计算的前提下，将 Pauling �
 **SRE 公理 1（严格二元约束）**: $M_n$ 元素 $\in \{+1, -1\}$，无零元。
 
 **SRE 边权重（Operator 4）**:
-$$W_e(i,j) = \frac{\sqrt{D^{\text{out}}_{ii} \cdot D^{\text{in}}_{jj}}}{\sqrt{\lambda_2 + D^{\text{self}}_{ii} + D^{\text{self}}_{jj} + \varepsilon_{\text{topo}}}} \cdot \left(1 + \frac{|M^2_{\Omega,ij}| \cdot \ln(1 + \lambda_2/\alpha_n)}{\alpha_n + \sqrt{D^{\text{out}} \cdot D^{\text{in}}}}\right)$$
+$$W_e(i,j) = \frac{\sqrt{D^{\text{out}}_{ii} \cdot D^{\text{in}}_{jj}}}{\sqrt{\lambda_2 + D^{\text{self}}_{ii} + D^{\text{self}}_{jj} + \varepsilon_{\text{topo}}}} \cdot \left(1 + \frac{\lvert M^2_{\Omega,ij}\rvert  \cdot \ln(1 + \lambda_2/\alpha_n)}{\alpha_n + \sqrt{D^{\text{out}} \cdot D^{\text{in}}}}\right)$$
 
 **SRE 信息传播速率（Operator 5）**:
 $$c_e = \min\left(\frac{\alpha_n}{\ln(1 + W_e) + \delta_{\text{flt}}}, c_{\max}\right)$$
@@ -50,15 +50,15 @@ $$s_i = \text{sign}(\chi_i - \bar{\chi})$$
 
 定义原子对 $(i,j)$ 的自旋耦合强度:
 
-$$w_q(i,j) = |\tanh(\chi_i - \chi_j)|$$
+$$w_q(i,j) = \lvert \tanh(\chi_i - \chi_j)\lvert$$
 
 性质：
 - $w_q \in [0, 1)$：电负性差越大，耦合越强
-- $\tanh$ 饱和保证不会发散（$|\Delta\chi| > 3$ 时 $w \approx 1$）
+- $\tanh$ 饱和保证不会发散（$\lvert \Delta\chi\rvert  > 3$ 时 $w \approx 1$）
 - 同核键 (C-C)：$w = 0$，无电荷耦合
-- 强极性键 (O-H)：$\chi_O - \chi_H = 1.24$，$w = |\tanh(1.24)| = 0.846$
+- 强极性键 (O-H)：$\chi_O - \chi_H = 1.24$，$w = \lvert \tanh(1.24)\rvert  = 0.846$
 
-为什么用 $\tanh$ 而非线性 $|\Delta\chi|$：$\tanh(\Delta\chi)$ 在 $\Delta\chi \to 0$ 时行为如 $|\Delta\chi|$（线性响应），在 $\Delta\chi \to \infty$ 时饱和为 1（强耦合封顶）。这与 SRE Operator 5 中 $c_e$ 的 $\ln(1 + W_e)$ 对数增长形成对偶。
+为什么用 $\tanh$ 而非线性 $\lvert \Delta\chi\rvert$：$\tanh(\Delta\chi)$ 在 $\Delta\chi \to 0$ 时行为如 $\lvert \Delta\chi\rvert$（线性响应），在 $\Delta\chi \to \infty$ 时饱和为 1（强耦合封顶）。这与 SRE Operator 5 中 $c_e$ 的 $\ln(1 + W_e)$ 对数增长形成对偶。
 
 ### 2.3 步骤 3 — 自旋-电荷邻接矩阵（v1.1 修正 D1）
 
@@ -78,7 +78,7 @@ $$L_q = \text{diag}(\sum_j A_q[i,j]) - A_q$$
 
 **谱量（规范式 4.5）**:
 $$\lambda_{2,q} = \lambda_2(L_q) \quad \text{(电荷感知 Fiedler 值)}$$
-$$\alpha_q = \max|\lambda(L_q)| \quad \text{(电荷感知谱半径)}$$
+$$\alpha_q = \max\lvert \lambda(L_q)\rvert  \quad \text{(电荷感知谱半径)}$$
 $$\kappa_q = \frac{\alpha_q}{\lambda_{2,q}} \quad \text{(电荷感知条件数)}$$
 
 由 Courant-Fischer 变分定理和 Operator 4 的 Dirichlet 能不等式：
@@ -89,11 +89,11 @@ $$E_D^{\text{elec}}(E_s) \geq \lambda_{2,q} \cdot \|E_s\|^2 > 0 \quad \text{(当
 ### 2.5 诊断标量
 
 **电负性离散度（规范式 4.6）**:
-$$q_{\text{dispersion}} = \frac{\text{std}(|\chi|)}{\text{mean}(|\chi|)}$$
+$$q_{\text{dispersion}} = \frac{\text{std}(\lvert \chi\rvert )}{\text{mean}(\lvert \chi\rvert )}$$
 - 0 = 所有原子同种元素；越大 = 极性越强
 
 **最大自旋耦合（定理 11.5）**:
-$$\text{max\_spin\_coupling} = \max_{(i,j) \in E^+} |s_i \cdot s_j \cdot w_q(i,j)| = \tanh(\max|\Delta\chi|)$$
+$$\text{max\_spin\_coupling} = \max_{(i,j) \in E^+} \lvert s_i \cdot s_j \cdot w_q(i,j)\rvert  = \tanh(\max\lvert \Delta\chi\rvert )$$
 
 ---
 
@@ -113,7 +113,7 @@ $$\text{max\_spin\_coupling} = \max_{(i,j) \in E^+} |s_i \cdot s_j \cdot w_q(i,j
 
 Operator 11 的输出 $A_q$ 可直接替代 Operator 4 中的 $A_s$ 输入:
 
-$$W_e^{\text{elec}}(i,j) = \frac{\sqrt{D_q^{\text{out}} \cdot D_q^{\text{in}}}}{\sqrt{\lambda_{2,q} + D_q^{\text{self}} + \varepsilon}} \cdot \left(1 + \frac{|M^2_{\Omega,ij}| \cdot \ln(1 + \lambda_{2,q}/\alpha_q)}{\alpha_q + \sqrt{D_q \cdot D_q}}\right)$$
+$$W_e^{\text{elec}}(i,j) = \frac{\sqrt{D_q^{\text{out}} \cdot D_q^{\text{in}}}}{\sqrt{\lambda_{2,q} + D_q^{\text{self}} + \varepsilon}} \cdot \left(1 + \frac{\lvert M^2_{\Omega,ij}\rvert  \cdot \ln(1 + \lambda_{2,q}/\alpha_q)}{\alpha_q + \sqrt{D_q \cdot D_q}}\right)$$
 
 其中 $D_q^{\text{out}}, D_q^{\text{in}}, D_q^{\text{self}}$ 从 $A_q$（而非 $A_s$）计算。这使得 $W_e$ 自动获得电荷感知能力，无需修改 Operator 4 的公式本身。
 

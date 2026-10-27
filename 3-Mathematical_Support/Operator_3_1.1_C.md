@@ -203,9 +203,9 @@ $$\mathcal{S}_{\text{corner}}\left(Q_{\text{net}}^{(n)}\right) = - \text{sgn}\le
 
 **证明：** 构造系统的离散正定时滞 Lyapunov 函数 $V_{\text{delay}}(n) = \frac{1}{2}(Q_{\text{net}}^{(n)})^2$。将定理 5.1 线性共轭尺度约束 $\xi \equiv \frac{n}{\theta}$ 带入增量方程，前沿对冲恢复力矩的变动项被完美平摊消解：
 
-$$2(n - \theta \cdot \xi) \equiv 0 \implies \Delta V = - Q_{\text{net}}^{(n)} \cdot \text{sgn}\left(Q_{\text{net}}^{(n)}\right) + \frac{1}{2} = - \left| Q_{\text{net}}^{(n)} \right| + \frac{1}{2}$$
+$$2(n - \theta \cdot \xi) \equiv 0 \implies \Delta V = - Q_{\text{net}}^{(n)} \cdot \text{sgn}\left(Q_{\text{net}}^{(n)}\right) + \frac{1}{2} = - \lvert Q_{\text{net}}^{(n)} \rvert + \frac{1}{2}$$
 
-当且仅当 $\left|Q_{\text{net}}^{(n)}\right| > 0.5$ 时，Lyapunov 泛函的离散差分增量 $\Delta V < 0$ 严格恒定负定。根据主代数稳定性判据，轨道被死死钳制在紧致的平流层有界吸引子内部，其长程时间积分为：
+当且仅当 $\left\lvert Q_{\text{net}}^{(n)}\right\rvert  > 0.5$ 时，Lyapunov 泛函的离散差分增量 $\Delta V < 0$ 严格恒定负定。根据主代数稳定性判据，轨道被死死钳制在紧致的平流层有界吸引子内部，其长程时间积分为：
 
 $$\lim_{N \to \infty} \frac{1}{N} \sum_{n=1}^N Q_{\text{net}}^{(n)} \equiv 0$$
 

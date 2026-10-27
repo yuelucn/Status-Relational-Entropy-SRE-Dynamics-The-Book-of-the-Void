@@ -176,8 +176,8 @@ Then $\Gamma_\mathrm{chiral}^{\max\to-}=-\dfrac{\xi(z)}{r^2\ln(r/\ell_P)}$, prod
 The ratio of the chiral term to the main attractive term (Rank=4):
 
 $$
-\mathcal{R}\equiv\frac{|\Gamma_\mathrm{chiral}|}{2\alpha_\mathrm{scale}\mathcal{W}_{ij}/r^2}
-=\frac{\xi(z)\,\big|\sin(\cdot)\big|}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
+\mathcal{R}\equiv\frac{\lvert \Gamma_\mathrm{chiral}\rvert }{2\alpha_\mathrm{scale}\mathcal{W}_{ij}/r^2}
+=\frac{\xi(z)\,\big\lvert \sin(\cdot)\big\rvert }{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
 \;\xrightarrow[\ \sin=\pm1\ ]{}\;
 \frac{\xi(z)}{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}
 $$
@@ -199,7 +199,7 @@ Since $\alpha_\mathrm{scale}$ is a dimensionless free coupling in the theory, wh
 Requiring $a_\mathrm{SRE}=0$ at some radius $r$ (ignoring the uniform term):
 
 $$
-\xi^{*}=\frac{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}{\big|\sin(\cdot)\big|}
+\xi^{*}=\frac{2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)}{\big\lvert \sin(\cdot)\big\rvert }
 \;\xrightarrow[\ \sin=1\ ]{}\;
 2\,\alpha_\mathrm{scale}\,\mathcal{W}_{ij}\,\ln(r/\ell_P)
 $$
@@ -425,7 +425,7 @@ The shrinkage coefficient $\rho=0.3$ is not arbitrary but fixed by **leave-one-o
 
 Two technical points about the mocks must be stated:
 
-- **Construction damping**: the absolute $f\sigma_8$ of the displacement-method mocks is suppressed by about 44% (nonlinear damping of the displacement; $|\Psi|_\mathrm{rms}\approx6.4\,\mathrm{Mpc}$ is of the same order as the grid spacing $9.86\,\mathrm{Mpc}$). Because the suppression is a **smooth multiplicative factor**, it does not affect the recovery of the oscillation amplitude $A$, only the absolute amplitude.
+- **Construction damping**: the absolute $f\sigma_8$ of the displacement-method mocks is suppressed by about 44% (nonlinear damping of the displacement; $\lvert \Psi\rvert _\mathrm{rms}\approx6.4\,\mathrm{Mpc}$ is of the same order as the grid spacing $9.86\,\mathrm{Mpc}$). Because the suppression is a **smooth multiplicative factor**, it does not affect the recovery of the oscillation amplitude $A$, only the absolute amplitude.
 - **The bias must match**: the mock bias is taken as $b=2.0$ (self-calibrated from the data as $b=\sqrt{1.675}/0.6475\approx2.0$), and the galaxy counts are matched to the measured values cap by cap. If the mocks used $b=0.5$, the signal part of the covariance would be underestimated by up to $(2.0/0.5)^4\approx256$ times, $\sigma_{f\sigma_8}$ would be underestimated by about 10 times, and a spurious $\chi^2/\mathrm{dof}\approx78$ would be fabricated—a trap already ruled out in this project.
 
 ### 9.7 Global Fit and the 95% Lower Bound
@@ -436,7 +436,7 @@ $$\hat A=\frac{\sqrt{B_1'^2+B_2'^2}}{s_8}$$
 
 **Why $\hat A$ cannot be used directly as the upper limit**: $\hat A$ is a positive-definite amplitude estimator and is nonzero even for pure noise (Rice distribution). A frequentist upper limit is therefore required:
 
-$$A_{95}=\frac{|\hat B|+r_{95}}{s_8},\qquad r_{95}=1.645\,/\sqrt{\lambda_\mathrm{min}}$$
+$$A_{95}=\frac{\lvert \hat B\rvert +r_{95}}{s_8},\qquad r_{95}=1.645\,/\sqrt{\lambda_\mathrm{min}}$$
 
 Here $\lambda_\mathrm{min}$ is the smallest eigenvalue of the 2×2 amplitude information matrix after **marginalizing over $s_8$**, and $r_{95}$ is the one-sided 95% (1.645$\sigma$) half-width along the **weakest-constrained direction**. Physically, $A_{95}$ answers: "at 95% confidence, how large can the chiral amplitude be at most?"
 
@@ -589,16 +589,16 @@ $$
 
 ### 11.3 Quantitative Reachability Bound (Upper Limit of Shieldable Fraction)
 
-Let the boundary shell $\Omega_\partial$ have $|V_\partial|$ nodes and $|E_\partial|$ edges. Operator 10 requires retaining a spanning tree ($|V_\partial|-1$ edges), so the **number of dormable edges** is
+Let the boundary shell $\Omega_\partial$ have $\lvert V_\partial\rvert$ nodes and $\lvert E_\partial\rvert$ edges. Operator 10 requires retaining a spanning tree ($\lvert V_\partial\rvert -1$ edges), so the **number of dormable edges** is
 
 $$
-N_\text{gate}\ \le\ |E_\partial|-(|V_\partial|-1)
+N_\text{gate}\ \le\ \lvert E_\partial\lvert -(\rvert V_\partial\lvert -1)
 $$
 
 **Upper limit of the shieldable channel fraction**
 
 $$
-\boxed{\ \frac{N_\text{gate}}{|E_\partial|}\ \le\ 1-\frac{|V_\partial|-1}{|E_\partial|}\ =\ 1-\frac{2}{\langle k\rangle}\ }
+\boxed{\ \frac{N_\text{gate}}{\lvert E_\partial\rvert }\ \le\ 1-\frac{\lvert V_\partial\rvert -1}{\lvert E_\partial\rvert }\ =\ 1-\frac{2}{\langle k\rangle}\ }
 $$
 
 ($\langle k\rangle$ is the boundary average degree.) Example: $\langle k\rangle=4$ ⇒ at most **50%** of boundary channels can be shielded per operation; $\langle k\rangle=6$ ⇒ upper limit 67%.

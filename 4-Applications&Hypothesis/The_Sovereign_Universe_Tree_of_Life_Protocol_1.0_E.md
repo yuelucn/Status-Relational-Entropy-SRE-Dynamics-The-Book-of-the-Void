@@ -20,14 +20,14 @@ Taking the Planck length $l_{P}$ as the fundamental pixel of causal connectivity
 
 ## 1 Introduction and Axiomatic Foundations
 Within the State‑Relational‑Entropy (SRE) dynamics paradigm, the effective gravitational coupling parameter corresponding to Newton’s measured gravitational constant $G$ is governed by a local probability function for edge dormancy (non‑occurrence) during network expansion:
-\[
+$$
 p_{i j}^{(n)}=1-\frac{1}{1+\lambda \cdot \frac{n-\max (i, j)}{E_{local }(i, j)+1}}
-\]
+$$
 
 As discrete‑step evolution proceeds deep into the macroscopic regime ($n \approx 10^{60}$), the structural depth $n-\max(i,j)$ from top to bottom increases monotonically. This drives large ancestral nodes inside the SRE matrix into an absolute dormant state, macroscopically manifested as progressive desolation and thinning of long‑range spacetime geometry. According to the foundational Asymptotic Decay Theorem (Theorem 2), the ratio of structural coherence length $\xi(N)$ relative to the global matrix boundary obeys strict asymptotic decay:
-\[
+$$
 \lim _{N \to \infty} \frac{\xi(N)}{N}=0
-\]
+$$
 
 This systemic property yields two distinct algebraic consequences at the physical‑rendering layer:
 1. **Monotonic decay of $G(n)$**: Persistent dissipation of long‑range coherence brings corresponding relaxation in the convergence rate of physical geodesics. Large‑scale cosmological structures therefore exist in a state of progressive long‑range metric dissociation.
@@ -39,19 +39,19 @@ Numerical simulations nevertheless confirm that after surviving chaotic early‑
 To precisely locate the current evolutionary stage of the system, the model abandons the traditional separation between macroscopic time (seconds) and microscopic Planck‑scale quanta; all computations are grounded purely upon discrete causal steps.
 
 Define the Planck length $l_{P} \approx 1.616 \times 10^{-35}\,\mathrm{m}$ as the minimal dimensionless pixel for causal connectivity. Take the speed of light $c \approx 2.998 \times 10^{8}\,\mathrm{m/s}$ as the hard algorithmic velocity limit for information propagation across network topology. One discrete pulse (matrix‑order advance $n\to n+1$) corresponds to an internal step‑interval equal to the Planck‑time $t_P$:
-\[
+$$
 t_{P}=\frac{l_{P}}{c}=\frac{1.616255 \times 10^{-35}\,\mathrm{m}}{2.99792458 \times 10^{8}\,\mathrm{m/s}} \approx 5.391 \times 10^{-44}\,\mathrm{s}
-\]
+$$
 
 Astrophysical observations from CMB and Hubble‑redshift constrain the present cosmological age to roughly 13.8 billion years ($1.38\times 10^{10}$ years). Convert macroscopic rendered duration into total seconds:
-\[
+$$
 T_{seconds}=1.38\times 10^{10} \times 365.25 \times 24 \times 3600 \approx 4.3549\times 10^{17}\,\mathrm{s}
-\]
+$$
 
 Divide total macroscopic time $T_{seconds}$ by fundamental step duration $t_P$ to obtain the total sequential cycles executed by the master SRE matrix since primordial seed $M_1$:
-\[
+$$
 n=\frac{T_{seconds }}{t_{P}}=\frac{4.3549 \times 10^{17}\,\mathrm{s}}{5.3912 \times 10^{-44}\,\mathrm{s}} \approx 8.078 \times 10^{60}\ \text{steps}
-\]
+$$
 
 This numerical deduction reveals a profound algebraic reality: billions of years perceived at the physical‑rendering layer correspond exactly to $10^{60}$ discrete sequential pulses at the backend code layer.
 

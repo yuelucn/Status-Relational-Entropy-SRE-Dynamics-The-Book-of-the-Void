@@ -1,8 +1,8 @@
 # 核子骨架 Y₃ 的双 ℤ₂ 通道判决：割空间充要判据在项目自身对象上的落地、与莫比乌斯梯族的关系及 Pfaffian 障碍的可读证书
 
-> **摘要**　本项目自身的核心载体是核子骨架 $Y_3=Y_3\rtimes\triangle_3$（闭态 $V=12,E=18,\beta_1=7,|\mathrm{Aut}|=36$）。算子 19 的历次版本已分别建立 Pfaffian 定向类的无偏线性系统、标号无关的 $\mathbb Z_2$ 不变量 $\mathrm{rank}_\mathrm{hol}$、以及后者的充要判据（割空间交维数恒等式）。然而这三条结果从未在 $Y_3$ 本体上并置验证，「电荷符号由 $H^1$ holonomy 而非 Pfaffian 定向承载」这一项目核心主张，因而仍缺少对自身对象的直接实测支撑；此外「$Y_3$ 闭态无 Pfaffian 定向」此前只以「系统无解」这一事实形式存在，读者无从核查；$Y_3$ 与莫比乌斯梯族 $M_{2n}$ 的真实关系也未有判决。
+> **摘要**　本项目自身的核心载体是核子骨架 $Y_3=Y_3\rtimes\triangle_3$（闭态 $V=12,E=18,\beta_1=7,\lvert \mathrm{Aut}\rvert =36$）。算子 19 的历次版本已分别建立 Pfaffian 定向类的无偏线性系统、标号无关的 $\mathbb Z_2$ 不变量 $\mathrm{rank}_\mathrm{hol}$、以及后者的充要判据（割空间交维数恒等式）。然而这三条结果从未在 $Y_3$ 本体上并置验证，「电荷符号由 $H^1$ holonomy 而非 Pfaffian 定向承载」这一项目核心主张，因而仍缺少对自身对象的直接实测支撑；此外「$Y_3$ 闭态无 Pfaffian 定向」此前只以「系统无解」这一事实形式存在，读者无从核查；$Y_3$ 与莫比乌斯梯族 $M_{2n}$ 的真实关系也未有判决。
 >
-> 本报告补齐三点。**第一**，在 $Q_3$、$Y_3^\mathrm{cl}$、$Y_3^\mathrm{op}$ 上以三条独立实现复算 $\mathrm{rank}_\mathrm{hol}$，得 $0/1/2$，与算子 19 v1.1 完全一致，且与割空间恒等式零失配。**第二**，给出 $Y_3^\mathrm{cl}$ 无 Pfaffian 定向的**可读证书**：其 6 条完美匹配方程构成极小不可解行子集，去掉任一行即变可解，即「差一行即矛盾」；并给出结构性原因——$Y_3^\mathrm{cl}$ 含 42 条 nice even cycle，而删去一条环边得到的 $Y_3^\mathrm{op}$ 该数为 0，Pfaffian 通道随之打开（$\dim=13$，$|\mathcal O_\mathrm{Pf}|=2^{13}$）。**第三**，判决 $Y_3$ 与 $M_{2n}$ 的关系：完备回溯枚举证明 $Y_3^\mathrm{cl}$ 对一切 $n\ge3$ 的梯族**零覆盖**、零商；而 $Y_3^\mathrm{cl}$ 恰是 $K_4\cong M_4$ 的**三折正规覆盖**（deck 群 3 阶，商 $\cong K_4$）——这既解释了 $Y_3^\mathrm{cl}$ 三角形数为何为 3，也把「两族是否同源」这一悬置问题落到一个可核验的精确答案上。
+> 本报告补齐三点。**第一**，在 $Q_3$、$Y_3^\mathrm{cl}$、$Y_3^\mathrm{op}$ 上以三条独立实现复算 $\mathrm{rank}_\mathrm{hol}$，得 $0/1/2$，与算子 19 v1.1 完全一致，且与割空间恒等式零失配。**第二**，给出 $Y_3^\mathrm{cl}$ 无 Pfaffian 定向的**可读证书**：其 6 条完美匹配方程构成极小不可解行子集，去掉任一行即变可解，即「差一行即矛盾」；并给出结构性原因——$Y_3^\mathrm{cl}$ 含 42 条 nice even cycle，而删去一条环边得到的 $Y_3^\mathrm{op}$ 该数为 0，Pfaffian 通道随之打开（$\dim=13$，$\lvert \mathcal O_\mathrm{Pf}\rvert =2^{13}$）。**第三**，判决 $Y_3$ 与 $M_{2n}$ 的关系：完备回溯枚举证明 $Y_3^\mathrm{cl}$ 对一切 $n\ge3$ 的梯族**零覆盖**、零商；而 $Y_3^\mathrm{cl}$ 恰是 $K_4\cong M_4$ 的**三折正规覆盖**（deck 群 3 阶，商 $\cong K_4$）——这既解释了 $Y_3^\mathrm{cl}$ 三角形数为何为 3，也把「两族是否同源」这一悬置问题落到一个可核验的精确答案上。
 >
 > 全程 45 处仓库内 $Y_3$ 构造实现经同构体检（16 处可独立体检者全部同构，5 处因签名/依赖无法隔离执行者逐个记录原因），22 个样本上三实现零失配，五路反证门全过。**新可搬用规则两条**（G70 同构一致性律、G71 极小冲突证书律）。
 
@@ -34,7 +34,7 @@ $$E\bigl(Y_3^\mathrm{cl}\bigr)=\bigl\{\{c_i,L_{ij}\}:i,j\in\{0,1,2\}\bigr\}\;\cu
 
 **定义 2.2（$Y_3$ 开态）**　由 $Y_3^\mathrm{cl}$ 删去一条三角边所得，记 $Y_3^\mathrm{op}$。
 
-**命题 2.3（基本量）**　$Y_3^\mathrm{cl}$：$V=12$、$E=18$、3-正则、$\beta_1=7$、$|\mathrm{Aut}|=36$、2 个边轨道（各 9 条）、非平面、非二分；$Y_3^\mathrm{op}$：$V=12$、$E=17$、$\beta_1=6$、$|\mathrm{Aut}|=4$、7 个边轨道（大小 $1,2,2,2,2,4,4$）、非平面、非二分。
+**命题 2.3（基本量）**　$Y_3^\mathrm{cl}$：$V=12$、$E=18$、3-正则、$\beta_1=7$、$\lvert \mathrm{Aut}\rvert =36$、2 个边轨道（各 9 条）、非平面、非二分；$Y_3^\mathrm{op}$：$V=12$、$E=17$、$\beta_1=6$、$\lvert \mathrm{Aut}\rvert =4$、7 个边轨道（大小 $1,2,2,2,2,4,4$）、非平面、非二分。
 
 > **注 2.4（实现散布的事实）**　全仓共 45 处 $y_3$ / $y_{3,\mathrm{closed}}$ / $y_{3,\mathrm{open}}$ 函数体，归并为 21 个不同实现体（按函数名 × 函数体 md5）。本报告全部实测一律以定义 2.1 的规范邻接为准。
 
@@ -71,7 +71,7 @@ $$\sum_{e\in M}t_e=\mathrm{cr}(M)\quad(\bmod\ 2),\qquad\text{对每个 }M\in\mat
 
 - **I1（$M$ 矩阵法）**　复现算子 19 章 的 T2：$M$ 的行取环基、列取边轨道，$M[c][o]$ 为圈 $c$ 上落在轨道 $o$ 中的边数模 2。$\mathrm{rank}_\mathrm{hol}=\operatorname{rank}_{\mathbb F_2}M$。
 - **I2（割空间交维数法）**　$W$ 取轨道特征向量为基，$\operatorname{Cut}$ 取星集为基，由 $\dim(W\cap\operatorname{Cut})=\dim W+\dim\operatorname{Cut}-\operatorname{rank}(W\cup\operatorname{Cut})$ 得 $\mathrm{rank}_\mathrm{hol}$。
-- **I3（子集枚举法）**　枚举 $2^{|V|}$ 个 $S$，取 $d(S)$ 的**全部不同取值**作为 $\operatorname{Cut}$ 的生成集（与 I2 的「星集基」构造不同源），再与 $W$ 求交。
+- **I3（子集枚举法）**　枚举 $2^{\lvert V\rvert }$ 个 $S$，取 $d(S)$ 的**全部不同取值**作为 $\operatorname{Cut}$ 的生成集（与 I2 的「星集基」构造不同源），再与 $W$ 求交。
 
 **定理 3.2**　在 $Q_3$、$Y_3^\mathrm{cl}$、$Y_3^\mathrm{op}$ 上，I1、I2、I3 与定理 2.6 的恒等式给出**完全一致**的读数：
 $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\mathrm{cl}\bigr)=1,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\mathrm{op}\bigr)=2 .$$
@@ -79,7 +79,7 @@ $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\
 
 **表 3.1　三个骨架的四路读数**
 
-| 骨架 | $V$ | $E$ | $\beta_1$ | $|\mathrm{Aut}|$ | $n_\mathrm{orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\mathrm{rank}_\mathrm{hol}$（I1/I2/I3/T9） |
+| 骨架 | $V$ | $E$ | $\beta_1$ | $\lvert \mathrm{Aut}\rvert$ | $n_\mathrm{orb}$ | $\dim\operatorname{Cut}$ | $\dim(W\cap\operatorname{Cut})$ | $\mathrm{rank}_\mathrm{hol}$（I1/I2/I3/T9） |
 |---|---|---|---|---|---|---|---|---|
 | $Q_3$（电子） | 8 | 12 | 5 | 48 | 1 | 7 | 1 | **0** / 0 / 0 / 0 |
 | $Y_3^\mathrm{cl}$（质子） | 12 | 18 | 7 | 36 | 2 | 11 | 1 | **1** / 1 / 1 / 1 |
@@ -103,7 +103,7 @@ $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\
 
 **表 4.1　两通道并置判决（核心结果）**
 
-| 骨架 | $n_\mathrm{orb}$ | $\mathrm{rank}_\mathrm{hol}$（$H^1$ 通道） | $\#\mathcal M$ | $\|\mathcal O_\mathrm{Pf}\|$ | $\dim\mathcal O_\mathrm{Pf}$ | Pfaffian 通道 | nice even cycle |
+| 骨架 | $n_\mathrm{orb}$ | $\mathrm{rank}_\mathrm{hol}$（$H^1$ 通道） | $\#\mathcal M$ | $\lVert \mathcal O_\mathrm{Pf}\rVert$ | $\dim\mathcal O_\mathrm{Pf}$ | Pfaffian 通道 | nice even cycle |
 |---|---|---|---|---|---|---|---|
 | $Q_3$ | 1 | 0 | 9 | 128 | 6 | **有解** | 0 |
 | $Y_3^\mathrm{cl}$ | 2 | 1 | 6 | **0** | — | **无解** | **42** |
@@ -121,7 +121,7 @@ $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\
 
 **命题 4.6（结构性原因：nice even cycle 归零）**　$Y_3^\mathrm{cl}$ 含 **42** 条 nice even cycle（长度分布：长 6 共 9 条、长 8 共 9 条、长 10 共 18 条、长 12 共 6 条）；$Y_3^\mathrm{op}$ 含 **0** 条。nice even cycle 的存在迫使 Pfaffian 定向的「绕圈符号一致性」条件相互冲突；删去一条环边后该障碍集归零，Pfaffian 通道随之打开（$\dim=13$，$\|\mathcal O_\mathrm{Pf}\|=2^{13}=16384$，特解独立复核 $\mathrm{Pf}=+4=\#\mathcal M$）。
 
-> **注 4.7（nice 障碍指示器不是判据）**　按分类器口径（假阳性/假阴性必须报出，见 G69），以「有 nice even cycle」为「无 Pfaffian 定向」的**指示器**，在 22 个样本上得 TP=4、FP=2、FN=3、TN=13。假阳性例：$M_8$（Wagner 图，nice=1 但有解，$|\mathcal O_\mathrm{Pf}|=256$）。假阴性例：$M_{10}$、$M_{14}$（二分，nice=0 但无解）与一个随机 3-正则图（$\mathrm{rank}_\mathrm{hol}=3$、nice=0 而无解）。故 **nice even cycle 只能作障碍指示，不能作判据**；真值始终由无偏系统给出。这一评估同时定位了假阴性的落点：**多为二分图**（二分图上全 1 赋值落在割空间，不产生 nice 障碍，却仍可能无解）。
+> **注 4.7（nice 障碍指示器不是判据）**　按分类器口径（假阳性/假阴性必须报出，见 G69），以「有 nice even cycle」为「无 Pfaffian 定向」的**指示器**，在 22 个样本上得 TP=4、FP=2、FN=3、TN=13。假阳性例：$M_8$（Wagner 图，nice=1 但有解，$\lvert \mathcal O_\mathrm{Pf}\rvert =256$）。假阴性例：$M_{10}$、$M_{14}$（二分，nice=0 但无解）与一个随机 3-正则图（$\mathrm{rank}_\mathrm{hol}=3$、nice=0 而无解）。故 **nice even cycle 只能作障碍指示，不能作判据**；真值始终由无偏系统给出。这一评估同时定位了假阴性的落点：**多为二分图**（二分图上全 1 赋值落在割空间，不产生 nice 障碍，却仍可能无解）。
 
 ---
 
@@ -144,7 +144,7 @@ $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\
 
 ### 5.2　判决的诚实形态
 
-**命题 5.5（对算子 19 v1.1 遗留的开放问题 的正面回答）**　$Y_3$ 与莫比乌斯梯族 $M_{2n}$（$n\ge3$）**不是**覆盖、商或双覆盖关系：不同构、零覆盖、零商。$Y_3$ 自身确有一个覆盖结构，但其母图是 $K_4\cong M_4$，即梯族的**最小退化点**，而非任何真梯子。$Y_3$ 的「三」这一结构特征（3 个中心、3 组腿、3 个三角形、$|\mathrm{Aut}|=36=3!\times3!$、边轨道 2 个各 9 条）在覆盖视角下获得统一解释：**$Y_3$ 是三折的完全图**。
+**命题 5.5（对算子 19 v1.1 遗留的开放问题 的正面回答）**　$Y_3$ 与莫比乌斯梯族 $M_{2n}$（$n\ge3$）**不是**覆盖、商或双覆盖关系：不同构、零覆盖、零商。$Y_3$ 自身确有一个覆盖结构，但其母图是 $K_4\cong M_4$，即梯族的**最小退化点**，而非任何真梯子。$Y_3$ 的「三」这一结构特征（3 个中心、3 组腿、3 个三角形、$\lvert \mathrm{Aut}\rvert =36=3!\times3!$、边轨道 2 个各 9 条）在覆盖视角下获得统一解释：**$Y_3$ 是三折的完全图**。
 
 **推论 5.6（为什么 算子 19 初版定理不能外推）**　算子 19 初版定理「$\mathcal O_\mathrm{Pf}(M_{2n})\neq\emptyset\iff n$ 偶 $\iff$ 非二分」成立于梯族。$Y_3^\mathrm{cl}$ 非二分却**无** Pfaffian 定向，说明「非二分 $\Rightarrow$ 有定向类」**不是普适命题**。本报告给出其失效的结构原因：$Y_3^\mathrm{cl}$ 与 $M_{2n}$ 不同族（§5.1），且 $Y_3^\mathrm{cl}$ 含 42 条 nice even cycle（§4.2），而 $n$ 偶的梯族 nice 数为 0。
 
@@ -185,7 +185,7 @@ $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\
 
 **规则 G71（极小冲突证书律）**　「某线性系统无解」若仅作为**事实**报告，读者无从核查，亦无法判断「差多少」。须补两项：(i) **极小不可解行子集**并独立复核（取出该子集重解仍不可解，且去掉任一行后变可解）；(ii) **可满足比例**（本例：$Y_3^\mathrm{cl}$ 差 1 行即矛盾）。本报告据此把算子 19 初版的「$Y_3$ 闭态无解」由事实升级为可核查证书。
 
-**规则 G72（自检判据器律）**　自检脚本的**判据本身须能被证伪**，否则「全绿」无信息量。两条要求：(i) **阴性对照**——注入已知错误的期望值，检查器须报 MISS（本报告注入 3 处 ⇒ 恰好检出 5 处 MISS；另注入单元格级污染 3 处 ⇒ 报警 3）；(ii) 判据须**按结构定位**——解析表格取列位，而非脆弱的字符串 needle。本报告实测：needle 版判据对同一份正确文档给出 9 项误报，若不改，正确的论文会被判为错误。**配套**：枚举类实现在超出能力边界时（$|V|>16$）须标 `n/a` 而**非计失配**，否则「无法计算」被误读为「不一致」。
+**规则 G72（自检判据器律）**　自检脚本的**判据本身须能被证伪**，否则「全绿」无信息量。两条要求：(i) **阴性对照**——注入已知错误的期望值，检查器须报 MISS（本报告注入 3 处 ⇒ 恰好检出 5 处 MISS；另注入单元格级污染 3 处 ⇒ 报警 3）；(ii) 判据须**按结构定位**——解析表格取列位，而非脆弱的字符串 needle。本报告实测：needle 版判据对同一份正确文档给出 9 项误报，若不改，正确的论文会被判为错误。**配套**：枚举类实现在超出能力边界时（$\lvert V\rvert >16$）须标 `n/a` 而**非计失配**，否则「无法计算」被误读为「不一致」。
 
 **规则 G73（编号口径对照律）**　**同一族在不同文献中下标可差一个因子**（本例：算子 19 $M_k$ 为偶环 $C_{2k}$ 加对径弦，$V=2k$；论文 $M_{2n}$ 为 $\mathrm{Cay}(\mathbb Z_{2n},\{1,n\})$，$V=2n$，二者相差因子 2）⇒ **跨文献引用前必先建立编号对照表**。对应三个易错锚点：$K_4$＝算子 19 $M_2$＝论文 $M_4$；$K_{3,3}$＝$M_3$＝$M_6$；Wagner 图＝$M_4$＝$M_8$。**推论**：任何形如「$X$ 与 $M_{12}$ 不同构」的陈述，在未标注编号体系时**不可判定**——它可能指两个不同的图。
 
@@ -284,7 +284,7 @@ $$\mathrm{rank}_\mathrm{hol}(Q_3)=0,\qquad \mathrm{rank}_\mathrm{hol}\bigl(Y_3^\
 ### 8.4　诚实的边界
 
 1. **覆盖枚举的完备性依赖实现**：方法 5.1 的完备性由「剪枝仅用必要条件」保证，且经阳性对照 $Q_3\to K_4$（$k=2$）检验；但未做第三方独立实现交叉。
-2. **$|\mathrm{Aut}|$ 未做群论分类**：$|\mathrm{Aut}(Y_3^\mathrm{cl})|=36$ 的群结构（疑为 $S_3\times S_3$）未证明；deck 群阶 3 的具体同构型未判定。
+2. **$\lvert \mathrm{Aut}\rvert$ 未做群论分类**：$\lvert \mathrm{Aut}(Y_3^\mathrm{cl})\rvert =36$ 的群结构（疑为 $S_3\times S_3$）未证明；deck 群阶 3 的具体同构型未判定。
 3. **nice even cycle 与不可解的因果未作全称证明**：命题 4.6 给出的是**充分性方向**的经验对应（nice 归零 ⇒ 通道打开）与**指示器**评估（TP/FP/FN/TN 齐报），「有 nice cycle $\Rightarrow$ 无解」的**充分性**未证（有假阳性例 $M_8$）。
 4. **物理解释未推进**：本报告只判决图论层，**未**把覆盖结构（$Y_3$ 是 $K_4$ 的三折覆盖）与质量/电荷的物理量对应；这条线留待与分子层（算子 20 的 $\kappa,\varrho,\nu$ 三通道）合流后处理。
 5. **样本量**：22 个外部样本对「族外行为分布」而言偏小；本报告只据以**报告分布**，不作普适断言。

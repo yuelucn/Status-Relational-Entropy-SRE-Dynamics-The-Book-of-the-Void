@@ -241,10 +241,10 @@ $$
 **Proof:**
 Construct discrete positive-definite delayed Lyapunov function $V_{\text{delay}}(n) = \frac{1}{2}\big(Q_{\text{net}}^{(n)}\big)^2$. Substitute linear-conjugate-scale constraint $\xi \equiv \frac{n}{\theta}$ from Theorem 5.1 into increment equations. Variation terms from frontier restoring torques cancel perfectly:
 $$
-2(n - \theta \cdot \xi) \equiv 0 \implies \Delta V = - Q_{\text{net}}^{(n)} \cdot \text{sgn}\left(Q_{\text{net}}^{(n)}\right) + \frac{1}{2} = - \left| Q_{\text{net}}^{(n)} \right| + \frac{1}{2}
+2(n - \theta \cdot \xi) \equiv 0 \implies \Delta V = - Q_{\text{net}}^{(n)} \cdot \text{sgn}\left(Q_{\text{net}}^{(n)}\right) + \frac{1}{2} = - \lvert Q_{\text{net}}^{(n)} \rvert + \frac{1}{2}
 $$
 
-If and only if $\left|Q_{\text{net}}^{(n)}\right| > 0.5$, discrete-difference increment of Lyapunov functional satisfies $\Delta V < 0$ and remains strictly negative-definite. According to principal algebraic-stability criteria, orbits are rigidly trapped inside compact advection-layer bounded attractors. Its long-time-integral yields:
+If and only if $\left\lvert Q_{\text{net}}^{(n)}\right\rvert  > 0.5$, discrete-difference increment of Lyapunov functional satisfies $\Delta V < 0$ and remains strictly negative-definite. According to principal algebraic-stability criteria, orbits are rigidly trapped inside compact advection-layer bounded attractors. Its long-time-integral yields:
 $$
 \lim_{N \to \infty} \frac{1}{N} \sum_{n=1}^N Q_{\text{net}}^{(n)} \equiv 0
 $$

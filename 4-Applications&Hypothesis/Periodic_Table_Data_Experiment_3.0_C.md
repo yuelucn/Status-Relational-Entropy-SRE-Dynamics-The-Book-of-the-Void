@@ -24,9 +24,9 @@
 
 ## 4 解析损失函数与正则化
 **复合目标函数**：通过三重残差加权消除权重简并，保证唯一解：
-\[
+$$
 L_{total }=w_{1} Res\left(\Delta G^{\ddagger}\right)+w_{2} Res\left(E_{ion }\right)+w_{3} Res(\Delta \lambda)+\gamma \tilde{\mathcal{E}}_{local }
-\]
+$$
 式中权重$w_{1,2,3}$由SRE局域势垒三态分离定理（算子-2 篇 §7.0–§7 定理5）自动确定；$\tilde{\mathcal{E}}_{local}$为表征轨道异常的拓扑阻挫正则项。
 
 **自适应分层正则化**：吉洪诺夫正则化系数 $\lambda_{reg}$ 随子矩阵$\Omega_{n}$维度动态调整，避免高维矩阵出现浮点奇点。
@@ -69,9 +69,9 @@ L_{total }=w_{1} Res\left(\Delta G^{\ddagger}\right)+w_{2} Res\left(E_{ion }\rig
 
 ### A2 依赖原子轨道的临界阻抗$Z_{crit}(n,l)$代数公式
 有效拓扑阻抗$Z_{eff}$决定系统的“只读”边界。
-\[
+$$
 Z_{crit }(n, l)=1-\frac{1}{\ln (1+N_{n, l} \alpha)}
-\]
+$$
 式中 $N_{n,l}$ 为轨道逻辑深度（环路周期），满足 $N_{n, l} \propto \dfrac{\lambda_{n, l}}{\ell_{min }}$。
 
 **物理意义**：该公式给出微观防火墙临界阈值。对于内层轨道（大$N$），$Z_{crit}$趋近于1，形成“硬加密区”，保证原子核结构的代数主权。

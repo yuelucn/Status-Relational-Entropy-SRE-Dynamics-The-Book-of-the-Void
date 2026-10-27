@@ -16,26 +16,26 @@
 为了彻底消除符号重载与混淆链复形固有属性的问题，我们引入标准离散图上同调符号系统，严格区分固有幂零性与算子拦截效果。
 
 ### 1.1 严格链复形符号系统
-设全局未修剪的离散图拓扑基座为 $G = (V, E)$。建立其标准实值标量 0-链空间 $C_0(V; \mathbb{R}) \cong \mathbb{R}^{|V|}$，1-链空间 $C_1(E; \mathbb{R}) \cong \mathbb{R}^{|E|}$。
+设全局未修剪的离散图拓扑基座为 $G = (V, E)$。建立其标准实值标量 0-链空间 $C_0(V; \mathbb{R}) \cong \mathbb{R}^{\lvert V\rvert }$，1-链空间 $C_1(E; \mathbb{R}) \cong \mathbb{R}^{\lvert E\rvert }$。
 * **固有边界算子**：$\partial_1: C_1 \to C_0$，其对偶伴随算子为**固有余边界算子** $\delta_0 = \partial_1^T: C_0 \to C_1$。对于任意有向链复形，边界的幂零性（如 $1$-chain 与 $0$-chain 之间的复形结构）由底层的范畴定义自然保证。
-* **上同调圈空间基底矩阵 $\mathbf{B}_{\text{co}}$**：我们正式停止使用重载符号 $\mathbf{C}_{\text{global}}$。定义 $\mathbf{B}_{\text{co}} \in \mathbb{R}^{M \times |E|}$（$M = |E| - \operatorname{rank}(\partial_1)$）为标准的 **1-阶上同调环路（Coboundary Cycle）独立生成元矩阵**。其严格满足固有零调性质：
+* **上同调圈空间基底矩阵 $\mathbf{B}_{\text{co}}$**：我们正式停止使用重载符号 $\mathbf{C}_{\text{global}}$。定义 $\mathbf{B}_{\text{co}} \in \mathbb{R}^{M \times \lvert E\lvert }$（$M = \lvert E\rvert  - \operatorname{rank}(\partial_1)$）为标准的 **1-阶上同调环路（Coboundary Cycle）独立生成元矩阵**。其严格满足固有零调性质：
   $$\mathbf{B}_{\text{co}} \cdot \delta_0 \equiv \mathbf{0} \quad \text{且} \quad \partial_1 \cdot \mathbf{B}_{\text{co}}^T \equiv \mathbf{0}$$
 
 ### 1.2 算子2-Batch 修剪流的代数本质
 系统中的边界幂零性 $\partial_1 \circ \partial_2 = 0$ 是复形的天然属性，不可作为人工拦截约束。因此，我们修正算子2-Batch（$\mathcal{O}_{\text{gate\_batch}}$）的数理表述：算子2-Batch 的本质不是“创造”幂零性，而是通过修剪矩阵 $\mathbf{M}_{\Omega}$ 来**保全有效基底的非退化性**。
 
-令修剪后的有效通道投影矩阵为 $\mathbf{P}_{\chi} \in \mathbb{R}^{|E| \times |E|}$（对角线非零元对应 $\chi=1$）。算子2-Batch 拦截“桥接边”的代数结果，是硬性保证修剪后的有效 1-阶上同调基底 $\mathbf{B}_{\text{co}} \cdot \mathbf{P}_{\chi}$ 的特征谱隙满足：
+令修剪后的有效通道投影矩阵为 $\mathbf{P}_{\chi} \in \mathbb{R}^{\lvert E\rvert  \times \lvert E\rvert }$（对角线非零元对应 $\chi=1$）。算子2-Batch 拦截“桥接边”的代数结果，是硬性保证修剪后的有效 1-阶上同调基底 $\mathbf{B}_{\text{co}} \cdot \mathbf{P}_{\chi}$ 的特征谱隙满足：
 $$\sigma_{\min}\left( (\mathbf{B}_{\text{co}} \mathbf{P}_{\mathrm{sub}}) (\mathbf{B}_{\text{co}} \mathbf{P}_{\chi})^T \right) \ge \lambda_2(n) > 0$$
 这就将前置算子的控制效果转译成了清晰的**正定特征谱下界约束**。
 
 ### 1.3 复对偶嵌入的域公理与辛空间范畴包含完备性支撑
-为了解决微观实二元自旋链复形上凭空引入“复结构”的非合法嵌入问题，我们显式构筑一个辛对称嵌入空间（Symplectic Embedded Space）：由于矩阵具有严格的实对称约束（Axiom 1），我们在第 $s$ 步迭代时，将误差流 $E_s \in \mathbb{R}^{|E| \times 1}$ 关联到一个虚构的、由对偶伴随滤波器产生的伴随上链流 $P_s \in \mathbb{R}^{|E| \times 1}$，并将其在乘积复形域上复合为一个**标准的离散辛向量** $Z_s = [E_s^T, P_s^T]^T \in \mathbb{R}^{2|E|}$。
+为了解决微观实二元自旋链复形上凭空引入“复结构”的非合法嵌入问题，我们显式构筑一个辛对称嵌入空间（Symplectic Embedded Space）：由于矩阵具有严格的实对称约束（Axiom 1），我们在第 $s$ 步迭代时，将误差流 $E_s \in \mathbb{R}^{\lvert E\rvert  \times 1}$ 关联到一个虚构的、由对偶伴随滤波器产生的伴随上链流 $P_s \in \mathbb{R}^{\lvert E\rvert  \times 1}$，并将其在乘积复形域上复合为一个**标准的离散辛向量** $Z_s = [E_s^T, P_s^T]^T \in \mathbb{R}^{2\lvert E\rvert }$。
 
-引入标准辛基矩阵 $\mathbf{J}$（满足 $\mathbf{J}^2 = -\mathbf{I}_{2|E|}$，$\mathbf{J}^T = -\mathbf{J}$）：
-$$\mathbf{J} = \begin{pmatrix} \mathbf{0} & \mathbf{I}_{|E|} \\ -\mathbf{I}_{|E|} & \mathbf{0} \end{pmatrix}$$
+引入标准辛基矩阵 $\mathbf{J}$（满足 $\mathbf{J}^2 = -\mathbf{I}_{2\lvert E\rvert }$，$\mathbf{J}^T = -\mathbf{J}$）：
+$$\mathbf{J} = \begin{pmatrix} \mathbf{0} & \mathbf{I}_{\lvert E\rvert } \\ -\mathbf{I}_{\lvert E\rvert } & \mathbf{0} \end{pmatrix}$$
 微观半步 $s+1/2$ 的数理本质，是辛向量 $Z_s$ 沿辛矩阵 $\mathbf{J}$ 进行的一阶李代数线性映射流投影。其为后续引入复数域内的伴随流等化项提供了非退化的辛流形几何合法性。
 
-> **辛嵌入完备性附注**：对于由严格有限维二元自旋实矩阵张成的有限有向图，其1-链流空间 $C_1(E;\mathbb{R})$ 具有天然的有限维实向量空间结构 $\mathbb{R}^{|E|}$。由于其实对称二元状态集的有限性，通过直积构筑的乘积空间 $\mathbb{R}^{|E|} \times \mathbb{R}^{|E|} \cong \mathbb{R}^{2|E|}$ 完美保留了非退化、闭合的反称双线性形式（即由 $\mathbf{J}$ 诱导的辛形式 $\omega(X, Y) = X^T \mathbf{J} Y$）。这在范畴论上严格证明了有限维实辛空间与其二元自旋实矩阵流空间之间满足无损的函子嵌入包含关系。
+> **辛嵌入完备性附注**：对于由严格有限维二元自旋实矩阵张成的有限有向图，其1-链流空间 $C_1(E;\mathbb{R})$ 具有天然的有限维实向量空间结构 $\mathbb{R}^{\lvert E\rvert }$。由于其实对称二元状态集的有限性，通过直积构筑的乘积空间 $\mathbb{R}^{\lvert E\rvert } \times \mathbb{R}^{\lvert E\rvert } \cong \mathbb{R}^{2\lvert E\rvert }$ 完美保留了非退化、闭合的反称双线性形式（即由 $\mathbf{J}$ 诱导的辛形式 $\omega(X, Y) = X^T \mathbf{J} Y$）。这在范畴论上严格证明了有限维实辛空间与其二元自旋实矩阵流空间之间满足无损的函子嵌入包含关系。
 
 ---
 
@@ -123,7 +123,7 @@ $$\Delta Q_{\text{net}} = \mathbf{1}^T \partial_1 \left( \mathbf{W}_e^{(n+1)} - 
 #### 定理 4.2（微观局部恒零向宏观长期及瞬时守恒的态射闭合定理）
 微观单步 $s$ 下的对偶配对全变差消解 $\Delta \Pi(s) \equiv \mathbf{0}$ 与宏观在热力学极限（$N \to \infty$）下的长期电中性有界包络震荡稳定器构成严格的非退化同态：
 $$\left( \Delta \Pi(s) \equiv \mathbf{0} \right) \quad \xrightarrow{\quad \mathcal{T}_{\text{morphic}} \quad} \quad \left( \lim_{N \to \infty} \frac{1}{N} \sum_{n=1}^N Q_{\text{net}}^{(n)} \equiv 0 \right)$$
-并且，该态射不仅确保长期时间平均收敛于零，同样确保系统在任意演化时间步 $n$ 处的**瞬时净电荷满足严格的强有界性约束（Instantaneous Bound）**：$\sup_{n \in \mathbb{N}^+} |Q_{\text{net}}^{(n)}| \le K_{\text{bound}} < \infty$。
+并且，该态射不仅确保长期时间平均收敛于零，同样确保系统在任意演化时间步 $n$ 处的**瞬时净电荷满足严格的强有界性约束（Instantaneous Bound）**：$\sup_{n \in \mathbb{N}^+} \lvert Q_{\text{net}}^{(n)}\rvert  \le K_{\text{bound}} < \infty$。
 
 ### 4.2 严密态射传导与瞬时强有界性证明
 由定理 3.1 已证，$\Delta \Pi(s) \equiv \mathbf{0} \iff B_{s+1/2} \in \operatorname{Im}(\partial_1^T)$。将半步均衡流 $B_{s+1/2}$ 注入算子8（锁免代数阀算子 $\mathcal{O}_{\text{valve}}$）的局部微迹修正算子 $\mu_{\text{trace}}$。由于 $B_{s+1/2}$ 完美隐退于余边界梯度流中，算子8在组合拼接时，其提取的局部子网拉普拉斯零空间满足无冲突代数相容。
@@ -135,14 +135,14 @@ $$Q_{\text{net}}^{(n+1)} = Q_{\text{net}}^{(n)} + 2(n - \theta \cdot \xi) + \mat
 状态方程无损收缩为：
 $$\Delta Q_{\text{net}} = Q_{\text{net}}^{(n+1)} - Q_{\text{net}}^{(n)} = \mathcal{S}_{\text{corner}}(Q_{\text{net}}^{(n)}) = -\operatorname{sgn}(Q_{\text{net}}^{(n)})$$
 构造离散正定时滞 Lyapunov 函数 $V_{\text{delay}}(n) = \frac{1}{2}(Q_{\text{net}}^{(n)})^2$，求其一阶演化增量：
-$$\Delta V_{\text{delay}} = V(n+1) - V(n) = \frac{1}{2}\left( Q_{\text{net}}^{(n)} - \operatorname{sgn}(Q_{\text{net}}^{(n)}) \right)^2 - \frac{1}{2}(Q_{\text{net}}^{(n)})^2 = -| Q_{\text{net}}^{(n)} | + \frac{1}{2}$$
+$$\Delta V_{\text{delay}} = V(n+1) - V(n) = \frac{1}{2}\left( Q_{\text{net}}^{(n)} - \operatorname{sgn}(Q_{\text{net}}^{(n)}) \right)^2 - \frac{1}{2}(Q_{\text{net}}^{(n)})^2 = -\lvert Q_{\text{net}}^{(n)}\rvert + \frac{1}{2}$$
 
 * **第一步：瞬时强有界性的显性夹紧证明**  
-  我们审视该一阶演化增量。当且仅当 $|Q_{\text{net}}^{(n)}| > 0.5$ 时，由于 $\Delta V_{\text{delay}} < 0$，Lyapunov 能量轨迹发生刚性单调递减。这意味着系统存在一个天然的紧致边界流屏障。
-  若在某一演化步 $n_0$，瞬时净电荷满足 $|Q_{\text{net}}^{(n_0)}| \le 0.5$，则在其下一步，依据状态方程，最大跳跃步长受限于对角线单次自旋幅值 $\pm 1$：
-  $$|Q_{\text{net}}^{(n_0+1)}| \le |Q_{\text{net}}^{(n_0)}| + |\mathcal{S}_{\text{corner}}| \le 0.5 + 1 = 1.5$$
+  我们审视该一阶演化增量。当且仅当 $\lvert Q_{\text{net}}^{(n)}\rvert  > 0.5$ 时，由于 $\Delta V_{\text{delay}} < 0$，Lyapunov 能量轨迹发生刚性单调递减。这意味着系统存在一个天然的紧致边界流屏障。
+  若在某一演化步 $n_0$，瞬时净电荷满足 $\lvert Q_{\text{net}}^{(n_0)}\rvert  \le 0.5$，则在其下一步，依据状态方程，最大跳跃步长受限于对角线单次自旋幅值 $\pm 1$：
+  $$\lvert Q_{\text{net}}^{(n_0+1)}\rvert  \le \lvert Q_{\text{net}}^{(n_0)}\rvert  + \lvert \mathcal{S}_{\text{corner}}\rvert  \le 0.5 + 1 = 1.5$$
   一旦瞬时净电荷越过 $0.5$（例如达到 $1.5$），系统将立刻落入 $\Delta V_{\text{delay}} < 0$ 的强负定回拉区域。其演化包络将被死死钳制在常数上限 $K_{\text{bound}} = 1.5$ 之内。因此，对于任意时间步 $n$，满足如下显式强有界夹紧：
-  $$\sup_{n \in \mathbb{N}^+} |Q_{\text{net}}^{(n)}| \le 1.5 < \infty$$
+  $$\sup_{n \in \mathbb{N}^+} \lvert Q_{\text{net}}^{(n)}\rvert  \le 1.5 < \infty$$
   这在数理上硬性确立了**瞬时电荷的非发散有界性**。
 
 * **第二步：长期均值趋零收敛**  
@@ -155,7 +155,7 @@ $$\Delta V_{\text{delay}} = V(n+1) - V(n) = \frac{1}{2}\left( Q_{\text{net}}^{(n
 ## 5. 工程收敛红线与分布式并发安全控制 (第5章)
 
 经过对代数空间的深层校正，算子6、算子7与后续算子的工程红线得到了重新划定：
-* **子空间局域化夹紧**：利用算子6传递的低维瑞利-里茨拼接矩阵 $\mathbf{K}_{\text{RR}}$，上同调生成元矩阵 $\mathbf{B}_{\text{co}}$ 的交叉乘积运算在运行时被硬性限制在局域视界 $N_K = | \Omega_{\text{local}} | \ll n$ 内。
+* **子空间局域化夹紧**：利用算子6传递的低维瑞利-里茨拼接矩阵 $\mathbf{K}_{\text{RR}}$，上同调生成元矩阵 $\mathbf{B}_{\text{co}}$ 的交叉乘积运算在运行时被硬性限制在局域视界 $N_K = \lvert \Omega_{\text{local}} \rvert \ll n$ 内。
 * **消解立方挂起**：各异步分布 Actor 在处理重叠周界的写入冲突时，直接调用重构后的霍奇正交均衡器进行本地消解，计算复杂度死死卡在 $\mathcal{O}(m_g \cdot k_{\text{rank}})$，彻底摆脱了对全网节点人口 $n$ 的三次方依赖。
 * **锁免外积与零空间卡死**：承接算子7完备对偶流的输出，后续阶段中算子8的投影外积和算子9的零空间解算，其单步时间开销分别被物理卡死在 $\mathcal{O}(N_K^2)$ 和 $\mathcal{O}(M_K \cdot f^2)$ 的局域上限内。这保障了超大规模分布式网络并发流转的平滑性与零锁死。
 

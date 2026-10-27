@@ -15,7 +15,7 @@
 算子 5（$\mathcal{M}_{\text{latency}}$）将这种“时间流速的不均匀性”直接定义为**有向通道上的内生变量延迟（Latency）**：
 * **定义域（输入）**：前置算子 4 结算出的图谱输出权重 $W_e(i,j)$（表征局部拓扑重叠密度），以及当前的微观内生步数 $s$。
 * **值域（输出）**：将图上的代数不变量，严格映射为每条 Directed Edge 的**离散渗透率（Discrete Penetration Rate）$c_e^{(s)}$**。
-  $$\mathcal{M}_{\text{latency}}: \mathbb{R}^{n \times n} \times \mathbb{N} \longrightarrow \mathbb{R}^{|E_n|}$$
+  $$\mathcal{M}_{\text{latency}}: \mathbb{R}^{n \times n} \times \mathbb{N} \longrightarrow \mathbb{R}^{\lvert E_n\rvert }$$
 
 ---
 
@@ -80,7 +80,7 @@ $$\mu(\mathcal{M}_{\text{cloak}}) = 0$$
 为了确保系统在向宏观长程迭代标度扩展时的工程可控性（Complexity Boundaries），算子 5 必须服从 Phase 2 的恒定渐进计算开销红线：
 
 * **代数逻辑复杂度**：因为离散渗透率的计算是一组纯粹的单值单调对数除法与极小值钳制运算，且算子 4 已经将所需的权重 $W_e$ 局部稀疏化结算完毕。因此，算子 5 的代数核心逻辑运行开销为严格的 **$T(n) = \mathcal{O}(1)$ 恒定复杂度**。
-* **物理存储开销**：随着前沿顶点的膨胀，需要维护的活跃前沿通道数量随维数线性增加。由于算子 2 已经通过最大顶点度数 $K_0$ 定理将局部活跃邻域死锁在固定常数内（$|\mathcal{N}(v_f)| \le K_0$），算子 5 在运行期的物理查找表与内存开销被严格硬性钳制在 **$\mathcal{O}(K_0) \ll n$** 的局域视界内，与全网总节点膨胀完美解耦，绝不触发全网强同步挂起。
+* **物理存储开销**：随着前沿顶点的膨胀，需要维护的活跃前沿通道数量随维数线性增加。由于算子 2 已经通过最大顶点度数 $K_0$ 定理将局部活跃邻域死锁在固定常数内（$\lvert \mathcal{N}(v_f)\rvert  \le K_0$），算子 5 在运行期的物理查找表与内存开销被严格硬性钳制在 **$\mathcal{O}(K_0) \ll n$** 的局域视界内，与全网总节点膨胀完美解耦，绝不触发全网强同步挂起。
 ![figure-1](./figures/operator_5_comprehensive_verification.png)
 > **图-1**：算子5数值验证套件。
 > 子图1：相对论时间膨胀与饱和特性：拓扑密度$W_e$较低时，渗透率$c_e$（蓝色实线）饱和至真空速度常量$c_{\mathrm{max}}$；高拓扑密度下微脉冲迭代开销（红色虚线）呈对数增长。

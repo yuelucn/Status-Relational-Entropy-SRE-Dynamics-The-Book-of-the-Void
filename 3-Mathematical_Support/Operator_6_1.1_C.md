@@ -60,7 +60,7 @@ $$\lambda_2(n) \approx \lambda_2(\mathbf{K}_{\text{RR}}), \quad \alpha_n \approx
 
 #### 【Rayleigh-Ritz 逼近精度定理】
 根据 Ritz 变分原理与经典谱投影误差界限，通过拼接核计算得到的近似特征值 $\lambda_i(\mathbf{K}_{\text{RR}})$ 与全局真实特征值 $\lambda_i(\mathbf{L}_G)$ 之间的误差边界，受到试验子空间最大投影残差的严格硬性控制：
-$$\left| \lambda_i(\mathbf{L}_G) - \lambda_i(\mathbf{K}_{\text{RR}}) \right| \le \gamma \cdot \left\| (\mathbf{I} - \mathbf{V}_{\text{global}}\mathbf{V}_{\text{global}}^T)\mathbf{L}_G \mathbf{V}_{\text{global}} \right\|_2^2$$
+$$\lvert \lambda_i(\mathbf{L}_G) - \lambda_i(\mathbf{K}_{\text{RR}}) \rvert \le \gamma \cdot \lVert (\mathbf{I} - \mathbf{V}_{\text{global}}\mathbf{V}_{\text{global}}^T)\mathbf{L}_G \mathbf{V}_{\text{global}} \rVert_2^2$$
 其中 $\gamma \in \mathbb{R}^+$ 是与谱间隔相关的常数常数。该界限保证了随着局域切片边界同调性的提升，逼近精度呈现二次项收敛。
 
 由于前置的剪枝算子 2-Batch（$\mathcal{O}_{\text{gate\_batch}}$）已经作为早期因果防火墙拦截了所有会导致生成树退化和图断裂的桥接边组合，母图的拓扑全局连通性得到刚性保护。根据代数图论基本不变量原理，这天然保证了解算出的全局 Fiedler 先验谱不变量满足严格的封闭正定边界：
@@ -77,7 +77,7 @@ $$\lambda_2(n) > 0$$
 随着全局网络总结点数无限扩张（$n \to \infty$），算子 6（$\mathcal{P}_{\text{sieve}} \cup \mathcal{O}_{\text{splice}}$）提取全局特征先验谱不变量的单步时间开销 $T_{\mathcal{O}_6}(n)$ 被硬性钳制在 sparse 子域上限 $\mathcal{O}(m_g \cdot k_{\text{rank}})$ 内部，彻底消除全网强同步挂起。
 
 ### 【严格证明】
-1. **局域筛分并行阶段（Local Sieve Phase）**：各 Actor 独立执行 $\mathcal{P}_{\text{sieve}}$ 算子。由于局域视界防火墙将各子域的规模死锁在有限常数范围内（$N_K = |\Omega_{\text{local}}| \ll n$），在本地使用 Lanczos 算法提取 $k_{\text{rank}}$ 个特征对的时间开销为 $\mathcal{O}(N_K \cdot k_{\text{rank}})$。因为 $m_g$ 个子域在分布式 Actor 层完全并行流转，分布式并行的总时间开销取决于单片分片的最大耗时，因此总并行开销恒为常数上界：
+1. **局域筛分并行阶段（Local Sieve Phase）**：各 Actor 独立执行 $\mathcal{P}_{\text{sieve}}$ 算子。由于局域视界防火墙将各子域的规模死锁在有限常数范围内（$N_K = \lvert \Omega_{\text{local}}\rvert  \ll n$），在本地使用 Lanczos 算法提取 $k_{\text{rank}}$ 个特征对的时间开销为 $\mathcal{O}(N_K \cdot k_{\text{rank}})$。因为 $m_g$ 个子域在分布式 Actor 层完全并行流转，分布式并行的总时间开销取决于单片分片的最大耗时，因此总并行开销恒为常数上界：
    $$\max_\alpha \mathcal{O}(N_K \cdot k_{\text{rank}}) = \mathcal{O}(1)$$
 2. **拼接核构造阶段（Kernel Splicing Phase）**：Rayleigh-Ritz 拼接核 $\mathbf{K}_{\text{RR}}$ 的非零元素仅由重叠边界节点的代数流决定。计算投影乘法 $\mathbf{V}_{\text{global}}^T \mathbf{L}_G \mathbf{V}_{\text{global}}$ 时的基础代数操作总数与子域数量 $m_g$ 及局域提取秩 $k_{\text{rank}}$ 线性相关，开销边界为 $\mathcal{O}(m_g \cdot k_{\text{rank}})$。
 3. **核矩阵谱解算阶段（Kernel Spectrum Resolution Phase）**：对紧凑小矩阵 $\mathbf{K}_{\text{RR}}$ 执行稠密特征值分解，其名义开销为 $\mathcal{O}((m_g \cdot k_{\text{rank}})^3)$。然而，由于局域提取低秩数 $k_{\text{rank}}$ 是系统硬编码锁定的极小超参数（在物理工程实现中固定满足 $k_{\text{rank}} \le 6 \ll n$），其立方项阶数 $(m_g \cdot k_{\text{rank}})^3$ 的增长速度远远弱于任何随全网规模 $n$ 扩张的多项式。此时，该三次项在渐进分析中退化为固定常数系数开销，并不主导渐进复杂度演化趋势。

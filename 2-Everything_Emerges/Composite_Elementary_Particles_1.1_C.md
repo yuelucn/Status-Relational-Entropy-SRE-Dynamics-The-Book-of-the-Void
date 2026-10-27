@@ -36,12 +36,12 @@ SRE架构摒弃全部宏观物理公设，由单一底层参数--**全局演化�
 
 $$
 M=\left(\begin{array}{ll}
-E\left[\left|X_{0}\right|^{2}\right] & E\left[X_{0} X_{1}^{*}\right] \\
-E\left[X_{1} X_{0}^{*}\right] & E\left[\left|X_{1}\right|^{2}\right]
+E\left[\left\lvert X_{0}\right\rvert ^{2}\right] & E\left[X_{0} X_{1}^{*}\right] \\
+E\left[X_{1} X_{0}^{*}\right] & E\left[\left\lvert X_{1}\right\rvert ^{2}\right]
 \end{array}\right)
 $$
 
-非线性交叉相干项的模 $\rho=|E[X_{0} X_{1}^{*}]| \in[0,1]$，作为表征量直接量化两条因果链之间的逻辑关联密度。宏观层涌现空间距离$D$并非来自外部背景传播，而是严格从局域厄米矩阵所表征的香农互信息流推导得到。定义两条闭环之间共享的状态-关系熵 $I=-\ln (1-\rho^{2})$，涌现几何距离与该共享逻辑密度呈反比：
+非线性交叉相干项的模 $\rho=\lvert E[X_{0} X_{1}^{*}]\rvert  \in[0,1]$，作为表征量直接量化两条因果链之间的逻辑关联密度。宏观层涌现空间距离$D$并非来自外部背景传播，而是严格从局域厄米矩阵所表征的香农互信息流推导得到。定义两条闭环之间共享的状态-关系熵 $I=-\ln (1-\rho^{2})$，涌现几何距离与该共享逻辑密度呈反比：
 
 $$
 D \propto \frac{1}{I}=\frac{1}{-\ln \left(1-\rho^{2}\right)}

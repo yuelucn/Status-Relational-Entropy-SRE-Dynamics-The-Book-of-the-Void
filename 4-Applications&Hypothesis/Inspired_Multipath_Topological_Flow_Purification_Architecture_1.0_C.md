@@ -23,7 +23,7 @@
 ## 2 局域复特征空间算子与秩变化机理
 ### 2.1 交叉谱矩阵构造
 设 $X_{0}(f)$、$X_{1}(f)$ 为广义谱域下两个相邻观测通道采集得到的复响应分量。局域拓扑交叉谱矩阵 $M(f)$ 由二者外积的数学期望构造：
-\[
+$$
 M(f)=E\left[
 \begin{pmatrix}
 X_{0}\\
@@ -35,21 +35,21 @@ X_{0}^{*} & X_{1}^{*}
 \right]
 =
 \begin{pmatrix}
-\langle|X_{0}|^{2}\rangle & \langle X_{0}X_{1}^{*}\rangle\\
-\langle X_{1}X_{0}^{*}\rangle & \langle|X_{1}|^{2}\rangle
+\langle\lvert X_{0}\rvert ^{2}\rangle & \langle X_{0}X_{1}^{*}\rangle\\
+\langle X_{1}X_{0}^{*}\rangle & \langle\lvert X_{1}\rvert ^{2}\rangle
 \end{pmatrix}
-\]
+$$
 其中 $*$ 代表复共轭，$\langle\,\cdot\,\rangle$ 代表在窄空间或迭代窗口上做局域统计平滑。$M(f)$ 按定义为复厄米矩阵 $M=M^{*}$。
 
 ### 2.2 本征子空间秩变化代数机理
 $M(f)$ 的内部结构状态决定拓扑流的分类：
 1. **理想纯净原始路径（秩‑1退化）**：仅存在单条相干因果路径时，$X_{1}(f)=\alpha e^{-j \Delta \theta} X_{0}(f)$，其中 $\Delta \theta=2\pi f\cdot \Delta\tau$ 为离散路径步差 $\Delta\tau$ 引入的相移。在此理想条件：
 $$
-\det(M) = \langle|X_{0}|^{2}\rangle\langle|X_{1}|^{2}\rangle - |\langle X_{0}X_{1}^{*}\rangle|^{2} \to 0 \implies \mathrm{Rank}(M)=1
+\det(M) = \langle\lvert X_{0}\rvert ^{2}\rangle\langle\lvert X_{1}\rvert ^{2}\rangle - \lvert \langle X_{0}X_{1}^{*}\rangle\lvert ^{2} \to 0 \implies \mathrm{Rank}(M)=1
 $$
 最小本征值坍缩至 $\lambda_{2}=0$，最大本征值等于矩阵迹 $\lambda_{1}=\mathrm{Tr}(M)$。
 
-2. **多路径混沌散射（满秩扩张）**：多条独立路径或者非相干散射背景噪声发生干涉，跨通道相干度下降 $|\langle X_{0}X_{1}^{*}\rangle|^{2} \ll \langle|X_{0}|^{2}\rangle\langle|X_{1}|^{2}\rangle$。矩阵扩张为满秩：
+2. **多路径混沌散射（满秩扩张）**：多条独立路径或者非相干散射背景噪声发生干涉，跨通道相干度下降 $\lvert \langle X_{0}X_{1}^{*}\rangle\rvert ^{2} \ll \langle\lvert X_{0}\rvert ^{2}\rangle\langle\lvert X_{1}\rvert ^{2}\rangle$。矩阵扩张为满秩：
 $$
 \det(M)>0 \implies \mathrm{Rank}(M)=2
 $$
@@ -58,22 +58,22 @@ $$
 ## 3 一阶闭式解与启发式统计桥梁
 ### 3.1 一阶代数解析解（计算简化）
 为满足流式架构严苛计算约束，严格规避高维迭代算法与梯度下降流程。利用2×2矩阵代数不变量直接求解本征值 $\lambda_1$、$\lambda_2$：
-\[
+$$
 \lambda^{2}-\mathrm{Tr}(M)\,\lambda+\det(M)=0
-\]
+$$
 原始本征值间距 $\Delta\lambda=\lambda_{1}-\lambda_{2}$ 的单趟精确闭式解：
-\[
+$$
 \Delta \lambda=\sqrt{\mathrm{Tr}(M)^{2}-4 \det(M)}
-=\sqrt{\big(\langle|X_{0}|^{2}\rangle+\langle|X_{1}|^{2}\rangle\big)^{2}
--4\big(\langle|X_{0}|^{2}\rangle\langle|X_{1}|^{2}\rangle
--\big|\langle X_{0}X_{1}^{*}\rangle\big|^{2}\big)}
-\]
+=\sqrt{\big(\langle\lvert X_{0}\rvert ^{2}\rangle+\langle\lvert X_{1}\rvert ^{2}\rangle\big)^{2}
+-4\big(\langle\lvert X_{0}\rvert ^{2}\rangle\langle\lvert X_{1}\rvert ^{2}\rangle
+-\big\lvert \langle X_{0}X_{1}^{*}\rangle\big\rvert ^{2}\big)}
+$$
 同步计算局域谱条件数 $\kappa(f)$：
-\[
+$$
 \kappa(f)=\frac{\lambda_{\mathrm{max}}}{\lambda_{\mathrm{min}}}
 =\frac{\mathrm{Tr}(M)+\Delta\lambda}{\max\big(\mathrm{Tr}(M)-\Delta\lambda,\ \varepsilon\big)}
 \quad(\varepsilon=10^{-7})
-\]
+$$
 
 ### 3.2 对接随机矩阵理论(RMT)的启发式统计桥梁
 单个频率分箱的2×2矩阵只给出一组间距样本；全部广义谱系综 $\{f_{1},f_{2},\dots,f_{N}\}$ 的间距集合构成统计总体。
@@ -103,14 +103,14 @@ $$
 
 ### 4.1 掩码构造与净化逻辑
 算子掩码 $\mathrm{Mask}(f)$ 是局域概率对冲核心引擎，由当前 $s$ 与 $\kappa(f)$ 的状态判定生成：
-\[
+$$
 \mathrm{Mask}(f)=
 \begin{cases}
 1.0, & 0.4 \le s \le 1.6 \quad(\text{保留原始因果流})\\
 1.0-\alpha\,e^{-s}, & s < 0.4 \quad(\text{消融相干复合多路径})\\
 0.01, & \kappa(f)\ge \kappa_{\mathrm{threshold}} \;\text{且}\; s>1.6 \quad(\text{阻断正反馈自环路，}\;\kappa_{\mathrm{threshold}}=10^4)
 \end{cases}
-\]
+$$
 $\alpha$ 为经验缩放系数，用于调节局域剪枝深度。
 
 ## 5 结论与工程拓展

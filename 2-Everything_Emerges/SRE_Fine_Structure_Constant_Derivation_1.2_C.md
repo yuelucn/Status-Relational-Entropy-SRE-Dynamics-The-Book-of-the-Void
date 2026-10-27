@@ -204,9 +204,9 @@ $$\text{gap}(L_{n=60}^{Möbius}) = \frac{\lambda_2(L_G)}{\rho(L_G)} = 0.00729745
 
 ### 4.7 n=60 的拓扑含义
 
-$$n = 60 = \dim(E) \times \dim(F) = |E| \times \beta_1 = 12 \times 5$$
+$$n = 60 = \dim(E) \times \dim(F) = \lvert E\rvert  \times \beta_1 = 12 \times 5$$
 
-其中维数来自 SRE Maxwell 方程验证使用的**双覆盖四态复形（DCF complex）**：Maxwell.py 的 D_edge 定义了一个 8 环 + 4 条 skip-2 弦的胞腔复形（$|V|=8$, $|E|=12$, $\beta_1=5$）。
+其中维数来自 SRE Maxwell 方程验证使用的**双覆盖四态复形（DCF complex）**：Maxwell.py 的 D_edge 定义了一个 8 环 + 4 条 skip-2 弦的胞腔复形（$\lvert V\rvert =8$, $\lvert E\rvert =12$, $\beta_1=5$）。
 
 > **命名修正**：源码将该图标注为 $K_{3,5}$，但真正的完全二部图 $K_{3,5}$ 有 15 条边、$\beta_1=8$，与 D_edge 不符。该复形的正确命名为**双覆盖四态复形（DCF complex）**，其维数结构由 Möbius 双覆盖四态公理独立推导（见 §7.4 Fork A 缺口 1）。
 
@@ -234,17 +234,17 @@ $$\Delta\lambda = \sqrt{\text{Tr}(M)^2 - 4\det(M)} = \alpha \cdot \frac{\lambda_
 
 $$\text{Tr}(M) = \lambda_1 + \lambda_2, \quad \det(M) = \lambda_1 \lambda_2$$
 
-$$\Delta\lambda = \sqrt{(\lambda_1 + \lambda_2)^2 - 4\lambda_1\lambda_2} = |\lambda_1 - \lambda_2|$$
+$$\Delta\lambda = \sqrt{(\lambda_1 + \lambda_2)^2 - 4\lambda_1\lambda_2} = \lvert \lambda_1 - \lambda_2\lvert$$
 
 代入频率公式：
 
-$$|\lambda_1 - \lambda_2| = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
+$$\lvert \lambda_1 - \lambda_2\rvert  = \alpha \cdot \frac{\lambda_1}{\lambda_2 + \lambda_3} \qquad(1)$$
 
 ### 5.3 四态本征谱
 
 边界节点通过在 High ($\rho = 10$) 和 Low ($\rho = 2$) 之间切换，驱动全局流形在四个离散本征谱态间跃迁：
 
-$$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamma \cdot |\rho_A - \rho_B| + \lambda_0 \\ \lambda_3 = \frac{\lambda_2}{4(1+\kappa)} \end{cases}$$
+$$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamma \cdot \lvert \rho_A - \rho_B\rvert  + \lambda_0 \\ \lambda_3 = \frac{\lambda_2}{4(1+\kappa)} \end{cases}$$
 
 | 调制态 | $\rho_{\text{total}}$ | $\lambda_1$ | $\lambda_2 - \lambda_3$ |
 |---|---|---|---|
@@ -263,7 +263,7 @@ $$\begin{cases} \lambda_1 = \beta \cdot (\rho_A + \rho_B)^2 \\ \lambda_2 = \gamm
 | $\lambda_2$ | $\gamma \cdot 0 + \lambda_0$ | $\lambda_0 = 0.006420$ |
 | $\lambda_3$ | $\lambda_0 / (4(1+\kappa))$ | $0.000878$ |
 
-选择对称态的原因：手征项 $\gamma \cdot |\rho_A - \rho_B| = 0$，使 $\lambda_2 = \lambda_0$ 直接暴露真空残留。
+选择对称态的原因：手征项 $\gamma \cdot \lvert \rho_A - \rho_B\rvert  = 0$，使 $\lambda_2 = \lambda_0$ 直接暴露真空残留。
 
 ### 5.5 展开 $\lambda_2 + \lambda_3$
 
@@ -277,7 +277,7 @@ $$= \lambda_0 \cdot \frac{4(1+\kappa) + 1}{4(1+\kappa)} = \lambda_0 \cdot \frac{
 
 将 (L,L) 值和式 (2) 代入式 (1)：
 
-$$|16\beta - \lambda_0| = \alpha \cdot \frac{16\beta}{\lambda_0 \cdot \frac{5+4\kappa}{4+4\kappa}}$$
+$$\lvert 16\beta - \lambda_0\rvert  = \alpha \cdot \frac{16\beta}{\lambda_0 \cdot \frac{5+4\kappa}{4+4\kappa}}$$
 
 求解 $\alpha$：
 
@@ -408,7 +408,7 @@ $$\delta = \frac{w^2}{8} + 0.055 \cdot w^4 + O(w^6)$$
 
 ### 7.3 n=60 的桥梁角色
 
-$$n = 60 = \dim(E) \times \dim(F) = |E| \times \beta_1 = 12 \times 5$$
+$$n = 60 = \dim(E) \times \dim(F) = \lvert E\rvert  \times \beta_1 = 12 \times 5$$
 
 DCF 复形是 Maxwell 方程验证图（https://doi.org/10.5281/zenodo.22119957），Möbius 带是光的拓扑结构（https://doi.org/10.5281/zenodo.21025053）。$n = 60$ 同时出现在两条路径中，形成了电路图（Maxwell）和光拓扑（Möbius）之间的桥梁。
 
@@ -432,7 +432,7 @@ DCF 复形是 Maxwell 方程验证图（https://doi.org/10.5281/zenodo.22119957�
 
 为补齐 Tier 0 暴露的三个缺口，引入 Fork A（离散基元论）公理化推导：
 
-**缺口 1（复形推导 → 补齐）**：从公理 A1（四态空间）+ A2（Möbius 双覆盖 4$\pi$）+ A3（刷新环游）+ R1（通道数 = 态数 + holonomy 数）独立推出 $(|V|, |E|, \beta_1, n) = (8, 12, 5, 60)$。唯一新增假设为 R1 组合规则。
+**缺口 1（复形推导 → 补齐）**：从公理 A1（四态空间）+ A2（Möbius 双覆盖 4$\pi$）+ A3（刷新环游）+ R1（通道数 = 态数 + holonomy 数）独立推出 $(\lvert V\rvert , \lvert E\lvert , \beta_1, n) = (8, 12, 5, 60)$。唯一新增假设为 R1 组合规则。
 
 **缺口 2（可观测字典 → 补齐，字典级）**：建立 $\alpha = \lambda_2 / \lambda_{\max} = v/c$ 的关系——残余流形状态图上最软非平凡模（电子相位模）与最硬模（光模）的刷新速率比，恰为精细结构常数（Bohr 语义下 $v/c = \alpha$）。软模拓扑保护定理保证 $\lambda_2$ 与扭转通道权重 $w$ 精确无关。
 

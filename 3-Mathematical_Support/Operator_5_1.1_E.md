@@ -17,7 +17,7 @@ Operator 5 ($\mathcal{M}_{\text{latency}}$) defines exactly this “inhomogene
 * **Domain (Input)**: Graph-edge output weights $W_e(i,j)$ computed by upstream Operator 4 (encoding local topological-overlap density), together with current microscopic endogenous relaxation step $s$.
 * **Codomain (Output)**: Algebraic invariants defined on the graph are strictly mapped onto the **Discrete Penetration Rate $c_e^{(s)}$** for every directed edge:
 $$
-\mathcal{M}_{\text{latency}}: \mathbb{R}^{n \times n} \times \mathbb{N} \longrightarrow \mathbb{R}^{|E_n|}
+\mathcal{M}_{\text{latency}}: \mathbb{R}^{n \times n} \times \mathbb{N} \longrightarrow \mathbb{R}^{\lvert E_n\rvert }
 $$
 
 ---
@@ -97,7 +97,7 @@ This provides measure-theoretic absolute resistance against differential-observa
 To guarantee engineering tractability when scaling towards macroscopic long-range iterative regimes, Operator 5 must satisfy the constant-asymptotic-overhead red-line constraints of Phase 2:
 
 * **Algebraic-logic complexity**: Discrete-penetration-rate evaluation consists purely of single-valued monotonic logarithmic-division and min-value clamping operations. Since upstream Operator 4 has already sparsified and pre-computed weights $W_e$, the core algebraic-logic runtime overhead is strictly **$T(n) = \mathcal{O}(1)$ constant complexity**.
-* **Physical-storage overhead**: As frontier vertices expand, the number of active frontier-channels grows linearly with dimension. However, the Global-Degree-Saturation Theorem from Operator 2 rigidly confines local active neighborhoods inside a fixed constant bound ($|\mathcal{N}(v_f)| \le K_0$). Therefore runtime lookup-tables and memory-allocations for Operator 5 are strictly clamped within the local horizon at **$\mathcal{O}(K_0) \ll n$**, fully decoupled from global total-node inflation and never triggering full-network global-synchronization stalls.
+* **Physical-storage overhead**: As frontier vertices expand, the number of active frontier-channels grows linearly with dimension. However, the Global-Degree-Saturation Theorem from Operator 2 rigidly confines local active neighborhoods inside a fixed constant bound ($\lvert \mathcal{N}(v_f)\rvert  \le K_0$). Therefore runtime lookup-tables and memory-allocations for Operator 5 are strictly clamped within the local horizon at **$\mathcal{O}(K_0) \ll n$**, fully decoupled from global total-node inflation and never triggering full-network global-synchronization stalls.
 ![figure-1](./figures/operator_5_comprehensive_verification.png)
 > **Figure-1**: Numerical verification suite for Operator 5.
 > Subplot 1: Relativistic time-dilation & saturation behaviour: penetration rate $c_e$ (blue solid) saturates at vacuum speed constant $c_{\mathrm{max}}$ under low topological density $W_e$; micro-pulse iteration overhead (red dashed) rises logarithmically for high topological density.

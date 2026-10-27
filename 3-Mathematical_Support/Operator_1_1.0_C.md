@@ -30,15 +30,15 @@ $\partial_{n\rightarrow m}: \mathcal{R}_n \hookrightarrow \mathcal{R}_m \quad (\
 $\partial_{m\rightarrow k} \circ \partial_{n\rightarrow m} = \partial_{n\rightarrow k} \quad (\forall\, n \le m \le k)$。
 
 将该正向包含系统的范畴论**归纳极限**定义为完整历史形式符号环：
-\[
-\mathcal{R}_\infty = \varinjlim \mathcal{R}_n = \left( \bigoplus_{n=1}^\infty \mathcal{R}_n \right) \Big/ \sim
-\]
+$$
+\mathcal{R}_\infty = \mathrm{lim}_{\longrightarrow} \mathcal{R}_n = \left( \bigoplus_{n=1}^\infty \mathcal{R}_n \right) \Big/ \sim
+$$
 
 极限环内形式多项式的**等价关系规则($\sim$)**：
 设有分别属于有限阶环的形式多项式 $f\in \mathcal{R}_a$，$g\in \mathcal{R}_b$，$f$ 与 $g$ 等价（$f\sim g$）**当且仅当**存在一个足够大的公共演化阶 $N \ge \max(a,b)$，使得二者在高阶子环 $\mathcal{R}_N$ 中的典范嵌入像完全相等：
-\[
+$$
 \partial_{a\rightarrow N}(f) \equiv \partial_{b\rightarrow N}(g) \quad \text{在 } \mathcal{R}_N \text{ 内成立}。
-\]
+$$
 
 ### 2.2 全局赋值同态与矩阵空间定义
 基于极限环 $\mathcal{R}_\infty$，在无条件实对称约束（$A^T=A,\,B^T=B$）之下，定义代数空间与态射：
@@ -46,10 +46,10 @@ $\partial_{m\rightarrow k} \circ \partial_{n\rightarrow m} = \partial_{n\rightar
 1. **离散取值方阵空间（$\mathcal{M}_n \subseteq \{-1,1\}^{n\times n}$）**：纯二元实标量构成的矩阵空间。其左上角子矩阵无条件继承上一步的固定数值，不含未定元。
 2. **形式符号方阵空间（$\mathcal{M}_{n+1}[\mathbf{x}_{n+1}, y_{n+1}] \subseteq \big(\mathbb{R}[\mathcal{V}_{n+1}]\big)^{(n+1)\times(n+1)}$）**：带形式多项式参数的矩阵空间。
 3. **全局赋值同态（$\Phi: \mathcal{R}_\infty \rightarrow \mathbb{R}$）**：保加法与乘法的代数态射。对所有历史与当前步变量施加硬取值约束：
-\[
+$$
 \Phi(x_{(k,m)}) \in \{-1,1\}\quad (\forall\,k\in\mathbb{N}^+,\;\forall\,m\in\mathcal{I}_{k-1}),\quad
 \Phi(y_{k}) \in \{-1,1\}\quad (\forall\,k\in\mathbb{N}^+).
-\]
+$$
 
 ---
 
@@ -66,9 +66,9 @@ $\partial_{m\rightarrow k} \circ \partial_{n\rightarrow m} = \partial_{n\rightar
 > 定理简述：广义图中的单条回路发生拓扑阻挫**当且仅当**该闭合回路上全部边权的离散代数乘积等于 $-1$。
 
 设实例矩阵 $M_n\in\mathcal{M}_n$ 对应广义图 $G$。假设 $G$ 存在一条长度为 $L$ 的闭合回路，顶点序列 $v_1 \rightarrow v_2 \rightarrow \dots \rightarrow v_L \rightarrow v_1$。该回路发生阻挫的充要条件为：
-\[
+$$
 \prod_{m=1}^{L-1} M_n(v_m, v_{m+1}) \cdot M_n(v_L, v_1) = -1.
-\]
+$$
 
 #### 推论1：复杂叠加系统全局代数阻挫基定理
 > 定理简述：带有自环的多环路系统全局无阻挫**当且仅当**其广义圈空间基中的每一个生成元的乘积均为 $+1$。
@@ -81,7 +81,7 @@ $\partial_{m\rightarrow k} \circ \partial_{n\rightarrow m} = \partial_{n\rightar
 
 #### 3.3 复杂多环路阻挫的数值矩阵演示
 考察下面这个三阶实矩阵：
-\[
+$$
 M_3 =
 \begin{pmatrix}
 1 & 1 & 1 \\
@@ -89,7 +89,7 @@ M_3 =
 1 & -1 & -1
 \end{pmatrix}
 \in \mathcal{M}_3.
-\]
+$$
 对照广义圈空间基做检验：
 1. 基础回路 $1\rightarrow2\rightarrow3\rightarrow1$ 的乘积计算：
 $M_3(1,2)\cdot M_3(2,3)\cdot M_3(3,1)=1\cdot(-1)\cdot 1 = -1$。违反条件1 → 回路阻挫。
@@ -98,10 +98,10 @@ $M_3(1,2)\cdot M_3(2,3)\cdot M_3(3,1)=1\cdot(-1)\cdot 1 = -1$。违反条件1 �
 依据代数阻挫基定理，基生成元包含 $-1$，整个系统处于强阻挫状态。
 
 对二步游走路径干涉项 $(M_3^2)_{23}$ 做行列内积展开求值：
-\[
+$$
 (M_3^2)_{23}=M_3(2,1)M_3(1,3)+M_3(2,2)M_3(2,3)+M_3(2,3)M_3(3,3)
-= \\ 1\cdot 1+(-1)(-1)+(-1)(-1)=3.
-\]
+= 1\cdot 1+(-1)(-1)+(-1)(-1)=3.
+$$
 得到确定实标量 $3$。数值示例展示多环路叠加、自环符号纠缠带来的局部残余净偏置，该偏置无法抵消归零。
 
 ---
@@ -112,22 +112,22 @@ $M_3(1,2)\cdot M_3(2,3)\cdot M_3(3,1)=1\cdot(-1)\cdot 1 = -1$。违反条件1 �
 
 全称：局部图扩张算子；记号：$\mathcal{G}_{n\rightarrow n+1}$。
 算子严格作用于一个离散实例方阵，映射关系：
-\[
+$$
 \mathcal{G}_{n\rightarrow n+1}: \mathcal{M}_n \longrightarrow \mathcal{M}_{n+1}[\mathbf{x}_{n+1}, y_{n+1}].
-\]
+$$
 
 ### 4.2 矩阵扩张结构方程与显式向量定义
 对任意输入实例矩阵 $M_n\in\mathcal{M}_n$，扩张算子输出唯一的形式多项式分块矩阵：
-\[
+$$
 \mathcal{G}_{n\rightarrow n+1}(M_n)=
 \begin{pmatrix}
 M_n & \mathbf{x}_{n+1} \\
 \mathbf{x}_{n+1}^T & y_{n+1}
 \end{pmatrix}.
-\]
+$$
 
 前沿耦合形式列向量：
-\[
+$$
 \mathbf{x}_{n+1}=
 \begin{bmatrix}
 x_{(n+1,1)} \\
@@ -136,7 +136,7 @@ x_{(n+1,2)} \\
 x_{(n+1,n)}
 \end{bmatrix}
 \in \big(\mathbb{R}[\mathcal{V}_{n+1}]\big)^n.
-\]
+$$
 
 形式符号矩阵强制只读子空间继承约束：
 $M_{n+1}[1:n,\;1:n] \equiv M_n$。
@@ -146,14 +146,14 @@ $M_{n+1}[1:n,\;1:n] \equiv M_n$。
 1. **输入初始状态**：起始常数 $M_1=\begin{pmatrix}1\end{pmatrix}\in\mathcal{M}_1$。
 2. **调用算子**：执行 $\mathcal{G}_{1\rightarrow 2}(M_1)$。声明二阶形式变量集合 $\mathcal{V}_2=\{x_{(2,1)},\;y_2\}$。
 3. **输出形式结构**：代入结构方程（$n=1$，向量退化为标量分量）。得到二阶形式矩阵：
-\[
+$$
 M_2(x_{(2,1)},\,y_2)=
 \begin{pmatrix}
 1 & x_{(2,1)} \\
 x_{(2,1)} & y_2
 \end{pmatrix}
 \in \mathcal{M}_2[\mathbf{x}_2,\,y_2].
-\]
+$$
 本示例展示算子如何在保留左上角分块历史固定常数的同时，在矩阵前沿追加参数化的行与列。
 
 ### 4.4 算子映射性质证明（单射但非满射）
@@ -163,11 +163,11 @@ x_{(2,1)} & y_2
 **证明**：
 1. **单射性**：
 取两个互不相同的输入矩阵 $M_n^{(1)}\neq M_n^{(2)} \in \mathcal{M}_n$。必然存在某组索引 $\exists i,j\in\mathcal{I}_n$，满足 $M_n^{(1)}(i,j)\neq M_n^{(2)}(i,j)$。依据只读子空间继承性质：
-\[
+$$
 \mathcal{G}_{n\rightarrow n+1}(M_n^{(1)})[i,j]=M_n^{(1)}(i,j)
 \neq M_n^{(2)}(i,j)
 =\mathcal{G}_{n\rightarrow n+1}(M_n^{(2)})[i,j].
-\]
+$$
 于是 $\mathcal{G}_{n\rightarrow n+1}(M_n^{(1)}) \neq \mathcal{G}_{n\rightarrow n+1}(M_n^{(2)})$。单射性得证。
 
 2. **非满射性**：
@@ -186,28 +186,28 @@ $S_n=\sum_{i=1}^n\sum_{j=1}^n \Phi_{\text{full}}(M_n(i,j))$，
 谱半径不变量：$\rho(\Phi_{\text{full}}(M_n))$。
 
 通过分块矩阵扩张得到全局总和递推关系：
-\[
+$$
 S_{n+1}=S_n + 2\sum_{k=1}^n \Phi_{\text{full}}(x_{(n+1,k)})+\Phi_{\text{full}}(y_{n+1}).
-\]
+$$
 
 代入全连接赋值：
-\[
+$$
 S_{n+1}=S_n + 2n+1.
-\]
+$$
 
 由初始条件 $S_1=1$ 出发：
-\[
+$$
 S_n=1+\sum_{k=1}^{n-1}(2k+1)=n^2
 \;\Longrightarrow\;
 \lim_{n\rightarrow\infty} S_n=\lim_{n\rightarrow\infty}n^2=\infty.
-\]
+$$
 
 在此赋值下 $M_n$ 退化为全1实矩阵 $J_n\in\{1\}^{n\times n}$。其谱半径：
-\[
+$$
 \rho(\Phi_{\text{full}}(M_n))=n
 \;\Longrightarrow\;
 \lim_{n\rightarrow\infty}\rho(\Phi_{\text{full}}(M_n))=\infty.
-\]
+$$
 
 **发散结论**：在扩张前沿强行施加固定全连接赋值，全局元素总和按 $O(n^2)$ 二次阶发散，谱半径按 $O(n)$ 线性发散。这从代数层面说明，形式符号矩阵应当保持未赋值状态，交由下游算子完成求解。
 
@@ -219,7 +219,7 @@ S_n=1+\sum_{k=1}^{n-1}(2k+1)=n^2
 
 **证明**：
 对分块结构形式矩阵做形式乘法：
-\[
+$$
 M_{n+1}^2=
 \begin{pmatrix}
 M_n & \mathbf{x}_{n+1} \\
@@ -229,43 +229,43 @@ M_n & \mathbf{x}_{n+1} \\
 M_n & \mathbf{x}_{n+1} \\
 \mathbf{x}_{n+1}^T & y_{n+1}
 \end{pmatrix}.
-\]
+$$
 
 提取乘积矩阵的最后一个对角元：
-\[
+$$
 (M_{n+1}^2)_{n+1,\,n+1}
 =\left(\sum_{m=1}^{n} M_{n+1}(n+1,\,m)^2\right)
 + M_{n+1}(n+1,\,n+1)^2.
-\]
+$$
 
 代入形式符号分量：
-\[
+$$
 (M_{n+1}^2)_{n+1,\,n+1}
 =\left(\sum_{m=1}^{n} x_{(n+1,m)}^2\right)+y_{n+1}^2.
-\]
+$$
 
 施加全局赋值同态 $\Phi$：
-\[
+$$
 \Phi\big((M_{n+1}^2)_{n+1,\,n+1}\big)
 =\left(\sum_{m=1}^{n}\Phi(x_{(n+1,m)})^2\right)
 +\Phi(y_{n+1})^2.
-\]
+$$
 
 二元硬取值约束：
 $\Phi(x_{(n+1,m)})\in\{-1,1\},\;\Phi(y_{n+1})\in\{-1,1\}$。
 二元集合中任意元素平方均等于实常数 $1$。
-\[
+$$
 \Phi(x_{(n+1,m)})^2 \equiv 1,\quad
 \Phi(y_{n+1})^2 \equiv 1.
-\]
+$$
 
 将常数代回求和式：
-\[
+$$
 \Phi\big((M_{n+1}^2)_{n+1,\,n+1}\big)
 =\left(\sum_{m=1}^{n} 1\right)+1
 =\underbrace{1+1+\dots+1}_{n\;\text{项}} +1
 = n+1.
-\]
+$$
 
 该化简对任意正整数 $n\in\mathbb{N}^+$ 均成立，与未定元的具体赋值无关。定理3证毕。◼
 

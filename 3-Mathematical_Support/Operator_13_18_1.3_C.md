@@ -12,7 +12,7 @@
 
 > **v1.2 相对 v1.1 的三项修正**（源自「10 个随机方程」压测的实测暴露）：
 > 1. **算子 13.4 的 $K_f$ 判据由「单项」改为「余项」**（§13.4）——原判据在系数几何衰减时会过早截断，$\ln$ 核给出 $K_f=1$ 而尾项仍超 $\gamma$；
-> 2. **零模剥离由「奇异核专属」升级为「凡用核展开一律执行」**（§13.5）——Stieltjes 核的解析椭圆半轴 $a_{\max}=1.142 < |\xi_0|=1.536$，在零模处级数**发散**，阶数越高误差越爆炸（$K{:}2\to32$ 时 $8.1\!\times\!10^{-1}\to5.0\!\times\!10^{5}$）；
+> 2. **零模剥离由「奇异核专属」升级为「凡用核展开一律执行」**（§13.5）——Stieltjes 核的解析椭圆半轴 $a_{\max}=1.142 < \lvert \xi_0\lvert =1.536$，在零模处级数**发散**，阶数越高误差越爆炸（$K{:}2\to32$ 时 $8.1\!\times\!10^{-1}\to5.0\!\times\!10^{5}$）；
 > 3. **多分片必须同时冻结 $\alpha_n$ 与 $\lambda_2$**（§13.6），并厘清了「锁定壳层缩放」只可施加于初值、**不可施加于已求得的解**——冻结尺度显式破坏了重标定规范冗余。
 
 > **v1.3 相对 v1.2 的三项修正**（源自「10 题型 × 5 组 = 50 道随机方程」压测的实测暴露）：
@@ -34,7 +34,7 @@
 
 | 残差分量 | 代数归属 | 消除机制 | 复用算子 |
 |---|---|---|---|
-| 梯度分量 $D_{\text{global}}\phi$ | $\mathrm{im}(\partial_1)$ | 顶点势 $\Phi$ 重解 | 算子 6（$\Phi=(D^TD)^\dagger D^TE$） |
+| 梯度分量 $D_{\text{global}}\phi$ | $\mathrm{im}(\partial_1)$ | 顶点势 $\Phi$ 重解 | 算子 6（$\Phi=(D^TD)^{\dagger} D^TE$） |
 | 旋度分量 $C_{\text{global}}^T\psi$ | $\mathrm{im}(\partial_2^T)$ | 环流 $B$ 场蛙跳对冲 | 算子 7（$\mathcal{O}_{\text{lock}}$） |
 | 调和分量 $h$ | $\mathcal{H}_1 = \ker(\partial_1^T)\cap\ker(\partial_2)$ | **不可由场迭代消除** | 算子 9（Betti 缝合改拓扑） |
 
@@ -182,7 +182,7 @@ $$\dim \mathcal{S}_{\text{hom}} \;=\; m_g - \beta_1, \qquad \dim \mathcal{S}_{\t
 
 ### ⚠ 退化警告：$\beta_1 = 0$ 时同调解失去区分力
 
-当 $\beta_1 = 0$（如闭复形）时 $\mathcal{H}_1 = \{0\}$，故 $h \equiv 0$ **对任意图恒成立** —— 同调解集退化为整个边权空间 $\mathcal{S}_{\text{hom}} = \mathbb{R}^{m_g}$，判据 $|h| = 0$ 不再提供任何信息。
+当 $\beta_1 = 0$（如闭复形）时 $\mathcal{H}_1 = \{0\}$，故 $h \equiv 0$ **对任意图恒成立** —— 同调解集退化为整个边权空间 $\mathcal{S}_{\text{hom}} = \mathbb{R}^{m_g}$，判据 $\lvert h\rvert  = 0$ 不再提供任何信息。
 
 此时必须启用**规范代表**准则来挑选唯一实现（算子 18）：在同调类内取 Dirichlet 能最小者。这也解释了为何算子 18 的规范代表选取不是可选项，而是 v1.1 的必需组件。
 
@@ -203,7 +203,7 @@ $$\boxed{\; r = D_{\text{global}}\,\phi \;+\; h \;+\; C_{\text{global}}^T\,\psi 
 
 $$\phi \equiv \underbrace{(D^T D)^{\dagger}}_{\displaystyle L_0^{\dagger}\;(\text{0-阶拉普拉斯伪逆})} D^T r \;\in\; \mathbb{R}^{n}, \qquad \psi \equiv (C C^T)^{\dagger} C\, r \;\in\; \mathbb{R}^{f}, \qquad h \equiv r - D\phi - C^T\psi$$
 
-**注**：$\phi$ 的求解式与算子 6 的势闭合式 $\Phi_{s-1} = (D^TD)^\dagger(D^T E_{s-1})$ **严格同构**（仅把边流 $E$ 换成残差 $r$），故可直接复用算子 6 的全部 $\mathcal{O}(1)$ 局域设施，零新增求解器。
+**注**：$\phi$ 的求解式与算子 6 的势闭合式 $\Phi_{s-1} = (D^TD)^{\dagger}(D^T E_{s-1})$ **严格同构**（仅把边流 $E$ 换成残差 $r$），故可直接复用算子 6 的全部 $\mathcal{O}(1)$ 局域设施，零新增求解器。
 
 **可解性判据**：方程在给定图拓扑上可解 $\iff h \equiv 0$。
 
@@ -212,7 +212,7 @@ $$\phi \equiv \underbrace{(D^T D)^{\dagger}}_{\displaystyle L_0^{\dagger}\;(\tex
 
 $$\|r\|_2^2 = \|D\phi\|_2^2 + \|h\|_2^2 + \|C^T\psi\|_2^2$$
 
-*(ii) 投影式*：$D\phi$ 是 $r$ 在 $\mathrm{im}\,\partial_1$ 上的正交投影，其正规方程为 $D^T(D\phi) = D^T r \Rightarrow (D^TD)\phi = D^T r$，故 $\phi = (D^TD)^\dagger D^T r$；同理 $C^T\psi$ 是 $r$ 在 $\mathrm{im}\,\partial_2^T$ 上的投影，$\psi = (CC^T)^\dagger C r$。前者为 0-阶拉普拉斯伪逆（与算子 6 势求解同源），后者为 2-阶拉普拉斯伪逆，二者均已建立 $\mathcal{O}(1)$ 局域求解途径。
+*(ii) 投影式*：$D\phi$ 是 $r$ 在 $\mathrm{im}\,\partial_1$ 上的正交投影，其正规方程为 $D^T(D\phi) = D^T r \Rightarrow (D^TD)\phi = D^T r$，故 $\phi = (D^TD)^{\dagger} D^T r$；同理 $C^T\psi$ 是 $r$ 在 $\mathrm{im}\,\partial_2^T$ 上的投影，$\psi = (CC^T)^{\dagger} C r$。前者为 0-阶拉普拉斯伪逆（与算子 6 势求解同源），后者为 2-阶拉普拉斯伪逆，二者均已建立 $\mathcal{O}(1)$ 局域求解途径。
 
 *(iii) 可解性*：求解迭代（算子 15）的更新方向必属于 $\mathrm{im}(\partial_1) \oplus \mathrm{im}(\partial_2^T) = \mathcal{H}_1^{\perp}$（见定理 15.3）。故若 $h \neq 0$，残差的调和分量落在更新算子的核内，**任何步数的场迭代都不能使其下降**；此时 $r$ 是「闭而非恰当」（closed but not exact）的上同调类，构成**拓扑障碍**。唯有改变图的拓扑（$\Delta\beta_1 \neq 0$，算子 9 的贝蒂缝合）才能使 $\mathcal{H}_1$ 的维数变化，从而为残差开辟新的恰当方向。$\blacksquare$
 
@@ -276,22 +276,22 @@ $$c_k \equiv \frac{2}{N_c}\sum_{j=0}^{N_c-1} g\!\left(\cos\theta_j\right)\cos\le
 **内生自适应截断阶 $K_f$**（取代多项式核情形的固定 $K$）：
 
 > **v1.2 修正（10 题随机压测实测，bench E06/E08）**。原判据取
-> $K_f = \max\{k : |c_k| > \gamma\max|c|\}$，衡量的是「**单项**是否已变小」。这在逻辑上是错的：Chebyshev 系数按几何级数衰减，**单项变小远不等于逼近够好**。实测 $\ln$ 核给出 $K_f = 1$，而 $\mathrm{tail}(1)$ 仍占峰值的 $21\% > \gamma$，截断误差达 $3.25\times10^{-2}$。
+> $K_f = \max\{k : \lvert c_k\rvert  > \gamma\max\lvert c\rvert \}$，衡量的是「**单项**是否已变小」。这在逻辑上是错的：Chebyshev 系数按几何级数衰减，**单项变小远不等于逼近够好**。实测 $\ln$ 核给出 $K_f = 1$，而 $\mathrm{tail}(1)$ 仍占峰值的 $21\% > \gamma$，截断误差达 $3.25\times10^{-2}$。
 
-真正决定精度的是被丢弃项的**总和**。因 $|T_k(s)| \le 1$ 于 $[-1,1]$ 上，
-$$\Big| g(s) - \sum_{k\le K} c_k T_k(s)\Big| \;\le\; \sum_{k>K}|c_k| \;\equiv\; \mathrm{tail}(K)$$
+真正决定精度的是被丢弃项的**总和**。因 $\lvert T_k(s)\rvert  \le 1$ 于 $[-1,1]$ 上，
+$$\Big\rvert  g(s) - \sum_{k\le K} c_k T_k(s)\Big\rvert  \;\le\; \sum_{k>K}\lvert c_k\rvert  \;\equiv\; \mathrm{tail}(K)$$
 故 $\mathrm{tail}(K)$ 才是逼近误差的**严格上界**，也才是应当与内生容差比较的量：
 
-$$\boxed{\; K_f \;\equiv\; \min\Big\{ K \;:\; \mathrm{tail}(K) \;\le\; \gamma\cdot\max_k|c_k| \Big\}, \qquad \mathrm{tail}(K) = \sum_{k>K}|c_k| \;}$$
+$$\boxed{\; K_f \;\equiv\; \min\Big\{ K \;:\; \mathrm{tail}(K) \;\le\; \gamma\cdot\max_k\lvert c_k\rvert  \Big\}, \qquad \mathrm{tail}(K) = \sum_{k>K}\rvert c_k\rvert  \;}$$
 
-阈值仍是 $\gamma\cdot\max|c|$——唯一的内生尺度，无外部参数。**该判据自动适配核的光滑性**：光滑核 $K_f$ 小，奇异性强的核 $K_f$ 大。
+阈值仍是 $\gamma\cdot\max\lvert c\rvert$——唯一的内生尺度，无外部参数。**该判据自动适配核的光滑性**：光滑核 $K_f$ 小，奇异性强的核 $K_f$ 大。
 
 **注意这保证的是 $\gamma$ 级精度，不是机器精度。** 若要 $10^{-6}$ 级，$K$ 须深到 $\mathcal{O}\!\left(1/\ln\rho\right)\approx 16$–$24$——这是明示的代价，而非缺陷（实测 $K$-sweep 见 bench 报告）。
 
 **定理 13.2（非多项式核的收敛率由谱隙比单独决定）**
 对在 $\hat\lambda = 0$ 具有对数分支点的核（典型如 $\ln\hat\lambda$），其奇点在 $y$ 变量中的位置与 Bernstein 参数为
-$$\xi_0 = -\frac{1+\gamma}{1-\gamma}, \qquad \rho \equiv |\xi_0| + \sqrt{\xi_0^2 - 1}$$
-Chebyshev 系数渐近衰减 $|c_k| = \mathcal{O}\!\left(k^{-1}\rho^{-k}\right)$，故所需阶数下界为
+$$\xi_0 = -\frac{1+\gamma}{1-\gamma}, \qquad \rho \equiv \lvert \xi_0\rvert  + \sqrt{\xi_0^2 - 1}$$
+Chebyshev 系数渐近衰减 $\lvert c_k\rvert  = \mathcal{O}\!\left(k^{-1}\rho^{-k}\right)$，故所需阶数下界为
 $$K_f \;\gtrsim\; \frac{\ln(1/\gamma)}{\ln \rho}, \qquad \lim_{\gamma \to 0}\rho = 1 \;\Rightarrow\; K_f \to \infty$$
 
 **推论**：**谱隙比 $\gamma$ 同时是「图的连通裕度」与「非多项式核的可展开性」的度量**。图越接近断裂（$\gamma \to 0$），$\ln$ 型核的展开阶数需求发散——这是本方法在病态图上的根本限制，无法靠增加算力绕过。
@@ -312,10 +312,10 @@ $$\rho(\hat\lambda) = \frac{1}{\pi}\,\mathrm{Im}\, m(\hat\lambda + i\varepsilon)
 v1.1 把剥离写成奇异核（$\ln$、$1/\hat\lambda$）的必备前置，**这是不完备的**。10 题随机压测的 E08（Stieltjes 核）暴露了真正的判别条件：
 
 平凡零模在移位变量上的位置恒为
-$$\xi_0 \;=\; -\frac{1+\gamma}{1-\gamma}, \qquad \rho(\xi_0) \;=\; |\xi_0| + \sqrt{\xi_0^2-1}$$
+$$\xi_0 \;=\; -\frac{1+\gamma}{1-\gamma}, \qquad \rho(\xi_0) \;=\; \lvert \xi_0\rvert  + \sqrt{\xi_0^2-1}$$
 它**恒在 $[-1,1]$ 之外**，且 $T_k(\xi_0)$ 按 $\rho(\xi_0)^k$ 指数增长。而核 $g$ 的 Chebyshev 级数只在自身的 Bernstein 椭圆内收敛，该椭圆实半轴为
 $$a_{\max} \;=\; \frac{\rho_{\max} + \rho_{\max}^{-1}}{2}$$
-其中 $\rho_{\max}$ 由 $g$ 距谱支撑最近的奇点决定。**一旦 $a_{\max} < |\xi_0|$，级数在 $\xi_0$ 处发散**，高阶项被零模放大后爆炸——阶数越高越糟。
+其中 $\rho_{\max}$ 由 $g$ 距谱支撑最近的奇点决定。**一旦 $a_{\max} < \lvert \xi_0\lvert$，级数在 $\xi_0$ 处发散**，高阶项被零模放大后爆炸——阶数越高越糟。
 
 实测 Stieltjes 核 $z = 0.5 + i\gamma$（$\gamma = 0.2113$）：
 
@@ -372,15 +372,15 @@ $$M \;\mapsto\; cM, \qquad c \equiv \frac{\alpha_n^{\text{lock}}}{\alpha_n(M)}$$
 >
 > **结论：冻结尺度显式破坏了重标定规范冗余，它是本方法为换取 $F$ 的光滑性而主动放弃的对称性。** 因此收敛后残留的 $\alpha_n$ 漂移只能在算子 16 中作为二阶效应接受（见下）。
 
-**漂移的量化接受准则**：记 $\varepsilon \equiv \bigl|\alpha_n(M^\star)/\alpha_n^{\text{lock}} - 1\bigr|$。支集顶端由 $1$ 越到 $1+\varepsilon$ 时，矩序列的 Hausdorff 不可行性只在**二阶**出现（一阶仅平移支集边界），故应有
-$$\bigl|\lambda_{\min}(H)\bigr| \;=\; \mathcal{O}(\varepsilon^{2})$$
-实测 E01：$\varepsilon^{2}=1.89\times10^{-5}$ vs $|\lambda_{\min}| = 1.00\times10^{-5}$（比值 $0.53$）；E09：$\varepsilon^{2}=5.59\times10^{-5}$ vs $8.43\times10^{-5}$（比值 $1.51$）。算子 16 的准入判据据此分级：
+**漂移的量化接受准则**：记 $\varepsilon \equiv \bigl\lvert \alpha_n(M^\star)/\alpha_n^{\text{lock}} - 1\bigr\rvert$。支集顶端由 $1$ 越到 $1+\varepsilon$ 时，矩序列的 Hausdorff 不可行性只在**二阶**出现（一阶仅平移支集边界），故应有
+$$\bigl\lvert \lambda_{\min}(H)\bigr\rvert  \;=\; \mathcal{O}(\varepsilon^{2})$$
+实测 E01：$\varepsilon^{2}=1.89\times10^{-5}$ vs $\lvert \lambda_{\min}\rvert  = 1.00\times10^{-5}$（比值 $0.53$）；E09：$\varepsilon^{2}=5.59\times10^{-5}$ vs $8.43\times10^{-5}$（比值 $1.51$）。算子 16 的准入判据据此分级：
 
 | 情形 | 裁定 |
 |---|---|
 | $\lambda_{\min}(H) \ge 0$ | **通过** |
-| $\lambda_{\min}(H) < 0$ 但 $\|\lambda_{\min}\| \le 10\,\varepsilon^{2}$ 且 $\varepsilon < \gamma$ | **通过（*）**——越界全部由冻结伪影解释 |
-| $\lambda_{\min}(H) < 0$ 且 $\|\lambda_{\min}\| > 10\,\varepsilon^{2}$ | **失败**——真正的矩不可行，须 Op16 钳制 |
+| $\lambda_{\min}(H) < 0$ 但 $\lVert \lambda_{\min}\rVert  \le 10\,\varepsilon^{2}$ 且 $\varepsilon < \gamma$ | **通过（*）**——越界全部由冻结伪影解释 |
+| $\lambda_{\min}(H) < 0$ 且 $\lVert \lambda_{\min}\rVert  > 10\,\varepsilon^{2}$ | **失败**——真正的矩不可行，须 Op16 钳制 |
 
 #### 复杂度与红线
 $\mathcal{O}(N_K \cdot M_K \cdot K)$（多项式核）或 $\mathcal{O}(N_c^2 + N_K M_K K_f)$（非多项式核，系数求积一次性预计算）。因算子 10 已证 $N_K \le K_0 = \mathcal{O}(1)$，整体为**局域常数级**。
@@ -418,7 +418,7 @@ $$\phi \equiv (D^T D)^{\dagger} D^T r \in \mathbb{R}^{n},\qquad \psi \equiv (C C
 
 **梯度通道**（顶点势 $\Phi$，算子 6 复用）：残差梯度分量要求顶点势修正 $\phi$，直接在 0-链空间注入
 $$\Phi_{s-1} \;\leftarrow\; \Phi_{s-1} \;-\; \eta_{\text{inj}}^{(\phi)} \cdot \phi, \qquad \eta_{\text{inj}}^{(\phi)} \equiv \frac{\lambda_2}{\lambda_2 + \|D\phi\|_2}$$
-（等价于算子 6 右端改写为 $(D^TD)^\dagger D^T\!\left(E_{s-1} - \eta\,r\right)$，二者由投影幂等性 $D(D^TD)^\dagger D^T = P_{\mathrm{im}D}$ 等价。）
+（等价于算子 6 右端改写为 $(D^TD)^{\dagger} D^T\!\left(E_{s-1} - \eta\,r\right)$，二者由投影幂等性 $D(D^TD)^{\dagger} D^T = P_{\mathrm{im}D}$ 等价。）
 
 **旋度通道**（环流 $B$，算子 7 复用）：$\psi \in \mathbb{R}^f$ 本身即面空间元素，直接注入
 $$B_{s+1/2} \;\leftarrow\; B_{s+1/2} \;-\; \eta_{\text{inj}}^{(\psi)} \cdot \psi, \qquad \eta_{\text{inj}}^{(\psi)} \equiv \frac{\lambda_2}{\lambda_2 + \|C^T\psi\|_2} \in (0,1]$$
@@ -431,7 +431,7 @@ $$\textbf{调和} \to \text{挂起，移交算子 17 裁定}$$
 #### 定理 14.1（闭合流形上的对偶配对守恒）
 在算子 7 已保证的**零通量逃逸条件** $C_{\text{global}}E_{\text{global}} \equiv 0$ 成立的前提下，上述旋度注入引起的庞加莱对偶配对变差恒零：
 $$\Delta\left( E_s^T \, C_{\text{global}}^T \, B_{s+1/2} \right) \;=\; -\eta_{\text{inj}}^{(\psi)}\left\langle C_{\text{global}} E_s,\; \psi \right\rangle \;=\; 0$$
-**证明**：$C E_s = 0 \Rightarrow E_s \in \ker\partial_2 = \left(\mathrm{im}\,\partial_2^T\right)^\perp$，故 $E_s \perp C^T\psi$ 对任意 $\psi$ 成立，配对变差为零。$\blacksquare$
+**证明**：$C E_s = 0 \Rightarrow E_s \in \ker\partial_2 = \left(\mathrm{im}\,\partial_2^T\right)^{\perp}$，故 $E_s \perp C^T\psi$ 对任意 $\psi$ 成立，配对变差为零。$\blacksquare$
 
 **推论 14.1（闭合流的构造保证）**：由链复形正合性 $\partial_2\partial_1 = 0$，任意梯度场 $E = D_{\text{global}}\varphi$ 自动满足 $CE = (CD)\varphi = 0$，故算子 6 输出的势场所生成的边流天然落在本定理的适用域内，**无需额外投影**。
 
@@ -459,7 +459,7 @@ $$\alpha_n \leftarrow \max\left(\alpha_{n-1},\ \alpha_{\Omega_k}\|P_{\Omega_k,\t
 单调更新。因 $\max$/$\min$ 均为单调运算，**求解内环中谱隙比 $\gamma = \lambda_2/\alpha_n$ 的变化有界且不震荡**，从而 $K_f$（定理 13.2）在迭代中保持稳定。这是多谱形耦合能够收敛的**结构性前提**。
 
 **定理 14.2（内生信赖域自动吸收耦合放大）**
-多分片合成后 $\|\mathbf{g}_M\|_2$ 随 $p$ 增长（各分片贡献叠加），但算子 15 的信赖域分母 $1 + \tilde{\mathbf{g}}^TA^\dagger\tilde{\mathbf{g}}$ 二次增长而分子仅线性增长，故步长自动按 $\mathcal{O}(1/p)$ 压缩。**结论：耦合分片数增加不需要任何步长重调**。
+多分片合成后 $\|\mathbf{g}_M\|_2$ 随 $p$ 增长（各分片贡献叠加），但算子 15 的信赖域分母 $1 + \tilde{\mathbf{g}}^{TA}^\dagger\tilde{\mathbf{g}}$ 二次增长而分子仅线性增长，故步长自动按 $\mathcal{O}(1/p)$ 压缩。**结论：耦合分片数增加不需要任何步长重调**。
 
 #### 复杂度与红线
 $\mathcal{O}\!\left(\sum_\nu M_{K_\nu}K + m_g + f\right) = \mathcal{O}(p\,M_K K)$（多分片）。
@@ -530,7 +530,7 @@ $$\Delta \mathcal{E}_D \;=\; \tilde{\mathbf{g}}^T \Delta M \;+\; \mathcal{O}(\|\
 
 #### 定理 15.3（更新方向的正交约束）
 $\Delta M \in \mathrm{im}(\partial_1) \oplus \mathrm{im}(\partial_2^T) = \mathcal{H}_1^{\perp}$，即更新恒位于调和空间的正交补。
-**证明**：$\Delta M \propto A^\dagger(\mathbf{g}-h)$，而 $A^\dagger$ 的值域为 $(\ker A)^\perp = \mathcal{H}_1^\perp$。$\blacksquare$
+**证明**：$\Delta M \propto A^\dagger(\mathbf{g}-h)$，而 $A^\dagger$ 的值域为 $(\ker A)^{\perp} = \mathcal{H}_1^\perp$。$\blacksquare$
 
 #### 15.3 内生动量加速（可选）
 
@@ -618,8 +618,8 @@ $\mathcal{O}(K^3)$，因 $K \le K_{\text{cap}} = \mathcal{O}(\ln N_K)$ 且 $N_K 
 
 | 模式 | 启用条件 | 判据 | 监控自由度 |
 |---|---|---|---|
-| **精确解** | $\beta_1 = 0$，或用户显式要求 | $\|D\phi\|, \|C^T\psi\| \le \epsilon_{\text{endo}}$ 且 $\|h\| \le \epsilon_{\text{endo}}$ | $m_g$ |
-| **同调解**（默认） | $\beta_1 > 0$ | **仅** $\|h\|_2 \le \epsilon_{\text{endo}}$ | $\beta_1$ |
+| **精确解** | $\beta_1 = 0$，或用户显式要求 | $\lVert D\phi\rVert , \lVert C^T\psi\rVert  \le \epsilon_{\text{endo}}$ 且 $\lVert h\rVert  \le \epsilon_{\text{endo}}$ | $m_g$ |
+| **同调解**（默认） | $\beta_1 > 0$ | **仅** $\lVert h\rVert _2 \le \epsilon_{\text{endo}}$ | $\beta_1$ |
 
 **同调解模式下梯度/旋度分量不作要求**——它们由算子 6/7 在后续脉冲中自然吸收（定义 3.1）。这带来两重收益：
 1. **监控维度从 $m_g$ 降至 $\beta_1$**，收敛判定所追踪的自由度大幅减少；
@@ -659,10 +659,10 @@ $$\rho_h(M) \;\equiv\; \frac{\|h(M)\|}{\|r(M)\|} \;=\; \frac{\|\Pi_{\mathcal{H}_
 | 非 `below`，且更新方向未耗尽 | **继续（CONTINUE）** | $\kappa \leftarrow \kappa+1$，回算子 15 |
 | `step_dead`，且 `pert` 且 $\lnot$`harm`（**仅**调和剩余） | **拓扑障碍（OBSTRUCTION）** | 移交算子 9 执行 Betti 缝合（改 $\beta_1$），重启内环 |
 | `step_dead`，且非「仅调和剩余」 | **数值停滞（STALLED）** | 报数值告警，**不触发拓扑变更**（保护 $\Delta\beta_1\equiv0$ 红线） |
-| $\|h\|$ 经 $\tau(s)$ 步缝合仍不下降 | **不可解** | 输出障碍证书 $h$，终止并告警 |
+| $\lVert h\rVert$ 经 $\tau(s)$ 步缝合仍不下降 | **不可解** | 输出障碍证书 $h$，终止并告警 |
 
 **`exhausted`（已榨干）条件（v1.3 新增）**：
-$$|F_\kappa| \;\ge\; (1-\gamma)\,|F_{\kappa-1}|,$$
+$$\lvert F_\kappa\rvert  \;\ge\; (1-\gamma)\,\rvert F_{\kappa-1}\lvert ,$$
 即上一步的残差下降已不足相对比例 $\gamma$——牛顿方向携带的信息已被榨尽。它与「$\|r\|\le\epsilon_{\text{endo}}$」并列，共同构成 `SOLVED` 的判据。
 
 > **为何必须加此条件**：V-B 独立残差验证与停机判据**同取阈值 $\epsilon_{\text{endo}}$**。若只要「首次跨过 $\epsilon_{\text{endo}}$」就停机，则凡恰好落在阈值附近 $1/\gamma$ 带宽两侧的实例（实测 B4-E02 $=0.1726$、B5-E02 $=0.1787$ vs $\gamma = 0.1761$）会被判「解出」，但独立重算的残差仍在阈值之上，V-B FAIL——**验证退化为同义反复**。附加 `exhausted` 后，实测 49 题的 V-B 落到 $10^{-14}\sim10^{-9}$，B2-E02 的 V-B 由 $7.30\!\times\!10^{-1}$ 降到 $1.29\!\times\!10^{-1}$。
@@ -715,9 +715,9 @@ $$|F_\kappa| \;\ge\; (1-\gamma)\,|F_{\kappa-1}|,$$
 
 | 证书项 | 定义 | 语义 |
 |---|---|---|
-| 同调残差 $\|h\|_2$ | 残差的调和投影范数 | $=0$ ⟹ 同调解成立 |
-| 同调距离 $d_{\text{hom}}(M^\star, M_{\text{init}})$ | $\|h(M^\star) - h(M_{\text{init}})\|_2$ | 从初值走了多远（拓扑意义上） |
-| 恰当残差预算 $\|D\phi + C^T\psi\|_2$ | 待算子 6/7 吸收的量 | 精确解的残余误差 |
+| 同调残差 $\lVert h\rVert _2$ | 残差的调和投影范数 | $=0$ ⟹ 同调解成立 |
+| 同调距离 $d_{\text{hom}}(M^\star, M_{\text{init}})$ | $\lVert h(M^\star) - h(M_{\text{init}})\rVert _2$ | 从初值走了多远（拓扑意义上） |
+| 恰当残差预算 $\lVert D\phi + C^T\psi\rVert _2$ | 待算子 6/7 吸收的量 | 精确解的残余误差 |
 
 #### 复杂度与红线
 $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
@@ -766,7 +766,7 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 
 针对「未知谱形构成的方程」，标准求解流程为：
 
-1. **编码**（Op13）：把每个未知谱形 $\sigma_\nu$ 编码为 Chebyshev 矩向量 $\boldsymbol{\tau}^{(\nu)}$。多项式核用 $K = \lceil\alpha_n/\lambda_2\rceil$；**非多项式核用余项判据 $K_f$**（$\sum_{k>K}|c_k| \le \gamma\max|c|$，§13.4 v1.2）；**凡用核展开必先剥离零模**（§13.5）—— *化函数为有限向量*。
+1. **编码**（Op13）：把每个未知谱形 $\sigma_\nu$ 编码为 Chebyshev 矩向量 $\boldsymbol{\tau}^{(\nu)}$。多项式核用 $K = \lceil\alpha_n/\lambda_2\rceil$；**非多项式核用余项判据 $K_f$**（$\sum_{k>K}\lvert c_k\rvert  \le \gamma\max\rvert c\lvert$，§13.4 v1.2）；**凡用核展开必先剥离零模**（§13.5）—— *化函数为有限向量*。
 2. **代数化**（定义 1.2）：方程 $\mathcal{F}(\sigma)=0$ 化为矩空间方程。**多谱形耦合**体现为块 Jacobian $J \in \mathbb{R}^{q\times p(K+1)}$，耦合项由乘积法则自动落入块结构 —— *化泛函方程为代数方程*。
 3. **路由**（Op14）：残差经分片嵌入 $\Xi_\nu$ 与灵敏度向量合成至全局 1-链，做 Hodge 三分量分解 —— *化残差为拓扑分量*。
 4. **反演**（Op15 → 3.5b → 16）：内生拟牛顿单行闭式更新边权，**回溯线搜索（§15.4）二次缩步保证 $\Psi$ 严格下降**，Hankel 钳制保证解的谱形可行性 —— *在图空间上迭代收敛*。
@@ -790,11 +790,11 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 | V2 | 灵敏度解析式 vs 中心差分 | 相对误差 $< 10^{-6}$ | 13.3 式 |
 | V3 | Hodge 正交性：$\langle D\phi, C^T\psi\rangle = \langle D\phi, h\rangle = \langle C^T\psi, h\rangle = 0$ | $\approx 0$ | 定理 S3 |
 | V4 | 调和判据：$D^T h = 0$ 且 $C h = 0$；$\dim\mathcal{H}_1 = \beta_1 = \nu - \mathrm{rank}(\partial_2)$，$\nu = m_g-n+\beta_0$ | 成立（数值秩） | 定理 S3 + 术语约定 |
-| V5 | 可解方程（如 $\tau_2 - c = 0$）残差单调下降 | $\|r_{\kappa+1}\| \le \|r_{\kappa}\|$ | 定理 15.2 |
+| V5 | 可解方程（如 $\tau_2 - c = 0$）残差单调下降 | $\lVert r_{\kappa+1}\rVert  \le \lVert r_{\kappa}\rVert$ | 定理 15.2 |
 | V6 | Dirichlet 能单调非增 | $\Delta\mathcal{E}_D \le 0$ | 定理 15.2 |
 | V7 | 更新方向正交性：$\Delta M \perp \mathcal{H}_1$ | $\langle \Delta M, h\rangle \approx 0$ | 定理 15.3 |
 | V8 | Hankel 钳制后两矩阵半正定 | $\lambda_{\min}(H^{(0)}), \lambda_{\min}(H^{(1)}) \ge -\epsilon$ | 定理 16.1 |
-| V9 | 拓扑障碍用例：$\beta_1 = 0$ 图上要求非零同调残差 | Op17 正确告警且 $\|h\|$ 不下降 | 定理 S3 |
+| V9 | 拓扑障碍用例：$\beta_1 = 0$ 图上要求非零同调残差 | Op17 正确告警且 $\lVert h\rVert$ 不下降 | 定理 S3 |
 | V10 | 闭合流守恒：取 $E = D\varphi$（自动满足 $CE=0$），注入 $\psi$ 后 $\Delta(E^T C^T B)$ | $= 0$ | 定理 14.1 |
 | V11 | 反例对照：取 $CE \neq 0$ 的非闭合流，同样注入 | $\Delta \neq 0$，验证时序必要性 | 推论 14.1 注 |
 
@@ -804,11 +804,11 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 |---|---|---|---|
 | **V12** | 多谱形耦合：两分片方程 $\tau_2^{(1)}\tau_2^{(2)} - c = 0$，块 Jacobian + 分片嵌入 $\Xi_\nu$ | 残差单调下降并裁定解出 | §14.4 |
 | **V7b** | 方程尺度不变性：$F\to sF$（$s=1,10,100$）时 $\Delta M$ 必须不变 | 新式相对偏移 $<10^{-8}$；v1.0 旧式显著偏移（尺度依赖） | 定理 15.1' |
-| **V13** | 非多项式核 $\ln\hat\lambda$：Chebyshev 系数和 $\mathbf{c}^T\boldsymbol{\tau}^{\text{red}}$ vs 约化谱积分（须先零模剥离） | 实测误差 $\le$ Bernstein 尾界 $\sum_{j>K_f}\|c_j\|$，且 $\le \gamma\|\text{exact}\|$ | §13.4 / §13.5 |
+| **V13** | 非多项式核 $\ln\hat\lambda$：Chebyshev 系数和 $\mathbf{c}^T\boldsymbol{\tau}^{\text{red}}$ vs 约化谱积分（须先零模剥离） | 实测误差 $\le$ Bernstein 尾界 $\sum_{j>K_f}\lVert c_j\rVert$，且 $\le \gamma\lVert \text{exact}\rVert$ | §13.4 / §13.5 |
 | **V14** | Bernstein 椭圆率：实测 $\ln$ 核系数衰减率 vs $\rho = \frac{1+\gamma}{1-\gamma}+\sqrt{\left(\frac{1+\gamma}{1-\gamma}\right)^2-1}$ | 实测衰减率与理论 $\rho$ 同量级 | 定理 13.2 |
-| **V15** | 同调解 vs 精确解：同一方程在 $\beta_1>0$ 复形上分别用两种判据 | 同调解步数 $\le$ 精确解步数，且 $\|h\|$ 达标 | 定义 3.1 |
-| **V16** | 同调距离：两个不同实现 $M_1^\star\neq M_2^\star$ 但同调等价（须共用同一组锁定尺度 + 锁定壳层缩放，且两者均判定 SOLVED） | $d_{\text{hom}}\le\epsilon_{\text{endo}}$ 而 $\|M_1^\star - M_2^\star\| \gg 0$ | 定义 3.2 / 定理 S5 / §13.6 |
-| **V17** | 退化警告：$\beta_1 = 0$ 复形上 $\|h\| \equiv 0$ 对任意图恒成立 | 同调解判据失效，须走规范代表准则 | §二·续 |
+| **V15** | 同调解 vs 精确解：同一方程在 $\beta_1>0$ 复形上分别用两种判据 | 同调解步数 $\le$ 精确解步数，且 $\lVert h\rVert$ 达标 | 定义 3.1 |
+| **V16** | 同调距离：两个不同实现 $M_1^\star\neq M_2^\star$ 但同调等价（须共用同一组锁定尺度 + 锁定壳层缩放，且两者均判定 SOLVED） | $d_{\text{hom}}\le\epsilon_{\text{endo}}$ 而 $\lVert M_1^\star - M_2^\star\rVert  \gg 0$ | 定义 3.2 / 定理 S5 / §13.6 |
+| **V17** | 退化警告：$\beta_1 = 0$ 复形上 $\lVert h\rVert  \equiv 0$ 对任意图恒成立 | 同调解判据失效，须走规范代表准则 | §二·续 |
 | **V18** | 规范代表：同调等价类内按 Dirichlet 能最小唯一化 | 输出唯一代表 + 三项证书 | 算子 18 / 定理 18.1 |
 
 ### v1.0 实测结果（n=12 环形+弦边复形，m_g=24）
@@ -848,18 +848,18 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 |---|---|---|---|---|
 | V5 | 可解方程残差单调下降 | $7.16\!\times\!10^{-2}\to3.83\!\times\!10^{-3}$（4 步，**非单调**） | $7.16\!\times\!10^{-2}\to2.71\!\times\!10^{-3}$（**2 步，严格单调**） | PASS |
 | V6 | 目标泛函 $\Psi$ 非增 | $2.57\!\times\!10^{-3}\to7.32\!\times\!10^{-6}$ | $2.57\!\times\!10^{-3}\to3.68\!\times\!10^{-6}$（单调性恢复） | PASS |
-| V7b | 方程尺度不变性 $F\to sF$ | — | 新式 $\|\Delta M\|$ 恒为 $4.881435483\times10^{-2}$（$s=1,10,100$，相对偏移 $8.4\times10^{-15}$）；旧式 $3.31\times10^{-1}\to3.57\times10^{-3}\to3.57\times10^{-5}$（跨 4 个数量级） | PASS（旧式 FAIL） |
+| V7b | 方程尺度不变性 $F\to sF$ | — | 新式 $\lVert \Delta M\rVert$ 恒为 $4.881435483\times10^{-2}$（$s=1,10,100$，相对偏移 $8.4\times10^{-15}$）；旧式 $3.31\times10^{-1}\to3.57\times10^{-3}\to3.57\times10^{-5}$（跨 4 个数量级） | PASS（旧式 FAIL） |
 
 **v1.1 新增项实测**：
 
 | # | 验证项 | 实测 | 结论 |
 |---|---|---|---|
 | V12 | 多谱形耦合 $\tau_2^{(1)}\tau_2^{(2)}-c=0$（$p=2$） | $F:\ -2.290\!\times\!10^{-3}\to+1.039\!\times\!10^{-4}$（2 步，单调） | PASS |
-| V13 | $\ln\hat\lambda$ 展开（含零模剥离） | $\xi_0=-1.5045$，$\rho=2.6286$；误差随阶数 $1.50\!\times\!10^{-2}(K{=}1)\to1.61\!\times\!10^{-2}(K{=}2)\to4.39\!\times\!10^{-3}\to1.61\!\times\!10^{-4}\to5.71\!\times\!10^{-5}(K{=}5)\to2.40\!\times\!10^{-7}(K{=}8)\to7.82\!\times\!10^{-10}(K{=}16)$；v1.2 余项判据给出 $K_f=2$，实测误差 $1.61\!\times\!10^{-2}\le$ 尾界 $5.19\!\times\!10^{-2}$ 且 $\le$ 内生容差 $\gamma\|\text{exact}\|=9.81\!\times\!10^{-2}$ | PASS |
+| V13 | $\ln\hat\lambda$ 展开（含零模剥离） | $\xi_0=-1.5045$，$\rho=2.6286$；误差随阶数 $1.50\!\times\!10^{-2}(K{=}1)$ → $1.61\!\times\!10^{-2}(K{=}2)$ → $4.39\!\times\!10^{-3}$ → $1.61\!\times\!10^{-4}$ → $5.71\!\times\!10^{-5}(K{=}5)$ → $2.40\!\times\!10^{-7}(K{=}8)$ → $7.82\!\times\!10^{-10}(K{=}16)$；v1.2 余项判据给出 $K_f=2$，实测误差 $1.61\!\times\!10^{-2}\le$ 尾界 $5.19\!\times\!10^{-2}$ 且 $\le$ 内生容差 $\gamma\lVert \text{exact}\rVert =9.81\!\times\!10^{-2}$ | PASS |
 | V14 | Bernstein 椭圆率 | 实测 $\rho_{\text{fit}}=3.129$ vs 理论 $\rho=2.629$，比值 $1.19$ | PASS |
 | V15 | 两级判据（$\beta_1=1$） | 同调解 2 步 / 精确解 2 步，**无分歧点**（$\rho_h\approx0.947>\gamma$ 所致，见 §17.1 限定） | PASS |
-| V16 | 同调距离 | $\|M_a^\star-M_b^\star\|=7.53\!\times\!10^{-1}$，$d_{\text{hom}}=3.42\!\times\!10^{-3}\le\epsilon_{\text{endo}}$；$\rho_h$ 扫描均值 $0.9473$ | PASS |
-| V17 | $\beta_1=0$ 退化警告 | 5 个随机残差的 $\|h\|\in[6.5,14.9]\times10^{-15}$，同调解集 = 全空间 | CONFIRMED |
+| V16 | 同调距离 | $\lVert M_a^\star-M_b^\star\rVert =7.53\!\times\!10^{-1}$，$d_{\text{hom}}=3.42\!\times\!10^{-3}\le\epsilon_{\text{endo}}$；$\rho_h$ 扫描均值 $0.9473$ | PASS |
+| V17 | $\beta_1=0$ 退化警告 | 5 个随机残差的 $\lVert h\rVert \in[6.5,14.9]\times10^{-15}$，同调解集 = 全空间 | CONFIRMED |
 | V18 | 规范代表（Dirichlet 能最小） | $E_a=3.05\times10^{-9}$ 胜出，输出三项证书 | PASS |
 
 **v1.1 实测暴露的四个要点**（均已回写进规范正文）：
@@ -876,8 +876,8 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 
 | 项 | 内容 | 实测范围 |
 |---|---|---|
-| V-A | 矩交叉 $\max\|\tau_{\text{pipe}}-\tau_{\text{eig}}\|$ | $5.3\!\times\!10^{-16}\sim2.1\!\times\!10^{-15}$ |
-| V-B | 独立残差 $\|G_{\text{eig}}(M^\star)-c\|/\|G(m_a)-c\|$（阈值 $\gamma$） | $4.9\!\times\!10^{-3}\sim1.7\!\times\!10^{-1}$ |
+| V-A | 矩交叉 $\max\lVert \tau_{\text{pipe}}-\tau_{\text{eig}}\rVert$ | $5.3\!\times\!10^{-16}\sim2.1\!\times\!10^{-15}$ |
+| V-B | 独立残差 $\lVert G_{\text{eig}}(M^\star)-c\rVert /\lVert G(m_a)-c\rVert$（阈值 $\gamma$） | $4.9\!\times\!10^{-3}\sim1.7\!\times\!10^{-1}$ |
 | V-C | 核保真：展开 vs 精确谱积分（阈值 $\gamma$） | $1.1\!\times\!10^{-3}\sim1.4\!\times\!10^{-1}$ |
 | V-D | 合法性：正边权、$\lambda_2>0$、Hankel 可行 | E01/E09 为二级裁定（见 §13.6 表） |
 | V-E | $\Psi=F^2/2$ 单调非增 | 10/10 |
@@ -895,8 +895,8 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 |---|---|
 | 总判定 | **50 / 50 SOLVED** |
 | 总步数 | 286 步（均值 $5.72$ 步/题） |
-| V-A 矩交叉 $\max\|\tau_{\text{pipe}}-\tau_{\text{eig}}\|$ | $\le 1.29\times10^{-14}$（机器精度） |
-| V-B 独立残差 $\|G_{\text{eig}}(M^\star)-c\|/\|G(m_a)-c\|$（阈值 $\gamma$） | 49 题 $<10^{-9}$；B2-E02 $=1.29\times10^{-1}$ |
+| V-A 矩交叉 $\max\lVert \tau_{\text{pipe}}-\tau_{\text{eig}}\rVert$ | $\le 1.29\times10^{-14}$（机器精度） |
+| V-B 独立残差 $\lVert G_{\text{eig}}(M^\star)-c\rVert /\lVert G(m_a)-c\rVert$（阈值 $\gamma$） | 49 题 $<10^{-9}$；B2-E02 $=1.29\times10^{-1}$ |
 | V-D 合法性 | 50/50 |
 | V-E 单调性 $\Psi$ 非增 | 50/50 |
 | V-F 算子 18 三项证书 | 50/50 |
@@ -918,7 +918,7 @@ $\mathcal{O}(M_K \cdot n_{\text{cg}} + N_K^2)$，仅执行一次。
 | 本层算子 | 依赖的既有算子 | 依赖内容 |
 |---|---|---|
 | Op13 | Op6、Op10 | $(\alpha_n,\lambda_2)$ 谱资产；$\mathcal{O}(1)$ 伪逆设施；$N_K \le K_0$ 视界钳制 |
-| Op14 | Op6、Op7、Op10 | 势重解 $\Phi$；$B$ 场蛙跳；$(DD^T)^\dagger$ 局域求解 |
+| Op14 | Op6、Op7、Op10 | 势重解 $\Phi$；$B$ 场蛙跳；$(DD^T)^{\dagger}$ 局域求解 |
 | Op15 | Op7、Op10 | 边界算子 $D,C$；Sherman-Morrison 增量递推；Dirichlet 能单调红线 |
 | Op16 | Op4、Op9 | 内生谱支撑 $[\gamma,1]$；自适应谱窗 $\tau(s)$（用于告警计数） |
 | Op17 | Op8、Op9 | $\mu_{\text{trace}}$ 仲裁链；Betti 缝合；$\mathcal{S}_{\text{stable}}$ 终止判据 |

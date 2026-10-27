@@ -8,7 +8,7 @@
 
 This paper presents the formal algebraic derivation and specification of the **Spin-Charge Adjacency Operator** ($\mathcal{O}_{\text{spin-charge}}$, designated as Operator 11) within the Status-Relational Entropy (SRE) dynamics framework. This operator overlays Pauling electronegativity differences onto the SRE smooth adjacency matrix $A_s$, encoding electronic degrees of freedom as edge weight modulations without requiring external quantum-mechanical calculations.
 
-Version 1.1 corrects two core issues from the original (D1-D2): it decouples spin polarity from mean-dependence (D2) and unifies the gain direction for heteronuclear bonds (D1), ensuring that weight modulation depends only on the bond-internal electronegativity difference $w_q = |\tanh(\chi_i - \chi_j)|$ and no longer drifts with molecular composition.
+Version 1.1 corrects two core issues from the original (D1-D2): it decouples spin polarity from mean-dependence (D2) and unifies the gain direction for heteronuclear bonds (D1), ensuring that weight modulation depends only on the bond-internal electronegativity difference $w_q = \lvert \tanh(\chi_i - \chi_j)\lvert$ and no longer drifts with molecular composition.
 
 ---
 
@@ -27,7 +27,7 @@ Operator 11 aims to encode Pauling electronegativity differences as SRE Axiom 1'
 **SRE Axiom 1 (Strict Binary Constraint)**: $M_n$ elements $\in \{+1, -1\}$, no zero elements.
 
 **SRE Edge Weight (Operator 4)**:
-$$W_e(i,j) = \frac{\sqrt{D^{\text{out}}_{ii} \cdot D^{\text{in}}_{jj}}}{\sqrt{\lambda_2 + D^{\text{self}}_{ii} + D^{\text{self}}_{jj} + \varepsilon_{\text{topo}}}} \cdot \left(1 + \frac{|M^2_{\Omega,ij}| \cdot \ln(1 + \lambda_2/\alpha_n)}{\alpha_n + \sqrt{D^{\text{out}} \cdot D^{\text{in}}}}\right)$$
+$$W_e(i,j) = \frac{\sqrt{D^{\text{out}}_{ii} \cdot D^{\text{in}}_{jj}}}{\sqrt{\lambda_2 + D^{\text{self}}_{ii} + D^{\text{self}}_{jj} + \varepsilon_{\text{topo}}}} \cdot \left(1 + \frac{\lvert M^2_{\Omega,ij}\rvert  \cdot \ln(1 + \lambda_2/\alpha_n)}{\alpha_n + \sqrt{D^{\text{out}} \cdot D^{\text{in}}}}\right)$$
 
 **SRE Information Propagation Rate (Operator 5)**:
 $$c_e = \min\left(\frac{\alpha_n}{\ln(1 + W_e) + \delta_{\text{flt}}}, c_{\max}\right)$$
@@ -50,15 +50,15 @@ where $\chi_i$ is atom $i$'s Pauling electronegativity and $\bar{\chi} = \frac{1
 
 Define the spin coupling strength for atom pair $(i,j)$:
 
-$$w_q(i,j) = |\tanh(\chi_i - \chi_j)|$$
+$$w_q(i,j) = \lvert \tanh(\chi_i - \chi_j)\lvert$$
 
 Properties:
 - $w_q \in [0, 1)$: larger electronegativity difference → stronger coupling
-- $\tanh$ saturation prevents divergence ($|\Delta\chi| > 3$ gives $w \approx 1$)
+- $\tanh$ saturation prevents divergence ($\lvert \Delta\chi\rvert  > 3$ gives $w \approx 1$)
 - Homonuclear bond (C-C): $w = 0$, no charge coupling
-- Strong polar bond (O-H): $\chi_O - \chi_H = 1.24$, $w = |\tanh(1.24)| = 0.846$
+- Strong polar bond (O-H): $\chi_O - \chi_H = 1.24$, $w = \lvert \tanh(1.24)\rvert  = 0.846$
 
-Why $\tanh$ instead of linear $|\Delta\chi|$: $\tanh(\Delta\chi)$ behaves as $|\Delta\chi|$ for $\Delta\chi \to 0$ (linear response) and saturates to 1 for $\Delta\chi \to \infty$ (strong coupling cap). This forms a duality with the $\ln(1 + W_e)$ logarithmic growth in Operator 5.
+Why $\tanh$ instead of linear $\lvert \Delta\chi\rvert$: $\tanh(\Delta\chi)$ behaves as $\lvert \Delta\chi\rvert$ for $\Delta\chi \to 0$ (linear response) and saturates to 1 for $\Delta\chi \to \infty$ (strong coupling cap). This forms a duality with the $\ln(1 + W_e)$ logarithmic growth in Operator 5.
 
 ### 2.3 Step 3 — Spin-Charge Adjacency Matrix (v1.1 Correction D1)
 
@@ -78,7 +78,7 @@ $$L_q = \text{diag}\left(\sum_j A_q[i,j]\right) - A_q$$
 
 **Spectral Quantities (Spec 4.5)**:
 $$\lambda_{2,q} = \lambda_2(L_q) \quad \text{(charge-aware Fiedler value)}$$
-$$\alpha_q = \max|\lambda(L_q)| \quad \text{(charge-aware spectral radius)}$$
+$$\alpha_q = \max\lvert \lambda(L_q)\rvert  \quad \text{(charge-aware spectral radius)}$$
 $$\kappa_q = \frac{\alpha_q}{\lambda_{2,q}} \quad \text{(charge-aware condition number)}$$
 
 By the Courant-Fischer variational theorem and Operator 4's Dirichlet energy inequality:
@@ -87,10 +87,10 @@ $$E_D^{\text{elec}}(E_s) \geq \lambda_{2,q} \cdot \|E_s\|^2 > 0 \quad \text{(whe
 ### 2.5 Diagnostic Scalars
 
 **Electronegativity Dispersion (Spec 4.6)**:
-$$q_{\text{dispersion}} = \frac{\text{std}(|\chi|)}{\text{mean}(|\chi|)}$$
+$$q_{\text{dispersion}} = \frac{\text{std}(\lvert \chi\rvert )}{\text{mean}(\lvert \chi\rvert )}$$
 
 **Maximum Spin Coupling (Theorem 11.5)**:
-$$\text{max\_spin\_coupling} = \max_{(i,j) \in E^+} |s_i \cdot s_j \cdot w_q(i,j)| = \tanh\left(\max|\Delta\chi|\right)$$
+$$\text{max\_spin\_coupling} = \max_{(i,j) \in E^+} \lvert s_i \cdot s_j \cdot w_q(i,j)\rvert  = \tanh\left(\max\lvert \Delta\chi\rvert \right)$$
 
 ---
 
@@ -110,7 +110,7 @@ $$\text{max\_spin\_coupling} = \max_{(i,j) \in E^+} |s_i \cdot s_j \cdot w_q(i,j
 
 Operator 11's output $A_q$ directly replaces $A_s$ as input to Operator 4:
 
-$$W_e^{\text{elec}}(i,j) = \frac{\sqrt{D_q^{\text{out}} \cdot D_q^{\text{in}}}}{\sqrt{\lambda_{2,q} + D_q^{\text{self}} + \varepsilon}} \cdot \left(1 + \frac{|M^2_{\Omega,ij}| \cdot \ln(1 + \lambda_{2,q}/\alpha_q)}{\alpha_q + \sqrt{D_q \cdot D_q}}\right)$$
+$$W_e^{\text{elec}}(i,j) = \frac{\sqrt{D_q^{\text{out}} \cdot D_q^{\text{in}}}}{\sqrt{\lambda_{2,q} + D_q^{\text{self}} + \varepsilon}} \cdot \left(1 + \frac{\lvert M^2_{\Omega,ij}\rvert  \cdot \ln(1 + \lambda_{2,q}/\alpha_q)}{\alpha_q + \sqrt{D_q \cdot D_q}}\right)$$
 
 This gives $W_e$ automatic charge-awareness without modifying Operator 4's formula itself.
 

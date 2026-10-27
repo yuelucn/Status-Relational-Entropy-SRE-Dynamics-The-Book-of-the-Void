@@ -85,7 +85,7 @@ $$Q(K)=\sigma(K)\cdot\deg(K)\cdot e,\qquad \deg(K)=\beta_1(K)\bmod 2,\qquad \sig
 
 ### 2.1 图作为 1-维链复形
 
-设键图 $G=(V,E)$，$|V|=n$，$|E|=m$。SRE 体系**只在 1-维复形（图）上运行**——不存在 2-胞腔（面），故
+设键图 $G=(V,E)$，$\lvert V\rvert =n$，$\lvert E\rvert =m$。SRE 体系**只在 1-维复形（图）上运行**——不存在 2-胞腔（面），故
 
 $$Z_1=\ker\partial_1,\qquad B_1=\mathrm{im}\,\partial_2=0,\qquad H_1(G;\mathbb{F}_2)=Z_1/B_1=Z_1,\qquad \dim H_1=\beta_1=E-V+c,$$
 
@@ -245,7 +245,7 @@ $$\boxed{\ \text{非平凡类可达}\iff \exists\,i,o:\ m_{i,o}=1\iff M\neq 0\ }
 
 **陈述**　若 $G$ **二分**（无奇环）且**只有 1 条边轨道**，则一切 Aut-不变赋值都平凡（electron-like）。
 
-**证明**　单轨道 $\Rightarrow s$ 为常数 $z$（$\mathbb{F}_2$）。二分 $\Rightarrow$ 所有环 $\gamma$ 长度 $|\gamma|$ 为偶。故 $\sigma(\gamma)=z^{|\gamma|}=(z)^{even}=+1$，平凡。$\blacksquare$
+**证明**　单轨道 $\Rightarrow s$ 为常数 $z$（$\mathbb{F}_2$）。二分 $\Rightarrow$ 所有环 $\gamma$ 长度 $\lvert \gamma\rvert$ 为偶。故 $\sigma(\gamma)=z^{\lvert \gamma\rvert }=(z)^{even}=+1$，平凡。$\blacksquare$
 
 **对照**（与电荷涌现论文 §10.2 一致）：
 - 电子 $Q_3$（立方体图）：二分、单边轨道 $\Rightarrow$ **强制平凡**（$[s]=0$）；
@@ -423,7 +423,7 @@ $$\operatorname{rank}_\mathrm{hol}=\dim\operatorname{im}\Phi_G=\dim W(G)-\dim\ke
 | 1 键图 | $A_s$ | 布尔邻接 $\mathrm{adj}$ | $\mathcal{O}(n^2)$ |
 | 2 图不变量 | $\mathrm{adj}$ | $V,E,c,\beta_1,\deg,\text{bipartite}$ | $\mathcal{O}(n^2)$ |
 | 3 基本环基 | $\mathrm{adj}$ | $\{\gamma_i\}_{i\le\beta_1}$ | $\mathcal{O}(n^2+E\cdot L)$ |
-| 4 环 holonomy | $\{\gamma_i\},s$ | $\sigma$-vector、trivial | $\mathcal{O}(\sum_i|\gamma_i|)$ |
+| 4 环 holonomy | $\{\gamma_i\},s$ | $\sigma$-vector、trivial | $\mathcal{O}(\sum_i\lvert \gamma_i\rvert )$ |
 | 5 自同构（可选） | $\mathrm{adj},\text{colors}$ | $E$ 的轨道 | 受 `aut_cap`/`aut_max_v` 守卫（缺省 $V\le22$，否则跳过） |
 | 6 可达性（可选） | $\{\gamma_i\},\{\text{轨道}\}$ | $M$、非平凡可达、见证 | $\mathcal{O}(\beta_1\cdot k)$ |
 

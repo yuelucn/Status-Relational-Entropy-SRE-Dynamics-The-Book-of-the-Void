@@ -18,14 +18,14 @@
 ### 1.1 局域重叠周界与视界饱和界限
 设全局图链复形网格经由分布式切割后，被划分为 $m_g$ 个局域子网片。定义第 $\alpha$ 个局部子网（Local Sub-domain）为 $\Omega_{\alpha}$。
 * **局域视界节点规模 $N_K$**：由前置算子 2 的“全局度饱和定理”和内源拓扑防火墙强行钳制，单个局部子网内部包含的最大有向顶点数被死死卡在固定常数上限内，满足：
-  $$N_K = |\Omega_{\alpha}| \le K_0 \ll n$$
+  $$N_K = \lvert \Omega_{\alpha}\rvert  \le K_0 \ll n$$
   此项约束确保了后继所有代数阀算子的单步计算开销与全网总节点膨胀 $n$ 彻底线性解耦。
 * **重叠周界交错边界域 $\partial \Omega_{\alpha \beta}$**：定义相邻 Actor $\text{Actor}_{\alpha}$ 与 $\text{Actor}_{\beta}$ 之间具有异步共同读写权限的相交公共 1-链边集。
 
 ### 1.2 写冲突状态方差张量 $\mathbf{V}_{\text{write}}$ 的代数本质
 当多个分布式 Actor 绕过互斥锁、并发向重叠周界 $\partial \Omega_{\alpha \beta}$ 发射覆写指令时，通道处的二元自旋极性（$\pm 1$ 自旋状态）因非同步脉冲步长而产生非连续阶跃波动。
 
-我们完全允许此冲突的发生，并将多路改写不对称差值在代数层面上形式化为**写冲突状态方差张量 $\mathbf{V}_{\text{write}} \in \mathbb{R}^{M_K \times M_K}$**（其中 $M_K = |\partial \Omega_{\alpha \beta}| \le N_K$ 为边界重叠边数）。该方阵具有严格的对称极性特征。
+我们完全允许此冲突的发生，并将多路改写不对称差值在代数层面上形式化为**写冲突状态方差张量 $\mathbf{V}_{\text{write}} \in \mathbb{R}^{M_K \times M_K}$**（其中 $M_K = \lvert \partial \Omega_{\alpha \beta}\rvert  \le N_K$ 为边界重叠边数）。该方阵具有严格的对称极性特征。
 
 ### 1.3 本地微迹校正微算子 $\mu_{\text{trace}}$ 与母池投射
 算子 8 拒绝全局同步对齐，在每个 Actor 的局部视界内部部署独立裁决的**本地微迹校正微算子 $\mu_{\text{trace}}$**。
@@ -97,7 +97,7 @@ $$\Delta \Pi_{\text{valve}}(s) = - \text{[Positive Coefficient]} \times \text{[P
 
 ### 4.2 局域化多项式复杂度夹紧
 由于前置算子 2 建立的“全局度饱和定理”在硬件逻辑层硬性将每个分区拓扑子域的内部视界人口截断夹紧为独立常量：
-$$N_K = |\Omega_{\alpha}| \le K_0 \ll n$$
+$$N_K = \lvert \Omega_{\alpha}\rvert  \le K_0 \ll n$$
 算子 8 评估本地微迹校正算子 $\mu_{\text{trace}}$ 与构筑阀控通量散度张量 $\mathbf{\Phi}_{\text{valve}}$ 的初等标量浮点运算，其矩阵外积投影与迹积结算的累积总计数仅与局域边界重叠边数 $M_K$ 呈二次多项式缩放关系。
 
 由于分布式 Actor 层采用并发多路流异步推进，整个流水线第四阶段的 Leading-order 运行时开销被物理卡死在局域多项式上限内：

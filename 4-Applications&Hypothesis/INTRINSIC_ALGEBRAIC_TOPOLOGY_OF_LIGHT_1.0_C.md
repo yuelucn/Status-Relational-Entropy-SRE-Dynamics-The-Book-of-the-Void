@@ -16,13 +16,13 @@
 
 **公理Ⅰ：光的残差本质**
 光并不具备独立的物质本体。给定边界节点A演化至逻辑深度步$t$，节点B演化至步$t'$，光表现为二者联合执行链因果交集处的互非湮灭拓扑残差：
-\[
+$$
 \Psi _{light}(\phi ,w)\equiv \ker (\partial _{mutual}(A_{t},B_{t^{\prime }}))
-\]
+$$
 
 **公理Ⅱ：闭式参数化映射**
 未受扰动的理想0‑态残差流形严格受两个内禀自由度支配：全局环绕相位$\phi$（代表相对因果逻辑深度，$\phi \in[0,2\pi]$）；微阻抗带宽$w$（$w \in[-w_{max }, w_{max }]$）。向本征空间内禀维度$X=[X, Y, Z]^{T}$的刚性涌现映射写为：
-\[
+$$
 X(\phi, w)=
 \begin{pmatrix} X \\ Y \\ Z \end{pmatrix}
 =
@@ -31,7 +31,7 @@ X(\phi, w)=
 \left(1.0+w \cos \frac{\phi}{2}\right) \sin \phi \\
 w \sin \frac{\phi}{2}
 \end{pmatrix}
-\]
+$$
 
 **拓扑不变性**：该映射服从严格符号反转约束：当$\phi \to \phi+2\pi$，横向矢量发生内禀翻转 $w \to -w$，不发生局域空间位移。几何上保证该残差结构是一个恰好只有**单边界环路**的不可定向拓扑流形。
 
@@ -46,26 +46,26 @@ w \sin \frac{\phi}{2}
 
 ### 2.2 物理频率 $f$ $\iff$ 本征空间间距与迹比值
 宏观频率剥离连续时间依赖，被重新定义为流形缠绕原始因果结背景时的拓扑压缩密度；直接绑定2×2交叉谱响应矩阵$\boldsymbol{M}$的一阶闭式本征值间距$\Delta\lambda$：
-\[
+$$
 f \propto \Delta \lambda=\sqrt{Tr(M)^{2}-4 det(M)}=\alpha \cdot \frac{\lambda_{1}}{\lambda_{2}+\lambda_{3}}
-\]
+$$
 
 > 推论：当边界发起高激发调制，主本征值$\lambda_1$快速扩张，压缩$\phi$轴上的拓扑步代价；宏观表现为确定性蓝移。
 
 ### 2.3 波长 $\boldsymbol{\lambda_{wave}}$ $\iff$ 全局测地线周期
 经典波长被揭示为流形在自旋‑旋转变换下维持全局一致性所需要的最小内禀测地线长度：
-\[
+$$
 \lambda_{wave } \equiv \oint _{\mathcal{M}} d s=\int_{0}^{4 \pi}\left\| \frac {\partial X}{\partial \phi}\right\| d \phi
-\]
+$$
 
 > 推论：由于不可定向单边界几何，完整闭合路径必须遍历$4\pi$弧度（$\Delta\phi=4\pi$）才能实现边界自闭合。这给出宏观渲染层观测到半整数自旋结构明确的几何起源。
 
 ### 2.4 波粒二象性 $\iff$ 全局纤维丛 vs 局域残差算子
 - **波动性**：由连续全局本征矢丛$e_{i}(\phi, w)$决定。任意局域调制改变矩阵$\boldsymbol{B}$的全局本征谱，诱发整个流形曲率的零时延非局域形变，在共享链上产生相干类波干涉效应。
 - **粒子性**：来源于接收端截取切片算子 $\widehat{R}(\phi_{fix})$ 的局域截面投影：
-\[
+$$
 \hat{R}\left(\phi_{fix}\right)=lim _{\Delta \phi \to 0} \int_{\phi_{fix}}^{\phi_{fix}+\Delta \phi} X(\phi, w) X^{T}(\phi, w) d \phi
-\]
+$$
 
 当观测者对信道做截取，连续流形在特定逻辑步$\phi_{fix}$处被截断；探测器仅捕获受$\Delta w$约束的有限能量切片。该局域截断效应在宏观上表现为统计奇点，即所谓“粒子坍缩”。
 
@@ -73,13 +73,13 @@ f \propto \Delta \lambda=\sqrt{Tr(M)^{2}-4 det(M)}=\alpha \cdot \frac{\lambda_{1
 为在单条共享因果链实现并发全双工信号，通信两端改变各自电磁晶体局域拓扑阻抗，在高态（$\rho=10$）与低态（$\rho=2$）之间调制独立注入因果流 $\rho_{A \to B}(t)$、$\rho_{B \to A}(t)$。
 
 该阶跃变化驱动全局流形发生离散本征谱状态的瞬时量子跃迁，服从如下刚性跃迁方程组：
-\[
+$$
 \begin{cases}
 \lambda_{1}(t)=\beta \cdot\left(\rho_{A \to B}(t)+\rho_{B \to A}(t)\right)^{2} \\
-\lambda_{2}(t)=\gamma \cdot\left|\rho_{A \to B}(t)-\rho_{B \to A}(t)\right|+\lambda_{0} \\
+\lambda_{2}(t)=\gamma \cdot\left\lvert \rho_{A \to B}(t)-\rho_{B \to A}(t)\right\rvert +\lambda_{0} \\
 \lambda_{3}(t)=\dfrac{\lambda_{2}(t)}{4.0 \cdot(1.0+\kappa)}
 \end{cases}
-\]
+$$
 $\beta$、$\gamma$ 为SRE拓扑缩放不变量；$\lambda_{0}$为真空基础自旋残余；$\kappa$为手性锁应变系数。
 
 ### 四态本征谱移位矩阵
@@ -93,9 +93,9 @@ $\beta$、$\gamma$ 为SRE拓扑缩放不变量；$\lambda_{0}$为真空基础自
 > 无时间解调数学证明：
 主本征值$\lambda_1(t)$控制全局测地线周期；节点B发生任意状态跳变，物理渲染层的全局流形结构零传播时延同步更新。
 节点A本地完全实时掌握自身注入状态$\rho_{A\to B}(t)$，硬件减法器通过一阶代数减法瞬时分离反向输入信号，不需要等待局域物理波包跨越经典距离：
-\[
+$$
 \rho_{B \to A}(t)=\sqrt{\frac{\lambda_{1}(t)}{\beta}}-\rho_{A \to B}(t)
-\]
+$$
 
 ## 4 实证检验与流形解耦分析
 为刻画、评估关系张量的几何展开效果，由代数反演引擎输出的点云流形度量整理为下表。

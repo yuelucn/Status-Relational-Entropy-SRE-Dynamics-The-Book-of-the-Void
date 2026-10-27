@@ -158,7 +158,7 @@ $$\eta = \frac{\hbar c}{kT \cdot L}, \qquad V_T = \frac{\hbar c}{\eta \cdot q \c
 | 经典概念 | SRE 本体层表述 | 对应 Operator / 公理 |
 |---|---|---|
 | 晶格结构（周期性） | 局部拓扑子网络（节点=原子，边=共价键 $s_{ij} \in \{+1,-1\}$） | 公理 I + Operator 4（平滑邻接 $A_s$） |
-| 电负性差 | 自旋耦合强度 $w_q(i,j) = |\tanh(\chi_i - \chi_j)|$ | Operator 11（自旋-电荷邻接） |
+| 电负性差 | 自旋耦合强度 $w_q(i,j) = \lvert \tanh(\chi_i - \chi_j)\rvert$ | Operator 11（自旋-电荷邻接） |
 | 载流子（电子） | 三维立方体 $Q_3$ 拓扑闭环（$V=8, E=12, \beta_1=5$，二分图 + 边传递 → 强制平凡 holonomy 类 = 电子型） | 电荷涌现 §10.2 + 算子 19（T6） |
 | 载流子（空穴） | 晶格图中电子 $Q_3$ 闭包的**补图闭包** $K_h = G_{\text{lattice}} \setminus K_e$：金刚石晶格本为二分图（全偶环 + 近似单边轨道 → 整体 electron-like），移除一个二分闭包后剩余拓扑出现奇环 + 多条边轨道 → 允许非平凡 holonomy（算子 19 T6 判据翻转为 nucleon-like）。空穴不是质子，是晶格中的拓扑空态 | 算子 19（T6 二分性破坏 → 允许非平凡 $\sigma$） |
 | PN 结势垒 | P 型/N 型拓扑子网络的一阶邻接刷新速率不连续 | 经典电动力学 §3.III |
@@ -205,7 +205,7 @@ $$\eta = \frac{\hbar c}{kT \cdot L}, \qquad V_T = \frac{\hbar c}{\eta \cdot q \c
 
 Operator 11（自旋-电荷邻接算子）将 Pauling 电负性差异编码为二元自旋耦合强度：
 
-$$w_q(i,j) = |\tanh(\chi_i - \chi_j)|$$
+$$w_q(i,j) = \lvert \tanh(\chi_i - \chi_j)\lvert$$
 
 电荷加权邻接矩阵为：
 
@@ -222,7 +222,7 @@ $$A_q(i,j) = A_s(i,j) \cdot \bigl(1 + \rho \cdot w_q(i,j)\bigr)$$
 
 $$g(\text{III-Si}) > g(\text{V-Si}) > g(\text{Si-Si})$$
 
-P 区的电负性差 $\Delta\chi_{\text{P}} = |\chi_{\text{III}} - \chi_{\text{Si}}|$ 大于 N 区的 $\Delta\chi_{\text{N}} = |\chi_{\text{V}} - \chi_{\text{Si}}|$，导致电荷加权邻接 $A_q$ 在界面处出现不连续，进而在一阶邻接刷新速率上产生梯度。
+P 区的电负性差 $\Delta\chi_{\text{P}} = \lvert \chi_{\text{III}} - \chi_{\text{Si}}\lvert$ 大于 N 区的 $\Delta\chi_{\text{N}} = \lvert \chi_{\text{V}} - \chi_{\text{Si}}\lvert$，导致电荷加权邻接 $A_q$ 在界面处出现不连续，进而在一阶邻接刷新速率上产生梯度。
 
 ### 2.3 SRE→SI 观测映射锚（工程对接）
 
@@ -485,13 +485,13 @@ Ebers-Moll 模型将晶体管分解为两个背靠背的二极管（发射结 + 
 - 配对湮灭 = 电子型闭环（$\sigma = +1$ 平凡类）与核子型闭环（$\sigma = -1$ 非平凡类）相遇 → 复合后 $\sigma_{\text{comp}} = (+1) \cdot (-1) = -1 \neq 0$，但 $\deg_{\text{comp}}$ 随复合后拓扑重算
 - 热平衡：生成速率 = 复合速率，由拓扑密度涨落的概率分布（Operator 4 的平滑邻接 $A_s$ 统计）决定
 
-**关键数值**：$n_i$ 的数量级由拓扑子网络的节点总数 $|V|$ 和热涨落概率 $\propto e^{-\lambda_2 / k_B T}$（这里 $\lambda_2$ 是图拉普拉斯代数连通度）共同决定，在 SRE 中不需要引入"能带隙 $E_g$"概念。
+**关键数值**：$n_i$ 的数量级由拓扑子网络的节点总数 $\lvert V\rvert$ 和热涨落概率 $\propto e^{-\lambda_2 / k_B T}$（这里 $\lambda_2$ 是图拉普拉斯代数连通度）共同决定，在 SRE 中不需要引入"能带隙 $E_g$"概念。
 
 ### 6.2 $n_i$ 的温度依赖
 
 传统：$n_i \propto T^{3/2} \exp(-E_g / 2k_B T)$
 
-SRE：$n_i \propto |V| \cdot P(W_e > W_e^{\text{thresh}})$，其中 $P(W_e > W_e^{\text{thresh}})$ 是拓扑密度超过撕裂阈值的概率，$\propto e^{-\lambda_2(W_e^{\text{thresh}}) / \text{有效涨落幅度}}$，有效涨落幅度随温度线性增大（拓扑统计退相干强度 = 宏观温度）。
+SRE：$n_i \propto \lvert V\rvert  \cdot P(W_e > W_e^{\text{thresh}})$，其中 $P(W_e > W_e^{\text{thresh}})$ 是拓扑密度超过撕裂阈值的概率，$\propto e^{-\lambda_2(W_e^{\text{thresh}}) / \text{有效涨落幅度}}$，有效涨落幅度随温度线性增大（拓扑统计退相干强度 = 宏观温度）。
 
 ---
 
@@ -518,7 +518,7 @@ SRE：$n_i \propto |V| \cdot P(W_e > W_e^{\text{thresh}})$，其中 $P(W_e > W_e
 
 2. **观测映射锚是工程接口**：$\kappa_I, \kappa_R, \kappa_V, \kappa_P$ 四个观测映射锚（经典电动力学 v1.1-rev §3）借用已知普适物理常数（$e, h, Z_0$）作为转换接口，这些系数尚未从 SRE 公理内部完全内生导出——从因果网络动力学内生涌现全部普适常数属于 SRE 远期理论目标。
 
-3. **数值对齐依赖仿真逆推**：推导中的具体数值（如 $V_T \approx 26$ mV、$\beta \approx 120$ 等）需要结合 SRE 半导体拓扑子网络的节点数 $|V|$、边极性赋值、掺杂拓扑密度等参数进行仿真标定，不是从公理直接解析得到。
+3. **数值对齐依赖仿真逆推**：推导中的具体数值（如 $V_T \approx 26$ mV、$\beta \approx 120$ 等）需要结合 SRE 半导体拓扑子网络的节点数 $\lvert V\rvert$、边极性赋值、掺杂拓扑密度等参数进行仿真标定，不是从公理直接解析得到。
 
 4. **不替代传统工程模型**：SRE 框架提供的是**新拓扑分析视角**，用于揭示传统 Ebers-Moll、Gummel-Poon 等模型背后的拓扑机制，服务工程应用的拓扑感知优化（如通过拓扑阻抗设计降低 $\beta$ 温度漂移），不是要替代传统 SPICE 级别的器件仿真工具链。
 

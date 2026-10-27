@@ -28,9 +28,9 @@ To fully formalise the framework, powers of adjacency matrix $\boldsymbol{A}$ di
 - **Higher-Order Adjacency $\boldsymbol{A^{k}}$**: Represents long-range cross-network causal phase-locking. When an electronic node-cluster maintains a constant refresh rate (macroscopic uniform linear motion), its first-order local symmetry remains unbroken. Nevertheless its evolutionary flow permeates deep matrix layers at intrinsic velocity $c$. Upon encountering another cluster with matching step-refresh rate at the $k$-th-order network boundary, synchronised co-evolution is triggered. Macroscopically this manifests as the magnetic field.
 
 **Topological Resistance Fraction**: Making use of Kirchhoff’s Matrix-Tree Theorem, the determinant ratio
-\[
+$$
 \frac{\det(D-A)^{(1)}}{\det(D-A)^{(k)}}
-\]
+$$
 The determinant of graph-Laplacian matrix $L=D-A$ counts spanning-trees (valid information channels). This ratio directly quantifies structural obstruction from the intervening grid against higher-order causal propagation, replacing macroscopic resistivity $\rho$.
 
 ## 3 Dimensional Quantization and Observational-Mapping Anchors
@@ -108,7 +108,7 @@ $$
 \frac{\partial^{2} \Psi}{\partial t^{2}}+\left(\frac{\kappa_{V}}{\kappa_{I} \cdot \Delta \tau^{2}}\right) L_{\mathrm{graph}} \Psi=0
 $$
 Where $t=S \cdot \Delta\tau$ represents macro-seconds; $L_{\mathrm{graph}}=D-A$ is the normalised graph-Laplacian matrix in standard Farad and Ohm dimensions.
-Under continuous-spatial limit with node cardinality $|V| \to \infty$ and geodesic-step size $\Delta\ell \to 0$, the scaled discrete graph-Laplacian operator rigorously converges to the continuous Beltrami-Laplace operator:
+Under continuous-spatial limit with node cardinality $\lvert V\rvert  \to \infty$ and geodesic-step size $\Delta\ell \to 0$, the scaled discrete graph-Laplacian operator rigorously converges to the continuous Beltrami-Laplace operator:
 $$
 \lim _{\Delta \ell \to 0} \frac{1}{\Delta \ell^{2}} L_{\mathrm{graph}} \Psi=-c^{2} \nabla^{2} \Psi
 $$
@@ -120,7 +120,7 @@ $$
 
 According to spectral-scaling rules for Riemannian graph-manifolds, the lowest non-zero eigenvalue (Fiedler eigenvalue $\lambda_{1}$) under Dirichlet boundary-conditions represents the fundamental system-resonance modal limit:
 $$
-\frac{1}{\lambda_{1}}=\iint_{\mathcal{G}} G(x, y) d C_{\mathrm{op}}(x) d L_{\mathrm{op}}(y) \stackrel{|\mathcal{V}| \to \infty}{\to} L \cdot C
+\frac{1}{\lambda_{1}}=\iint_{\mathcal{G}} G(x, y) d C_{\mathrm{op}}(x) d L_{\mathrm{op}}(y) \stackrel{\lvert \mathcal{V}\rvert  \to \infty}{\to} L \cdot C
 $$
 
 Substituting dimensionalised spectral identity for macroscopic angular frequency $\omega=2 \pi f$, the evolutionary coefficient yields perfect dimensional closure:

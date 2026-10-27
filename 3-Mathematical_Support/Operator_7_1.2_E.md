@@ -16,28 +16,28 @@ The primary mathematical breakthrough of this work resides in the definitive pro
 To guarantee un-fragmented cross-operator data flow and eliminate the systematic representations errors induced by overlapping cycle definitions, we introduce a strict 1-based index discrete graph cohomology symbol system. This layout separates the graph's native topological boundaries from the pre-emptive pruning bounds imposed by upstream Actors.
 
 ### 1.1 Labeled Graph Chain Complex Notation
-Let the un-pruned discrete topological background matrix at step $n$ be formalized as a non-background-dependent labeled graph $G = (V, E)$. We construct the standard real-valued scalar 0-chain space $C_0(V; \mathbb{R}) \cong \mathbb{R}^{|V|}$ and 1-chain space $C_1(E; \mathbb{R}) \cong \mathbb{R}^{|E|}$.
+Let the un-pruned discrete topological background matrix at step $n$ be formalized as a non-background-dependent labeled graph $G = (V, E)$. We construct the standard real-valued scalar 0-chain space $C_0(V; \mathbb{R}) \cong \mathbb{R}^{\lvert V\rvert }$ and 1-chain space $C_1(E; \mathbb{R}) \cong \mathbb{R}^{\lvert E\rvert }$.
 * **The Native Boundary Operator**: We define the linear cell boundary operator as $\partial_1: C_1 \to C_0$. Its exact dual algebraic adjoint defines the native coboundary operator: $\delta_0 = \partial_1^T: C_0 \to C_1$. For any discrete graph complex, the boundary nilpotency property ($\partial_1 \circ \partial_2 \equiv \mathbf{0}$, or dically $\delta_1 \circ \delta_0 \equiv \mathbf{0}$) is an immutable categorical invariant.
-* **The Cohomological Loop Space Basis Matrix ($\mathbf{B}_{\text{co}}$)**: We rigorously deprecate the overloaded symbol $\mathbf{C}_{\text{global}}$. Let $\mathbf{B}_{\text{co}} \in \mathbb{R}^{M \times |E|}$ (where $M = |E| - \operatorname{rank}(\partial_1)$ specifies the dimension of the fundamental cycle space) denote the standard 1-st order cohomological loop generator matrix. By definition, its row vectors form a complete orthogonal basis of the loop space, unconditionally satisfying the dual algebraic nilpotency criteria:
+* **The Cohomological Loop Space Basis Matrix ($\mathbf{B}_{\text{co}}$)**: We rigorously deprecate the overloaded symbol $\mathbf{C}_{\text{global}}$. Let $\mathbf{B}_{\text{co}} \in \mathbb{R}^{M \times \lvert E\lvert }$ (where $M = \lvert E\rvert  - \operatorname{rank}(\partial_1)$ specifies the dimension of the fundamental cycle space) denote the standard 1-st order cohomological loop generator matrix. By definition, its row vectors form a complete orthogonal basis of the loop space, unconditionally satisfying the dual algebraic nilpotency criteria:
   $$\mathbf{B}_{\text{co}} \cdot \delta_0 \equiv \mathbf{0} \quad \text{and} \quad \partial_1 \cdot \mathbf{B}_{\text{co}}^T \equiv \mathbf{0}$$
 
 ### 1.2 Algebraic Re-characterization of Pre-emptive Pruning Filters
 The upstream Operator 2-Batch ($\mathcal{O}_{\text{gate\_batch}}$) functions as an early causal firewall. To align its mechanics with strict chain complex axioms, its operational outcome is formalized not as a modification of native nilpotency, but as the preservation of non-degeneracy over effective sub-blocks. 
 
-Let the effective frontier channel projection matrix be denoted as a diagonal matrix $\mathbf{P}_{\chi} \in \mathbb{R}^{|E| \times |E|}$, where the diagonal entries are boolean variables satisfying $\chi_e \in \{0, 1\}$. The pre-emptive batch exemption enforced on non-homomorphic bridge edges by Operator 2-Batch guarantees that the pruned 1-st order cohomological basis $\mathbf{B}_{\text{co}} \cdot \mathbf{P}_{\chi}$ maintains a strictly positive, non-vanishing minimal singular value spectral gap:
+Let the effective frontier channel projection matrix be denoted as a diagonal matrix $\mathbf{P}_{\chi} \in \mathbb{R}^{\lvert E\rvert  \times \lvert E\rvert }$, where the diagonal entries are boolean variables satisfying $\chi_e \in \{0, 1\}$. The pre-emptive batch exemption enforced on non-homomorphic bridge edges by Operator 2-Batch guarantees that the pruned 1-st order cohomological basis $\mathbf{B}_{\text{co}} \cdot \mathbf{P}_{\chi}$ maintains a strictly positive, non-vanishing minimal singular value spectral gap:
 $$\sigma_{\min}\left( (\mathbf{B}_{\text{co}} \mathbf{P}_{\chi}) (\mathbf{B}_{\text{co}} \mathbf{P}_{\chi})^T \right) \ge \lambda_2(n) > 0$$
 This explicitly maps the upstream causal pre-pruning into a rigid, non-zero spectral constraint streamed directly into the Operator 7 pipeline.
 
 ### 1.3 Domain Foundations for Symplectic Dual Embeddings
 To legitimize the injection of complex/dual structures over a purely real-valued discrete binary spin chain complex without relying on external geometric coordinates, we construct a strict Symplectic Embedding Space over the product complex domain. 
 
-During the micro-step relaxation phase $s$, the high-dimensional directed conduction error flow vector is $E_s \in C_1(E; \mathbb{R}) \cong \mathbb{R}^{|E| \times 1}$. We link this vector to an auxiliary conjugate co-chain flow variable $P_s \in \mathbb{R}^{|E| \times 1}$ generated natively by the adjoint filter. These independent streams are compounded into a unified discrete Symplectic Vector $Z_s = [E_s^T, P_s^T]^T \in \mathbb{R}^{2|E|}$. 
+During the micro-step relaxation phase $s$, the high-dimensional directed conduction error flow vector is $E_s \in C_1(E; \mathbb{R}) \cong \mathbb{R}^{\lvert E\rvert  \times 1}$. We link this vector to an auxiliary conjugate co-chain flow variable $P_s \in \mathbb{R}^{\lvert E\rvert  \times 1}$ generated natively by the adjoint filter. These independent streams are compounded into a unified discrete Symplectic Vector $Z_s = [E_s^T, P_s^T]^T \in \mathbb{R}^{2\lvert E\rvert }$. 
 
-We define the standard constant Symplectic Matrix $\mathbf{J}$ satisfying $\mathbf{J}^2 = -\mathbf{I}_{2|E|}$ and $\mathbf{J}^T = -\mathbf{J}$ as:
-$$\mathbf{J} = \begin{pmatrix} \mathbf{0} & \mathbf{I}_{|E|} \\ -\mathbf{I}_{|E|} & \mathbf{0} \end{pmatrix}$$
+We define the standard constant Symplectic Matrix $\mathbf{J}$ satisfying $\mathbf{J}^2 = -\mathbf{I}_{2\lvert E\rvert }$ and $\mathbf{J}^T = -\mathbf{J}$ as:
+$$\mathbf{J} = \begin{pmatrix} \mathbf{0} & \mathbf{I}_{\lvert E\rvert } \\ -\mathbf{I}_{\lvert E\rvert } & \mathbf{0} \end{pmatrix}$$
 The mathematical instantiation of the micro-step half-interval $s+1/2$ is rigorously defined as an entry-wise projection along the Lie algebraic Hamiltonian flow invariant generated by $\mathbf{J}$, validating the geometric embedding of dual phase variables across real binary networks.
 
-> **Remark on Symplectic Functorial Completeness**: For any finite network, the 1-chain flow space $C_1(E;\mathbb{R})$ possesses a non-degenerate finite-dimensional linear vector space structure $\mathbb{R}^{|E|}$. The product space $\mathbb{R}^{|E|} \times \mathbb{R}^{|E|} \cong \mathbb{R}^{2|E|}$ perfectly inherits a closed anti-symmetric bilinear form defined by the canonical symplectic structure $\omega(X,Y) = X^T \mathbf{J} Y$. This structurally proves that the embedding morphism mapping satisfies category-theoretic compatibility with the discrete underlying binary spin configuration space, guaranteeing that the functor preserves basic chain operator mapping rules.
+> **Remark on Symplectic Functorial Completeness**: For any finite network, the 1-chain flow space $C_1(E;\mathbb{R})$ possesses a non-degenerate finite-dimensional linear vector space structure $\mathbb{R}^{\lvert E\rvert }$. The product space $\mathbb{R}^{\lvert E\rvert } \times \mathbb{R}^{\lvert E\rvert } \cong \mathbb{R}^{2\lvert E\rvert }$ perfectly inherits a closed anti-symmetric bilinear form defined by the canonical symplectic structure $\omega(X,Y) = X^T \mathbf{J} Y$. This structurally proves that the embedding morphism mapping satisfies category-theoretic compatibility with the discrete underlying binary spin configuration space, guaranteeing that the functor preserves basic chain operator mapping rules.
 ## 2. Rigorous Analytical Closed-Form Formulations of Operator 7
 
 Bypassing low-order approximations, Operator 7 ($\mathcal{O}_{\text{lock}}$) acts directly upon the dual-domain interleaved spaces at the micro-step $s+1/2$.
@@ -45,10 +45,10 @@ Bypassing low-order approximations, Operator 7 ($\mathcal{O}_{\text{lock}}$) act
 ### 2.1 Adjoint Cohomological Filter Loop-Locking Operator
 Utilizing the non-degenerate cohomology generator basis $\mathbf{B}_{\text{co}}$, Operator 7 pulls back the 1-chain error divergence sequence processed by the upstream cascade multiplication pipelines, locking it onto the fundamental loop manifold:
 $$\Lambda_{\text{lock}}(E_s) \equiv \mathbf{B}_{\text{co}}^T \left( \mathbf{B}_{\text{co}} \cdot \mathbf{P}_{\mu} \cdot E_s \right)$$
-where $\mathbf{P}_{\mu} \in \mathbb{R}^{|E| \times |E|}$ represents the localized single-pulse effective weight diagonal allocation matrix.
+where $\mathbf{P}_{\mu} \in \mathbb{R}^{\lvert E\rvert  \times \lvert E\rvert }$ represents the localized single-pulse effective weight diagonal allocation matrix.
 
 ### 2.2 Explicit Formulation of the Complex Dual Equalizer
-Within the intermediate symplectic phase state $s+1/2$, the Complex Dual Equalizer column vector $B_{s+1/2} \in \mathbb{R}^{|E| \times 1}$ is explicitly derived as a single-valued, continuous tangential gradient map bound to an internal strictly convex SRE Energy Potential Function $\mathcal{E}_{\text{SRE}}(E_s)$:
+Within the intermediate symplectic phase state $s+1/2$, the Complex Dual Equalizer column vector $B_{s+1/2} \in \mathbb{R}^{\lvert E\rvert  \times 1}$ is explicitly derived as a single-valued, continuous tangential gradient map bound to an internal strictly convex SRE Energy Potential Function $\mathcal{E}_{\text{SRE}}(E_s)$:
 $$B_{s+1/2} = \Xi_{\text{dual}} \cdot \tanh \left( \mathbf{B}_{\text{co}} \cdot E_s \right) + \gamma_{\text{topo}} \cdot \left[ \nabla \mathcal{E}_{\text{SRE}}(E_s) \right]$$
 where the explicit algebraic composition of the localized SRE convex energy landscape is specified as:
 $$\mathcal{E}_{\text{SRE}}(E_s) = \frac{1}{2} E_s^T \left( \mathbf{B}_{\text{co}}^T \mathbf{B}_{\text{co}} \right) E_s + \sum_{e \in E} \ln\left( \cosh(E_s(e)) \right)$$
@@ -79,7 +79,7 @@ $$\delta \Pi(s) = (\delta \Omega_s)^T B_{s+1/2} + \Omega_s^T (\delta B_{s+1/2}) 
   
   Substituting the explicit Hessian matrix of the convex potential into the trailing term yields:
   $$\nabla^2 \mathcal{E}_{\text{SRE}}(E_s) = \mathbf{B}_{\text{co}}^T \mathbf{B}_{\text{co}} + \mathbf{D}_{\operatorname{sech}}(E_s)$$
-  where $\mathbf{D}_{\operatorname{sech}}(E_s) \in \mathbb{R}^{|E| \times |E|}$ is a diagonal matrix whose elements are strictly bounded positive scalars: $\mathbf{D}_{\operatorname{sech}}(e,e) = \operatorname{sech}^2(E_s(e)) > 0$.
+  where $\mathbf{D}_{\operatorname{sech}}(E_s) \in \mathbb{R}^{\lvert E\rvert  \times \lvert E\rvert }$ is a diagonal matrix whose elements are strictly bounded positive scalars: $\mathbf{D}_{\operatorname{sech}}(e,e) = \operatorname{sech}^2(E_s(e)) > 0$.
   
   We isolate the right-hand trailing inner product component $\Omega_s^T (\delta B_{s+1/2})$ by substituting $\Omega_s^T = E_s^T \mathbf{B}_{\text{co}}^T$:
   $$\Omega_s^T (\delta B_{s+1/2}) = (\mathbf{B}_{\text{co}} E_s)^T \left[ \Xi_{\text{dual}} \operatorname{sech}^2(\mathbf{B}_{\text{co}} E_s) \mathbf{B}_{\text{co}} \delta E_s \right] + \gamma_{\text{topo}} E_s^T \mathbf{B}_{\text{co}}^T \left[ \mathbf{B}_{\text{co}}^T \mathbf{B}_{\text{co}} + \mathbf{D}_{\operatorname{sech}}(E_s) \right] \delta E_s$$
@@ -99,7 +99,7 @@ $$\delta \Pi(s) = (\delta \Omega_s)^T B_{s+1/2} + \Omega_s^T (\delta B_{s+1/2}) 
   The kernel space of the boundary operator $\operatorname{Ker}(\partial_1)$ (the native cycle space of the network) is linearly spanned by the row vectors of the 1-st order cohomological loop generator matrix, which means $\operatorname{Ker}(\partial_1) \equiv \operatorname{Im}(\mathbf{B}_{\text{co}}^T)$. 
   
   The identity $\mathbf{B}_{\text{co}}^T B_{s+1/2} \equiv \mathbf{0}$ perfectly demonstrates that the equalizer flow vector $B_{s+1/2}$ is unconditionally orthogonal to the entire closed cycle space (meaning that the cycle space has no residual flux leakage under de Rham-Hodge orthogonal decomposition):
-  $$B_{s+1/2} \in \left( \operatorname{Ker}(\partial_1) \right)^\perp = \operatorname{Im}(\delta_0)$$
+  $$B_{s+1/2} \in \left( \operatorname{Ker}(\partial_1) \right)^{\perp} = \operatorname{Im}(\delta_0)$$
   
   This completes the mathematical proof that the dual equalizer stream completely recedes into the coboundary gradient subspace, verifying that zero residual loop conduction flux leakage occurs across the network cuts. Necessity is proved.
 
@@ -141,7 +141,7 @@ $$\Delta Q_{\text{net}} = \mathbf{1}^T \partial_1 \left( \mathbf{W}_e^{(n+1)} - 
 The micro-step total variation vanishing condition $\Delta \Pi(s) \equiv \mathbf{0}$ maps via the strict homomorphic projection $\mathcal{T}_{\text{morphic}}$ to guarantee long-term global charge neutrality under the thermodynamic limit ($N \to \infty$):
 $$\left( \Delta \Pi(s) \equiv \mathbf{0} \right) \quad \xrightarrow{\quad \mathcal{T}_{\text{morphic}} \quad} \quad \left( \lim_{N \to \infty} \frac{1}{N} \sum_{n=1}^N Q_{\text{net}}^{(n)} \equiv 0 \right)$$
 Furthermore, this morphism establishes that the instantaneous net network charge is rigidly clamped within a compact, non-divergent absolute bounding envelope across all discrete pulse steps:
-$$\sup_{n \in \mathbb{N}^+} |Q_{\text{net}}^{(n)}| \le K_{\text{bound}} < \infty$$
+$$\sup_{n \in \mathbb{N}^+} \lvert Q_{\text{net}}^{(n)}\rvert  \le K_{\text{bound}} < \infty$$
 ### 4.2 Proof of Instancy Clamping and Macroscopic Long-Term Convergence
 From Theorem 3.1, the condition $\Delta \Pi(s) \equiv \mathbf{0}$ directly establishes that the dual equalizer stream completely recedes into the coboundary gradient subspace: $B_{s+1/2} \in \operatorname{Im}(\partial_1^T)$. Under the pipeline cascade sequence, this closed flow vector is streamed as a control factor into Operator 8 ($\mathcal{O}_{\text{valve}}$) to resolve multi-Actor write contentions. Because $B_{s+1/2}$ vanishes along the cycle bases, it guarantees algebraic compatibility across distributed overlapping perimeters.
 
@@ -152,15 +152,15 @@ $$\Delta Q_{\text{net}} = Q_{\text{net}}^{(n+1)} - Q_{\text{net}}^{(n)} = \mathc
 
 * **Step I: Explicit Evaluation of the Instantaneous Strong Bound**  
   We construct a positive-definite discrete time-delay Lyapunov function as $V_{\text{delay}}(n) = \frac{1}{2}(Q_{\text{net}}^{(n)})^2$. Evaluating its first-order forward evolutionary increment yields:
-  $$\Delta V_{\text{delay}} = V_{\text{delay}}(n+1) - V_{\text{delay}}(n) = \frac{1}{2}\left( Q_{\text{net}}^{(n)} - \operatorname{sgn}(Q_{\text{net}}^{(n)}) \right)^2 - \frac{1}{2}(Q_{\text{net}}^{(n)})^2 = -| Q_{\text{net}}^{(n)} | + \frac{1}{2}$$
+  $$\Delta V_{\text{delay}} = V_{\text{delay}}(n+1) - V_{\text{delay}}(n) = \frac{1}{2}\left( Q_{\text{net}}^{(n)} - \operatorname{sgn}(Q_{\text{net}}^{(n)}) \right)^2 - \frac{1}{2}(Q_{\text{net}}^{(n)})^2 = -\lvert Q_{\text{net}}^{(n)}\rvert + \frac{1}{2}$$
   
-  This decrement expression demonstrates that for all states satisfying $|Q_{\text{net}}^{(n)}| > 0.5$, the Lyapunov variation is strictly negative definite ($\Delta V_{\text{delay}} < 0$), forcing the energy trajectory to decay monotonically towards the internal boundary layer. 
+  This decrement expression demonstrates that for all states satisfying $\lvert Q_{\text{net}}^{(n)}\rvert  > 0.5$, the Lyapunov variation is strictly negative definite ($\Delta V_{\text{delay}} < 0$), forcing the energy trajectory to decay monotonically towards the internal boundary layer. 
   
-  Suppose at any arbitrary pulse step $n_0$, the net charge resides within the equilibrium plateau: $|Q_{\text{net}}^{(n_0)}| \le 0.5$. According to the single-pulse state equation, the maximum possible outward excursion in a single step is rigidly bounded by the single-point spin flip amplitude $\pm 1$:
-  $$|Q_{\text{net}}^{(n_0+1)}| \le |Q_{\text{net}}^{(n_0)}| + |\mathcal{S}_{\text{corner}}| \le 0.5 + 1.0 = 1.5$$
+  Suppose at any arbitrary pulse step $n_0$, the net charge resides within the equilibrium plateau: $\lvert Q_{\text{net}}^{(n_0)}\rvert  \le 0.5$. According to the single-pulse state equation, the maximum possible outward excursion in a single step is rigidly bounded by the single-point spin flip amplitude $\pm 1$:
+  $$\lvert Q_{\text{net}}^{(n_0+1)}\rvert  \le \lvert Q_{\text{net}}^{(n_0)}\rvert  + \lvert \mathcal{S}_{\text{corner}}\rvert  \le 0.5 + 1.0 = 1.5$$
   
   Once the state crosses the $0.5$ threshold (reaching at most $1.5$), it instantly triggers the $\Delta V_{\text{delay}} < 0$ strict回拉 (pullback) regime, forcing the trajectory back toward the center at the next step. This mathematically establishes that the instantaneous net charge can never escape the compact constant envelope $K_{\text{bound}} = 1.5$, explicitly proving the global non-divergence property:
-  $$\sup_{n \in \mathbb{N}^+} |Q_{\text{net}}^{(n)}| \le 1.5 < \infty$$
+  $$\sup_{n \in \mathbb{N}^+} \lvert Q_{\text{net}}^{(n)}\rvert  \le 1.5 < \infty$$
 
 * **Step II: Asymptotic Ergodic Long-Term Convergence**  
   Because the instantaneous charge vector is permanently imprisoned within the compact bounded attractor $[-1.5, 1.5]$, the fluctuations are symmetrically constrained over long rounds. As the system scales towards the thermodynamic limit ($N \to \infty$), the accumulated errors cancel out completely along the time axis. By the discrete law of large numbers, the long-term time average strictly converges to zero:
@@ -174,7 +174,7 @@ $$\Delta Q_{\text{net}} = Q_{\text{net}}^{(n+1)} - Q_{\text{net}}^{(n)} = \mathc
 To comply with the strict computing redlines governing the Phase 1 and Phase 2 architectures, Operator 7 eliminates global matrix matrix operations, achieving complete isolation from the cubic scaling deadlocks of the global node population $n$.
 
 * **Algebraic Evaluation Complexity**: The derivation of the discrete penetration rate and the execution of the complex equalizer involve localized single-valued monotonic functions. Because the antecedent Operator 6 has already executed the sub-space spectral sieve via Lanzcos kernels, the high-dimensional Rayleigh-Ritz matrix blocks are pre-compacted. The temporal computational overhead of Operator 7 scales strictly at a constant asymptotic upper bound of $T(n) = \mathcal{O}(m_g \cdot k_{\text{rank}})$, thoroughly shattering the traditional $\mathcal{O}(n^3)$ decomposition ceiling.
-* **Physical Memory Allocation Clamping**: As the evolution frontier expands, the physical coordinate indices grow linearly. However, because Operator 2-Batch deploys the Global Degree Saturation Theorem to restrict the neighborhood cardinality to a fixed local constant ($| \mathcal{N}(v_f) | \le K_0$), the active channel storage allocated by Operator 7 is strictly clamped within the localized horizon $\mathcal{O}(K_0) \ll n$. This decouples the runtime buffer from full-network node inflation, eliminating distributed synchronization stalls across Actor slices.
+* **Physical Memory Allocation Clamping**: As the evolution frontier expands, the physical coordinate indices grow linearly. However, because Operator 2-Batch deploys the Global Degree Saturation Theorem to restrict the neighborhood cardinality to a fixed local constant ($\rvert  \mathcal{N}(v_f) | \le K_0$), the active channel storage allocated by Operator 7 is strictly clamped within the localized horizon $\mathcal{O}(K_0) \ll n$. This decouples the runtime buffer from full-network node inflation, eliminating distributed synchronization stalls across Actor slices.
 
 ---
 

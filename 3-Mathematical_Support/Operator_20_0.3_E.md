@@ -32,8 +32,8 @@ Operator 20 formalises reactions as **piecewise paths** and gives three mutually
 
 | Channel | Mathematical Quantity | Encodes | Algebraic Belonging | Catalyst Can Affect? |
 |---|---|---|---|---|
-| **Edge topological frustration** $\varrho$ | $\|\delta_{e,\text{harm}}\|/\|\delta_e\|$ | The non-eliminable portion of bond-order rearrangement around cycles | $H^1(G;\mathbb{R})$ | **Only path value** $\varrho_{\text{path}}$ (see T20.3) |
-| **Vertex contrast** $\nu$ | $\|\delta_v^{\perp}\|/\|\delta_v\|$ | **Redistribution** of hydrogen coverage across sites | $C^0(G;\mathbb{R})$ | Yes (through waypoints) |
+| **Edge topological frustration** $\varrho$ | $\lVert \delta_{e,\text{harm}}\rVert /\lVert \delta_e\rVert$ | The non-eliminable portion of bond-order rearrangement around cycles | $H^1(G;\mathbb{R})$ | **Only path value** $\varrho_{\text{path}}$ (see T20.3) |
+| **Vertex contrast** $\nu$ | $\lVert \delta_v^{\perp}\rVert /\lVert \delta_v\rVert$ | **Redistribution** of hydrogen coverage across sites | $C^0(G;\mathbb{R})$ | Yes (through waypoints) |
 | **Rigidity bottleneck** $\kappa$ | $\int dt/(\gamma+\varepsilon)$ | Spectral-gap collapse along the path | Endogenous spectral-gap ratio $\gamma=\lambda_2/\alpha_n$ | Yes (through interface edges) |
 
 Core conclusions:
@@ -46,7 +46,7 @@ Core conclusions:
 | **T20.4** | $\delta_v=\mu\mathbf1+\delta_v^{\perp}$ orthogonal decomposition; $\nu$ invariant under **global translation of all coverages** and under nonzero scaling of $\delta_v$ | Norm-gauge invariance of vertex channel | **Proven (v0.3 corrected)** |
 | **P20.5** | $g(t^\ast)=0\iff$ zero-weight edges contain a cut on $X$ (where $X$ = union of components containing active sites) | Operational criterion for transition states | **Proven (v0.3 restated)** |
 | **P20.6** | Adding edges makes $\lambda_2,\alpha_n$ both non-decreasing, so $\gamma$ is **not monotone** | Forbids "adding edges always lowers $\kappa$" | **Proven** |
-| **H20.1** | $(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ rank-correlate with DFT barrier $|\rho_S|\ge0.7$ | **Operator 20's reason for existing** | **Unproven** |
+| **H20.1** | $(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ rank-correlate with DFT barrier $\lvert \rho_S\rvert \ge0.7$ | **Operator 20's reason for existing** | **Unproven** |
 | **C20.7** | $\kappa(w_I)$ is U-shaped over interface weights | SRE-version of Sabatier volcano curve | **Unproven (conjecture)** |
 
 ---
@@ -82,7 +82,7 @@ Introduce four objects — **reaction paths**, **external catalyst boundary**, *
 
 ### 2.1 Cochain Complex and Hodge Decomposition
 
-For skeleton $G=(V,E)$ with $|V|=n$, $|E|=m$. SRE has no 2-cells, so
+For skeleton $G=(V,E)$ with $\lvert V\rvert =n$, $\lvert E\rvert =m$. SRE has no 2-cells, so
 
 $$C^0\xrightarrow{\ \delta_0\ }C^1\xrightarrow{\ \delta_1=0\ }C^2=0,\qquad H^1(G;\mathbb{R})=C^1/\,\mathrm{im}\,\delta_0 .$$
 
@@ -108,7 +108,7 @@ Therefore, **$\delta\in C^1(G;\mathbb{R})$ is a directed cochain "along the refe
 
 **Optional explicit orientation $\varsigma_e$ (added input in v0.3)**　If the user wants to read the chemical intuition (e.g. to have "uniform bond-order increase around a ring" read as a pure cycle channel), they may additionally provide $\varsigma_e\in\{+1,-1\}$; the specification automatically replaces $\delta_e$ with $\varsigma_e\delta_e$ before decomposition. **Default $\varsigma_e\equiv+1$** (i.e. bit-wise identical to v0.2). $\varsigma$ is a different symbol from $\varepsilon_{e,\gamma}$ and from the D7 regular $\varepsilon$.
 
-**Implementation Status (wired in v0.3)**　`build_reaction(..., orient=ς)` accepts a scalar, length-$|E|$ vector, or `{(i,j):±1}` dictionary; non-$\pm1$ values raise error; $\varsigma_e$ **only acts on the edge channel** ($\varrho$), **does not affect** $\kappa$ (uses $W$, no orientation) or $\nu,\mu$ (vertex channel, no orientation). Public helper `orient_from_cycle(n, edges, cycle)`: takes $\varsigma_e=\varepsilon_{e,\gamma}$, turning the chemical intuition of "entire ring synchronously increasing/decreasing bond order" into a specification orientation.
+**Implementation Status (wired in v0.3)**　`build_reaction(..., orient=ς)` accepts a scalar, length-$\lvert E\rvert$ vector, or `{(i,j):±1}` dictionary; non-$\pm1$ values raise error; $\varsigma_e$ **only acts on the edge channel** ($\varrho$), **does not affect** $\kappa$ (uses $W$, no orientation) or $\nu,\mu$ (vertex channel, no orientation). Public helper `orient_from_cycle(n, edges, cycle)`: takes $\varsigma_e=\varepsilon_{e,\gamma}$, turning the chemical intuition of "entire ring synchronously increasing/decreasing bond order" into a specification orientation.
 
 Measured (6-ring uniform $+0.5$, i.e. benzene aromatisation, with both default and natural-cycle traversal):
 
@@ -209,9 +209,9 @@ $$W|_X:\quad \text{skeleton edges take }w(t),\quad \text{boundary edges take }w_
 
 Then
 
-$$g(t)\equiv\frac{\lambda_2\big(L|_X(w(t))\big)}{\lambda_n\big(L|_X(w(t))\big)},\qquad \gamma_\ast=\min_{t}g(t),\qquad \boxed{\ \kappa=\sum_{j=1}^{m}\int_{t_{j-1}}^{t_j}\frac{dt}{g(t)+\varepsilon}\ }\quad(\varepsilon>0).$$
+$$g(t)\equiv\frac{\lambda_2\big(L\lvert _X(w(t))\big)}{\lambda_n\big(L\rvert _X(w(t))\big)},\qquad \gamma_\ast=\min_{t}g(t),\qquad \boxed{\ \kappa=\sum_{j=1}^{m}\int_{t_{j-1}}^{t_j}\frac{dt}{g(t)+\varepsilon}\ }\quad(\varepsilon>0).$$
 
-**Conventions**: $|X|\le1$ gives $g=1$; when $g(t)=0$ (the induced graph on $X$ is disconnected) that point contributes $1/\varepsilon$ to the integral (numerically truncated).
+**Conventions**: $\lvert X\rvert \le1$ gives $g=1$; when $g(t)=0$ (the induced graph on $X$ is disconnected) that point contributes $1/\varepsilon$ to the integral (numerically truncated).
 
 **This restores observability in P20.5**: $w_I=0$ and skeleton containing a zero-weight cut ⇒ $g=0$ ⇒ $\kappa\sim1/\varepsilon$; catalyst reconnects both sides of the cut via interface edges ⇒ $\lambda_2>0$ ⇒ $\kappa$ finite. **This is precisely A20's mechanism** (V7/V9 measured: $\kappa$ 26.76 → 6.66).
 
@@ -289,7 +289,7 @@ $\delta_v=\mu\mathbf1+\delta_v^{\perp}$ is an orthogonal decomposition ($\mathbf
 
 **Proof**　(a) Translation gives $\delta_v^{(j)}=(n_j+c\mathbf1)-(n_{j-1}+c\mathbf1)=\delta_v^{(j)}$, unchanged term by term. $\square$
 (b) $\delta_v=\mu\mathbf1+\delta_v^\perp$ ⇒ $c\delta_v=(c\mu)\mathbf1+c\delta_v^\perp$ ($\mathbf1^\top(c\delta_v^\perp)=c\cdot0=0$, still orthogonal decomposition), so
-$$\nu(c\delta_v)=\frac{\|c\delta_v^\perp\|}{\|c\delta_v\|}=\frac{|c|\,\|\delta_v^\perp\|}{|c|\,\|\delta_v\|}=\nu(\delta_v).\ \square$$
+$$\nu(c\delta_v)=\frac{\|c\delta_v^\perp\|}{\|c\delta_v\|}=\frac{\lvert c\rvert \,\|\delta_v^\perp\|}{\lvert c\rvert \,\|\delta_v\|}=\nu(\delta_v).\ \square$$
 
 > **False statement from v0.2 deleted**　v0.2 wrote "for any $c\in\mathbb{R}$, $\nu(\delta_v+c\mathbf1)=\nu(\delta_v)$". This is **false**: $\nu$'s denominator is $\|\delta_v\|$, translation changes numerator (which is unchanged) and denominator (which increases when $c\neq0$), so $\nu$ generally decreases. Numerical counterexample in V13. **This is a substantive v0.2 error**: the orthogonal decomposition itself is correct, but the invariance it implies was incorrectly written on $\delta_v$ (it should be on $n_j$, i.e. (a)).
 
@@ -306,7 +306,7 @@ $$g(t^\ast)=0\iff\lambda_2\big(L|_X(w(t^\ast))\big)=0\iff \text{the zero-weight 
 
 Adding edges $W'=W+\Delta W$ ($\Delta W\ge0$) gives $L'\succeq L$; Weyl's theorem gives component-wise non-decreasing eigenvalues, so $\lambda_2$ and $\alpha_n$ both increase, and $\gamma'=\lambda_2'/\alpha_n'$ has **no fixed size relation** to $\gamma$.
 
-**Proof**　$\Delta L=w(e_i-e_j)(e_i-e_j)^\top\succeq0$; Weyl monotonicity; ratio is indefinite. $\square$
+**Proof**　$\Delta L=w(e_i-e_j)(e_i-e_j)^{\top}\succeq0$; Weyl monotonicity; ratio is indefinite. $\square$
 
 ### C20.7 (Volcano Conjecture, **unproven**)
 
@@ -316,7 +316,7 @@ Under fixed chemical environment, varying only $w_I$, $\kappa(w_I)$ is U-shaped:
 
 ### H20.1 (Central Hypothesis, **unproven**)
 
-$(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ rank-correlate with DFT barrier $\Delta^\ddagger$ with $|\rho_S|\ge0.7$, and the sign is consistent within similar reaction families. **If $|\rho_S|<0.5$ or sign flips, Operator 20 is downgraded to a structural descriptor.**
+$(\kappa,\varrho_{\text{path}},\nu_{\text{path}})$ rank-correlate with DFT barrier $\Delta^\ddagger$ with $\lvert \rho_S\rvert \ge0.7$, and the sign is consistent within similar reaction families. **If $\lvert \rho_S\rvert <0.5$ or sign flips, Operator 20 is downgraded to a structural descriptor.**
 
 ---
 
@@ -339,7 +339,7 @@ Input R=(G, waypoints, B, E_I, w_I)
 Output (κ, ϱ_path, ν_path, μ; ϱ_tot, ν_tot, γ*, feasible)
 ```
 
-Complexity $O(m\cdot n^3)$ (dense eigendecomposition) or $O(m\cdot |E|\cdot \text{iter})$ (Lanczos).
+Complexity $O(m\cdot n^3)$ (dense eigendecomposition) or $O(m\cdot \lvert E\lvert \cdot \text{iter})$ (Lanczos).
 
 ### 6.2 v1 (Full)
 
@@ -374,7 +374,7 @@ Moment-space interpolation + constraint inversion (D6) + Operator 16/17 feasibil
 | V1 | Oriented $\mathrm{Hol}_\mathbb{R}$ matches hand calculation (including reverse traversal) | D3/§2.2 |
 | V2 | T20.1 three-way equivalence holds over $10^3$ random graphs | T20.1 |
 | V3 | $\varrho$ independent of spanning-tree / cycle-basis choice; explicitly measure vertex-label dependency of $\varrho$; **$\varsigma_e$ orientation clause** (default $2/3$, natural cycle orientation $1$, global flip unchanged, does not affect $\kappa$, illegal values rejected, T20.3 still holds) | Corollary 20.1.1 + §2.2 + R11 |
-| V4 | Three-channel rank correlation $|\rho_S|<0.7$ (orthogonality) | H20.2 |
+| V4 | Three-channel rank correlation $\lvert \rho_S\rvert <0.7$ (orthogonality) | H20.2 |
 | V5 | $\kappa$ invariant under global scaling; **not** invariant under scaling only $w_I$ | T20.2 |
 | V6 | C20.7 volcano shape (scan $w_I$, judge unimodal/monotone) | C20.7 |
 | V7 | Construct zero-weight cut, verify $\gamma\to0$, $\kappa$ monotonically diverges as $\varepsilon$ decreases ($\kappa\sim1/\varepsilon$) | P20.5 |

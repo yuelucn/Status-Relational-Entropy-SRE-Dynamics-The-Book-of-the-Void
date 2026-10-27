@@ -216,7 +216,7 @@ $$
 \boldsymbol{F}=-k\boldsymbol{x}
 $$
 
-> Breakdown topological condition: When $|\Delta \mathcal{D}_\mathrm{geo}|$ exceeds the tolerance threshold of mediating links, mediating causal links break and re-wire; $\mathcal{K}_\mathrm{topo}$ is no longer constant and the Hooke-law topological relation collapses.
+> Breakdown topological condition: When $\lvert \Delta \mathcal{D}_\mathrm{geo}\rvert$ exceeds the tolerance threshold of mediating links, mediating causal links break and re-wire; $\mathcal{K}_\mathrm{topo}$ is no longer constant and the Hooke-law topological relation collapses.
 
 ## A4 Topological form of conservation laws
 Total topological-compensation overhead $\mathcal{U}_\mathrm{total}$ of the global causal-information network is conserved:

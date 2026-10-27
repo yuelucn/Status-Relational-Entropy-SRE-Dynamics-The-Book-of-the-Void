@@ -1,4 +1,4 @@
-﻿# Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal-Information Networks
+# Emergence of Multidimensional Spacetime and Dynamical Gravity via Regularized Causal-Information Networks
 **Version**: 6.3-rev (incorporating ontological corrigendum; updated numerical simulation results, distinguishing historical reference value from Bootstrap statistical simulation outputs)
 
 ## Abstract
@@ -6,7 +6,7 @@ The ΛCDM standard-cosmology framework encounters significant observational tens
 
 Built upon the State-Relation-Entropy (SRE) dynamical axiom-system (v1.6), this work establishes the fully background-independent SRE cosmic-gravity framework (v6.2-rev). Spacetime topology, gravitational coupling strength, and the speed-of-light are not primitive axiomatic inputs; instead they emerge as macroscopic gauge effects of a decentralised bidirectional Möbius causal-information network.
 
-This manuscript corrects the residual ontological dependency on extrinsic redshift-difference coordinates $|z_i-z_j|$ present in the v6.1 draft section 2.3. Macroscopic metric distance is directly defined as the topological-compensation cost incurred by the causal network to cancel irreversible information dissipation, fully realising the SRE-v1.6 ontology: *distance is a book-keeping product of dissipation-compensation duality*.
+This manuscript corrects the residual ontological dependency on extrinsic redshift-difference coordinates $\lvert z_i-z_j\rvert$ present in the v6.1 draft section 2.3. Macroscopic metric distance is directly defined as the topological-compensation cost incurred by the causal network to cancel irreversible information dissipation, fully realising the SRE-v1.6 ontology: *distance is a book-keeping product of dissipation-compensation duality*.
 
 The dynamical compression coefficient $\alpha_{0,\mathrm{dynamic}}$ abandons the hard-fitted constant used in v5.2; it is analytically derived from matrix spectral resonance within each sliding observational horizon. Variable emergent effective-speed-of-light $c_\mathrm{eff}$ is implemented at network-routing level; conformal-gauge covariance rescales the emergent metric tensor while preserving local Lorentz invariance for measured light-speed.
 
@@ -22,12 +22,12 @@ Modern observational cosmology pushes ΛCDM beyond its domain-of-validity. DESI-
 Earlier incarnations of SRE cosmic-gravity (v5.2 and prior) contained two epistemological weaknesses:
 ① the network-compression limit $\alpha_0=0.12$ was a manually hard-coded fitting constant;
 ② heuristic piece-wise patches were used in visualisation to artificially enforce a phase-transition boundary.
-Moreover, the original v6.1 draft section 2.3 retained the ontological flaw of adopting redshift-coordinate differences $|z_i-z_j|$ as a distance substrate, in violation of SRE-v1.6 ontology:
+Moreover, the original v6.1 draft section 2.3 retained the ontological flaw of adopting redshift-coordinate differences $\lvert z_i-z_j\rvert$ as a distance substrate, in violation of SRE-v1.6 ontology:
 > *Spatial distance is not a-priori given coordinates; it arises solely as a book-keeping outcome of mutual-measurement driven dissipation-compensation duality*.
 
 This paper carries out four tiers of improvements:
 1. Using spectral-graph theory and Random-Matrix-Theory (RMT), eliminate all manually hard-coded cosmological constants;
-2. Adopt the corrigendum ontological fix: discard $|z_i-z_j|$ as distance substrate, and construct macroscopic metrics directly from topological dissipation-compensation operators;
+2. Adopt the corrigendum ontological fix: discard $\lvert z_i-z_j\rvert$ as distance substrate, and construct macroscopic metrics directly from topological dissipation-compensation operators;
 3. Introduce non-parametric Bootstrap Monte-Carlo resampling, perform statistical simulation with SDSS/eBOSS spectroscopic data to obtain the simulated transition redshift $z^*$; demote $z_\mathrm{crit}=4.1605$ to a v6.1 historical-theoretical reference value and remove it as a rigid model prediction of the present revision;
 4. Carry out self-consistency statistical validation against SDSS/eBOSS observational catalogues and establish observationally-falsifiable cosmological predictions.
 
@@ -44,7 +44,7 @@ The causal-information-network provides a cosmological realisation for the SRE-v
 > There exists no pre-existing continuous Riemannian manifold at the fundamental level. Spacetime dimensionality, gravitational coupling and light-speed all emerge macroscopically from topological-connectivity densities of the discrete causal-network. Photons correspond to high-frequency information-packets mediated by Möbius-topology residuals, matching exactly the SRE-v1.6 primitive *light-residual $\Psi_\mathrm{light}$*.
 
 ### 2.2 Topological-Dissipation Tensor and Compensation Operator (core corrigendum)
-> Discard the v6.1-draft practice of building distances from $|z_i-z_j|$. Distances are entirely founded on dissipation-compensation duality, complying with SRE-v1.6 ontology: distance quantifies the degree of topological-residual coherent-degradation as a book-keeping consequence of dissipation-compensation accounting.
+> Discard the v6.1-draft practice of building distances from $\lvert z_i-z_j\rvert$. Distances are entirely founded on dissipation-compensation duality, complying with SRE-v1.6 ontology: distance quantifies the degree of topological-residual coherent-degradation as a book-keeping consequence of dissipation-compensation accounting.
 
 Define the **topological-dissipation tensor $\hat{\mathcal{D}}_{ij}$**, which characterises intrinsic information-loss operators for quantum-evidence events $(i,j)$, constrained by observational measurement-entropy bounds $\sigma_z$:
 $$
@@ -147,7 +147,7 @@ i.e. a **logarithmic rate plus a speed floor of $1/3$**, with critical capacity 
 
 **(b) The criterion for cancellation is the metric's shape, not the speed's value.** Any scalar factor is divided out by normalisation, so only a change of shape implies non-cancellation. Measured for three carriers:
 
-| Carrier | Uniform degree? | $W_e$ edge span | $\lambda_2/\lambda_\max$ | Shape drift ($s$ sweep) |
+| Carrier | Uniform degree? | $W_e$ edge span | $\lambda_2/\lambda_{\max}$ | Shape drift ($s$ sweep) |
 |---|---|---|---|---|
 | Complete matrix graph $n=60$ | yes (59-regular) | $1.0\times$ | $1.000$ | geometrically degenerate, unusable |
 | $M_{60}$ ladder ($\alpha$-anchor carrier) | yes (3-regular) | $1.0\times$ | $0.0073$ | $4.4\times10^{-16}$ |
@@ -161,7 +161,7 @@ $$
 $$
 On a uniform carrier, take $\Omega(s)=\dfrac{\max(1/3,\ln(1+sW))}{\max(1/3,\ln(1+W))}$; cancellation then holds exactly (drift $4.4\times10^{-16}$). This $\Omega(s)$ **replaces** the $\Omega=\exp(I(z))$ used earlier in this section: the latter is the approximation in the linear limit $sW\ll1$ and coincides with it only on a uniform carrier in the low-capacity region. On a heterogeneous carrier no scalar conformal factor exists; the only edge-wise candidate $\Omega_e=v(sW_e)/v(W_e)$ differs edge by edge by construction (span $1.22\times$ at $s=2$), i.e. it is a **Weyl transformation** rather than a conformal one, so the shape genuinely changes.
 
-⇒ The original statement "the locally measured light-speed equals $c_0$" must be restricted to **regular carriers** (the $M_{60}$ used by the $\alpha$ anchor is of this class). A generic evolving network (the $\chi=1$ subgraph) does not satisfy the premise, and its local light-speed changes with epoch. This revision does not touch the $\alpha=\lambda_2/\lambda_\max$ anchor — a dimensionless ratio is invariant under uniform rescaling.
+⇒ The original statement "the locally measured light-speed equals $c_0$" must be restricted to **regular carriers** (the $M_{60}$ used by the $\alpha$ anchor is of this class). A generic evolving network (the $\chi=1$ subgraph) does not satisfy the premise, and its local light-speed changes with epoch. This revision does not touch the $\alpha=\lambda_2/\lambda_{\max}$ anchor — a dimensionless ratio is invariant under uniform rescaling.
 
 ### 3.3 Testable prediction: the relative refractive index of a medium pair drifts with epoch
 Part (a) directly gives the relative refractive index
@@ -227,9 +227,9 @@ then check against the locally measured $n_\mathrm{rel}(0)=\ln(1+W_a)/\ln(1+W_b)
 
 **(e) Alternative internal reading, and its exclusion.** If redshift is instead **defined** as the ratio of background speeds, $1+z=v(W_0)/v(sW_0)$, then $s(z)=\left[(1+W_0)^{1/(1+z)}-1\right]/W_0$, with a redshift ceiling
 $$
-z_\max=3\ln(1+W_0)-1 .
+z_{\max}=3\ln(1+W_0)-1 .
 $$
-$W_0=1$ gives $z_\max=1.079$, $W_0=3$ gives $z_\max=3.159$. **Quasars have been observed at $z\simeq7$**, so this reading requires $W_0\ge e^{8/3}-1=13.392$ — the model provides no mechanism for a background capacity that large. We therefore adopt the counting reading (a) and register this reading as already excluded by observation.
+$W_0=1$ gives $z_{\max}=1.079$, $W_0=3$ gives $z_{\max}=3.159$. **Quasars have been observed at $z\simeq7$**, so this reading requires $W_0\ge e^{8/3}-1=13.392$ — the model provides no mechanism for a background capacity that large. We therefore adopt the counting reading (a) and register this reading as already excluded by observation.
 
 **(f) Falsification list.** (i) If at $z\simeq0.3$ the deviation of $R$ from $1$ is below $1\%$ (i.e. $\kappa=0$), the drift prediction is falsified; (ii) if $R(\infty)\ne0.5$ (for $W_a=3,W_b=1$), falsified; (iii) if the curve is monotone, with neither peak nor kink, falsified; (iv) if the kink positions do not yield an integer $\kappa$, or the $(n_0,z_1,z_2)$ over-determination fails to close, falsified.
 

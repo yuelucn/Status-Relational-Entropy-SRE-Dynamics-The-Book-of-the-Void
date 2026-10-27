@@ -63,8 +63,8 @@ SRE 算子体系正是为回答这些问题而设计的 19 个算子，覆盖从
 
 | 算子 | 名称 | 核心功能 | 关键输出 |
 |------|------|----------|----------|
-| Op11 | 自旋-电荷邻接 | 将电负性差编码为边权重增益 `A_q = A_s·(1+ρ·|tanh(χᵢ-χⱼ)|)` | λ₂_q, α_q, κ_q, max_spin_coupling |
-| Op12 | 闭合环审计 | DFS 枚举简单环 + Möbius 相位比 `|tr(Mᵏ)|/nᵏ` | n_loops, mobius_ratio, λ₂_loop |
+| Op11 | 自旋-电荷邻接 | 将电负性差编码为边权重增益 $A_q = A_s\cdot(1+\rho\cdot\lvert\tanh(\chi_i-\chi_j)\rvert)$ | λ₂_q, α_q, κ_q, max_spin_coupling |
+| Op12 | 闭合环审计 | DFS 枚举简单环 + Möbius 相位比 $\lvert\mathrm{tr}(M^k)\rvert/n^k$ | n_loops, mobius_ratio, λ₂_loop |
 
 **能做什么**：
 - 把节点的物理/化学属性 (如 Pauling 电负性) 注入图结构，生成"电荷加权邻接矩阵"

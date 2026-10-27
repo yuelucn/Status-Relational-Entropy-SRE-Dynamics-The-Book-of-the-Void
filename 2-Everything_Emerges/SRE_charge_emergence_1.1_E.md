@@ -120,7 +120,7 @@ $$\boxed{\ \deg(K)\equiv\beta_1(K)\bmod 2\ }$$
 
 A knot is "neutralizable" if and only if its independent loops can be **paired and closed so as to cancel**, and pairing requires $\beta_1$ to be even. When $\beta_1$ is odd there is exactly one independent loop that **cannot be paired**, which bears the net winding number → net charge $\pm e$. This is consistent with two statements in the original works: "charge = cut-set counting" (what is counted is the loops that cannot be symmetrically cancelled); "polarity cancellation → neutral" (the precondition for pairwise cancellation is that loops can be paired).
 
-Taking the parity (rather than $\beta_1$ itself) is necessary: a single charged knot always has $|Q|=e$ (a proton is not $7e$); the magnitude information of $\beta_1$ enters the **mass/internal-path** channel. This is the manifestation of **charge–mass decoupling** at the level of graph invariants.
+Taking the parity (rather than $\beta_1$ itself) is necessary: a single charged knot always has $\lvert Q\rvert =e$ (a proton is not $7e$); the magnitude information of $\beta_1$ enters the **mass/internal-path** channel. This is the manifestation of **charge–mass decoupling** at the level of graph invariants.
 
 ### 5.4 Composite: Sum over Bodies
 
@@ -137,8 +137,8 @@ The many-body scaffold $\beta_1=6k+1$ is always odd and **cannot** be subjected 
 ### 6.2 Group Structure
 
 After mapping through $\varphi$ to $\mathbb{Z}_2$ values, $\sigma(\gamma)$ becomes a linear functional on $\gamma$; the collection of all such forms
-$$H^1(G;\mathbb{Z}_2)=\operatorname{Hom}\big(H_1(G;\mathbb{Z}_2),\mathbb{Z}_2\big),\qquad |H^1|=2^{\beta_1}.$$
-This agrees with the "homology ladder" $|H^1(G;\mathbb{Z}_n)|=n^{\beta_1}$ of *The Positioning of Light and Electromagnetic Waves in the SRE System* (with $n=2$).
+$$H^1(G;\mathbb{Z}_2)=\operatorname{Hom}\big(H_1(G;\mathbb{Z}_2),\mathbb{Z}_2\big),\qquad \lvert H^1\lvert =2^{\beta_1}.$$
+This agrees with the "homology ladder" $\lvert H^1(G;\mathbb{Z}_n)\rvert =n^{\beta_1}$ of *The Positioning of Light and Electromagnetic Waves in the SRE System* (with $n=2$).
 
 ### 6.3 Why Charge Falls on the ℤ₂ Rung
 
@@ -287,7 +287,7 @@ The neutron has one fewer independent loop than the proton ⇒ parity flips ⇒ 
 
 ### 14.3 Sign from holonomy class
 
-- **Electron forced trivial** (§10.2): $Q_3$ is edge-transitive ($|\mathrm{Aut}|=48$) and bipartite ⇒ every Aut-respecting polarity assignment gives holonomy $+1$ ⇒ only the trivial class is reachable (measured: 1 class).
+- **Electron forced trivial** (§10.2): $Q_3$ is edge-transitive ($\lvert \mathrm{Aut}\rvert =48$) and bipartite ⇒ every Aut-respecting polarity assignment gives holonomy $+1$ ⇒ only the trivial class is reachable (measured: 1 class).
 - **Proton allows non-trivial** (§10.2): the closed state contains a triangle (odd cycle) and has 2 edge orbits ⇒ choosing the ring-edge orbit $s=-1$ makes the triangle holonomy $-1$ ⇒ the non-trivial class is reachable (measured: 2 classes).
 - With A0 (electron's class = "negative"), the electron/proton structural opposition fixes proton sign $=+$, electron sign $=-$ (§8.2).
 

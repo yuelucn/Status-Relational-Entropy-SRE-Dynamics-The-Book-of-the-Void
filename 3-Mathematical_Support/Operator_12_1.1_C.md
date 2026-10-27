@@ -46,7 +46,7 @@ SRE 理论将电子定义为"N 尺度拓扑闭合环 + Möbius 双层相位"：
 
 - **无回溯**: 路径内顶点不重复
 - **无重复计数**: 每个环以其最小顶点为起点枚举一次；正反两个方向按规范表示去重
-- **复杂度**: 对稀疏分子图（$|E| \sim O(n)$）为 $O(n \cdot 2^{N_{\max}})$，$N_{\max} \leq 8$ 时开销可忽略
+- **复杂度**: 对稀疏分子图（$\lvert E\rvert  \sim O(n)$）为 $O(n \cdot 2^{N_{\max}})$，$N_{\max} \leq 8$ 时开销可忽略
 
 $$n_{\text{loops}} = \text{len}(\text{enumerate\_simple\_cycles}(A_q, N_{\max}))$$
 
@@ -58,7 +58,7 @@ $$n_{\text{loops}} = \text{len}(\text{enumerate\_simple\_cycles}(A_q, N_{\max}))
 
 SRE 理论要求"$2N$ 次互测触发才恢复初始对称态"（Möbius 相位）。在 SRE 符号矩阵 $M$ 上定义：
 
-$$\text{mobius\_ratio} = \frac{1}{N_{\max} - 2} \sum_{k=3}^{N_{\max}} \frac{|\text{tr}(M^k)|}{n^k}$$
+$$\text{mobius\_ratio} = \frac{1}{N_{\max} - 2} \sum_{k=3}^{N_{\max}} \frac{\lvert \text{tr}(M^k)\rvert }{n^k}$$
 
 其中 $M$ 为 SRE 符号矩阵（元素 $\in \{+1, -1\}$，无零元），$n$ 为原子数。
 
@@ -100,7 +100,7 @@ $$\kappa_{\text{loop}} = \frac{\lambda_{\max}(L_{\text{loop}})}{\lambda_2(L_{\te
 |----------|-----------------|
 | N 尺度拓扑闭合环 | $n_{\text{loops}}$（简单环计数） |
 | $[A_1, ..., A_N]$ 回溯因果 | DFS 环枚举（无回溯污染） |
-| Möbius 双层相位 | $\text{mobius\_ratio} = \|\text{tr}(M^k)\| / n^k$ |
+| Möbius 双层相位 | $\text{mobius\_ratio} = \lVert \text{tr}(M^k)\rVert  / n^k$ |
 | $2N$ 步恢复对称性 | $\text{mobius\_ratio} < 1$ → 需双倍周期 |
 | 自旋 1/2 涌现 | $\text{mobius\_ratio} \neq 1$ 的统计涌现 |
 | 电荷 = 拓扑偏置 | $A_q$ 中电负性调制的边权重偏置 |

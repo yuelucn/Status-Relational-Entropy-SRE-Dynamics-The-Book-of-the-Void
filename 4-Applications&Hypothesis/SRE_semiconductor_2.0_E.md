@@ -158,7 +158,7 @@ Experimental data cited in early versions (Ansonmi Semiconductor 2026, Malaysia 
 | Classical concept | SRE ontological expression | Corresponding Operator / Axiom |
 |---|---|---|
 | Lattice structure (periodic) | Local topological sub-network (node=atom, edge=covalent bond $s_{ij} \in \{+1,-1\}$) | Axiom I + Operator 4 (smooth adjacency $A_s$) |
-| Electronegativity difference | Spin coupling strength $w_q(i,j) = |\tanh(\chi_i - \chi_j)|$ | Operator 11 (spin-charge adjacency) |
+| Electronegativity difference | Spin coupling strength $w_q(i,j) = \lvert \tanh(\chi_i - \chi_j)\rvert$ | Operator 11 (spin-charge adjacency) |
 | Carrier (electron) | Three-dimensional cube $Q_3$ topological closed loop ($V=8, E=12, \beta_1=5$, bipartite + edge-transitive → forces trivial holonomy class = electron-like) | Charge Emergence §10.2 + Operator 19 (T6) |
 | Carrier (hole) | The **complement closure** of the electron $Q_3$ closure in the lattice graph: $K_h = G_{\text{lattice}} \setminus K_e$; the diamond lattice is naturally bipartite (all even-length cycles + approximate single-edge orbit → globally electron-like); after removing a bipartite closure, the remaining topology shows odd cycles + multiple edge orbits → nontrivial holonomy allowed (Operator 19 T6 criterion flips to nucleon-like). A hole is not a proton; it is a topological void state in the lattice | Operator 19 (T6 bipartition breaking → nontrivial $\sigma$ allowed) |
 | PN junction barrier | First-order adjacency refresh rate discontinuity between P-type/N-type topological sub-networks | Classical Electrodynamics §3.III |
@@ -205,7 +205,7 @@ Classical Electrodynamics v1.1-rev §3.III gives the topological definition of v
 
 Operator 11 (spin-charge adjacency operator) encodes Pauling electronegativity differences into binary spin coupling strength:
 
-$$w_q(i,j) = |\tanh(\chi_i - \chi_j)|$$
+$$w_q(i,j) = \lvert \tanh(\chi_i - \chi_j)\lvert$$
 
 The charge-weighted adjacency matrix is:
 
@@ -222,7 +222,7 @@ Gain ordering for heteronuclear bonds (Operator 11 v1.1 Theorem):
 
 $$g(\text{III-Si}) > g(\text{V-Si}) > g(\text{Si-Si})$$
 
-The electronegativity difference in P region $\Delta\chi_{\text{P}} = |\chi_{\text{III}} - \chi_{\text{Si}}|$ is greater than that in N region $\Delta\chi_{\text{N}} = |\chi_{\text{V}} - \chi_{\text{Si}}|$, causing the charge-weighted adjacency $A_q$ to become discontinuous at the interface, which in turn creates a gradient in the first-order adjacency refresh rate.
+The electronegativity difference in P region $\Delta\chi_{\text{P}} = \lvert \chi_{\text{III}} - \chi_{\text{Si}}\lvert$ is greater than that in N region $\Delta\chi_{\text{N}} = \lvert \chi_{\text{V}} - \chi_{\text{Si}}\lvert$, causing the charge-weighted adjacency $A_q$ to become discontinuous at the interface, which in turn creates a gradient in the first-order adjacency refresh rate.
 
 ### 2.3 SRE→SI Observation Mapping Anchor (Engineering Interface)
 
@@ -485,13 +485,13 @@ In SRE:
 - Pair annihilation = electron-like closure ($\sigma = +1$ trivial class) meets nucleon-like closure ($\sigma = -1$ nontrivial class) → after recombination $\sigma_{\text{comp}} = (+1) \cdot (-1) = -1 \neq 0$, but $\deg_{\text{comp}}$ recalculates with post-recombination topology
 - Thermal equilibrium: generation rate = recombination rate, determined by the probability distribution of topological density fluctuations (Operator 4's smooth adjacency $A_s$ statistics)
 
-**Key value**: The order of magnitude of $n_i$ is jointly determined by the total number of nodes $|V|$ in the topological sub-network and thermal fluctuation probability $\propto e^{-\lambda_2 / k_B T}$ (where $\lambda_2$ is the graph Laplacian algebraic connectivity); in SRE there is no need to introduce the concept of "band gap $E_g$".
+**Key value**: The order of magnitude of $n_i$ is jointly determined by the total number of nodes $\lvert V\rvert$ in the topological sub-network and thermal fluctuation probability $\propto e^{-\lambda_2 / k_B T}$ (where $\lambda_2$ is the graph Laplacian algebraic connectivity); in SRE there is no need to introduce the concept of "band gap $E_g$".
 
 ### 6.2 Temperature Dependence of $n_i$
 
 Traditional: $n_i \propto T^{3/2} \exp(-E_g / 2k_B T)$
 
-SRE: $n_i \propto |V| \cdot P(W_e > W_e^{\text{thresh}})$, where $P(W_e > W_e^{\text{thresh}})$ is the probability that topological density exceeds the tearing threshold, $\propto e^{-\lambda_2(W_e^{\text{thresh}}) / \text{effective fluctuation amplitude}}$; the effective fluctuation amplitude increases linearly with temperature (topological statistical decoherence strength = macroscopic temperature).
+SRE: $n_i \propto \lvert V\rvert  \cdot P(W_e > W_e^{\text{thresh}})$, where $P(W_e > W_e^{\text{thresh}})$ is the probability that topological density exceeds the tearing threshold, $\propto e^{-\lambda_2(W_e^{\text{thresh}}) / \text{effective fluctuation amplitude}}$; the effective fluctuation amplitude increases linearly with temperature (topological statistical decoherence strength = macroscopic temperature).
 
 ---
 
@@ -518,7 +518,7 @@ This reconstruction follows the context-distinction principle of the SRE v1.6 us
 
 2. **Observation mapping anchors are engineering interfaces**: The four observation mapping anchors $\kappa_I, \kappa_R, \kappa_V, \kappa_P$ (Classical Electrodynamics v1.1-rev §3) borrow known universal physical constants ($e, h, Z_0$) as conversion interfaces; these coefficients have not yet been fully endogenously derived from within the SRE axioms — endogenous emergence of all universal constants from causal network dynamics is a long-term theoretical goal of SRE.
 
-3. **Numerical alignment relies on simulation reverse-inference**: Specific numerical values in derivations (e.g., $V_T \approx 26$ mV, $\beta \approx 120$ etc.) require simulation calibration by combining parameters such as node count $|V|$, edge polarity assignment, and doping topological density of SRE semiconductor topological sub-networks — not obtained by direct analytical solution from axioms.
+3. **Numerical alignment relies on simulation reverse-inference**: Specific numerical values in derivations (e.g., $V_T \approx 26$ mV, $\beta \approx 120$ etc.) require simulation calibration by combining parameters such as node count $\lvert V\rvert$, edge polarity assignment, and doping topological density of SRE semiconductor topological sub-networks — not obtained by direct analytical solution from axioms.
 
 4. **Not a replacement for traditional engineering models**: The SRE framework provides a **new topological analysis perspective**, used to reveal the topological mechanisms behind traditional Ebers-Moll, Gummel-Poon and other models, serving topology-aware optimization of engineering applications (e.g., reducing $\beta$ temperature drift through topological impedance design), not intended to replace traditional SPICE-level device simulation toolchains.
 

@@ -8,13 +8,13 @@ Magnitude Anchoring of Logical Depth $\boldsymbol{N}$ and Observational-Protoc
 Within the SRE framework, the electron is a stable self-consistent topological closed-loop residing in the physical rendering layer. The parameter $\boldsymbol{N}$ represents the equivalent count of instantiable topological scales for this closed loop. It is not an empirical constant native to the underlying causal space, but jointly determined by the characteristic rendering scale of the system and the lower instantiable-scale bound of the rendering layer.
 
 - Formula:
-\[
+$$
 \boldsymbol{N}=\lambda_{c}/\mathcal{l}_{min}
-\]
+$$
 - Magnitude evaluation: Substituting known parameters (Compton wavelength $\lambda_c \approx 10^{-12}\ \mathrm{m}$ and minimal instantiable topological scale $\mathcal{l}_{min} \approx 10^{-35}\ \mathrm{m}$), the equivalent logical depth of the electron yields:
-\[
+$$
 \boldsymbol{N} \approx \frac{10^{-12}}{10^{-35}} = 10^{23}
-\]
+$$
 
 Logical conclusion: The electron is not a simple primitive topological unit, but a high-order emergent topological module with extremely high redundancy (equivalent topological count of order $10^{23}$).
 
